@@ -2,3 +2,6 @@ assets/audio/**/*.wav
 assets/audio/_bakeoff/
 __pycache__/
 assets/audio/_baseline_mms/
+assets/audio/_repair/
+assets/audio/_vowel_test/
+app/repair_pick.html
