@@ -46,6 +46,7 @@ python3 scripts/gen_audio.py         # local TTS (sharjeel103/mms-tts-urdu-finet
 python3 scripts/verify_audio.py      # Whisper smoke test on concatenated chunks
 python3 scripts/build_course.py      # course/unit_NN.md
 python3 scripts/build_app.py         # app/index.html + app/audio.json
+./scripts/sync_mobile_content.sh     # refresh the mobile bundle, then: cd mobile && npm run build
 ```
 
 Audio repair loop: flag clips in `app/audio_check.html`, generate alternatives with `scripts/repair_candidates.py flags.txt`, pick in `app/repair_pick.html`, apply with `scripts/apply_picks.py picks.json`. Choices persist in `data/audio_overrides.json`.
