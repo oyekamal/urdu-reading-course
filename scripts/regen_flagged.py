@@ -2,9 +2,10 @@
 """Regenerate only the clips a listener flagged (keys like `units/u01_17`, one per line, from app/audio_check.html
 "Export flags"), using a better method than a bare isolated word:
 
-  --method carrier   (default) synthesize "یہ <word> ہے۔" with the main voice, then cut the middle word out
-                     using Whisper word timestamps. Sentence context gives the model the right short vowels
-                     far more often than an isolated word does.
+  --method carrier   (default) synthesize "یہ لفظ <word>" with the main voice and cut the word out exactly,
+                     using the VITS duration predictor's own per-letter frame counts (captured by hooking
+                     torch.ceil inside the forward pass; hop = 256 samples). Sentence context gives the model
+                     better short vowels than an isolated word, and nothing follows the word so nothing bleeds in.
   --method latin     synthesize from romanised spelling with facebook/mms-tts-urd-script_latin; the roman
                      spelling carries the vowels explicitly. Needs a roman form: taken from units.json / letters.json.
 
@@ -47,9 +48,12 @@ def main():
     ovr = json.load(open(OVR, encoding="utf8")) if os.path.exists(OVR) else {}
     torch.manual_seed(0)
     if method == "carrier":
-        import whisper
         m, tok = VitsModel.from_pretrained(MAIN).eval(), AutoTokenizer.from_pretrained(MAIN)
-        w = whisper.load_model("medium", device="cpu")
+        hop = int(np.prod(m.config.upsample_rates)); cap = {}
+        _ceil = torch.ceil
+        def rec(x):
+            y = _ceil(x); cap["dur"] = y.detach(); return y
+        torch.ceil = rec
     else:
         m, tok = VitsModel.from_pretrained(LATIN).eval(), AutoTokenizer.from_pretrained(LATIN)
     for k in keys:
@@ -58,18 +62,15 @@ def main():
             print("unknown key", k); continue
         text = j["text"]
         if method == "carrier":
-            ids = tok(f"یہ {text} ہے۔", return_tensors="pt")
+            enc = tok(f"یہ لفظ {text}", return_tensors="pt")
             with torch.no_grad():
-                a = norm(m(**ids).waveform[0].numpy())
-            tmp = "/tmp/urc_carrier.wav"; sf.write(tmp, a, 16000)
-            r = w.transcribe(tmp, language="ur", fp16=False, temperature=0, word_timestamps=True)
-            ws = [x for s in r["segments"] for x in s["words"]]
-            if len(ws) < 3:
-                print("could not align", k, r["text"]); continue
-            # middle chunk = everything between the first word's end and the last word's start
-            t0, t1 = int(ws[0]["end"] * 16000), int(ws[-1]["start"] * 16000)
-            clip = pad(a[max(0, t0 - 400):t1 + 400])
-            heard = r["text"].strip()
+                a = norm(m(**enc).waveform[0].numpy())
+            dur = cap["dur"][0, 0] if cap["dur"].dim() == 3 else cap["dur"][0]
+            chars = tok.convert_ids_to_tokens(enc.input_ids[0].tolist())
+            sp = [i for i, c in enumerate(chars) if c == " "]
+            t0 = int(dur[: sp[-1] + 1].sum().item()) * hop if sp else 0
+            clip = pad(a[max(0, t0 - 480):])
+            heard = f"cut at {t0/16000:.2f}s of {len(a)/16000:.2f}s"
         else:
             rom = ROMAN.get(text)
             if not rom:
