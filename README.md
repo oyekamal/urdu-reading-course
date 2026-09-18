@@ -9,7 +9,7 @@ A research-backed course and app that takes anyone, child or adult, Urdu speaker
 | Path | What |
 |---|---|
 | `app/` | The interactive course: 13 units, drills (tap what you hear, tile word building, tracing, dictation, quiz gate), progress, Naskh/Nastaliq switch, three tracks, EGRA-style reading test. Single HTML file plus `audio.json`. |
-| `course/00_design.md` | Every design decision with the evidence behind it, the unit map, hours per unit |
+| `course/00_design.md` | Every design decision with the evidence behind it, the unit map, hours per unit, the per-letter lesson shape |
 | `course/unit_00.md … unit_12.md` | Printable lessons with answer keys and pen-movement guidance |
 | `data/letters.json` | 39 letters, aspirates, vowel marks, long vowels, sight words, numerals, assessment passage: the single source of truth |
 | `data/units.json` | 13 units, 220 decodable words (bare and vowelled), 33 sentences |

@@ -45,16 +45,23 @@
 
 Total ≈ 33 hours (child) / 17 hours (adult). Heavier units (2, 6, 8) get more time than lighter ones, matching Alif Baa's practice of budgeting by confusability, not by letter count.
 
-## 3. Per-unit lesson shape
+## 3. Lesson shape (app path, since v0.4)
 
-1. **Hear it** — letter name and sound audio, mouth/tongue cue in plain words.
-2. **See it** — isolated letter, then the four positional forms (Naskh), then the same in Nastaliq.
-3. **Tell it apart** — contrast card with its confusable siblings; "tap what you hear" drill.
-4. **Join it** — build three words from letter tiles; watch the shapes change.
-5. **Read it** — 20 decodable words with vowel marks, audio per word; 3 sentences.
-6. **Write it** — trace the four forms (children: required; adults: optional).
-7. **Dictation** — hear 5 words, write them; answer key.
-8. **Check** — 10-item self-quiz; must score 8+ to unlock the next unit.
+A unit is a row of short lessons, one task per screen, Duolingo-style. Evidence: `research/11_letter_lesson_flow.md` (Noorani Qaida, Alif Baa, Duolingo letters), `research/12_child_ux.md` (child interaction rules). Rule throughout: nothing appears on screen that has not been taught yet; distractors, blend vowels and example words come only from learned letters.
+
+**One lesson per letter (3 to 5 minutes)**
+1. Hear it: name, sound, one example word made of learned letters.
+2. Tap the sound among look-alikes already learned (skipped for the very first letter).
+3. Where it sits in a word: each shape that exists, shown inside a real word with the letter highlighted. Shapes that do not exist are not shown.
+4. Trace it, body first, dots last, from a start dot (children; optional for adults).
+5. Blend it with a learned vowel letter (alif in unit 1, ye from unit 2, wao from unit 4).
+6. Quick check: four questions, 3 of 4 to pass, otherwise the lesson replays.
+
+**Then, per unit**: Vowel marks (unit 1 only, on unit words: zabar, zer, pesh) · Join them · Blend · Words 1 · Words 2 · Read (sentences, and a decodable passage from unit 7) · Unit check, 8 of 10 unlocks the next unit. Units 4, 6, 10, 11 and 12 add their special lessons (non-joiners, aspirates, hamza and numbers, sight words and Nastaliq, the reading test). Unit 0 is three rules only: right to left, letters join, dots decide.
+
+Children hear every instruction in Urdu (16 recorded prompts) with a repeat button; wrong answers wobble instead of flashing red.
+
+The printable `course/unit_NN.md` files keep the eight-step outline for teachers; the app is the learner's path.
 
 ## 4. What this course does not claim
 
