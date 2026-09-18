@@ -1,8 +1,8 @@
 {
  "words/alif": {
-  "method": "carrier",
+  "method": "roman-model",
   "text": "اب",
-  "heard": "cut at 0.91s of 1.55s"
+  "pick": "E"
  },
  "words/be": {
   "method": "carrier",
@@ -20,9 +20,9 @@
   "heard": "cut at 0.80s of 1.95s"
  },
  "words/mim": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "مکان",
-  "heard": "cut at 0.78s of 2.10s"
+  "pick": "D"
  },
  "words/nun": {
   "method": "carrier",
@@ -100,9 +100,9 @@
   "heard": "cut at 0.77s of 1.79s"
  },
  "words/gaf": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "گلاب",
-  "heard": "cut at 0.91s of 2.10s"
+  "pick": "D"
  },
  "words/nun_ghunna": {
   "method": "carrier",
@@ -115,9 +115,9 @@
   "heard": "cut at 0.86s of 1.52s"
  },
  "words/ddal": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "ڈاک",
-  "heard": "cut at 0.83s of 1.82s"
+  "pick": "A"
  },
  "words/rre": {
   "method": "carrier",
@@ -150,14 +150,14 @@
   "heard": "cut at 0.83s of 1.52s"
  },
  "words/ghain": {
-  "method": "carrier",
+  "method": "roman-model",
   "text": "غریب",
-  "heard": "cut at 0.77s of 2.19s"
+  "pick": "E"
  },
  "words/ain": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "عمر",
-  "heard": "cut at 0.77s of 1.84s"
+  "pick": "B"
  },
  "words/bari_he": {
   "method": "carrier",
@@ -200,9 +200,9 @@
   "heard": "cut at 0.78s of 1.97s"
  },
  "aspirates/ph": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "پھول",
-  "heard": "cut at 0.82s of 2.00s"
+  "pick": "B"
  },
  "aspirates/th": {
   "method": "carrier",
@@ -225,9 +225,9 @@
   "heard": "cut at 0.78s of 2.29s"
  },
  "aspirates/dh": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "دھاگا",
-  "heard": "cut at 0.77s of 2.06s"
+  "pick": "D"
  },
  "aspirates/ḍh": {
   "method": "carrier",
@@ -275,9 +275,9 @@
   "heard": "cut at 0.75s of 1.92s"
  },
  "diacritics/khari_zabar_ex": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "اعلیٰ",
-  "heard": "cut at 0.83s of 2.05s"
+  "pick": "D"
  },
  "units/u01_00": {
   "method": "carrier",
@@ -290,9 +290,9 @@
   "heard": "cut at 0.77s of 1.89s"
  },
  "units/u01_02": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "امام",
-  "heard": "cut at 0.88s of 1.74s"
+  "pick": "D"
  },
  "units/u01_03": {
   "method": "carrier",
@@ -300,9 +300,9 @@
   "heard": "cut at 0.88s of 1.50s"
  },
  "units/u01_04": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "کام",
-  "heard": "cut at 0.82s of 1.58s"
+  "pick": "A"
  },
  "units/u01_05": {
   "method": "carrier",
@@ -310,9 +310,9 @@
   "heard": "cut at 0.85s of 1.87s"
  },
  "units/u01_06": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "لال",
-  "heard": "cut at 0.96s of 1.70s"
+  "pick": "B"
  },
  "units/u01_07": {
   "method": "carrier",
@@ -335,14 +335,14 @@
   "heard": "cut at 0.90s of 1.60s"
  },
  "units/u01_11": {
-  "method": "carrier",
+  "method": "roman-model",
   "text": "نمک",
-  "heard": "cut at 0.85s of 1.76s"
+  "pick": "E"
  },
  "units/u01_12": {
-  "method": "carrier",
+  "method": "roman-model",
   "text": "ملک",
-  "heard": "cut at 0.74s of 1.84s"
+  "pick": "E"
  },
  "units/u01_13": {
   "method": "carrier",
@@ -365,9 +365,9 @@
   "heard": "cut at 0.80s of 2.00s"
  },
  "units/u01_17": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "مکان",
-  "heard": "cut at 0.80s of 2.06s"
+  "pick": "D"
  },
  "units/u01_18": {
   "method": "carrier",
@@ -380,14 +380,14 @@
   "heard": "cut at 0.78s of 1.62s"
  },
  "units/u02_00": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "تم",
-  "heard": "cut at 0.78s of 1.81s"
+  "pick": "B"
  },
  "units/u02_01": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "تین",
-  "heard": "cut at 0.86s of 1.49s"
+  "pick": "B"
  },
  "units/u02_02": {
   "method": "carrier",
@@ -395,9 +395,9 @@
   "heard": "cut at 0.80s of 1.73s"
  },
  "units/u02_03": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "میل",
-  "heard": "cut at 1.04s of 2.16s"
+  "pick": "B"
  },
  "units/u02_04": {
   "method": "carrier",
@@ -455,9 +455,9 @@
   "heard": "cut at 0.78s of 1.47s"
  },
  "units/u02_15": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "تکیا",
-  "heard": "cut at 0.85s of 2.10s"
+  "pick": "D"
  },
  "units/u02_16": {
   "method": "carrier",
@@ -505,14 +505,14 @@
   "heard": "cut at 0.77s of 1.54s"
  },
  "units/u03_05": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "پیٹ",
-  "heard": "cut at 0.80s of 1.30s"
+  "pick": "A"
  },
  "units/u03_06": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "ٹب",
-  "heard": "cut at 0.75s of 1.73s"
+  "pick": "B"
  },
  "units/u03_07": {
   "method": "carrier",
@@ -520,14 +520,14 @@
   "heard": "cut at 0.82s of 2.03s"
  },
  "units/u03_08": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "ثابت",
-  "heard": "cut at 0.72s of 1.97s"
+  "pick": "B"
  },
  "units/u03_09": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "پیپل",
-  "heard": "cut at 0.80s of 1.90s"
+  "pick": "B"
  },
  "units/u03_10": {
   "method": "carrier",
@@ -550,9 +550,9 @@
   "heard": "cut at 0.78s of 1.87s"
  },
  "units/u03_14": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "پلک",
-  "heard": "cut at 0.80s of 1.92s"
+  "pick": "B"
  },
  "units/u03_15": {
   "method": "carrier",
@@ -560,19 +560,19 @@
   "heard": "cut at 0.82s of 1.74s"
  },
  "units/u03_16": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "تپتا",
-  "heard": "cut at 0.82s of 2.08s"
+  "pick": "D"
  },
  "units/u03_17": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "پتلا",
-  "heard": "cut at 0.85s of 1.20s"
+  "pick": "A"
  },
  "units/u03_18": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "ٹکٹ",
-  "heard": "cut at 0.85s of 1.97s"
+  "pick": "B"
  },
  "units/u03_19": {
   "method": "carrier",
@@ -740,9 +740,9 @@
   "heard": "cut at 0.78s of 2.06s"
  },
  "units/u05_12": {
-  "method": "carrier",
+  "method": "roman-model",
   "text": "گانا",
-  "heard": "cut at 0.75s of 1.90s"
+  "pick": "E"
  },
  "units/u05_13": {
   "method": "carrier",
@@ -760,9 +760,9 @@
   "heard": "cut at 0.88s of 1.97s"
  },
  "units/u05_16": {
-  "method": "carrier",
+  "method": "roman-model",
   "text": "مچھلی",
-  "heard": "cut at 0.75s of 2.00s"
+  "pick": "E"
  },
  "units/u05_17": {
   "method": "carrier",
@@ -830,14 +830,14 @@
   "heard": "cut at 0.83s of 2.00s"
  },
  "units/u06_10": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "دھاگا",
-  "heard": "cut at 0.85s of 1.86s"
+  "pick": "D"
  },
  "units/u06_11": {
-  "method": "carrier",
+  "method": "roman-model",
   "text": "چھت",
-  "heard": "cut at 0.85s of 2.11s"
+  "pick": "E"
  },
  "units/u06_12": {
   "method": "carrier",
@@ -880,9 +880,9 @@
   "heard": "cut at 0.83s of 2.02s"
  },
  "units/u07_00": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "ڈاک",
-  "heard": "cut at 0.77s of 1.33s"
+  "pick": "D"
  },
  "units/u07_01": {
   "method": "carrier",
@@ -950,9 +950,9 @@
   "heard": "cut at 0.96s of 2.08s"
  },
  "units/u07_14": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "ڈر",
-  "heard": "cut at 0.85s of 1.92s"
+  "pick": "B"
  },
  "units/u07_15": {
   "method": "carrier",
@@ -965,9 +965,9 @@
   "heard": "cut at 0.85s of 1.58s"
  },
  "units/u07_17": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "انڈا",
-  "heard": "cut at 0.88s of 2.06s"
+  "pick": "B"
  },
  "units/u07_18": {
   "method": "carrier",
@@ -975,9 +975,9 @@
   "heard": "cut at 0.80s of 2.06s"
  },
  "units/u07_19": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "گھڑی",
-  "heard": "cut at 0.77s of 1.89s"
+  "pick": "D"
  },
  "units/u08_00": {
   "method": "carrier",
@@ -990,9 +990,9 @@
   "heard": "cut at 0.90s of 1.62s"
  },
  "units/u08_02": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "قلم",
-  "heard": "cut at 0.88s of 2.05s"
+  "pick": "A"
  },
  "units/u08_03": {
   "method": "carrier",
@@ -1000,9 +1000,9 @@
   "heard": "cut at 0.93s of 1.95s"
  },
  "units/u08_04": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "خط",
-  "heard": "cut at 0.86s of 1.81s"
+  "pick": "B"
  },
  "units/u08_05": {
   "method": "carrier",
@@ -1010,9 +1010,9 @@
   "heard": "cut at 1.09s of 1.92s"
  },
  "units/u08_06": {
-  "method": "carrier",
+  "method": "roman-model",
   "text": "غریب",
-  "heard": "cut at 0.83s of 2.02s"
+  "pick": "E"
  },
  "units/u08_07": {
   "method": "carrier",
@@ -1025,9 +1025,9 @@
   "heard": "cut at 0.77s of 1.84s"
  },
  "units/u08_09": {
-  "method": "carrier",
+  "method": "meta-alone",
   "text": "علم",
-  "heard": "cut at 0.83s of 1.76s"
+  "pick": "C"
  },
  "units/u08_10": {
   "method": "carrier",
@@ -1060,24 +1060,24 @@
   "heard": "cut at 0.99s of 2.37s"
  },
  "units/u08_16": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "غم",
-  "heard": "cut at 1.06s of 2.34s"
+  "pick": "A"
  },
  "units/u08_17": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "عام",
-  "heard": "cut at 0.77s of 1.33s"
+  "pick": "D"
  },
  "units/u08_18": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "حساب",
-  "heard": "cut at 0.88s of 1.84s"
+  "pick": "D"
  },
  "units/u08_19": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "دفتر",
-  "heard": "cut at 0.75s of 1.92s"
+  "pick": "D"
  },
  "units/u09_00": {
   "method": "carrier",
@@ -1100,9 +1100,9 @@
   "heard": "cut at 0.77s of 1.55s"
  },
  "units/u09_04": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "طالب",
-  "heard": "cut at 0.90s of 1.94s"
+  "pick": "A"
  },
  "units/u09_05": {
   "method": "carrier",
@@ -1125,29 +1125,29 @@
   "heard": "cut at 0.82s of 2.06s"
  },
  "units/u09_09": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "ذمہ",
-  "heard": "cut at 0.80s of 1.86s"
+  "pick": "B"
  },
  "units/u09_10": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "صابن",
-  "heard": "cut at 0.85s of 2.05s"
+  "pick": "D"
  },
  "units/u09_11": {
-  "method": "carrier",
+  "method": "roman-model",
   "text": "ضد",
-  "heard": "cut at 0.91s of 1.78s"
+  "pick": "E"
  },
  "units/u09_12": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "طاقت",
-  "heard": "cut at 0.72s of 1.94s"
+  "pick": "D"
  },
  "units/u09_13": {
-  "method": "carrier",
+  "method": "roman-model",
   "text": "حفاظت",
-  "heard": "cut at 0.77s of 2.16s"
+  "pick": "E"
  },
  "units/u09_14": {
   "method": "carrier",
@@ -1180,14 +1180,14 @@
   "heard": "cut at 0.74s of 1.98s"
  },
  "units/u10_00": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "آم",
-  "heard": "cut at 0.88s of 2.13s"
+  "pick": "B"
  },
  "units/u10_01": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "آپ",
-  "heard": "cut at 0.91s of 1.71s"
+  "pick": "D"
  },
  "units/u10_02": {
   "method": "carrier",
@@ -1210,24 +1210,24 @@
   "heard": "cut at 0.78s of 1.94s"
  },
  "units/u10_06": {
-  "method": "carrier",
+  "method": "meta-alone",
   "text": "اللّٰہ",
-  "heard": "cut at 1.06s of 2.54s"
+  "pick": "C"
  },
  "units/u10_07": {
-  "method": "carrier",
+  "method": "roman-model",
   "text": "دعا",
-  "heard": "cut at 0.85s of 1.84s"
+  "pick": "E"
  },
  "units/u10_08": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "سؤال",
-  "heard": "cut at 0.72s of 1.68s"
+  "pick": "A"
  },
  "units/u10_09": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "آئینہ",
-  "heard": "cut at 0.93s of 2.16s"
+  "pick": "D"
  },
  "units/u10_10": {
   "method": "carrier",
@@ -1250,24 +1250,24 @@
   "heard": "cut at 0.91s of 2.26s"
  },
  "units/u10_14": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "صلوٰۃ",
-  "heard": "cut at 0.78s of 1.79s"
+  "pick": "D"
  },
  "units/u10_15": {
-  "method": "carrier",
+  "method": "main-carrier",
   "text": "دنیا",
-  "heard": "cut at 0.77s of 1.28s"
+  "pick": "B"
  },
  "units/u10_16": {
-  "method": "carrier",
+  "method": "roman-model",
   "text": "ابّا",
-  "heard": "cut at 0.75s of 1.89s"
+  "pick": "E"
  },
  "units/u10_17": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "امّی",
-  "heard": "cut at 0.82s of 1.71s"
+  "pick": "D"
  },
  "units/u10_18": {
   "method": "carrier",
@@ -1280,9 +1280,9 @@
   "heard": "cut at 0.85s of 2.06s"
  },
  "units/u11_00": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "کا",
-  "heard": "cut at 0.77s of 1.78s"
+  "pick": "A"
  },
  "units/u11_01": {
   "method": "carrier",
@@ -1305,9 +1305,9 @@
   "heard": "cut at 0.78s of 1.78s"
  },
  "units/u11_05": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "کہ",
-  "heard": "cut at 0.78s of 1.76s"
+  "pick": "A"
  },
  "units/u11_06": {
   "method": "carrier",
@@ -1370,29 +1370,29 @@
   "heard": "cut at 0.75s of 1.82s"
  },
  "units/u11_18": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "پھر",
-  "heard": "cut at 0.91s of 2.05s"
+  "pick": "A"
  },
  "units/u11_19": {
-  "method": "carrier",
+  "method": "meta-alone",
   "text": "بہت",
-  "heard": "cut at 0.80s of 2.02s"
+  "pick": "C"
  },
  "sight/00": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "کا",
-  "heard": "cut at 0.85s of 1.81s"
+  "pick": "A"
  },
  "sight/01": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "کی",
-  "heard": "cut at 0.77s of 1.55s"
+  "pick": "A"
  },
  "sight/02": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "کے",
-  "heard": "cut at 0.80s of 1.73s"
+  "pick": "A"
  },
  "sight/03": {
   "method": "carrier",
@@ -1405,9 +1405,9 @@
   "heard": "cut at 0.83s of 1.86s"
  },
  "sight/05": {
-  "method": "carrier",
+  "method": "main-alone",
   "text": "کہ",
-  "heard": "cut at 0.77s of 1.79s"
+  "pick": "A"
  },
  "sight/06": {
   "method": "carrier",
@@ -1485,9 +1485,9 @@
   "heard": "cut at 0.78s of 1.78s"
  },
  "numerals/1": {
-  "method": "carrier",
+  "method": "meta-carrier",
   "text": "ایک",
-  "heard": "cut at 0.78s of 1.41s"
+  "pick": "D"
  },
  "numerals/2": {
   "method": "carrier",
@@ -1528,5 +1528,140 @@
   "method": "carrier",
   "text": "نو",
   "heard": "cut at 0.86s of 1.87s"
+ },
+ "diacritics/jazm": {
+  "method": "main-carrier",
+  "text": "جزم",
+  "pick": "B"
+ },
+ "diacritics/tashdid": {
+  "method": "main-carrier",
+  "text": "تشدید",
+  "pick": "B"
+ },
+ "names/ain": {
+  "method": "meta-carrier",
+  "text": "عین",
+  "pick": "D"
+ },
+ "names/alif": {
+  "method": "roman-model",
+  "text": "الف",
+  "pick": "E"
+ },
+ "names/ddal": {
+  "method": "main-carrier",
+  "text": "ڈال",
+  "pick": "B"
+ },
+ "names/ghain": {
+  "method": "main-carrier",
+  "text": "غین",
+  "pick": "B"
+ },
+ "names/lam": {
+  "method": "main-carrier",
+  "text": "لام",
+  "pick": "B"
+ },
+ "names/rre": {
+  "method": "main-carrier",
+  "text": "ڑے",
+  "pick": "B"
+ },
+ "names/swad": {
+  "method": "roman-model",
+  "text": "صاد",
+  "pick": "E"
+ },
+ "names/tte": {
+  "method": "meta-alone",
+  "text": "ٹے",
+  "pick": "C"
+ },
+ "names/zhe": {
+  "method": "main-carrier",
+  "text": "ژے",
+  "pick": "B"
+ },
+ "sentences/u01_02": {
+  "method": "meta-alone",
+  "text": "نمک لا",
+  "pick": "C"
+ },
+ "sentences/u03_01": {
+  "method": "main-retake",
+  "text": "پتلی بلی",
+  "pick": "F"
+ },
+ "sentences/u03_02": {
+  "method": "main-retake",
+  "text": "میں ٹوپی لے",
+  "pick": "F"
+ },
+ "sentences/u07_01": {
+  "method": "main-retake",
+  "text": "بڑا ڈبہ",
+  "pick": "F"
+ },
+ "sentences/u10_01": {
+  "method": "main-alone",
+  "text": "چائے میں ۲ چمچ چینی",
+  "pick": "A"
+ },
+ "syllables/ddal_a": {
+  "method": "main-carrier",
+  "text": "ڈا",
+  "pick": "B"
+ },
+ "syllables/ddal_i": {
+  "method": "main-carrier",
+  "text": "ڈی",
+  "pick": "B"
+ },
+ "syllables/ddal_u": {
+  "method": "main-carrier",
+  "text": "ڈو",
+  "pick": "B"
+ },
+ "syllables/gaf_u": {
+  "method": "main-carrier",
+  "text": "گو",
+  "pick": "B"
+ },
+ "syllables/ghain_a": {
+  "method": "main-carrier",
+  "text": "غا",
+  "pick": "B"
+ },
+ "syllables/kaf_a": {
+  "method": "main-alone",
+  "text": "کا",
+  "pick": "A"
+ },
+ "syllables/lam_i": {
+  "method": "main-carrier",
+  "text": "لی",
+  "pick": "B"
+ },
+ "syllables/lam_u": {
+  "method": "main-carrier",
+  "text": "لو",
+  "pick": "B"
+ },
+ "syllables/re_u": {
+  "method": "main-carrier",
+  "text": "رو",
+  "pick": "B"
+ },
+ "syllables/swad_i": {
+  "method": "main-carrier",
+  "text": "صی",
+  "pick": "B"
+ },
+ "syllables/tte_a": {
+  "method": "main-carrier",
+  "text": "ٹا",
+  "pick": "B"
  }
 }
