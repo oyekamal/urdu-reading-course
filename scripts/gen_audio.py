@@ -55,11 +55,12 @@ def main():
     m = VitsModel.from_pretrained(MODEL).eval()
     tok = AutoTokenizer.from_pretrained(MODEL)
     sr = m.config.sampling_rate
+    ovr = json.load(open(f"{ROOT}/data/audio_overrides.json", encoding="utf8")) if os.path.exists(f"{ROOT}/data/audio_overrides.json") else {}
     manifest, t0 = [], time.time()
     for kind, id_, text in jobs():
         os.makedirs(f"{OUT}/{kind}", exist_ok=True)
         wav = f"{OUT}/{kind}/{id_}.wav"
-        if not os.path.exists(wav):
+        if not os.path.exists(wav) and f"{kind}/{id_}" not in ovr:  # overridden clips are owned by regen_flagged.py
             ids = tok(text, return_tensors="pt")
             with torch.no_grad():
                 a = m(**ids).waveform[0].numpy()
