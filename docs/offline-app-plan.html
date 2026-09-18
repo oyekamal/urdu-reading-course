@@ -1,0 +1,189 @@
+<meta charset="utf-8">
+<title>Urdu Reader Offline App Plan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Public+Sans:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+:root{--paper:#f4f6f8;--card:#fff;--ink:#14213d;--muted:#5d6675;--line:#d9dee6;--accent:#0f7b6c;--soft:#e3f2ee;--warn:#9a5b00;--sans:"Public Sans",system-ui,sans-serif;--serif:"Source Serif 4",Georgia,serif;--ur:"Noto Nastaliq Urdu",serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#11161f;--card:#1a212c;--ink:#eef1f5;--muted:#a0a8b5;--line:#2c3542;--accent:#3fb59f;--soft:#17362f;--warn:#e0a33a}}
+:root[data-theme="dark"]{--paper:#11161f;--card:#1a212c;--ink:#eef1f5;--muted:#a0a8b5;--line:#2c3542;--accent:#3fb59f;--soft:#17362f;--warn:#e0a33a}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 var(--sans);padding-inline:16px;padding-block:0 48px}
+.wrap{max-width:880px;margin:0 auto}
+h1,h2,h3{font-family:var(--serif);text-wrap:balance;margin:0}
+h1{font-size:40px;font-weight:600;line-height:1.1;margin-top:40px}
+.sub{color:var(--muted);margin:10px 0 0;max-width:62ch}
+.ur{font-family:var(--ur);direction:rtl;font-size:26px;color:var(--accent);line-height:2}
+h2{font-size:26px;margin-top:48px;padding-top:14px;border-top:1px solid var(--line)}
+h3{font-size:18px;margin-top:26px}
+p,li{max-width:70ch}ul,ol{padding-left:22px}li{margin:4px 0}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.tablewrap{overflow-x:auto;margin:14px 0}table{border-collapse:collapse;width:100%;font-size:14.5px}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+td:first-child{white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:14px 0}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.tile h3{margin:0 0 6px;font-size:16px;font-family:var(--sans);font-weight:800}
+.tile ul{margin:0;padding-left:18px;font-size:14.5px}
+.pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:600;background:var(--soft);color:var(--accent)}
+.note{border-left:3px solid var(--accent);padding:8px 14px;background:var(--card);border-radius:0 8px 8px 0;margin:14px 0;font-size:15px}
+.warn{border-left-color:var(--warn)}
+.phase{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.phase b{font-family:var(--serif);font-size:18px}
+pre.mermaid{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;overflow-x:auto}
+code{font-size:13.5px;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1px 5px}
+.src{font-size:14px;color:var(--muted)}
+@media (max-width:520px){h1{font-size:30px}.phase{grid-template-columns:1fr}}
+</style>
+<div class="wrap">
+<p class="eyebrow" style="margin-top:36px">Product and architecture plan · 18 September 2026</p>
+<h1>Urdu Reader: an offline app for learners and teachers</h1>
+<div class="ur">اردو پڑھنا سیکھیں، کہیں بھی، بغیر انٹرنیٹ</div>
+<p class="sub">How to turn the 13-unit research-backed course into one installable app that works with no internet, on a cheap Android phone, for a child, an adult, a teacher with 30 children and one phone, or a parent abroad. Every drill and every test already in the course is kept. Each design choice points to the research file that supports it (all in <code>research/</code> of the repo).</p>
+
+<h2>1 · Who it is for, and what each person needs</h2>
+<div class="grid">
+<div class="tile"><h3>Learner, child 5 to 10</h3><ul><li>10-minute sessions, 2 to 4 bites each</li><li>Audio first, big Naskh letters, tracing required</li><li>No streak pressure; a small reward per session</li><li>No reading of instructions: icons and voice</li></ul></div>
+<div class="tile"><h3>Learner, adult new to Urdu</h3><ul><li>Same units, faster pace, romanisation shown</li><li>Tracing optional, dictation required</li><li>Progress framed as mastery, not competition</li></ul></div>
+<div class="tile"><h3>Heritage speaker (speaks, cannot read)</h3><ul><li>Placement test skips known ground</li><li>Meaning drills off, decoding drills on</li><li>Roman-Urdu scaffold fades after unit 4</li></ul></div>
+<div class="tile"><h3>Teacher, 30 children, one phone</h3><ul><li>PIN, class roster, instant child switching</li><li>Scripted 40-minute lesson: I do, we do, you do</li><li>EGRA test with timer and auto-scoring</li><li>Class view grouped by reading level, export</li></ul></div>
+<div class="tile"><h3>Parent or tutor at home</h3><ul><li>One or two child profiles, no PIN</li><li>Weekly one-page progress slip</li><li>Guided "sit with your child" mode: the phone says what to do</li></ul></div>
+</div>
+<p class="src">Sources: research/08_teacher_tools.md §1, §4; research/10_learning_design.md §3, §8; research/07_offline_apps.md (onecourse, Kolibri Coach, Ustad Mobile).</p>
+
+<h2>2 · Everything the course already has, and where it lives in the app</h2>
+<div class="tablewrap"><table>
+<tr><th>Course asset</th><th>Count</th><th>App home</th></tr>
+<tr><td>Letters with name, sound, hint, positional forms</td><td>39</td><td>Lesson step 1 and 2; Letter Library; Review deck</td></tr>
+<tr><td>Aspirate pairs, vowel marks, long vowels, numerals</td><td>11 · 6 · 9 · 10</td><td>Unit 0 and unit 6 lesson screens; Reference tab</td></tr>
+<tr><td>Decodable words (bare and vowelled) with audio</td><td>220</td><td>Lesson step 5; Review deck; dictation bank; EGRA familiar-word list</td></tr>
+<tr><td>Sentences with audio</td><td>33</td><td>Lesson step 5; Read library; repeated-reading timer</td></tr>
+<tr><td>Sight words</td><td>20</td><td>Unit 11; Review deck from unit 6 onward</td></tr>
+<tr><td>Cards in Naskh and Nastaliq</td><td>616</td><td>Rendered live from fonts in-app; PNGs kept for print pack</td></tr>
+<tr><td>Audio clips</td><td>474</td><td>Content pack (Opus), about 3 MB</td></tr>
+<tr><td>Tap-what-you-hear, tile word builder, tracer, dictation keyboard, 10-item unit check</td><td>5 drill engines</td><td>Ported as-is from the current template; each becomes a reusable component fed by the same JSON</td></tr>
+<tr><td>EGRA-style test: letter sounds, nonwords, familiar words, passage, 5 questions, cwpm bands</td><td>1 flow</td><td>Teacher mode "Assess"; learner mode self-check version</td></tr>
+<tr><td>Print lessons, answer keys, stroke guidance</td><td>13 units</td><td>Teacher "Lesson script" screen; printable PDF pack</td></tr>
+</table></div>
+
+<h2>3 · How the app is organised</h2>
+<p>One app, three modes chosen on first launch, all sharing one content pack and one local database. Kolibri and onecourse both separate the coach view from the learner view and keep the coach view small; we do the same.</p>
+<pre class="mermaid">
+flowchart LR
+  A[First launch] --> B{Device type}
+  B -->|Personal| L[Learner mode]
+  B -->|Family| P[Parent mode\n1-3 child profiles]
+  B -->|School| T[Teacher mode\nPIN + roster]
+  T --> L2[Learner mode\nper child, tap to switch]
+  P --> L3[Learner mode\nper child]
+  L --> S[Session engine]
+  L2 --> S
+  L3 --> S
+  S --> D[(Local DB\nprofiles · attempts · review cards · assessments)]
+  T --> E[Assess: EGRA flow] --> D
+  T --> R[Class view · groups · export] --> D
+  C[(Content pack v1\nletters.json · units.json · audio · fonts)] --> S
+  C --> E
+</pre>
+
+<h3>Learner mode screens</h3>
+<ol>
+<li><b>Today.</b> One button: start the 10-minute session. Below it: the unit map (13 units), the review count due, the last reading speed.</li>
+<li><b>Session.</b> 2 to 4 bites drawn by the engine: due review cards first (Leitner boxes), then the next lesson step, then one fluency read. Ends with a summary and one small reward.</li>
+<li><b>Lesson.</b> The eight steps already in the course: hear, see, tell apart, join, read, write, dictation, check. Steps can be replayed any time.</li>
+<li><b>Review deck.</b> Letters, words and sight words as cards. Missed items go to box 1 and come back tomorrow; correct items move up (1, 2, 4, 8 days). Confusable letters are always interleaved, never blocked.</li>
+<li><b>Read.</b> Sentences and, from unit 7, short decodable passages. Repeated reading with a visible words-per-minute number and a personal best.</li>
+<li><b>Test yourself.</b> The self-administered version of the reading test: letter sounds, nonwords, familiar words with a timer. Framed as "your reading speed", not a certificate.</li>
+<li><b>Progress.</b> Letters mastered (39), words read, speed over time. For children: pictures, not numbers.</li>
+<li><b>Settings.</b> Track, Naskh or Nastaliq, vowel marks on or off, text size and letter spacing, audio-only mode, romanisation on or off.</li>
+</ol>
+
+<h3>Teacher mode screens (kept to six)</h3>
+<ol>
+<li><b>Class.</b> Roster with a coloured band per child (pre-reader, letters, words, sentences, fluent). Tap a child to open their learner mode. Add child in two taps, no email.</li>
+<li><b>Today's lesson.</b> A 40-minute script for the unit the class is on: I do (10 min, teacher shows the letter cards and plays audio), we do (15 min, chorus reading of the word list), you do (15 min, children rotate through the phone for the tell-apart and dictation drills). Text from <code>course/unit_NN.md</code>.</li>
+<li><b>Groups.</b> Children sorted into the five bands from their latest assessment, with the suggested activity per band (Teaching at the Right Level pattern).</li>
+<li><b>Assess.</b> The EGRA flow, one child at a time, about 8 minutes: letter sounds (60 s), nonwords (60 s), familiar words (60 s), passage (timed, tap each error), 5 comprehension questions. Stop rule: end a subtask after 10 consecutive errors. Scores computed on the spot and mapped to bands (above 90 cwpm exceeds, 60 to 90 meets, under 60 below, 0 nonreader). Big timer, audible stop.</li>
+<li><b>Reports.</b> Class table sortable by speed, a histogram of bands, a one-page parent slip per child, CSV export to a USB drive or by sharing a file. No cloud required.</li>
+<li><b>Content and device.</b> Content pack version, storage used, "keep this device's data" (persistent storage request), teacher PIN change.</li>
+</ol>
+<p class="src">Sources: research/08_teacher_tools.md §3 (Tangerine EGRA flow, stop rules), §4 (shared-device model), §5 (must-haves); research/04_pedagogy.md §9 (benchmarks); research/07_offline_apps.md "Minimal teacher dashboard".</p>
+
+<h2>4 · Learner mode rules that come from the evidence</h2>
+<div class="tablewrap"><table>
+<tr><th>Rule</th><th>Why</th><th>Source</th></tr>
+<tr><td>Session is 10 minutes, split into 2 to 4 bites</td><td>Fits 5 to 8 year old attention; Duolingo Method and Duolingo ABC efficacy study</td><td>10_learning_design §3</td></tr>
+<tr><td>Review before new material, Leitner boxes at launch</td><td>Simple, offline, proven; FSRS later if data justifies it</td><td>10_learning_design §1</td></tr>
+<tr><td>Confusable letters always interleaved (ب ت ن ی together)</td><td>Strongest finding in the pass: interleaving beats blocking for discrimination</td><td>10_learning_design §2; 04_pedagogy §6</td></tr>
+<tr><td>Unit gate stays at 8 of 10; missed items re-queued at session end</td><td>Bloom's 80 percent mastery convention; Duolingo pattern</td><td>10_learning_design §2</td></tr>
+<tr><td>Feedback is immediate, specific and spoken ("two dots, not one"), never a buzzer</td><td>Corrective feedback evidence; avoid discouraging young children</td><td>10_learning_design §4</td></tr>
+<tr><td>Vowel marks on through unit 10; off in unit 11 once nonwords decode</td><td>Diacritics improve speed and accuracy at every tested level</td><td>04_pedagogy §4</td></tr>
+<tr><td>Naskh first, Nastaliq switch in unit 11, both always available</td><td>Lower visual load for beginners; Nastaliq is the real target. Inference, not proven</td><td>04_pedagogy §5</td></tr>
+<tr><td>Tracing required for children, optional for adults</td><td>Handwriting beats typing for letter recognition in children</td><td>10_learning_design §6; 04_pedagogy §8</td></tr>
+<tr><td>Repeated reading with a visible words-per-minute number from unit 7</td><td>One of the best-evidenced fluency features (16 to 21 cwpm gains)</td><td>10_learning_design §5</td></tr>
+<tr><td>No loss-aversion streaks for children; a daily small reward instead</td><td>Duolingo's own children's product avoids streaks</td><td>10_learning_design §3</td></tr>
+<tr><td>Text 16 to 20 pt, adjustable letter spacing, colour-safe feedback, audio-only mode</td><td>WCAG 1.4.12; no Arabic-script dyslexia font exists yet</td><td>10_learning_design §9</td></tr>
+</table></div>
+
+<h2>5 · Every test in the app</h2>
+<div class="tablewrap"><table>
+<tr><th>Test</th><th>Who runs it</th><th>What it measures</th><th>From the course</th></tr>
+<tr><td>Placement (first launch)</td><td>Learner alone</td><td>Letter-sound tap speed, 10 words, 1 sentence, to skip units already known</td><td>New, built from unit checks</td></tr>
+<tr><td>Tell-apart score</td><td>Learner alone</td><td>Recognition of confusable letters, 10 rounds</td><td>Step 3</td></tr>
+<tr><td>Dictation</td><td>Learner alone or with helper</td><td>Sound to spelling, 5 words</td><td>Step 7</td></tr>
+<tr><td>Unit check</td><td>Learner alone</td><td>10 items, 8 to pass</td><td>Step 8</td></tr>
+<tr><td>Reading speed (self)</td><td>Learner alone</td><td>Letter sounds, nonwords, familiar words per minute; directional only</td><td>Unit 12, self-administered version</td></tr>
+<tr><td>EGRA assessment</td><td>Teacher or parent, one to one</td><td>All five subtasks with timers, stop rules, auto-score, band, parent slip</td><td>Unit 12 flow, Tangerine-style</td></tr>
+<tr><td>Fluency retest</td><td>Teacher</td><td>Passage cwpm every four weeks, plotted per child</td><td>Unit 12 benchmarks</td></tr>
+</table></div>
+<div class="note warn">Self-administered scores are formative. The evidence for tap-speed as a fluency proxy is thin, so the app must say "your reading speed today", never "grade 2 certified". Only the teacher-run assessment maps to the benchmark bands.</div>
+
+<h2>6 · Data, offline storage and sync</h2>
+<ul>
+<li><b>Content pack</b> (shared by all profiles): <code>letters.json</code>, <code>units.json</code>, 474 Opus clips, two fonts, print PDFs. Versioned with a manifest and per-file hashes. Estimated 35 to 75 MB; the audio alone is about 3 MB.</li>
+<li><b>Local database</b> (IndexedDB, one store each): profiles, attempts (every drill answer with timestamp), review cards (box and due date), sessions, assessments (EGRA subtask scores), settings. Deterministic IDs (device id + timestamp + record id) so exports from several phones can be merged without clashes.</li>
+<li><b>No account, no server for v1.</b> Backup and sharing by file: export JSON or CSV to the phone's storage, a USB drive, WhatsApp or Bluetooth. Import merges by ID.</li>
+<li><b>Later:</b> LAN sync in a school (Kolibri pattern) or QR-code handoff between a child's phone and the teacher's phone.</li>
+<li><b>Persistence:</b> request persistent storage after the first full download, and warn the teacher when the device is nearly full. Eviction on a full 16 GB phone is a real risk, not a theoretical one.</li>
+</ul>
+<p class="src">Sources: research/09_tech_stack.md §3, §4; research/07_offline_apps.md "Local SQLite + LAN sync", "Modular content bundling".</p>
+
+<h2>7 · Technology choice</h2>
+<p>Progressive Web App first, wrapped for the Play Store with a Trusted Web Activity. Reasons, in order: the whole current course app is already HTML and runs today; Chrome and WebView shape Nastaliq correctly on Android 8 and later; storage quotas cover the pack many times over; one code base serves phone, tablet and a teacher's laptop; Capacitor is available as a fallback if a native API is ever needed. Flutter was rejected because its text engine has known Nastaliq and RTL issues and would force re-writing five working drills.</p>
+<div class="tablewrap"><table>
+<tr><th>Layer</th><th>Choice</th><th>Note</th></tr>
+<tr><td>Shell</td><td>Vanilla HTML, CSS, JS modules; service worker</td><td>Port the current <code>template.html</code> into components; no framework needed at this size</td></tr>
+<tr><td>Distribution</td><td>PWA install plus Play Store via Bubblewrap TWA</td><td>One day for asset links setup</td></tr>
+<tr><td>Audio</td><td>Opus in Ogg, mp3 fallback</td><td>Verify on 2 or 3 real cheap phones before finalising</td></tr>
+<tr><td>Fonts</td><td>Noto Naskh Arabic, Noto Nastaliq Urdu (OFL), bundled</td><td>Live text everywhere; PNG cards only for print</td></tr>
+<tr><td>Data</td><td>IndexedDB via a thin wrapper</td><td>SQLite only if reports need joins</td></tr>
+<tr><td>Speech</td><td>Pre-recorded clips only</td><td>On-device TTS (sherpa-onnx, Urdu Piper voice, about 30 MB) only if teachers later type their own words</td></tr>
+<tr><td>Minimum device</td><td>Android 8, 2 GB RAM, 200 MB free</td><td>Design for today's floor in Pakistan, not next year's</td></tr>
+</table></div>
+<p class="src">Source: research/09_tech_stack.md §1, §2, §5, §6.</p>
+
+<h2>8 · The audio question, settled honestly</h2>
+<p>Today's clips are machine-generated with a local Urdu voice, repaired by your listening test. That is right for a pilot. Every successful offline literacy app in the survey (onecourse, Kitkit, Chimple, Curious Learning, the Noorani Qaida apps) ships native-speaker recordings, and the current model's licence is non-commercial. For version 1 the plan is: record one Pakistani voice reading the 474-item manifest (about an hour of studio time), keep the machine clips as a fallback layer, and keep the <code>audio_check</code> page as the review tool for whoever records.</p>
+<p class="src">Sources: research/07_offline_apps.md "Pre-recorded narration"; research/05_open_assets.md; research/06_tts_bakeoff.md.</p>
+
+<h2>9 · Build plan</h2>
+<div class="phase"><b>Phase 0<br><span class="pill">1 week</span></b><div><b>Foundations.</b> Split the current single file into modules; content pack loader with versions; IndexedDB schema; profiles; service worker; install on two cheap phones and confirm Opus, fonts and storage persistence. Exit: the existing course runs offline from a Play-installed TWA.</div></div>
+<div class="phase"><b>Phase 1<br><span class="pill">2 weeks</span></b><div><b>Learner mode.</b> Session engine (review first, then lesson, then read), Leitner deck, interleaved tell-apart, spoken specific feedback, repeated-reading timer, placement test, tracks and accessibility settings, child-friendly progress. Exit: a child can do ten sessions without an adult and the data survives a reboot.</div></div>
+<div class="phase"><b>Phase 2<br><span class="pill">2 weeks</span></b><div><b>Teacher and parent modes.</b> PIN, roster, instant switching, lesson-of-the-day scripts, EGRA flow with timers and stop rules, bands and groups, parent slip, CSV and JSON export and import. Exit: one teacher assesses five children in 40 minutes and exports a class report on a phone with no internet.</div></div>
+<div class="phase"><b>Phase 3<br><span class="pill">1 week</span></b><div><b>Content v1.</b> Human voice recording, decodable passages for units 7 to 11, printable pack. Exit: content pack 1.0 signed and published.</div></div>
+<div class="phase"><b>Phase 4<br><span class="pill">4 weeks</span></b><div><b>Pilot.</b> Two classrooms plus ten homes; collect attempts and EGRA scores; measure the four-week fluency change; fix what the data says. Exit: a go or no-go on the wider release with numbers, not opinions.</div></div>
+
+<h2>10 · Open decisions for Kamal</h2>
+<ol>
+<li>Brand and name. Standalone product, a Taleemabad offering, or a Rumi companion? This decides fonts, colours and the Play Store listing.</li>
+<li>Recording budget for the human voice, and which voice (a teacher's voice tested with children beats a studio announcer).</li>
+<li>Whether the teacher mode is in the same APK (simpler) or a second app (cleaner store listing). The plan assumes one APK with a device-type choice.</li>
+<li>Pilot partners: which two schools and which diaspora families.</li>
+<li>Whether to keep Roman-Urdu scaffolding for heritage adults or drop it entirely; the evidence is course-description level, not trial level.</li>
+</ol>
+
+<h2>11 · What this plan does not claim</h2>
+<ul>
+<li>Nastaliq stroke-order pedagogy has no published evidence base; the tracer stays at start-side, coverage and stroke count until someone records real stroke data.</li>
+<li>Naskh-first ordering, heritage-learner speed-up and the 10-minute session length are reasoned inferences from adjacent research, not Urdu trials. The pilot in phase 4 is where they get tested.</li>
+<li>Self-administered fluency numbers are directional only.</li>
+<li>Several tech-stack facts (Opus on specific WebViews, persistent storage on full devices) are marked UNVERIFIED in the research until tested on real phones.</li>
+</ul>
+<p class="src">Full research: research/07_offline_apps.md (15 platforms), 08_teacher_tools.md (Tangerine, EGRA, ASER, TaRL, PRP), 09_tech_stack.md (device data, frameworks, storage), 10_learning_design.md (spacing, interleaving, sessions, feedback, fluency, accessibility), plus 00 to 06 from the course build. Repo: <code>~/Documents/free_work/urdu-reading-course</code>.</p>
+</div>
