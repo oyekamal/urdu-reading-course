@@ -175,6 +175,7 @@ async function renderLesson(body, ctx, state, goto) {
   });
   sel.onchange = () => { state.lessonUnit = Number(sel.value); renderLesson(body, ctx, state, goto); };
   head.appendChild(sel);
+  if (unit.hours) { const heavy = unit.hours[0] >= 3; head.appendChild(el('p', 'muted', `Planned time: ${unit.hours[0]} h for children (about ${Math.round(unit.hours[0] * 60 / 40)} lessons of 40 min) · ${unit.hours[1]} h for adults.${heavy ? ' Heavier unit: look-alike letters need extra tell-apart rounds; plan a second lesson before moving on.' : ''}`)); }
   body.appendChild(head);
   const iDo = el('div', 'card');
   iDo.appendChild(el('h2', '', 'I do — 10 min: teacher shows each new letter'));
