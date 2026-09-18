@@ -1,6 +1,8 @@
 // Drill engines, ported from the course app. Each returns a DOM node and reports results via ctx.record(drill, item, correct, ms).
 import { C, play, forms, W, shuffle, wordKey, taughtBefore, STROKE, DOTS, el, toast } from './content.js';
 
+export const formsOf = l => forms(l);
+export const strokeHint = l => STROKE[l.family] || 'body first in one stroke, right to left; dots last';
 export function playBtn(key, small) { const b = el('button', 'btn btn-play' + (small ? ' small' : ''), '▶'); b.setAttribute('aria-label', 'Play'); b.onclick = e => { e.stopPropagation(); if (!play(key)) toast('No audio for this item'); }; return b; }
 const disp = (w, marks) => marks ? w.v : w.ur;
 
@@ -19,16 +21,17 @@ export function letterCard(l, ctx) {
 }
 
 // Tap what you hear: pool of confusable letters + 2 recall letters; target always shown.
-export function tellApart(unit, ctx, onDone) {
-  const have = new Set([...taughtBefore(unit.n), ...unit.letters]);
-  let pool = [...new Set(unit.letters.flatMap(c => [c, ...(C.by[c]?.confusable || [])]))].filter(c => have.has(c) && C.by[c]);
-  pool = [...pool, ...shuffle([...taughtBefore(unit.n)].filter(c => C.by[c] && !pool.includes(c))).slice(0, 2)];
+export function tellApart(unit, ctx, onDone, opts = {}) {
+  const focus = opts.letters || unit.letters; const rounds = opts.rounds || 10;
+  const have = new Set([...taughtBefore(unit.n), ...(opts.learned || unit.letters)]);
+  let pool = [...new Set(focus.flatMap(c => [c, ...(C.by[c]?.confusable || [])]))].filter(c => have.has(c) && C.by[c]);
+  pool = [...pool, ...shuffle([...have].filter(c => C.by[c] && !pool.includes(c))).slice(0, Math.max(0, 4 - pool.length + 2))];
+  if (pool.length < 2) pool = [...new Set([...focus, ...shuffle(C.letters.letters.map(l => l.ch)).slice(0, 3)])];
   const box = el('div', 'card'); box.innerHTML = '<h2>Tap what you hear</h2>';
-  if (pool.length < 2) { box.append(el('p', 'muted', 'No look-alike letters yet. Skip.')); onDone && onDone(0, 0); return box; }
   const status = el('div', 'score'), choices = el('div', 'choices'), btn = el('button', 'btn btn-primary', 'Play sound'); let round = 0, score = 0, target, t0;
   function next() {
-    if (round >= 10) { status.textContent = `Done: ${score}/10`; choices.innerHTML = ''; btn.textContent = 'Again'; btn.onclick = () => { round = 0; score = 0; next(); }; onDone && onDone(score, 10); return; }
-    round++; target = pool[Math.floor(Math.random() * pool.length)]; status.textContent = `Round ${round}/10 · ${score} right`;
+    if (round >= rounds) { status.textContent = `Done: ${score}/${rounds}`; choices.innerHTML = ''; btn.textContent = 'Again'; btn.onclick = () => { round = 0; score = 0; next(); }; onDone && onDone(score, rounds); return; }
+    round++; target = opts.letters && Math.random() < 0.6 ? focus[Math.floor(Math.random() * focus.length)] : pool[Math.floor(Math.random() * pool.length)]; status.textContent = `Round ${round}/${rounds} · ${score} right`;
     choices.innerHTML = ''; shuffle([target, ...shuffle(pool.filter(c => c !== target)).slice(0, 5)]).forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c].name); t.onclick = () => { const ok = c === target; ctx.record('tell', target, ok, Date.now() - t0); if (ok) { t.classList.add('ok'); t.setAttribute('aria-label', C.by[c].name + ', correct'); score++; toast('Correct: ' + C.by[c].name); setTimeout(next, 450); } else { t.classList.add('no'); t.setAttribute('aria-label', C.by[c].name + ', wrong'); toast(hintFor(target, c)); play('names/' + C.by[c].id); } }; choices.append(t); });
     t0 = Date.now(); play('names/' + C.by[target].id); btn.textContent = 'Play again'; btn.onclick = () => play('names/' + C.by[target].id);
   }
@@ -41,24 +44,24 @@ export function joinIt(unit, ctx, marks, onDone) {
   const words = unit.words.map(W).filter(w => w.ur.length >= 3).slice(0, 6); if (!words.length) return null;
   const box = el('div', 'card'); box.innerHTML = '<h2>Build the word</h2><p class="muted">Tap the letters in reading order, right to left.</p>';
   const target = el('div', 'answer ur'), tiles = el('div', 'choices'), info = el('div', 'row'), nextB = el('button', 'btn', 'Next word'); let i = 0, cur = '', done = 0, t0;
-  function load() { const w = words[i % words.length]; cur = ''; target.textContent = ''; t0 = Date.now(); info.innerHTML = `Make: <b>${w.rom}</b> — ${w.en} `; info.append(playBtn(wordKey(unit.n, unit.words.findIndex(x => x[0] === w.ur)), true));
+  function load() { const w = words[i % words.length]; cur = ''; target.textContent = ''; t0 = Date.now(); info.innerHTML = `Make: <b>${w.rom}</b> — ${w.en} `; info.append(playBtn(wordKey(unit.n, unit.words.findIndex(x => x[0] === w.ur) + (unit.wordOffset || 0)), true));
     tiles.innerHTML = ''; shuffle([...w.ur]).forEach(c => { const t = el('button', 'tile small ur', c); t.setAttribute('aria-label', C.by[c]?.name || c); t.onclick = () => { if (w.ur[cur.length] === c) { cur += c; target.textContent = cur; t.disabled = true; t.classList.add('ok'); if (cur === w.ur) { toast('Correct: ' + w.rom); target.textContent = disp(w, marks()); ctx.record('join', w.ur, true, Date.now() - t0); if (++done >= 3 && onDone) onDone(done, 3); } } else { t.classList.add('no'); setTimeout(() => t.classList.remove('no'), 400); ctx.record('join', w.ur, false, Date.now() - t0); } }; tiles.append(t); }); }
   nextB.onclick = () => { i++; load(); }; load(); box.append(info, target, tiles, nextB); return box;
 }
 
-export function readIt(unit, ctx, marks) {
-  if (!unit.words.length) return null;
+export function readIt(unit, ctx, marks, range) {
+  if (!unit.words.length) return null; const [lo, hi] = range || [0, unit.words.length];
   const box = el('div', 'card'); box.innerHTML = `<h2>Read</h2><p class="muted">Read aloud, then tap to listen.</p>`;
   const g = el('div', 'words');
-  unit.words.map(W).forEach((w, i) => { const d = el('div', 'word'); d.innerHTML = `<div class="ur">${disp(w, marks())}</div><div class="rom">${w.rom}</div><div class="en">${w.en}</div>`; d.append(playBtn(wordKey(unit.n, i), true)); d.onclick = () => { play(wordKey(unit.n, i)); d.classList.add('reveal'); ctx.record('read', w.ur, true, 0); }; g.append(d); });
+  unit.words.map(W).forEach((w, i) => { if (i < lo || i >= hi) return; const d = el('div', 'word'); d.innerHTML = `<div class="ur">${disp(w, marks())}</div><div class="rom">${w.rom}</div><div class="en">${w.en}</div>`; d.append(playBtn(wordKey(unit.n, i + (unit.wordOffset || 0)), true)); d.onclick = () => { play(wordKey(unit.n, i + (unit.wordOffset || 0))); d.classList.add('reveal'); ctx.record('read', w.ur, true, 0); }; g.append(d); });
   box.append(g);
-  if (unit.sentences.length) { box.append(el('h3', '', 'Sentences')); unit.sentences.map(W).forEach((w, i) => { const d = el('div', 'row', ''); d.style.cssText = 'padding:8px 0;border-top:1px solid var(--line)'; d.append(playBtn(`sentences/u${String(unit.n).padStart(2, '0')}_${String(i).padStart(2, '0')}`)); d.insertAdjacentHTML('beforeend', `<span class="ur" style="font-size:28px;flex:1;min-width:180px;text-align:right">${disp(w, marks())}</span><span class="rom muted">${w.rom}</span><span class="muted">${w.en}</span>`); box.append(d); }); }
+  if (unit.sentences.length && !range) { box.append(el('h3', '', 'Sentences')); unit.sentences.map(W).forEach((w, i) => { const d = el('div', 'row', ''); d.style.cssText = 'padding:8px 0;border-top:1px solid var(--line)'; d.append(playBtn(`sentences/u${String(unit.n).padStart(2, '0')}_${String(i).padStart(2, '0')}`)); d.insertAdjacentHTML('beforeend', `<span class="ur" style="font-size:28px;flex:1;min-width:180px;text-align:right">${disp(w, marks())}</span><span class="rom muted">${w.rom}</span><span class="muted">${w.en}</span>`); box.append(d); }); }
   return box;
 }
 
 // Tracing: grey glyph, finger stroke, start-side + coverage + stroke-count feedback.
-export function writeIt(unit, ctx, styleName, onDone) {
-  const ls = unit.letters.map(c => C.by[c]).filter(Boolean); if (!ls.length) return null;
+export function writeIt(unit, ctx, styleName, onDone, letters) {
+  const ls = (letters || unit.letters).map(c => C.by[c]).filter(Boolean); if (!ls.length) return null;
   const box = el('div', 'card'); box.innerHTML = '<h2>Trace</h2><p class="muted">Start at the green dot. Body first, dots last.</p>';
   const sel = el('select'), formSel = el('select'), cv = el('canvas', 'trace'), out = el('div', 'score'), clear = el('button', 'btn', 'Clear'), check = el('button', 'btn btn-primary', 'Check');
   ls.forEach(l => sel.append(new Option(l.name + ' ' + l.ch, l.ch))); ['isolated', 'initial', 'medial', 'final'].forEach(f => formSel.append(new Option(f, f)));
@@ -88,7 +91,7 @@ export function dictation(unit, ctx, marks, onDone) {
   let items = shuffle(unit.words.map((w, i) => ({ w: W(w), i }))).slice(0, 5), k = 0, typed = '', score = 0, t0;
   [...keysAll, ...(unit.n >= 10 ? ['ء', 'ئ', 'ؤ', 'آ'] : [])].forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c]?.name || c); t.onclick = () => { typed += c; ans.textContent = typed; }; keys.append(t); });
   back.onclick = () => { typed = [...typed].slice(0, -1).join(''); ans.textContent = typed; };
-  const key = () => wordKey(unit.n, items[k].i);
+  const key = () => wordKey(unit.n, items[k].i + (unit.wordOffset || 0));
   function show() { if (k >= items.length) { checkB.disabled = true; skipB.disabled = true; back.disabled = true; status.textContent = `Done: ${score}/5`; playB.textContent = 'Again'; playB.onclick = () => { items = shuffle(unit.words.map((w, i) => ({ w: W(w), i }))).slice(0, 5); k = 0; score = 0; checkB.disabled = false; skipB.disabled = false; back.disabled = false; show(); }; onDone && onDone(score, 5); return; } typed = ''; ans.textContent = ''; t0 = Date.now(); status.textContent = `Word ${k + 1}/5 · ${score} right`; playB.textContent = 'Play word'; playB.onclick = () => play(key()); play(key()); }
   checkB.onclick = () => { if (k >= items.length) return; const w = items[k].w; const ok = typed === w.ur; ctx.record('dictation', w.ur, ok, Date.now() - t0); if (ok) { score++; ans.textContent = disp(w, marks()); toast('Correct — ' + w.rom + ' (' + w.en + ')'); k++; setTimeout(show, 900); } else { ans.classList.add('no'); setTimeout(() => ans.classList.remove('no'), 500); toast(typed.length !== w.ur.length ? `${w.ur.length} letters in this word` : 'Not yet. Listen again.'); } };
   skipB.onclick = () => { if (k >= items.length) return; toast('It was ' + items[k].w.v + ' — ' + items[k].w.rom); ctx.record('dictation', items[k].w.ur, false, 0); k++; setTimeout(show, 900); };

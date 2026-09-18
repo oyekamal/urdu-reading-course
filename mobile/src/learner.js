@@ -4,6 +4,7 @@ import { C, play, W, shuffle, wordKey, sentKey, el, toast, bandFor } from './con
 import * as D from './drills.js';
 import * as S from './session.js';
 import { renderDashboard } from './dashboard.js';
+import { renderPath, runLesson } from './path.js';
 
 export async function renderLearner(root, ctx) {
   const { profile } = ctx; const st = { tab: 'today' };
@@ -13,18 +14,18 @@ export async function renderLearner(root, ctx) {
   await S.ensureCards(profile.id, await S.currentUnit(profile.id));
   root.innerHTML = ''; const main = el('div'); root.append(main);
   const nav = el('div', 'bottom'); root.append(nav);
-  const tabs = [['today', '🏠', 'Today'], ['units', '📚', 'Units'], ['review', '🔁', 'Review'], ['read', '📖', 'Read'], ['progress', '📈', 'Progress'], ['more', '⚙️', 'More']];
+  const tabs = [['today', '🏠', 'Learn'], ['units', '📚', 'Units'], ['review', '🔁', 'Review'], ['read', '📖', 'Read'], ['progress', '📈', 'Progress'], ['more', '⚙️', 'More']];
   tabs.forEach(([k, ic, lab]) => { const b = el('button', k === st.tab ? 'active' : '', `<span>${ic}</span>${lab}`); b.onclick = () => { st.tab = k; render(); }; b.dataset.k = k; nav.append(b); });
-  async function render() { [...nav.children].forEach(b => b.classList.toggle('active', b.dataset.k === st.tab)); main.innerHTML = ''; window.scrollTo(0, 0); await ({ today, units, review, read, progress, more, lesson, session, test }[st.tab])(); }
+  async function render() { [...nav.children].forEach(b => b.classList.toggle('active', b.dataset.k === st.tab)); main.innerHTML = ''; window.scrollTo(0, 0); await ({ today, units, review, read, progress, more, lesson, session, test, path }[st.tab])(); }
+  const pctx = () => ({ profile, marks, styleName, dctx, unit0, aspirates, izafat, punctuation, unit11, sightDrill, go: t => { st.tab = t; render(); }, openLesson: (u, i) => { st.unitN = u.n; st.lessonU = u; st.lessonI = i; st.tab = 'path'; main.innerHTML = ''; runLesson(main, pctx(), u, i); } });
+  async function path() { if (st.lessonU) { const u = st.lessonU, i = st.lessonI; st.lessonU = null; return runLesson(main, pctx(), u, i); } await header(greeting(profile), 'One small lesson at a time'); await renderPath(main, pctx()); }
 
   async function header(title, sub) { const h = el('div', 'row', ''); h.style.justifyContent = 'space-between'; h.innerHTML = `<div><h1>${title}</h1>${sub ? `<div class="muted">${sub}</div>` : ''}</div>`; const who = el('button', 'btn', `${profile.name} ▾`); who.onclick = ctx.switchProfile; h.append(who); main.append(h); }
 
   async function today() {
-    const cur = await S.currentUnit(profile.id); const s = await S.stats(profile.id); const u = C.units[cur];
-    await header(greeting(profile), `Unit ${cur} · ${u.title}`);
-    const card = el('div', 'card hero'); card.innerHTML = `<div class="ur">${u.title_ur}</div><div class="muted">${s.due} cards to review · ${s.lettersMastered}/${s.letters} letters solid</div>`;
-    const go = el('button', 'btn btn-primary btn-wide', s.sessions ? 'Start today\'s 10 minutes' : 'Start your first session'); go.onclick = () => { st.tab = 'session'; render(); }; card.append(go);
-    const open = el('button', 'btn btn-wide', `Open unit ${cur} lesson`); open.onclick = () => { st.unitN = cur; st.tab = 'lesson'; render(); }; card.append(open); main.append(card);
+    const cur = await S.currentUnit(profile.id); const s = await S.stats(profile.id);
+    await header(greeting(profile), `Unit ${cur} · ${C.units[cur].title} · one small lesson at a time`);
+    await renderPath(main, pctx());
     if (s.wpm.length) { const last = s.wpm[s.wpm.length - 1]; main.append(el('div', 'card', `<b>Last reading speed:</b> ${last.wpm} words per minute <span class="pill ${bandFor(last.wpm)}">${bandFor(last.wpm)}</span>`)); }
     if (cur === 0 && !s.sessions) { const pl = el('div', 'card'); pl.innerHTML = '<h2>Already read some Urdu?</h2><p class="muted">A 2-minute placement check skips the units you already know.</p>'; const b = el('button', 'btn', 'Take the placement check'); b.onclick = () => placement(); pl.append(b); main.append(pl); }
     if (ctx.mode !== 'school') { const rp = el('button', 'btn btn-wide', 'Parent report for ' + profile.name); rp.onclick = () => parentReport(); main.append(rp); }

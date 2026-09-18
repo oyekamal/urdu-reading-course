@@ -11,6 +11,7 @@ export async function ensureCards(profileId, unitN) {
   if (unitN >= 6) C.letters.sight_words.forEach((w, i) => items.push({ item: w, kind: 'sight', idx: i }));
   for (const it of items) if (!have.has(it.item)) await db.put('cards', { id: profileId + ':' + it.item, profileId, ...it, box: 1, due: Date.now(), seen: 0 });
 }
+export async function ensureCardsFor(profileId, letters) { const have = new Set((await db.by('cards', 'profileId', profileId)).map(c => c.item)); for (const c of letters) if (C.by[c] && !have.has(c)) await db.put('cards', { id: profileId + ':' + c, profileId, item: c, kind: 'letter', box: 1, due: Date.now() + DAY, seen: 0 }); }
 export async function dueCards(profileId, limit = 12) {
   const now = Date.now(); const all = await db.by('cards', 'profileId', profileId);
   return all.filter(c => c.due <= now).sort((a, b) => a.box - b.box || a.due - b.due).slice(0, limit);
@@ -26,7 +27,7 @@ export function audioKeyFor(card) {
 }
 export async function getProgress(profileId) { return (await db.get('progress', profileId)) || { id: profileId, units: {}, wpm: [], sessions: 0 }; }
 export async function markUnit(profileId, n, score, total) {
-  const p = await getProgress(profileId); const passed = score >= Math.ceil(total * 0.8) || p.units[n]?.passed; p.units[n] = { passed, score, total, at: Date.now() }; await db.put('progress', p); return passed;
+  const p = await getProgress(profileId); const passed = score >= Math.ceil(total * 0.8) || p.units[n]?.passed; p.units[n] = { ...(p.units[n] || {}), passed, score, total, at: Date.now() }; await db.put('progress', p); return passed;
 }
 export async function currentUnit(profileId) { const p = await getProgress(profileId); let n = 0; while (p.units[n]?.passed && n < 12) n++; return n; }
 export async function startSession(profileId) { const s = { id: uid(), profileId, startedAt: Date.now(), bites: [], correct: 0, total: 0 }; await db.put('sessions', s); return s; }
