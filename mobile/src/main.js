@@ -55,7 +55,7 @@ async function addProfile(onDone) {
   const back = el('button', 'btn', 'Back'); back.onclick = home; c.append(lab('Name', name), lab('Track', track), lab('Grade', grade), lab('Picture', av), ok, back); root.append(c);
 }
 
-async function learner(p) { await db.setting('activeProfile', p.id); document.body.dataset.track = p.track; renderLearner(root, { ...ctxBase, profile: p, mode: await db.setting('mode') }); }
+async function learner(p, backTo) { await db.setting('activeProfile', p.id); document.body.dataset.track = p.track; renderLearner(root, { ...ctxBase, profile: p, mode: await db.setting('mode'), switchProfile: backTo || home }); }
 
 async function teacherGate() {
   const pin = await db.setting('teacherPin'); if (!pin) return setupTeacher();
@@ -66,7 +66,7 @@ async function teacher() {
   const { renderTeacher } = await import('./teacher.js');
   await db.setting('activeProfile', null);
   const { C, play } = await import('./content.js');
-  renderTeacher(root, { db, C, play, settings, openLearner: async id => learner(await db.get('profiles', id)), lock: home, exportBackup, addProfile: () => addProfile(() => teacher()) });
+  renderTeacher(root, { db, C, play, settings, openLearner: async id => learner(await db.get('profiles', id), teacher), lock: home, exportBackup, addProfile: () => addProfile(() => teacher()) });
 }
 
 async function exportBackup() {

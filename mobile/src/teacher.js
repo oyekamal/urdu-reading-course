@@ -140,13 +140,15 @@ async function renderClass(body, ctx, state, goto) {
   const nameInp = document.createElement('input'); nameInp.placeholder = 'Name';
   const gradeSel = document.createElement('select');
   [1, 2, 3, 4, 5].forEach(g => { const o = document.createElement('option'); o.value = String(g); o.textContent = `Grade ${g}`; gradeSel.appendChild(o); });
-  row.appendChild(nameInp); row.appendChild(gradeSel);
+  const trackSel = document.createElement('select');
+  [['child', 'Child'], ['adult', 'Adult'], ['heritage', 'Speaks Urdu']].forEach(([v, t]) => { const o = document.createElement('option'); o.value = v; o.textContent = t; trackSel.appendChild(o); });
+  row.appendChild(nameInp); row.appendChild(gradeSel); row.appendChild(trackSel);
   addCard.appendChild(row);
   const addBtn = el('button', 'btn btn-primary', 'Add child');
   addBtn.onclick = async () => {
     const name = nameInp.value.trim();
     if (!name) { toast('Enter a name'); return; }
-    await db.put('profiles', { id: uid(), name, grade: Number(gradeSel.value), track: 'child', kind: 'learner', unit: 0, createdAt: Date.now() });
+    await db.put('profiles', { id: uid(), name, grade: Number(gradeSel.value), track: trackSel.value, kind: 'learner', unit: 0, createdAt: Date.now() });
     toast('Child added');
     renderClass(body, ctx, state, goto);
   };
