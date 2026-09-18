@@ -55,7 +55,7 @@ async function addProfile(onDone) {
   const back = el('button', 'btn', 'Back'); back.onclick = home; c.append(lab('Name', name), lab('Track', track), lab('Grade', grade), lab('Picture', av), ok, back); root.append(c);
 }
 
-async function learner(p) { await db.setting('activeProfile', p.id); document.body.dataset.track = p.track; renderLearner(root, { ...ctxBase, profile: p }); }
+async function learner(p) { await db.setting('activeProfile', p.id); document.body.dataset.track = p.track; renderLearner(root, { ...ctxBase, profile: p, mode: await db.setting('mode') }); }
 
 async function teacherGate() {
   const pin = await db.setting('teacherPin'); if (!pin) return setupTeacher();
