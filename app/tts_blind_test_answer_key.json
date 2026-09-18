@@ -1,0 +1,32 @@
+{
+  "t01": {
+    "A": "baseline",
+    "B": "sharjeel103",
+    "sentence": "یہ میری کتاب ہے۔"
+  },
+  "t02": {
+    "A": "baseline",
+    "B": "syedmuhammad",
+    "sentence": "یہ میری کتاب ہے۔"
+  },
+  "t03": {
+    "A": "sharjeel103",
+    "B": "baseline",
+    "sentence": "بچے اسکول جاتے ہیں لیکن آج چھٹی ہے۔"
+  },
+  "t04": {
+    "A": "baseline",
+    "B": "syedmuhammad",
+    "sentence": "بچے اسکول جاتے ہیں لیکن آج چھٹی ہے۔"
+  },
+  "t05": {
+    "A": "baseline",
+    "B": "sharjeel103",
+    "sentence": "اگر بارش ہوئی تو ہم گھر پر رہیں گے۔"
+  },
+  "t06": {
+    "A": "baseline",
+    "B": "syedmuhammad",
+    "sentence": "اگر بارش ہوئی تو ہم گھر پر رہیں گے۔"
+  }
+}

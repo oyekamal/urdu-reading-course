@@ -16,10 +16,14 @@
 ![nūn g͟hunna card](../assets/images/letters/nun_ghunna_naskh.png)
 ![nūn g͟hunna forms](../assets/images/forms/nun_ghunna_naskh.png)
 
+✎ *How the pen moves:* the same bowl as ب but deeper and rounder; dot after (none for ں). (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ھ do-chashmī he** — joins forward (4 forms). No Urdu word begins with it.
 
 ![do-chashmī he card](../assets/images/letters/do_chashmi_he_naskh.png)
 ![do-chashmī he forms](../assets/images/forms/do_chashmi_he_naskh.png)
+
+✎ *How the pen moves:* ہ is a small loop with a short tail; ھ is two connected bowls open at the top. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 ## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
@@ -71,10 +75,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: مَیں, ہاں, کَہاں, ہَیں, گَھر.
 
-**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
-
-- ں nūn g͟hunna: the same bowl as ب but deeper and rounder; dot after (none for ں).
-- ھ do-chashmī he: ہ is a small loop with a short tail; ھ is two connected bowls open at the top.
+Pen movement for each letter is described in step 2 above.
 
 ## 7 · Dictation  ·  *production · self-check with the key below*
 

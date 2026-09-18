@@ -30,7 +30,7 @@ cd app && python3 -m http.server 8765      # then open http://localhost:8765/ind
 ```bash
 python3 scripts/check_decodable.py   # every unit word uses only letters taught so far
 python3 scripts/render_cards.py      # PNG cards (PIL + libraqm, both scripts)
-python3 scripts/gen_audio.py         # local TTS, facebook/mms-tts-urd-script_arabic, CPU is fine
+python3 scripts/gen_audio.py         # local TTS, sharjeel103/mms-tts-urdu-finetune (bake-off winner), CPU is fine
 python3 scripts/verify_audio.py      # Whisper smoke test -> assets/audio/verify.json
 python3 scripts/build_course.py      # course/unit_NN.md
 python3 scripts/build_app.py         # app/index.html + app/audio.json
@@ -41,6 +41,6 @@ Python needs: torch, transformers, soundfile, Pillow (with libraqm), openai-whis
 ## Licences and honesty
 
 - Fonts: SIL Open Font License. Word/sentence corpus: Tatoeba, CC BY 2.0.
-- Audio: generated with Meta MMS-TTS (CC BY-NC 4.0). Fine for a pilot; for a commercial client, record a native speaker or use a paid Pakistani TTS. See `research/05_open_assets.md`.
+- Audio: generated with an MMS-VITS fine-tune (base model CC BY-NC 4.0; fine-tune licence unstated, treat as the same). Fine for a pilot; for a commercial client, record a native speaker or use a paid Pakistani TTS. See `research/05_open_assets.md`.
 - The audio is machine voice. It was smoke-tested for intelligibility, not judged for accent. Use `app/audio_check.html` to flag bad clips.
 - Design choices marked *inference* in `course/00_design.md` (Naskh-first, heritage-track speed) are reasoned, not proven.

@@ -1,0 +1,2846 @@
+[
+ {
+  "kind": "names",
+  "id": "alif",
+  "text": "الف",
+  "file": "names/alif.wav"
+ },
+ {
+  "kind": "words",
+  "id": "alif",
+  "text": "اب",
+  "file": "words/alif.wav"
+ },
+ {
+  "kind": "names",
+  "id": "be",
+  "text": "بے",
+  "file": "names/be.wav"
+ },
+ {
+  "kind": "words",
+  "id": "be",
+  "text": "بابا",
+  "file": "words/be.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "be_a",
+  "text": "با",
+  "file": "syllables/be_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "be_i",
+  "text": "بی",
+  "file": "syllables/be_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "be_u",
+  "text": "بو",
+  "file": "syllables/be_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "kaf",
+  "text": "کاف",
+  "file": "names/kaf.wav"
+ },
+ {
+  "kind": "words",
+  "id": "kaf",
+  "text": "کام",
+  "file": "words/kaf.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "kaf_a",
+  "text": "کا",
+  "file": "syllables/kaf_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "kaf_i",
+  "text": "کی",
+  "file": "syllables/kaf_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "kaf_u",
+  "text": "کو",
+  "file": "syllables/kaf_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "lam",
+  "text": "لام",
+  "file": "names/lam.wav"
+ },
+ {
+  "kind": "words",
+  "id": "lam",
+  "text": "لال",
+  "file": "words/lam.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "lam_a",
+  "text": "لا",
+  "file": "syllables/lam_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "lam_i",
+  "text": "لی",
+  "file": "syllables/lam_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "lam_u",
+  "text": "لو",
+  "file": "syllables/lam_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "mim",
+  "text": "میم",
+  "file": "names/mim.wav"
+ },
+ {
+  "kind": "words",
+  "id": "mim",
+  "text": "مکان",
+  "file": "words/mim.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "mim_a",
+  "text": "ما",
+  "file": "syllables/mim_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "mim_i",
+  "text": "می",
+  "file": "syllables/mim_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "mim_u",
+  "text": "مو",
+  "file": "syllables/mim_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "nun",
+  "text": "نون",
+  "file": "names/nun.wav"
+ },
+ {
+  "kind": "words",
+  "id": "nun",
+  "text": "نام",
+  "file": "words/nun.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "nun_a",
+  "text": "نا",
+  "file": "syllables/nun_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "nun_i",
+  "text": "نی",
+  "file": "syllables/nun_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "nun_u",
+  "text": "نو",
+  "file": "syllables/nun_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "te",
+  "text": "تے",
+  "file": "names/te.wav"
+ },
+ {
+  "kind": "words",
+  "id": "te",
+  "text": "تین",
+  "file": "words/te.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "te_a",
+  "text": "تا",
+  "file": "syllables/te_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "te_i",
+  "text": "تی",
+  "file": "syllables/te_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "te_u",
+  "text": "تو",
+  "file": "syllables/te_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "choti_ye",
+  "text": "چھوٹی یے",
+  "file": "names/choti_ye.wav"
+ },
+ {
+  "kind": "words",
+  "id": "choti_ye",
+  "text": "یار",
+  "file": "words/choti_ye.wav"
+ },
+ {
+  "kind": "names",
+  "id": "bari_ye",
+  "text": "بڑی یے",
+  "file": "names/bari_ye.wav"
+ },
+ {
+  "kind": "words",
+  "id": "bari_ye",
+  "text": "لے",
+  "file": "words/bari_ye.wav"
+ },
+ {
+  "kind": "names",
+  "id": "pe",
+  "text": "پے",
+  "file": "names/pe.wav"
+ },
+ {
+  "kind": "words",
+  "id": "pe",
+  "text": "پانی",
+  "file": "words/pe.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "pe_a",
+  "text": "پا",
+  "file": "syllables/pe_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "pe_i",
+  "text": "پی",
+  "file": "syllables/pe_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "pe_u",
+  "text": "پو",
+  "file": "syllables/pe_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "tte",
+  "text": "ٹے",
+  "file": "names/tte.wav"
+ },
+ {
+  "kind": "words",
+  "id": "tte",
+  "text": "ٹوپی",
+  "file": "words/tte.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "tte_a",
+  "text": "ٹا",
+  "file": "syllables/tte_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "tte_i",
+  "text": "ٹی",
+  "file": "syllables/tte_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "tte_u",
+  "text": "ٹو",
+  "file": "syllables/tte_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "se",
+  "text": "ثے",
+  "file": "names/se.wav"
+ },
+ {
+  "kind": "words",
+  "id": "se",
+  "text": "ثمر",
+  "file": "words/se.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "se_a",
+  "text": "ثا",
+  "file": "syllables/se_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "se_i",
+  "text": "ثی",
+  "file": "syllables/se_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "se_u",
+  "text": "ثو",
+  "file": "syllables/se_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "wao",
+  "text": "واؤ",
+  "file": "names/wao.wav"
+ },
+ {
+  "kind": "words",
+  "id": "wao",
+  "text": "وہ",
+  "file": "words/wao.wav"
+ },
+ {
+  "kind": "names",
+  "id": "re",
+  "text": "رے",
+  "file": "names/re.wav"
+ },
+ {
+  "kind": "words",
+  "id": "re",
+  "text": "رات",
+  "file": "words/re.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "re_a",
+  "text": "را",
+  "file": "syllables/re_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "re_i",
+  "text": "ری",
+  "file": "syllables/re_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "re_u",
+  "text": "رو",
+  "file": "syllables/re_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "dal",
+  "text": "دال",
+  "file": "names/dal.wav"
+ },
+ {
+  "kind": "words",
+  "id": "dal",
+  "text": "دو",
+  "file": "words/dal.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "dal_a",
+  "text": "دا",
+  "file": "syllables/dal_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "dal_i",
+  "text": "دی",
+  "file": "syllables/dal_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "dal_u",
+  "text": "دو",
+  "file": "syllables/dal_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "he",
+  "text": "ہے / گول ہے",
+  "file": "names/he.wav"
+ },
+ {
+  "kind": "words",
+  "id": "he",
+  "text": "ہم",
+  "file": "words/he.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "he_a",
+  "text": "ہا",
+  "file": "syllables/he_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "he_i",
+  "text": "ہی",
+  "file": "syllables/he_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "he_u",
+  "text": "ہو",
+  "file": "syllables/he_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "sin",
+  "text": "سین",
+  "file": "names/sin.wav"
+ },
+ {
+  "kind": "words",
+  "id": "sin",
+  "text": "سال",
+  "file": "words/sin.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "sin_a",
+  "text": "سا",
+  "file": "syllables/sin_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "sin_i",
+  "text": "سی",
+  "file": "syllables/sin_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "sin_u",
+  "text": "سو",
+  "file": "syllables/sin_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "shin",
+  "text": "شین",
+  "file": "names/shin.wav"
+ },
+ {
+  "kind": "words",
+  "id": "shin",
+  "text": "شام",
+  "file": "words/shin.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "shin_a",
+  "text": "شا",
+  "file": "syllables/shin_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "shin_i",
+  "text": "شی",
+  "file": "syllables/shin_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "shin_u",
+  "text": "شو",
+  "file": "syllables/shin_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "jim",
+  "text": "جیم",
+  "file": "names/jim.wav"
+ },
+ {
+  "kind": "words",
+  "id": "jim",
+  "text": "جوتا",
+  "file": "words/jim.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "jim_a",
+  "text": "جا",
+  "file": "syllables/jim_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "jim_i",
+  "text": "جی",
+  "file": "syllables/jim_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "jim_u",
+  "text": "جو",
+  "file": "syllables/jim_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "che",
+  "text": "چے",
+  "file": "names/che.wav"
+ },
+ {
+  "kind": "words",
+  "id": "che",
+  "text": "چار",
+  "file": "words/che.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "che_a",
+  "text": "چا",
+  "file": "syllables/che_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "che_i",
+  "text": "چی",
+  "file": "syllables/che_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "che_u",
+  "text": "چو",
+  "file": "syllables/che_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "gaf",
+  "text": "گاف",
+  "file": "names/gaf.wav"
+ },
+ {
+  "kind": "words",
+  "id": "gaf",
+  "text": "گلاب",
+  "file": "words/gaf.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "gaf_a",
+  "text": "گا",
+  "file": "syllables/gaf_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "gaf_i",
+  "text": "گی",
+  "file": "syllables/gaf_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "gaf_u",
+  "text": "گو",
+  "file": "syllables/gaf_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "nun_ghunna",
+  "text": "نون غنہ",
+  "file": "names/nun_ghunna.wav"
+ },
+ {
+  "kind": "words",
+  "id": "nun_ghunna",
+  "text": "میں",
+  "file": "words/nun_ghunna.wav"
+ },
+ {
+  "kind": "names",
+  "id": "do_chashmi_he",
+  "text": "دو چشمی ہے",
+  "file": "names/do_chashmi_he.wav"
+ },
+ {
+  "kind": "words",
+  "id": "do_chashmi_he",
+  "text": "گھر",
+  "file": "words/do_chashmi_he.wav"
+ },
+ {
+  "kind": "names",
+  "id": "ddal",
+  "text": "ڈال",
+  "file": "names/ddal.wav"
+ },
+ {
+  "kind": "words",
+  "id": "ddal",
+  "text": "ڈاک",
+  "file": "words/ddal.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "ddal_a",
+  "text": "ڈا",
+  "file": "syllables/ddal_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "ddal_i",
+  "text": "ڈی",
+  "file": "syllables/ddal_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "ddal_u",
+  "text": "ڈو",
+  "file": "syllables/ddal_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "rre",
+  "text": "ڑے",
+  "file": "names/rre.wav"
+ },
+ {
+  "kind": "words",
+  "id": "rre",
+  "text": "لڑکا",
+  "file": "words/rre.wav"
+ },
+ {
+  "kind": "names",
+  "id": "ze",
+  "text": "زے",
+  "file": "names/ze.wav"
+ },
+ {
+  "kind": "words",
+  "id": "ze",
+  "text": "زبان",
+  "file": "words/ze.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "ze_a",
+  "text": "زا",
+  "file": "syllables/ze_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "ze_i",
+  "text": "زی",
+  "file": "syllables/ze_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "ze_u",
+  "text": "زو",
+  "file": "syllables/ze_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "zhe",
+  "text": "ژے",
+  "file": "names/zhe.wav"
+ },
+ {
+  "kind": "words",
+  "id": "zhe",
+  "text": "ژالہ",
+  "file": "words/zhe.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "zhe_a",
+  "text": "ژا",
+  "file": "syllables/zhe_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "zhe_i",
+  "text": "ژی",
+  "file": "syllables/zhe_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "zhe_u",
+  "text": "ژو",
+  "file": "syllables/zhe_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "fe",
+  "text": "فے",
+  "file": "names/fe.wav"
+ },
+ {
+  "kind": "words",
+  "id": "fe",
+  "text": "فرش",
+  "file": "words/fe.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "fe_a",
+  "text": "فا",
+  "file": "syllables/fe_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "fe_i",
+  "text": "فی",
+  "file": "syllables/fe_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "fe_u",
+  "text": "فو",
+  "file": "syllables/fe_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "qaf",
+  "text": "قاف",
+  "file": "names/qaf.wav"
+ },
+ {
+  "kind": "words",
+  "id": "qaf",
+  "text": "قلم",
+  "file": "words/qaf.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "qaf_a",
+  "text": "قا",
+  "file": "syllables/qaf_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "qaf_i",
+  "text": "قی",
+  "file": "syllables/qaf_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "qaf_u",
+  "text": "قو",
+  "file": "syllables/qaf_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "khe",
+  "text": "خے",
+  "file": "names/khe.wav"
+ },
+ {
+  "kind": "words",
+  "id": "khe",
+  "text": "خط",
+  "file": "words/khe.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "khe_a",
+  "text": "خا",
+  "file": "syllables/khe_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "khe_i",
+  "text": "خی",
+  "file": "syllables/khe_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "khe_u",
+  "text": "خو",
+  "file": "syllables/khe_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "ghain",
+  "text": "غین",
+  "file": "names/ghain.wav"
+ },
+ {
+  "kind": "words",
+  "id": "ghain",
+  "text": "غریب",
+  "file": "words/ghain.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "ghain_a",
+  "text": "غا",
+  "file": "syllables/ghain_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "ghain_i",
+  "text": "غی",
+  "file": "syllables/ghain_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "ghain_u",
+  "text": "غو",
+  "file": "syllables/ghain_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "ain",
+  "text": "عین",
+  "file": "names/ain.wav"
+ },
+ {
+  "kind": "words",
+  "id": "ain",
+  "text": "عمر",
+  "file": "words/ain.wav"
+ },
+ {
+  "kind": "names",
+  "id": "bari_he",
+  "text": "بڑی حے",
+  "file": "names/bari_he.wav"
+ },
+ {
+  "kind": "words",
+  "id": "bari_he",
+  "text": "حال",
+  "file": "words/bari_he.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "bari_he_a",
+  "text": "حا",
+  "file": "syllables/bari_he_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "bari_he_i",
+  "text": "حی",
+  "file": "syllables/bari_he_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "bari_he_u",
+  "text": "حو",
+  "file": "syllables/bari_he_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "swad",
+  "text": "صاد",
+  "file": "names/swad.wav"
+ },
+ {
+  "kind": "words",
+  "id": "swad",
+  "text": "صبح",
+  "file": "words/swad.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "swad_a",
+  "text": "صا",
+  "file": "syllables/swad_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "swad_i",
+  "text": "صی",
+  "file": "syllables/swad_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "swad_u",
+  "text": "صو",
+  "file": "syllables/swad_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "zwad",
+  "text": "ضاد",
+  "file": "names/zwad.wav"
+ },
+ {
+  "kind": "words",
+  "id": "zwad",
+  "text": "ضرور",
+  "file": "words/zwad.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "zwad_a",
+  "text": "ضا",
+  "file": "syllables/zwad_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "zwad_i",
+  "text": "ضی",
+  "file": "syllables/zwad_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "zwad_u",
+  "text": "ضو",
+  "file": "syllables/zwad_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "toe",
+  "text": "طوے",
+  "file": "names/toe.wav"
+ },
+ {
+  "kind": "words",
+  "id": "toe",
+  "text": "طوطا",
+  "file": "words/toe.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "toe_a",
+  "text": "طا",
+  "file": "syllables/toe_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "toe_i",
+  "text": "طی",
+  "file": "syllables/toe_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "toe_u",
+  "text": "طو",
+  "file": "syllables/toe_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "zoe",
+  "text": "ظوے",
+  "file": "names/zoe.wav"
+ },
+ {
+  "kind": "words",
+  "id": "zoe",
+  "text": "ظاہر",
+  "file": "words/zoe.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "zoe_a",
+  "text": "ظا",
+  "file": "syllables/zoe_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "zoe_i",
+  "text": "ظی",
+  "file": "syllables/zoe_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "zoe_u",
+  "text": "ظو",
+  "file": "syllables/zoe_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "zal",
+  "text": "ذال",
+  "file": "names/zal.wav"
+ },
+ {
+  "kind": "words",
+  "id": "zal",
+  "text": "ذائقہ",
+  "file": "words/zal.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "zal_a",
+  "text": "ذا",
+  "file": "syllables/zal_a.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "zal_i",
+  "text": "ذی",
+  "file": "syllables/zal_i.wav"
+ },
+ {
+  "kind": "syllables",
+  "id": "zal_u",
+  "text": "ذو",
+  "file": "syllables/zal_u.wav"
+ },
+ {
+  "kind": "names",
+  "id": "hamza",
+  "text": "ہمزہ",
+  "file": "names/hamza.wav"
+ },
+ {
+  "kind": "words",
+  "id": "hamza",
+  "text": "کوئی",
+  "file": "words/hamza.wav"
+ },
+ {
+  "kind": "aspirates",
+  "id": "bh",
+  "text": "بھائی",
+  "file": "aspirates/bh.wav"
+ },
+ {
+  "kind": "aspirates",
+  "id": "ph",
+  "text": "پھول",
+  "file": "aspirates/ph.wav"
+ },
+ {
+  "kind": "aspirates",
+  "id": "th",
+  "text": "تھالی",
+  "file": "aspirates/th.wav"
+ },
+ {
+  "kind": "aspirates",
+  "id": "ṭh",
+  "text": "ٹھنڈا",
+  "file": "aspirates/ṭh.wav"
+ },
+ {
+  "kind": "aspirates",
+  "id": "jh",
+  "text": "جھنڈا",
+  "file": "aspirates/jh.wav"
+ },
+ {
+  "kind": "aspirates",
+  "id": "chh",
+  "text": "چھت",
+  "file": "aspirates/chh.wav"
+ },
+ {
+  "kind": "aspirates",
+  "id": "dh",
+  "text": "دھاگا",
+  "file": "aspirates/dh.wav"
+ },
+ {
+  "kind": "aspirates",
+  "id": "ḍh",
+  "text": "ڈھول",
+  "file": "aspirates/ḍh.wav"
+ },
+ {
+  "kind": "aspirates",
+  "id": "ṛh",
+  "text": "پڑھنا",
+  "file": "aspirates/ṛh.wav"
+ },
+ {
+  "kind": "aspirates",
+  "id": "kh",
+  "text": "کھانا",
+  "file": "aspirates/kh.wav"
+ },
+ {
+  "kind": "aspirates",
+  "id": "gh",
+  "text": "گھر",
+  "file": "aspirates/gh.wav"
+ },
+ {
+  "kind": "diacritics",
+  "id": "zabar",
+  "text": "زبر",
+  "file": "diacritics/zabar.wav"
+ },
+ {
+  "kind": "diacritics",
+  "id": "zabar_ex",
+  "text": "بَس",
+  "file": "diacritics/zabar_ex.wav"
+ },
+ {
+  "kind": "diacritics",
+  "id": "zer",
+  "text": "زیر",
+  "file": "diacritics/zer.wav"
+ },
+ {
+  "kind": "diacritics",
+  "id": "zer_ex",
+  "text": "دِل",
+  "file": "diacritics/zer_ex.wav"
+ },
+ {
+  "kind": "diacritics",
+  "id": "pesh",
+  "text": "پیش",
+  "file": "diacritics/pesh.wav"
+ },
+ {
+  "kind": "diacritics",
+  "id": "pesh_ex",
+  "text": "گُل",
+  "file": "diacritics/pesh_ex.wav"
+ },
+ {
+  "kind": "diacritics",
+  "id": "jazm",
+  "text": "جزم",
+  "file": "diacritics/jazm.wav"
+ },
+ {
+  "kind": "diacritics",
+  "id": "jazm_ex",
+  "text": "سَبْزی",
+  "file": "diacritics/jazm_ex.wav"
+ },
+ {
+  "kind": "diacritics",
+  "id": "tashdid",
+  "text": "تشدید",
+  "file": "diacritics/tashdid.wav"
+ },
+ {
+  "kind": "diacritics",
+  "id": "tashdid_ex",
+  "text": "بچّہ",
+  "file": "diacritics/tashdid_ex.wav"
+ },
+ {
+  "kind": "diacritics",
+  "id": "khari_zabar",
+  "text": "کھڑا زبر",
+  "file": "diacritics/khari_zabar.wav"
+ },
+ {
+  "kind": "diacritics",
+  "id": "khari_zabar_ex",
+  "text": "اعلیٰ",
+  "file": "diacritics/khari_zabar_ex.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_00",
+  "text": "اب",
+  "file": "units/u01_00.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_01",
+  "text": "بابا",
+  "file": "units/u01_01.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_02",
+  "text": "امام",
+  "file": "units/u01_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_03",
+  "text": "نام",
+  "file": "units/u01_03.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_04",
+  "text": "کام",
+  "file": "units/u01_04.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_05",
+  "text": "کل",
+  "file": "units/u01_05.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_06",
+  "text": "لال",
+  "file": "units/u01_06.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_07",
+  "text": "بال",
+  "file": "units/u01_07.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_08",
+  "text": "ناک",
+  "file": "units/u01_08.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_09",
+  "text": "کان",
+  "file": "units/u01_09.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_10",
+  "text": "مان",
+  "file": "units/u01_10.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_11",
+  "text": "نمک",
+  "file": "units/u01_11.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_12",
+  "text": "ملک",
+  "file": "units/u01_12.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_13",
+  "text": "کمال",
+  "file": "units/u01_13.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_14",
+  "text": "نانا",
+  "file": "units/u01_14.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_15",
+  "text": "کالا",
+  "file": "units/u01_15.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_16",
+  "text": "مالا",
+  "file": "units/u01_16.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_17",
+  "text": "مکان",
+  "file": "units/u01_17.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_18",
+  "text": "املا",
+  "file": "units/u01_18.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u01_19",
+  "text": "کمان",
+  "file": "units/u01_19.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u01_00",
+  "text": "بابا کا کام",
+  "file": "sentences/u01_00.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u01_01",
+  "text": "کالا بال",
+  "file": "sentences/u01_01.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u01_02",
+  "text": "نمک لا",
+  "file": "sentences/u01_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_00",
+  "text": "تم",
+  "file": "units/u02_00.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_01",
+  "text": "تین",
+  "file": "units/u02_01.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_02",
+  "text": "بیل",
+  "file": "units/u02_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_03",
+  "text": "میل",
+  "file": "units/u02_03.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_04",
+  "text": "نیلا",
+  "file": "units/u02_04.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_05",
+  "text": "کیلا",
+  "file": "units/u02_05.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_06",
+  "text": "تیل",
+  "file": "units/u02_06.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_07",
+  "text": "لے",
+  "file": "units/u02_07.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_08",
+  "text": "کے",
+  "file": "units/u02_08.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_09",
+  "text": "نے",
+  "file": "units/u02_09.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_10",
+  "text": "تالی",
+  "file": "units/u02_10.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_11",
+  "text": "بلی",
+  "file": "units/u02_11.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_12",
+  "text": "تالا",
+  "file": "units/u02_12.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_13",
+  "text": "کتاب",
+  "file": "units/u02_13.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_14",
+  "text": "بیتاب",
+  "file": "units/u02_14.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_15",
+  "text": "تکیا",
+  "file": "units/u02_15.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_16",
+  "text": "مالی",
+  "file": "units/u02_16.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_17",
+  "text": "ناتا",
+  "file": "units/u02_17.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_18",
+  "text": "تالاب",
+  "file": "units/u02_18.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u02_19",
+  "text": "کمانی",
+  "file": "units/u02_19.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u02_00",
+  "text": "تین کتاب",
+  "file": "sentences/u02_00.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u02_01",
+  "text": "بلی کالی ہے",
+  "file": "sentences/u02_01.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u02_02",
+  "text": "نیلا تکیا لے",
+  "file": "sentences/u02_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_00",
+  "text": "پانی",
+  "file": "units/u03_00.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_01",
+  "text": "پل",
+  "file": "units/u03_01.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_02",
+  "text": "ٹوپی",
+  "file": "units/u03_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_03",
+  "text": "پتا",
+  "file": "units/u03_03.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_04",
+  "text": "پاک",
+  "file": "units/u03_04.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_05",
+  "text": "پیٹ",
+  "file": "units/u03_05.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_06",
+  "text": "ٹب",
+  "file": "units/u03_06.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_07",
+  "text": "پتلی",
+  "file": "units/u03_07.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_08",
+  "text": "ثابت",
+  "file": "units/u03_08.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_09",
+  "text": "پیپل",
+  "file": "units/u03_09.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_10",
+  "text": "ٹماٹر",
+  "file": "units/u03_10.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_11",
+  "text": "ٹانکا",
+  "file": "units/u03_11.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_12",
+  "text": "پیالا",
+  "file": "units/u03_12.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_13",
+  "text": "نپا",
+  "file": "units/u03_13.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_14",
+  "text": "پلک",
+  "file": "units/u03_14.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_15",
+  "text": "کپاس",
+  "file": "units/u03_15.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_16",
+  "text": "تپتا",
+  "file": "units/u03_16.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_17",
+  "text": "پتلا",
+  "file": "units/u03_17.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_18",
+  "text": "ٹکٹ",
+  "file": "units/u03_18.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u03_19",
+  "text": "بٹن",
+  "file": "units/u03_19.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u03_00",
+  "text": "پانی لا",
+  "file": "sentences/u03_00.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u03_01",
+  "text": "پتلی بلی",
+  "file": "sentences/u03_01.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u03_02",
+  "text": "میں ٹوپی لے",
+  "file": "sentences/u03_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_00",
+  "text": "وہ",
+  "file": "units/u04_00.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_01",
+  "text": "دو",
+  "file": "units/u04_01.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_02",
+  "text": "دن",
+  "file": "units/u04_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_03",
+  "text": "دال",
+  "file": "units/u04_03.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_04",
+  "text": "دم",
+  "file": "units/u04_04.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_05",
+  "text": "رات",
+  "file": "units/u04_05.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_06",
+  "text": "روٹی",
+  "file": "units/u04_06.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_07",
+  "text": "دور",
+  "file": "units/u04_07.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_08",
+  "text": "ہم",
+  "file": "units/u04_08.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_09",
+  "text": "ہار",
+  "file": "units/u04_09.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_10",
+  "text": "کمرہ",
+  "file": "units/u04_10.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_11",
+  "text": "بادام",
+  "file": "units/u04_11.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_12",
+  "text": "دادا",
+  "file": "units/u04_12.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_13",
+  "text": "دریا",
+  "file": "units/u04_13.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_14",
+  "text": "ہوا",
+  "file": "units/u04_14.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_15",
+  "text": "راہ",
+  "file": "units/u04_15.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_16",
+  "text": "دودھ",
+  "file": "units/u04_16.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_17",
+  "text": "مور",
+  "file": "units/u04_17.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_18",
+  "text": "پودا",
+  "file": "units/u04_18.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u04_19",
+  "text": "نہر",
+  "file": "units/u04_19.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u04_00",
+  "text": "دو روٹی",
+  "file": "sentences/u04_00.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u04_01",
+  "text": "وہ کمرہ بڑا ہے",
+  "file": "sentences/u04_01.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u04_02",
+  "text": "ہم دور ہیں",
+  "file": "sentences/u04_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_00",
+  "text": "سب",
+  "file": "units/u05_00.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_01",
+  "text": "سو",
+  "file": "units/u05_01.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_02",
+  "text": "سال",
+  "file": "units/u05_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_03",
+  "text": "شام",
+  "file": "units/u05_03.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_04",
+  "text": "شیر",
+  "file": "units/u05_04.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_05",
+  "text": "جوتا",
+  "file": "units/u05_05.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_06",
+  "text": "جام",
+  "file": "units/u05_06.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_07",
+  "text": "چار",
+  "file": "units/u05_07.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_08",
+  "text": "چاند",
+  "file": "units/u05_08.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_09",
+  "text": "چابی",
+  "file": "units/u05_09.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_10",
+  "text": "گلاب",
+  "file": "units/u05_10.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_11",
+  "text": "گاجر",
+  "file": "units/u05_11.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_12",
+  "text": "گانا",
+  "file": "units/u05_12.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_13",
+  "text": "سبک",
+  "file": "units/u05_13.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_14",
+  "text": "شادی",
+  "file": "units/u05_14.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_15",
+  "text": "جنگل",
+  "file": "units/u05_15.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_16",
+  "text": "مچھلی",
+  "file": "units/u05_16.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_17",
+  "text": "گرم",
+  "file": "units/u05_17.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_18",
+  "text": "سردی",
+  "file": "units/u05_18.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u05_19",
+  "text": "دوست",
+  "file": "units/u05_19.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u05_00",
+  "text": "چار گلاب",
+  "file": "sentences/u05_00.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u05_01",
+  "text": "شیر جنگل میں ہے",
+  "file": "sentences/u05_01.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u05_02",
+  "text": "دوست کا جوتا",
+  "file": "sentences/u05_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_00",
+  "text": "میں",
+  "file": "units/u06_00.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_01",
+  "text": "ہاں",
+  "file": "units/u06_01.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_02",
+  "text": "کہاں",
+  "file": "units/u06_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_03",
+  "text": "ہیں",
+  "file": "units/u06_03.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_04",
+  "text": "گھر",
+  "file": "units/u06_04.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_05",
+  "text": "بھائی",
+  "file": "units/u06_05.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_06",
+  "text": "پھول",
+  "file": "units/u06_06.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_07",
+  "text": "تھالی",
+  "file": "units/u06_07.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_08",
+  "text": "ٹھنڈا",
+  "file": "units/u06_08.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_09",
+  "text": "کھانا",
+  "file": "units/u06_09.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_10",
+  "text": "دھاگا",
+  "file": "units/u06_10.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_11",
+  "text": "چھت",
+  "file": "units/u06_11.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_12",
+  "text": "جھولا",
+  "file": "units/u06_12.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_13",
+  "text": "ہاتھ",
+  "file": "units/u06_13.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_14",
+  "text": "دودھ",
+  "file": "units/u06_14.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_15",
+  "text": "مچھلی",
+  "file": "units/u06_15.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_16",
+  "text": "آنکھ",
+  "file": "units/u06_16.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_17",
+  "text": "یہاں",
+  "file": "units/u06_17.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_18",
+  "text": "سکھانا",
+  "file": "units/u06_18.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u06_19",
+  "text": "بھالو",
+  "file": "units/u06_19.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u06_00",
+  "text": "میں گھر میں ہوں",
+  "file": "sentences/u06_00.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u06_01",
+  "text": "پھول کہاں ہیں",
+  "file": "sentences/u06_01.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u06_02",
+  "text": "بھائی کھانا کھاتا ہے",
+  "file": "sentences/u06_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_00",
+  "text": "ڈاک",
+  "file": "units/u07_00.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_01",
+  "text": "ڈبہ",
+  "file": "units/u07_01.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_02",
+  "text": "لڑکا",
+  "file": "units/u07_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_03",
+  "text": "لڑکی",
+  "file": "units/u07_03.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_04",
+  "text": "بڑا",
+  "file": "units/u07_04.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_05",
+  "text": "پڑھنا",
+  "file": "units/u07_05.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_06",
+  "text": "زبان",
+  "file": "units/u07_06.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_07",
+  "text": "زمین",
+  "file": "units/u07_07.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_08",
+  "text": "ژالہ",
+  "file": "units/u07_08.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_09",
+  "text": "روزانہ",
+  "file": "units/u07_09.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_10",
+  "text": "ڈھول",
+  "file": "units/u07_10.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_11",
+  "text": "گڑیا",
+  "file": "units/u07_11.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_12",
+  "text": "سڑک",
+  "file": "units/u07_12.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_13",
+  "text": "زرد",
+  "file": "units/u07_13.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_14",
+  "text": "ڈر",
+  "file": "units/u07_14.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_15",
+  "text": "کپڑا",
+  "file": "units/u07_15.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_16",
+  "text": "مزا",
+  "file": "units/u07_16.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_17",
+  "text": "انڈا",
+  "file": "units/u07_17.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_18",
+  "text": "ٹھنڈا",
+  "file": "units/u07_18.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u07_19",
+  "text": "گھڑی",
+  "file": "units/u07_19.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u07_00",
+  "text": "لڑکا سڑک پر ہے",
+  "file": "sentences/u07_00.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u07_01",
+  "text": "بڑا ڈبہ",
+  "file": "sentences/u07_01.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u07_02",
+  "text": "زمین زرد ہے",
+  "file": "sentences/u07_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_00",
+  "text": "فرش",
+  "file": "units/u08_00.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_01",
+  "text": "فون",
+  "file": "units/u08_01.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_02",
+  "text": "قلم",
+  "file": "units/u08_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_03",
+  "text": "قمیض",
+  "file": "units/u08_03.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_04",
+  "text": "خط",
+  "file": "units/u08_04.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_05",
+  "text": "خوش",
+  "file": "units/u08_05.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_06",
+  "text": "غریب",
+  "file": "units/u08_06.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_07",
+  "text": "باغ",
+  "file": "units/u08_07.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_08",
+  "text": "عمر",
+  "file": "units/u08_08.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_09",
+  "text": "علم",
+  "file": "units/u08_09.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_10",
+  "text": "حال",
+  "file": "units/u08_10.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_11",
+  "text": "حلوہ",
+  "file": "units/u08_11.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_12",
+  "text": "صاف",
+  "file": "units/u08_12.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_13",
+  "text": "فوج",
+  "file": "units/u08_13.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_14",
+  "text": "وقت",
+  "file": "units/u08_14.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_15",
+  "text": "خالی",
+  "file": "units/u08_15.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_16",
+  "text": "غم",
+  "file": "units/u08_16.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_17",
+  "text": "عام",
+  "file": "units/u08_17.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_18",
+  "text": "حساب",
+  "file": "units/u08_18.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u08_19",
+  "text": "دفتر",
+  "file": "units/u08_19.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u08_00",
+  "text": "قلم کہاں ہے",
+  "file": "sentences/u08_00.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u08_01",
+  "text": "باغ خالی ہے",
+  "file": "sentences/u08_01.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u08_02",
+  "text": "وقت کیا ہوا ہے",
+  "file": "sentences/u08_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_00",
+  "text": "صبح",
+  "file": "units/u09_00.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_01",
+  "text": "صبر",
+  "file": "units/u09_01.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_02",
+  "text": "ضرور",
+  "file": "units/u09_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_03",
+  "text": "مریض",
+  "file": "units/u09_03.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_04",
+  "text": "طالب",
+  "file": "units/u09_04.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_05",
+  "text": "طوطا",
+  "file": "units/u09_05.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_06",
+  "text": "ظاہر",
+  "file": "units/u09_06.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_07",
+  "text": "ظلم",
+  "file": "units/u09_07.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_08",
+  "text": "ذائقہ",
+  "file": "units/u09_08.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_09",
+  "text": "ذمہ",
+  "file": "units/u09_09.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_10",
+  "text": "صابن",
+  "file": "units/u09_10.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_11",
+  "text": "ضد",
+  "file": "units/u09_11.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_12",
+  "text": "طاقت",
+  "file": "units/u09_12.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_13",
+  "text": "حفاظت",
+  "file": "units/u09_13.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_14",
+  "text": "ذرا",
+  "file": "units/u09_14.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_15",
+  "text": "خاص",
+  "file": "units/u09_15.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_16",
+  "text": "ثواب",
+  "file": "units/u09_16.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_17",
+  "text": "نظر",
+  "file": "units/u09_17.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_18",
+  "text": "لفظ",
+  "file": "units/u09_18.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u09_19",
+  "text": "صحیح",
+  "file": "units/u09_19.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u09_00",
+  "text": "صبح صاف ہے",
+  "file": "sentences/u09_00.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u09_01",
+  "text": "طوطا ذرا بڑا ہے",
+  "file": "sentences/u09_01.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u09_02",
+  "text": "یہ لفظ صحیح ہے",
+  "file": "sentences/u09_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_00",
+  "text": "آم",
+  "file": "units/u10_00.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_01",
+  "text": "آپ",
+  "file": "units/u10_01.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_02",
+  "text": "کوئی",
+  "file": "units/u10_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_03",
+  "text": "گئے",
+  "file": "units/u10_03.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_04",
+  "text": "مسئلہ",
+  "file": "units/u10_04.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_05",
+  "text": "بچّہ",
+  "file": "units/u10_05.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_06",
+  "text": "اللّٰہ",
+  "file": "units/u10_06.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_07",
+  "text": "دعا",
+  "file": "units/u10_07.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_08",
+  "text": "سؤال",
+  "file": "units/u10_08.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_09",
+  "text": "آئینہ",
+  "file": "units/u10_09.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_10",
+  "text": "نئی",
+  "file": "units/u10_10.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_11",
+  "text": "چائے",
+  "file": "units/u10_11.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_12",
+  "text": "گائے",
+  "file": "units/u10_12.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_13",
+  "text": "اعلیٰ",
+  "file": "units/u10_13.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_14",
+  "text": "صلوٰۃ",
+  "file": "units/u10_14.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_15",
+  "text": "دنیا",
+  "file": "units/u10_15.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_16",
+  "text": "ابّا",
+  "file": "units/u10_16.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_17",
+  "text": "امّی",
+  "file": "units/u10_17.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_18",
+  "text": "مکّہ",
+  "file": "units/u10_18.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u10_19",
+  "text": "اچّھا",
+  "file": "units/u10_19.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u10_00",
+  "text": "آپ کا نام کیا ہے؟",
+  "file": "sentences/u10_00.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u10_01",
+  "text": "چائے میں ۲ چمچ چینی",
+  "file": "sentences/u10_01.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u10_02",
+  "text": "کوئی مسئلہ نہیں۔",
+  "file": "sentences/u10_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_00",
+  "text": "کا",
+  "file": "units/u11_00.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_01",
+  "text": "کی",
+  "file": "units/u11_01.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_02",
+  "text": "کے",
+  "file": "units/u11_02.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_03",
+  "text": "سے",
+  "file": "units/u11_03.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_04",
+  "text": "پر",
+  "file": "units/u11_04.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_05",
+  "text": "کہ",
+  "file": "units/u11_05.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_06",
+  "text": "اور",
+  "file": "units/u11_06.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_07",
+  "text": "ہے",
+  "file": "units/u11_07.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_08",
+  "text": "ہیں",
+  "file": "units/u11_08.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_09",
+  "text": "نے",
+  "file": "units/u11_09.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_10",
+  "text": "کو",
+  "file": "units/u11_10.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_11",
+  "text": "نہیں",
+  "file": "units/u11_11.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_12",
+  "text": "تھا",
+  "file": "units/u11_12.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_13",
+  "text": "تھی",
+  "file": "units/u11_13.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_14",
+  "text": "کیا",
+  "file": "units/u11_14.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_15",
+  "text": "بھی",
+  "file": "units/u11_15.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_16",
+  "text": "لیکن",
+  "file": "units/u11_16.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_17",
+  "text": "اگر",
+  "file": "units/u11_17.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_18",
+  "text": "پھر",
+  "file": "units/u11_18.wav"
+ },
+ {
+  "kind": "units",
+  "id": "u11_19",
+  "text": "بہت",
+  "file": "units/u11_19.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u11_00",
+  "text": "میرا نام کمال ہے اور میں لاہور میں رہتا ہوں۔",
+  "file": "sentences/u11_00.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u11_01",
+  "text": "بچے اسکول جاتے ہیں لیکن آج چھٹی ہے۔",
+  "file": "sentences/u11_01.wav"
+ },
+ {
+  "kind": "sentences",
+  "id": "u11_02",
+  "text": "اگر بارش ہوئی تو ہم گھر پر رہیں گے۔",
+  "file": "sentences/u11_02.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "00",
+  "text": "کا",
+  "file": "sight/00.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "01",
+  "text": "کی",
+  "file": "sight/01.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "02",
+  "text": "کے",
+  "file": "sight/02.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "03",
+  "text": "سے",
+  "file": "sight/03.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "04",
+  "text": "پر",
+  "file": "sight/04.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "05",
+  "text": "کہ",
+  "file": "sight/05.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "06",
+  "text": "اور",
+  "file": "sight/06.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "07",
+  "text": "ہے",
+  "file": "sight/07.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "08",
+  "text": "ہیں",
+  "file": "sight/08.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "09",
+  "text": "نے",
+  "file": "sight/09.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "10",
+  "text": "کو",
+  "file": "sight/10.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "11",
+  "text": "میں",
+  "file": "sight/11.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "12",
+  "text": "نہیں",
+  "file": "sight/12.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "13",
+  "text": "وہ",
+  "file": "sight/13.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "14",
+  "text": "یہ",
+  "file": "sight/14.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "15",
+  "text": "اس",
+  "file": "sight/15.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "16",
+  "text": "تھا",
+  "file": "sight/16.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "17",
+  "text": "تھی",
+  "file": "sight/17.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "18",
+  "text": "کیا",
+  "file": "sight/18.wav"
+ },
+ {
+  "kind": "sight",
+  "id": "19",
+  "text": "بھی",
+  "file": "sight/19.wav"
+ },
+ {
+  "kind": "numerals",
+  "id": "0",
+  "text": "صفر",
+  "file": "numerals/0.wav"
+ },
+ {
+  "kind": "numerals",
+  "id": "1",
+  "text": "ایک",
+  "file": "numerals/1.wav"
+ },
+ {
+  "kind": "numerals",
+  "id": "2",
+  "text": "دو",
+  "file": "numerals/2.wav"
+ },
+ {
+  "kind": "numerals",
+  "id": "3",
+  "text": "تین",
+  "file": "numerals/3.wav"
+ },
+ {
+  "kind": "numerals",
+  "id": "4",
+  "text": "چار",
+  "file": "numerals/4.wav"
+ },
+ {
+  "kind": "numerals",
+  "id": "5",
+  "text": "پانچ",
+  "file": "numerals/5.wav"
+ },
+ {
+  "kind": "numerals",
+  "id": "6",
+  "text": "چھے",
+  "file": "numerals/6.wav"
+ },
+ {
+  "kind": "numerals",
+  "id": "7",
+  "text": "سات",
+  "file": "numerals/7.wav"
+ },
+ {
+  "kind": "numerals",
+  "id": "8",
+  "text": "آٹھ",
+  "file": "numerals/8.wav"
+ },
+ {
+  "kind": "numerals",
+  "id": "9",
+  "text": "نو",
+  "file": "numerals/9.wav"
+ }
+]

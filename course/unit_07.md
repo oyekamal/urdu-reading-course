@@ -18,20 +18,28 @@
 ![ḍāl card](../assets/images/letters/ddal_naskh.png)
 ![ḍāl forms](../assets/images/forms/ddal_naskh.png)
 
+✎ *How the pen moves:* start at the top, come down and out to the left in one angled stroke; never joins forward. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ڑ ṛe** — does **not** join forward (2 forms: isolated, final). No Urdu word begins with it.
 
 ![ṛe card](../assets/images/letters/rre_naskh.png)
 ![ṛe forms](../assets/images/forms/rre_naskh.png)
+
+✎ *How the pen moves:* start at the top and sweep down-left below the line; ز ژ dots after; never joins forward. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 **ز ze** — does **not** join forward (2 forms: isolated, final).
 
 ![ze card](../assets/images/letters/ze_naskh.png)
 ![ze forms](../assets/images/forms/ze_naskh.png)
 
+✎ *How the pen moves:* start at the top and sweep down-left below the line; ز ژ dots after; never joins forward. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ژ zhe** — does **not** join forward (2 forms: isolated, final).
 
 ![zhe card](../assets/images/letters/zhe_naskh.png)
 ![zhe forms](../assets/images/forms/zhe_naskh.png)
+
+✎ *How the pen moves:* start at the top and sweep down-left below the line; ز ژ dots after; never joins forward. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 ## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
@@ -84,12 +92,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: ڈاک, ڈَبّہ, لَڑْکا, لَڑْکی, بَڑا.
 
-**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
-
-- ڈ ḍāl: start at the top, come down and out to the left in one angled stroke; never joins forward.
-- ڑ ṛe: start at the top and sweep down-left below the line; ز ژ dots after; never joins forward.
-- ز ze: start at the top and sweep down-left below the line; ز ژ dots after; never joins forward.
-- ژ zhe: start at the top and sweep down-left below the line; ز ژ dots after; never joins forward.
+Pen movement for each letter is described in step 2 above.
 
 ## 7 · Dictation  ·  *production · self-check with the key below*
 

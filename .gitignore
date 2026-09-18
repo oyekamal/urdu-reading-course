@@ -1,0 +1,4 @@
+assets/audio/**/*.wav
+assets/audio/_bakeoff/
+__pycache__/
+assets/audio/_baseline_mms/

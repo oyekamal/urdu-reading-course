@@ -17,15 +17,21 @@
 ![te card](../assets/images/letters/te_naskh.png)
 ![te forms](../assets/images/forms/te_naskh.png)
 
+✎ *How the pen moves:* start top-right, draw the shallow bowl leftwards, hook up at the left end; dots after. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ی choṭī ye** — joins forward (4 forms).
 
 ![choṭī ye card](../assets/images/letters/choti_ye_naskh.png)
 ![choṭī ye forms](../assets/images/forms/choti_ye_naskh.png)
 
+✎ *How the pen moves:* ی is the ب bowl that swings back under itself; ے is a long flat sweep leftwards. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ے baṛī ye** — does **not** join forward (2 forms: isolated, final). No Urdu word begins with it.
 
 ![baṛī ye card](../assets/images/letters/bari_ye_naskh.png)
 ![baṛī ye forms](../assets/images/forms/bari_ye_naskh.png)
+
+✎ *How the pen moves:* ی is the ب bowl that swings back under itself; ے is a long flat sweep leftwards. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 ## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
@@ -77,11 +83,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: تُم, تین, بَیل, میل, نیلا.
 
-**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
-
-- ت te: start top-right, draw the shallow bowl leftwards, hook up at the left end; dots after.
-- ی choṭī ye: ی is the ب bowl that swings back under itself; ے is a long flat sweep leftwards.
-- ے baṛī ye: ی is the ب bowl that swings back under itself; ے is a long flat sweep leftwards.
+Pen movement for each letter is described in step 2 above.
 
 ## 7 · Dictation  ·  *production · self-check with the key below*
 

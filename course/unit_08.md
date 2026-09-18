@@ -20,30 +20,42 @@
 ![fe card](../assets/images/letters/fe_naskh.png)
 ![fe forms](../assets/images/forms/fe_naskh.png)
 
+✎ *How the pen moves:* small loop at the top, then the long shallow bowl (ف) or deep bowl (ق) leftwards; dots after. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ق qāf** — joins forward (4 forms).
 
 ![qāf card](../assets/images/letters/qaf_naskh.png)
 ![qāf forms](../assets/images/forms/qaf_naskh.png)
+
+✎ *How the pen moves:* small loop at the top, then the long shallow bowl (ف) or deep bowl (ق) leftwards; dots after. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 **خ k͟he** — joins forward (4 forms).
 
 ![k͟he card](../assets/images/letters/khe_naskh.png)
 ![k͟he forms](../assets/images/forms/khe_naskh.png)
 
+✎ *How the pen moves:* start at the top-right with the small head stroke going left, then drop into the round bowl below; dot after. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **غ g͟hain** — joins forward (4 forms).
 
 ![g͟hain card](../assets/images/letters/ghain_naskh.png)
 ![g͟hain forms](../assets/images/forms/ghain_naskh.png)
+
+✎ *How the pen moves:* small c-shape at the top opening right, then the bowl beneath; dot after for غ. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 **ع ʻain** — joins forward (4 forms).
 
 ![ʻain card](../assets/images/letters/ain_naskh.png)
 ![ʻain forms](../assets/images/forms/ain_naskh.png)
 
+✎ *How the pen moves:* small c-shape at the top opening right, then the bowl beneath; dot after for غ. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ح baṛī ḥe** — joins forward (4 forms).
 
 ![baṛī ḥe card](../assets/images/letters/bari_he_naskh.png)
 ![baṛī ḥe forms](../assets/images/forms/bari_he_naskh.png)
+
+✎ *How the pen moves:* start at the top-right with the small head stroke going left, then drop into the round bowl below; dot after. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 ## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
@@ -96,14 +108,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: فَرْش, فون, قَلَم, قَمیض, خَط.
 
-**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
-
-- ف fe: small loop at the top, then the long shallow bowl (ف) or deep bowl (ق) leftwards; dots after.
-- ق qāf: small loop at the top, then the long shallow bowl (ف) or deep bowl (ق) leftwards; dots after.
-- خ k͟he: start at the top-right with the small head stroke going left, then drop into the round bowl below; dot after.
-- غ g͟hain: small c-shape at the top opening right, then the bowl beneath; dot after for غ.
-- ع ʻain: small c-shape at the top opening right, then the bowl beneath; dot after for غ.
-- ح baṛī ḥe: start at the top-right with the small head stroke going left, then drop into the round bowl below; dot after.
+Pen movement for each letter is described in step 2 above.
 
 ## 7 · Dictation  ·  *production · self-check with the key below*
 

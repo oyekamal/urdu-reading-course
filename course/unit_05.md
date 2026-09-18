@@ -19,25 +19,35 @@
 ![sīn card](../assets/images/letters/sin_naskh.png)
 ![sīn forms](../assets/images/forms/sin_naskh.png)
 
+✎ *How the pen moves:* three small teeth from right to left, then the deep bowl; dots after. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ش shīn** — joins forward (4 forms).
 
 ![shīn card](../assets/images/letters/shin_naskh.png)
 ![shīn forms](../assets/images/forms/shin_naskh.png)
+
+✎ *How the pen moves:* three small teeth from right to left, then the deep bowl; dots after. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 **ج jīm** — joins forward (4 forms).
 
 ![jīm card](../assets/images/letters/jim_naskh.png)
 ![jīm forms](../assets/images/forms/jim_naskh.png)
 
+✎ *How the pen moves:* start at the top-right with the small head stroke going left, then drop into the round bowl below; dot after. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **چ che** — joins forward (4 forms).
 
 ![che card](../assets/images/letters/che_naskh.png)
 ![che forms](../assets/images/forms/che_naskh.png)
 
+✎ *How the pen moves:* start at the top-right with the small head stroke going left, then drop into the round bowl below; dot after. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **گ gāf** — joins forward (4 forms).
 
 ![gāf card](../assets/images/letters/gaf_naskh.png)
 ![gāf forms](../assets/images/forms/gaf_naskh.png)
+
+✎ *How the pen moves:* base stroke first, right to left along the line, then the sloping cap (sar-kash) added on top last; گ gets a second cap. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 ## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
@@ -90,13 +100,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: سَب, سو, سال, شام, شیر.
 
-**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
-
-- س sīn: three small teeth from right to left, then the deep bowl; dots after.
-- ش shīn: three small teeth from right to left, then the deep bowl; dots after.
-- ج jīm: start at the top-right with the small head stroke going left, then drop into the round bowl below; dot after.
-- چ che: start at the top-right with the small head stroke going left, then drop into the round bowl below; dot after.
-- گ gāf: the sloping cap stroke first from top-left down to the right, then the base going left; گ adds a second cap stroke.
+Pen movement for each letter is described in step 2 above.
 
 ## 7 · Dictation  ·  *production · self-check with the key below*
 

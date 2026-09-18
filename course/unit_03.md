@@ -17,15 +17,21 @@
 ![pe card](../assets/images/letters/pe_naskh.png)
 ![pe forms](../assets/images/forms/pe_naskh.png)
 
+✎ *How the pen moves:* start top-right, draw the shallow bowl leftwards, hook up at the left end; dots after. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ٹ ṭe** — joins forward (4 forms).
 
 ![ṭe card](../assets/images/letters/tte_naskh.png)
 ![ṭe forms](../assets/images/forms/tte_naskh.png)
 
+✎ *How the pen moves:* start top-right, draw the shallow bowl leftwards, hook up at the left end; dots after. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ث s̱e** — joins forward (4 forms).
 
 ![s̱e card](../assets/images/letters/se_naskh.png)
 ![s̱e forms](../assets/images/forms/se_naskh.png)
+
+✎ *How the pen moves:* start top-right, draw the shallow bowl leftwards, hook up at the left end; dots after. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 ## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
@@ -77,11 +83,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: پانی, پُل, ٹوپی, پَتا, پاک.
 
-**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
-
-- پ pe: start top-right, draw the shallow bowl leftwards, hook up at the left end; dots after.
-- ٹ ṭe: start top-right, draw the shallow bowl leftwards, hook up at the left end; dots after.
-- ث s̱e: start top-right, draw the shallow bowl leftwards, hook up at the left end; dots after.
+Pen movement for each letter is described in step 2 above.
 
 ## 7 · Dictation  ·  *production · self-check with the key below*
 

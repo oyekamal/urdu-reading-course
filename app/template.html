@@ -263,9 +263,9 @@ function secUnit11(){
 
 function secTest(){
   const s=el('section'); s.innerHTML='<h2>Reading test <span class="tag">EGRA-style · one-to-one · a helper times and counts</span></h2>';
-  const allWords=UNITS.flatMap(u=>u.words.map(W)); const nonwords=['نَبَل','تیمو','کُدار','سَپون','مِلاک','بَٹری','گوناش','دِرَپ','چَکول','زیمار','فَلوت','ہَبیک','رونَل','ٹِکاس','جَمود','شَبیل','قَدور','پَلیش','بُکار','لَمیر'];
-  const passage='میرا نام کمال ہے۔ میں لاہور میں رہتا ہوں۔ میرے گھر کے پاس ایک باغ ہے۔ صبح میں باغ میں چلتا ہوں۔ باغ میں پھول اور درخت ہیں۔ میری بہن بھی میرے ساتھ آتی ہے۔ ہم گلاب کے پھول دیکھتے ہیں۔ شام کو ہم گھر واپس جاتے ہیں اور چائے پیتے ہیں۔';
-  const qs=['کمال کہاں رہتا ہے؟','کمال صبح کیا کرتا ہے؟','باغ میں کیا ہے؟','کمال کے ساتھ کون آتی ہے؟','شام کو وہ کیا پیتے ہیں؟'];
+  const allWords=UNITS.flatMap(u=>u.words.map(W)); const A=DATA.letters.assessment; const nonwords=A.nonwords; const _unused=['نَبَل','تیمو','کُدار','سَپون','مِلاک','بَٹری','گوناش','دِرَپ','چَکول','زیمار','فَلوت','ہَبیک','رونَل','ٹِکاس','جَمود','شَبیل','قَدور','پَلیش','بُکار','لَمیر'];
+  const passage=A.passage; const _p='میرا نام کمال ہے۔ میں لاہور میں رہتا ہوں۔ میرے گھر کے پاس ایک باغ ہے۔ صبح میں باغ میں چلتا ہوں۔ باغ میں پھول اور درخت ہیں۔ میری بہن بھی میرے ساتھ آتی ہے۔ ہم گلاب کے پھول دیکھتے ہیں۔ شام کو ہم گھر واپس جاتے ہیں اور چائے پیتے ہیں۔';
+  const qs=A.questions; const _q=['کمال کہاں رہتا ہے؟','کمال صبح کیا کرتا ہے؟','باغ میں کیا ہے؟','کمال کے ساتھ کون آتی ہے؟','شام کو وہ کیا پیتے ہیں؟'];
   const parts=[['1 · Letter sounds (60 s)',shuffle(L.map(l=>l.ch).concat(L.map(l=>l.ch))).slice(0,100).join(' ')],['2 · Nonwords (60 s)',nonwords.join('  ')],['3 · Familiar words (60 s)',shuffle(allWords).slice(0,50).map(w=>w.ur).join('  ')],['4 · Passage (time it)',passage],['5 · Comprehension',qs.join('  ')]];
   parts.forEach(([t,body])=>{s.insertAdjacentHTML('beforeend',`<h3 style="margin:16px 0 6px;font-size:14px;color:var(--muted)">${t}</h3><div class="grid-ur" style="font-size:28px">${body}</div>`);});
   const calc=el('div','drill'); calc.innerHTML='<h3 style="font-size:14px;color:var(--muted)">Score the passage</h3><label>Words read correctly <input id="cw" type="number" min="0" value="0"></label> <label>Seconds taken <input id="cs" type="number" min="1" value="60"></label> <button id="cb" class="primary">Compute cwpm</button> <div id="cr" class="score"></div>';

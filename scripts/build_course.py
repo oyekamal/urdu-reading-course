@@ -17,7 +17,7 @@ STROKE = {
  "toe": "draw the loop first (like ص), then the tall stroke rising from its right; dot after for ظ.",
  "ain": "small c-shape at the top opening right, then the bowl beneath; dot after for غ.",
  "fe": "small loop at the top, then the long shallow bowl (ف) or deep bowl (ق) leftwards; dots after.",
- "kaf": "the sloping cap stroke first from top-left down to the right, then the base going left; گ adds a second cap stroke.",
+ "kaf": "base stroke first, right to left along the line, then the sloping cap (sar-kash) added on top last; گ gets a second cap.",
  "lam": "tall stroke down, then curve into the bowl leftwards.",
  "mim": "small closed loop, then the tail down-left.",
  "nun": "the same bowl as ب but deeper and rounder; dot after (none for ں).",
@@ -46,7 +46,7 @@ def unit_md(u, taught_before):
         for l in letters:
             j = "joins forward (4 forms)" if l["joiner"] else "does **not** join forward (2 forms: isolated, final)"
             ni = " No Urdu word begins with it." if l["never_initial"] else ""
-            out.append(f"**{l['ch']} {l['name']}** — {j}.{ni}\n\n![{l['name']} card](../assets/images/letters/{l['id']}_{style}.png)\n![{l['name']} forms](../assets/images/forms/{l['id']}_{style}.png)\n")
+            out.append(f"**{l['ch']} {l['name']}** — {j}.{ni}\n\n![{l['name']} card](../assets/images/letters/{l['id']}_{style}.png)\n![{l['name']} forms](../assets/images/forms/{l['id']}_{style}.png)\n\n✎ *How the pen moves:* {STROKE.get(l['family'], STROKE['default'])} (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)\n")
         out.append("## 3 · Tell it apart  ·  *recognition · self-check with audio*\n")
         seen = set()
         for l in letters:
@@ -77,10 +77,7 @@ def unit_md(u, taught_before):
                 out.append(f"- {s[3]}  —  *{s[1]}*  —  {s[2]}  · `assets/audio/sentences/u{n:02d}_{i:02d}.mp3`")
         out.append("\n## 6 · Write it  ·  *production · needs a helper or the app tracer to check*\n")
         out.append("Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: " + ", ".join(w[3] for w in words[:5]) + ".\n")
-        out.append("**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.\n")
-        for l in letters:
-            out.append(f"- {l['ch']} {l['name']}: {STROKE.get(l['family'], STROKE['default'])}")
-        out.append("")
+        out.append("Pen movement for each letter is described in step 2 above.\n")
         dict_words = random.sample(words, min(5, len(words)))
         out.append("## 7 · Dictation  ·  *production · self-check with the key below*\n")
         out.append("Play each clip twice. Learner writes the word. Then reveal.\n")
@@ -103,7 +100,8 @@ def special_units():
     dia = "\n".join(f"| {d['ch']} | {d['name']} ({d['name_ur']}) | {d['sound']} | {d['position']} | {d['example'][0]} {d['example'][1]} — {d['example'][2]} |" for d in D["diacritics"])
     lv = "\n".join(f"| {a} | {b} | {c} |" for a, b, c in D["long_vowels"])
     num = "  ".join(f"{a}={b}" for a, b in D["numerals"])
-    nj = " ".join(l["ch"] for l in D["letters"] if not l["joiner"])
+    nj = "ا د ڈ ذ ر ڑ ز ژ و ے"
+    A = D["assessment"]
     return {
         0: f"""
 ## The five things to know before letter one
@@ -176,8 +174,18 @@ Timing is per subtask, 60 seconds each unless stated. Stop a subtask after 10 co
 1. **Letter sounds** — 100 letters in random order (`assets/images/letters/*_nastaliq.png`). Score: correct letter-sounds per minute.
 2. **Nonwords** — 50 made-up words (e.g. نَبَل، تیمو، کُدار). Score: correct per minute. This is the anti-memorisation check.
 3. **Familiar words** — 50 words from units 1–11 in Nastaliq, no marks. Score: correct per minute.
-4. **Passage** — read the unit 11 passage aloud (about 60 words). Score: correct words per minute (cwpm).
-5. **Comprehension** — 5 questions on the passage, asked orally.
+4. **Passage** — the learner reads this aloud (about 60 words). Score: correct words per minute (cwpm).
+
+> {A['passage']}
+
+5. **Comprehension** — ask orally:
+   1. {A['questions'][0]}
+   2. {A['questions'][1]}
+   3. {A['questions'][2]}
+   4. {A['questions'][3]}
+   5. {A['questions'][4]}
+
+**Nonwords for subtask 2:** {' · '.join(A['nonwords'])}
 
 | cwpm | Level |
 |---|---|
@@ -188,9 +196,13 @@ Timing is per subtask, 60 seconds each unless stated. Stop a subtask after 10 co
 
 Record results on paper or in the app (unit 12, "Score the passage" box). Retest after four weeks.
 
-<details><summary>Answer key — comprehension (passage in the app, unit 12)</summary>
+<details><summary>Answer key — comprehension</summary>
 
-1. لاہور میں (in Lahore) 2. باغ میں چلتا ہے (walks in the garden) 3. پھول اور درخت (flowers and trees) 4. اس کی بہن (his sister) 5. چائے (tea)
+1. {A['answers'][0]}
+2. {A['answers'][1]}
+3. {A['answers'][2]}
+4. {A['answers'][3]}
+5. {A['answers'][4]}
 
 </details>
 """,

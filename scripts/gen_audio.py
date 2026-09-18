@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate all course audio locally with facebook/mms-tts-urd-script_arabic (VITS, runs on CPU).
+"""Generate all course audio locally with an MMS-VITS Urdu model (runs on CPU). Default = sharjeel103/mms-tts-urdu-finetune (won the bake-off on isolated letters/words); set URC_TTS_MODEL to override.
 
 Outputs assets/audio/<kind>/<id>.wav (16 kHz mono) + .mp3, and assets/audio/manifest.json.
 Kinds: names (letter names), words (letter example words), syllables (CV with long vowels: با بی بو),
@@ -18,7 +18,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = json.load(open(f"{ROOT}/data/letters.json", encoding="utf8"))
 UNITS = json.load(open(f"{ROOT}/data/units.json", encoding="utf8"))["units"]
 OUT = f"{ROOT}/assets/audio"
-MODEL = "facebook/mms-tts-urd-script_arabic"
+MODEL = os.environ.get("URC_TTS_MODEL", "sharjeel103/mms-tts-urdu-finetune")  # bake-off winner, research/06_tts_bakeoff.md; baseline: facebook/mms-tts-urd-script_arabic
 NUMERAL_WORDS = ["صفر", "ایک", "دو", "تین", "چار", "پانچ", "چھے", "سات", "آٹھ", "نو"]
 
 
@@ -68,6 +68,7 @@ def main():
             subprocess.run(["ffmpeg", "-loglevel", "quiet", "-y", "-i", wav, "-codec:a", "libmp3lame", "-q:a", "4", wav[:-4] + ".mp3"], check=True)
         manifest.append({"kind": kind, "id": id_, "text": text, "file": os.path.relpath(wav, OUT)})
     json.dump(manifest, open(f"{OUT}/manifest.json", "w", encoding="utf8"), ensure_ascii=False, indent=1)
+    open(f"{OUT}/MODEL.txt", "w").write(MODEL + "\n")
     print(f"{len(manifest)} clips in {time.time()-t0:.0f}s", flush=True)
     if verify:
         import whisper

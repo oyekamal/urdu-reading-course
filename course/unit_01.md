@@ -20,30 +20,42 @@
 ![alif card](../assets/images/letters/alif_naskh.png)
 ![alif forms](../assets/images/forms/alif_naskh.png)
 
+✎ *How the pen moves:* one stroke, top to bottom; when it follows a joiner it rises from the joining line. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ب be** — joins forward (4 forms).
 
 ![be card](../assets/images/letters/be_naskh.png)
 ![be forms](../assets/images/forms/be_naskh.png)
+
+✎ *How the pen moves:* start top-right, draw the shallow bowl leftwards, hook up at the left end; dots after. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 **ک kāf** — joins forward (4 forms).
 
 ![kāf card](../assets/images/letters/kaf_naskh.png)
 ![kāf forms](../assets/images/forms/kaf_naskh.png)
 
+✎ *How the pen moves:* base stroke first, right to left along the line, then the sloping cap (sar-kash) added on top last; گ gets a second cap. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ل lām** — joins forward (4 forms).
 
 ![lām card](../assets/images/letters/lam_naskh.png)
 ![lām forms](../assets/images/forms/lam_naskh.png)
+
+✎ *How the pen moves:* tall stroke down, then curve into the bowl leftwards. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 **م mīm** — joins forward (4 forms).
 
 ![mīm card](../assets/images/letters/mim_naskh.png)
 ![mīm forms](../assets/images/forms/mim_naskh.png)
 
+✎ *How the pen moves:* small closed loop, then the tail down-left. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ن nūn** — joins forward (4 forms).
 
 ![nūn card](../assets/images/letters/nun_naskh.png)
 ![nūn forms](../assets/images/forms/nun_naskh.png)
+
+✎ *How the pen moves:* the same bowl as ب but deeper and rounder; dot after (none for ں). (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 ## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
@@ -95,14 +107,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: اَب, بابا, اِمام, نام, کام.
 
-**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
-
-- ا alif: one stroke, top to bottom; when it follows a joiner it rises from the joining line.
-- ب be: start top-right, draw the shallow bowl leftwards, hook up at the left end; dots after.
-- ک kāf: the sloping cap stroke first from top-left down to the right, then the base going left; گ adds a second cap stroke.
-- ل lām: tall stroke down, then curve into the bowl leftwards.
-- م mīm: small closed loop, then the tail down-left.
-- ن nūn: the same bowl as ب but deeper and rounder; dot after (none for ں).
+Pen movement for each letter is described in step 2 above.
 
 ## 7 · Dictation  ·  *production · self-check with the key below*
 

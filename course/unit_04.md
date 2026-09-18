@@ -18,20 +18,28 @@
 ![wāʾo card](../assets/images/letters/wao_naskh.png)
 ![wāʾo forms](../assets/images/forms/wao_naskh.png)
 
+✎ *How the pen moves:* small loop, then a short tail down-left; never joins forward. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ر re** — does **not** join forward (2 forms: isolated, final).
 
 ![re card](../assets/images/letters/re_naskh.png)
 ![re forms](../assets/images/forms/re_naskh.png)
+
+✎ *How the pen moves:* start at the top and sweep down-left below the line; ز ژ dots after; never joins forward. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 **د dāl** — does **not** join forward (2 forms: isolated, final).
 
 ![dāl card](../assets/images/letters/dal_naskh.png)
 ![dāl forms](../assets/images/forms/dal_naskh.png)
 
+✎ *How the pen moves:* start at the top, come down and out to the left in one angled stroke; never joins forward. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
 **ہ choṭī he (gol he)** — joins forward (4 forms).
 
 ![choṭī he (gol he) card](../assets/images/letters/he_naskh.png)
 ![choṭī he (gol he) forms](../assets/images/forms/he_naskh.png)
+
+✎ *How the pen moves:* ہ is a small loop with a short tail; ھ is two connected bowls open at the top. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
 
 ## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
@@ -82,12 +90,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: وُہ, دو, دِن, دال, دَم.
 
-**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
-
-- و wāʾo: small loop, then a short tail down-left; never joins forward.
-- ر re: start at the top and sweep down-left below the line; ز ژ dots after; never joins forward.
-- د dāl: start at the top, come down and out to the left in one angled stroke; never joins forward.
-- ہ choṭī he (gol he): ہ is a small loop with a short tail; ھ is two connected bowls open at the top.
+Pen movement for each letter is described in step 2 above.
 
 ## 7 · Dictation  ·  *production · self-check with the key below*
 
@@ -139,4 +142,4 @@ Play each clip twice. Learner writes the word. Then reveal.
 
 
 ## Guess before you look
-Cover the forms cards. For each of و ر د ہ, write the word **دور** *dūr* and **ہار** *hār* from tiles first. Which letters made the next letter start fresh? Now check the cards: the rule is that ا ے و ر د ں ڈ ڑ ز ژ ذ never join forward. You have just discovered it rather than been told it.
+Cover the forms cards. For each of و ر د ہ, write the word **دور** *dūr* and **ہار** *hār* from tiles first. Which letters made the next letter start fresh? Now check the cards: the rule is that ا د ڈ ذ ر ڑ ز ژ و ے never join forward. You have just discovered it rather than been told it.
