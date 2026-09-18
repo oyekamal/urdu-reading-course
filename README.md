@@ -1,46 +1,71 @@
-# Urdu Reading Course
+# Urdu Reading Course · اردو پڑھنا سیکھیں
 
-A research-backed course that takes anyone, child or adult, Urdu speaker or not, from zero to reading Urdu script. Everything here is generated from two data files, so a fix to a letter or a word flows into the cards, the lessons and the app.
+A research-backed course and app that takes anyone, child or adult, Urdu speaker or not, from zero to reading Urdu script. Everything is generated from two data files, so a fix to a letter or a word flows into the cards, the printable lessons and the app.
+
+**Try the app:** open `app/index.html` (or the GitHub Pages link in the repo description). It runs offline once loaded, with audio for every letter, word and sentence.
 
 ## What is in the box
 
 | Path | What |
 |---|---|
-| `research/` | Six cited research files: quality bar (Alif Baa, Delacy, Duolingo, Aamozish), books, apps, script reference (every letter, codepoint, IPA, joining rule), pedagogy (what the evidence says), open assets and licences, TTS bake-off |
-| `course/00_design.md` | Every design decision with the evidence behind it, the 13-unit map, hours per unit |
-| `course/unit_00.md … unit_12.md` | Printable lessons: hear, see, tell apart, join, read, write, dictation, check, with answer keys |
-| `data/letters.json` | 40 letters + aspirates + diacritics + long vowels + sight words + numerals: the single source of truth |
+| `app/` | The interactive course: 13 units, drills (tap what you hear, tile word building, tracing, dictation, quiz gate), progress, Naskh/Nastaliq switch, three tracks, EGRA-style reading test. Single HTML file plus `audio.json`. |
+| `course/00_design.md` | Every design decision with the evidence behind it, the unit map, hours per unit |
+| `course/unit_00.md … unit_12.md` | Printable lessons with answer keys and pen-movement guidance |
+| `data/letters.json` | 39 letters, aspirates, vowel marks, long vowels, sight words, numerals, assessment passage: the single source of truth |
 | `data/units.json` | 13 units, 220 decodable words (bare and vowelled), 33 sentences |
-| `data/tatoeba_urd_freq.json` | Letter and word frequencies from 2,851 Tatoeba Urdu sentences (drives the teaching order) |
-| `assets/images/` | 616 PNG cards: letter cards, positional-forms cards, look-alike contrast cards, word cards, each in Naskh and Nastaliq |
-| `assets/audio/` | 474 clips (wav + mp3): letter names, example words, CV syllables, aspirates, diacritics, every unit word and sentence, sight words, numerals |
-| `assets/fonts/` | Noto Nastaliq Urdu and Noto Naskh Arabic (OFL) |
-| `app/index.html` + `app/audio.json` | The interactive course: drills, tracing, dictation, quiz gate, progress, Naskh/Nastaliq switch, three tracks |
-| `app/audio_check.html` | Listening page to flag any clip that sounds wrong |
-| `.audit/` | Decision log and critic reports from the gauntlet loop |
+| `data/tatoeba_urd_freq.json` | Letter and word frequencies from 2,851 Tatoeba Urdu sentences; drives the teaching order |
+| `data/audio_overrides.json` | Per-clip rendering choices made by a human listener |
+| `assets/images/` | 616 PNG cards (letters, positional forms, look-alike contrasts, vowelled words) in Naskh and Nastaliq |
+| `assets/audio/` | 474 clips (mp3): letter names, example words, CV syllables, aspirates, vowel marks, every unit word and sentence, sight words, numerals |
+| `assets/fonts/` | Noto Nastaliq Urdu and Noto Naskh Arabic (SIL OFL) |
+| `research/` | Eleven cited research files: quality bar, books, apps, script reference, pedagogy, open assets, TTS bake-off, offline literacy apps, teacher tools, tech stack, learning design |
+| `docs/offline-app-plan.html` | Product and architecture plan for the offline Android app (learner, teacher, parent modes) |
+| `mobile/` | Capacitor project for the Android build (in progress) |
+| `scripts/` | The build pipeline (below) |
+| `.audit/` | Decision log and the gauntlet-loop critic reports, kept for transparency |
 
-## Run it
+## How the course is designed
 
-```bash
-cd app && python3 -m http.server 8765      # then open http://localhost:8765/index.html
-```
+- **Synthetic phonics spine.** Letter, sound, blend, decodable word, sentence. The USAID Pakistan Reading Project endline showed phonics-based Urdu instruction gaining 12.6 correct words per minute over control.
+- **Letter order by frequency, then shape family.** Unit 1 is ا ب ک ل م ن, the letters that make the most real words fastest, from our own corpus count.
+- **Look-alike letters taught together** (ب ت ن ی; پ ٹ ث; ج چ ح خ; د ڈ ذ; ر ڑ ز ژ) with contrast drills, because the error data says dot confusions do not fade on their own.
+- **Ten non-joiners as a rule**, not exceptions: ا د ڈ ذ ر ڑ ز ژ و ے. The popular "seven" is wrong.
+- **Vowel marks kept until unit 11**, then faded once nonwords decode.
+- **Naskh first, Nastaliq in unit 11**, both always available. This one is an inference, and is labelled as such.
+- **EGRA-style assessment** with the Pakistani grade-2 benchmarks: over 90 cwpm exceeds, 60 to 90 meets, under 60 below.
+
+Full reasoning with citations: `course/00_design.md`.
 
 ## Rebuild after editing the data
 
 ```bash
 python3 scripts/check_decodable.py   # every unit word uses only letters taught so far
-python3 scripts/render_cards.py      # PNG cards (PIL + libraqm, both scripts)
-python3 scripts/gen_audio.py         # local TTS, sharjeel103/mms-tts-urdu-finetune (bake-off winner), CPU is fine
-python3 scripts/verify_audio.py      # Whisper smoke test -> assets/audio/verify.json
+python3 scripts/render_cards.py      # PNG cards (Pillow with libraqm), both scripts
+python3 scripts/gen_audio.py         # local TTS (sharjeel103/mms-tts-urdu-finetune), CPU is fine
+python3 scripts/verify_audio.py      # Whisper smoke test on concatenated chunks
 python3 scripts/build_course.py      # course/unit_NN.md
 python3 scripts/build_app.py         # app/index.html + app/audio.json
 ```
 
+Audio repair loop: flag clips in `app/audio_check.html`, generate alternatives with `scripts/repair_candidates.py flags.txt`, pick in `app/repair_pick.html`, apply with `scripts/apply_picks.py picks.json`. Choices persist in `data/audio_overrides.json`.
+
 Python needs: torch, transformers, soundfile, Pillow (with libraqm), openai-whisper, ffmpeg on PATH.
 
-## Licences and honesty
+## Audio, honestly
 
-- Fonts: SIL Open Font License. Word/sentence corpus: Tatoeba, CC BY 2.0.
-- Audio: generated with an MMS-VITS fine-tune (base model CC BY-NC 4.0; fine-tune licence unstated, treat as the same). Fine for a pilot; for a commercial client, record a native speaker or use a paid Pakistani TTS. See `research/05_open_assets.md`.
-- The audio is machine voice. It was smoke-tested for intelligibility, not judged for accent. Use `app/audio_check.html` to flag bad clips.
-- Design choices marked *inference* in `course/00_design.md` (Naskh-first, heritage-track speed) are reasoned, not proven.
+The voice is machine-generated, locally, with an MMS-VITS Urdu fine-tune chosen by a Whisper-judged bake-off (`research/06_tts_bakeoff.md`). The models drop short-vowel marks, so ambiguous words were re-rendered inside a carrier phrase and cut out using the model's own letter timings; a human listener then picked the best rendering for 95 flagged clips. It is intelligible and good enough for a pilot. For a commercial product, record a native speaker: every successful offline literacy app ships human audio, and the base model's licence is CC BY-NC.
+
+## Licences
+
+- Code and scripts: MIT (see `LICENSE`).
+- Course text, data and images: CC BY 4.0.
+- Audio: generated with Meta MMS-TTS derivatives, CC BY-NC 4.0. Non-commercial use only.
+- Fonts: SIL Open Font License 1.1. Word frequencies: Tatoeba, CC BY 2.0.
+
+## Roadmap
+
+The offline Android app (`docs/offline-app-plan.html`): one APK with learner, teacher and parent modes, spaced review, a session engine, the EGRA flow with timers and auto-scoring, class reports and file export. Built with Capacitor from the same web code, no server required.
+
+## Credits
+
+Built by Kamil (Muhammad Kamal's agent) in September 2026, with three rounds of adversarial review against Georgetown's *Alif Baa*, Delacy's *Beginner's Urdu Script*, Duolingo's Arabic letters course and Rekhta's Aamozish. Evidence sources are listed at the end of each research file.

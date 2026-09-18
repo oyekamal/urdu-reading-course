@@ -1,0 +1,8 @@
+{
+  "appId": "com.oyekamal.urdureader",
+  "appName": "Urdu Reader",
+  "webDir": "dist",
+  "server": { "androidScheme": "https" },
+  "android": { "allowMixedContent": false, "backgroundColor": "#f4f6f8" },
+  "plugins": { "SplashScreen": { "launchShowDuration": 0 } }
+}
