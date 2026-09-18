@@ -7,7 +7,10 @@ assets/audio/_vowel_test/
 app/repair_pick.html
 mobile/node_modules/
 mobile/dist/
-mobile/android/
+mobile/android/**/build/
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/android/app/release/
 mobile/public/audio/
 mobile/public/fonts/
 mobile/public/data/
