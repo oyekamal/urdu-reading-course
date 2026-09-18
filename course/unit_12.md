@@ -11,16 +11,16 @@ Timing is per subtask, 60 seconds each unless stated. Stop a subtask after 10 co
 3. **Familiar words** — 50 words from units 1–11 in Nastaliq, no marks. Score: correct per minute.
 4. **Passage** — the learner reads this aloud (about 60 words). Score: correct words per minute (cwpm).
 
-> {A['passage']}
+> میرا نام کمال ہے۔ میں لاہور میں رہتا ہوں۔ میرے گھر کے پاس ایک باغ ہے۔ صبح میں باغ میں چلتا ہوں۔ باغ میں پھول اور درخت ہیں۔ میری بہن بھی میرے ساتھ آتی ہے۔ ہم گلاب کے پھول دیکھتے ہیں۔ شام کو ہم گھر واپس جاتے ہیں اور چائے پیتے ہیں۔
 
 5. **Comprehension** — ask orally:
-   1. {A['questions'][0]}
-   2. {A['questions'][1]}
-   3. {A['questions'][2]}
-   4. {A['questions'][3]}
-   5. {A['questions'][4]}
+   1. کمال کہاں رہتا ہے؟
+   2. کمال صبح کیا کرتا ہے؟
+   3. باغ میں کیا ہے؟
+   4. کمال کے ساتھ کون آتی ہے؟
+   5. شام کو وہ کیا پیتے ہیں؟
 
-**Nonwords for subtask 2:** {' · '.join(A['nonwords'])}
+**Nonwords for subtask 2:** نَبَل · تیمو · کُدار · سَپون · مِلاک · بَٹری · گوناش · دِرَپ · چَکول · زیمار · فَلوت · ہَبیک · رونَل · ٹِکاس · جَمود · شَبیل · قَدور · پَلیش · بُکار · لَمیر
 
 | cwpm | Level |
 |---|---|
@@ -33,10 +33,10 @@ Record results on paper or in the app (unit 12, "Score the passage" box). Retest
 
 <details><summary>Answer key — comprehension</summary>
 
-1. {A['answers'][0]}
-2. {A['answers'][1]}
-3. {A['answers'][2]}
-4. {A['answers'][3]}
-5. {A['answers'][4]}
+1. لاہور میں (in Lahore)
+2. باغ میں چلتا ہے (walks in the garden)
+3. پھول اور درخت (flowers and trees)
+4. اس کی بہن (his sister)
+5. چائے (tea)
 
 </details>

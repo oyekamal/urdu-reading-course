@@ -167,7 +167,7 @@ Every card exists in both styles (`*_naskh.png` and `*_nastaliq.png`). Put them 
 Course order was chosen for speed. Dictionaries use this order:
 ا ب پ ت ٹ ث ج چ ح خ د ڈ ذ ر ڑ ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ہ ھ ء ی ے
 """,
-        12: """
+        12: f"""
 ## Reading test (EGRA-style, 10 minutes, one-to-one)
 Timing is per subtask, 60 seconds each unless stated. Stop a subtask after 10 consecutive errors.
 

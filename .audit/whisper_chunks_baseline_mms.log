@@ -1,0 +1,73 @@
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+aspirates 0 0.39 | بھائی پھول تھالی ٹھنڈا جھنڈا چھت دھاگا ڈھول پڑھنا کھانا گھر -> بھائی نحویر تحالی تردہ دیہ جا جلکا درد ایغانوز پہایا قرار ہی
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+diacritics 0 0.35 | زبر بَس زیر دِل پیش گُل جزم بَسْ تشدید بچّہ کھڑا زبر اعلٰی -> جل بس گیر گیر پی ایل جیل بس جیل اجہ خدار جل اہلے
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+names 0 0.42 | الف بے کاف لام میم نون تے چھوٹی یے بڑی یے پے ٹے ثے -> آرف بنا آف لہ مون مون جیب چھوٹی بی مون تی جرب
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+names 12 0.12 | واؤ رے دال ہے سین شین جیم چے گاف نون غنہ دو چشمی ہے ڈال -> وہ ہی نی دی یو جل ور مونہ یک تشریح رال
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+names 24 0.1 | ڑے زے ژے فے قاف خے غین عین بڑی حے صاد ضاد طوے -> جر در یہ جر آہ در ملی ملی ملی ہے در درا در
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+names 36 0.48 | ظوے ذال ہمزہ -> جرول جل حامزہ
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+numerals 0 0.45 | صفر ایک دو تین چار پانچ چھے سات آٹھ نو -> سرر پر ای یار پانچ گیر زور آر ور
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+sentences 0 0.67 | بابا کا کام کالا بال نمک لا تین کتاب بلی کالی ہے نیلا تکیا ل -> ورگغو کائرہوال نمدلا اینگیتال بیکریہ نلات کیالے آنجلا تتیفی 
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+sentences 12 0.24 | چار گلاب شیر جنگل میں ہے دوست کا جوتا میں گھر میں ہوں پھول ک -> چار دیلا شیر جنور میں ہے دوست کا جھوٹا میں گھر میں ہوں ہن کی
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+sentences 24 0.45 | صبح صاف ہے طوطا ذرا بڑا ہے یہ لفظ صحیح ہے آپ کا نام کیا ہے؟  -> سومیں صاف ہے تو اپا زراباہ ہے یہ اللہ فضل صحیح ہے آپ کا نام 
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+sight 0 0.3 | کا کی کے سے پر کہ اور ہے ہیں نے کو میں -> اہ اہ جہ بھر جو دے مہ جہ مہ
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+sight 12 0.7 | نہیں وہ یہ اس تھا تھی کیا بھی -> نہیں بھوڑ یہ اس تھا کی یہ دی
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+syllables 0 0.14 | با بی بو کا کی کو لا لی لو ما می مو -> بہ بہ بہ بہ بہ بہ بہ بہ بہ
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+syllables 12 0.36 | نا نی نو تا تی تو پا پی پو ٹا ٹی ٹو -> اہ می او ت تور ور نی او تی تور
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+syllables 24 0.49 | ثا ثی ثو را ری رو دا دی دو ہا ہی ہو -> جا جی تو ریادہ ہی روڑا ہا بی بی آر ہی آر
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+syllables 36 0.26 | سا سی سو شا شی شو جا جی جو چا چی چو -> جھا جھو جھو جھو جھو جھو جھو جھو جھو جھو
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+syllables 48 0.33 | گا گی گو ڈا ڈی ڈو زا زی زو ژا ژی ژو -> اے اے تی تو تا جو را اے اے
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+syllables 60 0.33 | فا فی فو قا قی قو خا خی خو غا غی غو -> ہاں ایک دو تی ایک دو دو کی دو با بھائی رو
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+syllables 72 0.33 | حا حی حو صا صی صو ضا ضی ضو طا طی طو -> ڈا ڈی ڈھو ڈا ڈی ڈھو ڈھو ڈھو ڈھو ڈا ڈھو ڈھو
+/home/oye/.local/lib/python3.12/site-packages/whisper/transcribe.py:130: UserWarning: Performing inference on CPU when CUDA is available
+  warnings.warn("Performing inference on CPU when CUDA is available")
+syllables 84 0.0 | ظا ظی ظو ذا ذی ذو -> 
+Traceback (most recent call last):
+  File "/home/oye/Documents/free_work/urdu-reading-course/scripts/verify_audio.py", line 16, in <module>
+    audio = np.concatenate([np.concatenate([sf.read(f"{OUT}/{j['file']}")[0].astype(np.float32), GAP]) for j in grp])
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oye/.local/lib/python3.12/site-packages/soundfile.py", line 305, in read
+    with SoundFile(file, 'r', samplerate, channels,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oye/.local/lib/python3.12/site-packages/soundfile.py", line 690, in __init__
+    self._file = self._open(file, mode_int, closefd)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oye/.local/lib/python3.12/site-packages/soundfile.py", line 1265, in _open
+    raise LibsndfileError(err, prefix="Error opening {0!r}: ".format(self.name))
+soundfile.LibsndfileError: Error opening '/home/oye/Documents/free_work/urdu-reading-course/assets/audio/units/u01_02.wav': System error.
