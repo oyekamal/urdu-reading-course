@@ -19,7 +19,7 @@ body[data-style="nastaliq"] .ur,.ur.nastaliq{font-family:var(--nastaliq);line-he
 .tabs{display:flex;gap:4px;overflow-x:auto;padding-bottom:4px;margin:6px 0 10px}.tab{flex:none;font:inherit;border:1px solid transparent;background:transparent;color:var(--muted);padding:8px 12px;border-radius:999px;cursor:pointer}.tab.active{background:var(--card);border-color:var(--line);color:var(--ink);font-weight:700}
 .table{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:middle}th{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
 .timer{font-size:44px;font-weight:800;font-variant-numeric:tabular-nums;text-align:center}
-.grid-words{display:flex;flex-wrap:wrap;gap:10px 16px;direction:rtl;font-size:30px;line-height:1.5}
+.grid-words{display:flex;flex-wrap:wrap;gap:6px 12px;direction:rtl;font-size:26px;line-height:1.5}
 .item{padding:2px 6px;border-radius:8px;cursor:pointer}.item.wrong{background:#fde8e8;color:#9b2c2c;text-decoration:line-through}.item.reached{outline:2px dashed var(--accent)}
 .tile{font-size:40px;line-height:1.2;min-width:72px;padding:8px 14px;border:2px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);cursor:pointer;min-height:56px}
 .tile.small{font-size:28px;min-width:54px;padding:6px 10px}.tile.ok{border-color:var(--good);background:color-mix(in srgb,var(--good) 15%,var(--card))}.tile.no{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,var(--card))}

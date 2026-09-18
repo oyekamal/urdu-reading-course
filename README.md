@@ -20,7 +20,7 @@ A research-backed course and app that takes anyone, child or adult, Urdu speaker
 | `assets/fonts/` | Noto Nastaliq Urdu and Noto Naskh Arabic (SIL OFL) |
 | `research/` | Eleven cited research files: quality bar, books, apps, script reference, pedagogy, open assets, TTS bake-off, offline literacy apps, teacher tools, tech stack, learning design |
 | `docs/offline-app-plan.html` | Product and architecture plan for the offline Android app (learner, teacher, parent modes) |
-| `mobile/` | Capacitor project for the Android build (in progress) |
+| `mobile/` | The Android app (Capacitor 7 + Vite): learner, parent and teacher modes, offline, one APK |
 | `scripts/` | The build pipeline (below) |
 | `.audit/` | Decision log and the gauntlet-loop critic reports, kept for transparency |
 
@@ -62,9 +62,23 @@ The voice is machine-generated, locally, with an MMS-VITS Urdu fine-tune chosen 
 - Audio: generated with Meta MMS-TTS derivatives, CC BY-NC 4.0. Non-commercial use only.
 - Fonts: SIL Open Font License 1.1. Word frequencies: Tatoeba, CC BY 2.0.
 
-## Roadmap
+## Android app
 
-The offline Android app (`docs/offline-app-plan.html`): one APK with learner, teacher and parent modes, spaced review, a session engine, the EGRA flow with timers and auto-scoring, class reports and file export. Built with Capacitor from the same web code, no server required.
+Download the latest APK from the [Releases page](https://github.com/oyekamal/urdu-reading-course/releases) and install it (allow "unknown sources" for a debug build). Everything runs offline: no account, no server.
+
+- **Just me / My family**: learner profiles, a 10-minute daily session (spaced review, then the next lesson step, then a timed read), the eight lesson steps per unit, a Leitner review deck, repeated reading with words per minute, progress, self-check speed test, Naskh/Nastaliq switch, three tracks, backup export and import.
+- **My class**: teacher PIN, roster, a 40-minute lesson script per unit (I do, we do, you do), reading-level groups, the EGRA assessment (five subtasks with timers, stop rules, auto-scoring, bands), class reports with CSV and JSON export, parent slips.
+
+Build it yourself:
+
+```bash
+cd mobile && npm install
+npm run build && npx cap sync android
+cd android && JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64 ./gradlew assembleDebug
+# APK: android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+Design and evidence: `docs/offline-app-plan.html`. Minimum Android 6 (API 23).
 
 ## Credits
 

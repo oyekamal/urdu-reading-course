@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Urdu Reader</string>
+    <string name="title_activity_main">Urdu Reader</string>
+    <string name="package_name">com.oyekamal.urdureader</string>
+    <string name="custom_url_scheme">com.oyekamal.urdureader</string>
+</resources>
