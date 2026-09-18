@@ -17,7 +17,7 @@ export function letterCard(l, ctx) {
   const bar = el('div', 'row'); bar.append('name ', playBtn('names/' + l.id, true), ' word ', playBtn('words/' + l.id, true));
   if (l.role === 'consonant' && !l.never_initial) [['a', 'ا'], ['i', 'ی'], ['u', 'و']].forEach(([t, v]) => { const b = el('button', 'btn', `<span class="ur">${l.ch}${v}</span>`); b.onclick = () => play(`syllables/${l.id}_${t}`); bar.append(b); });
   d.append(bar);
-  const f = el('div', 'forms'); forms(l).forEach(([n, s]) => f.insertAdjacentHTML('beforeend', `<div><span class="g ur">${s ?? '—'}</span><small>${n}${s ? '' : ' (none)'}</small></div>`)); d.append(f);
+  const f = el('div', 'forms'); const have = forms(l).filter(x => x[1]); f.style.gridTemplateColumns = `repeat(${have.length}, 1fr)`; have.forEach(([n, s]) => f.insertAdjacentHTML('beforeend', `<div><span class="g ur">${s}</span><small>${n}</small></div>`)); d.append(f);
   return d;
 }
 
@@ -27,7 +27,7 @@ export function tellApart(unit, ctx, onDone, opts = {}) {
   const have = new Set([...taughtBefore(unit.n), ...(opts.learned || unit.letters)]);
   let pool = [...new Set(focus.flatMap(c => [c, ...(C.by[c]?.confusable || [])]))].filter(c => have.has(c) && C.by[c]);
   pool = [...pool, ...shuffle([...have].filter(c => C.by[c] && !pool.includes(c))).slice(0, Math.max(0, 4 - pool.length + 2))];
-  if (pool.length < 2) pool = [...new Set([...focus, ...shuffle(C.letters.letters.map(l => l.ch)).slice(0, 3)])];
+  if (pool.length < 2) { const box = el('div', 'card'); box.innerHTML = '<p class="muted">Nothing to compare yet.</p>'; onDone && onDone(0, 0); return box; }
   const box = el('div', 'card'); box.innerHTML = '<h2>Tap what you hear</h2>';
   const status = el('div', 'score'), choices = el('div', 'choices'), btn = el('button', 'btn btn-primary', 'Play sound'); let round = 0, score = 0, target, t0;
   function next() {
