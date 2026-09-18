@@ -2,6 +2,24 @@
 
 **Focus:** ئ ؤ آ; tashdīd doubles; jazm stops the vowel; khaṛā zabar; iẕāfat; ۃ in Arabic words; numerals ۰–۹; punctuation ۔ ، ؟
 
+## 1 · Hear it
+
+| Letter | Name | Sound | Say it like… | Audio |
+|---|---|---|---|---|
+| ئ | hamza (ہمزہ) | /ʔ / silent/ | a tiny break between two vowels (کوئی ko-ī). It rides on ی as ئ, on و as ؤ, or stands alone as ء; آ is alif with a madd, long ā at the start of a word (آم ām) | `assets/audio/names/hamza.mp3` · `assets/audio/words/hamza.mp3` (کوئی koʾī — someone / any) |
+
+## 2 · See it
+
+**ئ hamza** — joins forward (4 forms).
+
+![hamza card](../assets/images/letters/hamza_naskh.png)
+![hamza forms](../assets/images/forms/hamza_naskh.png)
+
+✎ *How the pen moves:* a small hook, written last, sitting above ی/و or on the line. (Right to left; dots and marks last, after the whole word. These are the conventional Naskh/Nastaliq stroke orders as taught in Pakistani qaida classes; no published study was found, see research/05_open_assets.md.)
+
+## 3 · Tell it apart  ·  *recognition · self-check with audio*
+
+- No new look-alikes this unit. Re-run the unit 2 dot drill (ب ت ن ی) as a warm-up.
 
 ## 4 · Join it  ·  *production · self-check against the answer shown*
 
