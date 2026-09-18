@@ -2,6 +2,8 @@
 
 **Focus:** و ر د never join forward; و as w/ū/o/au; ہ as h and as the final -a sound; the full non-joiner list ا د ڈ ذ ر ڑ ز ژ و ے
 
+**On the phone, this unit is these lessons, in order:** wāʾo و → re ر → dāl د → choṭī he (gol he) ہ → Join them → Blend → Words 1 → Words 2 → The non-joiners → Read → Unit check. Children rotate through them one at a time; the Unit check (8 of 10) unlocks the next unit.
+
 ## 1 · Hear it
 
 | Letter | Name | Sound | Say it like… | Audio |
@@ -53,6 +55,22 @@ Build each word from letter tiles, right to left. Watch which letters change sha
 - ر + ا + ت  →  **رات**  (rāt, night)
 - ر + و + ٹ + ی  →  **روٹی**  (roṭī, bread)
 
+## 4b · Blend  ·  *recognition · self-check with audio*
+
+A letter plus a vowel letter makes a sound you can say. Play a syllable, learner points to it. Vowels available so far: ا ی و.
+
+| Syllable | Audio |
+|---|---|
+| را | `assets/audio/syllables/re_a.mp3` |
+| ری | `assets/audio/syllables/re_i.mp3` |
+| رو | `assets/audio/syllables/re_u.mp3` |
+| دا | `assets/audio/syllables/dal_a.mp3` |
+| دی | `assets/audio/syllables/dal_i.mp3` |
+| دو | `assets/audio/syllables/dal_u.mp3` |
+| ہا | `assets/audio/syllables/he_a.mp3` |
+| ہی | `assets/audio/syllables/he_i.mp3` |
+| ہو | `assets/audio/syllables/he_u.mp3` |
+
 ## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 
 Vowel marks are shown. Read aloud, then play the audio and compare.
@@ -75,7 +93,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 | دَرْیا | daryā | river | `assets/audio/units/u04_13.mp3` |
 | ہَوا | hawā | wind | `assets/audio/units/u04_14.mp3` |
 | راہ | rāh | path | `assets/audio/units/u04_15.mp3` |
-| دودھ | dūdh | milk (ھ preview) | `assets/audio/units/u04_16.mp3` |
+| دودھ | dūdh | milk *(peek ahead: has a letter from a later unit)* | `assets/audio/units/u04_16.mp3` |
 | مور | mor | peacock | `assets/audio/units/u04_17.mp3` |
 | پَودا | paudā | plant | `assets/audio/units/u04_18.mp3` |
 | نَہَر | nahar | canal | `assets/audio/units/u04_19.mp3` |
@@ -97,46 +115,46 @@ Pen movement for each letter is described in step 2 above.
 Play each clip twice. Learner writes the word. Then reveal.
 
 1. `assets/audio/units/u04_04.mp3`
-2. `assets/audio/units/u04_13.mp3`
-3. `assets/audio/units/u04_06.mp3`
-4. `assets/audio/units/u04_17.mp3`
-5. `assets/audio/units/u04_00.mp3`
+2. `assets/audio/units/u04_15.mp3`
+3. `assets/audio/units/u04_11.mp3`
+4. `assets/audio/units/u04_19.mp3`
+5. `assets/audio/units/u04_08.mp3`
 
 <details><summary>Answer key</summary>
 
 1. دَم (dam)
-2. دَرْیا (daryā)
-3. روٹی (roṭī)
-4. مور (mor)
-5. وُہ (woh)
+2. راہ (rāh)
+3. بادام (bādām)
+4. نَہَر (nahar)
+5. ہَم (ham)
 
 </details>
 
 ## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
-1. Which one says **ham** (we)?   (a) ہَوا   (b) دَم   (c) دو   (d) ہَم
-2. Which one says **roṭī** (bread)?   (a) روٹی   (b) مور   (c) ہَوا   (d) نَہَر
-3. Which one says **hār** (necklace)?   (a) ہار   (b) رات   (c) دَم   (d) وُہ
-4. Which one says **dūdh** (milk (ھ preview))?   (a) مور   (b) دودھ   (c) پَودا   (d) کَمْرہ
-5. Which one says **dūr** (far)?   (a) ہار   (b) دور   (c) ہَم   (d) روٹی
-6. Which one says **dādā** (grandfather)?   (a) دِن   (b) راہ   (c) دادا   (d) کَمْرہ
-7. Which one says **mor** (peacock)?   (a) ہَوا   (b) مور   (c) دودھ   (d) راہ
-8. Which one says **rāt** (night)?   (a) پَودا   (b) ہار   (c) دور   (d) رات
-9. Which one says **dam** (breath)?   (a) دَم   (b) دِن   (c) ہَم   (d) ہَوا
-10. Which one says **nahar** (canal)?   (a) دَم   (b) نَہَر   (c) بادام   (d) پَودا
+1. Which one says **paudā** (plant)?   (a) پَودا   (b) دَرْیا   (c) روٹی   (d) مور
+2. Which one says **dam** (breath)?   (a) بادام   (b) ہار   (c) دَم   (d) ہَوا
+3. Which one says **woh** (he / she / that)?   (a) ہَوا   (b) رات   (c) پَودا   (d) وُہ
+4. Which one says **mor** (peacock)?   (a) مور   (b) رات   (c) دَم   (d) وُہ
+5. Which one says **dādā** (grandfather)?   (a) کَمْرہ   (b) مور   (c) پَودا   (d) دادا
+6. Which one says **bādām** (almond)?   (a) بادام   (b) ہَم   (c) دو   (d) دال
+7. Which one says **kamra** (room)?   (a) راہ   (b) روٹی   (c) بادام   (d) کَمْرہ
+8. Which one says **do** (two)?   (a) پَودا   (b) ہار   (c) ہَم   (d) دو
+9. Which one says **ham** (we)?   (a) ہَوا   (b) دَرْیا   (c) دال   (d) ہَم
+10. Which one says **din** (day)?   (a) رات   (b) دَم   (c) کَمْرہ   (d) دِن
 
 <details><summary>Answer key</summary>
 
-1. ہَم
-2. روٹی
-3. ہار
-4. دودھ
-5. دور
-6. دادا
-7. مور
-8. رات
-9. دَم
-10. نَہَر
+1. پَودا
+2. دَم
+3. وُہ
+4. مور
+5. دادا
+6. بادام
+7. کَمْرہ
+8. دو
+9. ہَم
+10. دِن
 
 </details>
 

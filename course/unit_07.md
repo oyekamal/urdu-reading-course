@@ -2,6 +2,8 @@
 
 **Focus:** Hard ڈ vs soft د; ڑ the flapped r that never starts a word; ز; the rare Persian ژ
 
+**On the phone, this unit is these lessons, in order:** ḍāl ڈ → ṛe ڑ → ze ز → zhe ژ → Join them → Blend → Words 1 → Words 2 → Read → Unit check. Children rotate through them one at a time; the Unit check (8 of 10) unlocks the next unit.
+
 ## 1 · Hear it
 
 | Letter | Name | Sound | Say it like… | Audio |
@@ -55,6 +57,22 @@ Build each word from letter tiles, right to left. Watch which letters change sha
 - ڈ + ب + ہ  →  **ڈَبّہ**  (ḍabba, box)
 - ل + ڑ + ک + ا  →  **لَڑْکا**  (laṛkā, boy)
 
+## 4b · Blend  ·  *recognition · self-check with audio*
+
+A letter plus a vowel letter makes a sound you can say. Play a syllable, learner points to it. Vowels available so far: ا ی و.
+
+| Syllable | Audio |
+|---|---|
+| ڈا | `assets/audio/syllables/ddal_a.mp3` |
+| ڈی | `assets/audio/syllables/ddal_i.mp3` |
+| ڈو | `assets/audio/syllables/ddal_u.mp3` |
+| زا | `assets/audio/syllables/ze_a.mp3` |
+| زی | `assets/audio/syllables/ze_i.mp3` |
+| زو | `assets/audio/syllables/ze_u.mp3` |
+| ژا | `assets/audio/syllables/zhe_a.mp3` |
+| ژی | `assets/audio/syllables/zhe_i.mp3` |
+| ژو | `assets/audio/syllables/zhe_u.mp3` |
+
 ## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 
 Vowel marks are shown. Read aloud, then play the audio and compare.
@@ -98,46 +116,46 @@ Pen movement for each letter is described in step 2 above.
 
 Play each clip twice. Learner writes the word. Then reveal.
 
-1. `assets/audio/units/u07_14.mp3`
-2. `assets/audio/units/u07_17.mp3`
-3. `assets/audio/units/u07_01.mp3`
+1. `assets/audio/units/u07_18.mp3`
+2. `assets/audio/units/u07_07.mp3`
+3. `assets/audio/units/u07_02.mp3`
 4. `assets/audio/units/u07_00.mp3`
-5. `assets/audio/units/u07_07.mp3`
+5. `assets/audio/units/u07_01.mp3`
 
 <details><summary>Answer key</summary>
 
-1. ڈَر (ḍar)
-2. اَنڈا (anḍā)
-3. ڈَبّہ (ḍabba)
+1. ٹَھنڈا (ṭhanḍā)
+2. زَمین (zamīn)
+3. لَڑْکا (laṛkā)
 4. ڈاک (ḍāk)
-5. زَمین (zamīn)
+5. ڈَبّہ (ḍabba)
 
 </details>
 
 ## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
-1. Which one says **kapṛā** (cloth)?   (a) اَنڈا   (b) کَپْڑا   (c) لَڑْکا   (d) مَزا
-2. Which one says **zhāla** (hailstone)?   (a) زَبان   (b) زَمین   (c) ژَالہ   (d) کَپْڑا
-3. Which one says **ḍāk** (mail)?   (a) لَڑْکا   (b) ڈاک   (c) زَمین   (d) لَڑْکی
-4. Which one says **ḍar** (fear)?   (a) ڈاک   (b) ڈَر   (c) گَھڑی   (d) بَڑا
-5. Which one says **laṛkā** (boy)?   (a) زَمین   (b) مَزا   (c) لَڑْکا   (d) ڈھول
-6. Which one says **guṛiyā** (doll)?   (a) زَبان   (b) روزانہ   (c) ٹَھنڈا   (d) گُڑِیا
-7. Which one says **ṭhanḍā** (cold)?   (a) ژَالہ   (b) ٹَھنڈا   (c) مَزا   (d) ڈَر
-8. Which one says **zard** (yellow)?   (a) زَرْد   (b) لَڑْکا   (c) بَڑا   (d) اَنڈا
-9. Which one says **ḍabba** (box)?   (a) سَڑَک   (b) ڈَبّہ   (c) بَڑا   (d) روزانہ
-10. Which one says **ḍhol** (drum)?   (a) کَپْڑا   (b) ڈھول   (c) مَزا   (d) ڈاک
+1. Which one says **baṛā** (big)?   (a) ژَالہ   (b) بَڑا   (c) ٹَھنڈا   (d) مَزا
+2. Which one says **guṛiyā** (doll)?   (a) گُڑِیا   (b) اَنڈا   (c) لَڑْکا   (d) ٹَھنڈا
+3. Which one says **laṛkī** (girl)?   (a) لَڑْکی   (b) ژَالہ   (c) روزانہ   (d) زَمین
+4. Which one says **saṛak** (road)?   (a) روزانہ   (b) لَڑْکا   (c) مَزا   (d) سَڑَک
+5. Which one says **ḍar** (fear)?   (a) ژَالہ   (b) ڈھول   (c) ڈَر   (d) بَڑا
+6. Which one says **zhāla** (hailstone)?   (a) ژَالہ   (b) مَزا   (c) گَھڑی   (d) ڈَبّہ
+7. Which one says **ḍāk** (mail)?   (a) اَنڈا   (b) ڈاک   (c) ڈھول   (d) گَھڑی
+8. Which one says **ḍhol** (drum)?   (a) زَبان   (b) روزانہ   (c) لَڑْکا   (d) ڈھول
+9. Which one says **zard** (yellow)?   (a) زَرْد   (b) ژَالہ   (c) سَڑَک   (d) کَپْڑا
+10. Which one says **mazā** (fun)?   (a) بَڑا   (b) ژَالہ   (c) اَنڈا   (d) مَزا
 
 <details><summary>Answer key</summary>
 
-1. کَپْڑا
-2. ژَالہ
-3. ڈاک
-4. ڈَر
-5. لَڑْکا
-6. گُڑِیا
-7. ٹَھنڈا
-8. زَرْد
-9. ڈَبّہ
-10. ڈھول
+1. بَڑا
+2. گُڑِیا
+3. لَڑْکی
+4. سَڑَک
+5. ڈَر
+6. ژَالہ
+7. ڈاک
+8. ڈھول
+9. زَرْد
+10. مَزا
 
 </details>

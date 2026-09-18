@@ -2,6 +2,8 @@
 
 **Focus:** ئ ؤ آ; tashdīd doubles; jazm stops the vowel; khaṛā zabar; iẕāfat; ۃ in Arabic words; numerals ۰–۹; punctuation ۔ ، ؟
 
+**On the phone, this unit is these lessons, in order:** hamza ئ → Join them → Blend → Words 1 → Words 2 → Read → Hamza, marks, numbers → Unit check. Children rotate through them one at a time; the Unit check (8 of 10) unlocks the next unit.
+
 ## 1 · Hear it
 
 | Letter | Name | Sound | Say it like… | Audio |
@@ -36,7 +38,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 | Word | Say | Means | Audio |
 |---|---|---|---|
 | آم | ām | mango | `assets/audio/units/u10_00.mp3` |
-| آپ | āp | you (polite) | `assets/audio/units/u10_01.mp3` |
+| آپ | āp | you | `assets/audio/units/u10_01.mp3` |
 | کوئی | koʾī | someone | `assets/audio/units/u10_02.mp3` |
 | گَئے | gaʾe | went | `assets/audio/units/u10_03.mp3` |
 | مَسْئَلہ | masʾala | problem | `assets/audio/units/u10_04.mp3` |
@@ -45,7 +47,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 | دُعا | duʻā | prayer | `assets/audio/units/u10_07.mp3` |
 | سُؤال | suwāl | question | `assets/audio/units/u10_08.mp3` |
 | آئینہ | āʾīna | mirror | `assets/audio/units/u10_09.mp3` |
-| نَئی | naʾī | new (f.) | `assets/audio/units/u10_10.mp3` |
+| نَئی | naʾī | new | `assets/audio/units/u10_10.mp3` |
 | چائے | chāʾe | tea | `assets/audio/units/u10_11.mp3` |
 | گائے | gāʾe | cow | `assets/audio/units/u10_12.mp3` |
 | اَعلیٰ | aʻlā | high | `assets/audio/units/u10_13.mp3` |
@@ -72,46 +74,46 @@ Pen movement for each letter is described in step 2 above.
 
 Play each clip twice. Learner writes the word. Then reveal.
 
-1. `assets/audio/units/u10_12.mp3`
-2. `assets/audio/units/u10_06.mp3`
-3. `assets/audio/units/u10_00.mp3`
-4. `assets/audio/units/u10_09.mp3`
-5. `assets/audio/units/u10_02.mp3`
+1. `assets/audio/units/u10_07.mp3`
+2. `assets/audio/units/u10_17.mp3`
+3. `assets/audio/units/u10_19.mp3`
+4. `assets/audio/units/u10_00.mp3`
+5. `assets/audio/units/u10_13.mp3`
 
 <details><summary>Answer key</summary>
 
-1. گائے (gāʾe)
-2. اَللّٰہ (allāh)
-3. آم (ām)
-4. آئینہ (āʾīna)
-5. کوئی (koʾī)
+1. دُعا (duʻā)
+2. اَمّی (ammī)
+3. اَچّھا (achchhā)
+4. آم (ām)
+5. اَعلیٰ (aʻlā)
 
 </details>
 
 ## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
-1. Which one says **allāh** (God)?   (a) بَچّہ   (b) گَئے   (c) اَللّٰہ   (d) اَبّا
-2. Which one says **dunyā** (world)?   (a) آپ   (b) گائے   (c) دُنیا   (d) مَسْئَلہ
-3. Which one says **achchhā** (good)?   (a) گائے   (b) بَچّہ   (c) اَچّھا   (d) آپ
-4. Which one says **āʾīna** (mirror)?   (a) آئینہ   (b) چائے   (c) بَچّہ   (d) کوئی
-5. Which one says **ammī** (mum)?   (a) چائے   (b) گائے   (c) آئینہ   (d) اَمّی
-6. Which one says **gaʾe** (went)?   (a) کوئی   (b) صَلوٰۃ   (c) گَئے   (d) گائے
-7. Which one says **duʻā** (prayer)?   (a) دُعا   (b) نَئی   (c) صَلوٰۃ   (d) گائے
-8. Which one says **ṣalāt** (prayer)?   (a) اَللّٰہ   (b) صَلوٰۃ   (c) نَئی   (d) دُنیا
-9. Which one says **masʾala** (problem)?   (a) مَسْئَلہ   (b) اَعلیٰ   (c) اَچّھا   (d) آپ
-10. Which one says **chāʾe** (tea)?   (a) گائے   (b) چائے   (c) نَئی   (d) کوئی
+1. Which one says **āʾīna** (mirror)?   (a) دُعا   (b) سُؤال   (c) صَلوٰۃ   (d) آئینہ
+2. Which one says **āp** (you (polite))?   (a) آپ   (b) اَعلیٰ   (c) گائے   (d) صَلوٰۃ
+3. Which one says **ām** (mango)?   (a) اَچّھا   (b) اَبّا   (c) آم   (d) دُعا
+4. Which one says **allāh** (God)?   (a) گَئے   (b) اَللّٰہ   (c) نَئی   (d) اَبّا
+5. Which one says **dunyā** (world)?   (a) آپ   (b) دُنیا   (c) گائے   (d) مَسْئَلہ
+6. Which one says **ṣalāt** (prayer)?   (a) گائے   (b) بَچّہ   (c) صَلوٰۃ   (d) آپ
+7. Which one says **naʾī** (new (f.))?   (a) نَئی   (b) چائے   (c) بَچّہ   (d) کوئی
+8. Which one says **aʻlā** (high)?   (a) چائے   (b) گائے   (c) آئینہ   (d) اَعلیٰ
+9. Which one says **abbā** (dad)?   (a) کوئی   (b) اَعلیٰ   (c) اَبّا   (d) چائے
+10. Which one says **makka** (Makkah)?   (a) مَکّہ   (b) آئینہ   (c) اَعلیٰ   (d) چائے
 
 <details><summary>Answer key</summary>
 
-1. اَللّٰہ
-2. دُنیا
-3. اَچّھا
-4. آئینہ
-5. اَمّی
-6. گَئے
-7. دُعا
-8. صَلوٰۃ
-9. مَسْئَلہ
-10. چائے
+1. آئینہ
+2. آپ
+3. آم
+4. اَللّٰہ
+5. دُنیا
+6. صَلوٰۃ
+7. نَئی
+8. اَعلیٰ
+9. اَبّا
+10. مَکّہ
 
 </details>

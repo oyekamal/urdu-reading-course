@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build course/unit_NN.md lesson files from data/letters.json + data/units.json.
-Each unit follows the 8-step lesson shape in course/00_design.md and embeds the rendered cards and audio."""
+Each unit lists the app's path lessons (one per letter, then join/blend/words/read/check), then the eight teaching steps
+with rendered cards and audio. Preview words (letters not yet taught) are shown in Read only, never in graded steps."""
 import json, os, random
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = json.load(open(f"{ROOT}/data/letters.json", encoding="utf8"))
@@ -33,9 +34,35 @@ def w4(w):  # tolerate 3- or 4-element word rows
     return (w + [w[0]])[:4]
 
 
+import unicodedata
+FOLD = {"آ": "ا", "أ": "ا", "ؤ": "و", "ء": "ئ"}
+def spellable(ur, taught, n):
+    k = set(taught) | {"\u0640"} | ({"ء", "ئ", "ؤ", "آ"} if n >= 10 else set())
+    return all(FOLD.get(c, c) in k or unicodedata.category(c) == "Mn" for c in ur)
+
+
+def path_lessons(u):
+    ls = []
+    if u["n"] == 0: return ["Three rules", "Finish unit"]
+    ls += [f"{L[c]['name']} {c}" for c in u["letters"] if c in L]
+    if u["n"] == 6: ls.append("Breath letters")
+    if u["n"] == 1: ls.append("Vowel marks")
+    if u["letters"] and u["words"]: ls += ["Join them", "Blend"]
+    if u["words"]: ls += ["Words 1", "Words 2"]
+    if u["n"] == 4: ls.append("The non-joiners")
+    if u["sentences"]: ls.append("Read")
+    if u["n"] == 10: ls.append("Hamza, marks, numbers")
+    if u["n"] == 11: ls += ["Sight words", "Nastaliq"]
+    if u["n"] == 12: ls.append("Reading test")
+    ls.append("Unit check" if len(u["words"]) >= 4 else "Finish unit")
+    return ls
+
+
 def unit_md(u, taught_before):
     n = u["n"]; style = "nastaliq" if n >= 11 else "naskh"
     out = [f"# Unit {n} — {u['title']}  ·  {u['title_ur']}\n", f"**Focus:** {u['focus']}\n"]
+    out.append("**On the phone, this unit is these lessons, in order:** " + " → ".join(path_lessons(u)) + ". Children rotate through them one at a time; the Unit check (8 of 10) unlocks the next unit.\n")
+    taught_now = taught_before | set(u['letters'])
     letters = [L[c] for c in u["letters"] if c in L]
     if letters:
         out.append("## 1 · Hear it\n")
@@ -65,11 +92,22 @@ def unit_md(u, taught_before):
         for w in joinable:
             tiles = " + ".join(w[0])
             out.append(f"- {tiles}  →  **{w[3]}**  ({w[1]}, {w[2]})")
+        blends = [f"{L[c]['ch']}ا" for c in u['letters'] if c in L and L[c]['role'] == 'consonant' and not L[c]['never_initial']]
+        vow = [v for v in ['ا', 'ی', 'و'] if v in taught_now]
+        if blends:
+            out.append("\n## 4b · Blend  ·  *recognition · self-check with audio*\n")
+            out.append("A letter plus a vowel letter makes a sound you can say. Play a syllable, learner points to it. Vowels available so far: " + ' '.join(vow) + ".\n")
+            out.append("| Syllable | Audio |\n|---|---|")
+            for c in u['letters']:
+                if c in L and L[c]['role'] == 'consonant' and not L[c]['never_initial']:
+                    for v, t in [('ا', 'a'), ('ی', 'i'), ('و', 'u')]:
+                        if v in vow: out.append(f"| {c}{v} | `assets/audio/syllables/{L[c]['id']}_{t}.mp3` |")
         out.append("\n## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*\n")
         out.append("Vowel marks are shown. Read aloud, then play the audio and compare.\n")
         out.append("| Word | Say | Means | Audio |\n|---|---|---|---|")
         for i, w in enumerate(words):
-            out.append(f"| {w[3]} | {w[1]} | {w[2]} | `assets/audio/units/u{n:02d}_{i:02d}.mp3` |")
+            peek = '' if spellable(w[0], taught_now, n) else ' *(peek ahead: has a letter from a later unit)*'
+            out.append(f"| {w[3]} | {w[1]} | {w[2].split(' (')[0]}{peek} | `assets/audio/units/u{n:02d}_{i:02d}.mp3` |")
         if u["sentences"]:
             out.append("\n**Sentences**\n")
             for i, s in enumerate(u["sentences"]):
@@ -78,7 +116,8 @@ def unit_md(u, taught_before):
         out.append("\n## 6 · Write it  ·  *production · needs a helper or the app tracer to check*\n")
         out.append("Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: " + ", ".join(w[3] for w in words[:5]) + ".\n")
         out.append("Pen movement for each letter is described in step 2 above.\n")
-        dict_words = random.sample(words, min(5, len(words)))
+        drill_words = [w for w in words if spellable(w[0], taught_now, n)] or words
+        dict_words = random.sample(drill_words, min(5, len(drill_words)))
         out.append("## 7 · Dictation  ·  *production · self-check with the key below*\n")
         out.append("Play each clip twice. Learner writes the word. Then reveal.\n")
         for i, w in enumerate(dict_words, 1):
@@ -86,9 +125,9 @@ def unit_md(u, taught_before):
             out.append(f"{i}. `assets/audio/units/u{n:02d}_{idx:02d}.mp3`")
         out.append("\n<details><summary>Answer key</summary>\n\n" + "\n".join(f"{i}. {w[3]} ({w[1]})" for i, w in enumerate(dict_words, 1)) + "\n\n</details>\n")
         out.append("## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*\n")
-        quiz = random.sample(words, min(10, len(words)))
+        quiz = random.sample(drill_words, min(10, len(drill_words)))
         for i, w in enumerate(quiz, 1):
-            others = random.sample([x for x in words if x is not w], min(3, len(words) - 1))
+            others = random.sample([x for x in drill_words if x is not w], min(3, len(drill_words) - 1))
             opts = sorted([w] + others, key=lambda x: random.random())
             out.append(f"{i}. Which one says **{w[1]}** ({w[2]})?   " + "   ".join(f"({chr(97+k)}) {o[3]}" for k, o in enumerate(opts)))
         out.append("\n<details><summary>Answer key</summary>\n\n" + "\n".join(f"{i}. {w[3]}" for i, w in enumerate(quiz, 1)) + "\n\n</details>\n")

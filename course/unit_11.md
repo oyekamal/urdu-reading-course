@@ -2,6 +2,8 @@
 
 **Focus:** Sight words (کا کی کے سے پر کہ اور ہے ہیں نے کو); text without vowel marks; switching from Naskh to Nastaliq; the alphabet in dictionary order
 
+**On the phone, this unit is these lessons, in order:** Words 1 → Words 2 → Read → Sight words → Nastaliq → Unit check. Children rotate through them one at a time; the Unit check (8 of 10) unlocks the next unit.
+
 
 ## 4 · Join it  ·  *production · self-check against the answer shown*
 
@@ -17,9 +19,9 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 
 | Word | Say | Means | Audio |
 |---|---|---|---|
-| کا | kā | of (m.) | `assets/audio/units/u11_00.mp3` |
-| کی | kī | of (f.) | `assets/audio/units/u11_01.mp3` |
-| کے | ke | of (pl.) | `assets/audio/units/u11_02.mp3` |
+| کا | kā | of | `assets/audio/units/u11_00.mp3` |
+| کی | kī | of | `assets/audio/units/u11_01.mp3` |
+| کے | ke | of | `assets/audio/units/u11_02.mp3` |
 | سے | se | from | `assets/audio/units/u11_03.mp3` |
 | پَر | par | on | `assets/audio/units/u11_04.mp3` |
 | کَہ | keh | that | `assets/audio/units/u11_05.mp3` |
@@ -30,7 +32,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 | کو | ko | to | `assets/audio/units/u11_10.mp3` |
 | نَہیں | nahīṉ | no / not | `assets/audio/units/u11_11.mp3` |
 | تھا | thā | was | `assets/audio/units/u11_12.mp3` |
-| تھی | thī | was (f.) | `assets/audio/units/u11_13.mp3` |
+| تھی | thī | was | `assets/audio/units/u11_13.mp3` |
 | کیا | kyā | what | `assets/audio/units/u11_14.mp3` |
 | بھی | bhī | also | `assets/audio/units/u11_15.mp3` |
 | لیکِن | lekin | but | `assets/audio/units/u11_16.mp3` |
@@ -54,47 +56,47 @@ Pen movement for each letter is described in step 2 above.
 
 Play each clip twice. Learner writes the word. Then reveal.
 
-1. `assets/audio/units/u11_10.mp3`
-2. `assets/audio/units/u11_08.mp3`
-3. `assets/audio/units/u11_09.mp3`
-4. `assets/audio/units/u11_00.mp3`
-5. `assets/audio/units/u11_02.mp3`
+1. `assets/audio/units/u11_14.mp3`
+2. `assets/audio/units/u11_06.mp3`
+3. `assets/audio/units/u11_10.mp3`
+4. `assets/audio/units/u11_11.mp3`
+5. `assets/audio/units/u11_15.mp3`
 
 <details><summary>Answer key</summary>
 
-1. کو (ko)
-2. ہَیں (haiṉ)
-3. نے (ne)
-4. کا (kā)
-5. کے (ke)
+1. کیا (kyā)
+2. اَور (aur)
+3. کو (ko)
+4. نَہیں (nahīṉ)
+5. بھی (bhī)
 
 </details>
 
 ## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
-1. Which one says **kā** (of (m.))?   (a) کا   (b) کَہ   (c) لیکِن   (d) بَہُت
-2. Which one says **hai** (is)?   (a) پَر   (b) نَہیں   (c) ہَیں   (d) ہَے
-3. Which one says **se** (from)?   (a) تھی   (b) ہَے   (c) اَگَر   (d) سے
-4. Which one says **bhī** (also)?   (a) کو   (b) بَہُت   (c) بھی   (d) پِھر
-5. Which one says **kyā** (what)?   (a) سے   (b) کیا   (c) اَور   (d) کے
-6. Which one says **thā** (was)?   (a) تھا   (b) پَر   (c) کیا   (d) بھی
-7. Which one says **aur** (and)?   (a) کو   (b) پِھر   (c) سے   (d) اَور
-8. Which one says **lekin** (but)?   (a) کیا   (b) لیکِن   (c) کَہ   (d) ہَے
-9. Which one says **par** (on)?   (a) نَہیں   (b) پَر   (c) کے   (d) تھی
-10. Which one says **thī** (was (f.))?   (a) تھی   (b) سے   (c) بھی   (d) کی
+1. Which one says **kā** (of (m.))?   (a) ہَے   (b) نے   (c) کا   (d) سے
+2. Which one says **thī** (was (f.))?   (a) کی   (b) کو   (c) ہَیں   (d) تھی
+3. Which one says **hai** (is)?   (a) ہَے   (b) کا   (c) کے   (d) ہَیں
+4. Which one says **thā** (was)?   (a) کیا   (b) تھا   (c) ہَیں   (d) لیکِن
+5. Which one says **kī** (of (f.))?   (a) کو   (b) کی   (c) کَہ   (d) ہَیں
+6. Which one says **aur** (and)?   (a) کے   (b) اَور   (c) اَگَر   (d) ہَے
+7. Which one says **bahut** (very)?   (a) کو   (b) اَگَر   (c) بَہُت   (d) بھی
+8. Which one says **agar** (if)?   (a) سے   (b) اَگَر   (c) اَور   (d) کے
+9. Which one says **bhī** (also)?   (a) بھی   (b) پَر   (c) تھی   (d) کیا
+10. Which one says **phir** (then)?   (a) نے   (b) اَگَر   (c) سے   (d) پِھر
 
 <details><summary>Answer key</summary>
 
 1. کا
-2. ہَے
-3. سے
-4. بھی
-5. کیا
-6. تھا
-7. اَور
-8. لیکِن
-9. پَر
-10. تھی
+2. تھی
+3. ہَے
+4. تھا
+5. کی
+6. اَور
+7. بَہُت
+8. اَگَر
+9. بھی
+10. پِھر
 
 </details>
 

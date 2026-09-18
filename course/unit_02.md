@@ -2,6 +2,8 @@
 
 **Focus:** The dot-confusable cluster ب ت ن ی: same body, different dots; ی for ī and y; ے for e and ai only at the end
 
+**On the phone, this unit is these lessons, in order:** te ت → choṭī ye ی → baṛī ye ے → Join them → Blend → Words 1 → Words 2 → Read → Unit check. Children rotate through them one at a time; the Unit check (8 of 10) unlocks the next unit.
+
 ## 1 · Hear it
 
 | Letter | Name | Sound | Say it like… | Audio |
@@ -45,6 +47,15 @@ Build each word from letter tiles, right to left. Watch which letters change sha
 - ت + ی + ن  →  **تین**  (tīn, three)
 - ب + ی + ل  →  **بَیل**  (bail, ox)
 - م + ی + ل  →  **میل**  (mīl, mile)
+
+## 4b · Blend  ·  *recognition · self-check with audio*
+
+A letter plus a vowel letter makes a sound you can say. Play a syllable, learner points to it. Vowels available so far: ا ی.
+
+| Syllable | Audio |
+|---|---|
+| تا | `assets/audio/syllables/te_a.mp3` |
+| تی | `assets/audio/syllables/te_i.mp3` |
 
 ## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 

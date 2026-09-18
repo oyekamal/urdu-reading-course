@@ -2,6 +2,8 @@
 
 **Focus:** Three dots below (پ), the small ط-mark above (ٹ), three dots above (ث). Retroflex ٹ vs dental ت
 
+**On the phone, this unit is these lessons, in order:** pe پ → ṭe ٹ → s̱e ث → Join them → Blend → Words 1 → Words 2 → Read → Unit check. Children rotate through them one at a time; the Unit check (8 of 10) unlocks the next unit.
+
 ## 1 · Hear it
 
 | Letter | Name | Sound | Say it like… | Audio |
@@ -46,6 +48,19 @@ Build each word from letter tiles, right to left. Watch which letters change sha
 - ٹ + و + پ + ی  →  **ٹوپی**  (ṭopī, cap (و comes in unit 4, preview))
 - پ + ت + ا  →  **پَتا**  (patā, address)
 
+## 4b · Blend  ·  *recognition · self-check with audio*
+
+A letter plus a vowel letter makes a sound you can say. Play a syllable, learner points to it. Vowels available so far: ا ی.
+
+| Syllable | Audio |
+|---|---|
+| پا | `assets/audio/syllables/pe_a.mp3` |
+| پی | `assets/audio/syllables/pe_i.mp3` |
+| ٹا | `assets/audio/syllables/tte_a.mp3` |
+| ٹی | `assets/audio/syllables/tte_i.mp3` |
+| ثا | `assets/audio/syllables/se_a.mp3` |
+| ثی | `assets/audio/syllables/se_i.mp3` |
+
 ## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 
 Vowel marks are shown. Read aloud, then play the audio and compare.
@@ -54,7 +69,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 |---|---|---|---|
 | پانی | pānī | water | `assets/audio/units/u03_00.mp3` |
 | پُل | pul | bridge | `assets/audio/units/u03_01.mp3` |
-| ٹوپی | ṭopī | cap (و comes in unit 4, preview) | `assets/audio/units/u03_02.mp3` |
+| ٹوپی | ṭopī | cap *(peek ahead: has a letter from a later unit)* | `assets/audio/units/u03_02.mp3` |
 | پَتا | patā | address | `assets/audio/units/u03_03.mp3` |
 | پاک | pāk | pure | `assets/audio/units/u03_04.mp3` |
 | پیٹ | peṭ | stomach | `assets/audio/units/u03_05.mp3` |
@@ -62,12 +77,12 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 | پَتْلی | patlī | thin | `assets/audio/units/u03_07.mp3` |
 | ثابِت | s̱ābit | proven | `assets/audio/units/u03_08.mp3` |
 | پیپَل | pīpal | fig tree | `assets/audio/units/u03_09.mp3` |
-| ٹَماٹَر | ṭamāṭar | tomato (ر preview) | `assets/audio/units/u03_10.mp3` |
+| ٹَماٹَر | ṭamāṭar | tomato *(peek ahead: has a letter from a later unit)* | `assets/audio/units/u03_10.mp3` |
 | ٹانْکا | ṭānkā | stitch | `assets/audio/units/u03_11.mp3` |
 | پِیالا | piyālā | bowl | `assets/audio/units/u03_12.mp3` |
 | نَپا | napā | measured | `assets/audio/units/u03_13.mp3` |
 | پَلَک | palak | eyelash | `assets/audio/units/u03_14.mp3` |
-| کَپاس | kapās | cotton (س preview) | `assets/audio/units/u03_15.mp3` |
+| کَپاس | kapās | cotton *(peek ahead: has a letter from a later unit)* | `assets/audio/units/u03_15.mp3` |
 | تَپْتا | taptā | scorching | `assets/audio/units/u03_16.mp3` |
 | پَتْلا | patlā | thin | `assets/audio/units/u03_17.mp3` |
 | ٹِکَٹ | ṭikaṭ | ticket | `assets/audio/units/u03_18.mp3` |
@@ -89,46 +104,46 @@ Pen movement for each letter is described in step 2 above.
 
 Play each clip twice. Learner writes the word. Then reveal.
 
-1. `assets/audio/units/u03_08.mp3`
-2. `assets/audio/units/u03_15.mp3`
-3. `assets/audio/units/u03_05.mp3`
-4. `assets/audio/units/u03_16.mp3`
-5. `assets/audio/units/u03_00.mp3`
+1. `assets/audio/units/u03_09.mp3`
+2. `assets/audio/units/u03_18.mp3`
+3. `assets/audio/units/u03_16.mp3`
+4. `assets/audio/units/u03_13.mp3`
+5. `assets/audio/units/u03_03.mp3`
 
 <details><summary>Answer key</summary>
 
-1. ثابِت (s̱ābit)
-2. کَپاس (kapās)
-3. پیٹ (peṭ)
-4. تَپْتا (taptā)
-5. پانی (pānī)
+1. پیپَل (pīpal)
+2. ٹِکَٹ (ṭikaṭ)
+3. تَپْتا (taptā)
+4. نَپا (napā)
+5. پَتا (patā)
 
 </details>
 
 ## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
-1. Which one says **ṭab** (tub)?   (a) پَتْلا   (b) پیپَل   (c) پِیالا   (d) ٹَب
-2. Which one says **taptā** (scorching)?   (a) پَتْلی   (b) تَپْتا   (c) ٹَماٹَر   (d) پَتْلا
-3. Which one says **ṭānkā** (stitch)?   (a) ٹانْکا   (b) پَتْلی   (c) نَپا   (d) بَٹَن
-4. Which one says **pāk** (pure)?   (a) پاک   (b) تَپْتا   (c) پیپَل   (d) بَٹَن
-5. Which one says **pānī** (water)?   (a) بَٹَن   (b) پَتا   (c) پانی   (d) پِیالا
-6. Which one says **piyālā** (bowl)?   (a) پانی   (b) تَپْتا   (c) پِیالا   (d) ٹانْکا
-7. Which one says **s̱ābit** (proven)?   (a) تَپْتا   (b) ثابِت   (c) ٹَب   (d) پیٹ
-8. Which one says **ṭikaṭ** (ticket)?   (a) پِیالا   (b) پَلَک   (c) ٹِکَٹ   (d) بَٹَن
-9. Which one says **ṭamāṭar** (tomato (ر preview))?   (a) پانی   (b) ٹَماٹَر   (c) پاک   (d) کَپاس
-10. Which one says **pul** (bridge)?   (a) پُل   (b) ٹِکَٹ   (c) پیٹ   (d) پِیالا
+1. Which one says **baṭan** (button)?   (a) نَپا   (b) بَٹَن   (c) پَتا   (d) تَپْتا
+2. Which one says **pānī** (water)?   (a) پیٹ   (b) پانی   (c) بَٹَن   (d) نَپا
+3. Which one says **pāk** (pure)?   (a) پیپَل   (b) ثابِت   (c) پَتْلا   (d) پاک
+4. Which one says **pīpal** (fig tree)?   (a) پانی   (b) پیپَل   (c) بَٹَن   (d) تَپْتا
+5. Which one says **ṭab** (tub)?   (a) پَلَک   (b) تَپْتا   (c) ٹِکَٹ   (d) ٹَب
+6. Which one says **patā** (address)?   (a) پَتا   (b) پیپَل   (c) پیٹ   (d) بَٹَن
+7. Which one says **taptā** (scorching)?   (a) پِیالا   (b) تَپْتا   (c) پانی   (d) ثابِت
+8. Which one says **ṭikaṭ** (ticket)?   (a) بَٹَن   (b) پَلَک   (c) ٹِکَٹ   (d) نَپا
+9. Which one says **piyālā** (bowl)?   (a) پُل   (b) نَپا   (c) تَپْتا   (d) پِیالا
+10. Which one says **peṭ** (stomach)?   (a) پَتا   (b) پَلَک   (c) پیٹ   (d) بَٹَن
 
 <details><summary>Answer key</summary>
 
-1. ٹَب
-2. تَپْتا
-3. ٹانْکا
-4. پاک
-5. پانی
-6. پِیالا
-7. ثابِت
+1. بَٹَن
+2. پانی
+3. پاک
+4. پیپَل
+5. ٹَب
+6. پَتا
+7. تَپْتا
 8. ٹِکَٹ
-9. ٹَماٹَر
-10. پُل
+9. پِیالا
+10. پیٹ
 
 </details>
