@@ -5,7 +5,7 @@
 // Assumption: ctx passed in mirrors teacher.js's ctx ({db, C, ...}); no audio is played during
 // the assessment itself (teacher reads/administers it live), so only db/content/C are needed —
 // this module falls back to importing db/content directly so it also works stand-alone.
-import { C as C_, el, toast, shuffle, W, bandFor } from './content.js';
+import { C as C_, el, toast, shuffle, W, bandFor, PRP, BAND_HELP } from './content.js';
 import { db as db_, uid } from './db.js';
 
 const PER_MIN = 60; // seconds per timed subtask
@@ -57,17 +57,15 @@ function fillTo(arr, n) {
 function scriptClass(nastaliq) { return nastaliq ? 'ur nastaliq' : 'ur'; }
 
 function renderGrid(items, cls, perRow) {
-  const grid = el('div', 'grid-words');
-  for (let i = 0; i < items.length; i += perRow) {
-    const row = el('div', 'row');
-    items.slice(i, i + perRow).forEach((txt, j) => {
-      const it = el('span', `item ${cls} big`, txt);
-      it.dataset.i = String(i + j);
-      row.appendChild(it);
-    });
-    grid.appendChild(row);
-  }
-  return grid;
+  // Tangerine-style paging: 10 items per page, big and tappable; Prev/Next under the grid.
+  const grid = el('div', 'grid-words'); grid.style.cssText = 'font-size:34px;justify-content:center;min-height:120px';
+  const pager = el('div', 'row'); pager.style.justifyContent = 'center';
+  const prev = el('button', 'btn', '‹ Prev'), info = el('span', 'muted', ''), next = el('button', 'btn', 'Next ›');
+  let page = 0; const pages = Math.ceil(items.length / perRow);
+  function draw() { grid.innerHTML = ''; items.slice(page * perRow, (page + 1) * perRow).forEach((txt, j) => { const it = el('span', `item ${cls}`, txt); it.dataset.i = String(page * perRow + j); if (grid._wrong && grid._wrong.has(page * perRow + j)) it.classList.add('wrong'); grid.appendChild(it); }); info.textContent = `${page + 1} / ${pages}`; prev.disabled = page === 0; next.disabled = page >= pages - 1; }
+  prev.onclick = () => { if (page > 0) { page--; draw(); } }; next.onclick = () => { if (page < pages - 1) { page++; draw(); } };
+  pager.append(prev, info, next); draw();
+  const box = el('div'); box.append(grid, pager); box.grid = grid; box.reached = () => (page + 1) * perRow; return box;
 }
 
 // ---- shared flash-card subtask runner: letter sounds / nonwords / familiar words ----
@@ -77,9 +75,9 @@ function runFlashSubtask(root, opts) {
   let finished = false;
   const wrap = el('div', 'card');
   wrap.appendChild(el('h2', '', title));
-  const timerEl = el('div', 'timer big', String(PER_MIN));
+  const timerEl = el('div', 'timer big', String(PER_MIN)); timerEl.style.cssText = 'position:sticky;top:0;background:var(--card);z-index:2;padding:4px 0';
   wrap.appendChild(timerEl);
-  const grid = renderGrid(items, cls, 10);
+  const gridBox = renderGrid(items, cls, 10); const grid = gridBox.grid; grid._wrong = wrong;
   grid.addEventListener('click', (ev) => {
     const t = ev.target.closest('.item');
     if (!t || finished) return;
@@ -88,7 +86,7 @@ function runFlashSubtask(root, opts) {
     else { wrong.add(i); t.classList.add('wrong'); }
     checkStopRule();
   });
-  wrap.appendChild(grid);
+  wrap.appendChild(gridBox); wrap.appendChild(el('p', 'muted', 'Tap a letter the child gets wrong. Use Next as the child reads on; the last page shown counts as items attempted.'));
   const row = el('div', 'row');
   const skipBtn = el('button', 'btn', 'Skip');
   skipBtn.onclick = () => { if (finished) return; finished = true; stop(); onSkip(); };
@@ -109,8 +107,8 @@ function runFlashSubtask(root, opts) {
     if (finished) return;
     finished = true;
     flash(wrap); beep();
-    const score = Math.max(0, items.length - wrong.size);
-    onScore(score);
+    const attempted = Math.min(items.length, gridBox.reached()); const score = Math.max(0, attempted - [...wrong].filter(i => i < attempted).length);
+    onScore(score, attempted);
   });
 }
 
@@ -126,7 +124,7 @@ function runPassageSubtask(root, opts) {
 
   const wrap = el('div', 'card');
   wrap.appendChild(el('h2', '', 'Passage — oral reading fluency (60s)'));
-  const timerEl = el('div', 'timer big', String(PER_MIN));
+  const timerEl = el('div', 'timer big', String(PER_MIN)); timerEl.style.cssText = 'position:sticky;top:0;background:var(--card);z-index:2;padding:4px 0';
   wrap.appendChild(timerEl);
   const p = el('div', 'grid-words');
   const row1 = el('div', 'row');
@@ -209,23 +207,25 @@ function runComprehensionSubtask(root, opts) {
 
 // ---- result screen ----
 function renderResult(root, db, profile, state, onDone) {
-  const band = bandFor(state.orf.cwpm);
+  const band = bandFor(state.orf.cwpm); const level = PRP(state.orf.cwpm);
+  const acc = (s, a) => a ? ` (${Math.round(100 * s / a)}% of ${a} attempted)` : '';
   const wrap = el('div', 'card');
   wrap.appendChild(el('h2', '', `Result — ${profile.name}`));
   const rows = [
-    ['Letter sounds (clpm)', state.letters],
-    ['Nonwords (cnwpm)', state.nonwords],
-    ['Familiar words (cwpm)', state.words],
+    ['Letter sounds (clpm)', `${state.letters}${acc(state.letters, state.lettersAttempted)}`],
+    ['Nonwords (cnwpm)', `${state.nonwords}${acc(state.nonwords, state.nonwordsAttempted)}`],
+    ['Familiar words (cwpm)', `${state.words}${acc(state.words, state.wordsAttempted)}`],
     ['Passage fluency (cwpm)', state.orf.cwpm],
     ['Passage accuracy', `${state.orf.acc}%`],
     ['Comprehension', `${state.comp}/5`],
-    ['Band', band],
+    ['Grade-2 standard (PRP)', level],
+    ['Learning band', band],
   ];
   const tableWrap = el('div', 'table');
   const table = el('table');
   rows.forEach(([k, v]) => table.appendChild(el('tr', '', `<td>${k}</td><td>${v}</td>`)));
   tableWrap.appendChild(table);
-  wrap.appendChild(tableWrap);
+  wrap.appendChild(tableWrap); wrap.appendChild(el('p', 'muted', BAND_HELP));
   if (band === 'pre-reader') {
     wrap.appendChild(el('p', 'muted', 'Non-reader / pre-reader band — flag for immediate small-group support (see Groups tab).'));
   }
@@ -236,7 +236,7 @@ function renderResult(root, db, profile, state, onDone) {
     const rec = {
       id: uid(), profileId: profile.id, ts: Date.now(),
       letters: state.letters, nonwords: state.nonwords, words: state.words,
-      orf: state.orf, comp: state.comp, band, by: 'teacher',
+      orf: state.orf, comp: state.comp, band, level, by: 'teacher',
     };
     await db.put('assessments', rec);
     toast('Assessment saved');
@@ -265,17 +265,17 @@ export function runEgra(root, ctx, profile, onDone) {
       () => runFlashSubtask(root, {
         title: 'Subtask 1 — Letter sounds (60s)',
         items: fillTo(shuffle(Cc.letters.letters.map(l => l.ch)), 100),
-        cls, onScore: (n) => { state.letters = n; advance(); }, onSkip: advance,
+        cls, onScore: (n, a) => { state.letters = n; state.lettersAttempted = a; advance(); }, onSkip: advance,
       }),
       () => runFlashSubtask(root, {
         title: 'Subtask 2 — Nonword decoding (60s)',
         items: fillTo(shuffle(Cc.letters.assessment.nonwords || []), 40),
-        cls, onScore: (n) => { state.nonwords = n; advance(); }, onSkip: advance,
+        cls, onScore: (n, a) => { state.nonwords = n; state.nonwordsAttempted = a; advance(); }, onSkip: advance,
       }),
       () => runFlashSubtask(root, {
         title: 'Subtask 3 — Familiar words (60s)',
         items: fillTo(shuffle(Cc.units.flatMap(u => u.words || []).map(w => W(w).ur)), 50),
-        cls, onScore: (n) => { state.words = n; advance(); }, onSkip: advance,
+        cls, onScore: (n, a) => { state.words = n; state.wordsAttempted = a; advance(); }, onSkip: advance,
       }),
       () => runPassageSubtask(root, {
         text: Cc.letters.assessment.passage || '',

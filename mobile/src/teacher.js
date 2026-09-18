@@ -40,23 +40,27 @@ function pickDefaultUnit(units, progresses) {
 
 // Minimal markdown -> DOM: headings, lists, tables (as preformatted text), image lines stripped.
 function renderMarkdown(md) {
+  // Minimal renderer for the course lesson files: headings, lists, pipe tables, paragraphs. Strips images,
+  // <details> blocks are kept as text, and raw audio paths become a short "audio in app" note.
   const wrap = el('div', '');
-  let ul = null, pre = null;
-  md.split('\n').forEach(line => {
-    if (/^!\[/.test(line.trim())) return;
-    const h = line.match(/^(#{1,3})\s+(.*)/);
-    if (h) { ul = null; pre = null; wrap.appendChild(el(`h${h[1].length}`, '', h[2])); return; }
-    const li = line.match(/^\s*[-*]\s+(.*)/);
-    if (li) { pre = null; if (!ul) { ul = document.createElement('ul'); wrap.appendChild(ul); } ul.appendChild(el('li', '', li[1])); return; }
-    if (/^\|.*\|\s*$/.test(line.trim())) {
-      ul = null;
-      if (!pre) { pre = document.createElement('pre'); wrap.appendChild(pre); }
-      pre.textContent += `${line}\n`;
-      return;
+  const inline = t => t.replace(/`assets\/audio\/[^`]*`/g, '<span class="muted">(audio: use the play buttons above)</span>').replace(/`([^`]+)`/g, '<code>$1</code>').replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>').replace(/\*([^*]+)\*/g, '<i>$1</i>');
+  const lines = md.split('\n'); let ul = null, table = null, ol = null;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]; const t = line.trim();
+    if (/^!\[/.test(t) || /^<\/?details/.test(t) || /^<\/?summary/.test(t)) { if (/^<summary/.test(t)) wrap.appendChild(el('p', 'muted', t.replace(/<[^>]+>/g, ''))); continue; }
+    const h = t.match(/^(#{1,3})\s+(.*)/);
+    if (h) { ul = ol = table = null; wrap.appendChild(el(`h${Math.min(3, h[1].length + 1)}`, '', inline(h[2]))); continue; }
+    if (/^\|.*\|$/.test(t)) {
+      if (/^\|\s*-{2,}/.test(t)) continue; // separator row
+      const cells = t.slice(1, -1).split('|').map(c => c.trim());
+      if (!table) { ul = ol = null; const tw = el('div', 'table'); table = document.createElement('table'); tw.appendChild(table); wrap.appendChild(tw); table._head = true; }
+      const tr = document.createElement('tr'); cells.forEach(c => { const cell = el(table._head ? 'th' : 'td', '', inline(c)); if (/[\u0600-\u06FF]/.test(c) && !table._head) cell.classList.add('ur'); tr.appendChild(cell); }); table.appendChild(tr); table._head = false; continue;
     }
-    ul = null; pre = null;
-    if (line.trim()) wrap.appendChild(el('p', '', line));
-  });
+    table = null;
+    const li = t.match(/^[-*]\s+(.*)/); if (li) { ol = null; if (!ul) { ul = document.createElement('ul'); wrap.appendChild(ul); } ul.appendChild(el('li', '', inline(li[1]))); continue; }
+    const oli = t.match(/^\d+\.\s+(.*)/); if (oli) { ul = null; if (!ol) { ol = document.createElement('ol'); wrap.appendChild(ol); } ol.appendChild(el('li', '', inline(oli[1]))); continue; }
+    ul = ol = null; if (t) wrap.appendChild(el('p', '', inline(t)));
+  }
   return wrap;
 }
 
@@ -386,7 +390,7 @@ async function renderReports(body, ctx, state) {
         : r.latest.band === 'words' ? 'Reading whole words — practise the unit word list daily.'
         : r.latest.band === 'letters' ? 'Learning letter sounds — 10 minutes of letter practice daily helps most.'
         : 'Still at pre-reading stage — daily read-aloud time with an adult is the best next step.';
-      const text = `${r.profile.name} — ${new Date(r.latest.ts).toLocaleDateString()}\nPassage fluency: ${r.latest.orf.cwpm} correct words/minute\nBand: ${r.latest.band}\n${advice}`;
+      const lvl = r.latest.orf.cwpm > 90 ? 'exceeds the grade-2 standard' : r.latest.orf.cwpm >= 60 ? 'meets the grade-2 standard' : r.latest.orf.cwpm > 0 ? 'below the grade-2 standard (60 words/minute)' : 'not yet reading'; const text = `${r.profile.name} — ${new Date(r.latest.ts).toLocaleDateString()}\nPassage fluency: ${r.latest.orf.cwpm} correct words/minute — ${lvl}\nStage: ${r.latest.band} (pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+)\nComprehension: ${r.latest.comp ?? '-'}/5\n${advice}`;
       if (navigator.share) {
         try { await navigator.share({ title: `${r.profile.name}'s reading update`, text }); return; } catch (e) { /* fall through */ }
       }
