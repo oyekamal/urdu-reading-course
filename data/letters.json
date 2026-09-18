@@ -1,0 +1,90 @@
+{
+  "_meta": {
+    "source": "research/03_script_reference.md (Wikipedia 'Urdu alphabet' letter table, Unicode U0600 chart), teaching order from course/00_design.md",
+    "fields": {
+      "id": "ascii slug used for file names",
+      "ch": "the letter",
+      "cp": "Unicode codepoint",
+      "name_ur": "letter name as written in Urdu (also the text fed to TTS)",
+      "name": "letter name romanised (Pakistani school usage)",
+      "ipa": "IPA of the sound",
+      "hint": "English approximation",
+      "joiner": "true = connects forward to the next letter (4 forms); false = non-joiner (2 forms)",
+      "family": "shape family",
+      "never_initial": "true = no Urdu word begins with this letter",
+      "loan": "arabic | persian | null : letter used only in loanwords",
+      "role": "consonant | vowel-carrier | marker",
+      "example": "word-initial example [urdu, roman, english]; for never-initial letters a medial/final example",
+      "unit": "course unit in which the letter is introduced",
+      "confusable": "letters a learner mixes this one up with (dot count / shape)",
+      "tatoeba_pct": "share of all letters in the Tatoeba Urdu corpus (2,851 sentences, data/tatoeba_urd_freq.json)"
+    }
+  },
+  "letters": [
+    {"id":"alif","ch":"ا","cp":"U+0627","name_ur":"الف","name":"alif","ipa":"ɑː / ʔ / silent","hint":"'a' in father when long; a silent seat for short vowels at the start of a word","joiner":false,"family":"alif","never_initial":false,"loan":null,"role":"vowel-carrier","example":["اب","ab","now"],"unit":1,"confusable":["ل"],"tatoeba_pct":11.0},
+    {"id":"be","ch":"ب","cp":"U+0628","name_ur":"بے","name":"be","ipa":"b","hint":"'b' in bat","joiner":true,"family":"be","never_initial":false,"loan":null,"role":"consonant","example":["بابا","bābā","father"],"unit":1,"confusable":["پ","ت","ٹ","ث","ن","ی"],"tatoeba_pct":2.5},
+    {"id":"kaf","ch":"ک","cp":"U+06A9","name_ur":"کاف","name":"kāf","ipa":"k","hint":"'k' in kite","joiner":true,"family":"kaf","never_initial":false,"loan":null,"role":"consonant","example":["کام","kām","work"],"unit":1,"confusable":["گ"],"tatoeba_pct":6.2},
+    {"id":"lam","ch":"ل","cp":"U+0644","name_ur":"لام","name":"lām","ipa":"l","hint":"'l' in log","joiner":true,"family":"lam","never_initial":false,"loan":null,"role":"consonant","example":["لال","lāl","red"],"unit":1,"confusable":["ا"],"tatoeba_pct":2.5},
+    {"id":"mim","ch":"م","cp":"U+0645","name_ur":"میم","name":"mīm","ipa":"m","hint":"'m' in mat","joiner":true,"family":"mim","never_initial":false,"loan":null,"role":"consonant","example":["ماما","māmā","maternal uncle"],"unit":1,"confusable":[],"tatoeba_pct":5.1},
+    {"id":"nun","ch":"ن","cp":"U+0646","name_ur":"نون","name":"nūn","ipa":"n","hint":"'n' in net","joiner":true,"family":"nun","never_initial":false,"loan":null,"role":"consonant","example":["نام","nām","name"],"unit":1,"confusable":["ب","ت","ی","ں"],"tatoeba_pct":4.7},
+
+    {"id":"te","ch":"ت","cp":"U+062A","name_ur":"تے","name":"te","ipa":"t̪","hint":"soft dental 't', tongue on the teeth (Spanish 'tú')","joiner":true,"family":"be","never_initial":false,"loan":null,"role":"consonant","example":["تین","tīn","three"],"unit":2,"confusable":["ب","ٹ","ث","ن","پ"],"tatoeba_pct":3.9},
+    {"id":"choti_ye","ch":"ی","cp":"U+06CC","name_ur":"چھوٹی یے","name":"choṭī ye","ipa":"j / iː","hint":"'y' in yes at the start; long 'ee' in the middle or end","joiner":true,"family":"ye","never_initial":false,"loan":null,"role":"vowel-carrier","example":["یار","yār","friend"],"unit":2,"confusable":["ب","ت","ن","ے"],"tatoeba_pct":10.2},
+    {"id":"bari_ye","ch":"ے","cp":"U+06D2","name_ur":"بڑی یے","name":"baṛī ye","ipa":"eː / ɛː","hint":"'ay' in day; only ever a vowel, only at the end of a word or syllable","joiner":false,"family":"ye","never_initial":true,"loan":null,"role":"vowel-carrier","example":["لے","le","take"],"unit":2,"confusable":["ی"],"tatoeba_pct":6.3},
+
+    {"id":"pe","ch":"پ","cp":"U+067E","name_ur":"پے","name":"pe","ipa":"p","hint":"'p' in pat","joiner":true,"family":"be","never_initial":false,"loan":null,"role":"consonant","example":["پانی","pānī","water"],"unit":3,"confusable":["ب","ت","ث"],"tatoeba_pct":2.0},
+    {"id":"tte","ch":"ٹ","cp":"U+0679","name_ur":"ٹے","name":"ṭe","ipa":"ʈ","hint":"hard English 't' in tap, tongue curled back","joiner":true,"family":"be","never_initial":false,"loan":null,"role":"consonant","example":["ٹوپی","ṭopī","cap"],"unit":3,"confusable":["ت","ب"],"tatoeba_pct":1.0},
+    {"id":"se","ch":"ث","cp":"U+062B","name_ur":"ثے","name":"s̱e","ipa":"s","hint":"'s' in sun (Arabic loanwords only)","joiner":true,"family":"be","never_initial":false,"loan":"arabic","role":"consonant","example":["ثمر","s̱amar","fruit"],"unit":3,"confusable":["ت","ب","پ"],"tatoeba_pct":0.0},
+
+    {"id":"wao","ch":"و","cp":"U+0648","name_ur":"واؤ","name":"wāʾo","ipa":"ʋ / uː / oː / ɔː","hint":"'w'/'v' at the start; long 'oo' or 'o' otherwise","joiner":false,"family":"wao","never_initial":false,"loan":null,"role":"vowel-carrier","example":["وہ","woh","he / she / that"],"unit":4,"confusable":[],"tatoeba_pct":5.4},
+    {"id":"re","ch":"ر","cp":"U+0631","name_ur":"رے","name":"re","ipa":"r","hint":"tapped 'r' (Spanish 'pero')","joiner":false,"family":"re","never_initial":false,"loan":null,"role":"consonant","example":["رات","rāt","night"],"unit":4,"confusable":["ڑ","ز","د"],"tatoeba_pct":5.0},
+    {"id":"dal","ch":"د","cp":"U+062F","name_ur":"دال","name":"dāl","ipa":"d̪","hint":"soft dental 'd', tongue on the teeth","joiner":false,"family":"dal","never_initial":false,"loan":null,"role":"consonant","example":["دو","do","two"],"unit":4,"confusable":["ڈ","ذ","ر"],"tatoeba_pct":2.0},
+    {"id":"he","ch":"ہ","cp":"U+06C1","name_ur":"ہے","name":"choṭī he (gol he)","ipa":"ɦ / -ɑ / -e","hint":"'h' in hat; at the end of a word it usually just says 'a' (کمرہ kamra)","joiner":true,"family":"he","never_initial":false,"loan":null,"role":"consonant","example":["ہم","ham","we"],"unit":4,"confusable":["ھ","ح"],"tatoeba_pct":7.5},
+
+    {"id":"sin","ch":"س","cp":"U+0633","name_ur":"سین","name":"sīn","ipa":"s","hint":"'s' in sun","joiner":true,"family":"sin","never_initial":false,"loan":null,"role":"consonant","example":["سال","sāl","year"],"unit":5,"confusable":["ش","ص"],"tatoeba_pct":3.3},
+    {"id":"shin","ch":"ش","cp":"U+0634","name_ur":"شین","name":"shīn","ipa":"ʃ","hint":"'sh' in shop","joiner":true,"family":"sin","never_initial":false,"loan":null,"role":"consonant","example":["شام","shām","evening"],"unit":5,"confusable":["س"],"tatoeba_pct":0.6},
+    {"id":"jim","ch":"ج","cp":"U+062C","name_ur":"جیم","name":"jīm","ipa":"d͡ʒ","hint":"'j' in jam","joiner":true,"family":"jim","never_initial":false,"loan":null,"role":"consonant","example":["جوتا","jūtā","shoe"],"unit":5,"confusable":["چ","ح","خ"],"tatoeba_pct":1.6},
+    {"id":"che","ch":"چ","cp":"U+0686","name_ur":"چے","name":"che","ipa":"t͡ʃ","hint":"'ch' in chair","joiner":true,"family":"jim","never_initial":false,"loan":null,"role":"consonant","example":["چار","chār","four"],"unit":5,"confusable":["ج","ح","خ"],"tatoeba_pct":1.0},
+    {"id":"gaf","ch":"گ","cp":"U+06AF","name_ur":"گاف","name":"gāf","ipa":"ɡ","hint":"'g' in go","joiner":true,"family":"kaf","never_initial":false,"loan":null,"role":"consonant","example":["گلاب","gulāb","rose"],"unit":5,"confusable":["ک"],"tatoeba_pct":1.4},
+
+    {"id":"nun_ghunna","ch":"ں","cp":"U+06BA","name_ur":"نون غنہ","name":"nūn g͟hunna","ipa":"◌̃","hint":"nasalises the vowel before it, like French 'bon'; never at the start of a word","joiner":false,"family":"nun","never_initial":true,"loan":null,"role":"marker","example":["میں","maiṉ","I / in"],"unit":6,"confusable":["ن"],"tatoeba_pct":3.4},
+    {"id":"do_chashmi_he","ch":"ھ","cp":"U+06BE","name_ur":"دو چشمی ہے","name":"do-chashmī he","ipa":"ʰ / ʱ","hint":"a puff of breath after the letter before it: بھ bh, پھ ph, کھ kh, گھ gh…; never alone at the start","joiner":true,"family":"he","never_initial":true,"loan":null,"role":"marker","example":["گھر","ghar","house"],"unit":6,"confusable":["ہ"],"tatoeba_pct":2.7},
+
+    {"id":"ddal","ch":"ڈ","cp":"U+0688","name_ur":"ڈال","name":"ḍāl","ipa":"ɖ","hint":"hard English 'd' in dad, tongue curled back","joiner":false,"family":"dal","never_initial":false,"loan":null,"role":"consonant","example":["ڈاک","ḍāk","mail"],"unit":7,"confusable":["د","ذ"],"tatoeba_pct":0.2},
+    {"id":"rre","ch":"ڑ","cp":"U+0691","name_ur":"ڑے","name":"ṛe","ipa":"ɽ","hint":"a flapped 'r'/'d' made with the tongue curled back (no English match); never at the start","joiner":false,"family":"re","never_initial":true,"loan":null,"role":"consonant","example":["لڑکا","laṛkā","boy"],"unit":7,"confusable":["ر","ز"],"tatoeba_pct":0.5},
+    {"id":"ze","ch":"ز","cp":"U+0632","name_ur":"زے","name":"ze","ipa":"z","hint":"'z' in zoo","joiner":false,"family":"re","never_initial":false,"loan":null,"role":"consonant","example":["زبان","zabān","tongue / language"],"unit":7,"confusable":["ر","ڑ","ژ","ذ"],"tatoeba_pct":0.5},
+    {"id":"zhe","ch":"ژ","cp":"U+0698","name_ur":"ژے","name":"zhe","ipa":"ʒ","hint":"'s' in pleasure (Persian loanwords only, rare)","joiner":false,"family":"re","never_initial":false,"loan":"persian","role":"consonant","example":["ژالہ","zhāla","hailstone"],"unit":7,"confusable":["ز","ر"],"tatoeba_pct":0.0},
+
+    {"id":"fe","ch":"ف","cp":"U+0641","name_ur":"فے","name":"fe","ipa":"f","hint":"'f' in fat","joiner":true,"family":"fe","never_initial":false,"loan":null,"role":"consonant","example":["فرش","farsh","floor"],"unit":8,"confusable":["ق"],"tatoeba_pct":0.6},
+    {"id":"qaf","ch":"ق","cp":"U+0642","name_ur":"قاف","name":"qāf","ipa":"q","hint":"a 'k' made far back in the throat (Arabic loanwords)","joiner":true,"family":"fe","never_initial":false,"loan":"arabic","role":"consonant","example":["قلم","qalam","pen"],"unit":8,"confusable":["ف","ک"],"tatoeba_pct":0.4},
+    {"id":"khe","ch":"خ","cp":"U+062E","name_ur":"خے","name":"k͟he","ipa":"x","hint":"'ch' in Scottish loch","joiner":true,"family":"jim","never_initial":false,"loan":null,"role":"consonant","example":["خط","k͟hat","letter"],"unit":8,"confusable":["ج","چ","ح"],"tatoeba_pct":0.4},
+    {"id":"ghain","ch":"غ","cp":"U+063A","name_ur":"غین","name":"g͟hain","ipa":"ɣ","hint":"a gargled 'g', like the French 'r'","joiner":true,"family":"ain","never_initial":false,"loan":"arabic","role":"consonant","example":["غریب","g͟harīb","poor"],"unit":8,"confusable":["ع"],"tatoeba_pct":0.1},
+    {"id":"ain","ch":"ع","cp":"U+0639","name_ur":"عین","name":"ʻain","ipa":"ʔ / vowel","hint":"in Urdu it mostly just carries the vowel written around it (عمر umar)","joiner":true,"family":"ain","never_initial":false,"loan":"arabic","role":"vowel-carrier","example":["عمر","ʻumr","age"],"unit":8,"confusable":["غ"],"tatoeba_pct":0.4},
+    {"id":"bari_he","ch":"ح","cp":"U+062D","name_ur":"بڑی حے","name":"baṛī ḥe","ipa":"ɦ","hint":"'h' in hat (Arabic loanwords)","joiner":true,"family":"jim","never_initial":false,"loan":"arabic","role":"consonant","example":["حال","ḥāl","condition"],"unit":8,"confusable":["ج","چ","خ","ہ"],"tatoeba_pct":0.3},
+
+    {"id":"swad","ch":"ص","cp":"U+0635","name_ur":"صاد","name":"ṣwād","ipa":"s","hint":"'s' in sun (Arabic loanwords; same sound as س)","joiner":true,"family":"sin","never_initial":false,"loan":"arabic","role":"consonant","example":["صبح","ṣubḥ","morning"],"unit":9,"confusable":["ض","س"],"tatoeba_pct":0.3},
+    {"id":"zwad","ch":"ض","cp":"U+0636","name_ur":"ضاد","name":"ẓwād","ipa":"z","hint":"'z' in zoo (Arabic loanwords; same sound as ز)","joiner":true,"family":"sin","never_initial":false,"loan":"arabic","role":"consonant","example":["ضرور","ẓarūr","certainly"],"unit":9,"confusable":["ص"],"tatoeba_pct":0.1},
+    {"id":"toe","ch":"ط","cp":"U+0637","name_ur":"طوے","name":"t̤oʼe","ipa":"t̪","hint":"soft 't' (Arabic loanwords; same sound as ت)","joiner":true,"family":"toe","never_initial":false,"loan":"arabic","role":"consonant","example":["طوطا","t̤ot̤ā","parrot"],"unit":9,"confusable":["ظ"],"tatoeba_pct":0.2},
+    {"id":"zoe","ch":"ظ","cp":"U+0638","name_ur":"ظوے","name":"z̤oʼe","ipa":"z","hint":"'z' in zoo (Arabic loanwords; same sound as ز)","joiner":true,"family":"toe","never_initial":false,"loan":"arabic","role":"consonant","example":["ظاہر","z̤āhir","apparent"],"unit":9,"confusable":["ط"],"tatoeba_pct":0.1},
+    {"id":"zal","ch":"ذ","cp":"U+0630","name_ur":"ذال","name":"ẕāl","ipa":"z","hint":"'z' in zoo (Arabic loanwords; same sound as ز)","joiner":false,"family":"dal","never_initial":false,"loan":"arabic","role":"consonant","example":["ذائقہ","ẕāʾiqa","taste"],"unit":9,"confusable":["د","ڈ","ز"],"tatoeba_pct":0.0},
+
+    {"id":"hamza","ch":"ء","cp":"U+0621","name_ur":"ہمزہ","name":"hamza","ipa":"ʔ / silent","hint":"a tiny break between two vowels (کوئی ko-ī); sits on ئ or ؤ, or alone","joiner":false,"family":"hamza","never_initial":false,"loan":null,"role":"marker","example":["کوئی","koʾī","someone / any"],"unit":10,"confusable":[],"tatoeba_pct":0.9}
+  ],
+  "aspirates": [
+    ["بھ","bh","بھائی","bhāʾī","brother"],["پھ","ph","پھول","phūl","flower"],["تھ","th","تھالی","thālī","plate"],["ٹھ","ṭh","ٹھنڈا","ṭhanḍā","cold"],["جھ","jh","جھنڈا","jhanḍā","flag"],["چھ","chh","چھت","chhat","roof"],["دھ","dh","دھاگا","dhāgā","thread"],["ڈھ","ḍh","ڈھول","ḍhol","drum"],["ڑھ","ṛh","پڑھنا","paṛhnā","to read"],["کھ","kh","کھانا","khānā","food"],["گھ","gh","گھر","ghar","house"]
+  ],
+  "diacritics": [
+    {"id":"zabar","ch":"َ","cp":"U+064E","name_ur":"زبر","name":"zabar","sound":"short a (as in 'but')","position":"above","example":["بَس","bas","enough"]},
+    {"id":"zer","ch":"ِ","cp":"U+0650","name_ur":"زیر","name":"zer","sound":"short i (as in 'bit')","position":"below","example":["دِل","dil","heart"]},
+    {"id":"pesh","ch":"ُ","cp":"U+064F","name_ur":"پیش","name":"pesh","sound":"short u (as in 'put')","position":"above","example":["گُل","gul","flower"]},
+    {"id":"jazm","ch":"ْ","cp":"U+0652","name_ur":"جزم","name":"jazm (sukūn)","sound":"no vowel after this letter","position":"above","example":["بَسْ","bas","enough"]},
+    {"id":"tashdid","ch":"ّ","cp":"U+0651","name_ur":"تشدید","name":"tashdīd","sound":"double the letter","position":"above","example":["بچّہ","bachcha","child"]},
+    {"id":"khari_zabar","ch":"ٰ","cp":"U+0670","name_ur":"کھڑا زبر","name":"khaṛā zabar","sound":"long ā without alif","position":"above","example":["اعلٰی","aʻlā","high"]}
+  ],
+  "long_vowels": [
+    ["ا","ā","کام kām"],["ی","ī","تین tīn"],["و","ū","دو do / جوتا jūtā"],["و","o","روٹی roṭī"],["ے","e","لے le"],["ے","ai","ہے hai"],["و","au","اور aur"],["ی","ai (mid-word)","میں maiṉ"]
+  ],
+  "sight_words": ["کا","کی","کے","سے","پر","کہ","اور","ہے","ہیں","نے","کو","میں","نہیں","وہ","یہ","اس","تھا","تھی","کیا","بھی"],
+  "numerals": [["۰","0"],["۱","1"],["۲","2"],["۳","3"],["۴","4"],["۵","5"],["۶","6"],["۷","7"],["۸","8"],["۹","9"]],
+  "punctuation": [["۔","U+06D4","full stop"],["،","U+060C","comma"],["؟","U+061F","question mark"],["؛","U+061B","semicolon"]]
+}

@@ -103,7 +103,9 @@ def contrast_card(name, chars, style):
 
 
 def word_card(u, idx, word, style):
-    ur, rom, en = word
+    ur, rom, en = word[0], word[1], word[2]
+    if len(word) > 3 and u <= 10:
+        ur = word[3]  # vowelled form until unit 10 (design row 5)
     im = Image.new("RGB", (900, 360), BG)
     d = ImageDraw.Draw(im)
     urdu(d, (450, 40), ur, font(style, 150 if style == "naskh" else 110), anchor="ma")
