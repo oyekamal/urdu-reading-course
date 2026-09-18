@@ -1,10 +1,23 @@
 // Content pack: letters, units, audio index, lesson scripts. Loaded once, offline from the bundle.
 export const C = { letters: null, units: null, audio: null, by: {}, ready: null };
-const player = new Audio(); const queue = [];
-player.addEventListener('ended', () => { const n = queue.shift(); if (n) { player.src = n; player.play().catch(() => {}); } });
-player.addEventListener('error', () => { const n = queue.shift(); if (n) { player.src = n; player.play().catch(() => {}); } });
-// Instruction clips (ui/*) queue behind whatever is playing; content clips interrupt, so a tap always answers immediately.
-export function play(key) { const src = C.audio[key]; if (!src) return false; const busy = !player.paused && !player.ended && player.currentTime > 0; if (key.startsWith('ui/') && busy) { queue.push(src); return true; } if (!key.startsWith('ui/')) queue.length = 0; if (busy && player.src.includes('/ui/')) { queue.length = 0; } player.src = src; player.play().catch(() => {}); return true; }
+let player = new Audio(); let queue = []; let watchdog = null;
+function attach(p) { p.addEventListener('ended', drain); p.addEventListener('error', drain); return p; }
+function drain() { const n = queue.shift(); if (n) { player.src = n; player.play().catch(() => {}); } }
+attach(player);
+function rebuild() { try { player.pause(); player.removeAttribute('src'); player.load(); } catch (e) {} player = attach(new Audio()); queue = []; }
+// One shared player. Instruction clips (ui/*) wait behind whatever is playing (at most one queued); content clips
+// interrupt so a tap always answers immediately. If a play does not start within 1.5 s the element is rebuilt and
+// retried once: Android WebViews occasionally leave a media element wedged after a focus loss or a background/resume.
+export function play(key, _retry) {
+  const src = C.audio[key]; if (!src) return false;
+  const busy = !player.paused && !player.ended && player.currentTime > 0;
+  if (key.startsWith('ui/') && busy) { queue = [src]; return true; }
+  if (!key.startsWith('ui/')) queue = [];
+  player.src = src; const p = player.play(); if (p && p.catch) p.catch(() => {});
+  clearTimeout(watchdog); watchdog = setTimeout(() => { if (player.src === src && (player.paused || player.currentTime === 0) && !player.ended) { if (!_retry) { rebuild(); play(key, true); } } }, 1500);
+  return true;
+}
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && player.error) rebuild(); });
 export const TATWEEL = 'ـ';
 export const forms = l => [['isolated', l.ch], ['initial', l.joiner ? l.ch + TATWEEL : null], ['medial', l.joiner ? TATWEEL + l.ch + TATWEEL : null], ['final', TATWEEL + l.ch]];
 export const W = w => ({ ur: w[0], rom: w[1], en: w[2], v: w[3] || w[0] });
