@@ -29,7 +29,7 @@ export function tellApart(unit, ctx, onDone) {
   function next() {
     if (round >= 10) { status.textContent = `Done: ${score}/10`; choices.innerHTML = ''; btn.textContent = 'Again'; btn.onclick = () => { round = 0; score = 0; next(); }; onDone && onDone(score, 10); return; }
     round++; target = pool[Math.floor(Math.random() * pool.length)]; status.textContent = `Round ${round}/10 · ${score} right`;
-    choices.innerHTML = ''; shuffle([target, ...shuffle(pool.filter(c => c !== target)).slice(0, 5)]).forEach(c => { const t = el('button', 'tile ur', c); t.onclick = () => { const ok = c === target; ctx.record('tell', target, ok, Date.now() - t0); if (ok) { t.classList.add('ok'); score++; setTimeout(next, 450); } else { t.classList.add('no'); toast(hintFor(target, c)); play('names/' + C.by[c].id); } }; choices.append(t); });
+    choices.innerHTML = ''; shuffle([target, ...shuffle(pool.filter(c => c !== target)).slice(0, 5)]).forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c].name); t.onclick = () => { const ok = c === target; ctx.record('tell', target, ok, Date.now() - t0); if (ok) { t.classList.add('ok'); score++; setTimeout(next, 450); } else { t.classList.add('no'); toast(hintFor(target, c)); play('names/' + C.by[c].id); } }; choices.append(t); });
     t0 = Date.now(); play('names/' + C.by[target].id); btn.textContent = 'Play again'; btn.onclick = () => play('names/' + C.by[target].id);
   }
   btn.onclick = next; box.append(status, btn, choices); return box;
@@ -86,7 +86,7 @@ export function dictation(unit, ctx, marks, onDone) {
   const keysAll = [...new Set([...taughtBefore(unit.n), ...unit.letters])].filter(c => C.by[c]);
   const ans = el('div', 'answer ur'), keys = el('div', 'keys'), status = el('div', 'score'), playB = el('button', 'btn btn-primary', 'Play word'), checkB = el('button', 'btn', 'Check'), back = el('button', 'btn', '⌫'), skipB = el('button', 'btn', 'Skip');
   let items = shuffle(unit.words.map((w, i) => ({ w: W(w), i }))).slice(0, 5), k = 0, typed = '', score = 0, t0;
-  [...keysAll, ...(unit.n >= 10 ? ['ء', 'ئ', 'ؤ', 'آ'] : [])].forEach(c => { const t = el('button', 'tile ur', c); t.onclick = () => { typed += c; ans.textContent = typed; }; keys.append(t); });
+  [...keysAll, ...(unit.n >= 10 ? ['ء', 'ئ', 'ؤ', 'آ'] : [])].forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c]?.name || c); t.onclick = () => { typed += c; ans.textContent = typed; }; keys.append(t); });
   back.onclick = () => { typed = [...typed].slice(0, -1).join(''); ans.textContent = typed; };
   const key = () => wordKey(unit.n, items[k].i);
   function show() { if (k >= items.length) { status.textContent = `Done: ${score}/5`; playB.textContent = 'Again'; playB.onclick = () => { items = shuffle(unit.words.map((w, i) => ({ w: W(w), i }))).slice(0, 5); k = 0; score = 0; show(); }; onDone && onDone(score, 5); return; } typed = ''; ans.textContent = ''; t0 = Date.now(); status.textContent = `Word ${k + 1}/5 · ${score} right`; playB.textContent = 'Play word'; playB.onclick = () => play(key()); play(key()); }

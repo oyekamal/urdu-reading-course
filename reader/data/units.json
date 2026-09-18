@@ -1,0 +1,1789 @@
+{
+ "_meta": "Course units. `words` are decodable using only letters taught up to and including that unit (checked by scripts/check_decodable.py). Each word: [urdu, roman, english]. `sentences` are the reading passages for the unit.",
+ "units": [
+  {
+   "n": 0,
+   "title": "Before the letters",
+   "title_ur": "حروف سے پہلے",
+   "letters": [],
+   "focus": "Right-to-left, letters join like cursive, dots decide the letter, one sound per letter, Naskh vs Nastaliq, what the small vowel marks are",
+   "words": [],
+   "sentences": [],
+   "hours": [
+    1,
+    0.5
+   ]
+  },
+  {
+   "n": 1,
+   "title": "The first six",
+   "title_ur": "پہلے چھ حرف",
+   "letters": [
+    "ا",
+    "ب",
+    "ک",
+    "ل",
+    "م",
+    "ن"
+   ],
+   "focus": "Joiners vs the non-joiner alif; alif as long ā; the three short-vowel marks zabar, zer, pesh",
+   "words": [
+    [
+     "اب",
+     "ab",
+     "now",
+     "اَب"
+    ],
+    [
+     "بابا",
+     "bābā",
+     "dad",
+     "بابا"
+    ],
+    [
+     "امام",
+     "imām",
+     "prayer leader",
+     "اِمام"
+    ],
+    [
+     "نام",
+     "nām",
+     "name",
+     "نام"
+    ],
+    [
+     "کام",
+     "kām",
+     "work",
+     "کام"
+    ],
+    [
+     "کل",
+     "kal",
+     "tomorrow / yesterday",
+     "کَل"
+    ],
+    [
+     "لال",
+     "lāl",
+     "red",
+     "لال"
+    ],
+    [
+     "بال",
+     "bāl",
+     "hair",
+     "بال"
+    ],
+    [
+     "ناک",
+     "nāk",
+     "nose",
+     "ناک"
+    ],
+    [
+     "کان",
+     "kān",
+     "ear",
+     "کان"
+    ],
+    [
+     "مان",
+     "mān",
+     "accept",
+     "مان"
+    ],
+    [
+     "نمک",
+     "namak",
+     "salt",
+     "نَمَک"
+    ],
+    [
+     "ملک",
+     "mulk",
+     "country",
+     "مُلْک"
+    ],
+    [
+     "کمال",
+     "kamāl",
+     "wonder",
+     "کَمال"
+    ],
+    [
+     "نانا",
+     "nānā",
+     "maternal grandfather",
+     "نانا"
+    ],
+    [
+     "کالا",
+     "kālā",
+     "black",
+     "کالا"
+    ],
+    [
+     "مالا",
+     "mālā",
+     "garland",
+     "مالا"
+    ],
+    [
+     "مکان",
+     "makān",
+     "house",
+     "مَکان"
+    ],
+    [
+     "املا",
+     "imlā",
+     "dictation",
+     "اِملا"
+    ],
+    [
+     "کمان",
+     "kamān",
+     "bow",
+     "کَمان"
+    ]
+   ],
+   "sentences": [
+    [
+     "بابا کا کام",
+     "bābā kā kām",
+     "dad's work",
+     "بابا کا کام"
+    ],
+    [
+     "کالا بال",
+     "kālā bāl",
+     "black hair",
+     "کالا بال"
+    ],
+    [
+     "نمک لا",
+     "namak lā",
+     "bring salt",
+     "نَمَک لا"
+    ]
+   ],
+   "hours": [
+    3,
+    1.5
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Dots and the two ye",
+   "title_ur": "نقطے اور دو یے",
+   "letters": [
+    "ت",
+    "ی",
+    "ے"
+   ],
+   "focus": "The dot-confusable cluster ب ت ن ی: same body, different dots; ی for ī and y; ے for e and ai only at the end",
+   "words": [
+    [
+     "تم",
+     "tum",
+     "you",
+     "تُم"
+    ],
+    [
+     "تین",
+     "tīn",
+     "three",
+     "تین"
+    ],
+    [
+     "بیل",
+     "bail",
+     "ox",
+     "بَیل"
+    ],
+    [
+     "میل",
+     "mīl",
+     "mile",
+     "میل"
+    ],
+    [
+     "نیلا",
+     "nīlā",
+     "blue",
+     "نیلا"
+    ],
+    [
+     "کیلا",
+     "kelā",
+     "banana",
+     "کیلا"
+    ],
+    [
+     "تیل",
+     "tel",
+     "oil",
+     "تیل"
+    ],
+    [
+     "لے",
+     "le",
+     "take",
+     "لے"
+    ],
+    [
+     "کے",
+     "ke",
+     "of",
+     "کے"
+    ],
+    [
+     "نے",
+     "ne",
+     "(agent marker)",
+     "نے"
+    ],
+    [
+     "تالی",
+     "tālī",
+     "clap",
+     "تالی"
+    ],
+    [
+     "بلی",
+     "billī",
+     "cat",
+     "بِلّی"
+    ],
+    [
+     "تالا",
+     "tālā",
+     "lock",
+     "تالا"
+    ],
+    [
+     "کتاب",
+     "kitāb",
+     "book",
+     "کِتاب"
+    ],
+    [
+     "بیتاب",
+     "betāb",
+     "restless",
+     "بیتاب"
+    ],
+    [
+     "تکیا",
+     "takiya",
+     "pillow",
+     "تَکِیا"
+    ],
+    [
+     "مالی",
+     "mālī",
+     "gardener",
+     "مالی"
+    ],
+    [
+     "ناتا",
+     "nātā",
+     "relation",
+     "ناتا"
+    ],
+    [
+     "تالاب",
+     "tālāb",
+     "pond",
+     "تالاب"
+    ],
+    [
+     "کمانی",
+     "kamānī",
+     "spring",
+     "کَمانی"
+    ]
+   ],
+   "sentences": [
+    [
+     "تین کتاب",
+     "tīn kitāb",
+     "three books",
+     "تین کِتاب"
+    ],
+    [
+     "بلی کالی ہے",
+     "billī kālī hai",
+     "the cat is black (ہے is a sight word)",
+     "بِلّی کالی ہَے"
+    ],
+    [
+     "نیلا تکیا لے",
+     "nīlā takiya le",
+     "take the blue pillow",
+     "نیلا تَکِیا لے"
+    ]
+   ],
+   "hours": [
+    3,
+    1.5
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Finishing the be family",
+   "title_ur": "بے کا خاندان",
+   "letters": [
+    "پ",
+    "ٹ",
+    "ث"
+   ],
+   "focus": "Three dots below (پ), the small ط-mark above (ٹ), three dots above (ث). Retroflex ٹ vs dental ت",
+   "words": [
+    [
+     "پانی",
+     "pānī",
+     "water",
+     "پانی"
+    ],
+    [
+     "پل",
+     "pul",
+     "bridge",
+     "پُل"
+    ],
+    [
+     "ٹوپی",
+     "ṭopī",
+     "cap (و comes in unit 4, preview)",
+     "ٹوپی"
+    ],
+    [
+     "پتا",
+     "patā",
+     "address",
+     "پَتا"
+    ],
+    [
+     "پاک",
+     "pāk",
+     "pure",
+     "پاک"
+    ],
+    [
+     "پیٹ",
+     "peṭ",
+     "stomach",
+     "پیٹ"
+    ],
+    [
+     "ٹب",
+     "ṭab",
+     "tub",
+     "ٹَب"
+    ],
+    [
+     "پتلی",
+     "patlī",
+     "thin",
+     "پَتْلی"
+    ],
+    [
+     "ثابت",
+     "s̱ābit",
+     "proven",
+     "ثابِت"
+    ],
+    [
+     "پیپل",
+     "pīpal",
+     "fig tree",
+     "پیپَل"
+    ],
+    [
+     "ٹماٹر",
+     "ṭamāṭar",
+     "tomato (ر preview)",
+     "ٹَماٹَر"
+    ],
+    [
+     "ٹانکا",
+     "ṭānkā",
+     "stitch",
+     "ٹانْکا"
+    ],
+    [
+     "پیالا",
+     "piyālā",
+     "bowl",
+     "پِیالا"
+    ],
+    [
+     "نپا",
+     "napā",
+     "measured",
+     "نَپا"
+    ],
+    [
+     "پلک",
+     "palak",
+     "eyelash",
+     "پَلَک"
+    ],
+    [
+     "کپاس",
+     "kapās",
+     "cotton (س preview)",
+     "کَپاس"
+    ],
+    [
+     "تپتا",
+     "taptā",
+     "scorching",
+     "تَپْتا"
+    ],
+    [
+     "پتلا",
+     "patlā",
+     "thin",
+     "پَتْلا"
+    ],
+    [
+     "ٹکٹ",
+     "ṭikaṭ",
+     "ticket",
+     "ٹِکَٹ"
+    ],
+    [
+     "بٹن",
+     "baṭan",
+     "button",
+     "بَٹَن"
+    ]
+   ],
+   "sentences": [
+    [
+     "پانی لا",
+     "pānī lā",
+     "bring water",
+     "پانی لا"
+    ],
+    [
+     "پتلی بلی",
+     "patlī billī",
+     "thin cat",
+     "پَتْلی بِلّی"
+    ],
+    [
+     "میں ٹوپی لے",
+     "maiṉ ṭopī le",
+     "(preview) I take the cap",
+     "مَیں ٹوپی لے"
+    ]
+   ],
+   "hours": [
+    2.5,
+    1
+   ]
+  },
+  {
+   "n": 4,
+   "title": "The non-joiners",
+   "title_ur": "نہ ملنے والے حرف",
+   "letters": [
+    "و",
+    "ر",
+    "د",
+    "ہ"
+   ],
+   "focus": "و ر د never join forward; و as w/ū/o/au; ہ as h and as the final -a sound; the full non-joiner list ا د ڈ ذ ر ڑ ز ژ و ے",
+   "words": [
+    [
+     "وہ",
+     "woh",
+     "he / she / that",
+     "وُہ"
+    ],
+    [
+     "دو",
+     "do",
+     "two",
+     "دو"
+    ],
+    [
+     "دن",
+     "din",
+     "day",
+     "دِن"
+    ],
+    [
+     "دال",
+     "dāl",
+     "lentils",
+     "دال"
+    ],
+    [
+     "دم",
+     "dam",
+     "breath",
+     "دَم"
+    ],
+    [
+     "رات",
+     "rāt",
+     "night",
+     "رات"
+    ],
+    [
+     "روٹی",
+     "roṭī",
+     "bread",
+     "روٹی"
+    ],
+    [
+     "دور",
+     "dūr",
+     "far",
+     "دور"
+    ],
+    [
+     "ہم",
+     "ham",
+     "we",
+     "ہَم"
+    ],
+    [
+     "ہار",
+     "hār",
+     "necklace",
+     "ہار"
+    ],
+    [
+     "کمرہ",
+     "kamra",
+     "room",
+     "کَمْرہ"
+    ],
+    [
+     "بادام",
+     "bādām",
+     "almond",
+     "بادام"
+    ],
+    [
+     "دادا",
+     "dādā",
+     "grandfather",
+     "دادا"
+    ],
+    [
+     "دریا",
+     "daryā",
+     "river",
+     "دَرْیا"
+    ],
+    [
+     "ہوا",
+     "hawā",
+     "wind",
+     "ہَوا"
+    ],
+    [
+     "راہ",
+     "rāh",
+     "path",
+     "راہ"
+    ],
+    [
+     "دودھ",
+     "dūdh",
+     "milk (ھ preview)",
+     "دودھ"
+    ],
+    [
+     "مور",
+     "mor",
+     "peacock",
+     "مور"
+    ],
+    [
+     "پودا",
+     "paudā",
+     "plant",
+     "پَودا"
+    ],
+    [
+     "نہر",
+     "nahar",
+     "canal",
+     "نَہَر"
+    ]
+   ],
+   "sentences": [
+    [
+     "دو روٹی",
+     "do roṭī",
+     "two breads",
+     "دو روٹی"
+    ],
+    [
+     "وہ کمرہ بڑا ہے",
+     "woh kamra baṛā hai",
+     "(preview) that room is big",
+     "وُہ کَمْرہ بَڑا ہَے"
+    ],
+    [
+     "ہم دور ہیں",
+     "ham dūr haiṉ",
+     "we are far",
+     "ہَم دور ہَیں"
+    ]
+   ],
+   "hours": [
+    3,
+    1.5
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Sīn, jīm and gāf",
+   "title_ur": "سین، جیم، گاف",
+   "letters": [
+    "س",
+    "ش",
+    "ج",
+    "چ",
+    "گ"
+   ],
+   "focus": "The toothed sīn family; the bowl-shaped jīm family; گ as kāf with an extra stroke",
+   "words": [
+    [
+     "سب",
+     "sab",
+     "all",
+     "سَب"
+    ],
+    [
+     "سو",
+     "so",
+     "hundred / sleep",
+     "سو"
+    ],
+    [
+     "سال",
+     "sāl",
+     "year",
+     "سال"
+    ],
+    [
+     "شام",
+     "shām",
+     "evening",
+     "شام"
+    ],
+    [
+     "شیر",
+     "sher",
+     "lion",
+     "شیر"
+    ],
+    [
+     "جوتا",
+     "jūtā",
+     "shoe",
+     "جوتا"
+    ],
+    [
+     "جام",
+     "jām",
+     "goblet",
+     "جام"
+    ],
+    [
+     "چار",
+     "chār",
+     "four",
+     "چار"
+    ],
+    [
+     "چاند",
+     "chānd",
+     "moon",
+     "چاند"
+    ],
+    [
+     "چابی",
+     "chābī",
+     "key",
+     "چابی"
+    ],
+    [
+     "گلاب",
+     "gulāb",
+     "rose",
+     "گُلاب"
+    ],
+    [
+     "گاجر",
+     "gājar",
+     "carrot",
+     "گاجَر"
+    ],
+    [
+     "گانا",
+     "gānā",
+     "song",
+     "گانا"
+    ],
+    [
+     "سبک",
+     "sabuk",
+     "light",
+     "سَبُک"
+    ],
+    [
+     "شادی",
+     "shādī",
+     "wedding",
+     "شادی"
+    ],
+    [
+     "جنگل",
+     "jangal",
+     "forest",
+     "جَنگَل"
+    ],
+    [
+     "مچھلی",
+     "machhlī",
+     "fish (ھ preview)",
+     "مَچھلی"
+    ],
+    [
+     "گرم",
+     "garm",
+     "hot",
+     "گَرْم"
+    ],
+    [
+     "سردی",
+     "sardī",
+     "cold",
+     "سَرْدی"
+    ],
+    [
+     "دوست",
+     "dost",
+     "friend",
+     "دوسْت"
+    ]
+   ],
+   "sentences": [
+    [
+     "چار گلاب",
+     "chār gulāb",
+     "four roses",
+     "چار گُلاب"
+    ],
+    [
+     "شیر جنگل میں ہے",
+     "sher jangal meṉ hai",
+     "the lion is in the forest",
+     "شیر جَنگَل مَیں ہَے"
+    ],
+    [
+     "دوست کا جوتا",
+     "dost kā jūtā",
+     "friend's shoe",
+     "دوسْت کا جوتا"
+    ]
+   ],
+   "hours": [
+    3,
+    1.5
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Breath and nose",
+   "title_ur": "سانس اور ناک",
+   "letters": [
+    "ں",
+    "ھ"
+   ],
+   "focus": "do-chashmī he makes aspirates (بھ پھ تھ ٹھ جھ چھ دھ کھ گھ); nūn ghunna nasalises; میں ہیں ہاں کہاں are among the most frequent words in Urdu",
+   "words": [
+    [
+     "میں",
+     "maiṉ",
+     "I / in",
+     "مَیں"
+    ],
+    [
+     "ہاں",
+     "hāṉ",
+     "yes",
+     "ہاں"
+    ],
+    [
+     "کہاں",
+     "kahāṉ",
+     "where",
+     "کَہاں"
+    ],
+    [
+     "ہیں",
+     "haiṉ",
+     "are",
+     "ہَیں"
+    ],
+    [
+     "گھر",
+     "ghar",
+     "house",
+     "گَھر"
+    ],
+    [
+     "بھائی",
+     "bhāʾī",
+     "brother (ئ preview)",
+     "بَھائی"
+    ],
+    [
+     "پھول",
+     "phūl",
+     "flower",
+     "پھول"
+    ],
+    [
+     "تھالی",
+     "thālī",
+     "plate",
+     "تھالی"
+    ],
+    [
+     "ٹھنڈا",
+     "ṭhanḍā",
+     "cold (ڈ preview)",
+     "ٹَھنڈا"
+    ],
+    [
+     "کھانا",
+     "khānā",
+     "food",
+     "کھانا"
+    ],
+    [
+     "دھاگا",
+     "dhāgā",
+     "thread",
+     "دھاگا"
+    ],
+    [
+     "چھت",
+     "chhat",
+     "roof",
+     "چَھت"
+    ],
+    [
+     "جھولا",
+     "jhūlā",
+     "swing",
+     "جھولا"
+    ],
+    [
+     "ہاتھ",
+     "hāth",
+     "hand",
+     "ہاتھ"
+    ],
+    [
+     "دودھ",
+     "dūdh",
+     "milk",
+     "دودھ"
+    ],
+    [
+     "مچھلی",
+     "machhlī",
+     "fish",
+     "مَچھلی"
+    ],
+    [
+     "آنکھ",
+     "āṉkh",
+     "eye",
+     "آنکھ"
+    ],
+    [
+     "یہاں",
+     "yahāṉ",
+     "here",
+     "یَہاں"
+    ],
+    [
+     "سکھانا",
+     "sikhānā",
+     "to teach",
+     "سِکھانا"
+    ],
+    [
+     "بھالو",
+     "bhālū",
+     "bear",
+     "بَھالو"
+    ]
+   ],
+   "sentences": [
+    [
+     "میں گھر میں ہوں",
+     "maiṉ ghar meṉ hūṉ",
+     "I am at home",
+     "مَیں گَھر مَیں ہوں"
+    ],
+    [
+     "پھول کہاں ہیں",
+     "phūl kahāṉ haiṉ",
+     "where are the flowers",
+     "پھول کَہاں ہَیں"
+    ],
+    [
+     "بھائی کھانا کھاتا ہے",
+     "bhāʾī khānā khātā hai",
+     "brother eats food",
+     "بَھائی کھانا کھاتا ہَے"
+    ]
+   ],
+   "hours": [
+    3,
+    1.5
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Retroflex and z",
+   "title_ur": "ڈ ڑ ز ژ",
+   "letters": [
+    "ڈ",
+    "ڑ",
+    "ز",
+    "ژ"
+   ],
+   "focus": "Hard ڈ vs soft د; ڑ the flapped r that never starts a word; ز; the rare Persian ژ",
+   "words": [
+    [
+     "ڈاک",
+     "ḍāk",
+     "mail",
+     "ڈاک"
+    ],
+    [
+     "ڈبہ",
+     "ḍabba",
+     "box",
+     "ڈَبّہ"
+    ],
+    [
+     "لڑکا",
+     "laṛkā",
+     "boy",
+     "لَڑْکا"
+    ],
+    [
+     "لڑکی",
+     "laṛkī",
+     "girl",
+     "لَڑْکی"
+    ],
+    [
+     "بڑا",
+     "baṛā",
+     "big",
+     "بَڑا"
+    ],
+    [
+     "پڑھنا",
+     "paṛhnā",
+     "to read",
+     "پَڑھنا"
+    ],
+    [
+     "زبان",
+     "zabān",
+     "tongue / language",
+     "زَبان"
+    ],
+    [
+     "زمین",
+     "zamīn",
+     "earth",
+     "زَمین"
+    ],
+    [
+     "ژالہ",
+     "zhāla",
+     "hailstone",
+     "ژَالہ"
+    ],
+    [
+     "روزانہ",
+     "rozāna",
+     "daily",
+     "روزانہ"
+    ],
+    [
+     "ڈھول",
+     "ḍhol",
+     "drum",
+     "ڈھول"
+    ],
+    [
+     "گڑیا",
+     "guṛiyā",
+     "doll",
+     "گُڑِیا"
+    ],
+    [
+     "سڑک",
+     "saṛak",
+     "road",
+     "سَڑَک"
+    ],
+    [
+     "زرد",
+     "zard",
+     "yellow",
+     "زَرْد"
+    ],
+    [
+     "ڈر",
+     "ḍar",
+     "fear",
+     "ڈَر"
+    ],
+    [
+     "کپڑا",
+     "kapṛā",
+     "cloth",
+     "کَپْڑا"
+    ],
+    [
+     "مزا",
+     "mazā",
+     "fun",
+     "مَزا"
+    ],
+    [
+     "انڈا",
+     "anḍā",
+     "egg",
+     "اَنڈا"
+    ],
+    [
+     "ٹھنڈا",
+     "ṭhanḍā",
+     "cold",
+     "ٹَھنڈا"
+    ],
+    [
+     "گھڑی",
+     "ghaṛī",
+     "watch",
+     "گَھڑی"
+    ]
+   ],
+   "sentences": [
+    [
+     "لڑکا سڑک پر ہے",
+     "laṛkā saṛak par hai",
+     "the boy is on the road",
+     "لَڑْکا سَڑَک پَر ہَے"
+    ],
+    [
+     "بڑا ڈبہ",
+     "baṛā ḍabba",
+     "big box",
+     "بَڑا ڈَبّہ"
+    ],
+    [
+     "زمین زرد ہے",
+     "zamīn zard hai",
+     "the ground is yellow",
+     "زَمین زَرْد ہَے"
+    ]
+   ],
+   "passage": [
+    "لڑکا سڑک پر ہے۔ اس کے پاس بڑا ڈبہ ہے۔ ڈبے میں گڑیا اور کپڑا ہے۔ لڑکی کہتی ہے: یہ میرا ڈبہ ہے۔",
+    "laṛkā saṛak par hai. us ke pās baṛā ḍabba hai. ḍabe meṉ guṛiyā aur kapṛā hai. laṛkī kahtī hai: yeh merā ḍabba hai.",
+    "The boy is on the road. He has a big box. In the box there is a doll and cloth. The girl says: this is my box."
+   ],
+   "hours": [
+    2.5,
+    1
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Sounds from Arabic and Persian",
+   "title_ur": "عربی فارسی کے حرف",
+   "letters": [
+    "ف",
+    "ق",
+    "خ",
+    "غ",
+    "ع",
+    "ح"
+   ],
+   "focus": "Six letters common in everyday Urdu loanwords; ع mostly a vowel seat; ح same sound as ہ",
+   "words": [
+    [
+     "فرش",
+     "farsh",
+     "floor",
+     "فَرْش"
+    ],
+    [
+     "فون",
+     "fon",
+     "phone",
+     "فون"
+    ],
+    [
+     "قلم",
+     "qalam",
+     "pen",
+     "قَلَم"
+    ],
+    [
+     "قمیض",
+     "qamīẕ",
+     "shirt (ض preview)",
+     "قَمیض"
+    ],
+    [
+     "خط",
+     "k͟hat",
+     "letter (ط preview)",
+     "خَط"
+    ],
+    [
+     "خوش",
+     "k͟hush",
+     "happy",
+     "خُوش"
+    ],
+    [
+     "غریب",
+     "g͟harīb",
+     "poor",
+     "غَریب"
+    ],
+    [
+     "باغ",
+     "bāg͟h",
+     "garden",
+     "باغ"
+    ],
+    [
+     "عمر",
+     "ʻumr",
+     "age",
+     "عُمْر"
+    ],
+    [
+     "علم",
+     "ʻilm",
+     "knowledge",
+     "عِلْم"
+    ],
+    [
+     "حال",
+     "ḥāl",
+     "condition",
+     "حال"
+    ],
+    [
+     "حلوہ",
+     "ḥalwa",
+     "halwa",
+     "حَلْوہ"
+    ],
+    [
+     "صاف",
+     "ṣāf",
+     "clean (ص preview)",
+     "صاف"
+    ],
+    [
+     "فوج",
+     "fauj",
+     "army",
+     "فَوج"
+    ],
+    [
+     "وقت",
+     "waqt",
+     "time",
+     "وَقْت"
+    ],
+    [
+     "خالی",
+     "k͟hālī",
+     "empty",
+     "خالی"
+    ],
+    [
+     "غم",
+     "g͟ham",
+     "grief",
+     "غَم"
+    ],
+    [
+     "عام",
+     "ʻām",
+     "common",
+     "عام"
+    ],
+    [
+     "حساب",
+     "ḥisāb",
+     "maths",
+     "حِساب"
+    ],
+    [
+     "دفتر",
+     "daftar",
+     "office",
+     "دَفْتَر"
+    ]
+   ],
+   "sentences": [
+    [
+     "قلم کہاں ہے",
+     "qalam kahāṉ hai",
+     "where is the pen",
+     "قَلَم کَہاں ہَے"
+    ],
+    [
+     "باغ خالی ہے",
+     "bāg͟h k͟hālī hai",
+     "the garden is empty",
+     "باغ خالی ہَے"
+    ],
+    [
+     "وقت کیا ہوا ہے",
+     "waqt kyā huā hai",
+     "what time is it",
+     "وَقْت کیا ہُوا ہَے"
+    ]
+   ],
+   "passage": [
+    "دن کا وقت ہے۔ باغ خالی ہے۔ ایک عورت قلم لے کر آتی ہے۔ وہ خوش ہے کیوں کہ آج اس کے دوست کی سالگرہ ہے۔ فوج کا حال عام ہے۔",
+    "din kā waqt hai. bāg͟h k͟hālī hai. ek ʻaurat qalam le kar ātī hai. woh k͟hush hai kyūṉ keh āj us ke dost kī sālgirah hai. fauj kā ḥāl ʻām hai.",
+    "It is daytime. The garden is empty. A woman comes with a pen. She is happy because today is her friend's birthday. The army's condition is ordinary."
+   ],
+   "hours": [
+    3,
+    1.5
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Same sound, different letter",
+   "title_ur": "ایک آواز، کئی حرف",
+   "letters": [
+    "ص",
+    "ض",
+    "ط",
+    "ظ",
+    "ذ"
+   ],
+   "focus": "s: س ث ص · z: ز ذ ض ظ · t: ت ط · h: ہ ح — spelling must be memorised per word; these letters mark Arabic loans",
+   "words": [
+    [
+     "صبح",
+     "ṣubḥ",
+     "morning",
+     "صُبْح"
+    ],
+    [
+     "صبر",
+     "ṣabr",
+     "patience",
+     "صَبْر"
+    ],
+    [
+     "ضرور",
+     "ẕarūr",
+     "certainly",
+     "ضَرور"
+    ],
+    [
+     "مریض",
+     "marīẕ",
+     "patient",
+     "مَریض"
+    ],
+    [
+     "طالب",
+     "t̤ālib",
+     "student",
+     "طالِب"
+    ],
+    [
+     "طوطا",
+     "t̤ot̤ā",
+     "parrot",
+     "طوطا"
+    ],
+    [
+     "ظاہر",
+     "z̤āhir",
+     "apparent",
+     "ظاہِر"
+    ],
+    [
+     "ظلم",
+     "z̤ulm",
+     "cruelty",
+     "ظُلْم"
+    ],
+    [
+     "ذائقہ",
+     "ẕāʾiqa",
+     "taste (ئ preview)",
+     "ذائِقَہ"
+    ],
+    [
+     "ذمہ",
+     "ẕimma",
+     "responsibility",
+     "ذِمّہ"
+    ],
+    [
+     "صابن",
+     "ṣābun",
+     "soap",
+     "صابُن"
+    ],
+    [
+     "ضد",
+     "ẕid",
+     "stubbornness",
+     "ضِد"
+    ],
+    [
+     "طاقت",
+     "t̤āqat",
+     "strength",
+     "طاقَت"
+    ],
+    [
+     "حفاظت",
+     "ḥifāz̤at",
+     "protection",
+     "حِفاظَت"
+    ],
+    [
+     "ذرا",
+     "ẕarā",
+     "a little",
+     "ذَرا"
+    ],
+    [
+     "خاص",
+     "k͟hāṣ",
+     "special",
+     "خاص"
+    ],
+    [
+     "ثواب",
+     "s̱awāb",
+     "reward",
+     "ثَواب"
+    ],
+    [
+     "نظر",
+     "naz̤ar",
+     "sight",
+     "نَظْر"
+    ],
+    [
+     "لفظ",
+     "lafz̤",
+     "word",
+     "لَفْظ"
+    ],
+    [
+     "صحیح",
+     "ṣaḥīḥ",
+     "correct",
+     "صَحیح"
+    ]
+   ],
+   "sentences": [
+    [
+     "صبح صاف ہے",
+     "ṣubḥ ṣāf hai",
+     "the morning is clear",
+     "صُبْح صاف ہَے"
+    ],
+    [
+     "طوطا ذرا بڑا ہے",
+     "t̤ot̤ā ẕarā baṛā hai",
+     "the parrot is a bit big",
+     "طوطا ذَرا بَڑا ہَے"
+    ],
+    [
+     "یہ لفظ صحیح ہے",
+     "yeh lafz̤ ṣaḥīḥ hai",
+     "this word is correct",
+     "یِہ لَفْظ صَحیح ہَے"
+    ]
+   ],
+   "passage": [
+    "صابر ایک طالب ہے۔ وہ صبح صاف کپڑے پہن کر اسکول جاتا ہے۔ اس کا طوطا ذرا بڑا ہے اور ضرور بولتا ہے۔ صابر کہتا ہے: یہ لفظ صحیح ہے۔",
+    "ṣābir ek t̤ālib hai. woh ṣubḥ ṣāf kapṛe pahan kar iskūl jātā hai. us kā t̤ot̤ā ẕarā baṛā hai aur ẕarūr boltā hai. ṣābir kahtā hai: yeh lafz̤ ṣaḥīḥ hai.",
+    "Sabir is a student. In the morning he puts on clean clothes and goes to school. His parrot is a bit big and certainly talks. Sabir says: this word is correct."
+   ],
+   "hours": [
+    2.5,
+    1
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Hamza, marks and numbers",
+   "title_ur": "ہمزہ، علامتیں، اعداد",
+   "letters": [
+    "ئ",
+    "ۃ"
+   ],
+   "focus": "ئ ؤ آ; tashdīd doubles; jazm stops the vowel; khaṛā zabar; iẕāfat; ۃ in Arabic words; numerals ۰–۹; punctuation ۔ ، ؟",
+   "words": [
+    [
+     "آم",
+     "ām",
+     "mango",
+     "آم"
+    ],
+    [
+     "آپ",
+     "āp",
+     "you (polite)",
+     "آپ"
+    ],
+    [
+     "کوئی",
+     "koʾī",
+     "someone",
+     "کوئی"
+    ],
+    [
+     "گئے",
+     "gaʾe",
+     "went",
+     "گَئے"
+    ],
+    [
+     "مسئلہ",
+     "masʾala",
+     "problem",
+     "مَسْئَلہ"
+    ],
+    [
+     "بچّہ",
+     "bachcha",
+     "child",
+     "بَچّہ"
+    ],
+    [
+     "اللّٰہ",
+     "allāh",
+     "God",
+     "اَللّٰہ"
+    ],
+    [
+     "دعا",
+     "duʻā",
+     "prayer",
+     "دُعا"
+    ],
+    [
+     "سؤال",
+     "suwāl",
+     "question",
+     "سُؤال"
+    ],
+    [
+     "آئینہ",
+     "āʾīna",
+     "mirror",
+     "آئینہ"
+    ],
+    [
+     "نئی",
+     "naʾī",
+     "new (f.)",
+     "نَئی"
+    ],
+    [
+     "چائے",
+     "chāʾe",
+     "tea",
+     "چائے"
+    ],
+    [
+     "گائے",
+     "gāʾe",
+     "cow",
+     "گائے"
+    ],
+    [
+     "اعلیٰ",
+     "aʻlā",
+     "high",
+     "اَعلیٰ"
+    ],
+    [
+     "صلوٰۃ",
+     "ṣalāt",
+     "prayer",
+     "صَلوٰۃ"
+    ],
+    [
+     "دنیا",
+     "dunyā",
+     "world",
+     "دُنیا"
+    ],
+    [
+     "ابّا",
+     "abbā",
+     "dad",
+     "اَبّا"
+    ],
+    [
+     "امّی",
+     "ammī",
+     "mum",
+     "اَمّی"
+    ],
+    [
+     "مکّہ",
+     "makka",
+     "Makkah",
+     "مَکّہ"
+    ],
+    [
+     "اچّھا",
+     "achchhā",
+     "good",
+     "اَچّھا"
+    ]
+   ],
+   "sentences": [
+    [
+     "آپ کا نام کیا ہے؟",
+     "āp kā nām kyā hai?",
+     "what is your name?",
+     "آپ کا نام کیا ہَے؟"
+    ],
+    [
+     "چائے میں ۲ چمچ چینی",
+     "chāʾe meṉ do chamach chīnī",
+     "2 spoons of sugar in the tea",
+     "چائے مَیں ۲ چَمَچ چینی"
+    ],
+    [
+     "کوئی مسئلہ نہیں۔",
+     "koʾī masʾala nahīṉ.",
+     "no problem.",
+     "کوئی مَسْئَلہ نَہیں۔"
+    ]
+   ],
+   "passage": [
+    "آپ کا نام کیا ہے؟ میرا نام کمال ہے۔ آج بچّہ آم کھاتا ہے اور چائے پیتا ہے۔ کوئی مسئلہ نہیں۔ ہم ۲ بجے گھر جائیں گے۔",
+    "āp kā nām kyā hai? merā nām kamāl hai. āj bachcha ām khātā hai aur chāʾe pītā hai. koʾī masʾala nahīṉ. ham do baje ghar jāʾeṉ ge.",
+    "What is your name? My name is Kamal. Today the child eats a mango and drinks tea. No problem. We will go home at 2 o'clock."
+   ],
+   "hours": [
+    2.5,
+    1.5
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Reading like a grown-up",
+   "title_ur": "بڑوں کی طرح پڑھنا",
+   "letters": [],
+   "focus": "Sight words (کا کی کے سے پر کہ اور ہے ہیں نے کو); text without vowel marks; switching from Naskh to Nastaliq; the alphabet in dictionary order",
+   "words": [
+    [
+     "کا",
+     "kā",
+     "of (m.)",
+     "کا"
+    ],
+    [
+     "کی",
+     "kī",
+     "of (f.)",
+     "کی"
+    ],
+    [
+     "کے",
+     "ke",
+     "of (pl.)",
+     "کے"
+    ],
+    [
+     "سے",
+     "se",
+     "from",
+     "سے"
+    ],
+    [
+     "پر",
+     "par",
+     "on",
+     "پَر"
+    ],
+    [
+     "کہ",
+     "keh",
+     "that",
+     "کَہ"
+    ],
+    [
+     "اور",
+     "aur",
+     "and",
+     "اَور"
+    ],
+    [
+     "ہے",
+     "hai",
+     "is",
+     "ہَے"
+    ],
+    [
+     "ہیں",
+     "haiṉ",
+     "are",
+     "ہَیں"
+    ],
+    [
+     "نے",
+     "ne",
+     "(agent)",
+     "نے"
+    ],
+    [
+     "کو",
+     "ko",
+     "to",
+     "کو"
+    ],
+    [
+     "نہیں",
+     "nahīṉ",
+     "no / not",
+     "نَہیں"
+    ],
+    [
+     "تھا",
+     "thā",
+     "was",
+     "تھا"
+    ],
+    [
+     "تھی",
+     "thī",
+     "was (f.)",
+     "تھی"
+    ],
+    [
+     "کیا",
+     "kyā",
+     "what",
+     "کیا"
+    ],
+    [
+     "بھی",
+     "bhī",
+     "also",
+     "بھی"
+    ],
+    [
+     "لیکن",
+     "lekin",
+     "but",
+     "لیکِن"
+    ],
+    [
+     "اگر",
+     "agar",
+     "if",
+     "اَگَر"
+    ],
+    [
+     "پھر",
+     "phir",
+     "then",
+     "پِھر"
+    ],
+    [
+     "بہت",
+     "bahut",
+     "very",
+     "بَہُت"
+    ]
+   ],
+   "sentences": [
+    [
+     "میرا نام کمال ہے اور میں لاہور میں رہتا ہوں۔",
+     "merā nām kamāl hai aur maiṉ lāhaur meṉ rahtā hūṉ.",
+     "my name is Kamal and I live in Lahore.",
+     "میرا نام کَمال ہَے اَور مَیں لاہَور مَیں رَہْتا ہوں۔"
+    ],
+    [
+     "بچے اسکول جاتے ہیں لیکن آج چھٹی ہے۔",
+     "bachche iskūl jāte haiṉ lekin āj chhuṭṭī hai.",
+     "the children go to school but today is a holiday.",
+     "بَچّے اِسْکول جاتے ہَیں لیکِن آج چُھٹّی ہَے۔"
+    ],
+    [
+     "اگر بارش ہوئی تو ہم گھر پر رہیں گے۔",
+     "agar bārish huʾī to ham ghar par raheṉ ge.",
+     "if it rains we will stay home.",
+     "اَگَر بارِش ہُوئی تو ہَم گَھر پَر رَہیں گے۔"
+    ]
+   ],
+   "passage": [
+    "میرا نام کمال ہے اور میں لاہور میں رہتا ہوں۔ میرے گھر کے پاس ایک باغ ہے۔ صبح میں باغ میں چلتا ہوں۔ باغ میں پھول اور درخت ہیں۔ شام کو ہم گھر واپس جاتے ہیں اور چائے پیتے ہیں۔",
+    "merā nām kamāl hai aur maiṉ lāhaur meṉ rahtā hūṉ. mere ghar ke pās ek bāg͟h hai. ṣubḥ maiṉ bāg͟h meṉ chaltā hūṉ. bāg͟h meṉ phūl aur darak͟ht haiṉ. shām ko ham ghar wāpas jāte haiṉ aur chāʾe pīte haiṉ.",
+    "My name is Kamal and I live in Lahore. Near my house there is a garden. In the morning I walk in the garden. There are flowers and trees in the garden. In the evening we go home and drink tea."
+   ],
+   "hours": [
+    3,
+    2
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Fluency and the reading test",
+   "title_ur": "روانی اور جانچ",
+   "letters": [],
+   "focus": "EGRA-style check: letter-sound fluency, nonword decoding, familiar words per minute, passage reading with comprehension questions",
+   "words": [],
+   "sentences": [],
+   "hours": [
+    1,
+    1
+   ]
+  }
+ ]
+}

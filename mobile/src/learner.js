@@ -3,6 +3,7 @@ import { db, uid } from './db.js';
 import { C, play, W, shuffle, wordKey, sentKey, el, toast, bandFor } from './content.js';
 import * as D from './drills.js';
 import * as S from './session.js';
+import { renderDashboard } from './dashboard.js';
 
 export async function renderLearner(root, ctx) {
   const { profile } = ctx; const st = { tab: 'today' };
@@ -114,9 +115,7 @@ export async function renderLearner(root, ctx) {
     C.units.filter(u => u.passage && u.n <= Math.max(cur, 1)).reverse().forEach(u => { const box = el('div'); main.append(el('h3', '', `Passage · unit ${u.n}`)); main.append(box); fluency(u, box, () => {}, true); box.lastChild.remove(); });
     C.units.filter(u => u.sentences.length && u.n <= Math.max(cur, 1)).reverse().forEach(u => { const box = el('div'); main.append(el('h3', '', `Sentences · unit ${u.n}`)); main.append(box); fluency(u, box, () => {}); box.lastChild.remove(); }); }
 
-  async function progress() { await header('Progress'); const s = await S.stats(profile.id); const c = el('div', 'card'); const rows = [['Units passed', `${s.unitsPassed} / 13`], ['Letters solid', `${s.lettersMastered} / ${s.letters}`], ['Words solid', `${s.wordsMastered} / ${s.words}`], ['Sessions', s.sessions], ['Cards due', s.due]]; c.innerHTML = rows.map(([k, v]) => `<div class="row" style="justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--line)"><span>${k}</span><b>${v}</b></div>`).join(''); main.append(c);
-    if (s.wpm.length) { const w = el('div', 'card'); w.innerHTML = '<h2>Reading speed</h2>'; const mx = Math.max(60, ...s.wpm.map(x => x.wpm)); const g = el('div', 'row'); g.style.alignItems = 'flex-end'; g.style.height = '120px'; s.wpm.slice(-20).forEach(x => { const b = el('div', '', ''); b.style.cssText = `width:14px;height:${Math.max(4, x.wpm / mx * 110)}px;background:var(--accent);border-radius:4px`; b.title = `${x.wpm} wpm`; g.append(b); }); w.append(g, el('div', 'muted', `latest ${s.wpm[s.wpm.length - 1].wpm} wpm · 60 meets the grade-2 standard`)); main.append(w); }
-    const a = await db.by('assessments', 'profileId', profile.id); if (a.length) { const last = a.sort((x, y) => y.ts - x.ts)[0]; main.append(el('div', 'card', `<h2>Last assessment</h2><div>${new Date(last.ts).toLocaleDateString()} · passage ${last.orf?.cwpm ?? '-'} cwpm · <span class="pill ${last.band}">${last.band}</span></div>`)); } }
+  async function progress() { await header('Progress'); main.append(await renderDashboard(profile.id)); }
 
   function selfTest() { const c = el('div', 'card'); c.innerHTML = '<h2>Test yourself</h2><p class="muted">Five parts, like the teacher\'s assessment. This is your reading speed today, not a certificate.</p>'; const b = el('button', 'btn btn-primary', 'Start the reading test'); b.onclick = () => { st.tab = 'test'; render(); }; c.append(b); return c; }
   async function test() { await header('Test yourself', 'Five parts · a helper times you, or use the timer'); const A = C.letters.assessment; const results = {};

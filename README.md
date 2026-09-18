@@ -2,7 +2,7 @@
 
 A research-backed course and app that takes anyone, child or adult, Urdu speaker or not, from zero to reading Urdu script. Everything is generated from two data files, so a fix to a letter or a word flows into the cards, the printable lessons and the app.
 
-**Try the app:** open `app/index.html` (or the GitHub Pages link in the repo description). It runs offline once loaded, with audio for every letter, word and sentence.
+**Try it now, no install:** the full learner + teacher app runs in the browser and works offline after the first load: https://oyekamal.github.io/urdu-reading-course/reader/ (add it to your home screen). The original single-page course is at https://oyekamal.github.io/urdu-reading-course/app/. Android APK: see Releases.
 
 ## What is in the box
 
@@ -20,7 +20,8 @@ A research-backed course and app that takes anyone, child or adult, Urdu speaker
 | `assets/fonts/` | Noto Nastaliq Urdu and Noto Naskh Arabic (SIL OFL) |
 | `research/` | Eleven cited research files: quality bar, books, apps, script reference, pedagogy, open assets, TTS bake-off, offline literacy apps, teacher tools, tech stack, learning design |
 | `docs/offline-app-plan.html` | Product and architecture plan for the offline Android app (learner, teacher, parent modes) |
-| `mobile/` | The Android app (Capacitor 7 + Vite): learner, parent and teacher modes, offline, one APK |
+| `mobile/` | The app source (Capacitor 7 + Vite): learner, parent and teacher modes, offline, one APK |
+| `reader/` | Built web version of the same app, served by GitHub Pages as an installable PWA |
 | `scripts/` | The build pipeline (below) |
 | `.audit/` | Decision log and the gauntlet-loop critic reports, kept for transparency |
 
@@ -54,6 +55,44 @@ Python needs: torch, transformers, soundfile, Pillow (with libraqm), openai-whis
 ## Audio, honestly
 
 The voice is machine-generated, locally, with an MMS-VITS Urdu fine-tune chosen by a Whisper-judged bake-off (`research/06_tts_bakeoff.md`). The models drop short-vowel marks, so ambiguous words were re-rendered inside a carrier phrase and cut out using the model's own letter timings; a human listener then picked the best rendering for 95 flagged clips. It is intelligible and good enough for a pilot. For a commercial product, record a native speaker: every successful offline literacy app ships human audio, and the base model's licence is CC BY-NC.
+
+## Recording a human voice
+
+The two files above the fold — `data/letters.json`, `data/units.json` — and `assets/audio/manifest.json`
+are the source of truth for every one of the 474 clips. `recording/SCRIPT.md` turns that manifest into
+a read-aloud script grouped in a sensible recording order (letter names → example words → syllables →
+aspirates → diacritics with their example words → unit words by unit → sentences → sight words →
+numerals), with a "how to record" preface (quiet room, phone ~20 cm away, say the item twice, say the
+clip number in English first so the recording can be auto-split). `recording/script.csv` is the same
+474 rows as a spreadsheet (`id,kind,text,roman,file`) for anyone who wants to track progress in a sheet
+instead.
+
+Once a native speaker has recorded some or all of it:
+
+```bash
+# one file per clip, named <kind>__<id>.ext or just <id>.ext where that's unambiguous
+python3 scripts/import_recordings.py --folder ~/recordings/session1 \
+  --recorded-by "Ayesha Khan" --date 2026-09-18
+
+# or one long take plus a start/end-seconds CSV (see recording/SCRIPT.md's own note on this)
+python3 scripts/import_recordings.py --source ~/recordings/full.m4a --cuts recording/cuts.csv \
+  --recorded-by "Ayesha Khan" --date 2026-09-18
+
+python3 scripts/build_app.py   # rebuild app/index.html + app/audio.json with the new audio
+```
+
+`--dry-run` reports the match/coverage without writing anything. Each import converts to 16 kHz mono,
+trims silence, peak-normalises to 0.9 and pads 0.15 s/0.25 s lead/tail — the same shape `gen_audio.py`
+already produces — writes `assets/audio/<kind>/<id>.wav` + `.mp3`, and records
+`{"method": "human", "recordedBy": ..., "date": ...}` in `data/audio_overrides.json` so `gen_audio.py`
+never regenerates (and overwrites) an imported clip. Needs only python3, numpy, soundfile and ffmpeg —
+nothing new to install.
+
+**Licence effect:** the CC BY-NC restriction on audio (see below) exists only because the current voice
+is a derivative of Meta's MMS-TTS model. A human recording carries no such restriction — once a clip's
+`audio_overrides.json` entry says `"method": "human"`, that clip is the speaker's original performance
+of CC BY 4.0 course text, and can be licensed the same as the rest of the course (credit the speaker by
+name in `LICENSE`/`README.md` once a full pass is recorded).
 
 ## Licences
 

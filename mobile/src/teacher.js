@@ -111,6 +111,7 @@ async function renderClass(body, ctx, state, goto) {
     tr.appendChild(el('td', '', String(passed)));
     const actTd = el('td', 'row');
     const openBtn = el('button', 'btn', 'Open'); openBtn.onclick = () => ctx.openLearner(r.profile.id);
+    const detailBtn = el('button', 'btn', 'Detail'); detailBtn.onclick = async () => { const { renderDashboard } = await import('./dashboard.js'); const d = document.getElementById('child-detail') || Object.assign(el('div'), { id: 'child-detail' }); d.innerHTML = ''; d.append(el('h2', '', `${r.profile.name} — detail`)); d.append(await renderDashboard(r.profile.id)); body.append(d); d.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
     const assessBtn = el('button', 'btn btn-primary', 'Assess'); assessBtn.onclick = () => goto('Assess', r.profile.id);
     const editBtn = el('button', 'btn', 'Edit');
     editBtn.onclick = () => {
@@ -126,7 +127,7 @@ async function renderClass(body, ctx, state, goto) {
       if (!confirm(`Delete ${r.profile.name}? This cannot be undone.`)) return;
       db.del('profiles', r.profile.id).then(() => { toast('Deleted'); renderClass(body, ctx, state, goto); });
     };
-    actTd.appendChild(openBtn); actTd.appendChild(assessBtn); actTd.appendChild(editBtn); actTd.appendChild(delBtn);
+    actTd.appendChild(openBtn); actTd.appendChild(detailBtn); actTd.appendChild(assessBtn); actTd.appendChild(editBtn); actTd.appendChild(delBtn);
     tr.appendChild(actTd);
     table.appendChild(tr);
   });
