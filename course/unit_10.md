@@ -2,24 +2,8 @@
 
 **Focus:** ئ ؤ آ; tashdīd doubles; jazm stops the vowel; khaṛā zabar; iẕāfat; ۃ in Arabic words; numerals ۰–۹; punctuation ۔ ، ؟
 
-## 1 · Hear it
 
-| Letter | Name | Sound | Say it like… | Audio |
-|---|---|---|---|---|
-| ء | hamza (ہمزہ) | /ʔ / silent/ | a tiny break between two vowels (کوئی ko-ī); sits on ئ or ؤ, or alone | `assets/audio/names/hamza.mp3` · `assets/audio/words/hamza.mp3` (کوئی koʾī — someone / any) |
-
-## 2 · See it
-
-**ء hamza** — does **not** join forward (2 forms: isolated, final).
-
-![hamza card](../assets/images/letters/hamza_naskh.png)
-![hamza forms](../assets/images/forms/hamza_naskh.png)
-
-## 3 · Tell it apart
-
-- No new look-alikes this unit. Re-run the unit 2 dot drill (ب ت ن ی) as a warm-up.
-
-## 4 · Join it
+## 4 · Join it  ·  *production · self-check against the answer shown*
 
 Build each word from letter tiles, right to left. Watch which letters change shape and which refuse to join.
 
@@ -27,7 +11,7 @@ Build each word from letter tiles, right to left. Watch which letters change sha
 - گ + ئ + ے  →  **گَئے**  (gaʾe, went)
 - م + س + ئ + ل + ہ  →  **مَسْئَلہ**  (masʾala, problem)
 
-## 5 · Read it
+## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 
 Vowel marks are shown. Read aloud, then play the audio and compare.
 
@@ -46,13 +30,13 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 | نَئی | naʾī | new (f.) | `assets/audio/units/u10_10.mp3` |
 | چائے | chāʾe | tea | `assets/audio/units/u10_11.mp3` |
 | گائے | gāʾe | cow | `assets/audio/units/u10_12.mp3` |
-| اَعلٰی | aʻlā | high | `assets/audio/units/u10_13.mp3` |
+| اَعلیٰ | aʻlā | high | `assets/audio/units/u10_13.mp3` |
 | صَلوٰۃ | ṣalāt | prayer | `assets/audio/units/u10_14.mp3` |
 | دُنیا | dunyā | world | `assets/audio/units/u10_15.mp3` |
 | اَبّا | abbā | dad | `assets/audio/units/u10_16.mp3` |
 | اَمّی | ammī | mum | `assets/audio/units/u10_17.mp3` |
 | مَکّہ | makka | Makkah | `assets/audio/units/u10_18.mp3` |
-| کَہّ | kah | (jazm/tashdīd drill) | `assets/audio/units/u10_19.mp3` |
+| اَچّھا | achchhā | good | `assets/audio/units/u10_19.mp3` |
 
 **Sentences**
 
@@ -60,11 +44,14 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 - چائے مَیں ۲ چَمَچ چینی  —  *chāʾe meṉ do chamach chīnī*  —  2 spoons of sugar in the tea  · `assets/audio/sentences/u10_01.mp3`
 - کوئی مَسْئَلہ نَہیں۔  —  *koʾī masʾala nahīṉ.*  —  no problem.  · `assets/audio/sentences/u10_02.mp3`
 
-## 6 · Write it
+## 6 · Write it  ·  *production · needs a helper or the app tracer to check*
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: آم, آپ, کوئی, گَئے, مَسْئَلہ.
 
-## 7 · Dictation
+**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
+
+
+## 7 · Dictation  ·  *production · self-check with the key below*
 
 Play each clip twice. Learner writes the word. Then reveal.
 
@@ -84,24 +71,24 @@ Play each clip twice. Learner writes the word. Then reveal.
 
 </details>
 
-## 8 · Check (score 8/10 to move on)
+## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
 1. Which one says **allāh** (God)?   (a) بَچّہ   (b) گَئے   (c) اَللّٰہ   (d) اَبّا
 2. Which one says **dunyā** (world)?   (a) آپ   (b) گائے   (c) دُنیا   (d) مَسْئَلہ
-3. Which one says **kah** ((jazm/tashdīd drill))?   (a) گائے   (b) بَچّہ   (c) کَہّ   (d) آپ
+3. Which one says **achchhā** (good)?   (a) گائے   (b) بَچّہ   (c) اَچّھا   (d) آپ
 4. Which one says **āʾīna** (mirror)?   (a) آئینہ   (b) چائے   (c) بَچّہ   (d) کوئی
 5. Which one says **ammī** (mum)?   (a) چائے   (b) گائے   (c) آئینہ   (d) اَمّی
 6. Which one says **gaʾe** (went)?   (a) کوئی   (b) صَلوٰۃ   (c) گَئے   (d) گائے
 7. Which one says **duʻā** (prayer)?   (a) دُعا   (b) نَئی   (c) صَلوٰۃ   (d) گائے
 8. Which one says **ṣalāt** (prayer)?   (a) اَللّٰہ   (b) صَلوٰۃ   (c) نَئی   (d) دُنیا
-9. Which one says **masʾala** (problem)?   (a) مَسْئَلہ   (b) اَعلٰی   (c) کَہّ   (d) آپ
+9. Which one says **masʾala** (problem)?   (a) مَسْئَلہ   (b) اَعلیٰ   (c) اَچّھا   (d) آپ
 10. Which one says **chāʾe** (tea)?   (a) گائے   (b) چائے   (c) نَئی   (d) کوئی
 
 <details><summary>Answer key</summary>
 
 1. اَللّٰہ
 2. دُنیا
-3. کَہّ
+3. اَچّھا
 4. آئینہ
 5. اَمّی
 6. گَئے

@@ -19,4 +19,10 @@ Timing is per subtask, 60 seconds each unless stated. Stop a subtask after 10 co
 | 1–59 | below standard: repeat units flagged by subtasks 1–3 |
 | 0 | nonreader: restart at unit 1 |
 
-Record results in the app's progress screen or on paper. Retest after four weeks.
+Record results on paper or in the app (unit 12, "Score the passage" box). Retest after four weeks.
+
+<details><summary>Answer key — comprehension (passage in the app, unit 12)</summary>
+
+1. لاہور میں (in Lahore) 2. باغ میں چلتا ہے (walks in the garden) 3. پھول اور درخت (flowers and trees) 4. اس کی بہن (his sister) 5. چائے (tea)
+
+</details>

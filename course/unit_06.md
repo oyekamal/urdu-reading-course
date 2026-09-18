@@ -21,12 +21,12 @@
 ![do-chashmī he card](../assets/images/letters/do_chashmi_he_naskh.png)
 ![do-chashmī he forms](../assets/images/forms/do_chashmi_he_naskh.png)
 
-## 3 · Tell it apart
+## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
 - ں vs ن — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 - ھ vs ہ — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 
-## 4 · Join it
+## 4 · Join it  ·  *production · self-check against the answer shown*
 
 Build each word from letter tiles, right to left. Watch which letters change shape and which refuse to join.
 
@@ -34,7 +34,7 @@ Build each word from letter tiles, right to left. Watch which letters change sha
 - ہ + ا + ں  →  **ہاں**  (hāṉ, yes)
 - ک + ہ + ا + ں  →  **کَہاں**  (kahāṉ, where)
 
-## 5 · Read it
+## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 
 Vowel marks are shown. Read aloud, then play the audio and compare.
 
@@ -67,11 +67,16 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 - پھول کَہاں ہَیں  —  *phūl kahāṉ haiṉ*  —  where are the flowers  · `assets/audio/sentences/u06_01.mp3`
 - بَھائی کھانا کھاتا ہَے  —  *bhāʾī khānā khātā hai*  —  brother eats food  · `assets/audio/sentences/u06_02.mp3`
 
-## 6 · Write it
+## 6 · Write it  ·  *production · needs a helper or the app tracer to check*
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: مَیں, ہاں, کَہاں, ہَیں, گَھر.
 
-## 7 · Dictation
+**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
+
+- ں nūn g͟hunna: the same bowl as ب but deeper and rounder; dot after (none for ں).
+- ھ do-chashmī he: ہ is a small loop with a short tail; ھ is two connected bowls open at the top.
+
+## 7 · Dictation  ·  *production · self-check with the key below*
 
 Play each clip twice. Learner writes the word. Then reveal.
 
@@ -91,7 +96,7 @@ Play each clip twice. Learner writes the word. Then reveal.
 
 </details>
 
-## 8 · Check (score 8/10 to move on)
+## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
 1. Which one says **hāth** (hand)?   (a) جھولا   (b) چَھت   (c) گَھر   (d) ہاتھ
 2. Which one says **machhlī** (fish)?   (a) مَچھلی   (b) ہاتھ   (c) بَھائی   (d) ٹَھنڈا

@@ -45,13 +45,13 @@
 ![baṛī ḥe card](../assets/images/letters/bari_he_naskh.png)
 ![baṛī ḥe forms](../assets/images/forms/bari_he_naskh.png)
 
-## 3 · Tell it apart
+## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
 - ف vs ق — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 - خ vs ج چ ح — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 - غ vs ع — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 
-## 4 · Join it
+## 4 · Join it  ·  *production · self-check against the answer shown*
 
 Build each word from letter tiles, right to left. Watch which letters change shape and which refuse to join.
 
@@ -59,7 +59,7 @@ Build each word from letter tiles, right to left. Watch which letters change sha
 - ف + و + ن  →  **فون**  (fon, phone)
 - ق + ل + م  →  **قَلَم**  (qalam, pen)
 
-## 5 · Read it
+## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 
 Vowel marks are shown. Read aloud, then play the audio and compare.
 
@@ -92,11 +92,20 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 - باغ خالی ہَے  —  *bāg͟h k͟hālī hai*  —  the garden is empty  · `assets/audio/sentences/u08_01.mp3`
 - وَقْت کیا ہُوا ہَے  —  *waqt kyā huā hai*  —  what time is it  · `assets/audio/sentences/u08_02.mp3`
 
-## 6 · Write it
+## 6 · Write it  ·  *production · needs a helper or the app tracer to check*
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: فَرْش, فون, قَلَم, قَمیض, خَط.
 
-## 7 · Dictation
+**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
+
+- ف fe: small loop at the top, then the long shallow bowl (ف) or deep bowl (ق) leftwards; dots after.
+- ق qāf: small loop at the top, then the long shallow bowl (ف) or deep bowl (ق) leftwards; dots after.
+- خ k͟he: start at the top-right with the small head stroke going left, then drop into the round bowl below; dot after.
+- غ g͟hain: small c-shape at the top opening right, then the bowl beneath; dot after for غ.
+- ع ʻain: small c-shape at the top opening right, then the bowl beneath; dot after for غ.
+- ح baṛī ḥe: start at the top-right with the small head stroke going left, then drop into the round bowl below; dot after.
+
+## 7 · Dictation  ·  *production · self-check with the key below*
 
 Play each clip twice. Learner writes the word. Then reveal.
 
@@ -116,7 +125,7 @@ Play each clip twice. Learner writes the word. Then reveal.
 
 </details>
 
-## 8 · Check (score 8/10 to move on)
+## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
 1. Which one says **ṣāf** (clean (ص preview))?   (a) حَلْوہ   (b) دَفْتَر   (c) قَلَم   (d) صاف
 2. Which one says **qamīẕ** (shirt (ض preview))?   (a) خُوش   (b) قَمیض   (c) فون   (d) حال

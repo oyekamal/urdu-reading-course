@@ -39,13 +39,13 @@
 ![gāf card](../assets/images/letters/gaf_naskh.png)
 ![gāf forms](../assets/images/forms/gaf_naskh.png)
 
-## 3 · Tell it apart
+## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
 - س vs ش — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 - ج vs چ — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 - گ vs ک — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 
-## 4 · Join it
+## 4 · Join it  ·  *production · self-check against the answer shown*
 
 Build each word from letter tiles, right to left. Watch which letters change shape and which refuse to join.
 
@@ -53,7 +53,7 @@ Build each word from letter tiles, right to left. Watch which letters change sha
 - ش + ا + م  →  **شام**  (shām, evening)
 - ش + ی + ر  →  **شیر**  (sher, lion)
 
-## 5 · Read it
+## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 
 Vowel marks are shown. Read aloud, then play the audio and compare.
 
@@ -86,11 +86,19 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 - شیر جَنگَل مَیں ہَے  —  *sher jangal meṉ hai*  —  the lion is in the forest  · `assets/audio/sentences/u05_01.mp3`
 - دوسْت کا جوتا  —  *dost kā jūtā*  —  friend's shoe  · `assets/audio/sentences/u05_02.mp3`
 
-## 6 · Write it
+## 6 · Write it  ·  *production · needs a helper or the app tracer to check*
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: سَب, سو, سال, شام, شیر.
 
-## 7 · Dictation
+**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
+
+- س sīn: three small teeth from right to left, then the deep bowl; dots after.
+- ش shīn: three small teeth from right to left, then the deep bowl; dots after.
+- ج jīm: start at the top-right with the small head stroke going left, then drop into the round bowl below; dot after.
+- چ che: start at the top-right with the small head stroke going left, then drop into the round bowl below; dot after.
+- گ gāf: the sloping cap stroke first from top-left down to the right, then the base going left; گ adds a second cap stroke.
+
+## 7 · Dictation  ·  *production · self-check with the key below*
 
 Play each clip twice. Learner writes the word. Then reveal.
 
@@ -110,7 +118,7 @@ Play each clip twice. Learner writes the word. Then reveal.
 
 </details>
 
-## 8 · Check (score 8/10 to move on)
+## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
 1. Which one says **jūtā** (shoe)?   (a) سَب   (b) گاجَر   (c) گانا   (d) جوتا
 2. Which one says **sabuk** (light)?   (a) سَبُک   (b) گَرْم   (c) سال   (d) چابی

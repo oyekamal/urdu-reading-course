@@ -10,7 +10,7 @@
 | ب | be (بے) | /b/ | 'b' in bat | `assets/audio/names/be.mp3` · `assets/audio/words/be.mp3` (بابا bābā — father) |
 | ک | kāf (کاف) | /k/ | 'k' in kite | `assets/audio/names/kaf.mp3` · `assets/audio/words/kaf.mp3` (کام kām — work) |
 | ل | lām (لام) | /l/ | 'l' in log | `assets/audio/names/lam.mp3` · `assets/audio/words/lam.mp3` (لال lāl — red) |
-| م | mīm (میم) | /m/ | 'm' in mat | `assets/audio/names/mim.mp3` · `assets/audio/words/mim.mp3` (ماما māmā — maternal uncle) |
+| م | mīm (میم) | /m/ | 'm' in mat | `assets/audio/names/mim.mp3` · `assets/audio/words/mim.mp3` (مکان makān — house) |
 | ن | nūn (نون) | /n/ | 'n' in net | `assets/audio/names/nun.mp3` · `assets/audio/words/nun.mp3` (نام nām — name) |
 
 ## 2 · See it
@@ -45,20 +45,20 @@
 ![nūn card](../assets/images/letters/nun_naskh.png)
 ![nūn forms](../assets/images/forms/nun_naskh.png)
 
-## 3 · Tell it apart
+## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
 - ا vs ل — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 - ب vs ن — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 
-## 4 · Join it
+## 4 · Join it  ·  *production · self-check against the answer shown*
 
 Build each word from letter tiles, right to left. Watch which letters change shape and which refuse to join.
 
 - ب + ا + ب + ا  →  **بابا**  (bābā, dad)
-- م + ا + م + ا  →  **ماما**  (māmā, maternal uncle)
+- ا + م + ا + م  →  **اِمام**  (imām, prayer leader)
 - ن + ا + م  →  **نام**  (nām, name)
 
-## 5 · Read it
+## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 
 Vowel marks are shown. Read aloud, then play the audio and compare.
 
@@ -66,7 +66,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 |---|---|---|---|
 | اَب | ab | now | `assets/audio/units/u01_00.mp3` |
 | بابا | bābā | dad | `assets/audio/units/u01_01.mp3` |
-| ماما | māmā | maternal uncle | `assets/audio/units/u01_02.mp3` |
+| اِمام | imām | prayer leader | `assets/audio/units/u01_02.mp3` |
 | نام | nām | name | `assets/audio/units/u01_03.mp3` |
 | کام | kām | work | `assets/audio/units/u01_04.mp3` |
 | کَل | kal | tomorrow / yesterday | `assets/audio/units/u01_05.mp3` |
@@ -78,9 +78,9 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 | نَمَک | namak | salt | `assets/audio/units/u01_11.mp3` |
 | مُلْک | mulk | country | `assets/audio/units/u01_12.mp3` |
 | کَمال | kamāl | wonder | `assets/audio/units/u01_13.mp3` |
-| اَنا | anā | ego | `assets/audio/units/u01_14.mp3` |
+| نانا | nānā | maternal grandfather | `assets/audio/units/u01_14.mp3` |
 | کالا | kālā | black | `assets/audio/units/u01_15.mp3` |
-| بَلا | balā | calamity | `assets/audio/units/u01_16.mp3` |
+| مالا | mālā | garland | `assets/audio/units/u01_16.mp3` |
 | مَکان | makān | house | `assets/audio/units/u01_17.mp3` |
 | اِملا | imlā | dictation | `assets/audio/units/u01_18.mp3` |
 | کَمان | kamān | bow | `assets/audio/units/u01_19.mp3` |
@@ -91,11 +91,20 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 - کالا بال  —  *kālā bāl*  —  black hair  · `assets/audio/sentences/u01_01.mp3`
 - نَمَک لا  —  *namak lā*  —  bring salt  · `assets/audio/sentences/u01_02.mp3`
 
-## 6 · Write it
+## 6 · Write it  ·  *production · needs a helper or the app tracer to check*
 
-Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: اَب, بابا, ماما, نام, کام.
+Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: اَب, بابا, اِمام, نام, کام.
 
-## 7 · Dictation
+**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
+
+- ا alif: one stroke, top to bottom; when it follows a joiner it rises from the joining line.
+- ب be: start top-right, draw the shallow bowl leftwards, hook up at the left end; dots after.
+- ک kāf: the sloping cap stroke first from top-left down to the right, then the base going left; گ adds a second cap stroke.
+- ل lām: tall stroke down, then curve into the bowl leftwards.
+- م mīm: small closed loop, then the tail down-left.
+- ن nūn: the same bowl as ب but deeper and rounder; dot after (none for ں).
+
+## 7 · Dictation  ·  *production · self-check with the key below*
 
 Play each clip twice. Learner writes the word. Then reveal.
 
@@ -111,22 +120,22 @@ Play each clip twice. Learner writes the word. Then reveal.
 2. کام (kām)
 3. مُلْک (mulk)
 4. بابا (bābā)
-5. ماما (māmā)
+5. اِمام (imām)
 
 </details>
 
-## 8 · Check (score 8/10 to move on)
+## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
-1. Which one says **makān** (house)?   (a) مَکان   (b) بال   (c) کَمال   (d) ماما
+1. Which one says **makān** (house)?   (a) مَکان   (b) بال   (c) کَمال   (d) اِمام
 2. Which one says **nām** (name)?   (a) نام   (b) کَمال   (c) کَمان   (d) بابا
-3. Which one says **namak** (salt)?   (a) نام   (b) اَنا   (c) نَمَک   (d) کام
+3. Which one says **namak** (salt)?   (a) نام   (b) نانا   (c) نَمَک   (d) کام
 4. Which one says **bābā** (dad)?   (a) بابا   (b) بال   (c) مُلْک   (d) کَمان
-5. Which one says **lāl** (red)?   (a) اَنا   (b) بَلا   (c) لال   (d) اِملا
+5. Which one says **lāl** (red)?   (a) نانا   (b) مالا   (c) لال   (d) اِملا
 6. Which one says **ab** (now)?   (a) اَب   (b) ناک   (c) کَمان   (d) لال
-7. Which one says **balā** (calamity)?   (a) بَلا   (b) ماما   (c) اَنا   (d) کان
-8. Which one says **kālā** (black)?   (a) بَلا   (b) کَمال   (c) بابا   (d) کالا
+7. Which one says **mālā** (garland)?   (a) مالا   (b) اِمام   (c) نانا   (d) کان
+8. Which one says **kālā** (black)?   (a) مالا   (b) کَمال   (c) بابا   (d) کالا
 9. Which one says **mulk** (country)?   (a) کَمان   (b) مان   (c) مُلْک   (d) نَمَک
-10. Which one says **kamāl** (wonder)?   (a) کَمال   (b) بَلا   (c) ناک   (d) ماما
+10. Which one says **kamāl** (wonder)?   (a) کَمال   (b) مالا   (c) ناک   (d) اِمام
 
 <details><summary>Answer key</summary>
 
@@ -136,7 +145,7 @@ Play each clip twice. Learner writes the word. Then reveal.
 4. بابا
 5. لال
 6. اَب
-7. بَلا
+7. مالا
 8. کالا
 9. مُلْک
 10. کَمال

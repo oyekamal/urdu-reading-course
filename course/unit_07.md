@@ -33,13 +33,13 @@
 ![zhe card](../assets/images/letters/zhe_naskh.png)
 ![zhe forms](../assets/images/forms/zhe_naskh.png)
 
-## 3 · Tell it apart
+## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
 - ڈ vs د — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 - ڑ vs ر ز — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 - ژ vs ز ر — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 
-## 4 · Join it
+## 4 · Join it  ·  *production · self-check against the answer shown*
 
 Build each word from letter tiles, right to left. Watch which letters change shape and which refuse to join.
 
@@ -47,7 +47,7 @@ Build each word from letter tiles, right to left. Watch which letters change sha
 - ڈ + ب + ہ  →  **ڈَبّہ**  (ḍabba, box)
 - ل + ڑ + ک + ا  →  **لَڑْکا**  (laṛkā, boy)
 
-## 5 · Read it
+## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 
 Vowel marks are shown. Read aloud, then play the audio and compare.
 
@@ -80,11 +80,18 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 - بَڑا ڈَبّہ  —  *baṛā ḍabba*  —  big box  · `assets/audio/sentences/u07_01.mp3`
 - زَمین زَرْد ہَے  —  *zamīn zard hai*  —  the ground is yellow  · `assets/audio/sentences/u07_02.mp3`
 
-## 6 · Write it
+## 6 · Write it  ·  *production · needs a helper or the app tracer to check*
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: ڈاک, ڈَبّہ, لَڑْکا, لَڑْکی, بَڑا.
 
-## 7 · Dictation
+**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
+
+- ڈ ḍāl: start at the top, come down and out to the left in one angled stroke; never joins forward.
+- ڑ ṛe: start at the top and sweep down-left below the line; ز ژ dots after; never joins forward.
+- ز ze: start at the top and sweep down-left below the line; ز ژ dots after; never joins forward.
+- ژ zhe: start at the top and sweep down-left below the line; ز ژ dots after; never joins forward.
+
+## 7 · Dictation  ·  *production · self-check with the key below*
 
 Play each clip twice. Learner writes the word. Then reveal.
 
@@ -104,7 +111,7 @@ Play each clip twice. Learner writes the word. Then reveal.
 
 </details>
 
-## 8 · Check (score 8/10 to move on)
+## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
 1. Which one says **kapṛā** (cloth)?   (a) اَنڈا   (b) کَپْڑا   (c) لَڑْکا   (d) مَزا
 2. Which one says **zhāla** (hailstone)?   (a) زَبان   (b) زَمین   (c) ژَالہ   (d) کَپْڑا

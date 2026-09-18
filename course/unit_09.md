@@ -39,13 +39,13 @@
 ![ẕāl card](../assets/images/letters/zal_naskh.png)
 ![ẕāl forms](../assets/images/forms/zal_naskh.png)
 
-## 3 · Tell it apart
+## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
 - ص vs ض س — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 - ط vs ظ — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 - ذ vs د ڈ ز — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 
-## 4 · Join it
+## 4 · Join it  ·  *production · self-check against the answer shown*
 
 Build each word from letter tiles, right to left. Watch which letters change shape and which refuse to join.
 
@@ -53,7 +53,7 @@ Build each word from letter tiles, right to left. Watch which letters change sha
 - ص + ب + ر  →  **صَبْر**  (ṣabr, patience)
 - ض + ر + و + ر  →  **ضَرور**  (ẕarūr, certainly)
 
-## 5 · Read it
+## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 
 Vowel marks are shown. Read aloud, then play the audio and compare.
 
@@ -86,11 +86,19 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 - طوطا ذَرا بَڑا ہَے  —  *t̤ot̤ā ẕarā baṛā hai*  —  the parrot is a bit big  · `assets/audio/sentences/u09_01.mp3`
 - یِہ لَفْظ صَحیح ہَے  —  *yeh lafz̤ ṣaḥīḥ hai*  —  this word is correct  · `assets/audio/sentences/u09_02.mp3`
 
-## 6 · Write it
+## 6 · Write it  ·  *production · needs a helper or the app tracer to check*
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: صُبْح, صَبْر, ضَرور, مَریض, طالِب.
 
-## 7 · Dictation
+**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
+
+- ص ṣwād: three small teeth from right to left, then the deep bowl; dots after.
+- ض ẓwād: three small teeth from right to left, then the deep bowl; dots after.
+- ط t̤oʼe: draw the loop first (like ص), then the tall stroke rising from its right; dot after for ظ.
+- ظ z̤oʼe: draw the loop first (like ص), then the tall stroke rising from its right; dot after for ظ.
+- ذ ẕāl: start at the top, come down and out to the left in one angled stroke; never joins forward.
+
+## 7 · Dictation  ·  *production · self-check with the key below*
 
 Play each clip twice. Learner writes the word. Then reveal.
 
@@ -110,7 +118,7 @@ Play each clip twice. Learner writes the word. Then reveal.
 
 </details>
 
-## 8 · Check (score 8/10 to move on)
+## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
 1. Which one says **ẕāʾiqa** (taste)?   (a) ذَرا   (b) صابُن   (c) ذائِقَہ   (d) خاص
 2. Which one says **lafz̤** (word)?   (a) لَفْظ   (b) صُبْح   (c) صَحیح   (d) خاص

@@ -27,12 +27,12 @@
 ![s̱e card](../assets/images/letters/se_naskh.png)
 ![s̱e forms](../assets/images/forms/se_naskh.png)
 
-## 3 · Tell it apart
+## 3 · Tell it apart  ·  *recognition · self-check with audio*
 
 - پ vs ب ت ث — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 - ٹ vs ت ب — same body, different dots or marks. Drill: play `names/` audio for each, learner points at the right one. 10 rounds, shuffled.
 
-## 4 · Join it
+## 4 · Join it  ·  *production · self-check against the answer shown*
 
 Build each word from letter tiles, right to left. Watch which letters change shape and which refuse to join.
 
@@ -40,7 +40,7 @@ Build each word from letter tiles, right to left. Watch which letters change sha
 - ٹ + و + پ + ی  →  **ٹوپی**  (ṭopī, cap (و comes in unit 4, preview))
 - پ + ت + ا  →  **پَتا**  (patā, address)
 
-## 5 · Read it
+## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 
 Vowel marks are shown. Read aloud, then play the audio and compare.
 
@@ -64,7 +64,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 | کَپاس | kapās | cotton (س preview) | `assets/audio/units/u03_15.mp3` |
 | تَپْتا | taptā | scorching | `assets/audio/units/u03_16.mp3` |
 | پَتْلا | patlā | thin | `assets/audio/units/u03_17.mp3` |
-| ٹال | ṭāl | wood-stall | `assets/audio/units/u03_18.mp3` |
+| ٹِکَٹ | ṭikaṭ | ticket | `assets/audio/units/u03_18.mp3` |
 | بَٹَن | baṭan | button | `assets/audio/units/u03_19.mp3` |
 
 **Sentences**
@@ -73,11 +73,17 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 - پَتْلی بِلّی  —  *patlī billī*  —  thin cat  · `assets/audio/sentences/u03_01.mp3`
 - مَیں ٹوپی لے  —  *maiṉ ṭopī le*  —  (preview) I take the cap  · `assets/audio/sentences/u03_02.mp3`
 
-## 6 · Write it
+## 6 · Write it  ·  *production · needs a helper or the app tracer to check*
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: پانی, پُل, ٹوپی, پَتا, پاک.
 
-## 7 · Dictation
+**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
+
+- پ pe: start top-right, draw the shallow bowl leftwards, hook up at the left end; dots after.
+- ٹ ṭe: start top-right, draw the shallow bowl leftwards, hook up at the left end; dots after.
+- ث s̱e: start top-right, draw the shallow bowl leftwards, hook up at the left end; dots after.
+
+## 7 · Dictation  ·  *production · self-check with the key below*
 
 Play each clip twice. Learner writes the word. Then reveal.
 
@@ -97,7 +103,7 @@ Play each clip twice. Learner writes the word. Then reveal.
 
 </details>
 
-## 8 · Check (score 8/10 to move on)
+## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
 1. Which one says **ṭab** (tub)?   (a) پَتْلا   (b) پیپَل   (c) پِیالا   (d) ٹَب
 2. Which one says **taptā** (scorching)?   (a) پَتْلی   (b) تَپْتا   (c) ٹَماٹَر   (d) پَتْلا
@@ -106,9 +112,9 @@ Play each clip twice. Learner writes the word. Then reveal.
 5. Which one says **pānī** (water)?   (a) بَٹَن   (b) پَتا   (c) پانی   (d) پِیالا
 6. Which one says **piyālā** (bowl)?   (a) پانی   (b) تَپْتا   (c) پِیالا   (d) ٹانْکا
 7. Which one says **s̱ābit** (proven)?   (a) تَپْتا   (b) ثابِت   (c) ٹَب   (d) پیٹ
-8. Which one says **ṭāl** (wood-stall)?   (a) پِیالا   (b) پَلَک   (c) ٹال   (d) بَٹَن
+8. Which one says **ṭikaṭ** (ticket)?   (a) پِیالا   (b) پَلَک   (c) ٹِکَٹ   (d) بَٹَن
 9. Which one says **ṭamāṭar** (tomato (ر preview))?   (a) پانی   (b) ٹَماٹَر   (c) پاک   (d) کَپاس
-10. Which one says **pul** (bridge)?   (a) پُل   (b) ٹال   (c) پیٹ   (d) پِیالا
+10. Which one says **pul** (bridge)?   (a) پُل   (b) ٹِکَٹ   (c) پیٹ   (d) پِیالا
 
 <details><summary>Answer key</summary>
 
@@ -119,7 +125,7 @@ Play each clip twice. Learner writes the word. Then reveal.
 5. پانی
 6. پِیالا
 7. ثابِت
-8. ٹال
+8. ٹِکَٹ
 9. ٹَماٹَر
 10. پُل
 

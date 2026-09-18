@@ -3,7 +3,7 @@
 **Focus:** Sight words (کا کی کے سے پر کہ اور ہے ہیں نے کو); text without vowel marks; switching from Naskh to Nastaliq; the alphabet in dictionary order
 
 
-## 4 · Join it
+## 4 · Join it  ·  *production · self-check against the answer shown*
 
 Build each word from letter tiles, right to left. Watch which letters change shape and which refuse to join.
 
@@ -11,7 +11,7 @@ Build each word from letter tiles, right to left. Watch which letters change sha
 - ہ + ی + ں  →  **ہَیں**  (haiṉ, are)
 - ن + ہ + ی + ں  →  **نَہیں**  (nahīṉ, no / not)
 
-## 5 · Read it
+## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 
 Vowel marks are shown. Read aloud, then play the audio and compare.
 
@@ -44,11 +44,14 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 - بَچّے اِسْکول جاتے ہَیں لیکِن آج چُھٹّی ہَے۔  —  *bachche iskūl jāte haiṉ lekin āj chhuṭṭī hai.*  —  the children go to school but today is a holiday.  · `assets/audio/sentences/u11_01.mp3`
 - اَگَر بارِش ہُوئی تو ہَم گَھر پَر رَہیں گے۔  —  *agar bārish huʾī to ham ghar par raheṉ ge.*  —  if it rains we will stay home.  · `assets/audio/sentences/u11_02.mp3`
 
-## 6 · Write it
+## 6 · Write it  ·  *production · needs a helper or the app tracer to check*
 
 Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: کا, کی, کے, سے, پَر.
 
-## 7 · Dictation
+**How the pen moves.** Urdu is written right to left and each letter body is drawn in one stroke where possible; dots and small marks are added last, after the whole word.
+
+
+## 7 · Dictation  ·  *production · self-check with the key below*
 
 Play each clip twice. Learner writes the word. Then reveal.
 
@@ -68,7 +71,7 @@ Play each clip twice. Learner writes the word. Then reveal.
 
 </details>
 
-## 8 · Check (score 8/10 to move on)
+## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
 1. Which one says **kā** (of (m.))?   (a) کا   (b) کَہ   (c) لیکِن   (d) بَہُت
 2. Which one says **hai** (is)?   (a) پَر   (b) نَہیں   (c) ہَیں   (d) ہَے
@@ -101,6 +104,9 @@ Play each clip twice. Learner writes the word. Then reveal.
 These twenty words are 30–40% of any Urdu text. Learn them as whole shapes; audio in `assets/audio/sight/`.
 
 کا · کی · کے · سے · پر · کہ · اور · ہے · ہیں · نے · کو · میں · نہیں · وہ · یہ · اس · تھا · تھی · کیا · بھی
+
+## Tell the sight words apart
+Some sight words differ by one letter or one dot: تھا / تھی, کہ / کے / کو, ہے / ہیں, میں / مَیں. Drill them like unit 2: play `assets/audio/sight/` clips and point to the right word, 10 rounds.
 
 ## Marks come off
 Read the unit 1–10 word lists again in `assets/images/words/*_nastaliq.png` — now without vowel marks. Rule: if you can already decode a made-up word (nonword) without marks, you are ready; if not, stay on marked text one more week.
