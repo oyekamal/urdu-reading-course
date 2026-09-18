@@ -39,7 +39,9 @@ with sync_playwright() as p:
             for u in U:
                 for w in u['words']:
                     if w[1]==rom and sorted(list(w[0]))==sorted(texts): target=w[0]
-        if target and len(target)>=3 and all(len(tx)==1 for tx in texts) and sorted(texts)==sorted(list(target)):
+        target_b=re.sub(r'[\u064B-\u0652\u0670\u0640]','',target) if target else target
+        if target_b and len(target_b)>=3 and all(len(tx)==1 for tx in texts) and sorted(texts)==sorted(list(target_b)):
+            target=target_b
             for ch in target:
                 for t in pg.query_selector_all(".choices .tile:not([disabled])"):
                     if t.inner_text().strip()==ch: js(t); pg.wait_for_timeout(80); break
@@ -68,7 +70,7 @@ with sync_playwright() as p:
                 if pg.query_selector("ol li .tile"): answer_quiz(); continue
                 if pg.query_selector("h2:has-text('Dictation')") and pg.query_selector("button:has-text('Skip')"):
                     # dictation: type the word using keys
-                    key=last(); un,_,wi=key.split('/')[-1].partition('_'); w=U[int(un[1:])]['words'][int(wi)][0]
+                    key=last(); un,_,wi=key.split('/')[-1].partition('_'); w=re.sub(r'[\u064B-\u0652\u0670\u0640]','',U[int(un[1:])]['words'][int(wi)][0])
                     for ch in w:
                         for k in pg.query_selector_all(".keys .tile"):
                             if k.inner_text().strip()==ch: js(k); break
@@ -84,6 +86,21 @@ with sync_playwright() as p:
             label=c.inner_text(); out.append(f"{title} -> {label}"); js(c); pg.wait_for_timeout(600)
             if label.startswith("Back to path") or label.startswith("Next:"): break
         return out
+    import os
+    START=int(os.environ.get('START_UNIT','0'))
+    if START>1:
+        js(pg.query_selector("button:has-text('Take the placement check')")); pg.wait_for_timeout(800)
+        for guard in range(400):
+            h2=pg.query_selector("#app h2"); t=h2.inner_text() if h2 else ''
+            m=re.match(r"Unit (\d+) letters", t)
+            if not m: break
+            n=int(m.group(1)); tiles=pg.query_selector_all(".choices .tile")
+            if not tiles: pg.wait_for_timeout(200); continue
+            key=last(); kind,_,id_=key.partition('/'); tgt=byid[id_]['ch'] if id_ in byid else None
+            if n>=START: pick=[x for x in tiles if x.inner_text().strip()!=tgt][0]
+            else: pick=[x for x in tiles if x.inner_text().strip()==tgt] or tiles; pick=pick[0]
+            js(pick); pg.wait_for_timeout(520)
+        print("placement result:", pg.inner_text("#app h2")); js(pg.query_selector("button:has-text('Go')")); pg.wait_for_timeout(800)
     import time; t0=time.time(); done_units=[]; last_unit=None; stuck=0
     while time.time()-t0<1500:
         js(pg.query_selector(".bottom button:has-text('Learn')")); pg.wait_for_timeout(700)

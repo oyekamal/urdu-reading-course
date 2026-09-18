@@ -2,10 +2,15 @@
 import { C, play, forms, W, shuffle, wordKey, taughtBefore, STROKE, DOTS, el, toast } from './content.js';
 
 export const formsOf = l => forms(l);
+// Words a learner can spell with letters taught so far (plus hamza forms from unit 10). Preview words stay in Read only.
+export const EXTRA10 = ['ء', 'ئ', 'ؤ', 'آ', 'ۃ'];
+export const known = unit => new Set([...[...taughtBefore(unit.n), ...unit.letters].filter(c => C.by[c]), '\u0640', ...(unit.n >= 10 ? EXTRA10 : [])]);
+export const spellable = (unit, ur) => { const k = known(unit); return [...ur].every(c => k.has(c) || /[\u064B-\u0652\u0670]/.test(c)); };
 export const cue = ok => { if (document.body.dataset.track === 'child') setTimeout(() => play(ok ? 'ui/correct' : 'ui/wrong'), ok ? 250 : 900); };
 export const strokeHint = l => STROKE[l.family] || 'body first in one stroke, right to left; dots last';
 export function playBtn(key, small) { const b = el('button', 'btn btn-play' + (small ? ' small' : ''), '▶'); b.setAttribute('aria-label', 'Play'); b.onclick = e => { e.stopPropagation(); if (!play(key)) toast('No audio for this item'); }; return b; }
 const disp = (w, marks) => marks ? w.v : w.ur;
+const bare = t => t.replace(/[\u064B-\u0652\u0670\u0640]/g, '');  // letters only: what a tile keyboard can type
 
 export function letterCard(l, ctx) {
   const d = el('div', 'card');
@@ -42,11 +47,11 @@ function hintFor(target, picked) { const dt = DOTS[target] || 0, dp = DOTS[picke
 
 // Build the word from tiles, right to left.
 export function joinIt(unit, ctx, marks, onDone) {
-  const words = unit.words.map(W).filter(w => w.ur.length >= 3).slice(0, 6); if (!words.length) return null;
+  const words = unit.words.map(W).filter(w => bare(w.ur).length >= 3 && spellable(unit, w.ur)).slice(0, 6); if (!words.length) return null;
   const box = el('div', 'card'); box.innerHTML = '<h2>Build the word</h2><p class="muted">Tap the letters in reading order, right to left.</p>';
   const target = el('div', 'answer ur'), tiles = el('div', 'choices'), info = el('div', 'row'), nextB = el('button', 'btn', 'Next word'); let i = 0, cur = '', done = 0, t0;
   function load() { const w = words[i % words.length]; cur = ''; target.textContent = ''; t0 = Date.now(); info.innerHTML = `Make: <b>${w.rom}</b> — ${w.en} `; info.append(playBtn(wordKey(unit.n, unit.words.findIndex(x => x[0] === w.ur) + (unit.wordOffset || 0)), true));
-    tiles.innerHTML = ''; shuffle([...w.ur]).forEach(c => { const t = el('button', 'tile small ur', c); t.setAttribute('aria-label', C.by[c]?.name || c); t.onclick = () => { if (w.ur[cur.length] === c) { cur += c; target.textContent = cur; t.disabled = true; t.classList.add('ok'); if (cur === w.ur) { toast('Correct: ' + w.rom); target.textContent = disp(w, marks()); ctx.record('join', w.ur, true, Date.now() - t0); if (++done >= 3 && onDone) onDone(done, 3); } } else { t.classList.add('no'); setTimeout(() => t.classList.remove('no'), 400); ctx.record('join', w.ur, false, Date.now() - t0); } }; tiles.append(t); }); }
+    tiles.innerHTML = ''; const letters = bare(w.ur); shuffle([...letters]).forEach(c => { const t = el('button', 'tile small ur', c); t.setAttribute('aria-label', C.by[c]?.name || c); t.onclick = () => { if (letters[cur.length] === c) { cur += c; target.textContent = cur; t.disabled = true; t.classList.add('ok'); if (cur === letters) { toast('Correct: ' + w.rom); target.textContent = disp(w, marks()); ctx.record('join', w.ur, true, Date.now() - t0); if (++done >= 3 && onDone) onDone(done, 3); } } else { t.classList.add('no'); setTimeout(() => t.classList.remove('no'), 400); ctx.record('join', w.ur, false, Date.now() - t0); } }; tiles.append(t); }); }
   nextB.onclick = () => { i++; load(); }; load(); box.append(info, target, tiles, nextB); return box;
 }
 
@@ -54,7 +59,7 @@ export function readIt(unit, ctx, marks, range) {
   if (!unit.words.length) return null; const [lo, hi] = range || [0, unit.words.length];
   const box = el('div', 'card'); box.innerHTML = `<h2>Read</h2><p class="muted">Read aloud, then tap to listen.</p>`;
   const g = el('div', 'words');
-  unit.words.map(W).forEach((w, i) => { if (i < lo || i >= hi) return; const d = el('div', 'word'); d.innerHTML = `<div class="ur">${disp(w, marks())}</div><div class="rom">${w.rom}</div><div class="en">${w.en}</div>`; d.append(playBtn(wordKey(unit.n, i + (unit.wordOffset || 0)), true)); d.onclick = () => { play(wordKey(unit.n, i + (unit.wordOffset || 0))); d.classList.add('reveal'); ctx.record('read', w.ur, true, 0); }; g.append(d); });
+  unit.words.map(W).forEach((w, i) => { if (i < lo || i >= hi) return; const d = el('div', 'word'); const prev = !spellable(unit, w.ur); d.innerHTML = `<div class="ur">${disp(w, marks())}</div><div class="rom">${w.rom}</div><div class="en">${w.en.replace(/\s*\([^)]*preview[^)]*\)/, '')}${prev ? ' <span class="pill">peek ahead</span>' : ''}</div>`; d.append(playBtn(wordKey(unit.n, i + (unit.wordOffset || 0)), true)); d.onclick = () => { play(wordKey(unit.n, i + (unit.wordOffset || 0))); d.classList.add('reveal'); ctx.record('read', w.ur, true, 0); }; g.append(d); });
   box.append(g);
   if (unit.sentences.length && !range) { box.append(el('h3', '', 'Sentences')); unit.sentences.map(W).forEach((w, i) => { const d = el('div', 'row', ''); d.style.cssText = 'padding:8px 0;border-top:1px solid var(--line)'; d.append(playBtn(`sentences/u${String(unit.n).padStart(2, '0')}_${String(i).padStart(2, '0')}`)); d.insertAdjacentHTML('beforeend', `<span class="ur" style="font-size:28px;flex:1;min-width:180px;text-align:right">${disp(w, marks())}</span><span class="rom muted">${w.rom}</span><span class="muted">${w.en}</span>`); box.append(d); }); }
   return box;
@@ -89,24 +94,25 @@ export function dictation(unit, ctx, marks, onDone) {
   const box = el('div', 'card'); box.innerHTML = '<h2>Dictation</h2><p class="muted">Hear a word, spell it with the tiles.</p>';
   const keysAll = [...new Set([...taughtBefore(unit.n), ...unit.letters])].filter(c => C.by[c]);
   const ans = el('div', 'answer ur'), keys = el('div', 'keys'), status = el('div', 'score'), playB = el('button', 'btn btn-primary', 'Play word'), checkB = el('button', 'btn', 'Check'), back = el('button', 'btn', '⌫'), skipB = el('button', 'btn', 'Skip');
-  let items = shuffle(unit.words.map((w, i) => ({ w: W(w), i }))).slice(0, 5), k = 0, typed = '', score = 0, t0;
-  [...keysAll, ...(unit.n >= 10 ? ['ء', 'ئ', 'ؤ', 'آ'] : [])].forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c]?.name || c); t.onclick = () => { typed += c; ans.textContent = typed; }; keys.append(t); });
+  const pickable = unit.words.map((w, i) => ({ w: W(w), i })).filter(x => spellable(unit, x.w.ur)); if (pickable.length < 3) return null;
+  let items = shuffle(pickable).slice(0, 5), k = 0, typed = '', score = 0, t0;
+  [...keysAll, ...(unit.n >= 10 ? EXTRA10 : [])].forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c]?.name || c); t.onclick = () => { typed += c; ans.textContent = typed; }; keys.append(t); });
   back.onclick = () => { typed = [...typed].slice(0, -1).join(''); ans.textContent = typed; };
   const key = () => wordKey(unit.n, items[k].i + (unit.wordOffset || 0));
-  function show() { if (k >= items.length) { checkB.disabled = true; skipB.disabled = true; back.disabled = true; status.textContent = `Done: ${score}/5`; playB.textContent = 'Again'; playB.onclick = () => { items = shuffle(unit.words.map((w, i) => ({ w: W(w), i }))).slice(0, 5); k = 0; score = 0; checkB.disabled = false; skipB.disabled = false; back.disabled = false; show(); }; onDone && onDone(score, 5); return; } typed = ''; ans.textContent = ''; t0 = Date.now(); status.textContent = `Word ${k + 1}/5 · ${score} right`; playB.textContent = 'Play word'; playB.onclick = () => play(key()); play(key()); }
-  checkB.onclick = () => { if (k >= items.length) return; const w = items[k].w; const ok = typed === w.ur; ctx.record('dictation', w.ur, ok, Date.now() - t0); if (ok) { score++; ans.textContent = disp(w, marks()); toast('Correct — ' + w.rom + ' (' + w.en + ')'); k++; setTimeout(show, 900); } else { ans.classList.add('no'); setTimeout(() => ans.classList.remove('no'), 500); toast(typed.length !== w.ur.length ? `${w.ur.length} letters in this word` : 'Not yet. Listen again.'); } };
+  function show() { if (k >= items.length) { checkB.disabled = true; skipB.disabled = true; back.disabled = true; status.textContent = `Done: ${score}/5`; playB.textContent = 'Again'; playB.onclick = () => { items = shuffle(pickable).slice(0, 5); k = 0; score = 0; checkB.disabled = false; skipB.disabled = false; back.disabled = false; show(); }; onDone && onDone(score, 5); return; } typed = ''; ans.textContent = ''; t0 = Date.now(); status.textContent = `Word ${k + 1}/5 · ${score} right`; playB.textContent = 'Play word'; playB.onclick = () => play(key()); play(key()); }
+  checkB.onclick = () => { if (k >= items.length) return; const w = items[k].w; const ok = typed === bare(w.ur); ctx.record('dictation', w.ur, ok, Date.now() - t0); if (ok) { score++; ans.textContent = disp(w, marks()); toast('Correct — ' + w.rom + ' (' + w.en + ')'); k++; setTimeout(show, 900); } else { ans.classList.add('no'); setTimeout(() => ans.classList.remove('no'), 500); toast(typed.length !== bare(w.ur).length ? `${bare(w.ur).length} letters in this word` : 'Not yet. Listen again.'); } };
   skipB.onclick = () => { if (k >= items.length) return; toast('It was ' + items[k].w.v + ' — ' + items[k].w.rom); ctx.record('dictation', items[k].w.ur, false, 0); k++; setTimeout(show, 900); };
   const bar = el('div', 'row'); bar.append(playB, checkB, back, skipB, status); box.append(bar, ans, keys); show(); return box;
 }
 
 // 10-item check; 8 to pass.
 export function quiz(unit, ctx, marks, onDone) {
-  if (unit.words.length < 4) return null;
+  const qwords = unit.words.map(W).filter(w => spellable(unit, w.ur)); if (qwords.length < 4) return null;
   const box = el('div', 'card'); box.innerHTML = '<h2>Check</h2><p class="muted">Score 8 of 10 to pass this unit.</p>';
-  const ol = el('ol'); ol.style.cssText = 'padding-left:18px;display:grid;gap:12px;margin:0'; const qs = shuffle(unit.words.map(W)).slice(0, 10); const picks = {};
-  qs.forEach((w, qi) => { const li = el('li', '', `Which one says <b>${w.rom}</b> (${w.en})?`); const ch = el('div', 'choices'); ch.style.justifyContent = 'flex-start'; shuffle([w, ...shuffle(unit.words.map(W).filter(x => x.ur !== w.ur)).slice(0, 3)]).forEach(o => { const t = el('button', 'tile small ur', disp(o, marks())); t.setAttribute('aria-label', o.rom); t.onclick = () => { [...ch.children].forEach(c => c.classList.remove('ok')); t.classList.add('ok'); picks[qi] = o.ur; }; ch.append(t); }); li.append(ch); ol.append(li); });
+  const ol = el('ol'); ol.style.cssText = 'padding-left:18px;display:grid;gap:12px;margin:0'; const qs = shuffle(qwords).slice(0, 10); const picks = {};
+  qs.forEach((w, qi) => { const li = el('li', '', `Which one says <b>${w.rom}</b> (${w.en})?`); const ch = el('div', 'choices'); ch.style.justifyContent = 'flex-start'; shuffle([w, ...shuffle(qwords.filter(x => x.ur !== w.ur)).slice(0, 3)]).forEach(o => { const t = el('button', 'tile small ur', disp(o, marks())); t.setAttribute('aria-label', o.rom); t.onclick = () => { [...ch.children].forEach(c => c.classList.remove('ok')); t.classList.add('ok'); picks[qi] = o.ur; }; ch.append(t); }); li.append(ch); ol.append(li); });
   const submit = el('button', 'btn btn-primary btn-wide', 'Submit'), res = el('div', 'score');
-  submit.onclick = () => { let sc = 0; qs.forEach((w, qi) => { const ok = picks[qi] === w.ur; if (ok) sc++; ctx.record('quiz', w.ur, ok, 0); [...ol.children[qi].querySelectorAll('.tile')].forEach(t => { const right = t.textContent === disp(w, marks()); t.classList.toggle('ok', right); if (!right && t.classList.contains('ok') === false && picks[qi] && t.textContent === disp(unit.words.map(W).find(x => x.ur === picks[qi]) || {}, marks())) t.classList.add('no'); }); });
+  submit.onclick = () => { let sc = 0; qs.forEach((w, qi) => { const ok = picks[qi] === w.ur; if (ok) sc++; ctx.record('quiz', w.ur, ok, 0); [...ol.children[qi].querySelectorAll('.tile')].forEach(t => { const right = t.textContent === disp(w, marks()); t.classList.toggle('ok', right); if (!right && t.classList.contains('ok') === false && picks[qi] && t.textContent === disp(qwords.find(x => x.ur === picks[qi]) || {}, marks())) t.classList.add('no'); }); });
     const missed = qs.filter((w, qi) => picks[qi] !== w.ur).map(w => w.rom).slice(0, 4).join(', '); res.textContent = `Score ${sc}/10 ${sc >= 8 ? '— passed ✓' : '— re-read ' + missed + ', then try again'}`; onDone && onDone(sc, 10); };
   box.append(ol, submit, res); return box;
 }

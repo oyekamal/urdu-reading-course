@@ -2,6 +2,8 @@
 
 **Focus:** The toothed sīn family; the bowl-shaped jīm family; گ as kāf with an extra stroke
 
+**On the phone, this unit is these lessons, in order:** sīn س → shīn ش → jīm ج → che چ → gāf گ → Join them → Blend → Words 1 → Words 2 → Read → Unit check. Children rotate through them one at a time; the Unit check (8 of 10) unlocks the next unit.
+
 ## 1 · Hear it
 
 | Letter | Name | Sound | Say it like… | Audio |
@@ -63,6 +65,28 @@ Build each word from letter tiles, right to left. Watch which letters change sha
 - ش + ا + م  →  **شام**  (shām, evening)
 - ش + ی + ر  →  **شیر**  (sher, lion)
 
+## 4b · Blend  ·  *recognition · self-check with audio*
+
+A letter plus a vowel letter makes a sound you can say. Play a syllable, learner points to it. Vowels available so far: ا ی و.
+
+| Syllable | Audio |
+|---|---|
+| سا | `assets/audio/syllables/sin_a.mp3` |
+| سی | `assets/audio/syllables/sin_i.mp3` |
+| سو | `assets/audio/syllables/sin_u.mp3` |
+| شا | `assets/audio/syllables/shin_a.mp3` |
+| شی | `assets/audio/syllables/shin_i.mp3` |
+| شو | `assets/audio/syllables/shin_u.mp3` |
+| جا | `assets/audio/syllables/jim_a.mp3` |
+| جی | `assets/audio/syllables/jim_i.mp3` |
+| جو | `assets/audio/syllables/jim_u.mp3` |
+| چا | `assets/audio/syllables/che_a.mp3` |
+| چی | `assets/audio/syllables/che_i.mp3` |
+| چو | `assets/audio/syllables/che_u.mp3` |
+| گا | `assets/audio/syllables/gaf_a.mp3` |
+| گی | `assets/audio/syllables/gaf_i.mp3` |
+| گو | `assets/audio/syllables/gaf_u.mp3` |
+
 ## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 
 Vowel marks are shown. Read aloud, then play the audio and compare.
@@ -85,7 +109,7 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 | سَبُک | sabuk | light | `assets/audio/units/u05_13.mp3` |
 | شادی | shādī | wedding | `assets/audio/units/u05_14.mp3` |
 | جَنگَل | jangal | forest | `assets/audio/units/u05_15.mp3` |
-| مَچھلی | machhlī | fish (ھ preview) | `assets/audio/units/u05_16.mp3` |
+| مَچھلی | machhlī | fish *(peek ahead: has a letter from a later unit)* | `assets/audio/units/u05_16.mp3` |
 | گَرْم | garm | hot | `assets/audio/units/u05_17.mp3` |
 | سَرْدی | sardī | cold | `assets/audio/units/u05_18.mp3` |
 | دوسْت | dost | friend | `assets/audio/units/u05_19.mp3` |
@@ -106,46 +130,46 @@ Pen movement for each letter is described in step 2 above.
 
 Play each clip twice. Learner writes the word. Then reveal.
 
-1. `assets/audio/units/u05_03.mp3`
-2. `assets/audio/units/u05_12.mp3`
-3. `assets/audio/units/u05_15.mp3`
-4. `assets/audio/units/u05_05.mp3`
-5. `assets/audio/units/u05_07.mp3`
+1. `assets/audio/units/u05_04.mp3`
+2. `assets/audio/units/u05_14.mp3`
+3. `assets/audio/units/u05_07.mp3`
+4. `assets/audio/units/u05_03.mp3`
+5. `assets/audio/units/u05_06.mp3`
 
 <details><summary>Answer key</summary>
 
-1. شام (shām)
-2. گانا (gānā)
-3. جَنگَل (jangal)
-4. جوتا (jūtā)
-5. چار (chār)
+1. شیر (sher)
+2. شادی (shādī)
+3. چار (chār)
+4. شام (shām)
+5. جام (jām)
 
 </details>
 
 ## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
-1. Which one says **jūtā** (shoe)?   (a) سَب   (b) گاجَر   (c) گانا   (d) جوتا
-2. Which one says **sabuk** (light)?   (a) سَبُک   (b) گَرْم   (c) سال   (d) چابی
-3. Which one says **machhlī** (fish (ھ preview))?   (a) مَچھلی   (b) سَرْدی   (c) چاند   (d) سال
-4. Which one says **gānā** (song)?   (a) گانا   (b) چاند   (c) سَبُک   (d) شادی
-5. Which one says **gulāb** (rose)?   (a) سال   (b) سو   (c) گُلاب   (d) چاند
+1. Which one says **jangal** (forest)?   (a) جَنگَل   (b) گاجَر   (c) جام   (d) گُلاب
+2. Which one says **jūtā** (shoe)?   (a) گاجَر   (b) سَب   (c) جوتا   (d) سَبُک
+3. Which one says **chār** (four)?   (a) چاند   (b) چار   (c) سال   (d) شام
+4. Which one says **sardī** (cold)?   (a) سَرْدی   (b) چاند   (c) سَبُک   (d) شیر
+5. Which one says **gājar** (carrot)?   (a) گاجَر   (b) چاند   (c) سال   (d) گُلاب
 6. Which one says **jām** (goblet)?   (a) سال   (b) جام   (c) سَب   (d) چابی
-7. Which one says **shām** (evening)?   (a) جَنگَل   (b) گاجَر   (c) سَب   (d) شام
-8. Which one says **dost** (friend)?   (a) چار   (b) مَچھلی   (c) دوسْت   (d) سو
-9. Which one says **garm** (hot)?   (a) مَچھلی   (b) چابی   (c) دوسْت   (d) گَرْم
-10. Which one says **so** (hundred / sleep)?   (a) گانا   (b) سو   (c) سَب   (d) چابی
+7. Which one says **chānd** (moon)?   (a) جَنگَل   (b) گاجَر   (c) سَب   (d) چاند
+8. Which one says **sabuk** (light)?   (a) چار   (b) سَرْدی   (c) سَبُک   (d) سو
+9. Which one says **dost** (friend)?   (a) سَرْدی   (b) دوسْت   (c) جام   (d) چابی
+10. Which one says **shādī** (wedding)?   (a) شادی   (b) سو   (c) چاند   (d) سَب
 
 <details><summary>Answer key</summary>
 
-1. جوتا
-2. سَبُک
-3. مَچھلی
-4. گانا
-5. گُلاب
+1. جَنگَل
+2. جوتا
+3. چار
+4. سَرْدی
+5. گاجَر
 6. جام
-7. شام
-8. دوسْت
-9. گَرْم
-10. سو
+7. چاند
+8. سَبُک
+9. دوسْت
+10. شادی
 
 </details>

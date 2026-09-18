@@ -2,6 +2,8 @@
 
 **Focus:** Joiners vs the non-joiner alif; alif as long ā; the three short-vowel marks zabar, zer, pesh
 
+**On the phone, this unit is these lessons, in order:** alif ا → be ب → kāf ک → lām ل → mīm م → nūn ن → Vowel marks → Join them → Blend → Words 1 → Words 2 → Read → Unit check. Children rotate through them one at a time; the Unit check (8 of 10) unlocks the next unit.
+
 ## 1 · Hear it
 
 | Letter | Name | Sound | Say it like… | Audio |
@@ -69,6 +71,18 @@ Build each word from letter tiles, right to left. Watch which letters change sha
 - ب + ا + ب + ا  →  **بابا**  (bābā, dad)
 - ا + م + ا + م  →  **اِمام**  (imām, prayer leader)
 - ن + ا + م  →  **نام**  (nām, name)
+
+## 4b · Blend  ·  *recognition · self-check with audio*
+
+A letter plus a vowel letter makes a sound you can say. Play a syllable, learner points to it. Vowels available so far: ا.
+
+| Syllable | Audio |
+|---|---|
+| با | `assets/audio/syllables/be_a.mp3` |
+| کا | `assets/audio/syllables/kaf_a.mp3` |
+| لا | `assets/audio/syllables/lam_a.mp3` |
+| ما | `assets/audio/syllables/mim_a.mp3` |
+| نا | `assets/audio/syllables/nun_a.mp3` |
 
 ## 5 · Read it  ·  *reading aloud · self-check with audio, or a helper listens*
 

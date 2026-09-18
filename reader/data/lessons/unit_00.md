@@ -2,6 +2,8 @@
 
 **Focus:** Right-to-left, letters join like cursive, dots decide the letter, one sound per letter, Naskh vs Nastaliq, what the small vowel marks are
 
+**On the phone, this unit is these lessons, in order:** Three rules → Finish unit. Children rotate through them one at a time; the Unit check (8 of 10) unlocks the next unit.
+
 
 ## The five things to know before letter one
 

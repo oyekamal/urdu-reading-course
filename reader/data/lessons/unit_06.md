@@ -2,6 +2,8 @@
 
 **Focus:** do-chashmī he makes aspirates (بھ پھ تھ ٹھ جھ چھ دھ کھ گھ); nūn ghunna nasalises; میں ہیں ہاں کہاں are among the most frequent words in Urdu
 
+**On the phone, this unit is these lessons, in order:** nūn g͟hunna ں → do-chashmī he ھ → Breath letters → Join them → Blend → Words 1 → Words 2 → Read → Unit check. Children rotate through them one at a time; the Unit check (8 of 10) unlocks the next unit.
+
 ## 1 · Hear it
 
 | Letter | Name | Sound | Say it like… | Audio |
@@ -49,10 +51,10 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 | کَہاں | kahāṉ | where | `assets/audio/units/u06_02.mp3` |
 | ہَیں | haiṉ | are | `assets/audio/units/u06_03.mp3` |
 | گَھر | ghar | house | `assets/audio/units/u06_04.mp3` |
-| بَھائی | bhāʾī | brother (ئ preview) | `assets/audio/units/u06_05.mp3` |
+| بَھائی | bhāʾī | brother *(peek ahead: has a letter from a later unit)* | `assets/audio/units/u06_05.mp3` |
 | پھول | phūl | flower | `assets/audio/units/u06_06.mp3` |
 | تھالی | thālī | plate | `assets/audio/units/u06_07.mp3` |
-| ٹَھنڈا | ṭhanḍā | cold (ڈ preview) | `assets/audio/units/u06_08.mp3` |
+| ٹَھنڈا | ṭhanḍā | cold *(peek ahead: has a letter from a later unit)* | `assets/audio/units/u06_08.mp3` |
 | کھانا | khānā | food | `assets/audio/units/u06_09.mp3` |
 | دھاگا | dhāgā | thread | `assets/audio/units/u06_10.mp3` |
 | چَھت | chhat | roof | `assets/audio/units/u06_11.mp3` |
@@ -81,47 +83,47 @@ Pen movement for each letter is described in step 2 above.
 
 Play each clip twice. Learner writes the word. Then reveal.
 
-1. `assets/audio/units/u06_16.mp3`
-2. `assets/audio/units/u06_15.mp3`
-3. `assets/audio/units/u06_07.mp3`
-4. `assets/audio/units/u06_14.mp3`
-5. `assets/audio/units/u06_03.mp3`
+1. `assets/audio/units/u06_17.mp3`
+2. `assets/audio/units/u06_09.mp3`
+3. `assets/audio/units/u06_16.mp3`
+4. `assets/audio/units/u06_01.mp3`
+5. `assets/audio/units/u06_12.mp3`
 
 <details><summary>Answer key</summary>
 
-1. آنکھ (āṉkh)
-2. مَچھلی (machhlī)
-3. تھالی (thālī)
-4. دودھ (dūdh)
-5. ہَیں (haiṉ)
+1. یَہاں (yahāṉ)
+2. کھانا (khānā)
+3. آنکھ (āṉkh)
+4. ہاں (hāṉ)
+5. جھولا (jhūlā)
 
 </details>
 
 ## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
-1. Which one says **hāth** (hand)?   (a) جھولا   (b) چَھت   (c) گَھر   (d) ہاتھ
-2. Which one says **machhlī** (fish)?   (a) مَچھلی   (b) ہاتھ   (c) بَھائی   (d) ٹَھنڈا
-3. Which one says **yahāṉ** (here)?   (a) بَھالو   (b) یَہاں   (c) کھانا   (d) تھالی
-4. Which one says **jhūlā** (swing)?   (a) جھولا   (b) دھاگا   (c) سِکھانا   (d) چَھت
-5. Which one says **khānā** (food)?   (a) کھانا   (b) ہاتھ   (c) مَیں   (d) چَھت
-6. Which one says **chhat** (roof)?   (a) مَیں   (b) ٹَھنڈا   (c) کَہاں   (d) چَھت
-7. Which one says **haiṉ** (are)?   (a) ہَیں   (b) ٹَھنڈا   (c) بَھالو   (d) دھاگا
-8. Which one says **bhālū** (bear)?   (a) مَچھلی   (b) بَھالو   (c) دھاگا   (d) جھولا
-9. Which one says **bhāʾī** (brother (ئ preview))?   (a) بَھائی   (b) دودھ   (c) یَہاں   (d) بَھالو
-10. Which one says **āṉkh** (eye)?   (a) آنکھ   (b) کَہاں   (c) مَیں   (d) تھالی
+1. Which one says **machhlī** (fish)?   (a) دودھ   (b) پھول   (c) گَھر   (d) مَچھلی
+2. Which one says **yahāṉ** (here)?   (a) یَہاں   (b) مَچھلی   (c) کَہاں   (d) دھاگا
+3. Which one says **dūdh** (milk)?   (a) کھانا   (b) دودھ   (c) ہاتھ   (d) چَھت
+4. Which one says **dhāgā** (thread)?   (a) دودھ   (b) چَھت   (c) پھول   (d) دھاگا
+5. Which one says **ghar** (house)?   (a) کھانا   (b) گَھر   (c) تھالی   (d) جھولا
+6. Which one says **hāth** (hand)?   (a) تھالی   (b) دھاگا   (c) ہاتھ   (d) کھانا
+7. Which one says **haiṉ** (are)?   (a) مَچھلی   (b) ہَیں   (c) ہاں   (d) مَیں
+8. Which one says **sikhānā** (to teach)?   (a) دودھ   (b) سِکھانا   (c) یَہاں   (d) گَھر
+9. Which one says **phūl** (flower)?   (a) ہاں   (b) آنکھ   (c) پھول   (d) گَھر
+10. Which one says **jhūlā** (swing)?   (a) بَھالو   (b) جھولا   (c) یَہاں   (d) گَھر
 
 <details><summary>Answer key</summary>
 
-1. ہاتھ
-2. مَچھلی
-3. یَہاں
-4. جھولا
-5. کھانا
-6. چَھت
+1. مَچھلی
+2. یَہاں
+3. دودھ
+4. دھاگا
+5. گَھر
+6. ہاتھ
 7. ہَیں
-8. بَھالو
-9. بَھائی
-10. آنکھ
+8. سِکھانا
+9. پھول
+10. جھولا
 
 </details>
 

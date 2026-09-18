@@ -1,6 +1,8 @@
 // Teacher mode: Class · Lesson · Groups · Assess · Reports · Device.
 // Design source: ../research/08_teacher_tools.md §3-§5, ../docs/offline-app-plan.html "Teacher mode screens".
 // ctx = {db, C, play, openLearner(profileId), lock()} — supplied by the app shell.
+import { lessonsFor } from './path.js';
+import { spellable } from './drills.js';
 import { el, toast, bandFor, BANDS, wordKey, pad2, W } from './content.js';
 import { uid } from './db.js';
 import { runEgra } from './egra.js';
@@ -8,11 +10,11 @@ import { runEgra } from './egra.js';
 const TABS = ['Class', 'Lesson', 'Groups', 'Assess', 'Reports', 'Device'];
 
 const GROUP_ACTIVITY = {
-  'pre-reader': 'Units 0–1 — hear it / see it: letter-sound exposure, no independent reading expected yet.',
-  letters: 'Units 1–5 — tell-apart and join-it drills: build letter recognition and joining.',
-  words: 'Units 6–10 — read and dictation drills: decode and spell whole words.',
-  sentences: 'Unit 11 — repeated reading of short sentences for fluency.',
-  fluent: 'Passages and comprehension questions; push speed and understanding together.',
+  'pre-reader': 'Letter lessons on the phone, one per turn (hear it, tap it, trace it); no independent reading expected yet.',
+  letters: 'Letter lessons plus the Join and Blend lessons of the current unit; tell-apart with look-alikes learned so far.',
+  words: 'Vowel marks, Words 1 and Words 2 lessons (build, read, dictation); chorus reading of the unit word list.',
+  sentences: 'Read lesson and repeated reading of the unit sentences and passage; the Unit check.',
+  fluent: 'Passages with comprehension questions; push speed and understanding together; retest every four weeks.',
 };
 
 // ---- shared data loader: one learner row = {profile, latest assessment, progress} ----
@@ -202,6 +204,7 @@ async function renderLesson(body, ctx, state, goto) {
   const wr = el('div', 'row');
   (unit.words || []).forEach((w, i) => {
     const word = W(w);
+    if (!spellable(unit, word.ur)) return; // preview words stay out of chorus reading
     const it = el('span', 'item ur big', word.ur);
     it.onclick = () => play(wordKey(unit.n, i));
     wr.appendChild(it);
@@ -212,14 +215,16 @@ async function renderLesson(body, ctx, state, goto) {
   body.appendChild(weDo);
   const youDo = el('div', 'card');
   youDo.appendChild(el('h2', '', 'You do — 15 min: rotation'));
-  youDo.appendChild(el('p', '', 'Split into small groups (see the Groups tab for current bands). Rotate every 5 minutes:'));
+  youDo.appendChild(el('p', '', 'Split into small groups (see the Groups tab for current bands). Each child continues their own path on the phone; rotate every 5 minutes:'));
   const ul = document.createElement('ul');
+  const path = lessonsFor(unit); const letterLessons = path.filter(l => l.kind === 'letter').map(l => l.title); const rest = path.filter(l => l.kind !== 'letter').map(l => l.title);
   [
-    "\"letters\" band: Tell-apart and Join-it drills in Learner mode, this unit's letters.",
-    "\"words\" band: Read and Dictation drills, this unit's word list.",
-    '"sentences"/"fluent" band: repeated reading of the unit passage for fluency.',
+    `"pre-reader" / "letters" band: the letter lessons of this unit, one per turn — ${letterLessons.join(', ') || 'none in this unit'}.`,
+    `"words" band: ${rest.filter(t => /Vowel|Join|Blend|Words/.test(t)).join(', ') || 'Words 1, Words 2'}.`,
+    `"sentences" / "fluent" band: ${rest.filter(t => /Read|check|test/i.test(t)).join(', ') || 'Read'}; then repeated reading of the unit passage.`,
   ].forEach(t => ul.appendChild(el('li', '', t)));
   youDo.appendChild(ul);
+  youDo.appendChild(el('p', 'muted', 'Path order on the phone: ' + path.map(l => l.title).join(' → ')));
   body.appendChild(youDo);
   const md = await fetch(`data/lessons/unit_${pad2(unit.n)}.md`).then(r => (r.ok ? r.text() : '')).catch(() => '');
   const scriptCard = el('div', 'card');

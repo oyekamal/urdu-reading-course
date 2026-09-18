@@ -2,6 +2,8 @@
 
 **Focus:** EGRA-style check: letter-sound fluency, nonword decoding, familiar words per minute, passage reading with comprehension questions
 
+**On the phone, this unit is these lessons, in order:** Reading test → Finish unit. Children rotate through them one at a time; the Unit check (8 of 10) unlocks the next unit.
+
 
 ## Reading test (EGRA-style, 10 minutes, one-to-one)
 Timing is per subtask, 60 seconds each unless stated. Stop a subtask after 10 consecutive errors.
