@@ -17,8 +17,8 @@ export async function renderLearner(root, ctx) {
   const tabs = [['today', '🏠', 'Learn'], ['units', '📚', 'Units'], ['review', '🔁', 'Review'], ['read', '📖', 'Read'], ['progress', '📈', 'Progress'], ['more', '⚙️', 'More']];
   tabs.forEach(([k, ic, lab]) => { const b = el('button', k === st.tab ? 'active' : '', `<span>${ic}</span>${lab}`); b.onclick = () => { st.tab = k; render(); }; b.dataset.k = k; nav.append(b); });
   async function render() { [...nav.children].forEach(b => b.classList.toggle('active', b.dataset.k === st.tab)); main.innerHTML = ''; window.scrollTo(0, 0); await ({ today, units, review, read, progress, more, lesson, session, test, path }[st.tab])(); }
-  const pctx = () => ({ profile, marks, styleName, dctx, unit0, aspirates, izafat, punctuation, unit11, sightDrill, go: t => { st.tab = t; render(); }, openLesson: (u, i) => { st.unitN = u.n; st.lessonU = u; st.lessonI = i; st.tab = 'path'; main.innerHTML = ''; runLesson(main, pctx(), u, i); } });
-  async function path() { if (st.lessonU) { const u = st.lessonU, i = st.lessonI; st.lessonU = null; return runLesson(main, pctx(), u, i); } await header(greeting(profile), 'One small lesson at a time'); await renderPath(main, pctx()); }
+  const pctx = () => ({ profile, marks, styleName, dctx, unit0, aspirates, izafat, punctuation, unit11, sightDrill, go: t => { st.tab = t === 'path' ? 'today' : t; render(); }, openLesson: (u, i) => { st.unitN = u.n; st.tab = 'today'; main.innerHTML = ''; window.scrollTo(0, 0); runLesson(main, pctx(), u, i); } });
+  async function path() { st.tab = 'today'; render(); }
 
   async function header(title, sub) { const h = el('div', 'row', ''); h.style.justifyContent = 'space-between'; h.innerHTML = `<div><h1>${title}</h1>${sub ? `<div class="muted">${sub}</div>` : ''}</div>`; const who = el('button', 'btn', `${profile.name} ▾`); who.onclick = ctx.switchProfile; h.append(who); main.append(h); }
 

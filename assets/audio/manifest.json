@@ -2842,5 +2842,101 @@
   "id": "9",
   "text": "نو",
   "file": "numerals/9.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "listen",
+  "text": "سنو",
+  "file": "ui/listen.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "tap_heard",
+  "text": "جو حرف سنا، اسے دباؤ",
+  "file": "ui/tap_heard.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "tap_word",
+  "text": "جو لفظ سنا، اسے دباؤ",
+  "file": "ui/tap_word.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "look",
+  "text": "دیکھو، یہ حرف لفظ میں کیسے بدلتا ہے",
+  "file": "ui/look.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "trace",
+  "text": "انگلی سے حرف بناؤ",
+  "file": "ui/trace.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "blend",
+  "text": "حرف اور آواز ملاؤ، جو سنا وہ دباؤ",
+  "file": "ui/blend.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "build",
+  "text": "حروف جوڑ کر لفظ بناؤ",
+  "file": "ui/build.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "read",
+  "text": "بلند آواز سے پڑھو",
+  "file": "ui/read.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "write",
+  "text": "جو لفظ سنا، اسے لکھو",
+  "file": "ui/write.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "check",
+  "text": "اب چھوٹا سا ٹیسٹ",
+  "file": "ui/check.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "correct",
+  "text": "شاباش!",
+  "file": "ui/correct.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "wrong",
+  "text": "دوبارہ کوشش کرو",
+  "file": "ui/wrong.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "next",
+  "text": "آگے",
+  "file": "ui/next.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "done",
+  "text": "بہت اچھا، سبق ختم",
+  "file": "ui/done.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "unit_done",
+  "text": "واہ! یونٹ ختم، اگلا یونٹ کھل گیا",
+  "file": "ui/unit_done.wav"
+ },
+ {
+  "kind": "ui",
+  "id": "welcome",
+  "text": "آؤ اردو پڑھنا سیکھیں",
+  "file": "ui/welcome.wav"
  }
 ]

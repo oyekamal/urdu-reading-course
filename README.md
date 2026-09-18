@@ -106,7 +106,7 @@ name in `LICENSE`/`README.md` once a full pass is recorded).
 
 Download the latest APK from the [Releases page](https://github.com/oyekamal/urdu-reading-course/releases) and install it (allow "unknown sources" for a debug build). Everything runs offline: no account, no server.
 
-- **Just me / My family**: learner profiles, a 10-minute daily session (spaced review, then the next lesson step, then a timed read), the eight lesson steps per unit, a Leitner review deck, repeated reading with words per minute, progress, self-check speed test, Naskh/Nastaliq switch, three tracks, backup export and import.
+- **Just me / My family**: learner profiles and a Duolingo-style path: one short lesson per letter (hear it, tap it among look-alikes, see where it sits in a word, trace it body-first, blend it with a vowel, 4-question check), then Join, Blend, Words 1, Words 2, Read and a Unit check that unlocks the next unit; Urdu voice instructions and a repeat button on the child track; a Leitner review deck, repeated reading with words per minute, progress, self-check speed test, Naskh/Nastaliq switch, three tracks, backup export and import.
 - **My class**: teacher PIN, roster, a 40-minute lesson script per unit (I do, we do, you do), reading-level groups, the EGRA assessment (five subtasks with timers, stop rules, auto-scoring, bands), class reports with CSV and JSON export, parent slips.
 
 Build it yourself:

@@ -1,7 +1,10 @@
 // Content pack: letters, units, audio index, lesson scripts. Loaded once, offline from the bundle.
 export const C = { letters: null, units: null, audio: null, by: {}, ready: null };
-const player = new Audio();
-export function play(key) { const src = C.audio[key]; if (!src) return false; player.src = src; player.play().catch(() => {}); return true; }
+const player = new Audio(); const queue = [];
+player.addEventListener('ended', () => { const n = queue.shift(); if (n) { player.src = n; player.play().catch(() => {}); } });
+player.addEventListener('error', () => { const n = queue.shift(); if (n) { player.src = n; player.play().catch(() => {}); } });
+// Instruction clips (ui/*) queue behind whatever is playing; content clips interrupt, so a tap always answers immediately.
+export function play(key) { const src = C.audio[key]; if (!src) return false; const busy = !player.paused && !player.ended && player.currentTime > 0; if (key.startsWith('ui/') && busy) { queue.push(src); return true; } if (!key.startsWith('ui/')) queue.length = 0; if (busy && player.src.includes('/ui/')) { queue.length = 0; } player.src = src; player.play().catch(() => {}); return true; }
 export const TATWEEL = 'ـ';
 export const forms = l => [['isolated', l.ch], ['initial', l.joiner ? l.ch + TATWEEL : null], ['medial', l.joiner ? TATWEEL + l.ch + TATWEEL : null], ['final', TATWEEL + l.ch]];
 export const W = w => ({ ur: w[0], rom: w[1], en: w[2], v: w[3] || w[0] });

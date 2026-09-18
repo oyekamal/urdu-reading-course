@@ -2,6 +2,7 @@
 import { C, play, forms, W, shuffle, wordKey, taughtBefore, STROKE, DOTS, el, toast } from './content.js';
 
 export const formsOf = l => forms(l);
+export const cue = ok => { if (document.body.dataset.track === 'child') setTimeout(() => play(ok ? 'ui/correct' : 'ui/wrong'), ok ? 250 : 900); };
 export const strokeHint = l => STROKE[l.family] || 'body first in one stroke, right to left; dots last';
 export function playBtn(key, small) { const b = el('button', 'btn btn-play' + (small ? ' small' : ''), '▶'); b.setAttribute('aria-label', 'Play'); b.onclick = e => { e.stopPropagation(); if (!play(key)) toast('No audio for this item'); }; return b; }
 const disp = (w, marks) => marks ? w.v : w.ur;
@@ -32,7 +33,7 @@ export function tellApart(unit, ctx, onDone, opts = {}) {
   function next() {
     if (round >= rounds) { status.textContent = `Done: ${score}/${rounds}`; choices.innerHTML = ''; btn.textContent = 'Again'; btn.onclick = () => { round = 0; score = 0; next(); }; onDone && onDone(score, rounds); return; }
     round++; target = opts.letters && Math.random() < 0.6 ? focus[Math.floor(Math.random() * focus.length)] : pool[Math.floor(Math.random() * pool.length)]; status.textContent = `Round ${round}/${rounds} · ${score} right`;
-    choices.innerHTML = ''; shuffle([target, ...shuffle(pool.filter(c => c !== target)).slice(0, 5)]).forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c].name); t.onclick = () => { const ok = c === target; ctx.record('tell', target, ok, Date.now() - t0); if (ok) { t.classList.add('ok'); t.setAttribute('aria-label', C.by[c].name + ', correct'); score++; toast('Correct: ' + C.by[c].name); setTimeout(next, 450); } else { t.classList.add('no'); t.setAttribute('aria-label', C.by[c].name + ', wrong'); toast(hintFor(target, c)); play('names/' + C.by[c].id); } }; choices.append(t); });
+    choices.innerHTML = ''; shuffle([target, ...shuffle(pool.filter(c => c !== target)).slice(0, 5)]).forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c].name); t.onclick = () => { const ok = c === target; ctx.record('tell', target, ok, Date.now() - t0); if (ok) { t.classList.add('ok'); t.setAttribute('aria-label', C.by[c].name + ', correct'); score++; toast('Correct: ' + C.by[c].name); cue(true); setTimeout(next, 450); } else { t.classList.add('no'); t.setAttribute('aria-label', C.by[c].name + ', wrong'); toast(hintFor(target, c)); cue(false); play('names/' + C.by[c].id); } }; choices.append(t); });
     t0 = Date.now(); play('names/' + C.by[target].id); btn.textContent = 'Play again'; btn.onclick = () => play('names/' + C.by[target].id);
   }
   btn.onclick = next; box.append(status, btn, choices); shuffle(pool).slice(0, 6).forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c].name); t.onclick = next; choices.append(t); }); return box;

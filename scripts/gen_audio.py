@@ -19,6 +19,7 @@ DATA = json.load(open(f"{ROOT}/data/letters.json", encoding="utf8"))
 UNITS = json.load(open(f"{ROOT}/data/units.json", encoding="utf8"))["units"]
 OUT = f"{ROOT}/assets/audio"
 MODEL = os.environ.get("URC_TTS_MODEL", "sharjeel103/mms-tts-urdu-finetune")  # bake-off winner, research/06_tts_bakeoff.md; baseline: facebook/mms-tts-urd-script_arabic
+UI_PHRASES = {"listen": "سنو", "tap_heard": "جو حرف سنا، اسے دباؤ", "tap_word": "جو لفظ سنا، اسے دباؤ", "look": "دیکھو، یہ حرف لفظ میں کیسے بدلتا ہے", "trace": "انگلی سے حرف بناؤ", "blend": "حرف اور آواز ملاؤ، جو سنا وہ دباؤ", "build": "حروف جوڑ کر لفظ بناؤ", "read": "بلند آواز سے پڑھو", "write": "جو لفظ سنا، اسے لکھو", "check": "اب چھوٹا سا ٹیسٹ", "correct": "شاباش!", "wrong": "دوبارہ کوشش کرو", "next": "آگے", "done": "بہت اچھا، سبق ختم", "unit_done": "واہ! یونٹ ختم، اگلا یونٹ کھل گیا", "welcome": "آؤ اردو پڑھنا سیکھیں"}
 NUMERAL_WORDS = ["صفر", "ایک", "دو", "تین", "چار", "پانچ", "چھے", "سات", "آٹھ", "نو"]
 
 
@@ -47,6 +48,8 @@ def jobs():
         yield "sight", f"{i:02d}", w
     for i, w in enumerate(NUMERAL_WORDS):
         yield "numerals", str(i), w
+    for k, t in UI_PHRASES.items():
+        yield "ui", k, t
 
 
 def main():
