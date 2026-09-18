@@ -50,7 +50,7 @@ export function readIt(unit, ctx, marks) {
   if (!unit.words.length) return null;
   const box = el('div', 'card'); box.innerHTML = `<h2>Read</h2><p class="muted">Read aloud, then tap to listen.</p>`;
   const g = el('div', 'words');
-  unit.words.map(W).forEach((w, i) => { const d = el('div', 'word'); d.innerHTML = `<div class="ur">${disp(w, marks())}</div><div class="rom">${w.rom}</div><div class="en">${w.en}</div>`; d.append(playBtn(wordKey(unit.n, i), true)); d.onclick = () => { play(wordKey(unit.n, i)); ctx.record('read', w.ur, true, 0); }; g.append(d); });
+  unit.words.map(W).forEach((w, i) => { const d = el('div', 'word'); d.innerHTML = `<div class="ur">${disp(w, marks())}</div><div class="rom">${w.rom}</div><div class="en">${w.en}</div>`; d.append(playBtn(wordKey(unit.n, i), true)); d.onclick = () => { play(wordKey(unit.n, i)); d.classList.add('reveal'); ctx.record('read', w.ur, true, 0); }; g.append(d); });
   box.append(g);
   if (unit.sentences.length) { box.append(el('h3', '', 'Sentences')); unit.sentences.map(W).forEach((w, i) => { const d = el('div', 'row', ''); d.style.cssText = 'padding:8px 0;border-top:1px solid var(--line)'; d.append(playBtn(`sentences/u${String(unit.n).padStart(2, '0')}_${String(i).padStart(2, '0')}`)); d.insertAdjacentHTML('beforeend', `<span class="ur" style="font-size:28px;flex:1;min-width:180px;text-align:right">${disp(w, marks())}</span><span class="rom muted">${w.rom}</span><span class="muted">${w.en}</span>`); box.append(d); }); }
   return box;

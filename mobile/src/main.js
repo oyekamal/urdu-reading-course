@@ -12,10 +12,10 @@ const ctxBase = {
   switchProfile: () => home(),
   exportBackup,
 };
-function apply() { document.body.dataset.style = settings.style || 'naskh'; document.documentElement.style.setProperty('--ur-scale', settings.scale || '1'); }
+function apply() { document.body.dataset.style = settings.style || 'naskh'; document.documentElement.style.setProperty('--ur-scale', settings.scale || '1'); document.documentElement.style.setProperty('--ur-spacing', (settings.spacing || '0') + 'em'); document.body.dataset.rom = settings.rom === false ? 'off' : 'on'; document.body.dataset.audioonly = settings.audioOnly ? 'on' : 'off'; }
 
 async function boot() {
-  await ensureDevice(); await loadContent(); settings = (await db.setting('ui')) || {}; apply();
+  await ensureDevice(); await loadContent(); try { navigator.storage?.persist?.(); } catch (e) {} settings = (await db.setting('ui')) || {}; apply();
   const mode = await db.setting('mode'); if (!mode) return chooseMode();
   const active = await db.setting('activeProfile'); if (active && mode !== 'school') { const p = await db.get('profiles', active); if (p) return learner(p); }
   home();

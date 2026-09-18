@@ -163,10 +163,11 @@ flowchart LR
 <p class="src">Sources: research/07_offline_apps.md "Pre-recorded narration"; research/05_open_assets.md; research/06_tts_bakeoff.md.</p>
 
 <h2>9 · Build plan</h2>
+<div class="note">Status on 18 September 2026: phases 0 to 2 shipped as v0.1.0 (debug APK on GitHub Releases), including passages, placement, parent report and the self-run five-part test. Phase 3 and the pilot remain.</div>
 <div class="phase"><b>Phase 0<br><span class="pill">1 week</span></b><div><b>Foundations.</b> Split the current single file into modules; content pack loader with versions; IndexedDB schema; profiles; service worker; install on two cheap phones and confirm Opus, fonts and storage persistence. Exit: the existing course runs offline from a Play-installed TWA.</div></div>
 <div class="phase"><b>Phase 1<br><span class="pill">2 weeks</span></b><div><b>Learner mode.</b> Session engine (review first, then lesson, then read), Leitner deck, interleaved tell-apart, spoken specific feedback, repeated-reading timer, placement test, tracks and accessibility settings, child-friendly progress. Exit: a child can do ten sessions without an adult and the data survives a reboot.</div></div>
 <div class="phase"><b>Phase 2<br><span class="pill">2 weeks</span></b><div><b>Teacher and parent modes.</b> PIN, roster, instant switching, lesson-of-the-day scripts, EGRA flow with timers and stop rules, bands and groups, parent slip, CSV and JSON export and import. Exit: one teacher assesses five children in 40 minutes and exports a class report on a phone with no internet.</div></div>
-<div class="phase"><b>Phase 3<br><span class="pill">1 week</span></b><div><b>Content v1.</b> Human voice recording, decodable passages for units 7 to 11, printable pack. Exit: content pack 1.0 signed and published.</div></div>
+<div class="phase"><b>Phase 3<br><span class="pill">1 week</span></b><div><b>Content v1.</b> Human voice recording and the printable pack. (Decodable passages for units 7 to 11 shipped in v0.1.) Exit: content pack 1.0 signed and published.</div></div>
 <div class="phase"><b>Phase 4<br><span class="pill">4 weeks</span></b><div><b>Pilot.</b> Two classrooms plus ten homes; collect attempts and EGRA scores; measure the four-week fluency change; fix what the data says. Exit: a go or no-go on the wider release with numbers, not opinions.</div></div>
 
 <h2>10 · Open decisions for Kamal</h2>

@@ -13,7 +13,7 @@ export function taughtBefore(n) { return new Set(C.units.filter(u => u.n < n).fl
 export function loadContent() {
   if (C.ready) return C.ready;
   C.ready = Promise.all([fetch('data/letters.json').then(r => r.json()), fetch('data/units.json').then(r => r.json()), fetch('data/audio_index.json').then(r => r.json())])
-    .then(([L, U, A]) => { C.letters = L; C.units = U.units; C.audio = A; L.letters.forEach(l => C.by[l.ch] = l); return C; });
+    .then(([L, U, A]) => { C.letters = L; C.units = U.units; C.audio = A; L.letters.forEach(l => C.by[l.ch] = l); const str = JSON.stringify(L) + JSON.stringify(U) + Object.keys(A).length; let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0; C.version = 'pack-' + h.toString(16) + ' · ' + L.letters.length + ' letters · ' + U.units.length + ' units · ' + Object.keys(A).length + ' clips'; return C; });
   return C.ready;
 }
 export const STROKE = { alif: 'one stroke, top to bottom', be: 'start top-right, shallow bowl leftwards, hook up; dots last', jim: 'small head stroke leftwards, then the round bowl below; dot last', dal: 'top down and out to the left in one angled stroke', re: 'top down and sweep left below the line', sin: 'three teeth right to left, then the bowl', toe: 'loop first, then the tall stroke on its right', ain: 'small c at the top, then the bowl', fe: 'small loop, then the bowl leftwards', kaf: 'base stroke first, right to left, then the sloping cap on top', lam: 'tall stroke down, curve into the bowl', mim: 'small loop, tail down-left', nun: 'deep round bowl; dot last', wao: 'small loop, short tail', he: 'small loop with a short tail (ھ: two bowls open at top)', ye: 'bowl that swings back under itself (ے: long flat sweep)', hamza: 'small hook, written last' };

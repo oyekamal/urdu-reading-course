@@ -1334,5 +1334,25 @@
    "بُکار",
    "لَمیر"
   ]
+ },
+ "izafat": {
+  "explain": "Iẕāfat: a zer ( ِ ) on the end of the first word links two nouns and means 'of'. Persian-style phrases use it.",
+  "examples": [
+   [
+    "سالِ نو",
+    "sāl-e nau",
+    "new year"
+   ],
+   [
+    "شبِ برات",
+    "shab-e barāt",
+    "the night of Barat"
+   ],
+   [
+    "دلِ ناداں",
+    "dil-e nādāṉ",
+    "foolish heart"
+   ]
+  ]
  }
 }

@@ -433,7 +433,7 @@ async function renderDevice(body, ctx) {
   body.appendChild(storeCard);
   const packCard = el('div', 'card');
   packCard.appendChild(el('h2', '', 'Content pack'));
-  packCard.appendChild(el('p', '', `${(C.letters.letters || []).length} letters · ${(C.units || []).length} units · ${Object.keys(C.audio || {}).length} audio clips`));
+  packCard.appendChild(el('p', '', C.version || `${(C.letters.letters || []).length} letters · ${(C.units || []).length} units · ${Object.keys(C.audio || {}).length} audio clips`)); packCard.appendChild(el('p', 'muted', 'Two phones with the same pack id have identical content.'));
   body.appendChild(packCard);
   const lockCard = el('div', 'card');
   const lockBtn = el('button', 'btn btn-danger', 'Lock teacher mode');
