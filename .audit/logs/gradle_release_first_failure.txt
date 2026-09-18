@@ -1,0 +1,4 @@
+* What went wrong:
+Execution failed for task ':app:packageRelease'.
+> A failure occurred while executing com.android.build.gradle.tasks.PackageAndroidArtifact$IncrementalSplitterRunnable
+   > com.android.ide.common.signing.KeytoolException: Failed to read key urdu-reader from store "/home/oye/.kamil-harness/keys/urdu-reader-upload.keystore": Get Key failed: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
