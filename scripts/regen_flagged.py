@@ -6,6 +6,7 @@
                      using the VITS duration predictor's own per-letter frame counts (captured by hooking
                      torch.ceil inside the forward pass; hop = 256 samples). Sentence context gives the model
                      better short vowels than an isolated word, and nothing follows the word so nothing bleeds in.
+  --method isolated  the plain single-word synthesis (use to revert a clip where carrier sounded worse)
   --method latin     synthesize from romanised spelling with facebook/mms-tts-urd-script_latin; the roman
                      spelling carries the vowels explicitly. Needs a roman form: taken from units.json / letters.json.
 
@@ -47,7 +48,7 @@ def main():
     method = sys.argv[sys.argv.index("--method") + 1] if "--method" in sys.argv else "carrier"
     ovr = json.load(open(OVR, encoding="utf8")) if os.path.exists(OVR) else {}
     torch.manual_seed(0)
-    if method == "carrier":
+    if method in ("carrier", "isolated"):
         m, tok = VitsModel.from_pretrained(MAIN).eval(), AutoTokenizer.from_pretrained(MAIN)
         hop = int(np.prod(m.config.upsample_rates)); cap = {}
         _ceil = torch.ceil
@@ -71,6 +72,10 @@ def main():
             t0 = int(dur[: sp[-1] + 1].sum().item()) * hop if sp else 0
             clip = pad(a[max(0, t0 - 480):])
             heard = f"cut at {t0/16000:.2f}s of {len(a)/16000:.2f}s"
+        elif method == "isolated":
+            with torch.no_grad():
+                clip = pad(norm(m(**tok(text, return_tensors="pt")).waveform[0].numpy()))
+            heard = "isolated"
         else:
             rom = ROMAN.get(text)
             if not rom:

@@ -1,0 +1,1532 @@
+{
+ "words/alif": {
+  "method": "carrier",
+  "text": "اب",
+  "heard": "cut at 0.91s of 1.55s"
+ },
+ "words/be": {
+  "method": "carrier",
+  "text": "بابا",
+  "heard": "cut at 0.75s of 1.90s"
+ },
+ "words/kaf": {
+  "method": "carrier",
+  "text": "کام",
+  "heard": "cut at 0.85s of 1.63s"
+ },
+ "words/lam": {
+  "method": "carrier",
+  "text": "لال",
+  "heard": "cut at 0.80s of 1.95s"
+ },
+ "words/mim": {
+  "method": "carrier",
+  "text": "مکان",
+  "heard": "cut at 0.78s of 2.10s"
+ },
+ "words/nun": {
+  "method": "carrier",
+  "text": "نام",
+  "heard": "cut at 0.93s of 1.60s"
+ },
+ "words/te": {
+  "method": "carrier",
+  "text": "تین",
+  "heard": "cut at 0.83s of 1.71s"
+ },
+ "words/choti_ye": {
+  "method": "carrier",
+  "text": "یار",
+  "heard": "cut at 0.88s of 1.94s"
+ },
+ "words/bari_ye": {
+  "method": "carrier",
+  "text": "لے",
+  "heard": "cut at 0.88s of 1.82s"
+ },
+ "words/pe": {
+  "method": "carrier",
+  "text": "پانی",
+  "heard": "cut at 0.80s of 2.03s"
+ },
+ "words/tte": {
+  "method": "carrier",
+  "text": "ٹوپی",
+  "heard": "cut at 0.80s of 2.05s"
+ },
+ "words/se": {
+  "method": "carrier",
+  "text": "ثمر",
+  "heard": "cut at 0.83s of 1.98s"
+ },
+ "words/wao": {
+  "method": "carrier",
+  "text": "وہ",
+  "heard": "cut at 0.83s of 1.92s"
+ },
+ "words/re": {
+  "method": "carrier",
+  "text": "رات",
+  "heard": "cut at 0.80s of 1.98s"
+ },
+ "words/dal": {
+  "method": "carrier",
+  "text": "دو",
+  "heard": "cut at 0.80s of 1.81s"
+ },
+ "words/he": {
+  "method": "carrier",
+  "text": "ہم",
+  "heard": "cut at 0.82s of 2.03s"
+ },
+ "words/sin": {
+  "method": "carrier",
+  "text": "سال",
+  "heard": "cut at 0.86s of 2.02s"
+ },
+ "words/shin": {
+  "method": "carrier",
+  "text": "شام",
+  "heard": "cut at 0.72s of 1.44s"
+ },
+ "words/jim": {
+  "method": "carrier",
+  "text": "جوتا",
+  "heard": "cut at 0.78s of 2.05s"
+ },
+ "words/che": {
+  "method": "carrier",
+  "text": "چار",
+  "heard": "cut at 0.77s of 1.79s"
+ },
+ "words/gaf": {
+  "method": "carrier",
+  "text": "گلاب",
+  "heard": "cut at 0.91s of 2.10s"
+ },
+ "words/nun_ghunna": {
+  "method": "carrier",
+  "text": "میں",
+  "heard": "cut at 0.88s of 1.87s"
+ },
+ "words/do_chashmi_he": {
+  "method": "carrier",
+  "text": "گھر",
+  "heard": "cut at 0.86s of 1.52s"
+ },
+ "words/ddal": {
+  "method": "carrier",
+  "text": "ڈاک",
+  "heard": "cut at 0.83s of 1.82s"
+ },
+ "words/rre": {
+  "method": "carrier",
+  "text": "لڑکا",
+  "heard": "cut at 0.82s of 2.00s"
+ },
+ "words/ze": {
+  "method": "carrier",
+  "text": "زبان",
+  "heard": "cut at 0.70s of 1.94s"
+ },
+ "words/zhe": {
+  "method": "carrier",
+  "text": "ژالہ",
+  "heard": "cut at 0.82s of 2.02s"
+ },
+ "words/fe": {
+  "method": "carrier",
+  "text": "فرش",
+  "heard": "cut at 0.77s of 1.82s"
+ },
+ "words/qaf": {
+  "method": "carrier",
+  "text": "قلم",
+  "heard": "cut at 0.82s of 1.92s"
+ },
+ "words/khe": {
+  "method": "carrier",
+  "text": "خط",
+  "heard": "cut at 0.83s of 1.52s"
+ },
+ "words/ghain": {
+  "method": "carrier",
+  "text": "غریب",
+  "heard": "cut at 0.77s of 2.19s"
+ },
+ "words/ain": {
+  "method": "carrier",
+  "text": "عمر",
+  "heard": "cut at 0.77s of 1.84s"
+ },
+ "words/bari_he": {
+  "method": "carrier",
+  "text": "حال",
+  "heard": "cut at 0.88s of 1.50s"
+ },
+ "words/swad": {
+  "method": "carrier",
+  "text": "صبح",
+  "heard": "cut at 0.77s of 1.87s"
+ },
+ "words/zwad": {
+  "method": "carrier",
+  "text": "ضرور",
+  "heard": "cut at 0.77s of 1.97s"
+ },
+ "words/toe": {
+  "method": "carrier",
+  "text": "طوطا",
+  "heard": "cut at 0.77s of 2.02s"
+ },
+ "words/zoe": {
+  "method": "carrier",
+  "text": "ظاہر",
+  "heard": "cut at 0.75s of 1.90s"
+ },
+ "words/zal": {
+  "method": "carrier",
+  "text": "ذائقہ",
+  "heard": "cut at 0.78s of 2.00s"
+ },
+ "words/hamza": {
+  "method": "carrier",
+  "text": "کوئی",
+  "heard": "cut at 0.72s of 1.82s"
+ },
+ "aspirates/bh": {
+  "method": "carrier",
+  "text": "بھائی",
+  "heard": "cut at 0.78s of 1.97s"
+ },
+ "aspirates/ph": {
+  "method": "carrier",
+  "text": "پھول",
+  "heard": "cut at 0.82s of 2.00s"
+ },
+ "aspirates/th": {
+  "method": "carrier",
+  "text": "تھالی",
+  "heard": "cut at 0.77s of 1.98s"
+ },
+ "aspirates/ṭh": {
+  "method": "carrier",
+  "text": "ٹھنڈا",
+  "heard": "cut at 0.93s of 2.18s"
+ },
+ "aspirates/jh": {
+  "method": "carrier",
+  "text": "جھنڈا",
+  "heard": "cut at 0.82s of 2.06s"
+ },
+ "aspirates/chh": {
+  "method": "carrier",
+  "text": "چھت",
+  "heard": "cut at 0.78s of 2.29s"
+ },
+ "aspirates/dh": {
+  "method": "carrier",
+  "text": "دھاگا",
+  "heard": "cut at 0.77s of 2.06s"
+ },
+ "aspirates/ḍh": {
+  "method": "carrier",
+  "text": "ڈھول",
+  "heard": "cut at 0.80s of 1.95s"
+ },
+ "aspirates/ṛh": {
+  "method": "carrier",
+  "text": "پڑھنا",
+  "heard": "cut at 0.88s of 2.02s"
+ },
+ "aspirates/kh": {
+  "method": "carrier",
+  "text": "کھانا",
+  "heard": "cut at 0.77s of 1.78s"
+ },
+ "aspirates/gh": {
+  "method": "carrier",
+  "text": "گھر",
+  "heard": "cut at 0.80s of 1.73s"
+ },
+ "diacritics/zabar_ex": {
+  "method": "carrier",
+  "text": "بَس",
+  "heard": "cut at 0.85s of 1.82s"
+ },
+ "diacritics/zer_ex": {
+  "method": "carrier",
+  "text": "دِل",
+  "heard": "cut at 0.85s of 1.97s"
+ },
+ "diacritics/pesh_ex": {
+  "method": "carrier",
+  "text": "گُل",
+  "heard": "cut at 0.86s of 1.94s"
+ },
+ "diacritics/jazm_ex": {
+  "method": "carrier",
+  "text": "سَبْزی",
+  "heard": "cut at 0.96s of 2.30s"
+ },
+ "diacritics/tashdid_ex": {
+  "method": "carrier",
+  "text": "بچّہ",
+  "heard": "cut at 0.75s of 1.92s"
+ },
+ "diacritics/khari_zabar_ex": {
+  "method": "carrier",
+  "text": "اعلیٰ",
+  "heard": "cut at 0.83s of 2.05s"
+ },
+ "units/u01_00": {
+  "method": "carrier",
+  "text": "اب",
+  "heard": "cut at 0.91s of 2.03s"
+ },
+ "units/u01_01": {
+  "method": "carrier",
+  "text": "بابا",
+  "heard": "cut at 0.77s of 1.89s"
+ },
+ "units/u01_02": {
+  "method": "carrier",
+  "text": "امام",
+  "heard": "cut at 0.88s of 1.74s"
+ },
+ "units/u01_03": {
+  "method": "carrier",
+  "text": "نام",
+  "heard": "cut at 0.88s of 1.50s"
+ },
+ "units/u01_04": {
+  "method": "carrier",
+  "text": "کام",
+  "heard": "cut at 0.82s of 1.58s"
+ },
+ "units/u01_05": {
+  "method": "carrier",
+  "text": "کل",
+  "heard": "cut at 0.85s of 1.87s"
+ },
+ "units/u01_06": {
+  "method": "carrier",
+  "text": "لال",
+  "heard": "cut at 0.96s of 1.70s"
+ },
+ "units/u01_07": {
+  "method": "carrier",
+  "text": "بال",
+  "heard": "cut at 0.75s of 1.52s"
+ },
+ "units/u01_08": {
+  "method": "carrier",
+  "text": "ناک",
+  "heard": "cut at 0.91s of 1.55s"
+ },
+ "units/u01_09": {
+  "method": "carrier",
+  "text": "کان",
+  "heard": "cut at 0.82s of 1.62s"
+ },
+ "units/u01_10": {
+  "method": "carrier",
+  "text": "مان",
+  "heard": "cut at 0.90s of 1.60s"
+ },
+ "units/u01_11": {
+  "method": "carrier",
+  "text": "نمک",
+  "heard": "cut at 0.85s of 1.76s"
+ },
+ "units/u01_12": {
+  "method": "carrier",
+  "text": "ملک",
+  "heard": "cut at 0.74s of 1.84s"
+ },
+ "units/u01_13": {
+  "method": "carrier",
+  "text": "کمال",
+  "heard": "cut at 0.75s of 1.49s"
+ },
+ "units/u01_14": {
+  "method": "carrier",
+  "text": "نانا",
+  "heard": "cut at 0.90s of 1.95s"
+ },
+ "units/u01_15": {
+  "method": "carrier",
+  "text": "کالا",
+  "heard": "cut at 0.75s of 1.92s"
+ },
+ "units/u01_16": {
+  "method": "carrier",
+  "text": "مالا",
+  "heard": "cut at 0.80s of 2.00s"
+ },
+ "units/u01_17": {
+  "method": "carrier",
+  "text": "مکان",
+  "heard": "cut at 0.80s of 2.06s"
+ },
+ "units/u01_18": {
+  "method": "carrier",
+  "text": "املا",
+  "heard": "cut at 0.96s of 2.45s"
+ },
+ "units/u01_19": {
+  "method": "carrier",
+  "text": "کمان",
+  "heard": "cut at 0.78s of 1.62s"
+ },
+ "units/u02_00": {
+  "method": "carrier",
+  "text": "تم",
+  "heard": "cut at 0.78s of 1.81s"
+ },
+ "units/u02_01": {
+  "method": "carrier",
+  "text": "تین",
+  "heard": "cut at 0.86s of 1.49s"
+ },
+ "units/u02_02": {
+  "method": "carrier",
+  "text": "بیل",
+  "heard": "cut at 0.80s of 1.73s"
+ },
+ "units/u02_03": {
+  "method": "carrier",
+  "text": "میل",
+  "heard": "cut at 1.04s of 2.16s"
+ },
+ "units/u02_04": {
+  "method": "carrier",
+  "text": "نیلا",
+  "heard": "cut at 0.91s of 2.00s"
+ },
+ "units/u02_05": {
+  "method": "carrier",
+  "text": "کیلا",
+  "heard": "cut at 0.85s of 1.98s"
+ },
+ "units/u02_06": {
+  "method": "carrier",
+  "text": "تیل",
+  "heard": "cut at 0.78s of 1.79s"
+ },
+ "units/u02_07": {
+  "method": "carrier",
+  "text": "لے",
+  "heard": "cut at 0.80s of 1.41s"
+ },
+ "units/u02_08": {
+  "method": "carrier",
+  "text": "کے",
+  "heard": "cut at 0.80s of 1.73s"
+ },
+ "units/u02_09": {
+  "method": "carrier",
+  "text": "نے",
+  "heard": "cut at 0.91s of 1.78s"
+ },
+ "units/u02_10": {
+  "method": "carrier",
+  "text": "تالی",
+  "heard": "cut at 0.85s of 2.03s"
+ },
+ "units/u02_11": {
+  "method": "carrier",
+  "text": "بلی",
+  "heard": "cut at 0.80s of 2.00s"
+ },
+ "units/u02_12": {
+  "method": "carrier",
+  "text": "تالا",
+  "heard": "cut at 0.85s of 2.00s"
+ },
+ "units/u02_13": {
+  "method": "carrier",
+  "text": "کتاب",
+  "heard": "cut at 0.80s of 1.50s"
+ },
+ "units/u02_14": {
+  "method": "carrier",
+  "text": "بیتاب",
+  "heard": "cut at 0.78s of 1.47s"
+ },
+ "units/u02_15": {
+  "method": "carrier",
+  "text": "تکیا",
+  "heard": "cut at 0.85s of 2.10s"
+ },
+ "units/u02_16": {
+  "method": "carrier",
+  "text": "مالی",
+  "heard": "cut at 0.82s of 1.95s"
+ },
+ "units/u02_17": {
+  "method": "carrier",
+  "text": "ناتا",
+  "heard": "cut at 0.80s of 1.95s"
+ },
+ "units/u02_18": {
+  "method": "carrier",
+  "text": "تالاب",
+  "heard": "cut at 0.80s of 1.84s"
+ },
+ "units/u02_19": {
+  "method": "carrier",
+  "text": "کمانی",
+  "heard": "cut at 0.74s of 2.03s"
+ },
+ "units/u03_00": {
+  "method": "carrier",
+  "text": "پانی",
+  "heard": "cut at 0.83s of 2.00s"
+ },
+ "units/u03_01": {
+  "method": "carrier",
+  "text": "پل",
+  "heard": "cut at 0.90s of 1.90s"
+ },
+ "units/u03_02": {
+  "method": "carrier",
+  "text": "ٹوپی",
+  "heard": "cut at 0.90s of 2.16s"
+ },
+ "units/u03_03": {
+  "method": "carrier",
+  "text": "پتا",
+  "heard": "cut at 0.80s of 1.92s"
+ },
+ "units/u03_04": {
+  "method": "carrier",
+  "text": "پاک",
+  "heard": "cut at 0.77s of 1.54s"
+ },
+ "units/u03_05": {
+  "method": "carrier",
+  "text": "پیٹ",
+  "heard": "cut at 0.80s of 1.30s"
+ },
+ "units/u03_06": {
+  "method": "carrier",
+  "text": "ٹب",
+  "heard": "cut at 0.75s of 1.73s"
+ },
+ "units/u03_07": {
+  "method": "carrier",
+  "text": "پتلی",
+  "heard": "cut at 0.82s of 2.03s"
+ },
+ "units/u03_08": {
+  "method": "carrier",
+  "text": "ثابت",
+  "heard": "cut at 0.72s of 1.97s"
+ },
+ "units/u03_09": {
+  "method": "carrier",
+  "text": "پیپل",
+  "heard": "cut at 0.80s of 1.90s"
+ },
+ "units/u03_10": {
+  "method": "carrier",
+  "text": "ٹماٹر",
+  "heard": "cut at 0.78s of 2.30s"
+ },
+ "units/u03_11": {
+  "method": "carrier",
+  "text": "ٹانکا",
+  "heard": "cut at 0.80s of 1.98s"
+ },
+ "units/u03_12": {
+  "method": "carrier",
+  "text": "پیالا",
+  "heard": "cut at 0.74s of 1.86s"
+ },
+ "units/u03_13": {
+  "method": "carrier",
+  "text": "نپا",
+  "heard": "cut at 0.78s of 1.87s"
+ },
+ "units/u03_14": {
+  "method": "carrier",
+  "text": "پلک",
+  "heard": "cut at 0.80s of 1.92s"
+ },
+ "units/u03_15": {
+  "method": "carrier",
+  "text": "کپاس",
+  "heard": "cut at 0.82s of 1.74s"
+ },
+ "units/u03_16": {
+  "method": "carrier",
+  "text": "تپتا",
+  "heard": "cut at 0.82s of 2.08s"
+ },
+ "units/u03_17": {
+  "method": "carrier",
+  "text": "پتلا",
+  "heard": "cut at 0.85s of 1.20s"
+ },
+ "units/u03_18": {
+  "method": "carrier",
+  "text": "ٹکٹ",
+  "heard": "cut at 0.85s of 1.97s"
+ },
+ "units/u03_19": {
+  "method": "carrier",
+  "text": "بٹن",
+  "heard": "cut at 0.86s of 1.94s"
+ },
+ "units/u04_00": {
+  "method": "carrier",
+  "text": "وہ",
+  "heard": "cut at 0.88s of 1.90s"
+ },
+ "units/u04_01": {
+  "method": "carrier",
+  "text": "دو",
+  "heard": "cut at 0.80s of 1.82s"
+ },
+ "units/u04_02": {
+  "method": "carrier",
+  "text": "دن",
+  "heard": "cut at 0.82s of 1.84s"
+ },
+ "units/u04_03": {
+  "method": "carrier",
+  "text": "دال",
+  "heard": "cut at 0.80s of 1.52s"
+ },
+ "units/u04_04": {
+  "method": "carrier",
+  "text": "دم",
+  "heard": "cut at 0.80s of 1.86s"
+ },
+ "units/u04_05": {
+  "method": "carrier",
+  "text": "رات",
+  "heard": "cut at 0.80s of 1.70s"
+ },
+ "units/u04_06": {
+  "method": "carrier",
+  "text": "روٹی",
+  "heard": "cut at 0.72s of 2.06s"
+ },
+ "units/u04_07": {
+  "method": "carrier",
+  "text": "دور",
+  "heard": "cut at 0.85s of 1.98s"
+ },
+ "units/u04_08": {
+  "method": "carrier",
+  "text": "ہم",
+  "heard": "cut at 0.98s of 2.26s"
+ },
+ "units/u04_09": {
+  "method": "carrier",
+  "text": "ہار",
+  "heard": "cut at 0.85s of 2.21s"
+ },
+ "units/u04_10": {
+  "method": "carrier",
+  "text": "کمرہ",
+  "heard": "cut at 0.74s of 1.97s"
+ },
+ "units/u04_11": {
+  "method": "carrier",
+  "text": "بادام",
+  "heard": "cut at 0.82s of 2.18s"
+ },
+ "units/u04_12": {
+  "method": "carrier",
+  "text": "دادا",
+  "heard": "cut at 0.86s of 2.00s"
+ },
+ "units/u04_13": {
+  "method": "carrier",
+  "text": "دریا",
+  "heard": "cut at 0.78s of 1.98s"
+ },
+ "units/u04_14": {
+  "method": "carrier",
+  "text": "ہوا",
+  "heard": "cut at 0.86s of 1.68s"
+ },
+ "units/u04_15": {
+  "method": "carrier",
+  "text": "راہ",
+  "heard": "cut at 0.83s of 1.95s"
+ },
+ "units/u04_16": {
+  "method": "carrier",
+  "text": "دودھ",
+  "heard": "cut at 0.82s of 1.95s"
+ },
+ "units/u04_17": {
+  "method": "carrier",
+  "text": "مور",
+  "heard": "cut at 0.82s of 1.89s"
+ },
+ "units/u04_18": {
+  "method": "carrier",
+  "text": "پودا",
+  "heard": "cut at 0.90s of 2.08s"
+ },
+ "units/u04_19": {
+  "method": "carrier",
+  "text": "نہر",
+  "heard": "cut at 0.82s of 1.76s"
+ },
+ "units/u05_00": {
+  "method": "carrier",
+  "text": "سب",
+  "heard": "cut at 1.06s of 2.10s"
+ },
+ "units/u05_01": {
+  "method": "carrier",
+  "text": "سو",
+  "heard": "cut at 0.70s of 1.65s"
+ },
+ "units/u05_02": {
+  "method": "carrier",
+  "text": "سال",
+  "heard": "cut at 0.74s of 1.41s"
+ },
+ "units/u05_03": {
+  "method": "carrier",
+  "text": "شام",
+  "heard": "cut at 0.80s of 1.82s"
+ },
+ "units/u05_04": {
+  "method": "carrier",
+  "text": "شیر",
+  "heard": "cut at 0.83s of 1.47s"
+ },
+ "units/u05_05": {
+  "method": "carrier",
+  "text": "جوتا",
+  "heard": "cut at 0.77s of 1.98s"
+ },
+ "units/u05_06": {
+  "method": "carrier",
+  "text": "جام",
+  "heard": "cut at 0.82s of 1.57s"
+ },
+ "units/u05_07": {
+  "method": "carrier",
+  "text": "چار",
+  "heard": "cut at 0.75s of 1.90s"
+ },
+ "units/u05_08": {
+  "method": "carrier",
+  "text": "چاند",
+  "heard": "cut at 1.20s of 2.48s"
+ },
+ "units/u05_09": {
+  "method": "carrier",
+  "text": "چابی",
+  "heard": "cut at 0.77s of 1.95s"
+ },
+ "units/u05_10": {
+  "method": "carrier",
+  "text": "گلاب",
+  "heard": "cut at 0.82s of 1.55s"
+ },
+ "units/u05_11": {
+  "method": "carrier",
+  "text": "گاجر",
+  "heard": "cut at 0.78s of 2.06s"
+ },
+ "units/u05_12": {
+  "method": "carrier",
+  "text": "گانا",
+  "heard": "cut at 0.75s of 1.90s"
+ },
+ "units/u05_13": {
+  "method": "carrier",
+  "text": "سبک",
+  "heard": "cut at 0.80s of 1.86s"
+ },
+ "units/u05_14": {
+  "method": "carrier",
+  "text": "شادی",
+  "heard": "cut at 0.74s of 2.00s"
+ },
+ "units/u05_15": {
+  "method": "carrier",
+  "text": "جنگل",
+  "heard": "cut at 0.88s of 1.97s"
+ },
+ "units/u05_16": {
+  "method": "carrier",
+  "text": "مچھلی",
+  "heard": "cut at 0.75s of 2.00s"
+ },
+ "units/u05_17": {
+  "method": "carrier",
+  "text": "گرم",
+  "heard": "cut at 0.74s of 1.81s"
+ },
+ "units/u05_18": {
+  "method": "carrier",
+  "text": "سردی",
+  "heard": "cut at 0.75s of 1.95s"
+ },
+ "units/u05_19": {
+  "method": "carrier",
+  "text": "دوست",
+  "heard": "cut at 0.75s of 2.16s"
+ },
+ "units/u06_00": {
+  "method": "carrier",
+  "text": "میں",
+  "heard": "cut at 0.82s of 1.54s"
+ },
+ "units/u06_01": {
+  "method": "carrier",
+  "text": "ہاں",
+  "heard": "cut at 0.85s of 1.87s"
+ },
+ "units/u06_02": {
+  "method": "carrier",
+  "text": "کہاں",
+  "heard": "cut at 0.74s of 1.89s"
+ },
+ "units/u06_03": {
+  "method": "carrier",
+  "text": "ہیں",
+  "heard": "cut at 0.82s of 1.84s"
+ },
+ "units/u06_04": {
+  "method": "carrier",
+  "text": "گھر",
+  "heard": "cut at 0.83s of 1.47s"
+ },
+ "units/u06_05": {
+  "method": "carrier",
+  "text": "بھائی",
+  "heard": "cut at 0.83s of 1.92s"
+ },
+ "units/u06_06": {
+  "method": "carrier",
+  "text": "پھول",
+  "heard": "cut at 0.85s of 1.98s"
+ },
+ "units/u06_07": {
+  "method": "carrier",
+  "text": "تھالی",
+  "heard": "cut at 0.78s of 2.05s"
+ },
+ "units/u06_08": {
+  "method": "carrier",
+  "text": "ٹھنڈا",
+  "heard": "cut at 1.12s of 2.54s"
+ },
+ "units/u06_09": {
+  "method": "carrier",
+  "text": "کھانا",
+  "heard": "cut at 0.83s of 2.00s"
+ },
+ "units/u06_10": {
+  "method": "carrier",
+  "text": "دھاگا",
+  "heard": "cut at 0.85s of 1.86s"
+ },
+ "units/u06_11": {
+  "method": "carrier",
+  "text": "چھت",
+  "heard": "cut at 0.85s of 2.11s"
+ },
+ "units/u06_12": {
+  "method": "carrier",
+  "text": "جھولا",
+  "heard": "cut at 0.86s of 2.08s"
+ },
+ "units/u06_13": {
+  "method": "carrier",
+  "text": "ہاتھ",
+  "heard": "cut at 0.77s of 1.81s"
+ },
+ "units/u06_14": {
+  "method": "carrier",
+  "text": "دودھ",
+  "heard": "cut at 0.78s of 1.86s"
+ },
+ "units/u06_15": {
+  "method": "carrier",
+  "text": "مچھلی",
+  "heard": "cut at 0.80s of 2.03s"
+ },
+ "units/u06_16": {
+  "method": "carrier",
+  "text": "آنکھ",
+  "heard": "cut at 0.98s of 2.06s"
+ },
+ "units/u06_17": {
+  "method": "carrier",
+  "text": "یہاں",
+  "heard": "cut at 0.85s of 1.98s"
+ },
+ "units/u06_18": {
+  "method": "carrier",
+  "text": "سکھانا",
+  "heard": "cut at 0.75s of 2.02s"
+ },
+ "units/u06_19": {
+  "method": "carrier",
+  "text": "بھالو",
+  "heard": "cut at 0.83s of 2.02s"
+ },
+ "units/u07_00": {
+  "method": "carrier",
+  "text": "ڈاک",
+  "heard": "cut at 0.77s of 1.33s"
+ },
+ "units/u07_01": {
+  "method": "carrier",
+  "text": "ڈبہ",
+  "heard": "cut at 1.52s of 2.83s"
+ },
+ "units/u07_02": {
+  "method": "carrier",
+  "text": "لڑکا",
+  "heard": "cut at 0.75s of 1.34s"
+ },
+ "units/u07_03": {
+  "method": "carrier",
+  "text": "لڑکی",
+  "heard": "cut at 0.77s of 2.03s"
+ },
+ "units/u07_04": {
+  "method": "carrier",
+  "text": "بڑا",
+  "heard": "cut at 0.85s of 2.02s"
+ },
+ "units/u07_05": {
+  "method": "carrier",
+  "text": "پڑھنا",
+  "heard": "cut at 0.86s of 1.71s"
+ },
+ "units/u07_06": {
+  "method": "carrier",
+  "text": "زبان",
+  "heard": "cut at 0.80s of 1.70s"
+ },
+ "units/u07_07": {
+  "method": "carrier",
+  "text": "زمین",
+  "heard": "cut at 0.75s of 1.95s"
+ },
+ "units/u07_08": {
+  "method": "carrier",
+  "text": "ژالہ",
+  "heard": "cut at 0.82s of 2.11s"
+ },
+ "units/u07_09": {
+  "method": "carrier",
+  "text": "روزانہ",
+  "heard": "cut at 1.10s of 2.85s"
+ },
+ "units/u07_10": {
+  "method": "carrier",
+  "text": "ڈھول",
+  "heard": "cut at 0.83s of 2.05s"
+ },
+ "units/u07_11": {
+  "method": "carrier",
+  "text": "گڑیا",
+  "heard": "cut at 0.72s of 2.05s"
+ },
+ "units/u07_12": {
+  "method": "carrier",
+  "text": "سڑک",
+  "heard": "cut at 0.77s of 1.54s"
+ },
+ "units/u07_13": {
+  "method": "carrier",
+  "text": "زرد",
+  "heard": "cut at 0.96s of 2.08s"
+ },
+ "units/u07_14": {
+  "method": "carrier",
+  "text": "ڈر",
+  "heard": "cut at 0.85s of 1.92s"
+ },
+ "units/u07_15": {
+  "method": "carrier",
+  "text": "کپڑا",
+  "heard": "cut at 0.77s of 2.00s"
+ },
+ "units/u07_16": {
+  "method": "carrier",
+  "text": "مزا",
+  "heard": "cut at 0.85s of 1.58s"
+ },
+ "units/u07_17": {
+  "method": "carrier",
+  "text": "انڈا",
+  "heard": "cut at 0.88s of 2.06s"
+ },
+ "units/u07_18": {
+  "method": "carrier",
+  "text": "ٹھنڈا",
+  "heard": "cut at 0.80s of 2.06s"
+ },
+ "units/u07_19": {
+  "method": "carrier",
+  "text": "گھڑی",
+  "heard": "cut at 0.77s of 1.89s"
+ },
+ "units/u08_00": {
+  "method": "carrier",
+  "text": "فرش",
+  "heard": "cut at 0.78s of 1.55s"
+ },
+ "units/u08_01": {
+  "method": "carrier",
+  "text": "فون",
+  "heard": "cut at 0.90s of 1.62s"
+ },
+ "units/u08_02": {
+  "method": "carrier",
+  "text": "قلم",
+  "heard": "cut at 0.88s of 2.05s"
+ },
+ "units/u08_03": {
+  "method": "carrier",
+  "text": "قمیض",
+  "heard": "cut at 0.93s of 1.95s"
+ },
+ "units/u08_04": {
+  "method": "carrier",
+  "text": "خط",
+  "heard": "cut at 0.86s of 1.81s"
+ },
+ "units/u08_05": {
+  "method": "carrier",
+  "text": "خوش",
+  "heard": "cut at 1.09s of 1.92s"
+ },
+ "units/u08_06": {
+  "method": "carrier",
+  "text": "غریب",
+  "heard": "cut at 0.83s of 2.02s"
+ },
+ "units/u08_07": {
+  "method": "carrier",
+  "text": "باغ",
+  "heard": "cut at 0.78s of 1.28s"
+ },
+ "units/u08_08": {
+  "method": "carrier",
+  "text": "عمر",
+  "heard": "cut at 0.77s of 1.84s"
+ },
+ "units/u08_09": {
+  "method": "carrier",
+  "text": "علم",
+  "heard": "cut at 0.83s of 1.76s"
+ },
+ "units/u08_10": {
+  "method": "carrier",
+  "text": "حال",
+  "heard": "cut at 0.80s of 1.95s"
+ },
+ "units/u08_11": {
+  "method": "carrier",
+  "text": "حلوہ",
+  "heard": "cut at 0.94s of 2.43s"
+ },
+ "units/u08_12": {
+  "method": "carrier",
+  "text": "صاف",
+  "heard": "cut at 0.82s of 1.63s"
+ },
+ "units/u08_13": {
+  "method": "carrier",
+  "text": "فوج",
+  "heard": "cut at 0.83s of 1.47s"
+ },
+ "units/u08_14": {
+  "method": "carrier",
+  "text": "وقت",
+  "heard": "cut at 0.88s of 1.71s"
+ },
+ "units/u08_15": {
+  "method": "carrier",
+  "text": "خالی",
+  "heard": "cut at 0.99s of 2.37s"
+ },
+ "units/u08_16": {
+  "method": "carrier",
+  "text": "غم",
+  "heard": "cut at 1.06s of 2.34s"
+ },
+ "units/u08_17": {
+  "method": "carrier",
+  "text": "عام",
+  "heard": "cut at 0.77s of 1.33s"
+ },
+ "units/u08_18": {
+  "method": "carrier",
+  "text": "حساب",
+  "heard": "cut at 0.88s of 1.84s"
+ },
+ "units/u08_19": {
+  "method": "carrier",
+  "text": "دفتر",
+  "heard": "cut at 0.75s of 1.92s"
+ },
+ "units/u09_00": {
+  "method": "carrier",
+  "text": "صبح",
+  "heard": "cut at 0.69s of 1.94s"
+ },
+ "units/u09_01": {
+  "method": "carrier",
+  "text": "صبر",
+  "heard": "cut at 0.80s of 1.90s"
+ },
+ "units/u09_02": {
+  "method": "carrier",
+  "text": "ضرور",
+  "heard": "cut at 0.74s of 1.87s"
+ },
+ "units/u09_03": {
+  "method": "carrier",
+  "text": "مریض",
+  "heard": "cut at 0.77s of 1.55s"
+ },
+ "units/u09_04": {
+  "method": "carrier",
+  "text": "طالب",
+  "heard": "cut at 0.90s of 1.94s"
+ },
+ "units/u09_05": {
+  "method": "carrier",
+  "text": "طوطا",
+  "heard": "cut at 0.85s of 2.10s"
+ },
+ "units/u09_06": {
+  "method": "carrier",
+  "text": "ظاہر",
+  "heard": "cut at 0.77s of 2.03s"
+ },
+ "units/u09_07": {
+  "method": "carrier",
+  "text": "ظلم",
+  "heard": "cut at 0.83s of 1.92s"
+ },
+ "units/u09_08": {
+  "method": "carrier",
+  "text": "ذائقہ",
+  "heard": "cut at 0.82s of 2.06s"
+ },
+ "units/u09_09": {
+  "method": "carrier",
+  "text": "ذمہ",
+  "heard": "cut at 0.80s of 1.86s"
+ },
+ "units/u09_10": {
+  "method": "carrier",
+  "text": "صابن",
+  "heard": "cut at 0.85s of 2.05s"
+ },
+ "units/u09_11": {
+  "method": "carrier",
+  "text": "ضد",
+  "heard": "cut at 0.91s of 1.78s"
+ },
+ "units/u09_12": {
+  "method": "carrier",
+  "text": "طاقت",
+  "heard": "cut at 0.72s of 1.94s"
+ },
+ "units/u09_13": {
+  "method": "carrier",
+  "text": "حفاظت",
+  "heard": "cut at 0.77s of 2.16s"
+ },
+ "units/u09_14": {
+  "method": "carrier",
+  "text": "ذرا",
+  "heard": "cut at 0.82s of 1.81s"
+ },
+ "units/u09_15": {
+  "method": "carrier",
+  "text": "خاص",
+  "heard": "cut at 0.94s of 1.82s"
+ },
+ "units/u09_16": {
+  "method": "carrier",
+  "text": "ثواب",
+  "heard": "cut at 0.90s of 2.06s"
+ },
+ "units/u09_17": {
+  "method": "carrier",
+  "text": "نظر",
+  "heard": "cut at 0.82s of 1.52s"
+ },
+ "units/u09_18": {
+  "method": "carrier",
+  "text": "لفظ",
+  "heard": "cut at 0.83s of 1.97s"
+ },
+ "units/u09_19": {
+  "method": "carrier",
+  "text": "صحیح",
+  "heard": "cut at 0.74s of 1.98s"
+ },
+ "units/u10_00": {
+  "method": "carrier",
+  "text": "آم",
+  "heard": "cut at 0.88s of 2.13s"
+ },
+ "units/u10_01": {
+  "method": "carrier",
+  "text": "آپ",
+  "heard": "cut at 0.91s of 1.71s"
+ },
+ "units/u10_02": {
+  "method": "carrier",
+  "text": "کوئی",
+  "heard": "cut at 0.77s of 1.71s"
+ },
+ "units/u10_03": {
+  "method": "carrier",
+  "text": "گئے",
+  "heard": "cut at 0.82s of 1.58s"
+ },
+ "units/u10_04": {
+  "method": "carrier",
+  "text": "مسئلہ",
+  "heard": "cut at 0.77s of 2.06s"
+ },
+ "units/u10_05": {
+  "method": "carrier",
+  "text": "بچّہ",
+  "heard": "cut at 0.78s of 1.94s"
+ },
+ "units/u10_06": {
+  "method": "carrier",
+  "text": "اللّٰہ",
+  "heard": "cut at 1.06s of 2.54s"
+ },
+ "units/u10_07": {
+  "method": "carrier",
+  "text": "دعا",
+  "heard": "cut at 0.85s of 1.84s"
+ },
+ "units/u10_08": {
+  "method": "carrier",
+  "text": "سؤال",
+  "heard": "cut at 0.72s of 1.68s"
+ },
+ "units/u10_09": {
+  "method": "carrier",
+  "text": "آئینہ",
+  "heard": "cut at 0.93s of 2.16s"
+ },
+ "units/u10_10": {
+  "method": "carrier",
+  "text": "نئی",
+  "heard": "cut at 0.91s of 1.97s"
+ },
+ "units/u10_11": {
+  "method": "carrier",
+  "text": "چائے",
+  "heard": "cut at 0.75s of 1.63s"
+ },
+ "units/u10_12": {
+  "method": "carrier",
+  "text": "گائے",
+  "heard": "cut at 0.78s of 1.82s"
+ },
+ "units/u10_13": {
+  "method": "carrier",
+  "text": "اعلیٰ",
+  "heard": "cut at 0.91s of 2.26s"
+ },
+ "units/u10_14": {
+  "method": "carrier",
+  "text": "صلوٰۃ",
+  "heard": "cut at 0.78s of 1.79s"
+ },
+ "units/u10_15": {
+  "method": "carrier",
+  "text": "دنیا",
+  "heard": "cut at 0.77s of 1.28s"
+ },
+ "units/u10_16": {
+  "method": "carrier",
+  "text": "ابّا",
+  "heard": "cut at 0.75s of 1.89s"
+ },
+ "units/u10_17": {
+  "method": "carrier",
+  "text": "امّی",
+  "heard": "cut at 0.82s of 1.71s"
+ },
+ "units/u10_18": {
+  "method": "carrier",
+  "text": "مکّہ",
+  "heard": "cut at 0.77s of 2.02s"
+ },
+ "units/u10_19": {
+  "method": "carrier",
+  "text": "اچّھا",
+  "heard": "cut at 0.85s of 2.06s"
+ },
+ "units/u11_00": {
+  "method": "carrier",
+  "text": "کا",
+  "heard": "cut at 0.77s of 1.78s"
+ },
+ "units/u11_01": {
+  "method": "carrier",
+  "text": "کی",
+  "heard": "cut at 0.77s of 1.79s"
+ },
+ "units/u11_02": {
+  "method": "carrier",
+  "text": "کے",
+  "heard": "cut at 0.75s of 1.49s"
+ },
+ "units/u11_03": {
+  "method": "carrier",
+  "text": "سے",
+  "heard": "cut at 0.77s of 1.74s"
+ },
+ "units/u11_04": {
+  "method": "carrier",
+  "text": "پر",
+  "heard": "cut at 0.78s of 1.78s"
+ },
+ "units/u11_05": {
+  "method": "carrier",
+  "text": "کہ",
+  "heard": "cut at 0.78s of 1.76s"
+ },
+ "units/u11_06": {
+  "method": "carrier",
+  "text": "اور",
+  "heard": "cut at 0.80s of 1.50s"
+ },
+ "units/u11_07": {
+  "method": "carrier",
+  "text": "ہے",
+  "heard": "cut at 0.78s of 1.81s"
+ },
+ "units/u11_08": {
+  "method": "carrier",
+  "text": "ہیں",
+  "heard": "cut at 0.67s of 1.47s"
+ },
+ "units/u11_09": {
+  "method": "carrier",
+  "text": "نے",
+  "heard": "cut at 0.90s of 1.42s"
+ },
+ "units/u11_10": {
+  "method": "carrier",
+  "text": "کو",
+  "heard": "cut at 0.78s of 1.81s"
+ },
+ "units/u11_11": {
+  "method": "carrier",
+  "text": "نہیں",
+  "heard": "cut at 0.90s of 2.02s"
+ },
+ "units/u11_12": {
+  "method": "carrier",
+  "text": "تھا",
+  "heard": "cut at 0.85s of 1.87s"
+ },
+ "units/u11_13": {
+  "method": "carrier",
+  "text": "تھی",
+  "heard": "cut at 0.83s of 1.84s"
+ },
+ "units/u11_14": {
+  "method": "carrier",
+  "text": "کیا",
+  "heard": "cut at 0.80s of 1.62s"
+ },
+ "units/u11_15": {
+  "method": "carrier",
+  "text": "بھی",
+  "heard": "cut at 0.82s of 1.41s"
+ },
+ "units/u11_16": {
+  "method": "carrier",
+  "text": "لیکن",
+  "heard": "cut at 0.90s of 1.98s"
+ },
+ "units/u11_17": {
+  "method": "carrier",
+  "text": "اگر",
+  "heard": "cut at 0.75s of 1.82s"
+ },
+ "units/u11_18": {
+  "method": "carrier",
+  "text": "پھر",
+  "heard": "cut at 0.91s of 2.05s"
+ },
+ "units/u11_19": {
+  "method": "carrier",
+  "text": "بہت",
+  "heard": "cut at 0.80s of 2.02s"
+ },
+ "sight/00": {
+  "method": "carrier",
+  "text": "کا",
+  "heard": "cut at 0.85s of 1.81s"
+ },
+ "sight/01": {
+  "method": "carrier",
+  "text": "کی",
+  "heard": "cut at 0.77s of 1.55s"
+ },
+ "sight/02": {
+  "method": "carrier",
+  "text": "کے",
+  "heard": "cut at 0.80s of 1.73s"
+ },
+ "sight/03": {
+  "method": "carrier",
+  "text": "سے",
+  "heard": "cut at 0.77s of 1.76s"
+ },
+ "sight/04": {
+  "method": "carrier",
+  "text": "پر",
+  "heard": "cut at 0.83s of 1.86s"
+ },
+ "sight/05": {
+  "method": "carrier",
+  "text": "کہ",
+  "heard": "cut at 0.77s of 1.79s"
+ },
+ "sight/06": {
+  "method": "carrier",
+  "text": "اور",
+  "heard": "cut at 0.90s of 1.92s"
+ },
+ "sight/07": {
+  "method": "carrier",
+  "text": "ہے",
+  "heard": "cut at 0.83s of 1.44s"
+ },
+ "sight/08": {
+  "method": "carrier",
+  "text": "ہیں",
+  "heard": "cut at 0.78s of 1.79s"
+ },
+ "sight/09": {
+  "method": "carrier",
+  "text": "نے",
+  "heard": "cut at 0.93s of 1.86s"
+ },
+ "sight/10": {
+  "method": "carrier",
+  "text": "کو",
+  "heard": "cut at 0.85s of 1.89s"
+ },
+ "sight/11": {
+  "method": "carrier",
+  "text": "میں",
+  "heard": "cut at 0.83s of 1.86s"
+ },
+ "sight/12": {
+  "method": "carrier",
+  "text": "نہیں",
+  "heard": "cut at 0.82s of 1.82s"
+ },
+ "sight/13": {
+  "method": "carrier",
+  "text": "وہ",
+  "heard": "cut at 0.83s of 1.89s"
+ },
+ "sight/14": {
+  "method": "carrier",
+  "text": "یہ",
+  "heard": "cut at 0.82s of 1.97s"
+ },
+ "sight/15": {
+  "method": "carrier",
+  "text": "اس",
+  "heard": "cut at 0.96s of 1.98s"
+ },
+ "sight/16": {
+  "method": "carrier",
+  "text": "تھا",
+  "heard": "cut at 0.83s of 1.86s"
+ },
+ "sight/17": {
+  "method": "carrier",
+  "text": "تھی",
+  "heard": "cut at 0.82s of 1.87s"
+ },
+ "sight/18": {
+  "method": "carrier",
+  "text": "کیا",
+  "heard": "cut at 0.75s of 1.82s"
+ },
+ "sight/19": {
+  "method": "carrier",
+  "text": "بھی",
+  "heard": "cut at 0.75s of 1.68s"
+ },
+ "numerals/0": {
+  "method": "carrier",
+  "text": "صفر",
+  "heard": "cut at 0.78s of 1.78s"
+ },
+ "numerals/1": {
+  "method": "carrier",
+  "text": "ایک",
+  "heard": "cut at 0.78s of 1.41s"
+ },
+ "numerals/2": {
+  "method": "carrier",
+  "text": "دو",
+  "heard": "cut at 0.80s of 1.82s"
+ },
+ "numerals/3": {
+  "method": "carrier",
+  "text": "تین",
+  "heard": "cut at 0.78s of 1.39s"
+ },
+ "numerals/4": {
+  "method": "carrier",
+  "text": "چار",
+  "heard": "cut at 0.74s of 1.86s"
+ },
+ "numerals/5": {
+  "method": "carrier",
+  "text": "پانچ",
+  "heard": "cut at 0.96s of 1.84s"
+ },
+ "numerals/6": {
+  "method": "carrier",
+  "text": "چھے",
+  "heard": "cut at 0.82s of 1.89s"
+ },
+ "numerals/7": {
+  "method": "carrier",
+  "text": "سات",
+  "heard": "cut at 0.80s of 1.52s"
+ },
+ "numerals/8": {
+  "method": "carrier",
+  "text": "آٹھ",
+  "heard": "cut at 0.90s of 1.84s"
+ },
+ "numerals/9": {
+  "method": "carrier",
+  "text": "نو",
+  "heard": "cut at 0.86s of 1.87s"
+ }
+}
