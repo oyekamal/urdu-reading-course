@@ -14,15 +14,16 @@ with sync_playwright() as p:
     pg.evaluate("document.querySelector('canvas.trace')?.scrollIntoView({block:'center'})"); pg.wait_for_timeout(300); pg.screenshot(path=f"{out}/03_trace.png")
     # words: unit 1 lesson view via Units tab (locked confirm auto-accepted)
     pg.click(".bottom button:has-text('Units')"); pg.wait_for_timeout(700); pg.click(".ucard:nth-child(2)"); pg.wait_for_timeout(1200)
-    pg.wait_for_selector(".words", timeout=8000); pg.locator("h3", has_text="Read it").first.scroll_into_view_if_needed(); pg.evaluate("window.scrollBy(0,-12)"); pg.wait_for_timeout(500); pg.screenshot(path=f"{out}/04_words.png")
+    pg.wait_for_selector(".words", timeout=8000); pg.evaluate("""()=>{const h=[...document.querySelectorAll('h3')].find(h=>h.textContent.includes('Read it'));const main=h.parentElement;[...main.children].forEach(c=>{if(c!==h&&c!==h.nextElementSibling&&!c.matches('.row,.bottom'))c.style.display='none'});h.style.marginTop='24px';window.scrollTo(0,0)}"""); pg.wait_for_timeout(400); pg.screenshot(path=f"{out}/04_words.png")
     pg.click(".bottom button:has-text('Units')"); pg.wait_for_timeout(700); pg.click(".ucard:nth-child(12)"); pg.wait_for_timeout(1200)
-    pg.wait_for_selector(".nastaliq", timeout=8000); pg.locator("h3", has_text="Nastaliq").first.scroll_into_view_if_needed(); pg.evaluate("window.scrollBy(0,-12)"); pg.wait_for_timeout(500); pg.screenshot(path=f"{out}/05_nastaliq.png")
-    pg.click(".bottom button:has-text('Progress')"); pg.wait_for_timeout(900); pg.screenshot(path=f"{out}/07_progress.png")
+    pg.wait_for_selector(".nastaliq", timeout=8000); pg.evaluate("""()=>{const card=document.querySelector('.nastaliq').closest('.card');const main=card.parentElement;[...main.children].forEach(c=>{if(c!==card&&!c.matches('.row,.bottom'))c.style.display='none'});card.querySelector('.words')?.remove();[...card.querySelectorAll('h2,p')].forEach(x=>x.remove());const h=document.createElement('h2');h.textContent='Naskh for learning, Nastaliq for print';card.prepend(h);window.scrollTo(0,0)}"""); pg.wait_for_timeout(400); pg.screenshot(path=f"{out}/05_nastaliq.png")
     # teacher assess
     ctx2=b.new_context(viewport={"width":412,"height":880}, device_scale_factor=2.62); pg2=ctx2.new_page(); pg2.on("dialog", lambda d: d.accept()); pg2.goto(f"http://localhost:{port}/"); pg2.wait_for_timeout(1500)
     pg2.click("text=My class"); pg2.wait_for_timeout(400); pg2.fill("input[placeholder='Your name']","Ms Sana"); pg2.fill("input[placeholder='4-digit PIN']","1234"); pg2.click("button:has-text('Save')"); pg2.wait_for_timeout(600)
     pg2.click("button:has-text('Teacher')"); pg2.wait_for_timeout(300); pg2.fill("input[type=password]","1234"); pg2.click("button:has-text('Unlock')"); pg2.wait_for_timeout(1200)
     for n,g in [("Ayesha","1"),("Bilal","2"),("Hira","1")]:
         pg2.fill("input[placeholder=Name]",n); pg2.click("button:has-text('Add child')"); pg2.wait_for_timeout(400)
-    pg2.click(".tab:has-text('Assess')"); pg2.wait_for_timeout(900); pg2.screenshot(path=f"{out}/06_teacher.png")
+    pg2.evaluate("""async()=>{const {db,uid}=await import('/src/db.js');const {bandFor}=await import('/src/content.js');const ps=(await db.all('profiles')).filter(p=>p.kind!=='teacher');const DAY=86400000;const data=[[38,6,14,31,3],[52,9,22,64,5],[45,8,19,48,4]];
+      ps.forEach(async(p,i)=>{for(let k=0;k<2;k++){const d=data[i];const cw=d[3]-(k?12:0);await db.put('assessments',{id:uid(),profileId:p.id,ts:Date.now()-(k?35:2)*DAY,by:'Ms Sana',letters:d[0]-(k?8:0),nonwords:d[1]-(k?2:0),words:d[2]-(k?5:0),orf:{cwpm:cw,seconds:60,errors:3},comp:d[4]-(k?1:0),band:bandFor(cw)});}})}"""); pg2.wait_for_timeout(800)
+    pg2.click(".tab:has-text('Class')"); pg2.wait_for_timeout(600); pg2.click(".tab:has-text('Assess')"); pg2.wait_for_timeout(900); pg2.screenshot(path=f"{out}/06_teacher.png")
     print("raw shots done"); b.close()

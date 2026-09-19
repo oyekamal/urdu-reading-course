@@ -2,15 +2,15 @@
 
 Source: research/17_aso.md (competitor pull, keyword table, Play rules). Limits checked: title ≤30, short ≤80, full ≤4000.
 
-## Title (26 chars)
-Urdu Reading: Qaida & Quiz
+## Title (25 chars)
+Urdu Qaida: Read & Quiz
 
-## Short description (79 chars)
-Urdu Qaida app with reading assessment & parent reports — works fully offline.
+## Short description (80 chars)
+Urdu Qaida for kids & adults: Alif Bay Pay to words, Naskh & Nastaliq, offline.
 
 ## Full description
 
-Learn Urdu reading the way teachers teach it: one letter at a time, from the Urdu alphabet to real words to full sentences. Urdu Reading is a free, fully offline Urdu Qaida for children from age 5, for adults learning Urdu script, and for families abroad who speak Urdu but never learned to read it.
+Learn Urdu reading the way teachers teach it: one letter at a time, from Alif Bay Pay (the Urdu alphabet) to real words to full sentences. Urdu Qaida: Read & Quiz is a free, fully offline Urdu alphabets app for kids from age 5, for adults learning Urdu script, and for families abroad who speak Urdu but never learned to read it. If you have wished for a lesson path like the big language apps, but for Urdu reading, this is it.
 
 Meet Marko, the little markhor. He says every letter and word aloud, cheers when you get it right, and never shows you a letter you have not learned yet.
 
@@ -20,17 +20,18 @@ HOW IT WORKS
 • Dots-confusable letters (ب پ ت ٹ ث) are taught together, so you learn to tell them apart.
 • Vowel marks (zabar, zer, pesh) come after the first letters, and stay on until you can read without them.
 • Join, blend, build words from tiles, dictation, and a unit check that unlocks the next unit.
-• Naskh for learning, Nastaliq for print: switch scripts any time and re-read earlier units.
-• Reading speed timer with the grade-2 standard (60 correct words per minute) so progress is measurable.
+• Naskh for learning, Nastaliq for print: switch between Naskh and Nastaliq any time and re-read earlier units.
+• Reading speed timer against the commonly used grade-2 benchmark of 60 correct words per minute, so progress is measurable.
+• Montessori-style order: sound first, shape second, then trace, then build.
 
 FOR TEACHERS
 • Teacher mode with a PIN: class roster, lesson scripts (I do, we do, you do), group activities.
-• EGRA-style reading assessment: letter sounds, nonwords, familiar words, passage, comprehension. Results per child, over time.
+• Reading assessment modelled on the Early Grade Reading Assessment (EGRA): letter sounds, nonwords, familiar words, passage, comprehension. Results per child, over time.
 • Works on one shared phone in a classroom with no internet.
 
 FOR PARENTS
 • Family mode for one to three children on one phone.
-• Parent report you can share on WhatsApp: units passed, letters and words solid, reading speed, what to practise next.
+• Parent report you can share on WhatsApp: units passed, letters and words solid, reading speed, what to practise next. The parent report and the reading assessment use the same bands, so home and school see the same picture.
 • Spaced review cards bring back exactly the letters and words a child keeps missing.
 
 ACCESSIBILITY
@@ -42,7 +43,7 @@ PRIVACY
 
 Made in Pakistan by one developer. The course, its research and the code are open at github.com/oyekamal/urdu-reading-course. Found a wrong sound or a bug? The More tab has a WhatsApp button.
 
-Keywords this text carries: urdu reading, urdu qaida, urdu alphabet, learn urdu, urdu for kids, urdu script, naskh, nastaliq, reading assessment, parent report, teacher mode, offline.
+Keywords this text carries: urdu qaida, urdu reading, urdu alphabet, alif bay pay, urdu alphabets for kids, learn urdu, urdu script, naskh, nastaliq (2x), reading assessment (2x), parent report (2x), teacher mode, montessori, offline.
 
 ## Category
 Education · Content rating target: Everyone · Target audience: 5–8, 9–12, 13+ (mixed audience) · Free · No ads · No in-app purchases

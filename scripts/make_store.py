@@ -18,8 +18,8 @@ CAPTIONS = [  # (raw file prefix, EN, UR)
     ("04", "Letters become real words", "حروف الفاظ بن جاتے ہیں"),
     ("05", "Naskh and Nastaliq, both", "نسخ اور نستعلیق دونوں"),
     ("06", "Teacher mode assesses reading", "استاد موڈ: پڑھائی جانچیں"),
-    ("07", "Parents see real progress", "والدین پیشرفت دیکھیں"),
-    ("08", "Fully offline, made in Pakistan", "مکمل آف لائن، پاکستان میں بنا"),
+    ("07", "Parents see real progress, offline", "والدین پیشرفت دیکھیں، آف لائن"),
+    ("08", "Just me, my family, or my class", "میں، میرا گھر، یا میری کلاس"),
 ]
 
 
@@ -46,7 +46,7 @@ def feature():
     bg = Image.open(f"{R}/design/gen/out/feature_bg.jpg").convert("RGB"); w, h = bg.size; tw = int(h * 1024 / 500)
     bg = bg.crop(((w - tw) // 2, 0, (w - tw) // 2 + tw, h)).resize((1024, 500), Image.LANCZOS); d = ImageDraw.Draw(bg)
     f1 = ImageFont.truetype(NASTALIQ, 58, layout_engine=ImageFont.Layout.RAQM); d.text((980, 92), "اردو پڑھنا سیکھیں", font=f1, fill=INK, anchor="rm", direction="rtl")
-    f2 = ImageFont.truetype(LATIN, 40); d.text((980, 176), "Urdu Reading: Qaida & Quiz", font=f2, fill=TURQ, anchor="rm")
+    f2 = ImageFont.truetype(LATIN, 40); d.text((980, 176), "Urdu Qaida: Read & Quiz", font=f2, fill=TURQ, anchor="rm")
     f3 = ImageFont.truetype(LATIN, 24); d.text((980, 222), "letters, words, sentences. Fully offline.", font=f3, fill=INK, anchor="rm")
     return bg
 
