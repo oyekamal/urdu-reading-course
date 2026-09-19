@@ -1,4 +1,4 @@
-import json, re, sys
+import json, re, sys, os
 from playwright.sync_api import sync_playwright
 L=json.load(open('/home/oye/Documents/free_work/urdu-reading-course/data/letters.json',encoding='utf8'))['letters']
 byid={l['id']:l for l in L}; byname={l['name']:l for l in L}; bych={l['ch']:l for l in L}
@@ -10,7 +10,7 @@ with sync_playwright() as p:
     pg.add_init_script("const _p=HTMLMediaElement.prototype.play;HTMLMediaElement.prototype.play=function(){if(!this.src.includes('/ui/'))window.__last=this.src;return _p.call(this)}")
     js=lambda h: pg.evaluate("e=>e.click()", h)
     def last(): return (pg.evaluate("window.__last||''")).split('/audio/')[-1].replace('.mp3','')
-    pg.goto("http://localhost:5179/"); pg.wait_for_timeout(1800); pg.click("text=Just me"); pg.wait_for_timeout(400); pg.click("text=+ Add a learner"); pg.wait_for_timeout(300); pg.fill("input[placeholder=Name]","Zee"); pg.click("button:has-text('Start')"); pg.wait_for_timeout(1500)
+    pg.goto("http://localhost:" + os.environ.get("PORT","5179") + "/"); pg.wait_for_timeout(1800); pg.click("text=Just me"); pg.wait_for_timeout(400); pg.click("text=+ Add a learner"); pg.wait_for_timeout(300); pg.fill("input[placeholder=Name]","Zee"); pg.click("button:has-text('Start')"); pg.wait_for_timeout(1500)
     def answer_once():
         tiles=pg.query_selector_all(".choices .tile:not([disabled])")
         if not tiles: return False

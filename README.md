@@ -102,6 +102,19 @@ name in `LICENSE`/`README.md` once a full pass is recorded).
 - Audio: generated with Meta MMS-TTS derivatives, CC BY-NC 4.0. Non-commercial use only.
 - Fonts: SIL Open Font License 1.1. Word frequencies: Tatoeba, CC BY 2.0.
 
+## Design system (v0.6.0)
+
+Researched first (`research/13_ui_reference.md`, `14_pakistani_visual_identity.md`, `15_asset_pipeline.md`), then built, then judged blind
+against real Duolingo ABC and Khan Academy Kids store screenshots by a separate critic (`.audit/ui/`, trail in `.audit/decisions.tsv`).
+
+- **Colour:** Multani turquoise `#1E9C8F` (one accent), saffron `#F2A93B` (progress, current pearl), ajrak indigo `#1E2F55` (ink), tile-glaze paper `#F2F7F6`; ralli red only for teacher-side warnings. Dark theme on indigo.
+- **Type:** Fredoka (bundled, `mobile/public/fonts/Fredoka.woff2`) for display and buttons, system sans for body, Noto Nastaliq for Urdu headings, Noto Naskh for drills.
+- **Signature:** lessons are pearls on a thread (موتیوں جیسی لکھائی). Done pearls fill turquoise, the current one glows saffron, locked ones stay paper. Each unit card wears a short ajrak stripe while current.
+- **No emoji.** Icons are inline SVG (`mobile/src/icons.js`). Toto the parrot (8 poses) and 13 unit illustrations were generated with Gemini in one flat-vector style (`design/gen/gen_assets.py`, palette-locked prompt + reference image), then packed to WebP by `scripts/pack_images.py` into `mobile/public/img/` (425 KB total, precached by the service worker).
+
+Re-generate art: `cd design/gen && python3 gen_assets.py mascot|units` (needs `GEMINI_API_KEY`), then `python3 scripts/pack_images.py`.
+Screenshots for review: `cd mobile && python3 tools/shots.py <vite-port> ../.audit/ui`.
+
 ## Android app
 
 Download the latest APK from the [Releases page](https://github.com/oyekamal/urdu-reading-course/releases) and install it (allow "unknown sources" for a debug build). Everything runs offline: no account, no server.

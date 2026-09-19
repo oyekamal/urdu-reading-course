@@ -16,3 +16,7 @@ mobile/public/fonts/
 mobile/public/data/
 .audit/shots/
 .audit/picks/
+design/gen/out/
+design/gen/__pycache__/
+design/gen/*.log
+mobile/.audit/

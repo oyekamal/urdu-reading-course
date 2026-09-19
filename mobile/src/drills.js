@@ -17,7 +17,7 @@ export function letterCard(l, ctx) {
   d.innerHTML = `<div class="row" style="justify-content:space-between"><div><b style="font-size:20px">${l.name}</b> <span class="ur" style="color:var(--muted)">${l.name_ur}</span><div class="muted">/${l.ipa}/</div></div><div class="ur big" style="min-width:110px">${l.ch}</div></div>
   <p style="margin:6px 0">${l.hint}</p>
   <div class="row"><span class="ur" style="font-size:26px">${l.example[0]}</span><span class="rom muted">${l.example[1]}</span><span>— ${l.example[2]}</span></div>
-  <div class="muted">✎ ${STROKE[l.family] || 'body first in one stroke, right to left; dots last'}</div>
+  <div class="muted">${icon('pen')} ${STROKE[l.family] || 'body first in one stroke, right to left; dots last'}</div>
   <div class="muted">${l.joiner ? 'joins forward · 4 forms' : 'does <b>not</b> join forward · 2 forms'}${l.never_initial ? ' · never starts a word' : ''}</div>`;
   const bar = el('div', 'row'); bar.append('name ', playBtn('names/' + l.id, true), ' word ', playBtn('words/' + l.id, true));
   if (l.role === 'consonant' && !l.never_initial) [['a', 'ا'], ['i', 'ی'], ['u', 'و']].forEach(([t, v]) => { const b = el('button', 'btn', `<span class="ur">${l.ch}${v}</span>`); b.onclick = () => play(`syllables/${l.id}_${t}`); bar.append(b); });
@@ -74,7 +74,7 @@ export function writeIt(unit, ctx, styleName, onDone, letters) {
   cv.width = 360; cv.height = 300; const ctx2 = cv.getContext('2d', { willReadFrequently: true }); let ref = null, drawing = false, startX = null, glyphBox = null, strokes = 0, good = 0;
   const glyph = () => { const l = C.by[sel.value], f = formSel.value; if (!l.joiner && (f === 'initial' || f === 'medial')) return null; return f === 'isolated' ? l.ch : f === 'initial' ? l.ch + 'ـ' : f === 'medial' ? 'ـ' + l.ch + 'ـ' : 'ـ' + l.ch; };
   function base() { ctx2.clearRect(0, 0, cv.width, cv.height); const g = glyph(); out.textContent = ''; strokes = 0; startX = null; if (!g) { ctx2.fillStyle = '#888'; ctx2.font = '16px sans-serif'; ctx2.textAlign = 'center'; ctx2.fillText('This letter has no such form', 180, 150); ref = null; return; }
-    const fam = styleName() === 'nastaliq' ? '"Noto Nastaliq Urdu"' : '"Noto Naskh Arabic"'; ctx2.fillStyle = '#c9ced6'; ctx2.font = `170px ${fam}`; ctx2.textAlign = 'center'; ctx2.textBaseline = 'middle'; ctx2.direction = 'rtl'; ctx2.fillText(g, 180, 150); ref = ctx2.getImageData(0, 0, cv.width, cv.height).data;
+    const fam = styleName() === 'nastaliq' ? '"Noto Nastaliq Urdu"' : '"Noto Naskh Arabic"'; ctx2.fillStyle = getComputedStyle(document.body).getPropertyValue('--line'); ctx2.font = `170px ${fam}`; ctx2.textAlign = 'center'; ctx2.textBaseline = 'middle'; ctx2.direction = 'rtl'; ctx2.fillText(g, 180, 150); ref = ctx2.getImageData(0, 0, cv.width, cv.height).data;
     let minx = cv.width, maxx = 0, top = cv.height; for (let i = 3; i < ref.length; i += 4) if (ref[i] > 0) { const x = (i >> 2) % cv.width, y = (i >> 2) / cv.width | 0; if (x < minx) minx = x; if (x > maxx) maxx = x; if (x > maxx - 6 && y < top) top = y; }
     glyphBox = [minx, maxx]; ctx2.fillStyle = getComputedStyle(document.body).getPropertyValue('--accent'); ctx2.beginPath(); ctx2.arc(Math.min(maxx + 10, cv.width - 8), Math.min(top + 20, cv.height - 10), 6, 0, 7); ctx2.fill(); }
   const pos = e => { const r = cv.getBoundingClientRect(); return [(e.clientX - r.left) * cv.width / r.width, (e.clientY - r.top) * cv.height / r.height]; };
