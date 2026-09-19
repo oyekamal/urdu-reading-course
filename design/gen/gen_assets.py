@@ -19,7 +19,7 @@ STYLE = ("Flat vector illustration for a children's app, thick clean indigo outl
          "no texture, no text, no letters, plain pure white background, centered subject with generous margin, "
          "limited palette: Multani turquoise #1E9C8F, saffron #F2A93B, ajrak indigo #1E2F55, ralli red #C74A3B, chai cream #F7EBD5, leaf green #5FA55A. "
          "Warm, simple, rounded shapes, friendly, Pakistani everyday life, suitable for age 5.")
-REF = f"{HERE}/mascot_ref.png"
+REF = f"{HERE}/markhor_ref.png"  # v0.7: Marko the markhor (Pakistan's national animal) replaced Toto the parrot
 
 
 def call(prompt, ref=None, tries=3):
@@ -73,8 +73,8 @@ def save(data, name, size=None, alpha=True, trim=True):
     im.save(f"{OUT}/{name}", optimize=True); return f"{OUT}/{name} {im.size}"
 
 
-MASCOT = "a small round teal parrot mascot named Toto (طوطا), saffron beak, big kind eyes, tiny crest"
-POSES = {"hello": "waving hello with one wing, cheerful", "listen": "head tilted, one wing cupped behind the ear, listening", "think": "looking up with a finger-like wing tip on beak, thinking", "cheer": "both wings up, jumping, celebrating, a few small stars around", "oops": "gentle encouraging smile, one wing raised as if to say try again, no sad face", "sleep": "asleep sitting down, eyes closed, small z shapes", "read": "holding an open book and reading", "point": "pointing to the right with one wing"}
+MASCOT = "a small round baby markhor mascot named Marko (مارخور), turquoise fluffy body, cream chest and face, two short saffron spiral horns, big kind eyes, tiny beard, little hooves"
+POSES = {"hello": "waving hello with one front hoof, cheerful", "listen": "head tilted, one hoof cupped behind the ear, listening", "think": "looking up with a hoof on chin, thinking", "cheer": "both front hooves up, jumping, celebrating, a few small stars around", "oops": "gentle encouraging smile, one hoof raised as if to say try again, no sad face", "sleep": "asleep sitting down, eyes closed, small z shapes", "read": "holding an open book and reading", "point": "pointing to the right with one hoof"}
 UNITS = {0: "an open door with sunlight, a welcome mat", 1: "six colourful building blocks stacked", 2: "a magnifying glass over three dots", 3: "a tomato, a cap and a bridge in one scene", 4: "a wooden door, a moon and a night sky", 5: "a lion in a small jungle with a rose", 6: "a house with a flag on the roof and a bowl of steaming food", 7: "a girl and a boy holding a big box and a doll", 8: "a pen writing a letter beside a garden wall", 9: "a green parrot on a branch in the morning sun", 10: "a mango, a cup of chai and a small mirror", 11: "a calligraphy reed pen (qalam) and an ink pot beside a rolled newspaper, decorative swirling ribbon shapes, absolutely no letters, no writing, no glyphs", 12: "a stopwatch and a trophy on a school desk"}
 
 

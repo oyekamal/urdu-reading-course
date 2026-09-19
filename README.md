@@ -110,7 +110,7 @@ against real Duolingo ABC and Khan Academy Kids store screenshots by a separate 
 - **Colour:** Multani turquoise `#1E9C8F` (one accent), saffron `#F2A93B` (progress, current pearl), ajrak indigo `#1E2F55` (ink), tile-glaze paper `#F2F7F6`; ralli red only for teacher-side warnings. Dark theme on indigo.
 - **Type:** Fredoka (bundled, `mobile/public/fonts/Fredoka.woff2`) for display and buttons, system sans for body, Noto Nastaliq for Urdu headings, Noto Naskh for drills.
 - **Signature:** lessons are pearls on a thread (موتیوں جیسی لکھائی). Done pearls fill turquoise, the current one glows saffron, locked ones stay paper. Each unit card wears a short ajrak stripe while current.
-- **No emoji.** Icons are inline SVG (`mobile/src/icons.js`). Toto the parrot (8 poses) and 13 unit illustrations were generated with Gemini in one flat-vector style (`design/gen/gen_assets.py`, palette-locked prompt + reference image), then packed to WebP by `scripts/pack_images.py` into `mobile/public/img/` (425 KB total, precached by the service worker).
+- **No emoji.** Icons are inline SVG (`mobile/src/icons.js`). Marko the markhor (Pakistan's national animal, 8 poses; v0.6 used a parrot, dropped as too close to Duolingo) and 13 unit illustrations were generated with Gemini in one flat-vector style (`design/gen/gen_assets.py`, palette-locked prompt + reference image), then packed to WebP by `scripts/pack_images.py` into `mobile/public/img/` (425 KB total, precached by the service worker).
 
 Re-generate art: `cd design/gen && python3 gen_assets.py mascot|units` (needs `GEMINI_API_KEY`), then `python3 scripts/pack_images.py`.
 Screenshots for review: `cd mobile && python3 tools/shots.py <vite-port> ../.audit/ui`.

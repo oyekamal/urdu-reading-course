@@ -1,5 +1,6 @@
 // Drill engines, ported from the course app. Each returns a DOM node and reports results via ctx.record(drill, item, correct, ms).
 import { C, play, forms, W, shuffle, wordKey, taughtBefore, STROKE, DOTS, el, toast } from './content.js';
+import { icon } from './icons.js';
 
 export const formsOf = l => forms(l);
 // Words a learner can spell with letters taught so far (plus hamza forms from unit 10). Preview words stay in Read only.

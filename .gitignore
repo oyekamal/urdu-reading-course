@@ -20,3 +20,5 @@ design/gen/out/
 design/gen/__pycache__/
 design/gen/*.log
 mobile/.audit/
+store/raw/
+design/gen/out/icon_*.jpg

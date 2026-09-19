@@ -7,7 +7,7 @@
   },
   "android": {
     "allowMixedContent": false,
-    "backgroundColor": "#f4f6f8",
+    "backgroundColor": "#F2F7F6",
     "adjustMarginsForEdgeToEdge": "force"
   },
   "plugins": {
