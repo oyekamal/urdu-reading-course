@@ -34,6 +34,6 @@ with sync_playwright() as p:
     for n,g in [("Ayesha","1"),("Bilal","2"),("Hira","1")]:
         pg2.fill("input[placeholder=Name]",n); pg2.click("button:has-text('Add child')"); pg2.wait_for_timeout(400)
     pg2.evaluate("""async()=>{const {db,uid}=await import('/src/db.js');const {bandFor}=await import('/src/content.js');const ps=(await db.all('profiles')).filter(p=>p.kind!=='teacher');const DAY=86400000;const data=[[38,6,14,31,3],[52,9,22,64,5],[45,8,19,48,4]];
-      ps.forEach(async(p,i)=>{for(let k=0;k<2;k++){const d=data[i];const cw=d[3]-(k?12:0);await db.put('assessments',{id:uid(),profileId:p.id,ts:Date.now()-(k?35:2)*DAY,by:'Ms Sana',letters:d[0]-(k?8:0),nonwords:d[1]-(k?2:0),words:d[2]-(k?5:0),orf:{cwpm:cw,seconds:60,errors:3},comp:d[4]-(k?1:0),band:bandFor(cw)});}})}"""); pg2.wait_for_timeout(800)
+      ps.forEach(async(p,i)=>{for(let k=0;k<2;k++){const d=data[i];const cw=d[3]-(k?12:0);await db.put('assessments',{id:uid(),profileId:p.id,ts:Date.now()-(k?35+i*3:1+i*4)*DAY,by:'Ms Sana',letters:d[0]-(k?8:0),nonwords:d[1]-(k?2:0),words:d[2]-(k?5:0),orf:{cwpm:cw,seconds:60,errors:3},comp:d[4]-(k?1:0),band:bandFor(cw)});}})}"""); pg2.wait_for_timeout(800)
     pg2.click(".tab:has-text('Class')"); pg2.wait_for_timeout(600); pg2.click(".tab:has-text('Assess')"); pg2.wait_for_timeout(900); pg2.screenshot(path=f"{out}/06_teacher.png")
     print("raw shots done"); b.close()
