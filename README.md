@@ -59,16 +59,33 @@ The voice is machine-generated, locally, with an MMS-VITS Urdu fine-tune chosen 
 
 ## Recording a human voice
 
-The two files above the fold — `data/letters.json`, `data/units.json` — and `assets/audio/manifest.json`
-are the source of truth for every one of the 474 clips. `recording/SCRIPT.md` turns that manifest into
-a read-aloud script grouped in a sensible recording order (letter names → example words → syllables →
-aspirates → diacritics with their example words → unit words by unit → sentences → sight words →
-numerals), with a "how to record" preface (quiet room, phone ~20 cm away, say the item twice, say the
-clip number in English first so the recording can be auto-split). `recording/script.csv` is the same
-474 rows as a spreadsheet (`id,kind,text,roman,file`) for anyone who wants to track progress in a sheet
-instead.
+`assets/audio/manifest.json` (built from `data/letters.json` + `data/units.json`) is the source of
+truth for every one of the **490 clips** the app plays: 39 letter names, 39 letter example words, 90
+syllables, 11 aspirate words, 12 vowel-mark items, 220 unit words, 33 sentences, 20 sight words, 10
+numerals, 16 app-voice phrases.
 
-Once a native speaker has recorded some or all of it:
+**Voice Studio — record straight into the app, one line at a time:**
+
+```bash
+python3 scripts/voice_studio.py        # opens on http://localhost:8420/
+```
+
+A local, one-file tool (stdlib + the pipeline `import_recordings.py` already uses — nothing new to
+install). Open it in Chrome or Firefox, type your name once, and for each of the 490 lines: press
+**space** to record, **space** again to stop, **enter** to save and move to the next unrecorded line.
+Every item shows the exact text to read plus a one-line note pulled from `recording/SCRIPT.md`'s own
+guidance (read the vowel marks exactly as printed, say letter names the way Pakistani schools do,
+numerals as spoken words, everything else in a calm "teacher voice"). Saved clips are converted,
+silence-trimmed, peak-normalised and padded exactly like `import_recordings.py` produces them, written
+straight to `assets/audio/<kind>/<id>.{wav,mp3}`, and marked `"method": "human"` in
+`data/audio_overrides.json` — so this **is** the import step, not a separate one. Progress persists
+across sessions (it's the same override file everything else reads); the sidebar shows a running
+count per category and a green dot next to every line already recorded, which you can replay or
+re-record any time. Run `python3 scripts/build_app.py` afterwards to bake new audio into the app.
+
+Prefer one long take on a phone recorder instead? `recording/SCRIPT.md` still has the read-aloud
+script and the "say the number, then the line twice" convention for that path, and `recording/script.csv`
+the same rows as a spreadsheet — then:
 
 ```bash
 # one file per clip, named <kind>__<id>.ext or just <id>.ext where that's unambiguous
