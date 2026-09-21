@@ -22,3 +22,4 @@ design/gen/*.log
 mobile/.audit/
 store/raw/
 design/gen/out/icon_*.jpg
+mobile/android/.audit/
