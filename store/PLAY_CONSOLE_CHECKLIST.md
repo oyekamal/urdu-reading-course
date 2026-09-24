@@ -7,7 +7,7 @@ Sources: research/16_play_store_readiness.md (official Google pages, fetched 202
 - [ ] Personal developer account ($25 once), identity verified.
 
 ## 2. First upload
-- [ ] Upload `~/.kamil-harness/keys/releases/urdu-reader-0.7.0.aab` (versionCode 9, targetSdk 36) to an **Internal testing** track.
+- [ ] Upload `~/.kamil-harness/keys/releases/urdu-reader-0.8.1.aab` (versionCode 11, targetSdk 36, no native libraries so the 16 KB page-size rule does not apply) to an **Internal testing** track.
 - [ ] Enrol in Play App Signing when asked (upload key = the keystore in ~/.kamil-harness/keys/urdu-reader.env).
 
 ## 3. Declarations (answer exactly like this)
@@ -19,6 +19,7 @@ Sources: research/16_play_store_readiness.md (official Google pages, fetched 202
 | App access | All functionality available without restrictions (no login) |
 | Content rating (IARC) | Category Education; no violence, no user-generated content, no gambling, no ads, no purchases → expect Everyone |
 | Target audience | Mixed: 5–8, 9–12, 13–15, 16–17, 18+ (children learn; parents and teachers use teacher/parent modes) |
+| Links out of the app | WhatsApp and Donate sit in More, each behind a grown-ups arithmetic gate (v0.8.1) |
 | Government / News / COVID / Financial features | No / No / No / No (Easypaisa donate is an outbound link, no in-app payment processing) |
 | Health | No |
 
@@ -36,9 +37,10 @@ Sources: research/16_play_store_readiness.md (official Google pages, fetched 202
 ## 6. Before pressing Publish
 - [ ] Re-read the Families policy page linked in research/16 (it changes often).
 - [ ] Confirm the Easypaisa number and account name in the app (More → Donate) are right.
+- [ ] Confirm the ElevenLabs licence covers the audio. Their billing docs say "paid plans" get commercial rights; the account is prepaid pay-as-you-go. The app credits ElevenLabs in More either way (the free-plan rule is attribution). If in doubt, ask ElevenLabs support, or top up with one month of Starter ($5) and regenerate with `python3 scripts/el_audio.py build --judge --force` (about 5k characters).
 - [ ] Optional: apply for Teacher Approved after launch.
 
 ## Known follow-ups (not blockers)
 - Urdu UI localisation (the Urdu listing shows an English UI under Urdu captions).
-- Human voice recording to replace the CC-BY-NC machine voice (recording/SCRIPT.md).
+- Warmer letter names: record the 39 names in Voice Studio (`scripts/voice_studio.py`), or clone a consenting teacher's voice on ElevenLabs Starter. The old CC-BY-NC machine voice is gone since v0.8.0.
 - Tablet screenshots and a 30 s promo video.

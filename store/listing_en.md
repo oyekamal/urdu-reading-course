@@ -12,7 +12,7 @@ Urdu Qaida for kids & adults: Alif Bay Pay to words, Naskh & Nastaliq, offline.
 
 Learn Urdu reading the way teachers teach it: one letter at a time, from Alif Bay Pay (the Urdu alphabet) to real words to full sentences. Urdu Qaida: Read & Quiz is a free, fully offline Urdu alphabets app for kids from age 5, for adults learning Urdu script, and for families abroad who speak Urdu but never learned to read it. If you have wished for a lesson path like the big language apps, but for Urdu reading, this is it.
 
-Meet Marko, the little markhor. He says every letter and word aloud, cheers when you get it right, and never shows you a letter you have not learned yet.
+Meet Marko, the little markhor. He says every letter and word aloud in a clear, natural Urdu voice, cheers when you get it right, and never shows you a letter you have not learned yet.
 
 HOW IT WORKS
 • 13 units, one small lesson at a time: hear the letter, find it among look-alikes, see where it sits in a word, trace it, blend it with a vowel, then a four-question check.
