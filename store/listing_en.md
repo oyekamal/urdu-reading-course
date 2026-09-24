@@ -2,15 +2,15 @@
 
 Source: research/17_aso.md (competitor pull, keyword table, Play rules). Limits checked: title ≤30, short ≤80, full ≤4000.
 
-## Title (25 chars)
-Urdu Qaida: Read & Quiz
+## Title (30 chars)
+Urdu Qaida: Learn to Read Urdu
 
-## Short description (80 chars)
-Urdu Qaida for kids & adults: Alif Bay Pay to words, Naskh & Nastaliq, offline.
+## Short description (75 chars)
+Urdu alphabet for kids: hear, trace and read Alif Bay Pay. No ads, offline.
 
 ## Full description
 
-Learn Urdu reading the way teachers teach it: one letter at a time, from Alif Bay Pay (the Urdu alphabet) to real words to full sentences. Urdu Qaida: Read & Quiz is a free, fully offline Urdu alphabets app for kids from age 5, for adults learning Urdu script, and for families abroad who speak Urdu but never learned to read it. If you have wished for a lesson path like the big language apps, but for Urdu reading, this is it.
+Urdu Qaida for kids and beginners: learn to read Urdu the way teachers teach it, one letter at a time, from the Urdu alphabet (Alif Bay Pay) to real words and full sentences. It is a fully offline Urdu learning app with no ads, for children from age 5, for adults learning Urdu script, and for families abroad who speak Urdu but never learned to read it. If you have wished for a lesson path like the big language apps, but for Urdu reading, this is it.
 
 Meet Marko, the little markhor. He says every letter and word aloud in a clear, natural Urdu voice, cheers when you get it right, and never shows you a letter you have not learned yet.
 
@@ -43,7 +43,7 @@ PRIVACY
 
 Made in Pakistan by one developer. The course, its research and the code are open at github.com/oyekamal/urdu-reading-course. Found a wrong sound or a bug? The More tab has a WhatsApp button.
 
-Keywords this text carries: urdu qaida, urdu reading, urdu alphabet, alif bay pay, urdu alphabets for kids, learn urdu, urdu script, naskh, nastaliq (2x), reading assessment (2x), parent report (2x), teacher mode, montessori, offline.
+Keywords this text carries (title and short description were A/B-tested against the 5 top 'urdu qaida' results: picked first 3/3, the old title 1/3): urdu qaida, urdu reading, urdu alphabet, alif bay pay, urdu alphabets for kids, learn urdu, urdu script, naskh, nastaliq (2x), reading assessment (2x), parent report (2x), teacher mode, montessori, offline.
 
 ## Category
 Education · Content rating target: Everyone · Target audience: 5–8, 9–12, 13+ (mixed audience) · Free · No ads · No in-app purchases

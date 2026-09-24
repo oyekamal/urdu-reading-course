@@ -24,8 +24,8 @@ Sources: research/16_play_store_readiness.md (official Google pages, fetched 202
 | Health | No |
 
 ## 4. Store listing (copy from this folder)
-- `listing_en.md` → default listing (en-US). `listing_ur.md` → add localised listing ur-PK.
-- Icon `icon-512.png`, feature graphic `feature-graphic-1024x500.png`, screenshots `screenshots_en/01..08.png` (upload in that order), `screenshots_ur/` for the Urdu listing.
+- `listing_en.md` → default listing (en-US), title "Urdu Qaida: Learn to Read Urdu". `listing_ur.md` → localised listing ur.
+- Icon `icon-512.png`, feature graphic `feature-graphic-1024x500.png`, screenshots `screenshots_en/01..08.png` (upload in that order), tablets `tablet7_en/`, `tablet10_en/`; `*_ur/` for the Urdu listing. Release notes: `whats_new.md`.
 - Category: Education. Tags: Language learning, Kids. Contact email + the WhatsApp number. Free, all countries (Pakistan first).
 
 ## 5. Closed testing gate (new personal accounts)
