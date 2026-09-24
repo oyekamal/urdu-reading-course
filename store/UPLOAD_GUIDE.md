@@ -1,7 +1,7 @@
 # Play Console upload guide · Urdu Qaida: Learn to Read Urdu (com.oyekamal.urdureader)
 
 Follow top to bottom; the order matches Play Console's own menus. Everything to paste or upload is in `store/`.
-Build: `~/.kamil-harness/keys/releases/urdu-reader-0.8.1.aab` (versionCode 11, targetSdk 36, signed with the upload key).
+Build: `~/.kamil-harness/keys/releases/urdu-reader-0.8.2.aab` (versionCode 12, targetSdk 36, signed with the upload key).
 
 ## 1. Create app (Home → Create app)
 | Field | Enter |
@@ -61,8 +61,8 @@ Build: `~/.kamil-harness/keys/releases/urdu-reader-0.8.1.aab` (versionCode 11, t
 ## 6. First release (Test and release)
 New personal developer accounts must run a closed test before Production:
 1. **Testing → Closed testing → Create track.** Add at least **12 testers** (an email list or a Google Group) and share the opt-in link.
-2. **Create release** → upload `urdu-reader-0.8.1.aab` → accept **Play App Signing** when asked.
-3. Release name: `0.8.1 (11)`. Release notes: paste the `<en-US>` and `<ur>` blocks from `whats_new.md` (Play reads the tags).
+2. **Create release** → upload `urdu-reader-0.8.2.aab` → accept **Play App Signing** when asked.
+3. Release name: `0.8.2 (12)`. Release notes: paste the `<en-US>` and `<ur>` blocks from `whats_new.md` (Play reads the tags).
 4. Countries: all countries, Pakistan first. Save → Review → Start rollout.
 5. Keep all 12 testers opted in for **14 days in a row** and ask each to open the app.
 6. Dashboard → **Apply for production access**. Google usually answers within 7 days. Then promote the same release to Production.

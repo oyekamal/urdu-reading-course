@@ -1,4 +1,4 @@
-# Play Console checklist · Urdu Qaida: Read & Quiz (com.oyekamal.urdureader)
+# Play Console checklist · Urdu Qaida: Learn to Read Urdu (com.oyekamal.urdureader)
 
 Everything the app side needs is in this folder. The steps below can only be done by Kamal in Play Console.
 Sources: research/16_play_store_readiness.md (official Google pages, fetched 2026-09-19).
@@ -7,7 +7,7 @@ Sources: research/16_play_store_readiness.md (official Google pages, fetched 202
 - [ ] Personal developer account ($25 once), identity verified.
 
 ## 2. First upload
-- [ ] Upload `~/.kamil-harness/keys/releases/urdu-reader-0.8.1.aab` (versionCode 11, targetSdk 36, no native libraries so the 16 KB page-size rule does not apply) to an **Internal testing** track.
+- [ ] Upload `~/.kamil-harness/keys/releases/urdu-reader-0.8.2.aab` (versionCode 12, targetSdk 36, no native libraries so the 16 KB page-size rule does not apply) to an **Internal testing** track.
 - [ ] Enrol in Play App Signing when asked (upload key = the keystore in ~/.kamil-harness/keys/urdu-reader.env).
 
 ## 3. Declarations (answer exactly like this)

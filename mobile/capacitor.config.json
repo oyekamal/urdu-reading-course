@@ -1,6 +1,6 @@
 {
   "appId": "com.oyekamal.urdureader",
-  "appName": "Urdu Reader",
+  "appName": "Urdu Qaida",
   "webDir": "dist",
   "server": {
     "androidScheme": "https"

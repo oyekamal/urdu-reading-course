@@ -23,7 +23,7 @@ async function boot() {
 }
 
 function chooseMode() {
-  root.innerHTML = ''; const h = el('div', 'hero'); h.innerHTML = `${mascot('hello', 150)}<div class="ur">اردو پڑھنا سیکھیں</div><h1>Urdu Reader</h1><p class="muted">Works fully offline. Who is this device for?</p>`; root.append(h);
+  root.innerHTML = ''; const h = el('div', 'hero'); h.innerHTML = `${mascot('hello', 150)}<div class="ur">اردو پڑھنا سیکھیں</div><h1>Urdu Qaida</h1><p class="muted">Works fully offline. Who is this device for?</p>`; root.append(h);
   [['personal', 'user', 'Just me', 'One learner, child or adult', 'var(--accent)'], ['family', 'family', 'My family', 'A parent with one to three children', 'var(--gold-deep)'], ['school', 'school', 'My class', 'A teacher with a roster, lesson scripts and the reading assessment', 'var(--ink)']].forEach(([m, ic, t, d, col]) => {
     const c = el('button', 'card btn', `<div class="row" style="flex-wrap:nowrap"><span class="mode-ic" style="color:${col};background:color-mix(in srgb,${col} 14%,var(--card))">${icon(ic)}</span><div style="text-align:left"><b style="font-size:18px">${t}</b><div class="muted">${d}</div></div></div>`); c.style.width = '100%'; c.style.textAlign = 'left';
     c.onclick = async () => { await db.setting('mode', m); if (m === 'school') return setupTeacher(); home(); }; root.append(c);

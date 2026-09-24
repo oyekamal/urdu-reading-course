@@ -1,4 +1,4 @@
-/* Urdu Reader design system. Palette from research/13 + 14: Multani turquoise, saffron, ajrak indigo, tile-glaze paper.
+/* Urdu Qaida design system. Palette from research/13 + 14: Multani turquoise, saffron, ajrak indigo, tile-glaze paper.
    Signature: lessons are pearls on a thread (موتیوں جیسی لکھائی). Display face Fredoka; Urdu in Naskh (drills) / Nastaliq (headings, print). */
 @font-face{font-family:"Fredoka";src:url("../fonts/Fredoka.woff2") format("woff2");font-weight:300 700;font-display:swap}
 :root{--paper:#F2F7F6;--card:#FFFFFF;--ink:#1E2F55;--muted:#5A6B84;--line:#D5E3E1;--accent:#1E9C8F;--accent-deep:#157A70;--accent-ink:#fff;--soft:#DCF1EE;--gold:#F2A93B;--gold-deep:#C9862A;--good:#3E9A5E;--bad:#C74A3B;--warn:#C9862A;--shadow:0 1px 2px rgba(30,47,85,.06),0 6px 16px rgba(30,47,85,.06);
