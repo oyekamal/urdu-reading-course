@@ -1,1 +1,1 @@
-sharjeel103/mms-tts-urdu-finetune
+elevenlabs eleven_v3 voice 9cI5mhBtM4WtQ9Fo6jWQ (see data/audio_overrides.json per clip; MMS for the rest)

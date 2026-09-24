@@ -23,3 +23,9 @@ mobile/.audit/
 store/raw/
 design/gen/out/icon_*.jpg
 mobile/android/.audit/
+.env
+assets/audio/_el/
+assets/audio/_el_audition/
+
+# evaluation-only reference audio (Rekhta, not licensed for redistribution)
+research/bar_audio/

@@ -1,0 +1,21 @@
+{
+ "default": null,
+ "voices": {
+  "9cI5mhBtM4WtQ9Fo6jWQ": {
+   "name": "Sara – warm, steady",
+   "note": "ElevenLabs library, female, Urdu/Hindi"
+  },
+  "UT6USLtoAlXHj5k4sOLY": {
+   "name": "Reva – warm Urdu narration",
+   "note": "ElevenLabs library, female"
+  },
+  "hA0RyxVmITMttngSpcOF": {
+   "name": "Saira – Urdu storyteller",
+   "note": "ElevenLabs library, female"
+  },
+  "boOzPbaMuHbcJsRSkW3q": {
+   "name": "Ustani – designed kids' teacher",
+   "note": "ElevenLabs Voice Design, 2026-09-24"
+  }
+ }
+}

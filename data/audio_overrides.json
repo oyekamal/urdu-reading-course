@@ -1,1667 +1,3433 @@
 {
  "words/alif": {
-  "method": "roman-model",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "اب",
-  "pick": "E"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/be": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "بابا",
-  "heard": "cut at 0.75s of 1.90s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "words/kaf": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کام",
-  "heard": "cut at 0.85s of 1.63s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/lam": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "لال",
-  "heard": "cut at 0.80s of 1.95s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/mim": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "مکان",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "words/nun": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "نام",
-  "heard": "cut at 0.93s of 1.60s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/te": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "تین",
-  "heard": "cut at 0.83s of 1.71s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/choti_ye": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "یار",
-  "heard": "cut at 0.88s of 1.94s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/bari_ye": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "لے",
-  "heard": "cut at 0.88s of 1.82s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "words/pe": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "پانی",
-  "heard": "cut at 0.80s of 2.03s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/tte": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ٹوپی",
-  "heard": "cut at 0.80s of 2.05s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/se": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ثمر",
-  "heard": "cut at 0.83s of 1.98s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/wao": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "وہ",
-  "heard": "cut at 0.83s of 1.92s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "words/re": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "رات",
-  "heard": "cut at 0.80s of 1.98s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/dal": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "دو",
-  "heard": "cut at 0.80s of 1.81s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/he": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ہم",
-  "heard": "cut at 0.82s of 2.03s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/sin": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "سال",
-  "heard": "cut at 0.86s of 2.02s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/shin": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "شام",
-  "heard": "cut at 0.72s of 1.44s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/jim": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "جوتا",
-  "heard": "cut at 0.78s of 2.05s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "words/che": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "چار",
-  "heard": "cut at 0.77s of 1.79s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/gaf": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "گلاب",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/nun_ghunna": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "میں",
-  "heard": "cut at 0.88s of 1.87s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "words/do_chashmi_he": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "گھر",
-  "heard": "cut at 0.86s of 1.52s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/ddal": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ڈاک",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/rre": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "لڑکا",
-  "heard": "cut at 0.82s of 2.00s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/ze": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "زبان",
-  "heard": "cut at 0.70s of 1.94s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "words/zhe": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ژالہ",
-  "heard": "cut at 0.82s of 2.02s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/fe": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "فرش",
-  "heard": "cut at 0.77s of 1.82s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/qaf": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "قلم",
-  "heard": "cut at 0.82s of 1.92s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/khe": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "خط",
-  "heard": "cut at 0.83s of 1.52s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/ghain": {
-  "method": "roman-model",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "غریب",
-  "pick": "E"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/ain": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "عمر",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/bari_he": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "حال",
-  "heard": "cut at 0.88s of 1.50s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/swad": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "صبح",
-  "heard": "cut at 0.77s of 1.87s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/zwad": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ضرور",
-  "heard": "cut at 0.77s of 1.97s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "words/toe": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "طوطا",
-  "heard": "cut at 0.77s of 2.02s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/zoe": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ظاہر",
-  "heard": "cut at 0.75s of 1.90s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/zal": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ذائقہ",
-  "heard": "cut at 0.78s of 2.00s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "words/hamza": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "کوئی",
-  "heard": "cut at 0.72s of 1.82s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "aspirates/bh": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "بھائی",
-  "heard": "cut at 0.78s of 1.97s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "aspirates/ph": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "پھول",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "aspirates/th": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "تھالی",
-  "heard": "cut at 0.77s of 1.98s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "aspirates/ṭh": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ٹھنڈا",
-  "heard": "cut at 0.93s of 2.18s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "aspirates/jh": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "جھنڈا",
-  "heard": "cut at 0.82s of 2.06s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "aspirates/chh": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "چھت",
-  "heard": "cut at 0.78s of 2.29s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "aspirates/dh": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "دھاگا",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "aspirates/ḍh": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ڈھول",
-  "heard": "cut at 0.80s of 1.95s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "aspirates/ṛh": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "پڑھنا",
-  "heard": "cut at 0.88s of 2.02s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "aspirates/kh": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کھانا",
-  "heard": "cut at 0.77s of 1.78s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "aspirates/gh": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "گھر",
-  "heard": "cut at 0.80s of 1.73s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "diacritics/zabar_ex": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "بَس",
-  "heard": "cut at 0.85s of 1.82s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "diacritics/zer_ex": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "دِل",
-  "heard": "cut at 0.85s of 1.97s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "diacritics/pesh_ex": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "گُل",
-  "heard": "cut at 0.86s of 1.94s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "diacritics/jazm_ex": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "سَبْزی",
-  "heard": "cut at 0.96s of 2.30s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "diacritics/tashdid_ex": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "بچّہ",
-  "heard": "cut at 0.75s of 1.92s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "diacritics/khari_zabar_ex": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "اعلیٰ",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u01_00": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "اب",
-  "heard": "cut at 0.91s of 2.03s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u01_01": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "بابا",
-  "heard": "cut at 0.77s of 1.89s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u01_02": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "امام",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u01_03": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "نام",
-  "heard": "cut at 0.88s of 1.50s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u01_04": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کام",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u01_05": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کل",
-  "heard": "cut at 0.85s of 1.87s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u01_06": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "لال",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u01_07": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "بال",
-  "heard": "cut at 0.75s of 1.52s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u01_08": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ناک",
-  "heard": "cut at 0.91s of 1.55s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u01_09": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کان",
-  "heard": "cut at 0.82s of 1.62s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u01_10": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "مان",
-  "heard": "cut at 0.90s of 1.60s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u01_11": {
-  "method": "roman-model",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "نمک",
-  "pick": "E"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u01_12": {
-  "method": "roman-model",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ملک",
-  "pick": "E"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u01_13": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "کمال",
-  "heard": "cut at 0.75s of 1.49s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u01_14": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "نانا",
-  "heard": "cut at 0.90s of 1.95s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u01_15": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "کالا",
-  "heard": "cut at 0.75s of 1.92s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u01_16": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "مالا",
-  "heard": "cut at 0.80s of 2.00s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u01_17": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "مکان",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u01_18": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "املا",
-  "heard": "cut at 0.96s of 2.45s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u01_19": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "کمان",
-  "heard": "cut at 0.78s of 1.62s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_00": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "تم",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_01": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "تین",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_02": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "بیل",
-  "heard": "cut at 0.80s of 1.73s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_03": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "میل",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_04": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "نیلا",
-  "heard": "cut at 0.91s of 2.00s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u02_05": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "کیلا",
-  "heard": "cut at 0.85s of 1.98s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_06": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "تیل",
-  "heard": "cut at 0.78s of 1.79s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_07": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "لے",
-  "heard": "cut at 0.80s of 1.41s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_08": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کے",
-  "heard": "cut at 0.80s of 1.73s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_09": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "نے",
-  "heard": "cut at 0.91s of 1.78s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_10": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "تالی",
-  "heard": "cut at 0.85s of 2.03s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u02_11": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "بلی",
-  "heard": "cut at 0.80s of 2.00s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_12": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "تالا",
-  "heard": "cut at 0.85s of 2.00s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u02_13": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "کتاب",
-  "heard": "cut at 0.80s of 1.50s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_14": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "بیتاب",
-  "heard": "cut at 0.78s of 1.47s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_15": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "تکیا",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_16": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "مالی",
-  "heard": "cut at 0.82s of 1.95s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u02_17": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ناتا",
-  "heard": "cut at 0.80s of 1.95s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u02_18": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "تالاب",
-  "heard": "cut at 0.80s of 1.84s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u02_19": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "کمانی",
-  "heard": "cut at 0.74s of 2.03s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u03_00": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "پانی",
-  "heard": "cut at 0.83s of 2.00s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u03_01": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "پل",
-  "heard": "cut at 0.90s of 1.90s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u03_02": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ٹوپی",
-  "heard": "cut at 0.90s of 2.16s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u03_03": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "پتا",
-  "heard": "cut at 0.80s of 1.92s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u03_04": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "پاک",
-  "heard": "cut at 0.77s of 1.54s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u03_05": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "پیٹ",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u03_06": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ٹب",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u03_07": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "پتلی",
-  "heard": "cut at 0.82s of 2.03s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u03_08": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ثابت",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u03_09": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "پیپل",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u03_10": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ٹماٹر",
-  "heard": "cut at 0.78s of 2.30s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u03_11": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ٹانکا",
-  "heard": "cut at 0.80s of 1.98s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u03_12": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "پیالا",
-  "heard": "cut at 0.74s of 1.86s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u03_13": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "نپا",
-  "heard": "cut at 0.78s of 1.87s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u03_14": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "پلک",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u03_15": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "کپاس",
-  "heard": "cut at 0.82s of 1.74s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u03_16": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "تپتا",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u03_17": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "پتلا",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u03_18": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ٹکٹ",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u03_19": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "بٹن",
-  "heard": "cut at 0.86s of 1.94s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_00": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "وہ",
-  "heard": "cut at 0.88s of 1.90s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u04_01": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "دو",
-  "heard": "cut at 0.80s of 1.82s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_02": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "دن",
-  "heard": "cut at 0.82s of 1.84s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_03": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "دال",
-  "heard": "cut at 0.80s of 1.52s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_04": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "دم",
-  "heard": "cut at 0.80s of 1.86s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_05": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "رات",
-  "heard": "cut at 0.80s of 1.70s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_06": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "روٹی",
-  "heard": "cut at 0.72s of 2.06s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_07": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "دور",
-  "heard": "cut at 0.85s of 1.98s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_08": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ہم",
-  "heard": "cut at 0.98s of 2.26s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_09": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ہار",
-  "heard": "cut at 0.85s of 2.21s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_10": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "کمرہ",
-  "heard": "cut at 0.74s of 1.97s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_11": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "بادام",
-  "heard": "cut at 0.82s of 2.18s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_12": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "دادا",
-  "heard": "cut at 0.86s of 2.00s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_13": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "دریا",
-  "heard": "cut at 0.78s of 1.98s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_14": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ہوا",
-  "heard": "cut at 0.86s of 1.68s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_15": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "راہ",
-  "heard": "cut at 0.83s of 1.95s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u04_16": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "دودھ",
-  "heard": "cut at 0.82s of 1.95s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_17": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "مور",
-  "heard": "cut at 0.82s of 1.89s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_18": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "پودا",
-  "heard": "cut at 0.90s of 2.08s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u04_19": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "نہر",
-  "heard": "cut at 0.82s of 1.76s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_00": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "سب",
-  "heard": "cut at 1.06s of 2.10s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_01": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "سو",
-  "heard": "cut at 0.70s of 1.65s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u05_02": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "سال",
-  "heard": "cut at 0.74s of 1.41s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_03": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "شام",
-  "heard": "cut at 0.80s of 1.82s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u05_04": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "شیر",
-  "heard": "cut at 0.83s of 1.47s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_05": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "جوتا",
-  "heard": "cut at 0.77s of 1.98s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u05_06": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "جام",
-  "heard": "cut at 0.82s of 1.57s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_07": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "چار",
-  "heard": "cut at 0.75s of 1.90s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_08": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "چاند",
-  "heard": "cut at 1.20s of 2.48s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_09": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "چابی",
-  "heard": "cut at 0.77s of 1.95s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_10": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "گلاب",
-  "heard": "cut at 0.82s of 1.55s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_11": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "گاجر",
-  "heard": "cut at 0.78s of 2.06s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_12": {
-  "method": "roman-model",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "گانا",
-  "pick": "E"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_13": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "سبک",
-  "heard": "cut at 0.80s of 1.86s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_14": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "شادی",
-  "heard": "cut at 0.74s of 2.00s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u05_15": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "جنگل",
-  "heard": "cut at 0.88s of 1.97s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_16": {
-  "method": "roman-model",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "مچھلی",
-  "pick": "E"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_17": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "گرم",
-  "heard": "cut at 0.74s of 1.81s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_18": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "سردی",
-  "heard": "cut at 0.75s of 1.95s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u05_19": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "دوست",
-  "heard": "cut at 0.75s of 2.16s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u06_00": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "میں",
-  "heard": "cut at 0.82s of 1.54s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u06_01": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ہاں",
-  "heard": "cut at 0.85s of 1.87s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u06_02": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "کہاں",
-  "heard": "cut at 0.74s of 1.89s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u06_03": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ہیں",
-  "heard": "cut at 0.82s of 1.84s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u06_04": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "گھر",
-  "heard": "cut at 0.83s of 1.47s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u06_05": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "بھائی",
-  "heard": "cut at 0.83s of 1.92s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u06_06": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "پھول",
-  "heard": "cut at 0.85s of 1.98s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u06_07": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "تھالی",
-  "heard": "cut at 0.78s of 2.05s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u06_08": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ٹھنڈا",
-  "heard": "cut at 1.12s of 2.54s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u06_09": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "کھانا",
-  "heard": "cut at 0.83s of 2.00s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u06_10": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "دھاگا",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u06_11": {
-  "method": "roman-model",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "چھت",
-  "pick": "E"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u06_12": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "جھولا",
-  "heard": "cut at 0.86s of 2.08s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u06_13": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ہاتھ",
-  "heard": "cut at 0.77s of 1.81s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u06_14": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "دودھ",
-  "heard": "cut at 0.78s of 1.86s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u06_15": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "مچھلی",
-  "heard": "cut at 0.80s of 2.03s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u06_16": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "آنکھ",
-  "heard": "cut at 0.98s of 2.06s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u06_17": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "یہاں",
-  "heard": "cut at 0.85s of 1.98s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u06_18": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "سکھانا",
-  "heard": "cut at 0.75s of 2.02s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u06_19": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "بھالو",
-  "heard": "cut at 0.83s of 2.02s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u07_00": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ڈاک",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_01": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ڈبہ",
-  "heard": "cut at 1.52s of 2.83s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_02": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "لڑکا",
-  "heard": "cut at 0.75s of 1.34s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_03": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "لڑکی",
-  "heard": "cut at 0.77s of 2.03s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u07_04": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "بڑا",
-  "heard": "cut at 0.85s of 2.02s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_05": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "پڑھنا",
-  "heard": "cut at 0.86s of 1.71s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u07_06": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "زبان",
-  "heard": "cut at 0.80s of 1.70s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_07": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "زمین",
-  "heard": "cut at 0.75s of 1.95s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_08": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ژالہ",
-  "heard": "cut at 0.82s of 2.11s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_09": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "روزانہ",
-  "heard": "cut at 1.10s of 2.85s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u07_10": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ڈھول",
-  "heard": "cut at 0.83s of 2.05s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_11": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "گڑیا",
-  "heard": "cut at 0.72s of 2.05s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_12": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "سڑک",
-  "heard": "cut at 0.77s of 1.54s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_13": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "زرد",
-  "heard": "cut at 0.96s of 2.08s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_14": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ڈر",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_15": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "کپڑا",
-  "heard": "cut at 0.77s of 2.00s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_16": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "مزا",
-  "heard": "cut at 0.85s of 1.58s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_17": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "انڈا",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_18": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ٹھنڈا",
-  "heard": "cut at 0.80s of 2.06s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u07_19": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "گھڑی",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_00": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "فرش",
-  "heard": "cut at 0.78s of 1.55s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_01": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "فون",
-  "heard": "cut at 0.90s of 1.62s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_02": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "قلم",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_03": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "قمیض",
-  "heard": "cut at 0.93s of 1.95s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_04": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "خط",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_05": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "خوش",
-  "heard": "cut at 1.09s of 1.92s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_06": {
-  "method": "roman-model",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "غریب",
-  "pick": "E"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_07": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "باغ",
-  "heard": "cut at 0.78s of 1.28s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_08": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "عمر",
-  "heard": "cut at 0.77s of 1.84s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_09": {
-  "method": "meta-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "علم",
-  "pick": "C"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_10": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "حال",
-  "heard": "cut at 0.80s of 1.95s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_11": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "حلوہ",
-  "heard": "cut at 0.94s of 2.43s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_12": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "صاف",
-  "heard": "cut at 0.82s of 1.63s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u08_13": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "فوج",
-  "heard": "cut at 0.83s of 1.47s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_14": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "وقت",
-  "heard": "cut at 0.88s of 1.71s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_15": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "خالی",
-  "heard": "cut at 0.99s of 2.37s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_16": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "غم",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_17": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "عام",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u08_18": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "حساب",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u08_19": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "دفتر",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u09_00": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "صبح",
-  "heard": "cut at 0.69s of 1.94s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u09_01": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "صبر",
-  "heard": "cut at 0.80s of 1.90s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u09_02": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ضرور",
-  "heard": "cut at 0.74s of 1.87s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u09_03": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "مریض",
-  "heard": "cut at 0.77s of 1.55s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u09_04": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "طالب",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u09_05": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "طوطا",
-  "heard": "cut at 0.85s of 2.10s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u09_06": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ظاہر",
-  "heard": "cut at 0.77s of 2.03s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u09_07": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ظلم",
-  "heard": "cut at 0.83s of 1.92s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u09_08": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ذائقہ",
-  "heard": "cut at 0.82s of 2.06s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u09_09": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ذمہ",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u09_10": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "صابن",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u09_11": {
-  "method": "roman-model",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ضد",
-  "pick": "E"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u09_12": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "طاقت",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u09_13": {
-  "method": "roman-model",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "حفاظت",
-  "pick": "E"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u09_14": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ذرا",
-  "heard": "cut at 0.82s of 1.81s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u09_15": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "خاص",
-  "heard": "cut at 0.94s of 1.82s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u09_16": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ثواب",
-  "heard": "cut at 0.90s of 2.06s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u09_17": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "نظر",
-  "heard": "cut at 0.82s of 1.52s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u09_18": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "لفظ",
-  "heard": "cut at 0.83s of 1.97s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u09_19": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "صحیح",
-  "heard": "cut at 0.74s of 1.98s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u10_00": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "آم",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_01": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "آپ",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u10_02": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "کوئی",
-  "heard": "cut at 0.77s of 1.71s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_03": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "گئے",
-  "heard": "cut at 0.82s of 1.58s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_04": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "مسئلہ",
-  "heard": "cut at 0.77s of 2.06s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_05": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "بچّہ",
-  "heard": "cut at 0.78s of 1.94s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_06": {
-  "method": "meta-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "اللّٰہ",
-  "pick": "C"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_07": {
-  "method": "roman-model",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "دعا",
-  "pick": "E"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_08": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "سؤال",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_09": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "آئینہ",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_10": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "نئی",
-  "heard": "cut at 0.91s of 1.97s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_11": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "چائے",
-  "heard": "cut at 0.75s of 1.63s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_12": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "گائے",
-  "heard": "cut at 0.78s of 1.82s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_13": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "اعلیٰ",
-  "heard": "cut at 0.91s of 2.26s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_14": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "صلوٰۃ",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_15": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "دنیا",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_16": {
-  "method": "roman-model",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "ابّا",
-  "pick": "E"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_17": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "امّی",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_18": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "مکّہ",
-  "heard": "cut at 0.77s of 2.02s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u10_19": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "اچّھا",
-  "heard": "cut at 0.85s of 2.06s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u11_00": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کا",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u11_01": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کی",
-  "heard": "cut at 0.77s of 1.79s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u11_02": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کے",
-  "heard": "cut at 0.75s of 1.49s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u11_03": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "سے",
-  "heard": "cut at 0.77s of 1.74s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u11_04": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "پر",
-  "heard": "cut at 0.78s of 1.78s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u11_05": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کہ",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u11_06": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "اور",
-  "heard": "cut at 0.80s of 1.50s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u11_07": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ہے",
-  "heard": "cut at 0.78s of 1.81s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u11_08": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ہیں",
-  "heard": "cut at 0.67s of 1.47s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u11_09": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "نے",
-  "heard": "cut at 0.90s of 1.42s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u11_10": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کو",
-  "heard": "cut at 0.78s of 1.81s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u11_11": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "نہیں",
-  "heard": "cut at 0.90s of 2.02s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u11_12": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "تھا",
-  "heard": "cut at 0.85s of 1.87s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u11_13": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "تھی",
-  "heard": "cut at 0.83s of 1.84s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u11_14": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کیا",
-  "heard": "cut at 0.80s of 1.62s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u11_15": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "بھی",
-  "heard": "cut at 0.82s of 1.41s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u11_16": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "لیکن",
-  "heard": "cut at 0.90s of 1.98s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "units/u11_17": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "اگر",
-  "heard": "cut at 0.75s of 1.82s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u11_18": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "پھر",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "units/u11_19": {
-  "method": "meta-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "بہت",
-  "pick": "C"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/00": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کا",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/01": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کی",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/02": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کے",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/03": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "سے",
-  "heard": "cut at 0.77s of 1.76s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "sight/04": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "پر",
-  "heard": "cut at 0.83s of 1.86s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "sight/05": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کہ",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/06": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "اور",
-  "heard": "cut at 0.90s of 1.92s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/07": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ہے",
-  "heard": "cut at 0.83s of 1.44s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/08": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ہیں",
-  "heard": "cut at 0.78s of 1.79s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "sight/09": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "نے",
-  "heard": "cut at 0.93s of 1.86s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/10": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کو",
-  "heard": "cut at 0.85s of 1.89s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "sight/11": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "میں",
-  "heard": "cut at 0.83s of 1.86s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "sight/12": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "نہیں",
-  "heard": "cut at 0.82s of 1.82s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/13": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "وہ",
-  "heard": "cut at 0.83s of 1.89s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/14": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "یہ",
-  "heard": "cut at 0.82s of 1.97s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/15": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "اس",
-  "heard": "cut at 0.96s of 1.98s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/16": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "تھا",
-  "heard": "cut at 0.83s of 1.86s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/17": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "تھی",
-  "heard": "cut at 0.82s of 1.87s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/18": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کیا",
-  "heard": "cut at 0.75s of 1.82s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sight/19": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "بھی",
-  "heard": "cut at 0.75s of 1.68s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "numerals/0": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "صفر",
-  "heard": "cut at 0.78s of 1.78s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "numerals/1": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ایک",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "numerals/2": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "دو",
-  "heard": "cut at 0.80s of 1.82s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "numerals/3": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "تین",
-  "heard": "cut at 0.78s of 1.39s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "numerals/4": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "چار",
-  "heard": "cut at 0.74s of 1.86s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "numerals/5": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "پانچ",
-  "heard": "cut at 0.96s of 1.84s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "numerals/6": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "چھے",
-  "heard": "cut at 0.82s of 1.89s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "numerals/7": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "سات",
-  "heard": "cut at 0.80s of 1.52s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "numerals/8": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "آٹھ",
-  "heard": "cut at 0.90s of 1.84s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "numerals/9": {
-  "method": "carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "نو",
-  "heard": "cut at 0.86s of 1.87s"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "diacritics/jazm": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "جزم",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "diacritics/tashdid": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "تشدید",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "names/ain": {
-  "method": "meta-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "عین",
-  "pick": "D"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "names/alif": {
-  "method": "roman-model",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "الف",
-  "pick": "E"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "names/ddal": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ڈال",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "names/ghain": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "غین",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "names/lam": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "لام",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "names/rre": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ڑے",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "names/swad": {
-  "method": "roman-model",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "صاد",
-  "pick": "E"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "names/tte": {
-  "method": "meta-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ٹے",
-  "pick": "C"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "names/zhe": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ژے",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sentences/u01_02": {
-  "method": "meta-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "نمک لا",
-  "pick": "C"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sentences/u03_01": {
-  "method": "main-retake",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "پتلی بلی",
-  "pick": "F"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sentences/u03_02": {
-  "method": "main-retake",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "میں ٹوپی لے",
-  "pick": "F"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "sentences/u07_01": {
-  "method": "main-retake",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "بڑا ڈبہ",
-  "pick": "F"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "sentences/u10_01": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
   "text": "چائے میں ۲ چمچ چینی",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "syllables/ddal_a": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ڈا",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "syllables/ddal_i": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ڈی",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "syllables/ddal_u": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ڈو",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "syllables/gaf_u": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "گو",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "syllables/ghain_a": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "غا",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "syllables/kaf_a": {
-  "method": "main-alone",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "کا",
-  "pick": "A"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "syllables/lam_i": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "لی",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "syllables/lam_u": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "لو",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  },
  "syllables/re_u": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "رو",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "syllables/swad_i": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "صی",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
  },
  "syllables/tte_a": {
-  "method": "main-carrier",
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
   "text": "ٹا",
-  "pick": "B"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "names/be": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "بے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/be_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "با",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/be_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "بی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/be_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "بو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/kaf": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "کاف",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/kaf_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "کی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/kaf_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "کو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/lam_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "لا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/mim_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "مو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/nun": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "نون",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/nun_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "نا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/nun_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "نی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/nun_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "نو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/te": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "تے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/te_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "تی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/te_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "تو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/choti_ye": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "چھوٹی یے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/bari_ye": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "بڑی یے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/pe": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "پے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/pe_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "پی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/pe_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "پو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/tte_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ٹی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/se_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ثا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/se_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ثی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/se_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ثو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/wao": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "واؤ",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/re": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "رے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/re_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "را",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/re_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ری",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/dal": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "دال",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/dal_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "دا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/dal_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "دی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/dal_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "دو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/he": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ہے / گول ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/sin": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "سین",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/sin_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "سی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/sin_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "سو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/shin": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "شین",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/shin_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "شا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/shin_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "شی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/shin_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "شو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/jim_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "جا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/jim_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "جو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/che_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "چا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/che_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "چی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/gaf_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "گی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/nun_ghunna": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "نون غنہ",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/ze": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "زے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/ze_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "زی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/ze_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "زو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/zhe_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ژا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/zhe_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ژی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/zhe_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ژو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/fe": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "فے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/fe_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "فا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/fe_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "فی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/fe_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "فو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/qaf_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "قا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/qaf_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "قی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/khe": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "خے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/khe_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "خا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/khe_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "خی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/khe_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "خو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/ghain_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "غی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/ghain_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "غو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/bari_he": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "بڑی حے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/bari_he_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "حا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/bari_he_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "حی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/bari_he_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "حو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/swad_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "صا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/swad_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "صو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/zwad": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ضاد",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/zwad_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ضا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/zwad_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ضی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/zwad_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ضو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/toe": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "طوے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/toe_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "طا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/toe_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "طو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/zoe": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ظوے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/zoe_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ظی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/zoe_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ظو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/zal": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ذال",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/zal_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ذا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/zal_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ذی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/zal_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ذو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "names/hamza": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ہمزہ",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "diacritics/zer": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "زیر",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "diacritics/khari_zabar": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "کھڑا زبر",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u02_00": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "تین کتاب",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u04_02": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "ہم دور ہیں",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u05_00": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "چار گلاب",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u05_01": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "شیر جنگل میں ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u05_02": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "دوست کا جوتا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u06_00": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "میں گھر میں ہوں",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u06_01": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "پھول کہاں ہیں",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u07_00": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "لڑکا سڑک پر ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u07_02": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "زمین زرد ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u08_00": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "قلم کہاں ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u08_02": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "وقت کیا ہوا ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u09_01": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "طوطا ذرا بڑا ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u09_02": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "یہ لفظ صحیح ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u10_00": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "آپ کا نام کیا ہے؟",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u10_02": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "کوئی مسئلہ نہیں۔",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u11_00": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "میرا نام کمال ہے اور میں لاہور میں رہتا ہوں۔",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u11_01": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "بچے اسکول جاتے ہیں لیکن آج چھٹی ہے۔",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "sentences/u11_02": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "اگر بارش ہوئی تو ہم گھر پر رہیں گے۔",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "ui/listen": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "سنو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "ui/tap_heard": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "جو حرف سنا، اسے دباؤ",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "ui/tap_word": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "جو لفظ سنا، اسے دباؤ",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "ui/look": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "دیکھو، یہ حرف لفظ میں کیسے بدلتا ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "ui/trace": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "انگلی سے حرف بناؤ",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "ui/blend": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "حرف اور آواز ملاؤ، جو سنا وہ دباؤ",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "ui/build": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "حروف جوڑ کر لفظ بناؤ",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "ui/read": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "بلند آواز سے پڑھو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "ui/write": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "جو لفظ سنا، اسے لکھو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "ui/check": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "اب چھوٹا سا ٹیسٹ",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "ui/correct": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "شاباش!",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "ui/next": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "آگے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "ui/done": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "بہت اچھا، سبق ختم",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "ui/unit_done": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "واہ! یونٹ ختم، اگلا یونٹ کھل گیا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
+ },
+ "syllables/te_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "تا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "names/se": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ثے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "syllables/he_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ہا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "syllables/he_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ہی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "syllables/sin_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "سا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "names/gaf": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "گاف",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "syllables/ze_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "زا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "names/qaf": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "قاف",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "syllables/toe_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "طی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "syllables/zoe_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ظا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "sentences/u04_00": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "دو روٹی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "ui/welcome": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "آؤ اردو پڑھنا سیکھیں",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "names/mim": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "میم",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr",
+  "tts_text": "مِیم"
+ },
+ "syllables/mim_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ما",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "syllables/mim_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "می",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "syllables/pe_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "پا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "syllables/tte_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ٹو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "syllables/he_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "ہو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "names/jim": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "جیم",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "syllables/jim_i": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "جی",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "names/che": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "چے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "syllables/che_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "چو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "syllables/gaf_a": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "گا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "names/do_chashmi_he": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "دو چشمی ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "syllables/qaf_u": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "قو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "diacritics/pesh": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "پیش",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "sentences/u01_00": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "بابا کا کام",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "sentences/u01_01": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "کالا بال",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "sentences/u02_01": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "بلی کالی ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "sentences/u02_02": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "نیلا تکیا لے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "sentences/u03_00": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "پانی لا",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "sentences/u04_01": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "وہ کمرہ بڑا ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "sentences/u06_02": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "بھائی کھانا کھاتا ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "sentences/u08_01": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "باغ خالی ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "sentences/u09_00": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "صبح صاف ہے",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "ui/wrong": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "plain",
+  "text": "دوبارہ کوشش کرو",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+ },
+ "diacritics/zabar": {
+  "method": "elevenlabs",
+  "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
+  "frame": "carrier",
+  "text": "زبر",
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ_full"
  }
 }

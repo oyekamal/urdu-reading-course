@@ -55,7 +55,22 @@ Python needs: torch, transformers, soundfile, Pillow (with libraqm), openai-whis
 
 ## Audio, honestly
 
-The voice is machine-generated, locally, with an MMS-VITS Urdu fine-tune chosen by a Whisper-judged bake-off (`research/06_tts_bakeoff.md`). The models drop short-vowel marks, so ambiguous words were re-rendered inside a carrier phrase and cut out using the model's own letter timings; a human listener then picked the best rendering for 95 flagged clips. It is intelligible and good enough for a pilot. For a commercial product, record a native speaker: every successful offline literacy app ships human audio, and the base model's licence is CC BY-NC.
+Since v0.8.0 every one of the 490 clips is **ElevenLabs** (`eleven_v3`, voice "Sara", Urdu), replacing the local MMS-VITS voice (`research/06_tts_bakeoff.md`, still used by `gen_audio.py`). How it was chosen and checked, with a blind Gemini listener as the critic and native-teacher recordings from Rekhta Aamozish as the bar (evaluation only, never shipped):
+
+- **Correctness:** Gemini picks which of the 39 letter names it hears. Sara 36/38, the real teacher 36/38, the old MMS voice 21/36.
+- **New vs old, blind A/B on every clip:** the new voice won 378/489 in round 1. The rest were re-rolled with the judge in the loop, and the handful that were genuinely wrong (a wrong word, a short vowel) were re-rolled until they passed.
+- **Against the real teacher:** the new voice still loses on warmth, 9/39 on letter names. Slowing the audio, changing the cut and trying other voices did not close that gap. A human recording (below) or a cloned consenting teacher's voice is what beats it.
+
+Short items (letter names, syllables, short words) are spoken inside a carrier phrase, «یہ ہے... X۔», and the target is cut on silence: `eleven_v3` returns empty timestamps for Urdu, and a bare letter name comes out garbled. Clips ship as 22.05 kHz mono mp3; in a blind test the critic could not tell them from 44.1 kHz (18/39), and they are half the size.
+
+```bash
+python3 scripts/el_audio.py build --judge                  # (re)generate everything not recorded by a human
+python3 scripts/el_audio.py audition <voice_id> names/jim  # try a voice on a few clips, into assets/audio/_el/
+python3 scripts/listen_judge.py identify clip.mp3          # blind "which letter is this?"
+python3 scripts/listen_judge.py ab "جیم" a.mp3 b.mp3       # blind A/B, prints winner + biggest gap
+```
+
+Keys go in the repo `.env` (gitignored): `ELEVENLABS_API_KEY`, `GEMINI_API_KEY`. Voices live in `data/voices.json`. Per-clip provenance (`method`, `voice`, `frame`) is in `data/audio_overrides.json`, and human recordings are never overwritten.
 
 ## Recording a human voice
 
@@ -64,13 +79,15 @@ truth for every one of the **490 clips** the app plays: 39 letter names, 39 lett
 syllables, 11 aspirate words, 12 vowel-mark items, 220 unit words, 33 sentences, 20 sight words, 10
 numerals, 16 app-voice phrases.
 
-**Voice Studio — record straight into the app, one line at a time:**
+**Voice Studio: generate with ElevenLabs or record your own voice, one line at a time:**
 
 ```bash
 python3 scripts/voice_studio.py        # opens on http://localhost:8420/
 ```
 
-A local, one-file tool (stdlib + the pipeline `import_recordings.py` already uses — nothing new to
+Each line has an ElevenLabs row: pick a voice, **Generate** (`g`), **Re-roll** (`r`), play the take, and **Keep take** (`k`) to put it into the app. **+ Voice** adds a voice by pasting its ElevenLabs ID or by searching the ElevenLabs library ("urdu") and pressing Add. A badge on each line shows where its current audio came from: your voice, ElevenLabs or MMS.
+
+Recording is a local, one-file tool (stdlib + the pipeline `import_recordings.py` already uses — nothing new to
 install). Open it in Chrome or Firefox, type your name once, and for each of the 490 lines: press
 **space** to record, **space** again to stop, **enter** to save and move to the next unrecorded line.
 Every item shows the exact text to read plus a one-line note pulled from `recording/SCRIPT.md`'s own

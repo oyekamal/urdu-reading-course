@@ -23,10 +23,12 @@ from datetime import date
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse, parse_qs
 
+import shutil
 import soundfile as sf
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from import_recordings import SR, ffmpeg_decode_to_wav, load_overrides, process_array, save_overrides, write_clip  # noqa: E402
+import eleven, el_audio  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MANIFEST = f"{ROOT}/assets/audio/manifest.json"
@@ -37,6 +39,7 @@ FONTS = {
     "NotoNastaliqUrdu-Regular.ttf": f"{ROOT}/assets/fonts/NotoNastaliqUrdu-Regular.ttf",
 }
 MIN_CLIP_S = 0.2
+CAND = os.path.realpath(f"{ASSETS}/_el/_cand")  # ElevenLabs previews wait here until "Keep"
 
 UI_GLOSS = {
     "listen": "Listen", "tap_heard": "Tap what you heard", "tap_word": "Tap the word you heard",
@@ -130,6 +133,8 @@ def state_payload():
         o = ovr.get(key)
         row = dict(it)
         row["recorded"] = bool(o and o.get("method") == "human")
+        row["source"] = (o or {}).get("method") or "mms"
+        row["voice"] = (o or {}).get("voice")
         row["recordedBy"] = o.get("recordedBy") if o else None
         row["date"] = o.get("date") if o else None
         out.append(row)
@@ -180,7 +185,17 @@ button:disabled{opacity:.4;cursor:default}
 .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:12px;font-size:14px;opacity:0;transition:.25s;pointer-events:none}
 .toast.show{opacity:1}
 .hint{color:var(--muted);font-size:12px}
-kbd{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:11px}
+.src{display:inline-block;margin-left:6px;border-radius:99px;padding:3px 10px;font-size:12px;font-weight:700;background:var(--line);color:var(--muted)}
+.src.human{background:#E3F3E8;color:var(--good)}.src.elevenlabs{background:#FDF0DB;color:#9A5E12}
+.el{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:10px 14px}
+.el select{font:inherit;border:1px solid var(--line);border-radius:8px;padding:6px 8px;max-width:220px}
+dialog{border:1px solid var(--line);border-radius:16px;padding:20px;width:min(560px,92vw)}
+dialog input{font:inherit;border:1px solid var(--line);border-radius:8px;padding:6px 8px;width:100%;margin:4px 0}
+.lib{max-height:300px;overflow-y:auto;margin-top:8px}
+.lib div{display:flex;gap:8px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px}
+.lib div span{flex:1}
+.lib button{padding:4px 10px;border-radius:8px;font-size:12px}
+kbd{color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:11px}
 </style></head>
 <body>
 <div class="side">
@@ -196,7 +211,7 @@ kbd{background:var(--paper);border:1px solid var(--line);border-radius:4px;paddi
 <main>
   <div class="count" id="count"></div>
   <div class="card">
-    <span class="kindtag" id="kindtag"></span>
+    <span class="kindtag" id="kindtag"></span><span class="src" id="src"></span>
     <div class="big" id="big"></div>
     <div class="sub" id="sub"></div>
     <div class="note" id="note" style="display:none"></div>
@@ -209,9 +224,29 @@ kbd{background:var(--paper);border:1px solid var(--line);border-radius:4px;paddi
     <button class="go" id="saveBtn" disabled>Save &amp; next <kbd>enter</kbd></button>
     <button id="nextBtn">Next ▶ <kbd>→</kbd></button>
   </div>
+  <div class="el">
+    <b>ElevenLabs</b>
+    <select id="voice" title="voice"></select>
+    <button id="addVoice" title="add a voice">+ Voice</button>
+    <button class="gold" id="genBtn">Generate <kbd>g</kbd></button>
+    <button id="rerollBtn" disabled>Re-roll <kbd>r</kbd></button>
+    <button id="takeBtn" disabled>Play take</button>
+    <button class="go" id="keepBtn" disabled>Keep take <kbd>k</kbd></button>
+    <span class="timer" id="left"></span>
+  </div>
   <div class="hint">Skip already-recorded items: <input type="checkbox" id="skipDone" checked> · <kbd>backspace</kbd> discards the take</div>
 </main>
 <div class="toast" id="toast"></div>
+<dialog id="voiceDlg">
+  <h3 style="margin-top:0">Add a voice</h3>
+  <div class="hint">Paste a voice ID from ElevenLabs (Voice Library → ⋯ → Copy voice ID), or search the library below.</div>
+  <input id="vId" placeholder="voice id, e.g. 9cI5mhBtM4WtQ9Fo6jWQ"><input id="vName" placeholder="name (optional)">
+  <label class="hint"><input type="checkbox" id="vDefault" style="width:auto"> make it the default for full builds</label>
+  <div style="display:flex;gap:8px;margin-top:8px"><button class="go" id="vSave">Add voice</button><button id="vClose">Close</button></div>
+  <hr style="border:none;border-top:1px solid var(--line);margin:14px 0">
+  <div style="display:flex;gap:8px"><input id="libQ" value="urdu" placeholder="search library"><button id="libGo">Search</button></div>
+  <div class="lib" id="lib"></div>
+</dialog>
 <audio id="player" style="display:none"></audio>
 <script>
 let ITEMS = [], cur = 0, curKind = 'all', mediaRecorder, chunks = [], recordedBlob = null, recordedMime = '';
@@ -222,7 +257,53 @@ const byName = () => localStorage.getItem('vs_by') || '';
 $('#by').value = byName();
 $('#by').oninput = e => localStorage.setItem('vs_by', e.target.value);
 
+let VOICES = {default:null, voices:{}};
+async function loadVoices(sel) {
+  VOICES = await (await fetch('/api/voices')).json();
+  const keep = sel || localStorage.getItem('vs_voice') || VOICES.default;
+  $('#voice').innerHTML = Object.entries(VOICES.voices).map(([id,v]) => `<option value="${id}"${id===keep?' selected':''}>${v.name}${id===VOICES.default?' ★':''}</option>`).join('') || '<option value="">add a voice first</option>';
+}
+$('#voice').onchange = e => localStorage.setItem('vs_voice', e.target.value);
+let takeUrl = null;
+function resetEl() { takeUrl = null; $('#takeBtn').disabled = $('#keepBtn').disabled = $('#rerollBtn').disabled = true; }
+async function generate(reroll) {
+  const it = current(), voice = $('#voice').value; if (!voice) { toast('Add a voice first'); return; }
+  $('#genBtn').disabled = $('#rerollBtn').disabled = true; $('#genBtn').textContent = 'Generating…';
+  try {
+    const j = await (await fetch(`/api/generate?kind=${it.kind}&id=${encodeURIComponent(it.id)}&voice=${voice}&reroll=${reroll?1:0}`, {method:'POST'})).json();
+    if (!j.ok) { toast('ElevenLabs: ' + j.error); return; }
+    takeUrl = j.url + '?t=' + Date.now(); $('#left').textContent = j.left + ' chars left';
+    $('#takeBtn').disabled = $('#keepBtn').disabled = $('#rerollBtn').disabled = false;
+    const p = $('#player'); p.src = takeUrl; p.play();
+  } finally { $('#genBtn').disabled = false; $('#genBtn').textContent = 'Generate'; }
+}
+async function keep() {
+  if (!takeUrl) return; const it = current();
+  const j = await (await fetch(`/api/keep?kind=${it.kind}&id=${encodeURIComponent(it.id)}`, {method:'POST'})).json();
+  if (!j.ok) { toast('Not kept: ' + j.error); return; }
+  const m = ITEMS.find(x => x.kind===it.kind && x.id===it.id); m.source = 'elevenlabs'; m.voice = $('#voice').value; m.recorded = false;
+  toast('Kept — this take is now in the app'); resetEl(); renderKinds(); renderList(); advance();
+}
+$('#genBtn').onclick = () => generate(false); $('#rerollBtn').onclick = () => generate(true);
+$('#takeBtn').onclick = () => { const p=$('#player'); p.src = takeUrl; p.play(); }; $('#keepBtn').onclick = keep;
+$('#addVoice').onclick = () => $('#voiceDlg').showModal(); $('#vClose').onclick = () => $('#voiceDlg').close();
+async function addVoice(id, name, note) {
+  const j = await (await fetch('/api/voices', {method:'POST', body: JSON.stringify({id, name, note, default: $('#vDefault').checked})})).json();
+  if (!j.ok) { toast(j.error); return; } await loadVoices(id); localStorage.setItem('vs_voice', id); toast('Voice added: ' + (name||id));
+}
+$('#vSave').onclick = () => addVoice($('#vId').value.trim(), $('#vName').value.trim(), '');
+$('#libGo').onclick = async () => {
+  $('#lib').textContent = 'Searching…';
+  const r = await (await fetch('/api/library?q=' + encodeURIComponent($('#libQ').value))).json();
+  if (r.error) { $('#lib').textContent = r.error; return; }
+  $('#lib').innerHTML = r.map((v,i) => `<div><span><b>${v.name}</b><br><small>${v.note}</small></span>${v.preview?`<button data-p="${i}">▶</button>`:''}<button class="go" data-a="${i}">Add</button></div>`).join('') || 'No voices found';
+  $('#lib').querySelectorAll('[data-p]').forEach(b => b.onclick = () => { const p=$('#player'); p.src = r[b.dataset.p].preview; p.play(); });
+  $('#lib').querySelectorAll('[data-a]').forEach(b => b.onclick = () => { const v = r[b.dataset.a]; addVoice(v.id, v.name, v.note); });
+};
+const SRC_LABEL = {human:'your voice', elevenlabs:'ElevenLabs', mms:'machine (MMS)'};
+
 async function load() {
+  await loadVoices();
   ITEMS = await (await fetch('/api/items')).json();
   renderKinds(); renderList(); goto(cur);
 }
@@ -256,9 +337,12 @@ function goto(j) {
   $('#sub').innerHTML = [it.roman, it.en].filter(Boolean).join(' · ') || '&nbsp;';
   const note = $('#note'); if (it.note) { note.style.display='block'; note.textContent = it.note; } else note.style.display='none';
   $('#count').textContent = `${cur+1} / ${f.length}${curKind!=='all'?' · '+KIND_LABEL[curKind]:''} — item ${it.id}`;
-  resetTake();
+  resetTake(); resetEl();
+  const src = it.source in SRC_LABEL ? it.source : 'mms'; $('#src').className = 'src ' + src;
+  $('#src').textContent = SRC_LABEL[src] + (src==='elevenlabs' && VOICES.voices[it.voice] ? ' · ' + VOICES.voices[it.voice].name : '');
   [...$('#list').children].forEach((el,k)=>el.classList.toggle('cur', k===cur));
   const curEl = $('#list').children[cur]; if (curEl) curEl.scrollIntoView({block:'nearest'});
+  $('#playBtn').disabled = false; $('#playBtn').dataset.existing = `/audio/${it.kind}/${it.id}`; $('#playBtn').textContent = '▶ Play current';
   if (it.recorded) { $('#playBtn').disabled = false; $('#playBtn').dataset.existing = `/audio/${it.kind}/${it.id}`; $('#playBtn').textContent = `▶ Play (${it.recordedBy||'recorded'})`; }
 }
 function resetTake() { recordedBlob = null; chunks = []; $('#saveBtn').disabled = true; $('#recBtn').textContent = '● Record'; $('#recBtn').classList.remove('on'); $('#timer').textContent = '0.0s'; }
@@ -278,7 +362,7 @@ async function toggleRecord() {
 }
 function play() {
   const p = $('#player'); const existing = $('#playBtn').dataset.existing;
-  p.src = existing ? existing : URL.createObjectURL(recordedBlob); p.play();
+  p.src = existing ? existing + '?t=' + Date.now() : URL.createObjectURL(recordedBlob); p.play();
 }
 async function save() {
   if (!recordedBlob) return;
@@ -303,12 +387,15 @@ function advance() {
   goto(j);
 }
 document.addEventListener('keydown', e => {
-  if (e.target.tagName === 'INPUT') return;
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT' || $('#voiceDlg').open) return;
   if (e.code === 'Space') { e.preventDefault(); toggleRecord(); }
   else if (e.code === 'Enter') { e.preventDefault(); save(); }
   else if (e.code === 'Backspace') { e.preventDefault(); resetTake(); }
   else if (e.code === 'ArrowRight') goto(cur+1);
   else if (e.code === 'ArrowLeft') goto(cur-1);
+  else if (e.key === 'g') generate(false);
+  else if (e.key === 'r' && takeUrl) generate(true);
+  else if (e.key === 'k') keep();
 });
 $('#recBtn').onclick = toggleRecord; $('#playBtn').onclick = play; $('#saveBtn').onclick = save;
 $('#prev').onclick = () => goto(cur-1); $('#nextBtn').onclick = () => goto(cur+1);
@@ -347,6 +434,22 @@ class Handler(BaseHTTPRequestHandler):
                     self._send(200, open(fp, "rb").read(), "audio/mpeg")
                     return
             self._send(404, {"error": "not found"})
+        elif path == "/api/voices":
+            self._send(200, eleven.load_voices())
+        elif path == "/api/library":
+            q = parse_qs(urlparse(self.path).query).get("q", ["urdu"])[0]
+            try:
+                from urllib.parse import quote
+                r = json.loads(eleven.api(f"/v1/shared-voices?search={quote(q)}&page_size=30"))
+                self._send(200, [{"id": v["voice_id"], "name": v["name"], "note": " · ".join(filter(None, [v.get("gender"), v.get("age"), v.get("language")])), "preview": v.get("preview_url")} for v in r.get("voices", [])])
+            except RuntimeError as e:
+                self._send(200, {"error": str(e)})
+        elif path.startswith("/cand/"):
+            fp = f"{CAND}/{path[6:]}.mp3"
+            if os.path.isfile(fp) and os.path.realpath(fp).startswith(CAND):
+                self._send(200, open(fp, "rb").read(), "audio/mpeg")
+            else:
+                self._send(404, {"error": "not found"})
         elif path.startswith("/fonts/"):
             name = path.split("/")[-1]
             fp = FONTS.get(name)
@@ -359,10 +462,25 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         parsed = urlparse(self.path)
+        qs = parse_qs(parsed.query)
+        if parsed.path in ("/api/generate", "/api/keep"):
+            return self._eleven(parsed.path, qs)
+        if parsed.path == "/api/voices":
+            v = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))) or b"{}")
+            vid, name = (v.get("id") or "").strip(), (v.get("name") or "").strip()
+            if not vid.isalnum():
+                return self._send(200, {"ok": False, "error": "voice id should be letters and digits only"})
+            reg = eleven.load_voices()
+            if v.get("default"):
+                reg["default"] = vid
+            if name or vid not in reg["voices"]:
+                reg["voices"][vid] = {"name": name or vid, "note": v.get("note", "")}
+            reg["default"] = reg["default"] or vid
+            eleven.save_voices(reg)
+            return self._send(200, {"ok": True, **reg})
         if parsed.path != "/api/save":
             self._send(404, {"error": "not found"})
             return
-        qs = parse_qs(parsed.query)
         kind, id_ = qs.get("kind", [""])[0], qs.get("id", [""])[0]
         by = qs.get("by", [""])[0] or "unknown"
         ext = qs.get("ext", ["webm"])[0]
@@ -393,6 +511,30 @@ class Handler(BaseHTTPRequestHandler):
             for f in os.listdir(tmpdir):
                 os.remove(f"{tmpdir}/{f}")
             os.rmdir(tmpdir)
+
+
+    def _eleven(self, path, qs):
+        kind, id_, voice = qs.get("kind", [""])[0], qs.get("id", [""])[0], qs.get("voice", [""])[0]
+        it = next((it for it in ITEMS if it["kind"] == kind and it["id"] == id_), None)
+        if not it:
+            return self._send(400, {"ok": False, "error": f"unknown clip {kind}/{id_}"})
+        cand = f"{CAND}/{kind}/{id_}"
+        try:
+            if path == "/api/generate":
+                note = el_audio.make_retry(kind, it["text"], voice, cand, reroll=qs.get("reroll", ["0"])[0] == "1")
+                json.dump(note, open(cand + ".json", "w", encoding="utf8"), ensure_ascii=False)
+                return self._send(200, {"ok": True, "url": f"/cand/{kind}/{id_}", "left": eleven.credits()})
+            # keep: move the previewed take into the app
+            note = json.load(open(cand + ".json", encoding="utf8"))
+            for ext in (".wav", ".mp3"):
+                shutil.move(cand + ext, f"{ASSETS}/{kind}/{id_}{ext}")
+            os.remove(cand + ".json")
+            ovr = load_overrides(OVERRIDES)
+            ovr[f"{kind}/{id_}"] = {**note, "date": str(date.today())}
+            save_overrides(ovr, OVERRIDES, dry_run=False)
+            return self._send(200, {"ok": True})
+        except (RuntimeError, OSError, ValueError) as e:
+            return self._send(200, {"ok": False, "error": str(e)})
 
 
 def main():
