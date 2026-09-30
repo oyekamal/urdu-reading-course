@@ -22,8 +22,8 @@ STYLE = ("Flat vector illustration for a children's app, thick clean indigo outl
 REF = f"{HERE}/markhor_ref.png"  # v0.7: Marko the markhor (Pakistan's national animal) replaced Toto the parrot
 
 
-def call(prompt, ref=None, tries=3):
-    parts = [{"text": STYLE + "\n\n" + prompt}]
+def call(prompt, ref=None, tries=3, style=None):
+    parts = [{"text": (style or STYLE) + "\n\n" + prompt}]
     if ref and os.path.exists(ref):
         parts.append({"inlineData": {"mimeType": "image/png", "data": base64.b64encode(open(ref, "rb").read()).decode()}})
         parts.append({"text": "Keep this exact character design: same colours, proportions, eye style and outline weight."})
@@ -75,6 +75,12 @@ def save(data, name, size=None, alpha=True, trim=True):
 
 MASCOT = "a small round baby markhor mascot named Marko (مارخور), turquoise fluffy body, cream chest and face, two short saffron spiral horns, big kind eyes, tiny beard, little hooves"
 POSES = {"hello": "waving hello with one front hoof, cheerful", "listen": "head tilted, one hoof cupped behind the ear, listening", "think": "looking up with a hoof on chin, thinking", "cheer": "both front hooves up, jumping, celebrating, a few small stars around", "oops": "gentle encouraging smile, one hoof raised as if to say try again, no sad face", "sleep": "asleep sitting down, eyes closed, small z shapes", "read": "holding an open book and reading", "point": "pointing to the right with one hoof"}
+POSES2 = {"trophy": "holding a big golden trophy up over his head with both front hooves, very proud, a few small stars", "clap": "clapping his front hooves together, delighted, eyes happy", "proud": "standing tall and proud with chest out, gentle smile, one hoof on hip", "surprised": "happily surprised, mouth open in an O, eyebrows up, sparkle next to head", "heart": "hugging a big red heart with both front hooves, eyes closed, happy", "fire": "sitting beside a small friendly campfire flame, warm smile, cosy", "wave2": "waving goodbye with a big smile, slightly leaning", "letter": "pointing to the left with one hoof, excited, as if showing something"}
+SCENE_STYLE = ("Flat vector illustration for a children's app, thick clean indigo outlines (#1E2F55), no gradients, no texture, no text, no letters, "
+         "full-bleed scene filling the entire frame edge to edge, no white border. Limited palette: Multani turquoise #1E9C8F, saffron #F2A93B, ajrak indigo #1E2F55, "
+         "ralli red #C74A3B, chai cream #F7EBD5, leaf green #5FA55A, soft sky blue #D8F0F6. Warm, simple, rounded shapes, Pakistani everyday life, suitable for age 5.")
+SCENES = {"home_morning": "A wide, sunny Pakistani village courtyard in the morning: a mud-brick house with a turquoise wooden door on the right, a big neem tree on the left, a charpai (woven cot), clay pots with flowers, rolling green hills and a soft sky with two clouds. The middle and lower-left foreground is an open patch of sunny ground left EMPTY for a character to stand on. No characters, no people, no animals. Landscape 3:2.",
+          "home_evening": "The same kind of Pakistani village courtyard at dusk: mud-brick house with a turquoise door and a lantern glowing, neem tree, charpai, deep indigo sky with a crescent moon and stars. Open empty ground in the lower-left foreground for a character to stand on. No characters, no people, no animals. Landscape 3:2."}
 UNITS = {0: "an open door with sunlight, a welcome mat", 1: "six colourful building blocks stacked", 2: "a magnifying glass over three dots", 3: "a tomato, a cap and a bridge in one scene", 4: "a wooden door, a moon and a night sky", 5: "a lion in a small jungle with a rose", 6: "a house with a flag on the roof and a bowl of steaming food", 7: "a girl and a boy holding a big box and a doll", 8: "a pen writing a letter beside a garden wall", 9: "a green parrot on a branch in the morning sun", 10: "a mango, a cup of chai and a small mirror", 11: "a calligraphy reed pen (qalam) and an ink pot beside a rolled newspaper, decorative swirling ribbon shapes, absolutely no letters, no writing, no glyphs", 12: "a stopwatch and a trophy on a school desk"}
 
 
@@ -85,6 +91,12 @@ def main():
         if not os.path.exists(REF):
             data = call(MASCOT + ", standing, waving hello, character sheet, single pose"); open(REF, "wb").write(data); print("reference saved", REF)
         for k, p in POSES.items(): print(save(call(f"{MASCOT}, {p}. Single character, full body.", REF), f"mascot_{k}.png", (512, 512)))
+    if what == "poses2":
+        for k, p in POSES2.items():
+            if len(sys.argv) > 2 and k not in sys.argv[2:]: continue
+            print(save(call(f"{MASCOT}, {p}. Single character, full body.", REF), f"mascot_{k}.png", (512, 512)))
+    if what == "scenes":
+        for k, p in SCENES.items(): print(save(call(p, style=SCENE_STYLE), f"scene_{k}.png", (1200, 800), alpha=False, trim=False))
     if what == "units":
         for n, p in UNITS.items(): print(save(call(f"Unit header illustration: {p}. Wide composition, no characters, no letters."), f"unit_{n:02d}.png", (900, 500), alpha=False, trim=False))
 

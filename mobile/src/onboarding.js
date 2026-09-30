@@ -4,6 +4,7 @@
 import { db } from './db.js';
 import { C, play, el } from './content.js';
 import { icon, mascot, confetti } from './icons.js';
+import { fx, burst } from './fx.js';
 
 const T = (who, me, child) => who === 'me' ? me : child;
 
@@ -52,14 +53,15 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
 
   function welcome(scr) {
     scr.classList.add('ob-welcome');
-    scr.append(el('div', 'ob-hero', `<div class="ob-sun">${mascot('hello', 190)}</div><div class="ur nastaliq ob-kicker">اردو پڑھنا سیکھیں</div><h1>Read Urdu in ten minutes a day</h1><p class="muted">Hi, I'm Marko. I'll teach you the letters one at a time, and you'll read a real word in the next two minutes.</p>`));
+    scr.append(el('div', 'ob-hero', `<div class="ob-sun fx-stage">${mascot('hello', 190)}</div><div class="ur nastaliq ob-kicker">اردو پڑھنا سیکھیں</div><h1>Read Urdu in ten minutes a day</h1><p class="muted">Hi, I'm Marko. I'll teach you the letters one at a time, and you'll read a real word in the next two minutes.</p>`));
+    scr.querySelector('.ob-sun').prepend(fx('sparkles_loop', { size: 250, loop: true, cls: 'fx-over', speed: .6 }));
     foot(scr, cta("Let's begin", () => { play('ui/welcome'); go(1); }), el('p', 'muted center ob-small', 'Free, no account, works offline'));
   }
   function wake(scr) {
     scr.classList.add('ob-center');
-    const m = el('button', 'ob-sleeper', `<span class="ob-zz">z z z</span>${mascot('sleep', 210)}`); m.setAttribute('aria-label', 'Wake Marko up');
+    const m = el('button', 'ob-sleeper', mascot('sleep', 210)); m.prepend(fx('sleeping_zzz', { size: 90, loop: true, cls: 'fx-zz' })); m.setAttribute('aria-label', 'Wake Marko up');
     const cap = el('h2', 'center', 'Marko is fast asleep'); const sub = el('p', 'muted center', 'Tap him to wake him up.');
-    m.onclick = () => { m.disabled = true; m.innerHTML = mascot('hello', 210); m.classList.add('awake'); play('ui/welcome'); cap.textContent = 'Assalam-o-alaikum!'; sub.innerHTML = "Thanks for waking me. I'm <b>Marko</b>, and I teach reading."; later(() => go(1), 2200); };
+    m.onclick = () => { m.disabled = true; m.innerHTML = mascot('hello', 210); m.prepend(fx('sparkles_loop', { size: 240, cls: 'fx-over' })); m.classList.add('awake'); play('ui/welcome'); cap.textContent = 'Assalam-o-alaikum!'; sub.innerHTML = "Thanks for waking me. I'm <b>Marko</b>, and I teach reading."; later(() => go(1), 2200); };
     scr.append(m, cap, sub);
   }
   function colour(scr) {
@@ -105,7 +107,7 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
   }
   function solution(scr) {
     const mine = (a.pains || []).map(v => PAINS.find(p => p[0] === v)).filter(Boolean).slice(0, 4);
-    scr.append(say('cheer', `Good news, ${esc(a.name)}. <b>I built this for exactly that.</b>`, 96));
+    scr.append(say('surprised', `Good news, ${esc(a.name)}. <b>I built this for exactly that.</b>`, 96));
     const list = el('div', 'ob-fixes'); mine.forEach(([, ic, label, fix]) => list.append(el('div', 'ob-fix', `<span class="ob-ic">${icon(ic)}</span><div><small>${label}</small><b>${fix}</b></div>`))); scr.append(list);
     scr.append(el('p', 'ob-proof', `${icon('star')} The same letter-sound method raised Urdu reading by <b>12.6 words a minute</b> over normal classes in the USAID Pakistan Reading Project.`));
     foot(scr, cta('Show me', () => go(1)));
@@ -119,7 +121,7 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
     const lines = [(a.pains || []).includes('dots') ? 'Grouping the look-alike letters' : `Picking ${T(a.who, 'your', a.name + "'s")} first letters: ا ب ک ل م ن`, `Setting a ${a.minutes || 10}-minute day`, a.speak === 'none' ? 'Adding the meaning of every word' : 'Leaving out English you already know', 'Getting Marko\'s voice ready'];
     const ms = 3000; const ring = el('div', 'ob-ring', `<span class="ob-m" style="--c:${a.colour || 'var(--gold)'}">${mascot('think', 130)}</span>`); ring.style.setProperty('--ms', ms + 'ms');
     const list = el('ul', 'ob-steps', lines.map(t => `<li>${icon('check')}<span>${t}</span></li>`).join(''));
-    scr.append(ring, el('h2', 'center', `Making ${T(a.who, 'your', esc(a.name) + "'s")} path`), list);
+    ring.append(fx('loading_dots', { size: 60, loop: true, cls: 'fx-ringtop' })); scr.append(ring, el('h2', 'center', `Making ${T(a.who, 'your', esc(a.name) + "'s")} path`), list);
     requestAnimationFrame(() => ring.classList.add('go'));
     [...list.children].forEach((li, i) => later(() => li.classList.add('done'), (i + 1) * ms / (lines.length + .5))); later(() => go(1), ms + 500);
   }
@@ -154,7 +156,7 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
     function check() {
       const baba = C.units[1].words.findIndex(w => w[0] === 'بابا'); const key = `units/u01_${String(baba).padStart(2, '0')}`;
       const q = say('listen', '<b>Last one.</b> Which one says <b>baba</b>?', 84); const row = el('div', 'choices ob-choices'); const again = el('button', 'btn btn-chip', `${icon('speaker')} Play again`); again.onclick = () => play(key); stage.append(q, again, row);
-      ['با', 'بابا'].sort(() => Math.random() - .5).forEach(c => { const b = el('button', 'tile ur', c); b.onclick = () => { if (c !== 'بابا') { b.classList.add('no'); play('syllables/be_a'); react(stage, 'think', 'That one is just <b>baa</b>. Look for <b>baa</b> twice.'); later(() => b.classList.remove('no'), 600); return; } row.querySelectorAll('.tile').forEach(x => x.disabled = true); b.classList.add('ok'); play('ui/correct'); a.firstWord = Date.now(); save(); react(stage, 'cheer', '<b>You read it. Really read it.</b>'); stage.append(confettiEl()); later(() => nxt('See what you did'), 900); }; row.append(b); });
+      ['با', 'بابا'].sort(() => Math.random() - .5).forEach(c => { const b = el('button', 'tile ur', c); b.onclick = () => { if (c !== 'بابا') { b.classList.add('no'); play('syllables/be_a'); react(stage, 'think', 'That one is just <b>baa</b>. Look for <b>baa</b> twice.'); later(() => b.classList.remove('no'), 600); return; } row.querySelectorAll('.tile').forEach(x => x.disabled = true); b.classList.add('ok'); play('ui/correct'); a.firstWord = Date.now(); save(); react(stage, 'cheer', '<b>You read it. Really read it.</b>'); stage.append(fx('success_check', { size: 110 })); burst(); later(() => nxt('See what you did'), 900); }; row.append(b); });
       later(() => play(key), 300);
     }
     step();
@@ -162,14 +164,15 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
   const confettiEl = () => { const d = el('div', 'ob-confetti', confetti(22)); return d; };
 
   function value(scr) {
-    scr.classList.add('ob-center'); scr.append(el('div', '', confetti(26)));
-    scr.append(el('div', 'ob-hero', `${mascot('cheer', 150)}<h1>${T(a.who, 'You', esc(a.name))} just read Urdu</h1><div class="ob-card-prev"><div class="ur" style="font-size:64px;line-height:1.6">بابا</div><div class="muted">baba · dad · ${T(a.who, 'your', 'a')} first word</div></div><p class="muted">Two letters, one word, under two minutes. ${T(a.who, 'Show someone who will be proud of you.', 'Send it to the family, they will want to hear about this.')}</p>`));
+    scr.classList.add('ob-center'); scr.append(fx('hearts_or_balloons', { size: '100%', loop: true, cls: 'fx-bg' }));
+    scr.append(el('div', 'ob-hero', `${mascot('heart', 150)}<h1>${T(a.who, 'You', esc(a.name))} just read Urdu</h1><div class="ob-card-prev"><div class="ur" style="font-size:64px;line-height:1.6">بابا</div><div class="muted">baba · dad · ${T(a.who, 'your', 'a')} first word</div></div><p class="muted">Two letters, one word, under two minutes. ${T(a.who, 'Show someone who will be proud of you.', 'Send it to the family, they will want to hear about this.')}</p>`));
     const sh = el('button', 'btn btn-gold btn-wide', `${icon('share')} Share ${T(a.who, 'my', esc(a.name) + "'s")} first word`); sh.onclick = () => shareCard(a).catch(() => {});
     foot(scr, sh, cta('Continue', () => go(1)));
   }
   function streak(scr) {
     scr.classList.add('ob-center', 'ob-blue'); const days = ['M', 'T', 'W', 'T', 'F', 'S', 'S']; const today = (new Date().getDay() + 6) % 7;
-    scr.append(el('div', '', confetti(26)), el('div', 'ob-hero', `<span class="ob-hop">${mascot('cheer', 130)}</span><div class="ob-big-n pop">1</div><div class="ob-streak-l">day streak</div><div class="ob-week">${days.map((d, i) => `<span class="${i === today ? 'on' : i < today ? 'past' : ''}"><i>${i === today ? icon('check') : ''}</i>${d}</span>`).join('')}</div><p>Day 1 counts, because ${T(a.who, 'you', esc(a.name))} read <span class="ur">بابا</span> today. Read a little tomorrow and it becomes two.</p>`));
+    burst(); scr.append(el('div', 'ob-hero', `<span class="ob-hop">${mascot('proud', 110)}</span><div class="ob-flame"><span class="ob-big-n pop">1</span></div><div class="ob-streak-l">day streak</div><div class="ob-week">${days.map((d, i) => `<span class="${i === today ? 'on' : i < today ? 'past' : ''}"><i>${i === today ? icon('check') : ''}</i>${d}</span>`).join('')}</div><p>Day 1 counts, because ${T(a.who, 'you', esc(a.name))} read <span class="ur">بابا</span> today. Read a little tomorrow and it becomes two.</p>`));
+    scr.querySelector('.ob-flame').prepend(fx('streak_flame', { size: 170, loop: true }));
     foot(scr, cta("Let's keep it going", () => go(1)));
   }
   function commit(scr) {

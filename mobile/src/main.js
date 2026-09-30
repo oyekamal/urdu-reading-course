@@ -31,7 +31,8 @@ function onboard() {
       await db.setting('mode', a.who === 'me' ? 'personal' : 'family');
       const track = a.who === 'me' ? (a.speak === 'none' ? 'adult' : 'heritage') : 'child';
       const p = { id: uid(), kind: 'learner', name: a.name, track, grade: '', avatar: a.colour || AVATARS[0], createdAt: Date.now(), goal: a.goal, speaks: a.speak, pains: a.pains || [], minutes: a.minutes || 10, days: a.days || 7 };
-      await db.put('profiles', p); learner(p, undefined, a.reads && a.reads !== 'none');
+      await db.put('profiles', p); if (a.firstWord) await db.put('attempts', { id: uid(), profileId: p.id, unit: 1, drill: 'onboarding', item: 'بابا', correct: true, ms: 0, ts: Date.now() }); // day 1 of the streak is real
+      learner(p, undefined, a.reads && a.reads !== 'none');
     },
   });
 }

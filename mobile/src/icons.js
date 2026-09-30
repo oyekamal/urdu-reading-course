@@ -37,6 +37,7 @@ export const I = {
   school: P('<path d="M3 21V10l9-6 9 6v11"/><path d="M9 21v-6h6v6"/><path d="M3 21h18"/>'),
   plus: P('<path d="M12 5v14M5 12h14"/>'),
   parent: P('<path d="M4 20V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12"/><path d="M8 11h8M8 15h5"/>'),
+  flame: P('<path d="M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-8.5z" fill="currentColor" stroke="none"/>'),
   sparkle: P('<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/>'),
 };
 export const icon = (name, cls = '') => `<span class="ic ${cls}">${I[name] || I.star}</span>`;

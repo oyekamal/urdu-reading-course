@@ -5,6 +5,7 @@ import { C, play, W, shuffle, el, toast } from './content.js';
 import * as D from './drills.js';
 import * as S from './session.js';
 import { icon, mascot, unitArt, confetti, LESSON_ICON } from './icons.js';
+import { fx, burst } from './fx.js';
 
 export function lessonsFor(u) {
   const L = [];
@@ -39,7 +40,7 @@ export async function renderPath(main, ctx) {
   for (const u of C.units) {
     if (u.n > cur + 1) break; if (u.n < cur - 1) continue;
     const st = await lessonState(profile.id, u); const locked = u.n > cur;
-    const card = el('div', 'card unit' + (u.n === cur ? ' cur' : '')); card.style.opacity = locked ? .6 : 1;
+    const card = el('div', 'card unit' + (u.n === cur ? ' cur' : '')); if (locked) card.classList.add('teaser');
     card.innerHTML = `<div class="unit-head"><div><span class="pill">Unit ${u.n}</span> <b style="font-family:var(--display);font-size:18px">${u.title}</b><div class="ur nastaliq" style="font-size:16px;color:var(--muted)">${u.title_ur}</div>${st.passed ? `<span class="pill" style="background:var(--good);color:#fff">${icon('check')} passed</span>` : locked ? `<span class="muted">${icon('lock')} finish unit ${u.n - 1}</span>` : ''}</div><span class="art-disc">${unitArt(u.n)}</span></div>`;
     const path = el('div', 'thread');
     st.ls.forEach((l, i) => { const isDone = !!st.done[l.id], isCur = !locked && i === st.current; const face = l.icon && /[؀-ۿ]/.test(l.icon) ? `<span class="ur">${l.icon}</span>` : icon(LESSON_ICON[l.kind] || 'star'); const b = el('button', 'pearl' + (isDone ? ' done' : isCur ? ' cur' : ' locked'), `${isDone ? icon('check') : face}<small>${l.title}</small>`); b.setAttribute('aria-label', `${l.title}${isDone ? ', done' : isCur ? ', up next' : ', locked'}`);
@@ -53,7 +54,7 @@ export async function renderPath(main, ctx) {
 // ---- one lesson = a few short screens ----
 export async function runLesson(main, ctx, u, idx) {
   const { profile, marks, styleName, dctx } = ctx; const t = document.getElementById('toast'); if (t) t.classList.remove('show'); const ls = lessonsFor(u); const l = ls[idx]; if (!l) return ctx.go('path');
-  main.innerHTML = ''; const head = el('div', 'row'); head.style.justifyContent = 'space-between'; head.innerHTML = `<div><div class="muted">Unit ${u.n} · lesson ${idx + 1} of ${ls.length}</div><h1>${l.title}</h1></div>`; const x = el('button', 'btn', icon('cross')); x.setAttribute('aria-label', 'Leave lesson'); x.onclick = () => ctx.go('path'); head.append(x); main.append(head);
+  main.innerHTML = ''; main.className = 'lesson'; const head = el('div', 'row'); head.style.justifyContent = 'space-between'; head.innerHTML = `<div><div class="muted">Unit ${u.n} · lesson ${idx + 1} of ${ls.length}</div><h1>${l.title}</h1></div>`; const x = el('button', 'btn', icon('cross')); x.setAttribute('aria-label', 'Leave lesson'); x.onclick = () => ctx.go('path'); head.append(x); main.append(head);
   const dots = el('div', 'progress', '<i style="width:0"></i>'); main.append(dots); const box = el('div'); main.append(box);
   const screens = buildScreens(l, u, ctx); let i = 0;
   const cont = (label = 'Continue') => { const b = el('button', 'btn btn-primary btn-wide', label); b.style.marginTop = '12px'; b.onclick = next; return b; };
@@ -62,8 +63,14 @@ export async function runLesson(main, ctx, u, idx) {
   ctx.later = (fn, ms) => { const h = setTimeout(fn, ms); (ctx.timers = ctx.timers || []).push(h); return h; };
   async function next() { (ctx.timers || []).forEach(clearTimeout); ctx.timers = []; const tt = document.getElementById('toast'); if (tt) tt.classList.remove('show'); i++; dots.firstChild.style.width = Math.min(100, i / screens.length * 100) + '%'; if (i >= screens.length) return finish(); screens[i](box, cont); window.scrollTo(0, 0); }
   async function finish() { ctx.say(l.kind === 'quiz' || l.kind === 'done' ? 'unit_done' : 'done'); await markLesson(profile.id, u, l.id); if (l.kind === 'letter') await S.ensureCardsFor(profile.id, [l.ch]); if (l.kind === 'done') { await S.markUnit(profile.id, u.n, 10, 10); await S.ensureCards(profile.id, u.n + 1); }
-    box.innerHTML = ''; const c = el('div', 'card hero scene'); c.innerHTML = `${confetti()}${profile.track === 'child' ? mascot('cheer', 150) : `<span class="ic" style="font-size:56px;color:var(--good)">${icon('check')}</span>`}<h2>${l.title} done</h2><span class="pill gold pop">+1 pearl · ${idx + 1} of ${ls.length}</span>`; const nxt = ls[idx + 1];
-    const b = el('button', 'btn btn-primary btn-wide', nxt ? `Next: ${nxt.title}` : 'Back to path'); b.onclick = () => nxt ? runLesson(main, ctx, u, idx + 1) : ctx.go('path'); const back = el('button', 'btn btn-wide', 'Back to path'); back.onclick = () => ctx.go('path'); c.append(b); if (nxt) c.append(back); box.append(c); }
+    box.innerHTML = ''; const big = l.kind === 'quiz' || l.kind === 'done'; const nxt = ls[idx + 1]; const total = await S.pearls(profile.id);
+    const pose = big ? 'trophy' : ['cheer', 'clap', 'proud', 'heart'][total % 4]; const cel = el('div', 'celebrate' + (big ? ' gold' : ''), `<div class="cel-rays"></div><div class="cel-body"><div class="cel-stage">${mascot(pose, 260)}</div><h1>${big ? 'Unit ' + u.n + ' complete!' : l.title + ' done!'}</h1><div class="cel-chip pop">${icon('star')} +1 pearl</div><p>${total} ${total === 1 ? "pearl" : "pearls"} on your thread · lesson ${idx + 1} of ${ls.length}</p></div><div class="cel-foot"></div>`);
+    cel.querySelector('.cel-stage').prepend(fx('stars_pop', { size: 130, cls: 'cel-fx' }));
+    const close = () => cel.remove();
+    const b = el('button', 'btn btn-wide cel-go', nxt ? `Next: ${nxt.title}` : 'Back to path'); b.onclick = () => { close(); nxt ? runLesson(main, ctx, u, idx + 1) : ctx.go('path'); };
+    const back = el('button', 'btn btn-wide cel-back', 'Back to path'); back.onclick = () => { close(); ctx.go('path'); };
+    cel.querySelector('.cel-foot').append(b); if (nxt) cel.querySelector('.cel-foot').append(back); document.body.append(cel); burst();
+  }
   screens[0](box, cont);
 }
 
@@ -79,7 +86,7 @@ function buildScreens(l, u, ctx) {
       const hl = (w) => [...w.ur].map(c => c === L.ch ? `<span style="color:var(--accent)">${c}</span>` : c).join('');
       const screens = [
       // 1 sound intro
-      (box, cont) => { box.innerHTML = ''; const c = card(`<div class="blob"><div class="ur big" style="font-size:130px">${L.ch}</div>${mascot('listen', 84, 'peek')}</div><h2 class="center">${L.name}</h2><p class="center muted">/${L.ipa}/ · ${L.hint}</p>`); const r = el('div', 'row'); r.style.justifyContent = 'center'; const b1 = el('button', 'btn btn-chip', `${icon('speaker')} Say it again`); b1.onclick = () => play('names/' + L.id); const ex = (() => { const set = learned(); for (const x of C.units.filter(x => x.n <= u.n)) for (let i = 0; i < x.words.length; i++) { const w = W(x.words[i]); if (w.ur.includes(L.ch) && decodable(w, set)) return { w, key: `units/u${String(x.n).padStart(2, '0')}_${String(i).padStart(2, '0')}` }; } return null; })(); const b2 = el('button', 'btn btn-chip', `${icon('speaker')} ${ex ? ex.w.rom + ' · ' + ex.w.en : L.example[1] + ' · ' + L.example[2]}`); b2.onclick = () => play(ex ? ex.key : 'words/' + L.id); r.append(b1, b2); c.append(r, el('div', 'ur center', hl(ex ? ex.w : W(L.example)))); box.append(c, cont('I heard it')); ctx.say('listen'); ctx.later(() => play('names/' + L.id), profile.track === 'child' ? 1500 : 200); },
+      (box, cont) => { box.innerHTML = ''; const c = card(`<div class="blob"><div class="ur big" style="font-size:130px">${L.ch}</div>${mascot('letter', 84, 'peek')}</div><h2 class="center">${L.name}</h2><p class="center muted">/${L.ipa}/ · ${L.hint}</p>`); const r = el('div', 'row'); r.style.justifyContent = 'center'; const b1 = el('button', 'btn btn-chip', `${icon('speaker')} Say it again`); b1.onclick = () => play('names/' + L.id); const ex = (() => { const set = learned(); for (const x of C.units.filter(x => x.n <= u.n)) for (let i = 0; i < x.words.length; i++) { const w = W(x.words[i]); if (w.ur.includes(L.ch) && decodable(w, set)) return { w, key: `units/u${String(x.n).padStart(2, '0')}_${String(i).padStart(2, '0')}` }; } return null; })(); const b2 = el('button', 'btn btn-chip', `${icon('speaker')} ${ex ? ex.w.rom + ' · ' + ex.w.en : L.example[1] + ' · ' + L.example[2]}`); b2.onclick = () => play(ex ? ex.key : 'words/' + L.id); r.append(b1, b2); c.append(r, el('div', 'ur center', hl(ex ? ex.w : W(L.example)))); box.append(c, cont('I heard it')); ctx.say('listen'); ctx.later(() => play('names/' + L.id), profile.track === 'child' ? 1500 : 200); },
       // 2 tap the sound among look-alikes
       ...(pool.length < 2 ? [] : [(box, cont) => { box.innerHTML = ''; ctx.say('tap_heard'); box.append(el('p', 'muted', sibs.length ? `Listen, then tap. ${L.name} looks like ${sibs.map(c => C.by[c].name).join(', ')}: count the dots.` : 'Listen, then tap the letter you hear.')); box.append(D.tellApart(u, dctx, () => box.append(cont()), { letters: [L.ch], learned: pool, rounds: 5 })); }]),
       // 3 where it sits in a word: four shapes, each in a real word
