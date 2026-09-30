@@ -11,14 +11,14 @@
 
 ## Blind critic rounds, in-app look vs Finch (bar = `.audit/onboarding/bar/` 36 frames + store/)
 - r3: Finch wins clear (flat utility look). r4: Finch wins SLIGHT. Gaps named: (1) Marko reuses one pose → more poses; (2) home should be a painted scene; (3) lesson screen more alive.
-- r5 NOT RUN YET.
+- r5 NOT RUN YET. Gemini poses + scenes GENERATED, checked by eye (all on-model, no fake glyphs) and PACKED (commit after a50c5e9).
 
 ## In progress when the session stopped
 - Gemini art generation: `design/gen/gen_assets.py poses2` (mascot_trophy/clap/proud/surprised/heart/fire/wave2/letter) and `scenes` (scene_home_morning/evening). Logs `design/gen/gen_poses2.log`, `gen_scenes.log`. Output `design/gen/out/`.
 - The code ALREADY references these (mascot('trophy'|'clap'|'proud'|'heart'|'surprised'|'letter'), `img/scene_home_*.webp`). Until they are packed, those images 404 (mascot poses show broken; the scene falls back to the sky colour).
 
 ## Next steps
-1. Check `design/gen/out/mascot_{trophy,clap,proud,surprised,heart,fire,wave2,letter}.png` + `scene_home_*.png` exist; look at each (reject fake Urdu glyphs / off-model Marko; regenerate one with `python3 design/gen/gen_assets.py poses2 <name>`).
-2. `python3 scripts/pack_images.py` → `mobile/public/img/*.webp`.
+1. (done) art generated + packed.
+2. (done).
 3. Dev server `cd mobile && npx vite --port 5188`; screenshots: `python3 tools/onb_shots.py 5188 <out>` and the in-app capture snippet (Just me → path → lesson → done → unit done → letter → units → review), then blind strips vs Finch (`36_home_first_view, 33_day_streak_1, 32_day1_greeting, store/iphone_01,03,05`) and a fresh harsh critic subagent (format: WINNER/MARGIN/WHY/TOP 3 GAPS). Loop until ours wins.
 4. `npm run build`, sync `reader/` (copy of mobile/dist) + APK (`npm run apk`), bump version, push. Progress page: https://claude.ai/artifact/EhyVf4FbnuKPA2kVKeUjMx (source `.audit/onboarding/progress.html`, images `.audit/onboarding/site/`).
