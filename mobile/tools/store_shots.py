@@ -3,7 +3,7 @@ import sys, re; from playwright.sync_api import sync_playwright
 port=sys.argv[1] if len(sys.argv)>1 else '5188'; out='../store/raw'
 with sync_playwright() as p:
     b=p.chromium.launch(); ctx=b.new_context(viewport={"width":412,"height":880}, device_scale_factor=2.62); pg=ctx.new_page(); pg.on("dialog", lambda d: d.accept())
-    pg.goto(f"http://localhost:{port}/"); pg.wait_for_timeout(1800); pg.screenshot(path=f"{out}/08_mode.png")
+    pg.goto(f"http://localhost:{port}/?skiponb"); pg.wait_for_timeout(1800); pg.screenshot(path=f"{out}/08_mode.png")
     pg.click("text=Just me"); pg.wait_for_timeout(300); pg.click("text=+ Add a learner"); pg.fill("input[placeholder=Name]","Zara"); pg.click("button:has-text('Start')"); pg.wait_for_timeout(1500)
     # seed realistic demo progress so the Progress screenshot doesn't show zeros
     pid = pg.evaluate("(async()=>{const {db}=await import('/src/db.js');const p=(await db.all('profiles'))[0];return p.id})()")
@@ -28,7 +28,7 @@ with sync_playwright() as p:
     pg.click(".bottom button:has-text('Units')"); pg.wait_for_timeout(700); pg.click(".ucard:nth-child(12)"); pg.wait_for_timeout(1200)
     pg.wait_for_selector(".nastaliq", timeout=8000); pg.evaluate("""()=>{const h=[...document.querySelectorAll('.card h3')].find(x=>x.textContent.includes('Nastaliq'));const card=h.closest('.card');const main=card.parentElement;[...main.children].forEach(c=>{if(c!==card&&!c.matches('.row,.bottom'))c.style.display='none'});const keep=new Set([h,h.nextElementSibling]);[...card.children].forEach(c=>{if(!keep.has(c))c.remove()});const t=document.createElement('h2');t.textContent='Same word, two typefaces';card.prepend(t);const pp=document.createElement('p');pp.className='muted';pp.textContent='Learn in Naskh. Read newspapers and books in Nastaliq.';t.after(pp);[...card.querySelectorAll('.row .card')].forEach(x=>{x.style.width='100%';x.style.fontSize='34px'});window.scrollTo(0,0)}"""); pg.wait_for_timeout(400); pg.screenshot(path=f"{out}/05_nastaliq.png")
     # teacher assess
-    ctx2=b.new_context(viewport={"width":412,"height":880}, device_scale_factor=2.62); pg2=ctx2.new_page(); pg2.on("dialog", lambda d: d.accept()); pg2.goto(f"http://localhost:{port}/"); pg2.wait_for_timeout(1500)
+    ctx2=b.new_context(viewport={"width":412,"height":880}, device_scale_factor=2.62); pg2=ctx2.new_page(); pg2.on("dialog", lambda d: d.accept()); pg2.goto(f"http://localhost:{port}/?skiponb"); pg2.wait_for_timeout(1500)
     pg2.click("text=My class"); pg2.wait_for_timeout(400); pg2.fill("input[placeholder='Your name']","Ms Sana"); pg2.fill("input[placeholder='4-digit PIN']","1234"); pg2.click("button:has-text('Save')"); pg2.wait_for_timeout(600)
     pg2.click("button:has-text('Teacher')"); pg2.wait_for_timeout(300); pg2.fill("input[type=password]","1234"); pg2.click("button:has-text('Unlock')"); pg2.wait_for_timeout(1200)
     for n,g in [("Ayesha","1"),("Bilal","2"),("Hira","1")]:

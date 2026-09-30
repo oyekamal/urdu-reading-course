@@ -3,6 +3,7 @@ import { db, uid, ensureDevice } from './db.js';
 import { loadContent, el, toast } from './content.js';
 import { renderLearner } from './learner.js';
 import { icon, mascot, avatar, AVATARS } from './icons.js';
+import { runOnboarding } from './onboarding.js';
 
 const root = document.getElementById('app');
 let settings = {};
@@ -17,9 +18,22 @@ function apply() { document.body.dataset.style = settings.style || 'naskh'; docu
 
 async function boot() {
   await ensureDevice(); await loadContent(); try { navigator.storage?.persist?.(); } catch (e) {} settings = (await db.setting('ui')) || {}; apply();
-  const mode = await db.setting('mode'); if (!mode) return chooseMode();
+  const mode = await db.setting('mode'); if (!mode) return (await db.all('profiles')).length || location.search.includes('skiponb') ? chooseMode() : onboard(); // ponytail: ?skiponb keeps the old test drivers working
   const active = await db.setting('activeProfile'); if (active && mode !== 'school') { const p = await db.get('profiles', active); if (p) return learner(p); }
   home();
+}
+
+// First launch: the questionnaire onboarding creates the device mode and the first learner.
+function onboard() {
+  runOnboarding(root, {
+    teacherSetup: async () => { await db.setting('onb', null); await db.setting('mode', 'school'); setupTeacher(); },
+    finish: async a => {
+      await db.setting('mode', a.who === 'me' ? 'personal' : 'family');
+      const track = a.who === 'me' ? (a.speak === 'none' ? 'adult' : 'heritage') : 'child';
+      const p = { id: uid(), kind: 'learner', name: a.name, track, grade: '', avatar: a.colour || AVATARS[0], createdAt: Date.now(), goal: a.goal, speaks: a.speak, pains: a.pains || [], minutes: a.minutes || 10, days: a.days || 7 };
+      await db.put('profiles', p); learner(p, undefined, a.reads && a.reads !== 'none');
+    },
+  });
 }
 
 function chooseMode() {
@@ -56,7 +70,7 @@ async function addProfile(onDone) {
   const back = el('button', 'btn', 'Back'); back.onclick = home; c.append(lab('Name', name), lab('Track', track), lab('Grade', grade), lab('Colour', av), ok, back); root.append(c);
 }
 
-async function learner(p, backTo) { await db.setting('activeProfile', p.id); document.body.dataset.track = p.track; renderLearner(root, { ...ctxBase, profile: p, mode: await db.setting('mode'), switchProfile: backTo || home }); }
+async function learner(p, backTo, autoPlacement) { await db.setting('activeProfile', p.id); document.body.dataset.track = p.track; renderLearner(root, { ...ctxBase, profile: p, mode: await db.setting('mode'), switchProfile: backTo || home, autoPlacement }); }
 
 async function teacherGate() {
   const pin = await db.setting('teacherPin'); if (!pin) return setupTeacher();

@@ -8,7 +8,7 @@ with sync_playwright() as p:
     b = p.chromium.launch()
     def start(ids):
         pg = b.new_page(viewport={"width": 412, "height": 880}, device_scale_factor=2.62); pg.on("dialog", lambda d: d.accept())
-        pg.goto(f"http://localhost:{port}/"); pg.wait_for_timeout(1500)
+        pg.goto(f"http://localhost:{port}/?skiponb"); pg.wait_for_timeout(1500)
         pg.click("text=Just me"); pg.wait_for_timeout(300); pg.click("text=+ Add a learner"); pg.fill("input[placeholder=Name]", "Zara"); pg.click("button:has-text('Start')"); pg.wait_for_timeout(1500)
         pg.evaluate(SEED, ids); pg.reload(); pg.wait_for_timeout(2500); return pg
     js = lambda pg, h: pg.evaluate("e=>e.click()", h)

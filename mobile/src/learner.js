@@ -25,7 +25,8 @@ export async function renderLearner(root, ctx) {
 
   async function today() {
     const cur = await S.currentUnit(profile.id); const s = await S.stats(profile.id);
-    await header(greeting(profile), `Unit ${cur} · ${C.units[cur].title} · one small lesson at a time`);
+    if (ctx.autoPlacement && cur === 0 && !s.sessions) { ctx.autoPlacement = false; return placement(); }
+    await header(greeting(profile), `Unit ${cur} · ${C.units[cur].title} · ${profile.minutes ? profile.minutes + ' minutes a day' : 'one small lesson at a time'}`);
     await renderPath(main, pctx());
     if (s.wpm.length) { const last = s.wpm[s.wpm.length - 1]; main.append(el('div', 'card', `<b>Last reading speed:</b> ${last.wpm} words per minute <span class="pill ${bandFor(last.wpm)}">${bandFor(last.wpm)}</span>`)); }
     if (cur === 0 && !s.sessions) { const pl = el('div', 'card'); pl.innerHTML = '<h2>Already read some Urdu?</h2><p class="muted">A 2-minute placement check skips the units you already know.</p>'; const b = el('button', 'btn', 'Take the placement check'); b.onclick = () => placement(); pl.append(b); main.append(pl); }

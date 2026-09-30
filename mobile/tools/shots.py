@@ -3,7 +3,7 @@ import sys; from playwright.sync_api import sync_playwright
 port=sys.argv[1] if len(sys.argv)>1 else '5199'; out=sys.argv[2] if len(sys.argv)>2 else '../.audit/ui'
 with sync_playwright() as p:
     b=p.chromium.launch(); pg=b.new_page(viewport={"width":390,"height":844}, device_scale_factor=2); errs=[]; pg.on("pageerror", lambda e: errs.append(str(e)[:300])); pg.on("dialog", lambda d: d.accept())
-    pg.goto(f"http://localhost:{port}/"); pg.wait_for_timeout(2000); pg.screenshot(path=f"{out}/01_mode.png")
+    pg.goto(f"http://localhost:{port}/?skiponb"); pg.wait_for_timeout(2000); pg.screenshot(path=f"{out}/01_mode.png")
     pg.click("text=Just me"); pg.wait_for_timeout(400); pg.click("text=+ Add a learner"); pg.wait_for_timeout(300); pg.screenshot(path=f"{out}/02_add.png")
     pg.fill("input[placeholder=Name]","Zara"); pg.click("button:has-text('Start')"); pg.wait_for_timeout(1800); pg.screenshot(path=f"{out}/03_path.png", full_page=True)
     pg.click(".btn-primary.btn-wide"); pg.wait_for_timeout(1200); pg.screenshot(path=f"{out}/04_lesson_rules.png")
