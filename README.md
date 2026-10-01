@@ -2,7 +2,7 @@
 
 A research-backed course and app that takes anyone, child or adult, Urdu speaker or not, from zero to reading Urdu script. Everything is generated from two data files, so a fix to a letter or a word flows into the cards, the printable lessons and the app.
 
-**Try it now, no install:** the full learner + teacher app runs in the browser and works offline after the first load: https://oyekamal.github.io/urdu-reading-course/reader/ (add it to your home screen). The original single-page course is at https://oyekamal.github.io/urdu-reading-course/app/. Android APK: see Releases. Current version: **v0.9.0** (first-run onboarding, animated Marko, celebrations; see [Onboarding, Marko and the look](#onboarding-marko-and-the-look-v090)).
+**Try it now, no install:** the full learner + teacher app runs in the browser and works offline after the first load: https://oyekamal.github.io/urdu-reading-course/reader/ (add it to your home screen). The original single-page course is at https://oyekamal.github.io/urdu-reading-course/app/. Android APK: see Releases. Current version: **v0.10.0** (adds the interactivity pass on top of the v0.9.0 onboarding, animated Marko and look; see [Onboarding, Marko and the look](#onboarding-marko-and-the-look-v090) and [Interactivity and emotional design](#interactivity-and-emotional-design-v0100)).
 
 ## What is in the box
 
@@ -163,6 +163,20 @@ Built with the [app-onboarding-questionnaire](https://github.com/adamlyttleapps/
 **QA tools:** `mobile/tools/ui_audit.py <port> <outdir>` walks about 60 screens at 390x844 and checks tap-target sizes, overflow, a docked primary action, content under fixed bars and contrast (0 violations on child and adult profiles); `mobile/tools/drive_all.py` plays units 0 to 12 end to end; `mobile/tools/onb_shots.py` screenshots the onboarding. Run the dev server with `cd mobile && npx vite --port 5188`.
 
 Re-generate Marko art: `cd design/gen && python3 gen_assets.py mascot|poses2|scenes|units` (needs `GEMINI_API_KEY`), then `python3 scripts/pack_images.py`. Rebuild his animations: `python3 design/marko-rig/make_marko.py`.
+
+## Interactivity and emotional design (v0.10.0)
+
+Brief: a talk on emotional design ([`research/18_emotional_design_talk.md`](research/18_emotional_design_talk.md)) argues that products win on how they feel (Duolingo's animated mascot and feedback loops, Phantom's polish as trust, Revolut's tactile, light-catching details). We gauntlet-looped it against **Duolingo's real lesson moments** (frame sequences captured from public recordings, notes in `.audit/interact/bar/DUOLINGO_FEEL.md`, gitignored because of size). Final blind result, four comparisons, ours won all four clearly: correct answer, wrong answer, lesson-complete celebration, home and premium details. Round-by-round trail and screenshots: `.audit/onboarding/RESUME.md` and `.audit/onboarding/progress.html`.
+
+**Feel (`mobile/src/feel.js`):** every tap gets an instant press spring, ripple, tick and haptic. A right answer hops, rings and sparkles, plays a rising chime and Marko cheers; "N in a row" chips pop and the progress bar warms from gold to orange. A wrong answer is kind and instantly recoverable: the right tile turns green with a check, the tapped one softens with an amber outline and a small wobble (never red), a bubble says what to look for ("Count the dots: ب has one"), and Marko reacts. Sounds are synthesised in WebAudio (no files); haptics use `@capacitor/haptics`; a "Sounds and vibration" switch lives in Me.
+
+**Motion (`path.js`, `learner.js`):** lesson progress bar with a sparkling head, count-ups for pearls, minutes and days, a daily-goal ring that celebrates when reached and says nothing when missed, a two-beat lesson-complete reveal, a unit-unlock animation, tap-to-poke Marko on the home screen, quick screen transitions.
+
+**Premium (`premium.js`, `stickers.js`, `memory.js`, `drills.js`):** glowing-ink tracing on a paper canvas with a dotted guide, start dot and arrow; a sticker book (one deterministic sticker per mastered letter, embossed locked slots, foil, progress shelf, tabs per unit) with a flip reveal; light-catching pearls and tiles that follow the pointer or device tilt; a parallax village with drifting clouds by day and fireflies after dark; Marko lines built from real progress ("Yesterday we met ب").
+
+**Child-safe rules (deliberate):** no hearts or lives, no leaderboards, no streak-loss pressure (the counter is "days practised" and only ever goes up), no guilt copy, no ads or purchase nudges, no red failure states, no random loot.
+
+**More QA tools:** `mobile/tools/feel_seq.py`, `motion_seq.py`, `premium_seq.py` and `finish_seq.py` record timed frame sequences; `ui_audit.py` (0 violations) and `drive_all.py` (units 0 to 12, waits for the two-beat celebration) as before. Android: after `npm install` run `npx cap sync android` so the haptics plugin is linked.
 
 ## Android app
 
