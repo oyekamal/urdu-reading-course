@@ -171,7 +171,7 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
   }
   function streak(scr) {
     scr.classList.add('ob-center', 'ob-blue'); const days = ['M', 'T', 'W', 'T', 'F', 'S', 'S']; const today = (new Date().getDay() + 6) % 7;
-    burst(); scr.append(el('div', 'ob-hero', `<span class="ob-hop">${mascot('proud', 110)}</span><div class="ob-flame"><span class="ob-big-n pop">1</span></div><div class="ob-streak-l">day streak</div><div class="ob-week">${days.map((d, i) => `<span class="${i === today ? 'on' : i < today ? 'past' : ''}"><i>${i === today ? icon('check') : ''}</i>${d}</span>`).join('')}</div><p>Day 1 counts, because ${T(a.who, 'you', esc(a.name))} read <span class="ur">بابا</span> today. Read a little tomorrow and it becomes two.</p>`));
+    burst(); scr.append(el('div', 'ob-hero', `<span class="ob-hop">${mascot('proud', 110)}</span><div class="ob-flame"><span class="ob-big-n pop">1</span></div><div class="ob-streak-l">day practised</div><div class="ob-week">${days.map((d, i) => `<span class="${i === today ? 'on' : i < today ? 'past' : ''}"><i>${i === today ? icon('check') : ''}</i>${d}</span>`).join('')}</div><p>Day 1 counts, because ${T(a.who, 'you', esc(a.name))} read <span class="ur">بابا</span> today. Read a little tomorrow and it becomes two.</p>`));
     scr.querySelector('.ob-flame').prepend(fx('streak_flame', { size: 170, loop: true }));
     foot(scr, cta("Let's keep it going", () => go(1)));
   }

@@ -7,6 +7,33 @@ import * as S from './session.js';
 import { icon, mascot, unitArt, confetti, LESSON_ICON } from './icons.js';
 import { fx, burst } from './fx.js';
 
+// ---- round 9b: progress + motion helpers (count-ups, daily goal, unlock memory) ----
+const reduceMo = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+export const sGet = (k) => { try { const v = sessionStorage.getItem(k); return v == null ? null : JSON.parse(v); } catch (e) { return null; } };
+export const sSet = (k, v) => { try { sessionStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+// restart a CSS animation class on an element
+export function retrigger(node, cls, ms = 900) { if (!node) return; node.classList.remove(cls); void node.offsetWidth; node.classList.add(cls); if (ms) setTimeout(() => node.classList.remove(cls), ms); }
+// Count a number up from the value this profile last saw (sessionStorage `key`) to `to`, with a tiny pop at the end.
+// Only counts upward; first sight, same value or reduced motion just show the number.
+export function countUp(node, to, { key, from, dur = 700, delay = 0, fmt = (v) => v } = {}) {
+  const stored = key ? sGet(key) : null; let prev = from ?? stored ?? to; if (key) sSet(key, to);
+  node.textContent = fmt(Math.min(prev, to)); if (!(prev < to) || reduceMo()) { node.textContent = fmt(to); return; }
+  const run = () => { if (!node.isConnected) { node.textContent = fmt(to); return; } const t0 = performance.now(); const tick = (now) => { const k = Math.min(1, (now - t0) / dur); const e = 1 - Math.pow(1 - k, 3); node.textContent = fmt(Math.round(prev + (to - prev) * e)); if (k < 1) requestAnimationFrame(tick); else { node.textContent = fmt(to); retrigger(node, 'cu-pop', 500); } }; requestAnimationFrame(tick); };
+  delay ? setTimeout(run, delay) : run();
+}
+// Daily goal: minutes practised today (profile.minutes = the goal). Gaps over 3 min start a new burst; gaps are capped at 45 s.
+export async function dailyGoal(profile) {
+  const goal = Number(profile.minutes) || 10; const today = new Date().toDateString();
+  const att = (await db.by('attempts', 'profileId', profile.id)).map(a => a.ts); const p = await S.getProgress(profile.id);
+  const les = Object.values(p.units || {}).flatMap(u => Object.values(u.lessons || {})).filter(t => typeof t === 'number');
+  const ts = [...att, ...les].filter(t => new Date(t).toDateString() === today).sort((a, b) => a - b); let ms = 0;
+  ts.forEach((t, i) => { const gap = i ? t - ts[i - 1] : Infinity; ms += gap > 180000 ? 20000 : Math.min(gap, 45000); });
+  const minutes = ms / 60000; return { goal, minutes, frac: Math.min(1, minutes / goal), done: minutes >= goal };
+}
+export const goalFlag = (pid) => `urc-goal-${pid}-${new Date().toDateString()}`;
+// the unit that opened since this profile last saw the path (set by renderPath, read by Today)
+export const unlockInfo = { n: null };
+
 export function lessonsFor(u) {
   const L = [];
   if (u.n === 0) { L.push({ id: 'rules', kind: 'rules', title: 'Three rules' }, { id: 'done', kind: 'done', title: 'Finish unit' }); return L; }
@@ -51,9 +78,18 @@ function stringThread(path) {
     path.insertAdjacentHTML('afterbegin', `<svg class="string" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" aria-hidden="true"><path class="s-todo" d="${run(0, ps.length - 1)}"/>${lastDone >= 0 ? `<path class="s-done" d="${run(0, strung)}"/>` : ''}</svg>`); };
   requestAnimationFrame(draw); if (typeof ResizeObserver === 'function') new ResizeObserver(() => requestAnimationFrame(draw)).observe(path);
 }
+// a unit that just opened: the lock pops off the art, a glow ring pulses, a small confetti burst. Plays once, scrolls into view first.
+function unlockMoment(card, u) {
+  card.classList.add('unlocking'); const disc = card.querySelector('.art-disc');
+  const lock = el('span', 'unlock-lock', icon('lock')); disc?.append(lock); card.append(fx('confetti_burst', { size: 240, cls: 'unlock-fx' }));
+  const go = () => { if (!card.isConnected) return; card.classList.add('unlock-go'); setTimeout(() => card.classList.remove('unlocking', 'unlock-go'), 2400); setTimeout(() => card.querySelector('.unlock-fx')?.remove(), 2600); };
+  if (reduceMo()) return go();
+  setTimeout(() => { if (!card.isConnected) return; const b = card.getBoundingClientRect(); if (b.top > innerHeight - 220 || b.bottom < 100) card.scrollIntoView({ block: 'center', behavior: 'smooth' }); setTimeout(go, b.top > innerHeight - 220 ? 550 : 120); }, 450);
+}
 export async function renderPath(main, ctx) {
   const { profile } = ctx; const cur = await S.currentUnit(profile.id); const s = await S.stats(profile.id);
   if (s.due) { const r = el('div', 'card row'); r.style.justifyContent = 'space-between'; r.innerHTML = `<div><b>${icon('review')} Review</b><div class="muted">${s.due} cards due</div></div>`; const b = el('button', 'btn', `${icon('review')} Review`); b.onclick = () => ctx.go('review'); r.append(b); main.append(r); }
+  const curKey = `urc-cur-${profile.id}`; const prevCur = sGet(curKey); sSet(curKey, cur); unlockInfo.n = prevCur != null && cur > prevCur ? cur : null;
   for (const u of C.units) {
     if (u.n > cur + 1) break; if (u.n < cur - 1) continue;
     const st = await lessonState(profile.id, u); const locked = u.n > cur;
@@ -69,6 +105,7 @@ export async function renderPath(main, ctx) {
     card.append(path); stringThread(path);
     if (!locked && !st.passed && st.current < st.ls.length) { const go = el('button', 'btn btn-primary btn-wide dock', `${st.done[st.ls[0].id] ? 'Continue' : 'Start'}: ${st.ls[st.current].title}`); go.onclick = () => ctx.openLesson(u, st.current); card.append(go); }
     main.append(card);
+    if (unlockInfo.n === u.n && !locked) unlockMoment(card, u);
     if (fresh.length) requestAnimationFrame(() => { const p = path.querySelector('.pearl.pop'); if (p && p.getBoundingClientRect().top > innerHeight - 160) path.scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); });
   }
   if (cur >= 12) main.append(el('div', 'card center', mascot('cheer', 150) + '<b>You have finished the course.</b><div class="muted">Keep reading in the Read tab and retest every four weeks.</div>'));
@@ -78,16 +115,20 @@ export async function renderPath(main, ctx) {
 export async function runLesson(main, ctx, u, idx) {
   const { profile, marks, styleName, dctx } = ctx; const t = document.getElementById('toast'); if (t) t.classList.remove('show'); const ls = lessonsFor(u); const l = ls[idx]; if (!l) return ctx.go('path');
   main.innerHTML = ''; main.className = 'lesson'; const head = el('div', 'row'); head.style.justifyContent = 'space-between'; head.innerHTML = `<div><div class="muted">Unit ${u.n} · lesson ${idx + 1} of ${ls.length}</div><h1>${l.title}</h1></div>`; const x = el('button', 'btn', icon('cross')); x.setAttribute('aria-label', 'Leave lesson'); x.onclick = () => ctx.go('path'); head.append(x); main.append(head);
-  const dots = el('div', 'progress', '<i style="width:0"></i>'); main.append(dots); const box = el('div'); main.append(box);
+  // round 9b: springy fill + moving shine + a sparkle riding the head; pulse at 50% and 100%
+  const dots = el('div', 'progress live', '<i style="width:0"></i>'); const spark = el('span', 'pg-spark'); spark.setAttribute('aria-hidden', 'true'); const pgw = el('div', 'pg-wrap'); pgw.append(dots, spark); main.append(pgw); const box = el('div', 't-kids'); main.append(box); let pct = 0, finishing = false;
+  const setPct = (v) => { const old = pct; if (v < old) return; pct = v; pgw.style.setProperty('--warm', Math.round(v) + '%'); dots.firstChild.style.width = v + '%'; spark.style.left = v + '%'; pgw.classList.toggle('has', v > 0); if (v > old) retrigger(pgw, 'adv', 900); if (old < 50 && v >= 50 && v < 100) retrigger(pgw, 'p50', 700); if (old < 100 && v >= 100) retrigger(pgw, 'p100', 900); };
   const screens = buildScreens(l, u, ctx); let i = 0;
   const cont = (label = 'Continue') => { const b = el('button', 'btn btn-primary btn-wide', label); b.style.marginTop = '12px'; b.onclick = next; return b; };
   ctx.say = (key, force) => { if (profile.track === 'child' || force) ctx.later(() => play('ui/' + key), 120); };
   const rep = el('button', 'btn btn-play', icon('speaker')); rep.setAttribute('aria-label', 'Repeat instruction'); rep.onclick = () => { if (ctx.lastSay) play('ui/' + ctx.lastSay); }; head.insertBefore(rep, x); const _say = ctx.say; ctx.say = (k, f) => { ctx.lastSay = k; _say(k, f); };
   ctx.later = (fn, ms) => { const h = setTimeout(fn, ms); (ctx.timers = ctx.timers || []).push(h); return h; };
-  async function next() { (ctx.timers || []).forEach(clearTimeout); ctx.timers = []; const tt = document.getElementById('toast'); if (tt) tt.classList.remove('show'); i++; dots.firstChild.style.width = Math.min(100, i / screens.length * 100) + '%'; if (i >= screens.length) return finish(); screens[i](box, cont); window.scrollTo(0, 0); }
-  async function finish() { ctx.say(l.kind === 'quiz' || l.kind === 'done' ? 'unit_done' : 'done'); await markLesson(profile.id, u, l.id); if (l.kind === 'letter') await S.ensureCardsFor(profile.id, [l.ch]); if (l.kind === 'done') { await S.markUnit(profile.id, u.n, 10, 10); await S.ensureCards(profile.id, u.n + 1); }
-    box.innerHTML = ''; const big = l.kind === 'quiz' || l.kind === 'done'; const nxt = ls[idx + 1]; const total = await S.pearls(profile.id);
-    const pose = big ? 'trophy' : ['cheer', 'clap', 'proud', 'heart'][total % 4]; const cel = el('div', 'celebrate' + (big ? ' gold' : ''), `<div class="cel-rays"></div><div class="cel-top"></div><div class="cel-body"><div class="cel-stage">${mascot(pose, 260)}</div><h1>${big ? 'Unit ' + u.n + ' complete!' : l.title + ' done!'}</h1><div class="cel-chip pop">${icon('star')} +1 pearl</div><p>${total} ${total === 1 ? "pearl" : "pearls"} on your thread · lesson ${idx + 1} of ${ls.length}</p></div><div class="cel-foot"></div>`);
+  async function next() { (ctx.timers || []).forEach(clearTimeout); ctx.timers = []; const tt = document.getElementById('toast'); if (tt) tt.classList.remove('show'); if (finishing) return; i++; setPct(Math.min(100, Math.round(i / screens.length * 100))); if (i >= screens.length) return finish(); screens[i](box, cont); window.scrollTo(0, 0); }
+  async function finish() { finishing = true; ctx.say(l.kind === 'quiz' || l.kind === 'done' ? 'unit_done' : 'done'); const g0 = await dailyGoal(profile); await markLesson(profile.id, u, l.id); if (l.kind === 'letter') await S.ensureCardsFor(profile.id, [l.ch]); if (l.kind === 'done') { await S.markUnit(profile.id, u.n, 10, 10); await S.ensureCards(profile.id, u.n + 1); }
+    const g1 = await dailyGoal(profile); const goalHit = g1.done && !g0.done && !sGet(goalFlag(profile.id)); if (g1.done) sSet(goalFlag(profile.id), 1);
+    if (!reduceMo()) await new Promise(r => setTimeout(r, 420)); // let the bar fill + pulse land before the screen changes
+    box.innerHTML = ''; const big = l.kind === 'quiz' || l.kind === 'done'; const nxt = ls[idx + 1]; const total = await S.pearls(profile.id); const prevTotal = Math.max(0, Math.min(total, sGet(`urc-cel-${profile.id}`) ?? total - 1)); sSet(`urc-cel-${profile.id}`, total);
+    const pose = big ? 'trophy' : ['cheer', 'clap', 'proud', 'heart'][total % 4]; const cel = el('div', 'celebrate' + (big ? ' gold' : ''), `<div class="cel-rays"></div><div class="cel-top"></div><div class="cel-body"><div class="cel-stage">${mascot(pose, 260)}</div><h1>${big ? 'Unit ' + u.n + ' complete!' : l.title + ' done!'}</h1><div class="cel-chip pop">${icon('star')} +1 pearl</div>${goalHit ? `<div class="cel-goal">${icon('check')} Daily goal reached!</div>` : ''}<p><b class="cel-total">${total}</b> ${total === 1 ? "pearl" : "pearls"} on your thread · lesson ${idx + 1} of ${ls.length}</p></div><div class="cel-foot"></div>`);
     cel.querySelector('.cel-stage').prepend(fx('stars_pop', { size: 130, cls: 'cel-fx' })); cel.prepend(fx('confetti_burst', { size: '100%', loop: true, cls: 'cel-confetti' }));
     const chip = cel.querySelector('.cel-chip'); chip.insertAdjacentHTML('beforeend', [...Array(12)].map((_, k) => `<i class="cel-pearl" style="--a:${k * 30}deg;--d:${(k % 3) * .08 + .5}s"></i>`).join(''));
     if (big) { const fw = () => cel.isConnected && (burst(), setTimeout(fw, 1800)); setTimeout(fw, 1200); }
@@ -95,6 +136,7 @@ export async function runLesson(main, ctx, u, idx) {
     const b = el('button', 'btn btn-primary btn-wide cel-go', nxt ? `Next: ${nxt.title}` : 'Back to path'); b.onclick = () => { close(); nxt ? runLesson(main, ctx, u, idx + 1) : ctx.go('path'); };
     const back = el('button', 'btn cel-back', `${icon('cross')} Path`); back.setAttribute('aria-label', 'Back to path'); back.onclick = () => { close(); ctx.go('path'); };
     cel.querySelector('.cel-foot').append(b); if (nxt) cel.querySelector('.cel-top').append(back); document.body.append(cel); burst();
+    countUp(cel.querySelector('.cel-total'), total, { from: prevTotal, delay: 950, dur: 500 }); if (goalHit) cel.querySelector('.cel-goal').append(fx('sparkles_loop', { size: 56, loop: true, cls: 'cel-goal-fx' }));
   }
   screens[0](box, cont);
 }

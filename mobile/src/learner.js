@@ -4,7 +4,8 @@ import { C, play, W, shuffle, wordKey, sentKey, el, toast, bandFor } from './con
 import * as D from './drills.js';
 import * as S from './session.js';
 import { renderDashboard } from './dashboard.js';
-import { renderPath, runLesson, lessonState } from './path.js';
+import { renderPath, runLesson, lessonState, countUp, dailyGoal, goalFlag, unlockInfo, retrigger, sGet, sSet } from './path.js';
+import { setMarko } from './marko.js';
 import { icon, mascot, confetti, unitArt, LESSON_ICON, avatar } from './icons.js';
 import { fx, burst } from './fx.js';
 
@@ -24,7 +25,7 @@ export async function renderLearner(root, ctx) {
   const navOf = t => kid() ? ({ units: 'today', lesson: 'today', progress: 'me', more: 'me', test: 'me' }[t] || t) : ({ me: 'progress', lesson: 'units', test: 'more' }[t] || t);
   function buildNav() { nav.innerHTML = ''; nav.dataset.n = tabKeys().length; tabKeys().forEach(k => { const [ic, lab, c, d] = TAB[k]; const b = el('button', '', `${icon(ic + '_f')}<span class="lb">${lab}</span>`); b.style.setProperty('--tc', c); b.style.setProperty('--td', d); b.onclick = () => { st.tab = k; render(); }; b.dataset.k = k; nav.append(b); }); }
   let navKid = kid(); buildNav();
-  async function render() { if (navKid !== kid()) { navKid = kid(); buildNav(); } if (st.tab === 'me' && !kid()) st.tab = 'progress'; const on = navOf(st.tab); [...nav.children].forEach(b => b.classList.toggle('active', b.dataset.k === on)); main.innerHTML = ''; main.className = ''; window.scrollTo(0, 0); await ({ today, units, review, read, progress, more, me, lesson, session, test, path }[st.tab])(); }
+  async function render() { if (navKid !== kid()) { navKid = kid(); buildNav(); } if (st.tab === 'me' && !kid()) st.tab = 'progress'; const on = navOf(st.tab); [...nav.children].forEach(b => b.classList.toggle('active', b.dataset.k === on)); main.innerHTML = ''; main.className = 't-kids'; window.scrollTo(0, 0); await ({ today, units, review, read, progress, more, me, lesson, session, test, path }[st.tab])(); }
   const pctx = () => ({ profile, marks, styleName, dctx, unit0, aspirates, izafat, punctuation, unit11, sightDrill, go: t => { st.tab = t === 'path' ? 'today' : t; render(); }, openLesson: (u, i) => { st.unitN = u.n; st.tab = 'today'; main.innerHTML = ''; window.scrollTo(0, 0); runLesson(main, pctx(), u, i); } });
   async function path() { st.tab = 'today'; render(); }
 
@@ -33,15 +34,15 @@ export async function renderLearner(root, ctx) {
   async function today() {
     const cur = await S.currentUnit(profile.id); const s = await S.stats(profile.id);
     if (ctx.autoPlacement && cur === 0 && !s.sessions) { ctx.autoPlacement = false; return placement(); }
-    const [pl, sk] = await Promise.all([S.pearls(profile.id), S.streak(profile.id)]);
+    const [pl, sk, goal] = await Promise.all([S.pearls(profile.id), S.streak(profile.id), dailyGoal(profile)]);
     // Above the fold: a painted courtyard with a big Marko in the middle, then ONE "today" card that holds the primary
     // button in its own zone (in the page flow, never floating over another card). The rest of the path is below the fold.
     const u = C.units[cur]; const ls = u ? await lessonState(profile.id, u) : null; const open = ls && !ls.passed && ls.current < ls.ls.length;
     const night = new Date().getHours() >= 18 || new Date().getHours() < 5;
     const hero = el('div', 'home-hero');
     hero.innerHTML = `<div class="hh-top"><div><h1>${greeting(profile)}</h1>${u ? `<div class="muted">Unit ${cur} · ${u.title}</div>` : ''}</div></div>
-      <div class="hh-world" style="background-image:url(./img/scene_home_${night ? 'evening' : 'morning'}.webp)"><div class="hh-badges"><span class="hh-badge">${icon('star')} ${pl}<small>${pl === 1 ? 'pearl' : 'pearls'}</small></span><span class="hh-badge hh-flame">${icon('flame')} ${sk ? `${sk}<small>day streak</small>` : '<small>Start a streak</small>'}</span></div>
-      <div class="hh-stage"><span class="hh-shadow"></span>${mascot(sk > 1 ? 'proud' : 'hello', 240, 'hh-marko')}<span class="hh-say">${open && ls.current > 0 ? `Ready for <b>${ls.ls[ls.current].title}</b>, ${profile.name}?` : pl ? `Hi ${profile.name}! One lesson today?` : `Hi ${profile.name}! Let's earn your first pearl.`}</span></div></div>`;
+      <div class="hh-world" style="background-image:url(./img/scene_home_${night ? 'evening' : 'morning'}.webp)"><div class="hh-badges"><span class="hh-badge hh-pearl">${icon('star')} <b class="cu">${pl}</b><small>${pl === 1 ? 'pearl' : 'pearls'}</small></span><span class="hh-badge hh-goal" role="img" aria-label="Daily goal: ${Math.floor(goal.minutes)} of ${goal.goal} minutes"><span class="hh-ring"><svg viewBox="0 0 30 30" width="30" height="30"><circle class="rg-bg" cx="15" cy="15" r="12"/><circle class="rg-fg" cx="15" cy="15" r="12" pathLength="100"/></svg>${icon(goal.done ? 'check' : 'timer')}</span><b class="cu">${Math.floor(goal.minutes)}</b><small>/ ${goal.goal} min</small></span><span class="hh-badge hh-flame">${icon('flame')} ${sk ? `<b class="cu">${sk}</b><small>${sk === 1 ? 'day practised' : 'days practised'}</small>` : '<small>First day today</small>'}</span></div>
+      <div class="hh-stage"><span class="hh-shadow"></span>${mascot(sk > 1 ? 'proud' : 'hello', 240, 'hh-marko')}<button class="hh-poke" aria-label="Tap Marko to say hi"></button><span class="hh-say">${open && ls.current > 0 ? `Ready for <b>${ls.ls[ls.current].title}</b>, ${profile.name}?` : pl ? `<span class="mem-line">Hi ${profile.name}! One lesson today?</span>` : `Hi ${profile.name}! Let's earn your first pearl.`}</span></div></div>`;
     const who = el('button', 'btn btn-chip hh-who', `${icon('user')} ${profile.name}`); who.setAttribute('aria-label', 'Switch learner'); who.onclick = ctx.switchProfile; hero.querySelector('.hh-top').append(who);
     if (open) {
       const n = Object.keys(ls.done).filter(id => ls.ls.some(l => l.id === id)).length, tot = ls.ls.length, l = ls.ls[ls.current];
@@ -49,15 +50,41 @@ export async function renderLearner(root, ctx) {
       if (s.due) { const rv = el('button', 'btn btn-chip tc-review', `${icon('review')} ${s.due} to review`); rv.onclick = () => { st.tab = 'review'; render(); }; card.querySelector('.tc-head').append(rv); }
       const go = el('button', 'btn btn-primary btn-wide tc-go', `${n ? 'Continue' : 'Start'}: ${l.title}`); go.onclick = () => pctx().openLesson(u, ls.current); card.append(go); hero.append(card);
     } else if (s.due) { const card = el('div', 'card today-card'); const rv = el('button', 'btn btn-primary btn-wide tc-go', `${icon('review')} Review ${s.due} cards`); rv.onclick = () => { st.tab = 'review'; render(); }; card.append(rv); hero.append(card); }
-    main.append(hero);
+    main.append(hero); alive(hero, goal, { pl, sk });
     // below the fold: the unit path (its own review card and docked button are dropped: the today card owns both)
     const pw = el('div', 'home-path'); await renderPath(pw, pctx()); pw.querySelectorAll(':scope > .card.row:not(.unit)').forEach(c => c.remove()); pw.querySelectorAll('.btn-primary').forEach(b => b.remove());
+    if (unlockInfo.n != null && u) { const say = hero.querySelector('.hh-say'), mk = hero.querySelector('.hh-marko'); if (say) { say.dataset.keep = '1'; say.innerHTML = `Unit ${unlockInfo.n} is open, ${profile.name}!`; retrigger(say, 'say-pop', 0); } if (mk && mk._marko) setTimeout(() => setMarko(mk, 'cheer'), 500); }
     main.append(el('h3', 'hh-h3', 'Your path'), pw);
     if (kid()) { const all = el('button', 'card all-units', `<span class="au-ic">${icon('units_f')}</span><span><b>All units</b><small class="muted">See every unit and the letter library</small></span>${icon('next')}`); all.onclick = () => { st.tab = 'units'; render(); }; main.append(all); }
     if (s.wpm.length) { const last = s.wpm[s.wpm.length - 1]; main.append(el('div', 'card', `<b>Last reading speed:</b> ${last.wpm} words per minute <span class="pill ${bandFor(last.wpm)}">${bandFor(last.wpm)}</span>`)); }
     if (cur === 0 && !s.sessions) { const pl = el('div', 'card'); pl.innerHTML = '<h2>Already read some Urdu?</h2><p class="muted">A 2-minute placement check skips the units you already know.</p>'; const b = el('button', 'btn', 'Take the placement check'); b.onclick = () => placement(); pl.append(b); main.append(pl); }
     if (ctx.mode !== 'school') { const rp = el('button', 'btn btn-wide', 'Parent report for ' + profile.name); rp.onclick = () => parentReport(); main.append(rp); }
     if (cur === 0 && !s.sessions) main.append(el('details', 'card', `<summary style="font:600 16px var(--display);cursor:pointer">For parents: five things before letter one</summary><ol style="padding-left:18px"><li><b>Right to left.</b> The first letter is on the right.</li><li><b>Letters join</b> like cursive and change shape. Ten never join forward: <span class="ur">ا د ڈ ذ ر ڑ ز ژ و ے</span></li><li><b>Dots decide the letter.</b> <span class="ur">ب پ ت ٹ ث ن ی</span> share one body.</li><li><b>Small marks are vowels.</b> We keep them until unit 11.</li><li><b>Two typefaces</b>, Naskh for learning and Nastaliq for print. Switch in More.</li></ol>`));
+  }
+
+  // round 9b: the Today scene comes alive: count-ups, goal ring, flame, tap-to-poke Marko, unprompted waves
+  const POKE = (n) => [`Hi ${n}!`, 'Ready to read?', 'Alif is my friend', 'Hee hee, that tickles!', `You are doing great, ${n}`, 'Shall we find a letter?', 'Ba, ba, baa!', `I like reading with you, ${n}`];
+  function alive(hero, goal, { pl, sk }) {
+    const pid = profile.id, rm = matchMedia('(prefers-reduced-motion: reduce)').matches; const bs = hero.querySelectorAll('.hh-badge b.cu');
+    const prevSk = sGet(`urc-today-${pid}-streak`); const ignite = prevSk != null && sk > prevSk;
+    countUp(bs[0], pl, { key: `urc-today-${pid}-pearls` }); countUp(bs[1], Math.floor(goal.minutes), { key: `urc-today-${pid}-min` }); if (bs[2]) countUp(bs[2], sk, { key: `urc-today-${pid}-streak` });
+    if (sk > 0) { const f = fx('streak_flame', { size: 28, loop: true, cls: 'flame-fx' }); hero.querySelector('.hh-flame .ic')?.replaceWith(f); if (ignite) setTimeout(() => retrigger(f, 'ignite', 0), 700); }
+    // goal ring: fills from the last value shown today
+    const fg = hero.querySelector('.rg-fg'), ringKey = `urc-ring-${pid}-${new Date().toDateString()}`; const prev = sGet(ringKey) ?? goal.frac; sSet(ringKey, goal.frac);
+    if (fg) { fg.style.strokeDashoffset = String(100 - prev * 100); requestAnimationFrame(() => requestAnimationFrame(() => { fg.style.strokeDashoffset = String(100 - goal.frac * 100); })); }
+    const g = hero.querySelector('.hh-goal');
+    if (goal.done) { g.classList.add('reached'); g.querySelector('.hh-ring').append(fx('sparkles_loop', { size: 46, loop: true, cls: 'goal-fx' }));
+      if (!sGet(goalFlag(pid))) { sSet(goalFlag(pid), 1); retrigger(g, 'goal-pop', 1200); setTimeout(() => { const say = hero.querySelector('.hh-say'), mk = hero.querySelector('.hh-marko'); if (!hero.isConnected || (say && say.dataset.keep)) return; if (say) { say.dataset.keep = '1'; say.innerHTML = `You reached today's goal, ${profile.name}!`; retrigger(say, 'say-pop', 0); } if (mk && mk._marko) setMarko(mk, 'cheer'); }, 900); } }
+    // poke Marko
+    const poke = hero.querySelector('.hh-poke'), stage = hero.querySelector('.hh-stage'); let lastPoke = 0, last = -1, restore;
+    if (window.__memory?.line) window.__memory.line(profile).then(t => { const m = hero.querySelector('.hh-say .mem-line'); if (t && m && !m.closest('.hh-say').dataset.keep) m.textContent = t; }).catch(() => {});
+    poke.onclick = () => { lastPoke = Date.now(); const mk = hero.querySelector('.hh-marko'), say = hero.querySelector('.hh-say'); const L = POKE(profile.name); let k; do k = Math.floor(Math.random() * L.length); while (k === last); last = k;
+      if (say) { if (!say.dataset.orig) say.dataset.orig = say.innerHTML; say.dataset.keep = ''; say.textContent = L[k]; retrigger(say, 'say-pop', 0); clearTimeout(restore); restore = setTimeout(() => { if (say.isConnected) { say.innerHTML = say.dataset.orig; retrigger(say, 'say-pop', 0); } }, 3800); }
+      if (mk) { if (mk._marko) setMarko(mk, Math.random() < .5 ? 'wave' : 'cheer'); retrigger(mk, 'poked', 600); }
+      if (!rm) { const f = fx('stars_pop', { size: 110, cls: 'poke-fx' }); stage.append(f); setTimeout(() => f.remove(), 1600); }
+      try { window.__feel?.chime?.(); } catch (e) {} };
+    // an unprompted wave every ~12 s while Today is on screen and the tab is visible
+    if (!rm) { const iv = setInterval(() => { if (!hero.isConnected) return clearInterval(iv); if (document.hidden || Date.now() - lastPoke < 5000) return; const mk = hero.querySelector('.hh-marko'); if (mk && mk._marko && mk._marko.state === 'idle') setMarko(mk, 'wave'); }, 12000); }
   }
 
   // Session: review due cards, then the next lesson step of the current unit, then one read.
@@ -138,7 +165,7 @@ export async function renderLearner(root, ctx) {
     btn.onclick = next; box.append(status, btn, choices); return box; }
   function unit11() { const c = el('div', 'card'); c.innerHTML = '<h2>Sight words</h2><p class="muted">These twenty are a third of any Urdu text.</p>'; const g = el('div', 'words'); C.letters.sight_words.forEach((w, i) => { const d = el('div', 'word', `<div class="ur">${w}</div>`); d.append(D.playBtn('sight/' + String(i).padStart(2, '0'), true)); d.onclick = () => play('sight/' + String(i).padStart(2, '0')); g.append(d); }); c.append(g); c.insertAdjacentHTML('beforeend', `<h3>Naskh → Nastaliq</h3><div class="row">${['کتاب', 'پڑھنا', 'میں گھر میں ہوں'].map(w => `<div class="card" style="margin:0;text-align:center"><div class="ur" style="font-family:var(--naskh)">${w}</div><div class="ur nastaliq">${w}</div></div>`).join('')}</div><h3>Dictionary order</h3><div class="grid-words" style="font-size:26px">${'ا ب پ ت ٹ ث ج چ ح خ د ڈ ذ ر ڑ ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ہ ھ ء ی ے'.split(' ').map(x => `<span>${x}</span>`).join('')}</div><p class="muted">Turn vowel marks off in More and re-read earlier units.</p>`); return c; }
 
-  async function review() { await header('Review', 'Letters and words that are about to slip'); const due = await S.dueCards(profile.id, 30); if (!due.length) { const [pl, sk, cur] = await Promise.all([S.pearls(profile.id), S.streak(profile.id), S.currentUnit(profile.id)]); const c = el('div', 'night', `<div class="night-moon"></div><div class="fx-stage">${mascot('sleep', 170)}</div><h2>All caught up</h2><p>Marko is resting. Your letters come back for review when they are about to slip, so there's nothing to do here today.</p><div class="night-stats"><div><b>${pl}</b><small>pearls</small></div><div><b>${sk}</b><small>day streak</small></div></div>`); c.querySelector('.fx-stage').prepend(fx('sleeping_zzz', { size: 80, loop: true, cls: 'fx-zz' })); main.append(c);
+  async function review() { await header('Review', 'Letters and words that are about to slip'); const due = await S.dueCards(profile.id, 30); if (!due.length) { const [pl, sk, cur] = await Promise.all([S.pearls(profile.id), S.streak(profile.id), S.currentUnit(profile.id)]); const c = el('div', 'night', `<div class="night-moon"></div><div class="fx-stage">${mascot('sleep', 170)}</div><h2>All caught up</h2><p>Marko is resting. Your letters come back for review when they are about to slip, so there's nothing to do here today.</p><div class="night-stats"><div><b>${pl}</b><small>pearls</small></div><div><b>${sk}</b><small>days practised</small></div></div>`); c.querySelector('.fx-stage').prepend(fx('sleeping_zzz', { size: 80, loop: true, cls: 'fx-zz' })); main.append(c);
       const nx = el('div', 'card row next-up', `${unitArt(cur)}<div style="flex:1"><small class="muted">Next up</small><b>Unit ${cur}: ${C.units[cur].title}</b></div>`); const go = el('button', 'btn btn-primary btn-wide dock', `Learn: unit ${cur}`); go.onclick = () => { st.tab = 'today'; render(); }; main.append(go); main.insertBefore(nx, go); return; } const box = el('div'); main.append(box); reviewCards(due, box, () => { st.tab = 'today'; render(); }); }
 
   async function read() { await header('Read', 'Passages and sentences · read twice, watch your speed'); const cur = await S.currentUnit(profile.id);
@@ -148,7 +175,8 @@ export async function renderLearner(root, ctx) {
   async function progress(noHead) { if (!noHead) await header('Progress'); main.append(await renderDashboard(profile.id, { child: profile.track === 'child' })); }
   // Me (child track): progress first, then everything that lives in More for the other tracks.
   async function me() { await header('Me'); const [pl, sk, cur] = await Promise.all([S.pearls(profile.id), S.streak(profile.id), S.currentUnit(profile.id)]);
-    main.append(el('div', 'card me-card', `<div class="me-id">${avatar(profile, 64)}<div><b>${profile.name}</b><small class="muted">Unit ${cur}${C.units[cur] ? ' · ' + C.units[cur].title : ''}</small></div>${mascot('proud', 92, 'me-marko')}</div><div class="me-stats"><div style="--c:var(--gold-deep)">${icon('star')}<b>${pl}</b><small>${pl === 1 ? 'pearl' : 'pearls'}</small></div><div style="--c:var(--coral)">${icon('flame')}<b>${sk}</b><small>day streak</small></div><div style="--c:var(--accent)">${icon('units_f')}<b>${Math.max(0, cur)}</b><small>units done</small></div></div>`));
+    main.append(el('div', 'card me-card', `<div class="me-id">${avatar(profile, 64)}<div><b>${profile.name}</b><small class="muted">Unit ${cur}${C.units[cur] ? ' · ' + C.units[cur].title : ''}</small></div>${mascot('proud', 92, 'me-marko')}</div><div class="me-stats"><div style="--c:var(--gold-deep)">${icon('star')}<b class="cu">${pl}</b><small>${pl === 1 ? 'pearl' : 'pearls'}</small></div><div class="me-flame" style="--c:var(--coral)">${icon('flame')}<b class="cu">${sk}</b><small>days practised</small></div><div style="--c:var(--accent)">${icon('units_f')}<b class="cu">${Math.max(0, cur)}</b><small>units done</small></div></div>`));
+    const me$ = main.querySelector('.me-stats'); if (me$) { const [a, b, c] = me$.querySelectorAll('b.cu'); countUp(a, pl, { key: `urc-me-${profile.id}-pearls` }); countUp(b, sk, { key: `urc-me-${profile.id}-streak` }); countUp(c, Math.max(0, cur), { key: `urc-me-${profile.id}-units` }); if (sk > 0) me$.querySelector('.me-flame .ic')?.replaceWith(fx('streak_flame', { size: 28, loop: true, cls: 'flame-fx' })); }
     await progress(true); main.append(el('h3', 'me-h3', 'Settings and more')); await more(true); }
 
   function selfTest() { const c = el('div', 'card'); c.innerHTML = '<h2>Test yourself</h2><p class="muted">Five parts, like the teacher\'s assessment. This is your reading speed today, not a certificate.</p>'; const b = el('button', 'btn btn-primary', 'Start the reading test'); b.onclick = () => { st.tab = 'test'; render(); }; c.append(b); return c; }

@@ -38,6 +38,6 @@ export async function stats(profileId) {
   return { letters: cards.filter(c => c.kind === 'letter').length, lettersMastered: cards.filter(c => c.kind === 'letter' && c.box >= 4).length, words: cards.filter(c => c.kind === 'word').length, wordsMastered: cards.filter(c => c.kind === 'word' && c.box >= 4).length, due: cards.filter(c => c.due <= Date.now()).length, unitsPassed: Object.values(p.units).filter(u => u.passed).length, sessions: p.sessions || 0, wpm: p.wpm || [] };
 }
 export async function pearls(profileId) { const p = await getProgress(profileId); return Object.values(p.units || {}).reduce((n, u) => n + Object.keys(u.lessons || {}).length, 0); }
-// consecutive days (ending today or yesterday) with at least one answer recorded
-export async function streak(profileId) { const days = new Set((await db.by('attempts', 'profileId', profileId)).map(a => new Date(a.ts).toDateString())); let n = 0; const d = new Date(); if (!days.has(d.toDateString())) d.setDate(d.getDate() - 1); while (days.has(d.toDateString())) { n++; d.setDate(d.getDate() - 1); } return n; }
+// days practised in total: it only ever goes up, a missed day costs nothing (children's app: no streak-loss pressure)
+export async function streak(profileId) { return new Set((await db.by('attempts', 'profileId', profileId)).map(a => new Date(a.ts).toDateString())).size; }
 export async function addWpm(profileId, wpm, unit) { const p = await getProgress(profileId); p.wpm = [...(p.wpm || []), { ts: Date.now(), wpm, unit }].slice(-50); await db.put('progress', p); }
