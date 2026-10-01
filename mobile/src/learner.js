@@ -145,7 +145,7 @@ export async function renderLearner(root, ctx) {
     C.units.filter(u => u.passage && u.n <= Math.max(cur, 1)).reverse().forEach(u => { const box = el('div'); main.append(el('h3', '', `Passage · unit ${u.n}`)); main.append(box); fluency(u, box, () => {}, true); box.lastChild.remove(); });
     C.units.filter(u => u.sentences.length && u.n <= Math.max(cur, 1)).reverse().forEach(u => { const box = el('div'); main.append(el('h3', '', `Sentences · unit ${u.n}`)); main.append(box); fluency(u, box, () => {}); box.lastChild.remove(); }); }
 
-  async function progress(noHead) { if (!noHead) await header('Progress'); main.append(await renderDashboard(profile.id)); }
+  async function progress(noHead) { if (!noHead) await header('Progress'); main.append(await renderDashboard(profile.id, { child: profile.track === 'child' })); }
   // Me (child track): progress first, then everything that lives in More for the other tracks.
   async function me() { await header('Me'); const [pl, sk, cur] = await Promise.all([S.pearls(profile.id), S.streak(profile.id), S.currentUnit(profile.id)]);
     main.append(el('div', 'card me-card', `<div class="me-id">${avatar(profile, 64)}<div><b>${profile.name}</b><small class="muted">Unit ${cur}${C.units[cur] ? ' · ' + C.units[cur].title : ''}</small></div>${mascot('proud', 92, 'me-marko')}</div><div class="me-stats"><div style="--c:var(--gold-deep)">${icon('star')}<b>${pl}</b><small>${pl === 1 ? 'pearl' : 'pearls'}</small></div><div style="--c:var(--coral)">${icon('flame')}<b>${sk}</b><small>day streak</small></div><div style="--c:var(--accent)">${icon('units_f')}<b>${Math.max(0, cur)}</b><small>units done</small></div></div>`));

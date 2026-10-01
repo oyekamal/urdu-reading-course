@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lottie Preview</title>
+<style>
+:root{--bg:#F2F7F6;--ink:#1E2F55;--card:#fff}
+body{margin:0;padding:16px;background:var(--bg);color:var(--ink);font:14px system-ui,sans-serif}
+h1{font-size:18px;margin:0 0 12px}
+#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.card{background:var(--card);border-radius:16px;padding:8px;text-align:center}
+.stage{width:100%;aspect-ratio:1;background:var(--bg);border-radius:12px}
+.card b{display:block;margin-top:6px;font-size:13px}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head><body>
+<h1>Lottie slots preview</h1>
+<div id="grid"></div>
+<script>
+const SLOTS=['confetti_burst','stars_pop','success_check','streak_flame','trophy','loading_dots','sparkles_loop','hearts_or_balloons','sleeping_zzz','sun_rays'];
+const q=new URLSearchParams(location.search), frac=q.has('frac')?parseFloat(q.get('frac')):null;
+window.anims={};let ready=0;
+for(const s of SLOTS){
+  const c=document.createElement('div');c.className='card';
+  c.innerHTML=`<div class="stage" id="st_${s}"></div><b>${s}</b>`;grid.appendChild(c);
+  const a=lottie.loadAnimation({container:c.firstChild,renderer:'svg',loop:frac===null,autoplay:frac===null,path:`${s}.json`});
+  anims[s]=a;
+  a.addEventListener('DOMLoaded',()=>{if(frac!==null)a.goToAndStop(Math.floor(a.totalFrames*frac),true);if(++ready===SLOTS.length)document.body.dataset.ready=1;});
+}
+</script>
+</body></html>

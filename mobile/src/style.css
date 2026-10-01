@@ -395,3 +395,5 @@ label.row{min-height:48px}
 /* round 7b (cont.): snake rows leave room for the labels on the last row */
 .thread.necklace{padding-bottom:38px}
 .guide{min-height:110px}.guide .guide-m{width:110px!important;height:110px!important}.guide .guide-say{max-width:calc(100% - 120px)}
+/* round 8: child Me tab — bigger, friendlier numbers */
+body[data-track="child"] .card .row b{font:700 20px var(--display);color:var(--accent-deep)}body[data-track="child"] .card .row span{font:600 16px var(--display)}
