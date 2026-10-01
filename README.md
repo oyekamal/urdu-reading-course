@@ -2,7 +2,7 @@
 
 A research-backed course and app that takes anyone, child or adult, Urdu speaker or not, from zero to reading Urdu script. Everything is generated from two data files, so a fix to a letter or a word flows into the cards, the printable lessons and the app.
 
-**Try it now, no install:** the full learner + teacher app runs in the browser and works offline after the first load: https://oyekamal.github.io/urdu-reading-course/reader/ (add it to your home screen). The original single-page course is at https://oyekamal.github.io/urdu-reading-course/app/. Android APK: see Releases.
+**Try it now, no install:** the full learner + teacher app runs in the browser and works offline after the first load: https://oyekamal.github.io/urdu-reading-course/reader/ (add it to your home screen). The original single-page course is at https://oyekamal.github.io/urdu-reading-course/app/. Android APK: see Releases. Current version: **v0.9.0** (first-run onboarding, animated Marko, celebrations; see [Onboarding, Marko and the look](#onboarding-marko-and-the-look-v090)).
 
 ## What is in the box
 
@@ -20,7 +20,8 @@ A research-backed course and app that takes anyone, child or adult, Urdu speaker
 | `assets/fonts/` | Noto Nastaliq Urdu and Noto Naskh Arabic (SIL OFL) |
 | `research/` | Eleven cited research files: quality bar, books, apps, script reference, pedagogy, open assets, TTS bake-off, offline literacy apps, teacher tools, tech stack, learning design |
 | `docs/offline-app-plan.html` | Product and architecture plan for the offline Android app (learner, teacher, parent modes) |
-| `mobile/` | The app source (Capacitor 7 + Vite): learner, parent and teacher modes, offline, one APK |
+| `mobile/` | The app source (Capacitor 7 + Vite): first-run onboarding, learner, parent and teacher modes, animated Marko, offline, one APK |
+| `design/` | `gen/` Gemini art pipeline (Marko poses, unit art, village scenes); `marko-rig/` the Lottie cut-out rig that animates Marko |
 | `reader/` | Built web version of the same app, served by GitHub Pages as an installable PWA |
 | `scripts/` | The build pipeline (below) |
 | `.audit/` | Decision log and the gauntlet-loop critic reports, kept for transparency |
@@ -144,10 +145,24 @@ against real Duolingo ABC and Khan Academy Kids store screenshots by a separate 
 - **Colour:** Multani turquoise `#1E9C8F` (one accent), saffron `#F2A93B` (progress, current pearl), ajrak indigo `#1E2F55` (ink), tile-glaze paper `#F2F7F6`; ralli red only for teacher-side warnings. Dark theme on indigo.
 - **Type:** Fredoka (bundled, `mobile/public/fonts/Fredoka.woff2`) for display and buttons, system sans for body, Noto Nastaliq for Urdu headings, Noto Naskh for drills.
 - **Signature:** lessons are pearls on a thread (موتیوں جیسی لکھائی). Done pearls fill turquoise, the current one glows saffron, locked ones stay paper. Each unit card wears a short ajrak stripe while current.
-- **No emoji.** Icons are inline SVG (`mobile/src/icons.js`). Marko the markhor (Pakistan's national animal, 8 poses; v0.6 used a parrot, dropped as too close to Duolingo) and 13 unit illustrations were generated with Gemini in one flat-vector style (`design/gen/gen_assets.py`, palette-locked prompt + reference image), then packed to WebP by `scripts/pack_images.py` into `mobile/public/img/` (425 KB total, precached by the service worker).
+- **No emoji.** Icons are inline SVG (`mobile/src/icons.js`). Marko the markhor (Pakistan's national animal, 16 static poses, animated since v0.9; v0.6 used a parrot, dropped as too close to Duolingo) and 13 unit illustrations were generated with Gemini in one flat-vector style (`design/gen/gen_assets.py`, palette-locked prompt + reference image), then packed to WebP by `scripts/pack_images.py` into `mobile/public/img/` (425 KB total, precached by the service worker).
 
 Re-generate art: `cd design/gen && python3 gen_assets.py mascot|units` (needs `GEMINI_API_KEY`), then `python3 scripts/pack_images.py`.
 Screenshots for review: `cd mobile && python3 tools/shots.py <vite-port> ../.audit/ui`.
+
+## Onboarding, Marko and the look (v0.9.0)
+
+Built with the [app-onboarding-questionnaire](https://github.com/adamlyttleapps/claude-skill-app-onboarding-questionnaire) skill and gauntlet-looped (builder plus a separate harsh critic, blind side-by-side) against **Finch: Self-Care Pet**, a loved consumer app whose pet is born from your answers. Result: the onboarding beat Finch in all four segments, and the in-app look beat Finch's real in-app screens in two blind rounds in a row (rounds 7 and 8). The trail, with every round's verdict, screenshots and the bar, is in `.audit/onboarding/` (start at `RESUME.md`).
+
+**First run (`mobile/src/onboarding.js`, 17 screens):** Marko is asleep and you wake him, pick his lucky colour (it becomes the learner's badge), then answer who is learning, the name, why Urdu, how much Urdu they speak, whether they read any letters, and what has made it hard. Marko replies to every answer. The plan screen mirrors the answers back, a ring loader names them while it "builds the path", then a real mini lesson: hear and tap ا and ب, join them into با, read **بابا** and pick it from با by ear. The learner earns a shareable first-word card, a day-1 streak (earned by reading, never guilt) and a days-in-a-row promise. "My class" goes to teacher setup; "I can read some letters" goes to the placement check. Answers resume if the app is closed mid-way.
+
+**Marko (`mobile/src/marko.js`, `design/marko-rig/`):** 8 animated states (idle with breathing and blinking, talk, cheer, wave, think, listen, sleep, point), each about 50 KB of Lottie JSON built as a cut-out rig from Gemini-drawn head, body and arm parts with vector eyes and mouth. Static Marko images anywhere in the UI are upgraded in place; he talks whenever audio plays and shows a still pose instantly while the animation loads. Preview: serve the repo root and open `design/marko-rig/preview.html`.
+
+**Look and feel:** full-screen celebrations (sunburst, confetti, pearls bursting out, a trophy and fireworks for a finished unit), a painted village home with Marko in it, a pearl necklace that gains a pearl after every lesson, locked units with Marko peeking out, a night-time Review, four tabs for children (Learn, Review, Read, Me) and six for adults, one big bottom-docked primary button on every screen, one standard round speaker button for every "play again". Free animations (confetti, stars, tick, flame, trophy, sparkles, hearts, sun, sleeping Z's) are downloaded from LottieFiles, whose terms put free animations under the Lottie Simple License (not verified page by page); titles, authors and URLs are in `mobile/public/lottie/CREDITS.md`, and `mobile/src/fx.js` plays them.
+
+**QA tools:** `mobile/tools/ui_audit.py <port> <outdir>` walks about 60 screens at 390x844 and checks tap-target sizes, overflow, a docked primary action, content under fixed bars and contrast (0 violations on child and adult profiles); `mobile/tools/drive_all.py` plays units 0 to 12 end to end; `mobile/tools/onb_shots.py` screenshots the onboarding. Run the dev server with `cd mobile && npx vite --port 5188`.
+
+Re-generate Marko art: `cd design/gen && python3 gen_assets.py mascot|poses2|scenes|units` (needs `GEMINI_API_KEY`), then `python3 scripts/pack_images.py`. Rebuild his animations: `python3 design/marko-rig/make_marko.py`.
 
 ## Android app
 
