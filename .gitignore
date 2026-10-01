@@ -30,3 +30,4 @@ assets/audio/_el_audition/
 # evaluation-only reference audio (Rekhta, not licensed for redistribution)
 research/bar_audio/
 .audit/onboarding/bar/
+.audit/interact/bar/

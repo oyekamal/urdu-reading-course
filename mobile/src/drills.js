@@ -69,27 +69,63 @@ export function readIt(unit, ctx, marks, range) {
   return box;
 }
 
+// round 9c: glowing ink. The visible stroke lives on an overlay canvas (cv itself stays the static glyph and a hidden logic
+// canvas keeps the old hard 14px stroke, so the coverage check is unchanged). Finger positions are low-pass smoothed and drawn as
+// quadratic curves through midpoints (calligraphy, no corners); width thins with finger speed. Glow = layered uniform-alpha passes
+// (no shadowBlur, cheap). Sparkles trail the fingertip, a ring pops when a stroke ends, a gold band sweeps the finished letter.
+function inkPad(cv) {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches, dpr = Math.min(2, window.devicePixelRatio || 1), W = 360, H = 300;
+  cv.width = W * dpr; cv.height = H * dpr; const g = cv.getContext('2d');
+  const sh = document.createElement('canvas'); sh.width = W; sh.height = H; const sc = sh.getContext('2d'); let mask = null;
+  let strokes = [], cur = null, parts = [], pops = [], shim = 0, raf = 0, tip = null;
+  const path = (c, p) => { c.beginPath(); c.moveTo(p[0].x, p[0].y); for (let i = 1; i < p.length - 1; i++) c.quadraticCurveTo(p[i].x, p[i].y, (p[i].x + p[i + 1].x) / 2, (p[i].y + p[i + 1].y) / 2); const l = p[p.length - 1]; c.lineTo(l.x, l.y); };
+  const star = (c, x, y, r) => { c.beginPath(); c.moveTo(x, y - r); c.quadraticCurveTo(x, y, x + r, y); c.quadraticCurveTo(x, y, x, y + r); c.quadraticCurveTo(x, y, x - r, y); c.quadraticCurveTo(x, y, x, y - r); c.fill(); };
+  function spark(x, y, n, spread, up) { if (reduce) return; for (let i = 0; i < n && parts.length < 30; i++) { const a = Math.random() * 6.283, s = Math.random() * spread; parts.push({ x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s - up, r: 3 + Math.random() * 4, t: 0, life: 520 + Math.random() * 380, c: i % 3 === 0 ? '#fff' : i % 3 === 1 ? '#F2A93B' : '#5EE0D0' }); } }
+  function draw(now) {
+    g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, W, H); g.lineCap = g.lineJoin = 'round';
+    for (const s of strokes.concat(cur ? [cur] : [])) { const p = s.pts; if (!p.length) continue;
+      if (p.length < 2) { g.fillStyle = 'rgba(242,169,59,.25)'; g.beginPath(); g.arc(p[0].x, p[0].y, 17, 0, 7); g.fill(); g.fillStyle = '#17A79A'; g.beginPath(); g.arc(p[0].x, p[0].y, 8, 0, 7); g.fill(); continue; }
+      path(g, p); for (const [w, c] of [[38, 'rgba(242,169,59,.15)'], [29, 'rgba(242,169,59,.22)'], [22, 'rgba(94,224,208,.32)']]) { g.lineWidth = w; g.strokeStyle = c; g.stroke(); }
+      g.strokeStyle = '#17A79A'; for (let i = 1; i < p.length; i++) { const a = i > 1 ? { x: (p[i - 1].x + p[i].x) / 2, y: (p[i - 1].y + p[i].y) / 2 } : p[0], b = i < p.length - 1 ? { x: (p[i].x + p[i + 1].x) / 2, y: (p[i].y + p[i + 1].y) / 2 } : p[i]; g.lineWidth = p[i].w; g.beginPath(); g.moveTo(a.x, a.y); g.quadraticCurveTo(p[i].x, p[i].y, b.x, b.y); g.stroke(); }
+      path(g, p); g.lineWidth = 3.2; g.strokeStyle = 'rgba(214,255,250,.7)'; g.stroke(); }
+    if (shim && mask) { const k = (now - shim) / 950; if (k >= 1) shim = 0; else { sc.globalCompositeOperation = 'source-over'; sc.clearRect(0, 0, W, H); const x = -90 + k * (W + 180), gr = sc.createLinearGradient(x - 95, 0, x + 95, 110); gr.addColorStop(0, 'rgba(255,240,190,0)'); gr.addColorStop(.5, 'rgba(255,252,235,1)'); gr.addColorStop(1, 'rgba(255,240,190,0)'); sc.fillStyle = gr; sc.fillRect(0, 0, W, H); sc.globalCompositeOperation = 'destination-in'; sc.drawImage(mask, 0, 0); g.drawImage(sh, 0, 0, W, H); } }
+    for (const q of pops) { const k = (now - q.t0) / 300; if (k < 1) { g.strokeStyle = `rgba(242,169,59,${.65 * (1 - k)})`; g.lineWidth = 3 * (1 - k) + 1; g.beginPath(); g.arc(q.x, q.y, 8 + 22 * (1 - Math.pow(1 - k, 3)), 0, 7); g.stroke(); } }
+    pops = pops.filter(q => now - q.t0 < 300);
+    for (const q of parts) { q.t += 16; q.x += q.vx; q.y += q.vy; q.vy += .02; q.vx *= .97; const k = q.t / q.life; g.globalAlpha = Math.max(0, 1 - k); g.fillStyle = q.c; star(g, q.x, q.y, q.r * (1 - k * .5)); } g.globalAlpha = 1; parts = parts.filter(q => q.t < q.life);
+    if (tip && !reduce) { const r = 13 + Math.sin(now / 140) * 2; const gr = g.createRadialGradient(tip.x, tip.y, 0, tip.x, tip.y, r + 8); gr.addColorStop(0, 'rgba(255,255,255,.95)'); gr.addColorStop(.35, 'rgba(255,214,120,.7)'); gr.addColorStop(1, 'rgba(242,169,59,0)'); g.fillStyle = gr; g.beginPath(); g.arc(tip.x, tip.y, r + 8, 0, 7); g.fill(); }
+  }
+  const loop = now => { draw(now); raf = (parts.length || pops.length || shim || tip) ? requestAnimationFrame(loop) : 0; };
+  const kick = () => { if (!raf) raf = requestAnimationFrame(loop); };
+  return {
+    reset(m) { strokes = []; cur = null; parts = []; pops = []; shim = 0; tip = null; mask = null; if (m) { mask = document.createElement('canvas'); mask.width = W; mask.height = H; mask.getContext('2d').putImageData(new ImageData(new Uint8ClampedArray(m), W, H), 0, 0); } draw(performance.now()); },
+    down(x, y) { cur = { pts: [{ x, y, w: 15 }], sx: x, sy: y, vw: 15, n: 0 }; tip = { x, y }; spark(x, y, 3, 1.2, .3); kick(); },
+    move(x, y, dt) { if (!cur) return; const p = cur.pts[cur.pts.length - 1]; cur.sx += (x - cur.sx) * .42; cur.sy += (y - cur.sy) * .42; const d = Math.hypot(cur.sx - p.x, cur.sy - p.y); if (d < 1.6) return; cur.vw += (Math.max(9, Math.min(19, 20 - (d / Math.max(4, dt)) * 5)) - cur.vw) * .25; cur.pts.push({ x: cur.sx, y: cur.sy, w: cur.vw }); tip = { x: cur.sx, y: cur.sy }; if (++cur.n % 2 === 0) spark(cur.sx, cur.sy, 1, 1.1, .35); kick(); },
+    up() { if (!cur) return; const l = cur.pts[cur.pts.length - 1]; strokes.push(cur); cur = null; tip = null; if (!reduce) { pops.push({ x: l.x, y: l.y, t0: performance.now() }); spark(l.x, l.y, 7, 2.2, .4); } kick(); draw(performance.now()); },
+    shimmer() { if (reduce || !mask) return; shim = performance.now(); kick(); },
+  };
+}
+
 // Tracing: grey glyph, finger stroke, start-side + coverage + stroke-count feedback.
 export function writeIt(unit, ctx, styleName, onDone, letters) {
   const ls = (letters || unit.letters).map(c => C.by[c]).filter(Boolean); if (!ls.length) return null;
   const box = el('div', 'card'); box.innerHTML = '<h2>Trace</h2><p class="muted">Start at the green dot. Body first, dots last.</p>';
   const sel = el('select'), formSel = el('select'), cv = el('canvas', 'trace'), out = el('div', 'score'), clear = el('button', 'btn', 'Clear'), check = el('button', 'btn', 'Check');
   ls.forEach(l => sel.append(new Option(l.name + ' ' + l.ch, l.ch))); ['isolated', 'initial', 'medial', 'final'].forEach(f => formSel.append(new Option(f, f)));
-  cv.width = 360; cv.height = 300; const ctx2 = cv.getContext('2d', { willReadFrequently: true }); let ref = null, drawing = false, startX = null, glyphBox = null, strokes = 0, good = 0;
+  cv.width = 360; cv.height = 300; const ctx2 = cv.getContext('2d', { willReadFrequently: true }); const lg = document.createElement('canvas'); lg.width = 360; lg.height = 300; const lc = lg.getContext('2d', { willReadFrequently: true }), inkCv = el('canvas', 'trace-ink'), wrap = el('div', 'trace-wrap'), pad = inkPad(inkCv); wrap.append(cv, inkCv); let tPrev = 0; let ref = null, drawing = false, startX = null, glyphBox = null, strokes = 0, good = 0;
   const glyph = () => { const l = C.by[sel.value], f = formSel.value; if (!l.joiner && (f === 'initial' || f === 'medial')) return null; return f === 'isolated' ? l.ch : f === 'initial' ? l.ch + 'ـ' : f === 'medial' ? 'ـ' + l.ch + 'ـ' : 'ـ' + l.ch; };
-  function base() { ctx2.clearRect(0, 0, cv.width, cv.height); const g = glyph(); out.textContent = ''; strokes = 0; startX = null; if (!g) { ctx2.fillStyle = '#888'; ctx2.font = '16px sans-serif'; ctx2.textAlign = 'center'; ctx2.fillText('This letter has no such form', 180, 150); ref = null; return; }
+  function base() { ctx2.clearRect(0, 0, cv.width, cv.height); const g = glyph(); out.textContent = ''; strokes = 0; startX = null; if (!g) { ctx2.fillStyle = '#888'; ctx2.font = '16px sans-serif'; ctx2.textAlign = 'center'; ctx2.fillText('This letter has no such form', 180, 150); ref = null; lc.clearRect(0, 0, 360, 300); lc.drawImage(cv, 0, 0); pad.reset(null); return; }
     const fam = styleName() === 'nastaliq' ? '"Noto Nastaliq Urdu"' : '"Noto Naskh Arabic"'; ctx2.fillStyle = getComputedStyle(document.body).getPropertyValue('--line'); ctx2.font = `170px ${fam}`; ctx2.textAlign = 'center'; ctx2.textBaseline = 'middle'; ctx2.direction = 'rtl'; ctx2.fillText(g, 180, 150); ref = ctx2.getImageData(0, 0, cv.width, cv.height).data;
     let minx = cv.width, maxx = 0, top = cv.height; for (let i = 3; i < ref.length; i += 4) if (ref[i] > 0) { const x = (i >> 2) % cv.width, y = (i >> 2) / cv.width | 0; if (x < minx) minx = x; if (x > maxx) maxx = x; if (x > maxx - 6 && y < top) top = y; }
-    glyphBox = [minx, maxx]; ctx2.fillStyle = getComputedStyle(document.body).getPropertyValue('--accent'); ctx2.beginPath(); ctx2.arc(Math.min(maxx + 10, cv.width - 8), Math.min(top + 20, cv.height - 10), 6, 0, 7); ctx2.fill(); }
+    glyphBox = [minx, maxx]; ctx2.fillStyle = getComputedStyle(document.body).getPropertyValue('--accent'); ctx2.beginPath(); ctx2.arc(Math.min(maxx + 10, cv.width - 8), Math.min(top + 20, cv.height - 10), 6, 0, 7); ctx2.fill(); lc.clearRect(0, 0, 360, 300); lc.drawImage(cv, 0, 0); pad.reset(ref); }
   const pos = e => { const r = cv.getBoundingClientRect(); return [(e.clientX - r.left) * cv.width / r.width, (e.clientY - r.top) * cv.height / r.height]; };
-  cv.onpointerdown = e => { drawing = true; strokes++; const q = pos(e); if (startX === null) startX = q[0]; ctx2.beginPath(); ctx2.moveTo(...q); cv.setPointerCapture(e.pointerId); };
-  cv.onpointermove = e => { if (!drawing) return; ctx2.strokeStyle = getComputedStyle(document.body).getPropertyValue('--accent'); ctx2.lineWidth = 14; ctx2.lineCap = 'round'; ctx2.lineJoin = 'round'; ctx2.lineTo(...pos(e)); ctx2.stroke(); };
-  cv.onpointerup = cv.onpointercancel = () => drawing = false;
-  check.onclick = () => { if (!ref) return; const now = ctx2.getImageData(0, 0, cv.width, cv.height).data; let g = 0, hit = 0, stray = 0; for (let i = 0; i < ref.length; i += 4) { const isG = ref[i + 3] > 0 && ref[i] > 150; const drawn = Math.abs(now[i] - ref[i]) > 40 || Math.abs(now[i + 1] - ref[i + 1]) > 40 || (now[i + 3] > 0 && ref[i + 3] === 0); if (isG) { g++; if (drawn) hit++; } else if (drawn) stray++; }
+  cv.onpointerdown = e => { drawing = true; strokes++; const q = pos(e); if (startX === null) startX = q[0]; lc.beginPath(); lc.moveTo(...q); cv.setPointerCapture(e.pointerId); tPrev = e.timeStamp; pad.down(...q); };
+  cv.onpointermove = e => { if (!drawing) return; lc.strokeStyle = getComputedStyle(document.body).getPropertyValue('--accent'); lc.lineWidth = 14; lc.lineCap = 'round'; lc.lineJoin = 'round'; for (const ev of (e.getCoalescedEvents?.() || [e])) { const q = pos(ev); lc.lineTo(...q); lc.stroke(); pad.move(q[0], q[1], Math.max(1, ev.timeStamp - tPrev)); tPrev = ev.timeStamp; } };
+  cv.onpointerup = cv.onpointercancel = () => { if (drawing) pad.up(); drawing = false; };
+  check.onclick = () => { if (!ref) return; const now = lc.getImageData(0, 0, cv.width, cv.height).data; let g = 0, hit = 0, stray = 0; for (let i = 0; i < ref.length; i += 4) { const isG = ref[i + 3] > 0 && ref[i] > 150; const drawn = Math.abs(now[i] - ref[i]) > 40 || Math.abs(now[i + 1] - ref[i + 1]) > 40 || (now[i + 3] > 0 && ref[i + 3] === 0); if (isG) { g++; if (drawn) hit++; } else if (drawn) stray++; }
     const cov = Math.round(100 * hit / Math.max(1, g)), neat = stray < g * 0.8, rtl = startX === null || !glyphBox || startX > (glyphBox[0] + glyphBox[1]) / 2; const l = C.by[sel.value]; const expect = 1 + (DOTS[l.ch] || 0) + (l.ch === 'گ' || l.ch === 'ک' ? 1 : 0);
-    const ok = cov >= 80 && neat && rtl; out.textContent = `Coverage ${cov}% ${ok ? '✓ good' : cov < 80 ? '— keep tracing' : !rtl ? '— start on the right side' : '— stay inside the letter'}${strokes > expect + 1 ? ` · ${strokes} strokes, aim for ${expect}` : ''}`; ctx.record('trace', l.ch, ok, 0); if (ok && ++good >= 1 && onDone) onDone(good, 1); };
+    const ok = cov >= 80 && neat && rtl; out.textContent = `Coverage ${cov}% ${ok ? '✓ good' : cov < 80 ? '— keep tracing' : !rtl ? '— start on the right side' : '— stay inside the letter'}${strokes > expect + 1 ? ` · ${strokes} strokes, aim for ${expect}` : ''}`; ctx.record('trace', l.ch, ok, 0); if (ok) pad.shimmer(); if (ok && ++good >= 1 && onDone) onDone(good, 1); };
   clear.onclick = base; sel.onchange = formSel.onchange = base;
-  const side = el('div', 'row'); side.append(sel, formSel, check, clear); box.append(cv, side, out); setTimeout(base, 50); return box;
+  const side = el('div', 'row'); side.append(sel, formSel, check, clear); box.append(wrap, side, out); setTimeout(base, 50); return box;
 }
 
 // Dictation with a letter keyboard limited to taught letters.

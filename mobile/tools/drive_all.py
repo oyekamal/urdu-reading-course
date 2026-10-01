@@ -82,6 +82,10 @@ with sync_playwright() as p:
                 pg.wait_for_timeout(560)
             c=pg.query_selector(".btn-primary.btn-wide:not(.act)")
             if c and c.inner_text().strip()=='Submit': answer_quiz(); pg.wait_for_timeout(600); c=[x for x in pg.query_selector_all('.btn-primary.btn-wide:not(.act)') if x.inner_text().strip()!='Submit']; c=c[0] if c else None
+            if not c:  # the lesson-complete celebration reveals in two beats (title alone first), so wait for its button
+                try: pg.wait_for_selector(".btn-primary.btn-wide:not(.act)", timeout=6000)
+                except Exception: pass
+                c=pg.query_selector(".btn-primary.btn-wide:not(.act)")
             if not c: out.append(title+" (stuck)"); break
             label=c.inner_text(); out.append(f"{title} -> {label}"); js(c); pg.wait_for_timeout(600)
             if label.startswith("Back to path") or label.startswith("Next:"): break
