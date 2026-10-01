@@ -4,6 +4,18 @@ import { loadContent, el, toast } from './content.js';
 import { renderLearner } from './learner.js';
 import { icon, mascot, avatar, AVATARS } from './icons.js';
 import { runOnboarding } from './onboarding.js';
+import { marko } from './marko.js';
+
+// Every static Marko pose that has an animated state is upgraded in place to the Lottie Marko (marko.js).
+// ponytail: one observer instead of touching ~40 mascot() call sites; special poses (trophy, clap, heart…) stay static.
+const ANIM = { hello: 'wave', listen: 'listen', think: 'think', cheer: 'cheer', sleep: 'sleep', point: 'point', letter: 'point', read: 'idle', wave2: 'wave' };
+function upgradeMarko(scope) {
+  (scope.matches?.('img.mascot') ? [scope] : scope.querySelectorAll?.('img.mascot') || []).forEach(img => {
+    const st = ANIM[(img.getAttribute('src') || '').match(/mascot_(\w+)\.webp/)?.[1]]; if (!st) return;
+    const m = marko(st, img.width || 120, img.className); m.width = img.width || 120; m.dataset.base = st === 'wave' || st === 'cheer' ? 'idle' : st; img.replaceWith(m);
+  });
+}
+new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => n.nodeType === 1 && upgradeMarko(n)))).observe(document.body, { childList: true, subtree: true });
 
 const root = document.getElementById('app');
 let settings = {};

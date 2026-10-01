@@ -278,3 +278,5 @@ label.row{min-height:48px}
 /* explicit rgba: color-mix(…, transparent) renders as a dark ring in some Android WebViews */
 .pearl.cur{box-shadow:0 0 0 5px rgba(242,169,59,.3),inset 0 -4px 0 rgba(30,47,85,.08)}
 @media (prefers-reduced-motion:no-preference){@keyframes glow{50%{box-shadow:0 0 0 10px rgba(242,169,59,.14),inset 0 -4px 0 rgba(30,47,85,.08)}}}
+/* animated Marko (marko.js) inherits .mascot sizing; keep it square when CSS sets height:auto */
+.marko.mascot{aspect-ratio:1;max-width:100%}

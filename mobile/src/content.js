@@ -1,3 +1,4 @@
+import { setMarko } from './marko.js';
 // Content pack: letters, units, audio index, lesson scripts. Loaded once, offline from the bundle.
 export const C = { letters: null, units: null, audio: null, by: {}, ready: null };
 let player = new Audio(); let queue = []; let watchdog = null;
@@ -13,7 +14,7 @@ export function play(key, _retry) {
   const busy = !player.paused && !player.ended && player.currentTime > 0;
   if (key.startsWith('ui/') && busy) { queue = [src]; return true; }
   if (!key.startsWith('ui/')) queue = [];
-  document.querySelectorAll('.mascot.peek, .ob-m .mascot').forEach(m => { m.classList.remove('talk'); void m.offsetWidth; m.classList.add('talk'); }); // Marko reacts whenever something is said
+  document.querySelectorAll('.mascot.peek, .ob-m .mascot, .fx-stage .mascot').forEach(m => { if (m._marko) { setMarko(m, 'talk'); clearTimeout(m._talk); m._talk = setTimeout(() => setMarko(m, m.dataset.base || 'idle'), 1800); } else { m.classList.remove('talk'); void m.offsetWidth; m.classList.add('talk'); } }); // Marko talks whenever something is said
   player.src = src; const p = player.play(); if (p && p.catch) p.catch(() => {});
   clearTimeout(watchdog); watchdog = setTimeout(() => { if (player.src === src && (player.paused || player.currentTime === 0) && !player.ended) { if (!_retry) { rebuild(); play(key, true); } } }, 1500);
   return true;
