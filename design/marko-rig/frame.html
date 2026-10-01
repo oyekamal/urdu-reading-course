@@ -1,0 +1,19 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Marko frame</title>
+<style>html,body{margin:0;background:#fff}#b{width:100vw;height:100vh}</style>
+<div id="b"></div>
+<script src="../../mobile/node_modules/lottie-web/build/player/lottie_light.min.js"></script>
+<script>
+// Frozen-frame renderer for sheet.py: window.show(state, frame) loads a fresh instance and seeks to the frame.
+const cache = {}; let anim = null; window.ready = false;
+window.show = async (s, f) => {
+  window.ready = false;
+  const data = cache[s] ||= await fetch(`../../mobile/public/lottie/marko_${s}.json`).then(r => r.json());
+  if (anim) anim.destroy();
+  anim = lottie.loadAnimation({ container: document.getElementById('b'), renderer: 'svg', loop: false, autoplay: false,
+    animationData: JSON.parse(JSON.stringify(data)) });
+  anim.goToAndStop(Math.min(f + 1, data.op - 1), true); anim.goToAndStop(f, true);
+  requestAnimationFrame(() => requestAnimationFrame(() => { window.ready = true; }));
+};
+</script>

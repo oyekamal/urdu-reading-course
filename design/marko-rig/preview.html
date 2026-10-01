@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marko Preview</title>
+<!-- served from the repo root:  python3 -m http.server 5302   ->  http://127.0.0.1:5302/design/marko-rig/preview.html
+     <base> points at mobile/public so marko.js loads ./lottie/*.json and ./img/*.webp exactly as in the app. -->
+<base href="../../mobile/public/">
+<script type="importmap">{"imports":{"lottie-web/build/player/lottie_light":"../node_modules/lottie-web/build/player/esm/lottie_light.min.js"}}</script>
+<style>
+  :root { --bg: #FFF9EE; --ink: #1E2F55; --card: #FFFFFF; --line: #EADFCB; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #14203A; --ink: #F7EBD5; --card: #1E2F55; --line: #2C3F6B; } }
+  :root[data-theme="dark"] { --bg: #14203A; --ink: #F7EBD5; --card: #1E2F55; --line: #2C3F6B; }
+  body { margin: 0; padding: 16px; background: var(--bg); color: var(--ink); font: 15px/1.4 system-ui, sans-serif; }
+  h1 { font-size: 20px; margin: 0 0 4px } p { margin: 0 0 16px; opacity: .8 }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .cell { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 8px; text-align: center; }
+  .cell b { display: block; margin-top: 4px; font-weight: 600 }
+  .row { display: flex; flex-wrap: wrap; gap: 16px; align-items: end; margin: 20px 0; }
+  button { font: inherit; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer }
+  .stage { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px; }
+</style>
+</head>
+<body>
+<h1>Marko, animated</h1>
+<p>Every state playing through <code>mobile/src/marko.js</code> (lottie-web light). Sizes 100 / 160 / 260 px below.</p>
+<div class="grid" id="grid"></div>
+<div class="row" id="sizes"></div>
+<h1>State switching</h1>
+<p>One element, <code>setMarko(el, state)</code>: loops ease back to rest (outro) before the next state; cheer and wave return to idle by themselves.</p>
+<div class="stage"><div id="live"></div><div id="btns"></div></div>
+<script type="module">
+  import { marko, setMarko, MARKO_STATES } from '../src/marko.js';
+  const grid = document.getElementById('grid');
+  for (const s of MARKO_STATES) {
+    const c = document.createElement('div'); c.className = 'cell';
+    c.append(marko(s, 140)); const b = document.createElement('b'); b.textContent = s; c.append(b); grid.append(c);
+    if (s === 'cheer' || s === 'wave') setInterval(() => { const m = c.firstChild; m._marko.state = null; setMarko(m, s); }, 4000);
+  }
+  const sizes = document.getElementById('sizes');
+  for (const z of [100, 160, 260]) sizes.append(marko('idle', z));
+  const live = marko('idle', 220); document.getElementById('live').append(live);
+  const btns = document.getElementById('btns');
+  for (const s of MARKO_STATES) {
+    const b = document.createElement('button'); b.textContent = s; b.onclick = () => setMarko(live, s); btns.append(b, ' ');
+  }
+  window.__marko = { live, setMarko };
+</script>
+</body>
+</html>

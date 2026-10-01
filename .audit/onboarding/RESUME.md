@@ -22,3 +22,9 @@
 2. (done).
 3. Dev server `cd mobile && npx vite --port 5188`; screenshots: `python3 tools/onb_shots.py 5188 <out>` and the in-app capture snippet (Just me → path → lesson → done → unit done → letter → units → review), then blind strips vs Finch (`36_home_first_view, 33_day_streak_1, 32_day1_greeting, store/iphone_01,03,05`) and a fresh harsh critic subagent (format: WINNER/MARGIN/WHY/TOP 3 GAPS). Loop until ours wins.
 4. `npm run build`, sync `reader/` (copy of mobile/dist) + APK (`npm run apk`), bump version, push. Progress page: https://claude.ai/artifact/EhyVf4FbnuKPA2kVKeUjMx (source `.audit/onboarding/progress.html`, images `.audit/onboarding/site/`).
+
+## 2026-10-01: parallel agents launched (Kamal: "go for it, use parallel agents")
+- Agent A, Marko rig: design/marko-rig/make_marko.py → mobile/public/lottie/marko_<state>.json (idle talk cheer wave think listen sleep point) + mobile/src/marko.js `marko(state,size)` / `setMarko(el,state)`. NOT wired into screens yet: lead wires it after (replace mascot() calls where it should move).
+- Agent B, QA + consistency: drive_all sweep, new mobile/tools/ui_audit.py (tap targets, docked primary, overflow), "Play again" placement, emulator APK check. Fixes in mobile/src (not the marko files).
+- After both: wire marko(), gauntlet r5 vs Finch, rebuild reader/ + APK, commit + push.
+- 2026-10-01 Agent A DONE: 8 Marko Lottie states (cut-out rig from Gemini parts, ~50 KB each), critic "same character: yes" round 3. API: `import { marko, setMarko } from './marko.js'`. Preview: serve repo root on 5302, /design/marko-rig/preview.html. Known: think/point arms look tube-like; sleep stands (PNG sits). Waiting for QA agent before wiring (QA owns the screen files).
