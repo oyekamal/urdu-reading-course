@@ -5,6 +5,8 @@ import { renderLearner } from './learner.js';
 import { icon, mascot, avatar, AVATARS } from './icons.js';
 import { runOnboarding } from './onboarding.js';
 import { marko } from './marko.js';
+import { initFeel } from './feel.js';
+import './premium.js'; // round 9c: stickers, light-catching, scene depth, memory (observer-based, no screen edits)
 
 // Every static Marko pose that has an animated state is upgraded in place to the Lottie Marko (marko.js).
 // ponytail: one observer instead of touching ~40 mascot() call sites; special poses (trophy, clap, heart…) stay static.
@@ -32,6 +34,7 @@ const ctxBase = {
   switchProfile: () => home(),
   exportBackup,
 };
+initFeel(ctxBase); // tap/answer feel layer (sound, haptics, Marko coach, combo chip): delegated, no per-screen hooks
 function apply() { document.body.dataset.style = settings.style || 'naskh'; document.documentElement.style.setProperty('--ur-scale', settings.scale || '1'); document.documentElement.style.setProperty('--ur-spacing', (settings.spacing || '0') + 'em'); document.body.dataset.rom = settings.rom === false ? 'off' : 'on'; document.body.dataset.audioonly = settings.audioOnly ? 'on' : 'off'; }
 
 async function boot() {
