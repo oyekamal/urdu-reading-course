@@ -13,7 +13,7 @@ const seenKey = pid => 'stickersSeen:' + pid;
 const order = () => (C.letters?.letters || []).map(l => l.ch);
 
 export function stickerTile(l, idx, cls = '') {
-  const t = el('div', 'stk ' + cls, `<span class="stk-gloss"></span><span class="stk-ch ur">${l.ch}</span><span class="stk-name">${l.name}</span><img class="stk-m" alt="" src="./img/mascot_${POSES[(idx * 5 + 2) % POSES.length]}.webp" loading="lazy">`);
+  const t = el('div', 'stk ' + cls, `<span class="stk-gloss"></span><span class="stk-foil" aria-hidden="true"></span><span class="stk-ch ur">${l.ch}</span><span class="stk-name">${l.name}</span><img class="stk-m" alt="" src="./img/mascot_${POSES[(idx * 5 + 2) % POSES.length]}.webp" loading="lazy"><span class="stk-peel" aria-hidden="true"></span>`);
   t.style.setProperty('--sc', COLOURS[idx % COLOURS.length]); t.style.setProperty('--tilt', ((idx % 5) - 2) * 1.2 + 'deg'); t.setAttribute('aria-label', `Sticker: ${l.name}`);
   return t;
 }
@@ -28,16 +28,41 @@ let busy = false;
 function overlay(cls, label) { const o = el('div', 'stk-ov ' + cls); o.setAttribute('role', 'dialog'); o.setAttribute('aria-label', label); document.body.append(o); document.body.classList.add('stk-open'); requestAnimationFrame(() => o.classList.add('in')); return o; }
 function close(o, after) { o.classList.remove('in'); o.classList.add('out'); setTimeout(() => { o.remove(); if (!document.querySelector('.stk-ov')) document.body.classList.remove('stk-open'); after?.(); }, 220); }
 
+// Letters grouped by the unit that teaches them (first unit wins), so a page is 2-6 stickers and never a wall of empty boxes.
+function pages(all) {
+  const seen = new Set(), out = [];
+  for (const u of C.units || []) { const ls = u.letters.filter(ch => all.includes(ch) && !seen.has(ch)); ls.forEach(ch => seen.add(ch)); if (ls.length) out.push({ n: u.n, title: u.title, letters: ls }); }
+  const rest = all.filter(ch => !seen.has(ch)); if (rest.length) out.push({ n: 'more', title: 'More letters', letters: rest });
+  return out;
+}
+const tone = (n, total) => !n ? 'Every letter you learn well becomes a sticker.' : n === total ? 'The whole book is yours. Beautiful.' : n / total < .25 ? 'What a lovely start.' : n / total < .6 ? 'Your book is filling up.' : 'Nearly the whole book. Wonderful.';
+function lockTile(l, idx) {
+  const t = el('div', 'stk lock', `<span class="stk-glyph ur">${l.ch}</span><span class="stk-q" aria-hidden="true">?</span>`);
+  t.style.setProperty('--ld', (idx % 6) * 0.7 + 's'); t.setAttribute('role', 'img'); t.setAttribute('aria-label', `Locked sticker: ${l.name}`); return t;
+}
+
 export async function openBook() {
-  if (document.querySelector('.stk-book')) return; const p = await pid(); if (!p) return; const got = new Set(await mastered(p)); const all = order();
+  if (document.querySelector('.stk-book')) return; const p = await pid(); if (!p) return; const got = new Set(await mastered(p)); const all = order(); const pg = pages(all);
   const o = overlay('stk-book', 'Sticker book');
-  const done = all.filter(ch => got.has(ch)).length;
-  o.innerHTML = `<div class="stk-head"><button class="btn stk-back" aria-label="Back">←</button><div><h2>My stickers</h2><small>${done} of ${all.length} letters</small></div></div><div class="stk-scroll"></div>`;
-  const sc = o.querySelector('.stk-scroll');
-  if (!done) sc.append(el('div', 'stk-empty', `<img src="./img/mascot_heart.webp" alt="" width="120" height="120"><p><b>Your first sticker is waiting.</b><br>Learn a letter well and it lands here.</p>`));
-  const grid = el('div', 'stk-grid'); all.forEach((ch, i) => { const l = C.by[ch]; if (!l) return; if (got.has(ch)) { const t = stickerTile(l, i, 'got'); t.style.animationDelay = Math.min(i, 14) * 30 + 'ms'; grid.append(t); } else grid.append(el('div', 'stk ghost', `<span class="stk-name">${l.name}</span>`)); });
-  sc.append(grid);
-  const b = o.querySelector('.stk-back'); b.onclick = () => close(o); o.onkeydown = e => e.key === 'Escape' && close(o); b.focus({ preventScroll: true });
+  const done = all.filter(ch => got.has(ch)).length, reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  o.innerHTML = `<div class="stk-head"><button class="btn stk-back" aria-label="Back">←</button><div><h2>My stickers</h2></div></div>
+  <div class="stk-shelf"><div class="stk-shelf-top"><span class="stk-shelf-n"><b>${reduce ? done : 0}</b> of ${all.length} letters</span><small>${tone(done, all.length)}</small></div><div class="stk-bar" role="progressbar" aria-valuemin="0" aria-valuemax="${all.length}" aria-valuenow="${done}" aria-label="Stickers collected"><i style="width:${reduce ? Math.round(100 * done / all.length) : 0}%"></i></div></div>
+  <div class="stk-tabs" role="tablist" aria-label="Units"></div><div class="stk-scroll"></div>`;
+  const sc = o.querySelector('.stk-scroll'), tabs = o.querySelector('.stk-tabs');
+  const lastEarned = [...got].pop(), startAt = Math.max(0, pg.findIndex(x => x.letters.includes(lastEarned)));
+  function show(k, anim = true) {
+    const pgx = pg[k]; sc.innerHTML = ''; sc.scrollTop = 0; [...tabs.children].forEach((b, i) => { b.setAttribute('aria-selected', i === k); b.classList.toggle('on', i === k); });
+    const have = pgx.letters.filter(ch => got.has(ch)).length;
+    sc.append(el('div', 'stk-pg-head', `<b>${pgx.n === 'more' ? '' : 'Unit ' + pgx.n + ' · '}${pgx.title}</b><small>${have} of ${pgx.letters.length}</small>`));
+    const fill = (px, aim) => { const grid = el('div', 'stk-grid'); px.letters.forEach((ch, j) => { const l = C.by[ch], i = all.indexOf(ch); if (!l) return; if (got.has(ch)) { const t = stickerTile(l, i, 'got'); if (aim) t.style.animationDelay = j * 40 + 'ms'; grid.append(t); } else grid.append(lockTile(l, i)); }); return grid; };
+    sc.append(fill(pgx, anim));
+    if (!have) sc.append(el('div', 'stk-soon', `<img src="./img/mascot_heart.webp" alt="" width="64" height="64"><p>These are waiting for you. Learn them well and they appear here.</p>`));
+    const nx = pg[k + 1]; if (nx) { const peek = el('button', 'stk-next', `<span class="stk-pg-head"><b>Up next · ${nx.n === 'more' ? '' : 'Unit ' + nx.n + ' · '}${nx.title}</b><small>${nx.letters.filter(ch => got.has(ch)).length} of ${nx.letters.length} ›</small></span>`); peek.setAttribute('aria-label', 'Open the next page of stickers'); peek.append(fill(nx, false)); peek.onclick = () => { show(k + 1); tabs.children[k + 1]?.scrollIntoView({ inline: 'center', block: 'nearest' }); }; sc.append(peek); }
+  }
+  pg.forEach((x, k) => { const n = x.letters.filter(ch => got.has(ch)).length; const b = el('button', 'btn stk-tab' + (n === x.letters.length ? ' full' : ''), `<b>${x.n === 'more' ? '+' : x.n}</b><small>${n}/${x.letters.length}</small>`); b.setAttribute('role', 'tab'); b.setAttribute('aria-label', `${x.n === 'more' ? 'More' : 'Unit ' + x.n}, ${n} of ${x.letters.length}`); b.onclick = () => show(k); tabs.append(b); });
+  show(startAt); tabs.children[startAt]?.scrollIntoView({ inline: 'center', block: 'nearest' });
+  if (!reduce && done) { const fill = o.querySelector('.stk-bar i'), num = o.querySelector('.stk-shelf-n b'), t0 = performance.now(), D = 900; requestAnimationFrame(() => { fill.style.width = Math.round(100 * done / all.length) + '%'; }); const tick = now => { const k = Math.min(1, (now - t0) / D); num.textContent = Math.round(done * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(tick); }; requestAnimationFrame(tick); }
+  const bk = o.querySelector('.stk-back'); bk.onclick = () => close(o); o.onkeydown = e => e.key === 'Escape' && close(o); bk.focus({ preventScroll: true });
 }
 
 async function reveal(ch, rest, profileId) {

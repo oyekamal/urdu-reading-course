@@ -7,7 +7,7 @@
 // Switch: settings.feel === false turns sound + vibration off (motion stays; prefers-reduced-motion removes motion).
 import { Capacitor } from '@capacitor/core';
 import { marko, setMarko } from './marko.js';
-import { C } from './content.js';
+import { C, play, DOTS } from './content.js';
 
 let app = null;                                           // ctxBase from main.js: { settings, set }
 const on = () => app?.settings?.feel !== false;
@@ -103,9 +103,9 @@ function bounce(el) {
   el.animate([{ scale: '1', translate: '0 0' }, { scale: '1.2', translate: '0 -9px', offset: .26 }, { scale: '.95', translate: '0 1px', offset: .52 }, { scale: '1.05', translate: '0 -2px', offset: .74 }, { scale: '1', translate: '0 0' }], { duration: 520, easing: 'ease-out' });
   el.animate([{ boxShadow: '0 0 0 0 color-mix(in srgb,var(--good) 55%,transparent)' }, { boxShadow: '0 0 0 16px color-mix(in srgb,var(--good) 0%,transparent)' }], { duration: 620, easing: 'ease-out' });
 }
-function wobble(el) {
+function wobble(el) {   // +-4 px, 2 cycles, 250 ms
   if (calm() || !el?.isConnected) return;
-  el.animate([{ translate: '0 0', rotate: '0deg' }, { translate: '-5px 0', rotate: '-1.6deg', offset: .2 }, { translate: '5px 0', rotate: '1.6deg', offset: .45 }, { translate: '-3px 0', rotate: '-.8deg', offset: .68 }, { translate: '1px 0', offset: .86 }, { translate: '0 0', rotate: '0deg' }], { duration: 440, easing: 'ease-out' });
+  el.animate([{ translate: '0 0' }, { translate: '-4px 0', offset: .2 }, { translate: '4px 0', offset: .45 }, { translate: '-4px 0', offset: .7 }, { translate: '3px 0', offset: .88 }, { translate: '0 0' }], { duration: 250, easing: 'ease-in-out' });
 }
 
 /* ------------------------------------------------------------- Marko coach ---- */
@@ -174,21 +174,59 @@ function right(els, solo) {
     if (solo && combo >= 2) setTimeout(() => combo % 5 === 0 ? highFive() : chip(combo), 100);   // label lands ~100 ms after the answer (Duolingo rule 4)
   }
 }
-let misses = 0;
-function wrong(els) {
-  const inLesson = !!document.querySelector('.lesson');
-  if (inLesson) { combo = 0; delete document.querySelector('.lesson').dataset.combo; }   // quiet reset: no message on a miss
-  hear('boop'); buzz('no'); wobble(els[0]);
-  if (inLesson) mood(++misses % 2 ? 'listen' : 'think', 1700);
-  hintRight(els[0]);
+let misses = 0, say = null, sayT = 0;
+const NUM = ['no', 'one', 'two', 'three', 'four'];
+function clearSay(toast = true) { clearTimeout(sayT); say?.remove(); say = null; if (toast) document.getElementById('toast')?.classList.remove('show'); document.querySelectorAll('.tile.feel-answer').forEach(t => t.classList.remove('feel-answer')); }
+// which tile was the answer? explicit data-right (an audio key) first, else the last speech clip that is not the tapped letter's own
+function answerOf(tile) {
+  const row = [...tile.parentElement?.querySelectorAll('.tile') || []];
+  const flagged = row.find(x => x.dataset.right && x !== tile); if (flagged) return { good: flagged, key: flagged.dataset.right };
+  const tapped = C.by?.[tile.textContent.trim()]?.id;
+  const want = [...plays].reverse().find(k => k.startsWith('names/') && k.slice(6) !== tapped)?.slice(6); if (!want) return { good: null, key: null };
+  return { good: row.find(x => C.by?.[x.textContent.trim()]?.id === want && x !== tile && !x.classList.contains('no')) || null, key: 'names/' + want };
 }
-// neutral "here is the answer": after a miss on a hear-and-tap drill, softly glow the tile that was the answer (no state change, still tappable)
-function hintRight(tile) {
-  if (!tile.matches?.('.tile') || calm()) return;
-  if (!C?.by) return;
-  const tapped = C.by[tile.textContent.trim()]?.id; if (!tapped) return;
-  const want = [...plays].reverse().find(k => k.startsWith('names/') && k.slice(6) !== tapped)?.slice(6); if (!want) return;
-  setTimeout(() => { const t = [...tile.parentElement?.querySelectorAll('.tile') || []].find(x => C.by[x.textContent.trim()]?.id === want && !x.classList.contains('no')); if (t?.isConnected) t.animate([{ boxShadow: '0 0 0 0 color-mix(in srgb,var(--good) 55%,transparent)' }, { boxShadow: '0 0 0 9px color-mix(in srgb,var(--good) 28%,transparent)', offset: .5 }, { boxShadow: '0 0 0 0 transparent' }], { duration: 1100, iterations: 2, easing: 'ease-in-out' }); }, 800);
+// kind, specific line for tap-the-letter drills (dots first: that is what tells most letters apart), short generic line otherwise
+function lineFor(good, tile) {
+  const t = good && C.by?.[good.textContent.trim()], p = C.by?.[tile.textContent.trim()];
+  if (!t) return 'Almost! Tap the green one.';
+  const dt = DOTS[t.ch || good.textContent.trim()] || 0, dp = p ? (DOTS[p.ch || tile.textContent.trim()] || 0) : -1;
+  if (dt === 0 && dp > 0) return `This is ${t.name}, no dots!`;
+  if (dt > 0 && dt !== dp) return `Count the dots: ${good.textContent.trim()} has ${NUM[dt]}`;
+  return `Listen again: this is ${t.name}`;
+}
+function bubble(row, good, text) {
+  const b = document.createElement('div'); b.className = 'feel-say'; b.setAttribute('role', 'status'); b.textContent = text;
+  document.body.append(b); const r = row.getBoundingClientRect(), g = (good || row).getBoundingClientRect(), w = b.offsetWidth, h = b.offsetHeight;
+  const below = r.bottom + h + 130 < innerHeight;   // keep clear of the docked primary button
+  const left = Math.max(12, Math.min(innerWidth - w - 12, g.left + g.width / 2 - w / 2));
+  b.style.left = left + 'px'; b.style.top = (below ? r.bottom + 12 : r.top - h - 12) + 'px'; b.style.setProperty('--tx', Math.max(18, Math.min(w - 18, g.left + g.width / 2 - left)) + 'px');
+  b.classList.add(below ? 'under' : 'over');
+  if (!calm()) b.animate([{ transform: 'translateY(' + (below ? -6 : 6) + 'px) scale(.92)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 180, easing: 'cubic-bezier(.2,1.3,.4,1)' });
+  return b;
+}
+// a coach (header Marko, or the screen's own guide/rules/letter Marko) leans toward the answer for ~600 ms
+function lean(toward) {
+  if (!toward || calm()) return;
+  const tx = toward.getBoundingClientRect(); const cx = tx.left + tx.width / 2;
+  markos().forEach(m => {
+    const r = m.getBoundingClientRect(); if (r.width < 8 || m.closest('.away')) return;
+    const d = Math.sign(cx - (r.left + r.width / 2)) || 1;
+    m.animate([{ translate: '0 0', rotate: '0deg' }, { translate: d * 11 + 'px 3px', rotate: d * 13 + 'deg', offset: .16 }, { translate: d * 11 + 'px 3px', rotate: d * 13 + 'deg', offset: .84 }, { translate: '0 0', rotate: '0deg' }], { duration: 640, easing: 'ease-in-out' });
+  });
+}
+function wrong(els) {
+  const tile = els[0], inLesson = !!document.querySelector('.lesson');
+  if (inLesson) { combo = 0; delete document.querySelector('.lesson').dataset.combo; }   // quiet reset: no message on a miss
+  hear('boop'); buzz('no'); wobble(tile);
+  if (!tile.matches?.('.tile')) { if (inLesson) mood(++misses % 2 ? 'listen' : 'think', 600); return; }
+  clearSay();
+  const { good, key } = answerOf(tile), row = tile.parentElement;
+  if (inLesson) { mood(++misses % 2 ? 'listen' : 'think', 600); lean(good || tile); }   // Marko answers within a frame or two, back to idle after ~600 ms
+  if (good) {
+    good.classList.add('feel-answer');
+    setTimeout(() => { if (!good.isConnected) return; if (!calm()) good.animate([{ scale: '1' }, { scale: '1.08', offset: .45 }, { scale: '1' }], { duration: 360, easing: 'cubic-bezier(.3,1.6,.5,1)' }); if (key) play(key); }, 90);
+  }
+  say = bubble(row, good, lineFor(good, tile)); sayT = setTimeout(clearSay, 4200);
 }
 
 // next question: the new tiles pop in from large (Duolingo rule 7, ~300 ms)
@@ -207,11 +245,11 @@ function scan(ms) {
     } else if (m.type === 'childList') {
       if (t.id === 'toast' && /^Correct/.test(t.textContent) && performance.now() - lastOk > 250) soft.push(document.querySelector('.answer') || t);
       if (t.matches?.('.score') && t.textContent.includes('✓ good')) soft.push(t);
-      if (t.matches?.('.choices') && t.closest('.lesson')) { const ts = [...m.addedNodes].filter(n => n.matches?.('.tile')); if (ts.length > 1) popIn(ts); }
+      if (t.matches?.('.choices') && t.closest('.lesson')) { const ts = [...m.addedNodes].filter(n => n.matches?.('.tile')); if (ts.length > 1) { clearSay(); popIn(ts); } }
     }
   }
   if (!oks.length && soft.length) oks.push(soft[0]);                                   // toast / trace verdicts only when no tile already said it
-  if (oks.length) { lastOk = performance.now(); right(oks, oks.length === 1 && !nos.length); } else if (nos.length) wrong(nos);
+  if (oks.length) { clearSay(false); lastOk = performance.now(); right(oks, oks.length === 1 && !nos.length); } else if (nos.length) wrong(nos);
   if (oks.length && nos.length) mood(oks.length >= nos.length ? 'cheer' : 'think', 1500);
   const cur = document.querySelector('.lesson');
   if (cur && cur.firstElementChild !== lessonHead) enterLesson(cur); else if (!cur && lessonHead) { lessonHead = null; coach = null; }
