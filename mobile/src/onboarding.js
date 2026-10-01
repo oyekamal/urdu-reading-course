@@ -55,7 +55,7 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
     scr.classList.add('ob-welcome');
     scr.append(el('div', 'ob-hero', `<div class="ob-sun fx-stage">${mascot('hello', 190)}</div><div class="ur nastaliq ob-kicker">اردو پڑھنا سیکھیں</div><h1>Read Urdu in ten minutes a day</h1><p class="muted">Hi, I'm Marko. I'll teach you the letters one at a time, and you'll read a real word in the next two minutes.</p>`));
     scr.querySelector('.ob-sun').prepend(fx('sparkles_loop', { size: 250, loop: true, cls: 'fx-over', speed: .6 }));
-    foot(scr, cta("Let's begin", () => { play('ui/welcome'); go(1); }), el('p', 'muted center ob-small', 'Free, no account, works offline'));
+    foot(scr, el('p', 'muted center ob-small', 'Free, no account, works offline'), cta("Let's begin", () => { play('ui/welcome'); go(1); }));
   }
   function wake(scr) {
     scr.classList.add('ob-center');
@@ -83,7 +83,7 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
     scr.append(say('hello', T(a.who, "I'm Marko. <b>What's your name?</b>", "I'm Marko. <b>What's your child's name?</b>"), 150));
     const inp = el('input', 'ob-name'); inp.id = 'ob-name'; inp.placeholder = T(a.who, 'Your name', "Child's name"); inp.value = a.name || ''; inp.maxLength = 24; inp.autocomplete = 'off'; inp.setAttribute('aria-label', inp.placeholder);
     const hi = el('div', 'ob-hi'); const next = cta('Continue', () => { a.name = inp.value.trim(); save(); go(1); }, !inp.value.trim());
-    let greeted = false; const upd = () => { const v = inp.value.trim(); next.disabled = !v; hi.innerHTML = v ? `<span class="ob-badge" style="background:${a.colour || 'var(--accent)'}">${esc([...v][0].toUpperCase())}</span><span>${esc(v)}'s reading badge</span>` : ''; if (v && !greeted) { greeted = true; react(scr, 'cheer', `<b>${esc(v)}!</b> What a lovely name. Soon ${T(a.who, "you'll", esc(v) + ' will')} read it in Urdu.`); } else if (v) scr.querySelector('.ob-bubble b').textContent = v + '!'; };
+    let greeted = false; const upd = () => { const v = inp.value.trim(); next.disabled = !v; hi.innerHTML = v ? `<span class="ob-badge" style="background:${a.colour || 'var(--accent)'}">${esc([...v][0].toUpperCase())}</span><span>${esc(v)}'s reading badge</span>` : ''; const line = v => `<b>${esc(v)}!</b> What a lovely name. Soon ${T(a.who, "you'll", esc(v) + ' will')} read it in Urdu.`; if (v && !greeted) { greeted = true; react(scr, 'cheer', line(v)); } else if (v) scr.querySelector('.ob-bubble').innerHTML = line(v); };
     inp.oninput = upd; inp.onkeydown = e => { if (e.key === 'Enter' && inp.value.trim()) next.click(); };
     scr.append(inp, hi); foot(scr, next); upd(); later(() => inp.focus(), 250);
   }
@@ -132,11 +132,11 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
     const stage = el('div', 'ob-demo'); const pips = el('div', 'ob-pips', steps.map(() => '<i></i>').join('')); scr.append(el('div', 'muted center ob-small', 'Your first lesson'), pips, stage);
     const step = () => { [...pips.children].forEach((p, i) => p.classList.toggle('on', i <= k)); stage.innerHTML = ''; steps[k](); };
     const nxt = (label = 'Next') => { const b = cta(label, () => { k++; k < steps.length ? step() : go(1); }); stage.append(b); return b; };
-    const hear = (key, label) => { const b = el('button', 'btn btn-chip', `${icon('speaker')} ${label}`); b.onclick = () => play(key); return b; };
+    const hear = (key, label) => { const b = el('button', 'btn btn-play btn-say', icon('speaker')); b.setAttribute('aria-label', label); b.onclick = () => play(key); return b; };
     function meetA() { stage.append(say('listen', `This is <b>alif</b>. It says <b>aa</b>, like in <i>father</i>.`, 84), el('button', 'ob-glyph ur', 'ا')); stage.lastChild.onclick = () => play('names/alif'); stage.lastChild.setAttribute('aria-label', 'Hear alif'); stage.append(hear('names/alif', 'Hear it again')); later(() => play('names/alif'), 400); nxt(); }
     function meetB() { stage.append(say('point', `This is <b>be</b>. It says <b>b</b>. See the <b>one dot</b> underneath?`, 84), el('button', 'ob-glyph ur', 'ب')); stage.lastChild.onclick = () => play('names/be'); stage.lastChild.setAttribute('aria-label', 'Hear be'); stage.append(hear('names/be', 'Hear it again')); later(() => play('names/be'), 400); nxt(); }
     function tap() {
-      const order = ['ب', 'ا', 'ب']; let r = 0; const q = say('listen', '<b>Listen, then tap the letter you hear.</b>', 84); const row = el('div', 'choices ob-choices'); const again = el('button', 'btn btn-chip', `${icon('speaker')} Play again`); stage.append(q, again, row);
+      const order = ['ب', 'ا', 'ب']; let r = 0; const q = say('listen', '<b>Listen, then tap the letter you hear.</b>', 84); const row = el('div', 'choices ob-choices'); const again = hear('', 'Play again'); stage.append(q, again, row);
       const round = () => { const t = order[r]; const key = t === 'ا' ? 'names/alif' : 'names/be'; again.onclick = () => play(key); row.innerHTML = '';
         ['ا', 'ب'].forEach(c => { const b = el('button', 'tile ur', c); b.onclick = () => { if (c !== t) { b.classList.add('no'); play('ui/wrong'); later(() => b.classList.remove('no'), 500); return; } b.classList.add('ok'); play('ui/correct'); r++; later(() => r < order.length ? round() : (row.innerHTML = '', q.querySelector('.ob-bubble').innerHTML = '<b>Three out of three.</b> Your ears already know them.', nxt()), 650); }; row.append(b); }); later(() => play(key), 300); };
       round();
@@ -144,8 +144,8 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
     function blend() {
       stage.append(say('think', 'Put <b>be</b> before <b>alif</b> and they join into one sound. Urdu reads <b>right to left</b>.', 84));
       const j = el('div', 'ob-join', '<span class="ur ob-l">ا</span><span class="ur ob-r">ب</span><span class="ur ob-joined">با</span>'); stage.append(j);
-      const b = el('button', 'btn btn-primary btn-wide', `${icon('blend')} Join them`); stage.append(b);
-      b.onclick = () => { j.classList.add('go'); b.remove(); later(() => { play('syllables/be_a'); stage.append(el('p', 'center ob-say-line', 'b + aa = <b>baa</b>'), hear('syllables/be_a', 'baa')); nxt('Now a whole word'); }, 700); };
+      const b = cta(`${icon('blend')} Join them`); stage.append(b);
+      b.onclick = () => { j.classList.add('go'); b.remove(); later(() => { play('syllables/be_a'); stage.append(el('div', 'say-row', '<p class="ob-say-line">b + aa = <b>baa</b></p>')); stage.lastChild.prepend(hear('syllables/be_a', 'Hear baa')); nxt('Now a whole word'); }, 700); };
     }
     function word() {
       const baba = C.units[1].words.findIndex(w => w[0] === 'بابا'); const key = `units/u01_${String(baba).padStart(2, '0')}`;
@@ -155,7 +155,7 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
     }
     function check() {
       const baba = C.units[1].words.findIndex(w => w[0] === 'بابا'); const key = `units/u01_${String(baba).padStart(2, '0')}`;
-      const q = say('listen', '<b>Last one.</b> Which one says <b>baba</b>?', 84); const row = el('div', 'choices ob-choices'); const again = el('button', 'btn btn-chip', `${icon('speaker')} Play again`); again.onclick = () => play(key); stage.append(q, again, row);
+      const q = say('listen', '<b>Last one.</b> Which one says <b>baba</b>?', 84); const row = el('div', 'choices ob-choices'); const again = hear(key, 'Play again'); stage.append(q, again, row);
       ['با', 'بابا'].sort(() => Math.random() - .5).forEach(c => { const b = el('button', 'tile ur', c); b.onclick = () => { if (c !== 'بابا') { b.classList.add('no'); play('syllables/be_a'); react(stage, 'think', 'That one is just <b>baa</b>. Look for <b>baa</b> twice.'); later(() => b.classList.remove('no'), 600); return; } row.querySelectorAll('.tile').forEach(x => x.disabled = true); b.classList.add('ok'); play('ui/correct'); a.firstWord = Date.now(); save(); react(stage, 'cheer', '<b>You read it. Really read it.</b>'); stage.append(fx('success_check', { size: 110 })); burst(); later(() => nxt('See what you did'), 900); }; row.append(b); });
       later(() => play(key), 300);
     }

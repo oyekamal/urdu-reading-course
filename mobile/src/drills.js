@@ -9,7 +9,10 @@ export const known = unit => new Set([...[...taughtBefore(unit.n), ...unit.lette
 export const spellable = (unit, ur) => { const k = known(unit); return [...ur].every(c => k.has(c) || /[\u064B-\u0652\u0670]/.test(c)); };
 export const cue = ok => { if (document.body.dataset.track === 'child') setTimeout(() => play(ok ? 'ui/correct' : 'ui/wrong'), ok ? 250 : 900); };
 export const strokeHint = l => STROKE[l.family] || 'body first in one stroke, right to left; dots last';
-export function playBtn(key, small) { const b = el('button', 'btn btn-play' + (small ? ' small' : ''), '▶'); b.setAttribute('aria-label', 'Play'); b.onclick = e => { e.stopPropagation(); if (!play(key)) toast('No audio for this item'); }; return b; }
+export function playBtn(key, small) { const b = el('button', 'btn btn-play' + (small ? ' small' : ''), icon('speaker')); b.setAttribute('aria-label', 'Play'); b.onclick = e => { e.stopPropagation(); if (!play(key)) toast('No audio for this item'); }; return b; }
+// THE audio control: one big round speaker button, placed directly above the tiles it asks about (or next to the item it says).
+export function sayBtn(fn, label = 'Play again') { const b = el('button', 'btn btn-play btn-say', icon('speaker')); b.setAttribute('aria-label', label); b.onclick = e => { e.stopPropagation(); fn(); }; return b; }
+export const sayRow = (...kids) => { const r = el('div', 'say-row'); r.append(...kids.filter(Boolean)); return r; };
 const disp = (w, marks) => marks ? w.v : w.ur;
 const bare = t => t.replace(/[\u064B-\u0652\u0670\u0640]/g, '');  // letters only: what a tile keyboard can type
 
@@ -35,14 +38,14 @@ export function tellApart(unit, ctx, onDone, opts = {}) {
   pool = [...pool, ...shuffle([...have].filter(c => C.by[c] && !pool.includes(c))).slice(0, Math.max(0, 4 - pool.length + 2))];
   if (pool.length < 2) { const box = el('div', 'card'); box.innerHTML = '<p class="muted">Nothing to compare yet.</p>'; onDone && onDone(0, 0); return box; }
   const box = el('div', 'card'); box.innerHTML = '<h2>Tap what you hear</h2>';
-  const status = el('div', 'score'), choices = el('div', 'choices'), btn = el('button', 'btn btn-primary', 'Play sound'); let round = 0, score = 0, target, t0;
+  const status = el('div', 'score'), choices = el('div', 'choices'); let round = 0, score = 0, target, t0; const btn = sayBtn(() => next(), 'Play sound'); const again = el('button', 'btn btn-chip', 'Again'); again.style.display = 'none'; again.onclick = () => { round = 0; score = 0; again.style.display = 'none'; btn.style.display = ''; next(); };
   function next() {
-    if (round >= rounds) { status.textContent = `Done: ${score}/${rounds}`; choices.innerHTML = ''; btn.textContent = 'Again'; btn.onclick = () => { round = 0; score = 0; next(); }; onDone && onDone(score, rounds); return; }
+    if (round >= rounds) { status.textContent = `Done: ${score}/${rounds}`; choices.innerHTML = ''; btn.style.display = 'none'; again.style.display = ''; onDone && onDone(score, rounds); return; }
     round++; target = opts.letters && Math.random() < 0.6 ? focus[Math.floor(Math.random() * focus.length)] : pool[Math.floor(Math.random() * pool.length)]; status.textContent = `Round ${round}/${rounds} · ${score} right`;
     choices.innerHTML = ''; shuffle([target, ...shuffle(pool.filter(c => c !== target)).slice(0, 5)]).forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c].name); t.onclick = () => { const ok = c === target; ctx.record('tell', target, ok, Date.now() - t0); if (ok) { t.classList.add('ok'); t.setAttribute('aria-label', C.by[c].name + ', correct'); score++; toast('Correct: ' + C.by[c].name); cue(true); setTimeout(next, 450); } else { t.classList.add('no'); t.setAttribute('aria-label', C.by[c].name + ', wrong'); toast(hintFor(target, c)); cue(false); play('names/' + C.by[c].id); } }; choices.append(t); });
-    t0 = Date.now(); play('names/' + C.by[target].id); btn.textContent = 'Play again'; btn.onclick = () => play('names/' + C.by[target].id);
+    t0 = Date.now(); play('names/' + C.by[target].id); btn.setAttribute('aria-label', 'Play again'); btn.onclick = e => { e.stopPropagation(); play('names/' + C.by[target].id); };
   }
-  btn.onclick = next; box.append(status, btn, choices); shuffle(pool).slice(0, 6).forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c].name); t.onclick = next; choices.append(t); }); return box;
+  box.append(sayRow(btn, status, again), choices); shuffle(pool).slice(0, 6).forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c].name); t.onclick = next; choices.append(t); }); return box;
 }
 function hintFor(target, picked) { const dt = DOTS[target] || 0, dp = DOTS[picked] || 0; if (dt !== dp) return `${C.by[target].name} has ${dt} dot${dt === 1 ? '' : 's'}, that one has ${dp}`; return `That is ${C.by[picked].name}. Listen again for ${C.by[target].name}`; }
 
@@ -70,7 +73,7 @@ export function readIt(unit, ctx, marks, range) {
 export function writeIt(unit, ctx, styleName, onDone, letters) {
   const ls = (letters || unit.letters).map(c => C.by[c]).filter(Boolean); if (!ls.length) return null;
   const box = el('div', 'card'); box.innerHTML = '<h2>Trace</h2><p class="muted">Start at the green dot. Body first, dots last.</p>';
-  const sel = el('select'), formSel = el('select'), cv = el('canvas', 'trace'), out = el('div', 'score'), clear = el('button', 'btn', 'Clear'), check = el('button', 'btn btn-primary', 'Check');
+  const sel = el('select'), formSel = el('select'), cv = el('canvas', 'trace'), out = el('div', 'score'), clear = el('button', 'btn', 'Clear'), check = el('button', 'btn', 'Check');
   ls.forEach(l => sel.append(new Option(l.name + ' ' + l.ch, l.ch))); ['isolated', 'initial', 'medial', 'final'].forEach(f => formSel.append(new Option(f, f)));
   cv.width = 360; cv.height = 300; const ctx2 = cv.getContext('2d', { willReadFrequently: true }); let ref = null, drawing = false, startX = null, glyphBox = null, strokes = 0, good = 0;
   const glyph = () => { const l = C.by[sel.value], f = formSel.value; if (!l.joiner && (f === 'initial' || f === 'medial')) return null; return f === 'isolated' ? l.ch : f === 'initial' ? l.ch + 'ـ' : f === 'medial' ? 'ـ' + l.ch + 'ـ' : 'ـ' + l.ch; };
@@ -94,16 +97,16 @@ export function dictation(unit, ctx, marks, onDone) {
   if (unit.words.length < 5) return null;
   const box = el('div', 'card'); box.innerHTML = '<h2>Dictation</h2><p class="muted">Hear a word, spell it with the tiles.</p>';
   const keysAll = [...new Set([...taughtBefore(unit.n), ...unit.letters])].filter(c => C.by[c]);
-  const ans = el('div', 'answer ur'), keys = el('div', 'keys'), status = el('div', 'score'), playB = el('button', 'btn btn-primary', 'Play word'), checkB = el('button', 'btn', 'Check'), back = el('button', 'btn', '⌫'), skipB = el('button', 'btn', 'Skip');
+  const ans = el('div', 'answer ur'), keys = el('div', 'keys'), status = el('div', 'score'), playB = sayBtn(() => {}, 'Play word'), checkB = el('button', 'btn btn-primary btn-wide act', 'Check'), back = el('button', 'btn', '⌫'), skipB = el('button', 'btn', 'Skip'), againB = el('button', 'btn btn-chip', 'Again'); back.setAttribute('aria-label', 'Erase'); againB.style.display = 'none';
   const pickable = unit.words.map((w, i) => ({ w: W(w), i })).filter(x => spellable(unit, x.w.ur)); if (pickable.length < 3) return null;
   let items = shuffle(pickable).slice(0, 5), k = 0, typed = '', score = 0, t0;
   [...keysAll, ...(unit.n >= 10 ? EXTRA10 : [])].forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c]?.name || c); t.onclick = () => { typed += c; ans.textContent = typed; }; keys.append(t); });
   back.onclick = () => { typed = [...typed].slice(0, -1).join(''); ans.textContent = typed; };
   const key = () => wordKey(unit.n, items[k].i + (unit.wordOffset || 0));
-  function show() { if (k >= items.length) { checkB.disabled = true; skipB.disabled = true; back.disabled = true; status.textContent = `Done: ${score}/5`; playB.textContent = 'Again'; playB.onclick = () => { items = shuffle(pickable).slice(0, 5); k = 0; score = 0; checkB.disabled = false; skipB.disabled = false; back.disabled = false; show(); }; onDone && onDone(score, 5); return; } typed = ''; ans.textContent = ''; t0 = Date.now(); status.textContent = `Word ${k + 1}/5 · ${score} right`; playB.textContent = 'Play word'; playB.onclick = () => play(key()); play(key()); }
+  function show() { if (k >= items.length) { checkB.disabled = true; skipB.disabled = true; back.disabled = true; status.textContent = `Done: ${score}/5`; playB.style.display = 'none'; againB.style.display = ''; checkB.style.display = 'none'; againB.onclick = () => { items = shuffle(pickable).slice(0, 5); k = 0; score = 0; checkB.disabled = false; skipB.disabled = false; back.disabled = false; playB.style.display = ''; againB.style.display = 'none'; checkB.style.display = ''; show(); }; onDone && onDone(score, 5); return; } typed = ''; ans.textContent = ''; t0 = Date.now(); status.textContent = `Word ${k + 1}/5 · ${score} right`; playB.onclick = e => { e.stopPropagation(); play(key()); }; play(key()); }
   checkB.onclick = () => { if (k >= items.length) return; const w = items[k].w; const ok = typed === bare(w.ur); ctx.record('dictation', w.ur, ok, Date.now() - t0); if (ok) { score++; ans.textContent = disp(w, marks()); toast('Correct — ' + w.rom + ' (' + w.en + ')'); k++; setTimeout(show, 900); } else { ans.classList.add('no'); setTimeout(() => ans.classList.remove('no'), 500); toast(typed.length !== bare(w.ur).length ? `${bare(w.ur).length} letters in this word` : 'Not yet. Listen again.'); } };
   skipB.onclick = () => { if (k >= items.length) return; toast('It was ' + items[k].w.v + ' — ' + items[k].w.rom); ctx.record('dictation', items[k].w.ur, false, 0); k++; setTimeout(show, 900); };
-  const bar = el('div', 'row'); bar.append(playB, checkB, back, skipB, status); box.append(bar, ans, keys); show(); return box;
+  const bar = el('div', 'row'); bar.append(back, skipB); box.append(sayRow(playB, status, againB), ans, keys, bar, checkB); show(); return box;
 }
 
 // 10-item check; 8 to pass.
@@ -112,8 +115,8 @@ export function quiz(unit, ctx, marks, onDone) {
   const box = el('div', 'card'); box.innerHTML = '<h2>Check</h2><p class="muted">Score 8 of 10 to pass this unit.</p>';
   const ol = el('ol'); ol.style.cssText = 'padding-left:18px;display:grid;gap:12px;margin:0'; const qs = shuffle(qwords).slice(0, 10); const picks = {};
   qs.forEach((w, qi) => { const li = el('li', '', `Which one says <b>${w.rom}</b> (${w.en})?`); const ch = el('div', 'choices'); ch.style.justifyContent = 'flex-start'; shuffle([w, ...shuffle(qwords.filter(x => x.ur !== w.ur)).slice(0, 3)]).forEach(o => { const t = el('button', 'tile small ur', disp(o, marks())); t.setAttribute('aria-label', o.rom); t.onclick = () => { [...ch.children].forEach(c => c.classList.remove('ok')); t.classList.add('ok'); picks[qi] = o.ur; }; ch.append(t); }); li.append(ch); ol.append(li); });
-  const submit = el('button', 'btn btn-primary btn-wide', 'Submit'), res = el('div', 'score');
+  const submit = el('button', 'btn btn-primary btn-wide act', 'Submit'), res = el('div', 'score');
   submit.onclick = () => { let sc = 0; qs.forEach((w, qi) => { const ok = picks[qi] === w.ur; if (ok) sc++; ctx.record('quiz', w.ur, ok, 0); [...ol.children[qi].querySelectorAll('.tile')].forEach(t => { const right = t.textContent === disp(w, marks()); t.classList.toggle('ok', right); if (!right && t.classList.contains('ok') === false && picks[qi] && t.textContent === disp(qwords.find(x => x.ur === picks[qi]) || {}, marks())) t.classList.add('no'); }); });
-    const missed = qs.filter((w, qi) => picks[qi] !== w.ur).map(w => w.rom).slice(0, 4).join(', '); res.textContent = `Score ${sc}/10 ${sc >= 8 ? '— passed ✓' : '— re-read ' + missed + ', then try again'}`; onDone && onDone(sc, 10); };
-  box.append(ol, submit, res); return box;
+    const missed = qs.filter((w, qi) => picks[qi] !== w.ur).map(w => w.rom).slice(0, 4).join(', '); res.textContent = `Score ${sc}/10 ${sc >= 8 ? '— passed ✓' : '— re-read ' + missed + ', then try again'}`; submit.remove(); res.scrollIntoView({ block: 'center' }); onDone && onDone(sc, 10); };
+  box.append(ol, res, submit); return box;
 }

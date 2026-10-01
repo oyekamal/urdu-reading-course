@@ -222,3 +222,59 @@ body:has(.lesson){background:radial-gradient(circle at 12px 12px,color-mix(in sr
 /* home: Marko stands in a painted village scene (Gemini, scene_home_morning/evening) */
 .home-scene{padding-bottom:14px}.hs-world{height:236px;margin:10px -16px 0;background:center 60%/cover no-repeat var(--sky);border-radius:0 0 28px 28px;align-items:flex-end;justify-content:flex-start}.hs-world::after{display:none}
 .hs-marko{left:22px!important;bottom:4px!important}.hs-stats{margin-top:-24px}.hs-sky{top:auto;bottom:0;display:none}
+
+/* ==== QA consistency pass (2026-10-01, ui_audit.py) ====================================================
+   One primary per screen, always the same wide 56px button docked just above the tab bar (or the screen bottom
+   when there is no tab bar). Audio is always the same round speaker button, placed right above the tiles it asks
+   about or right next to the item it says. Radii: buttons/tiles/list rows 16, cards 24. Tap targets >= 48
+   (child track: tiles >= 64, speakers >= 56). Button text meets WCAG AA (4.5:1). */
+:root{--primary:#158276;--primary-deep:#0F6058;--chip-ink:#126B62;--nav-on:#B8472A;--nav-h:70px;--dock-gap:8px}
+@media (prefers-color-scheme:dark){:root{--primary:var(--accent);--primary-deep:var(--accent-deep);--chip-ink:var(--accent);--nav-on:var(--coral)}}
+.btn-primary{background:var(--primary);border-color:var(--primary-deep)}
+.btn-chip{min-height:44px;color:var(--chip-ink)}
+.bottom button.active{color:var(--nav-on)}
+.bottom button{min-height:56px}
+/* the docked primary: lessons dock inside their flex column; other screens use .dock (fixed) */
+#app:has(.lesson){padding-bottom:calc(var(--nav-h) + var(--dock-gap) + env(safe-area-inset-bottom,0))}
+.lesson{min-height:calc(100dvh - 12px - var(--nav-h) - var(--dock-gap) - env(safe-area-inset-bottom,0))}
+.lesson>div:last-child>.btn-primary.btn-wide:last-child{bottom:calc(var(--nav-h) + var(--dock-gap) + env(safe-area-inset-bottom,0))}
+.btn-wide{min-height:56px}
+.dock,.dock-row{position:fixed!important;left:0;right:0;bottom:calc(var(--nav-h) + var(--dock-gap) + env(safe-area-inset-bottom,0));width:calc(100% - 32px)!important;max-width:688px;margin:0 auto!important;z-index:4}
+.dock{box-shadow:0 -14px 22px 4px var(--paper)}
+.dock-row{display:grid;grid-template-columns:1fr 1.6fr;gap:10px;background:var(--paper);box-shadow:0 -14px 22px 4px var(--paper)}.dock-row .btn{margin:0}
+#app:has(.dock,.dock-row){padding-bottom:calc(var(--nav-h) + 92px + env(safe-area-inset-bottom,0))}
+.toast{bottom:calc(var(--nav-h) + 76px + env(safe-area-inset-bottom,0))}
+.ob ~ .toast,body:has(.ob) .toast,body:has(.celebrate) .toast{bottom:calc(90px + env(safe-area-inset-bottom,0))}
+/* onboarding: same gap everywhere (14px above the safe area), small print above the button, not under it */
+.ob:has(.ob-demo){padding-bottom:calc(2px + env(safe-area-inset-bottom,0))}
+.ob-back{width:48px;height:48px}
+/* THE audio control */
+.btn-play{width:52px;height:52px;min-width:52px;border-radius:999px;padding:0;color:var(--chip-ink);background:var(--soft);border:2px solid color-mix(in srgb,var(--accent) 35%,var(--soft));border-bottom-width:4px}
+.btn-play .ic svg{width:24px;height:24px}
+.btn-say{width:68px;height:68px;min-width:68px;background:var(--primary);color:#fff;border-color:var(--primary-deep)}.btn-say .ic svg{width:32px;height:32px}
+body[data-track="child"] .btn-play{width:56px;height:56px;min-width:56px}
+body[data-track="child"] .btn-say{width:76px;height:76px;min-width:76px}body[data-track="child"] .btn-say .ic svg{width:36px;height:36px}
+.word .btn-play{width:48px;height:48px;min-width:48px}body[data-track="child"] .word .btn-play{width:56px;height:56px;min-width:56px}
+.say-row{display:flex;align-items:center;justify-content:center;gap:14px;margin:6px 0 14px;flex-wrap:wrap}
+.say-row .score{min-width:0}.say-row .q{font:600 18px/1.3 var(--display);flex:1;min-width:160px}.say-row:has(.q) {justify-content:flex-start}
+.say-row:has(.btn-say:only-child){margin:10px 0}
+.ex-row{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:8px}.ex-row .ur{font-size:40px;line-height:1.5}.ex-row small{display:block}
+.choices{justify-content:center}
+/* child track: every answer tile >= 64px */
+body[data-track="child"] .tile.small{min-width:64px;min-height:64px}
+/* headers: title left, profile chip right, never wrapping under the subtitle */
+.page-head{flex-wrap:nowrap;align-items:flex-start}.page-head>div:first-child{flex:1;min-width:0}.page-head>.btn{flex:none}
+details.card summary{min-height:44px;display:flex;align-items:center}
+label.row{min-height:48px}
+/* celebration: one primary at the bottom, "back to path" as a chip at the top */
+.cel-top{position:relative;display:flex;padding-top:12px;min-height:56px}
+.cel-back{min-height:44px;padding:8px 14px;font-size:15px;border-radius:999px;border-bottom-width:2px;width:auto;margin:0}
+.cel-foot{padding-bottom:6px}
+/* radii scale */
+.card,.lesson .card{border-radius:24px}.ob-opt,.ucard,.ob-fix,.ob-plan>div,.word{border-radius:16px}
+.unit .btn-primary.btn-wide.dock{margin:0 auto!important}
+.lesson>.row:first-child{flex-wrap:nowrap}.lesson>.row:first-child>div:first-child{flex:1;min-width:0}
+.cel-go{background:#fff;border-color:rgba(0,0,0,.14)}.celebrate{padding-bottom:calc(14px + env(safe-area-inset-bottom,0))}.cel-foot{padding-bottom:0}
+/* explicit rgba: color-mix(…, transparent) renders as a dark ring in some Android WebViews */
+.pearl.cur{box-shadow:0 0 0 5px rgba(242,169,59,.3),inset 0 -4px 0 rgba(30,47,85,.08)}
+@media (prefers-reduced-motion:no-preference){@keyframes glow{50%{box-shadow:0 0 0 10px rgba(242,169,59,.14),inset 0 -4px 0 rgba(30,47,85,.08)}}}

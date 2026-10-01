@@ -66,7 +66,7 @@ with sync_playwright() as p:
         for step in range(maxsteps):
             h2=pg.query_selector("#app h2"); title=h2.inner_text() if h2 else "?"
             for r in range(40):
-                if pg.query_selector(".btn-primary.btn-wide"): break
+                if pg.query_selector(".btn-primary.btn-wide:not(.act)"): break
                 if pg.query_selector("ol li .tile"): answer_quiz(); continue
                 if pg.query_selector("h2:has-text('Dictation')") and pg.query_selector("button:has-text('Skip')"):
                     # dictation: type the word using keys
@@ -80,8 +80,8 @@ with sync_playwright() as p:
                     if sub: js(sub); pg.wait_for_timeout(400); continue
                     break
                 pg.wait_for_timeout(560)
-            c=pg.query_selector(".btn-primary.btn-wide")
-            if c and c.inner_text().strip()=='Submit': answer_quiz(); pg.wait_for_timeout(600); c=[x for x in pg.query_selector_all('.btn-primary.btn-wide') if x.inner_text().strip()!='Submit']; c=c[0] if c else None
+            c=pg.query_selector(".btn-primary.btn-wide:not(.act)")
+            if c and c.inner_text().strip()=='Submit': answer_quiz(); pg.wait_for_timeout(600); c=[x for x in pg.query_selector_all('.btn-primary.btn-wide:not(.act)') if x.inner_text().strip()!='Submit']; c=c[0] if c else None
             if not c: out.append(title+" (stuck)"); break
             label=c.inner_text(); out.append(f"{title} -> {label}"); js(c); pg.wait_for_timeout(600)
             if label.startswith("Back to path") or label.startswith("Next:"): break
