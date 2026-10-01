@@ -280,3 +280,15 @@ label.row{min-height:48px}
 @media (prefers-reduced-motion:no-preference){@keyframes glow{50%{box-shadow:0 0 0 10px rgba(242,169,59,.14),inset 0 -4px 0 rgba(30,47,85,.08)}}}
 /* animated Marko (marko.js) inherits .mascot sizing; keep it square when CSS sets height:auto */
 .marko.mascot{aspect-ratio:1;max-width:100%}
+/* round 6: livelier celebrations, Marko beside the letter, Marko as the home focal point */
+.cel-confetti{position:absolute!important;inset:0;width:100%!important;height:100%!important;z-index:0;opacity:.9}.celebrate>*{position:relative}
+.cel-chip{position:relative}.cel-pearl{position:absolute;left:50%;top:50%;width:12px;height:12px;margin:-6px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#F7EBD5 45%,#E9C98F);box-shadow:0 1px 2px rgba(0,0,0,.2);opacity:0;animation:pearlOut .9s cubic-bezier(.1,.8,.3,1) var(--d) both}
+@keyframes pearlOut{0%{opacity:1;transform:rotate(var(--a)) translateX(0) scale(.4)}70%{opacity:1}100%{opacity:0;transform:rotate(var(--a)) translateX(120px) scale(1)}}
+.cel-stage::before,.cel-stage::after{content:'';position:absolute;top:30%;width:34px;height:60px;border:4px solid rgba(255,255,255,.6);border-color:transparent rgba(255,255,255,.65) transparent transparent;border-radius:50%;animation:lines 1s ease-out .3s 2 both}.cel-stage::before{left:-26px;transform:scaleX(-1)}.cel-stage::after{right:-26px}
+@keyframes lines{0%{opacity:0;transform:translateY(10px)}40%{opacity:1}100%{opacity:0;transform:translateY(-10px)}}.cel-stage::before{animation-name:linesL}@keyframes linesL{0%{opacity:0;transform:scaleX(-1) translateY(10px)}40%{opacity:1}100%{opacity:0;transform:scaleX(-1) translateY(-10px)}}
+.celebrate.gold .cel-stage .mascot{animation:obHop .9s cubic-bezier(.3,1.6,.5,1) .2s infinite}
+.blob{margin-bottom:28px}.blob .peek{width:150px!important;height:150px!important;right:-62px!important;bottom:-38px!important}
+.peek-say{position:absolute;right:-50px;top:-8px;background:var(--card);border:2px solid var(--line);border-radius:16px 16px 4px 16px;padding:4px 12px;font:700 18px var(--display);color:var(--accent-deep);box-shadow:var(--shadow);animation:obIn .4s .6s both}
+.hs-world{height:260px}.hs-marko{left:8px!important;bottom:0!important}
+.hs-say{position:absolute;left:150px;bottom:150px;max-width:150px;background:var(--card);border:2px solid var(--line);border-radius:18px 18px 18px 4px;padding:8px 12px;font:600 15px/1.25 var(--display);box-shadow:var(--shadow);animation:obIn .4s .8s both}
+@media (prefers-reduced-motion:reduce){.cel-pearl,.cel-stage::before,.cel-stage::after{animation:none;opacity:0}}
