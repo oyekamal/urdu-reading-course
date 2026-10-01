@@ -292,3 +292,101 @@ label.row{min-height:48px}
 .hs-world{height:260px}.hs-marko{left:8px!important;bottom:0!important}
 .hs-say{position:absolute;left:150px;bottom:150px;max-width:150px;background:var(--card);border:2px solid var(--line);border-radius:18px 18px 18px 4px;padding:8px 12px;font:600 15px/1.25 var(--display);box-shadow:var(--shadow);animation:obIn .4s .8s both}
 @media (prefers-reduced-motion:reduce){.cel-pearl,.cel-stage::before,.cel-stage::after{animation:none;opacity:0}}
+/* round 7a: home + nav */
+/* tab bar: filled coloured icons, each tab its own colour (--tc), playful pill + one-time pop on the selected tab */
+.bottom{padding:4px 4px calc(6px + env(safe-area-inset-bottom,0));box-shadow:0 -4px 18px rgba(30,47,85,.06)}
+.bottom button{flex:1;min-width:0;max-width:110px;gap:3px;padding:4px 2px;color:var(--muted);font:700 11.5px var(--display);letter-spacing:.01em;-webkit-tap-highlight-color:transparent}
+.bottom[data-n="4"] button{font-size:12.5px}
+.bottom .ic{display:grid;place-items:center;width:52px;height:32px;padding:0;border-radius:999px;color:var(--tc,var(--accent));transition:background .2s}
+.bottom .ic svg{width:25px;height:25px;filter:drop-shadow(0 1.5px 0 color-mix(in srgb,var(--tc,var(--accent)) 45%,#000 25%))}
+.bottom button:not(.active) .ic svg{opacity:.78}
+.bottom button.active{color:var(--td,var(--accent-deep))}
+.bottom button.active .ic{background:color-mix(in srgb,var(--tc,var(--accent)) 22%,var(--card));animation:tabPop .5s cubic-bezier(.3,1.7,.5,1)}
+.bottom button.active .ic svg{opacity:1}
+@keyframes tabPop{0%{transform:scale(.7)}45%{transform:scale(1.18) translateY(-3px)}70%{transform:scale(.96)}100%{transform:none}}
+@media (prefers-color-scheme:dark){.bottom button.active{color:var(--tc)}.bottom button.active .ic{background:color-mix(in srgb,var(--tc) 26%,var(--card))}}
+@media (prefers-reduced-motion:reduce){.bottom button.active .ic{animation:none}}
+
+/* home: painted courtyard fills the first screen, big Marko in the middle, one today card at the bottom of the fold */
+.home-hero{display:flex;flex-direction:column;min-height:calc(100dvh - 12px - var(--nav-h) - 10px - env(safe-area-inset-bottom,0));margin:-12px -16px 0;padding:12px 16px 0}
+.hh-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.hh-top h1{font-size:26px;line-height:1.15}.hh-top .muted{font-size:14px;margin-top:2px}
+.hh-who{flex:none}
+.hh-world{position:relative;flex:1;min-height:300px;margin:10px -16px 0;background:var(--sky) 24% 100%/cover no-repeat;border-radius:0 0 32px 32px;overflow:hidden}
+.hh-badges{position:absolute;top:12px;left:16px;right:16px;display:flex;justify-content:space-between;z-index:2}
+.hh-badge{display:inline-flex;align-items:center;gap:5px;background:color-mix(in srgb,var(--card) 92%,transparent);border-radius:999px;padding:4px 12px 4px 8px;font:700 16px var(--display);color:var(--ink);box-shadow:0 2px 0 rgba(30,47,85,.10),0 4px 12px rgba(30,47,85,.08)}
+.hh-badge small{font:600 12px var(--sans);color:var(--muted)}.hh-badge .ic{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:color-mix(in srgb,var(--gold) 20%,var(--card));color:var(--gold-deep)}.hh-badge .ic svg{width:17px;height:17px}
+.hh-flame .ic{background:color-mix(in srgb,var(--coral) 18%,var(--card));color:var(--coral)}
+.hh-stage{position:absolute;left:50%;bottom:44px;width:0;height:0}
+.hh-marko{position:absolute!important;left:calc(clamp(170px,29dvh,250px) / -2);bottom:0;margin:0!important;width:clamp(170px,29dvh,250px)!important;height:clamp(170px,29dvh,250px)!important;max-width:none!important;filter:drop-shadow(0 8px 10px rgba(30,47,85,.18));z-index:1}
+.hh-shadow{position:absolute;left:0;bottom:-6px;width:150px;height:22px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(60,40,10,.22),transparent)}
+.hh-say{position:absolute;left:62px;bottom:calc(clamp(170px,29dvh,250px) * .74);width:max-content;max-width:min(150px,calc(50vw - 70px));background:var(--card);color:var(--ink);border-radius:20px 20px 20px 6px;padding:8px 12px;font:600 14.5px/1.25 var(--display);box-shadow:0 3px 0 rgba(30,47,85,.10),0 8px 18px rgba(30,47,85,.12);animation:obIn .4s .7s both;z-index:2}
+.hh-say b{color:var(--accent-deep)}
+.today-card{position:relative;z-index:2;margin:-26px 0 0;padding:14px 16px 16px;display:grid;gap:10px;border-width:2px;border-bottom-width:4px;box-shadow:0 8px 24px rgba(30,47,85,.12)}
+.tc-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.tc-count{font:600 13px var(--sans);color:var(--muted)}
+.tc-review{margin-left:auto;min-height:44px;padding:4px 12px;font-size:13px;color:#B03F22;background:color-mix(in srgb,var(--coral) 14%,var(--card));border-color:transparent}
+.tc-main{display:flex;align-items:center;gap:12px}.tc-main b{display:block;font:700 20px/1.2 var(--display)}.tc-main small{font-size:13px}
+.tc-face{flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--gold) 22%,var(--card));color:var(--gold-deep);font-size:24px;box-shadow:inset 0 -3px 0 color-mix(in srgb,var(--gold) 40%,transparent)}.tc-face .ur{font-size:28px;line-height:1;color:var(--ink)}.tc-face .ic svg{width:24px;height:24px}
+.tc-bar{height:8px}.tc-bar i{background:var(--accent)}
+.today-card .tc-go{margin:2px 0 0;min-height:56px}
+.hh-h3{margin-top:26px}
+.home-path .unit .thread{padding-bottom:12px}
+.all-units{display:flex;align-items:center;gap:14px;width:100%;text-align:left;font:inherit;color:var(--ink);cursor:pointer;border-bottom-width:4px;margin-top:4px}
+.all-units>span:nth-child(2){flex:1;display:grid}.all-units b{font:700 17px var(--display)}.all-units small{font-size:13px}
+.au-ic{flex:none;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:color-mix(in srgb,#F2A93B 20%,var(--card));color:#F2A93B}.au-ic svg{width:26px;height:26px}
+.all-units>.ic{color:var(--muted)}
+@media (prefers-color-scheme:dark){.tc-review{color:var(--coral)}.hh-say b{color:var(--accent)}}
+@media (prefers-reduced-motion:reduce){.hh-say{animation:none}}
+
+/* units grid: balanced 2-line titles, Marko peeking out of locked units */
+.ucard{position:relative;overflow:hidden;align-content:start}
+.ucard b{font:700 15px/1.25 var(--display);text-wrap:balance;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.5em;max-width:100%}
+.ucard .ur.muted{min-height:1.6em}
+.ucard.locked .ur.muted{padding-right:44px}
+.uc-peek{position:absolute;right:-14px;bottom:-16px;width:72px;height:72px;pointer-events:none;transform:rotate(-8deg)}
+.uc-peek .mascot{width:72px!important;height:72px!important;margin:0}
+.me-h3{margin-top:28px}
+
+/* round 7b: path + necklace (owned by path.js: unit card titles, locked teaser with peeking Marko, pearl necklace, lesson guide Marko) */
+.unit .u-text{min-width:0;flex:1;display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.u-title{display:block;font:800 20px/1.15 var(--display);color:var(--ink);text-wrap:balance;overflow-wrap:break-word;hyphens:manual}
+.u-ur{font-size:17px;color:var(--muted);line-height:1.5}
+.u-count{font:700 13px var(--display);color:var(--gold-deep)}
+/* locked teaser: Marko hides behind the unit art and peeks out */
+.unit.teaser .art-disc{position:relative;overflow:visible}.unit.teaser .art-disc .unit-art{position:relative;z-index:1}
+.peek-lock{position:absolute!important;left:-34px;bottom:2px;z-index:0;width:90px!important;height:90px!important;transform:rotate(-10deg);pointer-events:none}
+@media (prefers-reduced-motion:no-preference){.peek-lock{animation:peekLock 4.5s ease-in-out 1s infinite}@keyframes peekLock{0%,70%,100%{transform:rotate(-10deg) translateX(0)}80%,90%{transform:rotate(-16deg) translateX(-10px)}}}
+.lock-say{display:flex;align-items:center;gap:8px;margin:10px 16px 0;padding:8px 14px;width:max-content;max-width:calc(100% - 32px);background:var(--card);border:2px solid color-mix(in srgb,var(--coral) 40%,var(--line));border-radius:16px 16px 16px 4px;font:700 15px/1.3 var(--display);color:var(--coral);box-shadow:var(--shadow)}
+.lock-say .ic svg{width:18px;height:18px}
+/* the necklace: an SVG thread (path.js stringThread) under pearls; the old dotted connectors are retired */
+.thread.necklace{padding-top:18px}
+.thread.necklace .pearl::before{display:none}
+.thread svg.string{position:absolute;left:0;top:0;z-index:0;pointer-events:none;overflow:visible}
+.string path{fill:none;stroke-linecap:round}
+.string .s-todo{stroke:var(--line);stroke-width:3;stroke-dasharray:2 7}
+.string .s-done{stroke:var(--gold-deep);stroke-width:3;opacity:.75}
+.necklace .pearl.done{background:radial-gradient(circle at 34% 28%,#fff 0 12%,#FFFDF7 22%,#F7EBD5 55%,#E6CC9C 88%,#D7B47A);border:0;color:var(--gold-deep);box-shadow:0 4px 8px rgba(120,84,30,.25),inset -4px -6px 10px rgba(160,120,60,.25),inset 3px 3px 6px rgba(255,255,255,.9)}
+.necklace .pearl.done .ic svg{width:22px;height:22px;opacity:.8}
+.necklace .pearl.done small{color:var(--muted)}
+.necklace .pearl.cur{background:radial-gradient(circle at 34% 28%,#fff 0 20%,#FFF6E3 60%,#FBE3B5);border:3px solid var(--gold);color:var(--ink);box-shadow:0 0 0 6px rgba(242,169,59,.28),0 0 18px 4px rgba(242,169,59,.45)}
+@media (prefers-reduced-motion:no-preference){.necklace .pearl.cur{animation:pearlGlow 1.8s ease-in-out infinite}@keyframes pearlGlow{50%{box-shadow:0 0 0 10px rgba(242,169,59,.14),0 0 26px 8px rgba(242,169,59,.5)}}}
+.necklace .pearl.locked{background:transparent;border:2.5px dashed color-mix(in srgb,var(--muted) 45%,var(--line));box-shadow:inset 0 0 0 5px var(--card),inset 0 0 0 7px color-mix(in srgb,var(--line) 70%,transparent);color:color-mix(in srgb,var(--muted) 55%,transparent)}
+.necklace .pearl.locked .ur,.necklace .pearl.locked .ic{opacity:.7}
+/* a pearl earned since this card was last seen pops onto the thread once */
+@media (prefers-reduced-motion:no-preference){
+  .necklace .pearl.pop{animation:pearlPop .9s cubic-bezier(.25,1.5,.45,1) var(--pd,.35s) both}
+  .necklace .pearl.pop::after{content:'';position:absolute;inset:-6px;border-radius:50%;border:3px solid var(--gold);opacity:0;animation:pearlRing .8s ease-out calc(var(--pd,.35s) + .55s) both}
+  @keyframes pearlPop{0%{opacity:0;transform:translate(46px,-70px) scale(.3)}55%{opacity:1;transform:translate(0,6px) scale(1.12)}75%{transform:translate(0,-3px) scale(.96)}100%{transform:none}}
+  @keyframes pearlRing{0%{opacity:.9;transform:scale(.8)}100%{opacity:0;transform:scale(1.6)}}
+}
+/* lesson guide: small Marko with a one-line bubble on screens that had no character */
+.guide{display:flex;align-items:flex-end;gap:6px;margin:2px 0 6px;min-height:100px}
+.guide .guide-m{flex:none;width:100px!important;height:100px!important;margin:0 0 -8px -6px}
+.guide .guide-say{position:relative;right:auto;top:auto;align-self:center;max-width:calc(100% - 110px);border-radius:18px 18px 18px 4px;padding:8px 14px;font:700 16px/1.3 var(--display);text-wrap:balance;animation:obIn .4s .3s both}
+/* rules: Marko centred and big */
+.lesson .card>.rules-m{display:block;margin:0 auto 4px}
+/* letter lesson: the bubble sits by Marko's head, not floating in the card corner */
+.blob .peek-say{top:62px;right:-46px;z-index:2;white-space:nowrap}
+@media (prefers-reduced-motion:reduce){.guide .guide-say,.blob .peek-say{animation:none}}
+/* round 7b (cont.): snake rows leave room for the labels on the last row */
+.thread.necklace{padding-bottom:38px}
+.guide{min-height:110px}.guide .guide-m{width:110px!important;height:110px!important}.guide .guide-say{max-width:calc(100% - 120px)}

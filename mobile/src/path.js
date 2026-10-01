@@ -34,6 +34,23 @@ export async function lessonState(profileId, u) {
 async function markLesson(profileId, u, id) { const p = await S.getProgress(profileId); p.units[u.n] = { ...(p.units[u.n] || {}), lessons: { ...((p.units[u.n] || {}).lessons || {}), [id]: Date.now() } }; await db.put('progress', p); }
 
 // ---- path screen ----
+// round 7b: each unit card is a pearl necklace. Done lessons are pearls on a curved thread, the current one glows gold,
+// later ones are empty bead outlines. A pearl earned since the last time this card was seen (sessionStorage) pops onto
+// the thread once. Locked units are a teaser: Marko peeks out from behind the unit art.
+const seenKey = (pid, n) => `urc-pearls-${pid}-${n}`;
+const seenGet = (k) => { try { const v = sessionStorage.getItem(k); return v == null ? null : JSON.parse(v); } catch (e) { return null; } };
+const seenSet = (k, v) => { try { sessionStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+// the thread: an SVG line through the pearl centres that sags a little between neighbours; solid up to the last done pearl
+function stringThread(path) {
+  const draw = () => { if (!path.isConnected) return; const ps = [...path.querySelectorAll('.pearl')]; if (ps.length < 2) return; const W = path.clientWidth, H = path.clientHeight;
+    const c = ps.map(p => [p.offsetLeft + p.offsetWidth / 2, p.offsetTop + p.offsetHeight / 2]); const lastDone = ps.map(p => p.classList.contains('done')).lastIndexOf(true);
+    const seg = (a, b) => { const [x1, y1] = c[a], [x2, y2] = c[b]; const row = Math.abs(y2 - y1) < 40; const mx = (x1 + x2) / 2, my = Math.max(y1, y2) + (row ? 14 : 0); const out = x1 < W / 2 ? -26 : 26; return row ? `Q${mx} ${my} ${x2} ${y2}` : `C${x1 + out} ${y1 + 30} ${x2 + out} ${y2 - 30} ${x2} ${y2}`; };
+    const run = (from, to) => { let d = `M${c[from][0]} ${c[from][1]}`; for (let i = from; i < to; i++) d += seg(i, i + 1); return d; };
+    const strung = lastDone >= 0 ? Math.min(lastDone + 1, ps.length - 1) : 0;
+    path.querySelector('svg.string')?.remove();
+    path.insertAdjacentHTML('afterbegin', `<svg class="string" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" aria-hidden="true"><path class="s-todo" d="${run(0, ps.length - 1)}"/>${lastDone >= 0 ? `<path class="s-done" d="${run(0, strung)}"/>` : ''}</svg>`); };
+  requestAnimationFrame(draw); if (typeof ResizeObserver === 'function') new ResizeObserver(() => requestAnimationFrame(draw)).observe(path);
+}
 export async function renderPath(main, ctx) {
   const { profile } = ctx; const cur = await S.currentUnit(profile.id); const s = await S.stats(profile.id);
   if (s.due) { const r = el('div', 'card row'); r.style.justifyContent = 'space-between'; r.innerHTML = `<div><b>${icon('review')} Review</b><div class="muted">${s.due} cards due</div></div>`; const b = el('button', 'btn', `${icon('review')} Review`); b.onclick = () => ctx.go('review'); r.append(b); main.append(r); }
@@ -41,12 +58,18 @@ export async function renderPath(main, ctx) {
     if (u.n > cur + 1) break; if (u.n < cur - 1) continue;
     const st = await lessonState(profile.id, u); const locked = u.n > cur;
     const card = el('div', 'card unit' + (u.n === cur ? ' cur' : '')); if (locked) card.classList.add('teaser');
-    card.innerHTML = `<div class="unit-head"><div><span class="pill">Unit ${u.n}</span> <b style="font-family:var(--display);font-size:18px">${u.title}</b><div class="ur nastaliq" style="font-size:16px;color:var(--muted)">${u.title_ur}</div>${st.passed ? `<span class="pill" style="background:var(--good);color:#fff">${icon('check')} passed</span>` : locked ? `<span class="muted">${icon('lock')} finish unit ${u.n - 1}</span>` : ''}</div><span class="art-disc">${unitArt(u.n)}</span></div>`;
-    const path = el('div', 'thread');
+    const doneIds = st.ls.filter(l => st.done[l.id]).map(l => l.id); const n = doneIds.length;
+    const status = st.passed ? `<span class="pill" style="background:var(--good);color:#fff">${icon('check')} passed</span>` : locked ? '' : `<span class="u-count">${n} of ${st.ls.length} pearls</span>`;
+    card.innerHTML = `<div class="unit-head"><div class="u-text"><span class="pill">Unit ${u.n}</span><b class="u-title">${u.title}</b><div class="ur nastaliq u-ur">${u.title_ur}</div>${status}</div><span class="art-disc">${locked ? mascot('think', 90, 'peek-lock') : ''}${unitArt(u.n)}</span></div>${locked ? `<div class="lock-say">${icon('lock')} Finish unit ${u.n - 1} to open this</div>` : ''}`;
+    const path = el('div', 'thread necklace'); const key = seenKey(profile.id, u.n); const seen = seenGet(key); const fresh = seen ? doneIds.filter(id => !seen.includes(id)) : []; seenSet(key, doneIds);
     st.ls.forEach((l, i) => { const isDone = !!st.done[l.id], isCur = !locked && i === st.current; const face = l.icon && /[؀-ۿ]/.test(l.icon) ? `<span class="ur">${l.icon}</span>` : icon(LESSON_ICON[l.kind] || 'star'); const b = el('button', 'pearl' + (isDone ? ' done' : isCur ? ' cur' : ' locked'), `${isDone ? icon('check') : face}<small>${l.title}</small>`); b.setAttribute('aria-label', `${l.title}${isDone ? ', done' : isCur ? ', up next' : ', locked'}`);
+      const row = Math.floor(i / 4), col = i % 4; b.style.gridRow = row + 1; b.style.gridColumn = row % 2 ? 4 - col : col + 1; // snake, so the thread drops down the side
+      const k = fresh.indexOf(l.id); if (k >= 0) { b.classList.add('pop'); b.style.setProperty('--pd', (0.35 + k * 0.25) + 's'); }
       b.onclick = () => { if (locked) return toast(`Finish unit ${u.n - 1} first`); if (!isDone && !isCur) return toast('Do the lessons in order'); ctx.openLesson(u, i); }; path.append(b); });
-    card.append(path); if (!locked && !st.passed && st.current < st.ls.length) { const go = el('button', 'btn btn-primary btn-wide dock', `${st.done[st.ls[0].id] ? 'Continue' : 'Start'}: ${st.ls[st.current].title}`); go.onclick = () => ctx.openLesson(u, st.current); card.append(go); }
+    card.append(path); stringThread(path);
+    if (!locked && !st.passed && st.current < st.ls.length) { const go = el('button', 'btn btn-primary btn-wide dock', `${st.done[st.ls[0].id] ? 'Continue' : 'Start'}: ${st.ls[st.current].title}`); go.onclick = () => ctx.openLesson(u, st.current); card.append(go); }
     main.append(card);
+    if (fresh.length) requestAnimationFrame(() => { const p = path.querySelector('.pearl.pop'); if (p && p.getBoundingClientRect().top > innerHeight - 160) path.scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); });
   }
   if (cur >= 12) main.append(el('div', 'card center', mascot('cheer', 150) + '<b>You have finished the course.</b><div class="muted">Keep reading in the Read tab and retest every four weeks.</div>'));
 }
@@ -77,7 +100,16 @@ export async function runLesson(main, ctx, u, idx) {
 }
 
 const dock = box => { const a = box.querySelector('.card .act'); if (a) box.append(a); };
+// round 7b: Marko opens every lesson kind that had no character: small, one line, and he talks when audio plays
+// (class 'peek' is what content.js play() animates). The letter lesson keeps its big Marko beside the letter.
+const GUIDE = { join: ['point', 'Letters hold hands. Watch them change!'], blend: ['listen', 'Listen, then tap the sound you hear.'], words: ['read', 'Real words! Tap one to hear it.'], read: ['read', 'Read it out loud. Slow is fine!'], quiz: ['think', 'Show me what you know. You can do it!'], marks: ['listen', 'Tiny marks, big job: they are the vowels.'], nonjoin: ['think', 'Some letters never hold hands. Which ones?'], aspirates: ['listen', 'Put a hand by your mouth. Feel the puff?'], marks2: ['point', 'A few last marks, and numbers too.'], sight: ['read', 'These words you will just know by sight.'], nastaliq: ['point', 'Same letters, fancier writing.'], test: ['think', 'A quick check of your reading speed.'], done: ['cheer', 'A whole unit! Ready for more?'] };
+const guide = (pose, line) => el('div', 'guide', `${mascot(pose, 110, 'peek guide-m')}<span class="peek-say guide-say">${line}</span>`);
 function buildScreens(l, u, ctx) {
+  const s = screensFor(l, u, ctx); const g = GUIDE[l.kind];
+  if (g && s[0]) { const first = s[0]; s[0] = (box, cont) => { first(box, cont); box.prepend(guide(...g)); }; }
+  return s;
+}
+function screensFor(l, u, ctx) {
   const { profile, marks, styleName, dctx } = ctx; const learned = () => C.units.filter(x => x.n < u.n).flatMap(x => x.letters).concat(l.ch ? u.letters.slice(0, u.letters.indexOf(l.ch) + 1) : u.letters).filter(c => C.by[c]);
   const VOW = ['ا', 'ی', 'و']; const learnedVowels = () => VOW.filter(v => learned().includes(v));
   const decodable = (w, set) => [...w.ur].every(c => set.includes(c) || 'ءئؤآ\u0640'.includes(c) || /[\u064B-\u0652\u0670]/.test(c));
@@ -123,12 +155,12 @@ function buildScreens(l, u, ctx) {
     case 'read': return [(box, cont) => { box.innerHTML = ''; const sents = D.readIt({ ...u, words: [u.words[0]] }, dctx, marks); if (sents) box.append(sents); if (u.passage) box.append(card(`<h2>Passage</h2><div class="ur" style="font-size:26px;text-align:right">${marks() ? W(u.passage).v : u.passage[0]}</div><p class="muted">${u.passage[2]}</p>`)); box.append(cont('Read it twice')); }];
     case 'quiz': return [(box, cont) => { box.innerHTML = ''; ctx.say('check'); box.append(D.quiz(u, dctx, marks, async (sc, t) => { const passed = await S.markUnit(profile.id, u.n, sc, t); if (passed) { toast(`Unit ${u.n} passed! Unit ${u.n + 1} unlocked`); await S.ensureCards(profile.id, u.n + 1); box.append(cont('Finish')); } else { const again = el('button', 'btn btn-primary btn-wide', 'Try again'); again.onclick = () => runLesson(box.closest('#app') ? box.parentElement : box, ctx, u, lessonsFor(u).length - 1); box.append(el('p', 'muted', 'You need 8 of 10. Go back to Words 1 and 2, then try again.'), again); } })); dock(box); }];
     case 'rules': return [
-      (box, cont) => { box.innerHTML = ''; box.append(card(mascot('point', 130, 'flip') + '<h2 class="center">Urdu is read right to left</h2><p class="center">The first letter of a word is on the right. Your finger moves this way:</p><div class="center" style="font-size:44px">⟵</div>'), cont()); },
-      (box, cont) => { box.innerHTML = ''; box.append(card(mascot('read', 130) + '<h2 class="center">Letters join like cursive</h2><p class="center">Most letters hold hands with the next one and change shape. A few never do. You will meet each one in its own lesson.</p>'), cont()); },
-      (box, cont) => { box.innerHTML = ''; box.append(card(mascot('think', 130) + '<h2 class="center">Dots decide the letter</h2><p class="center">Some letters share one body and differ only by their dots. Count the dots, and check above or below.</p><div class="center" style="font-size:40px">• &nbsp; •• &nbsp; •••</div>'), cont()); },
+      (box, cont) => { box.innerHTML = ''; box.append(card(mascot('point', 150, 'peek rules-m') + '<h2 class="center">Urdu is read right to left</h2><p class="center">The first letter of a word is on the right. Your finger moves this way:</p><div class="center" style="font-size:44px">⟵</div>'), cont()); },
+      (box, cont) => { box.innerHTML = ''; box.append(card(mascot('read', 150, 'peek rules-m') + '<h2 class="center">Letters join like cursive</h2><p class="center">Most letters hold hands with the next one and change shape. A few never do. You will meet each one in its own lesson.</p>'), cont()); },
+      (box, cont) => { box.innerHTML = ''; box.append(card(mascot('think', 150, 'peek rules-m') + '<h2 class="center">Dots decide the letter</h2><p class="center">Some letters share one body and differ only by their dots. Count the dots, and check above or below.</p><div class="center" style="font-size:40px">• &nbsp; •• &nbsp; •••</div>'), cont()); },
     ];
     case 'marks': { const pick = (mark) => { for (let i = 0; i < u.words.length; i++) { const w = W(u.words[i]); if (w.v.includes(mark)) return { w, key: `units/u${String(u.n).padStart(2, '0')}_${String(i).padStart(2, '0')}` }; } return null; }; const Z = pick('\u064e'), I = pick('\u0650'), P = pick('\u064f'); const row = (mark, name, sound, ex) => `<div class="card" style="margin:6px 0"><div class="row" style="justify-content:space-between;flex-wrap:nowrap"><div><span class="ur" style="font-size:44px">ب${mark}</span> <b>${name}</b><div class="muted">${sound}</div></div>${ex ? `<div class="row mk-ex" style="flex-wrap:nowrap" data-key="${ex.key}"><div style="text-align:right"><div class="ur" style="font-size:34px">${ex.w.v}</div><small class="muted">${ex.w.rom} · ${ex.w.en}</small></div></div>` : ''}</div></div>`; return [
-      (box, cont) => { box.innerHTML = ''; ctx.say('listen'); box.append(card(mascot('listen', 110) + '<h2>Small marks are vowels</h2><p>A letter alone has no vowel. Three small marks give it a short sound. Adult books drop them; we keep them on until unit 11.</p>' + row('\u064e', 'zabar', 'short a, as in "but"', Z) + row('\u0650', 'zer', 'short i, as in "bit"', I) + row('\u064f', 'pesh', 'short u, as in "put"', P))); box.querySelectorAll('.mk-ex').forEach(r => r.append(D.playBtn(r.dataset.key))); box.append(cont('Got it')); },
+      (box, cont) => { box.innerHTML = ''; ctx.say('listen'); box.append(card('<h2>Small marks are vowels</h2><p>A letter alone has no vowel. Three small marks give it a short sound. Adult books drop them; we keep them on until unit 11.</p>' + row('\u064e', 'zabar', 'short a, as in "but"', Z) + row('\u0650', 'zer', 'short i, as in "bit"', I) + row('\u064f', 'pesh', 'short u, as in "put"', P))); box.querySelectorAll('.mk-ex').forEach(r => r.append(D.playBtn(r.dataset.key))); box.append(cont('Got it')); },
       (box, cont) => { box.innerHTML = ''; ctx.say('tap_word'); const c = card('<h2>Find the mark</h2><p class="muted">Tap the word you hear. Listen for the short vowel.</p>'); const status = el('div', 'score'), ch = el('div', 'choices'); const items = u.words.map((w, i) => ({ w: W(w), i })).filter(x => /[\u064e\u0650\u064f]/.test(x.w.v)); let round = 0, score = 0, target; function next() { if (round >= 4) { status.textContent = `Done: ${score}/4`; ch.innerHTML = ''; box.append(cont()); return; } round++; target = items[Math.floor(Math.random() * items.length)]; status.textContent = `Round ${round}/4`; ch.innerHTML = ''; shuffle([target, ...shuffle(items.filter(x => x !== target)).slice(0, 2)]).forEach(x => { const t = el('button', 'tile small ur', x.w.v); t.onclick = () => { const ok = x === target; dctx.record('marks', x.w.ur, ok, 0); if (ok) { t.classList.add('ok'); score++; setTimeout(next, 450); } else { t.classList.add('no'); play(`units/u${String(u.n).padStart(2, '0')}_${String(x.i).padStart(2, '0')}`); } }; ch.append(t); }); play(`units/u${String(u.n).padStart(2, '0')}_${String(target.i).padStart(2, '0')}`); } const again = D.sayBtn(() => play(`units/u${String(u.n).padStart(2, '0')}_${String(target.i).padStart(2, '0')}`)); c.append(D.sayRow(again, status), ch); box.append(c); next(); },
     ]; }
     case 'aspirates': return [(box, cont) => { box.innerHTML = ''; box.append(ctx.aspirates(), cont()); }];
