@@ -37,6 +37,8 @@ export function marko(state = 'idle', size = 120, cls = '') {
   el.style.width = el.style.height = typeof size === 'number' ? size + 'px' : size;
   el.setAttribute('aria-hidden', 'true');
   el._marko = { state: null, anim: null, data: null, token: 0, phase: null };
+  // instant still pose while the Lottie loads (slow phones showed an empty spot for seconds); removed on DOMLoaded
+  { const ph = document.createElement('img'); ph.alt = ''; ph.src = `./img/mascot_${POSE[MARKO_STATES.includes(state) ? state : 'idle']}.webp`; el.append(ph); }
   setMarko(el, MARKO_STATES.includes(state) ? state : 'idle');
   return el;
 }
