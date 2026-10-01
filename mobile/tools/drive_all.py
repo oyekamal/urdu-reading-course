@@ -105,8 +105,9 @@ with sync_playwright() as p:
     while time.time()-t0<1500:
         js(pg.query_selector(".bottom button:has-text('Learn')")); pg.wait_for_timeout(700)
         if pg.query_selector("text=You have finished the course"): print("COURSE COMPLETE"); break
-        try: pg.wait_for_selector("button:has-text('Start:'), button:has-text('Continue:'), text=You have finished the course", timeout=25000)
-        except Exception: pass
+        for _w in range(100):  # poll: the Learn screen renders async (stats, path, Marko); a mixed css/text selector list never waited
+            if pg.query_selector("button:has-text('Start:')") or pg.query_selector("button:has-text('Continue:')") or pg.query_selector("text=You have finished the course"): break
+            pg.wait_for_timeout(250)
         if pg.query_selector("text=You have finished the course"): print("COURSE COMPLETE"); break
         sb=pg.query_selector("button:has-text('Start:')") or pg.query_selector("button:has-text('Continue:')")
         if not sb: print("no start button"); pg.screenshot(path="sweep_nostart.png", full_page=True); break
