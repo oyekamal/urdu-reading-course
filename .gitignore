@@ -31,3 +31,7 @@ assets/audio/_el_audition/
 research/bar_audio/
 .audit/onboarding/bar/
 .audit/interact/bar/
+
+# progress-page copies we should not publish: Finch frames (third-party recording) and a duplicate of mobile/public/lottie
+.audit/onboarding/site/bar/
+.audit/onboarding/site/lottie/

@@ -1,0 +1,60 @@
+<title>Qaida Onboarding Gauntlet</title>
+<style>
+/* layout: one reading column; a status list of screens, each with its current verdict against Finch */
+:root{--bg:#F2F7F6;--card:#fff;--ink:#1E2F55;--muted:#5A6B84;--line:#D5E3E1;--accent:#1E9C8F;--gold:#C9862A;--bad:#C74A3B;--good:#3E9A5E;
+--display:"Fredoka",system-ui,sans-serif;--body:"Nunito Sans",system-ui,sans-serif;--ur:"Noto Nastaliq Urdu",serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121C33;--card:#1B2946;--ink:#EEF3F8;--muted:#A7B4C8;--line:#2F4269;--accent:#2FB8A9;--gold:#F5B85A;--bad:#E8766A;--good:#5DBB7C;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121C33;--card:#1B2946;--ink:#EEF3F8;--muted:#A7B4C8;--line:#2F4269;--accent:#2FB8A9;--gold:#F5B85A;--bad:#E8766A;--good:#5DBB7C;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body);padding:24px 16px 48px}
+main{max-width:720px;margin:0 auto;display:grid;gap:18px}
+h1{font:700 30px/1.15 var(--display);margin:0;text-wrap:balance}h2{font:600 19px var(--display);margin:0 0 8px}
+.ur{font-family:var(--ur);direction:rtl;color:var(--accent);font-size:22px;line-height:2}
+.muted{color:var(--muted);font-size:14px}
+section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+ol{margin:0;padding-left:22px;display:grid;gap:6px}
+.pill{display:inline-block;font:700 12px var(--display);padding:1px 10px;border-radius:99px;background:var(--line);color:var(--ink);margin-left:6px}
+.win{background:var(--good);color:#fff}.lose{background:var(--bad);color:#fff}.wip{background:var(--gold);color:#1E2F55}
+.log{display:grid;gap:8px;font-size:14px}.log div{border-top:1px solid var(--line);padding-top:8px}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito+Sans:wght@400;700&family=Noto+Nastaliq+Urdu&display=swap">
+<style>
+.gal{display:flex;gap:12px;overflow-x:auto;padding:4px 2px 12px;scroll-snap-type:x mandatory}
+.gal figure{margin:0;flex:none;width:168px;scroll-snap-align:start;display:grid;gap:6px}
+.gal img{width:168px;height:auto;border-radius:18px;border:1px solid var(--line);background:var(--card);cursor:zoom-in;display:block}
+.gal figcaption{font-size:12px;color:var(--muted);text-transform:capitalize}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}.tabs button{font:600 14px var(--display);border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:6px 14px;cursor:pointer}.tabs button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+dialog{border:0;padding:0;background:transparent;max-width:92vw}dialog img{max-height:88vh;max-width:92vw;border-radius:22px;display:block}dialog::backdrop{background:rgba(10,20,40,.8)}
+table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;padding:8px 6px;border-top:1px solid var(--line);vertical-align:top}th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.note{font-size:13px;color:var(--muted)}
+</style><main>
+<div><div class="ur">اردو قاعدہ · پہلا دن</div><h1>Qaida onboarding gauntlet</h1><p class="muted">New first-run flow for Urdu Qaida, built with the app-onboarding-questionnaire skill and judged blind against Finch: Self-Care Pet's onboarding. Tap any screen to enlarge.</p></div>
+<section><h2>Status</h2><p id="status">Round 2 done: Urdu Qaida beats Finch in all four segments in blind comparison (round 1 was 2–2). Since then the streak screen also got a confetti burst and a hopping Marko, the one weakness the round 2 critic named.</p></section>
+<section><h2>Screens</h2>
+<div class="tabs" role="group"><button id="t-ours" aria-pressed="true">Urdu Qaida, round 2 (34)</button><button id="t-bar" aria-pressed="false">Finch, the bar (36)</button></div>
+<div class="gal" id="gal"></div>
+<p class="note" id="galnote"></p></section>
+<section><h2>Blind verdicts</h2><table><tr><th>Segment</th><th>Round 1</th><th>Round 2</th></tr>
+<tr><td>Opening, meeting Marko</td><td><span class="pill lose">Finch</span> clear. Marko never reacts or belongs to you.</td><td><span class="pill win">Ours</span> slight. Tap-to-wake, a promise on screen 1, Marko answers every choice. Left to do: the colour changes his halo, not Marko himself.</td></tr>
+<tr><td>Questions</td><td><span class="pill win">Ours</span> clear. Conversational, named, shame-free options.</td><td>held</td></tr>
+<tr><td>Payoff, plan, commitment</td><td><span class="pill lose">Finch</span> clear. No commitment, no day-1 streak, weak loader.</td><td><span class="pill win">Ours</span> clear. The loader plays back your answers, the streak is earned by reading بابا, and each promise is tied to a real milestone.</td></tr>
+<tr><td>First word, the aha</td><td><span class="pill win">Ours</span> clear. The learner really reads بابا; Finch rewards just showing up.</td><td>held</td></tr>
+</table></section>
+<section><h2>What changed in round 2</h2><ol>
+<li>Marko starts asleep; tap to wake him, and he greets you in Urdu.</li>
+<li>You pick his lucky colour, which becomes the learner's badge.</li>
+<li>Marko answers every choice with a new pose and a line of his own.</li>
+<li>Loader is a filling ring with four steps that tick off, named after your answers.</li>
+<li>بابا is now checked, not trusted: pick it out from با by ear.</li>
+<li>Day-1 streak (earned by reading) and a days-in-a-row promise before the plan.</li>
+</ol></section>
+<p class="note">Finch frames are from a public YouTube screen recording, kept here for side-by-side judging only. Keep this page private.</p>
+</main>
+<dialog id="dlg"><img id="big" alt=""></dialog>
+<script>
+const L={"ours": ["01_welcome", "02_wake", "03_woke", "04_colour", "05_colour_picked", "06_who", "07_who_reply", "08_name", "09_name_typed", "10_goal", "11_goal_reply", "12_speak", "13_reads", "14_pains", "15_pains_picked", "16_solution", "17_minutes", "18_processing", "19_demo_alif", "20_demo_be", "21_demo_tap", "22_demo_tap_done", "23_demo_blend", "24_demo_blend_done", "25_demo_word", "26_demo_word_read", "27_demo_check", "28_demo_check_ok", "29_value", "30_streak", "31_commit", "32_commit_reply", "33_plan", "34_path"], "bar": ["01_splash_logo", "02_welcome_hatch_new_pet", "03_choose_your_egg", "04_egg_hatching", "05_hatched_pronouns", "06_name_your_birb", "07_choose_trait", "08_pet_asks_your_name", "09_your_name_typed", "10_what_is_self_care", "11_reward_compassion", "12_reminders_permission", "13_lets_learn_about_you", "14_age", "15_gender", "16_used_finch_before", "17_sleep_hours", "18_get_out_of_bed", "19_activity_level", "20_overwhelmed_frequency", "21_support_people", "22_routine_happiness", "23_mental_health_challenges", "24_support_areas", "25_generating_goals", "26_starter_plan", "27_finch_plus_pitch", "28_trial_reminder_promise", "29_one_time_offer_50", "30_trial_timeline", "31_how_did_you_hear", "32_day1_greeting", "33_day_streak_1", "34_streak_commitment", "35_widget_prompt", "36_home_first_view"]};
+const gal=document.getElementById('gal'),dlg=document.getElementById('dlg'),big=document.getElementById('big');
+function show(k){gal.innerHTML='';L[k].forEach(n=>{const f=document.createElement('figure');const i=document.createElement('img');i.src=k+'/'+n+'.jpg';i.alt=n.replace(/^\d+_/,'').replace(/_/g,' ');i.loading='lazy';i.onclick=()=>{big.src=i.src;dlg.showModal();};const c=document.createElement('figcaption');c.textContent=n.slice(0,2)+' · '+i.alt;f.append(i,c);gal.append(f);});
+document.getElementById('t-ours').setAttribute('aria-pressed',k==='ours');document.getElementById('t-bar').setAttribute('aria-pressed',k==='bar');
+document.getElementById('galnote').textContent=k==='bar'?'The floating "88" circle is the screen recorder, not Finch.':'Captured at phone width (390×844) from the dev build, a fresh install walking the "My child" path.';}
+document.getElementById('t-ours').onclick=()=>show('ours');document.getElementById('t-bar').onclick=()=>show('bar');dlg.onclick=()=>dlg.close();show('ours');
+</script>
