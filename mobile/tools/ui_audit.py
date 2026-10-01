@@ -128,7 +128,7 @@ def main():
         def open_lesson(lid):
             pg.evaluate("""async([pid,lid])=>{const S=await import(window.__mod('session'));const P=await import(window.__mod('path'));const {db}=await import(window.__mod('db'));const {C}=await import(window.__mod('content'));
               const u=C.units[1];const ls=P.lessonsFor(u);const p=await S.getProgress(pid);const done={};for(const l of ls){if(l.id===lid)break;done[l.id]=Date.now()}p.units[1]={...(p.units[1]||{}),lessons:done};await db.put('progress',p)}""", [pid, lid])
-            nav('units'); nav('today'); click("button:has-text('Continue:'), button:has-text('Start:')"); pg.wait_for_timeout(700)
+            nav('read'); nav('today'); click("button:has-text('Continue:'), button:has-text('Start:')"); pg.wait_for_timeout(700)
 
         def brute_tiles(rounds_sel_done, maxclicks=80):
             # click tiles until the docked continue appears (wrong taps are harmless in these drills)
@@ -175,7 +175,17 @@ def main():
         nav('review'); audit('review_empty', True)
         pg.evaluate("async(pid)=>{const {db}=await import(window.__mod('db'));for(const c of await db.by('cards','profileId',pid))await db.put('cards',{...c,due:0})}", pid)
         nav('read'); nav('review'); audit('review_due', True); click("button:has-text('Not yet')"); pg.wait_for_timeout(300); audit('review_due_reveal', True, wait=200)
-        nav('read'); audit('read_tab'); nav('progress'); audit('progress_tab'); nav('more'); audit('more_tab'); nav('units'); audit('units_tab')
+        # child track: 4 tabs (Learn, Review, Read, Me); Units opens from the "All units" card on Learn
+        nav('read'); audit('read_tab'); nav('me'); audit('me_tab'); nav('today'); click('.all-units'); pg.wait_for_timeout(900); audit('units_tab')
+
+        # ---------- adult track: the 6-tab bar ----------
+        c2 = b.new_context(viewport={'width': 390, 'height': 844}, device_scale_factor=1, reduced_motion='reduce'); pg = c2.new_page()
+        pg.on('pageerror', lambda e: errs.append(str(e)[:300])); pg.on('dialog', lambda d: d.accept('5'))
+        pg.add_init_script("window.__mod=n=>performance.getEntriesByType('resource').map(e=>e.name).find(x=>x.includes('/src/'+n+'.js'))||('/src/'+n+'.js')")
+        pg.goto(BASE + '?skiponb'); pg.wait_for_timeout(1800); click('text=Just me'); pg.wait_for_timeout(300)
+        click('text=+ Add a learner'); pg.wait_for_timeout(300); pg.fill('input[placeholder=Name]', 'Sam'); pg.select_option('select >> nth=0', 'adult'); click("button:has-text('Start')"); pg.wait_for_timeout(1500)
+        audit('adult_today', True)
+        for k in ['units', 'review', 'read', 'progress', 'more']: nav(k); audit('adult_' + k, k == 'review')
         # placement check (fresh learner path): open from Today on a new profile is heavy; run it via the module directly
         b.close()
         if errs: print('page errors:', errs[:5])

@@ -308,7 +308,7 @@ label.row{min-height:48px}
 @media (prefers-reduced-motion:reduce){.bottom button.active .ic{animation:none}}
 
 /* home: painted courtyard fills the first screen, big Marko in the middle, one today card at the bottom of the fold */
-.home-hero{display:flex;flex-direction:column;min-height:calc(100dvh - 12px - var(--nav-h) - 10px - env(safe-area-inset-bottom,0));margin:-12px -16px 0;padding:12px 16px 0}
+.home-hero{display:flex;flex-direction:column;min-height:calc(100dvh - 12px - var(--nav-h) - 4px - env(safe-area-inset-bottom,0));margin:-12px -16px 0;padding:12px 16px 0}
 .hh-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.hh-top h1{font-size:26px;line-height:1.15}.hh-top .muted{font-size:14px;margin-top:2px}
 .hh-who{flex:none}
 .hh-world{position:relative;flex:1;min-height:300px;margin:10px -16px 0;background:var(--sky) 24% 100%/cover no-repeat;border-radius:0 0 32px 32px;overflow:hidden}
@@ -321,7 +321,7 @@ label.row{min-height:48px}
 .hh-shadow{position:absolute;left:0;bottom:-6px;width:150px;height:22px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(60,40,10,.22),transparent)}
 .hh-say{position:absolute;left:62px;bottom:calc(clamp(170px,29dvh,250px) * .74);width:max-content;max-width:min(150px,calc(50vw - 70px));background:var(--card);color:var(--ink);border-radius:20px 20px 20px 6px;padding:8px 12px;font:600 14.5px/1.25 var(--display);box-shadow:0 3px 0 rgba(30,47,85,.10),0 8px 18px rgba(30,47,85,.12);animation:obIn .4s .7s both;z-index:2}
 .hh-say b{color:var(--accent-deep)}
-.today-card{position:relative;z-index:2;margin:-26px 0 0;padding:14px 16px 16px;display:grid;gap:10px;border-width:2px;border-bottom-width:4px;box-shadow:0 8px 24px rgba(30,47,85,.12)}
+.today-card{position:relative;z-index:2;margin:-26px 0 0;padding:14px 16px 14px;display:grid;gap:10px;border-width:2px;border-bottom-width:4px;box-shadow:0 8px 24px rgba(30,47,85,.12)}
 .tc-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.tc-count{font:600 13px var(--sans);color:var(--muted)}
 .tc-review{margin-left:auto;min-height:44px;padding:4px 12px;font-size:13px;color:#B03F22;background:color-mix(in srgb,var(--coral) 14%,var(--card));border-color:transparent}
 .tc-main{display:flex;align-items:center;gap:12px}.tc-main b{display:block;font:700 20px/1.2 var(--display)}.tc-main small{font-size:13px}
@@ -345,6 +345,11 @@ label.row{min-height:48px}
 .uc-peek{position:absolute;right:-14px;bottom:-16px;width:72px;height:72px;pointer-events:none;transform:rotate(-8deg)}
 .uc-peek .mascot{width:72px!important;height:72px!important;margin:0}
 .me-h3{margin-top:28px}
+.me-card{display:grid;gap:14px;background:linear-gradient(160deg,color-mix(in srgb,#5FA55A 16%,var(--card)),var(--card) 70%);overflow:hidden}
+.me-id{display:flex;align-items:center;gap:14px}.me-id>div{flex:1;display:grid}.me-id b{font:700 22px var(--display)}.me-id .avatar{flex:none}.me-marko{margin:-8px -6px -18px 0!important;flex:none}
+.me-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.me-stats>div{display:grid;justify-items:center;gap:2px;background:var(--card);border:2px solid var(--line);border-radius:16px;padding:10px 4px}
+.me-stats .ic{color:var(--c)}.me-stats .ic svg{width:22px;height:22px}.me-stats b{font:700 22px/1 var(--display)}.me-stats small{font-size:12px;color:var(--muted)}
+/* end round 7a */
 
 /* round 7b: path + necklace (owned by path.js: unit card titles, locked teaser with peeking Marko, pearl necklace, lesson guide Marko) */
 .unit .u-text{min-width:0;flex:1;display:flex;flex-direction:column;align-items:flex-start;gap:4px}
@@ -390,3 +395,5 @@ label.row{min-height:48px}
 /* round 7b (cont.): snake rows leave room for the labels on the last row */
 .thread.necklace{padding-bottom:38px}
 .guide{min-height:110px}.guide .guide-m{width:110px!important;height:110px!important}.guide .guide-say{max-width:calc(100% - 120px)}
+/* round 8: child Me tab — bigger, friendlier numbers */
+body[data-track="child"] .card .row b{font:700 20px var(--display);color:var(--accent-deep)}body[data-track="child"] .card .row span{font:600 16px var(--display)}

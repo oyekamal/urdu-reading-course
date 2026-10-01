@@ -15,7 +15,13 @@ function upgradeMarko(scope) {
     const m = marko(st, img.width || 120, img.className); m.width = img.width || 120; m.dataset.base = st === 'wave' || st === 'cheer' ? 'idle' : st; img.replaceWith(m);
   });
 }
-new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => n.nodeType === 1 && upgradeMarko(n)))).observe(document.body, { childList: true, subtree: true });
+// Lottie players keep ticking after their element leaves the DOM (every re-render left looping Markos and fx behind, and a
+// long session slowed to a crawl). Destroy the player once a removed node is really gone (not just moved).
+function reap(n) {
+  if (n.nodeType !== 1) return; const list = [n, ...n.querySelectorAll('.marko, .fx')];
+  setTimeout(() => list.forEach(e => { if (e.isConnected) return; if (e._marko) { e._marko.token++; e._marko.anim?.destroy(); e._marko.anim = null; } if (e._anim) { e._anim.destroy(); e._anim = null; } }), 0);
+}
+new MutationObserver(ms => ms.forEach(m => { m.addedNodes.forEach(n => n.nodeType === 1 && upgradeMarko(n)); m.removedNodes.forEach(reap); })).observe(document.body, { childList: true, subtree: true });
 
 const root = document.getElementById('app');
 let settings = {};

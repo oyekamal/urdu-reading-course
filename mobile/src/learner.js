@@ -4,8 +4,8 @@ import { C, play, W, shuffle, wordKey, sentKey, el, toast, bandFor } from './con
 import * as D from './drills.js';
 import * as S from './session.js';
 import { renderDashboard } from './dashboard.js';
-import { renderPath, runLesson } from './path.js';
-import { icon, mascot, confetti, unitArt } from './icons.js';
+import { renderPath, runLesson, lessonState } from './path.js';
+import { icon, mascot, confetti, unitArt, LESSON_ICON, avatar } from './icons.js';
 import { fx, burst } from './fx.js';
 
 export async function renderLearner(root, ctx) {
@@ -16,9 +16,15 @@ export async function renderLearner(root, ctx) {
   await S.ensureCards(profile.id, await S.currentUnit(profile.id));
   root.innerHTML = ''; const main = el('div'); root.append(main);
   const nav = el('div', 'bottom'); root.append(nav);
-  const tabs = [['today', 'home', 'Learn'], ['units', 'units', 'Units'], ['review', 'review', 'Review'], ['read', 'read', 'Read'], ['progress', 'progress', 'Progress'], ['more', 'more', 'More']];
-  tabs.forEach(([k, ic, lab]) => { const b = el('button', k === st.tab ? 'active' : '', `${icon(ic)}${lab}`); b.onclick = () => { st.tab = k; render(); }; b.dataset.k = k; nav.append(b); });
-  async function render() { [...nav.children].forEach(b => b.classList.toggle('active', b.dataset.k === st.tab)); main.innerHTML = ''; main.className = ''; window.scrollTo(0, 0); await ({ today, units, review, read, progress, more, lesson, session, test, path }[st.tab])(); }
+  // Tabs: children get 4 (Learn, Review, Read, Me; Units sits behind "All units" on Learn), everyone else keeps 6.
+  // Each tab has its own palette colour (--tc icon/pill, --td label on the light pill); the filled icon pops once when picked.
+  const kid = () => profile.track === 'child';
+  const TAB = { today: ['home', 'Learn', '#1E9C8F', '#126B62'], units: ['units', 'Units', '#F2A93B', '#94590C'], review: ['review', 'Review', 'var(--coral)', '#B03F22'], read: ['read', 'Read', '#4F5FD0', '#2E3A8C'], me: ['me', 'Me', '#5FA55A', '#2F6A2C'], progress: ['progress', 'Progress', '#5FA55A', '#2F6A2C'], more: ['more', 'More', '#D97AA6', '#9C3A6A'] };
+  const tabKeys = () => kid() ? ['today', 'review', 'read', 'me'] : ['today', 'units', 'review', 'read', 'progress', 'more'];
+  const navOf = t => kid() ? ({ units: 'today', lesson: 'today', progress: 'me', more: 'me', test: 'me' }[t] || t) : ({ me: 'progress', lesson: 'units', test: 'more' }[t] || t);
+  function buildNav() { nav.innerHTML = ''; nav.dataset.n = tabKeys().length; tabKeys().forEach(k => { const [ic, lab, c, d] = TAB[k]; const b = el('button', '', `${icon(ic + '_f')}<span class="lb">${lab}</span>`); b.style.setProperty('--tc', c); b.style.setProperty('--td', d); b.onclick = () => { st.tab = k; render(); }; b.dataset.k = k; nav.append(b); }); }
+  let navKid = kid(); buildNav();
+  async function render() { if (navKid !== kid()) { navKid = kid(); buildNav(); } if (st.tab === 'me' && !kid()) st.tab = 'progress'; const on = navOf(st.tab); [...nav.children].forEach(b => b.classList.toggle('active', b.dataset.k === on)); main.innerHTML = ''; main.className = ''; window.scrollTo(0, 0); await ({ today, units, review, read, progress, more, me, lesson, session, test, path }[st.tab])(); }
   const pctx = () => ({ profile, marks, styleName, dctx, unit0, aspirates, izafat, punctuation, unit11, sightDrill, go: t => { st.tab = t === 'path' ? 'today' : t; render(); }, openLesson: (u, i) => { st.unitN = u.n; st.tab = 'today'; main.innerHTML = ''; window.scrollTo(0, 0); runLesson(main, pctx(), u, i); } });
   async function path() { st.tab = 'today'; render(); }
 
@@ -28,9 +34,26 @@ export async function renderLearner(root, ctx) {
     const cur = await S.currentUnit(profile.id); const s = await S.stats(profile.id);
     if (ctx.autoPlacement && cur === 0 && !s.sessions) { ctx.autoPlacement = false; return placement(); }
     const [pl, sk] = await Promise.all([S.pearls(profile.id), S.streak(profile.id)]);
-    const sc = el('div', 'home-scene', `<div class="hs-sky"></div><div class="hs-top"><div><h1>${greeting(profile)}</h1><div class="hs-sub">Unit ${cur} · ${C.units[cur].title}${profile.minutes ? ' · ' + profile.minutes + ' min a day' : ''}</div></div></div><div class="hs-world" style="background-image:url(./img/scene_home_${new Date().getHours() >= 18 || new Date().getHours() < 5 ? 'evening' : 'morning'}.webp)">${mascot(sk ? 'proud' : 'hello', 168, 'hs-marko')}<span class="hs-say">${pl ? `Ready, ${profile.name}?` : `Hi ${profile.name}! Let's earn a pearl.`}</span></div><div class="hs-stats"><span>${icon("star")} ${pl ? `${pl} ${pl === 1 ? 'pearl' : 'pearls'}` : 'First pearl'}</span><span class="hs-flame">${icon('flame')} ${sk ? `${sk} day streak` : 'New streak'}</span></div>`);
-    const who = el('button', 'btn btn-chip hs-who', `${icon('user')} ${profile.name}`); who.onclick = ctx.switchProfile; sc.querySelector('.hs-top').append(who); sc.querySelector('.hs-sky').append(fx('sun_rays', { size: 70, loop: true, cls: 'hs-sun' })); main.append(sc);
-    await renderPath(main, pctx());
+    // Above the fold: a painted courtyard with a big Marko in the middle, then ONE "today" card that holds the primary
+    // button in its own zone (in the page flow, never floating over another card). The rest of the path is below the fold.
+    const u = C.units[cur]; const ls = u ? await lessonState(profile.id, u) : null; const open = ls && !ls.passed && ls.current < ls.ls.length;
+    const night = new Date().getHours() >= 18 || new Date().getHours() < 5;
+    const hero = el('div', 'home-hero');
+    hero.innerHTML = `<div class="hh-top"><div><h1>${greeting(profile)}</h1>${u ? `<div class="muted">Unit ${cur} · ${u.title}</div>` : ''}</div></div>
+      <div class="hh-world" style="background-image:url(./img/scene_home_${night ? 'evening' : 'morning'}.webp)"><div class="hh-badges"><span class="hh-badge">${icon('star')} ${pl}<small>${pl === 1 ? 'pearl' : 'pearls'}</small></span><span class="hh-badge hh-flame">${icon('flame')} ${sk ? `${sk}<small>day streak</small>` : '<small>Start a streak</small>'}</span></div>
+      <div class="hh-stage"><span class="hh-shadow"></span>${mascot(sk > 1 ? 'proud' : 'hello', 240, 'hh-marko')}<span class="hh-say">${open && ls.current > 0 ? `Ready for <b>${ls.ls[ls.current].title}</b>, ${profile.name}?` : pl ? `Hi ${profile.name}! One lesson today?` : `Hi ${profile.name}! Let's earn your first pearl.`}</span></div></div>`;
+    const who = el('button', 'btn btn-chip hh-who', `${icon('user')} ${profile.name}`); who.setAttribute('aria-label', 'Switch learner'); who.onclick = ctx.switchProfile; hero.querySelector('.hh-top').append(who);
+    if (open) {
+      const n = Object.keys(ls.done).filter(id => ls.ls.some(l => l.id === id)).length, tot = ls.ls.length, l = ls.ls[ls.current];
+      const card = el('div', 'card today-card', `<div class="tc-head"><span class="pill">Unit ${cur}</span><span class="tc-count">Lesson ${ls.current + 1} of ${tot}</span></div><div class="tc-main"><span class="tc-face">${l.icon && /[؀-ۿ]/.test(l.icon) ? `<span class="ur">${l.icon}</span>` : icon(LESSON_ICON[l.kind] || 'star')}</span><div><small class="muted">${n ? 'Up next' : 'Start here'}</small><b>${l.title}</b></div></div><div class="progress tc-bar"><i style="width:${Math.round(n / tot * 100)}%"></i></div>`);
+      if (s.due) { const rv = el('button', 'btn btn-chip tc-review', `${icon('review')} ${s.due} to review`); rv.onclick = () => { st.tab = 'review'; render(); }; card.querySelector('.tc-head').append(rv); }
+      const go = el('button', 'btn btn-primary btn-wide tc-go', `${n ? 'Continue' : 'Start'}: ${l.title}`); go.onclick = () => pctx().openLesson(u, ls.current); card.append(go); hero.append(card);
+    } else if (s.due) { const card = el('div', 'card today-card'); const rv = el('button', 'btn btn-primary btn-wide tc-go', `${icon('review')} Review ${s.due} cards`); rv.onclick = () => { st.tab = 'review'; render(); }; card.append(rv); hero.append(card); }
+    main.append(hero);
+    // below the fold: the unit path (its own review card and docked button are dropped: the today card owns both)
+    const pw = el('div', 'home-path'); await renderPath(pw, pctx()); pw.querySelectorAll(':scope > .card.row:not(.unit)').forEach(c => c.remove()); pw.querySelectorAll('.btn-primary').forEach(b => b.remove());
+    main.append(el('h3', 'hh-h3', 'Your path'), pw);
+    if (kid()) { const all = el('button', 'card all-units', `<span class="au-ic">${icon('units_f')}</span><span><b>All units</b><small class="muted">See every unit and the letter library</small></span>${icon('next')}`); all.onclick = () => { st.tab = 'units'; render(); }; main.append(all); }
     if (s.wpm.length) { const last = s.wpm[s.wpm.length - 1]; main.append(el('div', 'card', `<b>Last reading speed:</b> ${last.wpm} words per minute <span class="pill ${bandFor(last.wpm)}">${bandFor(last.wpm)}</span>`)); }
     if (cur === 0 && !s.sessions) { const pl = el('div', 'card'); pl.innerHTML = '<h2>Already read some Urdu?</h2><p class="muted">A 2-minute placement check skips the units you already know.</p>'; const b = el('button', 'btn', 'Take the placement check'); b.onclick = () => placement(); pl.append(b); main.append(pl); }
     if (ctx.mode !== 'school') { const rp = el('button', 'btn btn-wide', 'Parent report for ' + profile.name); rp.onclick = () => parentReport(); main.append(rp); }
@@ -89,9 +112,9 @@ export async function renderLearner(root, ctx) {
     const row = el('div', 'row'); row.append(start, stop); if (!usePassage) sents.forEach((s, i) => row.append(D.playBtn(sentKey(u.n, i), true))); p.append(t, row, res); box.append(p, nextBtn(onDone));
   }
 
-  async function units() { await header('Units', 'Tap a unit to open its lesson'); const p = await S.getProgress(profile.id); const cur = await S.currentUnit(profile.id);
+  async function units() { await header('Units', 'Tap a unit to open its lesson'); if (kid()) { const bk = el('button', 'btn btn-chip', `${icon('back')} Back to Learn`); bk.onclick = () => { st.tab = 'today'; render(); }; main.insertBefore(bk, main.firstChild); } const p = await S.getProgress(profile.id); const cur = await S.currentUnit(profile.id);
     const libBtn = el('button', 'btn btn-wide', 'Letter library · all 38 letters'); libBtn.onclick = () => document.getElementById('library')?.scrollIntoView({ behavior: 'smooth' }); main.append(libBtn);
-    const g = el('div', 'unitgrid'); C.units.forEach(u => { const b = el('button', 'ucard ' + (p.units[u.n]?.passed ? 'done ' : '') + (u.n === cur ? 'cur ' : '') + (u.n > cur ? 'locked' : ''), `<span class="pill">${u.n > cur ? icon('lock') + ' ' : ''}Unit ${u.n}</span>${unitArt(u.n)}<b>${u.title}</b><span class="ur muted" style="font-size:18px">${u.letters.join(' ')}</span>`); b.title = u.title; b.onclick = () => { if (u.n > cur && !confirm(`Unit ${cur} is not passed yet. Open unit ${u.n} anyway?`)) return; st.unitN = u.n; st.tab = 'lesson'; render(); }; g.append(b); }); main.append(g);
+    const g = el('div', 'unitgrid'); C.units.forEach(u => { const b = el('button', 'ucard ' + (p.units[u.n]?.passed ? 'done ' : '') + (u.n === cur ? 'cur ' : '') + (u.n > cur ? 'locked' : ''), `<span class="pill">${u.n > cur ? icon('lock') + ' ' : ''}Unit ${u.n}</span>${unitArt(u.n)}<b>${u.title}</b><span class="ur muted" style="font-size:18px">${u.letters.join(' ')}</span>${u.n > cur ? `<span class="uc-peek">${mascot(u.n === cur + 1 ? 'point' : 'think', 72)}</span>` : ''}`); b.title = u.title; b.setAttribute('aria-label', `Unit ${u.n}, ${u.title}${u.n > cur ? ', locked' : ''}`); b.onclick = () => { if (u.n > cur && !confirm(`Unit ${cur} is not passed yet. Open unit ${u.n} anyway?`)) return; st.unitN = u.n; st.tab = 'lesson'; render(); }; g.append(b); }); main.append(g);
     const lh = el('h3', '', 'Letter library · dictionary order'); lh.id = 'library'; main.append(lh); const lib = el('div', 'choices'); lib.style.justifyContent = 'flex-start'; 'ا ب پ ت ٹ ث ج چ ح خ د ڈ ذ ر ڑ ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ہ ھ ئ ی ے'.split(' ').forEach(ch => { const l = C.by[ch]; if (!l) return; const t = el('button', 'tile small ur', ch); t.title = l.name; t.onclick = () => { play('names/' + l.id); const d = document.getElementById('libcard'); d.innerHTML = ''; d.append(D.letterCard(l, dctx)); d.scrollIntoView({ behavior: 'smooth', block: 'start' }); }; lib.append(t); }); main.append(lib); const lc = el('div', '', ''); lc.id = 'libcard'; main.append(lc); }
 
   async function lesson() { const u = C.units[st.unitN ?? 0]; await header(`Unit ${u.n} · ${u.title}`, u.focus); main.append(el('div', 'ur', u.title_ur));
@@ -122,7 +145,11 @@ export async function renderLearner(root, ctx) {
     C.units.filter(u => u.passage && u.n <= Math.max(cur, 1)).reverse().forEach(u => { const box = el('div'); main.append(el('h3', '', `Passage · unit ${u.n}`)); main.append(box); fluency(u, box, () => {}, true); box.lastChild.remove(); });
     C.units.filter(u => u.sentences.length && u.n <= Math.max(cur, 1)).reverse().forEach(u => { const box = el('div'); main.append(el('h3', '', `Sentences · unit ${u.n}`)); main.append(box); fluency(u, box, () => {}); box.lastChild.remove(); }); }
 
-  async function progress() { await header('Progress'); main.append(await renderDashboard(profile.id)); }
+  async function progress(noHead) { if (!noHead) await header('Progress'); main.append(await renderDashboard(profile.id, { child: profile.track === 'child' })); }
+  // Me (child track): progress first, then everything that lives in More for the other tracks.
+  async function me() { await header('Me'); const [pl, sk, cur] = await Promise.all([S.pearls(profile.id), S.streak(profile.id), S.currentUnit(profile.id)]);
+    main.append(el('div', 'card me-card', `<div class="me-id">${avatar(profile, 64)}<div><b>${profile.name}</b><small class="muted">Unit ${cur}${C.units[cur] ? ' · ' + C.units[cur].title : ''}</small></div>${mascot('proud', 92, 'me-marko')}</div><div class="me-stats"><div style="--c:var(--gold-deep)">${icon('star')}<b>${pl}</b><small>${pl === 1 ? 'pearl' : 'pearls'}</small></div><div style="--c:var(--coral)">${icon('flame')}<b>${sk}</b><small>day streak</small></div><div style="--c:var(--accent)">${icon('units_f')}<b>${Math.max(0, cur)}</b><small>units done</small></div></div>`));
+    await progress(true); main.append(el('h3', 'me-h3', 'Settings and more')); await more(true); }
 
   function selfTest() { const c = el('div', 'card'); c.innerHTML = '<h2>Test yourself</h2><p class="muted">Five parts, like the teacher\'s assessment. This is your reading speed today, not a certificate.</p>'; const b = el('button', 'btn btn-primary', 'Start the reading test'); b.onclick = () => { st.tab = 'test'; render(); }; c.append(b); return c; }
   async function test() { await header('Test yourself', 'Five parts · a helper times you, or use the timer'); const A = C.letters.assessment; const results = {};
@@ -137,7 +164,7 @@ export async function renderLearner(root, ctx) {
     const row = el('div', 'row'); row.append(start, stop, el('span', 'muted', 'errors:'), errs); pc.append(t, row, res); main.append(pc);
     const qc = el('div', 'card'); qc.innerHTML = `<h2>5 · Comprehension</h2><ol style="padding-left:18px">${A.questions.map(q => `<li class="ur" style="font-size:22px;text-align:right">${q}</li>`).join('')}</ol><details><summary>Answer key</summary><ol style="padding-left:18px">${A.answers.map(a => `<li>${a}</li>`).join('')}</ol></details><div class="table" style="margin-top:8px"><table><tr><th>cwpm</th><th>Level</th></tr><tr><td>&gt; 90</td><td>exceeds grade-2 standard</td></tr><tr><td>60–90</td><td>meets standard</td></tr><tr><td>1–59</td><td>below standard</td></tr><tr><td>0</td><td>nonreader</td></tr></table></div>`; main.append(qc); }
 
-  async function more() { await header('More'); const c = el('div', 'card'); c.innerHTML = '<h2>Settings</h2>';
+  async function more(noHead) { if (!noHead) await header('More'); const c = el('div', 'card'); c.innerHTML = '<h2>Settings</h2>';
     const track = sel(['child', 'adult', 'heritage'], ['Child (5–10)', 'Adult, new to Urdu', 'Speaks Urdu, can\'t read'], profile.track, async v => { profile.track = v; await db.put('profiles', profile); ctx.apply(); });
     const style = sel(['naskh', 'nastaliq'], ['Naskh (learning)', 'Nastaliq (print)'], ctx.settings.style || 'naskh', v => ctx.set('style', v));
     const marksCb = el('label', 'row', `<input type="checkbox" ${ctx.settings.marks !== false ? 'checked' : ''}> Show vowel marks (until unit 10)`); marksCb.querySelector('input').onchange = e => ctx.set('marks', e.target.checked);

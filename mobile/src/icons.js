@@ -40,6 +40,18 @@ export const I = {
   flame: P('<path d="M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-8.5z" fill="currentColor" stroke="none"/>'),
   sparkle: P('<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/>'),
 };
+// Filled tab-bar variants: solid currentColor shapes with white detail, rounded, 24-unit grid (the tab colour comes from CSS).
+const F = d => `<svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" stroke="none" aria-hidden="true">${d}</svg>`;
+const WS = 'fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"';
+Object.assign(I, {
+  home_f: F(`<path d="M10.7 3.1a2 2 0 0 1 2.6 0l7 5.9a2 2 0 0 1 .7 1.5V19a2 2 0 0 1-2 2h-3.5a.5.5 0 0 1-.5-.5V16a3 3 0 0 0-6 0v4.5a.5.5 0 0 1-.5.5H5a2 2 0 0 1-2-2v-8.5a2 2 0 0 1 .7-1.5z"/>`),
+  units_f: F(`<rect x="3" y="3" width="8" height="8" rx="2.5"/><rect x="13" y="3" width="8" height="8" rx="2.5" opacity=".75"/><rect x="3" y="13" width="8" height="8" rx="2.5" opacity=".75"/><rect x="13" y="13" width="8" height="8" rx="2.5"/>`),
+  review_f: F(`<circle cx="12" cy="12" r="10"/><path d="M7.5 11.5a4.6 4.6 0 0 1 8-2.6l.9 1" ${WS}/><path d="M16.6 7.4v2.8h-2.8" ${WS}/><path d="M16.5 12.5a4.6 4.6 0 0 1-8 2.6l-.9-1" ${WS}/><path d="M7.4 16.6v-2.8h2.8" ${WS}/>`),
+  read_f: F(`<path d="M2 6.2c0-1 .8-1.9 1.9-1.8 2.9.2 5.4 1 7.1 2.4V20c-1.9-1.3-4.3-2-7.2-2.2A1.9 1.9 0 0 1 2 15.9z"/><path d="M22 6.2c0-1-.8-1.9-1.9-1.8-2.9.2-5.4 1-7.1 2.4V20c1.9-1.3 4.3-2 7.2-2.2a1.9 1.9 0 0 0 1.8-1.9z" opacity=".8"/>`),
+  me_f: F(`<circle cx="12" cy="7.5" r="4.5"/><path d="M3.5 19.6C4.6 15.7 8 13.5 12 13.5s7.4 2.2 8.5 6.1A1.1 1.1 0 0 1 19.4 21H4.6a1.1 1.1 0 0 1-1.1-1.4z"/>`),
+  progress_f: F(`<rect x="2.5" y="11" width="5.5" height="10" rx="2"/><rect x="9.25" y="3" width="5.5" height="18" rx="2"/><rect x="16" y="14" width="5.5" height="7" rx="2"/>`),
+  more_f: F(`<circle cx="12" cy="12" r="10"/><circle cx="7.5" cy="12" r="1.6" fill="#fff"/><circle cx="12" cy="12" r="1.6" fill="#fff"/><circle cx="16.5" cy="12" r="1.6" fill="#fff"/>`),
+});
 export const icon = (name, cls = '') => `<span class="ic ${cls}">${I[name] || I.star}</span>`;
 export const LESSON_ICON = { rules: 'door', marks: 'marks', done: 'flag', letter: null, aspirates: 'ear', join: 'link', blend: 'blend', words: 'puzzle', nonjoin: 'link', read: 'book', marks2: 'numbers', sight: 'sight', nastaliq: 'script', test: 'timer', quiz: 'flag' };
 // Toto the parrot. poses: hello listen think cheer oops sleep read point
