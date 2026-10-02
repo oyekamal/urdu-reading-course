@@ -1,0 +1,98 @@
+== AUDIO ==
+index entries 490 | expected keys 490 | files on disk 490
+missing in index: 0 | index->missing file: 0 | orphan files: 0 | unexpected index keys: 0
+tiny/unplayable: [] | manifest text mismatch: 0 | override mismatch: 0
+duration outliers: [('syllables/swad_u', 2.06, 1.2), ('syllables/zal_u', 2.22, 1.2), ('units/u10_13', 2.95, 1.39), ('units/u10_15', 2.8, 1.39)]
+never referenced by code: 13 ['numerals/0', 'numerals/1', 'numerals/2', 'numerals/3', 'numerals/4', 'numerals/5', 'numerals/6', 'numerals/7', 'numerals/8', 'numerals/9', 'ui/next', 'ui/done']
+== DECODABILITY == {'bare_bad': 8, 'voc_bad': 0, 'preview': 11, 'voc_mismatch': 0, 'voc_stray_marks': 0, 'no_marks_units_le10': 77, 'marks_total_words_le10': 200, 'mark_gap': 0}
+preview words: [(3, 'ٹوپی', 'و'), (3, 'ٹماٹر', 'ر'), (3, 'کپاس', 'س'), (4, 'دودھ', 'ھ'), (5, 'مچھلی', 'ھ'), (6, 'بھائی', 'ئ'), (6, 'ٹھنڈا', 'ڈ'), (8, 'قمیض', 'ض'), (8, 'خط', 'ط'), (8, 'صاف', 'ص'), (9, 'ذائقہ', 'ئ')]
+passage has marks: {7: False, 8: False, 9: False, 10: True, 11: False}
+words with no marks though cluster (u<=10): 13 of 200
+== GLOSSES == {'blank': 0, 'en_eq_rom': 0, 'non_ascii_en': 11, 'dup_rom_in_unit': 0, 'dup_en_in_unit': 4, 'long_en': 0, 'rom_skeleton_mismatch': 31}
+  blank []
+  en_eq_rom []
+  non_ascii_en [(3, 'ٹوپی', 'cap (و comes in unit 4, preview)'), (3, 'ٹماٹر', 'tomato (ر preview)'), (3, 'کپاس', 'cotton (س preview)'), (4, 'دودھ', 'milk (ھ preview)'), (5, 'مچھلی', 'fish (ھ preview)'), (6, 'بھائی', 'brother (ئ preview)'), (6, 'ٹھنڈا', 'cold (ڈ preview)'), (8, 'قمیض', 'shirt (ض preview)')]
+  dup_rom_in_unit []
+  dup_en_in_unit [(3, 'thin', ['پتلی', 'پتلا']), (10, 'prayer', ['دعا', 'صلوٰۃ']), (11, 'of', ['کا', 'کی', 'کے']), (11, 'was', ['تھا', 'تھی'])]
+  long_en []
+  roman skeleton mismatches (review): 31
+    (2, 'بلی', 'billī', 'bl', 'bll')
+    (4, 'وہ', 'woh', '', 'h')
+    (4, 'راہ', 'rāh', 'r', 'rh')
+    (5, 'مچھلی', 'machhlī', 'mcl', 'mchl')
+    (6, 'میں', 'maiṉ', 'm', 'mn')
+    (6, 'ہاں', 'hāṉ', 'h', 'hn')
+    (6, 'کہاں', 'kahāṉ', 'kh', 'khn')
+    (6, 'ہیں', 'haiṉ', 'h', 'hn')
+    (6, 'چھت', 'chhat', 'ct', 'cht')
+    (6, 'مچھلی', 'machhlī', 'mcl', 'mchl')
+    (6, 'یہاں', 'yahāṉ', 'h', 'hn')
+    (7, 'ڈبہ', 'ḍabba', 'Db', 'dbb')
+    (7, 'پڑھنا', 'paṛhnā', 'pRn', 'prhn')
+    (8, 'خط', 'k͟hat', 'xt', 'kht')
+    (8, 'خوش', 'k͟hush', 'xS', 'khS')
+    (8, 'غریب', 'g͟harīb', 'Grb', 'ghrb')
+    (8, 'باغ', 'bāg͟h', 'bG', 'bgh')
+    (8, 'خالی', 'k͟hālī', 'xl', 'khl')
+    (8, 'غم', 'g͟ham', 'Gm', 'ghm')
+    (9, 'صبح', 'ṣubḥ', 'sbh', 'sb')
+    (9, 'ذمہ', 'ẕimma', 'zm', 'zmm')
+    (9, 'خاص', 'k͟hāṣ', 'xs', 'khs')
+    (10, 'بچّہ', 'bachcha', 'bc', 'bcc')
+    (10, 'اللّٰہ', 'allāh', 'll', 'llh')
+    (10, 'صلوٰۃ', 'ṣalāt', 'sl', 'slt')
+    (10, 'ابّا', 'abbā', 'b', 'bb')
+    (10, 'امّی', 'ammī', 'm', 'mm')
+    (10, 'اچّھا', 'achchhā', 'c', 'cch')
+    (11, 'کہ', 'keh', 'k', 'kh')
+    (11, 'ہیں', 'haiṉ', 'h', 'hn')
+    (11, 'نہیں', 'nahīṉ', 'nh', 'nhn')
+== DUPLICATES == {'کے': [(2, 8, 'of'), (11, 2, 'of (pl.)')], 'نے': [(2, 9, '(agent marker)'), (11, 9, '(agent)')], 'دودھ': [(4, 16, 'milk (ھ preview)'), (6, 14, 'milk')], 'مچھلی': [(5, 16, 'fish (ھ preview)'), (6, 15, 'fish')], 'ہیں': [(6, 3, 'are'), (11, 8, 'are')], 'ٹھنڈا': [(6, 8, 'cold (ڈ preview)'), (7, 18, 'cold')]} | words equal sight words: ['اور', 'بھی', 'تھا', 'تھی', 'سے', 'میں', 'نہیں', 'نے', 'وہ', 'پر', 'کا', 'کو', 'کہ', 'کی', 'کیا', 'کے', 'ہیں', 'ہے']
+totals {'words': 220, 'unique': 214, 'sentences': 33, 'per_unit_words': {0: 0, 1: 20, 2: 20, 3: 20, 4: 20, 5: 20, 6: 20, 7: 20, 8: 20, 9: 20, 10: 20, 11: 20, 12: 0}}
+== FLAGS == [('ں', 'non-joiner flag; informational')] | harfbuzz disagree: [] | nun ghunna: {'ں_joins_forward_in_font': True, 'json_joiner': False}
+tofu: [] | form problems: [] | hb err: None
+never_initial violated: [] | not-NI with no word starting: ['ئ']
+unit letters missing from letters.json: ['ۃ']
+positions with no example word: [('ت', 'final'), ('ی', 'initial'), ('پ', 'final'), ('ث', 'medial'), ('ث', 'final'), ('د', 'final'), ('ش', 'medial'), ('ش', 'final'), ('ج', 'final'), ('چ', 'final'), ('گ', 'final'), ('ڈ', 'final'), ('ڑ', 'final'), ('ز', 'final'), ('ژ', 'final'), ('ق', 'final'), ('خ', 'medial'), ('خ', 'final'), ('غ', 'medial'), ('ع', 'medial'), ('ع', 'final'), ('ح', 'medial'), ('ح', 'final'), ('ص', 'medial'), ('ض', 'medial'), ('ذ', 'final'), ('ئ', 'initial'), ('ئ', 'final')]
+== ELIGIBILITY ==
+   {'unit': 1, 'half': 1, 'words': 10, 'spellable': 10, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 1, 'half': 2, 'words': 10, 'spellable': 10, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 2, 'half': 1, 'words': 10, 'spellable': 10, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 2, 'half': 2, 'words': 10, 'spellable': 10, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 3, 'half': 1, 'words': 10, 'spellable': 9, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 3, 'half': 2, 'words': 10, 'spellable': 8, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 4, 'half': 1, 'words': 10, 'spellable': 10, 'joinIt_pool(>=3 letters)': 5, 'dictation_ok': True}
+   {'unit': 4, 'half': 2, 'words': 10, 'spellable': 9, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 5, 'half': 1, 'words': 10, 'spellable': 10, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 5, 'half': 2, 'words': 10, 'spellable': 9, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 6, 'half': 1, 'words': 10, 'spellable': 8, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 6, 'half': 2, 'words': 10, 'spellable': 9, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 7, 'half': 1, 'words': 10, 'spellable': 10, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 7, 'half': 2, 'words': 10, 'spellable': 10, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 8, 'half': 1, 'words': 10, 'spellable': 8, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 8, 'half': 2, 'words': 10, 'spellable': 9, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 9, 'half': 1, 'words': 10, 'spellable': 9, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 9, 'half': 2, 'words': 10, 'spellable': 10, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 10, 'half': 1, 'words': 10, 'spellable': 10, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 10, 'half': 2, 'words': 10, 'spellable': 10, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+   {'unit': 11, 'half': 1, 'words': 10, 'spellable': 10, 'joinIt_pool(>=3 letters)': 2, 'dictation_ok': True}
+   {'unit': 11, 'half': 2, 'words': 10, 'spellable': 10, 'joinIt_pool(>=3 letters)': 6, 'dictation_ok': True}
+quiz pool {1: 20, 2: 20, 3: 17, 4: 19, 5: 19, 6: 17, 7: 20, 8: 17, 9: 19, 10: 20, 11: 20}
+== FINDINGS ==
+[major] A1: learner.js aspirates() builds audio keys by replacing every non [a-z0-9] char with "_": 3 of 11 rows (ṭh, ḍh, ṛh) request "aspirates/_h", which is not in the index -> "No audio for this item"; their table-cell ids also collide (#asp-_h), so all three buttons land in the first row
+[minor] A5: 13 indexed clips are never played by any code path: ['numerals/0', 'numerals/1', 'numerals/2', 'numerals/3', 'numerals/4', 'numerals/5', 'numerals/6', 'numerals/7', 'numerals/8', 'numerals/9', 'ui/next', 'ui/done']
+[major] A6: unit passages (units [7, 8, 9, 10, 11]) and the assessment passage have no audio at all
+[major] B1: not decodable from letters taught by then (bare): (2, 'sentence:بلی کالی ہے', 'ہ')
+[major] B1: not decodable from letters taught by then (bare): (3, 'sentence:میں ٹوپی لے', 'ں')
+[major] B1: not decodable from letters taught by then (bare): (3, 'sentence:میں ٹوپی لے', 'و')
+[major] B1: not decodable from letters taught by then (bare): (4, 'sentence:وہ کمرہ بڑا ہے', 'ڑ')
+[major] B1: not decodable from letters taught by then (bare): (4, 'sentence:ہم دور ہیں', 'ں')
+[major] B1: not decodable from letters taught by then (bare): (5, 'sentence:شیر جنگل میں ہے', 'ں')
+[major] B1: not decodable from letters taught by then (bare): (6, 'sentence:بھائی کھانا کھاتا ہے', 'ئ')
+[major] B1: not decodable from letters taught by then (bare): (10, 'sentence:چائے میں ۲ چمچ چینی', '۲')
+[minor] B4: 13 words in units 1-10 show NO vowel marks although the design keeps marks on all text through unit 10: [(4, 'دودھ', 'dūdh'), (5, 'چاند', 'chānd'), (6, 'پھول', 'phūl'), (6, 'تھالی', 'thālī'), (6, 'کھانا', 'khānā'), (6, 'دھاگا', 'dhāgā')]
+[minor] D1: 6 words appear in more than one unit (they share card ids in Leitner): ['کے', 'نے', 'دودھ', 'مچھلی', 'ہیں', 'ٹھنڈا']
+[minor] E3: unit lists ۃ as a taught letter but letters.json has no record: it gets no lesson, card, audio or trace practice
+[minor] E4: 28 (letter, position) pairs show "—" instead of a real example word in the "where it sits" screen: [('ت', 'final'), ('ی', 'initial'), ('پ', 'final'), ('ث', 'medial'), ('ث', 'final'), ('د', 'final'), ('ش', 'medial'), ('ش', 'final'), ('ج', 'final'), ('چ', 'final')]
+[minor] G3: unit 11 Words 1: build-the-word pool is only 2; joinIt onDone needs 3 completions and cycles the same word(s)
+[major] H1: EGRA-style assessment passage (8 sentences) is mostly already in the practice passages: {11: (4, 8)} -> memorised, not decoded

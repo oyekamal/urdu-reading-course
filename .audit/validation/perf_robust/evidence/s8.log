@@ -1,0 +1,19 @@
+
+=== onboarding double-tap + resume
+colour screen CTA double-click: saved i = 4 (colour=2 -> who=3 expected after one click; 4 = a screen skipped)
+screen now: I'm Marko. What's your child's name? Continue
+TEST ERROR Page.wait_for_selector: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator(".ob-opt:has-text('My child')") to be visible
+
+
+=== clock with seeded attempts/cards
+ t0 (3 attempts: 0,-1,-2d): chip=['3 days practised'] goal=['0 / 10 min'] | review: Review Letters and words that are about to slip Amal 1 card to review 1 / 1 ک Say the letter name an
+                 +1.5 days: chip=['3 days practised'] goal=['0 / 10 min'] | review: Review Letters and words that are about to slip Amal 2 cards to review 1 / 2 ک Say the letter name a
+                   +3 days: chip=['3 days practised'] goal=['0 / 10 min'] | review: Review Letters and words that are about to slip Amal 3 cards to review 1 / 3 ک Say the letter name a
+                  +30 days: chip=['3 days practised'] goal=['0 / 10 min'] | review: Review Letters and words that are about to slip Amal 3 cards to review 1 / 3 ک Say the letter name a
+                   -3 days: chip=['3 days practised'] goal=['0 / 10 min'] | review: Review Letters and words that are about to slip Amal All caught up Marko is resting. Your letters co
+                 -400 days: chip=['3 days practised'] goal=['0 / 10 min'] | review: Review Letters and words that are about to slip Amal All caught up Marko is resting. Your letters co
+errors []
+
+=== corrupt / quota / no idb

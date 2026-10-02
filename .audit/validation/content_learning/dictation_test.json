@@ -1,0 +1,122 @@
+[
+ {
+  "unit": 1,
+  "word": "مالا",
+  "bare": "مالا",
+  "near_miss": "املا",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — mālā (garland)"
+ },
+ {
+  "unit": 1,
+  "word": "کمال",
+  "bare": "کمال",
+  "near_miss": "مکال",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — kamāl (wonder)"
+ },
+ {
+  "unit": 1,
+  "word": "لال",
+  "bare": "لال",
+  "near_miss": "الل",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — lāl (red)"
+ },
+ {
+  "unit": 1,
+  "word": "کمان",
+  "bare": "کمان",
+  "near_miss": "مکان",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — kamān (bow)"
+ },
+ {
+  "unit": 1,
+  "word": "نمک",
+  "bare": "نمک",
+  "near_miss": "منک",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — namak (salt)"
+ },
+ {
+  "unit": 5,
+  "word": "شادی",
+  "bare": "شادی",
+  "near_miss": "اشدی",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — shādī (wedding)"
+ },
+ {
+  "unit": 5,
+  "word": "چار",
+  "bare": "چار",
+  "near_miss": "اچر",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — chār (four)"
+ },
+ {
+  "unit": 5,
+  "word": "جنگل",
+  "bare": "جنگل",
+  "near_miss": "نجگل",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — jangal (forest)"
+ },
+ {
+  "unit": 5,
+  "word": "شیر",
+  "bare": "شیر",
+  "near_miss": "یشر",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — sher (lion)"
+ },
+ {
+  "unit": 5,
+  "word": "گاجر",
+  "bare": "گاجر",
+  "near_miss": "اگجر",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — gājar (carrot)"
+ },
+ {
+  "unit": 10,
+  "word": "بچّہ",
+  "bare": "بچہ",
+  "near_miss": "چبہ",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — bachcha (child)"
+ },
+ {
+  "unit": 10,
+  "word": "آپ",
+  "bare": "آپ",
+  "near_miss": "پآ",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — āp (you (polite))"
+ },
+ {
+  "unit": 10,
+  "word": "اعلیٰ",
+  "bare": "اعلی",
+  "near_miss": "عالی",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — aʻlā (high)"
+ },
+ {
+  "unit": 10,
+  "word": "دعا",
+  "bare": "دعا",
+  "near_miss": "عدا",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — duʻā (prayer)"
+ },
+ {
+  "unit": 10,
+  "word": "گئے",
+  "bare": "گئے",
+  "near_miss": "ئگے",
+  "near_miss_result": "Not yet. Listen again.",
+  "correct_result": "Correct — gaʾe (went)"
+ }
+]

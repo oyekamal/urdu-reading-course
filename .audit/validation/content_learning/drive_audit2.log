@@ -1,0 +1,125 @@
+Unit 0 Start: Three rules ['Dots decide the letter -> Continue', '? -> Next: Finish unit'] 0
+Unit 0 -> Start: Three rules
+Unit 0 Continue: Finish unit ['Unit 0 done -> Unlock the next unit', '? -> Back to path'] 0
+Unit 1 Start: alif ['Quick check -> Finish', '? -> Next: be'] 5
+Unit 1 -> Start: alif
+Unit 1 Continue: be ['Quick check -> Finish', '? -> Next: kāf'] 14
+Unit 1 Continue: kāf ['Quick check -> Finish', '? -> Next: lām'] 22
+Unit 1 Continue: lām ['Quick check -> Finish', '? -> Next: mīm'] 31
+Unit 1 Continue: mīm ['Quick check -> Finish', '? -> Next: nūn'] 40
+Unit 1 Continue: nūn ['Quick check -> Finish', '? -> Next: Vowel marks'] 50
+Unit 1 Continue: Vowel marks ['Find the mark -> Continue', '? -> Next: Join them'] 54
+Unit 1 Continue: Join them ['Build the word -> Continue', '? -> Next: Blend'] 57
+Unit 1 Continue: Blend ['Blend -> Continue', '? -> Next: Words 1'] 63
+Unit 1 Continue: Words 1 ['Dictation -> Continue', '? -> Next: Words 2'] 66
+Unit 1 Continue: Words 2 ['Dictation -> Continue', '? -> Next: Read'] 69
+Unit 1 Continue: Read ['Read -> Read it twice', '? -> Next: Unit check'] 69
+Unit 1 Continue: Unit check ['Check -> Finish', '? -> Back to path'] 69
+Unit 2 Start: te ['Quick check -> Finish', '? -> Next: choṭī ye'] 86
+Unit 2 -> Start: te
+Unit 2 Continue: choṭī ye ['Quick check -> Finish', '? -> Next: baṛī ye'] 103
+Unit 2 Continue: baṛī ye ['Quick check -> Finish', '? -> Next: Join them'] 113
+Unit 2 Continue: Join them ['Build the word -> Continue', '? -> Next: Blend'] 116
+Unit 2 Continue: Blend ['Blend -> Continue', '? -> Next: Words 1'] 122
+Unit 2 Continue: Words 1 ['Dictation -> Continue', '? -> Next: Words 2'] 125
+Unit 2 Continue: Words 2 ['Dictation -> Continue', '? -> Next: Read'] 128
+Unit 2 Continue: Read ['Read -> Read it twice', '? -> Next: Unit check'] 128
+Unit 2 Continue: Unit check ['Check -> Finish', '? -> Back to path'] 128
+Unit 3 Start: pe ['Quick check -> Finish', '? -> Next: ṭe'] 139
+Unit 3 -> Start: pe
+Unit 3 Continue: ṭe ['Quick check -> Finish', '? -> Next: s̱e'] 171
+Unit 3 Continue: s̱e ['Quick check -> Finish', '? -> Next: Join them'] 182
+Unit 3 Continue: Join them ['Build the word -> Continue', '? -> Next: Blend'] 185
+Unit 3 Continue: Blend ['Blend -> Continue', '? -> Next: Words 1'] 191
+Unit 3 Continue: Words 1 ['Dictation -> Continue', '? -> Next: Words 2'] 194
+Unit 3 Continue: Words 2 ['Dictation -> Continue', '? -> Next: Read'] 197
+Unit 3 Continue: Read ['Read -> Read it twice', '? -> Next: Unit check'] 197
+Unit 3 Continue: Unit check ['Check -> Finish', '? -> Back to path'] 197
+Unit 4 Start: wāʾo ['Quick check -> Finish', '? -> Next: re'] 207
+Unit 4 -> Start: wāʾo
+Unit 4 Continue: re ['Quick check -> Finish', '? -> Next: dāl'] 219
+Unit 4 Continue: dāl ['Quick check -> Finish', '? -> Next: choṭī he (gol he)'] 232
+Unit 4 Continue: choṭī he (gol he) ['Quick check -> Finish', '? -> Next: Join them'] 245
+Unit 4 Continue: Join them ['Build the word -> Continue', '? -> Next: Blend'] 248
+Unit 4 Continue: Blend ['Blend -> Continue', '? -> Next: Words 1'] 254
+Unit 4 Continue: Words 1 ['Dictation -> Continue', '? -> Next: Words 2'] 257
+Unit 4 Continue: Words 2 ['Dictation -> Continue', '? -> Next: The non-joiners'] 260
+Unit 4 Continue: The non-joiners ['Guess before you look -> Continue', '? -> Next: Read'] 260
+Unit 4 Continue: Read ['Read -> Read it twice', '? -> Next: Unit check'] 260
+Unit 4 Continue: Unit check ['Check -> Finish', '? -> Back to path'] 260
+Unit 5 Start: sīn ['Quick check -> Finish', '? -> Next: shīn'] 272
+Unit 5 -> Start: sīn
+Unit 5 Continue: shīn ['Quick check -> Finish', '? -> Next: jīm'] 284
+Unit 5 Continue: jīm ['Quick check -> Finish', '? -> Next: che'] 307
+Unit 5 Continue: che ['Quick check -> Finish', '? -> Next: gāf'] 320
+Unit 5 Continue: gāf ['Quick check -> Finish', '? -> Next: Join them'] 332
+Unit 5 Continue: Join them ['Build the word -> Continue', '? -> Next: Blend'] 335
+Unit 5 Continue: Blend ['Blend -> Continue', '? -> Next: Words 1'] 341
+Unit 5 Continue: Words 1 ['Dictation -> Continue', '? -> Next: Words 2'] 344
+Unit 5 Continue: Words 2 ['Dictation -> Continue', '? -> Next: Read'] 347
+Unit 5 Continue: Read ['Read -> Read it twice', '? -> Next: Unit check'] 347
+Unit 5 Continue: Unit check ['Check -> Finish', '? -> Back to path'] 347
+Unit 6 Start: nūn g͟hunna ['Quick check -> Finish', '? -> Next: do-chashmī he'] 356
+Unit 6 -> Start: nūn g͟hunna
+Unit 6 Continue: do-chashmī he ['Quick check -> Finish', '? -> Next: Breath letters'] 365
+Unit 6 Continue: Breath letters ['Aspirates and the nasal vowel -> Continue', '? -> Next: Join them'] 365
+Unit 6 Continue: Join them ['Build the word -> Continue', '? -> Next: Blend'] 368
+Unit 6 Continue: Blend ['? -> Continue', '? -> Next: Words 1'] 368
+Unit 6 Continue: Words 1 ['Dictation -> Continue', '? -> Next: Words 2'] 371
+Unit 6 Continue: Words 2 ['Dictation -> Continue', '? -> Next: Read'] 374
+Unit 6 Continue: Read ['Read -> Read it twice', '? -> Next: Unit check'] 374
+Unit 6 Continue: Unit check ['Check -> Finish', '? -> Back to path'] 374
+Unit 7 Start: ḍāl ['Quick check -> Finish', '? -> Next: ṛe'] 385
+Unit 7 -> Start: ḍāl
+Unit 7 Continue: ṛe ['Quick check -> Finish', '? -> Next: ze'] 403
+Unit 7 Continue: ze ['Quick check -> Finish', '? -> Next: zhe'] 414
+Unit 7 Continue: zhe ['Quick check -> Finish', '? -> Next: Join them'] 425
+Unit 7 Continue: Join them ['Build the word -> Continue', '? -> Next: Blend'] 428
+Unit 7 Continue: Blend ['Blend -> Continue', '? -> Next: Words 1'] 434
+Unit 7 Continue: Words 1 ['Dictation -> Continue', '? -> Next: Words 2'] 437
+Unit 7 Continue: Words 2 ['Dictation -> Continue', '? -> Next: Read'] 440
+Unit 7 Continue: Read ['Read -> Read it twice', '? -> Next: Unit check'] 440
+Unit 7 Continue: Unit check ['Check -> Finish', '? -> Back to path'] 440
+Unit 8 Start: fe ['Quick check -> Finish', '? -> Next: qāf'] 451
+Unit 8 -> Start: fe
+Unit 8 Continue: qāf ['Quick check -> Finish', '? -> Next: k͟he'] 464
+Unit 8 Continue: k͟he ['Quick check -> Finish', '? -> Next: g͟hain'] 487
+Unit 8 Continue: g͟hain ['Quick check -> Finish', '? -> Next: ʻain'] 509
+Unit 8 Continue: ʻain ['Quick check -> Finish', '? -> Next: baṛī ḥe'] 518
+Unit 8 Continue: baṛī ḥe ['Quick check -> Finish', '? -> Next: Join them'] 531
+Unit 8 Continue: Join them ['Build the word -> Continue', '? -> Next: Blend'] 534
+Unit 8 Continue: Blend ['Blend -> Continue', '? -> Next: Words 1'] 540
+Unit 8 Continue: Words 1 ['Dictation -> Continue', '? -> Next: Words 2'] 543
+Unit 8 Continue: Words 2 ['Dictation -> Continue', '? -> Next: Read'] 546
+Unit 8 Continue: Read ['Read -> Read it twice', '? -> Next: Unit check'] 546
+Unit 8 Continue: Unit check ['Check -> Finish', '? -> Back to path'] 546
+Unit 9 Start: ṣwād ['Quick check -> Finish', '? -> Next: ẓwād'] 558
+Unit 9 -> Start: ṣwād
+Unit 9 Continue: ẓwād ['Quick check -> Finish', '? -> Next: t̤oʼe'] 571
+Unit 9 Continue: t̤oʼe ['Quick check -> Finish', '? -> Next: z̤oʼe'] 594
+Unit 9 Continue: z̤oʼe ['Quick check -> Finish', '? -> Next: ẕāl'] 629
+Unit 9 Continue: ẕāl ['Quick check -> Finish', '? -> Next: Join them'] 652
+Unit 9 Continue: Join them ['Build the word -> Continue', '? -> Next: Blend'] 655
+Unit 9 Continue: Blend ['Blend -> Continue', '? -> Next: Words 1'] 661
+Unit 9 Continue: Words 1 ['Dictation -> Continue', '? -> Next: Words 2'] 664
+Unit 9 Continue: Words 2 ['Dictation -> Continue', '? -> Next: Read'] 667
+Unit 9 Continue: Read ['Read -> Read it twice', '? -> Next: Unit check'] 667
+Unit 9 Continue: Unit check ['Check -> Finish', '? -> Back to path'] 667
+Unit 10 Start: hamza ['Quick check -> Finish', '? -> Next: Join them'] 676
+Unit 10 -> Start: hamza
+Unit 10 Continue: Join them ['Build the word -> Continue', '? -> Next: Blend'] 679
+Unit 10 Continue: Blend ['? -> Continue', '? -> Next: Words 1'] 679
+Unit 10 Continue: Words 1 ['Dictation -> Continue', '? -> Next: Words 2'] 682
+Unit 10 Continue: Words 2 ['Dictation -> Continue', '? -> Next: Read'] 685
+Unit 10 Continue: Read ['Read -> Read it twice', '? -> Next: Hamza, marks, numbers'] 685
+Unit 10 Continue: Hamza, marks, numbers ['Iẕāfat -> Continue', '? -> Next: Unit check'] 685
+Unit 10 Continue: Unit check ['Check -> Finish', '? -> Back to path'] 685
+Unit 11 Start: Words 1 ['Dictation -> Continue', 'Dictation -> Next: Words 2'] 688
+Unit 11 -> Start: Words 1
+Unit 11 Continue: Words 2 ['Dictation -> Continue', '? -> Next: Read'] 691
+Unit 11 Continue: Read ['Read -> Read it twice', '? -> Next: Sight words'] 691
+Unit 11 Continue: Sight words ['Sight words -> Continue', 'Sight words -> Next: Nastaliq'] 691
+Unit 11 Continue: Nastaliq ['Two typefaces, one alphabet -> Understood', 'Two typefaces, one alphabet -> Next: Unit check'] 691
+Unit 11 Continue: Unit check ['Check -> Finish', '? -> Back to path'] 691
+COURSE COMPLETE
+errors: []

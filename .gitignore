@@ -38,3 +38,9 @@ research/bar_audio/
 
 # validation evidence from third parties (Mobbin screens) stays local
 .audit/validation/competitive/mobbin/
+
+# validation: screenshots are bulky; reports and scripts are kept
+.audit/validation/a11y_devices/**/*.png
+.audit/validation/a11y_devices/runs/
+.audit/validation/a11y_devices/sheets/
+.audit/validation/a11y_devices/probes/

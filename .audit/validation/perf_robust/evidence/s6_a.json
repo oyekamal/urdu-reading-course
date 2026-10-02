@@ -1,0 +1,7 @@
+{
+ "child_me_has_export": true,
+ "child_me_has_import_input": true,
+ "adult_has_file_input": true,
+ "export_has_teacherPin_field": false,
+ "fresh_install_offers_restore": false
+}

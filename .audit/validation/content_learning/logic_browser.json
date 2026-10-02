@@ -1,0 +1,93 @@
+{
+ "leitner": {
+  "cards_after_ensure_unit3": {
+   "total": 49,
+   "letters": 9,
+   "expLetters": 9,
+   "words": 40,
+   "expWords": 40,
+   "allDueNow": true
+  },
+  "correct_ladder": [
+   {
+    "box": 2,
+    "due_in_days": 2
+   },
+   {
+    "box": 3,
+    "due_in_days": 4
+   },
+   {
+    "box": 4,
+    "due_in_days": 8
+   },
+   {
+    "box": 5,
+    "due_in_days": 16
+   },
+   {
+    "box": 5,
+    "due_in_days": 16
+   },
+   {
+    "box": 5,
+    "due_in_days": 16
+   },
+   {
+    "box": 5,
+    "due_in_days": 16
+   }
+  ],
+  "after_wrong": {
+   "box": 1,
+   "due_in_days": 1,
+   "seen": 8,
+   "lastOk": false
+  },
+  "due": {
+   "limit12": 12,
+   "all": 48,
+   "total": 49
+  },
+  "due_after_1day": 49,
+  "order_ok": true,
+  "total_after_40_grades": 49,
+  "ensure_idempotent": true,
+  "at_unit12": {
+   "cards": 255,
+   "uniqueWordsInUnits": 214,
+   "sightCards": 18,
+   "sightWords": 20,
+   "wordCards": 198,
+   "letterCards": 39
+  },
+  "cards_with_unresolved_audio": [],
+  "n_unresolved": 0
+ },
+ "gating": {
+  "fresh": 0,
+  "after_pass_unit5_only": 0,
+  "unit1_7of10_passed": null,
+  "unit1_8of10_passed": true,
+  "unit1_after_later_0": true,
+  "after_filling_gap_jumps_to": 6,
+  "threshold_total10": 8
+ },
+ "egra_setup": "ok",
+ "egra": {
+  "A_title": "Passage — oral reading fluency (60s)",
+  "A_after_passage": "Comprehension — question 1 of 5",
+  "A_result_rows": "Letter sounds (clpm) | 0 ; Nonwords (cnwpm) | 0 ; Familiar words (cwpm) | 0 ; Passage fluency (cwpm) | 86 ; Passage accuracy | 100% ; Comprehension | 3/5 ; Grade-2 standard (PRP) | meets standard ; Learning band | fluent",
+  "A_saved": {
+   "cwpm": 86,
+   "band": "fluent",
+   "level": "meets standard"
+  },
+  "B_after": "Comprehension — question 1 of 5",
+  "B_rows": "Letter sounds (clpm)\t0 ; Nonwords (cnwpm)\t0 ; Familiar words (cwpm)\t0 ; Passage fluency (cwpm)\t12 ; Passage accuracy\t100% ; Comprehension\t0/5 ; Grade-2 standard (PRP)\tbelow standard ; Learning band\tletters",
+  "C_timeout_no_mark_rows": "Letter sounds (clpm)\t0 ; Nonwords (cnwpm)\t0 ; Familiar words (cwpm)\t0 ; Passage fluency (cwpm)\t52 ; Passage accuracy\t100% ; Comprehension\t0/5 ; Grade-2 standard (PRP)\tbelow standard ; Learning band\tsentences",
+  "D_after_stop_rule": "Subtask 2 — Nonword decoding (60s)",
+  "E_letters_3wrong_reached_page3_title_after": "Subtask 2 — Nonword decoding (60s)"
+ },
+ "page_errors": []
+}
