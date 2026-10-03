@@ -1,0 +1,198 @@
+/* Practice-sheet styles. A4 portrait, white page, one accent (prints as dark grey in black and white). */
+@font-face{font-family:"URC Naskh";src:url("{{STATIC}}/Naskh400.ttf");font-weight:400}
+@font-face{font-family:"URC Nastaliq";src:url("{{FONTS}}/NotoNastaliqUrdu-Regular.ttf");font-weight:400}
+@font-face{font-family:"URC Nastaliq";src:url("{{FONTS}}/NotoNastaliqUrdu-Bold.ttf");font-weight:700}
+@font-face{font-family:"URC Fredoka";src:url("{{STATIC}}/Fredoka400.ttf");font-weight:400;unicode-range:U+0020-00FF}
+@font-face{font-family:"URC Fredoka";src:url("{{STATIC}}/Fredoka600.ttf");font-weight:600;unicode-range:U+0020-00FF}
+@font-face{font-family:"URC Fredoka";src:url("{{STATIC}}/Fredoka700.ttf");font-weight:700;unicode-range:U+0020-00FF}
+@page{size:A4;margin:0}
+:root{--ink:#161616;--mid:#555;--soft:#8a8a8a;--rule:#c9c9c9;--faint:#e6e6e6;--accent:#12766c;--tint:#eef6f5}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font:10pt/1.4 "Noto Sans","DejaVu Sans",sans-serif}
+.page{width:210mm;height:297mm;overflow:hidden;position:relative;break-after:page;page-break-after:always;padding:11mm 14mm 0}
+.page:last-child{break-after:auto;page-break-after:auto}
+.pg{height:271mm;position:relative}
+.foot{position:absolute;left:14mm;right:14mm;bottom:8mm;display:flex;justify-content:space-between;font-size:7.5pt;color:var(--soft);border-top:.3mm solid var(--faint);padding-top:1.6mm}
+.d{font-family:"URC Fredoka","Noto Sans",sans-serif}
+.rm{font-family:"Noto Sans","DejaVu Sans",sans-serif}
+.ur{font-family:"URC Naskh",serif;direction:rtl;unicode-bidi:isolate;line-height:1.7}
+.nq{font-family:"URC Nastaliq",serif;direction:rtl;unicode-bidi:isolate;line-height:2.3}
+.hd{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:.5mm solid var(--ink);padding-bottom:2.2mm;margin-bottom:3.5mm}
+.hd .tag{font:600 8.5pt "URC Fredoka";letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.hd h1{font:600 19pt/1.15 "URC Fredoka";margin:.6mm 0 0}
+.hd .u{font-size:24pt;color:var(--ink);text-align:right}
+.nm{font-size:8.5pt;color:var(--mid);display:flex;gap:6mm;margin:-1mm 0 3mm}
+.nm span{display:inline-block;border-bottom:.3mm solid var(--soft);min-width:42mm;height:5mm}
+.task{font:600 11pt/1.3 "URC Fredoka";margin:3mm 0 2mm;display:flex;gap:2.5mm;align-items:baseline}
+.task b{display:inline-grid;place-items:center;width:6.2mm;height:6.2mm;border-radius:50%;background:var(--accent);color:#fff;font-size:9pt;flex:none}
+.note{font-size:8.6pt;color:var(--mid)}
+.key{border:.35mm dashed var(--soft);border-radius:2mm;padding:2mm 3mm;font-size:8pt;color:var(--mid);position:absolute;left:0;right:0;bottom:2mm}
+.key b{color:var(--ink)}
+.card{border:.4mm solid var(--rule);border-radius:3mm;padding:3mm 4mm}
+.tint{background:var(--tint)}
+.pill{display:inline-block;font:600 8pt "URC Fredoka";border:.3mm solid var(--accent);color:var(--accent);border-radius:99px;padding:.3mm 2.4mm}
+table{border-collapse:collapse;width:100%}
+th,td{border:.3mm solid var(--rule);padding:1.6mm 2.2mm;text-align:left;vertical-align:middle;font-size:9pt}
+th{background:var(--tint);font-family:"URC Fredoka";font-weight:600;font-size:8.5pt}
+ol,ul{margin:1mm 0;padding-left:5mm}
+li{margin:.7mm 0}
+/* look-alike */
+.la{display:flex;direction:rtl;align-items:center;gap:2.4mm;margin:2.2mm 0}
+.la .t{width:21mm;height:21mm;border:.6mm solid var(--ink);border-radius:3mm;display:grid;place-items:center;font-size:22mm;line-height:1;background:var(--tint)}
+.la .t .ur{line-height:1.1;margin-top:-1mm}
+.la .sep{width:.4mm;height:18mm;background:var(--rule);margin:0 1mm}
+.la .o{width:19mm;height:19mm;border:.3mm solid var(--rule);border-radius:50%;display:grid;place-items:center;font-size:14mm;line-height:1}
+.la .o .ur{line-height:1.1}
+.sortbox{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;margin-top:2mm}
+.sortbox div{border:.4mm solid var(--ink);border-radius:2.5mm;height:34mm;position:relative}
+.sortbox div span{position:absolute;top:1.6mm;left:0;right:0;text-align:center;font:600 9pt "URC Fredoka"}
+.chips{display:flex;direction:rtl;gap:3mm;justify-content:center;margin:2mm 0}
+.chips .ur{font-size:17mm;line-height:1.1;border:.3mm solid var(--rule);border-radius:2.5mm;width:22mm;height:22mm;display:grid;place-items:center}
+/* join */
+.jn{margin:0 0 3.2mm;position:relative}
+.jn .tiles{display:flex;direction:rtl;align-items:center;gap:1.6mm;height:15mm}
+.jn .tiles i{font-style:normal;color:var(--soft);font:600 10pt "URC Fredoka"}
+.jn .tiles .l{width:14mm;height:14mm;border:.35mm solid var(--ink);border-radius:2mm;display:grid;place-items:center;font-size:11mm;line-height:1}
+.jn .tiles .l .ur{line-height:1.2}
+.jn .no{position:absolute;left:0;top:1mm;font:600 11pt "URC Fredoka";color:var(--accent)}
+/* match */
+.mt{display:grid;grid-template-columns:1fr 1fr;column-gap:34mm;row-gap:2.4mm;margin-top:3mm}
+.mt .g{border:.35mm solid var(--rule);border-radius:2.5mm;height:19.5mm;display:flex;align-items:center;padding:0 4mm;font-size:12.5pt;position:relative}
+.mt .g .cn{position:absolute;right:-3mm;top:50%;width:2.8mm;height:2.8mm;margin-top:-1.4mm;border-radius:50%;border:.5mm solid var(--accent);background:#fff}
+.mt .g b{font:700 12pt "URC Fredoka";color:var(--accent);margin-right:3mm}
+.mt .w{border:.35mm solid var(--ink);border-radius:2.5mm;height:19.5mm;display:flex;align-items:center;justify-content:center;font-size:14mm;position:relative;direction:rtl}
+.mt .w .cn{position:absolute;left:-3mm;top:50%;width:2.8mm;height:2.8mm;margin-top:-1.4mm;border-radius:50%;border:.5mm solid var(--accent);background:#fff}
+.mt .w .ur,.mt .w .nq{line-height:1.3;font-size:14mm}
+.mt .w .no{position:absolute;right:2mm;top:.5mm;font:700 11pt "URC Fredoka";color:var(--accent);direction:ltr}
+/* reading */
+.wg{display:grid;grid-template-columns:repeat(4,1fr);gap:2.6mm;direction:rtl;margin-top:2mm}
+.wg .c{border:.3mm solid var(--rule);border-radius:2.5mm;text-align:center;padding:1mm 1mm .6mm;height:37.5mm}.guideT th,.guideT td{padding:1mm 2mm}
+.wg .c .ur,.wg .c .nq{font-size:14mm;line-height:1.4;display:block;margin-top:1.5mm}
+.wg .c .nq{font-size:13mm;line-height:1.9;margin-top:0}
+.wg .c .bx{display:flex;justify-content:center;gap:2.4mm;direction:ltr;margin-top:1mm}
+.wg .c .bx i{width:5mm;height:5mm;border:.4mm solid var(--soft);border-radius:50%}
+.sent{border-bottom:.3mm dashed var(--rule);padding:1mm 0 .6mm;display:flex;align-items:center;justify-content:space-between;gap:3mm;direction:rtl}
+.sent .ur{font-size:17pt;line-height:2}
+.sent .nq{font-size:15pt}
+.sent .bx{direction:ltr;display:flex;gap:2mm}
+.sent .bx i{width:5mm;height:5mm;border:.4mm solid var(--soft);border-radius:50%}
+.pass{font-size:19pt;line-height:2.25;border:.4mm solid var(--rule);border-radius:3mm;padding:3mm 5mm;margin-top:1.5mm}
+.pass.nq{font-size:16pt;line-height:2.6}
+.gu{border:.35mm dashed var(--soft);border-radius:2mm;padding:2mm 3mm;margin-top:3mm;font-size:8.6pt;color:var(--mid)}
+.gu b{color:var(--ink)}
+.gu p{margin:.8mm 0}
+/* check */
+.ck{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2.6mm 5mm}
+.ck .q{border:.35mm solid var(--rule);border-radius:2.5mm;padding:1.8mm 3mm;height:39mm;position:relative}
+.ck .q.wide{grid-column:1/3;height:30mm}
+.ck .q .n{font:700 11pt "URC Fredoka";color:var(--accent)}
+.ck .q .say{font-size:8.6pt;color:var(--mid)}
+.ck .q .opts{display:flex;direction:rtl;justify-content:center;gap:2.5mm;margin-top:1.5mm}
+.ck .q .opts .o{width:15.5mm;height:15.5mm;border:.3mm solid var(--rule);border-radius:50%;display:grid;place-items:center;font-size:11.5mm;line-height:1}
+.ck .q .opts .o .ur,.ck .q .opts .o .nq{line-height:1.2;font-size:inherit}
+.ck .q .opts .o.ok{border:.8mm solid var(--accent);background:var(--tint)}
+.ck .q .opts .o.w{width:auto;border-radius:3mm;padding:0 2mm;font-size:10mm;height:15mm}
+.ck .q .num{display:flex;gap:4mm;justify-content:center;margin-top:3mm}
+.ck .q .num span{width:13mm;height:13mm;border-radius:50%;border:.3mm solid var(--rule);display:grid;place-items:center;font:600 13pt "URC Fredoka"}
+.ck .q .num span.ok{border:.8mm solid var(--accent);background:var(--tint)}
+.score{display:flex;justify-content:space-between;align-items:center;margin-top:3mm;border:.5mm solid var(--ink);border-radius:3mm;padding:2.4mm 4mm;font:600 11pt "URC Fredoka"}
+/* chart + cards */
+.chart{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm}
+.chart .cc{border:.3mm solid var(--rule);border-radius:2.5mm;height:32.4mm;padding:1.4mm 2.4mm;display:grid;grid-template-columns:1fr 24mm;align-items:center;position:relative;direction:ltr}
+.chart .cc .big{font-size:15mm;line-height:1.1;text-align:center;direction:rtl}
+.chart .cc .big .ur{line-height:1.2}
+.chart .cc .nm2{font:600 9pt/1.2 "URC Fredoka"}
+.chart .cc .nm2 .ur{font-family:"URC Naskh";font-size:11pt;display:block;direction:rtl;text-align:left;font-weight:400;color:var(--mid)}
+.chart .cc .snd{font-size:6.8pt;color:var(--mid);line-height:1.25;margin-top:.8mm}
+.chart .cc .fm{grid-column:1/3;display:flex;direction:rtl;justify-content:space-between;border-top:.25mm solid var(--faint);margin-top:.6mm;padding-top:.2mm;font-size:8.6mm;line-height:1.1;height:11.6mm;align-items:center}
+.chart .cc .fm .ur{line-height:1.1;font-size:8.6mm}
+.chart .cc .no{position:absolute;left:2mm;top:1mm;font:600 7pt "URC Fredoka";color:var(--soft)}
+.fc{display:grid;grid-template-columns:repeat(3,1fr);gap:0;height:266mm;margin:1mm -3mm 0}
+.fc .k{border:.25mm dashed var(--soft);padding:2.2mm;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6mm;position:relative}
+.fc .k .ur{line-height:1.15}
+.fc .k .nmn{font:600 10pt "URC Fredoka"}
+.fc .k .sm{font-size:7.4pt;color:var(--mid)}
+.fc .k .fm{display:flex;direction:rtl;gap:3mm;font-size:8mm}
+.fc .k .fm .ur{font-size:8mm}
+.fc .k .tag{position:absolute;right:2mm;top:1mm;font:600 6.5pt "URC Fredoka";color:var(--soft)}
+.vw{display:grid;grid-template-columns:repeat(3,1fr);gap:2.6mm;margin-top:2mm}
+.vw .v{border:.35mm solid var(--rule);border-radius:2.5mm;padding:1.5mm 3mm;text-align:center;height:46mm}
+.vw .v .big{font-size:16mm;height:20mm;line-height:1.25}
+.vw .v .big .ur{line-height:1.3}
+.vw .v .nm3{font:600 10pt "URC Fredoka"}
+.vw .v .sm{font-size:7.8pt;color:var(--mid);line-height:1.25}
+.cert{border:1.2mm double var(--accent);height:266mm;padding:12mm 12mm;text-align:center;display:flex;flex-direction:column;align-items:center}
+.cert h1{font:700 30pt/1.1 "URC Fredoka";margin:6mm 0 0}
+.cert .u{font-size:26pt;margin-top:1mm}
+.cert .line{border-bottom:.4mm solid var(--ink);width:120mm;height:11mm;margin:3mm auto 1mm}
+.cert .lab{font-size:9pt;color:var(--mid)}
+.cert img{height:62mm;margin:6mm 0 2mm}
+.cert .sig{display:flex;justify-content:space-between;width:150mm;margin-top:auto}
+.cert .sig div{width:62mm;border-top:.4mm solid var(--ink);padding-top:1mm;font-size:9pt;color:var(--mid)}
+.stars{display:flex;gap:3mm;justify-content:center;margin:3mm 0;color:var(--accent);font-size:22pt}
+.art{height:30mm}
+.mk{height:34mm}
+
+.jn .tiles.sm,.ck .tiles.sm{display:flex;direction:rtl;gap:1mm;height:9.5mm;margin:.3mm 0 .6mm;align-items:center}
+.ck .tiles.sm .l{width:9mm;height:9mm;font-size:7.4mm;border:.3mm solid var(--ink);border-radius:1.6mm;display:grid;place-items:center;line-height:1}
+.ck .tiles.sm .l .ur{line-height:1.15}
+.ck .tiles.sm i{font:600 8pt "URC Fredoka";color:var(--soft);font-style:normal}
+.nm{margin:-1.4mm 0 2mm}
+
+.gd li{font-size:9pt;margin:.2mm 0}.gd p{font-size:9pt}.gd .task{margin:2.2mm 0 1.2mm}.gd .hd{margin-bottom:2mm}
+table .nq{line-height:1.6}
+.guideT td,.guideT th{padding:.7mm 2mm}
+
+.chart .cc .nm2 .n{font:600 7pt "URC Fredoka";color:var(--soft);margin-right:1mm}
+.ck .q .redo{position:absolute;left:3mm;right:3mm;bottom:1.6mm;font-size:7.5pt;color:var(--mid)}
+.la .t{font-size:15mm}.la .t .ur{line-height:1.3;margin:0}
+.hd{padding-bottom:3.4mm}.hd .u{line-height:1.9;margin-bottom:-2mm}
+.cert .sig{margin-top:12mm}.cert img{height:56mm}
+.vw .v{height:48mm}.vw .v .sm{margin-bottom:1mm}
+.gdot{display:inline-block;width:2.6mm;height:2.6mm;border-radius:50%;background:var(--accent);vertical-align:middle}
+.cb{display:inline-block;width:3.2mm;height:3.2mm;border:.35mm solid var(--soft);vertical-align:-.5mm;margin-right:1mm}
+.st{display:inline-block;width:11mm;height:11mm;background:var(--accent);clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.ck .q .opts .o.nqo{font-size:8.5mm;padding:0 1.5mm;min-width:13mm}
+.ck .q .opts .o.nqo .nq{font-size:inherit;line-height:1.5}
+.stars{gap:3mm}
+
+.ck .q .opts .o.w{font-size:8.5mm;padding:0 1.6mm}
+.ck .q{overflow:hidden}
+.pass.nq{font-size:14pt;line-height:2.4}
+
+.chart .cc .fm{align-items:flex-start}.chart .cc .fx{display:flex;flex-direction:column;align-items:center}.chart .cc .fx small{font:600 5.6pt "URC Fredoka";color:var(--mid);margin-top:-.6mm}
+.chart .cc .snd{font-size:7.4pt;color:#444}
+.hd{align-items:center;padding-bottom:4.4mm}.hd .u{margin-bottom:0;line-height:1.5}
+.jn .tiles{height:13mm}
+.ck .q .opts{flex-wrap:wrap}.ck .q .opts .o.nqo{font-size:7.4mm}
+.kcs{display:flex;flex-wrap:wrap;gap:2mm 3mm}.kc{border:.3mm solid var(--rule);border-radius:2mm;padding:1mm 3mm;font:600 10pt "URC Fredoka"}
+
+.wg .c.nqc{height:40mm}.wg .c.nqc .nq{font-size:11.5mm;line-height:1.8;margin-top:0}.wg .c.nqc .bx{margin-top:2.5mm}
+.ck .q .num{margin-top:1mm;gap:3mm}.ck .q .num span{width:10.5mm;height:10.5mm;font-size:11pt}
+.chart .cc .fm .ur{font-size:7.6mm}.chart .cc .fx small{font-size:5.4pt}
+.fc{height:262mm}.vw .v{height:46.5mm}.wg .c.nqc{height:38.5mm}
+
+.chart .cc .fx small{font-size:6.6pt}.chart .cc .snd{font-size:8pt}
+.vw .v{height:50mm}.guideT td,.guideT th{padding:.45mm 2mm}
+.gd li,.gd p{font-size:10pt}
+.fc .k .sm{font-size:9pt}
+
+.ck .q .redo{position:static;font-size:7.4pt;color:var(--mid);margin-left:0}
+.ck.keyk .q{height:43mm}
+.mt .w.nqw .nq,.mt .w.nqw .ur{font-size:9.5mm;line-height:1.6}
+.pg{height:273mm}
+
+.chart .cc .snd{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ck .q .opts .o.nqo{height:17mm;padding:0 2mm}
+
+.page{padding:12mm 14mm 0}.pg{height:266mm}.foot{bottom:10.5mm}
+.sent .ur{font-size:22pt;line-height:1.9}.sent .nq{font-size:20pt;line-height:2.2}
+.ck .q .opts .o.w,.ck .q .opts .o.nqo{padding:0 2mm;min-width:0}
+.fc{height:258mm}.vw .v{height:45mm}.vw .v .big{height:17mm;font-size:14mm}.chart .cc{height:31.6mm}.chart{gap:2.2mm}
+.fc{height:256mm}
+
+.ck .q .opts .o.nqo{padding:0 3.2mm;height:18mm}.ck .q .opts .o.nqo .nq{line-height:1.9}
+.ck .q .opts .o.ok{border-width:.5mm}
+.hd{padding-top:1.6mm}
+.wg .c.nqc{height:37.5mm}
