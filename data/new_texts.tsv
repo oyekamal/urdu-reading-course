@@ -1,0 +1,219 @@
+# S = sentence, P = passage, T = reading-test passage, Q = test question. Written 2026-10-03 by an AI from the unit vocabulary only; see data/REVIEW_NEEDED.md
+# ---- unit 1
+S|1|بابا کا نام کمال|dad's name is Kamal
+S|1|نانا کا مکان|grandfather's house
+S|1|کالا کمبل لانا|bring the black blanket
+S|1|نمک کم|a little salt
+S|1|مال کا مالک|the owner of the goods
+S|1|ملک کا نام|the name of the country
+S|1|امام کا کلام|the imam's words
+S|1|اب کمبل لانا|now bring the blanket
+S|1|کمال کا کام مکمل|Kamal's work is complete
+S|1|نان کباب لانا|bring naan and kebab
+S|1|کمان کا مالک|the owner of the bow
+S|1|نمک کا مالک|the owner of the salt
+P|1|کمال کا بابا۔ کمال کا نانا۔ نانا کا مکان لمبا۔ نانا کا کمبل کالا۔ کمال کا کام: نمک لانا۔|Kamal's dad. Kamal's grandfather. Grandfather's house is long. Grandfather's blanket is black. Kamal's job: bringing salt.
+# ---- unit 2
+S|2|نیا کمبل لے|take the new blanket
+S|2|تین کیک لینا|take three cakes
+S|2|نانی کا نیلا کمبل|grandma's blue blanket
+S|2|تایا کا نیا مکان|uncle's new house
+S|2|اتنا نمک مت لینا|don't take so much salt
+S|2|بینک کا نام بتانا|tell me the name of the bank
+S|2|نانی کا تالا لے|take grandma's lock
+S|2|تم کیک لے لینا|you take the cake
+S|2|نیلم کا نیا کیک|Neelam's new cake
+S|2|کتنا لمبا کمبل|what a long blanket
+S|2|نیلا کیک|a blue cake
+S|2|تایا کا کتا|uncle's dog
+P|2|نیلم نے نانی کا کیک لیا۔ نانی نے بتایا: اتنا کیک مت لینا۔ نیلم نے ایک کیک لیا۔ ایک کیک نیلم کا، ایک کیک نانی کا۔ تایا کے کتے نے کیک لیا۔|Neelam took grandma's cake. Grandma said: don't take so much cake. Neelam took one cake. One cake is Neelam's, one is grandma's. Uncle's dog took a cake.
+# ---- unit 3
+S|3|پانی پینا|drink water
+S|3|بیٹی کا پیلا کپ|the daughter's yellow cup
+S|3|باپ کا نیا کمبل|father's new blanket
+S|3|اپنا کپ لے|take your own cup
+S|3|اپنی کاپی لینا|take your own notebook
+S|3|پلیٹ لانا|bring a plate
+S|3|بیٹے کا ٹکٹ|the son's ticket
+S|3|مٹی کا کپ|a clay cup
+S|3|کپتان کا نام بتانا|tell me the captain's name
+S|3|اتنا پانی مت پینا|don't drink so much water
+S|3|پتلی پتی|a thin leaf
+S|3|پانی کا کپ|a cup of water
+S|3|بیٹے کی پلیٹ|the son's plate
+P|3|بیٹی نے اپنا پیلا کپ لیا۔ بیٹے نے اپنی پلیٹ لی۔ باپ نے بتایا: اتنا پانی مت پینا۔ نانی کا مالٹا پکا۔ بیٹا مالٹا لانا۔ کپتان کا ٹکٹ پکا۔|The daughter took her yellow cup. The son took his plate. Father said: don't drink so much water. Grandma's orange is ripe. Son, bring the orange. The captain's ticket is confirmed.
+# ---- unit 4
+S|4|یہ میرا کمرہ ہے|this is my room
+S|4|وہ میری بہن ہے|she is my sister
+S|4|میرا نام ہادی ہے|my name is Hadi
+S|4|ابو دکان پر ہے|dad is at the shop
+S|4|دادی روٹی دیتی ہے|grandma gives bread
+S|4|ابو دکان پر بہت کام کرتا ہے|dad works a lot at the shop
+S|4|نادیہ اپنا پنیر دانیال کو دیتی ہے|Nadia gives her cheese to Daniyal
+S|4|دانیال کا تکیہ نیا ہے|Daniyal's pillow is new
+S|4|بندر دریا پر ہے|the monkey is at the river
+S|4|تارا بہت دور ہے|the star is very far
+S|4|دوا اور پانی لو|take the medicine and water
+S|4|کون ہے؟|who is it?
+S|4|مبارک ہو|congratulations
+S|4|دادا کا کمرہ دور ہے|grandfather's room is far
+S|4|ہادی کی بہن مریم ہے|Hadi's sister is Maryam
+S|4|ابو دہی اور پنیر دیتا ہے|dad gives yoghurt and cheese
+S|4|نادیہ کا کمرہ پرانا ہے|Nadia's room is old
+S|4|مریم کی بہن نادیہ ہے|Maryam's sister is Nadia
+P|4|یہ ہادی کا کمرہ ہے۔ کمرہ بہت پرانا ہے۔ دادی کہتی ہے: ہادی کا تکیہ پرانا ہے۔ ابو دکان پر ہے۔ ابو ہادی کو نیا تکیہ دیتا ہے۔ ابو کہتا ہے: ہادی، تیار ہو۔ ہادی کی بہن مریم ہے۔ مریم کا کمرہ دور ہے۔ نادیہ ہادی کو پنیر دیتی ہے۔ دانیال ہادی کو دہی دیتا ہے۔|This is Hadi's room. The room is very old. Grandma says: Hadi's pillow is old. Dad is at the shop. Dad gives Hadi a new pillow. Dad says: Hadi, be ready. Hadi's sister is Maryam. Maryam's room is far. Nadia gives Hadi cheese. Daniyal gives Hadi yoghurt.
+# ---- unit 5
+S|5|ہادی اسکول جاتا ہے|Hadi goes to school
+S|5|سارہ اسکول جاتی ہے|Sara goes to school
+S|5|استاد کا نام جاوید ہے|the teacher's name is Javed
+S|5|بارش ہوتی ہے|it rains
+S|5|سورج بہت گرم ہے|the sun is very hot
+S|5|رات کو چاند ہوتا ہے|at night there is a moon
+S|5|سلمان جلدی سے اسکول جاتا ہے|Salman goes to school quickly
+S|5|سارہ اپنی سہیلی کو سلام کہتی ہے|Sara says salaam to her friend
+S|5|شاہد کا دوست جاوید ہے|Shahid's friend is Javed
+S|5|دکان پر گاجر ہے|there is a carrot at the shop
+S|5|تم کیا چاہتے ہو؟|what do you want?
+S|5|وہ جلدی جا سکتا ہے|he can go quickly
+S|5|بہت شکریہ|thank you very much
+S|5|سارہ جاوید کو سلام کہتی ہے|Sara says salaam to Javed
+S|5|وہ اسکول جلدی جا سکتی ہے|she can go to school quickly
+S|5|چینی بہت کم ہے|there is very little sugar
+S|5|پانچ بجے اسکول بند ہوتا ہے|school closes at five o'clock
+P|5|سارہ جلدی سے اسکول جاتی ہے۔ اسکول کا استاد جاوید ہے۔ جاوید سارہ کو ایک کتاب دیتا ہے۔ سارہ کہتی ہے: بہت شکریہ۔ جاوید کہتا ہے: سارہ کا کام مکمل ہے۔ سارہ کی سہیلی سلام کہتی ہے۔ اب دوپہر ہے۔ دوپہر کو سورج بہت گرم ہوتا ہے۔ سلمان کہتا ہے: سارہ جلدی جا سکتی ہے۔ پانچ بجے اسکول بند ہوتا ہے۔ سلمان اپنی کتاب جاوید کو دیتا ہے۔ جاوید کہتا ہے: بہت شکریہ سلمان۔|Sara goes to school quickly. The school's teacher is Javed. Javed gives Sara a book. Sara says: thank you very much! Javed says: Sara's work is complete. Sara's friend says salaam. Now it is afternoon. At noon the sun is very hot. Salman says: Sara can go quickly. School closes at five o'clock. Salman gives his book to Javed. Javed says: thank you very much, Salman.
+# ---- unit 6
+S|6|میں گھر پر ہوں|I am at home
+S|6|تم کہاں ہو؟|where are you?
+S|6|ہم یہاں ہیں|we are here
+S|6|بچے کھیل کھیلتے ہیں|the children play games
+S|6|ماں کھانا دیتی ہے|mother serves the food
+S|6|ہاتھی بہت بھاری ہے|the elephant is very heavy
+S|6|مجھے بھوک لگی ہے|I am hungry
+S|6|ماموں کے ہاتھ میں* پھل ہے|there is fruit in uncle's hand
+S|6|دھوپ بہت گرم ہے|the sunshine is very hot
+S|6|یہ پھول بہت اچھا ہے|this flower is very nice
+S|6|ماموں کتاب لکھتا ہے|uncle writes a book
+S|6|تم کیوں تھکے ہو؟|why are you tired?
+S|6|سیکھنا اچھا ہے|learning is good
+S|6|کھیت میں* گھاس ہے|there is grass in the field
+S|6|بھینس گھاس کھاتی ہے|the buffalo eats grass
+S|6|مچھلی پانی میں* ہے|the fish is in the water
+S|6|ہم پھل کھاتے ہیں|we eat fruit
+S|6|ننھا ہاتھی بہت چھوٹا ہے|the baby elephant is very small
+S|6|ماں کی چھتری پرانی ہے|mother's umbrella is old
+S|6|ہاتھی جھیل کے پاس ہے|the elephant is near the lake
+P|6|ماموں کا گھر کھیت کے پاس ہے۔ کھیت میں* گھاس اور پھول ہیں۔ ماموں کی بھینس بھی ہے۔ بھینس گھاس کھاتی ہے اور دودھ دیتی ہے۔ ہم ماموں کے گھر جاتے ہیں۔ بچے کھیت میں* کھیلتے ہیں۔ ماموں کہتا ہے: دیکھو، بھینس بہت بھاری ہے۔ دھوپ بہت گرم ہے۔ ماموں دودھ دیتا ہے۔ دودھ بہت میٹھا ہے۔ ماموں کی جھیل بھی ہے۔ جھیل میں* مچھلی ہے۔ ننھا ہاتھی مچھلی دیکھتا ہے۔ ہاتھی مچھلی نہیں کھاتا۔ ہاتھی گھاس کھاتا ہے۔|Uncle's house is near the field. In the field there is grass and there are flowers. Uncle also has a buffalo. The buffalo eats grass and gives milk. We go to uncle's house. The children play in the field. Uncle says: look, the buffalo is very heavy. The sunshine is very hot. Uncle gives milk. The milk is very sweet. Uncle also has a lake. There is a fish in the lake. The little elephant looks at the fish. The elephant does not eat fish. The elephant eats grass.
+# ---- unit 7
+S|7|لڑکا سڑک پر ہے|the boy is on the road
+S|7|لڑکی بڑی ہوشیار ہے|the girl is very clever
+S|7|زینب روز کتاب پڑھتی ہے|Zainab reads a book every day
+S|7|ڈاکٹر کی گاڑی بڑی ہے|the doctor's car is big
+S|7|بازار میں* بہت چیزیں ہیں|there are many things in the market
+S|7|دروازہ بند ہے|the door is closed
+S|7|کھڑکی کے پاس میز ہے|there is a table near the window
+S|7|پہاڑ بہت اونچا ہے|the mountain is very high
+S|7|مزدور بہت کام کرتا ہے|the labourer works a lot
+S|7|درزی کے پاس کپڑے ہیں|the tailor has clothes
+S|7|انڈے تازہ ہیں|the eggs are fresh
+S|7|ہم روز اسکول پڑھنے جاتے ہیں|we go to school to study every day
+S|7|ڈرنا مت|don't be afraid
+S|7|ڈاکٹر بیمار کو دوا دیتا ہے|the doctor gives the sick person medicine
+S|7|لڑکے بازار میں* کھیلتے ہیں|the boys play in the market
+S|7|گاڑی بہت تیز ہے|the car is very fast
+S|7|نانی کے پاس زیور ہے|grandma has jewellery
+S|7|زینب کی گڑیا بڑی ہے|Zainab's doll is big
+S|7|ڈبے میں* انڈے ہیں|there are eggs in the box
+P|7|زینب ایک ہوشیار لڑکی ہے۔ وہ روز اسکول جاتی ہے۔ اسکول بازار کے پاس ہے۔ بازار میں* بہت چیزیں ہیں۔ دکان پر انڈے اور کپڑے ہیں۔ انڈے تازہ ہیں۔ زینب کا ابو بازار میں* کام کرتا ہے۔ ابو کے پاس بڑی گاڑی ہے۔ شام کو ابو گھر جاتا ہے۔ زینب اپنی کتاب پڑھتی ہے۔ زینب کا کمرہ بہت بڑا ہے۔ زینب کی زندگی بہت اچھی ہے۔ ڈاکٹر کی گاڑی بہت تیز ہے۔ لڑکے بازار میں* کھیلتے ہیں۔ بوڑھی نانی کے پاس زیور ہے۔ ڈاکٹر روز اسکول جاتا ہے۔ لڑکی ڈاکٹر کو کتاب دیتی ہے۔|Zainab is a clever girl. She goes to school every day. The school is near the market. There are many things in the market. At the shop there are eggs and clothes. The eggs are fresh. Zainab's dad works in the market. Dad has a big car. In the evening dad goes home. Zainab reads her book. Zainab's room is very big. Zainab's life is very good. The doctor's car is very fast. The boys play in the market. Old grandma has jewellery. The doctor goes to school every day. The girl gives the doctor a book.
+# ---- unit 8
+S|8|علی کا قلم میز پر ہے|Ali's pen is on the table
+S|8|احمد اور علی دوست ہیں|Ahmad and Ali are friends
+S|8|خالہ کا گھر باغ کے پاس ہے|aunt's house is near the garden
+S|8|جمعہ کو ہم مسجد جاتے ہیں|on Friday we go to the mosque
+S|8|عید بہت اچھی ہوتی ہے|Eid is very nice
+S|8|امتحان کے بعد چھٹی ہے|after the exam there is a holiday
+S|8|خالد کا خرگوش سفید ہے|Khalid's rabbit is white
+S|8|مجھے فٹبال کا کھیل پسند ہے|I like the game of football
+S|8|ہفتے میں* سات دن ہوتے ہیں|there are seven days in a week
+S|8|مجھے بخار ہے|I have a fever
+S|8|کمرے کا فرش سیاہ ہے|the floor of the room is black
+S|8|خبر اخبار میں* ہے|the news is in the newspaper
+S|8|محنت اچھی عادت ہے|hard work is a good habit
+S|8|ہفتے کو ہم خالہ کے گھر جاتے ہیں|on Saturday we go to aunt's house
+S|8|خالد اپنا فون دیکھتا ہے|Khalid looks at his phone
+S|8|دفتر میں* بہت کام ہے|there is a lot of work in the office
+S|8|بستر پر نیا کمبل ہے|there is a new blanket on the bed
+S|8|علی کی عینک سیاہ ہے|Ali's glasses are black
+S|8|خالہ کی گھڑی سفید ہے|aunt's watch is white
+P|8|کل عید ہے۔ احمد اور علی بہت خوش ہیں۔ دونوں مسجد جاتے ہیں۔ مسجد کے بعد وہ خالہ کے گھر جاتے ہیں۔ خالہ کا گھر باغ کے قریب ہے۔ خالہ کے پاس حلوہ، کباب اور نان ہیں۔ علی کو حلوہ پسند ہے۔ احمد کو کباب پسند ہیں۔ خالہ کہتی ہے: خوب کھانا۔ دونوں خوب کھانا کھاتے ہیں۔ شام کو دونوں اپنے گھر جاتے ہیں۔ عید بہت اچھی ہوتی ہے۔ خالد کا خرگوش سفید ہے۔ خالد اپنے خرگوش کو گھاس دیتا ہے۔ سب بہت خوش ہیں۔ علی اپنا قلم دیکھتا ہے۔ احمد کا قلم میز پر ہے۔|Tomorrow is Eid. Ahmad and Ali are very happy. Both go to the mosque. After the mosque they go to aunt's house. Aunt's house is near the garden. Aunt has halwa, kebab and naan. Ali likes halwa. Ahmad likes kebab. Aunt says: eat well. Both eat plenty of food. In the evening both go to their own home. Eid is very nice. Khalid's rabbit is white. Khalid gives his rabbit grass. Everyone is very happy. Ali looks at his pen. Ahmad's pen is on the table.
+# ---- unit 9
+S|9|صبح صاف ہے|the morning is clear
+S|9|صابر ایک ذہین شاگرد ہے|Sabir is a clever pupil
+S|9|طوطا ذرا بڑا ہے|the parrot is a bit big
+S|9|بطخ پانی میں* ہے|the duck is in the water
+S|9|قمیض خوبصورت ہے|the shirt is beautiful
+S|9|صحیح لفظ لکھو|write the right word
+S|9|یہ تصویر بہت اچھی ہے|this picture is very good
+S|9|ضرور ملنا|do meet (me)
+S|9|صحت بہت ضروری ہے|health is very important
+S|9|غلطی مت کرنا|don't make a mistake
+S|9|طارق اپنے وطن میں* ہے|Tariq is in his homeland
+S|9|صبح کو ہم مطالعہ کرتے ہیں|in the morning we study
+S|9|طوفان سے مت ڈرنا|don't be afraid of the storm
+S|9|ظاہر ہے|obviously
+S|9|طالبہ صفحہ پڑھتی ہے|the girl student reads the page
+S|9|ذرا انتظار کرو|wait a little
+S|9|غذا صحت کے لیے ضروری ہے|food is necessary for health
+S|9|ریاضی کا سوال مشکل ہے|the maths question is difficult
+S|9|صندوق میں* قمیض ہے|there is a shirt in the box
+P|9|صابر ایک ذہین شاگرد ہے۔ صبح صابر نے صاف قمیض لی۔ پھر وہ اسکول گیا۔ اسکول میں* ریاضی کا مضمون ہے۔ ریاضی بہت ضروری ہے۔ استاد کہتا ہے: صفحہ دیکھو۔ صابر صحیح جواب لکھتا ہے۔ استاد کہتا ہے: بہت اچھا۔ صابر کا طوطا صحن میں* ہے۔ اس کا طوطا ذرا بڑا ہے۔ شام کو صابر اپنا طوطا دیکھتا ہے۔ طوطا کہتا ہے: صابر، مبارک ہو۔ کھانا صحت کے لیے ضروری ہے۔ صابر کی ماں غذا دیتی ہے۔ سب خوش ہیں۔ طارق صبح اسکول جاتا ہے۔ طارق کا طوطا بہت اچھا ہے۔|Sabir is a clever pupil. In the morning Sabir took a clean shirt. Then he went to school. In school there is the subject of maths. Maths is very important. The teacher says: look at the page. Sabir writes the right answer. The teacher says: very good. Sabir's parrot is in the courtyard. His parrot is a bit big. In the evening Sabir looks at his parrot. The parrot says: Sabir, congratulations! Food is necessary for health. Sabir's mother gives food. Everyone is happy. Tariq goes to school in the morning. Tariq's parrot is very good.
+# ---- unit 10
+S|10|آپ کا نام کیا ہے؟|what is your name?
+S|10|میرا نام زینب ہے|my name is Zainab
+S|10|کوئی مسئلہ نہیں|no problem
+S|10|آج موسم اچھا ہے|the weather is good today
+S|10|آسمان نیلا ہے|the sky is blue
+S|10|بھائی سائیکل پر آتا ہے|brother comes by bicycle
+S|10|امّی چائے دیتی ہے|mother gives tea
+S|10|ابّا کی دکان پر آلو اور آٹا ہے|there are potatoes and flour at dad's shop
+S|10|مٹھائی بہت اچھی ہے|the sweets are very good
+S|10|ہم ۲ بجے گھر جائیں گے|we will go home at 2 o'clock
+S|10|چائے میں* ۲ چمچ چینی|2 spoons of sugar in the tea
+S|10|آنکھیں بہت خوبصورت ہیں|the eyes are very beautiful
+S|10|لڑائی مت کرو|don't fight
+S|10|آج آسمان صاف ہے|the sky is clear today
+S|10|آندھی بہت تیز ہے|the dust storm is very strong
+S|10|ابّا کی سائیکل نئی ہے|dad's bicycle is new
+S|10|آؤ، ہم باغ جائیں|come, let's go to the garden
+S|10|آج مٹھائی ہے|there are sweets today
+S|10|آسمان پر چاند اور ستارہ ہیں|there are the moon and a star in the sky
+P|10|آج اتوار ہے۔ بھائی اپنی سائیکل پر دکان جاتا ہے۔ دکان پر آٹا، آلو اور مٹھائی ہے۔ بھائی نے ۲ سیب اور ایک آم لیے۔ پھر وہ گھر آتا ہے۔ امّی چائے دیتی ہے۔ چائے میں* ۲ چمچ چینی ہے۔ بھائی کہتا ہے: شکریہ امّی۔ امّی کہتی ہے: کوئی مسئلہ نہیں۔ ابّا کہتا ہے: آج موسم اچھا ہے۔ آسمان نیلا ہے۔ ہم ۴ بجے باغ جائیں گے۔ بھائی کو باغ بہت پسند ہے۔ آج آسمان صاف ہے۔ ابّا کی سائیکل نئی ہے۔ بھائی کہتا ہے: آؤ، ہم باغ جائیں۔ امّی آج مٹھائی دیتی ہے۔ ہم سب آج خوش ہیں۔|Today is Sunday. Brother goes to the shop on his bicycle. At the shop there is flour, potatoes and sweets. Brother took 2 apples and a mango. Then he comes home. Mother gives tea. There are 2 spoons of sugar in the tea. Brother says: thank you, mother! Mother says: no problem. Dad says: the weather is good today. The sky is blue. We will go to the garden at 4 o'clock. Brother likes the garden very much. The sky is clear today. Dad's bicycle is new. Brother says: come, let's go to the garden. Mother gives sweets today. We are all happy today.
+# ---- unit 11 (read without marks)
+S|11|میرا نام کمال ہے اور میں لاہور میں* رہتا ہوں|my name is Kamal and I live in Lahore
+S|11|پاکستان ہمارا ملک ہے|Pakistan is our country
+S|11|کراچی بہت بڑا شہر ہے|Karachi is a very big city
+S|11|اکتوبر میں* موسم ٹھنڈا ہوتا ہے|in October the weather is cold
+S|11|جنوری اور فروری سردی کے مہینے ہیں|January and February are the cold months
+S|11|ہم پیر کو اسکول جاتے ہیں|we go to school on Monday
+S|11|اتوار کو چھٹی ہوتی ہے|there is a holiday on Sunday
+S|11|امّی بریانی اور کھیر دیتی ہے|mother gives biryani and kheer
+S|11|مجھے چائے اور بسکٹ پسند ہیں|I like tea and biscuits
+S|11|لسی بہت اچھی ہے|the lassi is very good
+S|11|ہمارا ٹیچر بہت اچھا ہے|our teacher is very good
+S|11|اسکول میں* ۳۰ بچے ہیں|there are 30 children in the school
+S|11|پنجاب اور سندھ پاکستان میں* ہیں|Punjab and Sindh are in Pakistan
+S|11|قرآن بہت پاک کتاب ہے|the Quran is a very holy book
+S|11|آپ کا فون نمبر کیا ہے؟|what is your phone number?
+S|11|لاہور میں* بہت باغ ہیں|there are many gardens in Lahore
+S|11|کوئٹہ پہاڑ کے پاس ہے|Quetta is near the mountains
+S|11|پشاور اور ملتان بھی پاکستان میں* ہیں|Peshawar and Multan are also in Pakistan
+S|11|ستمبر میں* بارش ہوتی ہے|it rains in September
+S|11|سندھ میں* سمندر ہے|there is a sea in Sindh
+S|11|بلوچستان میں* پہاڑ ہیں|there are mountains in Balochistan
+P|11|اتوار کو ہم ریل سے کراچی جاتے ہیں۔ ہم صبح اسٹیشن پر آتے ہیں۔ ریل بہت لمبی ہے۔ ابو نے تین ٹکٹ لیے۔ ماں کے پاس بریانی اور پراٹھا ہیں۔ ریل میں* ایک بوڑھا آدمی ہے۔ وہ کہتا ہے: کراچی بہت بڑا شہر ہے۔ وہاں سمندر ہے۔ شام کو ہم کراچی میں* ہیں۔ خالہ کا گھر سمندر کے قریب ہے۔ خالہ ہمیں چائے اور بسکٹ دیتی ہے۔ رات کو ہم سب خوش ہیں۔ ہم پیر کو واپس لاہور جاتے ہیں۔ ستمبر میں* بارش ہوتی ہے۔ دسمبر میں* بہت سردی ہوتی ہے۔ پاکستان بہت اچھا ملک ہے۔|On Sunday we go to Karachi by train. We come to the station in the morning. The train is very long. Dad took three tickets. Mother has biryani and paratha. In the train there is an old man. He says: Karachi is a very big city. There is the sea there. In the evening we are in Karachi. Aunt's house is near the sea. Aunt gives us tea and biscuits. At night we are all happy. On Monday we go back to Lahore. It rains in September. In December it is very cold. Pakistan is a very good country.
+# ---- the reading test (unit 12): shares no sentence with unit text, every word taught
+T|-|آج بارش ہو رہی ہے۔ علی اور احمد گھر میں* ہیں۔ دونوں کھڑکی سے باہر دیکھتے ہیں۔ سڑک پر بہت پانی ہے۔ ماں کہتی ہے: آج ہم باہر نہیں جا سکتے۔ علی کتاب پڑھتا ہے۔ احمد کھانا کھاتا ہے۔ شام کو بارش ختم ہو جاتی ہے۔ دونوں باغ میں* کھیلتے ہیں۔|Today it is raining. Ali and Ahmad are at home. Both look out of the window. There is a lot of water on the road. Mother says: today we cannot go outside. Ali reads a book. Ahmad eats his meal. In the evening the rain stops. Both play in the garden.
+Q|-|آج کیا ہو رہا ہے؟|بارش ہو رہی ہے (it is raining)
+Q|-|علی اور احمد کہاں ہیں؟|گھر میں (at home)
+Q|-|ماں کیا کہتی ہے؟|آج ہم باہر نہیں جا سکتے (today we cannot go out)
+Q|-|احمد کیا کرتا ہے؟|کھانا کھاتا ہے (he eats his meal)
+Q|-|شام کو دونوں کہاں کھیلتے ہیں؟|باغ میں (in the garden)

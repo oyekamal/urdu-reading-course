@@ -1,5 +1,5 @@
 {
- "_meta": "Course units. `words` are decodable using only letters taught up to and including that unit (checked by scripts/check_decodable.py). Each word: [urdu, roman, english]. `sentences` are the reading passages for the unit.",
+ "_meta": "Course units. `words` are decodable using only letters taught up to and including that unit (scripts/check_decodable.py); each word is [urdu, roman, english, urdu_vowelled]. `sentences` are the unit's Read-lesson sentences, `passage` its short passage, same 4-field shape; both are built from words taught in this or an earlier unit (sight words from the unit that teaches their letters) by scripts/apply_new_texts.py. Word evidence (corpus counts + open dictionary entry) is in data/word_evidence.json, sources in data/SOURCES.md.",
  "units": [
   {
    "n": 0,
@@ -29,22 +29,10 @@
    "focus": "Joiners vs the non-joiner alif; alif as long ā; the three short-vowel marks zabar, zer, pesh",
    "words": [
     [
-     "اب",
-     "ab",
-     "now",
-     "اَب"
-    ],
-    [
-     "بابا",
-     "bābā",
-     "dad",
-     "بابا"
-    ],
-    [
-     "امام",
-     "imām",
-     "prayer leader",
-     "اِمام"
+     "کام",
+     "kām",
+     "work",
+     "کام"
     ],
     [
      "نام",
@@ -53,52 +41,22 @@
      "نام"
     ],
     [
-     "کام",
-     "kām",
-     "work",
-     "کام"
+     "کم",
+     "kam",
+     "few, less",
+     "کَم"
+    ],
+    [
+     "اب",
+     "ab",
+     "now",
+     "اَب"
     ],
     [
      "کل",
      "kal",
-     "tomorrow / yesterday",
+     "tomorrow, yesterday",
      "کَل"
-    ],
-    [
-     "لال",
-     "lāl",
-     "red",
-     "لال"
-    ],
-    [
-     "بال",
-     "bāl",
-     "hair",
-     "بال"
-    ],
-    [
-     "ناک",
-     "nāk",
-     "nose",
-     "ناک"
-    ],
-    [
-     "کان",
-     "kān",
-     "ear",
-     "کان"
-    ],
-    [
-     "مان",
-     "mān",
-     "accept",
-     "مان"
-    ],
-    [
-     "نمک",
-     "namak",
-     "salt",
-     "نَمَک"
     ],
     [
      "ملک",
@@ -107,10 +65,70 @@
      "مُلْک"
     ],
     [
-     "کمال",
-     "kamāl",
-     "wonder",
-     "کَمال"
+     "ملا",
+     "milā",
+     "met, got",
+     "مِلا"
+    ],
+    [
+     "کب",
+     "kab",
+     "when?",
+     "کَب"
+    ],
+    [
+     "بال",
+     "bāl",
+     "hair",
+     "بال"
+    ],
+    [
+     "بنا",
+     "binā",
+     "without",
+     "بِنا"
+    ],
+    [
+     "بالکل",
+     "bilkul",
+     "absolutely",
+     "بِالکُل"
+    ],
+    [
+     "امام",
+     "imām",
+     "prayer leader",
+     "اِمام"
+    ],
+    [
+     "مکمل",
+     "mukammal",
+     "complete",
+     "مُکَمَّل"
+    ],
+    [
+     "ممکن",
+     "mumkin",
+     "possible",
+     "مُمْکِن"
+    ],
+    [
+     "مالک",
+     "mālik",
+     "owner",
+     "مالِک"
+    ],
+    [
+     "لمبا",
+     "lambā",
+     "long, tall",
+     "لَمْبا"
+    ],
+    [
+     "لال",
+     "lāl",
+     "red",
+     "لال"
     ],
     [
      "نانا",
@@ -119,16 +137,100 @@
      "نانا"
     ],
     [
+     "امکان",
+     "imkān",
+     "possibility",
+     "اِمْکان"
+    ],
+    [
+     "مال",
+     "māl",
+     "goods, wealth",
+     "مال"
+    ],
+    [
+     "بنانا",
+     "banānā",
+     "to make",
+     "بَنانا"
+    ],
+    [
+     "کلام",
+     "kalām",
+     "speech, words",
+     "کَلام"
+    ],
+    [
+     "بابا",
+     "bābā",
+     "dad",
+     "بابا"
+    ],
+    [
+     "کمال",
+     "kamāl",
+     "perfection, skill",
+     "کَمال"
+    ],
+    [
+     "ناک",
+     "nāk",
+     "nose",
+     "ناک"
+    ],
+    [
+     "ناکام",
+     "nākām",
+     "unsuccessful",
+     "ناکام"
+    ],
+    [
      "کالا",
      "kālā",
      "black",
      "کالا"
     ],
     [
-     "مالا",
-     "mālā",
-     "garland",
-     "مالا"
+     "مان",
+     "mān",
+     "pride, honour",
+     "مان"
+    ],
+    [
+     "ناممکن",
+     "nāmumkin",
+     "impossible",
+     "نامُمْکِن"
+    ],
+    [
+     "کان",
+     "kān",
+     "ear",
+     "کان"
+    ],
+    [
+     "نمک",
+     "namak",
+     "salt",
+     "نَمَک"
+    ],
+    [
+     "کامل",
+     "kāmil",
+     "perfect",
+     "کامِل"
+    ],
+    [
+     "ماننا",
+     "mānnā",
+     "to accept, obey",
+     "مانْنا"
+    ],
+    [
+     "لانا",
+     "lānā",
+     "to bring",
+     "لانا"
     ],
     [
      "مکان",
@@ -137,41 +239,167 @@
      "مَکان"
     ],
     [
-     "املا",
-     "imlā",
-     "dictation",
-     "اِملا"
+     "نکالنا",
+     "nikālnā",
+     "to take out",
+     "نِکالْنا"
     ],
     [
      "کمان",
      "kamān",
      "bow",
      "کَمان"
+    ],
+    [
+     "مالا",
+     "mālā",
+     "garland",
+     "مالا"
+    ],
+    [
+     "نان",
+     "nān",
+     "naan bread",
+     "نان"
+    ],
+    [
+     "بلبل",
+     "bulbul",
+     "nightingale",
+     "بُلْبُل"
+    ],
+    [
+     "ملنا",
+     "milnā",
+     "to meet",
+     "مِلْنا"
+    ],
+    [
+     "املا",
+     "imlā",
+     "spelling",
+     "اِملا"
+    ],
+    [
+     "کباب",
+     "kabāb",
+     "kebab",
+     "کَباب"
+    ],
+    [
+     "کمبل",
+     "kambal",
+     "blanket",
+     "کَمْبَل"
+    ],
+    [
+     "منا",
+     "munnā",
+     "dear little boy",
+     "مُنّا"
+    ],
+    [
+     "ملانا",
+     "milānā",
+     "to mix, join",
+     "مِلانا"
+    ],
+    [
+     "منانا",
+     "manānā",
+     "to persuade, celebrate",
+     "مَنانا"
+    ],
+    [
+     "کمانا",
+     "kamānā",
+     "to earn",
+     "کَمانا"
     ]
    ],
    "sentences": [
     [
-     "بابا کا کام",
-     "bābā kā kām",
-     "dad's work",
-     "بابا کا کام"
+     "بابا کا نام کمال",
+     "bābā kā nām kamāl",
+     "dad's name is Kamal",
+     "بابا کا نام کَمال"
     ],
     [
-     "کالا بال",
-     "kālā bāl",
-     "black hair",
-     "کالا بال"
+     "نانا کا مکان",
+     "nānā kā makān",
+     "grandfather's house",
+     "نانا کا مَکان"
     ],
     [
-     "نمک لا",
-     "namak lā",
-     "bring salt",
-     "نَمَک لا"
+     "کالا کمبل لانا",
+     "kālā kambal lānā",
+     "bring the black blanket",
+     "کالا کَمْبَل لانا"
+    ],
+    [
+     "نمک کم",
+     "namak kam",
+     "a little salt",
+     "نَمَک کَم"
+    ],
+    [
+     "مال کا مالک",
+     "māl kā mālik",
+     "the owner of the goods",
+     "مال کا مالِک"
+    ],
+    [
+     "ملک کا نام",
+     "mulk kā nām",
+     "the name of the country",
+     "مُلْک کا نام"
+    ],
+    [
+     "امام کا کلام",
+     "imām kā kalām",
+     "the imam's words",
+     "اِمام کا کَلام"
+    ],
+    [
+     "اب کمبل لانا",
+     "ab kambal lānā",
+     "now bring the blanket",
+     "اَب کَمْبَل لانا"
+    ],
+    [
+     "کمال کا کام مکمل",
+     "kamāl kā kām mukammal",
+     "Kamal's work is complete",
+     "کَمال کا کام مُکَمَّل"
+    ],
+    [
+     "نان کباب لانا",
+     "nān kabāb lānā",
+     "bring naan and kebab",
+     "نان کَباب لانا"
+    ],
+    [
+     "کمان کا مالک",
+     "kamān kā mālik",
+     "the owner of the bow",
+     "کَمان کا مالِک"
+    ],
+    [
+     "نمک کا مالک",
+     "namak kā mālik",
+     "the owner of the salt",
+     "نَمَک کا مالِک"
     ]
    ],
    "hours": [
     3,
     1.5
+   ],
+   "passage": [
+    "کمال کا بابا۔ کمال کا نانا۔ نانا کا مکان لمبا۔ نانا کا کمبل کالا۔ کمال کا کام: نمک لانا۔",
+    "kamāl kā bābā. kamāl kā nānā. nānā kā makān lambā. nānā kā kambal kālā. kamāl kā kām: namak lānā.",
+    "Kamal's dad. Kamal's grandfather. Grandfather's house is long. Grandfather's blanket is black. Kamal's job: bringing salt.",
+    "کَمال کا بابا۔ کَمال کا نانا۔ نانا کا مَکان لَمْبا۔ نانا کا کَمْبَل کالا۔ کَمال کا کام: نَمَک لانا۔"
    ]
   },
   {
@@ -186,54 +414,6 @@
    "focus": "The dot-confusable cluster ب ت ن ی: same body, different dots; ی for ī and y; ے for e and ai only at the end",
    "words": [
     [
-     "تم",
-     "tum",
-     "you",
-     "تُم"
-    ],
-    [
-     "تین",
-     "tīn",
-     "three",
-     "تین"
-    ],
-    [
-     "بیل",
-     "bail",
-     "ox",
-     "بَیل"
-    ],
-    [
-     "میل",
-     "mīl",
-     "mile",
-     "میل"
-    ],
-    [
-     "نیلا",
-     "nīlā",
-     "blue",
-     "نیلا"
-    ],
-    [
-     "کیلا",
-     "kelā",
-     "banana",
-     "کیلا"
-    ],
-    [
-     "تیل",
-     "tel",
-     "oil",
-     "تیل"
-    ],
-    [
-     "لے",
-     "le",
-     "take",
-     "لے"
-    ],
-    [
      "کے",
      "ke",
      "of",
@@ -246,22 +426,64 @@
      "نے"
     ],
     [
-     "تالی",
-     "tālī",
-     "clap",
-     "تالی"
+     "ایک",
+     "ek",
+     "one",
+     "ایک"
     ],
     [
-     "بلی",
-     "billī",
-     "cat",
-     "بِلّی"
+     "تم",
+     "tum",
+     "you",
+     "تُم"
     ],
     [
-     "تالا",
-     "tālā",
-     "lock",
-     "تالا"
+     "لیے",
+     "liye",
+     "for",
+     "لِیے"
+    ],
+    [
+     "تک",
+     "tak",
+     "until, up to",
+     "تَک"
+    ],
+    [
+     "یا",
+     "yā",
+     "or",
+     "یا"
+    ],
+    [
+     "بات",
+     "bāt",
+     "talk, matter",
+     "بات"
+    ],
+    [
+     "لیکن",
+     "lekin",
+     "but",
+     "لیکِن"
+    ],
+    [
+     "لیا",
+     "liyā",
+     "took",
+     "لِیا"
+    ],
+    [
+     "لے",
+     "le",
+     "take",
+     "لے"
+    ],
+    [
+     "تین",
+     "tīn",
+     "three",
+     "تین"
     ],
     [
      "کتاب",
@@ -270,16 +492,190 @@
      "کِتاب"
     ],
     [
+     "مت",
+     "mat",
+     "don't",
+     "مَت"
+    ],
+    [
+     "بے",
+     "be",
+     "without, un-",
+     "بے"
+    ],
+    [
+     "اتنے",
+     "itne",
+     "so many",
+     "اِتنے"
+    ],
+    [
+     "تمام",
+     "tamām",
+     "all, whole",
+     "تَمام"
+    ],
+    [
+     "بتایا",
+     "batāyā",
+     "told",
+     "بَتایا"
+    ],
+    [
+     "لی",
+     "lī",
+     "took (fem)",
+     "لی"
+    ],
+    [
+     "اتنی",
+     "itnī",
+     "so much (fem)",
+     "اِتنی"
+    ],
+    [
+     "اتنا",
+     "itnā",
+     "this much",
+     "اِتنا"
+    ],
+    [
+     "کتنی",
+     "kitnī",
+     "how much (fem)",
+     "کِتنی"
+    ],
+    [
+     "بلی",
+     "billī",
+     "cat",
+     "بِلّی"
+    ],
+    [
+     "نیا",
+     "nayā",
+     "new",
+     "نَیا"
+    ],
+    [
+     "اکیلے",
+     "akele",
+     "alone (plural)",
+     "اَکیلے"
+    ],
+    [
+     "میل",
+     "mīl",
+     "mile",
+     "میل"
+    ],
+    [
+     "لمبی",
+     "lambī",
+     "long (fem)",
+     "لَمبی"
+    ],
+    [
+     "کامیابی",
+     "kāmyābī",
+     "success",
+     "کامیابی"
+    ],
+    [
+     "تب",
+     "tab",
+     "then",
+     "تَب"
+    ],
+    [
+     "کتنے",
+     "kitne",
+     "how many",
+     "کِتنے"
+    ],
+    [
+     "کتنا",
+     "kitnā",
+     "how much",
+     "کِتنا"
+    ],
+    [
+     "کیک",
+     "kek",
+     "cake",
+     "کیک"
+    ],
+    [
+     "کامیاب",
+     "kāmyāb",
+     "successful",
+     "کامیاب"
+    ],
+    [
+     "بینک",
+     "baink",
+     "bank",
+     "بینک"
+    ],
+    [
+     "لینا",
+     "lenā",
+     "to take",
+     "لینا"
+    ],
+    [
+     "ایمان",
+     "īmān",
+     "faith",
+     "ایمان"
+    ],
+    [
+     "ملکی",
+     "mulkī",
+     "of the country",
+     "مُلکی"
+    ],
+    [
+     "کتا",
+     "kuttā",
+     "dog",
+     "کُتّا"
+    ],
+    [
+     "بتانا",
+     "batānā",
+     "to tell",
+     "بَتانا"
+    ],
+    [
      "بیتاب",
      "betāb",
      "restless",
      "بیتاب"
     ],
     [
-     "تکیا",
-     "takiya",
-     "pillow",
-     "تَکِیا"
+     "کمی",
+     "kamī",
+     "shortage",
+     "کَمی"
+    ],
+    [
+     "تیل",
+     "tel",
+     "oil",
+     "تیل"
+    ],
+    [
+     "کتے",
+     "kutte",
+     "dogs",
+     "کُتّے"
+    ],
+    [
+     "نیت",
+     "niyyat",
+     "intention",
+     "نِیَّت"
     ],
     [
      "مالی",
@@ -288,10 +684,64 @@
      "مالی"
     ],
     [
-     "ناتا",
-     "nātā",
-     "relation",
-     "ناتا"
+     "تالا",
+     "tālā",
+     "lock",
+     "تالا"
+    ],
+    [
+     "تایا",
+     "tāyā",
+     "father's elder brother",
+     "تایا"
+    ],
+    [
+     "بانی",
+     "bānī",
+     "founder",
+     "بانی"
+    ],
+    [
+     "بیل",
+     "bail",
+     "ox",
+     "بَیل"
+    ],
+    [
+     "تمنا",
+     "tamannā",
+     "wish",
+     "تَمَنّا"
+    ],
+    [
+     "نیکی",
+     "nekī",
+     "goodness",
+     "نیکی"
+    ],
+    [
+     "اکیلا",
+     "akelā",
+     "alone",
+     "اَکیلا"
+    ],
+    [
+     "نانی",
+     "nānī",
+     "maternal grandmother",
+     "نانی"
+    ],
+    [
+     "تالی",
+     "tālī",
+     "clap",
+     "تالی"
+    ],
+    [
+     "مکتب",
+     "maktab",
+     "school",
+     "مَکْتَب"
     ],
     [
      "تالاب",
@@ -300,35 +750,137 @@
      "تالاب"
     ],
     [
-     "کمانی",
-     "kamānī",
-     "spring",
-     "کَمانی"
+     "کیمیا",
+     "kīmiyā",
+     "chemistry",
+     "کیمِیا"
+    ],
+    [
+     "یتیم",
+     "yatīm",
+     "orphan",
+     "یَتیم"
+    ],
+    [
+     "نابینا",
+     "nābīnā",
+     "blind",
+     "نابینا"
+    ],
+    [
+     "نیلا",
+     "nīlā",
+     "blue",
+     "نیلا"
+    ],
+    [
+     "نمکین",
+     "namkīn",
+     "salty",
+     "نَمکین"
+    ],
+    [
+     "نیلم",
+     "nīlam",
+     "sapphire, a girl's name",
+     "نیلَم"
+    ],
+    [
+     "کیلا",
+     "kelā",
+     "banana",
+     "کیلا"
+    ],
+    [
+     "ناتا",
+     "nātā",
+     "relation",
+     "ناتا"
     ]
    ],
    "sentences": [
     [
-     "تین کتاب",
-     "tīn kitāb",
-     "three books",
-     "تین کِتاب"
+     "نیا کمبل لے",
+     "nayā kambal le",
+     "take the new blanket",
+     "نَیا کَمْبَل لے"
     ],
     [
-     "بلی کالی ہے",
-     "billī kālī hai",
-     "the cat is black (ہے is a sight word)",
-     "بِلّی کالی ہَے"
+     "تین کیک لینا",
+     "tīn kek lenā",
+     "take three cakes",
+     "تین کیک لینا"
     ],
     [
-     "نیلا تکیا لے",
-     "nīlā takiya le",
-     "take the blue pillow",
-     "نیلا تَکِیا لے"
+     "نانی کا نیلا کمبل",
+     "nānī kā nīlā kambal",
+     "grandma's blue blanket",
+     "نانی کا نیلا کَمْبَل"
+    ],
+    [
+     "تایا کا نیا مکان",
+     "tāyā kā nayā makān",
+     "uncle's new house",
+     "تایا کا نَیا مَکان"
+    ],
+    [
+     "اتنا نمک مت لینا",
+     "itnā namak mat lenā",
+     "don't take so much salt",
+     "اِتنا نَمَک مَت لینا"
+    ],
+    [
+     "بینک کا نام بتانا",
+     "baink kā nām batānā",
+     "tell me the name of the bank",
+     "بینک کا نام بَتانا"
+    ],
+    [
+     "نانی کا تالا لے",
+     "nānī kā tālā le",
+     "take grandma's lock",
+     "نانی کا تالا لے"
+    ],
+    [
+     "تم کیک لے لینا",
+     "tum kek le lenā",
+     "you take the cake",
+     "تُم کیک لے لینا"
+    ],
+    [
+     "نیلم کا نیا کیک",
+     "nīlam kā nayā kek",
+     "Neelam's new cake",
+     "نیلَم کا نَیا کیک"
+    ],
+    [
+     "کتنا لمبا کمبل",
+     "kitnā lambā kambal",
+     "what a long blanket",
+     "کِتنا لَمْبا کَمْبَل"
+    ],
+    [
+     "نیلا کیک",
+     "nīlā kek",
+     "a blue cake",
+     "نیلا کیک"
+    ],
+    [
+     "تایا کا کتا",
+     "tāyā kā kuttā",
+     "uncle's dog",
+     "تایا کا کُتّا"
     ]
    ],
    "hours": [
     3,
     1.5
+   ],
+   "passage": [
+    "نیلم نے نانی کا کیک لیا۔ نانی نے بتایا: اتنا کیک مت لینا۔ نیلم نے ایک کیک لیا۔ ایک کیک نیلم کا، ایک کیک نانی کا۔ تایا کے کتے نے کیک لیا۔",
+    "nīlam ne nānī kā kek liyā. nānī ne batāyā: itnā kek mat lenā. nīlam ne ek kek liyā. ek kek nīlam kā, ek kek nānī kā. tāyā ke kutte ne kek liyā.",
+    "Neelam took grandma's cake. Grandma said: don't take so much cake. Neelam took one cake. One cake is Neelam's, one is grandma's. Uncle's dog took a cake.",
+    "نیلَم نے نانی کا کیک لِیا۔ نانی نے بَتایا: اِتنا کیک مَت لینا۔ نیلَم نے ایک کیک لِیا۔ ایک کیک نیلَم کا، ایک کیک نانی کا۔ تایا کے کُتّے نے کیک لِیا۔"
    ]
   },
   {
@@ -343,52 +895,40 @@
    "focus": "Three dots below (پ), the small ط-mark above (ٹ), three dots above (ث). Retroflex ٹ vs dental ت",
    "words": [
     [
+     "اپنے",
+     "apne",
+     "own (plural)",
+     "اَپنے"
+    ],
+    [
+     "اپنی",
+     "apnī",
+     "own (fem)",
+     "اَپنی"
+    ],
+    [
+     "اپنا",
+     "apnā",
+     "own",
+     "اَپنا"
+    ],
+    [
      "پانی",
      "pānī",
      "water",
      "پانی"
     ],
     [
-     "پل",
-     "pul",
-     "bridge",
-     "پُل"
+     "منٹ",
+     "minaṭ",
+     "minute",
+     "مِنَٹ"
     ],
     [
-     "ٹوپی",
-     "ṭopī",
-     "cap (و comes in unit 4, preview)",
-     "ٹوپی"
-    ],
-    [
-     "پتا",
-     "patā",
-     "address",
-     "پَتا"
-    ],
-    [
-     "پاک",
-     "pāk",
-     "pure",
-     "پاک"
-    ],
-    [
-     "پیٹ",
-     "peṭ",
-     "stomach",
-     "پیٹ"
-    ],
-    [
-     "ٹب",
-     "ṭab",
-     "tub",
-     "ٹَب"
-    ],
-    [
-     "پتلی",
-     "patlī",
-     "thin",
-     "پَتْلی"
+     "بیٹی",
+     "beṭī",
+     "daughter",
+     "بیٹی"
     ],
     [
      "ثابت",
@@ -397,58 +937,40 @@
      "ثابِت"
     ],
     [
-     "پیپل",
-     "pīpal",
-     "fig tree",
-     "پیپَل"
+     "بیٹے",
+     "beṭe",
+     "sons",
+     "بیٹے"
     ],
     [
-     "ٹماٹر",
-     "ṭamāṭar",
-     "tomato (ر preview)",
-     "ٹَماٹَر"
+     "پاک",
+     "pāk",
+     "pure",
+     "پاک"
     ],
     [
-     "ٹانکا",
-     "ṭānkā",
-     "stitch",
-     "ٹانْکا"
+     "باپ",
+     "bāp",
+     "father",
+     "باپ"
     ],
     [
-     "پیالا",
-     "piyālā",
-     "bowl",
-     "پِیالا"
+     "کاپی",
+     "kāpī",
+     "notebook",
+     "کاپی"
     ],
     [
-     "نپا",
-     "napā",
-     "measured",
-     "نَپا"
+     "مثال",
+     "mis̱āl",
+     "example",
+     "مِثال"
     ],
     [
-     "پلک",
-     "palak",
-     "eyelash",
-     "پَلَک"
-    ],
-    [
-     "کپاس",
-     "kapās",
-     "cotton (س preview)",
-     "کَپاس"
-    ],
-    [
-     "تپتا",
-     "taptā",
-     "scorching",
-     "تَپْتا"
-    ],
-    [
-     "پتلا",
-     "patlā",
-     "thin",
-     "پَتْلا"
+     "بیٹا",
+     "beṭā",
+     "son",
+     "بیٹا"
     ],
     [
      "ٹکٹ",
@@ -457,35 +979,263 @@
      "ٹِکَٹ"
     ],
     [
+     "پل",
+     "pul",
+     "bridge",
+     "پُل"
+    ],
+    [
+     "پکا",
+     "pakkā",
+     "ripe, firm",
+     "پَکّا"
+    ],
+    [
+     "کپ",
+     "kap",
+     "cup",
+     "کَپ"
+    ],
+    [
+     "پیٹ",
+     "peṭ",
+     "stomach",
+     "پیٹ"
+    ],
+    [
+     "پتلی",
+     "patlī",
+     "thin (fem)",
+     "پَتْلی"
+    ],
+    [
+     "پیلا",
+     "pīlā",
+     "yellow",
+     "پیلا"
+    ],
+    [
+     "کپتان",
+     "kaptān",
+     "captain",
+     "کَپْتان"
+    ],
+    [
+     "مٹی",
+     "miṭṭī",
+     "soil, clay",
+     "مِٹّی"
+    ],
+    [
      "بٹن",
      "baṭan",
      "button",
      "بَٹَن"
+    ],
+    [
+     "پینا",
+     "pīnā",
+     "to drink",
+     "پینا"
+    ],
+    [
+     "پلیٹ",
+     "pleṭ",
+     "plate",
+     "پلیٹ"
+    ],
+    [
+     "پٹی",
+     "paṭṭī",
+     "bandage, strip",
+     "پَٹّی"
+    ],
+    [
+     "پتی",
+     "pattī",
+     "leaf, petal",
+     "پَتّی"
+    ],
+    [
+     "ناٹک",
+     "nāṭak",
+     "play, drama",
+     "ناٹَک"
+    ],
+    [
+     "اینٹ",
+     "īnṭ",
+     "brick",
+     "اینٹ"
+    ],
+    [
+     "پکی",
+     "pakkī",
+     "ripe, firm (fem)",
+     "پَکّی"
+    ],
+    [
+     "کانٹے",
+     "kānṭe",
+     "thorns",
+     "کانْٹے"
+    ],
+    [
+     "پیتل",
+     "pītal",
+     "brass",
+     "پیتَل"
+    ],
+    [
+     "مالٹا",
+     "mālṭā",
+     "orange (fruit)",
+     "مالْٹا"
+    ],
+    [
+     "ناپاک",
+     "nāpāk",
+     "impure",
+     "ناپاک"
+    ],
+    [
+     "پانا",
+     "pānā",
+     "to get, find",
+     "پانا"
+    ],
+    [
+     "پالک",
+     "pālak",
+     "spinach",
+     "پالَک"
+    ],
+    [
+     "کاٹنا",
+     "kāṭnā",
+     "to cut",
+     "کاٹْنا"
+    ],
+    [
+     "لالٹین",
+     "lālṭen",
+     "lantern",
+     "لالْٹین"
+    ],
+    [
+     "پالنا",
+     "pālnā",
+     "to raise (animals)",
+     "پالْنا"
+    ],
+    [
+     "پتلا",
+     "patlā",
+     "thin",
+     "پَتْلا"
+    ],
+    [
+     "پیپل",
+     "pīpal",
+     "fig tree",
+     "پیپَل"
+    ],
+    [
+     "پلک",
+     "palak",
+     "eyelash",
+     "پَلَک"
     ]
    ],
    "sentences": [
     [
-     "پانی لا",
-     "pānī lā",
-     "bring water",
-     "پانی لا"
+     "پانی پینا",
+     "pānī pīnā",
+     "drink water",
+     "پانی پینا"
     ],
     [
-     "پتلی بلی",
-     "patlī billī",
-     "thin cat",
-     "پَتْلی بِلّی"
+     "بیٹی کا پیلا کپ",
+     "beṭī kā pīlā kap",
+     "the daughter's yellow cup",
+     "بیٹی کا پیلا کَپ"
     ],
     [
-     "میں ٹوپی لے",
-     "maiṉ ṭopī le",
-     "(preview) I take the cap",
-     "مَیں ٹوپی لے"
+     "باپ کا نیا کمبل",
+     "bāp kā nayā kambal",
+     "father's new blanket",
+     "باپ کا نَیا کَمْبَل"
+    ],
+    [
+     "اپنا کپ لے",
+     "apnā kap le",
+     "take your own cup",
+     "اَپنا کَپ لے"
+    ],
+    [
+     "اپنی کاپی لینا",
+     "apnī kāpī lenā",
+     "take your own notebook",
+     "اَپنی کاپی لینا"
+    ],
+    [
+     "پلیٹ لانا",
+     "pleṭ lānā",
+     "bring a plate",
+     "پلیٹ لانا"
+    ],
+    [
+     "بیٹے کا ٹکٹ",
+     "beṭe kā ṭikaṭ",
+     "the son's ticket",
+     "بیٹے کا ٹِکَٹ"
+    ],
+    [
+     "مٹی کا کپ",
+     "miṭṭī kā kap",
+     "a clay cup",
+     "مِٹّی کا کَپ"
+    ],
+    [
+     "کپتان کا نام بتانا",
+     "kaptān kā nām batānā",
+     "tell me the captain's name",
+     "کَپْتان کا نام بَتانا"
+    ],
+    [
+     "اتنا پانی مت پینا",
+     "itnā pānī mat pīnā",
+     "don't drink so much water",
+     "اِتنا پانی مَت پینا"
+    ],
+    [
+     "پتلی پتی",
+     "patlī pattī",
+     "a thin leaf",
+     "پَتْلی پَتّی"
+    ],
+    [
+     "پانی کا کپ",
+     "pānī kā kap",
+     "a cup of water",
+     "پانی کا کَپ"
+    ],
+    [
+     "بیٹے کی پلیٹ",
+     "beṭe kī pleṭ",
+     "the son's plate",
+     "بیٹے کی پلیٹ"
     ]
    ],
    "hours": [
     2.5,
     1
+   ],
+   "passage": [
+    "بیٹی نے اپنا پیلا کپ لیا۔ بیٹے نے اپنی پلیٹ لی۔ باپ نے بتایا: اتنا پانی مت پینا۔ نانی کا مالٹا پکا۔ بیٹا مالٹا لانا۔ کپتان کا ٹکٹ پکا۔",
+    "beṭī ne apnā pīlā kap liyā. beṭe ne apnī pleṭ lī. bāp ne batāyā: itnā pānī mat pīnā. nānī kā mālṭā pakkā. beṭā mālṭā lānā. kaptān kā ṭikaṭ pakkā.",
+    "The daughter took her yellow cup. The son took his plate. Father said: don't drink so much water. Grandma's orange is ripe. Son, bring the orange. The captain's ticket is confirmed.",
+    "بیٹی نے اَپنا پیلا کَپ لِیا۔ بیٹے نے اَپنی پلیٹ لی۔ باپ نے بَتایا: اِتنا پانی مَت پینا۔ نانی کا مالْٹا پَکّا۔ بیٹا مالْٹا لانا۔ کَپْتان کا ٹِکَٹ پَکّا۔"
    ]
   },
   {
@@ -507,46 +1257,58 @@
      "وُہ"
     ],
     [
-     "دو",
-     "do",
-     "two",
-     "دو"
+     "ہو",
+     "ho",
+     "be, are (you)",
+     "ہو"
     ],
     [
-     "دن",
-     "din",
-     "day",
-     "دِن"
+     "کر",
+     "kar",
+     "do; having done",
+     "کَر"
     ],
     [
-     "دال",
-     "dāl",
-     "lentils",
-     "دال"
+     "بہت",
+     "bahut",
+     "very, much",
+     "بَہُت"
     ],
     [
-     "دم",
-     "dam",
-     "breath",
-     "دَم"
+     "رہا",
+     "rahā",
+     "was (doing)",
+     "رَہا"
     ],
     [
-     "رات",
-     "rāt",
-     "night",
-     "رات"
+     "کرنے",
+     "karne",
+     "to do (oblique)",
+     "کَرنے"
     ],
     [
-     "روٹی",
-     "roṭī",
-     "bread",
-     "روٹی"
+     "تو",
+     "to",
+     "then, as for",
+     "تو"
     ],
     [
-     "دور",
-     "dūr",
-     "far",
-     "دور"
+     "ہی",
+     "hī",
+     "only, just",
+     "ہی"
+    ],
+    [
+     "میری",
+     "merī",
+     "my (fem)",
+     "مِیری"
+    ],
+    [
+     "میرے",
+     "mere",
+     "my (plural)",
+     "مِیرے"
     ],
     [
      "ہم",
@@ -555,34 +1317,22 @@
      "ہَم"
     ],
     [
-     "ہار",
-     "hār",
-     "necklace",
-     "ہار"
+     "دیا",
+     "diyā",
+     "gave",
+     "دِیا"
     ],
     [
-     "کمرہ",
-     "kamra",
-     "room",
-     "کَمْرہ"
+     "رہے",
+     "rahe",
+     "were (doing)",
+     "رَہے"
     ],
     [
-     "بادام",
-     "bādām",
-     "almond",
-     "بادام"
-    ],
-    [
-     "دادا",
-     "dādā",
-     "grandfather",
-     "دادا"
-    ],
-    [
-     "دریا",
-     "daryā",
-     "river",
-     "دَرْیا"
+     "رہی",
+     "rahī",
+     "was (doing, fem)",
+     "رَہی"
     ],
     [
      "ہوا",
@@ -591,16 +1341,652 @@
      "ہَوا"
     ],
     [
+     "نہ",
+     "na",
+     "not, no",
+     "نَہ"
+    ],
+    [
+     "کرنا",
+     "karnā",
+     "to do",
+     "کَرنا"
+    ],
+    [
+     "دو",
+     "do",
+     "two",
+     "دو"
+    ],
+    [
+     "کرتے",
+     "karte",
+     "do (plural)",
+     "کَرتے"
+    ],
+    [
+     "پہلے",
+     "pahle",
+     "before, first",
+     "پَہلے"
+    ],
+    [
+     "میرا",
+     "merā",
+     "my",
+     "مِیرا"
+    ],
+    [
+     "کرتا",
+     "kartā",
+     "does",
+     "کَرتا"
+    ],
+    [
+     "ہوتا",
+     "hotā",
+     "happens, is usually",
+     "ہوتا"
+    ],
+    [
+     "کہا",
+     "kahā",
+     "said",
+     "کَہا"
+    ],
+    [
+     "ہونے",
+     "hone",
+     "to be (oblique)",
+     "ہونے"
+    ],
+    [
+     "دی",
+     "dī",
+     "gave (fem)",
+     "دی"
+    ],
+    [
+     "کرو",
+     "karo",
+     "do!",
+     "کَرو"
+    ],
+    [
+     "ہر",
+     "har",
+     "every, each",
+     "ہَر"
+    ],
+    [
+     "مدد",
+     "madad",
+     "help",
+     "مَدَد"
+    ],
+    [
+     "ہوتی",
+     "hotī",
+     "happens (fem)",
+     "ہوتی"
+    ],
+    [
+     "دن",
+     "din",
+     "day",
+     "دِن"
+    ],
+    [
+     "پتہ",
+     "pata",
+     "address, clue",
+     "پَتَہ"
+    ],
+    [
+     "دنیا",
+     "dunyā",
+     "world",
+     "دُنیا"
+    ],
+    [
+     "دے",
+     "de",
+     "give",
+     "دے"
+    ],
+    [
+     "مریم",
+     "maryam",
+     "Maryam (a name)",
+     "مَریَم"
+    ],
+    [
+     "رات",
+     "rāt",
+     "night",
+     "رات"
+    ],
+    [
+     "دور",
+     "dūr",
+     "far",
+     "دور"
+    ],
+    [
+     "پہلی",
+     "pahlī",
+     "first (fem)",
+     "پَہلی"
+    ],
+    [
+     "ہوتے",
+     "hote",
+     "happen (plural)",
+     "ہوتے"
+    ],
+    [
+     "دریا",
+     "daryā",
+     "river",
+     "دَرْیا"
+    ],
+    [
+     "ابو",
+     "abbū",
+     "dad (abbu)",
+     "اَبُّو"
+    ],
+    [
+     "والا",
+     "wālā",
+     "one who",
+     "والا"
+    ],
+    [
+     "والی",
+     "wālī",
+     "one who (fem)",
+     "والی"
+    ],
+    [
+     "کرتی",
+     "kartī",
+     "does (fem)",
+     "کَرتی"
+    ],
+    [
+     "کرے",
+     "kare",
+     "may do",
+     "کَرے"
+    ],
+    [
+     "باہر",
+     "bāhar",
+     "outside",
+     "باہَر"
+    ],
+    [
+     "رہتا",
+     "rahtā",
+     "lives",
+     "رَہتا"
+    ],
+    [
+     "اردو",
+     "urdū",
+     "Urdu",
+     "اُردو"
+    ],
+    [
+     "بند",
+     "band",
+     "closed",
+     "بَند"
+    ],
+    [
+     "بار",
+     "bār",
+     "time (once, twice)",
+     "بار"
+    ],
+    [
+     "تمہارا",
+     "tumhārā",
+     "your",
+     "تُمہارا"
+    ],
+    [
+     "بہتر",
+     "behtar",
+     "better",
+     "بِہتَر"
+    ],
+    [
+     "دوبارہ",
+     "dobārah",
+     "again",
+     "دوبارہ"
+    ],
+    [
+     "کون",
+     "kaun",
+     "who",
+     "کَون"
+    ],
+    [
+     "پوری",
+     "pūrī",
+     "whole (fem)",
+     "پوری"
+    ],
+    [
+     "دل",
+     "dil",
+     "heart",
+     "دِل"
+    ],
+    [
+     "کہانی",
+     "kahānī",
+     "story",
+     "کَہانی"
+    ],
+    [
+     "بہن",
+     "bahan",
+     "sister",
+     "بَہَن"
+    ],
+    [
+     "تیار",
+     "taiyār",
+     "ready",
+     "تَیّار"
+    ],
+    [
+     "کمرے",
+     "kamre",
+     "rooms",
+     "کَمرے"
+    ],
+    [
+     "ہونا",
+     "honā",
+     "to be, to become",
+     "ہونا"
+    ],
+    [
+     "بیوی",
+     "bīwī",
+     "wife",
+     "بیوی"
+    ],
+    [
+     "کہتے",
+     "kahte",
+     "say (plural)",
+     "کَہتے"
+    ],
+    [
+     "کہنا",
+     "kahnā",
+     "to say",
+     "کَہنا"
+    ],
+    [
+     "اوپر",
+     "ūpar",
+     "above, up",
+     "اُوپَر"
+    ],
+    [
+     "رہتے",
+     "rahte",
+     "live (plural)",
+     "رَہتے"
+    ],
+    [
+     "تمہارے",
+     "tumhāre",
+     "your (plural)",
+     "تُمہارے"
+    ],
+    [
+     "یاد",
+     "yād",
+     "memory",
+     "یاد"
+    ],
+    [
+     "ہمارے",
+     "hamāre",
+     "our (plural)",
+     "ہَمارے"
+    ],
+    [
+     "ہماری",
+     "hamārī",
+     "our (fem)",
+     "ہَماری"
+    ],
+    [
+     "اندر",
+     "andar",
+     "inside",
+     "اَندَر"
+    ],
+    [
+     "لو",
+     "lo",
+     "take!",
+     "لو"
+    ],
+    [
+     "پورا",
+     "pūrā",
+     "whole, complete",
+     "پورا"
+    ],
+    [
+     "بول",
+     "bol",
+     "speak (stem)",
+     "بول"
+    ],
+    [
+     "بیمار",
+     "bīmār",
+     "ill, sick",
+     "بیمار"
+    ],
+    [
+     "تمہاری",
+     "tumhārī",
+     "your (fem)",
+     "تُمہاری"
+    ],
+    [
+     "دینا",
+     "denā",
+     "to give",
+     "دینا"
+    ],
+    [
+     "بولتا",
+     "boltā",
+     "speaks",
+     "بولتا"
+    ],
+    [
+     "دیتا",
+     "detā",
+     "gives",
+     "دیتا"
+    ],
+    [
+     "ریل",
+     "rel",
+     "train, rail",
+     "ریل"
+    ],
+    [
+     "رہتی",
+     "rahtī",
+     "lives (fem)",
+     "رَہتی"
+    ],
+    [
+     "دیتے",
+     "dete",
+     "give (plural)",
+     "دیتے"
+    ],
+    [
+     "بدل",
+     "badal",
+     "change (stem)",
+     "بَدَل"
+    ],
+    [
+     "ہار",
+     "hār",
+     "necklace",
+     "ہار"
+    ],
+    [
+     "دادا",
+     "dādā",
+     "grandfather",
+     "دادا"
+    ],
+    [
+     "پہلا",
+     "pahlā",
+     "first",
+     "پَہلا"
+    ],
+    [
+     "رہو",
+     "raho",
+     "stay!",
+     "رَہو"
+    ],
+    [
+     "مبارک",
+     "mubārak",
+     "blessed, congratulations",
+     "مُبارَک"
+    ],
+    [
+     "ہمارا",
+     "hamārā",
+     "our",
+     "ہَمارا"
+    ],
+    [
+     "نو",
+     "nau",
+     "nine",
+     "نَو"
+    ],
+    [
+     "درد",
+     "dard",
+     "pain",
+     "دَرْد"
+    ],
+    [
+     "روٹی",
+     "roṭī",
+     "bread",
+     "روٹی"
+    ],
+    [
+     "بادل",
+     "bādal",
+     "cloud",
+     "بادَل"
+    ],
+    [
+     "بارہ",
+     "bārah",
+     "twelve",
+     "بارہ"
+    ],
+    [
+     "مرد",
+     "mard",
+     "man",
+     "مَرْد"
+    ],
+    [
+     "دیتی",
+     "detī",
+     "gives (fem)",
+     "دیتی"
+    ],
+    [
+     "پرانی",
+     "purānī",
+     "old (fem)",
+     "پُرانی"
+    ],
+    [
+     "مہینے",
+     "mahīne",
+     "months",
+     "مَہینے"
+    ],
+    [
+     "ٹوپی",
+     "ṭopī",
+     "cap",
+     "ٹوپی"
+    ],
+    [
+     "کمرہ",
+     "kamra",
+     "room",
+     "کَمْرہ"
+    ],
+    [
+     "نیند",
+     "nīnd",
+     "sleep",
+     "نیند"
+    ],
+    [
+     "رہنا",
+     "rahnā",
+     "to live, stay",
+     "رَہنا"
+    ],
+    [
+     "دکان",
+     "dukān",
+     "shop",
+     "دُکان"
+    ],
+    [
+     "کہتا",
+     "kahtā",
+     "says",
+     "کَہتا"
+    ],
+    [
+     "برا",
+     "burā",
+     "bad",
+     "بُرا"
+    ],
+    [
+     "دانت",
+     "dānt",
+     "tooth",
+     "دانْت"
+    ],
+    [
+     "دم",
+     "dam",
+     "breath",
+     "دَم"
+    ],
+    [
      "راہ",
      "rāh",
      "path",
      "راہ"
     ],
     [
-     "دودھ",
-     "dūdh",
-     "milk (ھ preview)",
-     "دودھ"
+     "موٹا",
+     "moṭā",
+     "fat, thick",
+     "موٹا"
+    ],
+    [
+     "بدن",
+     "badan",
+     "body",
+     "بَدَن"
+    ],
+    [
+     "دادی",
+     "dādī",
+     "paternal grandmother",
+     "دادی"
+    ],
+    [
+     "دہی",
+     "dahī",
+     "yoghurt",
+     "دَہی"
+    ],
+    [
+     "ہرا",
+     "harā",
+     "green",
+     "ہَرا"
+    ],
+    [
+     "پنیر",
+     "panīr",
+     "cheese",
+     "پَنیر"
+    ],
+    [
+     "دال",
+     "dāl",
+     "lentils",
+     "دال"
+    ],
+    [
+     "پرانا",
+     "purānā",
+     "old",
+     "پُرانا"
+    ],
+    [
+     "دوا",
+     "dawā",
+     "medicine",
+     "دَوا"
+    ],
+    [
+     "نہر",
+     "nahar",
+     "canal",
+     "نَہَر"
+    ],
+    [
+     "اونٹ",
+     "ūnṭ",
+     "camel",
+     "اُونْٹ"
+    ],
+    [
+     "ہادی",
+     "hādī",
+     "Hadi (a name)",
+     "ہادی"
+    ],
+    [
+     "مہینہ",
+     "mahīna",
+     "month",
+     "مَہینَہ"
+    ],
+    [
+     "کہتی",
+     "kahtī",
+     "says (fem)",
+     "کَہتی"
+    ],
+    [
+     "بندر",
+     "bandar",
+     "monkey",
+     "بَندَر"
     ],
     [
      "مور",
@@ -609,41 +1995,227 @@
      "مور"
     ],
     [
+     "ہرن",
+     "haran",
+     "deer",
+     "ہَرَن"
+    ],
+    [
+     "انار",
+     "anār",
+     "pomegranate",
+     "اَنار"
+    ],
+    [
+     "بکری",
+     "bakrī",
+     "goat",
+     "بَکری"
+    ],
+    [
+     "تارا",
+     "tārā",
+     "star (tārā)",
+     "تارا"
+    ],
+    [
      "پودا",
      "paudā",
      "plant",
      "پَودا"
     ],
     [
-     "نہر",
-     "nahar",
-     "canal",
-     "نَہَر"
+     "تکیہ",
+     "takiya",
+     "pillow",
+     "تَکِیَہ"
+    ],
+    [
+     "ٹماٹر",
+     "ṭamāṭar",
+     "tomato",
+     "ٹَماٹَر"
+    ],
+    [
+     "رونا",
+     "ronā",
+     "to cry",
+     "رونا"
+    ],
+    [
+     "نادیہ",
+     "nādiya",
+     "Nadia (a name)",
+     "نادِیَہ"
+    ],
+    [
+     "پیالہ",
+     "piyāla",
+     "cup, bowl",
+     "پِیالَہ"
+    ],
+    [
+     "دانیال",
+     "dāniyāl",
+     "Daniyal (a name)",
+     "دانِیال"
+    ],
+    [
+     "بادام",
+     "bādām",
+     "almond",
+     "بادام"
+    ],
+    [
+     "بدلنا",
+     "badalnā",
+     "to change",
+     "بَدَلنا"
+    ],
+    [
+     "بولنا",
+     "bolnā",
+     "to speak",
+     "بولنا"
+    ],
+    [
+     "کبوتر",
+     "kabūtar",
+     "pigeon",
+     "کَبُوتَر"
+    ],
+    [
+     "کوا",
+     "kavvā",
+     "crow",
+     "کَوّا"
+    ],
+    [
+     "ہونٹ",
+     "honṭ",
+     "lip",
+     "ہونْٹ"
     ]
    ],
    "sentences": [
     [
-     "دو روٹی",
-     "do roṭī",
-     "two breads",
-     "دو روٹی"
+     "یہ میرا کمرہ ہے",
+     "yeh merā kamra hai",
+     "this is my room",
+     "یَہ مِیرا کَمْرہ ہَے"
     ],
     [
-     "وہ کمرہ بڑا ہے",
-     "woh kamra baṛā hai",
-     "(preview) that room is big",
-     "وُہ کَمْرہ بَڑا ہَے"
+     "وہ میری بہن ہے",
+     "woh merī bahan hai",
+     "she is my sister",
+     "وُہ مِیری بَہَن ہَے"
     ],
     [
-     "ہم دور ہیں",
-     "ham dūr haiṉ",
-     "we are far",
-     "ہَم دور ہَیں"
+     "میرا نام ہادی ہے",
+     "merā nām hādī hai",
+     "my name is Hadi",
+     "مِیرا نام ہادی ہَے"
+    ],
+    [
+     "ابو دکان پر ہے",
+     "abbū dukān par hai",
+     "dad is at the shop",
+     "اَبُّو دُکان پَر ہَے"
+    ],
+    [
+     "دادی روٹی دیتی ہے",
+     "dādī roṭī detī hai",
+     "grandma gives bread",
+     "دادی روٹی دیتی ہَے"
+    ],
+    [
+     "ابو دکان پر بہت کام کرتا ہے",
+     "abbū dukān par bahut kām kartā hai",
+     "dad works a lot at the shop",
+     "اَبُّو دُکان پَر بَہُت کام کَرتا ہَے"
+    ],
+    [
+     "نادیہ اپنا پنیر دانیال کو دیتی ہے",
+     "nādiya apnā panīr dāniyāl ko detī hai",
+     "Nadia gives her cheese to Daniyal",
+     "نادِیَہ اَپنا پَنیر دانِیال کو دیتی ہَے"
+    ],
+    [
+     "دانیال کا تکیہ نیا ہے",
+     "dāniyāl kā takiya nayā hai",
+     "Daniyal's pillow is new",
+     "دانِیال کا تَکِیَہ نَیا ہَے"
+    ],
+    [
+     "بندر دریا پر ہے",
+     "bandar daryā par hai",
+     "the monkey is at the river",
+     "بَندَر دَرْیا پَر ہَے"
+    ],
+    [
+     "تارا بہت دور ہے",
+     "tārā bahut dūr hai",
+     "the star is very far",
+     "تارا بَہُت دور ہَے"
+    ],
+    [
+     "دوا اور پانی لو",
+     "dawā aur pānī lo",
+     "take the medicine and water",
+     "دَوا اَور پانی لو"
+    ],
+    [
+     "کون ہے؟",
+     "kaun hai?",
+     "who is it?",
+     "کَون ہَے؟"
+    ],
+    [
+     "مبارک ہو",
+     "mubārak ho",
+     "congratulations",
+     "مُبارَک ہو"
+    ],
+    [
+     "دادا کا کمرہ دور ہے",
+     "dādā kā kamra dūr hai",
+     "grandfather's room is far",
+     "دادا کا کَمْرہ دور ہَے"
+    ],
+    [
+     "ہادی کی بہن مریم ہے",
+     "hādī kī bahan maryam hai",
+     "Hadi's sister is Maryam",
+     "ہادی کی بَہَن مَریَم ہَے"
+    ],
+    [
+     "ابو دہی اور پنیر دیتا ہے",
+     "abbū dahī aur panīr detā hai",
+     "dad gives yoghurt and cheese",
+     "اَبُّو دَہی اَور پَنیر دیتا ہَے"
+    ],
+    [
+     "نادیہ کا کمرہ پرانا ہے",
+     "nādiya kā kamra purānā hai",
+     "Nadia's room is old",
+     "نادِیَہ کا کَمْرہ پُرانا ہَے"
+    ],
+    [
+     "مریم کی بہن نادیہ ہے",
+     "maryam kī bahan nādiya hai",
+     "Maryam's sister is Nadia",
+     "مَریَم کی بَہَن نادِیَہ ہَے"
     ]
    ],
    "hours": [
     3,
     1.5
+   ],
+   "passage": [
+    "یہ ہادی کا کمرہ ہے۔ کمرہ بہت پرانا ہے۔ دادی کہتی ہے: ہادی کا تکیہ پرانا ہے۔ ابو دکان پر ہے۔ ابو ہادی کو نیا تکیہ دیتا ہے۔ ابو کہتا ہے: ہادی، تیار ہو۔ ہادی کی بہن مریم ہے۔ مریم کا کمرہ دور ہے۔ نادیہ ہادی کو پنیر دیتی ہے۔ دانیال ہادی کو دہی دیتا ہے۔",
+    "yeh hādī kā kamra hai. kamra bahut purānā hai. dādī kahtī hai: hādī kā takiya purānā hai. abbū dukān par hai. abbū hādī ko nayā takiya detā hai. abbū kahtā hai: hādī, taiyār ho. hādī kī bahan maryam hai. maryam kā kamra dūr hai. nādiya hādī ko panīr detī hai. dāniyāl hādī ko dahī detā hai.",
+    "This is Hadi's room. The room is very old. Grandma says: Hadi's pillow is old. Dad is at the shop. Dad gives Hadi a new pillow. Dad says: Hadi, be ready. Hadi's sister is Maryam. Maryam's room is far. Nadia gives Hadi cheese. Daniyal gives Hadi yoghurt.",
+    "یَہ ہادی کا کَمْرہ ہَے۔ کَمْرہ بَہُت پُرانا ہَے۔ دادی کَہتی ہَے: ہادی کا تَکِیَہ پُرانا ہَے۔ اَبُّو دُکان پَر ہَے۔ اَبُّو ہادی کو نَیا تَکِیَہ دیتا ہَے۔ اَبُّو کَہتا ہَے: ہادی، تَیّار ہو۔ ہادی کی بَہَن مَریَم ہَے۔ مَریَم کا کَمْرہ دور ہَے۔ نادِیَہ ہادی کو پَنیر دیتی ہَے۔ دانِیال ہادی کو دَہی دیتا ہَے۔"
    ]
   },
   {
@@ -660,16 +2232,46 @@
    "focus": "The toothed sīn family; the bowl-shaped jīm family; گ as kāf with an extra stroke",
    "words": [
     [
+     "گیا",
+     "gayā",
+     "went",
+     "گَیا"
+    ],
+    [
+     "جو",
+     "jo",
+     "who, which",
+     "جو"
+    ],
+    [
+     "اسے",
+     "ise",
+     "him, her, it",
+     "اِسے"
+    ],
+    [
+     "گا",
+     "gā",
+     "will (masculine)",
+     "گا"
+    ],
+    [
      "سب",
      "sab",
      "all",
      "سَب"
     ],
     [
-     "سو",
-     "so",
-     "hundred / sleep",
-     "سو"
+     "کسی",
+     "kisī",
+     "some, any",
+     "کِسی"
+    ],
+    [
+     "جاتا",
+     "jātā",
+     "goes",
+     "جاتا"
     ],
     [
      "سال",
@@ -678,70 +2280,184 @@
      "سال"
     ],
     [
-     "شام",
-     "shām",
-     "evening",
-     "شام"
+     "سکتا",
+     "saktā",
+     "can (masculine)",
+     "سَکتا"
     ],
     [
-     "شیر",
-     "sher",
-     "lion",
-     "شیر"
+     "سکتے",
+     "sakte",
+     "can (plural)",
+     "سَکتے"
     ],
     [
-     "جوتا",
-     "jūtā",
-     "shoe",
-     "جوتا"
+     "گے",
+     "ge",
+     "will (plural)",
+     "گے"
     ],
     [
-     "جام",
-     "jām",
-     "goblet",
-     "جام"
+     "پسند",
+     "pasand",
+     "liking",
+     "پَسَند"
     ],
     [
-     "چار",
-     "chār",
-     "four",
-     "چار"
+     "پاس",
+     "pās",
+     "near",
+     "پاس"
     ],
     [
-     "چاند",
-     "chānd",
-     "moon",
-     "چاند"
+     "جب",
+     "jab",
+     "when (relative)",
+     "جَب"
     ],
     [
-     "چابی",
-     "chābī",
-     "key",
-     "چابی"
+     "جا",
+     "jā",
+     "go",
+     "جا"
     ],
     [
-     "گلاب",
-     "gulāb",
-     "rose",
-     "گُلاب"
+     "چاہتا",
+     "chāhtā",
+     "wants",
+     "چاہتا"
     ],
     [
-     "گاجر",
-     "gājar",
-     "carrot",
-     "گاجَر"
+     "سو",
+     "sau, so",
+     "hundred, to sleep",
+     "سو"
     ],
     [
-     "گانا",
-     "gānā",
-     "song",
-     "گانا"
+     "گی",
+     "gī",
+     "will (feminine)",
+     "گی"
     ],
     [
-     "سبک",
-     "sabuk",
-     "light",
-     "سَبُک"
+     "لوگ",
+     "log",
+     "people",
+     "لوگ"
+    ],
+    [
+     "لگا",
+     "lagā",
+     "began, seemed",
+     "لَگا"
+    ],
+    [
+     "اسی",
+     "usī",
+     "that very",
+     "اُسی"
+    ],
+    [
+     "کوشش",
+     "koshish",
+     "effort",
+     "کوشِش"
+    ],
+    [
+     "جاتی",
+     "jātī",
+     "goes (fem)",
+     "جاتی"
+    ],
+    [
+     "شامل",
+     "shāmil",
+     "included",
+     "شامِل"
+    ],
+    [
+     "شہر",
+     "shahr",
+     "city",
+     "شَہْر"
+    ],
+    [
+     "ہمیشہ",
+     "hamesha",
+     "always",
+     "ہَمیشَہ"
+    ],
+    [
+     "مگر",
+     "magar",
+     "but",
+     "مَگَر"
+    ],
+    [
+     "کیسے",
+     "kaise",
+     "how",
+     "کَیسے"
+    ],
+    [
+     "بارش",
+     "bārish",
+     "rain",
+     "بارِش"
+    ],
+    [
+     "جانا",
+     "jānā",
+     "to go",
+     "جانا"
+    ],
+    [
+     "بس",
+     "bas",
+     "enough",
+     "بَس"
+    ],
+    [
+     "دوست",
+     "dost",
+     "friend",
+     "دوسْت"
+    ],
+    [
+     "واپس",
+     "wāpas",
+     "back",
+     "واپَس"
+    ],
+    [
+     "اگر",
+     "agar",
+     "if",
+     "اَگَر"
+    ],
+    [
+     "لگتا",
+     "lagtā",
+     "seems",
+     "لَگتا"
+    ],
+    [
+     "جلدی",
+     "jaldī",
+     "quickly",
+     "جَلدی"
+    ],
+    [
+     "سکتی",
+     "saktī",
+     "can (fem)",
+     "سَکتی"
+    ],
+    [
+     "پیسے",
+     "paise",
+     "money",
+     "پَیسے"
     ],
     [
      "شادی",
@@ -750,16 +2466,244 @@
      "شادی"
     ],
     [
-     "جنگل",
-     "jangal",
-     "forest",
-     "جَنگَل"
+     "بچے",
+     "bachche",
+     "children",
+     "بَچّے"
     ],
     [
-     "مچھلی",
-     "machhlī",
-     "fish (ھ preview)",
-     "مَچھلی"
+     "جواب",
+     "jawāb",
+     "answer",
+     "جَواب"
+    ],
+    [
+     "سارے",
+     "sāre",
+     "all (plural)",
+     "سارے"
+    ],
+    [
+     "اسکول",
+     "iskūl",
+     "school",
+     "اِسکول"
+    ],
+    [
+     "مشہور",
+     "mashhūr",
+     "famous",
+     "مَشہور"
+    ],
+    [
+     "جاتے",
+     "jāte",
+     "go (plural)",
+     "جاتے"
+    ],
+    [
+     "چاہیے",
+     "chāhiye",
+     "is needed, should",
+     "چاہِیے"
+    ],
+    [
+     "چاہتے",
+     "chāhte",
+     "want (plural)",
+     "چاہتے"
+    ],
+    [
+     "دوسرے",
+     "dūsre",
+     "other, second (plural)",
+     "دوسرے"
+    ],
+    [
+     "چار",
+     "chār",
+     "four",
+     "چار"
+    ],
+    [
+     "پانچ",
+     "pānch",
+     "five",
+     "پانچ"
+    ],
+    [
+     "جان",
+     "jān",
+     "life, dear",
+     "جان"
+    ],
+    [
+     "موسم",
+     "mausam",
+     "weather, season",
+     "مَوسَم"
+    ],
+    [
+     "دس",
+     "das",
+     "ten",
+     "دَس"
+    ],
+    [
+     "بجے",
+     "baje",
+     "o'clock",
+     "بَجے"
+    ],
+    [
+     "دوسری",
+     "dūsrī",
+     "other (fem)",
+     "دوسری"
+    ],
+    [
+     "جیت",
+     "jīt",
+     "victory",
+     "جیت"
+    ],
+    [
+     "چلا",
+     "chalā",
+     "walked",
+     "چَلا"
+    ],
+    [
+     "ایسا",
+     "aisā",
+     "like this",
+     "اَیسا"
+    ],
+    [
+     "جانتا",
+     "jāntā",
+     "knows",
+     "جانتا"
+    ],
+    [
+     "مشکل",
+     "mushkil",
+     "difficult",
+     "مُشکِل"
+    ],
+    [
+     "چینی",
+     "chīnī",
+     "sugar",
+     "چینی"
+    ],
+    [
+     "شکریہ",
+     "shukriya",
+     "thank you",
+     "شُکرِیَہ"
+    ],
+    [
+     "جلد",
+     "jald",
+     "soon",
+     "جَلد"
+    ],
+    [
+     "جگہ",
+     "jagah",
+     "place",
+     "جَگَہ"
+    ],
+    [
+     "رنگ",
+     "rang",
+     "colour",
+     "رَنگ"
+    ],
+    [
+     "سوچ",
+     "soch",
+     "thought",
+     "سوچ"
+    ],
+    [
+     "شاید",
+     "shāyad",
+     "maybe",
+     "شایَد"
+    ],
+    [
+     "سامنے",
+     "sāmne",
+     "in front",
+     "سامنے"
+    ],
+    [
+     "استاد",
+     "ustād",
+     "teacher",
+     "اُستاد"
+    ],
+    [
+     "شام",
+     "shām",
+     "evening",
+     "شام"
+    ],
+    [
+     "سارا",
+     "sārā",
+     "whole, all",
+     "سارا"
+    ],
+    [
+     "شکل",
+     "shakl",
+     "face, shape",
+     "شَکْل"
+    ],
+    [
+     "دوپہر",
+     "dopahar",
+     "afternoon, noon",
+     "دوپَہَر"
+    ],
+    [
+     "کاش",
+     "kāsh",
+     "if only",
+     "کاش"
+    ],
+    [
+     "سات",
+     "sāt",
+     "seven",
+     "سات"
+    ],
+    [
+     "لگی",
+     "lagī",
+     "seemed (fem)",
+     "لَگی"
+    ],
+    [
+     "سچ",
+     "sach",
+     "truth",
+     "سَچ"
+    ],
+    [
+     "انسان",
+     "insān",
+     "human being",
+     "اِنسان"
+    ],
+    [
+     "نیچے",
+     "nīche",
+     "below",
+     "نیچے"
     ],
     [
      "گرم",
@@ -768,41 +2712,389 @@
      "گَرْم"
     ],
     [
+     "جانور",
+     "jānwar",
+     "animal",
+     "جانوَر"
+    ],
+    [
+     "روشنی",
+     "raushnī",
+     "light, brightness",
+     "رَوشْنی"
+    ],
+    [
+     "دوسرا",
+     "dūsrā",
+     "other, second",
+     "دوسرا"
+    ],
+    [
+     "شوہر",
+     "shauhar",
+     "husband",
+     "شَوہَر"
+    ],
+    [
+     "سوال",
+     "sawāl",
+     "question",
+     "سَوال"
+    ],
+    [
+     "گرمی",
+     "garmī",
+     "heat, summer",
+     "گَرمی"
+    ],
+    [
+     "جتنا",
+     "jitnā",
+     "as much as",
+     "جِتنا"
+    ],
+    [
+     "اونچا",
+     "ūnchā",
+     "tall, high",
+     "اونچا"
+    ],
+    [
+     "گوشت",
+     "gosht",
+     "meat",
+     "گوشْت"
+    ],
+    [
+     "کیسی",
+     "kaisī",
+     "how (fem)",
+     "کَیسی"
+    ],
+    [
+     "سورج",
+     "sūraj",
+     "sun",
+     "سورَج"
+    ],
+    [
+     "ہسپتال",
+     "haspatāl",
+     "hospital",
+     "ہَسپَتال"
+    ],
+    [
+     "سلام",
+     "salām",
+     "hello, greeting",
+     "سَلام"
+    ],
+    [
+     "شیر",
+     "sher",
+     "lion",
+     "شیر"
+    ],
+    [
      "سردی",
      "sardī",
      "cold",
      "سَرْدی"
     ],
     [
-     "دوست",
-     "dost",
-     "friend",
-     "دوسْت"
+     "چلنا",
+     "chalnā",
+     "to walk",
+     "چَلنا"
+    ],
+    [
+     "چاند",
+     "chānd",
+     "moon",
+     "چاند"
+    ],
+    [
+     "شور",
+     "shor",
+     "noise",
+     "شور"
+    ],
+    [
+     "گلاب",
+     "gulāb",
+     "rose",
+     "گُلاب"
+    ],
+    [
+     "گیند",
+     "gend",
+     "ball",
+     "گیند"
+    ],
+    [
+     "جیب",
+     "jeb",
+     "pocket",
+     "جیب"
+    ],
+    [
+     "جنگل",
+     "jangal",
+     "forest",
+     "جَنگَل"
+    ],
+    [
+     "چابی",
+     "chābī",
+     "key",
+     "چابی"
+    ],
+    [
+     "چلتا",
+     "chaltā",
+     "walks",
+     "چَلتا"
+    ],
+    [
+     "پیاس",
+     "pyās",
+     "thirst",
+     "پیاس"
+    ],
+    [
+     "کپاس",
+     "kapās",
+     "cotton",
+     "کَپاس"
+    ],
+    [
+     "منگل",
+     "mangal",
+     "Tuesday",
+     "مَنگَل"
+    ],
+    [
+     "سنو",
+     "suno",
+     "listen",
+     "سُنو"
+    ],
+    [
+     "جاوید",
+     "jāvīd",
+     "Javed (a name)",
+     "جاوید"
+    ],
+    [
+     "شاگرد",
+     "shāgird",
+     "pupil, student",
+     "شاگِرد"
+    ],
+    [
+     "شاہد",
+     "shāhid",
+     "Shahid (a name)",
+     "شاہِد"
+    ],
+    [
+     "گانا",
+     "gānā",
+     "song",
+     "گانا"
+    ],
+    [
+     "سونا",
+     "sonā",
+     "gold, to sleep",
+     "سونا"
+    ],
+    [
+     "ستارہ",
+     "sitāra",
+     "star (sitāra)",
+     "سِتارَہ"
+    ],
+    [
+     "جام",
+     "jām",
+     "goblet",
+     "جام"
+    ],
+    [
+     "سلمان",
+     "salmān",
+     "Salman (a name)",
+     "سَلمان"
+    ],
+    [
+     "سواری",
+     "sawārī",
+     "ride, vehicle",
+     "سواری"
+    ],
+    [
+     "سارہ",
+     "sārah",
+     "Sara (a name)",
+     "سارَہ"
+    ],
+    [
+     "سبک",
+     "sabuk",
+     "light (not heavy)",
+     "سَبُک"
+    ],
+    [
+     "سہیلی",
+     "sahelī",
+     "girl's friend",
+     "سَہیلی"
+    ],
+    [
+     "جوتا",
+     "jūtā",
+     "shoe",
+     "جوتا"
+    ],
+    [
+     "چمچ",
+     "chamach",
+     "spoon",
+     "چَمَچ"
+    ],
+    [
+     "پیاسا",
+     "pyāsā",
+     "thirsty",
+     "پیاسا"
+    ],
+    [
+     "گاجر",
+     "gājar",
+     "carrot",
+     "گاجَر"
+    ],
+    [
+     "گرنا",
+     "girnā",
+     "to fall",
+     "گِرنا"
     ]
    ],
    "sentences": [
     [
-     "چار گلاب",
-     "chār gulāb",
-     "four roses",
-     "چار گُلاب"
+     "ہادی اسکول جاتا ہے",
+     "hādī iskūl jātā hai",
+     "Hadi goes to school",
+     "ہادی اِسکول جاتا ہَے"
     ],
     [
-     "شیر جنگل میں ہے",
-     "sher jangal meṉ hai",
-     "the lion is in the forest",
-     "شیر جَنگَل مَیں ہَے"
+     "سارہ اسکول جاتی ہے",
+     "sārah iskūl jātī hai",
+     "Sara goes to school",
+     "سارَہ اِسکول جاتی ہَے"
     ],
     [
-     "دوست کا جوتا",
-     "dost kā jūtā",
-     "friend's shoe",
-     "دوسْت کا جوتا"
+     "استاد کا نام جاوید ہے",
+     "ustād kā nām jāvīd hai",
+     "the teacher's name is Javed",
+     "اُستاد کا نام جاوید ہَے"
+    ],
+    [
+     "بارش ہوتی ہے",
+     "bārish hotī hai",
+     "it rains",
+     "بارِش ہوتی ہَے"
+    ],
+    [
+     "سورج بہت گرم ہے",
+     "sūraj bahut garm hai",
+     "the sun is very hot",
+     "سورَج بَہُت گَرْم ہَے"
+    ],
+    [
+     "رات کو چاند ہوتا ہے",
+     "rāt ko chānd hotā hai",
+     "at night there is a moon",
+     "رات کو چاند ہوتا ہَے"
+    ],
+    [
+     "سلمان جلدی سے اسکول جاتا ہے",
+     "salmān jaldī se iskūl jātā hai",
+     "Salman goes to school quickly",
+     "سَلمان جَلدی سے اِسکول جاتا ہَے"
+    ],
+    [
+     "سارہ اپنی سہیلی کو سلام کہتی ہے",
+     "sārah apnī sahelī ko salām kahtī hai",
+     "Sara says salaam to her friend",
+     "سارَہ اَپنی سَہیلی کو سَلام کَہتی ہَے"
+    ],
+    [
+     "شاہد کا دوست جاوید ہے",
+     "shāhid kā dost jāvīd hai",
+     "Shahid's friend is Javed",
+     "شاہِد کا دوسْت جاوید ہَے"
+    ],
+    [
+     "دکان پر گاجر ہے",
+     "dukān par gājar hai",
+     "there is a carrot at the shop",
+     "دُکان پَر گاجَر ہَے"
+    ],
+    [
+     "تم کیا چاہتے ہو؟",
+     "tum kyā chāhte ho?",
+     "what do you want?",
+     "تُم کیا چاہتے ہو؟"
+    ],
+    [
+     "وہ جلدی جا سکتا ہے",
+     "woh jaldī jā saktā hai",
+     "he can go quickly",
+     "وُہ جَلدی جا سَکتا ہَے"
+    ],
+    [
+     "بہت شکریہ",
+     "bahut shukriya",
+     "thank you very much",
+     "بَہُت شُکرِیَہ"
+    ],
+    [
+     "سارہ جاوید کو سلام کہتی ہے",
+     "sārah jāvīd ko salām kahtī hai",
+     "Sara says salaam to Javed",
+     "سارَہ جاوید کو سَلام کَہتی ہَے"
+    ],
+    [
+     "وہ اسکول جلدی جا سکتی ہے",
+     "woh iskūl jaldī jā saktī hai",
+     "she can go to school quickly",
+     "وُہ اِسکول جَلدی جا سَکتی ہَے"
+    ],
+    [
+     "چینی بہت کم ہے",
+     "chīnī bahut kam hai",
+     "there is very little sugar",
+     "چینی بَہُت کَم ہَے"
+    ],
+    [
+     "پانچ بجے اسکول بند ہوتا ہے",
+     "pānch baje iskūl band hotā hai",
+     "school closes at five o'clock",
+     "پانچ بَجے اِسکول بَند ہوتا ہَے"
     ]
    ],
    "hours": [
     3,
     1.5
+   ],
+   "passage": [
+    "سارہ جلدی سے اسکول جاتی ہے۔ اسکول کا استاد جاوید ہے۔ جاوید سارہ کو ایک کتاب دیتا ہے۔ سارہ کہتی ہے: بہت شکریہ۔ جاوید کہتا ہے: سارہ کا کام مکمل ہے۔ سارہ کی سہیلی سلام کہتی ہے۔ اب دوپہر ہے۔ دوپہر کو سورج بہت گرم ہوتا ہے۔ سلمان کہتا ہے: سارہ جلدی جا سکتی ہے۔ پانچ بجے اسکول بند ہوتا ہے۔ سلمان اپنی کتاب جاوید کو دیتا ہے۔ جاوید کہتا ہے: بہت شکریہ سلمان۔",
+    "sārah jaldī se iskūl jātī hai. iskūl kā ustād jāvīd hai. jāvīd sārah ko ek kitāb detā hai. sārah kahtī hai: bahut shukriya. jāvīd kahtā hai: sārah kā kām mukammal hai. sārah kī sahelī salām kahtī hai. ab dopahar hai. dopahar ko sūraj bahut garm hotā hai. salmān kahtā hai: sārah jaldī jā saktī hai. pānch baje iskūl band hotā hai. salmān apnī kitāb jāvīd ko detā hai. jāvīd kahtā hai: bahut shukriya salmān.",
+    "Sara goes to school quickly. The school's teacher is Javed. Javed gives Sara a book. Sara says: thank you very much! Javed says: Sara's work is complete. Sara's friend says salaam. Now it is afternoon. At noon the sun is very hot. Salman says: Sara can go quickly. School closes at five o'clock. Salman gives his book to Javed. Javed says: thank you very much, Salman.",
+    "سارَہ جَلدی سے اِسکول جاتی ہَے۔ اِسکول کا اُستاد جاوید ہَے۔ جاوید سارَہ کو ایک کِتاب دیتا ہَے۔ سارَہ کَہتی ہَے: بَہُت شُکرِیَہ۔ جاوید کَہتا ہَے: سارَہ کا کام مُکَمَّل ہَے۔ سارَہ کی سَہیلی سَلام کَہتی ہَے۔ اَب دوپَہَر ہَے۔ دوپَہَر کو سورَج بَہُت گَرْم ہوتا ہَے۔ سَلمان کَہتا ہَے: سارَہ جَلدی جا سَکتی ہَے۔ پانچ بَجے اِسکول بَند ہوتا ہَے۔ سَلمان اَپنی کِتاب جاوید کو دیتا ہَے۔ جاوید کَہتا ہَے: بَہُت شُکرِیَہ سَلمان۔"
    ]
   },
   {
@@ -822,100 +3114,52 @@
      "مَیں"
     ],
     [
-     "ہاں",
-     "hāṉ",
-     "yes",
-     "ہاں"
-    ],
-    [
-     "کہاں",
-     "kahāṉ",
-     "where",
-     "کَہاں"
-    ],
-    [
      "ہیں",
      "haiṉ",
      "are",
      "ہَیں"
     ],
     [
-     "گھر",
-     "ghar",
-     "house",
-     "گَھر"
+     "ہوں",
+     "hūṉ",
+     "am",
+     "ہوں"
     ],
     [
-     "بھائی",
-     "bhāʾī",
-     "brother (ئ preview)",
-     "بَھائی"
+     "مجھے",
+     "mujhe",
+     "to me",
+     "مُجھے"
     ],
     [
-     "پھول",
-     "phūl",
-     "flower",
-     "پھول"
+     "تھے",
+     "the",
+     "were",
+     "تھے"
     ],
     [
-     "تھالی",
-     "thālī",
-     "plate",
-     "تھالی"
+     "کچھ",
+     "kuchh",
+     "some, something",
+     "کُچھ"
     ],
     [
-     "ٹھنڈا",
-     "ṭhanḍā",
-     "cold (ڈ preview)",
-     "ٹَھنڈا"
+     "ساتھ",
+     "sāth",
+     "with, together",
+     "ساتھ"
     ],
     [
-     "کھانا",
-     "khānā",
-     "food",
-     "کھانا"
+     "کبھی",
+     "kabhī",
+     "ever, sometimes",
+     "کَبھی"
     ],
     [
-     "دھاگا",
-     "dhāgā",
-     "thread",
-     "دھاگا"
-    ],
-    [
-     "چھت",
-     "chhat",
-     "roof",
-     "چَھت"
-    ],
-    [
-     "جھولا",
-     "jhūlā",
-     "swing",
-     "جھولا"
-    ],
-    [
-     "ہاتھ",
-     "hāth",
-     "hand",
-     "ہاتھ"
-    ],
-    [
-     "دودھ",
-     "dūdh",
-     "milk",
-     "دودھ"
-    ],
-    [
-     "مچھلی",
-     "machhlī",
-     "fish",
-     "مَچھلی"
-    ],
-    [
-     "آنکھ",
-     "āṉkh",
-     "eye",
-     "آنکھ"
+     "تمہیں",
+     "tumheṉ",
+     "to you",
+     "تُمہیں"
     ],
     [
      "یہاں",
@@ -924,41 +3168,827 @@
      "یَہاں"
     ],
     [
-     "سکھانا",
-     "sikhānā",
-     "to teach",
-     "سِکھانا"
+     "گھر",
+     "ghar",
+     "house",
+     "گَھر"
+    ],
+    [
+     "ابھی",
+     "abhī",
+     "right now",
+     "اَبھی"
+    ],
+    [
+     "کیوں",
+     "kyoṉ",
+     "why",
+     "کیوں"
+    ],
+    [
+     "پھر",
+     "phir",
+     "then, again",
+     "پِھر"
+    ],
+    [
+     "مجھ",
+     "mujh",
+     "me (oblique)",
+     "مُجھ"
+    ],
+    [
+     "ہمیں",
+     "hameṉ",
+     "to us",
+     "ہَمیں"
+    ],
+    [
+     "دونوں",
+     "donoṉ",
+     "both",
+     "دونوں"
+    ],
+    [
+     "اچھا",
+     "achchhā",
+     "good",
+     "اَچّھا"
+    ],
+    [
+     "دیکھا",
+     "dekhā",
+     "saw",
+     "دیکھا"
+    ],
+    [
+     "انہیں",
+     "unheṉ",
+     "to them",
+     "اُنہیں"
+    ],
+    [
+     "ٹھیک",
+     "ṭhīk",
+     "right, fine",
+     "ٹھیک"
+    ],
+    [
+     "وہاں",
+     "wahāṉ",
+     "there",
+     "وَہاں"
+    ],
+    [
+     "کھانا",
+     "khānā",
+     "food",
+     "کھانا"
+    ],
+    [
+     "جہاں",
+     "jahāṉ",
+     "where (relative)",
+     "جَہاں"
+    ],
+    [
+     "کہاں",
+     "kahāṉ",
+     "where?",
+     "کَہاں"
+    ],
+    [
+     "کریں",
+     "kareṉ",
+     "do (polite)",
+     "کَریں"
+    ],
+    [
+     "تھیں",
+     "thīṉ",
+     "were (fem)",
+     "تھیں"
+    ],
+    [
+     "ادھر",
+     "idhar",
+     "here, this way",
+     "اِدھَر"
+    ],
+    [
+     "ہاتھ",
+     "hāth",
+     "hand",
+     "ہاتھ"
+    ],
+    [
+     "کتابیں",
+     "kitābeṉ",
+     "books",
+     "کِتابیں"
+    ],
+    [
+     "دیکھ",
+     "dekh",
+     "look (stem)",
+     "دیکھ"
+    ],
+    [
+     "کدھر",
+     "kidhar",
+     "where, which way",
+     "کِدھَر"
+    ],
+    [
+     "بچوں",
+     "bachchoṉ",
+     "children (oblique)",
+     "بَچّوں"
+    ],
+    [
+     "کیونکہ",
+     "kyoṉki",
+     "because",
+     "کیونکہ"
+    ],
+    [
+     "سمجھ",
+     "samajh",
+     "understanding",
+     "سَمَجھ"
+    ],
+    [
+     "اچھے",
+     "achchhe",
+     "good (plural)",
+     "اَچّھے"
+    ],
+    [
+     "اچھی",
+     "achchhī",
+     "good (fem)",
+     "اَچّھی"
+    ],
+    [
+     "ادھار",
+     "udhār",
+     "loan",
+     "اُدھار"
+    ],
+    [
+     "ماں",
+     "māṉ",
+     "mother",
+     "ماں"
+    ],
+    [
+     "کروں",
+     "karūṉ",
+     "I may do",
+     "کَروں"
+    ],
+    [
+     "کھیل",
+     "khel",
+     "game",
+     "کھیل"
+    ],
+    [
+     "کھانے",
+     "khāne",
+     "to eat (oblique)",
+     "کھانے"
+    ],
+    [
+     "کھا",
+     "khā",
+     "eat",
+     "کھا"
+    ],
+    [
+     "کہیں",
+     "kahīṉ",
+     "somewhere",
+     "کَہیں"
+    ],
+    [
+     "گھنٹے",
+     "ghanṭe",
+     "hours",
+     "گَھنْٹے"
+    ],
+    [
+     "رکھنا",
+     "rakhnā",
+     "to keep, put",
+     "رَکھنا"
+    ],
+    [
+     "دکھ",
+     "dukh",
+     "sorrow",
+     "دُکھ"
+    ],
+    [
+     "دیکھو",
+     "dekho",
+     "look!",
+     "دیکھو"
+    ],
+    [
+     "لکھا",
+     "likhā",
+     "wrote",
+     "لِکھا"
+    ],
+    [
+     "دیکھنا",
+     "dekhnā",
+     "to see",
+     "دیکھنا"
+    ],
+    [
+     "دنوں",
+     "dinoṉ",
+     "days",
+     "دِنوں"
+    ],
+    [
+     "چھوٹی",
+     "chhoṭī",
+     "small (fem)",
+     "چھوٹی"
+    ],
+    [
+     "چھوٹا",
+     "chhoṭā",
+     "small",
+     "چھوٹا"
+    ],
+    [
+     "ہاں",
+     "hāṉ",
+     "yes",
+     "ہاں"
+    ],
+    [
+     "تھکا",
+     "thakā",
+     "tired",
+     "تھَکا"
+    ],
+    [
+     "دیکھی",
+     "dekhī",
+     "saw (fem)",
+     "دیکھی"
+    ],
+    [
+     "منہ",
+     "munh",
+     "mouth, face",
+     "مُنہ"
+    ],
+    [
+     "اٹھا",
+     "uṭhā",
+     "got up",
+     "اُٹھا"
+    ],
+    [
+     "بہنیں",
+     "bahneṉ",
+     "sisters",
+     "بَہنیں"
+    ],
+    [
+     "باتیں",
+     "bāteṉ",
+     "talks, things said",
+     "باتیں"
+    ],
+    [
+     "چھوٹے",
+     "chhoṭe",
+     "small (plural)",
+     "چھوٹے"
+    ],
+    [
+     "چھ",
+     "chhe",
+     "six",
+     "چھ"
+    ],
+    [
+     "چھٹی",
+     "chhuṭṭī",
+     "holiday",
+     "چُھٹّی"
+    ],
+    [
+     "کھاتے",
+     "khāte",
+     "eat (plural)",
+     "کھاتے"
+    ],
+    [
+     "جھوٹ",
+     "jhūṭ",
+     "lie",
+     "جھوٹ"
+    ],
+    [
+     "دیکھتے",
+     "dekhte",
+     "see (plural)",
+     "دیکھتے"
+    ],
+    [
+     "لاکھ",
+     "lākh",
+     "hundred thousand",
+     "لاکھ"
+    ],
+    [
+     "دودھ",
+     "dūdh",
+     "milk",
+     "دودھ"
+    ],
+    [
+     "پھول",
+     "phūl",
+     "flower",
+     "پھول"
+    ],
+    [
+     "پتھر",
+     "patthar",
+     "stone",
+     "پَتَّھر"
+    ],
+    [
+     "کتابوں",
+     "kitāboṉ",
+     "books (oblique)",
+     "کِتابوں"
+    ],
+    [
+     "پھل",
+     "phal",
+     "fruit",
+     "پھَل"
+    ],
+    [
+     "بھاری",
+     "bhārī",
+     "heavy",
+     "بھاری"
+    ],
+    [
+     "دیکھتا",
+     "dekhtā",
+     "sees",
+     "دیکھتا"
+    ],
+    [
+     "دھوپ",
+     "dhūp",
+     "sunshine",
+     "دھوپ"
+    ],
+    [
+     "سمجھنا",
+     "samajhnā",
+     "to understand",
+     "سَمَجھنا"
+    ],
+    [
+     "کھاتا",
+     "khātā",
+     "eats",
+     "کھاتا"
+    ],
+    [
+     "جھیل",
+     "jhīl",
+     "lake",
+     "جھیل"
+    ],
+    [
+     "مچھلی",
+     "machhlī",
+     "fish",
+     "مَچھلی"
+    ],
+    [
+     "چھت",
+     "chhat",
+     "roof",
+     "چَھت"
+    ],
+    [
+     "ماموں",
+     "māmūṉ",
+     "maternal uncle",
+     "ماموں"
+    ],
+    [
+     "کھیلتے",
+     "khelte",
+     "play (plural)",
+     "کھیلتے"
+    ],
+    [
+     "اندھا",
+     "andhā",
+     "blind",
+     "اَندھا"
+    ],
+    [
+     "کھیلنا",
+     "khelnā",
+     "to play",
+     "کھیلنا"
+    ],
+    [
+     "بھینس",
+     "bhaiṉs",
+     "buffalo",
+     "بھَینس"
+    ],
+    [
+     "سیکھنا",
+     "sīkhnā",
+     "to learn",
+     "سیکھنا"
+    ],
+    [
+     "مچھر",
+     "machchhar",
+     "mosquito",
+     "مَچّھَر"
+    ],
+    [
+     "چھتری",
+     "chhatrī",
+     "umbrella",
+     "چھَتری"
+    ],
+    [
+     "اندھیرا",
+     "andherā",
+     "darkness",
+     "اَندھیرا"
+    ],
+    [
+     "بھوک",
+     "bhūk",
+     "hunger",
+     "بھوک"
+    ],
+    [
+     "ہاتھی",
+     "hāthī",
+     "elephant",
+     "ہاتھی"
+    ],
+    [
+     "لکھتا",
+     "likhtā",
+     "writes",
+     "لِکھتا"
+    ],
+    [
+     "کھیت",
+     "khet",
+     "field",
+     "کھیت"
+    ],
+    [
+     "بیٹھنا",
+     "baiṭhnā",
+     "to sit",
+     "بَیٹھنا"
+    ],
+    [
+     "بھوکا",
+     "bhūkā",
+     "hungry",
+     "بھوکا"
+    ],
+    [
+     "اٹھنا",
+     "uṭhnā",
+     "to get up",
+     "اُٹھنا"
+    ],
+    [
+     "تھکے",
+     "thake",
+     "tired (plural)",
+     "تھَکے"
+    ],
+    [
+     "لکھو",
+     "likho",
+     "write!",
+     "لِکھو"
+    ],
+    [
+     "گھنٹہ",
+     "ghanṭa",
+     "hour",
+     "گَھنْٹَہ"
+    ],
+    [
+     "لکھنا",
+     "likhnā",
+     "to write",
+     "لِکھنا"
+    ],
+    [
+     "گھاس",
+     "ghās",
+     "grass",
+     "گھاس"
+    ],
+    [
+     "میٹھا",
+     "mīṭhā",
+     "sweet",
+     "میٹھا"
+    ],
+    [
+     "کھجور",
+     "khajūr",
+     "date (fruit)",
+     "کھَجور"
+    ],
+    [
+     "دھواں",
+     "dhuāṉ",
+     "smoke",
+     "دھُواں"
+    ],
+    [
+     "جھوٹا",
+     "jhūṭā",
+     "false",
+     "جھوٹا"
+    ],
+    [
+     "کھاتی",
+     "khātī",
+     "eats (fem)",
+     "کھاتی"
+    ],
+    [
+     "بھاگنا",
+     "bhāgnā",
+     "to run",
+     "بھاگنا"
+    ],
+    [
+     "تھالی",
+     "thālī",
+     "plate",
+     "تھالی"
+    ],
+    [
+     "پوچھنا",
+     "pūchhnā",
+     "to ask",
+     "پوچھنا"
+    ],
+    [
+     "کھولنا",
+     "kholnā",
+     "to open",
+     "کھولنا"
+    ],
+    [
+     "گھنٹی",
+     "ghanṭī",
+     "bell",
+     "گَھنْٹی"
+    ],
+    [
+     "پھوپھی",
+     "phūphī",
+     "paternal aunt",
+     "پھوپھی"
+    ],
+    [
+     "چھونا",
+     "chhūnā",
+     "to touch",
+     "چھونا"
+    ],
+    [
+     "کھلونا",
+     "khilaunā",
+     "toy",
+     "کِھلَونا"
+    ],
+    [
+     "کھٹا",
+     "khaṭṭā",
+     "sour",
+     "کھَٹّا"
     ],
     [
      "بھالو",
      "bhālū",
      "bear",
      "بَھالو"
+    ],
+    [
+     "ننھا",
+     "nanhā",
+     "tiny",
+     "نَنھا"
+    ],
+    [
+     "ٹھہرنا",
+     "ṭhaharnā",
+     "to stay, wait",
+     "ٹھَہَرنا"
+    ],
+    [
+     "پھینکنا",
+     "phaiṉknā",
+     "to throw",
+     "پھَینکنا"
+    ],
+    [
+     "چھپنا",
+     "chhupnā",
+     "to hide",
+     "چھُپنا"
+    ],
+    [
+     "گھومنا",
+     "ghūmnā",
+     "to turn about, wander",
+     "گھومنا"
+    ],
+    [
+     "ہنسنا",
+     "hansnā",
+     "to laugh",
+     "ہَنسنا"
+    ],
+    [
+     "جھولا",
+     "jhūlā",
+     "swing",
+     "جھولا"
+    ],
+    [
+     "دھاگا",
+     "dhāgā",
+     "thread",
+     "دھاگا"
+    ],
+    [
+     "سکھانا",
+     "sikhānā",
+     "to teach",
+     "سِکھانا"
     ]
    ],
    "sentences": [
     [
-     "میں گھر میں ہوں",
-     "maiṉ ghar meṉ hūṉ",
+     "میں گھر پر ہوں",
+     "maiṉ ghar par hūṉ",
      "I am at home",
-     "مَیں گَھر مَیں ہوں"
+     "مَیں گَھر پَر ہوں"
     ],
     [
-     "پھول کہاں ہیں",
-     "phūl kahāṉ haiṉ",
-     "where are the flowers",
-     "پھول کَہاں ہَیں"
+     "تم کہاں ہو؟",
+     "tum kahāṉ ho?",
+     "where are you?",
+     "تُم کَہاں ہو؟"
     ],
     [
-     "بھائی کھانا کھاتا ہے",
-     "bhāʾī khānā khātā hai",
-     "brother eats food",
-     "بَھائی کھانا کھاتا ہَے"
+     "ہم یہاں ہیں",
+     "ham yahāṉ haiṉ",
+     "we are here",
+     "ہَم یَہاں ہَیں"
+    ],
+    [
+     "بچے کھیل کھیلتے ہیں",
+     "bachche khel khelte haiṉ",
+     "the children play games",
+     "بَچّے کھیل کھیلتے ہَیں"
+    ],
+    [
+     "ماں کھانا دیتی ہے",
+     "māṉ khānā detī hai",
+     "mother serves the food",
+     "ماں کھانا دیتی ہَے"
+    ],
+    [
+     "ہاتھی بہت بھاری ہے",
+     "hāthī bahut bhārī hai",
+     "the elephant is very heavy",
+     "ہاتھی بَہُت بھاری ہَے"
+    ],
+    [
+     "مجھے بھوک لگی ہے",
+     "mujhe bhūk lagī hai",
+     "I am hungry",
+     "مُجھے بھوک لَگی ہَے"
+    ],
+    [
+     "ماموں کے ہاتھ میں پھل ہے",
+     "māmūṉ ke hāth meṉ phal hai",
+     "there is fruit in uncle's hand",
+     "ماموں کے ہاتھ مَیں پھَل ہَے"
+    ],
+    [
+     "دھوپ بہت گرم ہے",
+     "dhūp bahut garm hai",
+     "the sunshine is very hot",
+     "دھوپ بَہُت گَرْم ہَے"
+    ],
+    [
+     "یہ پھول بہت اچھا ہے",
+     "yeh phūl bahut achchhā hai",
+     "this flower is very nice",
+     "یَہ پھول بَہُت اَچّھا ہَے"
+    ],
+    [
+     "ماموں کتاب لکھتا ہے",
+     "māmūṉ kitāb likhtā hai",
+     "uncle writes a book",
+     "ماموں کِتاب لِکھتا ہَے"
+    ],
+    [
+     "تم کیوں تھکے ہو؟",
+     "tum kyoṉ thake ho?",
+     "why are you tired?",
+     "تُم کیوں تھَکے ہو؟"
+    ],
+    [
+     "سیکھنا اچھا ہے",
+     "sīkhnā achchhā hai",
+     "learning is good",
+     "سیکھنا اَچّھا ہَے"
+    ],
+    [
+     "کھیت میں گھاس ہے",
+     "khet meṉ ghās hai",
+     "there is grass in the field",
+     "کھیت مَیں گھاس ہَے"
+    ],
+    [
+     "بھینس گھاس کھاتی ہے",
+     "bhaiṉs ghās khātī hai",
+     "the buffalo eats grass",
+     "بھَینس گھاس کھاتی ہَے"
+    ],
+    [
+     "مچھلی پانی میں ہے",
+     "machhlī pānī meṉ hai",
+     "the fish is in the water",
+     "مَچھلی پانی مَیں ہَے"
+    ],
+    [
+     "ہم پھل کھاتے ہیں",
+     "ham phal khāte haiṉ",
+     "we eat fruit",
+     "ہَم پھَل کھاتے ہَیں"
+    ],
+    [
+     "ننھا ہاتھی بہت چھوٹا ہے",
+     "nanhā hāthī bahut chhoṭā hai",
+     "the baby elephant is very small",
+     "نَنھا ہاتھی بَہُت چھوٹا ہَے"
+    ],
+    [
+     "ماں کی چھتری پرانی ہے",
+     "māṉ kī chhatrī purānī hai",
+     "mother's umbrella is old",
+     "ماں کی چھَتری پُرانی ہَے"
+    ],
+    [
+     "ہاتھی جھیل کے پاس ہے",
+     "hāthī jhīl ke pās hai",
+     "the elephant is near the lake",
+     "ہاتھی جھیل کے پاس ہَے"
     ]
    ],
    "hours": [
     3,
     1.5
+   ],
+   "passage": [
+    "ماموں کا گھر کھیت کے پاس ہے۔ کھیت میں گھاس اور پھول ہیں۔ ماموں کی بھینس بھی ہے۔ بھینس گھاس کھاتی ہے اور دودھ دیتی ہے۔ ہم ماموں کے گھر جاتے ہیں۔ بچے کھیت میں کھیلتے ہیں۔ ماموں کہتا ہے: دیکھو، بھینس بہت بھاری ہے۔ دھوپ بہت گرم ہے۔ ماموں دودھ دیتا ہے۔ دودھ بہت میٹھا ہے۔ ماموں کی جھیل بھی ہے۔ جھیل میں مچھلی ہے۔ ننھا ہاتھی مچھلی دیکھتا ہے۔ ہاتھی مچھلی نہیں کھاتا۔ ہاتھی گھاس کھاتا ہے۔",
+    "māmūṉ kā ghar khet ke pās hai. khet meṉ ghās aur phūl haiṉ. māmūṉ kī bhaiṉs bhī hai. bhaiṉs ghās khātī hai aur dūdh detī hai. ham māmūṉ ke ghar jāte haiṉ. bachche khet meṉ khelte haiṉ. māmūṉ kahtā hai: dekho, bhaiṉs bahut bhārī hai. dhūp bahut garm hai. māmūṉ dūdh detā hai. dūdh bahut mīṭhā hai. māmūṉ kī jhīl bhī hai. jhīl meṉ machhlī hai. nanhā hāthī machhlī dekhtā hai. hāthī machhlī nahīṉ khātā. hāthī ghās khātā hai.",
+    "Uncle's house is near the field. In the field there is grass and there are flowers. Uncle also has a buffalo. The buffalo eats grass and gives milk. We go to uncle's house. The children play in the field. Uncle says: look, the buffalo is very heavy. The sunshine is very hot. Uncle gives milk. The milk is very sweet. Uncle also has a lake. There is a fish in the lake. The little elephant looks at the fish. The elephant does not eat fish. The elephant eats grass.",
+    "ماموں کا گَھر کھیت کے پاس ہَے۔ کھیت مَیں گھاس اَور پھول ہَیں۔ ماموں کی بھَینس بھی ہَے۔ بھَینس گھاس کھاتی ہَے اَور دودھ دیتی ہَے۔ ہَم ماموں کے گَھر جاتے ہَیں۔ بَچّے کھیت مَیں کھیلتے ہَیں۔ ماموں کَہتا ہَے: دیکھو، بھَینس بَہُت بھاری ہَے۔ دھوپ بَہُت گَرْم ہَے۔ ماموں دودھ دیتا ہَے۔ دودھ بَہُت میٹھا ہَے۔ ماموں کی جھیل بھی ہَے۔ جھیل مَیں مَچھلی ہَے۔ نَنھا ہاتھی مَچھلی دیکھتا ہَے۔ ہاتھی مَچھلی نَہیں کھاتا۔ ہاتھی گھاس کھاتا ہَے۔"
    ]
   },
   {
@@ -974,40 +4004,10 @@
    "focus": "Hard ڈ vs soft د; ڑ the flapped r that never starts a word; ز; the rare Persian ژ",
    "words": [
     [
-     "ڈاک",
-     "ḍāk",
-     "mail",
-     "ڈاک"
-    ],
-    [
-     "ڈبہ",
-     "ḍabba",
-     "box",
-     "ڈَبّہ"
-    ],
-    [
-     "لڑکا",
-     "laṛkā",
-     "boy",
-     "لَڑْکا"
-    ],
-    [
-     "لڑکی",
-     "laṛkī",
-     "girl",
-     "لَڑْکی"
-    ],
-    [
-     "بڑا",
-     "baṛā",
-     "big",
-     "بَڑا"
-    ],
-    [
-     "پڑھنا",
-     "paṛhnā",
-     "to read",
-     "پَڑھنا"
+     "زیادہ",
+     "ziyāda",
+     "more, too much",
+     "زِیادَہ"
     ],
     [
      "زبان",
@@ -1016,34 +4016,142 @@
      "زَبان"
     ],
     [
+     "زندگی",
+     "zindagī",
+     "life",
+     "زِندَگی"
+    ],
+    [
+     "گاڑی",
+     "gāṛī",
+     "car, vehicle",
+     "گاڑی"
+    ],
+    [
+     "بڑی",
+     "baṛī",
+     "big (fem)",
+     "بَڑی"
+    ],
+    [
+     "انگریزی",
+     "angrezī",
+     "English",
+     "اَنگریزی"
+    ],
+    [
+     "بڑا",
+     "baṛā",
+     "big",
+     "بَڑا"
+    ],
+    [
+     "ہزار",
+     "hazār",
+     "thousand",
+     "ہَزار"
+    ],
+    [
+     "بڑے",
+     "baṛe",
+     "big (plural)",
+     "بَڑے"
+    ],
+    [
+     "پیار",
+     "pyār",
+     "love",
+     "پیار"
+    ],
+    [
+     "مہربانی",
+     "mehrbānī",
+     "kindness",
+     "مِہرْبانی"
+    ],
+    [
+     "ڈاکٹر",
+     "ḍākṭar",
+     "doctor",
+     "ڈاکْٹَر"
+    ],
+    [
+     "چھوڑ",
+     "chhoṛ",
+     "leave (stem)",
+     "چھوڑ"
+    ],
+    [
+     "والد",
+     "wālid",
+     "father",
+     "والِد"
+    ],
+    [
+     "تھوڑا",
+     "thoṛā",
+     "a little",
+     "تھوڑا"
+    ],
+    [
+     "امید",
+     "ummīd",
+     "hope",
+     "اُمّید"
+    ],
+    [
      "زمین",
      "zamīn",
      "earth",
      "زَمین"
     ],
     [
-     "ژالہ",
-     "zhāla",
-     "hailstone",
-     "ژَالہ"
+     "لڑکی",
+     "laṛkī",
+     "girl",
+     "لَڑْکی"
     ],
     [
-     "روزانہ",
-     "rozāna",
-     "daily",
-     "روزانہ"
+     "گھڑی",
+     "ghaṛī",
+     "watch",
+     "گَھڑی"
     ],
     [
-     "ڈھول",
-     "ḍhol",
-     "drum",
-     "ڈھول"
+     "امیر",
+     "amīr",
+     "rich",
+     "اَمیر"
     ],
     [
-     "گڑیا",
-     "guṛiyā",
-     "doll",
-     "گُڑِیا"
+     "زندہ",
+     "zinda",
+     "alive",
+     "زِندَہ"
+    ],
+    [
+     "تیز",
+     "tez",
+     "fast, sharp",
+     "تیز"
+    ],
+    [
+     "چیز",
+     "chīz",
+     "thing",
+     "چیز"
+    ],
+    [
+     "والدہ",
+     "wālida",
+     "mother",
+     "والِدَہ"
+    ],
+    [
+     "اکثر",
+     "aks̱ar",
+     "often",
+     "اَکثَر"
     ],
     [
      "سڑک",
@@ -1052,10 +4160,100 @@
      "سَڑَک"
     ],
     [
-     "زرد",
-     "zard",
-     "yellow",
-     "زَرْد"
+     "پڑھا",
+     "paṛhā",
+     "read (past)",
+     "پَڑھا"
+    ],
+    [
+     "زور",
+     "zor",
+     "strength",
+     "زور"
+    ],
+    [
+     "بلکہ",
+     "balki",
+     "rather, but also",
+     "بَلکِہ"
+    ],
+    [
+     "اتوار",
+     "itwār",
+     "Sunday",
+     "اِتوار"
+    ],
+    [
+     "پڑھنے",
+     "paṛhne",
+     "to read (oblique)",
+     "پَڑھنے"
+    ],
+    [
+     "دروازہ",
+     "darwāza",
+     "door",
+     "دَروازَہ"
+    ],
+    [
+     "جہاز",
+     "jahāz",
+     "ship, aeroplane",
+     "جَہاز"
+    ],
+    [
+     "پیر",
+     "pīr",
+     "Monday",
+     "پیر"
+    ],
+    [
+     "بندہ",
+     "banda",
+     "person",
+     "بَندَہ"
+    ],
+    [
+     "روز",
+     "roz",
+     "day, daily",
+     "روز"
+    ],
+    [
+     "چیزیں",
+     "chīzeṉ",
+     "things",
+     "چیزیں"
+    ],
+    [
+     "میز",
+     "mez",
+     "table",
+     "میز"
+    ],
+    [
+     "پڑھ",
+     "paṛh",
+     "read",
+     "پَڑھ"
+    ],
+    [
+     "روزانہ",
+     "rozāna",
+     "daily",
+     "روزانہ"
+    ],
+    [
+     "نوکری",
+     "naukrī",
+     "job",
+     "نَوکری"
+    ],
+    [
+     "کھڑے",
+     "khaṛe",
+     "standing (plural)",
+     "کھَڑے"
     ],
     [
      "ڈر",
@@ -1064,22 +4262,274 @@
      "ڈَر"
     ],
     [
-     "کپڑا",
-     "kapṛā",
-     "cloth",
-     "کَپْڑا"
+     "انڈے",
+     "anḍe",
+     "eggs",
+     "اَنڈے"
     ],
     [
-     "مزا",
-     "mazā",
-     "fun",
-     "مَزا"
+     "کھڑکی",
+     "khiṛkī",
+     "window",
+     "کھِڑکی"
     ],
     [
-     "انڈا",
-     "anḍā",
-     "egg",
-     "اَنڈا"
+     "لڑکے",
+     "laṛke",
+     "boys",
+     "لَڑکے"
+    ],
+    [
+     "پڑھو",
+     "paṛho",
+     "read!",
+     "پَڑھو"
+    ],
+    [
+     "کھڑی",
+     "khaṛī",
+     "standing (fem)",
+     "کھَڑی"
+    ],
+    [
+     "تازہ",
+     "tāza",
+     "fresh",
+     "تازَہ"
+    ],
+    [
+     "والدین",
+     "wālidain",
+     "parents",
+     "والِدَین"
+    ],
+    [
+     "بزرگ",
+     "buzurg",
+     "elderly person",
+     "بُزُرگ"
+    ],
+    [
+     "تھوڑی",
+     "thoṛī",
+     "a little (fem)",
+     "تھوڑی"
+    ],
+    [
+     "لڑکا",
+     "laṛkā",
+     "boy",
+     "لَڑْکا"
+    ],
+    [
+     "راز",
+     "rāz",
+     "secret",
+     "راز"
+    ],
+    [
+     "پڑھنا",
+     "paṛhnā",
+     "to read",
+     "پَڑھنا"
+    ],
+    [
+     "تیزی",
+     "tezī",
+     "speed",
+     "تیزی"
+    ],
+    [
+     "دروازے",
+     "darwāze",
+     "doors",
+     "دَروازے"
+    ],
+    [
+     "ڈرتے",
+     "ḍarte",
+     "are afraid (plural)",
+     "ڈَرتے"
+    ],
+    [
+     "کھڑا",
+     "khaṛā",
+     "standing",
+     "کھَڑا"
+    ],
+    [
+     "پڑھتے",
+     "paṛhte",
+     "read (plural)",
+     "پَڑھتے"
+    ],
+    [
+     "چڑیا",
+     "chiṛiyā",
+     "sparrow, bird",
+     "چِڑِیا"
+    ],
+    [
+     "نماز",
+     "namāz",
+     "prayer (namaz)",
+     "نَماز"
+    ],
+    [
+     "زمانہ",
+     "zamāna",
+     "time, age",
+     "زَمانَہ"
+    ],
+    [
+     "پڑھتا",
+     "paṛhtā",
+     "reads",
+     "پَڑھتا"
+    ],
+    [
+     "پہاڑ",
+     "pahāṛ",
+     "mountain",
+     "پَہاڑ"
+    ],
+    [
+     "بازار",
+     "bāzār",
+     "market",
+     "بازار"
+    ],
+    [
+     "بازی",
+     "bāzī",
+     "game, bet",
+     "بازی"
+    ],
+    [
+     "کپڑے",
+     "kapṛe",
+     "clothes",
+     "کَپْڑے"
+    ],
+    [
+     "کمزور",
+     "kamzor",
+     "weak",
+     "کَمزور"
+    ],
+    [
+     "روزہ",
+     "roza",
+     "fast",
+     "روزَہ"
+    ],
+    [
+     "جوڑا",
+     "joṛā",
+     "pair, couple",
+     "جوڑا"
+    ],
+    [
+     "بازو",
+     "bāzū",
+     "arm",
+     "بازو"
+    ],
+    [
+     "نازک",
+     "nāzuk",
+     "delicate",
+     "نازُک"
+    ],
+    [
+     "ہرگز",
+     "hargiz",
+     "never",
+     "ہَرگِز"
+    ],
+    [
+     "تمیز",
+     "tamīz",
+     "manners",
+     "تَمیز"
+    ],
+    [
+     "ٹکڑا",
+     "ṭukṛā",
+     "piece",
+     "ٹُکْڑا"
+    ],
+    [
+     "داڑھی",
+     "dāṛhī",
+     "beard",
+     "داڑھی"
+    ],
+    [
+     "مزے",
+     "maze",
+     "fun (plural)",
+     "مَزے"
+    ],
+    [
+     "پڑھتی",
+     "paṛhtī",
+     "reads (fem)",
+     "پَڑھتی"
+    ],
+    [
+     "ڈبے",
+     "ḍibbe",
+     "boxes",
+     "ڈِبّے"
+    ],
+    [
+     "کیڑا",
+     "kīṛā",
+     "insect, worm",
+     "کیڑا"
+    ],
+    [
+     "ڈبہ",
+     "ḍabba",
+     "box",
+     "ڈَبّہ"
+    ],
+    [
+     "بوڑھی",
+     "būṛhī",
+     "old woman",
+     "بوڑھی"
+    ],
+    [
+     "ٹیڑھا",
+     "ṭeṛhā",
+     "crooked",
+     "ٹیڑھا"
+    ],
+    [
+     "مزیدار",
+     "mazedār",
+     "tasty",
+     "مَزیدار"
+    ],
+    [
+     "لڑکیاں",
+     "laṛkiyāṉ",
+     "girls",
+     "لَڑکِیاں"
+    ],
+    [
+     "سیکنڈ",
+     "sekanḍ",
+     "second (time)",
+     "سیکَنڈ"
+    ],
+    [
+     "زبردست",
+     "zabardast",
+     "excellent",
+     "زَبَردَست"
     ],
     [
      "ٹھنڈا",
@@ -1088,10 +4538,208 @@
      "ٹَھنڈا"
     ],
     [
-     "گھڑی",
-     "ghaṛī",
-     "watch",
-     "گَھڑی"
+     "پڑوسی",
+     "paṛosī",
+     "neighbour",
+     "پَڑوسی"
+    ],
+    [
+     "ٹرک",
+     "ṭrak",
+     "truck",
+     "ٹرَک"
+    ],
+    [
+     "ڈھول",
+     "ḍhol",
+     "drum",
+     "ڈھول"
+    ],
+    [
+     "چھوڑنا",
+     "chhoṛnā",
+     "to leave, let go",
+     "چھوڑنا"
+    ],
+    [
+     "لڑنا",
+     "laṛnā",
+     "to fight",
+     "لَڑنا"
+    ],
+    [
+     "کڑوا",
+     "kaṛwā",
+     "bitter",
+     "کَڑوا"
+    ],
+    [
+     "زینب",
+     "zainab",
+     "Zainab (a name)",
+     "زَینَب"
+    ],
+    [
+     "مزدور",
+     "mazdūr",
+     "labourer",
+     "مَزدور"
+    ],
+    [
+     "دوڑ",
+     "dauṛ",
+     "race, run",
+     "دَوڑ"
+    ],
+    [
+     "ڈاک",
+     "ḍāk",
+     "mail",
+     "ڈاک"
+    ],
+    [
+     "ہڈی",
+     "haḍḍī",
+     "bone",
+     "ہَڈّی"
+    ],
+    [
+     "ڈیڑھ",
+     "ḍeṛh",
+     "one and a half",
+     "ڈیڑھ"
+    ],
+    [
+     "ورنہ",
+     "warna",
+     "otherwise",
+     "وَرنہ"
+    ],
+    [
+     "کپڑا",
+     "kapṛā",
+     "cloth",
+     "کَپْڑا"
+    ],
+    [
+     "زنجیر",
+     "zanjīr",
+     "chain",
+     "زَنجیر"
+    ],
+    [
+     "زیور",
+     "zewar",
+     "jewellery",
+     "زیوَر"
+    ],
+    [
+     "زرد",
+     "zard",
+     "yellow",
+     "زَرْد"
+    ],
+    [
+     "ڈھیر",
+     "ḍher",
+     "heap",
+     "ڈھیر"
+    ],
+    [
+     "سیڑھی",
+     "sīṛhī",
+     "stairs, ladder",
+     "سیڑھی"
+    ],
+    [
+     "زیتون",
+     "zaitūn",
+     "olive",
+     "زَیتون"
+    ],
+    [
+     "بوڑھا",
+     "būṛhā",
+     "old man",
+     "بوڑھا"
+    ],
+    [
+     "درزی",
+     "darzī",
+     "tailor",
+     "دَرزی"
+    ],
+    [
+     "ڈالنا",
+     "ḍālnā",
+     "to put, pour",
+     "ڈالنا"
+    ],
+    [
+     "ہوشیار",
+     "hoshyār",
+     "clever, alert",
+     "ہوشْیار"
+    ],
+    [
+     "بڑھنا",
+     "baṛhnā",
+     "to grow, advance",
+     "بَڑھنا"
+    ],
+    [
+     "گڑ",
+     "guṛ",
+     "jaggery",
+     "گُڑ"
+    ],
+    [
+     "انڈا",
+     "anḍā",
+     "egg",
+     "اَنڈا"
+    ],
+    [
+     "بڑھیا",
+     "baṛhiyā",
+     "great, first-rate",
+     "بَڑھِیا"
+    ],
+    [
+     "مزا",
+     "mazā",
+     "fun",
+     "مَزا"
+    ],
+    [
+     "ڈرنا",
+     "ḍarnā",
+     "to be afraid",
+     "ڈَرنا"
+    ],
+    [
+     "ڈھونڈنا",
+     "ḍhūnḍnā",
+     "to look for",
+     "ڈھونڈنا"
+    ],
+    [
+     "گڑیا",
+     "guṛiyā",
+     "doll",
+     "گُڑِیا"
+    ],
+    [
+     "مڑنا",
+     "muṛnā",
+     "to turn",
+     "مُڑنا"
+    ],
+    [
+     "ژالہ",
+     "zhāla",
+     "hailstone",
+     "ژَالہ"
     ]
    ],
    "sentences": [
@@ -1102,22 +4750,119 @@
      "لَڑْکا سَڑَک پَر ہَے"
     ],
     [
-     "بڑا ڈبہ",
-     "baṛā ḍabba",
-     "big box",
-     "بَڑا ڈَبّہ"
+     "لڑکی بڑی ہوشیار ہے",
+     "laṛkī baṛī hoshyār hai",
+     "the girl is very clever",
+     "لَڑْکی بَڑی ہوشْیار ہَے"
     ],
     [
-     "زمین زرد ہے",
-     "zamīn zard hai",
-     "the ground is yellow",
-     "زَمین زَرْد ہَے"
+     "زینب روز کتاب پڑھتی ہے",
+     "zainab roz kitāb paṛhtī hai",
+     "Zainab reads a book every day",
+     "زَینَب روز کِتاب پَڑھتی ہَے"
+    ],
+    [
+     "ڈاکٹر کی گاڑی بڑی ہے",
+     "ḍākṭar kī gāṛī baṛī hai",
+     "the doctor's car is big",
+     "ڈاکْٹَر کی گاڑی بَڑی ہَے"
+    ],
+    [
+     "بازار میں بہت چیزیں ہیں",
+     "bāzār meṉ bahut chīzeṉ haiṉ",
+     "there are many things in the market",
+     "بازار مَیں بَہُت چیزیں ہَیں"
+    ],
+    [
+     "دروازہ بند ہے",
+     "darwāza band hai",
+     "the door is closed",
+     "دَروازَہ بَند ہَے"
+    ],
+    [
+     "کھڑکی کے پاس میز ہے",
+     "khiṛkī ke pās mez hai",
+     "there is a table near the window",
+     "کھِڑکی کے پاس میز ہَے"
+    ],
+    [
+     "پہاڑ بہت اونچا ہے",
+     "pahāṛ bahut ūnchā hai",
+     "the mountain is very high",
+     "پَہاڑ بَہُت اونچا ہَے"
+    ],
+    [
+     "مزدور بہت کام کرتا ہے",
+     "mazdūr bahut kām kartā hai",
+     "the labourer works a lot",
+     "مَزدور بَہُت کام کَرتا ہَے"
+    ],
+    [
+     "درزی کے پاس کپڑے ہیں",
+     "darzī ke pās kapṛe haiṉ",
+     "the tailor has clothes",
+     "دَرزی کے پاس کَپْڑے ہَیں"
+    ],
+    [
+     "انڈے تازہ ہیں",
+     "anḍe tāza haiṉ",
+     "the eggs are fresh",
+     "اَنڈے تازَہ ہَیں"
+    ],
+    [
+     "ہم روز اسکول پڑھنے جاتے ہیں",
+     "ham roz iskūl paṛhne jāte haiṉ",
+     "we go to school to study every day",
+     "ہَم روز اِسکول پَڑھنے جاتے ہَیں"
+    ],
+    [
+     "ڈرنا مت",
+     "ḍarnā mat",
+     "don't be afraid",
+     "ڈَرنا مَت"
+    ],
+    [
+     "ڈاکٹر بیمار کو دوا دیتا ہے",
+     "ḍākṭar bīmār ko dawā detā hai",
+     "the doctor gives the sick person medicine",
+     "ڈاکْٹَر بیمار کو دَوا دیتا ہَے"
+    ],
+    [
+     "لڑکے بازار میں کھیلتے ہیں",
+     "laṛke bāzār meṉ khelte haiṉ",
+     "the boys play in the market",
+     "لَڑکے بازار مَیں کھیلتے ہَیں"
+    ],
+    [
+     "گاڑی بہت تیز ہے",
+     "gāṛī bahut tez hai",
+     "the car is very fast",
+     "گاڑی بَہُت تیز ہَے"
+    ],
+    [
+     "نانی کے پاس زیور ہے",
+     "nānī ke pās zewar hai",
+     "grandma has jewellery",
+     "نانی کے پاس زیوَر ہَے"
+    ],
+    [
+     "زینب کی گڑیا بڑی ہے",
+     "zainab kī guṛiyā baṛī hai",
+     "Zainab's doll is big",
+     "زَینَب کی گُڑِیا بَڑی ہَے"
+    ],
+    [
+     "ڈبے میں انڈے ہیں",
+     "ḍibbe meṉ anḍe haiṉ",
+     "there are eggs in the box",
+     "ڈِبّے مَیں اَنڈے ہَیں"
     ]
    ],
    "passage": [
-    "لڑکا سڑک پر ہے۔ اس کے پاس بڑا ڈبہ ہے۔ ڈبے میں گڑیا اور کپڑا ہے۔ لڑکی کہتی ہے: یہ میرا ڈبہ ہے۔",
-    "laṛkā saṛak par hai. us ke pās baṛā ḍabba hai. ḍabe meṉ guṛiyā aur kapṛā hai. laṛkī kahtī hai: yeh merā ḍabba hai.",
-    "The boy is on the road. He has a big box. In the box there is a doll and cloth. The girl says: this is my box."
+    "زینب ایک ہوشیار لڑکی ہے۔ وہ روز اسکول جاتی ہے۔ اسکول بازار کے پاس ہے۔ بازار میں بہت چیزیں ہیں۔ دکان پر انڈے اور کپڑے ہیں۔ انڈے تازہ ہیں۔ زینب کا ابو بازار میں کام کرتا ہے۔ ابو کے پاس بڑی گاڑی ہے۔ شام کو ابو گھر جاتا ہے۔ زینب اپنی کتاب پڑھتی ہے۔ زینب کا کمرہ بہت بڑا ہے۔ زینب کی زندگی بہت اچھی ہے۔ ڈاکٹر کی گاڑی بہت تیز ہے۔ لڑکے بازار میں کھیلتے ہیں۔ بوڑھی نانی کے پاس زیور ہے۔ ڈاکٹر روز اسکول جاتا ہے۔ لڑکی ڈاکٹر کو کتاب دیتی ہے۔",
+    "zainab ek hoshyār laṛkī hai. woh roz iskūl jātī hai. iskūl bāzār ke pās hai. bāzār meṉ bahut chīzeṉ haiṉ. dukān par anḍe aur kapṛe haiṉ. anḍe tāza haiṉ. zainab kā abbū bāzār meṉ kām kartā hai. abbū ke pās baṛī gāṛī hai. shām ko abbū ghar jātā hai. zainab apnī kitāb paṛhtī hai. zainab kā kamra bahut baṛā hai. zainab kī zindagī bahut achchhī hai. ḍākṭar kī gāṛī bahut tez hai. laṛke bāzār meṉ khelte haiṉ. būṛhī nānī ke pās zewar hai. ḍākṭar roz iskūl jātā hai. laṛkī ḍākṭar ko kitāb detī hai.",
+    "Zainab is a clever girl. She goes to school every day. The school is near the market. There are many things in the market. At the shop there are eggs and clothes. The eggs are fresh. Zainab's dad works in the market. Dad has a big car. In the evening dad goes home. Zainab reads her book. Zainab's room is very big. Zainab's life is very good. The doctor's car is very fast. The boys play in the market. Old grandma has jewellery. The doctor goes to school every day. The girl gives the doctor a book.",
+    "زَینَب ایک ہوشْیار لَڑْکی ہَے۔ وُہ روز اِسکول جاتی ہَے۔ اِسکول بازار کے پاس ہَے۔ بازار مَیں بَہُت چیزیں ہَیں۔ دُکان پَر اَنڈے اَور کَپْڑے ہَیں۔ اَنڈے تازَہ ہَیں۔ زَینَب کا اَبُّو بازار مَیں کام کَرتا ہَے۔ اَبُّو کے پاس بَڑی گاڑی ہَے۔ شام کو اَبُّو گَھر جاتا ہَے۔ زَینَب اَپنی کِتاب پَڑھتی ہَے۔ زَینَب کا کَمْرہ بَہُت بَڑا ہَے۔ زَینَب کی زِندَگی بَہُت اَچّھی ہَے۔ ڈاکْٹَر کی گاڑی بَہُت تیز ہَے۔ لَڑکے بازار مَیں کھیلتے ہَیں۔ بوڑھی نانی کے پاس زیوَر ہَے۔ ڈاکْٹَر روز اِسکول جاتا ہَے۔ لَڑْکی ڈاکْٹَر کو کِتاب دیتی ہَے۔"
    ],
    "hours": [
     2.5,
@@ -1139,88 +4884,10 @@
    "focus": "Six letters common in everyday Urdu loanwords; ع mostly a vowel seat; ح same sound as ہ",
    "words": [
     [
-     "فرش",
-     "farsh",
-     "floor",
-     "فَرْش"
-    ],
-    [
-     "فون",
-     "fon",
-     "phone",
-     "فون"
-    ],
-    [
-     "قلم",
-     "qalam",
-     "pen",
-     "قَلَم"
-    ],
-    [
-     "قمیض",
-     "qamīẕ",
-     "shirt (ض preview)",
-     "قَمیض"
-    ],
-    [
-     "خط",
-     "k͟hat",
-     "letter (ط preview)",
-     "خَط"
-    ],
-    [
-     "خوش",
-     "k͟hush",
-     "happy",
-     "خُوش"
-    ],
-    [
-     "غریب",
-     "g͟harīb",
-     "poor",
-     "غَریب"
-    ],
-    [
-     "باغ",
-     "bāg͟h",
-     "garden",
-     "باغ"
-    ],
-    [
-     "عمر",
-     "ʻumr",
-     "age",
-     "عُمْر"
-    ],
-    [
-     "علم",
-     "ʻilm",
-     "knowledge",
-     "عِلْم"
-    ],
-    [
-     "حال",
-     "ḥāl",
-     "condition",
-     "حال"
-    ],
-    [
-     "حلوہ",
-     "ḥalwa",
-     "halwa",
-     "حَلْوہ"
-    ],
-    [
-     "صاف",
-     "ṣāf",
-     "clean (ص preview)",
-     "صاف"
-    ],
-    [
-     "فوج",
-     "fauj",
-     "army",
-     "فَوج"
+     "بعد",
+     "baʻd",
+     "after",
+     "بَعْد"
     ],
     [
      "وقت",
@@ -1229,16 +4896,64 @@
      "وَقْت"
     ],
     [
-     "خالی",
-     "k͟hālī",
-     "empty",
-     "خالی"
+     "سمندر",
+     "samundar",
+     "sea, ocean",
+     "سَمُندَر"
     ],
     [
-     "غم",
-     "g͟ham",
-     "grief",
-     "غَم"
+     "کافی",
+     "kāfī",
+     "quite, enough",
+     "کافی"
+    ],
+    [
+     "خیال",
+     "k͟hayāl",
+     "thought, idea",
+     "خَیال"
+    ],
+    [
+     "شروع",
+     "shurūʻ",
+     "beginning",
+     "شُروع"
+    ],
+    [
+     "خود",
+     "k͟hud",
+     "self",
+     "خُود"
+    ],
+    [
+     "فلم",
+     "film",
+     "movie, film",
+     "فِلم"
+    ],
+    [
+     "علی",
+     "ʻalī",
+     "Ali (a name)",
+     "عَلی"
+    ],
+    [
+     "ختم",
+     "k͟hatm",
+     "end",
+     "خَتْم"
+    ],
+    [
+     "خوش",
+     "k͟hush",
+     "happy",
+     "خُوش"
+    ],
+    [
+     "عمر",
+     "ʻumr",
+     "age",
+     "عُمْر"
     ],
     [
      "عام",
@@ -1247,42 +4962,709 @@
      "عام"
     ],
     [
-     "حساب",
-     "ḥisāb",
-     "maths",
-     "حِساب"
+     "تعلیم",
+     "taʻlīm",
+     "education",
+     "تَعلیم"
+    ],
+    [
+     "خاندان",
+     "k͟hāndān",
+     "family, clan",
+     "خاندان"
+    ],
+    [
+     "بغیر",
+     "bag͟hair",
+     "without",
+     "بِغَیر"
+    ],
+    [
+     "تاریخ",
+     "tārīk͟h",
+     "history, date",
+     "تاریخ"
+    ],
+    [
+     "قریب",
+     "qarīb",
+     "near",
+     "قَریب"
+    ],
+    [
+     "فوج",
+     "fauj",
+     "army",
+     "فَوج"
+    ],
+    [
+     "یقین",
+     "yaqīn",
+     "belief, certainty",
+     "یَقین"
+    ],
+    [
+     "احمد",
+     "aḥmad",
+     "Ahmad (a name)",
+     "اَحمَد"
+    ],
+    [
+     "ہفتے",
+     "hafte",
+     "weeks, on Saturday",
+     "ہَفْتے"
+    ],
+    [
+     "علم",
+     "ʻilm",
+     "knowledge",
+     "عِلْم"
+    ],
+    [
+     "معلوم",
+     "maʻlūm",
+     "known",
+     "مَعلوم"
+    ],
+    [
+     "سفر",
+     "safar",
+     "journey",
+     "سَفَر"
+    ],
+    [
+     "فون",
+     "fon",
+     "phone",
+     "فون"
+    ],
+    [
+     "علاقہ",
+     "ʻilāqa",
+     "area, region",
+     "عِلاقَہ"
+    ],
+    [
+     "حال",
+     "ḥāl",
+     "condition",
+     "حال"
+    ],
+    [
+     "قسم",
+     "qasam",
+     "oath, kind",
+     "قَسَم"
+    ],
+    [
+     "محنت",
+     "miḥnat",
+     "hard work",
+     "مِحنَت"
+    ],
+    [
+     "ہفتہ",
+     "hafta",
+     "week, Saturday",
+     "ہَفْتَہ"
+    ],
+    [
+     "عورت",
+     "ʻaurat",
+     "woman",
+     "عَورَت"
+    ],
+    [
+     "قابل",
+     "qābil",
+     "capable",
+     "قابِل"
+    ],
+    [
+     "عمارت",
+     "ʻimārat",
+     "building",
+     "عِمارَت"
+    ],
+    [
+     "خرید",
+     "k͟harīd",
+     "buy (stem)",
+     "خَرید"
+    ],
+    [
+     "مسجد",
+     "masjid",
+     "mosque",
+     "مَسجِد"
+    ],
+    [
+     "عربی",
+     "ʻarabī",
+     "Arabic",
+     "عَرَبی"
+    ],
+    [
+     "وعدہ",
+     "waʻda",
+     "promise",
+     "وَعْدَہ"
+    ],
+    [
+     "دعوت",
+     "daʻwat",
+     "invitation",
+     "دَعْوَت"
+    ],
+    [
+     "ملاقات",
+     "mulāqāt",
+     "meeting",
+     "مُلاقات"
+    ],
+    [
+     "اخبار",
+     "ak͟hbār",
+     "newspaper",
+     "اَخبار"
+    ],
+    [
+     "امتحان",
+     "imtiḥān",
+     "exam",
+     "اِمتِحان"
+    ],
+    [
+     "برف",
+     "barf",
+     "snow, ice",
+     "بَرْف"
+    ],
+    [
+     "فہرست",
+     "fihrist",
+     "list",
+     "فِہْرِست"
+    ],
+    [
+     "فرق",
+     "farq",
+     "difference",
+     "فَرْق"
+    ],
+    [
+     "خراب",
+     "k͟harāb",
+     "bad, spoiled",
+     "خَراب"
+    ],
+    [
+     "خوب",
+     "k͟hūb",
+     "good, fine",
+     "خوب"
+    ],
+    [
+     "شوق",
+     "shauq",
+     "liking, hobby",
+     "شَوق"
+    ],
+    [
+     "غریب",
+     "g͟harīb",
+     "poor",
+     "غَریب"
+    ],
+    [
+     "سیاہ",
+     "siyāh",
+     "black, dark",
+     "سِیاہ"
+    ],
+    [
+     "بستر",
+     "bistar",
+     "bed",
+     "بِستَر"
     ],
     [
      "دفتر",
      "daftar",
      "office",
      "دَفْتَر"
+    ],
+    [
+     "خدا",
+     "k͟hudā",
+     "God (Khuda)",
+     "خُدا"
+    ],
+    [
+     "گفتگو",
+     "guftagū",
+     "conversation",
+     "گُفتَگو"
+    ],
+    [
+     "خواب",
+     "k͟hwāb",
+     "dream",
+     "خواب"
+    ],
+    [
+     "موسیقی",
+     "mūsīqī",
+     "music",
+     "موسیقی"
+    ],
+    [
+     "قلعہ",
+     "qilʻa",
+     "fort",
+     "قِلعَہ"
+    ],
+    [
+     "معنی",
+     "maʻnī",
+     "meaning",
+     "مَعنی"
+    ],
+    [
+     "سفید",
+     "safīd",
+     "white",
+     "سَفید"
+    ],
+    [
+     "معاف",
+     "muʻāf",
+     "forgiven",
+     "مُعاف"
+    ],
+    [
+     "محبت",
+     "muḥabbat",
+     "love",
+     "مُحَبَّت"
+    ],
+    [
+     "حادثہ",
+     "ḥādis̱a",
+     "accident",
+     "حادِثَہ"
+    ],
+    [
+     "عادت",
+     "ʻādat",
+     "habit",
+     "عادَت"
+    ],
+    [
+     "عزت",
+     "ʻizzat",
+     "honour",
+     "عِزَّت"
+    ],
+    [
+     "باغ",
+     "bāg͟h",
+     "garden",
+     "باغ"
+    ],
+    [
+     "خبر",
+     "k͟habar",
+     "news",
+     "خَبَر"
+    ],
+    [
+     "حساب",
+     "ḥisāb",
+     "maths",
+     "حِساب"
+    ],
+    [
+     "سخت",
+     "sak͟ht",
+     "hard, tough",
+     "سَخْت"
+    ],
+    [
+     "خوشی",
+     "k͟hushī",
+     "happiness",
+     "خُوشی"
+    ],
+    [
+     "خریدنا",
+     "k͟harīdnā",
+     "to buy",
+     "خَریدنا"
+    ],
+    [
+     "فکر",
+     "fikr",
+     "worry, thought",
+     "فِکْر"
+    ],
+    [
+     "عجیب",
+     "ʻajīb",
+     "strange",
+     "عَجیب"
+    ],
+    [
+     "عقل",
+     "ʻaql",
+     "intelligence",
+     "عَقْل"
+    ],
+    [
+     "خون",
+     "k͟hūn",
+     "blood",
+     "خون"
+    ],
+    [
+     "خالی",
+     "k͟hālī",
+     "empty",
+     "خالی"
+    ],
+    [
+     "عینک",
+     "ʻainak",
+     "spectacles",
+     "عَینَک"
+    ],
+    [
+     "قیمت",
+     "qīmat",
+     "price",
+     "قیمَت"
+    ],
+    [
+     "نقشہ",
+     "naqsha",
+     "map",
+     "نَقشَہ"
+    ],
+    [
+     "خوشبو",
+     "k͟hushbū",
+     "fragrance",
+     "خُوشبو"
+    ],
+    [
+     "عمدہ",
+     "ʻumda",
+     "excellent",
+     "عُمدَہ"
+    ],
+    [
+     "قلم",
+     "qalam",
+     "pen",
+     "قَلَم"
+    ],
+    [
+     "بخار",
+     "buk͟hār",
+     "fever",
+     "بُخار"
+    ],
+    [
+     "سیب",
+     "seb",
+     "apple",
+     "سیب"
+    ],
+    [
+     "خشک",
+     "k͟hushk",
+     "dry",
+     "خُشْک"
+    ],
+    [
+     "شیشہ",
+     "shīsha",
+     "glass, mirror",
+     "شیشَہ"
+    ],
+    [
+     "فٹبال",
+     "fuṭbāl",
+     "football",
+     "فُٹْبال"
+    ],
+    [
+     "قدم",
+     "qadam",
+     "step",
+     "قَدَم"
+    ],
+    [
+     "تکلیف",
+     "taklīf",
+     "trouble",
+     "تَکلیف"
+    ],
+    [
+     "جمعہ",
+     "jumʻa",
+     "Friday",
+     "جُمعَہ"
+    ],
+    [
+     "خاموش",
+     "k͟hāmosh",
+     "silent",
+     "خاموش"
+    ],
+    [
+     "غم",
+     "g͟ham",
+     "grief",
+     "غَم"
+    ],
+    [
+     "علاج",
+     "ʻilāj",
+     "treatment",
+     "عِلاج"
+    ],
+    [
+     "خالد",
+     "k͟hālid",
+     "Khalid (a name)",
+     "خالِد"
+    ],
+    [
+     "فرش",
+     "farsh",
+     "floor",
+     "فَرْش"
+    ],
+    [
+     "فوری",
+     "faurī",
+     "immediate",
+     "فَوری"
+    ],
+    [
+     "لباس",
+     "libās",
+     "clothes",
+     "لِباس"
+    ],
+    [
+     "خالہ",
+     "k͟hāla",
+     "maternal aunt",
+     "خالَہ"
+    ],
+    [
+     "جمعرات",
+     "jumʻerāt",
+     "Thursday",
+     "جُمعِرات"
+    ],
+    [
+     "خرگوش",
+     "k͟hargosh",
+     "rabbit",
+     "خَرگوش"
+    ],
+    [
+     "چالاک",
+     "chālāk",
+     "cunning, sly",
+     "چالاک"
+    ],
+    [
+     "چچا",
+     "chachā",
+     "paternal uncle",
+     "چَچا"
+    ],
+    [
+     "حرف",
+     "ḥarf",
+     "letter, word",
+     "حَرْف"
+    ],
+    [
+     "مسافر",
+     "musāfir",
+     "traveller",
+     "مُسافِر"
+    ],
+    [
+     "عید",
+     "ʻīd",
+     "Eid",
+     "عید"
+    ],
+    [
+     "خیمہ",
+     "k͟haima",
+     "tent",
+     "خَیمَہ"
+    ],
+    [
+     "قاعدہ",
+     "qāʻida",
+     "rule, primer",
+     "قاعِدَہ"
+    ],
+    [
+     "شرارت",
+     "sharārat",
+     "mischief",
+     "شَرارَت"
+    ],
+    [
+     "حلوہ",
+     "ḥalwa",
+     "halwa",
+     "حَلْوہ"
+    ],
+    [
+     "حیوان",
+     "ḥaiwān",
+     "animal",
+     "حَیوان"
+    ],
+    [
+     "ناخن",
+     "nāk͟hun",
+     "nail",
+     "ناخُن"
     ]
    ],
    "sentences": [
     [
-     "قلم کہاں ہے",
-     "qalam kahāṉ hai",
-     "where is the pen",
-     "قَلَم کَہاں ہَے"
+     "علی کا قلم میز پر ہے",
+     "ʻalī kā qalam mez par hai",
+     "Ali's pen is on the table",
+     "عَلی کا قَلَم میز پَر ہَے"
     ],
     [
-     "باغ خالی ہے",
-     "bāg͟h k͟hālī hai",
-     "the garden is empty",
-     "باغ خالی ہَے"
+     "احمد اور علی دوست ہیں",
+     "aḥmad aur ʻalī dost haiṉ",
+     "Ahmad and Ali are friends",
+     "اَحمَد اَور عَلی دوسْت ہَیں"
     ],
     [
-     "وقت کیا ہوا ہے",
-     "waqt kyā huā hai",
-     "what time is it",
-     "وَقْت کیا ہُوا ہَے"
+     "خالہ کا گھر باغ کے پاس ہے",
+     "k͟hāla kā ghar bāg͟h ke pās hai",
+     "aunt's house is near the garden",
+     "خالَہ کا گَھر باغ کے پاس ہَے"
+    ],
+    [
+     "جمعہ کو ہم مسجد جاتے ہیں",
+     "jumʻa ko ham masjid jāte haiṉ",
+     "on Friday we go to the mosque",
+     "جُمعَہ کو ہَم مَسجِد جاتے ہَیں"
+    ],
+    [
+     "عید بہت اچھی ہوتی ہے",
+     "ʻīd bahut achchhī hotī hai",
+     "Eid is very nice",
+     "عید بَہُت اَچّھی ہوتی ہَے"
+    ],
+    [
+     "امتحان کے بعد چھٹی ہے",
+     "imtiḥān ke baʻd chhuṭṭī hai",
+     "after the exam there is a holiday",
+     "اِمتِحان کے بَعْد چُھٹّی ہَے"
+    ],
+    [
+     "خالد کا خرگوش سفید ہے",
+     "k͟hālid kā k͟hargosh safīd hai",
+     "Khalid's rabbit is white",
+     "خالِد کا خَرگوش سَفید ہَے"
+    ],
+    [
+     "مجھے فٹبال کا کھیل پسند ہے",
+     "mujhe fuṭbāl kā khel pasand hai",
+     "I like the game of football",
+     "مُجھے فُٹْبال کا کھیل پَسَند ہَے"
+    ],
+    [
+     "ہفتے میں سات دن ہوتے ہیں",
+     "hafte meṉ sāt din hote haiṉ",
+     "there are seven days in a week",
+     "ہَفْتے مَیں سات دِن ہوتے ہَیں"
+    ],
+    [
+     "مجھے بخار ہے",
+     "mujhe buk͟hār hai",
+     "I have a fever",
+     "مُجھے بُخار ہَے"
+    ],
+    [
+     "کمرے کا فرش سیاہ ہے",
+     "kamre kā farsh siyāh hai",
+     "the floor of the room is black",
+     "کَمرے کا فَرْش سِیاہ ہَے"
+    ],
+    [
+     "خبر اخبار میں ہے",
+     "k͟habar ak͟hbār meṉ hai",
+     "the news is in the newspaper",
+     "خَبَر اَخبار مَیں ہَے"
+    ],
+    [
+     "محنت اچھی عادت ہے",
+     "miḥnat achchhī ʻādat hai",
+     "hard work is a good habit",
+     "مِحنَت اَچّھی عادَت ہَے"
+    ],
+    [
+     "ہفتے کو ہم خالہ کے گھر جاتے ہیں",
+     "hafte ko ham k͟hāla ke ghar jāte haiṉ",
+     "on Saturday we go to aunt's house",
+     "ہَفْتے کو ہَم خالَہ کے گَھر جاتے ہَیں"
+    ],
+    [
+     "خالد اپنا فون دیکھتا ہے",
+     "k͟hālid apnā fon dekhtā hai",
+     "Khalid looks at his phone",
+     "خالِد اَپنا فون دیکھتا ہَے"
+    ],
+    [
+     "دفتر میں بہت کام ہے",
+     "daftar meṉ bahut kām hai",
+     "there is a lot of work in the office",
+     "دَفْتَر مَیں بَہُت کام ہَے"
+    ],
+    [
+     "بستر پر نیا کمبل ہے",
+     "bistar par nayā kambal hai",
+     "there is a new blanket on the bed",
+     "بِستَر پَر نَیا کَمْبَل ہَے"
+    ],
+    [
+     "علی کی عینک سیاہ ہے",
+     "ʻalī kī ʻainak siyāh hai",
+     "Ali's glasses are black",
+     "عَلی کی عَینَک سِیاہ ہَے"
+    ],
+    [
+     "خالہ کی گھڑی سفید ہے",
+     "k͟hāla kī ghaṛī safīd hai",
+     "aunt's watch is white",
+     "خالَہ کی گَھڑی سَفید ہَے"
     ]
    ],
    "passage": [
-    "دن کا وقت ہے۔ باغ خالی ہے۔ ایک عورت قلم لے کر آتی ہے۔ وہ خوش ہے کیوں کہ آج اس کے دوست کی سالگرہ ہے۔ فوج کا حال عام ہے۔",
-    "din kā waqt hai. bāg͟h k͟hālī hai. ek ʻaurat qalam le kar ātī hai. woh k͟hush hai kyūṉ keh āj us ke dost kī sālgirah hai. fauj kā ḥāl ʻām hai.",
-    "It is daytime. The garden is empty. A woman comes with a pen. She is happy because today is her friend's birthday. The army's condition is ordinary."
+    "کل عید ہے۔ احمد اور علی بہت خوش ہیں۔ دونوں مسجد جاتے ہیں۔ مسجد کے بعد وہ خالہ کے گھر جاتے ہیں۔ خالہ کا گھر باغ کے قریب ہے۔ خالہ کے پاس حلوہ، کباب اور نان ہیں۔ علی کو حلوہ پسند ہے۔ احمد کو کباب پسند ہیں۔ خالہ کہتی ہے: خوب کھانا۔ دونوں خوب کھانا کھاتے ہیں۔ شام کو دونوں اپنے گھر جاتے ہیں۔ عید بہت اچھی ہوتی ہے۔ خالد کا خرگوش سفید ہے۔ خالد اپنے خرگوش کو گھاس دیتا ہے۔ سب بہت خوش ہیں۔ علی اپنا قلم دیکھتا ہے۔ احمد کا قلم میز پر ہے۔",
+    "kal ʻīd hai. aḥmad aur ʻalī bahut k͟hush haiṉ. donoṉ masjid jāte haiṉ. masjid ke baʻd woh k͟hāla ke ghar jāte haiṉ. k͟hāla kā ghar bāg͟h ke qarīb hai. k͟hāla ke pās ḥalwa, kabāb aur nān haiṉ. ʻalī ko ḥalwa pasand hai. aḥmad ko kabāb pasand haiṉ. k͟hāla kahtī hai: k͟hūb khānā. donoṉ k͟hūb khānā khāte haiṉ. shām ko donoṉ apne ghar jāte haiṉ. ʻīd bahut achchhī hotī hai. k͟hālid kā k͟hargosh safīd hai. k͟hālid apne k͟hargosh ko ghās detā hai. sab bahut k͟hush haiṉ. ʻalī apnā qalam dekhtā hai. aḥmad kā qalam mez par hai.",
+    "Tomorrow is Eid. Ahmad and Ali are very happy. Both go to the mosque. After the mosque they go to aunt's house. Aunt's house is near the garden. Aunt has halwa, kebab and naan. Ali likes halwa. Ahmad likes kebab. Aunt says: eat well. Both eat plenty of food. In the evening both go to their own home. Eid is very nice. Khalid's rabbit is white. Khalid gives his rabbit grass. Everyone is very happy. Ali looks at his pen. Ahmad's pen is on the table.",
+    "کَل عید ہَے۔ اَحمَد اَور عَلی بَہُت خُوش ہَیں۔ دونوں مَسجِد جاتے ہَیں۔ مَسجِد کے بَعْد وُہ خالَہ کے گَھر جاتے ہَیں۔ خالَہ کا گَھر باغ کے قَریب ہَے۔ خالَہ کے پاس حَلْوہ، کَباب اَور نان ہَیں۔ عَلی کو حَلْوہ پَسَند ہَے۔ اَحمَد کو کَباب پَسَند ہَیں۔ خالَہ کَہتی ہَے: خوب کھانا۔ دونوں خوب کھانا کھاتے ہَیں۔ شام کو دونوں اَپنے گَھر جاتے ہَیں۔ عید بَہُت اَچّھی ہوتی ہَے۔ خالِد کا خَرگوش سَفید ہَے۔ خالِد اَپنے خَرگوش کو گھاس دیتا ہَے۔ سَب بَہُت خُوش ہَیں۔ عَلی اَپنا قَلَم دیکھتا ہَے۔ اَحمَد کا قَلَم میز پَر ہَے۔"
    ],
    "hours": [
     3,
@@ -1303,106 +5685,28 @@
    "focus": "s: س ث ص · z: ز ذ ض ظ · t: ت ط · h: ہ ح — spelling must be memorised per word; these letters mark Arabic loans",
    "words": [
     [
-     "صبح",
-     "ṣubḥ",
-     "morning",
-     "صُبْح"
+     "طرح",
+     "t̤araḥ",
+     "way, like",
+     "طَرَح"
     ],
     [
-     "صبر",
-     "ṣabr",
-     "patience",
-     "صَبْر"
+     "صرف",
+     "ṣirf",
+     "only",
+     "صِرْف"
     ],
     [
-     "ضرور",
-     "ẕarūr",
-     "certainly",
-     "ضَرور"
+     "طرف",
+     "t̤araf",
+     "side, direction",
+     "طَرَف"
     ],
     [
-     "مریض",
-     "marīẕ",
-     "patient",
-     "مَریض"
-    ],
-    [
-     "طالب",
-     "t̤ālib",
-     "student",
-     "طالِب"
-    ],
-    [
-     "طوطا",
-     "t̤ot̤ā",
-     "parrot",
-     "طوطا"
-    ],
-    [
-     "ظاہر",
-     "z̤āhir",
-     "apparent",
-     "ظاہِر"
-    ],
-    [
-     "ظلم",
-     "z̤ulm",
-     "cruelty",
-     "ظُلْم"
-    ],
-    [
-     "ذائقہ",
-     "ẕāʾiqa",
-     "taste (ئ preview)",
-     "ذائِقَہ"
-    ],
-    [
-     "ذمہ",
-     "ẕimma",
-     "responsibility",
-     "ذِمّہ"
-    ],
-    [
-     "صابن",
-     "ṣābun",
-     "soap",
-     "صابُن"
-    ],
-    [
-     "ضد",
-     "ẕid",
-     "stubbornness",
-     "ضِد"
-    ],
-    [
-     "طاقت",
-     "t̤āqat",
-     "strength",
-     "طاقَت"
-    ],
-    [
-     "حفاظت",
-     "ḥifāz̤at",
-     "protection",
-     "حِفاظَت"
-    ],
-    [
-     "ذرا",
-     "ẕarā",
-     "a little",
-     "ذَرا"
-    ],
-    [
-     "خاص",
-     "k͟hāṣ",
-     "special",
-     "خاص"
-    ],
-    [
-     "ثواب",
-     "s̱awāb",
-     "reward",
-     "ثَواب"
+     "ضرورت",
+     "ẓarūrat",
+     "need",
+     "ضَرورَت"
     ],
     [
      "نظر",
@@ -1411,16 +5715,508 @@
      "نَظْر"
     ],
     [
-     "لفظ",
-     "lafz̤",
-     "word",
-     "لَفْظ"
+     "صبح",
+     "ṣubḥ",
+     "morning",
+     "صُبْح"
+    ],
+    [
+     "انتظار",
+     "intiz̤ār",
+     "waiting",
+     "اِنتِظار"
+    ],
+    [
+     "غلط",
+     "g͟halat̤",
+     "wrong",
+     "غَلَط"
+    ],
+    [
+     "حصہ",
+     "ḥiṣṣa",
+     "part, share",
+     "حِصَّہ"
+    ],
+    [
+     "مطابق",
+     "mut̤ābiq",
+     "according to",
+     "مُطابِق"
+    ],
+    [
+     "خوبصورت",
+     "k͟hūbṣūrat",
+     "beautiful",
+     "خوبصورَت"
     ],
     [
      "صحیح",
      "ṣaḥīḥ",
      "correct",
      "صَحیح"
+    ],
+    [
+     "صدی",
+     "ṣadī",
+     "century",
+     "صَدی"
+    ],
+    [
+     "خط",
+     "k͟hat̤",
+     "letter",
+     "خَط"
+    ],
+    [
+     "صاحب",
+     "ṣāḥib",
+     "sir, owner",
+     "صاحِب"
+    ],
+    [
+     "شخص",
+     "shak͟hṣ",
+     "person",
+     "شَخْص"
+    ],
+    [
+     "خاص",
+     "k͟hāṣ",
+     "special",
+     "خاص"
+    ],
+    [
+     "صدر",
+     "ṣadr",
+     "president",
+     "صَدْر"
+    ],
+    [
+     "ضروری",
+     "ẓarūrī",
+     "necessary",
+     "ضَروری"
+    ],
+    [
+     "نظام",
+     "niz̤ām",
+     "system",
+     "نِظام"
+    ],
+    [
+     "مصروف",
+     "maṣrūf",
+     "busy",
+     "مَصروف"
+    ],
+    [
+     "اصل",
+     "aṣl",
+     "origin, real",
+     "اَصْل"
+    ],
+    [
+     "ذریعہ",
+     "ẕarīʻa",
+     "means",
+     "ذَریعَہ"
+    ],
+    [
+     "صاف",
+     "ṣāf",
+     "clean",
+     "صاف"
+    ],
+    [
+     "عظیم",
+     "ʻaz̤īm",
+     "great",
+     "عَظیم"
+    ],
+    [
+     "مرضی",
+     "marẓī",
+     "will, wish",
+     "مَرضی"
+    ],
+    [
+     "الفاظ",
+     "alfāz̤",
+     "words",
+     "اَلفاظ"
+    ],
+    [
+     "غلطی",
+     "g͟halat̤ī",
+     "mistake",
+     "غَلَطی"
+    ],
+    [
+     "صورت",
+     "ṣūrat",
+     "form, face",
+     "صورَت"
+    ],
+    [
+     "طریقہ",
+     "t̤arīqa",
+     "method",
+     "طَریقَہ"
+    ],
+    [
+     "طالب",
+     "t̤ālib",
+     "student",
+     "طالِب"
+    ],
+    [
+     "صحت",
+     "ṣiḥḥat",
+     "health",
+     "صِحَّت"
+    ],
+    [
+     "اظہار",
+     "iz̤hār",
+     "expression",
+     "اِظہار"
+    ],
+    [
+     "لفظ",
+     "lafz̤",
+     "word",
+     "لَفْظ"
+    ],
+    [
+     "مطلب",
+     "mat̤lab",
+     "meaning, purpose",
+     "مَطلَب"
+    ],
+    [
+     "تصویر",
+     "taṣvīr",
+     "picture",
+     "تَصویر"
+    ],
+    [
+     "خطرہ",
+     "k͟hat̤ra",
+     "danger",
+     "خَطرَہ"
+    ],
+    [
+     "اضافہ",
+     "iẓāfa",
+     "increase",
+     "اِضافَہ"
+    ],
+    [
+     "مقصد",
+     "maqṣad",
+     "aim",
+     "مَقصَد"
+    ],
+    [
+     "منظر",
+     "manz̤ar",
+     "scene, view",
+     "مَنظَر"
+    ],
+    [
+     "ظاہر",
+     "z̤āhir",
+     "apparent",
+     "ظاہِر"
+    ],
+    [
+     "نظم",
+     "naz̤m",
+     "poem",
+     "نَظْم"
+    ],
+    [
+     "طویل",
+     "t̤awīl",
+     "long",
+     "طَویل"
+    ],
+    [
+     "وطن",
+     "wat̤an",
+     "homeland",
+     "وَطَن"
+    ],
+    [
+     "ناراض",
+     "nārāẓ",
+     "angry",
+     "ناراض"
+    ],
+    [
+     "محفوظ",
+     "maḥfūz̤",
+     "safe",
+     "مَحفوظ"
+    ],
+    [
+     "صفحہ",
+     "ṣafḥa",
+     "page",
+     "صَفحَہ"
+    ],
+    [
+     "طاقت",
+     "t̤āqat",
+     "strength",
+     "طاقَت"
+    ],
+    [
+     "ضرور",
+     "ẓarūr",
+     "certainly",
+     "ضَرور"
+    ],
+    [
+     "مطالعہ",
+     "mut̤ālaʻa",
+     "study, reading",
+     "مُطالَعَہ"
+    ],
+    [
+     "ثبوت",
+     "s̱ubūt",
+     "proof",
+     "ثُبوت"
+    ],
+    [
+     "قرض",
+     "qarẓ",
+     "loan, debt",
+     "قَرْض"
+    ],
+    [
+     "رابطہ",
+     "rābit̤a",
+     "contact",
+     "رابِطَہ"
+    ],
+    [
+     "حاضر",
+     "ḥāẓir",
+     "present",
+     "حاضِر"
+    ],
+    [
+     "رقص",
+     "raqṣ",
+     "dance",
+     "رَقْص"
+    ],
+    [
+     "حوصلہ",
+     "ḥauṣla",
+     "courage",
+     "حَوصْلَہ"
+    ],
+    [
+     "ذمہ",
+     "ẕimma",
+     "responsibility",
+     "ذِمّہ"
+    ],
+    [
+     "صبر",
+     "ṣabr",
+     "patience",
+     "صَبْر"
+    ],
+    [
+     "ریاضی",
+     "riyāẓī",
+     "mathematics",
+     "رِیاضی"
+    ],
+    [
+     "معذرت",
+     "maʻẕirat",
+     "apology",
+     "مَعذِرَت"
+    ],
+    [
+     "شطرنج",
+     "shat̤ranj",
+     "chess",
+     "شَطْرَنْج"
+    ],
+    [
+     "طوفان",
+     "t̤ūfān",
+     "storm",
+     "طوفان"
+    ],
+    [
+     "مضبوط",
+     "maẓbūt̤",
+     "strong, firm",
+     "مَضبوط"
+    ],
+    [
+     "طبیعت",
+     "t̤abīʻat",
+     "health, nature",
+     "طَبیعَت"
+    ],
+    [
+     "مذاق",
+     "maẕāq",
+     "joke",
+     "مَذاق"
+    ],
+    [
+     "ذرا",
+     "ẕarā",
+     "a little",
+     "ذَرا"
+    ],
+    [
+     "طے",
+     "t̤ai",
+     "settled",
+     "طے"
+    ],
+    [
+     "بطخ",
+     "bat̤ak͟h",
+     "duck",
+     "بَطَخ"
+    ],
+    [
+     "قمیض",
+     "qamīẓ",
+     "shirt",
+     "قَمیض"
+    ],
+    [
+     "مریض",
+     "marīẓ",
+     "patient",
+     "مَریض"
+    ],
+    [
+     "حفاظت",
+     "ḥifāz̤at",
+     "protection",
+     "حِفاظَت"
+    ],
+    [
+     "ذہن",
+     "ẕihn",
+     "mind",
+     "ذِہن"
+    ],
+    [
+     "مضمون",
+     "maẓmūn",
+     "essay",
+     "مَضمون"
+    ],
+    [
+     "فرض",
+     "farẓ",
+     "duty",
+     "فَرْض"
+    ],
+    [
+     "ذہین",
+     "ẕahīn",
+     "intelligent",
+     "ذَہین"
+    ],
+    [
+     "ظلم",
+     "z̤ulm",
+     "cruelty",
+     "ظُلْم"
+    ],
+    [
+     "صابن",
+     "ṣābun",
+     "soap",
+     "صابُن"
+    ],
+    [
+     "طارق",
+     "t̤āriq",
+     "Tariq (a name)",
+     "طارِق"
+    ],
+    [
+     "نصاب",
+     "niṣāb",
+     "syllabus",
+     "نِصاب"
+    ],
+    [
+     "غذا",
+     "g͟hiẕā",
+     "food, diet",
+     "غِذا"
+    ],
+    [
+     "صحرا",
+     "ṣaḥrā",
+     "desert",
+     "صَحرا"
+    ],
+    [
+     "صحن",
+     "ṣaḥn",
+     "courtyard",
+     "صَحْن"
+    ],
+    [
+     "ضد",
+     "ẓid",
+     "stubbornness",
+     "ضِد"
+    ],
+    [
+     "اذان",
+     "aẕān",
+     "call to prayer",
+     "اَذان"
+    ],
+    [
+     "ثواب",
+     "s̱awāb",
+     "reward",
+     "ثَواب"
+    ],
+    [
+     "صابر",
+     "ṣābir",
+     "Sabir (a name)",
+     "صابِر"
+    ],
+    [
+     "طالبہ",
+     "t̤āliba",
+     "girl student",
+     "طالِبَہ"
+    ],
+    [
+     "صندوق",
+     "ṣandūq",
+     "box, chest",
+     "صَندوق"
+    ],
+    [
+     "طوطا",
+     "t̤ot̤ā",
+     "parrot",
+     "طوطا"
     ]
    ],
    "sentences": [
@@ -1431,22 +6227,119 @@
      "صُبْح صاف ہَے"
     ],
     [
+     "صابر ایک ذہین شاگرد ہے",
+     "ṣābir ek ẕahīn shāgird hai",
+     "Sabir is a clever pupil",
+     "صابِر ایک ذَہین شاگِرد ہَے"
+    ],
+    [
      "طوطا ذرا بڑا ہے",
      "t̤ot̤ā ẕarā baṛā hai",
      "the parrot is a bit big",
      "طوطا ذَرا بَڑا ہَے"
     ],
     [
-     "یہ لفظ صحیح ہے",
-     "yeh lafz̤ ṣaḥīḥ hai",
-     "this word is correct",
-     "یِہ لَفْظ صَحیح ہَے"
+     "بطخ پانی میں ہے",
+     "bat̤ak͟h pānī meṉ hai",
+     "the duck is in the water",
+     "بَطَخ پانی مَیں ہَے"
+    ],
+    [
+     "قمیض خوبصورت ہے",
+     "qamīẓ k͟hūbṣūrat hai",
+     "the shirt is beautiful",
+     "قَمیض خوبصورَت ہَے"
+    ],
+    [
+     "صحیح لفظ لکھو",
+     "ṣaḥīḥ lafz̤ likho",
+     "write the right word",
+     "صَحیح لَفْظ لِکھو"
+    ],
+    [
+     "یہ تصویر بہت اچھی ہے",
+     "yeh taṣvīr bahut achchhī hai",
+     "this picture is very good",
+     "یَہ تَصویر بَہُت اَچّھی ہَے"
+    ],
+    [
+     "ضرور ملنا",
+     "ẓarūr milnā",
+     "do meet (me)",
+     "ضَرور مِلْنا"
+    ],
+    [
+     "صحت بہت ضروری ہے",
+     "ṣiḥḥat bahut ẓarūrī hai",
+     "health is very important",
+     "صِحَّت بَہُت ضَروری ہَے"
+    ],
+    [
+     "غلطی مت کرنا",
+     "g͟halat̤ī mat karnā",
+     "don't make a mistake",
+     "غَلَطی مَت کَرنا"
+    ],
+    [
+     "طارق اپنے وطن میں ہے",
+     "t̤āriq apne wat̤an meṉ hai",
+     "Tariq is in his homeland",
+     "طارِق اَپنے وَطَن مَیں ہَے"
+    ],
+    [
+     "صبح کو ہم مطالعہ کرتے ہیں",
+     "ṣubḥ ko ham mut̤ālaʻa karte haiṉ",
+     "in the morning we study",
+     "صُبْح کو ہَم مُطالَعَہ کَرتے ہَیں"
+    ],
+    [
+     "طوفان سے مت ڈرنا",
+     "t̤ūfān se mat ḍarnā",
+     "don't be afraid of the storm",
+     "طوفان سے مَت ڈَرنا"
+    ],
+    [
+     "ظاہر ہے",
+     "z̤āhir hai",
+     "obviously",
+     "ظاہِر ہَے"
+    ],
+    [
+     "طالبہ صفحہ پڑھتی ہے",
+     "t̤āliba ṣafḥa paṛhtī hai",
+     "the girl student reads the page",
+     "طالِبَہ صَفحَہ پَڑھتی ہَے"
+    ],
+    [
+     "ذرا انتظار کرو",
+     "ẕarā intiz̤ār karo",
+     "wait a little",
+     "ذَرا اِنتِظار کَرو"
+    ],
+    [
+     "غذا صحت کے لیے ضروری ہے",
+     "g͟hiẕā ṣiḥḥat ke liye ẓarūrī hai",
+     "food is necessary for health",
+     "غِذا صِحَّت کے لِیے ضَروری ہَے"
+    ],
+    [
+     "ریاضی کا سوال مشکل ہے",
+     "riyāẓī kā sawāl mushkil hai",
+     "the maths question is difficult",
+     "رِیاضی کا سَوال مُشکِل ہَے"
+    ],
+    [
+     "صندوق میں قمیض ہے",
+     "ṣandūq meṉ qamīẓ hai",
+     "there is a shirt in the box",
+     "صَندوق مَیں قَمیض ہَے"
     ]
    ],
    "passage": [
-    "صابر ایک طالب ہے۔ وہ صبح صاف کپڑے پہن کر اسکول جاتا ہے۔ اس کا طوطا ذرا بڑا ہے اور ضرور بولتا ہے۔ صابر کہتا ہے: یہ لفظ صحیح ہے۔",
-    "ṣābir ek t̤ālib hai. woh ṣubḥ ṣāf kapṛe pahan kar iskūl jātā hai. us kā t̤ot̤ā ẕarā baṛā hai aur ẕarūr boltā hai. ṣābir kahtā hai: yeh lafz̤ ṣaḥīḥ hai.",
-    "Sabir is a student. In the morning he puts on clean clothes and goes to school. His parrot is a bit big and certainly talks. Sabir says: this word is correct."
+    "صابر ایک ذہین شاگرد ہے۔ صبح صابر نے صاف قمیض لی۔ پھر وہ اسکول گیا۔ اسکول میں ریاضی کا مضمون ہے۔ ریاضی بہت ضروری ہے۔ استاد کہتا ہے: صفحہ دیکھو۔ صابر صحیح جواب لکھتا ہے۔ استاد کہتا ہے: بہت اچھا۔ صابر کا طوطا صحن میں ہے۔ اس کا طوطا ذرا بڑا ہے۔ شام کو صابر اپنا طوطا دیکھتا ہے۔ طوطا کہتا ہے: صابر، مبارک ہو۔ کھانا صحت کے لیے ضروری ہے۔ صابر کی ماں غذا دیتی ہے۔ سب خوش ہیں۔ طارق صبح اسکول جاتا ہے۔ طارق کا طوطا بہت اچھا ہے۔",
+    "ṣābir ek ẕahīn shāgird hai. ṣubḥ ṣābir ne ṣāf qamīẓ lī. phir woh iskūl gayā. iskūl meṉ riyāẓī kā maẓmūn hai. riyāẓī bahut ẓarūrī hai. ustād kahtā hai: ṣafḥa dekho. ṣābir ṣaḥīḥ jawāb likhtā hai. ustād kahtā hai: bahut achchhā. ṣābir kā t̤ot̤ā ṣaḥn meṉ hai. is kā t̤ot̤ā ẕarā baṛā hai. shām ko ṣābir apnā t̤ot̤ā dekhtā hai. t̤ot̤ā kahtā hai: ṣābir, mubārak ho. khānā ṣiḥḥat ke liye ẓarūrī hai. ṣābir kī māṉ g͟hiẕā detī hai. sab k͟hush haiṉ. t̤āriq ṣubḥ iskūl jātā hai. t̤āriq kā t̤ot̤ā bahut achchhā hai.",
+    "Sabir is a clever pupil. In the morning Sabir took a clean shirt. Then he went to school. In school there is the subject of maths. Maths is very important. The teacher says: look at the page. Sabir writes the right answer. The teacher says: very good. Sabir's parrot is in the courtyard. His parrot is a bit big. In the evening Sabir looks at his parrot. The parrot says: Sabir, congratulations! Food is necessary for health. Sabir's mother gives food. Everyone is happy. Tariq goes to school in the morning. Tariq's parrot is very good.",
+    "صابِر ایک ذَہین شاگِرد ہَے۔ صُبْح صابِر نے صاف قَمیض لی۔ پِھر وُہ اِسکول گَیا۔ اِسکول مَیں رِیاضی کا مَضمون ہَے۔ رِیاضی بَہُت ضَروری ہَے۔ اُستاد کَہتا ہَے: صَفحَہ دیکھو۔ صابِر صَحیح جَواب لِکھتا ہَے۔ اُستاد کَہتا ہَے: بَہُت اَچّھا۔ صابِر کا طوطا صَحْن مَیں ہَے۔ اِس کا طوطا ذَرا بَڑا ہَے۔ شام کو صابِر اَپنا طوطا دیکھتا ہَے۔ طوطا کَہتا ہَے: صابِر، مُبارَک ہو۔ کھانا صِحَّت کے لِیے ضَروری ہَے۔ صابِر کی ماں غِذا دیتی ہَے۔ سَب خُوش ہَیں۔ طارِق صُبْح اِسکول جاتا ہَے۔ طارِق کا طوطا بَہُت اَچّھا ہَے۔"
    ],
    "hours": [
     2.5,
@@ -1464,16 +6357,22 @@
    "focus": "ئ ؤ آ; tashdīd doubles; jazm stops the vowel; khaṛā zabar; iẕāfat; ۃ in Arabic words; numerals ۰–۹; punctuation ۔ ، ؟",
    "words": [
     [
-     "آم",
-     "ām",
-     "mango",
-     "آم"
-    ],
-    [
      "آپ",
      "āp",
      "you (polite)",
      "آپ"
+    ],
+    [
+     "گئی",
+     "gaʾī",
+     "went (fem)",
+     "گَئی"
+    ],
+    [
+     "ہوئے",
+     "huʾe",
+     "were, happened (plural)",
+     "ہُوئے"
     ],
     [
      "کوئی",
@@ -1484,20 +6383,20 @@
     [
      "گئے",
      "gaʾe",
-     "went",
+     "went (plural)",
      "گَئے"
     ],
     [
-     "مسئلہ",
-     "masʾala",
-     "problem",
-     "مَسْئَلہ"
+     "ہوئی",
+     "huʾī",
+     "was, happened (fem)",
+     "ہُوئی"
     ],
     [
-     "بچّہ",
-     "bachcha",
-     "child",
-     "بَچّہ"
+     "آج",
+     "āj",
+     "today",
+     "آج"
     ],
     [
      "اللّٰہ",
@@ -1506,22 +6405,58 @@
      "اَللّٰہ"
     ],
     [
-     "دعا",
-     "duʻā",
-     "prayer",
-     "دُعا"
+     "جائے",
+     "jāʾe",
+     "may go",
+     "جائے"
     ],
     [
-     "سؤال",
-     "suwāl",
-     "question",
-     "سُؤال"
+     "آیا",
+     "āyā",
+     "came",
+     "آیا"
     ],
     [
-     "آئینہ",
-     "āʾīna",
-     "mirror",
-     "آئینہ"
+     "کئی",
+     "kaʾī",
+     "several",
+     "کَئی"
+    ],
+    [
+     "آئے",
+     "āʾe",
+     "came (plural)",
+     "آئے"
+    ],
+    [
+     "بھائی",
+     "bhāʾī",
+     "brother",
+     "بَھائی"
+    ],
+    [
+     "برائے",
+     "barāʾe",
+     "for",
+     "برائے"
+    ],
+    [
+     "آئی",
+     "āʾī",
+     "came (fem)",
+     "آئی"
+    ],
+    [
+     "قائم",
+     "qāʾim",
+     "established",
+     "قائِم"
+    ],
+    [
+     "آتا",
+     "ātā",
+     "comes",
+     "آتا"
     ],
     [
      "نئی",
@@ -1530,16 +6465,64 @@
      "نَئی"
     ],
     [
+     "آتی",
+     "ātī",
+     "comes (fem)",
+     "آتی"
+    ],
+    [
+     "ہوائی",
+     "hawāʾī",
+     "of the air",
+     "ہَوائی"
+    ],
+    [
+     "آخر",
+     "āk͟hir",
+     "at last",
+     "آخِر"
+    ],
+    [
+     "آدمی",
+     "ādmī",
+     "man, person",
+     "آدمی"
+    ],
+    [
+     "آسان",
+     "āsān",
+     "easy",
+     "آسان"
+    ],
+    [
      "چائے",
      "chāʾe",
      "tea",
      "چائے"
     ],
     [
-     "گائے",
-     "gāʾe",
-     "cow",
-     "گائے"
+     "آنا",
+     "ānā",
+     "to come",
+     "آنا"
+    ],
+    [
+     "آخری",
+     "āk͟hirī",
+     "last",
+     "آخِری"
+    ],
+    [
+     "آگے",
+     "āge",
+     "ahead",
+     "آگے"
+    ],
+    [
+     "آتے",
+     "āte",
+     "come (plural)",
+     "آتے"
     ],
     [
      "اعلیٰ",
@@ -1548,22 +6531,52 @@
      "اَعلیٰ"
     ],
     [
-     "صلوٰۃ",
-     "ṣalāt",
-     "prayer",
-     "صَلوٰۃ"
+     "نئے",
+     "naʾe",
+     "new (plural)",
+     "نَئے"
     ],
     [
-     "دنیا",
-     "dunyā",
-     "world",
-     "دُنیا"
+     "پیدائش",
+     "paidāʾish",
+     "birth",
+     "پَیدائِش"
     ],
     [
-     "ابّا",
-     "abbā",
-     "dad",
-     "اَبّا"
+     "آزاد",
+     "āzād",
+     "free",
+     "آزاد"
+    ],
+    [
+     "رائے",
+     "rāʾe",
+     "opinion",
+     "رائے"
+    ],
+    [
+     "آٹھ",
+     "āṭh",
+     "eight",
+     "آٹھ"
+    ],
+    [
+     "آنکھیں",
+     "āṉkheṉ",
+     "eyes",
+     "آنکھیں"
+    ],
+    [
+     "گئیں",
+     "gaʾīṉ",
+     "went (plural fem)",
+     "گَئیں"
+    ],
+    [
+     "بچّہ",
+     "bachcha",
+     "child",
+     "بَچّہ"
     ],
     [
      "امّی",
@@ -1572,16 +6585,310 @@
      "اَمّی"
     ],
     [
+     "آرام",
+     "ārām",
+     "rest, comfort",
+     "آرام"
+    ],
+    [
+     "آواز",
+     "āwāz",
+     "voice, sound",
+     "آواز"
+    ],
+    [
+     "سائنس",
+     "sāʾins",
+     "science",
+     "سائِنس"
+    ],
+    [
+     "صفائی",
+     "ṣafāʾī",
+     "cleanliness",
+     "صَفائی"
+    ],
+    [
+     "لڑائی",
+     "laṛāʾī",
+     "fight",
+     "لَڑائی"
+    ],
+    [
+     "آدھا",
+     "ādhā",
+     "half",
+     "آدھا"
+    ],
+    [
+     "جائیں",
+     "jāʾeṉ",
+     "may go (plural)",
+     "جائیں"
+    ],
+    [
+     "فائدہ",
+     "fāʾida",
+     "benefit",
+     "فائِدَہ"
+    ],
+    [
+     "مسائل",
+     "masāʾil",
+     "problems",
+     "مَسائِل"
+    ],
+    [
+     "دہائی",
+     "dahāʾī",
+     "decade",
+     "دَہائی"
+    ],
+    [
+     "مسئلہ",
+     "masʾala",
+     "problem",
+     "مَسْئَلہ"
+    ],
+    [
+     "بجائے",
+     "bajāʾe",
+     "instead of",
+     "بَجائے"
+    ],
+    [
+     "ذائقہ",
+     "ẕāʾiqa",
+     "taste",
+     "ذائِقَہ"
+    ],
+    [
+     "سچائی",
+     "sachchāʾī",
+     "truth",
+     "سَچّائی"
+    ],
+    [
+     "آسمان",
+     "āsmān",
+     "sky",
+     "آسمان"
+    ],
+    [
+     "نتائج",
+     "natāʾij",
+     "results",
+     "نَتائِج"
+    ],
+    [
+     "کھائیں",
+     "khāʾeṉ",
+     "may eat",
+     "کھائیں"
+    ],
+    [
      "مکّہ",
      "makka",
      "Makkah",
      "مَکّہ"
     ],
     [
-     "اچّھا",
-     "achchhā",
-     "good",
-     "اَچّھا"
+     "سائیکل",
+     "sāʾīkal",
+     "bicycle",
+     "سائیکَل"
+    ],
+    [
+     "ڈھائی",
+     "ḍhāʾī",
+     "two and a half",
+     "ڈھائی"
+    ],
+    [
+     "کائنات",
+     "kāʾināt",
+     "universe",
+     "کائِنات"
+    ],
+    [
+     "آنسو",
+     "āṉsū",
+     "tear",
+     "آنسو"
+    ],
+    [
+     "برائی",
+     "burāʾī",
+     "evil, badness",
+     "بُرائی"
+    ],
+    [
+     "آب",
+     "āb",
+     "water (poetic)",
+     "آب"
+    ],
+    [
+     "رہائش",
+     "rihāʾish",
+     "residence",
+     "رِہائِش"
+    ],
+    [
+     "دوائی",
+     "dawāʾī",
+     "medicine",
+     "دَوائی"
+    ],
+    [
+     "آنکھ",
+     "āṉkh",
+     "eye",
+     "آنکھ"
+    ],
+    [
+     "پڑھائی",
+     "paṛhāʾī",
+     "studies",
+     "پَڑھائی"
+    ],
+    [
+     "دعا",
+     "duʻā",
+     "prayer",
+     "دُعا"
+    ],
+    [
+     "آندھی",
+     "āṉdhī",
+     "dust storm",
+     "آندھی"
+    ],
+    [
+     "ابّا",
+     "abbā",
+     "dad",
+     "اَبّا"
+    ],
+    [
+     "لمبائی",
+     "lambāʾī",
+     "length",
+     "لَمبائی"
+    ],
+    [
+     "موبائل",
+     "mobāʾil",
+     "mobile phone",
+     "موبائِل"
+    ],
+    [
+     "گائے",
+     "gāʾe",
+     "cow",
+     "گائے"
+    ],
+    [
+     "غائب",
+     "g͟hāʾib",
+     "missing, absent",
+     "غائِب"
+    ],
+    [
+     "گہرائی",
+     "gahrāʾī",
+     "depth",
+     "گَہرائی"
+    ],
+    [
+     "اونچائی",
+     "ūṉchāʾī",
+     "height",
+     "اونچائی"
+    ],
+    [
+     "کمائی",
+     "kamāʾī",
+     "earnings",
+     "کَمائی"
+    ],
+    [
+     "آئینہ",
+     "āʾīna",
+     "mirror",
+     "آئینہ"
+    ],
+    [
+     "دعائیں",
+     "duʻāʾeṉ",
+     "prayers",
+     "دُعائیں"
+    ],
+    [
+     "چوڑائی",
+     "chauṛāʾī",
+     "width",
+     "چَوڑائی"
+    ],
+    [
+     "آؤ",
+     "āo",
+     "come!",
+     "آؤ"
+    ],
+    [
+     "آلو",
+     "ālū",
+     "potato",
+     "آلو"
+    ],
+    [
+     "آٹا",
+     "āṭā",
+     "flour",
+     "آٹا"
+    ],
+    [
+     "سوئی",
+     "suʾī",
+     "needle",
+     "سُوئی"
+    ],
+    [
+     "آم",
+     "ām",
+     "mango",
+     "آم"
+    ],
+    [
+     "لکھائی",
+     "likhāʾī",
+     "handwriting",
+     "لِکھائی"
+    ],
+    [
+     "صلوٰۃ",
+     "ṣalāt",
+     "prayer",
+     "صَلوٰۃ"
+    ],
+    [
+     "مٹھائی",
+     "miṭhāʾī",
+     "sweets",
+     "مِٹھائی"
+    ],
+    [
+     "کوئلہ",
+     "koʾila",
+     "coal",
+     "کوئِلَہ"
+    ],
+    [
+     "ملائی",
+     "malāʾī",
+     "cream",
+     "مَلائی"
     ]
    ],
    "sentences": [
@@ -1592,22 +6899,119 @@
      "آپ کا نام کیا ہَے؟"
     ],
     [
+     "میرا نام زینب ہے",
+     "merā nām zainab hai",
+     "my name is Zainab",
+     "مِیرا نام زَینَب ہَے"
+    ],
+    [
+     "کوئی مسئلہ نہیں",
+     "koʾī masʾala nahīṉ",
+     "no problem",
+     "کوئی مَسْئَلہ نَہیں"
+    ],
+    [
+     "آج موسم اچھا ہے",
+     "āj mausam achchhā hai",
+     "the weather is good today",
+     "آج مَوسَم اَچّھا ہَے"
+    ],
+    [
+     "آسمان نیلا ہے",
+     "āsmān nīlā hai",
+     "the sky is blue",
+     "آسمان نیلا ہَے"
+    ],
+    [
+     "بھائی سائیکل پر آتا ہے",
+     "bhāʾī sāʾīkal par ātā hai",
+     "brother comes by bicycle",
+     "بَھائی سائیکَل پَر آتا ہَے"
+    ],
+    [
+     "امّی چائے دیتی ہے",
+     "ammī chāʾe detī hai",
+     "mother gives tea",
+     "اَمّی چائے دیتی ہَے"
+    ],
+    [
+     "ابّا کی دکان پر آلو اور آٹا ہے",
+     "abbā kī dukān par ālū aur āṭā hai",
+     "there are potatoes and flour at dad's shop",
+     "اَبّا کی دُکان پَر آلو اَور آٹا ہَے"
+    ],
+    [
+     "مٹھائی بہت اچھی ہے",
+     "miṭhāʾī bahut achchhī hai",
+     "the sweets are very good",
+     "مِٹھائی بَہُت اَچّھی ہَے"
+    ],
+    [
+     "ہم ۲ بجے گھر جائیں گے",
+     "ham ۲ baje ghar jāʾeṉ ge",
+     "we will go home at 2 o'clock",
+     "ہَم ۲ بَجے گَھر جائیں گے"
+    ],
+    [
      "چائے میں ۲ چمچ چینی",
-     "chāʾe meṉ do chamach chīnī",
+     "chāʾe meṉ ۲ chamach chīnī",
      "2 spoons of sugar in the tea",
      "چائے مَیں ۲ چَمَچ چینی"
     ],
     [
-     "کوئی مسئلہ نہیں۔",
-     "koʾī masʾala nahīṉ.",
-     "no problem.",
-     "کوئی مَسْئَلہ نَہیں۔"
+     "آنکھیں بہت خوبصورت ہیں",
+     "āṉkheṉ bahut k͟hūbṣūrat haiṉ",
+     "the eyes are very beautiful",
+     "آنکھیں بَہُت خوبصورَت ہَیں"
+    ],
+    [
+     "لڑائی مت کرو",
+     "laṛāʾī mat karo",
+     "don't fight",
+     "لَڑائی مَت کَرو"
+    ],
+    [
+     "آج آسمان صاف ہے",
+     "āj āsmān ṣāf hai",
+     "the sky is clear today",
+     "آج آسمان صاف ہَے"
+    ],
+    [
+     "آندھی بہت تیز ہے",
+     "āṉdhī bahut tez hai",
+     "the dust storm is very strong",
+     "آندھی بَہُت تیز ہَے"
+    ],
+    [
+     "ابّا کی سائیکل نئی ہے",
+     "abbā kī sāʾīkal naʾī hai",
+     "dad's bicycle is new",
+     "اَبّا کی سائیکَل نَئی ہَے"
+    ],
+    [
+     "آؤ، ہم باغ جائیں",
+     "āo, ham bāg͟h jāʾeṉ",
+     "come, let's go to the garden",
+     "آؤ، ہَم باغ جائیں"
+    ],
+    [
+     "آج مٹھائی ہے",
+     "āj miṭhāʾī hai",
+     "there are sweets today",
+     "آج مِٹھائی ہَے"
+    ],
+    [
+     "آسمان پر چاند اور ستارہ ہیں",
+     "āsmān par chānd aur sitāra haiṉ",
+     "there are the moon and a star in the sky",
+     "آسمان پَر چاند اَور سِتارَہ ہَیں"
     ]
    ],
    "passage": [
-    "آپ کا نام کیا ہے؟ میرا نام کمال ہے۔ آج بچّہ آم کھاتا ہے اور چائے پیتا ہے۔ کوئی مسئلہ نہیں۔ ہم ۲ بجے گھر جائیں گے۔",
-    "āp kā nām kyā hai? merā nām kamāl hai. āj bachcha ām khātā hai aur chāʾe pītā hai. koʾī masʾala nahīṉ. ham do baje ghar jāʾeṉ ge.",
-    "What is your name? My name is Kamal. Today the child eats a mango and drinks tea. No problem. We will go home at 2 o'clock."
+    "آج اتوار ہے۔ بھائی اپنی سائیکل پر دکان جاتا ہے۔ دکان پر آٹا، آلو اور مٹھائی ہے۔ بھائی نے ۲ سیب اور ایک آم لیے۔ پھر وہ گھر آتا ہے۔ امّی چائے دیتی ہے۔ چائے میں ۲ چمچ چینی ہے۔ بھائی کہتا ہے: شکریہ امّی۔ امّی کہتی ہے: کوئی مسئلہ نہیں۔ ابّا کہتا ہے: آج موسم اچھا ہے۔ آسمان نیلا ہے۔ ہم ۴ بجے باغ جائیں گے۔ بھائی کو باغ بہت پسند ہے۔ آج آسمان صاف ہے۔ ابّا کی سائیکل نئی ہے۔ بھائی کہتا ہے: آؤ، ہم باغ جائیں۔ امّی آج مٹھائی دیتی ہے۔ ہم سب آج خوش ہیں۔",
+    "āj itwār hai. bhāʾī apnī sāʾīkal par dukān jātā hai. dukān par āṭā, ālū aur miṭhāʾī hai. bhāʾī ne ۲ seb aur ek ām liye. phir woh ghar ātā hai. ammī chāʾe detī hai. chāʾe meṉ ۲ chamach chīnī hai. bhāʾī kahtā hai: shukriya ammī. ammī kahtī hai: koʾī masʾala nahīṉ. abbā kahtā hai: āj mausam achchhā hai. āsmān nīlā hai. ham ۴ baje bāg͟h jāʾeṉ ge. bhāʾī ko bāg͟h bahut pasand hai. āj āsmān ṣāf hai. abbā kī sāʾīkal naʾī hai. bhāʾī kahtā hai: āo, ham bāg͟h jāʾeṉ. ammī āj miṭhāʾī detī hai. ham sab āj k͟hush haiṉ.",
+    "Today is Sunday. Brother goes to the shop on his bicycle. At the shop there is flour, potatoes and sweets. Brother took 2 apples and a mango. Then he comes home. Mother gives tea. There are 2 spoons of sugar in the tea. Brother says: thank you, mother! Mother says: no problem. Dad says: the weather is good today. The sky is blue. We will go to the garden at 4 o'clock. Brother likes the garden very much. The sky is clear today. Dad's bicycle is new. Brother says: come, let's go to the garden. Mother gives sweets today. We are all happy today.",
+    "آج اِتوار ہَے۔ بَھائی اَپنی سائیکَل پَر دُکان جاتا ہَے۔ دُکان پَر آٹا، آلو اَور مِٹھائی ہَے۔ بَھائی نے ۲ سیب اَور ایک آم لِیے۔ پِھر وُہ گَھر آتا ہَے۔ اَمّی چائے دیتی ہَے۔ چائے مَیں ۲ چَمَچ چینی ہَے۔ بَھائی کَہتا ہَے: شُکرِیَہ اَمّی۔ اَمّی کَہتی ہَے: کوئی مَسْئَلہ نَہیں۔ اَبّا کَہتا ہَے: آج مَوسَم اَچّھا ہَے۔ آسمان نیلا ہَے۔ ہَم ۴ بَجے باغ جائیں گے۔ بَھائی کو باغ بَہُت پَسَند ہَے۔ آج آسمان صاف ہَے۔ اَبّا کی سائیکَل نَئی ہَے۔ بَھائی کَہتا ہَے: آؤ، ہَم باغ جائیں۔ اَمّی آج مِٹھائی دیتی ہَے۔ ہَم سَب آج خُوش ہَیں۔"
    ],
    "hours": [
     2.5,
@@ -1622,10 +7026,10 @@
    "focus": "Sight words (کا کی کے سے پر کہ اور ہے ہیں نے کو); text without vowel marks; switching from Naskh to Nastaliq; the alphabet in dictionary order",
    "words": [
     [
-     "کا",
-     "kā",
-     "of (m.)",
-     "کا"
+     "ہے",
+     "hai",
+     "is",
+     "ہَے"
     ],
     [
      "کی",
@@ -1634,16 +7038,40 @@
      "کی"
     ],
     [
-     "کے",
-     "ke",
-     "of (pl.)",
-     "کے"
-    ],
-    [
      "سے",
      "se",
      "from",
      "سے"
+    ],
+    [
+     "اور",
+     "aur",
+     "and",
+     "اَور"
+    ],
+    [
+     "کو",
+     "ko",
+     "to",
+     "کو"
+    ],
+    [
+     "کا",
+     "kā",
+     "of (m.)",
+     "کا"
+    ],
+    [
+     "نہیں",
+     "nahīṉ",
+     "no / not",
+     "نَہیں"
+    ],
+    [
+     "کیا",
+     "kyā",
+     "what",
+     "کیا"
     ],
     [
      "پر",
@@ -1658,58 +7086,10 @@
      "کَہ"
     ],
     [
-     "اور",
-     "aur",
-     "and",
-     "اَور"
-    ],
-    [
-     "ہے",
-     "hai",
-     "is",
-     "ہَے"
-    ],
-    [
-     "ہیں",
-     "haiṉ",
-     "are",
-     "ہَیں"
-    ],
-    [
-     "نے",
-     "ne",
-     "(agent)",
-     "نے"
-    ],
-    [
-     "کو",
-     "ko",
-     "to",
-     "کو"
-    ],
-    [
-     "نہیں",
-     "nahīṉ",
-     "no / not",
-     "نَہیں"
-    ],
-    [
      "تھا",
      "thā",
      "was",
      "تھا"
-    ],
-    [
-     "تھی",
-     "thī",
-     "was (f.)",
-     "تھی"
-    ],
-    [
-     "کیا",
-     "kyā",
-     "what",
-     "کیا"
     ],
     [
      "بھی",
@@ -1718,54 +7098,487 @@
      "بھی"
     ],
     [
-     "لیکن",
-     "lekin",
-     "but",
-     "لیکِن"
+     "تھی",
+     "thī",
+     "was (f.)",
+     "تھی"
     ],
     [
-     "اگر",
-     "agar",
-     "if",
-     "اَگَر"
+     "پاکستان",
+     "pākistān",
+     "Pakistan",
+     "پاکِستان"
     ],
     [
-     "پھر",
-     "phir",
-     "then",
-     "پِھر"
+     "اسلام",
+     "islām",
+     "Islam",
+     "اِسلام"
     ],
     [
-     "بہت",
-     "bahut",
-     "very",
-     "بَہُت"
+     "پارٹی",
+     "pārṭī",
+     "party",
+     "پارٹی"
+    ],
+    [
+     "نمبر",
+     "nambar",
+     "number",
+     "نَمبَر"
+    ],
+    [
+     "جون",
+     "jūn",
+     "June",
+     "جون"
+    ],
+    [
+     "ریلوے",
+     "railway",
+     "railway line",
+     "ریلوے"
+    ],
+    [
+     "اسٹیشن",
+     "isṭeshan",
+     "station",
+     "اِسٹیشَن"
+    ],
+    [
+     "ہوٹل",
+     "hoṭal",
+     "hotel",
+     "ہوٹَل"
+    ],
+    [
+     "بہار",
+     "bahār",
+     "spring",
+     "بَہار"
+    ],
+    [
+     "مسلمان",
+     "musalmān",
+     "Muslim",
+     "مُسلمان"
+    ],
+    [
+     "قرآن",
+     "qurʾān",
+     "the Quran",
+     "قُرآن"
+    ],
+    [
+     "لاہور",
+     "lāhaur",
+     "Lahore",
+     "لاہَور"
+    ],
+    [
+     "پنجاب",
+     "panjāb",
+     "Punjab",
+     "پَنجاب"
+    ],
+    [
+     "مارچ",
+     "mārch",
+     "March",
+     "مارچ"
+    ],
+    [
+     "سندھ",
+     "sindh",
+     "Sindh (a province)",
+     "سِندھ"
+    ],
+    [
+     "اکتوبر",
+     "aktūbar",
+     "October",
+     "اَکتوبَر"
+    ],
+    [
+     "اگست",
+     "agast",
+     "August",
+     "اَگَست"
+    ],
+    [
+     "جولائی",
+     "julāʾī",
+     "July",
+     "جولائی"
+    ],
+    [
+     "پولیس",
+     "pulīs",
+     "police",
+     "پولِیس"
+    ],
+    [
+     "دسمبر",
+     "disambar",
+     "December",
+     "دِسَمبَر"
+    ],
+    [
+     "نومبر",
+     "navambar",
+     "November",
+     "نَومبَر"
+    ],
+    [
+     "مئی",
+     "maʾī",
+     "May",
+     "مَئی"
+    ],
+    [
+     "کراچی",
+     "karāchī",
+     "Karachi",
+     "کَراچی"
+    ],
+    [
+     "اپریل",
+     "aprail",
+     "April",
+     "اپریل"
+    ],
+    [
+     "جنوری",
+     "janwarī",
+     "January",
+     "جَنَوَری"
+    ],
+    [
+     "ستمبر",
+     "sitambar",
+     "September",
+     "سِتَمبَر"
+    ],
+    [
+     "فروری",
+     "farwarī",
+     "February",
+     "فَرَوَری"
+    ],
+    [
+     "پارک",
+     "pārk",
+     "park",
+     "پارک"
+    ],
+    [
+     "چاکلیٹ",
+     "chākleṭ",
+     "chocolate",
+     "چاکلیٹ"
+    ],
+    [
+     "انٹرنیٹ",
+     "inṭarnaiṭ",
+     "internet",
+     "اِنْٹَرنَیٹ"
+    ],
+    [
+     "کمپیوٹر",
+     "kampyūṭar",
+     "computer",
+     "کَمْپْیوٹَر"
+    ],
+    [
+     "چاول",
+     "chāwal",
+     "rice",
+     "چاوَل"
+    ],
+    [
+     "گلاس",
+     "gilās",
+     "glass",
+     "گِلاس"
+    ],
+    [
+     "پنسل",
+     "pensil",
+     "pencil",
+     "پِنسِل"
+    ],
+    [
+     "برتن",
+     "bartan",
+     "dish, utensil",
+     "بَرتَن"
+    ],
+    [
+     "بہادر",
+     "bahādur",
+     "brave",
+     "بَہادُر"
+    ],
+    [
+     "پشاور",
+     "peshāwar",
+     "Peshawar",
+     "پِشاوَر"
+    ],
+    [
+     "بلوچستان",
+     "balochistān",
+     "Balochistan",
+     "بَلوچِستان"
+    ],
+    [
+     "ٹیچر",
+     "ṭīchar",
+     "teacher",
+     "ٹیچَر"
+    ],
+    [
+     "انگلی",
+     "ungalī",
+     "finger",
+     "اُنگَلی"
+    ],
+    [
+     "مرغی",
+     "murg͟hī",
+     "hen, chicken",
+     "مُرغی"
+    ],
+    [
+     "ٹیلیفون",
+     "ṭeliphon",
+     "telephone",
+     "ٹیلیفون"
+    ],
+    [
+     "چوہا",
+     "chūhā",
+     "mouse",
+     "چوہا"
+    ],
+    [
+     "ملتان",
+     "multān",
+     "Multan",
+     "مُلتان"
+    ],
+    [
+     "مہمان",
+     "mehmān",
+     "guest",
+     "مِہمان"
+    ],
+    [
+     "کوئٹہ",
+     "kwaṭṭa",
+     "Quetta",
+     "کوئٹَہ"
+    ],
+    [
+     "چادر",
+     "chādar",
+     "sheet, shawl",
+     "چادَر"
+    ],
+    [
+     "کھیر",
+     "khīr",
+     "rice pudding",
+     "کھیر"
+    ],
+    [
+     "بریانی",
+     "biryānī",
+     "biryani (a rice dish)",
+     "بِریانی"
+    ],
+    [
+     "انگور",
+     "angūr",
+     "grapes",
+     "اَنگور"
+    ],
+    [
+     "جلیبی",
+     "jalebī",
+     "jalebi (a sweet)",
+     "جَلیبی"
+    ],
+    [
+     "لسی",
+     "lassī",
+     "lassi (a yoghurt drink)",
+     "لَسّی"
+    ],
+    [
+     "پلاؤ",
+     "pulāʾo",
+     "pulao (a rice dish)",
+     "پُلاؤ"
+    ],
+    [
+     "چپل",
+     "chappal",
+     "sandal",
+     "چَپَّل"
+    ],
+    [
+     "بسکٹ",
+     "biskuṭ",
+     "biscuit",
+     "بِسکُٹ"
+    ],
+    [
+     "نہاری",
+     "nihārī",
+     "nihari (a slow-cooked stew)",
+     "نِہاری"
+    ],
+    [
+     "پراٹھا",
+     "parāṭhā",
+     "paratha (a flat bread)",
+     "پَراٹھا"
     ]
    ],
    "sentences": [
     [
-     "میرا نام کمال ہے اور میں لاہور میں رہتا ہوں۔",
-     "merā nām kamāl hai aur maiṉ lāhaur meṉ rahtā hūṉ.",
-     "my name is Kamal and I live in Lahore.",
-     "میرا نام کَمال ہَے اَور مَیں لاہَور مَیں رَہْتا ہوں۔"
+     "میرا نام کمال ہے اور میں لاہور میں رہتا ہوں",
+     "merā nām kamāl hai aur maiṉ lāhaur meṉ rahtā hūṉ",
+     "my name is Kamal and I live in Lahore",
+     "مِیرا نام کَمال ہَے اَور مَیں لاہَور مَیں رَہتا ہوں"
     ],
     [
-     "بچے اسکول جاتے ہیں لیکن آج چھٹی ہے۔",
-     "bachche iskūl jāte haiṉ lekin āj chhuṭṭī hai.",
-     "the children go to school but today is a holiday.",
-     "بَچّے اِسْکول جاتے ہَیں لیکِن آج چُھٹّی ہَے۔"
+     "پاکستان ہمارا ملک ہے",
+     "pākistān hamārā mulk hai",
+     "Pakistan is our country",
+     "پاکِستان ہَمارا مُلْک ہَے"
     ],
     [
-     "اگر بارش ہوئی تو ہم گھر پر رہیں گے۔",
-     "agar bārish huʾī to ham ghar par raheṉ ge.",
-     "if it rains we will stay home.",
-     "اَگَر بارِش ہُوئی تو ہَم گَھر پَر رَہیں گے۔"
+     "کراچی بہت بڑا شہر ہے",
+     "karāchī bahut baṛā shahr hai",
+     "Karachi is a very big city",
+     "کَراچی بَہُت بَڑا شَہْر ہَے"
+    ],
+    [
+     "اکتوبر میں موسم ٹھنڈا ہوتا ہے",
+     "aktūbar meṉ mausam ṭhanḍā hotā hai",
+     "in October the weather is cold",
+     "اَکتوبَر مَیں مَوسَم ٹَھنڈا ہوتا ہَے"
+    ],
+    [
+     "جنوری اور فروری سردی کے مہینے ہیں",
+     "janwarī aur farwarī sardī ke mahīne haiṉ",
+     "January and February are the cold months",
+     "جَنَوَری اَور فَرَوَری سَرْدی کے مَہینے ہَیں"
+    ],
+    [
+     "ہم پیر کو اسکول جاتے ہیں",
+     "ham pīr ko iskūl jāte haiṉ",
+     "we go to school on Monday",
+     "ہَم پیر کو اِسکول جاتے ہَیں"
+    ],
+    [
+     "اتوار کو چھٹی ہوتی ہے",
+     "itwār ko chhuṭṭī hotī hai",
+     "there is a holiday on Sunday",
+     "اِتوار کو چُھٹّی ہوتی ہَے"
+    ],
+    [
+     "امّی بریانی اور کھیر دیتی ہے",
+     "ammī biryānī aur khīr detī hai",
+     "mother gives biryani and kheer",
+     "اَمّی بِریانی اَور کھیر دیتی ہَے"
+    ],
+    [
+     "مجھے چائے اور بسکٹ پسند ہیں",
+     "mujhe chāʾe aur biskuṭ pasand haiṉ",
+     "I like tea and biscuits",
+     "مُجھے چائے اَور بِسکُٹ پَسَند ہَیں"
+    ],
+    [
+     "لسی بہت اچھی ہے",
+     "lassī bahut achchhī hai",
+     "the lassi is very good",
+     "لَسّی بَہُت اَچّھی ہَے"
+    ],
+    [
+     "ہمارا ٹیچر بہت اچھا ہے",
+     "hamārā ṭīchar bahut achchhā hai",
+     "our teacher is very good",
+     "ہَمارا ٹیچَر بَہُت اَچّھا ہَے"
+    ],
+    [
+     "اسکول میں ۳۰ بچے ہیں",
+     "iskūl meṉ ۳۰ bachche haiṉ",
+     "there are 30 children in the school",
+     "اِسکول مَیں ۳۰ بَچّے ہَیں"
+    ],
+    [
+     "پنجاب اور سندھ پاکستان میں ہیں",
+     "panjāb aur sindh pākistān meṉ haiṉ",
+     "Punjab and Sindh are in Pakistan",
+     "پَنجاب اَور سِندھ پاکِستان مَیں ہَیں"
+    ],
+    [
+     "قرآن بہت پاک کتاب ہے",
+     "qurʾān bahut pāk kitāb hai",
+     "the Quran is a very holy book",
+     "قُرآن بَہُت پاک کِتاب ہَے"
+    ],
+    [
+     "آپ کا فون نمبر کیا ہے؟",
+     "āp kā fon nambar kyā hai?",
+     "what is your phone number?",
+     "آپ کا فون نَمبَر کیا ہَے؟"
+    ],
+    [
+     "لاہور میں بہت باغ ہیں",
+     "lāhaur meṉ bahut bāg͟h haiṉ",
+     "there are many gardens in Lahore",
+     "لاہَور مَیں بَہُت باغ ہَیں"
+    ],
+    [
+     "کوئٹہ پہاڑ کے پاس ہے",
+     "kwaṭṭa pahāṛ ke pās hai",
+     "Quetta is near the mountains",
+     "کوئٹَہ پَہاڑ کے پاس ہَے"
+    ],
+    [
+     "پشاور اور ملتان بھی پاکستان میں ہیں",
+     "peshāwar aur multān bhī pākistān meṉ haiṉ",
+     "Peshawar and Multan are also in Pakistan",
+     "پِشاوَر اَور مُلتان بھی پاکِستان مَیں ہَیں"
+    ],
+    [
+     "ستمبر میں بارش ہوتی ہے",
+     "sitambar meṉ bārish hotī hai",
+     "it rains in September",
+     "سِتَمبَر مَیں بارِش ہوتی ہَے"
+    ],
+    [
+     "سندھ میں سمندر ہے",
+     "sindh meṉ samundar hai",
+     "there is a sea in Sindh",
+     "سِندھ مَیں سَمُندَر ہَے"
+    ],
+    [
+     "بلوچستان میں پہاڑ ہیں",
+     "balochistān meṉ pahāṛ haiṉ",
+     "there are mountains in Balochistan",
+     "بَلوچِستان مَیں پَہاڑ ہَیں"
     ]
    ],
    "passage": [
-    "میرا نام کمال ہے اور میں لاہور میں رہتا ہوں۔ میرے گھر کے پاس ایک باغ ہے۔ صبح میں باغ میں چلتا ہوں۔ باغ میں پھول اور درخت ہیں۔ شام کو ہم گھر واپس جاتے ہیں اور چائے پیتے ہیں۔",
-    "merā nām kamāl hai aur maiṉ lāhaur meṉ rahtā hūṉ. mere ghar ke pās ek bāg͟h hai. ṣubḥ maiṉ bāg͟h meṉ chaltā hūṉ. bāg͟h meṉ phūl aur darak͟ht haiṉ. shām ko ham ghar wāpas jāte haiṉ aur chāʾe pīte haiṉ.",
-    "My name is Kamal and I live in Lahore. Near my house there is a garden. In the morning I walk in the garden. There are flowers and trees in the garden. In the evening we go home and drink tea."
+    "اتوار کو ہم ریل سے کراچی جاتے ہیں۔ ہم صبح اسٹیشن پر آتے ہیں۔ ریل بہت لمبی ہے۔ ابو نے تین ٹکٹ لیے۔ ماں کے پاس بریانی اور پراٹھا ہیں۔ ریل میں ایک بوڑھا آدمی ہے۔ وہ کہتا ہے: کراچی بہت بڑا شہر ہے۔ وہاں سمندر ہے۔ شام کو ہم کراچی میں ہیں۔ خالہ کا گھر سمندر کے قریب ہے۔ خالہ ہمیں چائے اور بسکٹ دیتی ہے۔ رات کو ہم سب خوش ہیں۔ ہم پیر کو واپس لاہور جاتے ہیں۔ ستمبر میں بارش ہوتی ہے۔ دسمبر میں بہت سردی ہوتی ہے۔ پاکستان بہت اچھا ملک ہے۔",
+    "itwār ko ham rel se karāchī jāte haiṉ. ham ṣubḥ isṭeshan par āte haiṉ. rel bahut lambī hai. abbū ne tīn ṭikaṭ liye. māṉ ke pās biryānī aur parāṭhā haiṉ. rel meṉ ek būṛhā ādmī hai. woh kahtā hai: karāchī bahut baṛā shahr hai. wahāṉ samundar hai. shām ko ham karāchī meṉ haiṉ. k͟hāla kā ghar samundar ke qarīb hai. k͟hāla hameṉ chāʾe aur biskuṭ detī hai. rāt ko ham sab k͟hush haiṉ. ham pīr ko wāpas lāhaur jāte haiṉ. sitambar meṉ bārish hotī hai. disambar meṉ bahut sardī hotī hai. pākistān bahut achchhā mulk hai.",
+    "On Sunday we go to Karachi by train. We come to the station in the morning. The train is very long. Dad took three tickets. Mother has biryani and paratha. In the train there is an old man. He says: Karachi is a very big city. There is the sea there. In the evening we are in Karachi. Aunt's house is near the sea. Aunt gives us tea and biscuits. At night we are all happy. On Monday we go back to Lahore. It rains in September. In December it is very cold. Pakistan is a very good country.",
+    "اِتوار کو ہَم ریل سے کَراچی جاتے ہَیں۔ ہَم صُبْح اِسٹیشَن پَر آتے ہَیں۔ ریل بَہُت لَمبی ہَے۔ اَبُّو نے تین ٹِکَٹ لِیے۔ ماں کے پاس بِریانی اَور پَراٹھا ہَیں۔ ریل مَیں ایک بوڑھا آدمی ہَے۔ وُہ کَہتا ہَے: کَراچی بَہُت بَڑا شَہْر ہَے۔ وَہاں سَمُندَر ہَے۔ شام کو ہَم کَراچی مَیں ہَیں۔ خالَہ کا گَھر سَمُندَر کے قَریب ہَے۔ خالَہ ہَمیں چائے اَور بِسکُٹ دیتی ہَے۔ رات کو ہَم سَب خُوش ہَیں۔ ہَم پیر کو واپَس لاہَور جاتے ہَیں۔ سِتَمبَر مَیں بارِش ہوتی ہَے۔ دِسَمبَر مَیں بَہُت سَرْدی ہوتی ہَے۔ پاکِستان بَہُت اَچّھا مُلْک ہَے۔"
    ],
    "hours": [
     3,

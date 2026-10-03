@@ -1297,28 +1297,28 @@
   ]
  ],
  "assessment": {
-  "passage": "میرا نام کمال ہے۔ میں لاہور میں رہتا ہوں۔ میرے گھر کے پاس ایک باغ ہے۔ صبح میں باغ میں چلتا ہوں۔ باغ میں پھول اور درخت ہیں۔ میری بہن بھی میرے ساتھ آتی ہے۔ ہم گلاب کے پھول دیکھتے ہیں۔ شام کو ہم گھر واپس جاتے ہیں اور چائے پیتے ہیں۔",
+  "passage": "آج بارش ہو رہی ہے۔ علی اور احمد گھر میں ہیں۔ دونوں کھڑکی سے باہر دیکھتے ہیں۔ سڑک پر بہت پانی ہے۔ ماں کہتی ہے: آج ہم باہر نہیں جا سکتے۔ علی کتاب پڑھتا ہے۔ احمد کھانا کھاتا ہے۔ شام کو بارش ختم ہو جاتی ہے۔ دونوں باغ میں کھیلتے ہیں۔",
   "questions": [
-   "کمال کہاں رہتا ہے؟",
-   "کمال صبح کیا کرتا ہے؟",
-   "باغ میں کیا ہے؟",
-   "کمال کے ساتھ کون آتی ہے؟",
-   "شام کو وہ کیا پیتے ہیں؟"
+   "آج کیا ہو رہا ہے؟",
+   "علی اور احمد کہاں ہیں؟",
+   "ماں کیا کہتی ہے؟",
+   "احمد کیا کرتا ہے؟",
+   "شام کو دونوں کہاں کھیلتے ہیں؟"
   ],
   "answers": [
-   "لاہور میں (in Lahore)",
-   "باغ میں چلتا ہے (walks in the garden)",
-   "پھول اور درخت (flowers and trees)",
-   "اس کی بہن (his sister)",
-   "چائے (tea)"
+   "بارش ہو رہی ہے (it is raining)",
+   "گھر میں (at home)",
+   "آج ہم باہر نہیں جا سکتے (today we cannot go out)",
+   "کھانا کھاتا ہے (he eats his meal)",
+   "باغ میں (in the garden)"
   ],
   "nonwords": [
    "نَبَل",
    "تیمو",
    "کُدار",
-   "سَپون",
-   "مِلاک",
-   "بَٹری",
+   "سَپوج",
+   "مِلاچ",
+   "بَٹوپ",
    "گوناش",
    "دِرَپ",
    "چَکول",
@@ -1327,13 +1327,15 @@
    "ہَبیک",
    "رونَل",
    "ٹِکاس",
-   "جَمود",
+   "جَدوپ",
    "شَبیل",
    "قَدور",
    "پَلیش",
    "بُکار",
    "لَمیر"
-  ]
+  ],
+  "passage_roman": "āj bārish ho rahī hai. ʻalī aur aḥmad ghar meṉ haiṉ. donoṉ khiṛkī se bāhar dekhte haiṉ. saṛak par bahut pānī hai. māṉ kahtī hai: āj ham bāhar nahīṉ jā sakte. ʻalī kitāb paṛhtā hai. aḥmad khānā khātā hai. shām ko bārish k͟hatm ho jātī hai. donoṉ bāg͟h meṉ khelte haiṉ.",
+  "passage_en": "Today it is raining. Ali and Ahmad are at home. Both look out of the window. There is a lot of water on the road. Mother says: today we cannot go outside. Ali reads a book. Ahmad eats his meal. In the evening the rain stops. Both play in the garden."
  },
  "izafat": {
   "explain": "Iẕāfat: a zer ( ِ ) on the end of the first word links two nouns and means 'of'. Persian-style phrases use it.",

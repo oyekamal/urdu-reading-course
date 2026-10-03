@@ -44,6 +44,8 @@ def jobs():
             yield "units", f"u{u['n']:02d}_{i:02d}", w[0]
         for i, s in enumerate(u["sentences"]):
             yield "sentences", f"u{u['n']:02d}_{i:02d}", s[0]
+        if u.get("passage"):
+            yield "passages", f"u{u['n']:02d}", u["passage"][0]
     for i, w in enumerate(DATA["sight_words"]):
         yield "sight", f"{i:02d}", w
     for i, w in enumerate(NUMERAL_WORDS):

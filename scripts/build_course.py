@@ -48,7 +48,8 @@ def path_lessons(u):
     if u["n"] == 6: ls.append("Breath letters")
     if u["n"] == 1: ls.append("Vowel marks")
     if u["letters"] and u["words"]: ls += ["Join them", "Blend"]
-    if u["words"]: ls += ["Words 1", "Words 2"]
+    nw = len(u["words"])
+    if nw: ls += [f"Words {k}" for k in range(1, len(range(0, nw, -(-nw // max(1, round(nw / 12))))) + 1)]  # same split as mobile/src/path.js lessonsFor: about 12 words per lesson
     if u["n"] == 4: ls.append("The non-joiners")
     if u["sentences"]: ls.append("Read")
     if u["n"] == 10: ls.append("Hamza, marks, numbers")
@@ -113,6 +114,9 @@ def unit_md(u, taught_before):
             for i, s in enumerate(u["sentences"]):
                 s = w4(s)
                 out.append(f"- {s[3]}  —  *{s[1]}*  —  {s[2]}  · `assets/audio/sentences/u{n:02d}_{i:02d}.mp3`")
+        if u.get("passage"):
+            ps = w4(u["passage"])
+            out.append(f"\n**Passage** ({len(ps[0].split())} words) · `assets/audio/passages/u{n:02d}.mp3`\n\n> {ps[3]}\n>\n> *{ps[1]}*\n>\n> {ps[2]}\n")
         out.append("\n## 6 · Write it  ·  *production · needs a helper or the app tracer to check*\n")
         out.append("Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: " + ", ".join(w[3] for w in words[:5]) + ".\n")
         out.append("Pen movement for each letter is described in step 2 above.\n")

@@ -1,0 +1,842 @@
+# unit | urdu (bare) | roman | gloss | vowelled   -- authored 2026-10-03 by an AI, checked by scripts/lexicon.py verify (corpus + Wiktionary); see data/REVIEW_NEEDED.md
+# Romanisation: ā ī ū long, ṉ for ں, ṭ ḍ ṛ retroflex, ẕ ذ, ẓ ض, z̤ ظ, t̤ ط, ṣ ص, ḥ ح, s̱ ث, k͟h خ, g͟h غ, ʻ ع, ʾ hamza, kh/gh/ph.. aspirates
+# ---- unit 1 (ا ب ک ل م ن)
+1|کم|kam|few, less|کَم
+1|کب|kab|when?|کَب
+1|بنا|binā|without|بِنا
+1|مال|māl|goods, wealth|مال
+1|نان|nān|naan bread|نان
+1|منا|munnā|dear little boy|مُنّا
+1|بالکل|bilkul|absolutely|بِالکُل
+1|مکمل|mukammal|complete|مُکَمَّل
+1|ممکن|mumkin|possible|مُمْکِن
+1|ناممکن|nāmumkin|impossible|نامُمْکِن
+1|مالک|mālik|owner|مالِک
+1|کامل|kāmil|perfect|کامِل
+1|لمبا|lambā|long, tall|لَمْبا
+1|بنانا|banānā|to make|بَنانا
+1|ماننا|mānnā|to accept, obey|مانْنا
+1|لانا|lānā|to bring|لانا
+1|کمانا|kamānā|to earn|کَمانا
+1|ملانا|milānā|to mix, join|مِلانا
+1|منانا|manānā|to persuade, celebrate|مَنانا
+1|ملنا|milnā|to meet|مِلْنا
+1|نکالنا|nikālnā|to take out|نِکالْنا
+1|بلبل|bulbul|nightingale|بُلْبُل
+1|کمبل|kambal|blanket|کَمْبَل
+1|کباب|kabāb|kebab|کَباب
+1|کلام|kalām|speech, words|کَلام
+1|امکان|imkān|possibility|اِمْکان
+1|ناکام|nākām|unsuccessful|ناکام
+# ---- unit 2 (+ ت ی ے)
+2|ایک|ek|one|ایک
+2|لیکن|lekin|but|لیکِن
+2|یا|yā|or|یا
+2|مت|mat|don't|مَت
+2|تب|tab|then|تَب
+2|نیا|nayā|new|نَیا
+2|بات|bāt|talk, matter|بات
+2|تمام|tamām|all, whole|تَمام
+2|اتنا|itnā|this much|اِتنا
+2|کتنا|kitnā|how much|کِتنا
+2|لینا|lenā|to take|لینا
+2|بتانا|batānā|to tell|بَتانا
+2|کیک|kek|cake|کیک
+2|کمی|kamī|shortage|کَمی
+2|نیکی|nekī|goodness|نیکی
+2|نانی|nānī|maternal grandmother|نانی
+2|تایا|tāyā|father's elder brother|تایا
+2|بینک|baink|bank|بینک
+2|اکیلا|akelā|alone|اَکیلا
+2|اکیلے|akele|alone (plural)|اَکیلے
+2|ایمان|īmān|faith|ایمان
+2|کتا|kuttā|dog|کُتّا
+2|کتے|kutte|dogs|کُتّے
+2|ملکی|mulkī|of the country|مُلکی
+2|بانی|bānī|founder|بانی
+2|نیت|niyyat|intention|نِیَّت
+2|تمنا|tamannā|wish|تَمَنّا
+2|کامیاب|kāmyāb|successful|کامیاب
+2|کامیابی|kāmyābī|success|کامیابی
+2|نابینا|nābīnā|blind|نابینا
+2|کیمیا|kīmiyā|chemistry|کیمِیا
+2|مکتب|maktab|school|مَکْتَب
+2|یتیم|yatīm|orphan|یَتیم
+2|نمکین|namkīn|salty|نَمکین
+# ---- unit 3 (+ پ ٹ ث)
+3|اپنا|apnā|own|اَپنا
+3|منٹ|minaṭ|minute|مِنَٹ
+3|بیٹی|beṭī|daughter|بیٹی
+3|بیٹا|beṭā|son|بیٹا
+3|بیٹے|beṭe|sons|بیٹے
+3|باپ|bāp|father|باپ
+3|کاپی|kāpī|notebook|کاپی
+3|مثال|misāl|example|مِثال
+3|پکا|pakkā|ripe, firm|پَکّا
+3|پکی|pakkī|ripe, firm (fem)|پَکّی
+3|کپ|kap|cup|کَپ
+3|پیلا|pīlā|yellow|پیلا
+3|کپتان|kaptān|captain|کَپْتان
+3|مٹی|miṭṭī|soil, clay|مِٹّی
+3|پینا|pīnā|to drink|پینا
+3|پلیٹ|pleṭ|plate|پلیٹ
+3|پٹی|paṭṭī|bandage, strip|پَٹّی
+3|اینٹ|īnṭ|brick|اینٹ
+3|کاٹنا|kāṭnā|to cut|کاٹْنا
+3|پانا|pānā|to get, find|پانا
+3|پالنا|pālnā|to raise (animals)|پالْنا
+3|پالک|pālak|spinach|پالَک
+3|ناپاک|nāpāk|impure|ناپاک
+3|پتی|pattī|leaf, petal|پَتّی
+3|ناٹک|nāṭak|play, drama|ناٹَک
+3|پیتل|pītal|brass|پیتَل
+3|مالٹا|mālṭā|orange (fruit)|مالْٹا
+3|لالٹین|lālṭen|lantern|لالْٹین
+3|کانٹے|kānṭe|thorns|کانْٹے
+# ---- unit 4 (+ و ر د ہ)
+4|میرا|merā|my|مِیرا
+4|میری|merī|my (fem)|مِیری
+4|میرے|mere|my (plural)|مِیرے
+4|ہمارا|hamārā|our|ہَمارا
+4|ہماری|hamārī|our (fem)|ہَماری
+4|تمہارا|tumhārā|your|تُمہارا
+4|ہو|ho|be, are (you)|ہو
+4|کر|kar|do; having done|کَر
+4|بہت|bahut|very, much|بَہُت
+4|رہا|rahā|was (doing)|رَہا
+4|رہی|rahī|was (doing, fem)|رَہی
+4|رہے|rahe|were (doing)|رَہے
+4|تو|to|then, as for|تو
+4|ہی|hī|only, just|ہی
+4|نہ|na|not, no|نَہ
+4|کون|kaun|who|کَون
+4|ہر|har|every, each|ہَر
+4|کرنا|karnā|to do|کَرنا
+4|کرتا|kartā|does|کَرتا
+4|کرتے|karte|do (plural)|کَرتے
+4|کرنے|karne|to do (oblique)|کَرنے
+4|کرو|karo|do!|کَرو
+4|ہوتا|hotā|happens, is usually|ہوتا
+4|ہونا|honā|to be, to become|ہونا
+4|کہا|kahā|said|کَہا
+4|کہنا|kahnā|to say|کَہنا
+4|کہتا|kahtā|says|کَہتا
+4|کہتے|kahte|say (plural)|کَہتے
+4|دیا|diyā|gave|دِیا
+4|دی|dī|gave (fem)|دی
+4|دے|de|give|دے
+4|دینا|denā|to give|دینا
+4|دیتا|detā|gives|دیتا
+4|دیتے|dete|give (plural)|دیتے
+4|رہنا|rahnā|to live, stay|رَہنا
+4|رہتا|rahtā|lives|رَہتا
+4|رہتے|rahte|live (plural)|رَہتے
+4|بولنا|bolnā|to speak|بولنا
+4|بولتا|boltā|speaks|بولتا
+4|بدلنا|badalnā|to change|بَدَلنا
+4|دنیا|dunyā|world|دُنیا
+4|مدد|madad|help|مَدَد
+4|پتہ|pata|address, clue|پَتَہ
+7|پیار|pyār|love|پیار
+4|باہر|bāhar|outside|باہَر
+4|اندر|andar|inside|اَندَر
+4|اوپر|ūpar|above, up|اُوپَر
+4|اردو|urdū|Urdu|اُردو
+4|بند|band|closed|بَند
+4|بار|bār|time (once, twice)|بار
+7|امید|ummīd|hope|اُمّید
+7|والد|wālid|father|والِد
+7|والدہ|wālida|mother|والِدَہ
+7|والدین|wālidain|parents|والِدَین
+4|کہانی|kahānī|story|کَہانی
+4|بہن|bahan|sister|بَہَن
+4|بیوی|bīwī|wife|بیوی
+4|بیمار|bīmār|ill, sick|بیمار
+11|ہوٹل|hoṭal|hotel|ہوٹَل
+5|دوپہر|dopahar|afternoon, noon|دوپَہَر
+7|اتوار|itwār|Sunday|اِتوار
+7|پیر|pīr|Monday|پیر
+11|بہار|bahār|spring|بَہار
+4|درد|dard|pain|دَرْد
+4|نیند|nīnd|sleep|نیند
+7|نوکری|naukrī|job|نَوکری
+4|بادل|bādal|cloud|بادَل
+4|مرد|mard|man|مَرْد
+4|دل|dil|heart|دِل
+4|ریل|rel|train, rail|ریل
+4|تارا|tārā|star (tārā)|تارا
+4|انار|anār|pomegranate|اَنار
+4|دہی|dahī|yoghurt|دَہی
+4|پنیر|panīr|cheese|پَنیر
+4|دانت|dānt|tooth|دانْت
+4|ہونٹ|honṭ|lip|ہونْٹ
+4|دادی|dādī|paternal grandmother|دادی
+4|ابو|abbū|dad (abbu)|اَبُّو
+4|ہرا|harā|green|ہَرا
+4|ہرن|haran|deer|ہَرَن
+4|بندر|bandar|monkey|بَندَر
+4|بکری|bakrī|goat|بَکری
+4|اونٹ|ūnṭ|camel|اُونْٹ
+4|کبوتر|kabūtar|pigeon|کَبُوتَر
+4|کوا|kavvā|crow|کَوّا
+4|نو|nau|nine|نَو
+4|بارہ|bārah|twelve|بارہ
+4|تکیہ|takiya|pillow|تَکِیَہ
+4|پرانا|purānā|old|پُرانا
+4|پرانی|purānī|old (fem)|پُرانی
+4|دوبارہ|dobārah|again|دوبارہ
+4|تیار|taiyār|ready|تَیّار
+7|اکثر|aksar|often|اَکثَر
+7|بلکہ|balki|rather, but also|بَلکِہ
+7|ورنہ|warna|otherwise|وَرنہ
+11|برتن|bartan|dish, utensil|بَرتَن
+4|مبارک|mubārak|blessed, congratulations|مُبارَک
+7|امیر|amīr|rich|اَمیر
+4|بدن|badan|body|بَدَن
+7|مہربانی|mehrbānī|kindness|مِہرْبانی
+4|دکان|dukān|shop|دُکان
+11|مہمان|mehmān|guest|مِہمان
+11|بہادر|bahādur|brave|بَہادُر
+4|دوا|dawā|medicine|دَوا
+4|برا|burā|bad|بُرا
+4|پورا|pūrā|whole, complete|پورا
+4|رونا|ronā|to cry|رونا
+4|مہینہ|mahīna|month|مَہینَہ
+4|مہینے|mahīne|months|مَہینے
+4|کمرے|kamre|rooms|کَمرے
+4|موٹا|moṭā|fat, thick|موٹا
+11|کمپیوٹر|kampyūṭar|computer|کَمْپْیوٹَر
+11|انٹرنیٹ|inṭarnaiṭ|internet|اِنْٹَرنَیٹ
+11|پارک|pārk|park|پارک
+# ---- unit 5 (+ س ش ج چ گ)
+5|جو|jo|who, which|جو
+5|اسے|ise|him, her, it|اِسے
+5|کسی|kisī|some, any|کِسی
+5|گیا|gayā|went|گَیا
+5|گا|gā|will (masculine)|گا
+5|گے|ge|will (plural)|گے
+5|گی|gī|will (feminine)|گی
+5|جب|jab|when (relative)|جَب
+5|جا|jā|go|جا
+5|جاتا|jātā|goes|جاتا
+5|جاتی|jātī|goes (fem)|جاتی
+5|جاتے|jāte|go (plural)|جاتے
+5|جانا|jānā|to go|جانا
+5|سکتا|saktā|can (masculine)|سَکتا
+5|سکتی|saktī|can (fem)|سَکتی
+5|سکتے|sakte|can (plural)|سَکتے
+5|چاہتا|chāhtā|wants|چاہتا
+5|چاہتے|chāhte|want (plural)|چاہتے
+5|چاہیے|chāhiye|is needed, should|چاہِیے
+5|کیسے|kaise|how|کَیسے
+5|ایسا|aisā|like this|اَیسا
+5|مگر|magar|but|مَگَر
+5|بس|bas|enough|بَس
+5|اگر|agar|if|اَگَر
+5|لوگ|log|people|لوگ
+5|پسند|pasand|liking|پَسَند
+5|پاس|pās|near|پاس
+8|سمندر|samundar|sea, ocean|سَمُندَر
+5|کوشش|koshish|effort|کوشِش
+5|شہر|shahr|city|شَہْر
+5|ہمیشہ|hamesha|always|ہَمیشَہ
+5|بارش|bārish|rain|بارِش
+5|جلدی|jaldī|quickly|جَلدی
+5|جواب|jawāb|answer|جَواب
+5|پیسے|paise|money|پَیسے
+5|بچے|bachche|children|بَچّے
+5|اسکول|iskūl|school|اِسکول
+5|استاد|ustād|teacher|اُستاد
+5|سارے|sāre|all (plural)|سارے
+5|پانچ|pānch|five|پانچ
+5|دس|das|ten|دَس
+5|سات|sāt|seven|سات
+5|موسم|mausam|weather, season|مَوسَم
+5|گرمی|garmī|heat, summer|گَرمی
+5|جانور|jānwar|animal|جانوَر
+5|روشنی|raushnī|light, brightness|رَوشْنی
+5|رنگ|rang|colour|رَنگ
+8|مسجد|masjid|mosque|مَسجِد
+5|سلام|salām|hello, greeting|سَلام
+5|سوال|sawāl|question|سَوال
+5|سچ|sach|truth|سَچ
+5|گوشت|gosht|meat|گوشْت
+5|سورج|sūraj|sun|سورَج
+5|ستارہ|sitāra|star (sitāra)|سِتارَہ
+5|شاید|shāyad|maybe|شایَد
+8|بستر|bistar|bed|بِستَر
+11|پولیس|pulīs|police|پولِیس
+5|سوچ|soch|thought|سوچ
+8|سیاہ|siyāh|black, dark|سِیاہ
+5|جگہ|jagah|place|جَگَہ
+5|جان|jān|life, dear|جان
+5|شوہر|shauhar|husband|شَوہَر
+5|شکریہ|shukriya|thank you|شُکرِیَہ
+5|شکل|shakl|face, shape|شَکْل
+5|چینی|chīnī|sugar|چینی
+5|چمچ|chamach|spoon|چَمَچ
+11|چپل|chappal|sandal|چَپَّل
+11|چادر|chādar|sheet, shawl|چادَر
+11|چوہا|chūhā|mouse|چوہا
+8|چالاک|chālāk|cunning, sly|چالاک
+5|چلنا|chalnā|to walk|چَلنا
+5|چلتا|chaltā|walks|چَلتا
+11|گلاس|gilās|glass|گِلاس
+5|گیند|gend|ball|گیند
+5|جیب|jeb|pocket|جیب
+8|شیشہ|shīsha|glass, mirror|شیشَہ
+5|شور|shor|noise|شور
+8|شرارت|sharārat|mischief|شَرارَت
+5|شاگرد|shāgird|pupil, student|شاگِرد
+5|سامنے|sāmne|in front|سامنے
+5|سواری|sawārī|ride, vehicle|سواری
+5|سونا|sonā|gold, to sleep|سونا
+8|سیب|seb|apple|سیب
+5|سنو|suno|listen|سُنو
+5|سہیلی|sahelī|girl's friend|سَہیلی
+5|پیاس|pyās|thirst|پیاس
+5|پیاسا|pyāsā|thirsty|پیاسا
+11|انگلی|ungalī|finger|اُنگَلی
+11|انگور|angūr|grapes|اَنگور
+5|انسان|insān|human being|اِنسان
+5|ہسپتال|haspatāl|hospital|ہَسپَتال
+8|لباس|libās|clothes|لِباس
+8|چچا|chachā|paternal uncle|چَچا
+11|چاکلیٹ|chākleṭ|chocolate|چاکلیٹ
+7|سیکنڈ|sekanḍ|second (time)|سیکَنڈ
+5|گرنا|girnā|to fall|گِرنا
+5|منگل|mangal|Tuesday|مَنگَل
+8|جمعہ|jumʻa|Friday|جُمعَہ
+# ---- unit 6 (+ ں ھ)
+6|ہوں|hūṉ|am|ہوں
+6|مجھے|mujhe|to me|مُجھے
+6|کچھ|kuchh|some, something|کُچھ
+6|ساتھ|sāth|with, together|ساتھ
+6|کبھی|kabhī|ever, sometimes|کَبھی
+6|ابھی|abhī|right now|اَبھی
+6|تمہیں|tumheṉ|to you|تُمہیں
+6|ہمیں|hameṉ|to us|ہَمیں
+6|انہیں|unheṉ|to them|اُنہیں
+6|وہاں|wahāṉ|there|وَہاں
+6|جہاں|jahāṉ|where (relative)|جَہاں
+6|کیوں|kyoṉ|why|کیوں
+6|پھر|phir|then, again|پِھر
+6|ٹھیک|ṭhīk|right, fine|ٹھیک
+6|اچھا|achchhā|good|اَچّھا
+6|اچھی|achchhī|good (fem)|اَچّھی
+6|اچھے|achchhe|good (plural)|اَچّھے
+6|کہیں|kahīṉ|somewhere|کَہیں
+6|دونوں|donoṉ|both|دونوں
+6|ماں|māṉ|mother|ماں
+6|ماموں|māmūṉ|maternal uncle|ماموں
+6|لاکھ|lākh|hundred thousand|لاکھ
+6|چھ|chhe|six|چھ
+6|کتابیں|kitābeṉ|books|کِتابیں
+6|کتابوں|kitāboṉ|books (oblique)|کِتابوں
+6|بچوں|bachchoṉ|children (oblique)|بَچّوں
+6|دنوں|dinoṉ|days|دِنوں
+6|باتیں|bāteṉ|talks, things said|باتیں
+6|بہنیں|bahneṉ|sisters|بَہنیں
+6|کھانے|khāne|to eat (oblique)|کھانے
+6|کھا|khā|eat|کھا
+6|کھاتا|khātā|eats|کھاتا
+6|کھاتی|khātī|eats (fem)|کھاتی
+6|کھیل|khel|game|کھیل
+6|کھیلنا|khelnā|to play|کھیلنا
+6|کھیلتے|khelte|play (plural)|کھیلتے
+6|کھلونا|khilaunā|toy|کِھلَونا
+6|کھولنا|kholnā|to open|کھولنا
+6|کھیت|khet|field|کھیت
+6|کھجور|khajūr|date (fruit)|کھَجور
+6|دیکھنا|dekhnā|to see|دیکھنا
+6|دیکھا|dekhā|saw|دیکھا
+6|دیکھو|dekho|look!|دیکھو
+6|دیکھتا|dekhtā|sees|دیکھتا
+6|دیکھتے|dekhte|see (plural)|دیکھتے
+6|سمجھ|samajh|understanding|سَمَجھ
+6|سمجھنا|samajhnā|to understand|سَمَجھنا
+6|لکھنا|likhnā|to write|لِکھنا
+6|لکھا|likhā|wrote|لِکھا
+6|لکھتا|likhtā|writes|لِکھتا
+6|لکھو|likho|write!|لِکھو
+6|دکھ|dukh|sorrow|دُکھ
+6|گھنٹہ|ghanṭa|hour|گَھنْٹَہ
+6|گھنٹے|ghanṭe|hours|گَھنْٹے
+6|گھنٹی|ghanṭī|bell|گَھنْٹی
+6|گھاس|ghās|grass|گھاس
+6|گھومنا|ghūmnā|to turn about, wander|گھومنا
+6|چھوٹا|chhoṭā|small|چھوٹا
+6|چھوٹی|chhoṭī|small (fem)|چھوٹی
+6|چھوٹے|chhoṭe|small (plural)|چھوٹے
+6|چھٹی|chhuṭṭī|holiday|چُھٹّی
+6|چھتری|chhatrī|umbrella|چھَتری
+6|چھونا|chhūnā|to touch|چھونا
+6|چھپنا|chhupnā|to hide|چھُپنا
+6|تھکا|thakā|tired|تھَکا
+6|تھے|the|were|تھے
+6|تھیں|thīṉ|were (fem)|تھیں
+6|سیکھنا|sīkhnā|to learn|سیکھنا
+6|پوچھنا|pūchhnā|to ask|پوچھنا
+6|اٹھنا|uṭhnā|to get up|اُٹھنا
+6|اٹھا|uṭhā|got up|اُٹھا
+6|جھوٹ|jhūṭ|lie|جھوٹ
+6|جھوٹا|jhūṭā|false|جھوٹا
+6|جھیل|jhīl|lake|جھیل
+6|بھاگنا|bhāgnā|to run|بھاگنا
+6|بھاری|bhārī|heavy|بھاری
+6|بھوک|bhūk|hunger|بھوک
+6|بھوکا|bhūkā|hungry|بھوکا
+6|بھینس|bhaiṉs|buffalo|بھَینس
+6|پھل|phal|fruit|پھَل
+6|پھوپھی|phūphī|paternal aunt|پھوپھی
+6|پھینکنا|phaiṉknā|to throw|پھَینکنا
+6|پتھر|patthar|stone|پَتَّھر
+6|دھوپ|dhūp|sunshine|دھوپ
+6|دھواں|dhuāṉ|smoke|دھُواں
+6|بیٹھنا|baiṭhnā|to sit|بَیٹھنا
+6|مچھر|machchhar|mosquito|مَچّھَر
+6|ہاتھی|hāthī|elephant|ہاتھی
+6|ٹھہرنا|ṭhaharnā|to stay, wait|ٹھَہَرنا
+6|ننھا|nanhā|tiny|نَنھا
+6|اندھا|andhā|blind|اَندھا
+6|اندھیرا|andherā|darkness|اَندھیرا
+6|میٹھا|mīṭhā|sweet|میٹھا
+6|کھٹا|khaṭṭā|sour|کھَٹّا
+6|منہ|munh|mouth, face|مُنہ
+6|ہنسنا|hansnā|to laugh|ہَنسنا
+# ---- unit 7 (+ ڈ ڑ ز ژ)
+7|زیادہ|ziyāda|more, too much|زِیادَہ
+7|زندگی|zindagī|life|زِندَگی
+7|زندہ|zinda|alive|زِندَہ
+7|گاڑی|gāṛī|car, vehicle|گاڑی
+7|بڑی|baṛī|big (fem)|بَڑی
+7|بڑے|baṛe|big (plural)|بَڑے
+7|انگریزی|angrezī|English|اَنگریزی
+7|ہزار|hazār|thousand|ہَزار
+7|ڈاکٹر|ḍākṭar|doctor|ڈاکْٹَر
+7|تھوڑا|thoṛā|a little|تھوڑا
+7|تیز|tez|fast, sharp|تیز
+7|چیز|chīz|thing|چیز
+7|چیزیں|chīzeṉ|things|چیزیں
+7|میز|mez|table|میز
+7|زور|zor|strength|زور
+7|جہاز|jahāz|ship, aeroplane|جَہاز
+7|روز|roz|day, daily|روز
+7|پڑھ|paṛh|read|پَڑھ
+7|پڑھا|paṛhā|read (past)|پَڑھا
+7|پڑھو|paṛho|read!|پَڑھو
+7|پڑھتا|paṛhtā|reads|پَڑھتا
+7|پڑھتی|paṛhtī|reads (fem)|پَڑھتی
+7|پڑھتے|paṛhte|read (plural)|پَڑھتے
+7|پڑھنے|paṛhne|to read (oblique)|پَڑھنے
+7|بڑھنا|baṛhnā|to grow, advance|بَڑھنا
+7|چھوڑنا|chhoṛnā|to leave, let go|چھوڑنا
+7|دروازہ|darwāza|door|دَروازَہ
+7|دروازے|darwāze|doors|دَروازے
+7|کھڑکی|khiṛkī|window|کھِڑکی
+7|کھڑا|khaṛā|standing|کھَڑا
+7|کھڑی|khaṛī|standing (fem)|کھَڑی
+7|کھڑے|khaṛe|standing (plural)|کھَڑے
+7|انڈے|anḍe|eggs|اَنڈے
+7|لڑکے|laṛke|boys|لَڑکے
+7|لڑکیاں|laṛkiyāṉ|girls|لَڑکِیاں
+7|لڑنا|laṛnā|to fight|لَڑنا
+7|تازہ|tāza|fresh|تازَہ
+7|بزرگ|buzurg|elderly person|بُزُرگ
+7|راز|rāz|secret|راز
+7|پہاڑ|pahāṛ|mountain|پَہاڑ
+7|کپڑے|kapṛe|clothes|کَپْڑے
+7|ٹکڑا|ṭukṛā|piece|ٹُکْڑا
+7|جوڑا|joṛā|pair, couple|جوڑا
+7|ڈبے|ḍibbe|boxes|ڈِبّے
+7|مزے|maze|fun (plural)|مَزے
+7|مزیدار|mazedār|tasty|مَزیدار
+7|نماز|namāz|prayer (namaz)|نَماز
+7|روزہ|roza|fast|روزَہ
+7|چڑیا|chiṛiyā|sparrow, bird|چِڑِیا
+7|بازار|bāzār|market|بازار
+7|بازو|bāzū|arm|بازو
+7|بازی|bāzī|game, bet|بازی
+7|زمانہ|zamāna|time, age|زَمانَہ
+7|بوڑھا|būṛhā|old man|بوڑھا
+7|بوڑھی|būṛhī|old woman|بوڑھی
+7|ٹیڑھا|ṭeṛhā|crooked|ٹیڑھا
+7|سیڑھی|sīṛhī|stairs, ladder|سیڑھی
+7|داڑھی|dāṛhī|beard|داڑھی
+7|کیڑا|kīṛā|insect, worm|کیڑا
+7|کمزور|kamzor|weak|کَمزور
+7|نازک|nāzuk|delicate|نازُک
+7|تمیز|tamīz|manners|تَمیز
+7|ڈھونڈنا|ḍhūnḍnā|to look for|ڈھونڈنا
+7|ڈالنا|ḍālnā|to put, pour|ڈالنا
+7|ڈرنا|ḍarnā|to be afraid|ڈَرنا
+7|ڈرتے|ḍarte|are afraid (plural)|ڈَرتے
+7|ڈھیر|ḍher|heap|ڈھیر
+7|گڑ|guṛ|jaggery|گُڑ
+7|پڑوسی|paṛosī|neighbour|پَڑوسی
+7|دوڑ|dauṛ|race, run|دَوڑ
+7|کڑوا|kaṛwā|bitter|کَڑوا
+7|ہڈی|haḍḍī|bone|ہَڈّی
+7|مڑنا|muṛnā|to turn|مُڑنا
+7|زیور|zewar|jewellery|زیوَر
+7|زیتون|zaitūn|olive|زَیتون
+7|ٹرک|ṭrak|truck|ٹرَک
+7|درزی|darzī|tailor|دَرزی
+7|مزدور|mazdūr|labourer|مَزدور
+7|زنجیر|zanjīr|chain|زَنجیر
+7|ہرگز|hargiz|never|ہَرگِز
+7|تیزی|tezī|speed|تیزی
+7|زبردست|zabardast|excellent|زَبَردَست
+7|ہوشیار|hoshyār|clever, alert|ہوشْیار
+7|ڈیڑھ|ḍeṛh|one and a half|ڈیڑھ
+7|بڑھیا|baṛhiyā|great, first-rate|بَڑھِیا
+# ---- unit 8 (+ ف ق خ غ ع ح)
+8|بعد|baʻd|after|بَعْد
+8|خیال|k͟hayāl|thought, idea|خَیال
+8|شروع|shurūʻ|beginning|شُروع
+8|خود|k͟hud|self|خُود
+8|فلم|film|film|فِلم
+8|ختم|k͟hatm|end|خَتْم
+8|خاندان|k͟hāndān|family, clan|خاندان
+8|تاریخ|tārīk͟h|history, date|تاریخ
+8|قریب|qarīb|near|قَریب
+8|یقین|yaqīn|belief, certainty|یَقین
+8|ہفتہ|hafta|week, Saturday|ہَفْتَہ
+8|ہفتے|hafte|weeks, on Saturday|ہَفْتے
+8|معلوم|maʻlūm|known|مَعلوم
+8|سفر|safar|journey|سَفَر
+8|علاقہ|ʻilāqa|area, region|عِلاقَہ
+8|عورت|ʻaurat|woman|عَورَت
+8|قابل|qābil|capable|قابِل
+8|عمارت|ʻimārat|building|عِمارَت
+8|خرید|k͟harīd|buy (stem)|خَرید
+8|خریدنا|k͟harīdnā|to buy|خَریدنا
+8|محنت|miḥnat|hard work|مِحنَت
+8|وعدہ|waʻda|promise|وَعْدَہ
+8|دعوت|daʻwat|invitation|دَعْوَت
+8|ملاقات|mulāqāt|meeting|مُلاقات
+8|اخبار|ak͟hbār|newspaper|اَخبار
+8|امتحان|imtiḥān|exam|اِمتِحان
+8|برف|barf|snow, ice|بَرْف
+8|فہرست|fihrist|list|فِہْرِست
+8|خراب|k͟harāb|bad, spoiled|خَراب
+8|خوب|k͟hūb|good, fine|خوب
+8|شوق|shauq|liking, hobby|شَوق
+8|خدا|k͟hudā|God (Khuda)|خُدا
+8|گفتگو|guftagū|conversation|گُفتَگو
+8|خواب|k͟hwāb|dream|خواب
+8|سفید|safīd|white|سَفید
+8|خبر|k͟habar|news|خَبَر
+8|سخت|sakht|hard, tough|سَخْت
+8|فکر|fikr|worry, thought|فِکْر
+8|خوشی|k͟hushī|happiness|خُوشی
+8|عزت|ʻizzat|honour|عِزَّت
+8|عادت|ʻādat|habit|عادَت
+8|محبت|muḥabbat|love|مُحَبَّت
+8|حادثہ|ḥādis̱a|accident|حادِثَہ
+8|عقل|ʻaql|intelligence|عَقْل
+8|عجیب|ʻajīb|strange|عَجیب
+8|عید|ʻīd|Eid|عید
+8|عمدہ|ʻumda|excellent|عُمدَہ
+8|علاج|ʻilāj|treatment|عِلاج
+8|عینک|ʻainak|spectacles|عَینَک
+8|عربی|ʻarabī|Arabic|عَرَبی
+8|قیمت|qīmat|price|قیمَت
+8|قدم|qadam|step|قَدَم
+8|قلعہ|qilʻa|fort|قِلعَہ
+8|قسم|qasam|oath, kind|قَسَم
+8|فرق|farq|difference|فَرْق
+8|فوری|faurī|immediate|فَوری
+8|فٹبال|fuṭbāl|football|فُٹْبال
+8|خاموش|k͟hāmosh|silent|خاموش
+8|خالہ|k͟hāla|maternal aunt|خالَہ
+8|خیمہ|k͟haima|tent|خَیمَہ
+8|خرگوش|k͟hargosh|rabbit|خَرگوش
+8|خوشبو|k͟hushbū|fragrance|خُوشبو
+8|خشک|k͟hushk|dry|خُشْک
+8|خون|k͟hūn|blood|خون
+8|حرف|ḥarf|letter, word|حَرْف
+8|حیوان|ḥaiwān|animal|حَیوان
+8|معاف|muʻāf|forgiven|مُعاف
+8|معنی|maʻnī|meaning|مَعنی
+8|مسافر|musāfir|traveller|مُسافِر
+8|موسیقی|mūsīqī|music|موسیقی
+8|تعلیم|taʻlīm|education|تَعلیم
+8|تکلیف|taklīf|trouble|تَکلیف
+8|نقشہ|naqsha|map|نَقشَہ
+8|بخار|bukhār|fever|بُخار
+8|بغیر|bag͟hair|without|بِغَیر
+8|ناخن|nākhun|nail|ناخُن
+8|قاعدہ|qāʻida|rule, primer|قاعِدَہ
+8|جمعرات|jumʻerāt|Thursday|جُمعِرات
+# ---- unit 9 (+ ص ض ط ظ ذ)
+9|طرف|taraf|side, direction|طَرَف
+9|طرح|tarah|way, like|طَرَح
+9|ضرورت|ẓarūrat|need|ضَرورَت
+9|صرف|sirf|only|صِرْف
+9|انتظار|intiẓār|waiting|اِنتِظار
+9|غلط|g͟halat|wrong|غَلَط
+9|خوبصورت|k͟hūbṣūrat|beautiful|خوبصورَت
+9|صاحب|ṣāḥib|sir, owner|صاحِب
+9|شخص|shak͟hṣ|person|شَخْص
+9|ضروری|ẓarūrī|necessary|ضَروری
+9|ذریعہ|ẕarīʻa|means|ذَریعَہ
+9|اصل|aṣl|origin, real|اَصْل
+9|غلطی|g͟halatī|mistake|غَلَطی
+9|صورت|ṣūrat|form, face|صورَت
+9|طریقہ|ṭarīqa|method|طَریقَہ
+9|صحت|ṣiḥḥat|health|صِحَّت
+9|مطلب|maṭlab|meaning, purpose|مَطلَب
+9|تصویر|taṣvīr|picture|تَصویر
+9|خطرہ|k͟hatra|danger|خَطرَہ
+9|مقصد|maqṣad|aim|مَقصَد
+9|منظر|manẓar|scene, view|مَنظَر
+9|وطن|waṭan|homeland|وَطَن
+9|ناراض|nārāẓ|angry|ناراض
+9|صفحہ|ṣafḥa|page|صَفحَہ
+9|قرض|qarẓ|loan, debt|قَرْض
+9|رابطہ|rābiṭa|contact|رابِطَہ
+9|حاضر|ḥāẓir|present|حاضِر
+9|حوصلہ|ḥausla|courage|حَوصْلَہ
+9|ریاضی|riyāẓī|mathematics|رِیاضی
+9|معذرت|maʻẕirat|apology|مَعذِرَت
+9|شطرنج|shaṭranj|chess|شَطْرَنْج
+9|طوفان|ṭūfān|storm|طوفان
+9|طبیعت|ṭabīʻat|health, nature|طَبیعَت
+9|بطخ|baṭak͟h|duck|بَطَخ
+9|مذاق|mazāq|joke|مَذاق
+9|ثبوت|s̱ubūt|proof|ثُبوت
+9|صندوق|ṣandūq|box, chest|صَندوق
+9|صحن|ṣaḥn|courtyard|صَحْن
+9|صحرا|ṣaḥrā|desert|صَحرا
+9|طالبہ|ṭāliba|girl student|طالِبَہ
+9|طے|ṭai|settled|طے
+9|طویل|ṭawīl|long|طَویل
+9|عظیم|ʻaẓīm|great|عَظیم
+9|نظم|naẓm|poem|نَظْم
+9|نظام|niẓām|system|نِظام
+9|ذہن|ẕihn|mind|ذِہن
+9|ذہین|ẕahīn|intelligent|ذَہین
+9|اذان|aẕān|call to prayer|اَذان
+9|غذا|g͟hiẕā|food, diet|غِذا
+9|فرض|farẓ|duty|فَرْض
+9|مرضی|marẓī|will, wish|مَرضی
+9|مضمون|maẓmūn|essay|مَضمون
+9|مضبوط|maẓbūṭ|strong, firm|مَضبوط
+9|اضافہ|izāfa|increase|اِضافَہ
+9|مصروف|maṣrūf|busy|مَصروف
+9|مطالعہ|muṭālaʻa|study, reading|مُطالَعَہ
+9|مطابق|muṭābiq|according to|مُطابِق
+9|محفوظ|maḥfūẓ|safe|مَحفوظ
+9|الفاظ|alfāẓ|words|اَلفاظ
+9|نصاب|niṣāb|syllabus|نِصاب
+9|اظہار|iẓhār|expression|اِظہار
+9|صدی|ṣadī|century|صَدی
+9|صدر|ṣadr|president|صَدْر
+9|رقص|raqṣ|dance|رَقْص
+9|حصہ|ḥiṣṣa|part, share|حِصَّہ
+# ---- unit 10 (ئ ۃ and madda آ ؤ ء)
+10|آج|āj|today|آج
+10|آنا|ānā|to come|آنا
+10|آیا|āyā|came|آیا
+10|آتا|ātā|comes|آتا
+10|آتی|ātī|comes (fem)|آتی
+10|آتے|āte|come (plural)|آتے
+10|آؤ|āo|come!|آؤ
+10|آنکھیں|āṉkheṉ|eyes|آنکھیں
+10|آواز|āwāz|voice, sound|آواز
+10|آسان|āsān|easy|آسان
+10|آگے|āge|ahead|آگے
+10|آدمی|ādmī|man, person|آدمی
+10|آخری|ākhirī|last|آخِری
+10|آسمان|āsmān|sky|آسمان
+10|آرام|ārām|rest, comfort|آرام
+10|آزاد|āzād|free|آزاد
+10|آٹا|āṭā|flour|آٹا
+10|آٹھ|āṭh|eight|آٹھ
+10|آدھا|ādhā|half|آدھا
+10|آخر|ākhir|at last|آخِر
+10|آب|āb|water (poetic)|آب
+10|آنسو|āṉsū|tear|آنسو
+10|آندھی|āṉdhī|dust storm|آندھی
+10|آلو|ālū|potato|آلو
+10|گئی|gaʾī|went (fem)|گَئی
+10|گئیں|gaʾīṉ|went (plural fem)|گَئیں
+10|ہوئی|huʾī|was, happened (fem)|ہُوئی
+10|ہوئے|huʾe|were, happened (plural)|ہُوئے
+10|جائے|jāʾe|may go|جائے
+10|جائیں|jāʾeṉ|may go (plural)|جائیں
+10|کئی|kaʾī|several|کَئی
+10|نئے|naʾe|new (plural)|نَئے
+10|ہوائی|hawāʾī|of the air|ہَوائی
+10|پیدائش|paidāʾish|birth|پَیدائِش
+10|رائے|rāʾe|opinion|رائے
+10|صفائی|ṣafāʾī|cleanliness|صَفائی
+10|لڑائی|laṛāʾī|fight|لَڑائی
+10|فائدہ|fāʾida|benefit|فائِدَہ
+10|بجائے|bajāʾe|instead of|بَجائے
+10|سچائی|sachchāʾī|truth|سَچّائی
+10|سائیکل|sāʾīkal|bicycle|سائیکَل
+10|ڈھائی|ḍhāʾī|two and a half|ڈھائی
+10|کائنات|kāʾināt|universe|کائِنات
+10|رہائش|rihāʾish|residence|رِہائِش
+10|دوائی|dawāʾī|medicine|دَوائی
+10|سوئی|suʾī|needle|سُوئی
+10|پڑھائی|paṛhāʾī|studies|پَڑھائی
+10|کمائی|kamāʾī|earnings|کَمائی
+10|مٹھائی|miṭhāʾī|sweets|مِٹھائی
+10|لکھائی|likhāʾī|handwriting|لِکھائی
+10|برائی|burāʾī|evil, badness|بُرائی
+10|ملائی|malāʾī|cream|مَلائی
+10|اونچائی|ūṉchāʾī|height|اونچائی
+10|گہرائی|gahrāʾī|depth|گَہرائی
+10|لمبائی|lambāʾī|length|لَمبائی
+10|چوڑائی|chauṛāʾī|width|چَوڑائی
+10|کوئلہ|koʾila|coal|کوئِلَہ
+10|موبائل|mobāʾil|mobile phone|موبائِل
+10|سائنس|sāʾins|science|سائِنس
+10|مسائل|masāʾil|problems|مَسائِل
+10|نتائج|natāʾij|results|نَتائِج
+10|دعائیں|duʻāʾeṉ|prayers|دُعائیں
+10|کھائیں|khāʾeṉ|may eat|کھائیں
+10|دہائی|dahāʾī|decade|دَہائی
+10|قائم|qāʾim|established|قائِم
+10|غائب|g͟hāʾib|missing, absent|غائِب
+# ---- unit 11 (no new letters: names, months, school and food words read without marks)
+11|پاکستان|pākistān|Pakistan|پاکِستان
+11|لاہور|lāhaur|Lahore|لاہَور
+11|کراچی|karāchī|Karachi|کَراچی
+11|پشاور|peshāwar|Peshawar|پِشاوَر
+11|ملتان|multān|Multan|مُلتان
+11|کوئٹہ|kwaṭṭa|Quetta|کوئٹَہ
+11|پنجاب|panjāb|Punjab|پَنجاب
+11|سندھ|sindh|Sindh (a province)|سِندھ
+11|بلوچستان|balochistān|Balochistan|بَلوچِستان
+11|اسلام|islām|Islam|اِسلام
+11|مسلمان|musalmān|Muslim|مُسلمان
+11|جنوری|janwarī|January|جَنَوَری
+11|فروری|farwarī|February|فَرَوَری
+11|مارچ|mārch|March|مارچ
+11|اپریل|aprail|April|اپریل
+11|مئی|maʾī|May|مَئی
+11|جون|jūn|June|جون
+11|جولائی|julāʾī|July|جولائی
+11|اگست|agast|August|اَگَست
+11|ستمبر|sitambar|September|سِتَمبَر
+11|اکتوبر|aktūbar|October|اَکتوبَر
+11|نومبر|navambar|November|نَومبَر
+11|دسمبر|disambar|December|دِسَمبَر
+11|ٹیلیفون|ṭeliphon|telephone|ٹیلیفون
+11|اسٹیشن|isṭeshan|station|اِسٹیشَن
+11|ریلوے|railway|railway line|ریلوے
+11|ٹیچر|ṭīchar|teacher|ٹیچَر
+11|پنسل|pensil|pencil|پِنسِل
+11|بسکٹ|biskuṭ|biscuit|بِسکُٹ
+11|مرغی|murg͟hī|hen, chicken|مُرغی
+11|نہاری|nihārī|nihari (a slow-cooked stew)|نِہاری
+11|بریانی|biryānī|biryani (a rice dish)|بِریانی
+11|کھیر|khīr|rice pudding|کھیر
+11|لسی|lassī|lassi (a yoghurt drink)|لَسّی
+11|جلیبی|jalebī|jalebi (a sweet)|جَلیبی
+11|پراٹھا|parāṭhā|paratha (a flat bread)|پَراٹھا
+11|چاول|chāwal|rice|چاوَل
+11|پلاؤ|pulāʾo|pulao (a rice dish)|پُلاؤ
+11|قرآن|qurʾān|the Quran|قُرآن
+# ---- names and a few more (used in stories)
+2|نیلم|nīlam|sapphire, a girl's name|نیلَم
+4|مریم|maryam|Maryam (a name)|مَریَم
+4|دانیال|dāniyāl|Daniyal (a name)|دانِیال
+4|نادیہ|nādiya|Nadia (a name)|نادِیَہ
+4|ہادی|hādī|Hadi (a name)|ہادی
+4|پیالہ|piyāla|cup, bowl|پِیالَہ
+5|سارہ|sārah|Sara (a name)|سارَہ
+5|جاوید|jāvīd|Javed (a name)|جاوید
+5|سلمان|salmān|Salman (a name)|سَلمان
+5|شاہد|shāhid|Shahid (a name)|شاہِد
+7|زینب|zainab|Zainab (a name)|زَینَب
+8|علی|ʻalī|Ali (a name)|عَلی
+8|احمد|aḥmad|Ahmad (a name)|اَحمَد
+8|خالد|k͟hālid|Khalid (a name)|خالِد
+9|صابر|ṣābir|Sabir (a name)|صابِر
+9|طارق|ṭāriq|Tariq (a name)|طارِق
+# ---- batch 2: most frequent function and verb forms of the corpus
+1|ملا|milā|met, got|مِلا
+2|لیے|liye|for|لِیے
+2|لیا|liyā|took|لِیا
+2|لی|lī|took (fem)|لی
+2|تک|tak|until, up to|تَک
+2|اتنے|itne|so many|اِتنے
+2|اتنی|itnī|so much (fem)|اِتنی
+2|کتنی|kitnī|how much (fem)|کِتنی
+2|کتنے|kitne|how many|کِتنے
+2|بتایا|batāyā|told|بَتایا
+2|لمبی|lambī|long (fem)|لَمبی
+2|بے|be|without, un-|بے
+3|اپنی|apnī|own (fem)|اَپنی
+3|اپنے|apne|own (plural)|اَپنے
+4|پہلے|pahle|before, first|پَہلے
+4|پہلی|pahlī|first (fem)|پَہلی
+4|پہلا|pahlā|first|پَہلا
+4|والا|wālā|one who|والا
+4|والی|wālī|one who (fem)|والی
+4|کرے|kare|may do|کَرے
+4|رہو|raho|stay!|رَہو
+4|ہونے|hone|to be (oblique)|ہونے
+4|ہوتی|hotī|happens (fem)|ہوتی
+4|ہوتے|hote|happen (plural)|ہوتے
+4|کرتی|kartī|does (fem)|کَرتی
+4|ہمارے|hamāre|our (plural)|ہَمارے
+4|تمہارے|tumhāre|your (plural)|تُمہارے
+4|تمہاری|tumhārī|your (fem)|تُمہاری
+4|پوری|pūrī|whole (fem)|پوری
+4|بہتر|behtar|better|بِہتَر
+4|بدل|badal|change (stem)|بَدَل
+4|یاد|yād|memory|یاد
+4|بول|bol|speak (stem)|بول
+4|لو|lo|take!|لو
+11|پارٹی|pārṭī|party|پارٹی
+11|نمبر|nambar|number|نَمبَر
+7|بندہ|banda|person|بَندَہ
+5|لگا|lagā|began, seemed|لَگا
+5|لگتا|lagtā|seems|لَگتا
+5|لگی|lagī|seemed (fem)|لَگی
+5|واپس|wāpas|back|واپَس
+5|بجے|baje|o'clock|بَجے
+5|جیت|jīt|victory|جیت
+5|چلا|chalā|walked|چَلا
+5|اسی|usī|that very|اُسی
+5|نیچے|nīche|below|نیچے
+5|جلد|jald|soon|جَلد
+5|کیسی|kaisī|how (fem)|کَیسی
+5|شامل|shāmil|included|شامِل
+5|دوسرے|dūsre|other, second (plural)|دوسرے
+5|دوسری|dūsrī|other (fem)|دوسری
+5|دوسرا|dūsrā|other, second|دوسرا
+5|جتنا|jitnā|as much as|جِتنا
+5|مشکل|mushkil|difficult|مُشکِل
+5|مشہور|mashhūr|famous|مَشہور
+5|کاش|kāsh|if only|کاش
+5|جانتا|jāntā|knows|جانتا
+5|اونچا|ūnchā|tall, high|اونچا
+5|سارا|sārā|whole, all|سارا
+6|مجھ|mujh|me (oblique)|مُجھ
+6|ادھر|idhar|here, this way|اِدھَر
+6|کدھر|kidhar|where, which way|کِدھَر
+6|کروں|karūṉ|I may do|کَروں
+6|کریں|kareṉ|do (polite)|کَریں
+6|رکھنا|rakhnā|to keep, put|رَکھنا
+6|کیونکہ|kyoṉki|because|کیونکہ
+6|ادھار|udhār|loan|اُدھار
+6|دیکھ|dekh|look (stem)|دیکھ
+6|دیکھی|dekhī|saw (fem)|دیکھی
+7|چھوڑ|chhoṛ|leave (stem)|چھوڑ
+7|تھوڑی|thoṛī|a little (fem)|تھوڑی
+8|کافی|kāfī|quite, enough|کافی
+10|آئے|āʾe|came (plural)|آئے
+10|آئی|āʾī|came (fem)|آئی
+10|برائے|barāʾe|for|برائے
+4|دیتی|detī|gives (fem)|دیتی
+4|کہتی|kahtī|says (fem)|کَہتی
+4|رہتی|rahtī|lives (fem)|رَہتی
+6|کھاتے|khāte|eat (plural)|کھاتے
+6|تھکے|thake|tired (plural)|تھَکے

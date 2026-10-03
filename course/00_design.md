@@ -30,7 +30,7 @@
 | Unit | Letters | Hours (child / adult) | New concept |
 |---|---|---|---|
 | 0 | — | 1 / 0.5 | direction, joining, dots, marks, Naskh vs Nastaliq |
-| 1 | ا ب ک ل م ن | 3 / 1.5 | joiners vs alif; zabar zer pesh; first 20 words |
+| 1 | ا ب ک ل م ن | 3 / 1.5 | joiners vs alif; zabar zer pesh; first 48 words |
 | 2 | ت ی ے | 3 / 1.5 | dot-count cluster ب ت ن ی; ی vs ے |
 | 3 | پ ٹ ث | 2.5 / 1 | retroflex ٹ vs dental ت; loan letter ث |
 | 4 | و ر د ہ | 3 / 1.5 | the ten non-joiners; ہ as final -a |
@@ -68,3 +68,17 @@ The printable `course/unit_NN.md` files keep the eight-step outline for teachers
 - The Naskh-first order and the heritage-track speed-up are inferences (see rows 6 and 12).
 - MMS-TTS audio is machine-generated. It is intelligible (Whisper round-trip in `assets/audio/verify.json`) but it is not a Pakistani voice actor. For a paid client build, record a native speaker or use Uplift AI; see `research/05_open_assets.md` for licences (MMS is CC-BY-NC).
 - No stroke-order animation exists yet; tracing uses the glyph outline as a guide. Building true stroke data is listed as a gap in `research/05_open_assets.md`.
+
+## 5. Content depth (v0.11): word, sentence and passage rules
+
+Evidence: `.audit/validation/content_learning/results.md` M9, M10, M14 ("lots of heavy words are not present": 220 unit words, 272 running words, a test passage with 17 untaught word types). Bar and measurements: `.audit/improve/e_content/BAR.md`; sources and licences: `data/SOURCES.md`; open questions for a native speaker: `data/REVIEW_NEEDED.md`.
+
+| Rule | Why |
+|---|---|
+| A word is taught in exactly one unit: the later of the unit it was placed in and the first unit whose letters decode it. No "preview" words. Madda آ ؤ ء count as the unit-10 hamza letter. | Decision 1: nothing appears that has not been taught. The old 11 preview words are now placed where they decode. |
+| A word needs at least two corpus occurrences (Tatoeba + Urdu Wikipedia) and an open dictionary entry that agrees with the gloss (Wiktionary, Platts 1884, Wikidata). Order inside a unit is corpus frequency, so heavy words arrive last. | "No invented words"; frequency-first is decision 2 applied inside a unit. |
+| Every sentence and passage token is a word taught in that unit or earlier, or one of the 20 sight words once its letters are taught (decision 10). Romanisation and vowelled text are assembled from the word list. | The test passage had 17 untaught word types; sentences used untaught letters. |
+| The 20 sight words stay the unit-11 sight lesson; function words that are not on that list (میرا ہم تو ہی نہ اپنا مجھے کچھ ...) are ordinary unit words from the unit that decodes them. | Sentences need grammar before unit 11; the sight layer is alongside, not instead of, phonics. |
+| Units 1 to 3 have no copula (ہ is taught in unit 4), so their text is noun phrases and imperatives. | Decodability beats naturalness; a native check is requested. |
+| The reading test (unit 12) shares no sentence with unit text, uses only taught words, and has its own five comprehension questions. | Validation M8: the old test was practised in unit 11. |
+| Lessons: the app splits a unit's words into Words 1..N of about 12 (`lessonsFor` in `mobile/src/path.js`). | 100+ words per unit would not fit two lessons. |

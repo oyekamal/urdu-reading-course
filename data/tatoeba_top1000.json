@@ -1,0 +1,6005 @@
+{
+"source": "Tatoeba Urdu sentences (CC-BY 2.0 FR); eligible = Urdu letters, has a Wiktionary entry/inflection, not a name",
+"words": [
+{
+"w": "ہے",
+"n": 1168,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "میں",
+"n": 919,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نہیں",
+"n": 402,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نے",
+"n": 399,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کے",
+"n": 399,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سے",
+"n": 389,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اس",
+"n": 362,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کو",
+"n": 348,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "وہ",
+"n": 336,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کی",
+"n": 334,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کیا",
+"n": 287,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہو",
+"n": 269,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مجھے",
+"n": 263,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہیں",
+"n": 260,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہوں",
+"n": 258,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آپ",
+"n": 254,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کا",
+"n": 241,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کہ",
+"n": 221,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ٹام",
+"n": 215,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "تم",
+"n": 189,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تھا",
+"n": 167,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ایک",
+"n": 163,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کر",
+"n": 155,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "یہ",
+"n": 150,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اور",
+"n": 132,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رہا",
+"n": 130,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بہت",
+"n": 121,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گیا",
+"n": 100,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "میرے",
+"n": 93,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "میری",
+"n": 92,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پر",
+"n": 90,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہم",
+"n": 84,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کچھ",
+"n": 83,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اپنی",
+"n": 79,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بھی",
+"n": 77,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اپنے",
+"n": 72,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گا",
+"n": 72,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رہی",
+"n": 69,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اسے",
+"n": 66,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رہے",
+"n": 66,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تو",
+"n": 61,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کرنا",
+"n": 61,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ٹوم",
+"n": 59,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "ہی",
+"n": 58,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تھی",
+"n": 57,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کرنے",
+"n": 57,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "میرا",
+"n": 56,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کافی",
+"n": 55,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سکتے",
+"n": 54,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نہ",
+"n": 53,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تمہیں",
+"n": 52,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تھے",
+"n": 52,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سکتا",
+"n": 52,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پسند",
+"n": 52,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کام",
+"n": 52,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گے",
+"n": 52,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پہ",
+"n": 51,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سب",
+"n": 50,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کسی",
+"n": 50,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "زیادہ",
+"n": 49,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ساتھ",
+"n": 48,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کبھی",
+"n": 48,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چاہتا",
+"n": 47,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دو",
+"n": 46,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دیا",
+"n": 44,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لیے",
+"n": 44,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کوئی",
+"n": 44,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بات",
+"n": 43,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "وقت",
+"n": 43,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پاس",
+"n": 43,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ابھی",
+"n": 42,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کرو",
+"n": 41,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جو",
+"n": 40,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سال",
+"n": 40,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ان",
+"n": 39,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "زبان",
+"n": 39,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گھر",
+"n": 39,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آ",
+"n": 38,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آج",
+"n": 38,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تک",
+"n": 38,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ہوا",
+"n": 38,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پہلے",
+"n": 37,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کرتا",
+"n": 37,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جا",
+"n": 36,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گئی",
+"n": 36,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "یہاں",
+"n": 36,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کرتے",
+"n": 35,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گی",
+"n": 35,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بارے",
+"n": 34,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خیال",
+"n": 34,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کل",
+"n": 32,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کیوں",
+"n": 31,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گاڑی",
+"n": 31,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اب",
+"n": 30,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لگا",
+"n": 29,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مدد",
+"n": 29,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مریم",
+"n": 29,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "پتہ",
+"n": 29,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لئیے",
+"n": 28,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "لگ",
+"n": 28,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لے",
+"n": 28,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مت",
+"n": 28,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مجھ",
+"n": 28,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کم",
+"n": 28,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گئے",
+"n": 28,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بارش",
+"n": 27,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جب",
+"n": 27,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "طرح",
+"n": 27,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کیسے",
+"n": 27,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آیا",
+"n": 26,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لوگ",
+"n": 26,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نام",
+"n": 26,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہر",
+"n": 26,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہمیشہ",
+"n": 26,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہمیں",
+"n": 26,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اچھا",
+"n": 25,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بس",
+"n": 25,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رات",
+"n": 25,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کتاب",
+"n": 25,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جلدی",
+"n": 24,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دوست",
+"n": 24,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لگتا",
+"n": 24,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ٹھیک",
+"n": 24,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہوتا",
+"n": 24,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بعد",
+"n": 23,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تین",
+"n": 23,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جائو",
+"n": 23,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کوشش",
+"n": 23,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "انگریزی",
+"n": 22,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جانا",
+"n": 22,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خوش",
+"n": 22,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دن",
+"n": 22,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ضرورت",
+"n": 22,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لیا",
+"n": 22,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پیسے",
+"n": 22,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کہا",
+"n": 22,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اپنا",
+"n": 21,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تمھیں",
+"n": 21,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جائے",
+"n": 21,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "زندگی",
+"n": 21,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مادری",
+"n": 21,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "پتا",
+"n": 21,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کھانا",
+"n": 21,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہوئے",
+"n": 21,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اتنے",
+"n": 20,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "انتظار",
+"n": 20,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دیکھا",
+"n": 20,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "صبح",
+"n": 20,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پیار",
+"n": 20,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کہاں",
+"n": 20,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہوئی",
+"n": 20,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہونے",
+"n": 20,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دی",
+"n": 19,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دے",
+"n": 19,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "واپس",
+"n": 19,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کس",
+"n": 19,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہوگا",
+"n": 19,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "بچے",
+"n": 18,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بڑی",
+"n": 18,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دیر",
+"n": 18,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "سکتی",
+"n": 18,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "صرف",
+"n": 18,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "غلط",
+"n": 18,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مگر",
+"n": 18,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مہربانی",
+"n": 18,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کوئ",
+"n": 18,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "آئے",
+"n": 17,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جواب",
+"n": 17,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رہتا",
+"n": 17,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سارے",
+"n": 17,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لئے",
+"n": 17,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "وہاں",
+"n": 17,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اتنا",
+"n": 16,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اتنی",
+"n": 16,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ادھر",
+"n": 16,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "باہر",
+"n": 16,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تمہارا",
+"n": 16,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ختم",
+"n": 16,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چاہتے",
+"n": 16,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کتنی",
+"n": 16,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کرے",
+"n": 16,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہوتی",
+"n": 16,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "انہوں",
+"n": 15,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "اگر",
+"n": 15,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بتایا",
+"n": 15,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تھوڑا",
+"n": 15,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جانے",
+"n": 15,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خوبصورت",
+"n": 15,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خود",
+"n": 15,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دنیا",
+"n": 15,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ملا",
+"n": 15,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ملک",
+"n": 15,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نظر",
+"n": 15,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پھر",
+"n": 15,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پہلی",
+"n": 15,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چاہیے",
+"n": 15,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اسکول",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "امید",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بجے",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بند",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بڑا",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جاتی",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جس",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "شروع",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "صحیح",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لوگوں",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "والا",
+"n": 14,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "چاہتی",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کب",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کدھر",
+"n": 14,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کون",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہفتے",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "یقین",
+"n": 14,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ابو",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اسی",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "برائے",
+"n": 13,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "بغیر",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بلی",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بہتر",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جاتا",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جیت",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جیسے",
+"n": 13,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "خط",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دونوں",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سو",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "شادی",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "فرانسیسی",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لی",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لیکن",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "موسم",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پانی",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چھوڑ",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ڈاکٹر",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کمرے",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گھڑی",
+"n": 13,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ادھار",
+"n": 12,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بھائی",
+"n": 12,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بہن",
+"n": 12,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جان",
+"n": 12,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "جانتا",
+"n": 12,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دس",
+"n": 12,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دفعہ",
+"n": 12,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سر",
+"n": 12,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "فون",
+"n": 12,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لڑکی",
+"n": 12,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پہنچ",
+"n": 12,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چاہئیے",
+"n": 12,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کتابیں",
+"n": 12,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کریں",
+"n": 12,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہوتے",
+"n": 12,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "استعمال",
+"n": 11,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اچھے",
+"n": 11,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اکیلے",
+"n": 11,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بال",
+"n": 11,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بیوی",
+"n": 11,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تمہارے",
+"n": 11,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دیکھ",
+"n": 11,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سمجھ",
+"n": 11,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "شکریہ",
+"n": 11,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ٹی",
+"n": 11,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "چائے",
+"n": 11,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چل",
+"n": 11,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کرتی",
+"n": 11,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کروں",
+"n": 11,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کہانی",
+"n": 11,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گئ",
+"n": 11,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ہاتھ",
+"n": 11,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آتا",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آتی",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آسان",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آنا",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اوپر",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اچھی",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ایسے",
+"n": 10,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "بتا",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بول",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بیمار",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تفصیل",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تمہاری",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دل",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دوبارہ",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سن",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "طرف",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "عمر",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لو",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مشکل",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "معلوم",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نا",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نیا",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "والے",
+"n": 10,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "پانچ",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پوری",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چاہئے",
+"n": 10,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "چلا",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چکی",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کہنا",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہماری",
+"n": 10,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آدمی",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بالکل",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بلا",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بولتا",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بھروسہ",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تمھارے",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تیز",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "حاصل",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خاندان",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رہ",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "زندہ",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سوچ",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سوچا",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ماں",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "محنت",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پارٹی",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پڑے",
+"n": 9,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کھا",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کھانے",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہفتہ",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہمارے",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہونا",
+"n": 9,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اتوار",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "امریکہ",
+"n": 8,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "امیر",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "انہیں",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بل",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بچوں",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بڑے",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تیراکی",
+"n": 8,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "جاتے",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جاپان",
+"n": 8,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "جاپانی",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جہاں",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "حال",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خرید",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دور",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دوپہر",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دکھ",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دینا",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دیکھو",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رکھنا",
+"n": 8,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "رہتے",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ریل",
+"n": 8,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "سارا",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سفر",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سونے",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سڑک",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "شاید",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "شخص",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "طور",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "علاوہ",
+"n": 8,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "قریب",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لغت",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لمبی",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لیئے",
+"n": 8,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "نئی",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "والدہ",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پورا",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پڑھا",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پیدا",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چار",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چیز",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چینی",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کاش",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کھیل",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گم",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گھنٹے",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہوائی",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہوٹل",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "یاد",
+"n": 8,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آخر",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "أپنے",
+"n": 7,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "اتفاق",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اسلام",
+"n": 7,
+"eligible": false,
+"why": "proper name"
+},
+{
+"w": "اپ",
+"n": 7,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ایسا",
+"n": 7,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "بار",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بندہ",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تر",
+"n": 7,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "تیار",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دروازہ",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دوں",
+"n": 7,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "دیکھنا",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رہو",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "زمین",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سچ",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "صاحب",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "صاف",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "عورت",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "غلطی",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "فلم",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "فوت",
+"n": 7,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "لیٹ",
+"n": 7,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "مر",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مرضی",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مرمت",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مصروف",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "منٹ",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نمبر",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "والد",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "والی",
+"n": 7,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "وجہ",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "وعدہ",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پورے",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پچھلے",
+"n": 7,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "پڑھنے",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چاہو",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چکا",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کئی",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کال",
+"n": 7,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کتنے",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کونسا",
+"n": 7,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کیسا",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہار",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "یا",
+"n": 7,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آئی",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آتے",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آنکھیں",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آگے",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "أور",
+"n": 6,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ادا",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اردو",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "استاد",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "امتحان",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "امی",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اندر",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اگلے",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "باقی",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بدل",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "برف",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بستر",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بلکل",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بھارت",
+"n": 6,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "بہار",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بے",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تب",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تجھے",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تمھارا",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تمھاری",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تھک",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تھکا",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جانتے",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جلد",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جمع",
+"n": 6,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "جن",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جوان",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جون",
+"n": 6,
+"eligible": false,
+"why": "proper name"
+},
+{
+"w": "خراب",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خیالات",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دادا",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دعوت",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رنگ",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رہتی",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "زور",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سا",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سکول",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ضروری",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "عمارت",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "فورا",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لندن",
+"n": 6,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "لگی",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "محسوس",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مل",
+"n": 6,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ملے",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "میز",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "میل",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نکل",
+"n": 6,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ٹینس",
+"n": 6,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "پرانے",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پڑا",
+"n": 6,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "پی",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پیچھے",
+"n": 6,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "چیزیں",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کار",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کتنا",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کہیں",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کیک",
+"n": 6,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہونگے",
+"n": 6,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "آئو",
+"n": 5,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "آخری",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آدھا",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آرام",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آوٴ",
+"n": 5,
+"eligible": false,
+"why": "not Urdu letters"
+},
+{
+"w": "اثر",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اخبار",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "انڈے",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اونچا",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ای",
+"n": 5,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "اے",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بتانے",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بچہ",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بہترین",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بہنیں",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بیٹی",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تاکہ",
+"n": 5,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ترجمہ",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "توڑا",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تیرنا",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تیس",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جاؤ",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جاننا",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جانور",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جتنا",
+"n": 5,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "جرمن",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جنت",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جی",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "حادثے",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "حصہ",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خریدنے",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خوب",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دفتر",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دنوں",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دوسرے",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دھمکی",
+"n": 5,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "دیتا",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دیکھی",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "روزانہ",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رکھ",
+"n": 5,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "رکھتا",
+"n": 5,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "رکھو",
+"n": 5,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "سالگرہ",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سنجیدگی",
+"n": 5,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "سیاہ",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سیکھ",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "شائد",
+"n": 5,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "شام",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "شوق",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "صفائی",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "عام",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "غریب",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "غیر",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "فرق",
+"n": 5,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "قسم",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لمبا",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لوں",
+"n": 5,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "مئیری",
+"n": 5,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "مبارک",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مشہور",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ملاقات",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ملی",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مین",
+"n": 5,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "میکسیکو",
+"n": 5,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "نفرت",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نوکری",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نیچے",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "وی",
+"n": 5,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "پایا",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پوچھ",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پوچھا",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پڑھ",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پڑھو",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پھولوں",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پیانو",
+"n": 5,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "پیتا",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پیر",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پیش",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چاہ",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چاہیئے",
+"n": 5,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "چاہے",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چھوٹا",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چین",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ڈر",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کامیابی",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کرنی",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کھلا",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کھڑکی",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کہتے",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کیسی",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کیونکہ",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کیے",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گرم",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گرمی",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گےٴ",
+"n": 5,
+"eligible": false,
+"why": "not Urdu letters"
+},
+{
+"w": "ہمارا",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہنس",
+"n": 5,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہوگی",
+"n": 5,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "آئیے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "احساس",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اداس",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "از",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اصولوں",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "الفاظ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "امریکا",
+"n": 4,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "اٹھ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اٹھا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اکثر",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ایسی",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ایم",
+"n": 4,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "باتیں",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بادل",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "باسٹن",
+"n": 4,
+"eligible": false,
+"why": "proper name / foreign"
+},
+{
+"w": "بتائو",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "بجانا",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "بخیر",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "بن",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "بنایا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بولنے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بچا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بڑھ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بیس",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بیٹھے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تاریخ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تازہ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ترجیح",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تصویر",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تقریبا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تمام",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تمباکونوشی",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "تھوڑی",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جاوٴ",
+"n": 4,
+"eligible": false,
+"why": "not Urdu letters"
+},
+{
+"w": "جاوٴں",
+"n": 4,
+"eligible": false,
+"why": "not Urdu letters"
+},
+{
+"w": "جدھر",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "جھوٹ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جیتے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "حادثہ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "حقیقت",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خریدنا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خطرہ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خواب",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "درد",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دریا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دلچسپ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دوسروں",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دوسری",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دکھا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دھیان",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دیجیے",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "دیکھنے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دیں",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "راز",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رفتار",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "روز",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "روسی",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "روشنی",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "روٹی",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "روک",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "رک",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "رکھتی",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "رہنے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ریلوے",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "زبانیں",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ساری",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سامان",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سامنے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سانپ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سمجھا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سوال",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سولہ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سویا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سٹیشن",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "سکا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سہارا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سی",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "شامل",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "شرمیلا",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "شوہر",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "شہر",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "طالب",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "عادت",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "عرصہ",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "علم",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "علیکم",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "عمل",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "عموما",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "فرانس",
+"n": 4,
+"eligible": false,
+"why": "proper name"
+},
+{
+"w": "فیصلہ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "قصور",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لغات",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لفٹ",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "لوٹ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لڑکا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لڑکے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لگتی",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لگتے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مئری",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "مختلف",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مزہ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مشورہ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "معاف",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ملتی",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ممالک",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ممکن",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "منہ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مہنگا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نئے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ناراض",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نانا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ناول",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نتیجے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "نکلی",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "نیند",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "وزن",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ویل",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ٹوپی",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ٹوکیو",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ٹھنڈ",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "پاکستان",
+"n": 4,
+"eligible": false,
+"why": "proper name"
+},
+{
+"w": "پڑتا",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "پڑھنا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پڑی",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "پکانے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پکڑ",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "پیدائش",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چائیے",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "چاکلیٹ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چاھتا",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "چلو",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چلے",
+"n": 4,
+"eligible": false,
+"why": "proper name"
+},
+{
+"w": "چوری",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چھوٹی",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چھوڑنے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چھٹی",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چیئر",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "چیخ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چیزوں",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ڈالر",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ڈرتے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ڈریس",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کاپی",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کروگے",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کمرہ",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کونسی",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کھاتے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کھو",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کھڑی",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کھڑے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کہنے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گاڑیاں",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گر",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "گرین",
+"n": 4,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "گفتگو",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گنا",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گوشت",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہاں",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہزار",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہفتوں",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "یورپ",
+"n": 4,
+"eligible": false,
+"why": "proper name"
+},
+{
+"w": "یے",
+"n": 4,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آرٹ",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "آنکھوں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آنے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آواز",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آٹھ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آگ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اتار",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اجلاس",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اجنبی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اختلاف",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اسٹیشن",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اصل",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اطالوی",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "اظہار",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اعتبار",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "افسوس",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "الفاظوں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "امریکی",
+"n": 3,
+"eligible": false,
+"why": "proper name"
+},
+{
+"w": "امکان",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "انداز",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "انعام",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اونچی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اچانک",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اڑ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اگلی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ایماندار",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "باری",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بتائی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بتانا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بدصورت",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "برابر",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "برداشت",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بزرگ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بلیاں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بندے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بوس",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "بولو",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بولی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بھاگ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بھول",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بیتاب",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "بیسبال",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "بین",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "بینک",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تجربہ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تحفہ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تصویریں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تعداد",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تلاش",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "توڑ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "تیرا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ثابت",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جائزہ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جانوروں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جتنے",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "جرمنی",
+"n": 3,
+"eligible": false,
+"why": "proper name"
+},
+{
+"w": "جل",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جھوٹھ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جہاز",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "جیسا",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "جیسی",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "جیل",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "حالت",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "حساب",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "حل",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "حملہ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خاص",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خانہ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خریدا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "خوشی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دراصل",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دروازے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دماغ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دودھ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دکان",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دھوپ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دھیرے",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "دینے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دیکھتا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دیکھتے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "دیے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ذائقہ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رائے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رابطہ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "راستے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رنگدار",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "رکھا",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "رکھتے",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "رکھنے",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "رہنا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "رہیں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ریستوران",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ریڈیو",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "زخمی",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "زمانے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "زنگی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "زیری",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سات",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سالوں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سردی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سفید",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سلام",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سلوک",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سمجھنا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سمندر",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سمندری",
+"n": 3,
+"eligible": false,
+"why": "proper name"
+},
+{
+"w": "سمی",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "سنائی",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "سپین",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "سچائی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سکون",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سکوں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سکی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سکے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سیاسی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سیکھا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "سیکھنے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "شطرنج",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "شکل",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "صبر",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "صحت",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "صدی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ضائع",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ضرور",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "طریقہ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "طلبہ",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "عادی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "عجیب",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "عربی",
+"n": 3,
+"eligible": false,
+"why": "proper name"
+},
+{
+"w": "عزت",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "عقل",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "عورتیں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "عینک",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "فائدہ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "فخر",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "فطرت",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "فوج",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "فٹ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "قابل",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "قابو",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "قدرت",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "قدمی",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "قرض",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "قسمت",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "قومی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "قیام",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "قیمتیں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لال",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لونگا",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "لکھ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لگے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "لینا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ماری",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مالک",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ماننے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "متفق",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "مرنا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مرکز",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مصنف",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مطلب",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "معافی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "معذرت",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ملنے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ممبر",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "مند",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "منزل",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "منع",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "موت",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "موٹے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مہینوں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "مہینے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "میٹنگ",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "میک",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ناقابل",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "نکلنے",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "نیلی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "واقعہ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "واقعی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "والدین",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "والوں",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "وکیل",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ویسا",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ٹائم",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ٹرین",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ٹکٹ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ٹیلی",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "پاگل",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پتانا",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "پرانی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پسندیدہ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پڑھتا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پڑھتے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پکا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پگھل",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "پھل",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پھول",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پہن",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پہنچنا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پہنچنے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پہنچی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پہنچے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پہنی",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "پیرس",
+"n": 3,
+"eligible": false,
+"why": "proper name"
+},
+{
+"w": "پینٹ",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "پینے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چال",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چاہوں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چلنا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چوٹ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چڑیا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چکے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چھہ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "چہل",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ڈالتے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ڈھیڑ",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کباڑ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کتا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کروانے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کلاس",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کھائیں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کھاتا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کھلاڑی",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کھول",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کھڑا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "کہونگا",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "کیمرہ",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گرا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گرفتار",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "گزرا",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "گلے",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "گھنٹوں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہاتھوں",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہسپانوی",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ہسپتال",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ہلانا",
+"n": 3,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ہونگی",
+"n": 3,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ہوےٴ",
+"n": 3,
+"eligible": false,
+"why": "not Urdu letters"
+},
+{
+"w": "آئڈیا",
+"n": 2,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "آجاؤنگا",
+"n": 2,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "آرہا",
+"n": 2,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "آسمان",
+"n": 2,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آغاز",
+"n": 2,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آنسو",
+"n": 2,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آنگن",
+"n": 2,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آکسیجن",
+"n": 2,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آگاہ",
+"n": 2,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "آیئں",
+"n": 2,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "آیں",
+"n": 2,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "أبھی",
+"n": 2,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "أمیر",
+"n": 2,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "أپنا",
+"n": 2,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "أپنی",
+"n": 2,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "أچھی",
+"n": 2,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "أہم",
+"n": 2,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ئۇ",
+"n": 2,
+"eligible": false,
+"why": "not Urdu letters"
+},
+{
+"w": "ابتدا",
+"n": 2,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اتحاد",
+"n": 2,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "اتروانا",
+"n": 2,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "اجازت",
+"n": 2,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "احتیاطا",
+"n": 2,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+},
+{
+"w": "ادب",
+"n": 2,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "ارادہ",
+"n": 2,
+"eligible": true,
+"why": "ok"
+},
+{
+"w": "استدبار",
+"n": 2,
+"eligible": false,
+"why": "no dictionary entry (variant spelling, typo or foreign)"
+}
+]
+}
