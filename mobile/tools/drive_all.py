@@ -38,7 +38,7 @@ with sync_playwright() as p:
             rom=mk.group(1)
             for u in U:
                 for w in u['words']:
-                    if w[1]==rom and sorted(list(w[0]))==sorted(texts): target=w[0]
+                    if w[1]==rom and sorted(list(re.sub(r'[\u064B-\u0652\u0670\u0640]','',w[0])))==sorted(texts): target=w[0]  # marks (e.g. dagger alif) are not tiles
         target_b=re.sub(r'[\u064B-\u0652\u0670\u0640]','',target) if target else target
         if target_b and len(target_b)>=3 and all(len(tx)==1 for tx in texts) and sorted(texts)==sorted(list(target_b)):
             target=target_b
@@ -92,7 +92,16 @@ with sync_playwright() as p:
         return out
     import os
     START=int(os.environ.get('START_UNIT','0'))
-    if START>1:
+    if START>1 and os.environ.get('SEED','1')=='1':
+        # jump ahead by marking units 0..START-1 as passed (the placement check is stricter now, so it cannot be used as a shortcut)
+        pg.evaluate("""async (n) => {
+          const m = await import('/src/db.js'); const ps = await m.db.all('profiles'); const p = ps[0];
+          const prog = (await m.db.get('progress', p.id)) || { id: p.id, units: {}, wpm: [], sessions: 0 };
+          for (let k = 0; k < n; k++) prog.units[k] = { ...(prog.units[k] || {}), passed: true, score: 10, total: 10, at: Date.now() };
+          await m.db.put('progress', prog);
+        }""", START)
+        pg.reload(); pg.wait_for_timeout(3000)
+    elif START>1:
         js(pg.query_selector("button:has-text('Take the placement check')")); pg.wait_for_timeout(800)
         for guard in range(400):
             h2=pg.query_selector("#app h2"); t=h2.inner_text() if h2 else ''
@@ -106,7 +115,7 @@ with sync_playwright() as p:
             js(pick); pg.wait_for_timeout(520)
         print("placement result:", pg.inner_text("#app h2")); js(pg.query_selector("button:has-text('Go')")); pg.wait_for_timeout(800)
     import time; t0=time.time(); done_units=[]; last_unit=None; stuck=0
-    while time.time()-t0<1500:
+    while time.time()-t0<int(os.environ.get("SWEEP_SECS","1500")):
         js(pg.query_selector(".bottom button:has-text('Learn')")); pg.wait_for_timeout(700)
         if pg.query_selector("text=You have finished the course"): print("COURSE COMPLETE"); break
         for _w in range(100):  # poll: the Learn screen renders async (stats, path, Marko); a mixed css/text selector list never waited
