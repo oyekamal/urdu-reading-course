@@ -7,7 +7,7 @@
 // Switch: settings.feel === false turns sound + vibration off (motion stays; prefers-reduced-motion removes motion).
 import { Capacitor } from '@capacitor/core';
 import { marko, setMarko } from './marko.js';
-import { C, play, DOTS } from './content.js';
+import { C, play, dotInfo, glyphForm } from './content.js';
 
 let app = null;                                           // ctxBase from main.js: { settings, set }
 const on = () => app?.settings?.feel !== false;
@@ -178,20 +178,26 @@ let misses = 0, say = null, sayT = 0;
 const NUM = ['no', 'one', 'two', 'three', 'four'];
 function clearSay(toast = true) { clearTimeout(sayT); say?.remove(); say = null; if (toast) document.getElementById('toast')?.classList.remove('show'); document.querySelectorAll('.tile.feel-answer').forEach(t => t.classList.remove('feel-answer')); }
 // which tile was the answer? explicit data-right (an audio key) first, else the last speech clip that is not the tapped letter's own
+const letterOf = txt => { const g = glyphForm(txt); return g && C.by?.[g.ch]; };   // 'ـبـ' and 'ب' are both the letter be
 function answerOf(tile) {
   const row = [...tile.parentElement?.querySelectorAll('.tile') || []];
   const flagged = row.find(x => x.dataset.right && x !== tile); if (flagged) return { good: flagged, key: flagged.dataset.right };
-  const tapped = C.by?.[tile.textContent.trim()]?.id;
+  const tapped = letterOf(tile.textContent)?.id;
   const want = [...plays].reverse().find(k => k.startsWith('names/') && k.slice(6) !== tapped)?.slice(6); if (!want) return { good: null, key: null };
-  return { good: row.find(x => C.by?.[x.textContent.trim()]?.id === want && x !== tile && !x.classList.contains('no')) || null, key: 'names/' + want };
+  return { good: row.find(x => letterOf(x.textContent)?.id === want && x !== tile && !x.classList.contains('no')) || null, key: 'names/' + want };
 }
-// kind, specific line for tap-the-letter drills (dots first: that is what tells most letters apart), short generic line otherwise
+// kind, specific line for tap-the-letter drills (dots first: that is what tells most letters apart), short generic line otherwise.
+// Every claim is read from the glyph that is on the tile (its position matters: ی has two dots only when it joins forward), and the
+// small ط on ٹ ڈ ڑ and the hamza on ئ are never called dots.
 function lineFor(good, tile) {
-  const t = good && C.by?.[good.textContent.trim()], p = C.by?.[tile.textContent.trim()];
-  if (!t) return 'Almost! Tap the green one.';
-  const dt = DOTS[t.ch || good.textContent.trim()] || 0, dp = p ? (DOTS[p.ch || tile.textContent.trim()] || 0) : -1;
-  if (dt === 0 && dp > 0) return `This is ${t.name}, no dots!`;
-  if (dt > 0 && dt !== dp) return `Count the dots: ${good.textContent.trim()} has ${NUM[dt]}`;
+  const gt = good && glyphForm(good.textContent), pt = glyphForm(tile.textContent), t = gt && C.by?.[gt.ch], p = pt && C.by?.[pt.ch];
+  if (!t) return 'Not quite. Listen again and try another one.';
+  const shown = good.textContent.trim(), dt = dotInfo(t.ch, gt.form), dp = p ? dotInfo(p.ch, pt.form) : { n: -1, pos: '', mark: null };
+  if (dt.mark === 'tah') return dp.mark === 'tah' ? `Listen again: this is ${t.name}` : `Look for the little ط on ${shown}`;
+  if (dt.mark === 'hamza') return dp.mark === 'hamza' ? `Listen again: this is ${t.name}` : `Look for the little ء on ${shown}`;
+  if (dt.n === 0 && (dp.n > 0 || dp.mark)) return `This is ${t.name}, no dots!`;
+  if (dt.n > 0 && dt.n !== dp.n) return `Count the dots: ${shown} has ${NUM[dt.n]}`;
+  if (dt.n > 0 && dt.pos !== dp.pos) return `Look where the dot sits: ${shown} has ${NUM[dt.n]} ${dt.pos}`;
   return `Listen again: this is ${t.name}`;
 }
 function bubble(row, good, text) {

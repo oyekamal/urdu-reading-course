@@ -57,7 +57,7 @@ AUDIT_JS = r"""
 
 # 5. content hidden under fixed bars: scroll to the end, nothing in the page flow may sit under a fixed bar
 HIDDEN_JS = r"""
-() => { const V = []; window.scrollTo(0, document.documentElement.scrollHeight); const H = innerHeight;
+() => { const V = []; window.scrollTo(0, document.documentElement.scrollHeight); document.querySelectorAll('.les-scroll').forEach(s => { s.scrollTop = s.scrollHeight; }); /* round 11b: lesson content scrolls inside .les-scroll */ const H = innerHeight;
   const vis = e => { const r = e.getBoundingClientRect(); if (r.width < 1 || r.height < 1) return false; for (let x = e; x && x !== document.documentElement; x = x.parentElement) { const s = getComputedStyle(x); if (s.display === 'none' || s.visibility === 'hidden') return false; } return true; };
   const fixedOf = e => { for (let x = e; x && x !== document.body; x = x.parentElement) { const p = getComputedStyle(x).position; if (p === 'fixed' || p === 'sticky') return x; } return null; };
   const bars = [...document.querySelectorAll('.bottom, .ob-foot, .dock, .dock-row')].filter(vis).filter(b => getComputedStyle(b).position === 'fixed');

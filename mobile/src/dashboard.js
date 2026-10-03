@@ -1,7 +1,8 @@
 // Progress dashboard shared by the learner's Progress tab and the teacher's per-child detail.
 // Letter mastery grid (Leitner box), drill accuracy over 14 days, weakest items, 28-day activity, speed history, assessments.
+import { esc } from './safe.js';
 import { db } from './db.js';
-import { C, el, bandFor, PRP } from './content.js';
+import { C, el, bandFor, PRP, compText, recBand } from './content.js';
 import * as S from './session.js';
 
 const DAY = 86400000;
@@ -26,7 +27,7 @@ export async function renderDashboard(profileId, opts = {}) {
   // weakest items
   const miss = {}; attempts.filter(a => !a.correct && a.ts > Date.now() - 28 * DAY).forEach(a => { miss[a.item] = (miss[a.item] || 0) + 1; });
   const weak = Object.entries(miss).sort((a, b) => b[1] - a[1]).slice(0, 8);
-  if (weak.length) { const w = el('div', 'card'); w.innerHTML = '<h2>Needs work</h2><p class="muted">Most-missed items in the last four weeks. Tap to hear.</p>'; const row = el('div', 'choices'); row.style.justifyContent = 'flex-start'; weak.forEach(([item, n]) => { const t = el('button', 'tile small ur', item); t.title = `${n} misses`; t.setAttribute('aria-label', `${item}, ${n} misses`); t.onclick = () => { const c = byItem[item]; if (c) import('./content.js').then(m => m.play(S.audioKeyFor(c))); }; const tag = el('span', 'pill', String(n)); tag.style.cssText = 'position:relative;left:-10px;top:-8px'; row.append(t, tag); }); w.append(row); wrap.append(w); }
+  if (weak.length) { const w = el('div', 'card'); w.innerHTML = '<h2>Needs work</h2><p class="muted">Most-missed items in the last four weeks. Tap to hear.</p>'; const row = el('div', 'choices'); row.style.justifyContent = 'flex-start'; weak.forEach(([item, n]) => { const t = el('button', 'tile small ur'); t.textContent = String(item); t.title = `${n} misses`; t.setAttribute('aria-label', `${item}, ${n} misses`); t.onclick = () => { const c = byItem[item]; if (c) import('./content.js').then(m => m.play(S.audioKeyFor(c))); }; const tag = el('span', 'pill', String(n)); tag.style.cssText = 'position:relative;left:-10px;top:-8px'; row.append(t, tag); }); w.append(row); wrap.append(w); }
   // activity, last 28 days
   const act = el('div', 'card'); act.innerHTML = '<h2>Activity · last 4 weeks</h2>'; const cal = el('div', 'row'); cal.style.gap = '4px'; const days = [...Array(28).keys()].map(i => { const d0 = new Date(); d0.setHours(0, 0, 0, 0); return d0.getTime() - (27 - i) * DAY; });
   const perDay = days.map(d => sessions.filter(x => x.startedAt >= d && x.startedAt < d + DAY).length);
@@ -35,6 +36,6 @@ export async function renderDashboard(profileId, opts = {}) {
   // speed
   if (s.wpm.length) { const w = el('div', 'card'); w.innerHTML = '<h2>Reading speed</h2>'; const mx = Math.max(60, ...s.wpm.map(x => x.wpm)); const best = Math.max(...s.wpm.map(x => x.wpm)); const gg = el('div', 'row'); gg.style.alignItems = 'flex-end'; gg.style.height = '120px'; s.wpm.slice(-20).forEach(x => { const b = el('div', '', ''); b.style.cssText = `width:14px;height:${Math.max(4, x.wpm / mx * 110)}px;background:${x.wpm === best ? 'var(--good)' : 'var(--accent)'};border-radius:4px`; b.title = `${x.wpm} wpm`; gg.append(b); }); const line = el('div', '', ''); line.style.cssText = `border-top:1px dashed var(--muted);margin-top:-${Math.round(60 / mx * 110)}px;position:relative;pointer-events:none`; w.append(gg, el('div', 'muted', `latest ${s.wpm[s.wpm.length - 1].wpm} wpm · best ${best} · 60 meets the grade-2 standard (${PRP(s.wpm[s.wpm.length - 1].wpm)})`)); wrap.append(w); }
   // assessments
-  if (assessments.length) { const a = el('div', 'card'); a.innerHTML = '<h2>Assessments</h2>'; const t = el('div', 'table'); t.innerHTML = `<table><tr><th>Date</th><th>By</th><th>Letters</th><th>Nonwords</th><th>Words</th><th>Passage</th><th>Comp.</th><th>Level</th></tr>${assessments.sort((x, y) => y.ts - x.ts).slice(0, 6).map(x => `<tr><td>${new Date(x.ts).toLocaleDateString()}</td><td>${x.by}</td><td>${x.letters ?? '-'}</td><td>${x.nonwords ?? '-'}</td><td>${x.words ?? '-'}</td><td>${x.orf?.cwpm ?? '-'}</td><td>${x.comp ?? '-'}</td><td><span class="pill ${x.band}">${x.band}</span></td></tr>`).join('')}</table>`; a.append(t); wrap.append(a); }
+  if (assessments.length) { const a = el('div', 'card'); a.innerHTML = '<h2>Assessments</h2>'; const t = el('div', 'table'); t.innerHTML = `<table><tr><th>Date</th><th>By</th><th>Letters</th><th>Nonwords</th><th>Words</th><th>Passage</th><th>Comp.</th><th>Level</th></tr>${assessments.sort((x, y) => y.ts - x.ts).slice(0, 6).map(x => `<tr><td>${new Date(x.ts).toLocaleDateString()}</td><td>${esc(x.by)}</td><td>${esc(x.letters ?? '-')}</td><td>${esc(x.nonwords ?? '-')}</td><td>${esc(x.words ?? '-')}</td><td>${esc(x.orf?.cwpm ?? '-')}</td><td>${esc(compText(x))}</td><td><span class="pill ${esc(recBand(x))}">${esc(recBand(x))}</span></td></tr>`).join('')}</table>`; a.append(t); wrap.append(a); }
   return wrap;
 }

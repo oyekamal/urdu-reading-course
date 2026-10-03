@@ -35,10 +35,33 @@ export function loadContent() {
   return C.ready;
 }
 export const STROKE = { alif: 'one stroke, top to bottom', be: 'start top-right, shallow bowl leftwards, hook up; dots last', jim: 'small head stroke leftwards, then the round bowl below; dot last', dal: 'top down and out to the left in one angled stroke', re: 'top down and sweep left below the line', sin: 'three teeth right to left, then the bowl', toe: 'loop first, then the tall stroke on its right', ain: 'small c at the top, then the bowl', fe: 'small loop, then the bowl leftwards', kaf: 'base stroke first, right to left, then the sloping cap on top', lam: 'tall stroke down, curve into the bowl', mim: 'small loop, tail down-left', nun: 'deep round bowl; dot last', wao: 'small loop, short tail', he: 'small loop with a short tail (ھ: two bowls open at top)', ye: 'bowl that swings back under itself (ے: long flat sweep)', hamza: 'small hook, written last' };
-export const DOTS = { 'ب': 1, 'پ': 3, 'ت': 2, 'ٹ': 1, 'ث': 3, 'ج': 1, 'چ': 3, 'خ': 1, 'ذ': 1, 'ڈ': 1, 'ڑ': 1, 'ز': 1, 'ژ': 3, 'ش': 3, 'ض': 1, 'ظ': 1, 'غ': 1, 'ف': 1, 'ق': 2, 'ن': 1, 'ی': 2, 'ئ': 1 };
+// Dots as DRAWN on the glyph, per position (Urdu Naskh/Nastaliq): [count, 'above'|'below'], or a small mark that is not a dot:
+// 'tah' (the little ط on ٹ ڈ ڑ) and 'hamza' (ئ). ی has no dots alone or at the end of a word, two below when it joins forward.
+const DOT_BASE = { 'ب': [1, 'below'], 'پ': [3, 'below'], 'ت': [2, 'above'], 'ٹ': 'tah', 'ث': [3, 'above'], 'ج': [1, 'below'], 'چ': [3, 'below'], 'خ': [1, 'above'], 'ذ': [1, 'above'], 'ڈ': 'tah', 'ڑ': 'tah', 'ز': [1, 'above'], 'ژ': [3, 'above'], 'ش': [3, 'above'], 'ض': [1, 'above'], 'ظ': [1, 'above'], 'غ': [1, 'above'], 'ف': [1, 'above'], 'ق': [2, 'above'], 'ن': [1, 'above'], 'ئ': 'hamza' };
+const DOT_JOINED = { 'ی': [2, 'below'], 'ں': [1, 'above'] };
+export function dotInfo(ch, form = 'isolated') {
+  const b = ((form === 'initial' || form === 'medial') && DOT_JOINED[ch]) || DOT_BASE[ch];
+  if (!b) return { n: 0, pos: '', mark: null }; if (typeof b === 'string') return { n: 0, pos: '', mark: b }; return { n: b[0], pos: b[1], mark: null };
+}
+export const DOTS = { 'ب': 1, 'پ': 3, 'ت': 2, 'ث': 3, 'ج': 1, 'چ': 3, 'خ': 1, 'ذ': 1, 'ز': 1, 'ژ': 3, 'ش': 3, 'ض': 1, 'ظ': 1, 'غ': 1, 'ف': 1, 'ق': 2, 'ن': 1 };  // true dots on the isolated glyph (no tah, no hamza)
+// which letter and which position does a tile show? 'ـبـ' -> {ch:'ب', form:'medial'}; null if it is not exactly one letter
+export function glyphForm(text) { const t = (text || '').trim(), lead = t.startsWith(TATWEEL), trail = t.length > 1 && t.endsWith(TATWEEL), ch = t.split(TATWEEL).join(''); if ([...ch].length !== 1) return null; return { ch, form: lead && trail ? 'medial' : lead ? 'final' : trail ? 'initial' : 'isolated' }; }
+// consonants that sound the same in Urdu: two of them never go in one tap-what-you-hear round (the clips are the same sound)
+const SAME_SOUND = { 'ث': 'س', 'ص': 'س', 'ذ': 'ز', 'ض': 'ز', 'ظ': 'ز', 'ط': 'ت', 'ح': 'ہ', 'ع': 'ا' };
+export const soundOf = c => SAME_SOUND[c] || c;
+// assessment level that counts reading AND understanding: 60+ cwpm only 'meets' with comprehension at 4 of 5 or better
+export const COMP_MIN = 4;
+export function overallLevel(cwpm, comp, compDone = true) { const base = PRP(cwpm); if (cwpm < 60) return base; if (!compDone) return 'fluent, comprehension not tested: not yet a standard result'; return comp >= COMP_MIN ? base : 'below standard: reads fast, understands too little'; }
+export function overallBand(cwpm, comp, compDone = true) { const b = bandFor(cwpm); return b === 'fluent' && !(compDone && comp >= COMP_MIN) ? 'sentences' : b; }
 export const BANDS = [['pre-reader', 0], ['letters', 1], ['words', 20], ['sentences', 40], ['fluent', 60]];
 export const PRP = cwpm => cwpm > 90 ? 'exceeds grade-2 standard' : cwpm >= 60 ? 'meets standard' : cwpm > 0 ? 'below standard' : 'nonreader';
 export const BAND_HELP = 'Bands by passage speed: pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+ cwpm. Grade-2 standard (USAID PRP): 60 cwpm meets, 90+ exceeds.';
 export function bandFor(cwpm) { let b = BANDS[0][0]; for (const [name, min] of BANDS) if (cwpm >= min) b = name; return b; }
 export const el = (t, c, h) => { const e = document.createElement(t); if (c) e.className = c; if (h != null) e.innerHTML = h; return e; };
 export const toast = m => { const t = document.getElementById('toast') || Object.assign(document.body.appendChild(document.createElement('div')), { id: 'toast', className: 'toast', role: 'status' }); t.setAttribute('aria-live', 'polite'); t.textContent = m; t.classList.add('show'); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 1800); };
+
+// comprehension as text for a saved assessment: a part that was not tested is never shown as 0/5
+export const compText = a => a && a.compDone === false ? 'not tested' : (a && a.comp != null ? a.comp + '/5' : '-');
+// level/band of a SAVED assessment: new records carry them; old ones are worked out the same way (comprehension counted, band from cwpm)
+export const recBand = a => a.orfDone === false ? 'not tested' : overallBand(a.orf?.cwpm ?? 0, a.comp ?? 0, a.compDone !== false && a.comp != null);   // always recomputed: a legacy 'fluent' with weak comprehension is not fluent
+export const recLevel = a => a.orfDone === false ? 'passage not tested: no standard result' : overallLevel(a.orf?.cwpm ?? 0, a.comp ?? 0, a.compDone !== false && a.comp != null);

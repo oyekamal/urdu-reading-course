@@ -5,11 +5,17 @@ import { db } from './db.js';
 import { C, play, el } from './content.js';
 import { icon, mascot, confetti } from './icons.js';
 import { fx, burst } from './fx.js';
+import { esc, cleanName, tapLock, tapFree } from './safe.js';
 
 const T = (who, me, child) => who === 'me' ? me : child;
 
-export async function runOnboarding(root, { finish, teacherSetup }) {
-  const st = (await db.setting('onb')) || { i: 0, a: {} }; const a = st.a;
+export async function runOnboarding(root, { finish, teacherSetup, restore }) {
+  const st0 = await db.setting('onb'); const st = st0 && typeof st0 === 'object' && st0.a && typeof st0.a === 'object' ? st0 : { i: 0, a: {} }; const a = st.a;
+  // the saved answers are untrusted (a hand-edited or damaged setting): only known-shaped values survive
+  st.i = Number.isInteger(st.i) && st.i >= 0 ? st.i : 0; if (!/^#[0-9a-fA-F]{3,8}$/.test(a.colour || '')) delete a.colour; if (a.name !== undefined) a.name = cleanName(a.name, 24) || undefined;
+  for (const k of ['who', 'goal', 'speak', 'reads']) if (a[k] !== undefined && !/^[a-z0-9_-]{1,24}$/i.test(String(a[k]))) delete a[k];
+  for (const k of ['minutes', 'days']) if (a[k] !== undefined) a[k] = Number.isFinite(Number(a[k])) ? Math.max(0, Math.min(600, Number(a[k]))) : undefined;
+  a.pains = Array.isArray(a.pains) ? a.pains.filter(v => /^[a-z0-9_-]{1,24}$/i.test(String(v))).slice(0, 8) : [];
   const save = () => db.setting('onb', { i: st.i, a });
   const nm = () => a.name || (a.who === 'me' ? 'you' : 'your child');
   const flow = [welcome, wake, colour, who, name, goal, speak, reads, pains, solution, minutes, processing, demo, value, streak, commit, plan];
@@ -24,9 +30,9 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
       const top = el('div', 'ob-top'); const back = el('button', 'ob-back', icon('back')); back.setAttribute('aria-label', 'Back'); back.onclick = () => go(-1);
       top.append(back, el('div', 'ob-bar', `<i style="width:${Math.round((st.i - Q0 + 1) / (Q1 - Q0 + 1) * 100)}%"></i>`)); scr.append(top);
     }
-    flow[st.i](scr);
+    st.i = Math.min(st.i, flow.length - 1); flow[st.i](scr);
   }
-  function go(d = 1) { st.i = Math.max(0, Math.min(flow.length - 1, st.i + d)); if (flow[st.i] === name && a.who === 'class' && d > 0) return teacherSetup(); save(); show(); }
+  function go(d = 1) { if (!tapLock()) return; /* a double tap must move exactly one step */ st.i = Math.max(0, Math.min(flow.length - 1, st.i + d)); if (flow[st.i] === name && a.who === 'class' && d > 0) return teacherSetup(); save(); show(); }
   // Marko says a line, speech-bubble style, first person (Finch's pet talks to you; ours is your teacher)
   const say = (pose, html, size = 120) => el('div', 'ob-say', `<span class="ob-m" style="--c:${a.colour || 'var(--gold)'}">${mascot(pose, size)}</span><div class="ob-bubble">${html}</div>`);
   // Marko answers every choice: swap pose + bubble line, then move on (Finch's pet talks back; a silent form does not)
@@ -56,6 +62,7 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
     scr.append(el('div', 'ob-hero', `<div class="ob-sun fx-stage">${mascot('hello', 190)}</div><div class="ur nastaliq ob-kicker">اردو پڑھنا سیکھیں</div><h1>Read Urdu in ten minutes a day</h1><p class="muted">Hi, I'm Marko. I'll teach you the letters one at a time, and you'll read a real word in the next two minutes.</p>`));
     scr.querySelector('.ob-sun').prepend(fx('sparkles_loop', { size: 250, loop: true, cls: 'fx-over', speed: .6 }));
     foot(scr, el('p', 'muted center ob-small', 'Free, no account, works offline'), cta("Let's begin", () => { play('ui/welcome'); go(1); }));
+    if (restore) scr.querySelector('.ob-hero').append(Object.assign(el('button', 'btn btn-chip ob-restore', 'Restore from a backup'), { onclick: restore })); // in the hero, so the primary button stays docked at the bottom
   }
   function wake(scr) {
     scr.classList.add('ob-center');
@@ -81,10 +88,10 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
   }
   function name(scr) {
     scr.append(say('hello', T(a.who, "I'm Marko. <b>What's your name?</b>", "I'm Marko. <b>What's your child's name?</b>"), 150));
-    const inp = el('input', 'ob-name'); inp.id = 'ob-name'; inp.placeholder = T(a.who, 'Your name', "Child's name"); inp.value = a.name || ''; inp.maxLength = 24; inp.autocomplete = 'off'; inp.setAttribute('aria-label', inp.placeholder);
-    const hi = el('div', 'ob-hi'); const next = cta('Continue', () => { a.name = inp.value.trim(); save(); go(1); }, !inp.value.trim());
-    let greeted = false; const upd = () => { const v = inp.value.trim(); next.disabled = !v; hi.innerHTML = v ? `<span class="ob-badge" style="background:${a.colour || 'var(--accent)'}">${esc([...v][0].toUpperCase())}</span><span>${esc(v)}'s reading badge</span>` : ''; const line = v => `<b>${esc(v)}!</b> What a lovely name. Soon ${T(a.who, "you'll", esc(v) + ' will')} read it in Urdu.`; if (v && !greeted) { greeted = true; react(scr, 'cheer', line(v)); } else if (v) scr.querySelector('.ob-bubble').innerHTML = line(v); };
-    inp.oninput = upd; inp.onkeydown = e => { if (e.key === 'Enter' && inp.value.trim()) next.click(); };
+    const inp = el('input', 'ob-name'); inp.id = 'ob-name'; inp.placeholder = T(a.who, 'Your name', "Child's name"); inp.value = a.name || ''; inp.maxLength = 24; inp.style.overflowWrap = 'anywhere'; inp.autocomplete = 'off'; inp.setAttribute('aria-label', inp.placeholder);
+    const hi = el('div', 'ob-hi'); const next = cta('Continue', () => { a.name = cleanName(inp.value, 24); if (!a.name) return; save(); go(1); }, !cleanName(inp.value, 24));
+    let greeted = false; const upd = () => { const v = cleanName(inp.value, 24); next.disabled = !v; hi.innerHTML = v ? `<span class="ob-badge" style="background:${a.colour || 'var(--accent)'}">${esc([...v][0].toUpperCase())}</span><span>${esc(v)}'s reading badge</span>` : ''; const line = v => `<b>${esc(v)}!</b> What a lovely name. Soon ${T(a.who, "you'll", esc(v) + ' will')} read it in Urdu.`; if (v && !greeted) { greeted = true; react(scr, 'cheer', line(v)); } else if (v) scr.querySelector('.ob-bubble').innerHTML = line(v); };
+    inp.oninput = upd; inp.onkeydown = e => { if (e.key === 'Enter' && cleanName(inp.value, 24)) next.click(); };
     scr.append(inp, hi); foot(scr, next); upd(); later(() => inp.focus(), 250);
   }
   function goal(scr) {
@@ -118,7 +125,7 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
   }
   function processing(scr) {
     scr.classList.add('ob-center');
-    const lines = [(a.pains || []).includes('dots') ? 'Grouping the look-alike letters' : `Picking ${T(a.who, 'your', a.name + "'s")} first letters: ا ب ک ل م ن`, `Setting a ${a.minutes || 10}-minute day`, a.speak === 'none' ? 'Adding the meaning of every word' : 'Leaving out English you already know', 'Getting Marko\'s voice ready'];
+    const lines = [(a.pains || []).includes('dots') ? 'Grouping the look-alike letters' : `Picking ${T(a.who, 'your', esc(a.name) + "'s")} first letters: ا ب ک ل م ن`, `Setting a ${a.minutes || 10}-minute day`, a.speak === 'none' ? 'Adding the meaning of every word' : 'Leaving out English you already know', 'Getting Marko\'s voice ready'];
     const ms = 3000; const ring = el('div', 'ob-ring', `<span class="ob-m" style="--c:${a.colour || 'var(--gold)'}">${mascot('think', 130)}</span>`); ring.style.setProperty('--ms', ms + 'ms');
     const list = el('ul', 'ob-steps', lines.map(t => `<li>${icon('check')}<span>${t}</span></li>`).join(''));
     ring.append(fx('loading_dots', { size: 60, loop: true, cls: 'fx-ringtop' })); scr.append(ring, el('h2', 'center', `Making ${T(a.who, 'your', esc(a.name) + "'s")} path`), list);
@@ -131,7 +138,7 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
     const steps = [meetA, meetB, tap, blend, word, check]; let k = 0;
     const stage = el('div', 'ob-demo'); const pips = el('div', 'ob-pips', steps.map(() => '<i></i>').join('')); scr.append(el('div', 'muted center ob-small', 'Your first lesson'), pips, stage);
     const step = () => { [...pips.children].forEach((p, i) => p.classList.toggle('on', i <= k)); stage.innerHTML = ''; steps[k](); };
-    const nxt = (label = 'Next') => { const b = cta(label, () => { k++; k < steps.length ? step() : go(1); }); stage.append(b); return b; };
+    const nxt = (label = 'Next') => { const b = cta(label, () => { if (!tapLock()) return; k++; k < steps.length ? step() : (tapFree(), go(1)); }); stage.append(b); return b; };
     const hear = (key, label) => { const b = el('button', 'btn btn-play btn-say', icon('speaker')); b.setAttribute('aria-label', label); b.onclick = () => play(key); return b; };
     function meetA() { stage.append(say('listen', `This is <b>alif</b>. It says <b>aa</b>, like in <i>father</i>.`, 84), el('button', 'ob-glyph ur', 'ا')); stage.lastChild.onclick = () => play('names/alif'); stage.lastChild.setAttribute('aria-label', 'Hear alif'); stage.append(hear('names/alif', 'Hear it again')); later(() => play('names/alif'), 400); nxt(); }
     function meetB() { stage.append(say('point', `This is <b>be</b>. It says <b>b</b>. See the <b>one dot</b> underneath?`, 84), el('button', 'ob-glyph ur', 'ب')); stage.lastChild.onclick = () => play('names/be'); stage.lastChild.setAttribute('aria-label', 'Hear be'); stage.append(hear('names/be', 'Hear it again')); later(() => play('names/be'), 400); nxt(); }
@@ -185,7 +192,7 @@ export async function runOnboarding(root, { finish, teacherSetup }) {
     const c = el('div', 'ob-plan', `<div><small>First unit</small><b>${u1.title}</b><span class="ur">${u1.letters.join(' ')}</span></div><div><small>Every day</small><b>${a.minutes || 10} minutes, ${a.days || 7} days in a row</b><span class="muted">one short lesson, then a quick review</span></div><div><small>${a.reads && a.reads !== 'none' ? 'Before we start' : 'Up next'}</small><b>${a.reads && a.reads !== 'none' ? 'A 2-minute letter check' : 'Three quick rules, then alif'}</b><span class="muted">${a.reads && a.reads !== 'none' ? 'so you skip what you know' : 'about five minutes'}</span></div>`);
     scr.append(c);
     if (a.who === 'children') scr.append(el('p', 'muted center ob-small', 'Add your other children from the "Who is learning?" screen.'));
-    foot(scr, cta(a.reads && a.reads !== 'none' ? 'Start the letter check' : 'Start my first lesson', async () => { await db.setting('onb', null); finish(a); }));
+    foot(scr, cta(a.reads && a.reads !== 'none' ? 'Start the letter check' : 'Start my first lesson', async () => { if (!tapLock()) return; await db.setting('onb', null); finish(a); }));
   }
   show();
 }
@@ -200,7 +207,6 @@ const PAINS = [
   ['ads', 'lock', 'Apps full of ads, or they need internet', 'No ads, no account, works offline'],
 ];
 const GOAL_REPLY = { family: 'Messages from family, <b>in their own script</b>. Lovely.', books: 'Ghalib is waiting. <b>We will get there.</b>', kids: 'A parent who reads with them. <b>Best thing for a child.</b>', roots: 'Your language, now <b>on paper too</b>.', class: 'We will be <b>ready for that exam</b>.', curious: 'It <b>is</b> beautiful. Wait until you see it join up.', school: 'We will make Urdu class <b>the easy one</b>.', start: 'A head start is <b>a gift</b>.', abroad: 'Far from home, <b>still reading Urdu</b>.', stories: 'Stories are <b>the best reason</b> to read.' };
-const esc = s => String(s || '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 // 1080x1350 share card drawn on canvas, then the Android share sheet (Capacitor) or Web Share, else a download.
 export async function shareCard(a) {
@@ -218,7 +224,7 @@ export async function shareCard(a) {
   g.fillStyle = '#5A6B84'; g.font = '600 36px Fredoka, sans-serif'; g.fillText('Urdu Qaida · free, offline, 10 minutes a day', W / 2, 1230);
   const b64 = cv.toDataURL('image/png').split(',')[1]; const name = 'first-urdu-word.png'; const text = a.who === 'me' ? 'I just read my first Urdu word: بابا (baba, dad)' : `${a.name} just read a first Urdu word: بابا (baba, dad)`;
   try { const { Filesystem, Directory } = await import('@capacitor/filesystem'); const { Share } = await import('@capacitor/share'); if (!window.Capacitor?.isNativePlatform?.()) throw 0; const r = await Filesystem.writeFile({ path: name, data: b64, directory: Directory.Cache }); await Share.share({ title: 'First Urdu word', text, url: r.uri }); return; } catch (e) {}
-  const blob = await (await fetch('data:image/png;base64,' + b64)).blob(); const f = new File([blob], name, { type: 'image/png' });
+  const bin = atob(b64), bytes = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i); const blob = new Blob([bytes], { type: 'image/png' }); /* no fetch(data:) : the CSP connect-src is 'self' */ const f = new File([blob], name, { type: 'image/png' });
   try { if (navigator.canShare?.({ files: [f] })) { await navigator.share({ files: [f], text }); return; } } catch (e) { if (e?.name === 'AbortError') return; }
   const l = document.createElement('a'); l.href = URL.createObjectURL(blob); l.download = name; l.click();
 }

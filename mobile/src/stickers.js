@@ -41,7 +41,9 @@ function lockTile(l, idx) {
   t.style.setProperty('--ld', (idx % 6) * 0.7 + 's'); t.setAttribute('role', 'img'); t.setAttribute('aria-label', `Locked sticker: ${l.name}`); return t;
 }
 
-export async function openBook() {
+let opening = false;
+export async function openBook() { if (opening) return; opening = true; try { await openBookInner(); } finally { opening = false; } }   // two quick taps must never stack two books
+async function openBookInner() {
   if (document.querySelector('.stk-book')) return; const p = await pid(); if (!p) return; const got = new Set(await mastered(p)); const all = order(); const pg = pages(all);
   const o = overlay('stk-book', 'Sticker book');
   const done = all.filter(ch => got.has(ch)).length, reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -62,7 +64,7 @@ export async function openBook() {
   pg.forEach((x, k) => { const n = x.letters.filter(ch => got.has(ch)).length; const b = el('button', 'btn stk-tab' + (n === x.letters.length ? ' full' : ''), `<b>${x.n === 'more' ? '+' : x.n}</b><small>${n}/${x.letters.length}</small>`); b.setAttribute('role', 'tab'); b.setAttribute('aria-label', `${x.n === 'more' ? 'More' : 'Unit ' + x.n}, ${n} of ${x.letters.length}`); b.onclick = () => show(k); tabs.append(b); });
   show(startAt); tabs.children[startAt]?.scrollIntoView({ inline: 'center', block: 'nearest' });
   if (!reduce && done) { const fill = o.querySelector('.stk-bar i'), num = o.querySelector('.stk-shelf-n b'), t0 = performance.now(), D = 900; requestAnimationFrame(() => { fill.style.width = Math.round(100 * done / all.length) + '%'; }); const tick = now => { const k = Math.min(1, (now - t0) / D); num.textContent = Math.round(done * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(tick); }; requestAnimationFrame(tick); }
-  const bk = o.querySelector('.stk-back'); bk.onclick = () => close(o); o.onkeydown = e => e.key === 'Escape' && close(o); bk.focus({ preventScroll: true });
+  const bk = o.querySelector('.stk-back'); bk.onclick = () => close(o); o.onkeydown = e => { if (e.key === 'Escape') close(o); }; bk.focus({ preventScroll: true });
 }
 
 async function reveal(ch, rest, profileId) {

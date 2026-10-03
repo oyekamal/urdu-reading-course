@@ -5,10 +5,12 @@
 // Assumption: ctx passed in mirrors teacher.js's ctx ({db, C, ...}); no audio is played during
 // the assessment itself (teacher reads/administers it live), so only db/content/C are needed —
 // this module falls back to importing db/content directly so it also works stand-alone.
-import { C as C_, el, toast, shuffle, W, bandFor, PRP, BAND_HELP } from './content.js';
+import { C as C_, el, toast, shuffle, W, PRP, BAND_HELP, COMP_MIN, overallBand, overallLevel } from './content.js';
 import { db as db_, uid } from './db.js';
 
 const PER_MIN = 60; // seconds per timed subtask
+const MIN_PASSAGE_S = 15; // a passage read in less than this is an accidental tap, never a score
+const MAX_CWPM = 200;       // no child reads faster than this; anything above is a timing slip and is capped
 
 // ---- honest timer: Date.now-based countdown, immune to setInterval drift ----
 function startTimer(seconds, onTick, onDone) {
@@ -72,7 +74,7 @@ function renderGrid(items, cls, perRow) {
 function runFlashSubtask(root, opts) {
   const { title, items, cls, onScore, onSkip } = opts;
   const wrong = new Set();
-  let finished = false;
+  let finished = false, touched = false;
   const wrap = el('div', 'card');
   wrap.appendChild(el('h2', '', title));
   const timerEl = el('div', 'timer big', String(PER_MIN)); timerEl.style.cssText = 'position:sticky;top:0;background:var(--card);z-index:2;padding:4px 0';
@@ -81,11 +83,12 @@ function runFlashSubtask(root, opts) {
   grid.addEventListener('click', (ev) => {
     const t = ev.target.closest('.item');
     if (!t || finished) return;
-    const i = Number(t.dataset.i);
+    const i = Number(t.dataset.i); touched = true;
     if (wrong.has(i)) { wrong.delete(i); t.classList.remove('wrong'); }
     else { wrong.add(i); t.classList.add('wrong'); }
     checkStopRule();
   });
+  gridBox.addEventListener('click', ev => { if (ev.target.closest('button')) touched = true; });
   wrap.appendChild(gridBox); wrap.appendChild(el('p', 'muted', 'Tap a letter the child gets wrong. Use Next as the child reads on; the last page shown counts as items attempted.'));
   const row = el('div', 'row');
   const skipBtn = el('button', 'btn', 'Skip');
@@ -107,12 +110,18 @@ function runFlashSubtask(root, opts) {
     if (finished) return;
     finished = true;
     flash(wrap); beep();
-    const attempted = Math.min(items.length, gridBox.reached()); const score = Math.max(0, attempted - [...wrong].filter(i => i < attempted).length);
-    onScore(score, attempted);
+    const finishAt = (attempted) => { finished = true; const score = Math.max(0, attempted - [...wrong].filter(i => i < attempted).length); onScore(score, attempted); };
+    if (touched) { finishAt(Math.min(items.length, gridBox.reached())); return; }
+    // nothing was tapped and no page was turned: nobody said how far the child got, so ask instead of crediting a whole page
+    finished = false; const ask = el('div', 'row'); const num = el('input'); num.type = 'number'; num.min = 0; num.max = items.length; num.value = ''; num.setAttribute('aria-label', 'How many items did the child read?'); num.style.width = '90px';
+    const go = el('button', 'btn btn-primary', 'Score it'); go.onclick = () => { const n = Math.max(0, Math.min(items.length, parseInt(num.value, 10))); if (Number.isNaN(n)) { toast('Type how many the child read'); return; } ask.remove(); finishAt(n); };
+    ask.append(el('span', '', 'Time is up. How many did the child read?'), num, go); wrap.appendChild(ask);
   });
 }
 
 // ---- passage subtask: tappable words, error marking, "last word reached", "child finished" ----
+// The score needs to know how far the child got. It is never assumed: when time runs out (or the teacher says the child stopped early)
+// the teacher taps the last word reached first; "Child finished" asks whether the whole passage was read; a Finish before MIN_PASSAGE_S is ignored.
 function runPassageSubtask(root, opts) {
   const { text, cls, onScore, onSkip } = opts;
   const words = text.split(/\s+/).filter(Boolean);
@@ -120,12 +129,14 @@ function runPassageSubtask(root, opts) {
   let lastIdx = null;
   let markMode = false;
   let finished = false;
+  let awaiting = false; // true once the score is waiting for the "last word reached" tap
   const start = Date.now();
 
   const wrap = el('div', 'card');
   wrap.appendChild(el('h2', '', 'Passage — oral reading fluency (60s)'));
   const timerEl = el('div', 'timer big', String(PER_MIN)); timerEl.style.cssText = 'position:sticky;top:0;background:var(--card);z-index:2;padding:4px 0';
   wrap.appendChild(timerEl);
+  const note = el('p', 'muted', 'Tap words the child gets wrong. Tap "Mark last word reached", then the word, if the child stops before the end.'); note.setAttribute('role', 'status');
   const p = el('div', 'grid-words');
   const row1 = el('div', 'row');
   words.forEach((w, i) => {
@@ -135,6 +146,7 @@ function runPassageSubtask(root, opts) {
   });
   p.appendChild(row1);
   wrap.appendChild(p);
+  wrap.appendChild(note);
 
   p.addEventListener('click', (ev) => {
     const sp = ev.target.closest('.item');
@@ -145,6 +157,7 @@ function runPassageSubtask(root, opts) {
       p.querySelectorAll('.item').forEach(e => { e.style.outline = ''; });
       sp.style.outline = '3px solid orange';
       markMode = false; markBtn.classList.remove('btn-primary');
+      if (awaiting) { finBtn.disabled = false; note.textContent = `Last word reached: word ${i + 1}. Tap Score it.`; }
       return;
     }
     if (wrong.has(i)) { wrong.delete(i); sp.classList.remove('wrong'); }
@@ -153,30 +166,48 @@ function runPassageSubtask(root, opts) {
 
   const row = el('div', 'row');
   const markBtn = el('button', 'btn', 'Mark last word reached');
-  markBtn.onclick = () => { markMode = !markMode; markBtn.classList.toggle('btn-primary', markMode); };
+  markBtn.onclick = () => { markMode = awaiting ? true : !markMode; markBtn.classList.toggle('btn-primary', markMode); };
   const finBtn = el('button', 'btn btn-primary', 'Child finished');
-  finBtn.onclick = () => finish(false);
+  const ask = el('div', 'row'); ask.style.display = 'none';
+  const yesBtn = el('button', 'btn btn-primary', 'Read to the end'), noBtn = el('button', 'btn', 'Stopped early: tap last word');
+  ask.append(el('span', '', 'Did the child read the whole passage?'), yesBtn, noBtn);
+  const noneBtn = el('button', 'btn', 'Read no words'); noneBtn.style.display = 'none';
+  finBtn.onclick = () => {
+    if (finished) return;
+    if (awaiting) { if (lastIdx != null) finish(true); return; }
+    const sec = (Date.now() - start) / 1000;
+    if (sec < MIN_PASSAGE_S) { note.textContent = `Only ${Math.floor(sec)} s so far: too short to score. The timer is still running.`; toast('Too short to score yet'); return; }
+    if (lastIdx != null) { finish(false); return; }
+    ask.style.display = ''; finBtn.disabled = true;
+  };
+  yesBtn.onclick = () => { ask.style.display = 'none'; finBtn.disabled = false; lastIdx = words.length - 1; finish(false); };
+  noBtn.onclick = () => { ask.style.display = 'none'; finBtn.disabled = false; markMode = true; markBtn.classList.add('btn-primary'); note.textContent = 'Tap the last word the child reached, then tap Child finished.'; };
+  noneBtn.onclick = () => { if (finished) return; lastIdx = -1; finish(true); };
   const skipBtn = el('button', 'btn', 'Skip');
   skipBtn.onclick = () => { if (finished) return; finished = true; stop(); onSkip(); };
-  row.appendChild(markBtn); row.appendChild(finBtn); row.appendChild(skipBtn);
-  wrap.appendChild(row);
+  row.appendChild(markBtn); row.appendChild(finBtn); row.appendChild(noneBtn); row.appendChild(skipBtn);
+  wrap.appendChild(row); wrap.appendChild(ask);
   root.innerHTML = ''; root.appendChild(wrap);
 
   const stop = startTimer(PER_MIN, (secLeft) => { timerEl.textContent = String(secLeft); }, () => {
-    if (!finished) finish(true);
+    if (finished) return;
+    flash(wrap); beep();
+    if (lastIdx != null) { finish(true); return; }
+    // time is up and nobody said how far the child got: do not guess, ask
+    awaiting = true; markMode = true; markBtn.classList.add('btn-primary'); ask.style.display = 'none'; finBtn.disabled = true; finBtn.textContent = 'Score it'; noneBtn.style.display = '';
+    note.textContent = 'Time is up. Tap the last word the child reached (or "Read no words"), then tap Score it.';
   });
 
   function finish(timedOut) {
     if (finished) return;
     finished = true; stop();
-    if (timedOut) { flash(wrap); beep(); }
-    const seconds = Math.max(1, Math.min(PER_MIN, (Date.now() - start) / 1000));
-    const attempted = lastIdx != null ? lastIdx + 1 : words.length;
+    const seconds = timedOut ? PER_MIN : Math.max(MIN_PASSAGE_S, Math.min(PER_MIN, (Date.now() - start) / 1000));
+    const attempted = Math.max(0, Math.min(words.length, lastIdx + 1));
     let errors = 0;
     wrong.forEach(i => { if (i < attempted) errors++; });
-    const cwpm = Math.max(0, Math.round((attempted - errors) * 60 / seconds));
+    const raw = Math.max(0, Math.round((attempted - errors) * 60 / seconds)), cwpm = Math.min(MAX_CWPM, raw);
     const acc = attempted ? Math.round(((attempted - errors) / attempted) * 100) : 0;
-    onScore({ cwpm, acc, seconds: Math.round(seconds), errors, attempted });
+    onScore({ cwpm, acc, seconds: Math.round(seconds), errors, attempted, capped: raw > MAX_CWPM });
   }
 }
 
@@ -207,18 +238,19 @@ function runComprehensionSubtask(root, opts) {
 
 // ---- result screen ----
 function renderResult(root, db, profile, state, onDone) {
-  const band = bandFor(state.orf.cwpm); const level = PRP(state.orf.cwpm);
+  const band = state.orfDone ? overallBand(state.orf.cwpm, state.comp, state.compDone) : 'not tested'; const level = state.orfDone ? overallLevel(state.orf.cwpm, state.comp, state.compDone) : 'passage not tested: no standard result';
   const acc = (s, a) => a ? ` (${Math.round(100 * s / a)}% of ${a} attempted)` : '';
   const wrap = el('div', 'card');
-  wrap.appendChild(el('h2', '', `Result — ${profile.name}`));
+  { const h2 = el('h2', ''); h2.textContent = `Result — ${profile.name}`; wrap.appendChild(h2); }
   const rows = [
     ['Letter sounds (clpm)', `${state.letters}${acc(state.letters, state.lettersAttempted)}`],
     ['Nonwords (cnwpm)', `${state.nonwords}${acc(state.nonwords, state.nonwordsAttempted)}`],
     ['Familiar words (cwpm)', `${state.words}${acc(state.words, state.wordsAttempted)}`],
-    ['Passage fluency (cwpm)', state.orf.cwpm],
-    ['Passage accuracy', `${state.orf.acc}%`],
-    ['Comprehension', `${state.comp}/5`],
-    ['Grade-2 standard (PRP)', level],
+    ['Passage fluency (cwpm)', state.orfDone ? state.orf.cwpm + (state.orf.capped ? ' (capped: check the timing)' : '') : 'not tested'],
+    ['Passage accuracy', state.orfDone ? `${state.orf.acc}%` : '-'],
+    ['Comprehension', state.compDone ? `${state.comp}/5${state.comp >= COMP_MIN ? '' : ' (4 of 5 needed)'}` : 'not tested'],
+    ['Fluency alone vs grade-2 standard', state.orfDone ? PRP(state.orf.cwpm) : 'not tested'],
+    ['Overall (reading + understanding)', level],
     ['Learning band', band],
   ];
   const tableWrap = el('div', 'table');
@@ -226,7 +258,7 @@ function renderResult(root, db, profile, state, onDone) {
   rows.forEach(([k, v]) => table.appendChild(el('tr', '', `<td>${k}</td><td>${v}</td>`)));
   tableWrap.appendChild(table);
   wrap.appendChild(tableWrap); wrap.appendChild(el('p', 'muted', BAND_HELP));
-  if (band === 'pre-reader') {
+  if (state.orfDone && band === 'pre-reader') {
     wrap.appendChild(el('p', 'muted', 'Non-reader / pre-reader band — flag for immediate small-group support (see Groups tab).'));
   }
   const btnRow = el('div', 'row');
@@ -236,9 +268,9 @@ function renderResult(root, db, profile, state, onDone) {
     const rec = {
       id: uid(), profileId: profile.id, ts: Date.now(),
       letters: state.letters, nonwords: state.nonwords, words: state.words,
-      orf: state.orf, comp: state.comp, band, level, by: 'teacher',
+      orf: state.orf, orfDone: !!state.orfDone, comp: state.comp, compDone: !!state.compDone, band, level, by: 'teacher',
     };
-    await db.put('assessments', rec);
+    try { await db.put('assessments', rec); } catch (e) { saveBtn.disabled = false; toast('That did not save. Please tap Save again.'); return; }
     toast('Assessment saved');
     onDone(rec);
   };
@@ -257,9 +289,9 @@ function renderResult(root, db, profile, state, onDone) {
 export function runEgra(root, ctx, profile, onDone) {
   const db = (ctx && ctx.db) || db_;
   const Cc = (ctx && ctx.C) || C_;
-  const state = { letters: 0, nonwords: 0, words: 0, orf: { cwpm: 0, acc: 0, seconds: 0, errors: 0 }, comp: 0 };
+  const state = { letters: 0, nonwords: 0, words: 0, orf: { cwpm: 0, acc: 0, seconds: 0, errors: 0 }, comp: 0, compDone: false, orfDone: false };
 
-  db.setting('style').then((style) => {
+  db.setting('style').catch(() => 'naskh').then((style) => {
     const cls = scriptClass(style === 'nastaliq');
     const steps = [
       () => runFlashSubtask(root, {
@@ -279,12 +311,12 @@ export function runEgra(root, ctx, profile, onDone) {
       }),
       () => runPassageSubtask(root, {
         text: Cc.letters.assessment.passage || '',
-        cls, onScore: (orf) => { state.orf = orf; advance(); }, onSkip: advance,
+        cls, onScore: (orf) => { state.orf = orf; state.orfDone = true; advance(); }, onSkip: advance,
       }),
       () => runComprehensionSubtask(root, {
         questions: Cc.letters.assessment.questions || [],
         answers: Cc.letters.assessment.answers || [],
-        cls, onScore: (n) => { state.comp = n; advance(); }, onSkip: advance,
+        cls, onScore: (n) => { state.comp = n; state.compDone = true; advance(); }, onSkip: advance,
       }),
     ];
     let idx = 0;

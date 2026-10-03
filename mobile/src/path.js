@@ -6,6 +6,8 @@ import * as D from './drills.js';
 import * as S from './session.js';
 import { icon, mascot, unitArt, confetti, LESSON_ICON } from './icons.js';
 import { fx, burst } from './fx.js';
+import { tapLock } from './safe.js';
+import { confirmSheet } from './a11y.js'; // round 11b: calm leave-lesson sheet
 
 // ---- round 9b: progress + motion helpers (count-ups, daily goal, unlock memory) ----
 const reduceMo = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -42,7 +44,7 @@ export function lessonsFor(u) {
   const nw = u.words.length;
   if (u.n === 1) L.push({ id: 'marks', kind: 'marks', title: 'Vowel marks', icon: 'بَ' });
   if (u.letters.length && nw) L.push({ id: 'join', kind: 'join', title: 'Join them' }, { id: 'blend', kind: 'blend', title: 'Blend', icon: 'با' });
-  if (nw) { L.push({ id: 'W1', kind: 'words', title: 'Words 1', range: [0, Math.ceil(nw / 2)] }, { id: 'W2', kind: 'words', title: 'Words 2', range: [Math.ceil(nw / 2), nw] }); }
+  if (nw) { const per = Math.ceil(nw / Math.max(1, Math.round(nw / 12))); for (let i = 0, k = 1; i < nw; i += per, k++) L.push({ id: 'W' + k, kind: 'words', title: 'Words ' + k, range: [i, Math.min(nw, i + per)] }); } // about 10-14 words per lesson: Words 1..N
   if (u.n === 4) L.push({ id: 'nonjoin', kind: 'nonjoin', title: 'The non-joiners', icon: 'ا د ر' });
   if (u.sentences.length) L.push({ id: 'read', kind: 'read', title: 'Read' });
   if (u.n === 10) L.push({ id: 'marks2', kind: 'marks2', title: 'Hamza, marks, numbers', icon: '۱۲۳' });
@@ -58,7 +60,7 @@ export async function lessonState(profileId, u) {
   const ls = lessonsFor(u); const firstOpen = ls.findIndex(l => !done[l.id]);
   return { ls, done, current: firstOpen < 0 ? ls.length : firstOpen, passed: !!p.units[u.n]?.passed };
 }
-async function markLesson(profileId, u, id) { const p = await S.getProgress(profileId); p.units[u.n] = { ...(p.units[u.n] || {}), lessons: { ...((p.units[u.n] || {}).lessons || {}), [id]: Date.now() } }; await db.put('progress', p); }
+async function markLesson(profileId, u, id) { if (u.n > await S.currentUnit(profileId)) return; /* a locked unit earns no pearls */ const p = await S.getProgress(profileId); p.units[u.n] = { ...(p.units[u.n] || {}), lessons: { ...((p.units[u.n] || {}).lessons || {}), [id]: Date.now() } }; await db.put('progress', p); }
 
 // ---- path screen ----
 // round 7b: each unit card is a pearl necklace. Done lessons are pearls on a curved thread, the current one glows gold,
@@ -114,18 +116,20 @@ export async function renderPath(main, ctx) {
 // ---- one lesson = a few short screens ----
 export async function runLesson(main, ctx, u, idx) {
   const { profile, marks, styleName, dctx } = ctx; const t = document.getElementById('toast'); if (t) t.classList.remove('show'); const ls = lessonsFor(u); const l = ls[idx]; if (!l) return ctx.go('path');
-  main.innerHTML = ''; main.className = 'lesson'; const head = el('div', 'row'); head.style.justifyContent = 'space-between'; head.innerHTML = `<div><div class="muted">Unit ${u.n} · lesson ${idx + 1} of ${ls.length}</div><h1>${l.title}</h1></div>`; const x = el('button', 'btn', icon('cross')); x.setAttribute('aria-label', 'Leave lesson'); x.onclick = () => ctx.go('path'); head.append(x); main.append(head);
+  if (u.n > await S.currentUnit(profile.id)) { toast(`Finish unit ${u.n - 1} first`); return ctx.go('path'); } // locked units never open as a lesson
+  main.innerHTML = ''; main.className = 'lesson'; const head = el('div', 'row'); head.style.justifyContent = 'space-between'; head.innerHTML = `<div><div class="muted">Unit ${u.n} · lesson ${idx + 1} of ${ls.length}</div><h1>${l.title}</h1></div>`; const x = el('button', 'btn', icon('cross')); x.className = 'btn lesson-x'; x.setAttribute('aria-label', 'Leave lesson'); x.onclick = async () => { if (await confirmSheet({ title: 'Leave this lesson?', body: 'Your progress here is saved.', yes: 'Leave', no: 'Keep going' })) ctx.go('path'); }; head.append(x); main.append(head);
   // round 9b: springy fill + moving shine + a sparkle riding the head; pulse at 50% and 100%
   const dots = el('div', 'progress live', '<i style="width:0"></i>'); const spark = el('span', 'pg-spark'); spark.setAttribute('aria-hidden', 'true'); const pgw = el('div', 'pg-wrap'); pgw.append(dots, spark); main.append(pgw); const box = el('div', 't-kids'); main.append(box); let pct = 0, finishing = false;
   const setPct = (v) => { const old = pct; if (v < old) return; pct = v; pgw.style.setProperty('--warm', Math.round(v) + '%'); dots.firstChild.style.width = v + '%'; spark.style.left = v + '%'; pgw.classList.toggle('has', v > 0); if (v > old) retrigger(pgw, 'adv', 900); if (old < 50 && v >= 50 && v < 100) retrigger(pgw, 'p50', 700); if (old < 100 && v >= 100) retrigger(pgw, 'p100', 900); };
   const screens = buildScreens(l, u, ctx); let i = 0;
-  const cont = (label = 'Continue') => { const b = el('button', 'btn btn-primary btn-wide', label); b.style.marginTop = '12px'; b.onclick = next; return b; };
+  const cont = (label = 'Continue') => { const b = el('button', 'btn btn-primary btn-wide', label); b.style.marginTop = '12px'; b.onclick = () => { if (!tapLock()) return; next(); }; return b; };
   ctx.say = (key, force) => { if (profile.track === 'child' || force) ctx.later(() => play('ui/' + key), 120); };
   const rep = el('button', 'btn btn-play', icon('speaker')); rep.setAttribute('aria-label', 'Repeat instruction'); rep.onclick = () => { if (ctx.lastSay) play('ui/' + ctx.lastSay); }; head.insertBefore(rep, x); const _say = ctx.say; ctx.say = (k, f) => { ctx.lastSay = k; _say(k, f); };
   ctx.later = (fn, ms) => { const h = setTimeout(fn, ms); (ctx.timers = ctx.timers || []).push(h); return h; };
   async function next() { (ctx.timers || []).forEach(clearTimeout); ctx.timers = []; const tt = document.getElementById('toast'); if (tt) tt.classList.remove('show'); if (finishing) return; i++; setPct(Math.min(100, Math.round(i / screens.length * 100))); if (i >= screens.length) return finish(); screens[i](box, cont); window.scrollTo(0, 0); }
-  async function finish() { finishing = true; ctx.say(l.kind === 'quiz' || l.kind === 'done' ? 'unit_done' : 'done'); const g0 = await dailyGoal(profile); await markLesson(profile.id, u, l.id); if (l.kind === 'letter') await S.ensureCardsFor(profile.id, [l.ch]); if (l.kind === 'done') { await S.markUnit(profile.id, u.n, 10, 10); await S.ensureCards(profile.id, u.n + 1); }
-    const g1 = await dailyGoal(profile); const goalHit = g1.done && !g0.done && !sGet(goalFlag(profile.id)); if (g1.done) sSet(goalFlag(profile.id), 1);
+  const saveFailed = () => { finishing = false; box.innerHTML = ''; const c = el('div', 'card center', '<h2>That did not save yet</h2><p class="muted">The phone could not save this lesson (storage may be busy or full). Nothing is lost. Try again.</p>'); const r = el('button', 'btn btn-primary btn-wide', 'Try again'); r.onclick = () => { if (tapLock()) finish(); }; const lv = el('button', 'btn btn-wide', 'Back to path'); lv.onclick = () => ctx.go('path'); c.append(r, lv); box.append(c); };
+  async function finish() { if (finishing) return; finishing = true; ctx.say(l.kind === 'quiz' || l.kind === 'done' ? 'unit_done' : 'done'); let g0, g1; try { g0 = await dailyGoal(profile); if (l.kind === 'done') { await S.markUnit(profile.id, u.n, 10, 10); await S.ensureCards(profile.id, u.n + 1); } /* unit first, then the pearl: a failure in between leaves the lesson open to retry, never a finished lesson on an unpassed unit */ await markLesson(profile.id, u, l.id); if (l.kind === 'letter') await S.ensureCardsFor(profile.id, [l.ch]); g1 = await dailyGoal(profile); } catch (e) { return saveFailed(e); }
+    const goalHit = g1.done && !g0.done && !sGet(goalFlag(profile.id)); if (g1.done) sSet(goalFlag(profile.id), 1);
     if (!reduceMo()) await new Promise(r => setTimeout(r, 420)); // let the bar fill + pulse land before the screen changes
     box.innerHTML = ''; const big = l.kind === 'quiz' || l.kind === 'done'; const nxt = ls[idx + 1]; const total = await S.pearls(profile.id); const prevTotal = Math.max(0, Math.min(total, sGet(`urc-cel-${profile.id}`) ?? total - 1)); sSet(`urc-cel-${profile.id}`, total);
     const pose = big ? 'trophy' : ['cheer', 'clap', 'proud', 'heart'][total % 4]; const cel = el('div', 'celebrate' + (big ? ' gold' : ''), `<div class="cel-rays"></div><div class="cel-top"></div><div class="cel-body"><div class="cel-stage">${mascot(pose, 260)}</div><h1>${big ? 'Unit ' + u.n + ' complete!' : l.title + ' done!'}</h1><div class="cel-chip pop">${icon('star')} +1 pearl</div>${goalHit ? `<div class="cel-goal">${icon('check')} Daily goal reached!</div>` : ''}<p><b class="cel-total">${total}</b> ${total === 1 ? "pearl" : "pearls"} on your thread · lesson ${idx + 1} of ${ls.length}</p></div><div class="cel-foot"></div>`);
@@ -133,8 +137,8 @@ export async function runLesson(main, ctx, u, idx) {
     const chip = cel.querySelector('.cel-chip'); chip.insertAdjacentHTML('beforeend', [...Array(12)].map((_, k) => `<i class="cel-pearl" style="--a:${k * 30}deg;--d:${(k % 3) * .08 + .5}s"></i>`).join(''));
     if (big) { const fw = () => cel.isConnected && (burst(), setTimeout(fw, 1800)); setTimeout(fw, 1200); }
     const close = () => cel.remove();
-    const b = el('button', 'btn btn-primary btn-wide cel-go', nxt ? `Next: ${nxt.title}` : 'Back to path'); b.onclick = () => { close(); nxt ? runLesson(main, ctx, u, idx + 1) : ctx.go('path'); };
-    const back = el('button', 'btn cel-back', `${icon('cross')} Path`); back.setAttribute('aria-label', 'Back to path'); back.onclick = () => { close(); ctx.go('path'); };
+    const b = el('button', 'btn btn-primary btn-wide cel-go', nxt ? `Next: ${nxt.title}` : 'Back to path'); b.onclick = () => { if (cel.dataset.used || !tapLock()) return; cel.dataset.used = '1'; close(); nxt ? runLesson(main, ctx, u, idx + 1) : ctx.go('path'); };
+    const back = el('button', 'btn cel-back', `${icon('cross')} Path`); back.setAttribute('aria-label', 'Back to path'); back.onclick = () => { if (cel.dataset.used || !tapLock()) return; cel.dataset.used = '1'; close(); ctx.go('path'); };
     cel.querySelector('.cel-foot').append(b); if (nxt) cel.querySelector('.cel-top').append(back); document.body.append(cel); burst();
     countUp(cel.querySelector('.cel-total'), total, { from: prevTotal, delay: 950, dur: 500 }); if (goalHit) cel.querySelector('.cel-goal').append(fx('sparkles_loop', { size: 56, loop: true, cls: 'cel-goal-fx' }));
   }
@@ -176,9 +180,9 @@ function screensFor(l, u, ctx) {
       (box, cont) => { box.innerHTML = ''; const pool = learned(); ctx.say('check'); const c = card(`<h2>Quick check</h2><p class="muted">Four questions on ${L.name}.</p>`); const status = el('div', 'score'), ch = el('div', 'choices'), q = el('div', 'q'); const sb = D.sayBtn(() => play('names/' + L.id)); const qrow = D.sayRow(sb, q); let i = 0, score = 0; const items = shuffle([...Array(4).keys()]);
         const ask = () => { if (i >= 4) { const ok = score >= 3; status.textContent = `${score}/4 ${ok ? '✓' : ''}`; ch.innerHTML = ''; box.append(ok ? cont('Finish') : el('div', 'center', mascot('oops', 110) + '<p class="muted">Not yet solid. Go through the lesson once more.</p>')); if (!ok) { const r = el('button', 'btn btn-primary btn-wide', 'Do the lesson again'); r.onclick = () => ctx.openLesson(u, lessonsFor(u).findIndex(x => x.id === l.id)); box.append(r); } return; }
           const kind = pool.length < 2 ? 2 : items[i] % 3; i++; sb.style.display = kind === 0 ? '' : 'none'; status.textContent = `Question ${i}/4`; ch.innerHTML = ''; const opts = shuffle([L.ch, ...shuffle(pool.filter(c => c !== L.ch)).slice(0, 3)]);
-          if (kind === 0) { q.textContent = 'Tap the letter you hear'; play('names/' + L.id); opts.forEach(c => { const t = el('button', 'tile ur', c); t.onclick = () => grade(c === L.ch, t); ch.append(t); }); }
-          else if (kind === 1) { q.textContent = `Tap ${L.name}`; opts.forEach(c => { const t = el('button', 'tile ur', c); t.onclick = () => grade(c === L.ch, t); ch.append(t); }); }
-          else { const forms = D.formsOf(L).filter(f => f[1]); const f = forms[Math.floor(Math.random() * forms.length)]; q.textContent = `Which is ${L.name} at the ${f[0]} position?`; let wrongs = shuffle(pool.filter(c => c !== L.ch && C.by[c])).slice(0, 3).map(c => D.formsOf(C.by[c]).find(x => x[0] === f[0] && x[1])?.[1]).filter(Boolean); if (!wrongs.length) wrongs = D.formsOf(L).filter(x => x[1] && x[1] !== f[1]).map(x => x[1]); shuffle([f[1], ...wrongs]).forEach(g => { const t = el('button', 'tile ur', g); t.onclick = () => grade(g === f[1], t); ch.append(t); }); } };
+          if (kind === 0) { q.textContent = 'Tap the letter you hear'; play('names/' + L.id); opts.forEach(c => { const t = el('button', 'tile ur', c); if (c === L.ch) t.dataset.right = 'names/' + L.id; t.onclick = () => grade(c === L.ch, t); ch.append(t); }); }
+          else if (kind === 1) { q.textContent = `Tap ${L.name}`; opts.forEach(c => { const t = el('button', 'tile ur', c); if (c === L.ch) t.dataset.right = 'names/' + L.id; t.onclick = () => grade(c === L.ch, t); ch.append(t); }); }
+          else { const forms = D.formsOf(L).filter(f => f[1]); const f = forms[Math.floor(Math.random() * forms.length)]; q.textContent = `Which is ${L.name} at the ${f[0]} position?`; let wrongs = shuffle(pool.filter(c => c !== L.ch && C.by[c])).slice(0, 3).map(c => D.formsOf(C.by[c]).find(x => x[0] === f[0] && x[1])?.[1]).filter(Boolean); if (!wrongs.length) wrongs = D.formsOf(L).filter(x => x[1] && x[1] !== f[1]).map(x => x[1]); shuffle([f[1], ...wrongs]).forEach(g => { const t = el('button', 'tile ur', g); if (g === f[1]) t.dataset.right = 'names/' + L.id; t.onclick = () => grade(g === f[1], t); ch.append(t); }); } };
         const grade = (ok, t) => { dctx.record('check', L.ch, ok, 0); t.classList.add(ok ? 'ok' : 'no'); if (ok) score++; else toast(`That is not ${L.name}`); setTimeout(ask, 500); };
         c.append(status, qrow, ch); box.append(c); ask(); },
       ]; return screens; }
@@ -187,7 +191,7 @@ function screensFor(l, u, ctx) {
       (box, cont) => { box.innerHTML = ''; box.append(D.joinIt(u, dctx, marks, () => box.append(cont())) || cont()); },
     ];
     case 'blend': return [(box, cont) => { box.innerHTML = ''; ctx.say('blend'); const cons = u.letters.map(c => C.by[c]).filter(L => L && L.role === 'consonant' && !L.never_initial); const c = card('<h2>Blend</h2><p class="muted">A letter plus a vowel makes a sound you can say. Tap what you hear.</p>'); const status = el('div', 'score'), ch = el('div', 'choices'); let round = 0, score = 0, target; const syl = [['a', 'ا'], ['i', 'ی'], ['u', 'و']].filter(x => learnedVowels().includes(x[1])); const all = cons.flatMap(L => syl.map(sy => ({ L, sy }))); if (!all.length) { box.append(card('<p>No blends in this unit.</p>'), cont()); return; }
-      function next() { if (round >= 6) { status.textContent = `Done: ${score}/6`; ch.innerHTML = ''; box.append(cont()); return; } round++; target = all[Math.floor(Math.random() * all.length)]; status.textContent = `Round ${round}/6`; ch.innerHTML = ''; shuffle([target, ...shuffle(all.filter(x => x !== target)).slice(0, 3)]).forEach(x => { const t = el('button', 'tile ur', x.L.ch + x.sy[1]); if (x === target) t.dataset.right = `syllables/${x.L.id}_${x.sy[0]}`; t.onclick = () => { const ok = x === target; dctx.record('blend', x.L.ch + x.sy[1], ok, 0); if (ok) { t.classList.add('ok'); score++; setTimeout(next, 450); } else { t.classList.add('no'); } }; ch.append(t); }); play(`syllables/${target.L.id}_${target.sy[0]}`); }
+      function next() { if (round >= 6) { status.textContent = `Done: ${score}/6`; ch.innerHTML = ''; box.append(cont()); return; } round++; target = all[Math.floor(Math.random() * all.length)]; status.textContent = `Round ${round}/6`; ch.innerHTML = ''; D.blendOptions(all, target).forEach(x => { const t = el('button', 'tile ur', x.L.ch + x.sy[1]); if (x === target) t.dataset.right = `syllables/${x.L.id}_${x.sy[0]}`; t.onclick = () => { const ok = x === target; dctx.record('blend', x.L.ch + x.sy[1], ok, 0); if (ok) { t.classList.add('ok'); score++; setTimeout(next, 450); } else { t.classList.add('no'); } }; ch.append(t); }); play(`syllables/${target.L.id}_${target.sy[0]}`); }
       const again = D.sayBtn(() => play(`syllables/${target.L.id}_${target.sy[0]}`)); c.append(D.sayRow(again, status), ch); box.append(c); next(); }];
     case 'words': { const range = l.range; return [
       (box, cont) => { box.innerHTML = ''; ctx.say('read'); const sub = { ...u, words: wordsOf(range), wordOffset: range[0] }; box.append(D.readIt(sub, dctx, marks), cont('Read them')); },

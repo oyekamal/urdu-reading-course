@@ -1,5 +1,5 @@
 // Drill engines, ported from the course app. Each returns a DOM node and reports results via ctx.record(drill, item, correct, ms).
-import { C, play, forms, W, shuffle, wordKey, taughtBefore, STROKE, DOTS, el, toast } from './content.js';
+import { C, play, forms, W, shuffle, wordKey, taughtBefore, STROKE, dotInfo, soundOf, el, toast } from './content.js';
 import { icon } from './icons.js';
 
 export const formsOf = l => forms(l);
@@ -46,6 +46,25 @@ export function tellApart(unit, ctx, onDone, opts = {}) {
     t0 = Date.now(); play('names/' + C.by[target].id); btn.setAttribute('aria-label', 'Play again'); btn.onclick = e => { e.stopPropagation(); play('names/' + C.by[target].id); };
   }
   box.append(sayRow(btn, status, again), choices); shuffle(pool).slice(0, 6).forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c].name); t.onclick = next; choices.append(t); }); return box;
+}
+
+// Tap-what-you-hear options for a consonant+vowel blend (unit blends, any similar drill): `all` = [{ L, sy }], target one of them.
+// ض ظ ذ say the same /z/, ث س ص the same /s/, ت ط, ح ہ, ع ا likewise: a round never shows two options that sound alike
+// (distractors with the target's sound are dropped, and so are repeats of one sound among the distractors).
+export function blendOptions(all, target, n = 4) {
+  const snd = x => soundOf(x.L.ch) + x.sy[0]; const out = [];
+  for (const x of shuffle(all.filter(y => y !== target))) { if (out.length >= n - 1) break; if (snd(x) !== snd(target) && !out.some(o => snd(o) === snd(x))) out.push(x); }
+  return shuffle([target, ...out]);
+}
+// Placement stage for one unit: EVERY letter of the unit once (drawn without replacement, six tiles each) plus one word to read.
+// The learner passes the stage only with every item right, so a learner who misses one letter passes ~1 time in 6 (the guess).
+export function placementItems(unit, pool, marks = () => false) {
+  const items = shuffle(unit.letters.filter(c => C.by[c])).map(c => ({ kind: 'letter', target: c, audio: 'names/' + C.by[c].id, options: shuffle([c, ...shuffle(pool.filter(x => x !== c)).slice(0, 5)]).map(x => ({ text: x, label: C.by[x].name, right: x === c })) }));
+  const ws = unit.words.map((w, i) => ({ w: W(w), i })).filter(x => spellable(unit, x.w.ur)); if (ws.length < 2) return items;
+  const t = ws[Math.floor(Math.random() * ws.length)], len = x => bare(x.w.ur).length;
+  const ds = shuffle(ws.filter(x => x !== t && x.w.ur !== t.w.ur)).sort((a, b) => Math.abs(len(a) - len(t)) - Math.abs(len(b) - len(t))).slice(0, 3);
+  items.push({ kind: 'word', target: t.w.ur, audio: wordKey(unit.n, t.i + (unit.wordOffset || 0)), options: shuffle([t, ...ds]).map(x => ({ text: marks() ? x.w.v : x.w.ur, label: x.w.rom, right: x === t })) });
+  return items;
 }
 
 // Build the word from tiles, right to left.
@@ -104,30 +123,87 @@ function inkPad(cv) {
   };
 }
 
+// ---- tracing judge (round 11d): direction + order on top of coverage. Pure function, tested with synthetic strokes. ----
+// strokes: [[ [x,y], ... ], ...] in canvas px; ref: RGBA of the grey glyph (alpha > 40 = ink); start: [x,y] of the green dot.
+// Lenient on purpose (a six-year-old's finger): the start must be NEAR the dot, the one-stroke letters (alif, dal, re family, alone) must head
+// the hinted way and get most of the way to the end, body before dots, a few lifts are fine, a smooth line is not needed but a scribble or a
+// pile of dashes is not a letter. Every reply is kind: it says what to do, never "wrong".
+const SINGLE = new Set(['alif', 'dal', 're']);
+function resample(pts, step = 8) {
+  if (pts.length < 2) return pts.slice(); const cum = [0]; for (let i = 1; i < pts.length; i++) cum.push(cum[i - 1] + Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]));
+  const total = cum[cum.length - 1]; if (total < step) return [pts[0], pts[pts.length - 1]]; const out = []; let j = 1;
+  for (let d = 0; d <= total; d += step) { while (j < cum.length - 1 && cum[j] < d) j++; const t = cum[j] === cum[j - 1] ? 0 : (d - cum[j - 1]) / (cum[j] - cum[j - 1]); out.push([pts[j - 1][0] + (pts[j][0] - pts[j - 1][0]) * t, pts[j - 1][1] + (pts[j][1] - pts[j - 1][1]) * t]); }
+  const l = pts[pts.length - 1]; if (Math.hypot(out[out.length - 1][0] - l[0], out[out.length - 1][1] - l[1]) > 1) out.push(l); return out;
+}
+function smooth(pts, w = 3) { return pts.map((p, i) => { if (i === 0 || i === pts.length - 1) return p; let x = 0, y = 0, n = 0; for (let k = Math.max(0, i - w); k <= Math.min(pts.length - 1, i + w); k++) { x += pts[k][0]; y += pts[k][1]; n++; } return [x / n, y / n]; }); }
+const plen = p => { let L = 0; for (let i = 1; i < p.length; i++) L += Math.hypot(p[i][0] - p[i - 1][0], p[i][1] - p[i - 1][1]); return L; };
+function turning(p) { let T = 0, prev = null; for (let i = 2; i < p.length; i++) { const a = Math.atan2(p[i][1] - p[i - 2][1], p[i][0] - p[i - 2][0]); if (prev !== null) { let d = Math.abs(a - prev); if (d > Math.PI) d = 2 * Math.PI - d; T += d; } prev = a; } return T; }
+// the biggest connected blob of the glyph (the body, not its dots) and its pixel farthest from the start dot (= where a one-stroke letter ends)
+function bodyEnd(ref, W, H, start) {
+  const n = W * H, lab = new Int32Array(n), sizes = [0]; let id = 0; const st = [];
+  for (let i = 0; i < n; i++) { if (ref[i * 4 + 3] <= 40 || lab[i]) continue; id++; let size = 0; st.push(i); lab[i] = id;
+    while (st.length) { const q = st.pop(); size++; const x = q % W, y = (q / W) | 0; for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) { const nx = x + dx, ny = y + dy; if (nx < 0 || ny < 0 || nx >= W || ny >= H) continue; const k = ny * W + nx; if (!lab[k] && ref[k * 4 + 3] > 40) { lab[k] = id; st.push(k); } } }
+    sizes[id] = size; }
+  let bestId = 1; for (let k = 1; k <= id; k++) if (sizes[k] > sizes[bestId]) bestId = k;
+  let far = null, fd = -1; const body = [], marks = []; for (let i = 0; i < n; i += 3) { if (!lab[i]) continue; const x = i % W, y = (i / W) | 0; if (lab[i] === bestId) { body.push([x, y]); const d = (x - start[0]) ** 2 + (y - start[1]) ** 2; if (d > fd) { fd = d; far = [x, y]; } } else marks.push([x, y]); }
+  return { far, body, marks };
+}
+// a stroke belongs to the body unless its centre sits nearer to a dot/tah/hamza than to the body (position, not length: a squiggled dot or a lifted body piece both work)
+const nearest = (pts, c) => { let d = 1e9; for (const p of pts) { const e = (p[0] - c[0]) ** 2 + (p[1] - c[1]) ** 2; if (e < d) d = e; } return d; };
+export function judgeTrace({ strokes, ref, W = 360, H = 300, start, ch, form = 'isolated' }) {
+  const L = C.by[ch]; if (!L || !ref || !start) return { ok: true, msg: '' };
+  const raw = strokes.filter(s => s.length); if (!raw.length) return { ok: false, msg: 'Trace the letter with your finger' };
+  let minx = W, maxx = 0, top = H, bot = 0; for (let i = 3; i < ref.length; i += 4) if (ref[i] > 40) { const x = (i >> 2) % W, y = (i >> 2) / W | 0; if (x < minx) minx = x; if (x > maxx) maxx = x; if (y < top) top = y; if (y > bot) bot = y; }
+  const gw = maxx - minx, gh = bot - top, di = dotInfo(ch, form), marks = di.n + (di.mark ? 1 : 0) + (ch === 'گ' || ch === 'ک' ? 1 : 0);
+  const sm = raw.map(s => smooth(resample(s))), len = sm.map(plen);
+  const m = { strokes: raw.length, marks, len: len.map(Math.round) };
+  // a pile of dashes, or a scribble, is not a letter
+  if (raw.length > 1 + marks + 3 || sm.some(p => turning(p) > 14)) return { ok: false, msg: 'Try one smooth line, from the green dot', m };
+  let be = null, es = start; if (SINGLE.has(L.family)) { be = bodyEnd(ref, W, H, start); let bd = 1e18; for (const q of be.body) { const d = (q[0] - start[0]) ** 2 + (q[1] - start[1]) ** 2; if (d < bd) { bd = d; es = q; } } }   // single-stroke letters start on the BODY: the green dot may sit on a tah/dot above it
+  const s0 = raw[0][0], near = Math.hypot(s0[0] - es[0], s0[1] - es[1]) <= (SINGLE.has(L.family) ? 80 : 95) || (!SINGLE.has(L.family) && s0[0] >= minx + gw * 0.5);
+  if (!near) return { ok: false, msg: 'Start at the green dot', m };
+  // body before dots: a first stroke that is only a dot, when a real stroke follows
+  const mx = Math.max(...len); if (marks && raw.length > 1 && len[0] < mx * 0.25 && mx > 40) return { ok: false, msg: 'Body first, then the dots', m };
+  if (SINGLE.has(L.family) && form === 'isolated') {
+    // the body is every stroke that is not a little dot-sized one, in order (a child may lift once or twice); together they must start at the
+    // dot end, never go backwards, and get most of the way to the far end of the letter
+    let end = es, fd = -1; for (const q of be.body) { const d = (q[0] - es[0]) ** 2 + (q[1] - es[1]) ** 2; if (d > fd) { fd = d; end = q; } }
+    const vx = end[0] - es[0], vy = end[1] - es[1], vv = vx * vx + vy * vy || 1, proj = p => ((p[0] - es[0]) * vx + (p[1] - es[1]) * vy) / vv;
+    const isBody = (p, i) => { if (!be.marks.length) return true; const c = raw[i].reduce((a, q) => [a[0] + q[0] / raw[i].length, a[1] + q[1] / raw[i].length], [0, 0]); return nearest(be.body, c) <= nearest(be.marks, c); };
+    const main = sm.filter(isBody); if (!main.length) return { ok: false, msg: 'Start at the green dot and follow the arrow', m };
+    const a = proj(main[0][0]); let hi = a, back = false; for (const q of main) { if (proj(q[0]) < hi - 0.3) back = true; for (const pt of q) hi = Math.max(hi, proj(pt)); }
+    const z = proj(main[main.length - 1][main[main.length - 1].length - 1]); m.proj = [+a.toFixed(2), +hi.toFixed(2), +z.toFixed(2)];
+    if (a > 0.45 || back || hi < 0.6) return { ok: false, msg: a > 0.45 || back ? 'Start at the green dot and follow the arrow' : 'Keep going to the end of the letter', m };
+  }
+  return { ok: true, msg: '', m };
+}
+
 // Tracing: grey glyph, finger stroke, start-side + coverage + stroke-count feedback.
 export function writeIt(unit, ctx, styleName, onDone, letters) {
   const ls = (letters || unit.letters).map(c => C.by[c]).filter(Boolean); if (!ls.length) return null;
   const box = el('div', 'card'); box.innerHTML = '<h2>Trace</h2><p class="muted">Start at the green dot. Body first, dots last.</p>';
   const sel = { value: ls[0].ch, onchange: null }, formSel = { value: 'isolated', onchange: null }, cv = el('canvas', 'trace'), out = el('div', 'score trace-out'), clear = el('button', 'btn trace-clear', `${icon('repeat')}<span>Clear</span>`), check = el('button', 'btn btn-check', `${icon('check')}<span>Check</span>`);
   out.setAttribute('aria-live', 'polite');
-  cv.width = 360; cv.height = 300; const ctx2 = cv.getContext('2d', { willReadFrequently: true }); const lg = document.createElement('canvas'); lg.width = 360; lg.height = 300; const lc = lg.getContext('2d', { willReadFrequently: true }), inkCv = el('canvas', 'trace-ink'), wrap = el('div', 'trace-wrap'), pad = inkPad(inkCv); wrap.append(cv, inkCv); let tPrev = 0; let ref = null, drawing = false, startX = null, glyphBox = null, strokes = 0, good = 0;
+  cv.width = 360; cv.height = 300; const ctx2 = cv.getContext('2d', { willReadFrequently: true }); const lg = document.createElement('canvas'); lg.width = 360; lg.height = 300; const lc = lg.getContext('2d', { willReadFrequently: true }), inkCv = el('canvas', 'trace-ink'), wrap = el('div', 'trace-wrap'), pad = inkPad(inkCv); wrap.append(cv, inkCv); let tPrev = 0; let ref = null, drawing = false, startX = null, glyphBox = null, strokes = 0, good = 0, sp = [], curS = null, startPt = null;
   const gl = (l, f) => { if (!l.joiner && (f === 'initial' || f === 'medial')) return null; return f === 'isolated' ? l.ch : f === 'initial' ? l.ch + 'ـ' : f === 'medial' ? 'ـ' + l.ch + 'ـ' : 'ـ' + l.ch; };
   const glyph = () => gl(C.by[sel.value], formSel.value);
   const startDot = el('i', 'trace-start'), arrow = el('i', 'trace-arrow', '<svg viewBox="0 0 40 24" aria-hidden="true"><path d="M36 12H6M15 4 5 12l10 8" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'); startDot.setAttribute('aria-hidden', 'true'); arrow.setAttribute('aria-hidden', 'true');
   // paper look: after the logic copy (lc) is taken, the visible canvas is repainted as a faint filled glyph with a dotted outline (logic untouched)
   function dressed(g, fam, dot) { ctx2.clearRect(0, 0, cv.width, cv.height); ctx2.direction = 'rtl'; ctx2.textAlign = 'center'; ctx2.textBaseline = 'middle'; ctx2.font = `170px ${fam}`; const acc = getComputedStyle(document.body).getPropertyValue('--accent').trim() || '#1E9C8F'; ctx2.fillStyle = acc; ctx2.globalAlpha = .1; ctx2.fillText(g, 180, 150); ctx2.globalAlpha = .75; ctx2.strokeStyle = acc; ctx2.lineWidth = 3; ctx2.lineCap = 'round'; ctx2.lineJoin = 'round'; ctx2.setLineDash([.1, 8]); ctx2.strokeText(g, 180, 150); ctx2.setLineDash([]); ctx2.globalAlpha = 1;
     const hint = strokeHint(C.by[sel.value]), down = /top to bottom|top down(?!.*left)/.test(hint), dl = !down && /top down|sweep left/.test(hint) && /down/.test(hint); const x = dot[0] / 360 * 100, y = dot[1] / 300 * 100; startDot.style.cssText = `left:${x}%;top:${y}%`; arrow.style.cssText = `left:${down ? x : Math.max(8, x - 17)}%;top:${down ? Math.min(92, y + 17) : y}%`; arrow.dataset.dir = down ? 'down' : dl ? 'downleft' : 'left'; wrap.dataset.on = '1'; }
-  function base() { wrap.classList.remove('inked'); ctx2.clearRect(0, 0, cv.width, cv.height); const g = glyph(); out.textContent = ''; out.className = 'score trace-out'; strokes = 0; startX = null; if (!g) { ctx2.fillStyle = '#888'; ctx2.font = '16px sans-serif'; ctx2.textAlign = 'center'; ctx2.fillText('This letter has no such form', 180, 150); ref = null; delete wrap.dataset.on; lc.clearRect(0, 0, 360, 300); lc.drawImage(cv, 0, 0); pad.reset(null); return; }
+  function base() { wrap.classList.remove('inked'); ctx2.clearRect(0, 0, cv.width, cv.height); const g = glyph(); out.textContent = ''; out.className = 'score trace-out'; strokes = 0; startX = null; sp = []; curS = null; if (!g) { ctx2.fillStyle = '#888'; ctx2.font = '16px sans-serif'; ctx2.textAlign = 'center'; ctx2.fillText('This letter has no such form', 180, 150); ref = null; delete wrap.dataset.on; lc.clearRect(0, 0, 360, 300); lc.drawImage(cv, 0, 0); pad.reset(null); return; }
     const fam = styleName() === 'nastaliq' ? '"Noto Nastaliq Urdu"' : '"Noto Naskh Arabic"'; ctx2.fillStyle = getComputedStyle(document.body).getPropertyValue('--line'); ctx2.font = `170px ${fam}`; ctx2.textAlign = 'center'; ctx2.textBaseline = 'middle'; ctx2.direction = 'rtl'; ctx2.fillText(g, 180, 150); ref = ctx2.getImageData(0, 0, cv.width, cv.height).data;
     let minx = cv.width, maxx = 0, top = cv.height; for (let i = 3; i < ref.length; i += 4) if (ref[i] > 0) { const x = (i >> 2) % cv.width, y = (i >> 2) / cv.width | 0; if (x < minx) minx = x; if (x > maxx) maxx = x; if (x > maxx - 6 && y < top) top = y; }
-    glyphBox = [minx, maxx]; ctx2.fillStyle = getComputedStyle(document.body).getPropertyValue('--accent'); ctx2.beginPath(); ctx2.arc(Math.min(maxx + 10, cv.width - 8), Math.min(top + 20, cv.height - 10), 6, 0, 7); ctx2.fill(); lc.clearRect(0, 0, 360, 300); lc.drawImage(cv, 0, 0); pad.reset(ref); dressed(g, fam, [Math.min(maxx + 10, cv.width - 8), Math.min(top + 20, cv.height - 10)]); }
+    startPt = [Math.min(maxx + 10, cv.width - 8), Math.min(top + 20, cv.height - 10)]; glyphBox = [minx, maxx]; ctx2.fillStyle = getComputedStyle(document.body).getPropertyValue('--accent'); ctx2.beginPath(); ctx2.arc(Math.min(maxx + 10, cv.width - 8), Math.min(top + 20, cv.height - 10), 6, 0, 7); ctx2.fill(); lc.clearRect(0, 0, 360, 300); lc.drawImage(cv, 0, 0); pad.reset(ref); dressed(g, fam, [Math.min(maxx + 10, cv.width - 8), Math.min(top + 20, cv.height - 10)]); }
   const pos = e => { const r = cv.getBoundingClientRect(); return [(e.clientX - r.left) * cv.width / r.width, (e.clientY - r.top) * cv.height / r.height]; };
-  cv.onpointerdown = e => { wrap.classList.add('inked'); drawing = true; strokes++; const q = pos(e); if (startX === null) startX = q[0]; lc.beginPath(); lc.moveTo(...q); cv.setPointerCapture(e.pointerId); tPrev = e.timeStamp; pad.down(...q); };
-  cv.onpointermove = e => { if (!drawing) return; lc.strokeStyle = getComputedStyle(document.body).getPropertyValue('--accent'); lc.lineWidth = 14; lc.lineCap = 'round'; lc.lineJoin = 'round'; for (const ev of (e.getCoalescedEvents?.() || [e])) { const q = pos(ev); lc.lineTo(...q); lc.stroke(); pad.move(q[0], q[1], Math.max(1, ev.timeStamp - tPrev)); tPrev = ev.timeStamp; } };
-  cv.onpointerup = cv.onpointercancel = () => { if (drawing) pad.up(); drawing = false; };
+  cv.onpointerdown = e => { wrap.classList.add('inked'); drawing = true; strokes++; const q = pos(e); curS = [q]; sp.push(curS); if (startX === null) startX = q[0]; lc.beginPath(); lc.moveTo(...q); cv.setPointerCapture(e.pointerId); tPrev = e.timeStamp; pad.down(...q); };
+  cv.onpointermove = e => { if (!drawing) return; lc.strokeStyle = getComputedStyle(document.body).getPropertyValue('--accent'); lc.lineWidth = styleName() === 'nastaliq' ? 28 : 20; lc.lineCap = 'round'; lc.lineJoin = 'round'; for (const ev of (e.getCoalescedEvents?.() || [e])) { const q = pos(ev); if (curS) curS.push(q); lc.lineTo(...q); lc.stroke(); pad.move(q[0], q[1], Math.max(1, ev.timeStamp - tPrev)); tPrev = ev.timeStamp; } };
+  cv.onpointerup = cv.onpointercancel = () => { if (drawing) { pad.up(); if (curS && curS.length === 1) { lc.fillStyle = getComputedStyle(document.body).getPropertyValue('--accent'); lc.beginPath(); lc.arc(curS[0][0], curS[0][1], 22, 0, 7); lc.fill(); } } drawing = false; };   /* a tap is a dot: it must count on the logic canvas like a drawn stroke */
   check.onclick = () => { if (!ref) return; const now = lc.getImageData(0, 0, cv.width, cv.height).data; let g = 0, hit = 0, stray = 0; for (let i = 0; i < ref.length; i += 4) { const isG = ref[i + 3] > 0 && ref[i] > 150; const drawn = Math.abs(now[i] - ref[i]) > 40 || Math.abs(now[i + 1] - ref[i + 1]) > 40 || (now[i + 3] > 0 && ref[i + 3] === 0); if (isG) { g++; if (drawn) hit++; } else if (drawn) stray++; }
-    const cov = Math.round(100 * hit / Math.max(1, g)), neat = stray < g * 0.8, rtl = startX === null || !glyphBox || startX > (glyphBox[0] + glyphBox[1]) / 2; const l = C.by[sel.value]; const expect = 1 + (DOTS[l.ch] || 0) + (l.ch === 'گ' || l.ch === 'ک' ? 1 : 0);
-    const ok = cov >= 80 && neat && rtl; out.textContent = `Coverage ${cov}% ${ok ? '✓ good' : cov < 80 ? '— keep tracing' : !rtl ? '— start on the right side' : '— stay inside the letter'}${strokes > expect + 1 ? ` · ${strokes} strokes, aim for ${expect}` : ''}`; out.className = 'score trace-out ' + (ok ? 'ok' : 'try'); ctx.record('trace', l.ch, ok, 0); if (ok) pad.shimmer(); if (ok && ++good >= 1 && onDone) onDone(good, 1); };
+    const di0 = dotInfo(C.by[sel.value].ch, formSel.value); const cov = Math.round(100 * hit / Math.max(1, g)), neat = stray < g * 0.8 + (1500 + 700 * (di0.n + (di0.mark ? 1 : 0))) * (styleName() === 'nastaliq' ? 2 : 1);   /* +1500: a thin letter (alif) must forgive a wobbly finger; scribbles and dashes are caught by judgeTrace */ const l = C.by[sel.value]; const di = dotInfo(l.ch, formSel.value); const expect = 1 + di.n + (di.mark ? 1 : 0) + (l.ch === 'گ' || l.ch === 'ک' ? 1 : 0);
+    // direction and order (judgeTrace) only matter once the letter is covered: low coverage keeps the old "keep tracing"
+    const v = cov >= 80 && neat ? judgeTrace({ strokes: sp, ref, start: startPt, ch: l.ch, form: formSel.value }) : { ok: false, msg: '' };
+    const ok = cov >= 80 && neat && v.ok; out.textContent = `Coverage ${cov}% ${ok ? '✓ good' : cov < 80 ? '— keep tracing' : !neat ? '— stay inside the letter' : '— ' + v.msg}${ok && strokes > expect + 1 ? ` · ${strokes} strokes, aim for ${expect}` : ''}`; out.className = 'score trace-out ' + (ok ? 'ok' : 'try'); ctx.record('trace', l.ch, ok, 0); if (ok) pad.shimmer(); if (ok && ++good >= 1 && onDone) onDone(good, 1); };
   wrap.append(startDot, arrow); clear.onclick = base; sel.onchange = formSel.onchange = base; box.classList.add('trace-card');
   // chips instead of native selects (same state objects: sel.value / formSel.value). One letter given (lesson flow) = no pickers, the card is just the pad.
   const FORMS = [['isolated', 'Alone'], ['initial', 'Start'], ['medial', 'Middle'], ['final', 'End']], pick = el('div', 'trace-pick');
@@ -152,8 +228,8 @@ export function dictation(unit, ctx, marks, onDone) {
   back.onclick = () => { typed = [...typed].slice(0, -1).join(''); ans.textContent = typed; };
   const key = () => wordKey(unit.n, items[k].i + (unit.wordOffset || 0));
   function show() { if (k >= items.length) { checkB.disabled = true; skipB.disabled = true; back.disabled = true; status.textContent = `Done: ${score}/5`; playB.style.display = 'none'; againB.style.display = ''; checkB.style.display = 'none'; againB.onclick = () => { items = shuffle(pickable).slice(0, 5); k = 0; score = 0; checkB.disabled = false; skipB.disabled = false; back.disabled = false; playB.style.display = ''; againB.style.display = 'none'; checkB.style.display = ''; show(); }; onDone && onDone(score, 5); return; } typed = ''; ans.textContent = ''; t0 = Date.now(); status.textContent = `Word ${k + 1}/5 · ${score} right`; playB.onclick = e => { e.stopPropagation(); play(key()); }; play(key()); }
-  checkB.onclick = () => { if (k >= items.length) return; const w = items[k].w; const ok = typed === bare(w.ur); ctx.record('dictation', w.ur, ok, Date.now() - t0); if (ok) { score++; ans.textContent = disp(w, marks()); toast('Correct — ' + w.rom + ' (' + w.en + ')'); k++; setTimeout(show, 900); } else { ans.classList.add('no'); setTimeout(() => ans.classList.remove('no'), 500); toast(typed.length !== bare(w.ur).length ? `${bare(w.ur).length} letters in this word` : 'Not yet. Listen again.'); } };
-  skipB.onclick = () => { if (k >= items.length) return; toast('It was ' + items[k].w.v + ' — ' + items[k].w.rom); ctx.record('dictation', items[k].w.ur, false, 0); k++; setTimeout(show, 900); };
+  checkB.onclick = () => { if (k >= items.length || checkB.dataset.wait) return; const w = items[k].w; const ok = typed === bare(w.ur); ctx.record('dictation', w.ur, ok, Date.now() - t0); if (ok) { score++; ans.textContent = disp(w, marks()); toast('Correct — ' + w.rom + ' (' + w.en + ')'); k++; checkB.dataset.wait = '1'; skipB.dataset.wait = '1'; setTimeout(() => { delete checkB.dataset.wait; delete skipB.dataset.wait; show(); }, 900); } else { ans.classList.add('no'); checkB.dataset.wait = '1'; setTimeout(() => { ans.classList.remove('no'); delete checkB.dataset.wait; }, 500); toast(typed.length !== bare(w.ur).length ? `${bare(w.ur).length} letters in this word` : 'Not yet. Listen again.'); } };
+  skipB.onclick = () => { if (k >= items.length || skipB.dataset.wait) return; toast('It was ' + items[k].w.v + ' — ' + items[k].w.rom); ctx.record('dictation', items[k].w.ur, false, 0); k++; checkB.dataset.wait = '1'; skipB.dataset.wait = '1'; setTimeout(() => { delete checkB.dataset.wait; delete skipB.dataset.wait; show(); }, 900); };
   const bar = el('div', 'row'); bar.append(back, skipB); box.append(sayRow(playB, status, againB), ans, keys, bar, checkB); show(); return box;
 }
 
@@ -164,7 +240,7 @@ export function quiz(unit, ctx, marks, onDone) {
   const ol = el('ol'); ol.style.cssText = 'padding-left:18px;display:grid;gap:12px;margin:0'; const qs = shuffle(qwords).slice(0, 10); const picks = {};
   qs.forEach((w, qi) => { const li = el('li', '', `Which one says <b>${w.rom}</b> (${w.en})?`); const ch = el('div', 'choices'); ch.style.justifyContent = 'flex-start'; shuffle([w, ...shuffle(qwords.filter(x => x.ur !== w.ur)).slice(0, 3)]).forEach(o => { const t = el('button', 'tile small ur', disp(o, marks())); t.setAttribute('aria-label', o.rom); t.onclick = () => { [...ch.children].forEach(c => c.classList.remove('ok')); t.classList.add('ok'); picks[qi] = o.ur; }; ch.append(t); }); li.append(ch); ol.append(li); });
   const submit = el('button', 'btn btn-primary btn-wide act', 'Submit'), res = el('div', 'score');
-  submit.onclick = () => { let sc = 0; qs.forEach((w, qi) => { const ok = picks[qi] === w.ur; if (ok) sc++; ctx.record('quiz', w.ur, ok, 0); [...ol.children[qi].querySelectorAll('.tile')].forEach(t => { const right = t.textContent === disp(w, marks()); t.classList.toggle('ok', right); if (!right && t.classList.contains('ok') === false && picks[qi] && t.textContent === disp(qwords.find(x => x.ur === picks[qi]) || {}, marks())) t.classList.add('no'); }); });
-    const missed = qs.filter((w, qi) => picks[qi] !== w.ur).map(w => w.rom).slice(0, 4).join(', '); res.textContent = `Score ${sc}/10 ${sc >= 8 ? '— passed ✓' : '— re-read ' + missed + ', then try again'}`; submit.remove(); res.scrollIntoView({ block: 'center' }); onDone && onDone(sc, 10); };
+  submit.onclick = () => { if (submit.dataset.used) return; submit.dataset.used = '1'; let sc = 0; qs.forEach((w, qi) => { const ok = picks[qi] === w.ur; if (ok) sc++; ctx.record('quiz', w.ur, ok, 0); [...ol.children[qi].querySelectorAll('.tile')].forEach(t => { const right = t.textContent === disp(w, marks()); t.classList.toggle('ok', right); if (!right && t.classList.contains('ok') === false && picks[qi] && t.textContent === disp(qwords.find(x => x.ur === picks[qi]) || {}, marks())) t.classList.add('no'); }); });
+    const missed = qs.filter((w, qi) => picks[qi] !== w.ur).map(w => w.rom).slice(0, 4).join(', '); res.textContent = `Score ${sc}/10 ${sc >= 8 ? '— passed ✓' : '— re-read ' + missed + ', then try again'}`; submit.remove(); res.scrollIntoView({ block: 'center' }); const done = () => Promise.resolve(onDone && onDone(sc, 10)).catch(() => { const r = el('button', 'btn btn-primary btn-wide', 'Try saving again'); r.onclick = () => { r.remove(); done(); }; box.append(el('p', 'muted', 'Your score did not save yet. Nothing is lost.'), r); }); done(); };
   box.append(ol, res, submit); return box;
 }

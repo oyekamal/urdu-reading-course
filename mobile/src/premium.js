@@ -5,6 +5,7 @@
 //  2. the Today village scene gets depth: three parallax layers + time-of-day ambient life (clouds, leaves, sun rays, stars, fireflies)
 import { initStickers } from './stickers.js';
 import './memory.js';
+import { isCalm, settled } from './motion.js'; // round 11p: calm/overlay policy lives in motion.js (sets <html class="calm"|"m-cover">, CSS pauses ambient layers)
 
 const reduce = matchMedia('(prefers-reduced-motion: reduce)');
 const root = document.documentElement;
@@ -13,11 +14,11 @@ const root = document.documentElement;
 let lx = -0.35, ly = -0.45, raf = 0, gyro = false;
 const clamp = v => Math.max(-1, Math.min(1, v));
 function push() { raf = 0; root.style.setProperty('--tx', lx.toFixed(3)); root.style.setProperty('--ty', ly.toFixed(3)); }
-function aim(x, y) { if (reduce.matches) return; lx = x; ly = y; if (!raf) raf = requestAnimationFrame(push); }
+function aim(x, y) { if (reduce.matches || (Math.abs(x - lx) < .012 && Math.abs(y - ly) < .012)) return; lx = x; ly = y; if (!raf) raf = requestAnimationFrame(push); }
 addEventListener('pointermove', e => { if (!gyro) aim(clamp((e.clientX / innerWidth) * 2 - 1), clamp((e.clientY / innerHeight) * 2 - 1)); }, { passive: true });
 addEventListener('pointerdown', e => { aim(clamp((e.clientX / innerWidth) * 2 - 1), clamp((e.clientY / innerHeight) * 2 - 1)); gyro || askTilt(); }, { passive: true });
 let asked = false;
-function listen() { addEventListener('deviceorientation', e => { if (e.gamma == null) return; gyro = true; aim(clamp(e.gamma / 28), clamp(((e.beta ?? 45) - 50) / 28)); }, { passive: true }); }
+function listen() { addEventListener('deviceorientation', e => { if (e.gamma == null) return; gyro = true; if (isCalm() || document.hidden) return; aim(clamp(e.gamma / 28), clamp(((e.beta ?? 45) - 50) / 28)); }, { passive: true }); }
 // iOS only hands out tilt after a user gesture + permission; Android/desktop just start firing. Never blocks, never prompts twice.
 function askTilt() { if (asked) return; asked = true; try { const D = window.DeviceOrientationEvent; if (D && typeof D.requestPermission === 'function') D.requestPermission().then(r => r === 'granted' && listen()).catch(() => {}); else if (D) listen(); } catch (e) {} }
 
@@ -31,6 +32,8 @@ function light(n) {
 }
 
 // ---------- the village scene ----------
+// ONE observer for every scene (a new one per render was never disconnected and kept each removed scene alive)
+const worldIO = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('pm-off', !e.isIntersecting)));
 const night = () => { const h = new Date().getHours(); return h >= 18 || h < 5; };
 function grade() { const h = new Date().getHours(); return h >= 18 || h < 5 ? 'night' : h < 10 ? 'morning' : h < 15 ? 'noon' : 'golden'; }
 const rnd = (a, b, i) => a + ((Math.sin(i * 91.7 + a * 13.1) + 1) / 2) * (b - a); // deterministic spread, no Math.random: same scene every visit
@@ -47,12 +50,21 @@ function scene(w) {
   const tint = document.createElement('div'); tint.className = 'pm-grade'; tint.setAttribute('aria-hidden', 'true');
   w.prepend(far, mid, tint);
   const fore = document.createElement('div'); fore.className = 'pm-layer pm-fore'; fore.setAttribute('aria-hidden', 'true'); fore.innerHTML = [0, 1].map(i => `<i class="pm-leaf pm-leaf-f" style="left:${i ? 74 : 14}%;--d:${i ? 11 : 13}s;--dl:${i ? -5 : -1}s;--c:${n ? '#8FB08A' : '#7DBB6E'}"></i>`).join(''); w.append(fore);
-  new IntersectionObserver(es => w.classList.toggle('pm-off', !es[0].isIntersecting)).observe(w);
+  worldIO.observe(w);
+}
+
+// a removed screen must not stay reachable through an IntersectionObserver
+function drop(n) {
+  if (n.nodeType !== 1) return;
+  const gone = e => { if (e.isConnected) return; vis.unobserve(e); worldIO.unobserve(e); };
+  gone(n); n.querySelectorAll?.('[data-lc], .pm').forEach(gone);
 }
 
 export function initPremium() {
   initStickers(); light(document.body);
   document.querySelectorAll('.hh-world, .hs-world').forEach(scene);
-  new MutationObserver(ms => { for (const m of ms) for (const n of m.addedNodes) { if (n.nodeType !== 1) continue; light(n); if (n.matches?.('.hh-world, .hs-world')) scene(n); else n.querySelectorAll?.('.hh-world, .hs-world').forEach(scene); } }).observe(document.body, { childList: true, subtree: true });
+  new MutationObserver(ms => { for (const m of ms) { for (const n of m.removedNodes) drop(n); for (const n of m.addedNodes) { if (n.nodeType !== 1) continue; light(n); if (n.matches?.('.hh-world, .hs-world')) scene(n); else n.querySelectorAll?.('.hh-world, .hs-world').forEach(scene); } } }).observe(document.body, { childList: true, subtree: true });
 }
 initPremium();
+// the Urdu faces are declared in index.html with font-display:swap and nothing is fetched until text needs them; warm Naskh up once the first screen is out of the way
+settled.then(() => { try { document.fonts && document.fonts.load('40px "Noto Naskh Arabic"'); } catch (e) {} });

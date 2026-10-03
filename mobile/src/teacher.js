@@ -3,10 +3,15 @@
 // ctx = {db, C, play, openLearner(profileId), lock()} — supplied by the app shell.
 import { lessonsFor } from './path.js';
 import { spellable } from './drills.js';
-import { el, toast, bandFor, BANDS, wordKey, pad2, W } from './content.js';
+import { el, toast, bandFor, BANDS, wordKey, pad2, W, compText, recBand, recLevel } from './content.js';
 import { uid } from './db.js';
+import { esc, cleanName, csvCell, NAME_MAX, once } from './safe.js';
+import { restoreFromFile } from './restore.js';
+import { askGrownup } from './gate.js';
 import { runEgra } from './egra.js';
 
+// user-typed text (names, grades) is always set as text, never parsed as HTML
+const txt = (tag, cls, t) => { const e = el(tag, cls); e.textContent = String(t ?? ''); return e; };
 const TABS = ['Class', 'Lesson', 'Groups', 'Assess', 'Reports', 'Device'];
 
 const GROUP_ACTIVITY = {
@@ -102,32 +107,33 @@ async function renderClass(body, ctx, state, goto) {
   const table = document.createElement('table');
   table.appendChild(el('tr', '', '<th>Name</th><th>Grade</th><th>Band</th><th>Units passed</th><th></th>'));
   roster.forEach(r => {
-    const band = r.latest ? bandFor(r.latest.orf.cwpm) : null;
-    const passed = r.progress ? Object.values(r.progress.units || {}).filter(u => u.passed).length : 0;
+    const band = r.latest ? recBand(r.latest) : null;
+    const passed = r.progress ? Object.values(r.progress.units || {}).filter(u => u && u.passed).length : 0;
     const tr = document.createElement('tr');
-    tr.appendChild(el('td', '', r.profile.name));
-    tr.appendChild(el('td', '', String(r.profile.grade || '')));
+    tr.appendChild(txt('td', '', r.profile.name));
+    tr.appendChild(txt('td', '', r.profile.grade || ''));
     const bandTd = el('td', '');
-    bandTd.appendChild(el('span', `pill${band ? '' : ' muted'}`, band || 'not assessed'));
+    bandTd.appendChild(txt('span', `pill${band ? '' : ' muted'}`, band || 'not assessed'));
     tr.appendChild(bandTd);
     tr.appendChild(el('td', '', String(passed)));
     const actTd = el('td', 'row');
     const openBtn = el('button', 'btn', 'Open'); openBtn.onclick = () => ctx.openLearner(r.profile.id);
-    const detailBtn = el('button', 'btn', 'Detail'); detailBtn.onclick = async () => { const { renderDashboard } = await import('./dashboard.js'); const d = document.getElementById('child-detail') || Object.assign(el('div'), { id: 'child-detail' }); d.innerHTML = ''; d.append(el('h2', '', `${r.profile.name} — detail`)); d.append(await renderDashboard(r.profile.id)); body.append(d); d.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+    const detailBtn = el('button', 'btn', 'Detail'); detailBtn.onclick = once(async () => { const { renderDashboard } = await import('./dashboard.js'); const d = document.getElementById('child-detail') || Object.assign(el('div'), { id: 'child-detail' }); d.innerHTML = ''; d.append(txt('h2', '', `${r.profile.name} — detail`)); d.append(await renderDashboard(r.profile.id)); body.append(d); d.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     const assessBtn = el('button', 'btn btn-primary', 'Assess'); assessBtn.onclick = () => goto('Assess', r.profile.id);
     const editBtn = el('button', 'btn', 'Edit');
     editBtn.onclick = () => {
-      const name = prompt('Name', r.profile.name);
-      if (name == null) return;
+      const rawName = prompt('Name', r.profile.name);
+      if (rawName == null) return;
+      const name = cleanName(rawName);
       const grade = prompt('Grade (1-5)', r.profile.grade || 1);
       if (grade == null) return;
-      db.put('profiles', { ...r.profile, name: name.trim() || r.profile.name, grade: Number(grade) || r.profile.grade })
-        .then(() => { toast('Updated'); renderClass(body, ctx, state, goto); });
+      db.put('profiles', { ...r.profile, name: name || r.profile.name, grade: Math.min(12, Math.max(0, Math.floor(Number(grade)))) || r.profile.grade })
+        .then(() => { toast('Updated'); renderClass(body, ctx, state, goto); }, () => toast('Could not save. Please try again.'));
     };
     const delBtn = el('button', 'btn btn-danger', 'Delete');
     delBtn.onclick = () => {
       if (!confirm(`Delete ${r.profile.name}? This cannot be undone.`)) return;
-      db.del('profiles', r.profile.id).then(() => { toast('Deleted'); renderClass(body, ctx, state, goto); });
+      db.deleteProfile(r.profile.id).then(() => { toast('Deleted'); renderClass(body, ctx, state, goto); }, () => toast('Could not delete. Please try again.'));
     };
     actTd.appendChild(openBtn); actTd.appendChild(detailBtn); actTd.appendChild(assessBtn); actTd.appendChild(editBtn); actTd.appendChild(delBtn);
     tr.appendChild(actTd);
@@ -140,7 +146,7 @@ async function renderClass(body, ctx, state, goto) {
   const addCard = el('div', 'card');
   addCard.appendChild(el('h2', '', 'Add child'));
   const row = el('div', 'row');
-  const nameInp = document.createElement('input'); nameInp.placeholder = 'Name';
+  const nameInp = document.createElement('input'); nameInp.placeholder = 'Name'; nameInp.maxLength = NAME_MAX;
   const gradeSel = document.createElement('select');
   [1, 2, 3, 4, 5].forEach(g => { const o = document.createElement('option'); o.value = String(g); o.textContent = `Grade ${g}`; gradeSel.appendChild(o); });
   const trackSel = document.createElement('select');
@@ -148,13 +154,13 @@ async function renderClass(body, ctx, state, goto) {
   row.appendChild(nameInp); row.appendChild(gradeSel); row.appendChild(trackSel);
   addCard.appendChild(row);
   const addBtn = el('button', 'btn btn-primary', 'Add child');
-  addBtn.onclick = async () => {
-    const name = nameInp.value.trim();
+  addBtn.onclick = once(async () => {
+    const name = cleanName(nameInp.value);
     if (!name) { toast('Enter a name'); return; }
-    await db.put('profiles', { id: uid(), name, grade: Number(gradeSel.value), track: trackSel.value, kind: 'learner', unit: 0, createdAt: Date.now() });
+    try { await db.put('profiles', { id: uid(), name, grade: Number(gradeSel.value), track: trackSel.value, kind: 'learner', unit: 0, createdAt: Date.now() }); } catch (e) { toast('Could not save. Please try again.'); return; }
     toast('Child added');
     renderClass(body, ctx, state, goto);
-  };
+  }, 900);
   addCard.appendChild(addBtn);
   body.appendChild(addCard);
 }
@@ -250,7 +256,7 @@ async function renderGroups(body, ctx) {
   const unassessed = [];
   roster.forEach(r => {
     if (!r.latest) { unassessed.push(r.profile.name); return; }
-    const band = bandFor(r.latest.orf.cwpm);
+    const band = recBand(r.latest);
     (buckets[band] = buckets[band] || []).push(r.profile.name);
   });
   BANDS.forEach(([name]) => {
@@ -258,12 +264,14 @@ async function renderGroups(body, ctx) {
     const card = el('div', 'card');
     card.appendChild(el('h2', '', `${name} (${list.length})`));
     card.appendChild(el('p', 'muted', GROUP_ACTIVITY[name] || ''));
-    card.appendChild(el('p', '', list.length ? list.join(', ') : 'No children in this band yet.'));
+    card.appendChild(txt('p', '', list.length ? list.join(', ') : 'No children in this band yet.'));
     body.appendChild(card);
   });
+  const extra = Object.keys(buckets).filter(k => !BANDS.some(b => b[0] === k) && buckets[k].length);   // e.g. 'not tested': assessed, but no passage score
+  extra.forEach(k => { const c = el('div', 'card'); c.appendChild(el('h2', '', `${k} (${buckets[k].length})`)); c.appendChild(txt('p', '', buckets[k].join(', '))); body.appendChild(c); });
   const na = el('div', 'card');
   na.appendChild(el('h2', '', `Not yet assessed (${unassessed.length})`));
-  na.appendChild(el('p', '', unassessed.length ? unassessed.join(', ') : 'Everyone has been assessed.'));
+  na.appendChild(txt('p', '', unassessed.length ? unassessed.join(', ') : 'Everyone has been assessed.'));
   body.appendChild(na);
 }
 
@@ -294,7 +302,7 @@ async function renderAssess(body, ctx, state, goto) {
   table.appendChild(el('tr', '', '<th>Name</th><th>Last assessed</th><th></th>'));
   roster.forEach(r => {
     const tr = document.createElement('tr');
-    tr.appendChild(el('td', '', r.profile.name));
+    tr.appendChild(txt('td', '', r.profile.name));
     tr.appendChild(el('td', '', r.latest ? new Date(r.latest.ts).toLocaleDateString() : 'never'));
     const btn = el('button', 'btn btn-primary', 'Start assessment');
     btn.onclick = () => { state.assessProfileId = r.profile.id; renderAssess(body, ctx, state, goto); };
@@ -314,7 +322,7 @@ async function renderReports(body, ctx, state) {
   const roster = await loadRoster(db);
   const rows = roster.filter(r => r.latest).map(r => ({
     name: r.profile.name, ts: r.latest.ts, letters: r.latest.letters, nonwords: r.latest.nonwords,
-    words: r.latest.words, cwpm: r.latest.orf.cwpm, comp: r.latest.comp, band: r.latest.band,
+    words: r.latest.words, cwpm: r.latest.orf.cwpm, comp: r.latest.comp, compDone: r.latest.compDone, band: recBand(r.latest),
   }));
   state.reportSort = state.reportSort || { key: 'name', dir: 1 };
   const { key: sortKey, dir } = state.reportSort;
@@ -335,7 +343,7 @@ async function renderReports(body, ctx, state) {
   });
   table.appendChild(trh);
   rows.forEach(r => {
-    table.appendChild(el('tr', '', `<td>${r.name}</td><td>${new Date(r.ts).toLocaleDateString()}</td><td>${r.letters}</td><td>${r.nonwords}</td><td>${r.words}</td><td>${r.cwpm}</td><td>${r.comp}/5</td><td>${r.band}</td>`));
+    table.appendChild(el('tr', '', `<td>${esc(r.name)}</td><td>${new Date(r.ts).toLocaleDateString()}</td><td>${esc(r.letters ?? '-')}</td><td>${esc(r.nonwords ?? '-')}</td><td>${esc(r.words ?? '-')}</td><td>${esc(r.cwpm ?? '-')}</td><td>${esc(compText({ comp: r.comp, compDone: r.compDone }))}</td><td>${esc(r.band)}</td>`));
   });
   tableWrap.appendChild(table);
   card.appendChild(tableWrap);
@@ -345,8 +353,9 @@ async function renderReports(body, ctx, state) {
   hist.appendChild(el('h2', '', 'Band histogram'));
   const counts = {}; BANDS.forEach(([n]) => { counts[n] = 0; });
   rows.forEach(r => { counts[r.band] = (counts[r.band] || 0) + 1; });
+  const histNames = [...BANDS.map(b => b[0]), ...Object.keys(counts).filter(k => !BANDS.some(b => b[0] === k))];
   const max = Math.max(1, ...Object.values(counts));
-  BANDS.forEach(([n]) => {
+  histNames.forEach((n) => {
     const barRow = el('div', 'row');
     barRow.appendChild(el('div', 'muted', n));
     const bar = document.createElement('div');
@@ -361,14 +370,16 @@ async function renderReports(body, ctx, state) {
   exp.appendChild(el('h2', '', 'Export / import'));
   const row = el('div', 'row');
   const csvBtn = el('button', 'btn', 'Export CSV');
-  csvBtn.onclick = () => {
+  csvBtn.onclick = async () => {
+    if (!await askGrownup({ title: 'Export the class report', note: 'The report lists learner names and scores. Grown-ups only, please.' })) return;
     const csv = [headers.map(h => h[1]).join(',')]
-      .concat(rows.map(r => [r.name, new Date(r.ts).toISOString(), r.letters, r.nonwords, r.words, r.cwpm, `${r.comp}/5`, r.band].join(',')))
+      .concat(rows.map(r => [r.name, Number.isFinite(r.ts) && Math.abs(r.ts) < 8.64e15 ? new Date(r.ts).toISOString() : '', r.letters, r.nonwords, r.words, r.cwpm, compText({ comp: r.comp, compDone: r.compDone }), r.band].map(csvCell).join(',')))
       .join('\n');
     shareOrDownload('class-report.csv', 'text/csv', csv);
   };
   const jsonBtn = el('button', 'btn', 'Export full backup (JSON)');
   jsonBtn.onclick = async () => {
+    if (!await askGrownup({ title: 'Export a backup', note: 'A backup file holds every learner on this phone. Grown-ups only, please.' })) return;
     const data = await db.exportAll();
     shareOrDownload('urdu-reader-backup.json', 'application/json', JSON.stringify(data, null, 1));
   };
@@ -379,27 +390,26 @@ async function renderReports(body, ctx, state) {
   fileInp.onchange = async () => {
     const f = fileInp.files[0]; if (!f) return;
     try {
-      const text = await f.text();
-      const n = await db.importAll(JSON.parse(text));
-      toast(`Imported ${n} records`);
-      renderReports(body, ctx, state);
-    } catch (e) { toast(`Import failed: ${e.message}`); }
+      fileInp.value = ''; await restoreFromFile(f, { onDone: () => renderReports(body, ctx, state) });
+    } catch (e) { toast('The backup could not be restored. Nothing was changed.'); }
   };
-  exp.appendChild(fileInp);
+  fileInp.hidden = true; const impBtn = el('button', 'btn', 'Restore from a backup');
+  impBtn.onclick = async () => { if (await askGrownup({ title: 'Import a backup', note: 'Importing adds the learners from a backup file. Grown-ups only, please.' })) fileInp.click(); };
+  exp.appendChild(impBtn); exp.appendChild(fileInp);
   body.appendChild(exp);
   const slips = el('div', 'card');
   slips.appendChild(el('h2', '', 'Parent slip'));
   roster.filter(r => r.latest).forEach(r => {
     const row2 = el('div', 'row');
-    row2.appendChild(el('span', '', r.profile.name));
+    row2.appendChild(txt('span', '', r.profile.name));
     const btn = el('button', 'btn', 'Share slip');
     btn.onclick = async () => {
-      const advice = r.latest.band === 'fluent' ? 'Reading fluently — keep up daily reading at home.'
-        : r.latest.band === 'sentences' ? 'Reading full sentences — practise short passages daily.'
-        : r.latest.band === 'words' ? 'Reading whole words — practise the unit word list daily.'
-        : r.latest.band === 'letters' ? 'Learning letter sounds — 10 minutes of letter practice daily helps most.'
+      const advice = recBand(r.latest) === 'not tested' ? 'Passage not tested yet: ask the teacher to run the full assessment.' : recBand(r.latest) === 'fluent' ? 'Reading fluently — keep up daily reading at home.'
+        : recBand(r.latest) === 'sentences' ? 'Reading full sentences — practise short passages daily.'
+        : recBand(r.latest) === 'words' ? 'Reading whole words — practise the unit word list daily.'
+        : recBand(r.latest) === 'letters' ? 'Learning letter sounds — 10 minutes of letter practice daily helps most.'
         : 'Still at pre-reading stage — daily read-aloud time with an adult is the best next step.';
-      const lvl = r.latest.orf.cwpm > 90 ? 'exceeds the grade-2 standard' : r.latest.orf.cwpm >= 60 ? 'meets the grade-2 standard' : r.latest.orf.cwpm > 0 ? 'below the grade-2 standard (60 words/minute)' : 'not yet reading'; const text = `${r.profile.name} — ${new Date(r.latest.ts).toLocaleDateString()}\nPassage fluency: ${r.latest.orf.cwpm} correct words/minute — ${lvl}\nStage: ${r.latest.band} (pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+)\nComprehension: ${r.latest.comp ?? '-'}/5\n${advice}`;
+      const lvl = recLevel(r.latest), fl = r.latest.orfDone === false || r.latest.orf?.cwpm == null ? 'Passage fluency: not tested' : `Passage fluency: ${r.latest.orf.cwpm} correct words/minute — ${lvl}`; const text = `${r.profile.name} — ${new Date(r.latest.ts).toLocaleDateString()}\n${fl}\nStage: ${recBand(r.latest)} (pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+)\nComprehension: ${compText(r.latest)}\n${advice}`;
       if (navigator.share) {
         try { await navigator.share({ title: `${r.profile.name}'s reading update`, text }); return; } catch (e) { /* fall through */ }
       }
@@ -477,7 +487,7 @@ export async function renderTeacher(root, ctx) {
     });
   }
   async function renderBody() {
-    await SCREENS[active](body, ctx, state, goto);
+    try { await SCREENS[active](body, ctx, state, goto); } catch (e) { if (ctx.recover) ctx.recover(e); else toast('This screen could not load. Please try again.'); }
   }
   renderTabs();
   await renderBody();
