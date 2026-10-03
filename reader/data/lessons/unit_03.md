@@ -2,7 +2,7 @@
 
 **Focus:** Three dots below (پ), the small ط-mark above (ٹ), three dots above (ث). Retroflex ٹ vs dental ت
 
-**On the phone, this unit is these lessons, in order:** pe پ → ṭe ٹ → s̱e ث → Join them → Blend → Words 1 → Words 2 → Read → Unit check. Children rotate through them one at a time; the Unit check (8 of 10) unlocks the next unit.
+**On the phone, this unit is these lessons, in order:** pe پ → ṭe ٹ → s̱e ث → Join them → Blend → Words 1 → Words 2 → Words 3 → Words 4 → Read → Unit check. Children rotate through them one at a time; the Unit check (8 of 10) unlocks the next unit.
 
 ## 1 · Hear it
 
@@ -44,9 +44,9 @@
 
 Build each word from letter tiles, right to left. Watch which letters change shape and which refuse to join.
 
-- پ + ا + ن + ی  →  **پانی**  (pānī, water)
-- ٹ + و + پ + ی  →  **ٹوپی**  (ṭopī, cap (و comes in unit 4, preview))
-- پ + ت + ا  →  **پَتا**  (patā, address)
+- ا + پ + ن + ے  →  **اَپنے**  (apne, own (plural))
+- ا + پ + ن + ی  →  **اَپنی**  (apnī, own (fem))
+- ا + پ + ن + ا  →  **اَپنا**  (apnā, own)
 
 ## 4b · Blend  ·  *recognition · self-check with audio*
 
@@ -67,36 +67,77 @@ Vowel marks are shown. Read aloud, then play the audio and compare.
 
 | Word | Say | Means | Audio |
 |---|---|---|---|
-| پانی | pānī | water | `assets/audio/units/u03_00.mp3` |
-| پُل | pul | bridge | `assets/audio/units/u03_01.mp3` |
-| ٹوپی | ṭopī | cap *(peek ahead: has a letter from a later unit)* | `assets/audio/units/u03_02.mp3` |
-| پَتا | patā | address | `assets/audio/units/u03_03.mp3` |
-| پاک | pāk | pure | `assets/audio/units/u03_04.mp3` |
-| پیٹ | peṭ | stomach | `assets/audio/units/u03_05.mp3` |
-| ٹَب | ṭab | tub | `assets/audio/units/u03_06.mp3` |
-| پَتْلی | patlī | thin | `assets/audio/units/u03_07.mp3` |
-| ثابِت | s̱ābit | proven | `assets/audio/units/u03_08.mp3` |
-| پیپَل | pīpal | fig tree | `assets/audio/units/u03_09.mp3` |
-| ٹَماٹَر | ṭamāṭar | tomato *(peek ahead: has a letter from a later unit)* | `assets/audio/units/u03_10.mp3` |
-| ٹانْکا | ṭānkā | stitch | `assets/audio/units/u03_11.mp3` |
-| پِیالا | piyālā | bowl | `assets/audio/units/u03_12.mp3` |
-| نَپا | napā | measured | `assets/audio/units/u03_13.mp3` |
-| پَلَک | palak | eyelash | `assets/audio/units/u03_14.mp3` |
-| کَپاس | kapās | cotton *(peek ahead: has a letter from a later unit)* | `assets/audio/units/u03_15.mp3` |
-| تَپْتا | taptā | scorching | `assets/audio/units/u03_16.mp3` |
-| پَتْلا | patlā | thin | `assets/audio/units/u03_17.mp3` |
-| ٹِکَٹ | ṭikaṭ | ticket | `assets/audio/units/u03_18.mp3` |
-| بَٹَن | baṭan | button | `assets/audio/units/u03_19.mp3` |
+| اَپنے | apne | own | `assets/audio/units/u03_00.mp3` |
+| اَپنی | apnī | own | `assets/audio/units/u03_01.mp3` |
+| اَپنا | apnā | own | `assets/audio/units/u03_02.mp3` |
+| پانی | pānī | water | `assets/audio/units/u03_03.mp3` |
+| مِنَٹ | minaṭ | minute | `assets/audio/units/u03_04.mp3` |
+| بیٹی | beṭī | daughter | `assets/audio/units/u03_05.mp3` |
+| ثابِت | s̱ābit | proven | `assets/audio/units/u03_06.mp3` |
+| بیٹے | beṭe | sons | `assets/audio/units/u03_07.mp3` |
+| پاک | pāk | pure | `assets/audio/units/u03_08.mp3` |
+| باپ | bāp | father | `assets/audio/units/u03_09.mp3` |
+| کاپی | kāpī | notebook | `assets/audio/units/u03_10.mp3` |
+| مِثال | mis̱āl | example | `assets/audio/units/u03_11.mp3` |
+| بیٹا | beṭā | son | `assets/audio/units/u03_12.mp3` |
+| ٹِکَٹ | ṭikaṭ | ticket | `assets/audio/units/u03_13.mp3` |
+| پُل | pul | bridge | `assets/audio/units/u03_14.mp3` |
+| پَکّا | pakkā | ripe, firm | `assets/audio/units/u03_15.mp3` |
+| کَپ | kap | cup | `assets/audio/units/u03_16.mp3` |
+| پیٹ | peṭ | stomach | `assets/audio/units/u03_17.mp3` |
+| پَتْلی | patlī | thin | `assets/audio/units/u03_18.mp3` |
+| پیلا | pīlā | yellow | `assets/audio/units/u03_19.mp3` |
+| کَپْتان | kaptān | captain | `assets/audio/units/u03_20.mp3` |
+| مِٹّی | miṭṭī | soil, clay | `assets/audio/units/u03_21.mp3` |
+| بَٹَن | baṭan | button | `assets/audio/units/u03_22.mp3` |
+| پینا | pīnā | to drink | `assets/audio/units/u03_23.mp3` |
+| پلیٹ | pleṭ | plate | `assets/audio/units/u03_24.mp3` |
+| پَٹّی | paṭṭī | bandage, strip | `assets/audio/units/u03_25.mp3` |
+| پَتّی | pattī | leaf, petal | `assets/audio/units/u03_26.mp3` |
+| ناٹَک | nāṭak | play, drama | `assets/audio/units/u03_27.mp3` |
+| اینٹ | īnṭ | brick | `assets/audio/units/u03_28.mp3` |
+| پَکّی | pakkī | ripe, firm | `assets/audio/units/u03_29.mp3` |
+| کانْٹے | kānṭe | thorns | `assets/audio/units/u03_30.mp3` |
+| پیتَل | pītal | brass | `assets/audio/units/u03_31.mp3` |
+| مالْٹا | mālṭā | orange | `assets/audio/units/u03_32.mp3` |
+| ناپاک | nāpāk | impure | `assets/audio/units/u03_33.mp3` |
+| پانا | pānā | to get, find | `assets/audio/units/u03_34.mp3` |
+| پالَک | pālak | spinach | `assets/audio/units/u03_35.mp3` |
+| کاٹْنا | kāṭnā | to cut | `assets/audio/units/u03_36.mp3` |
+| لالْٹین | lālṭen | lantern | `assets/audio/units/u03_37.mp3` |
+| پالْنا | pālnā | to raise | `assets/audio/units/u03_38.mp3` |
+| پَتْلا | patlā | thin | `assets/audio/units/u03_39.mp3` |
+| پیپَل | pīpal | fig tree | `assets/audio/units/u03_40.mp3` |
+| پَلَک | palak | eyelash | `assets/audio/units/u03_41.mp3` |
 
 **Sentences**
 
-- پانی لا  —  *pānī lā*  —  bring water  · `assets/audio/sentences/u03_00.mp3`
-- پَتْلی بِلّی  —  *patlī billī*  —  thin cat  · `assets/audio/sentences/u03_01.mp3`
-- مَیں ٹوپی لے  —  *maiṉ ṭopī le*  —  (preview) I take the cap  · `assets/audio/sentences/u03_02.mp3`
+- پانی پینا  —  *pānī pīnā*  —  drink water  · `assets/audio/sentences/u03_00.mp3`
+- بیٹی کا پیلا کَپ  —  *beṭī kā pīlā kap*  —  the daughter's yellow cup  · `assets/audio/sentences/u03_01.mp3`
+- باپ کا نَیا کَمْبَل  —  *bāp kā nayā kambal*  —  father's new blanket  · `assets/audio/sentences/u03_02.mp3`
+- اَپنا کَپ لے  —  *apnā kap le*  —  take your own cup  · `assets/audio/sentences/u03_03.mp3`
+- اَپنی کاپی لینا  —  *apnī kāpī lenā*  —  take your own notebook  · `assets/audio/sentences/u03_04.mp3`
+- پلیٹ لانا  —  *pleṭ lānā*  —  bring a plate  · `assets/audio/sentences/u03_05.mp3`
+- بیٹے کا ٹِکَٹ  —  *beṭe kā ṭikaṭ*  —  the son's ticket  · `assets/audio/sentences/u03_06.mp3`
+- مِٹّی کا کَپ  —  *miṭṭī kā kap*  —  a clay cup  · `assets/audio/sentences/u03_07.mp3`
+- کَپْتان کا نام بَتانا  —  *kaptān kā nām batānā*  —  tell me the captain's name  · `assets/audio/sentences/u03_08.mp3`
+- اِتنا پانی مَت پینا  —  *itnā pānī mat pīnā*  —  don't drink so much water  · `assets/audio/sentences/u03_09.mp3`
+- پَتْلی پَتّی  —  *patlī pattī*  —  a thin leaf  · `assets/audio/sentences/u03_10.mp3`
+- پانی کا کَپ  —  *pānī kā kap*  —  a cup of water  · `assets/audio/sentences/u03_11.mp3`
+- بیٹے کی پلیٹ  —  *beṭe kī pleṭ*  —  the son's plate  · `assets/audio/sentences/u03_12.mp3`
+
+**Passage** (29 words) · `assets/audio/passages/u03.mp3`
+
+> بیٹی نے اَپنا پیلا کَپ لِیا۔ بیٹے نے اَپنی پلیٹ لی۔ باپ نے بَتایا: اِتنا پانی مَت پینا۔ نانی کا مالْٹا پَکّا۔ بیٹا مالْٹا لانا۔ کَپْتان کا ٹِکَٹ پَکّا۔
+>
+> *beṭī ne apnā pīlā kap liyā. beṭe ne apnī pleṭ lī. bāp ne batāyā: itnā pānī mat pīnā. nānī kā mālṭā pakkā. beṭā mālṭā lānā. kaptān kā ṭikaṭ pakkā.*
+>
+> The daughter took her yellow cup. The son took his plate. Father said: don't drink so much water. Grandma's orange is ripe. Son, bring the orange. The captain's ticket is confirmed.
+
 
 ## 6 · Write it  ·  *production · needs a helper or the app tracer to check*
 
-Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: پانی, پُل, ٹوپی, پَتا, پاک.
+Trace each new letter in all its forms three times (children: required; adults: recommended). Use the forms card as the model. Then write these words from the list without looking: اَپنے, اَپنی, اَپنا, پانی, مِنَٹ.
 
 Pen movement for each letter is described in step 2 above.
 
@@ -104,46 +145,46 @@ Pen movement for each letter is described in step 2 above.
 
 Play each clip twice. Learner writes the word. Then reveal.
 
-1. `assets/audio/units/u03_09.mp3`
-2. `assets/audio/units/u03_18.mp3`
-3. `assets/audio/units/u03_16.mp3`
-4. `assets/audio/units/u03_13.mp3`
-5. `assets/audio/units/u03_03.mp3`
+1. `assets/audio/units/u03_39.mp3`
+2. `assets/audio/units/u03_24.mp3`
+3. `assets/audio/units/u03_09.mp3`
+4. `assets/audio/units/u03_40.mp3`
+5. `assets/audio/units/u03_16.mp3`
 
 <details><summary>Answer key</summary>
 
-1. پیپَل (pīpal)
-2. ٹِکَٹ (ṭikaṭ)
-3. تَپْتا (taptā)
-4. نَپا (napā)
-5. پَتا (patā)
+1. پَتْلا (patlā)
+2. پلیٹ (pleṭ)
+3. باپ (bāp)
+4. پیپَل (pīpal)
+5. کَپ (kap)
 
 </details>
 
 ## 8 · Check (score 8/10 to move on)  ·  *recognition · self-check*
 
-1. Which one says **baṭan** (button)?   (a) نَپا   (b) بَٹَن   (c) پَتا   (d) تَپْتا
-2. Which one says **pānī** (water)?   (a) پیٹ   (b) پانی   (c) بَٹَن   (d) نَپا
-3. Which one says **pāk** (pure)?   (a) پیپَل   (b) ثابِت   (c) پَتْلا   (d) پاک
-4. Which one says **pīpal** (fig tree)?   (a) پانی   (b) پیپَل   (c) بَٹَن   (d) تَپْتا
-5. Which one says **ṭab** (tub)?   (a) پَلَک   (b) تَپْتا   (c) ٹِکَٹ   (d) ٹَب
-6. Which one says **patā** (address)?   (a) پَتا   (b) پیپَل   (c) پیٹ   (d) بَٹَن
-7. Which one says **taptā** (scorching)?   (a) پِیالا   (b) تَپْتا   (c) پانی   (d) ثابِت
-8. Which one says **ṭikaṭ** (ticket)?   (a) بَٹَن   (b) پَلَک   (c) ٹِکَٹ   (d) نَپا
-9. Which one says **piyālā** (bowl)?   (a) پُل   (b) نَپا   (c) تَپْتا   (d) پِیالا
-10. Which one says **peṭ** (stomach)?   (a) پَتا   (b) پَلَک   (c) پیٹ   (d) بَٹَن
+1. Which one says **baṭan** (button)?   (a) بَٹَن   (b) بیٹی   (c) پیلا   (d) باپ
+2. Which one says **pālnā** (to raise (animals))?   (a) پالْنا   (b) ناپاک   (c) اَپنی   (d) کاپی
+3. Which one says **pīnā** (to drink)?   (a) پیلا   (b) پانا   (c) اَپنی   (d) پینا
+4. Which one says **kānṭe** (thorns)?   (a) بَٹَن   (b) پینا   (c) کانْٹے   (d) کاپی
+5. Which one says **beṭe** (sons)?   (a) ٹِکَٹ   (b) پیپَل   (c) بیٹے   (d) پَکّا
+6. Which one says **lālṭen** (lantern)?   (a) بَٹَن   (b) لالْٹین   (c) پیتَل   (d) ناپاک
+7. Which one says **pītal** (brass)?   (a) پیتَل   (b) بیٹا   (c) بَٹَن   (d) پَتْلا
+8. Which one says **pakkī** (ripe, firm (fem))?   (a) پَکّی   (b) بیٹی   (c) پینا   (d) پُل
+9. Which one says **pīpal** (fig tree)?   (a) پَتْلا   (b) اَپنے   (c) کانْٹے   (d) پیپَل
+10. Which one says **nāpāk** (impure)?   (a) بیٹے   (b) بیٹا   (c) ناپاک   (d) پلیٹ
 
 <details><summary>Answer key</summary>
 
 1. بَٹَن
-2. پانی
-3. پاک
-4. پیپَل
-5. ٹَب
-6. پَتا
-7. تَپْتا
-8. ٹِکَٹ
-9. پِیالا
-10. پیٹ
+2. پالْنا
+3. پینا
+4. کانْٹے
+5. بیٹے
+6. لالْٹین
+7. پیتَل
+8. پَکّی
+9. پیپَل
+10. ناپاک
 
 </details>
