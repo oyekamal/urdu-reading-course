@@ -2,6 +2,8 @@
 
 ## How to record (read this page first)
 
+Questions, or ready to send your recordings? Email oyekamalkhan@gmail.com.
+
 **Setup**
 - A quiet room. No fan/AC hum, no TV, no traffic noise in the background. Close the window.
 - Phone (or recorder) about 20 cm from your mouth — roughly a hand-span. Too close and every

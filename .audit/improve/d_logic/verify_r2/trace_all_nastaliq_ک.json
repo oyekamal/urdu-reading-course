@@ -1,0 +1,326 @@
+[
+{
+"ch": "ک",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 0% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "wander6",
+"ok": false,
+"t": "Coverage 0% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": false,
+"t": "Coverage 0% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "natural",
+"ok": false,
+"t": "Coverage 4% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": false,
+"t": "Coverage 4% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "marks_circles",
+"ok": false,
+"t": "Coverage 4% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": false,
+"t": "Coverage 4% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 22% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "lift1_gap",
+"ok": false,
+"t": "Coverage 15% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 7% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "wander6",
+"ok": false,
+"t": "Coverage 5% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": false,
+"t": "Coverage 0% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "natural",
+"ok": false,
+"t": "Coverage 3% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": false,
+"t": "Coverage 3% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "marks_circles",
+"ok": false,
+"t": "Coverage 3% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": false,
+"t": "Coverage 3% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 20% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "lift1_gap",
+"ok": false,
+"t": "Coverage 11% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 5% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "wander6",
+"ok": false,
+"t": "Coverage 0% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": false,
+"t": "Coverage 0% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "natural",
+"ok": false,
+"t": "Coverage 2% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "marks_squiggle",
+"ok": false,
+"t": "Coverage 2% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "marks_circles",
+"ok": false,
+"t": "Coverage 2% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": false,
+"t": "Coverage 2% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 14% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "lift1_gap",
+"ok": false,
+"t": "Coverage 10% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 1% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "wander6",
+"ok": false,
+"t": "Coverage 1% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": false,
+"t": "Coverage 0% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+}
+]

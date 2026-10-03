@@ -1,0 +1,11 @@
+- main:
+  - button "Back"
+  - text: Why do you want to read Urdu, Sam?
+  - button "Read messages from family WhatsApp, cards, notes from elders"
+  - button "Read books and poetry Stories, Ghalib, the news"
+  - button "Help my children with Urdu Stay one step ahead of them"
+  - button "Reconnect with my roots I speak it, I want to read it"
+  - button "Pass an Urdu class or exam"
+  - button "Just curious The script is beautiful"
+- status
+- status

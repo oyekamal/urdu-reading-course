@@ -1,0 +1,29 @@
+{
+ "alif": {
+  "bbox": {
+   "l": 187,
+   "r": 204,
+   "t": 349,
+   "b": 450
+  },
+  "top_to_bottom, starts right of centre (correct)": "Coverage 100% ✓ good",
+  "bottom_to_top, starts right of centre (WRONG direction)": "Coverage 100% — Start at the green dot",
+  "top_to_bottom exactly at centre line (child draws a perfect straight alif)": "Coverage 100% ✓ good",
+  "top_to_bottom 3px LEFT of centre": "Coverage 99% ✓ good",
+  "ten_short_dashes_random_order": "Coverage 100% — Try one smooth line, from the green dot",
+  "zigzag scribble over glyph box": "Coverage 100% — stay inside the letter",
+  "do nothing": "Coverage 0% — keep tracing"
+ },
+ "be": {
+  "bbox": {
+   "l": 146,
+   "r": 247,
+   "t": 358,
+   "b": 451
+  },
+  "raster-fill glyph mask, top->bottom, right->left (body first, dot last)": "Coverage 100% — stay inside the letter",
+  "raster-fill glyph mask, BOTTOM->top (dot first, then body)": "Coverage 100% — stay inside the letter",
+  "raster-fill glyph mask LEFT->right rows, top->bottom (wrong direction), 1 stroke": "Coverage 100% — stay inside the letter",
+  "raster-fill as 14 separate strokes": "Coverage 100% — stay inside the letter"
+ }
+}

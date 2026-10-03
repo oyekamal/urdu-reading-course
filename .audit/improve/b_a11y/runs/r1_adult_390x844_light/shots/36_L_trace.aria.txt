@@ -1,0 +1,19 @@
+- main:
+  - text: Unit 1 · lesson 2 of 13
+  - heading "be" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - heading "Blend it" [level=2]
+  - paragraph: "be with alif says:"
+  - text: با
+  - button "Hear it"
+  - button "Continue"
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status: "Not quite. Count the dots: be has one"
+- status: "Correct: be"

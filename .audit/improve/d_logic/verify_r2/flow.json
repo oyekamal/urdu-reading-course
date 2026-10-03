@@ -1,0 +1,155 @@
+{
+ "hints": [
+  {
+   "tapped": "ا",
+   "answer": "ـا",
+   "key": "names/alif",
+   "hint": "Listen again: this is alif"
+  },
+  {
+   "tapped": "ا",
+   "answer": "ـا",
+   "key": "names/alif",
+   "hint": "Listen again: this is alif"
+  }
+ ],
+ "steps": [
+  "celebrate",
+  "celebrate"
+ ],
+ "before": {
+  "ا": {
+   "item": "ا",
+   "box": 2,
+   "due": 1791182720694,
+   "seen": 3,
+   "lastOk": null,
+   "lastMiss": null,
+   "kind": "letter"
+  },
+  "ب": {
+   "item": "ب",
+   "box": 4,
+   "due": 1791701120692,
+   "seen": 3,
+   "lastOk": null,
+   "lastMiss": null,
+   "kind": "letter"
+  },
+  "ل": {
+   "item": "ل",
+   "box": 5,
+   "due": 1792392320693,
+   "seen": 3,
+   "lastOk": null,
+   "lastMiss": null,
+   "kind": "letter"
+  },
+  "ک": {
+   "item": "ک",
+   "box": 3,
+   "due": 1791355520693,
+   "seen": 3,
+   "lastOk": null,
+   "lastMiss": null,
+   "kind": "letter"
+  }
+ },
+ "wrong_taps": [
+  {
+   "tapped": "ا",
+   "answer": "ـا",
+   "key": "names/alif",
+   "hint": "Listen again: this is alif"
+  },
+  {
+   "tapped": "ا",
+   "answer": "ـا",
+   "key": "names/alif",
+   "hint": "Listen again: this is alif"
+  }
+ ],
+ "right_taps": 6,
+ "after": {
+  "ا": {
+   "item": "ا",
+   "box": 1,
+   "due": 1791096326036,
+   "seen": 3,
+   "lastOk": false,
+   "lastMiss": 1791009926591,
+   "kind": "letter"
+  },
+  "ب": {
+   "item": "ب",
+   "box": 4,
+   "due": 1791701120692,
+   "seen": 3,
+   "lastOk": null,
+   "lastMiss": null,
+   "kind": "letter"
+  },
+  "ل": {
+   "item": "ل",
+   "box": 5,
+   "due": 1792392320693,
+   "seen": 3,
+   "lastOk": null,
+   "lastMiss": null,
+   "kind": "letter"
+  },
+  "ک": {
+   "item": "ک",
+   "box": 3,
+   "due": 1791355520693,
+   "seen": 3,
+   "lastOk": null,
+   "lastMiss": null,
+   "kind": "letter"
+  }
+ },
+ "attempts": [
+  {
+   "drill": "check",
+   "item": "ا",
+   "correct": false
+  },
+  {
+   "drill": "check",
+   "item": "ا",
+   "correct": false
+  },
+  {
+   "drill": "check",
+   "item": "ا",
+   "correct": true
+  },
+  {
+   "drill": "check",
+   "item": "ا",
+   "correct": true
+  },
+  {
+   "drill": "check",
+   "item": "ا",
+   "correct": true
+  },
+  {
+   "drill": "check",
+   "item": "ا",
+   "correct": true
+  },
+  {
+   "drill": "check",
+   "item": "ا",
+   "correct": true
+  },
+  {
+   "drill": "check",
+   "item": "ا",
+   "correct": true
+  }
+ ],
+ "errors": [],
+ "url_h1": "be"
+}

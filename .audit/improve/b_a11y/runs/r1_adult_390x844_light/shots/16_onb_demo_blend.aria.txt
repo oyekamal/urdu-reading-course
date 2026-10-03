@@ -1,0 +1,5 @@
+- main:
+  - text: Your first lesson Put be before alif and they join into one sound. Urdu reads right to left. ا ب با
+  - button "Join them"
+- status
+- status

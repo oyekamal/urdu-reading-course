@@ -1,0 +1,184 @@
+{
+ "child:today": [
+  12,
+  []
+ ],
+ "child:celebrate": [
+  0,
+  []
+ ],
+ "child:lesson_Lbe": [
+  2,
+  []
+ ],
+ "child:tellapart": [
+  2,
+  []
+ ],
+ "child:lesson_W1": [
+  13,
+  []
+ ],
+ "child:read": [
+  1,
+  []
+ ],
+ "child:review": [
+  0,
+  []
+ ],
+ "child:me": [
+  39,
+  []
+ ],
+ "child:stickers": [
+  48,
+  [
+   [
+    "SPAN.stk-glyph.ur",
+    "ا",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "ب",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "ک",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "ل",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "م",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "ن",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "ت",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "ی",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "ے",
+    50.7,
+    50.7
+   ]
+  ]
+ ],
+ "adult:today": [
+  12,
+  []
+ ],
+ "adult:celebrate": [
+  0,
+  []
+ ],
+ "adult:lesson_Lbe": [
+  2,
+  []
+ ],
+ "adult:tellapart": [
+  2,
+  []
+ ],
+ "adult:lesson_W1": [
+  13,
+  []
+ ],
+ "adult:read": [
+  1,
+  []
+ ],
+ "adult:review": [
+  0,
+  []
+ ],
+ "adult:me": [
+  39,
+  []
+ ],
+ "adult:stickers": [
+  48,
+  [
+   [
+    "SPAN.stk-glyph.ur",
+    "ا",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "ب",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "ک",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "ل",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "م",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "ن",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "ت",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "ی",
+    50.7,
+    50.7
+   ],
+   [
+    "SPAN.stk-glyph.ur",
+    "ے",
+    50.7,
+    50.7
+   ]
+  ]
+ ]
+}

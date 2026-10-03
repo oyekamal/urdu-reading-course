@@ -1,0 +1,21 @@
+- main:
+  - text: Unit 1 · lesson 8 of 13
+  - heading "Join them" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - heading "Build the word" [level=2]
+  - paragraph: Tap the letters in reading order, right to left.
+  - text: "Make: bābā — dad"
+  - button "Play"
+  - button "be": ب
+  - button "alif": ا
+  - button "be": ب
+  - button "alif": ا
+  - button "Next word"
+  - navigation "Main":
+    - button "Learn"
+    - button "Review"
+    - button "Read"
+    - button "Me"
+- status: Not quite. Almost! Tap the green one.
+- status: "Correct: be"

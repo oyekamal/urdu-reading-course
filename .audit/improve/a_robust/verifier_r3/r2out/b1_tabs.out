@@ -1,0 +1,6 @@
+start: Good afternoon, Zara | Unit 0 · Before the letters | Zara | 0 | pear
+gap 0 h1s ['Good afternoon, Zara'] cards 7
+gap 30 h1s ['Good afternoon, Zara'] cards 7
+gap 100 h1s ['Good afternoon, Zara'] cards 7
+gap 200 h1s ['Good afternoon, Zara'] cards 7
+mouse h1s ['Read']

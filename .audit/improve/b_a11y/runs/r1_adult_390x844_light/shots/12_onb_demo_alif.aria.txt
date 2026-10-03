@@ -1,0 +1,7 @@
+- main:
+  - text: Your first lesson This is alif. It says aa, like in father.
+  - button "Hear alif": ا
+  - button "Hear it again"
+  - button "Next"
+- status
+- status

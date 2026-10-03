@@ -1,0 +1,16 @@
+0-0-0 profiles 0 attempts 0 screen: Your first lesson | Listen, then tap the letter you  err Page.wait_for_selector: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator(".ob-cta:not([disabled])") to be visible
+ pageerrs []
+   i-seq []
+0-100-200 profiles 0 attempts 0 screen: How long will Zara practise a day? | 5 minutes · gen err Page.wait_for_selector: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator(".ob-cta:not([disabled])") to be visible
+ pageerrs []
+   i-seq []
+0-100-200-300 profiles 2 attempts 2 screen: Read | Passages and sentences · read twice, watch yo err None pageerrs []
+   i-seq [1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 12, 12, 12, 12, 12, 12, 13, 14, 15, 16, None]
+   profile {'name': 'Zara', 'track': 'child', 'grade': '', 'goal': 'family', 'speaks': 'fluent', 'pains': ['dots', 'check'], 'minutes': 10, 'days': 7}
+0-60-150 profiles 2 attempts 2 screen: Read | Passages and sentences · read twice, watch yo err None pageerrs []
+   i-seq [1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 12, 12, 12, 12, 12, 12, 13, 14, 15, 16, None]
+   profile {'name': 'Zara', 'track': 'child', 'grade': '', 'goal': 'family', 'speaks': 'fluent', 'pains': ['dots', 'check'], 'minutes': 10, 'days': 7}

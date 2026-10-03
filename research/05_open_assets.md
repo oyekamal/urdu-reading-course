@@ -13,7 +13,7 @@
 | **espeak-ng Urdu** | Rule-based voice | GPL | https://github.com/espeak-ng/espeak-ng | Phoneme fallback, offline backup | Low naturalness; limited phonemic coverage for Arabic script; research-quality unclear. |
 | **IndicTTS (AI4Bharat)** | VITS for Indian languages | CC-BY 4.0 | https://github.com/AI4Bharat/indicTTS | Urdu support (unverified if in main release); could handle tone marking | Check current language list; may be incomplete for Urdu production quality. |
 | **UNVERIFIED: Kokoro TTS** | Fast neural TTS | MIT (claimed) | https://github.com/hexgrad/kokoro | Fast inference, small footprint | No confirmed Urdu support; check language matrix. |
-| **ElevenLabs Urdu** | Cloud API | Proprietary (free tier exists) | https://elevenlabs.io/text-to-speech/urdu | High-quality reference audio for testing | Paid API—not suitable for self-hosted course; useful for validation only. |
+| **Commercial cloud Urdu TTS** | Cloud API | Proprietary (free tier exists) | (vendor site omitted) | High-quality reference audio for testing | Paid API—not suitable for self-hosted course; useful for validation only. |
 | **UNVERIFIED: Piper Urdu** (community) | ONNX-based TTS | MIT (likely) | https://github.com/rhasspy/piper-voices (issue #459) | If complete: lightweight, offline-ready | **Status: Not in official Piper release**; community members training models on Google Colab but not published; abandoned upstream tracking. |
 
 **Letter-Name Audio Problem:** Standard TTS reads individual letters incorrectly. Workaround: pre-record letter names (بے ، پے ، تے) as vocabulary words, or use phonetic spelling (e.g., "bee" → "بی"). Pre-recorded human audio (see section 2) preferred.
@@ -130,7 +130,7 @@
 ### Licensing Note for Client Delivery
 - ✅ **Fully open:** Font assets (OFL), Common Voice audio (CC0), core Whisper base
 - ⚠️ **Non-commercial restriction:** MMS-TTS (CC-BY-NC), UD-Urdu corpus (CC-BY-NC-SA) — if client plans **commercial use**, replace with:
-  - TTS: ElevenLabs API (paid but unrestricted)
+  - TTS: a commercial cloud TTS API (paid but unrestricted)
   - Corpus: Tatoeba (CC-BY 2.0, commercial OK) + custom recording
   - Fonts: Keep OFL (no restriction)
 
@@ -188,6 +188,6 @@
 3. Pair with MMS-TTS for interactive examples (label non-commercial in UI if needed)
 4. Extract decodable words from Common Voice (CC0) + Tatoeba (CC-BY 2.0)
 5. Use Whisper-Small-Urdu for pronunciation feedback (open-source friendly)
-6. For **commercial client delivery:** replace MMS-TTS with ElevenLabs API, replace UD corpus with Tatoeba-only
+6. For **commercial client delivery:** replace MMS-TTS with a commercial cloud TTS API, replace UD corpus with Tatoeba-only
 
 ---

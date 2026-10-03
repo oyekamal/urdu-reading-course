@@ -1,0 +1,3350 @@
+[
+{
+"ch": "ک",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 89% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 79% — keep tracing",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 84% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 84% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 84% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 84% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 84% ✓ good · 4 strokes, aim for 2",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 84% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 85% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 84% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 84% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 83% ✓ good · 4 strokes, aim for 2",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "natural",
+"ok": false,
+"t": "Coverage 68% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": false,
+"t": "Coverage 68% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "marks_circles",
+"ok": false,
+"t": "Coverage 68% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": false,
+"t": "Coverage 68% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 63% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "wander6",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": false,
+"t": "Coverage 78% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "natural",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "marks_circles",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "lift1_gap",
+"ok": false,
+"t": "Coverage 69% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 67% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "wander6",
+"ok": false,
+"t": "Coverage 69% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": false,
+"t": "Coverage 73% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 81% ✓ good · 4 strokes, aim for 2",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 79% — keep tracing",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "natural",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "marks_circles",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 67% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "wander6",
+"ok": false,
+"t": "Coverage 69% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": false,
+"t": "Coverage 79% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "natural",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "marks_squiggle",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "marks_circles",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "lift1_gap",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 71% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "wander6",
+"ok": false,
+"t": "Coverage 75% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": false,
+"t": "Coverage 79% — keep tracing",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 93% ✓ good · 4 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 93% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "initial",
+"var": "natural",
+"ok": false,
+"t": "Coverage 79% — keep tracing",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": false,
+"t": "Coverage 79% — keep tracing",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "initial",
+"var": "marks_circles",
+"ok": false,
+"t": "Coverage 79% — keep tracing",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": false,
+"t": "Coverage 79% — keep tracing",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "initial",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 77% — keep tracing",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 89% ✓ good",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 89% ✓ good",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 89% ✓ good",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 89% ✓ good",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 89% ✓ good · 4 strokes, aim for 1",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 89% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 90% ✓ good",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "he",
+"nmarks": 1
+},
+{
+"ch": "ہ",
+"form": "final",
+"var": "natural",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "final",
+"var": "marks_squiggle",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "final",
+"var": "marks_circles",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "final",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 72% — keep tracing",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "final",
+"var": "wander6",
+"ok": false,
+"t": "Coverage 71% — keep tracing",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ہ",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 87% ✓ good · 3 strokes, aim for 1",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 86% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 94% ✓ good · 3 strokes, aim for 1",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 93% ✓ good · 3 strokes, aim for 1",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 86% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 87% ✓ good · 3 strokes, aim for 1",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "س",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "sin",
+"nmarks": 0
+},
+{
+"ch": "ش",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "initial",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 78% — keep tracing",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "medial",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 75% — keep tracing",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "medial",
+"var": "wander6",
+"ok": false,
+"t": "Coverage 78% — keep tracing",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ش",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "sin",
+"nmarks": 2
+},
+{
+"ch": "ج",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 83% ✓ good · 5 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 83% ✓ good · 4 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 82% ✓ good · 5 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 82% ✓ good · 4 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 83% ✓ good · 5 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 83% ✓ good · 4 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 86% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 82% ✓ good · 5 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 81% ✓ good · 4 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "ج",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "چ",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 81% ✓ good · 6 strokes, aim for 4",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 86% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 86% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 86% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 86% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 86% ✓ good · 6 strokes, aim for 4",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 86% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 84% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 85% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 91% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 87% ✓ good · 6 strokes, aim for 4",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 84% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 89% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 80% ✓ good · 6 strokes, aim for 4",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "final",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 79% — keep tracing",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "چ",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "jim",
+"nmarks": 2
+},
+{
+"ch": "گ",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 88% ✓ good · 4 strokes, aim for 2",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 89% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 97% ✓ good · 4 strokes, aim for 2",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 81% ✓ good · 4 strokes, aim for 2",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 81% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 85% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 85% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 85% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 85% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 85% ✓ good · 5 strokes, aim for 2",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 85% ✓ good · 4 strokes, aim for 2",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 85% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 84% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 85% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "ھ",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "isolated",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 100% — Try one smooth line, from the green dot",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 93% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 93% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 93% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 93% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "initial",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 93% — Try one smooth line, from the green dot",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 93% ✓ good · 4 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 89% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 96% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 94% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 94% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 94% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 94% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "medial",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 94% — Try one smooth line, from the green dot",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 94% ✓ good · 4 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 91% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 92% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "final",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 100% — Try one smooth line, from the green dot",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 98% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "natural",
+"ok": false,
+"t": "Coverage 90% — Start at the green dot and follow the arrow",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": false,
+"t": "Coverage 90% — Start at the green dot and follow the arrow",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "marks_circles",
+"ok": false,
+"t": "Coverage 90% — Start at the green dot and follow the arrow",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": false,
+"t": "Coverage 90% — Start at the green dot and follow the arrow",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 90% — Start at the green dot and follow the arrow",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": false,
+"t": "Coverage 90% — Start at the green dot and follow the arrow",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 89% — Start at the green dot and follow the arrow",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "wander6",
+"ok": false,
+"t": "Coverage 89% — Start at the green dot and follow the arrow",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": false,
+"t": "Coverage 93% — Start at the green dot and follow the arrow",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "natural",
+"ok": false,
+"t": "Coverage 87% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "marks_squiggle",
+"ok": false,
+"t": "Coverage 87% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "marks_circles",
+"ok": false,
+"t": "Coverage 87% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": false,
+"t": "Coverage 87% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 87% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "lift1_gap",
+"ok": false,
+"t": "Coverage 87% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 87% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 85% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "natural",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot and follow the arrow",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot and follow the arrow",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "marks_circles",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot and follow the arrow",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot and follow the arrow",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot and follow the arrow",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot and follow the arrow",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot and follow the arrow",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "wander6",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot and follow the arrow",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot and follow the arrow",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 98% ✓ good · 4 strokes, aim for 2",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "re",
+"nmarks": 1
+}
+]

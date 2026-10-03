@@ -1,0 +1,7 @@
+- main:
+  - text: Your first lesson Put be before alif and they join into one sound. Urdu reads right to left. ا ب با
+  - button "Hear baa"
+  - paragraph: b + aa = baa
+  - button "Now a whole word"
+- status
+- status

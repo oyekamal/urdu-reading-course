@@ -1,0 +1,8 @@
+welcome restore burst (0, 0, 0) choosers 1 profiles 1 toast Restored 1 record. screen Good afternoon, Amal | Unit 0 ·  []
+welcome restore burst (0, 100, 200) choosers 1 profiles 1 toast Restored 1 record. screen Good afternoon, Amal | Unit 0 ·  []
+picker: اردو پڑھنا سیکھیں | Urdu Qaida |  | Works full
+ gates open 2 choosers before gate 0
+ after gate: choosers 1 profiles 2 toast Restored 1 record. confirm sheet False
+picker: اردو پڑھنا سیکھیں | Urdu Qaida |  | Works full
+ gates open 2 choosers before gate 0
+ after gate: choosers 1 profiles 2 toast Restored 1 record. confirm sheet False

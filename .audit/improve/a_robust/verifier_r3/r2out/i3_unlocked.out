@@ -1,0 +1,6 @@
+unit 0: preview=False (expect False) quiz=False head='Unit 0 · Before the letters\nRight-to-lef'
+unit 1: preview=False (expect False) quiz=False head='Unit 1 · The first six\nJoiners vs the no'
+unit 2: preview=True (expect True) quiz=False head='Unit 2 · Dots and the two ye\nThe dot-con'
+after quiz in Units tab: attempts 10 cards 54 progress [('0', True), ('1', True)]
+unit 2 now preview? False
+errs []

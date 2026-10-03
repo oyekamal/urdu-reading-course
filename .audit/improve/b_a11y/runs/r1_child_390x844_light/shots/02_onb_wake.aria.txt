@@ -1,0 +1,6 @@
+- main:
+  - button "Wake Marko up"
+  - heading "Marko is fast asleep" [level=2]
+  - paragraph: Tap him to wake him up.
+- status
+- status

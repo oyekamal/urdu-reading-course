@@ -1,0 +1,66 @@
+- main:
+  - heading "Units" [level=1]
+  - text: Tap a unit to open its lesson
+  - button "Sam"
+  - button "Letter library · all 38 letters"
+  - button "Unit 0, Before the letters": Unit 0 Before the letters
+  - button "Unit 1, The first six": Unit 1 The first six ا ب ک ل م ن
+  - button "Unit 2, Dots and the two ye": Unit 2 Dots and the two ye ت ی ے
+  - button "Unit 3, Finishing the be family, locked": Unit 3 Finishing the be family پ ٹ ث
+  - button "Unit 4, The non-joiners, locked": Unit 4 The non-joiners و ر د ہ
+  - button "Unit 5, Sīn, jīm and gāf, locked": Unit 5 Sīn, jīm and gāf س ش ج چ گ
+  - button "Unit 6, Breath and nose, locked": Unit 6 Breath and nose ں ھ
+  - button "Unit 7, Retroflex and z, locked": Unit 7 Retroflex and z ڈ ڑ ز ژ
+  - button "Unit 8, Sounds from Arabic and Persian, locked": Unit 8 Sounds from Arabic and Persian ف ق خ غ ع ح
+  - button "Unit 9, Same sound, different letter, locked": Unit 9 Same sound, different letter ص ض ط ظ ذ
+  - button "Unit 10, Hamza, marks and numbers, locked": Unit 10 Hamza, marks and numbers ئ ۃ
+  - button "Unit 11, Reading like a grown-up, locked": Unit 11 Reading like a grown-up
+  - button "Unit 12, Fluency and the reading test, locked": Unit 12 Fluency and the reading test
+  - heading "Letter library · dictionary order" [level=3]
+  - button "ا"
+  - button "ب"
+  - button "پ"
+  - button "ت"
+  - button "ٹ"
+  - button "ث"
+  - button "ج"
+  - button "چ"
+  - button "ح"
+  - button "خ"
+  - button "د"
+  - button "ڈ"
+  - button "ذ"
+  - button "ر"
+  - button "ڑ"
+  - button "ز"
+  - button "ژ"
+  - button "س"
+  - button "ش"
+  - button "ص"
+  - button "ض"
+  - button "ط"
+  - button "ظ"
+  - button "ع"
+  - button "غ"
+  - button "ف"
+  - button "ق"
+  - button "ک"
+  - button "گ"
+  - button "ل"
+  - button "م"
+  - button "ن"
+  - button "و"
+  - button "ہ"
+  - button "ھ"
+  - button "ئ"
+  - button "ی"
+  - button "ے"
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status: Not quite. Almost! Tap the green one.
+- status: Unit 1 passed! Unit 2 unlocked

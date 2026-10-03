@@ -1,0 +1,8 @@
+- main:
+  - button "Back"
+  - text: How much Urdu do you speak?
+  - button "I speak it well Reading is the missing part"
+  - button "I understand some"
+  - button "I'm new to Urdu I'll say what every word means"
+- status
+- status

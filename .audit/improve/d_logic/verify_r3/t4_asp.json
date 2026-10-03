@@ -1,0 +1,321 @@
+{
+ "expected": [
+  "bh",
+  "ph",
+  "th",
+  "ṭh",
+  "jh",
+  "chh",
+  "dh",
+  "ḍh",
+  "ṛh",
+  "kh",
+  "gh"
+ ],
+ "units_tab_h1": "Unit 6 · Breath and nose",
+ "units_tab_unit6_current": {
+  "n_buttons": 11,
+  "ids_unique": true,
+  "n_ids": 11,
+  "clicks": [
+   {
+    "played": [
+     "aspirates/bh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/ph.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/th.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/ṭh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/jh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/chh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/dh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/ḍh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/ṛh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/kh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/gh.mp3"
+    ],
+    "toast": ""
+   }
+  ],
+  "distinct_clips": 11,
+  "ok_each": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "matches_expected": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "err_a": [],
+ "lesson_h1": "Breath letters",
+ "lesson_found": 11,
+ "lesson_flow": {
+  "n_buttons": 11,
+  "ids_unique": true,
+  "n_ids": 11,
+  "clicks": [
+   {
+    "played": [
+     "aspirates/bh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/ph.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/th.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/ṭh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/jh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/chh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/dh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/ḍh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/ṛh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/kh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/gh.mp3"
+    ],
+    "toast": ""
+   }
+  ],
+  "distinct_clips": 11,
+  "ok_each": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "matches_expected": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "err_b": [],
+ "units_tab_unit6_preview": {
+  "n_buttons": 11,
+  "ids_unique": true,
+  "n_ids": 11,
+  "clicks": [
+   {
+    "played": [
+     "aspirates/bh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/ph.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/th.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/ṭh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/jh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/chh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/dh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/ḍh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/ṛh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/kh.mp3"
+    ],
+    "toast": ""
+   },
+   {
+    "played": [
+     "aspirates/gh.mp3"
+    ],
+    "toast": ""
+   }
+  ],
+  "distinct_clips": 11,
+  "ok_each": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "matches_expected": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "err_c": []
+}

@@ -1,0 +1,1201 @@
+{
+ "ا|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   841
+  ]
+ },
+ "ا|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1120
+  ]
+ },
+ "ب|isolated": {
+  "n": 1,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   1399,
+   191
+  ]
+ },
+ "ب|initial": {
+  "n": 1,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   946,
+   191
+  ]
+ },
+ "ب|medial": {
+  "n": 1,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   1226,
+   191
+  ]
+ },
+ "ب|final": {
+  "n": 1,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   1670,
+   191
+  ]
+ },
+ "ک|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2082
+  ]
+ },
+ "ک|initial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1979
+  ]
+ },
+ "ک|medial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2567
+  ]
+ },
+ "ک|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2669
+  ]
+ },
+ "ل|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1792
+  ]
+ },
+ "ل|initial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1154
+  ]
+ },
+ "ل|medial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1657
+  ]
+ },
+ "ل|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2223
+  ]
+ },
+ "م|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1435
+  ]
+ },
+ "م|initial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1640
+  ]
+ },
+ "م|medial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1997
+  ]
+ },
+ "م|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2191
+  ]
+ },
+ "ن|isolated": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   1234
+  ]
+ },
+ "ن|initial": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   946
+  ]
+ },
+ "ن|medial": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   1226
+  ]
+ },
+ "ن|final": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   1648
+  ]
+ },
+ "ت|isolated": {
+  "n": 2,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   165,
+   161,
+   1399
+  ]
+ },
+ "ت|initial": {
+  "n": 2,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   165,
+   161,
+   1049
+  ]
+ },
+ "ت|medial": {
+  "n": 2,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   165,
+   161,
+   1322
+  ]
+ },
+ "ت|final": {
+  "n": 2,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   165,
+   161,
+   1670
+  ]
+ },
+ "ی|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1821
+  ]
+ },
+ "ی|initial": {
+  "n": 2,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   1049,
+   165,
+   161
+  ]
+ },
+ "ی|medial": {
+  "n": 2,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   1322,
+   165,
+   161
+  ]
+ },
+ "ی|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1892
+  ]
+ },
+ "ے|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1397
+  ]
+ },
+ "ے|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1859
+  ]
+ },
+ "پ|isolated": {
+  "n": 3,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   1399,
+   134,
+   136,
+   111
+  ]
+ },
+ "پ|initial": {
+  "n": 3,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   1049,
+   134,
+   136,
+   111
+  ]
+ },
+ "پ|medial": {
+  "n": 3,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   1322,
+   134,
+   136,
+   111
+  ]
+ },
+ "پ|final": {
+  "n": 3,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   1670,
+   134,
+   136,
+   111
+  ]
+ },
+ "ٹ|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 1,
+  "blobs": [
+   384,
+   1399
+  ]
+ },
+ "ٹ|initial": {
+  "n": 0,
+  "pos": "",
+  "other": 1,
+  "blobs": [
+   384,
+   1049
+  ]
+ },
+ "ٹ|medial": {
+  "n": 0,
+  "pos": "",
+  "other": 1,
+  "blobs": [
+   384,
+   1322
+  ]
+ },
+ "ٹ|final": {
+  "n": 0,
+  "pos": "",
+  "other": 1,
+  "blobs": [
+   384,
+   1670
+  ]
+ },
+ "ث|isolated": {
+  "n": 3,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   113,
+   128,
+   135,
+   1399
+  ]
+ },
+ "ث|initial": {
+  "n": 3,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   113,
+   128,
+   135,
+   1049
+  ]
+ },
+ "ث|medial": {
+  "n": 3,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   113,
+   128,
+   135,
+   1322
+  ]
+ },
+ "ث|final": {
+  "n": 3,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   113,
+   128,
+   135,
+   1670
+  ]
+ },
+ "و|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1582
+  ]
+ },
+ "و|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2014
+  ]
+ },
+ "ر|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   966
+  ]
+ },
+ "ر|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1415
+  ]
+ },
+ "د|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   908
+  ]
+ },
+ "د|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1399
+  ]
+ },
+ "ہ|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1067
+  ]
+ },
+ "ہ|initial": {
+  "n": 0,
+  "pos": "",
+  "other": 1,
+  "blobs": [
+   946,
+   194
+  ]
+ },
+ "ہ|medial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1609
+  ]
+ },
+ "ہ|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   929
+  ]
+ },
+ "س|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2370
+  ]
+ },
+ "س|initial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1833
+  ]
+ },
+ "س|medial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2117
+  ]
+ },
+ "س|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2637
+  ]
+ },
+ "ش|isolated": {
+  "n": 3,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   113,
+   128,
+   135,
+   2370
+  ]
+ },
+ "ش|initial": {
+  "n": 3,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   113,
+   128,
+   135,
+   1833
+  ]
+ },
+ "ش|medial": {
+  "n": 3,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   113,
+   128,
+   135,
+   2117
+  ]
+ },
+ "ش|final": {
+  "n": 3,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   113,
+   128,
+   135,
+   2637
+  ]
+ },
+ "ج|isolated": {
+  "n": 1,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   2130,
+   191
+  ]
+ },
+ "ج|initial": {
+  "n": 1,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   1793,
+   191
+  ]
+ },
+ "ج|medial": {
+  "n": 1,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   2449,
+   191
+  ]
+ },
+ "ج|final": {
+  "n": 1,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   2654,
+   191
+  ]
+ },
+ "چ|isolated": {
+  "n": 3,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   2130,
+   134,
+   136,
+   111
+  ]
+ },
+ "چ|initial": {
+  "n": 3,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   1793,
+   134,
+   136,
+   111
+  ]
+ },
+ "چ|medial": {
+  "n": 3,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   2449,
+   134,
+   136,
+   111
+  ]
+ },
+ "چ|final": {
+  "n": 3,
+  "pos": "below",
+  "other": 0,
+  "blobs": [
+   2654,
+   134,
+   136,
+   111
+  ]
+ },
+ "گ|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 1,
+  "blobs": [
+   472,
+   2082
+  ]
+ },
+ "گ|initial": {
+  "n": 0,
+  "pos": "",
+  "other": 1,
+  "blobs": [
+   472,
+   1979
+  ]
+ },
+ "گ|medial": {
+  "n": 0,
+  "pos": "",
+  "other": 1,
+  "blobs": [
+   472,
+   2567
+  ]
+ },
+ "گ|final": {
+  "n": 0,
+  "pos": "",
+  "other": 1,
+  "blobs": [
+   472,
+   2669
+  ]
+ },
+ "ں|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1234
+  ]
+ },
+ "ں|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1648
+  ]
+ },
+ "ھ|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2047
+  ]
+ },
+ "ھ|initial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2266
+  ]
+ },
+ "ھ|medial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2741
+  ]
+ },
+ "ھ|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2469
+  ]
+ },
+ "ڈ|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 1,
+  "blobs": [
+   384,
+   908
+  ]
+ },
+ "ڈ|final": {
+  "n": 0,
+  "pos": "",
+  "other": 1,
+  "blobs": [
+   384,
+   1399
+  ]
+ },
+ "ڑ|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 1,
+  "blobs": [
+   384,
+   966
+  ]
+ },
+ "ڑ|final": {
+  "n": 0,
+  "pos": "",
+  "other": 1,
+  "blobs": [
+   384,
+   1415
+  ]
+ },
+ "ز|isolated": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   966
+  ]
+ },
+ "ز|final": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   1415
+  ]
+ },
+ "ژ|isolated": {
+  "n": 3,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   113,
+   128,
+   135,
+   966
+  ]
+ },
+ "ژ|final": {
+  "n": 3,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   113,
+   128,
+   135,
+   1415
+  ]
+ },
+ "ف|isolated": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   2264
+  ]
+ },
+ "ف|initial": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   1896
+  ]
+ },
+ "ف|medial": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   2062
+  ]
+ },
+ "ف|final": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   2464
+  ]
+ },
+ "ق|isolated": {
+  "n": 2,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   165,
+   161,
+   2133
+  ]
+ },
+ "ق|initial": {
+  "n": 2,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   165,
+   161,
+   1896
+  ]
+ },
+ "ق|medial": {
+  "n": 2,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   165,
+   161,
+   2062
+  ]
+ },
+ "ق|final": {
+  "n": 2,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   165,
+   161,
+   2552
+  ]
+ },
+ "خ|isolated": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   2130
+  ]
+ },
+ "خ|initial": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   1793
+  ]
+ },
+ "خ|medial": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   2449
+  ]
+ },
+ "خ|final": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   2654
+  ]
+ },
+ "غ|isolated": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   2072
+  ]
+ },
+ "غ|initial": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   1685
+  ]
+ },
+ "غ|medial": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   2265
+  ]
+ },
+ "غ|final": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   2461
+  ]
+ },
+ "ع|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2072
+  ]
+ },
+ "ع|initial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1685
+  ]
+ },
+ "ع|medial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2265
+  ]
+ },
+ "ع|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2461
+  ]
+ },
+ "ح|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2130
+  ]
+ },
+ "ح|initial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   1793
+  ]
+ },
+ "ح|medial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2449
+  ]
+ },
+ "ح|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2654
+  ]
+ },
+ "ص|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2800
+  ]
+ },
+ "ص|initial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2282
+  ]
+ },
+ "ص|medial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2804
+  ]
+ },
+ "ص|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   3300
+  ]
+ },
+ "ض|isolated": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   2800
+  ]
+ },
+ "ض|initial": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   2282
+  ]
+ },
+ "ض|medial": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   2804
+  ]
+ },
+ "ض|final": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   3300
+  ]
+ },
+ "ط|isolated": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2385
+  ]
+ },
+ "ط|initial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2609
+  ]
+ },
+ "ط|medial": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   3121
+  ]
+ },
+ "ط|final": {
+  "n": 0,
+  "pos": "",
+  "other": 0,
+  "blobs": [
+   2902
+  ]
+ },
+ "ظ|isolated": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   2385,
+   191
+  ]
+ },
+ "ظ|initial": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   2609,
+   191
+  ]
+ },
+ "ظ|medial": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   3121,
+   191
+  ]
+ },
+ "ظ|final": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   2902,
+   191
+  ]
+ },
+ "ذ|isolated": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   908
+  ]
+ },
+ "ذ|final": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   191,
+   1399
+  ]
+ },
+ "ئ|isolated": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   1821,
+   314
+  ]
+ },
+ "ئ|initial": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   314,
+   946
+  ]
+ },
+ "ئ|medial": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   314,
+   1226
+  ]
+ },
+ "ئ|final": {
+  "n": 1,
+  "pos": "above",
+  "other": 0,
+  "blobs": [
+   314,
+   1892
+  ]
+ }
+}

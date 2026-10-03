@@ -1,0 +1,5 @@
+- main:
+  - text: Here is Zara's plan. I'll be there every day. First unit The first six ا ب ک ل م ن Every day 10 minutes, 7 days in a row one short lesson, then a quick review Up next Three quick rules, then alif about five minutes
+  - button "Start my first lesson"
+- status
+- status

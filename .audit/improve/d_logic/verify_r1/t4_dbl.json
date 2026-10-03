@@ -1,0 +1,102 @@
+[
+ {
+  "label": "dbl_all",
+  "questions": 49,
+  "secs": 30.2,
+  "heading": "Start at unit 10",
+  "sub": "Units 1–9 marked as known.",
+  "passed": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "ncards": 230,
+  "kinds": {
+   "word": 172,
+   "letter": 38,
+   "sight": 20
+  },
+  "dup_card_ids": 0,
+  "after_go": "Good morning, Pldbl_",
+  "errors": [],
+  "last_log": [
+   {
+    "rt": "ئ",
+    "knows": true,
+    "correct": true,
+    "status": "Question 1 of 2"
+   },
+   {
+    "rt": "آپ",
+    "knows": false,
+    "correct": false,
+    "status": "Question 2 of 2"
+   }
+  ]
+ },
+ {
+  "label": "dbl_u1-3",
+  "questions": 16,
+  "secs": 11.2,
+  "heading": "Start at unit 4",
+  "sub": "Units 1–3 marked as known.",
+  "passed": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "ncards": 72,
+  "kinds": {
+   "letter": 12,
+   "word": 60
+  },
+  "dup_card_ids": 0,
+  "after_go": "Good morning, Pldbl_",
+  "errors": [],
+  "last_log": [
+   {
+    "rt": "ٹَب",
+    "knows": true,
+    "correct": true,
+    "status": "Question 4 of 4"
+   },
+   {
+    "rt": "ہ",
+    "knows": false,
+    "correct": false,
+    "status": "Question 1 of 5"
+   }
+  ]
+ },
+ {
+  "label": "dbl_none",
+  "questions": 1,
+  "secs": 2.7,
+  "heading": "Start at unit 1",
+  "sub": "Start from the beginning.",
+  "passed": [
+   0
+  ],
+  "ncards": 0,
+  "kinds": {},
+  "dup_card_ids": 0,
+  "after_go": "Good morning, Pldbl_",
+  "errors": [],
+  "last_log": [
+   {
+    "rt": "ن",
+    "knows": false,
+    "correct": false,
+    "status": "Question 1 of 7"
+   }
+  ]
+ }
+]

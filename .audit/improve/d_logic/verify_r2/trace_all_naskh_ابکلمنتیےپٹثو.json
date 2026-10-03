@@ -1,0 +1,3728 @@
+[
+{
+"ch": "ا",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 3",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 3",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 99% ✓ good · 5 strokes, aim for 3",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 3",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ت",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 3",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 99% ✓ good · 5 strokes, aim for 3",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "ye",
+"nmarks": 2
+},
+{
+"ch": "ی",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 6 strokes, aim for 4",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 6 strokes, aim for 4",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 99% ✓ good · 6 strokes, aim for 4",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 6 strokes, aim for 4",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ٹ",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 99% ✓ good · 4 strokes, aim for 2",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ٹ",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ث",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 6 strokes, aim for 4",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 6 strokes, aim for 4",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "initial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 99% ✓ good · 6 strokes, aim for 4",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "medial",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 6 strokes, aim for 4",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "ث",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "wao",
+"nmarks": 0
+},
+{
+"ch": "و",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "wao",
+"nmarks": 0
+}
+]

@@ -1,0 +1,77 @@
+{
+ "out": {
+  "0": {
+   "all": 0
+  },
+  "1": {
+   "all": 5,
+   "sounds": 5,
+   "min": 4,
+   "rounds": 1500,
+   "short": 0
+  },
+  "2": {
+   "all": 2,
+   "sounds": 2,
+   "min": 2,
+   "rounds": 1500,
+   "short": 0
+  },
+  "3": {
+   "all": 6,
+   "sounds": 6,
+   "min": 4,
+   "rounds": 1500,
+   "short": 0
+  },
+  "4": {
+   "all": 9,
+   "sounds": 9,
+   "min": 4,
+   "rounds": 1500,
+   "short": 0
+  },
+  "5": {
+   "all": 15,
+   "sounds": 15,
+   "min": 4,
+   "rounds": 1500,
+   "short": 0
+  },
+  "6": {
+   "all": 0
+  },
+  "7": {
+   "all": 9,
+   "sounds": 9,
+   "min": 4,
+   "rounds": 1500,
+   "short": 0
+  },
+  "8": {
+   "all": 15,
+   "sounds": 15,
+   "min": 4,
+   "rounds": 1500,
+   "short": 0
+  },
+  "9": {
+   "all": 15,
+   "sounds": 9,
+   "min": 4,
+   "rounds": 1500,
+   "short": 0
+  },
+  "10": {
+   "all": 0
+  },
+  "11": {
+   "all": 0
+  },
+  "12": {
+   "all": 0
+  }
+ },
+ "bad": [],
+ "nbad": 0
+}

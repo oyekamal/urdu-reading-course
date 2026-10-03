@@ -20,6 +20,8 @@ HOW IT WORKS
 • Dots-confusable letters (ب پ ت ٹ ث) are taught together, so you learn to tell them apart.
 • Vowel marks (zabar, zer, pesh) come after the first letters, and stay on until you can read without them.
 • Join, blend, build words from tiles, dictation, and a unit check that unlocks the next unit.
+• Over 1,000 words, from short everyday words to longer ones, plus sentences and short passages, all read aloud.
+• Printable practice PDFs for every unit: tracing, reading, dictation and unit checks with answer keys, parent guides, an alphabet chart, flashcards and a certificate.
 • Naskh for learning, Nastaliq for print: switch between Naskh and Nastaliq any time and re-read earlier units.
 • Reading speed timer against the commonly used grade-2 benchmark of 60 correct words per minute, so progress is measurable.
 • Montessori-style order: sound first, shape second, then trace, then build.
@@ -41,7 +43,7 @@ ACCESSIBILITY
 PRIVACY
 • 100% offline. No account, no ads, no analytics, no tracking. Everything stays on your phone. Export a backup whenever you like.
 
-Made in Pakistan by one developer. The course, its research and the code are open at github.com/oyekamal/urdu-reading-course. Found a wrong sound or a bug? The More tab has a WhatsApp button.
+Made in Pakistan by one developer. The course, its research and the code are open at github.com/oyekamal/urdu-reading-course. Found a wrong sound or a bug? The More tab has an Email Kamal button (oyekamalkhan@gmail.com).
 
 Keywords this text carries (title and short description were A/B-tested against the 5 top 'urdu qaida' results: picked first 3/3, the old title 1/3): urdu qaida, urdu reading, urdu alphabet, alif bay pay, urdu alphabets for kids, learn urdu, urdu script, naskh, nastaliq (2x), reading assessment (2x), parent report (2x), teacher mode, montessori, offline.
 

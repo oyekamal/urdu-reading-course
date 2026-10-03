@@ -1,0 +1,6 @@
+s=open('lib.py').read()
+s=s.replace("    def sc(s,x,y): return","    def refresh(s):\n        r=s.pg.evaluate(\"()=>{const cv=document.querySelector('canvas.trace'); cv.scrollIntoView({block:'center'}); const r=cv.getBoundingClientRect(); return [r.left,r.top,r.width/360,r.height/300]}\")\n        s.m['l'],s.m['t'],s.m['sx'],s.m['sy']=r\n    def sc(s,x,y): return",1)
+open('lib.py','w').write(s)
+t=open('trace_all.py').read()
+t=t.replace("                P.clear()\n","                P.clear(); P.refresh()\n")
+open('trace_all.py','w').write(t)

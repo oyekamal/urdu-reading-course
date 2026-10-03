@@ -1,0 +1,14 @@
+{
+ "cases": 570,
+ "kinds": {
+  "listen": 117,
+  "nodots": 118,
+  "count": 234,
+  "where": 34,
+  "tah": 35,
+  "hamza": 9
+ },
+ "false_or_odd_claims": [],
+ "n_bad": 0,
+ "page_errors": []
+}

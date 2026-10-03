@@ -1,0 +1,8 @@
+- main:
+  - button "Back"
+  - text: Does Zara speak Urdu?
+  - button "Yes, at home every day Reading is the missing part"
+  - button "Understands, speaks a little"
+  - button "Not yet I'll say what every word means"
+- status
+- status

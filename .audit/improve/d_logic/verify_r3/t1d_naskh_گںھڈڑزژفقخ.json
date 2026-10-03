@@ -1,0 +1,1202 @@
+[
+{
+"ch": "گ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 91% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "initial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 91% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "initial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "medial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "medial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "گ",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "kaf",
+"nmarks": 1
+},
+{
+"ch": "ں",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 0
+},
+{
+"ch": "ں",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 0
+},
+{
+"ch": "ں",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 0
+},
+{
+"ch": "ں",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 0
+},
+{
+"ch": "ں",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 0
+},
+{
+"ch": "ں",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 0
+},
+{
+"ch": "ں",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "nun",
+"nmarks": 0
+},
+{
+"ch": "ں",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "nun",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 99% ✓ good · 4 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "initial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "initial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 99% ✓ good · 4 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "medial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 98% ✓ good · 4 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 97% ✓ good · 4 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good · 4 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "medial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": false,
+"t": "Coverage 99% — Try one smooth line, from the green dot",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 99% ✓ good · 4 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ھ",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": false,
+"t": "Coverage 100% — Try one smooth line, from the green dot",
+"fam": "he",
+"nmarks": 0
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ز",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ز",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ز",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ز",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ز",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ز",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ز",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ز",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ژ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 3
+},
+{
+"ch": "ژ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 3
+},
+{
+"ch": "ژ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 3
+},
+{
+"ch": "ژ",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 3
+},
+{
+"ch": "ژ",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 3
+},
+{
+"ch": "ژ",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 3
+},
+{
+"ch": "ژ",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 3
+},
+{
+"ch": "ژ",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 6 strokes, aim for 4",
+"fam": "re",
+"nmarks": 3
+},
+{
+"ch": "ف",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good · 4 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "initial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 98% ✓ good · 4 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good · 4 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "initial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "medial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 99% ✓ good · 4 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 97% ✓ good · 4 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "medial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good · 4 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ف",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 2",
+"fam": "fe",
+"nmarks": 1
+},
+{
+"ch": "ق",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 99% ✓ good · 5 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 98% ✓ good · 5 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 6 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "initial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good · 5 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "initial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 6 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "medial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good · 5 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "medial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 6 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 99% ✓ good · 5 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "ق",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 6 strokes, aim for 3",
+"fam": "fe",
+"nmarks": 2
+},
+{
+"ch": "خ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "initial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "initial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "medial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "medial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+},
+{
+"ch": "خ",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 2",
+"fam": "jim",
+"nmarks": 1
+}
+]

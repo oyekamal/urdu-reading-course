@@ -1,0 +1,10 @@
+meta: default-src 'self'; script-src 'self'; style-src 'self' 'uns
+{'inlineScript': 0, 'imgOnerror': 0, 'onclickAttr': 0, 'eval': 'blocked', 'fn': 'blocked', 'fetch': 'blocked'}
+violations: ['script-src-elem inline', 'script-src-attr inline', 'script-src-attr inline', 'script-src eval', 'script-src eval', 'connect-src https://example.com/', 'img-src https://example.com/x.png']
+after onboarding: Good afternoon, Zara | Unit 0 · Before the letters | Zara | 0 | pearls | 0 | / 10 min | 1 | day 
+practice overlay True
+pdf download u01_pack.pdf
+backup dl urdu-reader-backup-2026-10-03.json
+csp: [] errs []
+csp teacher: [] []
+requests 91 off-origin []

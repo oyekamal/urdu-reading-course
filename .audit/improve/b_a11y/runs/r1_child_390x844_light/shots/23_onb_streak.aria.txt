@@ -1,0 +1,6 @@
+- main:
+  - text: 1 day practised M T W T F S S
+  - paragraph: Day 1 counts, because Zara read بابا today. Read a little tomorrow and it becomes two.
+  - button "Let's keep it going"
+- status
+- status

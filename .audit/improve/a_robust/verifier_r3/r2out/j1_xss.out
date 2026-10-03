@@ -1,0 +1,41 @@
+img/child/learner csp [] errs [] sw [390, 390]
+img/adult/learner csp [] errs [] sw [390, 390]
+img/child/teacher csp [] errs [] sw [390, 390]
+attr/child/learner csp [] errs [] sw [390, 390]
+attr/adult/learner csp [] errs [] sw [390, 390]
+attr/child/teacher csp [] errs [] sw [390, 390]
+sq/child/learner csp [] errs [] sw [390, 390]
+sq/adult/learner csp [] errs [] sw [390, 390]
+sq/child/teacher csp [] errs [] sw [390, 390]
+svg/child/learner csp [] errs [] sw [390, 390]
+svg/adult/learner csp [] errs [] sw [390, 390]
+svg/child/teacher csp [] errs [] sw [390, 390]
+ent/child/learner csp [] errs [] sw [390, 390]
+ent/adult/learner csp [] errs [] sw [390, 390]
+ent/child/teacher csp [] errs [] sw [390, 390]
+close/child/learner csp [] errs [] sw [390, 390]
+node:events:487
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:1026:11)
+    at Socket._write (node:net:1038:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at PipeTransport.send (/home/oye/.local/lib/python3.12/site-packages/playwright/driver/package/lib/coreBundle.js:34569:25)
+    at dispatcherConnection.onmessage (/home/oye/.local/lib/python3.12/site-packages/playwright/driver/package/lib/coreBundle.js:69266:59)
+    at DispatcherConnection.sendEvent (/home/oye/.local/lib/python3.12/site-packages/playwright/driver/package/lib/coreBundle.js:18641:14)
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+
+Node.js v24.18.1

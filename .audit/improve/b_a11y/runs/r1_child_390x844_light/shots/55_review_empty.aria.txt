@@ -1,0 +1,15 @@
+- main:
+  - heading "Review" [level=1]
+  - text: Letters and words that are about to slip
+  - button "Zara"
+  - heading "All caught up" [level=2]
+  - paragraph: Marko is resting. Your letters come back for review when they are about to slip, so there's nothing to do here today.
+  - text: "15 pearls 1 days practised Next up Unit 2: Dots and the two ye"
+  - 'button "Learn: unit 2"'
+  - navigation "Main":
+    - button "Learn"
+    - button "Review"
+    - button "Read"
+    - button "Me"
+- status: Not quite. Almost! Tap the green one.
+- status: Unit 1 passed! Unit 2 unlocked

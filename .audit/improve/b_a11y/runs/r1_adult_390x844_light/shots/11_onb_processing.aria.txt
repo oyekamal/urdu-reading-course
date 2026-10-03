@@ -1,0 +1,9 @@
+- main:
+  - heading "Making your path" [level=2]
+  - list:
+    - listitem: Grouping the look-alike letters
+    - listitem: Setting a 10-minute day
+    - listitem: Adding the meaning of every word
+    - listitem: Getting Marko's voice ready
+- status
+- status

@@ -1,0 +1,9287 @@
+{
+ "res": [
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 87% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 73% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 87% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 18% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 99% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 87% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 79% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 81% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 82% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 64% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 99% — Body first, then the dots",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "initial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 85% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 85% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 85% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 85% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 84% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 85% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 85% ✓ good · 5 strokes, aim for 2",
+   "nstrokes": 5,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 85% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 85% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 85% — Body first, then the dots",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 82% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 85% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 53% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 99% — Body first, then the dots",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "medial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 85% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    153
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good · 5 strokes, aim for 2",
+   "nstrokes": 5,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 89% — Body first, then the dots",
+   "nstrokes": 3,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 75% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 89% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 35% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 99% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "final",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 89% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 4,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 5,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 70% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 35% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 94% — Body first, then the dots",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 72% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 71% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 72% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 72% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 67% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 72% — keep tracing",
+   "nstrokes": 4,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 72% — keep tracing",
+   "nstrokes": 5,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 72% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 72% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 72% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 57% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 72% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 19% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 92% — Body first, then the dots",
+   "nstrokes": 3,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "initial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 72% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    230,
+    128
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 76% — keep tracing",
+   "nstrokes": 4,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 75% — keep tracing",
+   "nstrokes": 4,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 75% — keep tracing",
+   "nstrokes": 4,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 75% — keep tracing",
+   "nstrokes": 4,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 73% — keep tracing",
+   "nstrokes": 4,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 76% — keep tracing",
+   "nstrokes": 5,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 76% — keep tracing",
+   "nstrokes": 6,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 76% — keep tracing",
+   "nstrokes": 4,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 76% — keep tracing",
+   "nstrokes": 4,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 76% — keep tracing",
+   "nstrokes": 4,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 70% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 76% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 50% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 93% — Body first, then the dots",
+   "nstrokes": 4,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "medial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 76% — keep tracing",
+   "nstrokes": 4,
+   "dot": [
+    252,
+    153
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 80% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 80% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 80% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 80% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 79% — keep tracing",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 80% ✓ good",
+   "nstrokes": 5,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 80% ✓ good · 6 strokes, aim for 4",
+   "nstrokes": 6,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 80% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 80% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 80% — Body first, then the dots",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 62% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 80% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 42% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 95% — Start at the green dot",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "final",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 80% — Start at the green dot",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    144
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 74% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 40% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 96% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 1,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 69% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 25% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "initial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 1,
+   "dot": [
+    240,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 94% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 66% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 38% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "medial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    261,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Body first, then the dots",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 73% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 25% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "final",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    80
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 96% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 96% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 97% — Start at the green dot",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 63% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 36% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 97% — Start at the green dot",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 1,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 84% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 35% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "initial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 1,
+   "dot": [
+    215,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 2,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 66% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 27% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "medial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    243,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 3,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 100% — Try one smooth line, from the green dot",
+   "nstrokes": 5,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 75% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 29% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "final",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    254,
+    78
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 98% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 54% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 94% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 100% — Try one smooth line, from the green dot",
+   "nstrokes": 5,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 90% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 72% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "initial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    238,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 93% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 100% — Try one smooth line, from the green dot",
+   "nstrokes": 5,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 35% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "medial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    257,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 95% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 86% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 40% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "final",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    249,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 96% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 94% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 61% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 96% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 100% — Try one smooth line, from the green dot",
+   "nstrokes": 5,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 86% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 50% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "final",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    244,
+    132
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 91% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 78% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 78% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 96% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 71% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 83% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 48% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 95% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "initial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    223,
+    128
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 94% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 96% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 88% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 95% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 97% — Start at the green dot",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 87% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 99% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 68% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "medial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 97% — Start at the green dot",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    169
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 85% — stay inside the letter",
+   "nstrokes": 10,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "final",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 1,
+   "dot": [
+    243,
+    160
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 96% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 97% — stay inside the letter",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 95% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 97% — Try one smooth line, from the green dot",
+   "nstrokes": 5,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 74% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 38% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 97% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 95% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 81% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 39% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "initial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 99% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    255,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 99% — Try one smooth line, from the green dot",
+   "nstrokes": 5,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 93% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 47% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "medial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 99% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 3,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 100% — Try one smooth line, from the green dot",
+   "nstrokes": 5,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 86% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 33% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "final",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    290,
+    147
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good · 5 strokes, aim for 2",
+   "nstrokes": 5,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 91% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 78% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 35% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 99% — Body first, then the dots",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 88% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good · 5 strokes, aim for 2",
+   "nstrokes": 5,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 90% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 60% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Body first, then the dots",
+   "nstrokes": 3,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "initial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 90% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    256,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 5 strokes, aim for 2",
+   "nstrokes": 5,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 67% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 92% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 31% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Body first, then the dots",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "medial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 92% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    278,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 93% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 93% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 93% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 93% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 93% ✓ good · 5 strokes, aim for 2",
+   "nstrokes": 5,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 93% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 93% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 93% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 80% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 26% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 99% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "final",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 93% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    260,
+    131
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 93% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 5 strokes, aim for 2",
+   "nstrokes": 5,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 92% — Try one smooth line, from the green dot",
+   "nstrokes": 6,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 93% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 92% — Body first, then the dots",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 82% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 92% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 36% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Body first, then the dots",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 92% — Start at the green dot",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 86% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good · 5 strokes, aim for 2",
+   "nstrokes": 5,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 90% — Try one smooth line, from the green dot",
+   "nstrokes": 6,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 90% — Body first, then the dots",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 91% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 60% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Body first, then the dots",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "initial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 90% — Start at the green dot",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    80
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 88% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 88% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 85% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good · 5 strokes, aim for 2",
+   "nstrokes": 5,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 67% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 91% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 50% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 98% — Body first, then the dots",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "medial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 89% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    95
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 5 strokes, aim for 2",
+   "nstrokes": 5,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 92% — Try one smooth line, from the green dot",
+   "nstrokes": 6,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 92% — Start at the green dot",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 72% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 92% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 34% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "bad_dots_first",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Body first, then the dots",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "final",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 92% — Start at the green dot",
+   "nstrokes": 4,
+   "dot": [
+    273,
+    93
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 96% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 100% — Try one smooth line, from the green dot",
+   "nstrokes": 5,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 76% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 43% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 100% — Try one smooth line, from the green dot",
+   "nstrokes": 5,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 68% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 41% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "initial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    255,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 100% — Try one smooth line, from the green dot",
+   "nstrokes": 5,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 62% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 26% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "medial",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    275,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 94% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "good_smooth",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 93% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 93% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "shaky3",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 94% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "wobbly6",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 94% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "lift2",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 94% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 94% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 94% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "dots_as_dashes",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 94% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": true,
+   "msg": "Coverage 94% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 65% — keep tracing",
+   "nstrokes": 1,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "bad_scribble_dense",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 96% — stay inside the letter",
+   "nstrokes": 1,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 41% — keep tracing",
+   "nstrokes": 10,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "bad_dots_first",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 94% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "final",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 94% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    270,
+    78
+   ]
+  }
+ ],
+ "errors": []
+}

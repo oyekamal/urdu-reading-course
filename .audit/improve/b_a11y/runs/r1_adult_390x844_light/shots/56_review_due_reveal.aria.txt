@@ -1,0 +1,19 @@
+- main:
+  - heading "Review" [level=1]
+  - text: Letters and words that are about to slip
+  - button "Sam"
+  - heading "26 cards to review" [level=2]
+  - text: 1 / 26 ا
+  - button "Hear it"
+  - text: Say the letter name and sound, then check alif — 'a' in father when long; a silent seat for short vowels at the start of a word
+  - button "Not yet"
+  - button "Got it"
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status: Not quite. Almost! Tap the green one.
+- status: Unit 1 passed! Unit 2 unlocked

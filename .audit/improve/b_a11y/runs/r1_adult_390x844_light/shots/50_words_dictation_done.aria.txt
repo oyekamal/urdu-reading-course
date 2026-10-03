@@ -1,0 +1,27 @@
+- main:
+  - text: Unit 1 · lesson 10 of 13
+  - heading "Words 1" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - heading "Dictation" [level=2]
+  - paragraph: Hear a word, spell it with the tiles.
+  - text: "Done: 0/5"
+  - button "Again"
+  - button "alif": ا
+  - button "be": ب
+  - button "kāf": ک
+  - button "lām": ل
+  - button "mīm": م
+  - button "nūn": ن
+  - button "Erase" [disabled]: ⌫
+  - button "Skip" [disabled]
+  - button "Continue"
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status: Not quite. Almost! Tap the green one.
+- status: It was بال — bāl

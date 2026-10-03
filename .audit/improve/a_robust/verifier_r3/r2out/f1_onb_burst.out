@@ -1,0 +1,12 @@
+0-0-0 profiles 1 attempts 1 screen: Good afternoon, Zara | Unit 0 · Before the letters | Z err None pageerrs []
+   i-seq [1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 12, 12, 12, 12, 12, 12, 13, 14, 15, 16, None]
+   profile {'name': 'Zara', 'track': 'child', 'grade': '', 'goal': 'family', 'speaks': 'fluent', 'pains': ['dots', 'check'], 'minutes': 10, 'days': 7}
+0-100-200 profiles 1 attempts 1 screen: Good afternoon, Zara | Unit 0 · Before the letters | Z err None pageerrs []
+   i-seq [1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 12, 12, 12, 12, 12, 12, 13, 14, 15, 16, None]
+   profile {'name': 'Zara', 'track': 'child', 'grade': '', 'goal': 'family', 'speaks': 'fluent', 'pains': ['dots', 'check'], 'minutes': 10, 'days': 7}
+0-100-200-300 profiles 1 attempts 1 screen: Good afternoon, Zara | Unit 0 · Before the letters | Z err None pageerrs []
+   i-seq [1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 12, 12, 12, 12, 12, 12, 13, 14, 15, 16, None]
+   profile {'name': 'Zara', 'track': 'child', 'grade': '', 'goal': 'family', 'speaks': 'fluent', 'pains': ['dots', 'check'], 'minutes': 10, 'days': 7}
+0-60-150 profiles 1 attempts 1 screen: Good afternoon, Zara | Unit 0 · Before the letters | Z err None pageerrs []
+   i-seq [1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 12, 12, 12, 12, 12, 12, 13, 14, 15, 16, None]
+   profile {'name': 'Zara', 'track': 'child', 'grade': '', 'goal': 'family', 'speaks': 'fluent', 'pains': ['dots', 'check'], 'minutes': 10, 'days': 7}

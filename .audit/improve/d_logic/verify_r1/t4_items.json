@@ -1,0 +1,86 @@
+{
+ "out": {
+  "1": {
+   "items": [
+    7
+   ],
+   "wordOpts": [
+    4
+   ]
+  },
+  "2": {
+   "items": [
+    4
+   ],
+   "wordOpts": [
+    4
+   ]
+  },
+  "3": {
+   "items": [
+    4
+   ],
+   "wordOpts": [
+    4
+   ]
+  },
+  "4": {
+   "items": [
+    5
+   ],
+   "wordOpts": [
+    4
+   ]
+  },
+  "5": {
+   "items": [
+    6
+   ],
+   "wordOpts": [
+    4
+   ]
+  },
+  "6": {
+   "items": [
+    3
+   ],
+   "wordOpts": [
+    4
+   ]
+  },
+  "7": {
+   "items": [
+    5
+   ],
+   "wordOpts": [
+    4
+   ]
+  },
+  "8": {
+   "items": [
+    7
+   ],
+   "wordOpts": [
+    4
+   ]
+  },
+  "9": {
+   "items": [
+    6
+   ],
+   "wordOpts": [
+    4
+   ]
+  },
+  "10": {
+   "items": [
+    2
+   ],
+   "wordOpts": [
+    4
+   ]
+  }
+ },
+ "nbad": 0,
+ "bad": []
+}

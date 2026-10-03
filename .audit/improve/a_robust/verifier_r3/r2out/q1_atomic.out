@@ -1,0 +1,6 @@
+arm 3 toast The backup could not be restored. Nothing was changed. Uncaught exception in event handler. | counts {'settings': 1} | screen اردو پڑھنا سیکھیں | Read Urdu in ['quota']
+   retry -> toast Restored 23 records. {'attempts': 20, 'cards': 1, 'profiles': 2, 'settings': 3}
+arm 10 toast The backup could not be restored. Nothing was changed. Uncaught exception in event handler. | counts {'settings': 1} | screen اردو پڑھنا سیکھیں | Read Urdu in ['quota']
+   retry -> toast Restored 23 records. {'attempts': 20, 'cards': 1, 'profiles': 2, 'settings': 3}
+arm 25 toast Restored, but this screen could not refresh. Go back and open it again. | counts {'attempts': 20, 'cards': 1, 'profiles': 2, 'settings': 2} | screen اردو پڑھنا سیکھیں | Read Urdu in []
+   retry -> toast Nothing new to restore: this phone already has everything in that file. {'attempts': 20, 'cards': 1, 'profiles': 2, 'settings': 3}

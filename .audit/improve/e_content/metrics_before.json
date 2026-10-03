@@ -1,0 +1,220 @@
+{
+ "unit_words": 220,
+ "unique_words": 214,
+ "share_ge4_pct": 48.6,
+ "words_ge4": 107,
+ "words_ge5": 24,
+ "share_ge5_pct": 10.9,
+ "length_hist": {
+  "2": 30,
+  "3": 83,
+  "4": 83,
+  "5": 22,
+  "6": 2
+ },
+ "mean_letters": 3.47,
+ "mean_syllables": 1.62,
+ "share_syl_ge3_pct": 5.0,
+ "sentences": 33,
+ "running_words_sentences": 120,
+ "running_words_passages": 150,
+ "running_words_total": 270,
+ "running_word_types": 125,
+ "passages": 5,
+ "assessment_tokens": 52,
+ "assessment_types_not_taught": [
+  "بہن",
+  "دیکھتے",
+  "ساتھ",
+  "میری"
+ ],
+ "assessment_types_not_taught_as_word": [
+  "آتی",
+  "ایک",
+  "بہن",
+  "جاتے",
+  "درخت",
+  "دیکھتے",
+  "رہتا",
+  "ساتھ",
+  "لاہور",
+  "میرا",
+  "میری",
+  "میرے",
+  "واپس",
+  "پاس",
+  "پیتے",
+  "چلتا",
+  "ہوں"
+ ],
+ "assessment_tokens_in_unit_text": 48,
+ "assessment_sentence_overlap_with_unit_text": 5,
+ "coverage_top_n": {
+  "100": {
+   "top": 100,
+   "eligible": 95,
+   "as_word": 36,
+   "seen": 46,
+   "as_word_pct": 37.9,
+   "seen_pct": 48.4
+  },
+  "300": {
+   "top": 300,
+   "eligible": 276,
+   "as_word": 71,
+   "seen": 90,
+   "as_word_pct": 25.7,
+   "seen_pct": 32.6
+  },
+  "500": {
+   "top": 500,
+   "eligible": 441,
+   "as_word": 83,
+   "seen": 106,
+   "as_word_pct": 18.8,
+   "seen_pct": 24.0
+  },
+  "1000": {
+   "top": 1000,
+   "eligible": 809,
+   "as_word": 111,
+   "seen": 141,
+   "as_word_pct": 13.7,
+   "seen_pct": 17.4
+  }
+ },
+ "token_cov_seen_pct": 51.7,
+ "token_cov_as_word_pct": 45.6,
+ "per_unit": [
+  {
+   "n": 0,
+   "words": 0,
+   "ge4": 0,
+   "sentences": 0,
+   "sentence_tokens": 0,
+   "passage_tokens": 0,
+   "has_passage": false,
+   "cum_top1000_as_word_pct": 0.0
+  },
+  {
+   "n": 1,
+   "words": 20,
+   "ge4": 9,
+   "sentences": 3,
+   "sentence_tokens": 7,
+   "passage_tokens": 0,
+   "has_passage": false,
+   "cum_top1000_as_word_pct": 1.0
+  },
+  {
+   "n": 2,
+   "words": 20,
+   "ge4": 11,
+   "sentences": 3,
+   "sentence_tokens": 8,
+   "passage_tokens": 0,
+   "has_passage": false,
+   "cum_top1000_as_word_pct": 2.0
+  },
+  {
+   "n": 3,
+   "words": 20,
+   "ge4": 11,
+   "sentences": 3,
+   "sentence_tokens": 7,
+   "passage_tokens": 0,
+   "has_passage": false,
+   "cum_top1000_as_word_pct": 2.6
+  },
+  {
+   "n": 4,
+   "words": 20,
+   "ge4": 7,
+   "sentences": 3,
+   "sentence_tokens": 9,
+   "passage_tokens": 0,
+   "has_passage": false,
+   "cum_top1000_as_word_pct": 4.2
+  },
+  {
+   "n": 5,
+   "words": 20,
+   "ge4": 11,
+   "sentences": 3,
+   "sentence_tokens": 9,
+   "passage_tokens": 0,
+   "has_passage": false,
+   "cum_top1000_as_word_pct": 5.3
+  },
+  {
+   "n": 6,
+   "words": 20,
+   "ge4": 15,
+   "sentences": 3,
+   "sentence_tokens": 11,
+   "passage_tokens": 0,
+   "has_passage": false,
+   "cum_top1000_as_word_pct": 6.6
+  },
+  {
+   "n": 7,
+   "words": 20,
+   "ge4": 13,
+   "sentences": 3,
+   "sentence_tokens": 9,
+   "passage_tokens": 23,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 7.8
+  },
+  {
+   "n": 8,
+   "words": 20,
+   "ge4": 6,
+   "sentences": 3,
+   "sentence_tokens": 10,
+   "passage_tokens": 31,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 9.4
+  },
+  {
+   "n": 9,
+   "words": 20,
+   "ge4": 11,
+   "sentences": 3,
+   "sentence_tokens": 11,
+   "passage_tokens": 30,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 10.3
+  },
+  {
+   "n": 10,
+   "words": 20,
+   "ge4": 11,
+   "sentences": 3,
+   "sentence_tokens": 12,
+   "passage_tokens": 26,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 11.4
+  },
+  {
+   "n": 11,
+   "words": 20,
+   "ge4": 2,
+   "sentences": 3,
+   "sentence_tokens": 27,
+   "passage_tokens": 40,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 13.5
+  },
+  {
+   "n": 12,
+   "words": 0,
+   "ge4": 0,
+   "sentences": 0,
+   "sentence_tokens": 0,
+   "passage_tokens": 0,
+   "has_passage": false,
+   "cum_top1000_as_word_pct": 13.5
+  }
+ ]
+}

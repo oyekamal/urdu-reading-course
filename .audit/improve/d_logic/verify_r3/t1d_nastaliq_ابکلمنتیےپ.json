@@ -1,0 +1,1442 @@
+[
+{
+"ch": "ا",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 89% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 89% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ب",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 89% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ک",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "initial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 87% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 86% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "medial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 86% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ک",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "kaf",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "initial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "initial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "medial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 80% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 82% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "medial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 83% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 90% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 90% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "ل",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 90% ✓ good",
+"fam": "lam",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 91% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 90% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "initial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "initial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "medial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "medial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 92% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 91% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "م",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "mim",
+"nmarks": 0
+},
+{
+"ch": "ن",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "initial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 90% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 91% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 92% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "medial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 91% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ن",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "nun",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "initial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 91% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 88% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "initial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "medial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 92% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 91% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 92% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "medial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 92% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ت",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ی",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "initial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "ye",
+"nmarks": 1
+},
+{
+"ch": "ی",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 90% ✓ good",
+"fam": "ye",
+"nmarks": 1
+},
+{
+"ch": "ی",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 92% ✓ good",
+"fam": "ye",
+"nmarks": 1
+},
+{
+"ch": "ی",
+"form": "initial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "ye",
+"nmarks": 1
+},
+{
+"ch": "ی",
+"form": "medial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "ye",
+"nmarks": 1
+},
+{
+"ch": "ی",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "ye",
+"nmarks": 1
+},
+{
+"ch": "ی",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "ye",
+"nmarks": 1
+},
+{
+"ch": "ی",
+"form": "medial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "ye",
+"nmarks": 1
+},
+{
+"ch": "ی",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ی",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "ے",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "ye",
+"nmarks": 0
+},
+{
+"ch": "پ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "isolated",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "isolated",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "initial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 90% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "initial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "initial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "medial",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "medial",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 94% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "medial",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "final",
+"kind": "pos",
+"var": "shaky3_b",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "final",
+"kind": "pos",
+"var": "shaky5_b_line",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 2
+},
+{
+"ch": "پ",
+"form": "final",
+"kind": "pos",
+"var": "lift1_nat",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 2
+}
+]

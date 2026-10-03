@@ -1,0 +1,33 @@
+hints seen 1991 bad 120
+{'letter': 'ٹ', 'good': 'ٹا', 'tapped': 'ٹی', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ٹ', 'good': 'ٹا', 'tapped': 'ٹی', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ٹ', 'good': 'ٹی', 'tapped': 'ٹا', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ٹ', 'good': 'ٹی', 'tapped': 'ٹا', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ٹ', 'good': 'ٹا', 'tapped': 'ٹی', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ٹ', 'good': 'ٹا', 'tapped': 'ٹی', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ٹ', 'good': 'ٹی', 'tapped': 'ٹا', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ٹ', 'good': 'ٹا', 'tapped': 'ٹی', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ٹ', 'good': 'ٹی', 'tapped': 'ٹا', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ٹ', 'good': 'ٹا', 'tapped': 'ٹی', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ٹ', 'good': 'ٹی', 'tapped': 'ٹا', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ٹ', 'good': 'ٹا', 'tapped': 'ٹی', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈا', 'tapped': 'ڈی', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈا', 'tapped': 'ڈو', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈو', 'tapped': 'ڈی', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈو', 'tapped': 'ڈا', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈی', 'tapped': 'ڈا', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈی', 'tapped': 'ڈو', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈی', 'tapped': 'ڈو', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈی', 'tapped': 'ڈا', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈی', 'tapped': 'ڈا', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈی', 'tapped': 'ڈو', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈا', 'tapped': 'ڈی', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈا', 'tapped': 'ڈو', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈو', 'tapped': 'ڈی', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈو', 'tapped': 'ڈا', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈی', 'tapped': 'ڈو', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈی', 'tapped': 'ڈا', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈو', 'tapped': 'ڈا', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'letter': 'ڈ', 'good': 'ڈو', 'tapped': 'ڈی', 'hint': 'Almost! Tap the green one.', 'verdict': 'no truth'}
+{'ٹ': ('ṭe', []), 'ڈ': ('ḍāl', []), 'ڑ': ('ṛe', []), 'ئ': ('hamza', []), 'ی': ('choṭī ye', []), 'ں': ('nūn g͟hunna', []), 'ب': ('be', []), 'ث': ('s̱e', []), 'ج': ('jīm', []), 'گ': ('gāf', []), 'ہ': ('choṭī he (gol he)', []), 'ھ': ('do-chashmī he', []), 'ن': ('nūn', []), 'ت': ('te', [])}
+Counter({'Count the do': 542, 'Listen again': 462, 'Look for the': 398, 'This is choṭ': 122, 'Almost! Tap ': 120, 'This is nūn ': 62, 'This is do-c': 55, 'Look where t': 55, 'This is kāf,': 49, 'This is gāf,': 39, 'This is lām,': 21, 'This is baṛī': 20, 'This is mīm,': 16, 'This is alif': 12, 'This is wāʾo': 7, 'This is re, ': 6, 'This is dāl,': 5})

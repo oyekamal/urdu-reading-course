@@ -1,0 +1,326 @@
+[
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot and follow the arrow",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot and follow the arrow",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "natural",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "marks_squiggle",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "marks_circles",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "lift1_gap",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "wander6",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "lift2",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot and follow the arrow",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot and follow the arrow",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 5 strokes, aim for 2",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "wander6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "re",
+"nmarks": 1
+}
+]

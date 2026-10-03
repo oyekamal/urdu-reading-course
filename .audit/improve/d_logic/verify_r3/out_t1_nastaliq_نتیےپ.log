@@ -1,0 +1,21 @@
+39 letters
+ن isolated falseRej 0 falseAcc 0
+ن initial falseRej 0 falseAcc 1
+ن medial falseRej 0 falseAcc 0
+ن final falseRej 0 falseAcc 0
+ت isolated falseRej 0 falseAcc 1
+ت initial falseRej 0 falseAcc 1
+ت medial falseRej 2 falseAcc 0
+ت final falseRej 0 falseAcc 2
+ی isolated falseRej 0 falseAcc 0
+ی initial falseRej 0 falseAcc 1
+ی medial falseRej 0 falseAcc 1
+ی final falseRej 0 falseAcc 1
+ے isolated falseRej 2 falseAcc 0
+ے final falseRej 2 falseAcc 0
+پ isolated falseRej 0 falseAcc 1
+پ initial falseRej 0 falseAcc 1
+پ medial falseRej 0 falseAcc 1
+پ final falseRej 0 falseAcc 2
+errors ['The radius provided (-2.99589) is negative.', 'The radius provided (-1.6315) is negative.', 'The radius provided (-2.02548) is negative.']
+POS 264 falseRej 6 NEG 126 falseAcc 13

@@ -1,0 +1,167 @@
+{
+ "placement_knows_1_to_4": {
+  "result": "Start at unit 5",
+  "sub": "Units 1–4 marked as known.",
+  "letters_asked_per_unit": {
+   "1": 5,
+   "2": 3,
+   "3": 3,
+   "4": 2,
+   "5": 4
+  },
+  "unit_sizes": {
+   "1": 6,
+   "2": 3,
+   "3": 3,
+   "4": 4,
+   "5": 5
+  }
+ },
+ "placement_after_go": {
+  "passed": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "lessonsDone": 0,
+  "cards": 96,
+  "cardLetters": 16,
+  "cardWords": 80
+ },
+ "placement_knows_nothing": {
+  "result": "Start at unit 1",
+  "sub": "Start from the beginning.",
+  "questions_asked": 6
+ },
+ "placement_knows_all_letters": {
+  "result": "Start at unit 12",
+  "sub": "Units 1–11 marked as known.",
+  "questions_asked": 61
+ },
+ "units_tab": {
+  "cards": 13,
+  "locked_classes": 12
+ },
+ "dialogs": [
+  "Unit 0 is not passed yet. Open unit 5 anyway?"
+ ],
+ "open_locked_unit5": {
+  "dialog": [
+   "Unit 0 is not passed yet. Open unit 5 anyway?"
+  ],
+  "page_h1": "Unit 5 · Sīn, jīm and gāf",
+  "has_quiz": true,
+  "sections": [
+   "1 · HEAR AND SEE",
+   "3 · TELL IT APART RECOGNITION · SELF-CHE",
+   "4 · JOIN IT PRODUCTION · SELF-CHECK",
+   "5 · READ IT READING ALOUD · AUDIO CHECK",
+   "SENTENCES",
+   "6 · WRITE IT PRODUCTION · TRACER CHECK",
+   "7 · DICTATION PRODUCTION · SELF-CHECK",
+   "8 · CHECK RECOGNITION · GATE"
+  ]
+ },
+ "quiz_result_text": "",
+ "state_after_bypass": {
+  "passed": [
+   5
+  ],
+  "lessonsDone": 0,
+  "cards": 138,
+  "cardLetters": 21,
+  "cardWords": 97
+ },
+ "learn_screen_after_bypass": {
+  "cur_text": "Unit 0\nLesson 1 of 2\n138 to review\nStart here\nThree rules\nStart: Three rules",
+  "unit_pills": [
+   "Unit 0",
+   "Unit 1"
+  ],
+  "passed_pills": 0
+ },
+ "aspirates_screen_title": "Breath letters",
+ "aspirates_rows": [
+  {
+   "row": "بھ\tbh\tبھائی\tbhāʾī — brother\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "پھ\tph\tپھول\tphūl — flower\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "تھ\tth\tتھالی\tthālī — plate\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "ٹھ\tṭh\tٹھنڈا\tṭhanḍā — cold\t",
+   "play_buttons": 3
+  },
+  {
+   "row": "جھ\tjh\tجھنڈا\tjhanḍā — flag\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "چھ\tchh\tچھت\tchhat — roof\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "دھ\tdh\tدھاگا\tdhāgā — thread\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "ڈھ\tḍh\tڈھول\tḍhol — drum\t",
+   "play_buttons": 0
+  },
+  {
+   "row": "ڑھ\tṛh\tپڑھنا\tpaṛhnā — to read\t",
+   "play_buttons": 0
+  },
+  {
+   "row": "کھ\tkh\tکھانا\tkhānā — food\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "گھ\tgh\tگھر\tghar — house\t",
+   "play_buttons": 1
+  }
+ ],
+ "aspirates_clicks": [
+  [
+   "aspirates/bh.mp3"
+  ],
+  [
+   "aspirates/ph.mp3"
+  ],
+  [
+   "aspirates/th.mp3"
+  ],
+  [
+   "No audio for this item"
+  ],
+  [
+   "No audio for this item"
+  ],
+  [
+   "No audio for this item"
+  ],
+  [
+   "aspirates/jh.mp3"
+  ],
+  [
+   "aspirates/chh.mp3"
+  ],
+  [
+   "aspirates/dh.mp3"
+  ],
+  [
+   "aspirates/kh.mp3"
+  ],
+  [
+   "aspirates/gh.mp3"
+  ]
+ ]
+}

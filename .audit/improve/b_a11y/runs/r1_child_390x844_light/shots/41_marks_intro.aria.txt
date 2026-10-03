@@ -1,0 +1,23 @@
+- main:
+  - text: Unit 1 · lesson 7 of 13
+  - heading "Vowel marks" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - region "Lesson content":
+    - text: "Tiny marks, big job: they are the vowels."
+    - heading "Small marks are vowels" [level=2]
+    - paragraph: A letter alone has no vowel. Three small marks give it a short sound. Adult books drop them; we keep them on until unit 11.
+    - text: بَ zabar short a, as in "but" اَب ab · now
+    - button "Play"
+    - text: بِ zer short i, as in "bit" اِمام imām · prayer leader
+    - button "Play"
+    - text: بُ pesh short u, as in "put" مُلْک mulk · country
+    - button "Play"
+  - button "Got it"
+  - navigation "Main":
+    - button "Learn"
+    - button "Review"
+    - button "Read"
+    - button "Me"
+- status: "Not quite. Count the dots: be has one"
+- status: "Correct: be"

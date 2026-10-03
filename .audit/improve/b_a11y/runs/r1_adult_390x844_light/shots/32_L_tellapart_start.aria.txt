@@ -1,0 +1,19 @@
+- main:
+  - text: Unit 1 · lesson 2 of 13
+  - heading "be" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - paragraph: Listen, then tap the letter you hear.
+  - heading "Tap what you hear" [level=2]
+  - button "Play sound"
+  - button "alif": ا
+  - button "be": ب
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status
+- status

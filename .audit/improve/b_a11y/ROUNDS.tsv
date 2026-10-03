@@ -1,0 +1,4 @@
+round	date	phase	change	evidence	result
+0	2026-10-03	baseline	validation results.md findings B1 B2 M1-M9 m1-m4	.audit/validation/a11y_devices	open
+1	2026-10-03	build	a11y.js (live region, lang=ur, dialogs+inert+focus, nav aria-current, lesson scroll region, --nav-h), CSS block round 11b, stickers/main/feel/path edits, portrait lock	kb_checks.py 40/40 after double-open fix; ui_audit 0; urscale.py 0 unscaled except stk-glyph (fixed)	built, awaiting full harness + verifier
+2	2026-10-03	verify	fresh verifier: groups 1,2,3,6,7 PASS; 4 (swatch aria-pressed) and 5 (stk-tab small 4.12:1) minor FAIL, fixed; biggest defect = adult Units crash at learner.js:152 (const dc = ... : dc) from another agent uncommitted edit, not b_a11y code	kb_checks 40/40, ui_audit 0, build ok	no b_a11y blocker/major remaining; learner.js crash reported to lead

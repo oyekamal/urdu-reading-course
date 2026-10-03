@@ -1,0 +1,2052 @@
+{
+ "tag": "r1_adult_844x390",
+ "args": {
+  "track": "adult",
+  "vp": "844x390",
+  "fs": 1.0,
+  "scheme": "light",
+  "axe": 0,
+  "aria": 0,
+  "motion": "reduce",
+  "tag": "r1_adult_844x390",
+  "port": "5199",
+  "touch": 1
+ },
+ "notes": [
+  "body.dataset.track after onboarding = adult"
+ ],
+ "errors": [
+  "Cannot access 'dc' before initialization"
+ ],
+ "results": [
+  {
+   "i": 1,
+   "screen": "onb_welcome",
+   "layout": [
+    [
+     "tap44-47",
+     "Restore from a backup",
+     "button.btn.btn-chip 173x44"
+    ]
+   ],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 595,
+    "scrollW": 844,
+    "bottomChrome": 166,
+    "topChrome": 0,
+    "freeH": 225,
+    "inCel": false,
+    "h": "Read Urdu in ten minutes a day",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Let's begin",
+     "top": 264,
+     "bottom": 320,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 2,
+   "screen": "onb_wake",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 553,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Marko is fast asleep",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 3,
+   "screen": "onb_colour",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 571,
+    "scrollW": 844,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 308,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "This one",
+     "top": 320,
+     "bottom": 376,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 4,
+   "screen": "onb_who",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 699,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 5,
+   "screen": "onb_name",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 533,
+    "scrollW": 844,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 308,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 320,
+     "bottom": 376,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 6,
+   "screen": "onb_goal",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 864,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 7,
+   "screen": "onb_speak",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 616,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 8,
+   "screen": "onb_pains",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 942,
+    "scrollW": 844,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 308,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 320,
+     "bottom": 376,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 9,
+   "screen": "onb_solution",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 588,
+    "scrollW": 844,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 308,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Show me",
+     "top": 320,
+     "bottom": 376,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 10,
+   "screen": "onb_minutes",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 616,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 11,
+   "screen": "onb_processing",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 588,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Making your path",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 12,
+   "screen": "onb_demo_alif",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 424,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Next",
+     "top": 326,
+     "bottom": 382,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 13,
+   "screen": "onb_demo_be",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 424,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Next",
+     "top": 326,
+     "bottom": 382,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 14,
+   "screen": "onb_demo_tap",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 400,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 15,
+   "screen": "onb_demo_tap_done",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 394,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Next",
+     "top": 314,
+     "bottom": 370,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 16,
+   "screen": "onb_demo_blend",
+   "layout": [
+    [
+     "gap<6",
+     "Lesson content | Join them",
+     "5px apart"
+    ]
+   ],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 424,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Join them",
+     "top": 326,
+     "bottom": 382,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 17,
+   "screen": "onb_demo_blend_done",
+   "layout": [
+    [
+     "obscured",
+     "Hear baa",
+     "button.btn.btn-play covered by span.ur.ob-joined"
+    ]
+   ],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 424,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Now a whole word",
+     "top": 326,
+     "bottom": 382,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 18,
+   "screen": "onb_demo_word",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 394,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 19,
+   "screen": "onb_demo_word_read",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 424,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Check me",
+     "top": 326,
+     "bottom": 382,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 20,
+   "screen": "onb_demo_check",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 400,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 21,
+   "screen": "onb_demo_check_ok",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 424,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "See what you did",
+     "top": 326,
+     "bottom": 382,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 22,
+   "screen": "onb_value",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 605,
+    "scrollW": 844,
+    "bottomChrome": 152,
+    "topChrome": 0,
+    "freeH": 238,
+    "inCel": false,
+    "h": "You just read Urdu",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 320,
+     "bottom": 376,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 23,
+   "screen": "onb_streak",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 698,
+    "scrollW": 844,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 308,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Let's keep it going",
+     "top": 320,
+     "bottom": 376,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 24,
+   "screen": "onb_commit",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 633,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 25,
+   "screen": "onb_plan",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 629,
+    "scrollW": 844,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 308,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start my first lesson",
+     "top": 320,
+     "bottom": 376,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 26,
+   "screen": "today_first",
+   "layout": [
+    [
+     "text-clipped-by-ancestor",
+     "Three rules",
+     "small in div.card.unit out by 4px"
+    ],
+    [
+     "text-clipped-by-ancestor",
+     "Finish unit",
+     "small in div.card.unit out by 3px"
+    ],
+    [
+     "text-clipped-by-ancestor",
+     "Unit check",
+     "small in div.card.unit out by 3px"
+    ],
+    [
+     "tap44-47",
+     "Switch learner",
+     "button.btn.btn-chip 79x44"
+    ],
+    [
+     "tap44-47",
+     "For parents: five things before letter o",
+     "summary 654x44"
+    ],
+    [
+     "obscured",
+     "Tap Marko to say hi",
+     "button.hh-poke covered by div.card.today-card"
+    ]
+   ],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 1778,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Good morning, Sam",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start: Three rules",
+     "top": 310,
+     "bottom": 368,
+     "w": 652,
+     "h": 58
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 27,
+   "screen": "lesson_rules",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Three rules",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 314,
+     "bottom": 362,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 28,
+   "screen": "celebrate_lesson",
+   "layout": [
+    [
+     "tap44-47",
+     "Back to path",
+     "button.btn.cel-back 88x44"
+    ],
+    [
+     "gap<6",
+     "Back to path | Celebration details",
+     "0px apart"
+    ]
+   ],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": true,
+    "h": "Three rules",
+    "overlay": "div.celebrate"
+   },
+   "info": {
+    "primary": {
+     "label": "Next: Finish unit",
+     "top": 320,
+     "bottom": 376,
+     "w": 812,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 29,
+   "screen": "lesson_done_unit",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Finish unit",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Unlock the next unit",
+     "top": 314,
+     "bottom": 362,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 30,
+   "screen": "celebrate_unit",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": true,
+    "h": "Finish unit",
+    "overlay": "div.celebrate.gold"
+   },
+   "info": {
+    "primary": {
+     "label": "Back to path",
+     "top": 320,
+     "bottom": 376,
+     "w": 812,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 31,
+   "screen": "L_intro",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "I heard it",
+     "top": 314,
+     "bottom": 362,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 32,
+   "screen": "L_tellapart_start",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 33,
+   "screen": "L_tellapart_round",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 34,
+   "screen": "L_tellapart_done",
+   "layout": [
+    [
+     "tap44-47",
+     "Again",
+     "button.btn.btn-chip 64x44"
+    ]
+   ],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 301,
+     "bottom": 349,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 35,
+   "screen": "L_forms",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "I see it",
+     "top": 314,
+     "bottom": 362,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 36,
+   "screen": "L_trace",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 314,
+     "bottom": 362,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 37,
+   "screen": "L_check",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 38,
+   "screen": "L_check_done",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Finish",
+     "top": 309,
+     "bottom": 357,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 39,
+   "screen": "celebrate_letter",
+   "layout": [
+    [
+     "tap44-47",
+     "Back to path",
+     "button.btn.cel-back 88x44"
+    ],
+    [
+     "gap<6",
+     "Back to path | Celebration details",
+     "0px apart"
+    ]
+   ],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": true,
+    "h": "be",
+    "overlay": "div.celebrate"
+   },
+   "info": {
+    "primary": {
+     "label": "Next: kāf",
+     "top": 320,
+     "bottom": 376,
+     "w": 812,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 40,
+   "screen": "marks_intro",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Vowel marks",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Got it",
+     "top": 314,
+     "bottom": 362,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 41,
+   "screen": "marks_find",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Vowel marks",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 42,
+   "screen": "join_forms",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Join them",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 314,
+     "bottom": 362,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 43,
+   "screen": "join_build",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Join them",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 44,
+   "screen": "join_build_done",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Join them",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 314,
+     "bottom": 362,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 45,
+   "screen": "blend",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Blend",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 46,
+   "screen": "blend_done",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Blend",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 314,
+     "bottom": 362,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 47,
+   "screen": "words_read",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Read them",
+     "top": 314,
+     "bottom": 362,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 48,
+   "screen": "words_build",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 49,
+   "screen": "words_dictation",
+   "layout": [
+    [
+     "tap44-47",
+     "alif",
+     "button.tile.ur 46x46"
+    ],
+    [
+     "tap44-47",
+     "be",
+     "button.tile.ur 46x46"
+    ],
+    [
+     "tap44-47",
+     "kāf",
+     "button.tile.ur 46x46"
+    ],
+    [
+     "tap44-47",
+     "lām",
+     "button.tile.ur 46x46"
+    ],
+    [
+     "tap44-47",
+     "mīm",
+     "button.tile.ur 46x46"
+    ],
+    [
+     "tap44-47",
+     "nūn",
+     "button.tile.ur 46x46"
+    ]
+   ],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Check",
+     "top": 314,
+     "bottom": 362,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 50,
+   "screen": "words_dictation_done",
+   "layout": [
+    [
+     "tap44-47",
+     "Again",
+     "button.btn.btn-chip 64x44"
+    ],
+    [
+     "tap44-47",
+     "alif",
+     "button.tile.ur 46x46"
+    ],
+    [
+     "tap44-47",
+     "be",
+     "button.tile.ur 46x46"
+    ],
+    [
+     "tap44-47",
+     "kāf",
+     "button.tile.ur 46x46"
+    ],
+    [
+     "tap44-47",
+     "lām",
+     "button.tile.ur 46x46"
+    ],
+    [
+     "tap44-47",
+     "mīm",
+     "button.tile.ur 46x46"
+    ],
+    [
+     "tap44-47",
+     "nūn",
+     "button.tile.ur 46x46"
+    ]
+   ],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 314,
+     "bottom": 362,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 51,
+   "screen": "quiz",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Unit check",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Submit",
+     "top": 314,
+     "bottom": 362,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 52,
+   "screen": "quiz_done",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Unit check",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Finish",
+     "top": 314,
+     "bottom": 362,
+     "w": 520,
+     "h": 48
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 53,
+   "screen": "today_unit2",
+   "layout": [
+    [
+     "text-clipped-by-ancestor",
+     "Unit check",
+     "small in div.card.unit out by 3px"
+    ],
+    [
+     "text-clipped-by-ancestor",
+     "Unit check",
+     "small in div.card.unit out by 3px"
+    ],
+    [
+     "tap44-47",
+     "Switch learner",
+     "button.btn.btn-chip 79x44"
+    ],
+    [
+     "tap44-47",
+     "12 to review",
+     "button.btn.btn-chip 122x44"
+    ],
+    [
+     "obscured",
+     "Tap Marko to say hi",
+     "button.hh-poke covered by div.tc-head"
+    ]
+   ],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 2212,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Good morning, Sam",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start: te",
+     "top": 310,
+     "bottom": 368,
+     "w": 652,
+     "h": 58
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 54,
+   "screen": "review_empty",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 652,
+    "scrollW": 844,
+    "bottomChrome": 64,
+    "topChrome": 0,
+    "freeH": 326,
+    "inCel": false,
+    "h": "Review",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Learn: unit 2",
+     "top": 326,
+     "bottom": 382,
+     "w": 688,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 55,
+   "screen": "review_due",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 400,
+    "scrollW": 844,
+    "bottomChrome": 64,
+    "topChrome": 0,
+    "freeH": 326,
+    "inCel": false,
+    "h": "Review",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Got it",
+     "top": 326,
+     "bottom": 382,
+     "w": 417,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 56,
+   "screen": "review_due_reveal",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 421,
+    "scrollW": 844,
+    "bottomChrome": 64,
+    "topChrome": 0,
+    "freeH": 326,
+    "inCel": false,
+    "h": "Review",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Got it",
+     "top": 326,
+     "bottom": 382,
+     "w": 417,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 57,
+   "screen": "read_tab",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 712,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Read",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 58,
+   "screen": "adult_units",
+   "layout": [
+    [
+     "gap<6",
+     "Letter library · all 38 letters | Unit 0, Before the letters",
+     "0px apart"
+    ],
+    [
+     "gap<6",
+     "Letter library · all 38 letters | Unit 1, The first six",
+     "0px apart"
+    ]
+   ],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 2072,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Units",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 59,
+   "screen": "adult_progress",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 1412,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Progress",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 60,
+   "screen": "adult_more",
+   "layout": [
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ],
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ],
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ],
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ]
+   ],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 1535,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "More",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 61,
+   "screen": "sticker_book",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 1535,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "More",
+    "overlay": "div.stk-ov.stk-book"
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 62,
+   "screen": "adult_unit_detail",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 63,
+   "screen": "mode_picker",
+   "layout": [
+    [
+     "no-primary",
+     "-",
+     "expected a .btn-primary"
+    ]
+   ],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 793,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Urdu Qaida",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 64,
+   "screen": "profile_picker",
+   "layout": [],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 390,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "Who is learning?",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 65,
+   "screen": "add_learner_form",
+   "layout": [
+    [
+     "tap44-47",
+     "colour 1",
+     "button.swatch.on 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 2",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 3",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 4",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 5",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 6",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 7",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 8",
+     "button.swatch 44x44"
+    ],
+    [
+     "primary-offscreen",
+     "Start",
+     "top 381 bottom 437 H 390"
+    ]
+   ],
+   "meta": {
+    "W": 844,
+    "H": 390,
+    "scrollH": 542,
+    "scrollW": 844,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 390,
+    "inCel": false,
+    "h": "New learner",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start",
+     "top": 381,
+     "bottom": 437,
+     "w": 654,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  }
+ ]
+}

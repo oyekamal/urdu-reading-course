@@ -1,0 +1,21 @@
+- main:
+  - text: Unit 1 · lesson 2 of 13
+  - heading "be" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - text: ب be!
+  - button "Say be again"
+  - heading "be" [level=2]
+  - paragraph: /b/ · 'b' in bat
+  - button "Hear the word"
+  - text: اب ab · now
+  - button "I heard it"
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status
+- status

@@ -1,0 +1,30 @@
+- main:
+  - heading "New learner" [level=1]
+  - text: Name
+  - textbox "Name"
+  - text: Track
+  - combobox "Track":
+    - option "Child (5–10)" [selected]
+    - option "Adult, new to Urdu"
+    - option "Speaks Urdu, can't read"
+  - text: Grade
+  - combobox "Grade":
+    - option "No grade" [selected]
+    - option "Grade 1"
+    - option "Grade 2"
+    - option "Grade 3"
+    - option "Grade 4"
+    - option "Grade 5"
+  - text: Colour
+  - button "colour 1"
+  - button "colour 2"
+  - button "colour 3"
+  - button "colour 4"
+  - button "colour 5"
+  - button "colour 6"
+  - button "colour 7"
+  - button "colour 8"
+  - button "Start"
+  - button "Back"
+- status
+- status

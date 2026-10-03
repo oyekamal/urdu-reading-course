@@ -1,0 +1,17 @@
+{
+ "res": {
+  "naskh/ا/isolated": "Coverage 100% ✓ good",
+  "naskh/ر/isolated": "Coverage 100% ✓ good",
+  "naskh/ڈ/isolated": "Coverage 88% ✓ good",
+  "naskh/ڑ/isolated": "Coverage 89% ✓ good",
+  "naskh/ز/isolated": "Coverage 100% ✓ good",
+  "naskh/د/isolated": "Coverage 95% ✓ good",
+  "nastaliq/ا/isolated": "Coverage 100% ✓ good",
+  "nastaliq/ر/isolated": "Coverage 100% ✓ good",
+  "nastaliq/ڈ/isolated": "Coverage 82% ✓ good",
+  "nastaliq/ڑ/isolated": "Coverage 80% ✓ good",
+  "nastaliq/ز/isolated": "Coverage 97% ✓ good",
+  "nastaliq/د/isolated": "Coverage 95% ✓ good"
+ },
+ "bad": []
+}

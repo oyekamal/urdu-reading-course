@@ -1,0 +1,7 @@
+- main:
+  - button "Back"
+  - text: Good news, Sam. I built this for exactly that. The letters look alike Look-alikes are taught side by side, and you count the dots No one to check me Every letter, word and sentence is spoken aloud
+  - paragraph: The same letter-sound method raised Urdu reading by 12.6 words a minute over normal classes in the USAID Pakistan Reading Project.
+  - button "Show me"
+- status
+- status

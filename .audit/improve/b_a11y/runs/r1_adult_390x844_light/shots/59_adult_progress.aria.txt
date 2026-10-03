@@ -1,0 +1,64 @@
+- main:
+  - heading "Progress" [level=1]
+  - button "Sam"
+  - text: Units passed 2 / 13 Letters solid 0 / 6 Words solid 0 / 20 Sessions 0 Cards due 25
+  - heading "Letters" [level=2]
+  - paragraph: Grey not yet taught · red new or missed · amber learning · green solid (remembered 3+ times spaced)
+  - text: ا ب ک ل م ن ت ی ے پ ٹ ث و ر د ہ س ش ج چ گ ں ھ ڈ ڑ ز ژ ف ق خ غ ع ح ص ض ط ظ ذ ئ
+  - heading "Drill accuracy · last 14 days" [level=2]
+  - table:
+    - rowgroup:
+      - row "Drill Tries Right":
+        - columnheader "Drill"
+        - columnheader "Tries"
+        - columnheader "Right"
+        - columnheader
+      - row "Tell apart 10 50%":
+        - cell "Tell apart"
+        - cell "10"
+        - cell "50%"
+        - cell
+      - row "Build word 12 50%":
+        - cell "Build word"
+        - cell "12"
+        - cell "50%"
+        - cell
+      - row "Dictation 5 0%":
+        - cell "Dictation"
+        - cell "5"
+        - cell "0%"
+        - cell
+      - row "Check 10 100%":
+        - cell "Check"
+        - cell "10"
+        - cell "100%"
+        - cell
+  - heading "Needs work" [level=2]
+  - paragraph: Most-missed items in the last four weeks. Tap to hear.
+  - button "بابا, 5 misses": بابا
+  - text: "5"
+  - button "ب, 4 misses": ب
+  - text: "4"
+  - button "نا, 4 misses": نا
+  - text: "4"
+  - button "کمان, 2 misses": کمان
+  - text: "2"
+  - button "امام, 2 misses": امام
+  - text: "2"
+  - button "ما, 2 misses": ما
+  - text: "2"
+  - button "با, 2 misses": با
+  - text: "2"
+  - button "ا, 1 misses": ا
+  - text: "1"
+  - heading "Activity · last 4 weeks" [level=2]
+  - paragraph: 0 active days of 28
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status: Not quite. Almost! Tap the green one.
+- status: Unit 1 passed! Unit 2 unlocked

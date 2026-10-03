@@ -1,0 +1,3 @@
+screen: Placement check | Tap what you hear, then the word you hear. W
+after placement: Placement check | Tap what you hear, then the word you hear. We stop at the first unit that 
+passed units: [('0', True), ('1', True), ('2', True)] cards 121 []

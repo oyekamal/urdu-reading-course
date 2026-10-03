@@ -1,0 +1,133 @@
+{
+ "screen": "Breath letters",
+ "rows": [
+  {
+   "row": "بھ\tbh\tبھائی\tbhāʾī — brother\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "پھ\tph\tپھول\tphūl — flower\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "تھ\tth\tتھالی\tthālī — plate\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "ٹھ\tṭh\tٹھنڈا\tṭhanḍā — cold\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "جھ\tjh\tجھنڈا\tjhanḍā — flag\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "چھ\tchh\tچھت\tchhat — roof\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "دھ\tdh\tدھاگا\tdhāgā — thread\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "ڈھ\tḍh\tڈھول\tḍhol — drum\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "ڑھ\tṛh\tپڑھنا\tpaṛhnā — to read\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "کھ\tkh\tکھانا\tkhānā — food\t",
+   "play_buttons": 1
+  },
+  {
+   "row": "گھ\tgh\tگھر\tghar — house\t",
+   "play_buttons": 1
+  }
+ ],
+ "cell_ids_unique": true,
+ "clicks": [
+  {
+   "played": [
+    "aspirates/bh.mp3"
+   ],
+   "toast": ""
+  },
+  {
+   "played": [
+    "aspirates/ph.mp3"
+   ],
+   "toast": ""
+  },
+  {
+   "played": [
+    "aspirates/th.mp3"
+   ],
+   "toast": ""
+  },
+  {
+   "played": [
+    "aspirates/ṭh.mp3"
+   ],
+   "toast": ""
+  },
+  {
+   "played": [
+    "aspirates/jh.mp3"
+   ],
+   "toast": ""
+  },
+  {
+   "played": [
+    "aspirates/chh.mp3"
+   ],
+   "toast": ""
+  },
+  {
+   "played": [
+    "aspirates/dh.mp3"
+   ],
+   "toast": ""
+  },
+  {
+   "played": [
+    "aspirates/ḍh.mp3"
+   ],
+   "toast": ""
+  },
+  {
+   "played": [
+    "aspirates/ṛh.mp3"
+   ],
+   "toast": ""
+  },
+  {
+   "played": [
+    "aspirates/kh.mp3"
+   ],
+   "toast": ""
+  },
+  {
+   "played": [
+    "aspirates/gh.mp3"
+   ],
+   "toast": ""
+  }
+ ],
+ "each_button_plays_its_own_clip": [
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "all_pass": true,
+ "page_errors": []
+}

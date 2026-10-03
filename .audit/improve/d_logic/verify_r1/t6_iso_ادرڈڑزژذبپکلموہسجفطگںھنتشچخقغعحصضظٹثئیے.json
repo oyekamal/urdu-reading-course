@@ -1,0 +1,2033 @@
+{
+ "res": [
+  {
+   "ch": "ا",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 94% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    200,
+    78
+   ]
+  },
+  {
+   "ch": "ا",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 93% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    200,
+    78
+   ]
+  },
+  {
+   "ch": "ا",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 96% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    200,
+    78
+   ]
+  },
+  {
+   "ch": "ا",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 95% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    200,
+    78
+   ]
+  },
+  {
+   "ch": "د",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    218,
+    124
+   ]
+  },
+  {
+   "ch": "د",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    218,
+    124
+   ]
+  },
+  {
+   "ch": "د",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    218,
+    124
+   ]
+  },
+  {
+   "ch": "د",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 88% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    218,
+    124
+   ]
+  },
+  {
+   "ch": "ر",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    213,
+    134
+   ]
+  },
+  {
+   "ch": "ر",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    213,
+    134
+   ]
+  },
+  {
+   "ch": "ر",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    213,
+    134
+   ]
+  },
+  {
+   "ch": "ر",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 85% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    213,
+    134
+   ]
+  },
+  {
+   "ch": "ڈ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 69% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    80
+   ]
+  },
+  {
+   "ch": "ڈ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 69% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    80
+   ]
+  },
+  {
+   "ch": "ڈ",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 69% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    80
+   ]
+  },
+  {
+   "ch": "ڈ",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 69% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    80
+   ]
+  },
+  {
+   "ch": "ڑ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 71% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    91
+   ]
+  },
+  {
+   "ch": "ڑ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 71% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    91
+   ]
+  },
+  {
+   "ch": "ڑ",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 71% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    91
+   ]
+  },
+  {
+   "ch": "ڑ",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 71% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    91
+   ]
+  },
+  {
+   "ch": "ز",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 83% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    101
+   ]
+  },
+  {
+   "ch": "ز",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 83% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    101
+   ]
+  },
+  {
+   "ch": "ز",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 83% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    101
+   ]
+  },
+  {
+   "ch": "ز",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 83% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    101
+   ]
+  },
+  {
+   "ch": "ژ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 70% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    92
+   ]
+  },
+  {
+   "ch": "ژ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 70% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    92
+   ]
+  },
+  {
+   "ch": "ژ",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 71% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    92
+   ]
+  },
+  {
+   "ch": "ژ",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 69% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    92
+   ]
+  },
+  {
+   "ch": "ذ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    90
+   ]
+  },
+  {
+   "ch": "ذ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    90
+   ]
+  },
+  {
+   "ch": "ذ",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    90
+   ]
+  },
+  {
+   "ch": "ذ",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 78% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    90
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ب",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 76% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    122
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ک",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    248,
+    80
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "ل",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    78
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "م",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    225,
+    132
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "و",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 96% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    220,
+    134
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "ہ",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    216,
+    122
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "س",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 96% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    267,
+    134
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ج",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ف",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 88% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    253,
+    77
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ط",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good · 3 strokes, aim for 1",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "گ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    248,
+    64
+   ]
+  },
+  {
+   "ch": "گ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    248,
+    64
+   ]
+  },
+  {
+   "ch": "گ",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 83% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    248,
+    64
+   ]
+  },
+  {
+   "ch": "گ",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    248,
+    64
+   ]
+  },
+  {
+   "ch": "ں",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    153
+   ]
+  },
+  {
+   "ch": "ں",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    153
+   ]
+  },
+  {
+   "ch": "ں",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    153
+   ]
+  },
+  {
+   "ch": "ں",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 96% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    230,
+    153
+   ]
+  },
+  {
+   "ch": "ھ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    118
+   ]
+  },
+  {
+   "ch": "ھ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    118
+   ]
+  },
+  {
+   "ch": "ھ",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    118
+   ]
+  },
+  {
+   "ch": "ھ",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good · 4 strokes, aim for 1",
+   "nstrokes": 4,
+   "dot": [
+    235,
+    118
+   ]
+  },
+  {
+   "ch": "ن",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 86% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    230,
+    129
+   ]
+  },
+  {
+   "ch": "ن",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 86% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    230,
+    129
+   ]
+  },
+  {
+   "ch": "ن",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 84% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    230,
+    129
+   ]
+  },
+  {
+   "ch": "ن",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 86% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    230,
+    129
+   ]
+  },
+  {
+   "ch": "ت",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 80% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    114
+   ]
+  },
+  {
+   "ch": "ت",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 80% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    114
+   ]
+  },
+  {
+   "ch": "ت",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 78% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    114
+   ]
+  },
+  {
+   "ch": "ت",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 73% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    247,
+    114
+   ]
+  },
+  {
+   "ch": "ش",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 83% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    267,
+    104
+   ]
+  },
+  {
+   "ch": "ش",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    267,
+    104
+   ]
+  },
+  {
+   "ch": "ش",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    267,
+    104
+   ]
+  },
+  {
+   "ch": "ش",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 81% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    267,
+    104
+   ]
+  },
+  {
+   "ch": "چ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 84% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "چ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 83% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "چ",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 83% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "چ",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 81% ✓ good",
+   "nstrokes": 4,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "خ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    93
+   ]
+  },
+  {
+   "ch": "خ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 91% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    93
+   ]
+  },
+  {
+   "ch": "خ",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    93
+   ]
+  },
+  {
+   "ch": "خ",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 87% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    241,
+    93
+   ]
+  },
+  {
+   "ch": "ق",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 86% — Start at the green dot",
+   "nstrokes": 4,
+   "dot": [
+    236,
+    102
+   ]
+  },
+  {
+   "ch": "ق",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 86% — Start at the green dot",
+   "nstrokes": 4,
+   "dot": [
+    236,
+    102
+   ]
+  },
+  {
+   "ch": "ق",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 86% — Start at the green dot",
+   "nstrokes": 4,
+   "dot": [
+    236,
+    102
+   ]
+  },
+  {
+   "ch": "ق",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 86% — Start at the green dot",
+   "nstrokes": 4,
+   "dot": [
+    236,
+    102
+   ]
+  },
+  {
+   "ch": "غ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 89% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    245,
+    77
+   ]
+  },
+  {
+   "ch": "غ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 88% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    245,
+    77
+   ]
+  },
+  {
+   "ch": "غ",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 90% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    245,
+    77
+   ]
+  },
+  {
+   "ch": "غ",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 85% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    245,
+    77
+   ]
+  },
+  {
+   "ch": "ع",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    245,
+    113
+   ]
+  },
+  {
+   "ch": "ع",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    245,
+    113
+   ]
+  },
+  {
+   "ch": "ع",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    245,
+    113
+   ]
+  },
+  {
+   "ch": "ع",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    245,
+    113
+   ]
+  },
+  {
+   "ch": "ح",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ح",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ح",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 99% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ح",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    241,
+    127
+   ]
+  },
+  {
+   "ch": "ص",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    274,
+    131
+   ]
+  },
+  {
+   "ch": "ص",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 100% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    274,
+    131
+   ]
+  },
+  {
+   "ch": "ص",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 99% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    274,
+    131
+   ]
+  },
+  {
+   "ch": "ص",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 99% — Start at the green dot",
+   "nstrokes": 3,
+   "dot": [
+    274,
+    131
+   ]
+  },
+  {
+   "ch": "ض",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 93% — Start at the green dot",
+   "nstrokes": 4,
+   "dot": [
+    274,
+    92
+   ]
+  },
+  {
+   "ch": "ض",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 93% — Start at the green dot",
+   "nstrokes": 4,
+   "dot": [
+    274,
+    92
+   ]
+  },
+  {
+   "ch": "ض",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 93% — Start at the green dot",
+   "nstrokes": 4,
+   "dot": [
+    274,
+    92
+   ]
+  },
+  {
+   "ch": "ض",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 90% — Start at the green dot",
+   "nstrokes": 4,
+   "dot": [
+    274,
+    92
+   ]
+  },
+  {
+   "ch": "ظ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ظ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ظ",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 92% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ظ",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 88% ✓ good · 4 strokes, aim for 2",
+   "nstrokes": 4,
+   "dot": [
+    247,
+    78
+   ]
+  },
+  {
+   "ch": "ٹ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 78% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    102
+   ]
+  },
+  {
+   "ch": "ٹ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 78% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    102
+   ]
+  },
+  {
+   "ch": "ٹ",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    102
+   ]
+  },
+  {
+   "ch": "ٹ",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 78% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    102
+   ]
+  },
+  {
+   "ch": "ث",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    104
+   ]
+  },
+  {
+   "ch": "ث",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    104
+   ]
+  },
+  {
+   "ch": "ث",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    104
+   ]
+  },
+  {
+   "ch": "ث",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 74% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    247,
+    104
+   ]
+  },
+  {
+   "ch": "ئ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 85% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    237,
+    134
+   ]
+  },
+  {
+   "ch": "ئ",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 85% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    237,
+    134
+   ]
+  },
+  {
+   "ch": "ئ",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 86% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    237,
+    134
+   ]
+  },
+  {
+   "ch": "ئ",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 81% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    237,
+    134
+   ]
+  },
+  {
+   "ch": "ی",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    237,
+    134
+   ]
+  },
+  {
+   "ch": "ی",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    237,
+    134
+   ]
+  },
+  {
+   "ch": "ی",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    237,
+    134
+   ]
+  },
+  {
+   "ch": "ی",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 96% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    237,
+    134
+   ]
+  },
+  {
+   "ch": "ے",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    253,
+    138
+   ]
+  },
+  {
+   "ch": "ے",
+   "form": "isolated",
+   "variant": "shaky1.5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 100% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    253,
+    138
+   ]
+  },
+  {
+   "ch": "ے",
+   "form": "isolated",
+   "variant": "wander5",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 98% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    253,
+    138
+   ]
+  },
+  {
+   "ch": "ے",
+   "form": "isolated",
+   "variant": "wander9",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 97% ✓ good",
+   "nstrokes": 1,
+   "dot": [
+    253,
+    138
+   ]
+  }
+ ],
+ "errors": []
+}

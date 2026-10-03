@@ -1,0 +1,108 @@
+- main:
+  - heading "Me" [level=1]
+  - button "Zara"
+  - text: Z Zara Unit 2 · Dots and the two ye 15 pearls 1 days practised 2 units done
+  - button "Sticker book Your letter stickers live here ›"
+  - text: "Practice sheets Printable PDFs for each unit: tracing, reading, dictation and answer keys"
+  - button "Open practice sheets"
+  - text: Units finished 2 of 13 Letters I know 0 of 6 Words I can read 0 of 20 Times I practised 0 Ready to practise again 25
+  - heading "My letters" [level=2]
+  - paragraph: "Green: I know it. Amber: getting there. Red: let's practise. Grey: coming soon."
+  - text: ا ب ک ل م ن ت ی ے پ ٹ ث و ر د ہ س ش ج چ گ ں ھ ڈ ڑ ز ژ ف ق خ غ ع ح ص ض ط ظ ذ ئ
+  - heading "Drill accuracy · last 14 days" [level=2]
+  - table:
+    - rowgroup:
+      - row "Drill Tries Right":
+        - columnheader "Drill"
+        - columnheader "Tries"
+        - columnheader "Right"
+        - columnheader
+      - row "Tell apart 10 50%":
+        - cell "Tell apart"
+        - cell "10"
+        - cell "50%"
+        - cell
+      - row "Build word 16 38%":
+        - cell "Build word"
+        - cell "16"
+        - cell "38%"
+        - cell
+      - row "Dictation 5 0%":
+        - cell "Dictation"
+        - cell "5"
+        - cell "0%"
+        - cell
+      - row "Check 10 100%":
+        - cell "Check"
+        - cell "10"
+        - cell "100%"
+        - cell
+  - heading "Needs work" [level=2]
+  - paragraph: Most-missed items in the last four weeks. Tap to hear.
+  - button "امام, 7 misses": امام
+  - text: "7"
+  - button "ب, 4 misses": ب
+  - text: "4"
+  - button "لا, 4 misses": لا
+  - text: "4"
+  - button "نا, 3 misses": نا
+  - text: "3"
+  - button "با, 3 misses": با
+  - text: "3"
+  - button "نام, 3 misses": نام
+  - text: "3"
+  - button "اب, 2 misses": اب
+  - text: "2"
+  - button "بابا, 2 misses": بابا
+  - text: "2"
+  - heading "Activity · last 4 weeks" [level=2]
+  - paragraph: 0 active days of 28
+  - heading "Settings and more" [level=3]
+  - heading "Settings" [level=2]
+  - text: Track
+  - combobox "Track":
+    - option "Child (5–10)" [selected]
+    - option "Adult, new to Urdu"
+    - option "Speaks Urdu, can't read"
+  - text: Script
+  - combobox "Script":
+    - option "Naskh (learning)" [selected]
+    - option "Nastaliq (print)"
+  - text: Text size
+  - combobox "Text size":
+    - option "Normal text" [selected]
+    - option "Large"
+    - option "Extra large"
+  - text: Letter spacing
+  - combobox "Letter spacing":
+    - option "Normal letter spacing" [selected]
+    - option "Wider"
+    - option "Widest (dyslexia-friendly)"
+  - checkbox "Show vowel marks (until unit 10)" [checked]
+  - text: Show vowel marks (until unit 10)
+  - checkbox "Show romanisation (Latin letters)" [checked]
+  - text: Show romanisation (Latin letters)
+  - checkbox "Audio-first mode (words hidden until tapped)"
+  - text: Audio-first mode (words hidden until tapped)
+  - checkbox "Sounds and vibration" [checked]
+  - text: Sounds and vibration
+  - heading "Data" [level=2]
+  - paragraph: Everything stays on this phone. Export to keep a backup or move to another phone.
+  - button "Export backup (JSON)"
+  - button "Import a backup (JSON)"
+  - button "Reset this profile's progress"
+  - button "Switch profile / mode"
+  - heading "Help make this better" [level=2]
+  - paragraph: Urdu Qaida is free and made by one person in Pakistan. Found a wrong sound, a bug, or a missing word? Want to record a real voice, translate, or teach with it? Write to Kamal.
+  - button "Email Kamal"
+  - button "Copy email address"
+  - button "Support Urdu Qaida"
+  - paragraph: Version app 0.10.0 · pack-6cc38371 · 39 letters · 13 units · 490 clips
+  - paragraph: Voices are AI-generated and play from files stored on your device. No speech is generated online.
+  - navigation "Main":
+    - button "Learn"
+    - button "Review"
+    - button "Read"
+    - button "Me"
+- status: Not quite. Almost! Tap the green one.
+- status: Unit 1 passed! Unit 2 unlocked

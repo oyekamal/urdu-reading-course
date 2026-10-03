@@ -1,0 +1,202 @@
+[
+ {
+  "name": "celebrate role=dialog aria-modal",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "celebrate focus moved in (h1)",
+  "ok": true,
+  "detail": "h1.|Three rules done!"
+ },
+ {
+  "name": "page behind celebrate is inert",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "Tab stays inside celebrate",
+  "ok": true,
+  "detail": "{'button.btn|Back to path', 'button.btn|Next: Finish unit'}"
+ },
+ {
+  "name": "Shift+Tab stays inside celebrate",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "celebrate closed, app no longer inert",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "focus after celebrate Next is a heading in the new screen",
+  "ok": true,
+  "detail": "h2.|Unit 0 done"
+ },
+ {
+  "name": "leave X is >=16px from the speaker button",
+  "ok": true,
+  "detail": "20"
+ },
+ {
+  "name": "leave sheet opens (not window.confirm), focus on Keep going",
+  "ok": true,
+  "detail": "button.btn|Keep going"
+ },
+ {
+  "name": "leave sheet copy",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "Tab trapped in leave sheet",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "Escape closes leave sheet and stays in lesson",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "focus returns to the X after the sheet",
+  "ok": true,
+  "detail": "button.btn|Leave lesson"
+ },
+ {
+  "name": "Leave goes back to the path",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "wrong answer is announced in the live region",
+  "ok": true,
+  "detail": "Not quite. Count the dots: be has one"
+ },
+ {
+  "name": "hint bubble is not double-read (aria-hidden)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "right tile labelled as the answer",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "live region + toast exist at load",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "nav is labelled navigation with one aria-current=page",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "aria-current follows the active tab",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "every Urdu text node is inside lang=ur",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "name": "decorative Marko/Lottie hidden from AT",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "inline Urdu px sizes follow --ur-scale",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "sticker book role=dialog aria-modal, focus inside",
+  "ok": true,
+  "detail": "button.btn|Back"
+ },
+ {
+  "name": "sticker book traps Tab (40 presses)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "page behind sticker book inert",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "Enter on Back closes the book",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "focus returns to the Sticker book button",
+  "ok": true,
+  "detail": "button.card|Sticker bookYour letter sticke"
+ },
+ {
+  "name": "page no longer inert after book",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "Enter and Space select a unit tab",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "Escape closes the book",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "focus returns to opener after Escape",
+  "ok": true,
+  "detail": "button.card|Sticker bookYour letter sticke"
+ },
+ {
+  "name": "stacked: sheet on top has focus, book inert",
+  "ok": true,
+  "detail": "button.btn|Keep going"
+ },
+ {
+  "name": "stacked: closing the sheet returns focus to the book",
+  "ok": true,
+  "detail": "button.btn|Back"
+ },
+ {
+  "name": "stacked: closing the book returns focus to opener, page live",
+  "ok": true,
+  "detail": "button.card|Sticker bookYour letter sticke"
+ },
+ {
+  "name": "double openBook gives exactly one dialog",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "info: teacher gate",
+  "ok": true,
+  "detail": "PIN field"
+ },
+ {
+  "name": "PIN field accepts typed digits and Enter unlocks",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "Enter on PIN opens teacher mode",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "no page errors",
+  "ok": true,
+  "detail": "[]"
+ }
+]

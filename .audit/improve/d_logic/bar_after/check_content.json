@@ -1,0 +1,1068 @@
+{
+ "aspirates_keys_requested_by_learner_js_missing_from_index": [
+  "aspirates/_h",
+  "aspirates/_h",
+  "aspirates/_h"
+ ],
+ "aspirates_html_id_collisions": [
+  "_h"
+ ],
+ "audio_index_entries": 490,
+ "audio_files_on_disk": 490,
+ "expected_keys": 490,
+ "missing_in_index": [],
+ "index_points_to_missing_file": [],
+ "index_keys_not_expected": [],
+ "orphan_files_on_disk": [],
+ "unplayable_or_tiny_clips": [],
+ "syllable_manifest_text_wrong": [],
+ "manifest_text_mismatch": [],
+ "override_text_mismatch": [],
+ "duration_outliers_3sigma": [
+  [
+   "syllables/swad_u",
+   2.06,
+   1.2
+  ],
+  [
+   "syllables/zal_u",
+   2.22,
+   1.2
+  ],
+  [
+   "units/u10_13",
+   2.95,
+   1.39
+  ],
+  [
+   "units/u10_15",
+   2.8,
+   1.39
+  ]
+ ],
+ "dynamic_prefix_used_in_code": {
+  "names/": true,
+  "words/": true,
+  "units/": true,
+  "sentences/": true,
+  "sight/": true,
+  "aspirates/": true,
+  "diacritics/": true,
+  "syllables/": true,
+  "numerals/": false
+ },
+ "clips_never_referenced_by_code": [
+  "numerals/0",
+  "numerals/1",
+  "numerals/2",
+  "numerals/3",
+  "numerals/4",
+  "numerals/5",
+  "numerals/6",
+  "numerals/7",
+  "numerals/8",
+  "numerals/9",
+  "ui/next",
+  "ui/done",
+  "ui/unit_done"
+ ],
+ "ui_keys_used_but_missing": [],
+ "passages_without_audio": [
+  7,
+  8,
+  9,
+  10,
+  11
+ ],
+ "decodability": {
+  "bare_bad": [
+   [
+    2,
+    "sentence:بلی کالی ہے",
+    "ہ"
+   ],
+   [
+    3,
+    "sentence:میں ٹوپی لے",
+    "ں"
+   ],
+   [
+    3,
+    "sentence:میں ٹوپی لے",
+    "و"
+   ],
+   [
+    4,
+    "sentence:وہ کمرہ بڑا ہے",
+    "ڑ"
+   ],
+   [
+    4,
+    "sentence:ہم دور ہیں",
+    "ں"
+   ],
+   [
+    5,
+    "sentence:شیر جنگل میں ہے",
+    "ں"
+   ],
+   [
+    6,
+    "sentence:بھائی کھانا کھاتا ہے",
+    "ئ"
+   ],
+   [
+    10,
+    "sentence:چائے میں ۲ چمچ چینی",
+    "۲"
+   ]
+  ],
+  "voc_bad": [],
+  "preview": [
+   [
+    3,
+    "ٹوپی",
+    "و"
+   ],
+   [
+    3,
+    "ٹماٹر",
+    "ر"
+   ],
+   [
+    3,
+    "کپاس",
+    "س"
+   ],
+   [
+    4,
+    "دودھ",
+    "ھ"
+   ],
+   [
+    5,
+    "مچھلی",
+    "ھ"
+   ],
+   [
+    6,
+    "بھائی",
+    "ئ"
+   ],
+   [
+    6,
+    "ٹھنڈا",
+    "ڈ"
+   ],
+   [
+    8,
+    "قمیض",
+    "ض"
+   ],
+   [
+    8,
+    "خط",
+    "ط"
+   ],
+   [
+    8,
+    "صاف",
+    "ص"
+   ],
+   [
+    9,
+    "ذائقہ",
+    "ئ"
+   ]
+  ],
+  "voc_mismatch": [],
+  "voc_stray_marks": [],
+  "no_marks_units_le10": 77,
+  "marks_total_words_le10": 200,
+  "mark_gap": []
+ },
+ "passage_has_marks": {
+  "7": false,
+  "8": false,
+  "9": false,
+  "10": true,
+  "11": false
+ },
+ "words_le_unit10_with_cluster_but_no_marks": [
+  [
+   4,
+   "دودھ",
+   "dūdh"
+  ],
+  [
+   5,
+   "چاند",
+   "chānd"
+  ],
+  [
+   6,
+   "پھول",
+   "phūl"
+  ],
+  [
+   6,
+   "تھالی",
+   "thālī"
+  ],
+  [
+   6,
+   "کھانا",
+   "khānā"
+  ],
+  [
+   6,
+   "دھاگا",
+   "dhāgā"
+  ],
+  [
+   6,
+   "جھولا",
+   "jhūlā"
+  ],
+  [
+   6,
+   "ہاتھ",
+   "hāth"
+  ],
+  [
+   6,
+   "دودھ",
+   "dūdh"
+  ],
+  [
+   6,
+   "آنکھ",
+   "āṉkh"
+  ],
+  [
+   7,
+   "روزانہ",
+   "rozāna"
+  ],
+  [
+   7,
+   "ڈھول",
+   "ḍhol"
+  ],
+  [
+   10,
+   "آئینہ",
+   "āʾīna"
+  ]
+ ],
+ "glosses": {
+  "blank": [],
+  "en_eq_rom": [],
+  "non_ascii_en": [
+   [
+    3,
+    "ٹوپی",
+    "cap (و comes in unit 4, preview)"
+   ],
+   [
+    3,
+    "ٹماٹر",
+    "tomato (ر preview)"
+   ],
+   [
+    3,
+    "کپاس",
+    "cotton (س preview)"
+   ],
+   [
+    4,
+    "دودھ",
+    "milk (ھ preview)"
+   ],
+   [
+    5,
+    "مچھلی",
+    "fish (ھ preview)"
+   ],
+   [
+    6,
+    "بھائی",
+    "brother (ئ preview)"
+   ],
+   [
+    6,
+    "ٹھنڈا",
+    "cold (ڈ preview)"
+   ],
+   [
+    8,
+    "قمیض",
+    "shirt (ض preview)"
+   ],
+   [
+    8,
+    "خط",
+    "letter (ط preview)"
+   ],
+   [
+    8,
+    "صاف",
+    "clean (ص preview)"
+   ],
+   [
+    9,
+    "ذائقہ",
+    "taste (ئ preview)"
+   ]
+  ],
+  "dup_rom_in_unit": [],
+  "dup_en_in_unit": [
+   [
+    3,
+    "thin",
+    [
+     "پتلی",
+     "پتلا"
+    ]
+   ],
+   [
+    10,
+    "prayer",
+    [
+     "دعا",
+     "صلوٰۃ"
+    ]
+   ],
+   [
+    11,
+    "of",
+    [
+     "کا",
+     "کی",
+     "کے"
+    ]
+   ],
+   [
+    11,
+    "was",
+    [
+     "تھا",
+     "تھی"
+    ]
+   ]
+  ],
+  "long_en": [],
+  "rom_skeleton_mismatch": [
+   [
+    2,
+    "بلی",
+    "billī",
+    "bl",
+    "bll"
+   ],
+   [
+    4,
+    "وہ",
+    "woh",
+    "",
+    "h"
+   ],
+   [
+    4,
+    "راہ",
+    "rāh",
+    "r",
+    "rh"
+   ],
+   [
+    5,
+    "مچھلی",
+    "machhlī",
+    "mcl",
+    "mchl"
+   ],
+   [
+    6,
+    "میں",
+    "maiṉ",
+    "m",
+    "mn"
+   ],
+   [
+    6,
+    "ہاں",
+    "hāṉ",
+    "h",
+    "hn"
+   ],
+   [
+    6,
+    "کہاں",
+    "kahāṉ",
+    "kh",
+    "khn"
+   ],
+   [
+    6,
+    "ہیں",
+    "haiṉ",
+    "h",
+    "hn"
+   ],
+   [
+    6,
+    "چھت",
+    "chhat",
+    "ct",
+    "cht"
+   ],
+   [
+    6,
+    "مچھلی",
+    "machhlī",
+    "mcl",
+    "mchl"
+   ],
+   [
+    6,
+    "یہاں",
+    "yahāṉ",
+    "h",
+    "hn"
+   ],
+   [
+    7,
+    "ڈبہ",
+    "ḍabba",
+    "Db",
+    "dbb"
+   ],
+   [
+    7,
+    "پڑھنا",
+    "paṛhnā",
+    "pRn",
+    "prhn"
+   ],
+   [
+    8,
+    "خط",
+    "k͟hat",
+    "xt",
+    "kht"
+   ],
+   [
+    8,
+    "خوش",
+    "k͟hush",
+    "xS",
+    "khS"
+   ],
+   [
+    8,
+    "غریب",
+    "g͟harīb",
+    "Grb",
+    "ghrb"
+   ],
+   [
+    8,
+    "باغ",
+    "bāg͟h",
+    "bG",
+    "bgh"
+   ],
+   [
+    8,
+    "خالی",
+    "k͟hālī",
+    "xl",
+    "khl"
+   ],
+   [
+    8,
+    "غم",
+    "g͟ham",
+    "Gm",
+    "ghm"
+   ],
+   [
+    9,
+    "صبح",
+    "ṣubḥ",
+    "sbh",
+    "sb"
+   ],
+   [
+    9,
+    "ذمہ",
+    "ẕimma",
+    "zm",
+    "zmm"
+   ],
+   [
+    9,
+    "خاص",
+    "k͟hāṣ",
+    "xs",
+    "khs"
+   ],
+   [
+    10,
+    "بچّہ",
+    "bachcha",
+    "bc",
+    "bcc"
+   ],
+   [
+    10,
+    "اللّٰہ",
+    "allāh",
+    "ll",
+    "llh"
+   ],
+   [
+    10,
+    "صلوٰۃ",
+    "ṣalāt",
+    "sl",
+    "slt"
+   ],
+   [
+    10,
+    "ابّا",
+    "abbā",
+    "b",
+    "bb"
+   ],
+   [
+    10,
+    "امّی",
+    "ammī",
+    "m",
+    "mm"
+   ],
+   [
+    10,
+    "اچّھا",
+    "achchhā",
+    "c",
+    "cch"
+   ],
+   [
+    11,
+    "کہ",
+    "keh",
+    "k",
+    "kh"
+   ],
+   [
+    11,
+    "ہیں",
+    "haiṉ",
+    "h",
+    "hn"
+   ],
+   [
+    11,
+    "نہیں",
+    "nahīṉ",
+    "nh",
+    "nhn"
+   ]
+  ]
+ },
+ "duplicate_words_across_units": {
+  "کے": [
+   [
+    2,
+    8,
+    "of"
+   ],
+   [
+    11,
+    2,
+    "of (pl.)"
+   ]
+  ],
+  "نے": [
+   [
+    2,
+    9,
+    "(agent marker)"
+   ],
+   [
+    11,
+    9,
+    "(agent)"
+   ]
+  ],
+  "دودھ": [
+   [
+    4,
+    16,
+    "milk (ھ preview)"
+   ],
+   [
+    6,
+    14,
+    "milk"
+   ]
+  ],
+  "مچھلی": [
+   [
+    5,
+    16,
+    "fish (ھ preview)"
+   ],
+   [
+    6,
+    15,
+    "fish"
+   ]
+  ],
+  "ہیں": [
+   [
+    6,
+    3,
+    "are"
+   ],
+   [
+    11,
+    8,
+    "are"
+   ]
+  ],
+  "ٹھنڈا": [
+   [
+    6,
+    8,
+    "cold (ڈ preview)"
+   ],
+   [
+    7,
+    18,
+    "cold"
+   ]
+  ]
+ },
+ "word_totals": {
+  "words": 220,
+  "unique": 214,
+  "sentences": 33,
+  "per_unit_words": {
+   "0": 0,
+   "1": 20,
+   "2": 20,
+   "3": 20,
+   "4": 20,
+   "5": 20,
+   "6": 20,
+   "7": 20,
+   "8": 20,
+   "9": 20,
+   "10": 20,
+   "11": 20,
+   "12": 0
+  }
+ },
+ "words_equal_sight_words": [
+  "اور",
+  "بھی",
+  "تھا",
+  "تھی",
+  "سے",
+  "میں",
+  "نہیں",
+  "نے",
+  "وہ",
+  "پر",
+  "کا",
+  "کو",
+  "کہ",
+  "کی",
+  "کیا",
+  "کے",
+  "ہیں",
+  "ہے"
+ ],
+ "joiner_flags_vs_ten": [
+  [
+   "ں",
+   "non-joiner flag; informational"
+  ]
+ ],
+ "harfbuzz_joins_forward": {
+  "ا": false,
+  "ب": true,
+  "ک": true,
+  "ل": true,
+  "م": true,
+  "ن": true,
+  "ت": true,
+  "ی": true,
+  "ے": false,
+  "پ": true,
+  "ٹ": true,
+  "ث": true,
+  "و": false,
+  "ر": false,
+  "د": false,
+  "ہ": true,
+  "س": true,
+  "ش": true,
+  "ج": true,
+  "چ": true,
+  "گ": true,
+  "ں": true,
+  "ھ": true,
+  "ڈ": false,
+  "ڑ": false,
+  "ز": false,
+  "ژ": false,
+  "ف": true,
+  "ق": true,
+  "خ": true,
+  "غ": true,
+  "ع": true,
+  "ح": true,
+  "ص": true,
+  "ض": true,
+  "ط": true,
+  "ظ": true,
+  "ذ": false,
+  "ئ": true,
+  "ۃ": false,
+  "ء": false,
+  "ؤ": false,
+  "آ": false,
+  "ۓ": false
+ },
+ "joiner_flag_vs_harfbuzz_disagree": [],
+ "nun_ghunna_note": {
+  "ں_joins_forward_in_font": true,
+  "json_joiner": false
+ },
+ "tofu_or_notdef": [],
+ "form_distinct_problems": [],
+ "never_initial_but_word_starts_with_it": [],
+ "not_never_initial_but_no_shipped_word_starts_with_it": [
+  "ئ"
+ ],
+ "unit_letters_missing_from_letters_json": [
+  "ۃ"
+ ],
+ "letters_json_not_in_any_unit": [],
+ "letter_positions_without_example_word_in_lesson": [
+  [
+   "ت",
+   "final"
+  ],
+  [
+   "ی",
+   "initial"
+  ],
+  [
+   "پ",
+   "final"
+  ],
+  [
+   "ث",
+   "medial"
+  ],
+  [
+   "ث",
+   "final"
+  ],
+  [
+   "د",
+   "final"
+  ],
+  [
+   "ش",
+   "medial"
+  ],
+  [
+   "ش",
+   "final"
+  ],
+  [
+   "ج",
+   "final"
+  ],
+  [
+   "چ",
+   "final"
+  ],
+  [
+   "گ",
+   "final"
+  ],
+  [
+   "ڈ",
+   "final"
+  ],
+  [
+   "ڑ",
+   "final"
+  ],
+  [
+   "ز",
+   "final"
+  ],
+  [
+   "ژ",
+   "final"
+  ],
+  [
+   "ق",
+   "final"
+  ],
+  [
+   "خ",
+   "medial"
+  ],
+  [
+   "خ",
+   "final"
+  ],
+  [
+   "غ",
+   "medial"
+  ],
+  [
+   "ع",
+   "medial"
+  ],
+  [
+   "ع",
+   "final"
+  ],
+  [
+   "ح",
+   "medial"
+  ],
+  [
+   "ح",
+   "final"
+  ],
+  [
+   "ص",
+   "medial"
+  ],
+  [
+   "ض",
+   "medial"
+  ],
+  [
+   "ذ",
+   "final"
+  ],
+  [
+   "ئ",
+   "initial"
+  ],
+  [
+   "ئ",
+   "final"
+  ]
+ ],
+ "lesson_drill_eligibility": [
+  {
+   "unit": 1,
+   "half": 1,
+   "words": 10,
+   "spellable": 10,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 1,
+   "half": 2,
+   "words": 10,
+   "spellable": 10,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 2,
+   "half": 1,
+   "words": 10,
+   "spellable": 10,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 2,
+   "half": 2,
+   "words": 10,
+   "spellable": 10,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 3,
+   "half": 1,
+   "words": 10,
+   "spellable": 9,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 3,
+   "half": 2,
+   "words": 10,
+   "spellable": 8,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 4,
+   "half": 1,
+   "words": 10,
+   "spellable": 10,
+   "joinIt_pool(>=3 letters)": 5,
+   "dictation_ok": true
+  },
+  {
+   "unit": 4,
+   "half": 2,
+   "words": 10,
+   "spellable": 9,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 5,
+   "half": 1,
+   "words": 10,
+   "spellable": 10,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 5,
+   "half": 2,
+   "words": 10,
+   "spellable": 9,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 6,
+   "half": 1,
+   "words": 10,
+   "spellable": 8,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 6,
+   "half": 2,
+   "words": 10,
+   "spellable": 9,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 7,
+   "half": 1,
+   "words": 10,
+   "spellable": 10,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 7,
+   "half": 2,
+   "words": 10,
+   "spellable": 10,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 8,
+   "half": 1,
+   "words": 10,
+   "spellable": 8,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 8,
+   "half": 2,
+   "words": 10,
+   "spellable": 9,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 9,
+   "half": 1,
+   "words": 10,
+   "spellable": 9,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 9,
+   "half": 2,
+   "words": 10,
+   "spellable": 10,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 10,
+   "half": 1,
+   "words": 10,
+   "spellable": 10,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 10,
+   "half": 2,
+   "words": 10,
+   "spellable": 10,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  },
+  {
+   "unit": 11,
+   "half": 1,
+   "words": 10,
+   "spellable": 10,
+   "joinIt_pool(>=3 letters)": 2,
+   "dictation_ok": true
+  },
+  {
+   "unit": 11,
+   "half": 2,
+   "words": 10,
+   "spellable": 10,
+   "joinIt_pool(>=3 letters)": 6,
+   "dictation_ok": true
+  }
+ ],
+ "quiz_pool": {
+  "1": 20,
+  "2": 20,
+  "3": 17,
+  "4": 19,
+  "5": 19,
+  "6": 17,
+  "7": 20,
+  "8": 17,
+  "9": 19,
+  "10": 20,
+  "11": 20
+ },
+ "assessment_passage_overlap": {
+  "11": [
+   4,
+   8
+  ]
+ },
+ "assessment_words_in_pool_not_yet_taught_at_unit12": 0
+}

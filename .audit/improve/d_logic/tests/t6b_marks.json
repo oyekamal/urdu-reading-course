@@ -1,0 +1,167 @@
+{
+ "r": {
+  "ڈ": {
+   "body then marks TAPPED": {
+    "verdict": "Coverage 88% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body then marks SQUIGGLED 28px": {
+    "verdict": "Coverage 89% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body lifted twice then marks tapped": {
+    "verdict": "Coverage 88% ✓ good · 4 strokes, aim for 2",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body 2 pieces then marks as 30px LINES": {
+    "verdict": "Coverage 84% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "1-piece body then marks as 45px LINES": {
+    "verdict": "Coverage 86% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   }
+  },
+  "ژ": {
+   "body then marks TAPPED": {
+    "verdict": "Coverage 100% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body then marks SQUIGGLED 28px": {
+    "verdict": "Coverage 100% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body lifted twice then marks tapped": {
+    "verdict": "Coverage 100% ✓ good · 6 strokes, aim for 4",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body 2 pieces then marks as 30px LINES": {
+    "verdict": "Coverage 100% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "1-piece body then marks as 45px LINES": {
+    "verdict": "Coverage 100% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   }
+  },
+  "پ": {
+   "body then marks TAPPED": {
+    "verdict": "Coverage 94% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body then marks SQUIGGLED 28px": {
+    "verdict": "Coverage 94% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body lifted twice then marks tapped": {
+    "verdict": "Coverage 93% ✓ good · 6 strokes, aim for 4",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body 2 pieces then marks as 30px LINES": {
+    "verdict": "Coverage 93% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "1-piece body then marks as 45px LINES": {
+    "verdict": "Coverage 94% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   }
+  },
+  "ث": {
+   "body then marks TAPPED": {
+    "verdict": "Coverage 95% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body then marks SQUIGGLED 28px": {
+    "verdict": "Coverage 95% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body lifted twice then marks tapped": {
+    "verdict": "Coverage 95% ✓ good · 6 strokes, aim for 4",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body 2 pieces then marks as 30px LINES": {
+    "verdict": "Coverage 95% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "1-piece body then marks as 45px LINES": {
+    "verdict": "Coverage 95% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   }
+  },
+  "ذ": {
+   "body then marks TAPPED": {
+    "verdict": "Coverage 99% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body then marks SQUIGGLED 28px": {
+    "verdict": "Coverage 99% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body lifted twice then marks tapped": {
+    "verdict": "Coverage 99% ✓ good · 4 strokes, aim for 2",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body 2 pieces then marks as 30px LINES": {
+    "verdict": "Coverage 91% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "1-piece body then marks as 45px LINES": {
+    "verdict": "Coverage 91% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   }
+  },
+  "ز": {
+   "body then marks TAPPED": {
+    "verdict": "Coverage 100% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body then marks SQUIGGLED 28px": {
+    "verdict": "Coverage 100% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body lifted twice then marks tapped": {
+    "verdict": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "body 2 pieces then marks as 30px LINES": {
+    "verdict": "Coverage 92% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   },
+   "1-piece body then marks as 45px LINES": {
+    "verdict": "Coverage 92% ✓ good",
+    "expected": "pass",
+    "as_expected": true
+   }
+  }
+ },
+ "bad": []
+}

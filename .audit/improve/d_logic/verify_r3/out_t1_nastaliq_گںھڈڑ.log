@@ -1,0 +1,17 @@
+39 letters
+گ isolated falseRej 0 falseAcc 1
+گ initial falseRej 16 falseAcc 0
+گ medial falseRej 0 falseAcc 0
+گ final falseRej 0 falseAcc 1
+ں isolated falseRej 0 falseAcc 0
+ں final falseRej 0 falseAcc 0
+ھ isolated falseRej 3 falseAcc 0
+ھ initial falseRej 2 falseAcc 0
+ھ medial falseRej 2 falseAcc 0
+ھ final falseRej 3 falseAcc 0
+ڈ isolated falseRej 16 falseAcc 0
+ڈ final falseRej 15 falseAcc 0
+ڑ isolated falseRej 7 falseAcc 0
+ڑ final falseRej 7 falseAcc 0
+errors ['The radius provided (-0.715641) is negative.', "Failed to execute 'arc' on 'CanvasRenderingContext2D': The radius provided (-0.468966) is negative."]
+POS 224 falseRej 71 NEG 98 falseAcc 2

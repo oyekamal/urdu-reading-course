@@ -1,0 +1,322 @@
+{
+ "A_after_timeup": [
+  [
+   "Mark last word reached",
+   false,
+   "btn btn-primary"
+  ],
+  [
+   "Score it",
+   true,
+   "btn btn-primary"
+  ],
+  [
+   "Read no words",
+   false,
+   "btn"
+  ],
+  [
+   "Skip",
+   false,
+   "btn"
+  ],
+  [
+   "Read to the end",
+   false,
+   "btn btn-primary"
+  ],
+  [
+   "Stopped early: tap last word",
+   false,
+   "btn"
+  ]
+ ],
+ "A_note": "Time is up. Tap the last word the child reached (or \"Read no words\"), then tap Score it.",
+ "A_after_mark1": [
+  [
+   "Mark last word reached",
+   false,
+   "btn btn-primary"
+  ],
+  [
+   "Score it",
+   true,
+   "btn btn-primary"
+  ],
+  [
+   "Read no words",
+   false,
+   "btn"
+  ],
+  [
+   "Skip",
+   false,
+   "btn"
+  ],
+  [
+   "Read to the end",
+   false,
+   "btn btn-primary"
+  ],
+  [
+   "Stopped early: tap last word",
+   false,
+   "btn"
+  ]
+ ],
+ "A_after_mark2": [
+  [
+   "Mark last word reached",
+   false,
+   "btn btn-primary"
+  ],
+  [
+   "Score it",
+   true,
+   "btn btn-primary"
+  ],
+  [
+   "Read no words",
+   false,
+   "btn"
+  ],
+  [
+   "Skip",
+   false,
+   "btn"
+  ],
+  [
+   "Read to the end",
+   false,
+   "btn btn-primary"
+  ],
+  [
+   "Stopped early: tap last word",
+   false,
+   "btn"
+  ]
+ ],
+ "A_wrong_marked": [
+  "5"
+ ],
+ "A_after_last": [
+  [
+   "Mark last word reached",
+   false,
+   "btn"
+  ],
+  [
+   "Score it",
+   false,
+   "btn btn-primary"
+  ],
+  [
+   "Read no words",
+   false,
+   "btn"
+  ],
+  [
+   "Skip",
+   false,
+   "btn"
+  ],
+  [
+   "Read to the end",
+   false,
+   "btn btn-primary"
+  ],
+  [
+   "Stopped early: tap last word",
+   false,
+   "btn"
+  ]
+ ],
+ "A_note2": "Last word reached: word 4. Tap Score it.",
+ "A_words": 51,
+ "A_next": "Comprehension — question 1 of 5",
+ "A_rows": {
+  "Letter sounds (clpm)": "0",
+  "Nonwords (cnwpm)": "0",
+  "Familiar words (cwpm)": "0",
+  "Passage fluency (cwpm)": "4",
+  "Passage accuracy": "100%",
+  "Comprehension": "5/5",
+  "Fluency alone vs grade-2 standard": "below standard",
+  "Overall (reading + understanding)": "below standard",
+  "Learning band": "letters"
+ },
+ "A_saved": {
+  "orf": {
+   "cwpm": 4,
+   "acc": 100,
+   "seconds": 60,
+   "errors": 0,
+   "attempted": 4,
+   "capped": false
+  },
+  "orfDone": true,
+  "band": "letters",
+  "level": "below standard",
+  "comp": 5,
+  "compDone": true
+ },
+ "C_next": "Comprehension — question 1 of 5",
+ "C_rows": {
+  "Letter sounds (clpm)": "0",
+  "Nonwords (cnwpm)": "0",
+  "Familiar words (cwpm)": "0",
+  "Passage fluency (cwpm)": "0",
+  "Passage accuracy": "0%",
+  "Comprehension": "0/5 (4 of 5 needed)",
+  "Fluency alone vs grade-2 standard": "nonreader",
+  "Overall (reading + understanding)": "nonreader",
+  "Learning band": "pre-reader"
+ },
+ "C_saved": {
+  "orf": {
+   "cwpm": 0,
+   "acc": 0,
+   "seconds": 60,
+   "errors": 0,
+   "attempted": 0,
+   "capped": false
+  },
+  "orfDone": true,
+  "band": "pre-reader",
+  "level": "nonreader"
+ },
+ "D_rows": {
+  "Letter sounds (clpm)": "0",
+  "Nonwords (cnwpm)": "0",
+  "Familiar words (cwpm)": "0",
+  "Passage fluency (cwpm)": "not tested",
+  "Passage accuracy": "-",
+  "Comprehension": "5/5",
+  "Fluency alone vs grade-2 standard": "not tested",
+  "Overall (reading + understanding)": "passage not tested: no standard result",
+  "Learning band": "not tested"
+ },
+ "D_saved": {
+  "orf": {
+   "cwpm": 0,
+   "acc": 0,
+   "seconds": 0,
+   "errors": 0
+  },
+  "orfDone": false,
+  "band": "not tested",
+  "level": "passage not tested: no standard result",
+  "comp": 5,
+  "compDone": true
+ },
+ "D_groupnote": null,
+ "E_rows": {
+  "Letter sounds (clpm)": "0",
+  "Nonwords (cnwpm)": "0",
+  "Familiar words (cwpm)": "0",
+  "Passage fluency (cwpm)": "not tested",
+  "Passage accuracy": "-",
+  "Comprehension": "not tested",
+  "Fluency alone vs grade-2 standard": "not tested",
+  "Overall (reading + understanding)": "passage not tested: no standard result",
+  "Learning band": "not tested"
+ },
+ "E_saved": {
+  "band": "not tested",
+  "level": "passage not tested: no standard result",
+  "compDone": false,
+  "orfDone": false
+ },
+ "F_early_note": "Only 3 s so far: too short to score. The timer is still running.",
+ "F_still_passage": true,
+ "F_ask_visible": true,
+ "F_next": "Comprehension — question 1 of 5",
+ "F_rows": {
+  "Letter sounds (clpm)": "0",
+  "Nonwords (cnwpm)": "0",
+  "Familiar words (cwpm)": "0",
+  "Passage fluency (cwpm)": "149",
+  "Passage accuracy": "100%",
+  "Comprehension": "5/5",
+  "Fluency alone vs grade-2 standard": "exceeds grade-2 standard",
+  "Overall (reading + understanding)": "exceeds grade-2 standard",
+  "Learning band": "fluent"
+ },
+ "F_saved": {
+  "orf": {
+   "cwpm": 149,
+   "acc": 100,
+   "seconds": 21,
+   "errors": 0,
+   "attempted": 51,
+   "capped": false
+  },
+  "band": "fluent",
+  "level": "exceeds grade-2 standard"
+ },
+ "G_note": "Tap the last word the child reached, then tap Child finished.",
+ "G_next": "Comprehension — question 1 of 5",
+ "G_saved": {
+  "orf": {
+   "cwpm": 29,
+   "acc": 100,
+   "seconds": 21,
+   "errors": 0,
+   "attempted": 10,
+   "capped": false
+  },
+  "band": "words"
+ },
+ "H_saved": {
+  "orf": {
+   "cwpm": 194,
+   "acc": 100,
+   "seconds": 16,
+   "errors": 0,
+   "attempted": 51,
+   "capped": false
+  },
+  "band": "fluent",
+  "level": "exceeds grade-2 standard"
+ },
+ "I_rows": {
+  "Letter sounds (clpm)": "0",
+  "Nonwords (cnwpm)": "0",
+  "Familiar words (cwpm)": "0",
+  "Passage fluency (cwpm)": "51",
+  "Passage accuracy": "100%",
+  "Comprehension": "3/5 (4 of 5 needed)",
+  "Fluency alone vs grade-2 standard": "below standard",
+  "Overall (reading + understanding)": "below standard",
+  "Learning band": "sentences"
+ },
+ "I_saved": {
+  "orf": {
+   "cwpm": 51,
+   "acc": 100,
+   "seconds": 60,
+   "errors": 0,
+   "attempted": 51,
+   "capped": false
+  },
+  "band": "sentences",
+  "level": "below standard"
+ },
+ "J_asked": true,
+ "J_empty_stays": true,
+ "J_next": "Subtask 2 — Nonword decoding (60s)",
+ "K_asked": false,
+ "K_h2": "Subtask 2 — Nonword decoding (60s)",
+ "L_rows": {
+  "Letter sounds (clpm)": "100 (100% of 100 attempted)",
+  "Nonwords (cnwpm)": "0",
+  "Familiar words (cwpm)": "0",
+  "Passage fluency (cwpm)": "not tested",
+  "Passage accuracy": "-",
+  "Comprehension": "not tested",
+  "Fluency alone vs grade-2 standard": "not tested",
+  "Overall (reading + understanding)": "passage not tested: no standard result",
+  "Learning band": "not tested"
+ },
+ "errors": []
+}

@@ -1,0 +1,21 @@
+- main:
+  - text: Unit 1 · lesson 7 of 13
+  - heading "Vowel marks" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - heading "Find the mark" [level=2]
+  - paragraph: Tap the word you hear. Listen for the short vowel.
+  - button "Play again"
+  - text: Round 1/4
+  - button "کَل"
+  - button "اِملا"
+  - button "کَمان"
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status: "Not quite. Count the dots: be has one"
+- status: "Correct: be"

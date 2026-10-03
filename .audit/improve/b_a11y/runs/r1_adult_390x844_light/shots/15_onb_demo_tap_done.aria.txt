@@ -1,0 +1,6 @@
+- main:
+  - text: Your first lesson Three out of three. Your ears already know them.
+  - button "Play again"
+  - button "Next"
+- status
+- status

@@ -1,0 +1,9 @@
+{
+ "lesson": "Vowel marks",
+ "card": "Find the mark",
+ "n_tiles": 3,
+ "wrong_tile": "اِمام",
+ "hint": "Almost! Tap the green one.",
+ "green_tiles": [],
+ "errors": []
+}

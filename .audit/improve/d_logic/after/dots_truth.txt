@@ -1,0 +1,5 @@
+letters checked 39
+letters whose glyph carries a small TAH (not a dot): ['ٹ', 'ڈ', 'ڑ']
+DOTS table vs font:
+   ('ی', 'app DOTS=0', {'isolated': (0, ''), 'final': (0, ''), 'initial': (2, ''), 'medial': (2, '')})
+   ('ج', 'app DOTS=1', {'isolated': (0, ''), 'final': (0, ''), 'initial': (1, ''), 'medial': (1, '')})

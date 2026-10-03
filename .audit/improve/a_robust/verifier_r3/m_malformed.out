@@ -1,0 +1,20 @@
+assess_ts_x      learner  pageerrors=[] csv=- appTextLen=1727 recovery=False
+assess_ts_x      teacher  pageerrors=['Invalid time value'] csv=NO DOWNLOAD appTextLen=365 recovery=False
+assess_ts_big    learner  pageerrors=[] csv=- appTextLen=1727 recovery=False
+assess_ts_big    teacher  pageerrors=['Invalid time value'] csv=NO DOWNLOAD appTextLen=365 recovery=False
+assess_nums_str  learner  pageerrors=[] csv=- appTextLen=1742 recovery=False
+assess_nums_str  teacher  pageerrors=[] csv=ok appTextLen=381 recovery=False
+assess_nan_inf   learner  pageerrors=[] csv=- appTextLen=1744 recovery=False
+assess_nan_inf   teacher  pageerrors=[] csv=ok appTextLen=383 recovery=False
+prog_at_x        learner  pageerrors=[] csv=- appTextLen=1716 recovery=False
+prog_at_x        teacher  pageerrors=[] csv=ok appTextLen=357 recovery=False
+prof_created_x   learner  pageerrors=[] csv=- appTextLen=1629 recovery=False
+prof_created_x   teacher  pageerrors=[] csv=ok appTextLen=357 recovery=False
+sess_x           learner  pageerrors=[] csv=- appTextLen=1629 recovery=False
+sess_x           teacher  pageerrors=[] csv=ok appTextLen=357 recovery=False
+att_ts_big       learner  pageerrors=[] csv=- appTextLen=1702 recovery=False
+att_ts_big       teacher  pageerrors=[] csv=ok appTextLen=357 recovery=False
+att_ts_neg       learner  pageerrors=[] csv=- appTextLen=1629 recovery=False
+att_ts_neg       teacher  pageerrors=[] csv=ok appTextLen=357 recovery=False
+card_due_x       learner  pageerrors=[] csv=- appTextLen=1629 recovery=False
+card_due_x       teacher  pageerrors=[] csv=ok appTextLen=357 recovery=False

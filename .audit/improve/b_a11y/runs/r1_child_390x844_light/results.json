@@ -1,0 +1,3607 @@
+{
+ "tag": "r1_child_390x844_light",
+ "args": {
+  "track": "child",
+  "vp": "390x844",
+  "fs": 1.0,
+  "scheme": "light",
+  "axe": 1,
+  "aria": 1,
+  "motion": "reduce",
+  "tag": "r1_child_390x844_light",
+  "port": "5199",
+  "touch": 1
+ },
+ "notes": [
+  "body.dataset.track after onboarding = child"
+ ],
+ "errors": [],
+ "results": [
+  {
+   "i": 1,
+   "screen": "onb_welcome",
+   "layout": [
+    [
+     "tap44-47",
+     "Restore from a backup",
+     "button.btn.btn-chip 173x44"
+    ]
+   ],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 166,
+    "topChrome": 0,
+    "freeH": 679,
+    "inCel": false,
+    "h": "Read Urdu in ten minutes a day",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Let's begin",
+     "top": 718,
+     "bottom": 774,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 1,
+      "nodes": [
+       {
+        "t": ".center",
+        "h": "<p class=\"muted center ob-small\">Free, no account, works offline</p>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: اردو پڑھنا سیکھیں\n  - heading \"Read Urdu in ten minutes a day\" [level=1]\n  - paragraph: Hi, I'm Marko. I'll teach you the letters one at a time, and you'll read a real word in the next two minutes.\n  - paragraph: Free, no account, works offline\n  - button \"Let's begin\"\n  - button \"Restore from a backup\"\n- status\n- status"
+  },
+  {
+   "i": 2,
+   "screen": "onb_wake",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "Marko is fast asleep",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": []
+   },
+   "aria": "- main:\n  - button \"Wake Marko up\"\n  - heading \"Marko is fast asleep\" [level=2]\n  - paragraph: Tap him to wake him up.\n- status\n- status"
+  },
+  {
+   "i": 3,
+   "screen": "onb_colour",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 762,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "This one",
+     "top": 774,
+     "bottom": 830,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - text: Pick my lucky colour! It will be on your badge too.\n  - button \"turquoise\"\n  - button \"saffron\" [pressed]\n  - button \"ajrak red\"\n  - button \"indigo\"\n  - button \"green\"\n  - button \"pink\"\n  - button \"This one\"\n- status\n- status"
+  },
+  {
+   "i": 4,
+   "screen": "onb_who",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - button \"Back\"\n  - text: First things first. Who is learning to read?\n  - button \"Me I want to read Urdu myself\"\n  - button \"My child Ages 5 to 10, I will sit with them\"\n  - button \"My children Two or three learners on this phone\"\n  - 'button \"My class Teacher mode: roster, scripts, reading test\"'\n- status\n- status"
+  },
+  {
+   "i": 5,
+   "screen": "onb_name",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 762,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 774,
+     "bottom": 830,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - button \"Back\"\n  - text: Zara! What a lovely name. Soon Zara will read it in Urdu.\n  - textbox \"Child's name\": Zara\n  - text: Z Zara's reading badge\n  - button \"Continue\"\n- status\n- status"
+  },
+  {
+   "i": 6,
+   "screen": "onb_goal",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - button \"Back\"\n  - text: Why should Zara learn to read Urdu?\n  - button \"Keep up in Urdu class Homework, class readers\"\n  - button \"Read with grandparents Stories and messages at home\"\n  - button \"A head start before school\"\n  - button \"Keep our language alive We live outside Pakistan\"\n  - button \"Enjoy Urdu stories\"\n- status\n- status"
+  },
+  {
+   "i": 7,
+   "screen": "onb_speak",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - button \"Back\"\n  - text: Does Zara speak Urdu?\n  - button \"Yes, at home every day Reading is the missing part\"\n  - button \"Understands, speaks a little\"\n  - button \"Not yet I'll say what every word means\"\n- status\n- status"
+  },
+  {
+   "i": 8,
+   "screen": "onb_pains",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 1037,
+    "scrollW": 390,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 762,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 774,
+     "bottom": 830,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - button \"Back\"\n  - text: What has made reading Urdu hard? Pick all that sound familiar.\n  - button \"The letters look alike\" [pressed]\n  - button \"Letters change shape when they join\"\n  - button \"Right to left feels backwards\"\n  - button \"No one to check me\" [pressed]\n  - button \"Old qaida books are boring\"\n  - button \"No time for long lessons\"\n  - button \"Apps full of ads, or they need internet\"\n  - button \"Continue\"\n- status\n- status"
+  },
+  {
+   "i": 9,
+   "screen": "onb_solution",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 762,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Show me",
+     "top": 774,
+     "bottom": 830,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - button \"Back\"\n  - text: Good news, Zara. I built this for exactly that. The letters look alike Look-alikes are taught side by side, and you count the dots No one to check me Every letter, word and sentence is spoken aloud\n  - paragraph: The same letter-sound method raised Urdu reading by 12.6 words a minute over normal classes in the USAID Pakistan Reading Project.\n  - button \"Show me\"\n- status\n- status"
+  },
+  {
+   "i": 10,
+   "screen": "onb_minutes",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - button \"Back\"\n  - text: How long will Zara practise a day?\n  - button \"5 minutes · gentle One letter a day, unit 1 in about 2 weeks\"\n  - button \"10 minutes · steady Most learners pick this, unit 1 in about a week\"\n  - button \"15 minutes · keen Reading short sentences in about a month\"\n- status\n- status"
+  },
+  {
+   "i": 11,
+   "screen": "onb_processing",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "Making Zara's path",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": []
+   },
+   "aria": "- main:\n  - heading \"Making Zara's path\" [level=2]\n  - list:\n    - listitem: Grouping the look-alike letters\n    - listitem: Setting a 10-minute day\n    - listitem: Leaving out English you already know\n    - listitem: Getting Marko's voice ready\n- status\n- status"
+  },
+  {
+   "i": 12,
+   "screen": "onb_demo_alif",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Next",
+     "top": 768,
+     "bottom": 824,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 1,
+      "nodes": [
+       {
+        "t": ".ob-glyph",
+        "h": "<button class=\"ob-glyph ur\" aria-label=\"Hear alif\" lang=\"ur\" dir=\"rtl\">ا</button>",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Your first lesson This is alif. It says aa, like in father.\n  - button \"Hear alif\": ا\n  - button \"Hear it again\"\n  - button \"Next\"\n- status\n- status"
+  },
+  {
+   "i": 13,
+   "screen": "onb_demo_be",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Next",
+     "top": 768,
+     "bottom": 824,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 1,
+      "nodes": [
+       {
+        "t": ".ob-glyph",
+        "h": "<button class=\"ob-glyph ur\" aria-label=\"Hear be\" lang=\"ur\" dir=\"rtl\">ب</button>",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Your first lesson This is be. It says b. See the one dot underneath?\n  - button \"Hear be\": ب\n  - button \"Hear it again\"\n  - button \"Next\"\n- status\n- status"
+  },
+  {
+   "i": 14,
+   "screen": "onb_demo_tap",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": ".tile.ur[lang=\"ur\"]:nth-child(1)",
+        "h": "<button class=\"tile ur\" lang=\"ur\" dir=\"rtl\" data-lc=\"1\"><i class=\"lc-spec\" aria-hidden=\"true\" data-v=\"\"></i>ا</button>",
+        "s": "Element content is too short to determine if it is actual text content"
+       },
+       {
+        "t": ".tile.ur[lang=\"ur\"]:nth-child(2)",
+        "h": "<button class=\"tile ur\" lang=\"ur\" dir=\"rtl\" data-lc=\"1\"><i class=\"lc-spec\" aria-hidden=\"true\" data-v=\"\"></i>ب</button>",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Your first lesson Listen, then tap the letter you hear.\n  - button \"Play again\"\n  - button \"ا\"\n  - button \"ب\"\n- status\n- status"
+  },
+  {
+   "i": 15,
+   "screen": "onb_demo_tap_done",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Next",
+     "top": 768,
+     "bottom": 824,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - text: Your first lesson Three out of three. Your ears already know them.\n  - button \"Play again\"\n  - button \"Next\"\n- status\n- status"
+  },
+  {
+   "i": 16,
+   "screen": "onb_demo_blend",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Join them",
+     "top": 768,
+     "bottom": 824,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - text: Your first lesson Put be before alif and they join into one sound. Urdu reads right to left. ا ب با\n  - button \"Join them\"\n- status\n- status"
+  },
+  {
+   "i": 17,
+   "screen": "onb_demo_blend_done",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Now a whole word",
+     "top": 768,
+     "bottom": 824,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - text: Your first lesson Put be before alif and they join into one sound. Urdu reads right to left. ا ب با\n  - button \"Hear baa\"\n  - paragraph: b + aa = baa\n  - button \"Now a whole word\"\n- status\n- status"
+  },
+  {
+   "i": 18,
+   "screen": "onb_demo_word",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - text: Your first lesson baa twice. Say it out loud, then tap to check.\n  - button \"Read the word, then tap to hear it\": بابا\n- status\n- status"
+  },
+  {
+   "i": 19,
+   "screen": "onb_demo_word_read",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Check me",
+     "top": 768,
+     "bottom": 824,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - text: Your first lesson baa twice. Say it out loud, then tap to check.\n  - button \"Read the word, then tap to hear it\": بابا\n  - text: baba · dad\n  - button \"Check me\"\n- status\n- status"
+  },
+  {
+   "i": 20,
+   "screen": "onb_demo_check",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - text: Your first lesson Last one. Which one says baba?\n  - button \"Play again\"\n  - button \"با\"\n  - button \"بابا\"\n- status\n- status"
+  },
+  {
+   "i": 21,
+   "screen": "onb_demo_check_ok",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "See what you did",
+     "top": 768,
+     "bottom": 824,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - text: Your first lesson You read it. Really read it.\n  - button \"Play again\"\n  - button \"با\" [disabled]\n  - button \"بابا ✓\" [disabled]\n  - button \"See what you did\"\n- status\n- status"
+  },
+  {
+   "i": 22,
+   "screen": "onb_value",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 152,
+    "topChrome": 0,
+    "freeH": 692,
+    "inCel": false,
+    "h": "Zara just read Urdu",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 774,
+     "bottom": 830,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": "h1",
+        "h": "<h1>Zara just read Urdu</h1>",
+        "s": "Element's background color could not be determined because element contains an image node"
+       },
+       {
+        "t": "p",
+        "h": "<p class=\"muted\">Two letters, one word, under two minutes. Send it to the family, they will want to hear about this.</p>",
+        "s": "Element's background color could not be determined because element contains an image node"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - heading \"Zara just read Urdu\" [level=1]\n  - text: بابا baba · dad · a first word\n  - paragraph: Two letters, one word, under two minutes. Send it to the family, they will want to hear about this.\n  - button \"Share Zara's first word\"\n  - button \"Continue\"\n- status\n- status"
+  },
+  {
+   "i": 23,
+   "screen": "onb_streak",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 930,
+    "scrollW": 390,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 762,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Let's keep it going",
+     "top": 774,
+     "bottom": 830,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 10,
+      "nodes": [
+       {
+        "t": ".ob-big-n",
+        "h": "<span class=\"ob-big-n pop\">1</span>",
+        "s": "Element content is too short to determine if it is actual text content"
+       },
+       {
+        "t": ".ob-streak-l",
+        "h": "<div class=\"ob-streak-l\">day practised</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": ".past:nth-child(1)",
+        "h": "<span class=\"past\"><i></i>M</span>",
+        "s": "Element content is too short to determine if it is actual text content"
+       },
+       {
+        "t": ".past:nth-child(2)",
+        "h": "<span class=\"past\"><i></i>T</span>",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: 1 day practised M T W T F S S\n  - paragraph: Day 1 counts, because Zara read بابا today. Read a little tomorrow and it becomes two.\n  - button \"Let's keep it going\"\n- status\n- status"
+  },
+  {
+   "i": 24,
+   "screen": "onb_commit",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - text: How many days in a row will Zara read with me?\n  - button \"3 days A good first try\"\n  - button \"7 days A whole week, the first six letters\"\n  - button \"14 days Two weeks, unit 1 done\"\n  - button \"30 days Reading short sentences\"\n- status\n- status"
+  },
+  {
+   "i": 25,
+   "screen": "onb_plan",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 942,
+    "scrollW": 390,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 762,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start my first lesson",
+     "top": 774,
+     "bottom": 830,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "help": "Page should contain a level-one heading",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "html",
+        "h": "<html lang=\"en\" style=\"--ur-scale: 1; --ur-spacing: 0em;\" class=\"\">",
+        "s": "Fix all of the following:\n  Page must have a level-one heading"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - text: Here is Zara's plan. I'll be there every day. First unit The first six ا ب ک ل م ن Every day 10 minutes, 7 days in a row one short lesson, then a quick review Up next Three quick rules, then alif about five minutes\n  - button \"Start my first lesson\"\n- status\n- status"
+  },
+  {
+   "i": 26,
+   "screen": "today_first",
+   "layout": [
+    [
+     "text-clipped-by-ancestor",
+     "Three rules",
+     "small in div.card.unit out by 4px"
+    ],
+    [
+     "text-clipped-by-ancestor",
+     "Finish unit",
+     "small in div.card.unit out by 3px"
+    ],
+    [
+     "text-clipped-by-ancestor",
+     "Unit check",
+     "small in div.card.unit out by 3px"
+    ],
+    [
+     "tap44-47",
+     "Switch learner",
+     "button.btn.btn-chip 82x44"
+    ],
+    [
+     "tap44-47",
+     "For parents: five things before letter o",
+     "summary 324x44"
+    ]
+   ],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 2268,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Good morning, Zara",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start: Three rules",
+     "top": 682,
+     "bottom": 740,
+     "w": 322,
+     "h": 58
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "heading-order",
+      "impact": "moderate",
+      "help": "Heading levels should only increase by one",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "h3",
+        "h": "<h3 class=\"hh-h3\">Your path</h3>",
+        "s": "Heading order invalid"
+       }
+      ]
+     }
+    ],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 34,
+      "nodes": [
+       {
+        "t": ".hh-top > div > .muted",
+        "h": "<div class=\"muted\">Unit 0 · Before the letters</div>",
+        "s": "Element's background color could not be determined because it is overlapped by another element"
+       },
+       {
+        "t": ".btn-chip",
+        "h": "<button class=\"btn btn-chip hh-who\" aria-label=\"Switch learner\">",
+        "s": "Element's background color could not be determined because it is overlapped by another element"
+       },
+       {
+        "t": ".hh-pearl > .cu",
+        "h": "<b class=\"cu\">0</b>",
+        "s": "Element content is too short to determine if it is actual text content"
+       },
+       {
+        "t": ".hh-pearl > small",
+        "h": "<small>pearls</small>",
+        "s": "Element's background color could not be determined due to a background image"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - heading \"Good morning, Zara\" [level=1]\n  - text: Unit 0 · Before the letters\n  - button \"Switch learner\": Zara\n  - text: 0 pearls\n  - 'img \"Daily goal: 0 of 10 minutes\"':\n    - img\n    - text: 0 / 10 min\n  - text: 1 day practised\n  - button \"Tap Marko to say hi\"\n  - text: Hi Zara! Let's earn your first pearl. Unit 0 Lesson 1 of 2 Start here Three rules\n  - 'button \"Start: Three rules\"'\n  - heading \"Your path\" [level=3]\n  - text: Unit 0 Before the letters حروف سے پہلے 0 of 2 pearls\n  - button \"Three rules, up next\": Three rules\n  - button \"Finish unit, locked\": Finish unit\n  - text: Unit 1 The first six پہلے چھ حرف Finish unit 0 to open this\n  - button \"alif, locked\": ا alif\n  - button \"be, locked\": ب be\n  - button \"kāf, locked\": ک kāf\n  - button \"lām, locked\": ل lām\n  - button \"mīm, locked\": م mīm\n  - button \"nūn, locked\": ن nūn\n  - button \"Vowel marks, locked\": بَ Vowel marks\n  - button \"Join them, locked\": Join them\n  - button \"Blend, locked\": با Blend\n  - button \"Words 1, locked\": Words 1\n  - button \"Words 2, locked\": Words 2\n  - button \"Read, locked\": Read\n  - button \"Unit check, locked\": Unit check\n  - button \"All units See every unit and the letter library\"\n  - heading \"Already read some Urdu?\" [level=2]\n  - paragraph: A 2-minute placement check skips the units you already know.\n  - button \"Take the placement check\"\n  - button \"Parent report for Zara\"\n  - group: \"For parents: five things before letter one\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status\n- status"
+  },
+  {
+   "i": 27,
+   "screen": "lesson_rules",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Three rules",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": ".muted",
+        "h": "<div class=\"muted\">Unit 0 · lesson 1 of 2</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Three rules</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 0 · lesson 1 of 2\n  - heading \"Three rules\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - heading \"Urdu is read right to left\" [level=2]\n  - paragraph: \"The first letter of a word is on the right. Your finger moves this way:\"\n  - text: ⟵\n  - button \"Continue\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status\n- status"
+  },
+  {
+   "i": 28,
+   "screen": "celebrate_lesson",
+   "layout": [
+    [
+     "tap44-47",
+     "Back to path",
+     "button.btn.cel-back 88x44"
+    ]
+   ],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": true,
+    "h": "Three rules",
+    "overlay": "div.celebrate"
+   },
+   "info": {
+    "primary": {
+     "label": "Next: Finish unit",
+     "top": 774,
+     "bottom": 830,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 4,
+      "nodes": [
+       {
+        "t": ".cel-back",
+        "h": "<button class=\"btn cel-back\" aria-label=\"Back to path\">",
+        "s": "Element's background color could not be determined because element contains an image node"
+       },
+       {
+        "t": "#a11y-h1",
+        "h": "<h1 id=\"a11y-h1\" tabindex=\"-1\">Three rules done!</h1>",
+        "s": "Element's background color could not be determined because element contains an image node"
+       },
+       {
+        "t": "p",
+        "h": "<p><b class=\"cel-total\">1</b> pearl on your thread · lesson 1 of 2</p>",
+        "s": "Element's background color could not be determined because element contains an image node"
+       },
+       {
+        "t": "b",
+        "h": "<b class=\"cel-total\">1</b>",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 0 · lesson 1 of 2\n  - heading \"Three rules\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status\n- status\n- dialog \"Three rules done!\":\n  - button \"Back to path\": Path\n  - heading \"Three rules done!\" [level=1]\n  - text: +1 pearl\n  - paragraph: 1 pearl on your thread · lesson 1 of 2\n  - 'button \"Next: Finish unit\"'"
+  },
+  {
+   "i": 29,
+   "screen": "lesson_done_unit",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Finish unit",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Unlock the next unit",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": ".muted",
+        "h": "<div class=\"muted\">Unit 0 · lesson 2 of 2</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Finish unit</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 0 · lesson 2 of 2\n  - heading \"Finish unit\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - text: A whole unit! Ready for more?\n  - heading \"Unit 0 done\" [level=2]\n  - paragraph: Now the first letter.\n  - button \"Unlock the next unit\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status\n- status"
+  },
+  {
+   "i": 30,
+   "screen": "celebrate_unit",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": true,
+    "h": "Finish unit",
+    "overlay": "div.celebrate.gold"
+   },
+   "info": {
+    "primary": {
+     "label": "Back to path",
+     "top": 774,
+     "bottom": 830,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "scrollable-region-focusable",
+      "impact": "serious",
+      "help": "Scrollable region must have keyboard access",
+      "n": 1,
+      "nodes": [
+       {
+        "t": ".cel-body",
+        "h": "<div class=\"cel-body\">",
+        "s": "Element should have focusable content"
+       }
+      ]
+     }
+    ],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 3,
+      "nodes": [
+       {
+        "t": "#a11y-h2",
+        "h": "<h1 id=\"a11y-h2\" tabindex=\"-1\">Unit 0 complete!</h1>",
+        "s": "Element's background color could not be determined because element contains an image node"
+       },
+       {
+        "t": "p",
+        "h": "<p><b class=\"cel-total\">2</b> pearls on your thread · lesson 2 of 2</p>",
+        "s": "Element's background color could not be determined because element contains an image node"
+       },
+       {
+        "t": "b",
+        "h": "<b class=\"cel-total\">2</b>",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 0 · lesson 2 of 2\n  - heading \"Finish unit\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status\n- status\n- dialog \"Unit 0 complete!\":\n  - heading \"Unit 0 complete!\" [level=1]\n  - text: +1 pearl\n  - paragraph: 2 pearls on your thread · lesson 2 of 2\n  - button \"Back to path\""
+  },
+  {
+   "i": 31,
+   "screen": "L_intro",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "I heard it",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 3,
+      "nodes": [
+       {
+        "t": "div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 2 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>be</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": ".big",
+        "h": "<div class=\"ur big\" style=\"font-size: calc(130px * var(--ur-scale,1));\" lang=\"ur\" dir=\"rtl\" data-urpx=\"130\">ب</div>",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 2 of 13\n  - heading \"be\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - text: ب be!\n  - button \"Say be again\"\n  - heading \"be\" [level=2]\n  - button \"Hear the word\"\n  - text: اب ab · now\n  - button \"I heard it\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status\n- status"
+  },
+  {
+   "i": 32,
+   "screen": "L_tellapart_start",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 5,
+      "nodes": [
+       {
+        "t": ".row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 2 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>be</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "p",
+        "h": "<p class=\"muted\">Listen, then tap the letter you hear.</p>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "button[aria-label=\"be\"]",
+        "h": "<button class=\"tile ur\" aria-label=\"be\" lang=\"ur\" dir=\"rtl\" data-lc=\"1\"><i class=\"lc-spec\" aria-hidden=\"true\" data-v=\"\"></i>ب</but",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 2 of 13\n  - heading \"be\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - paragraph: Listen, then tap the letter you hear.\n  - heading \"Tap what you hear\" [level=2]\n  - button \"Play sound\"\n  - button \"be\": ب\n  - button \"alif\": ا\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status\n- status"
+  },
+  {
+   "i": 33,
+   "screen": "L_tellapart_round",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 5,
+      "nodes": [
+       {
+        "t": ".row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 2 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>be</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "p",
+        "h": "<p class=\"muted\">Listen, then tap the letter you hear.</p>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "button[aria-label=\"be\"]",
+        "h": "<button class=\"tile ur\" aria-label=\"be\" data-right=\"names/be\" lang=\"ur\" dir=\"rtl\" data-lc=\"1\"><i class=\"lc-spec\" aria-hidden=\"true",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 2 of 13\n  - heading \"be\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - paragraph: Listen, then tap the letter you hear.\n  - heading \"Tap what you hear\" [level=2]\n  - button \"Play again\"\n  - text: Round 1/5 · 0 right\n  - button \"be\": ب\n  - button \"alif\": ا\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status\n- status"
+  },
+  {
+   "i": 34,
+   "screen": "L_tellapart_done",
+   "layout": [
+    [
+     "tap44-47",
+     "Again",
+     "button.btn.btn-chip 64x44"
+    ]
+   ],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 3,
+      "nodes": [
+       {
+        "t": ".row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 2 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>be</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "p",
+        "h": "<p class=\"muted\">Listen, then tap the letter you hear.</p>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 2 of 13\n  - heading \"be\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - paragraph: Listen, then tap the letter you hear.\n  - heading \"Tap what you hear\" [level=2]\n  - text: \"Done: 5/5\"\n  - button \"Again\"\n  - button \"Continue\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: \"Not quite. Count the dots: be has one\"\n- status: \"Correct: be\""
+  },
+  {
+   "i": 35,
+   "screen": "L_forms",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "I see it",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 8,
+      "nodes": [
+       {
+        "t": ".lesson > .row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 2 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>be</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": ".row:nth-child(3) > div:nth-child(2) > .ur[data-urpx=\"36\"][lang=\"ur\"] > span",
+        "h": "<span style=\"color:var(--accent)\">ب</span>",
+        "s": "Element content is too short to determine if it is actual text content"
+       },
+       {
+        "t": ".row:nth-child(4) > div:nth-child(2) > .ur[data-urpx=\"36\"][lang=\"ur\"] > span:nth-child(1)",
+        "h": "<span style=\"color:var(--accent)\">ب</span>",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 2 of 13\n  - heading \"be\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - region \"Lesson content\":\n    - heading \"Where it sits in a word\" [level=2]\n    - paragraph: It joins the next letter, so it changes shape.\n    - text: isolated ب اب ab · now\n    - button \"Play\"\n    - text: initial بـ بابا bābā · dad\n    - button \"Play\"\n    - text: medial ـبـ بابا bābā · dad\n    - button \"Play\"\n    - text: final ـب اب ab · now\n    - button \"Play\"\n  - button \"I see it\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: \"Not quite. Count the dots: be has one\"\n- status: \"Correct: be\""
+  },
+  {
+   "i": 36,
+   "screen": "L_trace",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Traced it",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div.score.trace-out polite",
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 3,
+      "nodes": [
+       {
+        "t": ".row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 2 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>be</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": ".les-scroll > p",
+        "h": "<p class=\"muted\">",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 2 of 13\n  - heading \"be\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - paragraph: start top-right, shallow bowl leftwards, hook up; dots last Start at the green dot. Dots last.\n  - heading \"Trace\" [level=2]\n  - paragraph: Start at the green dot. Body first, dots last.\n  - button \"Clear\"\n  - button \"Check\"\n  - button \"Traced it\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: \"Not quite. Count the dots: be has one\"\n- status: \"Correct: be\""
+  },
+  {
+   "i": 37,
+   "screen": "L_blend",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": ".row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 2 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>be</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 2 of 13\n  - heading \"be\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - heading \"Blend it\" [level=2]\n  - paragraph: \"be with alif says:\"\n  - text: با\n  - button \"Hear it\"\n  - button \"Continue\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: \"Not quite. Count the dots: be has one\"\n- status: \"Correct: be\""
+  },
+  {
+   "i": 38,
+   "screen": "L_check",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 4,
+      "nodes": [
+       {
+        "t": ".row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 2 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>be</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": ".tile.ur[lang=\"ur\"]:nth-child(1)",
+        "h": "<button class=\"tile ur\" lang=\"ur\" dir=\"rtl\" data-lc=\"1\"><i class=\"lc-spec\" aria-hidden=\"true\" data-v=\"\"></i>ا</button>",
+        "s": "Element content is too short to determine if it is actual text content"
+       },
+       {
+        "t": "button[data-right=\"names/be\"]",
+        "h": "<button class=\"tile ur\" data-right=\"names/be\" lang=\"ur\" dir=\"rtl\" data-lc=\"1\"><i class=\"lc-spec\" aria-hidden=\"true\" data-v=\"\"></i>",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 2 of 13\n  - heading \"be\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - heading \"Quick check\" [level=2]\n  - paragraph: Four questions on be.\n  - text: Question 1/4 Tap be\n  - button \"ا\"\n  - button \"ب\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: \"Not quite. Count the dots: be has one\"\n- status: \"Correct: be\""
+  },
+  {
+   "i": 39,
+   "screen": "L_check_done",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Finish",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": ".row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 2 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>be</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 2 of 13\n  - heading \"be\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - heading \"Quick check\" [level=2]\n  - paragraph: Four questions on be.\n  - text: 4/4 ✓\n  - button \"Play again\"\n  - text: Tap the letter you hear\n  - button \"Finish\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: \"Not quite. Count the dots: be has one\"\n- status: \"Correct: be\""
+  },
+  {
+   "i": 40,
+   "screen": "celebrate_letter",
+   "layout": [
+    [
+     "tap44-47",
+     "Back to path",
+     "button.btn.cel-back 88x44"
+    ]
+   ],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": true,
+    "h": "be",
+    "overlay": "div.celebrate"
+   },
+   "info": {
+    "primary": {
+     "label": "Next: kāf",
+     "top": 774,
+     "bottom": 830,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 4,
+      "nodes": [
+       {
+        "t": ".cel-back",
+        "h": "<button class=\"btn cel-back\" aria-label=\"Back to path\">",
+        "s": "Element's background color could not be determined because element contains an image node"
+       },
+       {
+        "t": "#a11y-h3",
+        "h": "<h1 id=\"a11y-h3\" tabindex=\"-1\">be done!</h1>",
+        "s": "Element's background color could not be determined because element contains an image node"
+       },
+       {
+        "t": "p",
+        "h": "<p><b class=\"cel-total\">4</b> pearls on your thread · lesson 2 of 13</p>",
+        "s": "Element's background color could not be determined because element contains an image node"
+       },
+       {
+        "t": "b",
+        "h": "<b class=\"cel-total\">4</b>",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 2 of 13\n  - heading \"be\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: \"Not quite. Count the dots: be has one\"\n- status: \"Correct: be\"\n- dialog \"be done!\":\n  - button \"Back to path\": Path\n  - heading \"be done!\" [level=1]\n  - text: +1 pearl\n  - paragraph: 4 pearls on your thread · lesson 2 of 13\n  - 'button \"Next: kāf\"'"
+  },
+  {
+   "i": 41,
+   "screen": "marks_intro",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Vowel marks",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Got it",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": ".lesson > .row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 7 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Vowel marks</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 7 of 13\n  - heading \"Vowel marks\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - region \"Lesson content\":\n    - text: \"Tiny marks, big job: they are the vowels.\"\n    - heading \"Small marks are vowels\" [level=2]\n    - paragraph: A letter alone has no vowel. Three small marks give it a short sound. Adult books drop them; we keep them on until unit 11.\n    - text: بَ zabar short a, as in \"but\" اَب ab · now\n    - button \"Play\"\n    - text: بِ zer short i, as in \"bit\" اِمام imām · prayer leader\n    - button \"Play\"\n    - text: بُ pesh short u, as in \"put\" مُلْک mulk · country\n    - button \"Play\"\n  - button \"Got it\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: \"Not quite. Count the dots: be has one\"\n- status: \"Correct: be\""
+  },
+  {
+   "i": 42,
+   "screen": "marks_find",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Vowel marks",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": ".row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 7 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Vowel marks</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 7 of 13\n  - heading \"Vowel marks\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - heading \"Find the mark\" [level=2]\n  - paragraph: Tap the word you hear. Listen for the short vowel.\n  - button \"Play again\"\n  - text: Round 1/4\n  - button \"اِمام\"\n  - button \"اَب\"\n  - button \"اِملا\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: \"Not quite. Count the dots: be has one\"\n- status: \"Correct: be\""
+  },
+  {
+   "i": 43,
+   "screen": "join_forms",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Join them",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 12,
+      "nodes": [
+       {
+        "t": ".muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 8 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Join them</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": ".card:nth-child(3) > .forms > div:nth-child(1) > small",
+        "h": "<small>isolated</small>",
+        "s": "Element's background color could not be determined because it is overlapped by another element"
+       },
+       {
+        "t": ".card:nth-child(3) > .forms > div:nth-child(2) > small",
+        "h": "<small>final</small>",
+        "s": "Element's background color could not be determined because it is overlapped by another element"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 8 of 13\n  - heading \"Join them\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - region \"Lesson content\":\n    - text: Letters hold hands. Watch them change!\n    - heading \"Letters join\" [level=2]\n    - paragraph: Each letter you learned in this unit, in all its shapes. Joiners change; ا never join forward.\n    - text: alif ا isolated ـا final be ب isolated بـ initial ـبـ medial ـب final kāf ک isolated کـ initial ـکـ medial ـک final lām ل isolated لـ initial ـلـ medial ـل final mīm م isolated مـ initial ـمـ medial ـم final nūn ن isolated نـ initial ـنـ medial ـن final\n  - button \"Continue\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: \"Correct: be\""
+  },
+  {
+   "i": 44,
+   "screen": "join_build",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Join them",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": ".row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 8 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Join them</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 8 of 13\n  - heading \"Join them\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - heading \"Build the word\" [level=2]\n  - paragraph: Tap the letters in reading order, right to left.\n  - text: \"Make: bābā — dad\"\n  - button \"Play\"\n  - button \"be\": ب\n  - button \"alif\": ا\n  - button \"be\": ب\n  - button \"alif\": ا\n  - button \"Next word\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: \"Correct: be\""
+  },
+  {
+   "i": 45,
+   "screen": "join_build_done",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Join them",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": ".row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 8 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Join them</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 8 of 13\n  - heading \"Join them\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - heading \"Build the word\" [level=2]\n  - paragraph: Tap the letters in reading order, right to left.\n  - text: \"Make: nām — name\"\n  - button \"Play\"\n  - text: نام\n  - button \"nūn\" [disabled]: ن ✓\n  - button \"alif\" [disabled]: ا ✓\n  - button \"mīm\" [disabled]: م ✓\n  - button \"Next word\"\n  - button \"Continue\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: \"Correct: nām\""
+  },
+  {
+   "i": 46,
+   "screen": "blend",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Blend",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 3,
+      "nodes": [
+       {
+        "t": "div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 9 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Blend</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": ".tile.ur[lang=\"ur\"]:nth-child(2)",
+        "h": "<button class=\"tile ur\" lang=\"ur\" dir=\"rtl\" data-lc=\"1\"><i class=\"lc-spec\" aria-hidden=\"true\" data-v=\"\"></i>ما</button>",
+        "s": "Element's background color could not be determined because it's partially obscured by another element"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 9 of 13\n  - heading \"Blend\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - text: Listen, then tap the sound you hear.\n  - heading \"Blend\" [level=2]\n  - paragraph: A letter plus a vowel makes a sound you can say. Tap what you hear.\n  - button \"Play again\"\n  - text: Round 1/6\n  - button \"با\"\n  - button \"ما\"\n  - button \"نا\"\n  - button \"لا\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: \"Correct: nām\""
+  },
+  {
+   "i": 47,
+   "screen": "blend_done",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Blend",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": "div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 9 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Blend</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 9 of 13\n  - heading \"Blend\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - text: Listen, then tap the sound you hear.\n  - heading \"Blend\" [level=2]\n  - paragraph: A letter plus a vowel makes a sound you can say. Tap what you hear.\n  - button \"Play again\"\n  - text: \"Done: 6/6\"\n  - button \"Continue\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: \"Correct: nām\""
+  },
+  {
+   "i": 48,
+   "screen": "words_read",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Read them",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": "div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 10 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Words 1</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 10 of 13\n  - heading \"Words 1\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - region \"Lesson content\":\n    - text: Real words! Tap one to hear it.\n    - heading \"Read\" [level=2]\n    - paragraph: Read aloud, then tap to listen.\n    - text: اَب ab now\n    - button \"Play\"\n    - text: بابا bābā dad\n    - button \"Play\"\n    - text: اِمام imām prayer leader\n    - button \"Play\"\n    - text: نام nām name\n    - button \"Play\"\n    - text: کام kām work\n    - button \"Play\"\n    - text: کَل kal tomorrow / yesterday\n    - button \"Play\"\n    - text: لال lāl red\n    - button \"Play\"\n    - text: بال bāl hair\n    - button \"Play\"\n    - text: ناک nāk nose\n    - button \"Play\"\n    - text: کان kān ear\n    - button \"Play\"\n    - heading \"Sentences\" [level=3]\n    - button \"Play\"\n    - text: بابا کا کام bābā kā kām dad's work\n    - button \"Play\"\n    - text: کالا بال kālā bāl black hair\n    - button \"Play\"\n    - text: نَمَک لا namak lā bring salt\n  - button \"Read them\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: \"Correct: nām\""
+  },
+  {
+   "i": 49,
+   "screen": "words_build",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": ".row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 10 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Words 1</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 10 of 13\n  - heading \"Words 1\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - heading \"Build the word\" [level=2]\n  - paragraph: Tap the letters in reading order, right to left.\n  - text: \"Make: bābā — dad\"\n  - button \"Play\"\n  - button \"be\": ب\n  - button \"be\": ب\n  - button \"alif\": ا\n  - button \"alif\": ا\n  - button \"Next word\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: \"Correct: nām\""
+  },
+  {
+   "i": 50,
+   "screen": "words_dictation",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Check",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 9,
+      "nodes": [
+       {
+        "t": ".row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 10 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Words 1</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "button[aria-label=\"alif\"]",
+        "h": "<button class=\"tile ur\" aria-label=\"alif\" lang=\"ur\" dir=\"rtl\" data-lc=\"1\"><i class=\"lc-spec\" aria-hidden=\"true\" data-v=\"\"></i>ا</b",
+        "s": "Element content is too short to determine if it is actual text content"
+       },
+       {
+        "t": "button[aria-label=\"be\"]",
+        "h": "<button class=\"tile ur\" aria-label=\"be\" lang=\"ur\" dir=\"rtl\" data-lc=\"1\"><i class=\"lc-spec\" aria-hidden=\"true\" data-v=\"\"></i>ب</but",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 10 of 13\n  - heading \"Words 1\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - heading \"Dictation\" [level=2]\n  - paragraph: Hear a word, spell it with the tiles.\n  - button \"Play word\"\n  - text: Word 1/5 · 0 right\n  - button \"alif\": ا\n  - button \"be\": ب\n  - button \"kāf\": ک\n  - button \"lām\": ل\n  - button \"mīm\": م\n  - button \"nūn\": ن\n  - button \"Erase\": ⌫\n  - button \"Skip\"\n  - button \"Check\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: \"Correct: nām\""
+  },
+  {
+   "i": 51,
+   "screen": "words_dictation_done",
+   "layout": [
+    [
+     "tap44-47",
+     "Again",
+     "button.btn.btn-chip 64x44"
+    ]
+   ],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 8,
+      "nodes": [
+       {
+        "t": ".row > div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 10 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Words 1</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "button[aria-label=\"alif\"]",
+        "h": "<button class=\"tile ur\" aria-label=\"alif\" lang=\"ur\" dir=\"rtl\" data-lc=\"1\"><i class=\"lc-spec\" aria-hidden=\"true\" data-v=\"\"></i>ا</b",
+        "s": "Element content is too short to determine if it is actual text content"
+       },
+       {
+        "t": "button[aria-label=\"be\"]",
+        "h": "<button class=\"tile ur\" aria-label=\"be\" lang=\"ur\" dir=\"rtl\" data-lc=\"1\"><i class=\"lc-spec\" aria-hidden=\"true\" data-v=\"\"></i>ب</but",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 10 of 13\n  - heading \"Words 1\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - heading \"Dictation\" [level=2]\n  - paragraph: Hear a word, spell it with the tiles.\n  - text: \"Done: 0/5\"\n  - button \"Again\"\n  - button \"alif\": ا\n  - button \"be\": ب\n  - button \"kāf\": ک\n  - button \"lām\": ل\n  - button \"mīm\": م\n  - button \"nūn\": ن\n  - button \"Erase\" [disabled]: ⌫\n  - button \"Skip\" [disabled]\n  - button \"Continue\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: It was کان — kān"
+  },
+  {
+   "i": 52,
+   "screen": "quiz",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Unit check",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Submit",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": "div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 13 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Unit check</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 13 of 13\n  - heading \"Unit check\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - region \"Lesson content\":\n    - text: Show me what you know. You can do it!\n    - heading \"Check\" [level=2]\n    - paragraph: Score 8 of 10 to pass this unit.\n    - list:\n      - listitem:\n        - text: Which one says nām (name)?\n        - button \"nām\": نام\n        - button \"makān\": مَکان\n        - button \"imlā\": اِملا\n        - button \"mālā\": مالا\n      - listitem:\n        - text: Which one says nāk (nose)?\n        - button \"mālā\": مالا\n        - button \"imlā\": اِملا\n        - button \"nāk\": ناک\n        - button \"namak\": نَمَک\n      - listitem:\n        - text: Which one says bāl (hair)?\n        - button \"bāl\": بال\n        - button \"kamāl\": کَمال\n        - button \"nām\": نام\n        - button \"ab\": اَب\n      - listitem:\n        - text: Which one says nānā (maternal grandfather)?\n        - button \"nāk\": ناک\n        - button \"lāl\": لال\n        - button \"kal\": کَل\n        - button \"nānā\": نانا\n      - listitem:\n        - text: Which one says kamāl (wonder)?\n        - button \"mulk\": مُلْک\n        - button \"mān\": مان\n        - button \"kamāl\": کَمال\n        - button \"kām\": کام\n      - listitem:\n        - text: Which one says mān (accept)?\n        - button \"lāl\": لال\n        - button \"kal\": کَل\n        - button \"mān\": مان\n        - button \"nām\": نام\n      - listitem:\n        - text: Which one says kān (ear)?\n        - button \"ab\": اَب\n        - button \"mān\": مان\n        - button \"namak\": نَمَک\n        - button \"kān\": کان\n      - listitem:\n        - text: Which one says makān (house)?\n        - button \"makān\": مَکان\n        - button \"nānā\": نانا\n        - button \"kamān\": کَمان\n        - button \"lāl\": لال\n      - listitem:\n        - text: Which one says lāl (red)?\n        - button \"nāk\": ناک\n        - button \"namak\": نَمَک\n        - button \"nānā\": نانا\n        - button \"lāl\": لال\n      - listitem:\n        - text: Which one says imlā (dictation)?\n        - button \"mulk\": مُلْک\n        - button \"imlā\": اِملا\n        - button \"kamān\": کَمان\n        - button \"nām\": نام\n  - button \"Submit\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: It was کان — kān"
+  },
+  {
+   "i": 53,
+   "screen": "quiz_done",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Unit check",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Finish",
+     "top": 690,
+     "bottom": 746,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 2,
+      "nodes": [
+       {
+        "t": "div:nth-child(1) > .muted",
+        "h": "<div class=\"muted\">Unit 1 · lesson 13 of 13</div>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "h1",
+        "h": "<h1>Unit check</h1>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - text: Unit 1 · lesson 13 of 13\n  - heading \"Unit check\" [level=1]\n  - button \"Repeat instruction\"\n  - button \"Leave lesson\"\n  - region \"Lesson content\":\n    - text: Show me what you know. You can do it!\n    - heading \"Check\" [level=2]\n    - paragraph: Score 8 of 10 to pass this unit.\n    - list:\n      - listitem:\n        - text: Which one says nām (name)?\n        - button \"nām\": نام ✓\n        - button \"makān\": مَکان\n        - button \"imlā\": اِملا\n        - button \"mālā\": مالا\n      - listitem:\n        - text: Which one says nāk (nose)?\n        - button \"mālā\": مالا\n        - button \"imlā\": اِملا\n        - button \"nāk\": ناک ✓\n        - button \"namak\": نَمَک\n      - listitem:\n        - text: Which one says bāl (hair)?\n        - button \"bāl\": بال ✓\n        - button \"kamāl\": کَمال\n        - button \"nām\": نام\n        - button \"ab\": اَب\n      - listitem:\n        - text: Which one says nānā (maternal grandfather)?\n        - button \"nāk\": ناک\n        - button \"lāl\": لال\n        - button \"kal\": کَل\n        - button \"nānā\": نانا ✓\n      - listitem:\n        - text: Which one says kamāl (wonder)?\n        - button \"mulk\": مُلْک\n        - button \"mān\": مان\n        - button \"kamāl\": کَمال ✓\n        - button \"kām\": کام\n      - listitem:\n        - text: Which one says mān (accept)?\n        - button \"lāl\": لال\n        - button \"kal\": کَل\n        - button \"mān\": مان ✓\n        - button \"nām\": نام\n      - listitem:\n        - text: Which one says kān (ear)?\n        - button \"ab\": اَب\n        - button \"mān\": مان\n        - button \"namak\": نَمَک\n        - button \"kān\": کان ✓\n      - listitem:\n        - text: Which one says makān (house)?\n        - button \"makān\": مَکان ✓\n        - button \"nānā\": نانا\n        - button \"kamān\": کَمان\n        - button \"lāl\": لال\n      - listitem:\n        - text: Which one says lāl (red)?\n        - button \"nāk\": ناک\n        - button \"namak\": نَمَک\n        - button \"nānā\": نانا\n        - button \"lāl\": لال ✓\n      - listitem:\n        - text: Which one says imlā (dictation)?\n        - button \"mulk\": مُلْک\n        - button \"imlā\": اِملا ✓\n        - button \"kamān\": کَمان\n        - button \"nām\": نام\n    - text: Score 10/10 — passed ✓\n  - button \"Finish\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: Unit 1 passed! Unit 2 unlocked"
+  },
+  {
+   "i": 54,
+   "screen": "today_unit2",
+   "layout": [
+    [
+     "text-clipped-by-ancestor",
+     "Unit check",
+     "small in div.card.unit out by 3px"
+    ],
+    [
+     "text-clipped-by-ancestor",
+     "Unit check",
+     "small in div.card.unit out by 3px"
+    ],
+    [
+     "tap44-47",
+     "Switch learner",
+     "button.btn.btn-chip 82x44"
+    ],
+    [
+     "tap44-47",
+     "8 to review",
+     "button.btn.btn-chip 116x44"
+    ]
+   ],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 2678,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Good morning, Zara",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start: te",
+     "top": 682,
+     "bottom": 740,
+     "w": 322,
+     "h": 58
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "heading-order",
+      "impact": "moderate",
+      "help": "Heading levels should only increase by one",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "h3",
+        "h": "<h3 class=\"hh-h3\">Your path</h3>",
+        "s": "Heading order invalid"
+       }
+      ]
+     }
+    ],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 48,
+      "nodes": [
+       {
+        "t": ".hh-top > div > .muted",
+        "h": "<div class=\"muted\">Unit 2 · Dots and the two ye</div>",
+        "s": "Element's background color could not be determined because it is overlapped by another element"
+       },
+       {
+        "t": ".hh-who",
+        "h": "<button class=\"btn btn-chip hh-who\" aria-label=\"Switch learner\">",
+        "s": "Element's background color could not be determined because it is overlapped by another element"
+       },
+       {
+        "t": ".hh-pearl > .cu",
+        "h": "<b class=\"cu\">15</b>",
+        "s": "Element's background color could not be determined due to a background image"
+       },
+       {
+        "t": ".hh-pearl > small",
+        "h": "<small>pearls</small>",
+        "s": "Element's background color could not be determined due to a background image"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - heading \"Good morning, Zara\" [level=1]\n  - text: Unit 2 · Dots and the two ye\n  - button \"Switch learner\": Zara\n  - text: 15 pearls\n  - 'img \"Daily goal: 1 of 10 minutes\"':\n    - img\n    - text: 1 / 10 min\n  - text: 1 day practised\n  - button \"Tap Marko to say hi\"\n  - text: Unit 2 is open, Zara! Unit 2 Lesson 1 of 9\n  - button \"8 to review\"\n  - text: ت Start here te\n  - 'button \"Start: te\"'\n  - heading \"Your path\" [level=3]\n  - text: Unit 1 The first six پہلے چھ حرف passed\n  - button \"alif, done\": alif\n  - button \"be, done\": be\n  - button \"kāf, done\": kāf\n  - button \"lām, done\": lām\n  - button \"mīm, done\": mīm\n  - button \"nūn, done\": nūn\n  - button \"Vowel marks, done\": Vowel marks\n  - button \"Join them, done\": Join them\n  - button \"Blend, done\": Blend\n  - button \"Words 1, done\": Words 1\n  - button \"Words 2, done\": Words 2\n  - button \"Read, done\": Read\n  - button \"Unit check, done\": Unit check\n  - text: Unit 2 Dots and the two ye نقطے اور دو یے 0 of 9 pearls\n  - button \"te, up next\": ت te\n  - button \"choṭī ye, locked\": ی choṭī ye\n  - button \"baṛī ye, locked\": ے baṛī ye\n  - button \"Join them, locked\": Join them\n  - button \"Blend, locked\": با Blend\n  - button \"Words 1, locked\": Words 1\n  - button \"Words 2, locked\": Words 2\n  - button \"Read, locked\": Read\n  - button \"Unit check, locked\": Unit check\n  - text: Unit 3 Finishing the be family بے کا خاندان Finish unit 2 to open this\n  - button \"pe, locked\": پ pe\n  - button \"ṭe, locked\": ٹ ṭe\n  - button \"s̱e, locked\": ث s̱e\n  - button \"Join them, locked\": Join them\n  - button \"Blend, locked\": با Blend\n  - button \"Words 1, locked\": Words 1\n  - button \"Words 2, locked\": Words 2\n  - button \"Read, locked\": Read\n  - button \"Unit check, locked\": Unit check\n  - button \"All units See every unit and the letter library\"\n  - button \"Parent report for Zara\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: Unit 1 passed! Unit 2 unlocked"
+  },
+  {
+   "i": 55,
+   "screen": "review_empty",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 134,
+    "topChrome": 0,
+    "freeH": 710,
+    "inCel": false,
+    "h": "Review",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Learn: unit 2",
+     "top": 710,
+     "bottom": 766,
+     "w": 358,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 6,
+      "nodes": [
+       {
+        "t": "h2",
+        "h": "<h2>All caught up</h2>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "p",
+        "h": "<p>Marko is resting. Your letters come back for review when they are about to slip, so there's nothing to do here today.</p>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "div:nth-child(1) > b",
+        "h": "<b>15</b>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "div:nth-child(1) > small",
+        "h": "<small>pearls</small>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - heading \"Review\" [level=1]\n  - text: Letters and words that are about to slip\n  - button \"Zara\"\n  - heading \"All caught up\" [level=2]\n  - paragraph: Marko is resting. Your letters come back for review when they are about to slip, so there's nothing to do here today.\n  - text: \"15 pearls 1 days practised Next up Unit 2: Dots and the two ye\"\n  - 'button \"Learn: unit 2\"'\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: Unit 1 passed! Unit 2 unlocked"
+  },
+  {
+   "i": 56,
+   "screen": "review_due",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 134,
+    "topChrome": 0,
+    "freeH": 710,
+    "inCel": false,
+    "h": "Review",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Got it",
+     "top": 710,
+     "bottom": 766,
+     "w": 214,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 1,
+      "nodes": [
+       {
+        "t": ".ur",
+        "h": "<div class=\"ur big\" lang=\"ur\" dir=\"rtl\">ا</div>",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - heading \"Review\" [level=1]\n  - text: Letters and words that are about to slip\n  - button \"Zara\"\n  - heading \"26 cards to review\" [level=2]\n  - text: 1 / 26 ا\n  - button \"Hear it\"\n  - text: Say the letter name and sound, then check\n  - button \"Not yet\"\n  - button \"Got it\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: Unit 1 passed! Unit 2 unlocked"
+  },
+  {
+   "i": 57,
+   "screen": "review_due_reveal",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 134,
+    "topChrome": 0,
+    "freeH": 710,
+    "inCel": false,
+    "h": "Review",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Got it",
+     "top": 710,
+     "bottom": 766,
+     "w": 214,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 1,
+      "nodes": [
+       {
+        "t": ".ur",
+        "h": "<div class=\"ur big\" lang=\"ur\" dir=\"rtl\">ا</div>",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - heading \"Review\" [level=1]\n  - text: Letters and words that are about to slip\n  - button \"Zara\"\n  - heading \"26 cards to review\" [level=2]\n  - text: 1 / 26 ا\n  - button \"Hear it\"\n  - text: Say the letter name and sound, then check alif — 'a' in father when long; a silent seat for short vowels at the start of a word\n  - button \"Not yet\"\n  - button \"Got it\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: Unit 1 passed! Unit 2 unlocked"
+  },
+  {
+   "i": 58,
+   "screen": "read_tab",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 1062,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Read",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "heading-order",
+      "impact": "moderate",
+      "help": "Heading levels should only increase by one",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "h3:nth-child(2)",
+        "h": "<h3>Sentences · unit 2</h3>",
+        "s": "Heading order invalid"
+       }
+      ]
+     }
+    ],
+    "inc": []
+   },
+   "aria": "- main:\n  - heading \"Read\" [level=1]\n  - text: Passages and sentences · read twice, watch your speed\n  - button \"Zara\"\n  - heading \"Sentences · unit 2\" [level=3]\n  - heading \"Read for speed\" [level=2]\n  - text: تین کِتاب بِلّی کالی ہَے نیلا تَکِیا لے 8 words. Tap Start, read aloud, tap Stop. Read it twice. 0.0 s\n  - button \"Start\"\n  - button \"Stop\" [disabled]\n  - button \"Play\"\n  - button \"Play\"\n  - button \"Play\"\n  - heading \"Sentences · unit 1\" [level=3]\n  - heading \"Read for speed\" [level=2]\n  - text: بابا کا کام کالا بال نَمَک لا 7 words. Tap Start, read aloud, tap Stop. Read it twice. 0.0 s\n  - button \"Start\"\n  - button \"Stop\" [disabled]\n  - button \"Play\"\n  - button \"Play\"\n  - button \"Play\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: Unit 1 passed! Unit 2 unlocked"
+  },
+  {
+   "i": 59,
+   "screen": "me_tab",
+   "layout": [
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ],
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ],
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ],
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ]
+   ],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 4030,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Me",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "empty-table-header",
+      "impact": "minor",
+      "help": "Table header text should not be empty",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "th:nth-child(4)",
+        "h": "<th></th>",
+        "s": "Element does not have text that is visible to screen readers"
+       }
+      ]
+     }
+    ],
+    "inc": [
+     {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "help": "Elements must only use permitted ARIA attributes",
+      "n": 39,
+      "nodes": [
+       {
+        "t": "span[title=\"alif · box 1 · seen 1\"]",
+        "h": "<span class=\"tile small ur\" title=\"alif · box 1 · seen 1\" aria-label=\"alif · box 1 · seen 1\" lang=\"ur\" dir=\"rtl\" style=\"min-width:",
+        "s": "Fix all of the following:\n  aria-label attribute is not well supported on a span with no valid role attribute."
+       },
+       {
+        "t": "span[title=\"be · box 1 · seen 0\"]",
+        "h": "<span class=\"tile small ur\" title=\"be · box 1 · seen 0\" aria-label=\"be · box 1 · seen 0\" lang=\"ur\" dir=\"rtl\" style=\"min-width: 44p",
+        "s": "Fix all of the following:\n  aria-label attribute is not well supported on a span with no valid role attribute."
+       },
+       {
+        "t": "span[title=\"kāf · box 1 · seen 0\"]",
+        "h": "<span class=\"tile small ur\" title=\"kāf · box 1 · seen 0\" aria-label=\"kāf · box 1 · seen 0\" lang=\"ur\" dir=\"rtl\" style=\"min-width: 4",
+        "s": "Fix all of the following:\n  aria-label attribute is not well supported on a span with no valid role attribute."
+       },
+       {
+        "t": "span[title=\"lām · box 1 · seen 0\"]",
+        "h": "<span class=\"tile small ur\" title=\"lām · box 1 · seen 0\" aria-label=\"lām · box 1 · seen 0\" lang=\"ur\" dir=\"rtl\" style=\"min-width: 4",
+        "s": "Fix all of the following:\n  aria-label attribute is not well supported on a span with no valid role attribute."
+       }
+      ]
+     },
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 41,
+      "nodes": [
+       {
+        "t": ".me-id > div > b",
+        "h": "<b>Zara</b>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": ".me-id > div > small",
+        "h": "<small class=\"muted\">Unit 2 · Dots and the two ye</small>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "span[title=\"alif · box 1 · seen 1\"]",
+        "h": "<span class=\"tile small ur\" title=\"alif · box 1 · seen 1\" aria-label=\"alif · box 1 · seen 1\" lang=\"ur\" dir=\"rtl\" style=\"min-width:",
+        "s": "Element content is too short to determine if it is actual text content"
+       },
+       {
+        "t": "span[title=\"be · box 1 · seen 0\"]",
+        "h": "<span class=\"tile small ur\" title=\"be · box 1 · seen 0\" aria-label=\"be · box 1 · seen 0\" lang=\"ur\" dir=\"rtl\" style=\"min-width: 44p",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - heading \"Me\" [level=1]\n  - button \"Zara\"\n  - text: Z Zara Unit 2 · Dots and the two ye 15 pearls 1 days practised 2 units done\n  - button \"Sticker book Your letter stickers live here ›\"\n  - text: \"Practice sheets Printable PDFs for each unit: tracing, reading, dictation and answer keys\"\n  - button \"Open practice sheets\"\n  - text: Units finished 2 of 13 Letters I know 0 of 6 Words I can read 0 of 20 Times I practised 0 Ready to practise again 25\n  - heading \"My letters\" [level=2]\n  - paragraph: \"Green: I know it. Amber: getting there. Red: let's practise. Grey: coming soon.\"\n  - text: ا ب ک ل م ن ت ی ے پ ٹ ث و ر د ہ س ش ج چ گ ں ھ ڈ ڑ ز ژ ف ق خ غ ع ح ص ض ط ظ ذ ئ\n  - heading \"Drill accuracy · last 14 days\" [level=2]\n  - table:\n    - rowgroup:\n      - row \"Drill Tries Right\":\n        - columnheader \"Drill\"\n        - columnheader \"Tries\"\n        - columnheader \"Right\"\n        - columnheader\n      - row \"Tell apart 10 50%\":\n        - cell \"Tell apart\"\n        - cell \"10\"\n        - cell \"50%\"\n        - cell\n      - row \"Build word 16 38%\":\n        - cell \"Build word\"\n        - cell \"16\"\n        - cell \"38%\"\n        - cell\n      - row \"Dictation 5 0%\":\n        - cell \"Dictation\"\n        - cell \"5\"\n        - cell \"0%\"\n        - cell\n      - row \"Check 10 100%\":\n        - cell \"Check\"\n        - cell \"10\"\n        - cell \"100%\"\n        - cell\n  - heading \"Needs work\" [level=2]\n  - paragraph: Most-missed items in the last four weeks. Tap to hear.\n  - button \"امام, 7 misses\": امام\n  - text: \"7\"\n  - button \"ب, 4 misses\": ب\n  - text: \"4\"\n  - button \"لا, 4 misses\": لا\n  - text: \"4\"\n  - button \"نا, 3 misses\": نا\n  - text: \"3\"\n  - button \"با, 3 misses\": با\n  - text: \"3\"\n  - button \"نام, 3 misses\": نام\n  - text: \"3\"\n  - button \"اب, 2 misses\": اب\n  - text: \"2\"\n  - button \"بابا, 2 misses\": بابا\n  - text: \"2\"\n  - heading \"Activity · last 4 weeks\" [level=2]\n  - paragraph: 0 active days of 28\n  - heading \"Settings and more\" [level=3]\n  - heading \"Settings\" [level=2]\n  - text: Track\n  - combobox \"Track\":\n    - option \"Child (5–10)\" [selected]\n    - option \"Adult, new to Urdu\"\n    - option \"Speaks Urdu, can't read\"\n  - text: Script\n  - combobox \"Script\":\n    - option \"Naskh (learning)\" [selected]\n    - option \"Nastaliq (print)\"\n  - text: Text size\n  - combobox \"Text size\":\n    - option \"Normal text\" [selected]\n    - option \"Large\"\n    - option \"Extra large\"\n  - text: Letter spacing\n  - combobox \"Letter spacing\":\n    - option \"Normal letter spacing\" [selected]\n    - option \"Wider\"\n    - option \"Widest (dyslexia-friendly)\"\n  - checkbox \"Show vowel marks (until unit 10)\" [checked]\n  - text: Show vowel marks (until unit 10)\n  - checkbox \"Show romanisation (Latin letters)\" [checked]\n  - text: Show romanisation (Latin letters)\n  - checkbox \"Audio-first mode (words hidden until tapped)\"\n  - text: Audio-first mode (words hidden until tapped)\n  - checkbox \"Sounds and vibration\" [checked]\n  - text: Sounds and vibration\n  - heading \"Data\" [level=2]\n  - paragraph: Everything stays on this phone. Export to keep a backup or move to another phone.\n  - button \"Export backup (JSON)\"\n  - button \"Import a backup (JSON)\"\n  - button \"Reset this profile's progress\"\n  - button \"Switch profile / mode\"\n  - heading \"Help make this better\" [level=2]\n  - paragraph: Urdu Qaida is free and made by one person in Pakistan. Found a wrong sound, a bug, or a missing word? Want to record a real voice, translate, or teach with it? Write to Kamal.\n  - button \"Email Kamal\"\n  - button \"Copy email address\"\n  - button \"Support Urdu Qaida\"\n  - paragraph: Version app 0.10.0 · pack-6cc38371 · 39 letters · 13 units · 490 clips\n  - paragraph: Voices are AI-generated and play from files stored on your device. No speech is generated online.\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: Unit 1 passed! Unit 2 unlocked"
+  },
+  {
+   "i": 60,
+   "screen": "sticker_book",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 4030,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Me",
+    "overlay": "div.stk-ov.stk-book"
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 14,
+      "nodes": [
+       {
+        "t": ".stk-back",
+        "h": "<button class=\"btn stk-back\" aria-label=\"Back\">←</button>",
+        "s": "Element content contains only non-text characters"
+       },
+       {
+        "t": ".stk-scroll > .stk-pg-head > b",
+        "h": "<b>Unit 1 · The first six</b>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": ".stk-scroll > .stk-pg-head > small",
+        "h": "<small>0 of 6</small>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "div[aria-label=\"Locked sticker: alif\"] > .stk-glyph.ur[lang=\"ur\"]",
+        "h": "<span class=\"stk-glyph ur\" lang=\"ur\" dir=\"rtl\">ا</span>",
+        "s": "Element content is too short to determine if it is actual text content"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - heading \"Me\" [level=1]\n  - button \"Zara\"\n  - text: Z Zara Unit 2 · Dots and the two ye 15 pearls 1 days practised 2 units done\n  - button \"Sticker book Your letter stickers live here ›\"\n  - text: \"Practice sheets Printable PDFs for each unit: tracing, reading, dictation and answer keys\"\n  - button \"Open practice sheets\"\n  - text: Units finished 2 of 13 Letters I know 0 of 6 Words I can read 0 of 20 Times I practised 0 Ready to practise again 25\n  - heading \"My letters\" [level=2]\n  - paragraph: \"Green: I know it. Amber: getting there. Red: let's practise. Grey: coming soon.\"\n  - text: ا ب ک ل م ن ت ی ے پ ٹ ث و ر د ہ س ش ج چ گ ں ھ ڈ ڑ ز ژ ف ق خ غ ع ح ص ض ط ظ ذ ئ\n  - heading \"Drill accuracy · last 14 days\" [level=2]\n  - table:\n    - rowgroup:\n      - row \"Drill Tries Right\":\n        - columnheader \"Drill\"\n        - columnheader \"Tries\"\n        - columnheader \"Right\"\n        - columnheader\n      - row \"Tell apart 10 50%\":\n        - cell \"Tell apart\"\n        - cell \"10\"\n        - cell \"50%\"\n        - cell\n      - row \"Build word 16 38%\":\n        - cell \"Build word\"\n        - cell \"16\"\n        - cell \"38%\"\n        - cell\n      - row \"Dictation 5 0%\":\n        - cell \"Dictation\"\n        - cell \"5\"\n        - cell \"0%\"\n        - cell\n      - row \"Check 10 100%\":\n        - cell \"Check\"\n        - cell \"10\"\n        - cell \"100%\"\n        - cell\n  - heading \"Needs work\" [level=2]\n  - paragraph: Most-missed items in the last four weeks. Tap to hear.\n  - button \"امام, 7 misses\": امام\n  - text: \"7\"\n  - button \"ب, 4 misses\": ب\n  - text: \"4\"\n  - button \"لا, 4 misses\": لا\n  - text: \"4\"\n  - button \"نا, 3 misses\": نا\n  - text: \"3\"\n  - button \"با, 3 misses\": با\n  - text: \"3\"\n  - button \"نام, 3 misses\": نام\n  - text: \"3\"\n  - button \"اب, 2 misses\": اب\n  - text: \"2\"\n  - button \"بابا, 2 misses\": بابا\n  - text: \"2\"\n  - heading \"Activity · last 4 weeks\" [level=2]\n  - paragraph: 0 active days of 28\n  - heading \"Settings and more\" [level=3]\n  - heading \"Settings\" [level=2]\n  - text: Track\n  - combobox \"Track\":\n    - option \"Child (5–10)\" [selected]\n    - option \"Adult, new to Urdu\"\n    - option \"Speaks Urdu, can't read\"\n  - text: Script\n  - combobox \"Script\":\n    - option \"Naskh (learning)\" [selected]\n    - option \"Nastaliq (print)\"\n  - text: Text size\n  - combobox \"Text size\":\n    - option \"Normal text\" [selected]\n    - option \"Large\"\n    - option \"Extra large\"\n  - text: Letter spacing\n  - combobox \"Letter spacing\":\n    - option \"Normal letter spacing\" [selected]\n    - option \"Wider\"\n    - option \"Widest (dyslexia-friendly)\"\n  - checkbox \"Show vowel marks (until unit 10)\" [checked]\n  - text: Show vowel marks (until unit 10)\n  - checkbox \"Show romanisation (Latin letters)\" [checked]\n  - text: Show romanisation (Latin letters)\n  - checkbox \"Audio-first mode (words hidden until tapped)\"\n  - text: Audio-first mode (words hidden until tapped)\n  - checkbox \"Sounds and vibration\" [checked]\n  - text: Sounds and vibration\n  - heading \"Data\" [level=2]\n  - paragraph: Everything stays on this phone. Export to keep a backup or move to another phone.\n  - button \"Export backup (JSON)\"\n  - button \"Import a backup (JSON)\"\n  - button \"Reset this profile's progress\"\n  - button \"Switch profile / mode\"\n  - heading \"Help make this better\" [level=2]\n  - paragraph: Urdu Qaida is free and made by one person in Pakistan. Found a wrong sound, a bug, or a missing word? Want to record a real voice, translate, or teach with it? Write to Kamal.\n  - button \"Email Kamal\"\n  - button \"Copy email address\"\n  - button \"Support Urdu Qaida\"\n  - paragraph: Version app 0.10.0 · pack-6cc38371 · 39 letters · 13 units · 490 clips\n  - paragraph: Voices are AI-generated and play from files stored on your device. No speech is generated online.\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: Unit 1 passed! Unit 2 unlocked\n- dialog \"Sticker book\":\n  - button \"Back\": ←\n  - heading \"My stickers\" [level=2]\n  - text: 0 of 39 letters Every letter you learn well becomes a sticker.\n  - progressbar \"Stickers collected\"\n  - tablist \"Units\":\n    - tab \"Unit 1, 0 of 6\" [selected]: 1 0/6\n    - tab \"Unit 2, 0 of 3\": 2 0/3\n    - tab \"Unit 3, 0 of 3\": 3 0/3\n    - tab \"Unit 4, 0 of 4\": 4 0/4\n    - tab \"Unit 5, 0 of 5\": 5 0/5\n    - tab \"Unit 6, 0 of 2\": 6 0/2\n    - tab \"Unit 7, 0 of 4\": 7 0/4\n    - tab \"Unit 8, 0 of 6\": 8 0/6\n    - tab \"Unit 9, 0 of 5\": 9 0/5\n    - tab \"Unit 10, 0 of 1\": 10 0/1\n  - text: Unit 1 · The first six 0 of 6\n  - 'img \"Locked sticker: alif\"': ا\n  - 'img \"Locked sticker: be\"': ب\n  - 'img \"Locked sticker: kāf\"': ک\n  - 'img \"Locked sticker: lām\"': ل\n  - 'img \"Locked sticker: mīm\"': م\n  - 'img \"Locked sticker: nūn\"': ن\n  - paragraph: These are waiting for you. Learn them well and they appear here.\n  - button \"Open the next page of stickers\":\n    - text: Up next · Unit 2 · Dots and the two ye 0 of 3 ›\n    - 'img \"Locked sticker: te\"': ت\n    - 'img \"Locked sticker: choṭī ye\"': ی\n    - 'img \"Locked sticker: baṛī ye\"': ے"
+  },
+  {
+   "i": 61,
+   "screen": "units_tab",
+   "layout": [
+    [
+     "tap44-47",
+     "Back to Learn",
+     "button.btn.btn-chip 141x44"
+    ],
+    [
+     "gap<6",
+     "Letter library · all 38 letters | Unit 0, Before the letters",
+     "0px apart"
+    ],
+    [
+     "gap<6",
+     "Letter library · all 38 letters | Unit 1, The first six",
+     "0px apart"
+    ]
+   ],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 2781,
+    "scrollW": 390,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 774,
+    "inCel": false,
+    "h": "Units",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [
+     {
+      "id": "heading-order",
+      "impact": "moderate",
+      "help": "Heading levels should only increase by one",
+      "n": 1,
+      "nodes": [
+       {
+        "t": "#library",
+        "h": "<h3 id=\"library\">Letter library · dictionary order</h3>",
+        "s": "Heading order invalid"
+       }
+      ]
+     }
+    ],
+    "inc": [
+     {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "n": 18,
+      "nodes": [
+       {
+        "t": "button[title=\"Finishing the be family\"] > b",
+        "h": "<b>Finishing the be family</b>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "button[title=\"Finishing the be family\"] > .muted.ur[data-urpx=\"18\"]",
+        "h": "<span class=\"ur muted\" style=\"font-size: calc(18px * var(--ur-scale,1));\" lang=\"ur\" dir=\"rtl\" data-urpx=\"18\">پ ٹ ث</span>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "button[title=\"The non-joiners\"] > b",
+        "h": "<b>The non-joiners</b>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       },
+       {
+        "t": "button[title=\"The non-joiners\"] > .muted.ur[data-urpx=\"18\"]",
+        "h": "<span class=\"ur muted\" style=\"font-size: calc(18px * var(--ur-scale,1));\" lang=\"ur\" dir=\"rtl\" data-urpx=\"18\">و ر د ہ</span>",
+        "s": "Element's background color could not be determined due to a background gradient"
+       }
+      ]
+     }
+    ]
+   },
+   "aria": "- main:\n  - button \"Back to Learn\"\n  - heading \"Units\" [level=1]\n  - text: Tap a unit to open its lesson\n  - button \"Zara\"\n  - button \"Letter library · all 38 letters\"\n  - button \"Unit 0, Before the letters\": Unit 0 Before the letters\n  - button \"Unit 1, The first six\": Unit 1 The first six ا ب ک ل م ن\n  - button \"Unit 2, Dots and the two ye\": Unit 2 Dots and the two ye ت ی ے\n  - button \"Unit 3, Finishing the be family, locked\": Unit 3 Finishing the be family پ ٹ ث\n  - button \"Unit 4, The non-joiners, locked\": Unit 4 The non-joiners و ر د ہ\n  - button \"Unit 5, Sīn, jīm and gāf, locked\": Unit 5 Sīn, jīm and gāf س ش ج چ گ\n  - button \"Unit 6, Breath and nose, locked\": Unit 6 Breath and nose ں ھ\n  - button \"Unit 7, Retroflex and z, locked\": Unit 7 Retroflex and z ڈ ڑ ز ژ\n  - button \"Unit 8, Sounds from Arabic and Persian, locked\": Unit 8 Sounds from Arabic and Persian ف ق خ غ ع ح\n  - button \"Unit 9, Same sound, different letter, locked\": Unit 9 Same sound, different letter ص ض ط ظ ذ\n  - button \"Unit 10, Hamza, marks and numbers, locked\": Unit 10 Hamza, marks and numbers ئ ۃ\n  - button \"Unit 11, Reading like a grown-up, locked\": Unit 11 Reading like a grown-up\n  - button \"Unit 12, Fluency and the reading test, locked\": Unit 12 Fluency and the reading test\n  - heading \"Letter library · dictionary order\" [level=3]\n  - button \"ا\"\n  - button \"ب\"\n  - button \"پ\"\n  - button \"ت\"\n  - button \"ٹ\"\n  - button \"ث\"\n  - button \"ج\"\n  - button \"چ\"\n  - button \"ح\"\n  - button \"خ\"\n  - button \"د\"\n  - button \"ڈ\"\n  - button \"ذ\"\n  - button \"ر\"\n  - button \"ڑ\"\n  - button \"ز\"\n  - button \"ژ\"\n  - button \"س\"\n  - button \"ش\"\n  - button \"ص\"\n  - button \"ض\"\n  - button \"ط\"\n  - button \"ظ\"\n  - button \"ع\"\n  - button \"غ\"\n  - button \"ف\"\n  - button \"ق\"\n  - button \"ک\"\n  - button \"گ\"\n  - button \"ل\"\n  - button \"م\"\n  - button \"ن\"\n  - button \"و\"\n  - button \"ہ\"\n  - button \"ھ\"\n  - button \"ئ\"\n  - button \"ی\"\n  - button \"ے\"\n  - navigation \"Main\":\n    - button \"Learn\"\n    - button \"Review\"\n    - button \"Read\"\n    - button \"Me\"\n- status: Not quite. Almost! Tap the green one.\n- status: Unit 1 passed! Unit 2 unlocked"
+  },
+  {
+   "i": 62,
+   "screen": "mode_picker",
+   "layout": [
+    [
+     "no-primary",
+     "-",
+     "expected a .btn-primary"
+    ]
+   ],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 896,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "Urdu Qaida",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": []
+   },
+   "aria": "- main:\n  - text: اردو پڑھنا سیکھیں\n  - heading \"Urdu Qaida\" [level=1]\n  - paragraph: Works fully offline. Who is this device for?\n  - button \"Just me One learner, child or adult\"\n  - button \"My family A parent with one to three children\"\n  - button \"My class A teacher with a roster, lesson scripts and the reading assessment\"\n  - button \"Restore from a backup\"\n- status\n- status"
+  },
+  {
+   "i": 63,
+   "screen": "profile_picker",
+   "layout": [],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "Who is learning?",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": []
+   },
+   "aria": "- main:\n  - heading \"Who is learning?\" [level=1]\n  - text: Tap a name, or add one\n  - button \"+ Add a learner\"\n  - button \"Change device type\"\n- status\n- status"
+  },
+  {
+   "i": 64,
+   "screen": "add_learner_form",
+   "layout": [
+    [
+     "tap44-47",
+     "colour 1",
+     "button.swatch.on 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 2",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 3",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 4",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 5",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 6",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 7",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 8",
+     "button.swatch 44x44"
+    ]
+   ],
+   "meta": {
+    "W": 390,
+    "H": 844,
+    "scrollH": 844,
+    "scrollW": 390,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 844,
+    "inCel": false,
+    "h": "New learner",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start",
+     "top": 433,
+     "bottom": 489,
+     "w": 324,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   },
+   "axe": {
+    "v": [],
+    "inc": []
+   },
+   "aria": "- main:\n  - heading \"New learner\" [level=1]\n  - text: Name\n  - textbox \"Name\"\n  - text: Track\n  - combobox \"Track\":\n    - option \"Child (5–10)\" [selected]\n    - option \"Adult, new to Urdu\"\n    - option \"Speaks Urdu, can't read\"\n  - text: Grade\n  - combobox \"Grade\":\n    - option \"No grade\" [selected]\n    - option \"Grade 1\"\n    - option \"Grade 2\"\n    - option \"Grade 3\"\n    - option \"Grade 4\"\n    - option \"Grade 5\"\n  - text: Colour\n  - button \"colour 1\"\n  - button \"colour 2\"\n  - button \"colour 3\"\n  - button \"colour 4\"\n  - button \"colour 5\"\n  - button \"colour 6\"\n  - button \"colour 7\"\n  - button \"colour 8\"\n  - button \"Start\"\n  - button \"Back\"\n- status\n- status"
+  }
+ ]
+}

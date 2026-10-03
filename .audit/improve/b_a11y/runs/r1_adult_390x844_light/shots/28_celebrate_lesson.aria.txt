@@ -1,0 +1,20 @@
+- main:
+  - text: Unit 0 · lesson 1 of 2
+  - heading "Three rules" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status
+- status
+- dialog "Three rules done!":
+  - button "Back to path": Path
+  - heading "Three rules done!" [level=1]
+  - text: +1 pearl
+  - paragraph: 1 pearl on your thread · lesson 1 of 2
+  - 'button "Next: Finish unit"'

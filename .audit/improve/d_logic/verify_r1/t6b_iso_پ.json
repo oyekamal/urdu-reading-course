@@ -1,0 +1,181 @@
+{
+ "res": [
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "single_good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nbody": 1,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "single_smooth_slow",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nbody": 1,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "single_shaky1.5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nbody": 1,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "single_shaky3",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nbody": 1,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "single_wander5",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nbody": 1,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "single_wander9",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 78% — keep tracing",
+   "nbody": 1,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "single_lift1",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nbody": 2,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "single_lift2",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nbody": 3,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "single_start_off20",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nbody": 1,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "single_overshoot15",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nbody": 1,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "multi_good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nbody": 1,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 77% — keep tracing",
+   "nbody": 1,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "bad_tiny_dot",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 0% — keep tracing",
+   "nbody": 1,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "bad_scribble",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 63% — keep tracing",
+   "nbody": 1,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "bad_dashes10",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 44% — keep tracing",
+   "nbody": 10,
+   "nmarks": 3,
+   "nexp": 3
+  },
+  {
+   "ch": "پ",
+   "form": "isolated",
+   "variant": "bad_zigzag_fill",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 94% — stay inside the letter",
+   "nbody": 1,
+   "nmarks": 3,
+   "nexp": 3
+  }
+ ],
+ "errors": []
+}

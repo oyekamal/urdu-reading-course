@@ -1,0 +1,16 @@
+errors []
+N 144 rej 14
+ا isolated off+6 Coverage 78% — keep tracing
+د isolated off+6 Coverage 78% — keep tracing
+د final center_bodytop Coverage 100% — Start at the green dot
+د final wob9_bodytop Coverage 98% — Start at the green dot
+گ initial off+6 Coverage 79% — keep tracing
+ڈ final center Coverage 100% — Start at the green dot
+ڈ final center_bodytop Coverage 100% — Start at the green dot
+ڈ final off+6 Coverage 86% — Start at the green dot
+ڈ final wob9 Coverage 99% — Start at the green dot
+ڈ final wob9_bodytop Coverage 97% — Start at the green dot
+ط medial center_bodytop Coverage 100% — Start at the green dot
+ط medial wob9_bodytop Coverage 97% — Start at the green dot
+ط final center_bodytop Coverage 98% — Start at the green dot
+ط final wob9_bodytop Coverage 100% — Start at the green dot

@@ -1,0 +1,272 @@
+[
+ {
+  "ch": "ڈ",
+  "mark": "dash8",
+  "ok": true,
+  "msg": "Coverage 89% ✓ good",
+  "body_len": 143,
+  "dot": [
+   217.98549107142856,
+   80
+  ],
+  "start": [
+   189,
+   109
+  ]
+ },
+ {
+  "ch": "ڈ",
+  "mark": "squiggle",
+  "ok": false,
+  "msg": "Coverage 99% — Start at the green dot and follow the arrow",
+  "body_len": 143,
+  "dot": [
+   217.98549107142856,
+   80
+  ],
+  "start": [
+   189,
+   109
+  ]
+ },
+ {
+  "ch": "ڈ",
+  "mark": "loop",
+  "ok": true,
+  "msg": "Coverage 98% ✓ good",
+  "body_len": 143,
+  "dot": [
+   217.98549924577986,
+   80
+  ],
+  "start": [
+   189,
+   109
+  ]
+ },
+ {
+  "ch": "ڑ",
+  "mark": "dash8",
+  "ok": true,
+  "msg": "Coverage 91% ✓ good",
+  "body_len": 162,
+  "dot": [
+   212.99665178571428,
+   90.99236641221374
+  ],
+  "start": [
+   190,
+   114
+  ]
+ },
+ {
+  "ch": "ڑ",
+  "mark": "squiggle",
+  "ok": true,
+  "msg": "Coverage 99% ✓ good",
+  "body_len": 162,
+  "dot": [
+   212.99665178571428,
+   90.99236641221374
+  ],
+  "start": [
+   190,
+   114
+  ]
+ },
+ {
+  "ch": "ڑ",
+  "mark": "loop",
+  "ok": true,
+  "msg": "Coverage 98% ✓ good",
+  "body_len": 162,
+  "dot": [
+   212.99665178571428,
+   90.99236641221374
+  ],
+  "start": [
+   190,
+   114
+  ]
+ },
+ {
+  "ch": "ز",
+  "mark": "dash8",
+  "ok": true,
+  "msg": "Coverage 100% ✓ good",
+  "body_len": 156,
+  "dot": [
+   212.99665178571428,
+   100.98388464800678
+  ],
+  "start": [
+   190,
+   114
+  ]
+ },
+ {
+  "ch": "ز",
+  "mark": "squiggle",
+  "ok": true,
+  "msg": "Coverage 100% ✓ good",
+  "body_len": 156,
+  "dot": [
+   212.99665178571428,
+   100.98388464800678
+  ],
+  "start": [
+   190,
+   114
+  ]
+ },
+ {
+  "ch": "ز",
+  "mark": "loop",
+  "ok": true,
+  "msg": "Coverage 100% ✓ good",
+  "body_len": 156,
+  "dot": [
+   212.99665178571428,
+   100.98388464800678
+  ],
+  "start": [
+   190,
+   114
+  ]
+ },
+ {
+  "ch": "ذ",
+  "mark": "dash8",
+  "ok": true,
+  "msg": "Coverage 100% ✓ good",
+  "body_len": 136,
+  "dot": [
+   217.98549107142856,
+   89.99151823579304
+  ],
+  "start": [
+   189,
+   109
+  ]
+ },
+ {
+  "ch": "ذ",
+  "mark": "squiggle",
+  "ok": false,
+  "msg": "Coverage 100% — Start at the green dot and follow the arrow",
+  "body_len": 136,
+  "dot": [
+   217.98549924577986,
+   89.99151823579304
+  ],
+  "start": [
+   189,
+   109
+  ]
+ },
+ {
+  "ch": "ذ",
+  "mark": "loop",
+  "ok": true,
+  "msg": "Coverage 100% ✓ good",
+  "body_len": 136,
+  "dot": [
+   217.98549107142856,
+   89.99151823579304
+  ],
+  "start": [
+   189,
+   109
+  ]
+ },
+ {
+  "ch": "ژ",
+  "mark": "dash8",
+  "ok": true,
+  "msg": "Coverage 100% ✓ good",
+  "body_len": 161,
+  "dot": [
+   212.99665178571428,
+   91.99321458863443
+  ],
+  "start": [
+   190,
+   114
+  ]
+ },
+ {
+  "ch": "ژ",
+  "mark": "squiggle",
+  "ok": false,
+  "msg": "Coverage 100% — stay inside the letter",
+  "body_len": 161,
+  "dot": [
+   212.99665996006556,
+   91.99321458863443
+  ],
+  "start": [
+   190,
+   114
+  ]
+ },
+ {
+  "ch": "ژ",
+  "mark": "loop",
+  "ok": true,
+  "msg": "Coverage 100% ✓ good",
+  "body_len": 161,
+  "dot": [
+   212.99665178571428,
+   91.99321458863443
+  ],
+  "start": [
+   190,
+   114
+  ]
+ },
+ {
+  "ch": "ٹ",
+  "mark": "dash8",
+  "ok": true,
+  "msg": "Coverage 91% ✓ good",
+  "body_len": 199,
+  "dot": [
+   246.99776785714286,
+   101.98473282442748
+  ],
+  "start": [
+   230,
+   104
+  ]
+ },
+ {
+  "ch": "ٹ",
+  "mark": "squiggle",
+  "ok": true,
+  "msg": "Coverage 99% ✓ good",
+  "body_len": 199,
+  "dot": [
+   246.99777603149414,
+   101.98473282442748
+  ],
+  "start": [
+   230,
+   104
+  ]
+ },
+ {
+  "ch": "ٹ",
+  "mark": "loop",
+  "ok": true,
+  "msg": "Coverage 98% ✓ good",
+  "body_len": 199,
+  "dot": [
+   246.99776785714286,
+   101.98473282442748
+  ],
+  "start": [
+   230,
+   104
+  ]
+ }
+]

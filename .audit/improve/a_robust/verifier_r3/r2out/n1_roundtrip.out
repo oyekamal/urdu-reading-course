@@ -1,0 +1,14 @@
+export keys ['format', 'version', 'exportedAt', 'device', 'settings', 'profiles', 'attempts', 'cards', 'sessions', 'progress', 'assessments'] settings keys ['stickersSeen:p1', 'ui'] PIN in file: False teacherName in file False device mus9jru9n6nq4p
+welcome restore toast: Restored 44 records. | screen: Who is learning? | Tap a name, or add one | A | Amal | chi
+profiles 3 3 LOSSLESS  []
+attempts 30 30 LOSSLESS  []
+cards 3 3 LOSSLESS  []
+sessions 2 2 [('s2', {'bites': ([], 0)})]  []
+progress 1 1 LOSSLESS  []
+assessments 3 3 LOSSLESS  []
+settings B keys: ['deviceId', 'mode', 'onb', 'stickersSeen:p1', 'ui'] | ui {'style': 'nastaliq', 'marks': False, 'scale': '1.25', 'rom': False, 'audioOnly': True, 'spacing': '0.12'} | seen ['ا', 'ب'] | mode family pin None active None dev same? False
+second import toast: Nothing new to restore: this phone already has everything in that file. | confirm False
+old backup over newer edit toast: Nothing new to restore: this phone already has everything in that file. | name now ['Edited']
+newer backup: confirm sheet shown? True | Replace data on this phone? |  | This backup has 3 learners (FromBackup, Bina, Tahir). It adds 0 new records and replaces 1 that are already here with the backup's version. |  | Cancel | Replace
+ after Cancel: toast Nothing was changed. name ['Edited']
+errs [] []

@@ -1,0 +1,14 @@
+prog3/0: first burst 0px->33%; before last 67%; after finish burst {'w': '100%', 'cel': 1, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 1 of 2 | Three rules | Learn'}
+    cel-go burst -> {'w': '0px', 'cel': 0, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 2 of 2 | Finish unit | A who'} tab bar active: today errs []
+dbl/0: first burst 0px->33%; before last 67%; after finish burst {'w': '100%', 'cel': 1, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 1 of 2 | Three rules | Learn'}
+    cel-go burst -> {'w': '0px', 'cel': 0, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 2 of 2 | Finish unit | A who'} tab bar active: today errs []
+cc3/0: first burst 0px->33%; before last 67%; after finish burst {'w': '100%', 'cel': 1, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 1 of 2 | Three rules | Learn'}
+    cel-go burst -> {'w': '0px', 'cel': 0, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 2 of 2 | Finish unit | A who'} tab bar active: today errs []
+mouse/0: first burst 0px->33%; before last 67%; after finish burst {'w': '100%', 'cel': 1, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 1 of 2 | Three rules | Learn'}
+    cel-go burst -> {'w': '0px', 'cel': 0, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 2 of 2 | Finish unit | A who'} tab bar active: today errs []
+mouse/100: first burst 0px->33%; before last 67%; after finish burst {'w': '100%', 'cel': 1, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 1 of 2 | Three rules | Learn'}
+    cel-go burst -> {'w': '0px', 'cel': 0, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 2 of 2 | Finish unit | A who'} tab bar active: today errs []
+mouse/200: first burst 0px->33%; before last 67%; after finish burst {'w': '100%', 'cel': 1, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 1 of 2 | Three rules | Learn'}
+    cel-go burst -> {'w': '0px', 'cel': 0, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 2 of 2 | Finish unit | A who'} tab bar active: today errs []
+mouse/300: first burst 0px->33%; before last 67%; after finish burst {'w': '100%', 'cel': 1, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 1 of 2 | Three rules | Learn'}
+    cel-go burst -> {'w': '0px', 'cel': 0, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 2 of 2 | Finish unit | A who'} tab bar active: today errs []

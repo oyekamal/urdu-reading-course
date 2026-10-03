@@ -1,0 +1,376 @@
+{
+ "finish at 0s, never marked, then wait to expiry -> must ask where the child got to": {
+  "click0": "ok",
+  "note0": "Only 0 s so far: too short to score. The timer is still running.",
+  "still_passage": true,
+  "after_expiry_note": "Time is up. Tap the last word the child reached (or \"Read no words\"), then tap Score it.",
+  "scoreit_state": "disabled",
+  "h2": "Passage — oral reading fluency",
+  "errors": []
+ },
+ "finish at 1s / 14s / 14.9s ignored; 15s accepted with mark": {
+  "t1": true,
+  "t14": true,
+  "t14.9": true,
+  "t15_moved_on": true,
+  "res": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "76",
+   "Passage accuracy": "95%",
+   "Comprehension": "5/5",
+   "Fluency alone vs grade-2 standard": "meets standard",
+   "Overall (reading + understanding)": "meets standard",
+   "Learning band": "fluent"
+  },
+  "errors": []
+ },
+ "60s expiry with mark at word 30, 3 errors": {
+  "res": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "27",
+   "Passage accuracy": "90%",
+   "Comprehension": "5/5",
+   "Fluency alone vs grade-2 standard": "below standard",
+   "Overall (reading + understanding)": "below standard",
+   "Learning band": "words"
+  },
+  "rec": {
+   "id": "gqll9ivgwktr20sw",
+   "profileId": "pE",
+   "ts": 1700000100060500,
+   "letters": 0,
+   "nonwords": 0,
+   "words": 0,
+   "orf": {
+    "cwpm": 27,
+    "acc": 90,
+    "seconds": 60,
+    "errors": 3,
+    "attempted": 30,
+    "capped": false
+   },
+   "comp": 5,
+   "compDone": true,
+   "band": "words",
+   "level": "below standard",
+   "by": "teacher"
+  },
+  "errors": []
+ },
+ "all words wrong then mark last 52, finish at 40s": {
+  "res": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "0",
+   "Passage accuracy": "0%",
+   "Comprehension": "0/5 (4 of 5 needed)",
+   "Fluency alone vs grade-2 standard": "nonreader",
+   "Overall (reading + understanding)": "nonreader",
+   "Learning band": "pre-reader"
+  },
+  "errors": []
+ },
+ "forgot mark, finish at 30s, says read to end -> seconds 30": {
+  "ask_visible": true,
+  "yes": "ok",
+  "res": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "104",
+   "Passage accuracy": "100%",
+   "Comprehension": "4/5",
+   "Fluency alone vs grade-2 standard": "exceeds grade-2 standard",
+   "Overall (reading + understanding)": "exceeds grade-2 standard",
+   "Learning band": "fluent"
+  },
+  "rec": {
+   "id": "gqll9iutdcdpkoo4",
+   "profileId": "pE",
+   "ts": 1700000100030000,
+   "letters": 0,
+   "nonwords": 0,
+   "words": 0,
+   "orf": {
+    "cwpm": 104,
+    "acc": 100,
+    "seconds": 30,
+    "errors": 0,
+    "attempted": 52,
+    "capped": false
+   },
+   "comp": 4,
+   "compDone": true,
+   "band": "fluent",
+   "level": "exceeds grade-2 standard",
+   "by": "teacher"
+  },
+  "errors": []
+ },
+ "mark word 10 then change mark to word 4, finish at 20s": {
+  "res": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "15",
+   "Passage accuracy": "100%",
+   "Comprehension": "3/5 (4 of 5 needed)",
+   "Fluency alone vs grade-2 standard": "below standard",
+   "Overall (reading + understanding)": "below standard",
+   "Learning band": "letters"
+  },
+  "errors": []
+ },
+ "mark then accidental quick Finish at 2s, continue, timer expiry": {
+  "still": true,
+  "res": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "13",
+   "Passage accuracy": "100%",
+   "Comprehension": "5/5",
+   "Fluency alone vs grade-2 standard": "below standard",
+   "Overall (reading + understanding)": "below standard",
+   "Learning band": "letters"
+  },
+  "errors": []
+ },
+ "Skip passage then comprehension 5/5": {
+  "res": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "0",
+   "Passage accuracy": "0%",
+   "Comprehension": "5/5",
+   "Fluency alone vs grade-2 standard": "nonreader",
+   "Overall (reading + understanding)": "nonreader",
+   "Learning band": "pre-reader"
+  },
+  "rec": {
+   "id": "gqll9iu680y72r6k",
+   "profileId": "pE",
+   "ts": 1700000100000000,
+   "letters": 0,
+   "nonwords": 0,
+   "words": 0,
+   "orf": {
+    "cwpm": 0,
+    "acc": 0,
+    "seconds": 0,
+    "errors": 0
+   },
+   "comp": 5,
+   "compDone": true,
+   "band": "pre-reader",
+   "level": "nonreader",
+   "by": "teacher"
+  },
+  "errors": []
+ },
+ "double-click Finish at 20s with mark (two clicks same tick)": {
+  "res": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "123",
+   "Passage accuracy": "100%",
+   "Comprehension": "5/5",
+   "Fluency alone vs grade-2 standard": "exceeds grade-2 standard",
+   "Overall (reading + understanding)": "exceeds grade-2 standard",
+   "Learning band": "fluent"
+  },
+  "rec": {
+   "id": "gqll9iulnk7qijqm",
+   "profileId": "pE",
+   "ts": 1700000100020000,
+   "letters": 0,
+   "nonwords": 0,
+   "words": 0,
+   "orf": {
+    "cwpm": 123,
+    "acc": 100,
+    "seconds": 20,
+    "errors": 0,
+    "attempted": 41,
+    "capped": false
+   },
+   "comp": 5,
+   "compDone": true,
+   "band": "fluent",
+   "level": "exceeds grade-2 standard",
+   "by": "teacher"
+  },
+  "n_records": 1,
+  "errors": []
+ },
+ "expiry then Read no words": {
+  "none": "ok",
+  "res": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "0",
+   "Passage accuracy": "0%",
+   "Comprehension": "2/5 (4 of 5 needed)",
+   "Fluency alone vs grade-2 standard": "nonreader",
+   "Overall (reading + understanding)": "nonreader",
+   "Learning band": "pre-reader"
+  },
+  "rec": {
+   "id": "gqll9ivgwkf1p7d4",
+   "profileId": "pE",
+   "ts": 1700000100060500,
+   "letters": 0,
+   "nonwords": 0,
+   "words": 0,
+   "orf": {
+    "cwpm": 0,
+    "acc": 0,
+    "seconds": 60,
+    "errors": 0,
+    "attempted": 0,
+    "capped": false
+   },
+   "comp": 2,
+   "compDone": true,
+   "band": "pre-reader",
+   "level": "nonreader",
+   "by": "teacher"
+  },
+  "errors": []
+ },
+ "expiry: mark at 52 (end) in awaiting then Score it, comprehension 1/5": {
+  "score": "ok",
+  "res": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "52",
+   "Passage accuracy": "100%",
+   "Comprehension": "1/5 (4 of 5 needed)",
+   "Fluency alone vs grade-2 standard": "below standard",
+   "Overall (reading + understanding)": "below standard",
+   "Learning band": "sentences"
+  },
+  "errors": []
+ },
+ "exactly at 15.0s finish with mark at last word (cap check)": {
+  "res": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "200 (capped: check the timing)",
+   "Passage accuracy": "100%",
+   "Comprehension": "5/5",
+   "Fluency alone vs grade-2 standard": "exceeds grade-2 standard",
+   "Overall (reading + understanding)": "exceeds grade-2 standard",
+   "Learning band": "fluent"
+  },
+  "rec": {
+   "id": "gqll9iuhsottmrwv",
+   "profileId": "pE",
+   "ts": 1700000100015000,
+   "letters": 0,
+   "nonwords": 0,
+   "words": 0,
+   "orf": {
+    "cwpm": 200,
+    "acc": 100,
+    "seconds": 15,
+    "errors": 0,
+    "attempted": 52,
+    "capped": true
+   },
+   "comp": 5,
+   "compDone": true,
+   "band": "fluent",
+   "level": "exceeds grade-2 standard",
+   "by": "teacher"
+  },
+  "errors": []
+ },
+ "click Finish at 59.9s with mark, then timer expiry fires": {
+  "res": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "31",
+   "Passage accuracy": "100%",
+   "Comprehension": "5/5",
+   "Fluency alone vs grade-2 standard": "below standard",
+   "Overall (reading + understanding)": "below standard",
+   "Learning band": "words"
+  },
+  "rec": {
+   "id": "gqll9ivh7oq1zm97",
+   "profileId": "pE",
+   "ts": 1700000100060900,
+   "letters": 0,
+   "nonwords": 0,
+   "words": 0,
+   "orf": {
+    "cwpm": 31,
+    "acc": 100,
+    "seconds": 60,
+    "errors": 0,
+    "attempted": 31,
+    "capped": false
+   },
+   "comp": 5,
+   "compDone": true,
+   "band": "words",
+   "level": "below standard",
+   "by": "teacher"
+  },
+  "n": 1,
+  "errors": []
+ },
+ "mark word, finish at 60s expiry+comprehension skipped": {
+  "res": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "52",
+   "Passage accuracy": "100%",
+   "Comprehension": "not tested",
+   "Fluency alone vs grade-2 standard": "below standard",
+   "Overall (reading + understanding)": "below standard",
+   "Learning band": "sentences"
+  },
+  "rec": {
+   "id": "gqll9ivhagxadfm3",
+   "profileId": "pE",
+   "ts": 1700000100061000,
+   "letters": 0,
+   "nonwords": 0,
+   "words": 0,
+   "orf": {
+    "cwpm": 52,
+    "acc": 100,
+    "seconds": 60,
+    "errors": 0,
+    "attempted": 52,
+    "capped": false
+   },
+   "comp": 0,
+   "compDone": false,
+   "band": "sentences",
+   "level": "below standard",
+   "by": "teacher"
+  },
+  "errors": []
+ },
+ "no click at all for 120 s (timer expiry) then nothing: is state sane": {
+  "note": "Time is up. Tap the last word the child reached (or \"Read no words\"), then tap Score it.",
+  "h2": "Passage — oral reading fluency (60s)",
+  "timer": "0",
+  "errors": []
+ }
+}

@@ -1,0 +1,165 @@
+{
+ "passage_words": 51,
+ "scenarios": {
+  "finish_at_0.2s": {
+   "still_passage": true,
+   "note": "Only 0 s so far: too short to score. The timer is still running."
+  },
+  "finish_at_1s": {
+   "still_passage": true
+  },
+  "finish_at_14s": {
+   "still_passage": true
+  },
+  "timeout_without_mark": {
+   "still_passage": true,
+   "note": "Time is up. Tap the last word the child reached (or \"Read no words\"), then tap Score it.",
+   "score_button": "Score it"
+  },
+  "12_words_forgot_mark_then_asked": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "12",
+   "Passage accuracy": "100%",
+   "Comprehension": "0/5 (4 of 5 needed)",
+   "Fluency alone vs grade-2 standard": "below standard",
+   "Overall (reading + understanding)": "below standard",
+   "Learning band": "letters"
+  },
+  "12_words_marked_cwpm": {
+   "passage_after": "Comprehension — question 1 of 5"
+  },
+  "12_words_marked_rows": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "12",
+   "Passage accuracy": "100%",
+   "Comprehension": "5/5",
+   "Fluency alone vs grade-2 standard": "below standard",
+   "Overall (reading + understanding)": "below standard",
+   "Learning band": "letters"
+  },
+  "read_none": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "0",
+   "Passage accuracy": "0%",
+   "Comprehension": "5/5",
+   "Fluency alone vs grade-2 standard": "nonreader",
+   "Overall (reading + understanding)": "nonreader",
+   "Learning band": "pre-reader"
+  },
+  "finish_36s_asks": {
+   "ask_visible": true
+  },
+  "finish_36s_whole_passage": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "84",
+   "Passage accuracy": "100%",
+   "Comprehension": "5/5",
+   "Fluency alone vs grade-2 standard": "meets standard",
+   "Overall (reading + understanding)": "meets standard",
+   "Learning band": "fluent"
+  },
+  "finish_36s_stopped_word20": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "33",
+   "Passage accuracy": "100%",
+   "Comprehension": "5/5",
+   "Fluency alone vs grade-2 standard": "below standard",
+   "Overall (reading + understanding)": "below standard",
+   "Learning band": "words"
+  },
+  "all_words_wrong": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "0",
+   "Passage accuracy": "0%",
+   "Comprehension": "5/5",
+   "Fluency alone vs grade-2 standard": "nonreader",
+   "Overall (reading + understanding)": "nonreader",
+   "Learning band": "pre-reader"
+  },
+  "whole_passage_in_15s": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "200 (capped: check the timing)",
+   "Passage accuracy": "100%",
+   "Comprehension": "5/5",
+   "Fluency alone vs grade-2 standard": "exceeds grade-2 standard",
+   "Overall (reading + understanding)": "exceeds grade-2 standard",
+   "Learning band": "fluent"
+  },
+  "comp_0": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "88",
+   "Passage accuracy": "100%",
+   "Comprehension": "0/5 (4 of 5 needed)",
+   "Fluency alone vs grade-2 standard": "meets standard",
+   "Overall (reading + understanding)": "below standard: reads fast, understands too little",
+   "Learning band": "sentences"
+  },
+  "comp_3": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "88",
+   "Passage accuracy": "100%",
+   "Comprehension": "3/5 (4 of 5 needed)",
+   "Fluency alone vs grade-2 standard": "meets standard",
+   "Overall (reading + understanding)": "below standard: reads fast, understands too little",
+   "Learning band": "sentences"
+  },
+  "comp_4": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "88",
+   "Passage accuracy": "100%",
+   "Comprehension": "4/5",
+   "Fluency alone vs grade-2 standard": "meets standard",
+   "Overall (reading + understanding)": "meets standard",
+   "Learning band": "fluent"
+  },
+  "comp_5": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "88",
+   "Passage accuracy": "100%",
+   "Comprehension": "5/5",
+   "Fluency alone vs grade-2 standard": "meets standard",
+   "Overall (reading + understanding)": "meets standard",
+   "Learning band": "fluent"
+  },
+  "comp_skipped": {
+   "Letter sounds (clpm)": "0",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "0",
+   "Passage fluency (cwpm)": "88",
+   "Passage accuracy": "100%",
+   "Comprehension": "not tested",
+   "Fluency alone vs grade-2 standard": "meets standard",
+   "Overall (reading + understanding)": "fluent, comprehension not tested: not yet a standard result",
+   "Learning band": "sentences"
+  },
+  "saved_record": {
+   "cwpm": 88,
+   "band": "sentences",
+   "level": "fluent, comprehension not tested: not yet a standard result",
+   "compDone": false
+  }
+ },
+ "page_errors": []
+}

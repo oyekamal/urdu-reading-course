@@ -17,7 +17,7 @@ a{color:var(--accent)}
 <body>
 <main>
 <h1>Urdu Qaida · Privacy policy</h1>
-<p class="muted">App: Urdu Qaida (package <code>com.oyekamal.urdureader</code>) · Developer: Muhammad Kamal, Pakistan · Effective 24 September 2026 (audio section updated for the ElevenLabs voice)</p>
+<p class="muted">App: Urdu Qaida (package <code>com.oyekamal.urdureader</code>) · Developer: Muhammad Kamal, Pakistan · Effective 24 September 2026 (contact, donation and audio wording updated; backup and storage wording updated 3 October 2026)</p>
 
 <h2>The short version</h2>
 <p>Urdu Qaida works completely offline. It has no account, no login, no ads, no analytics, and no tracking. Everything a learner does stays on the phone it was done on. We never see it.</p>
@@ -34,28 +34,31 @@ a{color:var(--accent)}
 
 <h2>What the app does not do</h2>
 <ul>
-<li>No internet connection is needed or used for learning. The app requests the INTERNET permission only so that the optional links below can open in your browser.</li>
+<li>No internet connection is needed or used for learning. Lessons, sounds, fonts and the practice PDFs are all inside the app. The app does not send or fetch anything over the network, and a security policy built into the app (a Content-Security-Policy that only allows the app's own files) blocks it from contacting any other address. The optional links below open in your own email app.</li>
 <li>No advertising, no advertising ID, no analytics, no crash reporting, no third-party SDKs that collect data.</li>
-<li>No microphone, camera, location, contacts, or file access. Reading-aloud drills are timed by tapping; nothing is recorded.</li>
+<li>No microphone, camera, location or contacts. The app reads a file from your phone only when you choose a backup to restore, and writes a backup or practice sheet to its own temporary cache only when you export or share one. Reading-aloud drills are timed by tapping; nothing is recorded.</li>
 <li>No accounts and no in-app purchases.</li>
 </ul>
 
 <h2>Sharing you start yourself</h2>
 <p>Two features send data out, and only when you tap them:</p>
 <ul>
-<li><b>Export backup / Share report</b> creates a file or text on your phone and hands it to the Android share sheet. Where it goes (WhatsApp, email, Drive) is your choice, under that app's privacy policy.</li>
-<li><b>Help make this better</b> (More tab) opens WhatsApp or GitHub in your browser to contact the developer. These links sit behind a simple grown-ups-only arithmetic question. Nothing is sent until you write a message there.</li>
-<li><b>Donate</b> (More tab, behind the same grown-ups question) shows the developer's Easypaisa mobile-wallet number and can copy it or open the Easypaisa app if you have it. Donations are voluntary, made entirely inside Easypaisa under its own terms, and unlock nothing in the app. The app never sees whether you donated.</li>
+<li><b>Export backup / Share report</b> creates a file or text on your phone and hands it to the Android share sheet. Where it goes (WhatsApp, email, Drive) is your choice, under that app's privacy policy. A backup holds learner names and progress; it never contains the teacher PIN.</li>
+<li><b>Restore from a backup</b> (on the first screen and in Me / More, behind the grown-ups gate when data already exists) reads a backup file you choose. The app checks the whole file first and rejects anything damaged, oversized or not made by Urdu Qaida; a backup never contains or restores the teacher PIN, and a file adds or updates learner records but never changes settings that protect the device, and if it would replace records already on the phone the app asks first. On a brand-new phone the app picks personal or family mode after a restore.</li>
+<li><b>Help make this better</b> (More tab) has an <i>Email Kamal</i> button that opens your email app addressed to oyekamalkhan@gmail.com, and a button that copies the address. Both sit behind a grown-ups-only gate (a spelled-out number you type as digits). Nothing is sent until you write and send a message yourself.</li>
+<li><b>Support Urdu Qaida</b> (More tab, behind the same grown-ups gate) shows the developer's bank account details (bank, account title, account number, IBAN, branch) and can copy them. Support is entirely optional, is a person-to-person bank transfer made outside the app through your own bank under its terms, and unlocks nothing. The app has no in-app payments and never sees whether you gave.</li>
 </ul>
 
+<h2>Storage and backups</h2>
+<p>Learner data lives only in the app's private storage on the phone. Android's automatic cloud backup and device-to-device transfer are switched off for this app, so names and progress are not copied to Google's servers or to a new phone automatically. To move to a new phone, use Export backup on the old one and Restore from a backup on the new one. Deleting the app, or Reset this profile's progress, removes the data.</p>
 <h2>Children</h2>
-<p>The app is made for children from about age 5 learning to read Urdu, together with the adults who teach them. Because no data is collected or transmitted, no personal information about a child is ever received by the developer or anyone else. Deleting the app, or using <i>Reset this profile's progress</i> in More, removes everything.</p>
+<p>The app is made for children from about age 5 learning to read Urdu, together with the adults who teach them. Because no data is collected or transmitted, no personal information about a child is ever received by the developer or anyone else. Deleting the app removes everything. <i>Reset this profile's progress</i> in More removes that learner's progress, review cards, attempts and sticker list (the learner's name stays), and Delete in teacher mode removes the learner and all of their records.</p>
 
 <h2>Audio</h2>
-<p>Letter, word and sentence sounds are pre-recorded files shipped inside the app. They were generated with ElevenLabs text-to-speech before the app was built and are stored inside it. Nothing you type, say or do in the app is sent to ElevenLabs or anywhere else, and no speech is generated online.</p>
+<p>Letter, word and sentence sounds are pre-recorded files shipped inside the app. The voices are AI-generated. They were made before the app was built and are stored inside it. Nothing you type, say or do in the app is sent anywhere, and no speech is generated online.</p>
 
 <h2>Changes and contact</h2>
-<p>If this policy changes, the new version is published at this address with a new effective date. Questions: WhatsApp <a href="https://wa.me/923360506129">+92 336 0506129</a> or open an issue at <a href="https://github.com/oyekamal/urdu-reading-course">github.com/oyekamal/urdu-reading-course</a>.</p>
+<p>If this policy changes, the new version is published at this address with a new effective date. Questions: email <a href="mailto:oyekamalkhan@gmail.com">oyekamalkhan@gmail.com</a> or open an issue at <a href="https://github.com/oyekamal/urdu-reading-course">github.com/oyekamal/urdu-reading-course</a>.</p>
 </main>
 </body>
 </html>

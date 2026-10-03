@@ -1,0 +1,31 @@
+ڈ OK  body then marks TAPPED -> Coverage 88% ✓ good
+ڈ OK  body then marks SQUIGGLED 28px -> Coverage 89% ✓ good
+ڈ OK  body lifted twice then marks tapped -> Coverage 88% ✓ good · 4 strokes, aim for 2
+ڈ OK  body 2 pieces then marks as 30px LINES -> Coverage 84% ✓ good
+ڈ OK  1-piece body then marks as 45px LINES -> Coverage 86% ✓ good
+ژ OK  body then marks TAPPED -> Coverage 100% ✓ good
+ژ OK  body then marks SQUIGGLED 28px -> Coverage 100% ✓ good
+ژ OK  body lifted twice then marks tapped -> Coverage 100% ✓ good · 6 strokes, aim for 4
+ژ OK  body 2 pieces then marks as 30px LINES -> Coverage 100% ✓ good
+ژ OK  1-piece body then marks as 45px LINES -> Coverage 100% ✓ good
+پ OK  body then marks TAPPED -> Coverage 94% ✓ good
+پ OK  body then marks SQUIGGLED 28px -> Coverage 94% ✓ good
+پ OK  body lifted twice then marks tapped -> Coverage 93% ✓ good · 6 strokes, aim for 4
+پ OK  body 2 pieces then marks as 30px LINES -> Coverage 93% ✓ good
+پ OK  1-piece body then marks as 45px LINES -> Coverage 94% ✓ good
+ث OK  body then marks TAPPED -> Coverage 95% ✓ good
+ث OK  body then marks SQUIGGLED 28px -> Coverage 95% ✓ good
+ث OK  body lifted twice then marks tapped -> Coverage 95% ✓ good · 6 strokes, aim for 4
+ث OK  body 2 pieces then marks as 30px LINES -> Coverage 95% ✓ good
+ث OK  1-piece body then marks as 45px LINES -> Coverage 95% ✓ good
+ذ OK  body then marks TAPPED -> Coverage 99% ✓ good
+ذ OK  body then marks SQUIGGLED 28px -> Coverage 99% ✓ good
+ذ OK  body lifted twice then marks tapped -> Coverage 99% ✓ good · 4 strokes, aim for 2
+ذ OK  body 2 pieces then marks as 30px LINES -> Coverage 91% ✓ good
+ذ OK  1-piece body then marks as 45px LINES -> Coverage 91% ✓ good
+ز OK  body then marks TAPPED -> Coverage 100% ✓ good
+ز OK  body then marks SQUIGGLED 28px -> Coverage 100% ✓ good
+ز OK  body lifted twice then marks tapped -> Coverage 100% ✓ good · 4 strokes, aim for 2
+ز OK  body 2 pieces then marks as 30px LINES -> Coverage 92% ✓ good
+ز OK  1-piece body then marks as 45px LINES -> Coverage 92% ✓ good
+BAD: []

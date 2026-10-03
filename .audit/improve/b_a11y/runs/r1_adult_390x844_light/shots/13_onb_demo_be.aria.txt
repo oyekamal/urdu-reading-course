@@ -1,0 +1,7 @@
+- main:
+  - text: Your first lesson This is be. It says b. See the one dot underneath?
+  - button "Hear be": ب
+  - button "Hear it again"
+  - button "Next"
+- status
+- status

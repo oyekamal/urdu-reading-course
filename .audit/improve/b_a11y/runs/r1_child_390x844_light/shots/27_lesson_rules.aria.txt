@@ -1,0 +1,16 @@
+- main:
+  - text: Unit 0 · lesson 1 of 2
+  - heading "Three rules" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - heading "Urdu is read right to left" [level=2]
+  - paragraph: "The first letter of a word is on the right. Your finger moves this way:"
+  - text: ⟵
+  - button "Continue"
+  - navigation "Main":
+    - button "Learn"
+    - button "Review"
+    - button "Read"
+    - button "Me"
+- status
+- status

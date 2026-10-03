@@ -1,0 +1,199 @@
+{
+ "unit_words": 1026,
+ "unique_words": 1026,
+ "share_ge4_pct": 70.4,
+ "words_ge4": 722,
+ "words_ge5": 312,
+ "share_ge5_pct": 30.4,
+ "length_hist": {
+  "2": 62,
+  "3": 242,
+  "4": 410,
+  "5": 232,
+  "6": 67,
+  "7": 12,
+  "8": 1
+ },
+ "mean_letters": 4.04,
+ "mean_syllables": 1.92,
+ "share_syl_ge3_pct": 14.9,
+ "sentences": 189,
+ "running_words_sentences": 820,
+ "running_words_passages": 762,
+ "running_words_total": 1582,
+ "running_word_types": 371,
+ "passages": 11,
+ "assessment_tokens": 51,
+ "assessment_types_not_taught": [],
+ "assessment_types_not_taught_as_word": [],
+ "assessment_tokens_in_unit_text": 51,
+ "assessment_sentence_overlap_with_unit_text": 0,
+ "coverage_top_n": {
+  "100": {
+   "top": 100,
+   "eligible": 95,
+   "as_word": 90,
+   "seen": 90,
+   "as_word_pct": 94.7,
+   "seen_pct": 94.7
+  },
+  "300": {
+   "top": 300,
+   "eligible": 276,
+   "as_word": 252,
+   "seen": 252,
+   "as_word_pct": 91.3,
+   "seen_pct": 91.3
+  },
+  "500": {
+   "top": 500,
+   "eligible": 441,
+   "as_word": 367,
+   "seen": 367,
+   "as_word_pct": 83.2,
+   "seen_pct": 83.2
+  },
+  "1000": {
+   "top": 1000,
+   "eligible": 809,
+   "as_word": 523,
+   "seen": 523,
+   "as_word_pct": 64.6,
+   "seen_pct": 64.6
+  }
+ },
+ "token_cov_seen_pct": 83.7,
+ "token_cov_as_word_pct": 83.7,
+ "per_unit": [
+  {
+   "n": 0,
+   "words": 0,
+   "ge4": 0,
+   "sentences": 0,
+   "sentence_tokens": 0,
+   "passage_tokens": 0,
+   "has_passage": false,
+   "cum_top1000_as_word_pct": 0.0
+  },
+  {
+   "n": 1,
+   "words": 48,
+   "ge4": 30,
+   "sentences": 12,
+   "sentence_tokens": 37,
+   "passage_tokens": 19,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 2.0
+  },
+  {
+   "n": 2,
+   "words": 64,
+   "ge4": 39,
+   "sentences": 12,
+   "sentence_tokens": 42,
+   "passage_tokens": 32,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 6.3
+  },
+  {
+   "n": 3,
+   "words": 42,
+   "ge4": 28,
+   "sentences": 13,
+   "sentence_tokens": 40,
+   "passage_tokens": 29,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 7.5
+  },
+  {
+   "n": 4,
+   "words": 141,
+   "ge4": 88,
+   "sentences": 18,
+   "sentence_tokens": 81,
+   "passage_tokens": 56,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 19.0
+  },
+  {
+   "n": 5,
+   "words": 125,
+   "ge4": 80,
+   "sentences": 17,
+   "sentence_tokens": 80,
+   "passage_tokens": 74,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 29.8
+  },
+  {
+   "n": 6,
+   "words": 125,
+   "ge4": 109,
+   "sentences": 20,
+   "sentence_tokens": 83,
+   "passage_tokens": 79,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 38.1
+  },
+  {
+   "n": 7,
+   "words": 123,
+   "ge4": 100,
+   "sentences": 19,
+   "sentence_tokens": 85,
+   "passage_tokens": 94,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 45.4
+  },
+  {
+   "n": 8,
+   "words": 110,
+   "ge4": 74,
+   "sentences": 19,
+   "sentence_tokens": 100,
+   "passage_tokens": 96,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 52.4
+  },
+  {
+   "n": 9,
+   "words": 89,
+   "ge4": 58,
+   "sentences": 19,
+   "sentence_tokens": 75,
+   "passage_tokens": 91,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 56.9
+  },
+  {
+   "n": 10,
+   "words": 89,
+   "ge4": 62,
+   "sentences": 19,
+   "sentence_tokens": 82,
+   "passage_tokens": 96,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 62.1
+  },
+  {
+   "n": 11,
+   "words": 70,
+   "ge4": 54,
+   "sentences": 21,
+   "sentence_tokens": 115,
+   "passage_tokens": 96,
+   "has_passage": true,
+   "cum_top1000_as_word_pct": 64.4
+  },
+  {
+   "n": 12,
+   "words": 0,
+   "ge4": 0,
+   "sentences": 0,
+   "sentence_tokens": 0,
+   "passage_tokens": 0,
+   "has_passage": false,
+   "cum_top1000_as_word_pct": 64.4
+  }
+ ]
+}

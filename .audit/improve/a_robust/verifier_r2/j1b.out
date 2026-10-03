@@ -1,0 +1,13 @@
+svg/child/learner csp [] errs [] sw [390, 390]
+svg/adult/learner csp [] errs [] sw [390, 390]
+svg/child/teacher csp [] errs [] sw [390, 390]
+ent/child/learner csp [] errs [] sw [390, 390]
+ent/adult/learner csp [] errs [] sw [390, 390]
+ent/child/teacher csp [] errs [] sw [390, 390]
+close/child/learner csp [] errs [] sw [390, 390]
+close/adult/learner csp [] errs [] sw [390, 390]
+close/child/teacher csp [] errs [] sw [390, 390]
+tpl/child/learner csp [] errs [] sw [390, 390]
+tpl/adult/learner csp [] errs [] sw [390, 390]
+tpl/child/teacher csp [] errs [] sw [390, 390]
+ISSUES

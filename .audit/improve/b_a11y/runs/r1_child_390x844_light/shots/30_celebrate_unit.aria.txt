@@ -1,0 +1,17 @@
+- main:
+  - text: Unit 0 · lesson 2 of 2
+  - heading "Finish unit" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - navigation "Main":
+    - button "Learn"
+    - button "Review"
+    - button "Read"
+    - button "Me"
+- status
+- status
+- dialog "Unit 0 complete!":
+  - heading "Unit 0 complete!" [level=1]
+  - text: +1 pearl
+  - paragraph: 2 pearls on your thread · lesson 2 of 2
+  - button "Back to path"

@@ -1,0 +1,11 @@
+- main:
+  - text: Pick my lucky colour! It will be on your badge too.
+  - button "turquoise"
+  - button "saffron" [pressed]
+  - button "ajrak red"
+  - button "indigo"
+  - button "green"
+  - button "pink"
+  - button "This one"
+- status
+- status

@@ -1,0 +1,165 @@
+{
+ "flash_ask_500": {
+  "ask_text": "1 / 10 | Tap a letter the child gets wrong. Use Next as the child reads on; the last page shown counts as items attempted. | Time is up. How many did the child read?",
+  "empty": "ok",
+  "toast": "Type how many the child read",
+  "still": "Subtask 1 — Letter sounds (60s)",
+  "after500_h2": "Subtask 2 — Nonword decoding (60s)",
+  "sub2_zero_h2": "Subtask 3 — Familiar words (60s)",
+  "sub3_touch_next_h2": "Passage — oral reading fluency (60s)",
+  "passage_ask": "میرا | نام | کمال | ہے۔ | میں | لاہور | میں | رہتا | ہوں۔ | میرے | گھر | کے | پاس | ایک | باغ | ہے۔ | صبح | میں | باغ | میں | چلتا | ہوں۔ | باغ | میں | پھول | اور | درخت | ہیں۔ | میری | بہن | بھی | می",
+  "finish_btn": "disabled",
+  "none": "shown",
+  "after_none_h2": "Comprehension — question 1 of 5",
+  "res": {
+   "Letter sounds (clpm)": "100 (100% of 100 attempted)",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "20 (100% of 20 attempted)",
+   "Passage fluency (cwpm)": "0",
+   "Passage accuracy": "0%",
+   "Comprehension": "4/5",
+   "Fluency alone vs grade-2 standard": "nonreader",
+   "Overall (reading + understanding)": "nonreader",
+   "Learning band": "pre-reader"
+  },
+  "rec": {
+   "id": "gqll9izcy80zgvqo",
+   "profileId": "pE",
+   "ts": 1700000100242000,
+   "letters": 100,
+   "nonwords": 0,
+   "words": 20,
+   "orf": {
+    "cwpm": 0,
+    "acc": 0,
+    "seconds": 60,
+    "errors": 0,
+    "attempted": 0,
+    "capped": false
+   },
+   "orfDone": true,
+   "comp": 4,
+   "compDone": true,
+   "band": "pre-reader",
+   "level": "nonreader",
+   "by": "teacher"
+  }
+ },
+ "seq1": {
+  "ask_text": "1 / 10 | Tap a letter the child gets wrong. Use Next as the child reads on; the last page shown counts as items attempted. | Time is up. How many did the child read?",
+  "empty": "ok",
+  "toast": "Type how many the child read",
+  "still": "Subtask 1 — Letter sounds (60s)",
+  "after500_h2": "Subtask 2 — Nonword decoding (60s)",
+  "sub2_zero_h2": "Subtask 3 — Familiar words (60s)",
+  "sub3_touch_next_h2": "Passage — oral reading fluency (60s)",
+  "passage_ask": "میرا | نام | کمال | ہے۔ | میں | لاہور | میں | رہتا | ہوں۔ | میرے | گھر | کے | پاس | ایک | باغ | ہے۔ | صبح | میں | باغ | میں | چلتا | ہوں۔ | باغ | میں | پھول | اور | درخت | ہیں۔ | میری | بہن | بھی | می",
+  "finish_btn": "disabled",
+  "none": "shown",
+  "after_none_h2": "Comprehension — question 1 of 5",
+  "res": {
+   "Letter sounds (clpm)": "100 (100% of 100 attempted)",
+   "Nonwords (cnwpm)": "0",
+   "Familiar words (cwpm)": "20 (100% of 20 attempted)",
+   "Passage fluency (cwpm)": "0",
+   "Passage accuracy": "0%",
+   "Comprehension": "4/5",
+   "Fluency alone vs grade-2 standard": "nonreader",
+   "Overall (reading + understanding)": "nonreader",
+   "Learning band": "pre-reader"
+  },
+  "rec": {
+   "id": "gqll9izcy80zgvqo",
+   "profileId": "pE",
+   "ts": 1700000100242000,
+   "letters": 100,
+   "nonwords": 0,
+   "words": 20,
+   "orf": {
+    "cwpm": 0,
+    "acc": 0,
+    "seconds": 60,
+    "errors": 0,
+    "attempted": 0,
+    "capped": false
+   },
+   "orfDone": true,
+   "comp": 4,
+   "compDone": true,
+   "band": "pre-reader",
+   "level": "nonreader",
+   "by": "teacher"
+  }
+ },
+ "finish_14.9s": {
+  "f149": "ok",
+  "still": true,
+  "note": "میرا | نام | کمال | ہے۔ | میں | لاہور | میں | رہتا | ہوں۔ | میرے | گھر | کے | پاس | ایک | باغ | ہے۔ ",
+  "h2": "Passage — oral reading fluency (60s)"
+ },
+ "all52_at15s_cap": {
+  "res": {
+   "Passage fluency (cwpm)": "200 (capped: check the timing)",
+   "Passage accuracy": "100%",
+   "Comprehension": "5/5",
+   "Overall (reading + understanding)": "exceeds grade-2 standard",
+   "Learning band": "fluent"
+  },
+  "h2": "Result — Kid"
+ },
+ "finish30_readToEnd": {
+  "ask": "میرا | نام | کمال | ہے۔ | میں | لاہور | میں | رہتا | ہوں۔ | میرے | گھر | کے | پاس | ایک | باغ | ہے۔ | صبح | میں | باغ | میں | چلتا | ہوں۔ | باغ | میں ",
+  "res": {
+   "Passage fluency (cwpm)": "104",
+   "Passage accuracy": "100%",
+   "Comprehension": "5/5",
+   "Overall (reading + understanding)": "exceeds grade-2 standard",
+   "Learning band": "fluent"
+  },
+  "h2": "Result — Kid"
+ },
+ "finish30_stoppedEarly_w9": {
+  "note": "میرا | نام | کمال | ہے۔ | میں | لاہور | میں | رہتا | ہوں۔ | میرے | گھر | کے | پاس | ایک | باغ | ہے۔ | صبح | میں | باغ | ",
+  "res": {
+   "Passage fluency (cwpm)": "20",
+   "Passage accuracy": "100%",
+   "Comprehension": "5/5",
+   "Overall (reading + understanding)": "below standard",
+   "Learning band": "words"
+  },
+  "h2": "Result — Kid"
+ },
+ "timeout_then_tap_w19": {
+  "note": "میرا | نام | کمال | ہے۔ | میں | لاہور | میں | رہتا | ہوں۔ | میرے | گھر | کے | پاس | ایک | باغ | ہے۔ | صبح | میں | باغ | میں | چلتا | ہوں۔ | ",
+  "after_tap": "میرا | نام | کمال | ہے۔ | میں | لاہور | میں | رہتا | ہوں۔ | میرے | گھر | کے | پاس | ایک | باغ | ہے۔ ",
+  "score": "ok",
+  "res": {
+   "Passage fluency (cwpm)": "20",
+   "Passage accuracy": "100%",
+   "Comprehension": "5/5",
+   "Overall (reading + understanding)": "below standard",
+   "Learning band": "words"
+  },
+  "h2": "Result — Kid"
+ },
+ "timeout_press_markBtn_then_tap": {
+  "toggled_off": true,
+  "note": "میرا | نام | کمال | ہے۔ | میں | لاہور | میں | رہتا | ہوں۔ | میرے | گھر | کے | پاس | ایک | باغ | ہے۔ ",
+  "score": "disabled",
+  "wrong_count": 1,
+  "h2": "Passage — oral reading fluency (60s)"
+ },
+ "last_word0_wrong0": {
+  "res": {
+   "Passage fluency (cwpm)": "0",
+   "Passage accuracy": "0%",
+   "Comprehension": "0/5 (4 of 5 needed)",
+   "Overall (reading + understanding)": "nonreader",
+   "Learning band": "pre-reader"
+  },
+  "h2": "Result — Kid"
+ },
+ "timeout_skip": {
+  "h2": "Comprehension — question 1 of 5"
+ }
+}

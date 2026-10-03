@@ -1,0 +1,7 @@
+- main:
+  - text: Your first lesson Last one. Which one says baba?
+  - button "Play again"
+  - button "بابا"
+  - button "با"
+- status
+- status

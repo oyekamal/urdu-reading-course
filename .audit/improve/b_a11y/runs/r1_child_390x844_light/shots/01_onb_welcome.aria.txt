@@ -1,0 +1,9 @@
+- main:
+  - text: اردو پڑھنا سیکھیں
+  - heading "Read Urdu in ten minutes a day" [level=1]
+  - paragraph: Hi, I'm Marko. I'll teach you the letters one at a time, and you'll read a real word in the next two minutes.
+  - paragraph: Free, no account, works offline
+  - button "Let's begin"
+  - button "Restore from a backup"
+- status
+- status

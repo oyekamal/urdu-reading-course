@@ -1,0 +1,1942 @@
+{
+ "tag": "r1_child_360x640",
+ "args": {
+  "track": "child",
+  "vp": "360x640",
+  "fs": 1.0,
+  "scheme": "light",
+  "axe": 0,
+  "aria": 0,
+  "motion": "reduce",
+  "tag": "r1_child_360x640",
+  "port": "5199",
+  "touch": 1
+ },
+ "notes": [
+  "body.dataset.track after onboarding = child"
+ ],
+ "errors": [],
+ "results": [
+  {
+   "i": 1,
+   "screen": "onb_welcome",
+   "layout": [
+    [
+     "tap44-47",
+     "Restore from a backup",
+     "button.btn.btn-chip 173x44"
+    ]
+   ],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 166,
+    "topChrome": 0,
+    "freeH": 475,
+    "inCel": false,
+    "h": "Read Urdu in ten minutes a day",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Let's begin",
+     "top": 514,
+     "bottom": 570,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 2,
+   "screen": "onb_wake",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "Marko is fast asleep",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 3,
+   "screen": "onb_colour",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 558,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "This one",
+     "top": 570,
+     "bottom": 626,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 4,
+   "screen": "onb_who",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 813,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 5,
+   "screen": "onb_name",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 558,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 570,
+     "bottom": 626,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 6,
+   "screen": "onb_goal",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 874,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 7,
+   "screen": "onb_speak",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 8,
+   "screen": "onb_pains",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 1078,
+    "scrollW": 360,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 558,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 570,
+     "bottom": 626,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 9,
+   "screen": "onb_solution",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 785,
+    "scrollW": 360,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 558,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Show me",
+     "top": 570,
+     "bottom": 626,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 10,
+   "screen": "onb_minutes",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 769,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 11,
+   "screen": "onb_processing",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "Making Zara's path",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 12,
+   "screen": "onb_demo_alif",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Next",
+     "top": 564,
+     "bottom": 620,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 13,
+   "screen": "onb_demo_be",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Next",
+     "top": 564,
+     "bottom": 620,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 14,
+   "screen": "onb_demo_tap",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 15,
+   "screen": "onb_demo_tap_done",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Next",
+     "top": 564,
+     "bottom": 620,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 16,
+   "screen": "onb_demo_blend",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Join them",
+     "top": 564,
+     "bottom": 620,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 17,
+   "screen": "onb_demo_blend_done",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Now a whole word",
+     "top": 564,
+     "bottom": 620,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 18,
+   "screen": "onb_demo_word",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 19,
+   "screen": "onb_demo_word_read",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Check me",
+     "top": 564,
+     "bottom": 620,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 20,
+   "screen": "onb_demo_check",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 21,
+   "screen": "onb_demo_check_ok",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "See what you did",
+     "top": 564,
+     "bottom": 620,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 22,
+   "screen": "onb_value",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 152,
+    "topChrome": 0,
+    "freeH": 488,
+    "inCel": false,
+    "h": "Zara just read Urdu",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 570,
+     "bottom": 626,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 23,
+   "screen": "onb_streak",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 792,
+    "scrollW": 360,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 558,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Let's keep it going",
+     "top": 570,
+     "bottom": 626,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 24,
+   "screen": "onb_commit",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 25,
+   "screen": "onb_plan",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 738,
+    "scrollW": 360,
+    "bottomChrome": 82,
+    "topChrome": 0,
+    "freeH": 558,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start my first lesson",
+     "top": 570,
+     "bottom": 626,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 26,
+   "screen": "today_first",
+   "layout": [
+    [
+     "text-clipped-by-ancestor",
+     "Three rules",
+     "small in div.card.unit out by 4px"
+    ],
+    [
+     "text-clipped-by-ancestor",
+     "Finish unit",
+     "small in div.card.unit out by 3px"
+    ],
+    [
+     "text-clipped-by-ancestor",
+     "Unit check",
+     "small in div.card.unit out by 3px"
+    ],
+    [
+     "tap44-47",
+     "Switch learner",
+     "button.btn.btn-chip 82x44"
+    ],
+    [
+     "tap44-47",
+     "For parents: five things before letter o",
+     "summary 294x44"
+    ]
+   ],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 2096,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Good morning, Zara",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start: Three rules",
+     "top": 478,
+     "bottom": 536,
+     "w": 292,
+     "h": 58
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 27,
+   "screen": "lesson_rules",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Three rules",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 28,
+   "screen": "celebrate_lesson",
+   "layout": [
+    [
+     "tap44-47",
+     "Back to path",
+     "button.btn.cel-back 88x44"
+    ]
+   ],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": true,
+    "h": "Three rules",
+    "overlay": "div.celebrate"
+   },
+   "info": {
+    "primary": {
+     "label": "Next: Finish unit",
+     "top": 570,
+     "bottom": 626,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 29,
+   "screen": "lesson_done_unit",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Finish unit",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Unlock the next unit",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 30,
+   "screen": "celebrate_unit",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": true,
+    "h": "Finish unit",
+    "overlay": "div.celebrate.gold"
+   },
+   "info": {
+    "primary": {
+     "label": "Back to path",
+     "top": 570,
+     "bottom": 626,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 31,
+   "screen": "L_intro",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "I heard it",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 32,
+   "screen": "L_tellapart_start",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 33,
+   "screen": "L_tellapart_round",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 34,
+   "screen": "L_tellapart_done",
+   "layout": [
+    [
+     "tap44-47",
+     "Again",
+     "button.btn.btn-chip 64x44"
+    ]
+   ],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 35,
+   "screen": "L_forms",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "I see it",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 36,
+   "screen": "L_trace",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Traced it",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div.score.trace-out polite",
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 37,
+   "screen": "L_blend",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 38,
+   "screen": "L_check",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 39,
+   "screen": "L_check_done",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Finish",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 40,
+   "screen": "celebrate_letter",
+   "layout": [
+    [
+     "tap44-47",
+     "Back to path",
+     "button.btn.cel-back 88x44"
+    ]
+   ],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": true,
+    "h": "be",
+    "overlay": "div.celebrate"
+   },
+   "info": {
+    "primary": {
+     "label": "Next: kāf",
+     "top": 570,
+     "bottom": 626,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 41,
+   "screen": "marks_intro",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Vowel marks",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Got it",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 42,
+   "screen": "marks_find",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Vowel marks",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 43,
+   "screen": "join_forms",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Join them",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 44,
+   "screen": "join_build",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Join them",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 45,
+   "screen": "join_build_done",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Join them",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 46,
+   "screen": "blend",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Blend",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 47,
+   "screen": "blend_done",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Blend",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 48,
+   "screen": "words_read",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Read them",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 49,
+   "screen": "words_build",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 50,
+   "screen": "words_dictation",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Check",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 51,
+   "screen": "words_dictation_done",
+   "layout": [
+    [
+     "tap44-47",
+     "Again",
+     "button.btn.btn-chip 64x44"
+    ]
+   ],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 52,
+   "screen": "quiz",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Unit check",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Submit",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 53,
+   "screen": "quiz_done",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Unit check",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Finish",
+     "top": 486,
+     "bottom": 542,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 54,
+   "screen": "today_unit2",
+   "layout": [
+    [
+     "text-clipped-by-ancestor",
+     "Unit check",
+     "small in div.card.unit out by 3px"
+    ],
+    [
+     "text-clipped-by-ancestor",
+     "Unit check",
+     "small in div.card.unit out by 3px"
+    ],
+    [
+     "tap44-47",
+     "Switch learner",
+     "button.btn.btn-chip 82x44"
+    ],
+    [
+     "tap44-47",
+     "9 to review",
+     "button.btn.btn-chip 116x44"
+    ]
+   ],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 2505,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Good morning, Zara",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start: te",
+     "top": 490,
+     "bottom": 548,
+     "w": 292,
+     "h": 58
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 55,
+   "screen": "review_empty",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 819,
+    "scrollW": 360,
+    "bottomChrome": 134,
+    "topChrome": 0,
+    "freeH": 506,
+    "inCel": false,
+    "h": "Review",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Learn: unit 2",
+     "top": 506,
+     "bottom": 562,
+     "w": 328,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 56,
+   "screen": "review_due",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 134,
+    "topChrome": 0,
+    "freeH": 506,
+    "inCel": false,
+    "h": "Review",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Got it",
+     "top": 506,
+     "bottom": 562,
+     "w": 196,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 57,
+   "screen": "review_due_reveal",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 134,
+    "topChrome": 0,
+    "freeH": 506,
+    "inCel": false,
+    "h": "Review",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Got it",
+     "top": 506,
+     "bottom": 562,
+     "w": 196,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 58,
+   "screen": "read_tab",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 1062,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Read",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 59,
+   "screen": "me_tab",
+   "layout": [
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ],
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ],
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ],
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ]
+   ],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 4183,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Me",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 60,
+   "screen": "sticker_book",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 4183,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Me",
+    "overlay": "div.stk-ov.stk-book"
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 61,
+   "screen": "units_tab",
+   "layout": [
+    [
+     "tap44-47",
+     "Back to Learn",
+     "button.btn.btn-chip 141x44"
+    ],
+    [
+     "gap<6",
+     "Letter library · all 38 letters | Unit 0, Before the letters",
+     "0px apart"
+    ],
+    [
+     "gap<6",
+     "Letter library · all 38 letters | Unit 1, The first six",
+     "0px apart"
+    ]
+   ],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 2849,
+    "scrollW": 360,
+    "bottomChrome": 70,
+    "topChrome": 0,
+    "freeH": 570,
+    "inCel": false,
+    "h": "Units",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 62,
+   "screen": "mode_picker",
+   "layout": [
+    [
+     "no-primary",
+     "-",
+     "expected a .btn-primary"
+    ]
+   ],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 926,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "Urdu Qaida",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 63,
+   "screen": "profile_picker",
+   "layout": [],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 640,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "Who is learning?",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 64,
+   "screen": "add_learner_form",
+   "layout": [
+    [
+     "tap44-47",
+     "colour 1",
+     "button.swatch.on 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 2",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 3",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 4",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 5",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 6",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 7",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 8",
+     "button.swatch 44x44"
+    ]
+   ],
+   "meta": {
+    "W": 360,
+    "H": 640,
+    "scrollH": 688,
+    "scrollW": 360,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 640,
+    "inCel": false,
+    "h": "New learner",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start",
+     "top": 433,
+     "bottom": 489,
+     "w": 294,
+     "h": 56
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,228 @@
+{
+ "gradeTrace": [
+  [
+   true,
+   2,
+   2
+  ],
+  [
+   true,
+   3,
+   4
+  ],
+  [
+   true,
+   4,
+   8
+  ],
+  [
+   true,
+   5,
+   16
+  ],
+  [
+   true,
+   5,
+   16
+  ],
+  [
+   true,
+   5,
+   16
+  ],
+  [
+   false,
+   1,
+   1
+  ],
+  [
+   true,
+   2,
+   2
+  ],
+  [
+   false,
+   1,
+   1
+  ],
+  [
+   false,
+   1,
+   1
+  ],
+  [
+   true,
+   2,
+   2
+  ]
+ ],
+ "due": {
+  "n": 128,
+  "total": 230
+ },
+ "sight_unitword_overlap": [
+  "کا",
+  "کی",
+  "کے",
+  "سے",
+  "پر",
+  "کہ",
+  "اور",
+  "ہے",
+  "ہیں",
+  "نے",
+  "کو",
+  "میں",
+  "نہیں",
+  "وہ",
+  "تھا",
+  "تھی",
+  "کیا",
+  "بھی"
+ ],
+ "overlap_kinds": [
+  [
+   "کا",
+   "sight",
+   null,
+   0
+  ],
+  [
+   "کی",
+   "sight",
+   null,
+   1
+  ],
+  [
+   "کے",
+   "sight",
+   null,
+   2
+  ],
+  [
+   "سے",
+   "sight",
+   null,
+   3
+  ],
+  [
+   "پر",
+   "sight",
+   null,
+   4
+  ],
+  [
+   "کہ",
+   "sight",
+   null,
+   5
+  ],
+  [
+   "اور",
+   "sight",
+   null,
+   6
+  ],
+  [
+   "ہے",
+   "sight",
+   null,
+   7
+  ],
+  [
+   "ہیں",
+   "sight",
+   null,
+   8
+  ],
+  [
+   "نے",
+   "sight",
+   null,
+   9
+  ],
+  [
+   "کو",
+   "sight",
+   null,
+   10
+  ],
+  [
+   "میں",
+   "sight",
+   null,
+   11
+  ],
+  [
+   "نہیں",
+   "sight",
+   null,
+   12
+  ],
+  [
+   "وہ",
+   "sight",
+   null,
+   13
+  ],
+  [
+   "تھا",
+   "sight",
+   null,
+   16
+  ],
+  [
+   "تھی",
+   "sight",
+   null,
+   17
+  ],
+  [
+   "کیا",
+   "sight",
+   null,
+   18
+  ],
+  [
+   "بھی",
+   "sight",
+   null,
+   19
+  ]
+ ],
+ "counts": {
+  "cards": 255
+ },
+ "sight_card": [
+  "word",
+  11,
+  3
+ ],
+ "attempts": 12,
+ "thrown": [
+  [
+   "blend",
+   "undefined",
+   "TypeError: item is not iterable"
+  ],
+  [
+   "blend",
+   "null",
+   "TypeError: item is not iterable"
+  ],
+  [
+   "blend",
+   "42",
+   "TypeError: item is not iterable"
+  ],
+  [
+   "blend",
+   "[object Object]",
+   "TypeError: item is not iterable"
+  ]
+ ],
+ "thrown_n": 4,
+ "odd_cards": 8,
+ "bad_cards": [],
+ "fails": []
+}

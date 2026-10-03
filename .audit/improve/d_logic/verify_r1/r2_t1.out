@@ -1,0 +1,4 @@
+4834 cases
+errors set()
+{'generic': 1406, 'nodots': 1134, 'dots': 1894, 'tah': 270, 'hamza': 130}
+bad glyph-keys 0

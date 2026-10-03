@@ -1,0 +1,25 @@
+- main:
+  - text: Unit 1 · lesson 10 of 13
+  - heading "Words 1" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - heading "Dictation" [level=2]
+  - paragraph: Hear a word, spell it with the tiles.
+  - button "Play word"
+  - text: Word 1/5 · 0 right
+  - button "alif": ا
+  - button "be": ب
+  - button "kāf": ک
+  - button "lām": ل
+  - button "mīm": م
+  - button "nūn": ن
+  - button "Erase": ⌫
+  - button "Skip"
+  - button "Check"
+  - navigation "Main":
+    - button "Learn"
+    - button "Review"
+    - button "Read"
+    - button "Me"
+- status: Not quite. Almost! Tap the green one.
+- status: "Correct: nām"

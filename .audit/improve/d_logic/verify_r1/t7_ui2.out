@@ -1,0 +1,40 @@
+{
+ "ok": {
+  "reached_celebrate": true,
+  "hints": 5,
+  "cards": [
+   [
+    "ا",
+    1,
+    1
+   ],
+   [
+    "ب",
+    1,
+    1
+   ]
+  ],
+  "n_attempts": 14,
+  "wrong_attempts": 5,
+  "errors": []
+ },
+ "fail": {
+  "reached_celebrate": true,
+  "hints": 5,
+  "cards": [
+   [
+    "ب",
+    1,
+    0
+   ]
+  ],
+  "n_attempts": 14,
+  "wrong_attempts": 5,
+  "errors": [
+   "quota",
+   "quota",
+   "quota",
+   "quota"
+  ]
+ }
+}

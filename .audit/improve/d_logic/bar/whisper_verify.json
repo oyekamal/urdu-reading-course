@@ -1,0 +1,1562 @@
+{
+ "words/alif": {
+  "expected": "اب",
+  "heard": " اب",
+  "ratio": 1.0
+ },
+ "words/be": {
+  "expected": "بابا",
+  "heard": " بابا",
+  "ratio": 1.0
+ },
+ "words/kaf": {
+  "expected": "کام",
+  "heard": " گام",
+  "ratio": 0.67
+ },
+ "words/lam": {
+  "expected": "لال",
+  "heard": " لال",
+  "ratio": 1.0
+ },
+ "words/mim": {
+  "expected": "مکان",
+  "heard": " مکان",
+  "ratio": 1.0
+ },
+ "words/nun": {
+  "expected": "نام",
+  "heard": " نا",
+  "ratio": 0.8
+ },
+ "words/te": {
+  "expected": "تین",
+  "heard": " دین",
+  "ratio": 0.67
+ },
+ "words/choti_ye": {
+  "expected": "یار",
+  "heard": " یار",
+  "ratio": 1.0
+ },
+ "words/bari_ye": {
+  "expected": "لے",
+  "heard": " لے",
+  "ratio": 1.0
+ },
+ "words/pe": {
+  "expected": "پانی",
+  "heard": " پانی",
+  "ratio": 1.0
+ },
+ "words/tte": {
+  "expected": "ٹوپی",
+  "heard": " توپی",
+  "ratio": 1.0
+ },
+ "words/se": {
+  "expected": "ثمر",
+  "heard": " سمر",
+  "ratio": 1.0
+ },
+ "words/wao": {
+  "expected": "وہ",
+  "heard": " بو",
+  "ratio": 0.5
+ },
+ "words/re": {
+  "expected": "رات",
+  "heard": " رات",
+  "ratio": 1.0
+ },
+ "words/dal": {
+  "expected": "دو",
+  "heard": " دو",
+  "ratio": 1.0
+ },
+ "words/he": {
+  "expected": "ہم",
+  "heard": " ہم",
+  "ratio": 1.0
+ },
+ "words/sin": {
+  "expected": "سال",
+  "heard": " سال",
+  "ratio": 1.0
+ },
+ "words/shin": {
+  "expected": "شام",
+  "heard": " شان",
+  "ratio": 0.67
+ },
+ "words/jim": {
+  "expected": "جوتا",
+  "heard": " جیوٹا",
+  "ratio": 0.89
+ },
+ "words/che": {
+  "expected": "چار",
+  "heard": " جار",
+  "ratio": 0.67
+ },
+ "words/gaf": {
+  "expected": "گلاب",
+  "heard": " گلاب",
+  "ratio": 1.0
+ },
+ "words/nun_ghunna": {
+  "expected": "میں",
+  "heard": "",
+  "ratio": 0.0
+ },
+ "words/do_chashmi_he": {
+  "expected": "گھر",
+  "heard": " گھر",
+  "ratio": 1.0
+ },
+ "words/ddal": {
+  "expected": "ڈاک",
+  "heard": " داک",
+  "ratio": 1.0
+ },
+ "words/rre": {
+  "expected": "لڑکا",
+  "heard": " لڈکا",
+  "ratio": 0.75
+ },
+ "words/ze": {
+  "expected": "زبان",
+  "heard": " زبان",
+  "ratio": 1.0
+ },
+ "words/zhe": {
+  "expected": "ژالہ",
+  "heard": " جلہ",
+  "ratio": 0.57
+ },
+ "words/fe": {
+  "expected": "فرش",
+  "heard": " فرش",
+  "ratio": 1.0
+ },
+ "words/qaf": {
+  "expected": "قلم",
+  "heard": " علم",
+  "ratio": 0.67
+ },
+ "words/khe": {
+  "expected": "خط",
+  "heard": " خط",
+  "ratio": 1.0
+ },
+ "words/ghain": {
+  "expected": "غریب",
+  "heard": " غریب",
+  "ratio": 1.0
+ },
+ "words/ain": {
+  "expected": "عمر",
+  "heard": " عمر",
+  "ratio": 1.0
+ },
+ "words/bari_he": {
+  "expected": "حال",
+  "heard": " حال",
+  "ratio": 1.0
+ },
+ "words/swad": {
+  "expected": "صبح",
+  "heard": " سبا",
+  "ratio": 0.67
+ },
+ "words/zwad": {
+  "expected": "ضرور",
+  "heard": " درور",
+  "ratio": 0.75
+ },
+ "words/toe": {
+  "expected": "طوطا",
+  "heard": " توتا",
+  "ratio": 1.0
+ },
+ "words/zoe": {
+  "expected": "ظاہر",
+  "heard": " ظاہر",
+  "ratio": 1.0
+ },
+ "words/zal": {
+  "expected": "ذائقہ",
+  "heard": " زائقہ",
+  "ratio": 1.0
+ },
+ "words/hamza": {
+  "expected": "کوئی",
+  "heard": " کوئی",
+  "ratio": 1.0
+ },
+ "units/u01_00": {
+  "expected": "اب",
+  "heard": " اب",
+  "ratio": 1.0
+ },
+ "units/u01_01": {
+  "expected": "بابا",
+  "heard": " بابا",
+  "ratio": 1.0
+ },
+ "units/u01_02": {
+  "expected": "امام",
+  "heard": " امام",
+  "ratio": 1.0
+ },
+ "units/u01_03": {
+  "expected": "نام",
+  "heard": " نام",
+  "ratio": 1.0
+ },
+ "units/u01_04": {
+  "expected": "کام",
+  "heard": " گام",
+  "ratio": 0.67
+ },
+ "units/u01_05": {
+  "expected": "کل",
+  "heard": " کل",
+  "ratio": 1.0
+ },
+ "units/u01_06": {
+  "expected": "لال",
+  "heard": " لال",
+  "ratio": 1.0
+ },
+ "units/u01_07": {
+  "expected": "بال",
+  "heard": " بال",
+  "ratio": 1.0
+ },
+ "units/u01_08": {
+  "expected": "ناک",
+  "heard": " ناک",
+  "ratio": 1.0
+ },
+ "units/u01_09": {
+  "expected": "کان",
+  "heard": " گان",
+  "ratio": 0.67
+ },
+ "units/u01_10": {
+  "expected": "مان",
+  "heard": " من",
+  "ratio": 0.8
+ },
+ "units/u01_11": {
+  "expected": "نمک",
+  "heard": " نمک",
+  "ratio": 1.0
+ },
+ "units/u01_12": {
+  "expected": "ملک",
+  "heard": " ملک",
+  "ratio": 1.0
+ },
+ "units/u01_13": {
+  "expected": "کمال",
+  "heard": " کمال",
+  "ratio": 1.0
+ },
+ "units/u01_14": {
+  "expected": "نانا",
+  "heard": " نانا",
+  "ratio": 1.0
+ },
+ "units/u01_15": {
+  "expected": "کالا",
+  "heard": " کالا",
+  "ratio": 1.0
+ },
+ "units/u01_16": {
+  "expected": "مالا",
+  "heard": " مالا",
+  "ratio": 1.0
+ },
+ "units/u01_17": {
+  "expected": "مکان",
+  "heard": " مکان",
+  "ratio": 1.0
+ },
+ "units/u01_18": {
+  "expected": "املا",
+  "heard": " ایملا",
+  "ratio": 0.89
+ },
+ "units/u01_19": {
+  "expected": "کمان",
+  "heard": " کمان",
+  "ratio": 1.0
+ },
+ "sentences/u01_00": {
+  "expected": "بابا کا کام",
+  "heard": " بابا ککام",
+  "ratio": 0.94
+ },
+ "sentences/u01_01": {
+  "expected": "کالا بال",
+  "heard": " کالا بال",
+  "ratio": 1.0
+ },
+ "sentences/u01_02": {
+  "expected": "نمک لا",
+  "heard": " نمکلہ",
+  "ratio": 0.8
+ },
+ "units/u02_00": {
+  "expected": "تم",
+  "heard": " تم",
+  "ratio": 1.0
+ },
+ "units/u02_01": {
+  "expected": "تین",
+  "heard": " دین",
+  "ratio": 0.67
+ },
+ "units/u02_02": {
+  "expected": "بیل",
+  "heard": " بل",
+  "ratio": 0.8
+ },
+ "units/u02_03": {
+  "expected": "میل",
+  "heard": " میل",
+  "ratio": 1.0
+ },
+ "units/u02_04": {
+  "expected": "نیلا",
+  "heard": " نیلہ",
+  "ratio": 0.75
+ },
+ "units/u02_05": {
+  "expected": "کیلا",
+  "heard": " کیلہ",
+  "ratio": 0.75
+ },
+ "units/u02_06": {
+  "expected": "تیل",
+  "heard": " تیل",
+  "ratio": 1.0
+ },
+ "units/u02_07": {
+  "expected": "لے",
+  "heard": " لے",
+  "ratio": 1.0
+ },
+ "units/u02_08": {
+  "expected": "کے",
+  "heard": " کی",
+  "ratio": 1.0
+ },
+ "units/u02_09": {
+  "expected": "نے",
+  "heard": " نی",
+  "ratio": 1.0
+ },
+ "units/u02_10": {
+  "expected": "تالی",
+  "heard": " طالی",
+  "ratio": 1.0
+ },
+ "units/u02_11": {
+  "expected": "بلی",
+  "heard": " بلی",
+  "ratio": 1.0
+ },
+ "units/u02_12": {
+  "expected": "تالا",
+  "heard": " تالہ",
+  "ratio": 0.75
+ },
+ "units/u02_13": {
+  "expected": "کتاب",
+  "heard": " کتاب",
+  "ratio": 1.0
+ },
+ "units/u02_14": {
+  "expected": "بیتاب",
+  "heard": " بیٹاپ",
+  "ratio": 0.8
+ },
+ "units/u02_15": {
+  "expected": "تکیا",
+  "heard": " تا کیا",
+  "ratio": 0.89
+ },
+ "units/u02_16": {
+  "expected": "مالی",
+  "heard": " مالی",
+  "ratio": 1.0
+ },
+ "units/u02_17": {
+  "expected": "ناتا",
+  "heard": " ناتا",
+  "ratio": 1.0
+ },
+ "units/u02_18": {
+  "expected": "تالاب",
+  "heard": " دالاب",
+  "ratio": 0.8
+ },
+ "units/u02_19": {
+  "expected": "کمانی",
+  "heard": " کمانی",
+  "ratio": 1.0
+ },
+ "sentences/u02_00": {
+  "expected": "تین کتاب",
+  "heard": " تین کتاب",
+  "ratio": 1.0
+ },
+ "sentences/u02_01": {
+  "expected": "بلی کالی ہے",
+  "heard": " بلی کالی ہے",
+  "ratio": 1.0
+ },
+ "sentences/u02_02": {
+  "expected": "نیلا تکیا لے",
+  "heard": " نیلا تکیلے",
+  "ratio": 0.95
+ },
+ "units/u03_00": {
+  "expected": "پانی",
+  "heard": " پانی",
+  "ratio": 1.0
+ },
+ "units/u03_01": {
+  "expected": "پل",
+  "heard": " پل",
+  "ratio": 1.0
+ },
+ "units/u03_02": {
+  "expected": "ٹوپی",
+  "heard": " توپی",
+  "ratio": 1.0
+ },
+ "units/u03_03": {
+  "expected": "پتا",
+  "heard": " پتا",
+  "ratio": 1.0
+ },
+ "units/u03_04": {
+  "expected": "پاک",
+  "heard": " باک",
+  "ratio": 0.67
+ },
+ "units/u03_05": {
+  "expected": "پیٹ",
+  "heard": " بیٹ",
+  "ratio": 0.67
+ },
+ "units/u03_06": {
+  "expected": "ٹب",
+  "heard": " تب",
+  "ratio": 1.0
+ },
+ "units/u03_07": {
+  "expected": "پتلی",
+  "heard": " پتلی",
+  "ratio": 1.0
+ },
+ "units/u03_08": {
+  "expected": "ثابت",
+  "heard": " تیبیٹ",
+  "ratio": 0.44
+ },
+ "units/u03_09": {
+  "expected": "پیپل",
+  "heard": " پیپل",
+  "ratio": 1.0
+ },
+ "units/u03_10": {
+  "expected": "ٹماٹر",
+  "heard": " دیمارٹر",
+  "ratio": 0.67
+ },
+ "units/u03_11": {
+  "expected": "ٹانکا",
+  "heard": " تمکہ",
+  "ratio": 0.44
+ },
+ "units/u03_12": {
+  "expected": "پیالا",
+  "heard": " پیالہ",
+  "ratio": 0.8
+ },
+ "units/u03_13": {
+  "expected": "نپا",
+  "heard": " نپا",
+  "ratio": 1.0
+ },
+ "units/u03_14": {
+  "expected": "پلک",
+  "heard": " پلک",
+  "ratio": 1.0
+ },
+ "units/u03_15": {
+  "expected": "کپاس",
+  "heard": " کباس",
+  "ratio": 0.75
+ },
+ "units/u03_16": {
+  "expected": "تپتا",
+  "heard": " دپتا",
+  "ratio": 0.75
+ },
+ "units/u03_17": {
+  "expected": "پتلا",
+  "heard": " پتلا",
+  "ratio": 1.0
+ },
+ "units/u03_18": {
+  "expected": "ٹکٹ",
+  "heard": " تکٹ",
+  "ratio": 1.0
+ },
+ "units/u03_19": {
+  "expected": "بٹن",
+  "heard": " بٹن",
+  "ratio": 1.0
+ },
+ "sentences/u03_00": {
+  "expected": "پانی لا",
+  "heard": " پانیلہ",
+  "ratio": 0.83
+ },
+ "sentences/u03_01": {
+  "expected": "پتلی بلی",
+  "heard": " پتلی بلی",
+  "ratio": 1.0
+ },
+ "sentences/u03_02": {
+  "expected": "میں ٹوپی لے",
+  "heard": " میں تو پی لے",
+  "ratio": 1.0
+ },
+ "units/u04_00": {
+  "expected": "وہ",
+  "heard": " VO",
+  "ratio": 0.0
+ },
+ "units/u04_01": {
+  "expected": "دو",
+  "heard": " دو",
+  "ratio": 1.0
+ },
+ "units/u04_02": {
+  "expected": "دن",
+  "heard": " دن",
+  "ratio": 1.0
+ },
+ "units/u04_03": {
+  "expected": "دال",
+  "heard": " دال",
+  "ratio": 1.0
+ },
+ "units/u04_04": {
+  "expected": "دم",
+  "heard": " دم",
+  "ratio": 1.0
+ },
+ "units/u04_05": {
+  "expected": "رات",
+  "heard": " رات",
+  "ratio": 1.0
+ },
+ "units/u04_06": {
+  "expected": "روٹی",
+  "heard": " روٹی",
+  "ratio": 1.0
+ },
+ "units/u04_07": {
+  "expected": "دور",
+  "heard": " دور",
+  "ratio": 1.0
+ },
+ "units/u04_08": {
+  "expected": "ہم",
+  "heard": " ہم",
+  "ratio": 1.0
+ },
+ "units/u04_09": {
+  "expected": "ہار",
+  "heard": " حار",
+  "ratio": 1.0
+ },
+ "units/u04_10": {
+  "expected": "کمرہ",
+  "heard": " کمبرہ",
+  "ratio": 0.89
+ },
+ "units/u04_11": {
+  "expected": "بادام",
+  "heard": " بادم",
+  "ratio": 0.89
+ },
+ "units/u04_12": {
+  "expected": "دادا",
+  "heard": " دا دا",
+  "ratio": 1.0
+ },
+ "units/u04_13": {
+  "expected": "دریا",
+  "heard": " دریا",
+  "ratio": 1.0
+ },
+ "units/u04_14": {
+  "expected": "ہوا",
+  "heard": " حبا",
+  "ratio": 0.67
+ },
+ "units/u04_15": {
+  "expected": "راہ",
+  "heard": " را",
+  "ratio": 0.8
+ },
+ "units/u04_16": {
+  "expected": "دودھ",
+  "heard": " دود",
+  "ratio": 1.0
+ },
+ "units/u04_17": {
+  "expected": "مور",
+  "heard": " مور",
+  "ratio": 1.0
+ },
+ "units/u04_18": {
+  "expected": "پودا",
+  "heard": " پوڑا",
+  "ratio": 0.75
+ },
+ "units/u04_19": {
+  "expected": "نہر",
+  "heard": " نہر",
+  "ratio": 1.0
+ },
+ "sentences/u04_00": {
+  "expected": "دو روٹی",
+  "heard": " دوروٹی",
+  "ratio": 1.0
+ },
+ "sentences/u04_01": {
+  "expected": "وہ کمرہ بڑا ہے",
+  "heard": " وہ کمرہ بڑا ہے",
+  "ratio": 1.0
+ },
+ "sentences/u04_02": {
+  "expected": "ہم دور ہیں",
+  "heard": " ہم دور ہے",
+  "ratio": 0.93
+ },
+ "units/u05_00": {
+  "expected": "سب",
+  "heard": " سپ",
+  "ratio": 0.5
+ },
+ "units/u05_01": {
+  "expected": "سو",
+  "heard": " سو",
+  "ratio": 1.0
+ },
+ "units/u05_02": {
+  "expected": "سال",
+  "heard": " سال",
+  "ratio": 1.0
+ },
+ "units/u05_03": {
+  "expected": "شام",
+  "heard": " شاہن",
+  "ratio": 0.57
+ },
+ "units/u05_04": {
+  "expected": "شیر",
+  "heard": " شیر",
+  "ratio": 1.0
+ },
+ "units/u05_05": {
+  "expected": "جوتا",
+  "heard": " دیوٹا",
+  "ratio": 0.67
+ },
+ "units/u05_06": {
+  "expected": "جام",
+  "heard": " جام",
+  "ratio": 1.0
+ },
+ "units/u05_07": {
+  "expected": "چار",
+  "heard": " جاڑ",
+  "ratio": 0.67
+ },
+ "units/u05_08": {
+  "expected": "چاند",
+  "heard": " جانت",
+  "ratio": 0.5
+ },
+ "units/u05_09": {
+  "expected": "چابی",
+  "heard": " جا بی",
+  "ratio": 0.75
+ },
+ "units/u05_10": {
+  "expected": "گلاب",
+  "heard": " گلاب",
+  "ratio": 1.0
+ },
+ "units/u05_11": {
+  "expected": "گاجر",
+  "heard": " گاجر",
+  "ratio": 1.0
+ },
+ "units/u05_12": {
+  "expected": "گانا",
+  "heard": " گانہ",
+  "ratio": 0.75
+ },
+ "units/u05_13": {
+  "expected": "سبک",
+  "heard": " سبک",
+  "ratio": 1.0
+ },
+ "units/u05_14": {
+  "expected": "شادی",
+  "heard": " شادی؟",
+  "ratio": 1.0
+ },
+ "units/u05_15": {
+  "expected": "جنگل",
+  "heard": " جنگل",
+  "ratio": 1.0
+ },
+ "units/u05_16": {
+  "expected": "مچھلی",
+  "heard": " مچھ لی",
+  "ratio": 1.0
+ },
+ "units/u05_17": {
+  "expected": "گرم",
+  "heard": " گرم",
+  "ratio": 1.0
+ },
+ "units/u05_18": {
+  "expected": "سردی",
+  "heard": " سردی",
+  "ratio": 1.0
+ },
+ "units/u05_19": {
+  "expected": "دوست",
+  "heard": " دوست",
+  "ratio": 1.0
+ },
+ "sentences/u05_00": {
+  "expected": "چار گلاب",
+  "heard": " چار گلاب",
+  "ratio": 1.0
+ },
+ "sentences/u05_01": {
+  "expected": "شیر جنگل میں ہے",
+  "heard": " شیر جنگل میں ہے",
+  "ratio": 1.0
+ },
+ "sentences/u05_02": {
+  "expected": "دوست کا جوتا",
+  "heard": " دوست کجوٹہ",
+  "ratio": 0.84
+ },
+ "units/u06_00": {
+  "expected": "میں",
+  "heard": " میں",
+  "ratio": 1.0
+ },
+ "units/u06_01": {
+  "expected": "ہاں",
+  "heard": " ہا",
+  "ratio": 0.8
+ },
+ "units/u06_02": {
+  "expected": "کہاں",
+  "heard": " کان",
+  "ratio": 0.86
+ },
+ "units/u06_03": {
+  "expected": "ہیں",
+  "heard": " ہم",
+  "ratio": 0.4
+ },
+ "units/u06_04": {
+  "expected": "گھر",
+  "heard": " گھر",
+  "ratio": 1.0
+ },
+ "units/u06_05": {
+  "expected": "بھائی",
+  "heard": " بھائی",
+  "ratio": 1.0
+ },
+ "units/u06_06": {
+  "expected": "پھول",
+  "heard": " پول",
+  "ratio": 1.0
+ },
+ "units/u06_07": {
+  "expected": "تھالی",
+  "heard": " طالی",
+  "ratio": 1.0
+ },
+ "units/u06_08": {
+  "expected": "ٹھنڈا",
+  "heard": " ٹنڈا",
+  "ratio": 1.0
+ },
+ "units/u06_09": {
+  "expected": "کھانا",
+  "heard": " کانہ",
+  "ratio": 0.75
+ },
+ "units/u06_10": {
+  "expected": "دھاگا",
+  "heard": " داگہ",
+  "ratio": 0.75
+ },
+ "units/u06_11": {
+  "expected": "چھت",
+  "heard": " چھت",
+  "ratio": 1.0
+ },
+ "units/u06_12": {
+  "expected": "جھولا",
+  "heard": " جھولا",
+  "ratio": 1.0
+ },
+ "units/u06_13": {
+  "expected": "ہاتھ",
+  "heard": " ہاتھ",
+  "ratio": 1.0
+ },
+ "units/u06_14": {
+  "expected": "دودھ",
+  "heard": " دود",
+  "ratio": 1.0
+ },
+ "units/u06_15": {
+  "expected": "مچھلی",
+  "heard": " مچ لی",
+  "ratio": 1.0
+ },
+ "units/u06_16": {
+  "expected": "آنکھ",
+  "heard": " آنک",
+  "ratio": 1.0
+ },
+ "units/u06_17": {
+  "expected": "یہاں",
+  "heard": " یا",
+  "ratio": 0.67
+ },
+ "units/u06_18": {
+  "expected": "سکھانا",
+  "heard": " سکھانہ",
+  "ratio": 0.8
+ },
+ "units/u06_19": {
+  "expected": "بھالو",
+  "heard": " بالو",
+  "ratio": 1.0
+ },
+ "sentences/u06_00": {
+  "expected": "میں گھر میں ہوں",
+  "heard": " میں گھر میں ہوں",
+  "ratio": 1.0
+ },
+ "sentences/u06_01": {
+  "expected": "پھول کہاں ہیں",
+  "heard": " پول کہاں ہیں؟",
+  "ratio": 1.0
+ },
+ "sentences/u06_02": {
+  "expected": "بھائی کھانا کھاتا ہے",
+  "heard": " بھائی کھانا کھاتا ہے",
+  "ratio": 1.0
+ },
+ "units/u07_00": {
+  "expected": "ڈاک",
+  "heard": " داک",
+  "ratio": 1.0
+ },
+ "units/u07_01": {
+  "expected": "ڈبہ",
+  "heard": " دب",
+  "ratio": 0.8
+ },
+ "units/u07_02": {
+  "expected": "لڑکا",
+  "heard": " لڈکا",
+  "ratio": 0.75
+ },
+ "units/u07_03": {
+  "expected": "لڑکی",
+  "heard": " دور کیا",
+  "ratio": 0.6
+ },
+ "units/u07_04": {
+  "expected": "بڑا",
+  "heard": " بڑا",
+  "ratio": 1.0
+ },
+ "units/u07_05": {
+  "expected": "پڑھنا",
+  "heard": " پڑھنا",
+  "ratio": 1.0
+ },
+ "units/u07_06": {
+  "expected": "زبان",
+  "heard": " زبان",
+  "ratio": 1.0
+ },
+ "units/u07_07": {
+  "expected": "زمین",
+  "heard": " زمین",
+  "ratio": 1.0
+ },
+ "units/u07_08": {
+  "expected": "ژالہ",
+  "heard": " جلہ",
+  "ratio": 0.57
+ },
+ "units/u07_09": {
+  "expected": "روزانہ",
+  "heard": " روزانا",
+  "ratio": 0.83
+ },
+ "units/u07_10": {
+  "expected": "ڈھول",
+  "heard": " دھول",
+  "ratio": 1.0
+ },
+ "units/u07_11": {
+  "expected": "گڑیا",
+  "heard": " گوریا",
+  "ratio": 0.89
+ },
+ "units/u07_12": {
+  "expected": "سڑک",
+  "heard": " سڑک",
+  "ratio": 1.0
+ },
+ "units/u07_13": {
+  "expected": "زرد",
+  "heard": " زارد",
+  "ratio": 0.86
+ },
+ "units/u07_14": {
+  "expected": "ڈر",
+  "heard": " در",
+  "ratio": 1.0
+ },
+ "units/u07_15": {
+  "expected": "کپڑا",
+  "heard": " کپڑا",
+  "ratio": 1.0
+ },
+ "units/u07_16": {
+  "expected": "مزا",
+  "heard": " مزا",
+  "ratio": 1.0
+ },
+ "units/u07_17": {
+  "expected": "انڈا",
+  "heard": " اندا",
+  "ratio": 1.0
+ },
+ "units/u07_18": {
+  "expected": "ٹھنڈا",
+  "heard": " تندہ",
+  "ratio": 0.75
+ },
+ "units/u07_19": {
+  "expected": "گھڑی",
+  "heard": " گری",
+  "ratio": 1.0
+ },
+ "sentences/u07_00": {
+  "expected": "لڑکا سڑک پر ہے",
+  "heard": " لڑکا سڑک پر ہے",
+  "ratio": 1.0
+ },
+ "sentences/u07_01": {
+  "expected": "بڑا ڈبہ",
+  "heard": " بڑا دب",
+  "ratio": 0.91
+ },
+ "sentences/u07_02": {
+  "expected": "زمین زرد ہے",
+  "heard": " زمین زرد ہے",
+  "ratio": 1.0
+ },
+ "units/u08_00": {
+  "expected": "فرش",
+  "heard": " فرش",
+  "ratio": 1.0
+ },
+ "units/u08_01": {
+  "expected": "فون",
+  "heard": " فون",
+  "ratio": 1.0
+ },
+ "units/u08_02": {
+  "expected": "قلم",
+  "heard": " قلم",
+  "ratio": 1.0
+ },
+ "units/u08_03": {
+  "expected": "قمیض",
+  "heard": " کمیز",
+  "ratio": 1.0
+ },
+ "units/u08_04": {
+  "expected": "خط",
+  "heard": " خط",
+  "ratio": 1.0
+ },
+ "units/u08_05": {
+  "expected": "خوش",
+  "heard": " خوش",
+  "ratio": 1.0
+ },
+ "units/u08_06": {
+  "expected": "غریب",
+  "heard": " گریب",
+  "ratio": 1.0
+ },
+ "units/u08_07": {
+  "expected": "باغ",
+  "heard": " بار",
+  "ratio": 0.67
+ },
+ "units/u08_08": {
+  "expected": "عمر",
+  "heard": " عمر",
+  "ratio": 1.0
+ },
+ "units/u08_09": {
+  "expected": "علم",
+  "heard": " علم",
+  "ratio": 1.0
+ },
+ "units/u08_10": {
+  "expected": "حال",
+  "heard": " حال",
+  "ratio": 1.0
+ },
+ "units/u08_11": {
+  "expected": "حلوہ",
+  "heard": " حلوہ",
+  "ratio": 1.0
+ },
+ "units/u08_12": {
+  "expected": "صاف",
+  "heard": " ساف",
+  "ratio": 1.0
+ },
+ "units/u08_13": {
+  "expected": "فوج",
+  "heard": " فوج",
+  "ratio": 1.0
+ },
+ "units/u08_14": {
+  "expected": "وقت",
+  "heard": " وقت",
+  "ratio": 1.0
+ },
+ "units/u08_15": {
+  "expected": "خالی",
+  "heard": " خالی",
+  "ratio": 1.0
+ },
+ "units/u08_16": {
+  "expected": "غم",
+  "heard": " غرام",
+  "ratio": 0.67
+ },
+ "units/u08_17": {
+  "expected": "عام",
+  "heard": " ام",
+  "ratio": 0.8
+ },
+ "units/u08_18": {
+  "expected": "حساب",
+  "heard": " ہی سب",
+  "ratio": 0.75
+ },
+ "units/u08_19": {
+  "expected": "دفتر",
+  "heard": " دفتر",
+  "ratio": 1.0
+ },
+ "sentences/u08_00": {
+  "expected": "قلم کہاں ہے",
+  "heard": " کلم کہاں ہے؟",
+  "ratio": 1.0
+ },
+ "sentences/u08_01": {
+  "expected": "باغ خالی ہے",
+  "heard": " با خالی ہے",
+  "ratio": 0.94
+ },
+ "sentences/u08_02": {
+  "expected": "وقت کیا ہوا ہے",
+  "heard": " وقت کیا ہوا ہے؟",
+  "ratio": 1.0
+ },
+ "units/u09_00": {
+  "expected": "صبح",
+  "heard": " سوبہ",
+  "ratio": 0.86
+ },
+ "units/u09_01": {
+  "expected": "صبر",
+  "heard": " سبر",
+  "ratio": 1.0
+ },
+ "units/u09_02": {
+  "expected": "ضرور",
+  "heard": " درور",
+  "ratio": 0.75
+ },
+ "units/u09_03": {
+  "expected": "مریض",
+  "heard": " مریز",
+  "ratio": 1.0
+ },
+ "units/u09_04": {
+  "expected": "طالب",
+  "heard": " طالب",
+  "ratio": 1.0
+ },
+ "units/u09_05": {
+  "expected": "طوطا",
+  "heard": " تو تا",
+  "ratio": 1.0
+ },
+ "units/u09_06": {
+  "expected": "ظاہر",
+  "heard": " ظاہر",
+  "ratio": 1.0
+ },
+ "units/u09_07": {
+  "expected": "ظلم",
+  "heard": " زلم",
+  "ratio": 1.0
+ },
+ "units/u09_08": {
+  "expected": "ذائقہ",
+  "heard": " زائقہ",
+  "ratio": 1.0
+ },
+ "units/u09_09": {
+  "expected": "ذمہ",
+  "heard": " زمہ",
+  "ratio": 1.0
+ },
+ "units/u09_10": {
+  "expected": "صابن",
+  "heard": " سابن",
+  "ratio": 1.0
+ },
+ "units/u09_11": {
+  "expected": "ضد",
+  "heard": " زیب",
+  "ratio": 0.4
+ },
+ "units/u09_12": {
+  "expected": "طاقت",
+  "heard": " باکت",
+  "ratio": 0.75
+ },
+ "units/u09_13": {
+  "expected": "حفاظت",
+  "heard": " حفاظت",
+  "ratio": 1.0
+ },
+ "units/u09_14": {
+  "expected": "ذرا",
+  "heard": " ذرح",
+  "ratio": 0.67
+ },
+ "units/u09_15": {
+  "expected": "خاص",
+  "heard": " خاص",
+  "ratio": 1.0
+ },
+ "units/u09_16": {
+  "expected": "ثواب",
+  "heard": " توپ",
+  "ratio": 0.29
+ },
+ "units/u09_17": {
+  "expected": "نظر",
+  "heard": " نظر",
+  "ratio": 1.0
+ },
+ "units/u09_18": {
+  "expected": "لفظ",
+  "heard": " لوز",
+  "ratio": 0.67
+ },
+ "units/u09_19": {
+  "expected": "صحیح",
+  "heard": " سی",
+  "ratio": 0.67
+ },
+ "sentences/u09_00": {
+  "expected": "صبح صاف ہے",
+  "heard": " سبا صافے",
+  "ratio": 0.8
+ },
+ "sentences/u09_01": {
+  "expected": "طوطا ذرا بڑا ہے",
+  "heard": " تو تا زرہ بڑا ہے",
+  "ratio": 0.92
+ },
+ "sentences/u09_02": {
+  "expected": "یہ لفظ صحیح ہے",
+  "heard": " یہ لفظ صحیح ہے",
+  "ratio": 1.0
+ },
+ "units/u10_00": {
+  "expected": "آم",
+  "heard": " ام",
+  "ratio": 1.0
+ },
+ "units/u10_01": {
+  "expected": "آپ",
+  "heard": " اپ",
+  "ratio": 1.0
+ },
+ "units/u10_02": {
+  "expected": "کوئی",
+  "heard": " کوئی",
+  "ratio": 1.0
+ },
+ "units/u10_03": {
+  "expected": "گئے",
+  "heard": " گئی",
+  "ratio": 1.0
+ },
+ "units/u10_04": {
+  "expected": "مسئلہ",
+  "heard": " مسئلہ",
+  "ratio": 1.0
+ },
+ "units/u10_05": {
+  "expected": "بچّہ",
+  "heard": " بچا",
+  "ratio": 0.67
+ },
+ "units/u10_06": {
+  "expected": "اللّٰہ",
+  "heard": " اللہ",
+  "ratio": 1.0
+ },
+ "units/u10_07": {
+  "expected": "دعا",
+  "heard": " دوہ",
+  "ratio": 0.33
+ },
+ "units/u10_08": {
+  "expected": "سؤال",
+  "heard": " سؤال",
+  "ratio": 1.0
+ },
+ "units/u10_09": {
+  "expected": "آئینہ",
+  "heard": " آئینا",
+  "ratio": 0.8
+ },
+ "units/u10_10": {
+  "expected": "نئی",
+  "heard": " نی",
+  "ratio": 0.8
+ },
+ "units/u10_11": {
+  "expected": "چائے",
+  "heard": " جای",
+  "ratio": 0.57
+ },
+ "units/u10_12": {
+  "expected": "گائے",
+  "heard": " گائی",
+  "ratio": 1.0
+ },
+ "units/u10_13": {
+  "expected": "اعلیٰ",
+  "heard": " آلہ",
+  "ratio": 0.57
+ },
+ "units/u10_14": {
+  "expected": "صلوٰۃ",
+  "heard": " صلات",
+  "ratio": 0.5
+ },
+ "units/u10_15": {
+  "expected": "دنیا",
+  "heard": " تونیا",
+  "ratio": 0.67
+ },
+ "units/u10_16": {
+  "expected": "ابّا",
+  "heard": " ابا",
+  "ratio": 1.0
+ },
+ "units/u10_17": {
+  "expected": "امّی",
+  "heard": " امی",
+  "ratio": 1.0
+ },
+ "units/u10_18": {
+  "expected": "مکّہ",
+  "heard": " مکہ",
+  "ratio": 1.0
+ },
+ "units/u10_19": {
+  "expected": "اچّھا",
+  "heard": " چیف",
+  "ratio": 0.33
+ },
+ "sentences/u10_00": {
+  "expected": "آپ کا نام کیا ہے؟",
+  "heard": " آپ کا نام کیا ہے؟",
+  "ratio": 1.0
+ },
+ "sentences/u10_01": {
+  "expected": "چائے میں ۲ چمچ چینی",
+  "heard": " چاہے میں 2 چمچ چینی",
+  "ratio": 0.87
+ },
+ "sentences/u10_02": {
+  "expected": "کوئی مسئلہ نہیں۔",
+  "heard": " کوئی مسئلہ نہیں",
+  "ratio": 1.0
+ },
+ "units/u11_00": {
+  "expected": "کا",
+  "heard": " کا",
+  "ratio": 1.0
+ },
+ "units/u11_01": {
+  "expected": "کی",
+  "heard": " کی",
+  "ratio": 1.0
+ },
+ "units/u11_02": {
+  "expected": "کے",
+  "heard": " کی",
+  "ratio": 1.0
+ },
+ "units/u11_03": {
+  "expected": "سے",
+  "heard": " سی",
+  "ratio": 1.0
+ },
+ "units/u11_04": {
+  "expected": "پر",
+  "heard": " پار",
+  "ratio": 0.8
+ },
+ "units/u11_05": {
+  "expected": "کہ",
+  "heard": " کی",
+  "ratio": 0.5
+ },
+ "units/u11_06": {
+  "expected": "اور",
+  "heard": " اور",
+  "ratio": 1.0
+ },
+ "units/u11_07": {
+  "expected": "ہے",
+  "heard": " ہیییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییییی",
+  "ratio": 0.02
+ },
+ "units/u11_08": {
+  "expected": "ہیں",
+  "heard": " ہی",
+  "ratio": 0.8
+ },
+ "units/u11_09": {
+  "expected": "نے",
+  "heard": " نی",
+  "ratio": 1.0
+ },
+ "units/u11_10": {
+  "expected": "کو",
+  "heard": "",
+  "ratio": 0.0
+ },
+ "units/u11_11": {
+  "expected": "نہیں",
+  "heard": " نی",
+  "ratio": 0.67
+ },
+ "units/u11_12": {
+  "expected": "تھا",
+  "heard": " تا",
+  "ratio": 1.0
+ },
+ "units/u11_13": {
+  "expected": "تھی",
+  "heard": " تی",
+  "ratio": 1.0
+ },
+ "units/u11_14": {
+  "expected": "کیا",
+  "heard": " کیا؟",
+  "ratio": 1.0
+ },
+ "units/u11_15": {
+  "expected": "بھی",
+  "heard": " بی",
+  "ratio": 1.0
+ },
+ "units/u11_16": {
+  "expected": "لیکن",
+  "heard": " گلکین",
+  "ratio": 0.67
+ },
+ "units/u11_17": {
+  "expected": "اگر",
+  "heard": " اگر",
+  "ratio": 1.0
+ },
+ "units/u11_18": {
+  "expected": "پھر",
+  "heard": " ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہترینی ہے کہ ایسا بہت",
+  "ratio": 0.0
+ },
+ "units/u11_19": {
+  "expected": "بہت",
+  "heard": " بہت",
+  "ratio": 1.0
+ },
+ "sentences/u11_00": {
+  "expected": "میرا نام کمال ہے اور میں لاہور میں رہتا ہوں۔",
+  "heard": " میرا نام کمال ہے اور میں لاہور میں رہتا ہوں",
+  "ratio": 1.0
+ },
+ "sentences/u11_01": {
+  "expected": "بچے اسکول جاتے ہیں لیکن آج چھٹی ہے۔",
+  "heard": " بچہ سکول جاتے ہیں لیکن آج چھکتی ہے",
+  "ratio": 0.92
+ },
+ "sentences/u11_02": {
+  "expected": "اگر بارش ہوئی تو ہم گھر پر رہیں گے۔",
+  "heard": " اگر بارش ہوئی تو ہم گھر پر رہیں گے",
+  "ratio": 1.0
+ },
+ "sight/00": {
+  "expected": "کا",
+  "heard": " کا",
+  "ratio": 1.0
+ },
+ "sight/01": {
+  "expected": "کی",
+  "heard": " کی",
+  "ratio": 1.0
+ },
+ "sight/02": {
+  "expected": "کے",
+  "heard": " کی",
+  "ratio": 1.0
+ },
+ "sight/03": {
+  "expected": "سے",
+  "heard": " سی",
+  "ratio": 1.0
+ },
+ "sight/04": {
+  "expected": "پر",
+  "heard": " پر",
+  "ratio": 1.0
+ },
+ "sight/05": {
+  "expected": "کہ",
+  "heard": " کی",
+  "ratio": 0.5
+ },
+ "sight/06": {
+  "expected": "اور",
+  "heard": " اور",
+  "ratio": 1.0
+ },
+ "sight/07": {
+  "expected": "ہے",
+  "heard": " ہی",
+  "ratio": 1.0
+ },
+ "sight/08": {
+  "expected": "ہیں",
+  "heard": " ہی",
+  "ratio": 0.8
+ },
+ "sight/09": {
+  "expected": "نے",
+  "heard": " نی",
+  "ratio": 1.0
+ },
+ "sight/10": {
+  "expected": "کو",
+  "heard": " کو",
+  "ratio": 1.0
+ },
+ "sight/11": {
+  "expected": "میں",
+  "heard": " میں",
+  "ratio": 1.0
+ },
+ "sight/12": {
+  "expected": "نہیں",
+  "heard": " نہیں",
+  "ratio": 1.0
+ },
+ "sight/13": {
+  "expected": "وہ",
+  "heard": " وو",
+  "ratio": 0.5
+ },
+ "sight/14": {
+  "expected": "یہ",
+  "heard": " یہ",
+  "ratio": 1.0
+ },
+ "sight/15": {
+  "expected": "اس",
+  "heard": " اس",
+  "ratio": 1.0
+ },
+ "sight/16": {
+  "expected": "تھا",
+  "heard": " تا",
+  "ratio": 1.0
+ },
+ "sight/17": {
+  "expected": "تھی",
+  "heard": " تی",
+  "ratio": 1.0
+ },
+ "sight/18": {
+  "expected": "کیا",
+  "heard": " کیا؟",
+  "ratio": 1.0
+ },
+ "sight/19": {
+  "expected": "بھی",
+  "heard": " بی",
+  "ratio": 1.0
+ }
+}

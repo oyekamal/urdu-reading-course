@@ -1,0 +1,7 @@
+- main:
+  - heading "Who is learning?" [level=1]
+  - text: Tap a name, or add one
+  - button "+ Add a learner"
+  - button "Change device type"
+- status
+- status

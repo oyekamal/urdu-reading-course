@@ -1,0 +1,30 @@
+no_indexedDB 
+   2s We could not open your saved progress Nothing has been deleted. This c | rec True 
+  15s We could not open your saved progress Nothing has been deleted. This c | rec True ['Try again', 'Export what can be saved', 'Start fresh']
+open_throws 
+   2s We could not open your saved progress Nothing has been deleted. This c | rec True 
+  15s We could not open your saved progress Nothing has been deleted. This c | rec True ['Try again', 'Export what can be saved', 'Start fresh']
+open_hang 
+   2s اردو پڑھنا سیکھیں Loading… | rec False 
+  15s We could not open your saved progress Nothing has been deleted. This c | rec True ['Try again', 'Export what can be saved', 'Start fresh']
+open_error 
+   2s We could not open your saved progress Nothing has been deleted. This c | rec True 
+  15s We could not open your saved progress Nothing has been deleted. This c | rec True ['Try again', 'Export what can be saved', 'Start fresh']
+open_blocked 
+   2s We could not open your saved progress Nothing has been deleted. This c | rec True 
+  15s We could not open your saved progress Nothing has been deleted. This c | rec True ['Try again', 'Export what can be saved', 'Start fresh']
+tx_throws 
+   2s We could not open your saved progress Nothing has been deleted. This c | rec True 
+  15s We could not open your saved progress Nothing has been deleted. This c | rec True ['Try again', 'Export what can be saved', 'Start fresh']
+tx_hang 
+   2s اردو پڑھنا سیکھیں Loading… | rec False 
+  15s We could not open your saved progress Nothing has been deleted. This c | rec True ['Try again', 'Export what can be saved', 'Start fresh']
+put_quota 
+   2s We could not open your saved progress Nothing has been deleted. This c | rec True 
+  15s We could not open your saved progress Nothing has been deleted. This c | rec True ['Try again', 'Export what can be saved', 'Start fresh']
+getAll_throws_cards 
+   2s Good afternoon, Zara Unit 0 · Before the letters Zara 0 pearls 0 / 10  | rec False 
+  15s Good afternoon, Zara Unit 0 · Before the letters Zara 0 pearls 0 / 10  | rec False ['Zara', '', 'Start: Three rules', 'Three rules', 'Finish unit', 'ا\nalif']
+index_throws 
+   2s We could not open your saved progress Nothing has been deleted. This c | rec True 
+  15s We could not open your saved progress Nothing has been deleted. This c | rec True ['Try again', 'Export what can be saved', 'Start fresh']

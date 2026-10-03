@@ -1,0 +1,1085 @@
+{
+ "rounds": [
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "صی",
+    "طو",
+    "ظی",
+    "ذا"
+   ],
+   "right": "طو",
+   "key": "syllables/toe_u"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ظی",
+    "ظو",
+    "صی",
+    "ذا"
+   ],
+   "right": "صی",
+   "key": "syllables/swad_i"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ظو",
+    "صی",
+    "صا",
+    "طی"
+   ],
+   "right": "ظو",
+   "key": "syllables/zoe_u"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ذا",
+    "ظو",
+    "صی",
+    "صا"
+   ],
+   "right": "ذا",
+   "key": "syllables/zal_a"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ضو",
+    "طی",
+    "ظا",
+    "ذی"
+   ],
+   "right": "ضو",
+   "key": "syllables/zwad_u"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ضو",
+    "صو",
+    "ضا",
+    "ضی"
+   ],
+   "right": "ضی",
+   "key": "syllables/zwad_i"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "حی",
+    "حا",
+    "غو",
+    "فو"
+   ],
+   "right": "حا",
+   "key": "syllables/bari_he_a"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "غی",
+    "فا",
+    "قا",
+    "خا"
+   ],
+   "right": "غی",
+   "key": "syllables/ghain_i"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "غا",
+    "فو",
+    "غی",
+    "فی"
+   ],
+   "right": "غا",
+   "key": "syllables/ghain_a"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "خا",
+    "غا",
+    "قی",
+    "خو"
+   ],
+   "right": "خا",
+   "key": "syllables/khe_a"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "خو",
+    "غو",
+    "فی",
+    "غی"
+   ],
+   "right": "فی",
+   "key": "syllables/fe_i"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "خو",
+    "غی",
+    "خا",
+    "قو"
+   ],
+   "right": "قو",
+   "key": "syllables/qaf_u"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "شی",
+    "جا",
+    "سی",
+    "گی"
+   ],
+   "right": "سی",
+   "key": "syllables/sin_i"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "شا",
+    "گو",
+    "شی",
+    "گا"
+   ],
+   "right": "گا",
+   "key": "syllables/gaf_a"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "چی",
+    "سو",
+    "گا",
+    "گی"
+   ],
+   "right": "گا",
+   "key": "syllables/gaf_a"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "گو",
+    "شا",
+    "جی",
+    "سا"
+   ],
+   "right": "شا",
+   "key": "syllables/shin_a"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "سی",
+    "جو",
+    "چو",
+    "سو"
+   ],
+   "right": "سی",
+   "key": "syllables/sin_i"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "گا",
+    "چی",
+    "چو",
+    "چا"
+   ],
+   "right": "چو",
+   "key": "syllables/che_u"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "صا",
+    "ظی",
+    "ذو",
+    "صی"
+   ],
+   "right": "ذو",
+   "key": "syllables/zal_u"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ذا",
+    "ذی",
+    "طو",
+    "ظو"
+   ],
+   "right": "ذا",
+   "key": "syllables/zal_a"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "طا",
+    "ضی",
+    "طو",
+    "ضو"
+   ],
+   "right": "طا",
+   "key": "syllables/toe_a"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ذی",
+    "طو",
+    "صا",
+    "ظا"
+   ],
+   "right": "ظا",
+   "key": "syllables/zoe_a"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ضو",
+    "صو",
+    "ضی",
+    "ظا"
+   ],
+   "right": "ظا",
+   "key": "syllables/zoe_a"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "صو",
+    "صا",
+    "ذی",
+    "طو"
+   ],
+   "right": "طو",
+   "key": "syllables/toe_u"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "خا",
+    "غا",
+    "فا",
+    "غی"
+   ],
+   "right": "فا",
+   "key": "syllables/fe_a"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "خا",
+    "فی",
+    "حو",
+    "حی"
+   ],
+   "right": "فی",
+   "key": "syllables/fe_i"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "فی",
+    "فا",
+    "خو",
+    "قا"
+   ],
+   "right": "فی",
+   "key": "syllables/fe_i"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "قا",
+    "خو",
+    "فی",
+    "قو"
+   ],
+   "right": "قو",
+   "key": "syllables/qaf_u"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "خی",
+    "حی",
+    "فو",
+    "حا"
+   ],
+   "right": "حی",
+   "key": "syllables/bari_he_i"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "خو",
+    "حی",
+    "خا",
+    "قا"
+   ],
+   "right": "حی",
+   "key": "syllables/bari_he_i"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "جی",
+    "شا",
+    "سو",
+    "چو"
+   ],
+   "right": "شا",
+   "key": "syllables/shin_a"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "سی",
+    "چو",
+    "شا",
+    "سا"
+   ],
+   "right": "سی",
+   "key": "syllables/sin_i"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "سا",
+    "شو",
+    "شی",
+    "سی"
+   ],
+   "right": "سا",
+   "key": "syllables/sin_a"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "جی",
+    "جا",
+    "شی",
+    "سا"
+   ],
+   "right": "سا",
+   "key": "syllables/sin_a"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "سو",
+    "سی",
+    "جی",
+    "گو"
+   ],
+   "right": "سو",
+   "key": "syllables/sin_u"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "چی",
+    "جی",
+    "گی",
+    "گا"
+   ],
+   "right": "گی",
+   "key": "syllables/gaf_i"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "طی",
+    "ضو",
+    "طا",
+    "ضی"
+   ],
+   "right": "طا",
+   "key": "syllables/toe_a"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "صی",
+    "طو",
+    "طی",
+    "ضی"
+   ],
+   "right": "طو",
+   "key": "syllables/toe_u"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ذی",
+    "طی",
+    "صی",
+    "ظو"
+   ],
+   "right": "ذی",
+   "key": "syllables/zal_i"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "طا",
+    "صا",
+    "صی",
+    "طو"
+   ],
+   "right": "طا",
+   "key": "syllables/toe_a"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ضا",
+    "ضو",
+    "ظی",
+    "صو"
+   ],
+   "right": "ضو",
+   "key": "syllables/zwad_u"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ذو",
+    "صی",
+    "صو",
+    "ذی"
+   ],
+   "right": "صی",
+   "key": "syllables/swad_i"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "حو",
+    "قو",
+    "قا",
+    "قی"
+   ],
+   "right": "حو",
+   "key": "syllables/bari_he_u"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "غو",
+    "خی",
+    "فی",
+    "غا"
+   ],
+   "right": "خی",
+   "key": "syllables/khe_i"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "قا",
+    "فا",
+    "حو",
+    "فو"
+   ],
+   "right": "فو",
+   "key": "syllables/fe_u"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "غا",
+    "غو",
+    "فی",
+    "غی"
+   ],
+   "right": "فی",
+   "key": "syllables/fe_i"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "خو",
+    "قا",
+    "فا",
+    "حا"
+   ],
+   "right": "فا",
+   "key": "syllables/fe_a"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "حو",
+    "غو",
+    "فو",
+    "حا"
+   ],
+   "right": "فو",
+   "key": "syllables/fe_u"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "شو",
+    "سی",
+    "جی",
+    "جو"
+   ],
+   "right": "جی",
+   "key": "syllables/jim_i"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "چو",
+    "شا",
+    "جی",
+    "گا"
+   ],
+   "right": "چو",
+   "key": "syllables/che_u"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "گا",
+    "گو",
+    "چی",
+    "سا"
+   ],
+   "right": "گا",
+   "key": "syllables/gaf_a"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "گا",
+    "جی",
+    "سو",
+    "سی"
+   ],
+   "right": "گا",
+   "key": "syllables/gaf_a"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "چو",
+    "گا",
+    "شی",
+    "چا"
+   ],
+   "right": "شی",
+   "key": "syllables/shin_i"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "سا",
+    "جی",
+    "چا",
+    "شو"
+   ],
+   "right": "سا",
+   "key": "syllables/sin_a"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "صا",
+    "ظو",
+    "طو",
+    "صی"
+   ],
+   "right": "صا",
+   "key": "syllables/swad_a"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ظو",
+    "صا",
+    "طو",
+    "ظی"
+   ],
+   "right": "طو",
+   "key": "syllables/toe_u"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ضی",
+    "ضو",
+    "ظا",
+    "طو"
+   ],
+   "right": "ظا",
+   "key": "syllables/zoe_a"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ظو",
+    "صی",
+    "طی",
+    "ذا"
+   ],
+   "right": "ظو",
+   "key": "syllables/zoe_u"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ذی",
+    "ضا",
+    "ظو",
+    "طو"
+   ],
+   "right": "ضا",
+   "key": "syllables/zwad_a"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ظا",
+    "ذی",
+    "ضو",
+    "طا"
+   ],
+   "right": "ظا",
+   "key": "syllables/zoe_a"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "فا",
+    "غی",
+    "قا",
+    "قو"
+   ],
+   "right": "قو",
+   "key": "syllables/qaf_u"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "قا",
+    "حو",
+    "قو",
+    "فی"
+   ],
+   "right": "قا",
+   "key": "syllables/qaf_a"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "غا",
+    "قی",
+    "خی",
+    "خو"
+   ],
+   "right": "غا",
+   "key": "syllables/ghain_a"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "حو",
+    "حا",
+    "قو",
+    "حی"
+   ],
+   "right": "حا",
+   "key": "syllables/bari_he_a"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "قی",
+    "قا",
+    "غی",
+    "حا"
+   ],
+   "right": "قا",
+   "key": "syllables/qaf_a"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "قا",
+    "حی",
+    "خی",
+    "فی"
+   ],
+   "right": "حی",
+   "key": "syllables/bari_he_i"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "سو",
+    "گا",
+    "جی",
+    "شو"
+   ],
+   "right": "گا",
+   "key": "syllables/gaf_a"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "جو",
+    "جی",
+    "سو",
+    "شی"
+   ],
+   "right": "جو",
+   "key": "syllables/jim_u"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "سو",
+    "جو",
+    "چو",
+    "سی"
+   ],
+   "right": "سی",
+   "key": "syllables/sin_i"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "سی",
+    "چی",
+    "جی",
+    "چو"
+   ],
+   "right": "چو",
+   "key": "syllables/che_u"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "شو",
+    "سی",
+    "سا",
+    "گی"
+   ],
+   "right": "سی",
+   "key": "syllables/sin_i"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "چو",
+    "سی",
+    "جی",
+    "جا"
+   ],
+   "right": "چو",
+   "key": "syllables/che_u"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "طی",
+    "ضو",
+    "طا",
+    "صی"
+   ],
+   "right": "ضو",
+   "key": "syllables/zwad_u"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ذو",
+    "ظا",
+    "طی",
+    "ظی"
+   ],
+   "right": "ذو",
+   "key": "syllables/zal_u"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ذا",
+    "طو",
+    "ظو",
+    "طی"
+   ],
+   "right": "ذا",
+   "key": "syllables/zal_a"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ظا",
+    "صا",
+    "ظی",
+    "طا"
+   ],
+   "right": "ظا",
+   "key": "syllables/zoe_a"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "ضی",
+    "طا",
+    "طی",
+    "ظا"
+   ],
+   "right": "ضی",
+   "key": "syllables/zwad_i"
+  },
+  {
+   "unit": 9,
+   "title": "Blend",
+   "txt": [
+    "صی",
+    "ضو",
+    "ذی",
+    "طو"
+   ],
+   "right": "ضو",
+   "key": "syllables/zwad_u"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "قی",
+    "حو",
+    "غا",
+    "فو"
+   ],
+   "right": "حو",
+   "key": "syllables/bari_he_u"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "خا",
+    "غو",
+    "خو",
+    "حی"
+   ],
+   "right": "حی",
+   "key": "syllables/bari_he_i"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "غا",
+    "فا",
+    "قی",
+    "غی"
+   ],
+   "right": "غی",
+   "key": "syllables/ghain_i"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "غی",
+    "خو",
+    "غو",
+    "حی"
+   ],
+   "right": "حی",
+   "key": "syllables/bari_he_i"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "غا",
+    "فا",
+    "حا",
+    "قی"
+   ],
+   "right": "قی",
+   "key": "syllables/qaf_i"
+  },
+  {
+   "unit": 8,
+   "title": "Blend",
+   "txt": [
+    "غا",
+    "غی",
+    "خا",
+    "حا"
+   ],
+   "right": "خا",
+   "key": "syllables/khe_a"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "سو",
+    "گا",
+    "گو",
+    "چو"
+   ],
+   "right": "گو",
+   "key": "syllables/gaf_u"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "چو",
+    "سا",
+    "شا",
+    "جی"
+   ],
+   "right": "سا",
+   "key": "syllables/sin_a"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "گی",
+    "جا",
+    "چی",
+    "شی"
+   ],
+   "right": "جا",
+   "key": "syllables/jim_a"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "گا",
+    "جا",
+    "شا",
+    "شو"
+   ],
+   "right": "شا",
+   "key": "syllables/shin_a"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "جا",
+    "شو",
+    "چو",
+    "گی"
+   ],
+   "right": "جا",
+   "key": "syllables/jim_a"
+  },
+  {
+   "unit": 5,
+   "title": "Blend",
+   "txt": [
+    "جو",
+    "چو",
+    "گو",
+    "سی"
+   ],
+   "right": "گو",
+   "key": "syllables/gaf_u"
+  }
+ ],
+ "bad": []
+}

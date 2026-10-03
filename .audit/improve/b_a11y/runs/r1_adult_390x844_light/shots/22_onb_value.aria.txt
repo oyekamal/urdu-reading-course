@@ -1,0 +1,8 @@
+- main:
+  - heading "You just read Urdu" [level=1]
+  - text: بابا baba · dad · your first word
+  - paragraph: Two letters, one word, under two minutes. Show someone who will be proud of you.
+  - button "Share my first word"
+  - button "Continue"
+- status
+- status

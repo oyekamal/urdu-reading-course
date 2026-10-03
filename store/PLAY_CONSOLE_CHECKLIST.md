@@ -19,14 +19,14 @@ Sources: research/16_play_store_readiness.md (official Google pages, fetched 202
 | App access | All functionality available without restrictions (no login) |
 | Content rating (IARC) | Category Education; no violence, no user-generated content, no gambling, no ads, no purchases → expect Everyone |
 | Target audience | Mixed: 5–8, 9–12, 13–15, 16–17, 18+ (children learn; parents and teachers use teacher/parent modes) |
-| Links out of the app | WhatsApp and Donate sit in More, each behind a grown-ups arithmetic gate (v0.8.1) |
-| Government / News / COVID / Financial features | No / No / No / No (Easypaisa donate is an outbound link, no in-app payment processing) |
+| Links out of the app | Email Kamal and Support Urdu Qaida (bank details) sit in More, plus backup export and reset, each behind a spelled-out-number grown-ups gate |
+| Government / News / COVID / Financial features | No / No / No / No (Support is a person-to-person bank transfer shown as text, no in-app payment processing, no payment SDK) |
 | Health | No |
 
 ## 4. Store listing (copy from this folder)
 - `listing_en.md` → default listing (en-US), title "Urdu Qaida: Learn to Read Urdu". `listing_ur.md` → localised listing ur.
 - Icon `icon-512.png`, feature graphic `feature-graphic-1024x500.png`, screenshots `screenshots_en/01..08.png` (upload in that order), tablets `tablet7_en/`, `tablet10_en/`; `*_ur/` for the Urdu listing. Release notes: `whats_new.md`.
-- Category: Education. Tags: Language learning, Kids. Contact email + the WhatsApp number. Free, all countries (Pakistan first).
+- Category: Education. Tags: Language learning, Kids. Contact email oyekamalkhan@gmail.com (no phone number). Free, all countries (Pakistan first).
 
 ## 5. Closed testing gate (new personal accounts)
 - [ ] Create a **Closed testing** track, add ≥12 testers (email list or Google Group), send the opt-in link.
@@ -36,11 +36,11 @@ Sources: research/16_play_store_readiness.md (official Google pages, fetched 202
 
 ## 6. Before pressing Publish
 - [ ] Re-read the Families policy page linked in research/16 (it changes often).
-- [ ] Confirm the Easypaisa number and account name in the app (More → Donate) are right.
-- [ ] Confirm the ElevenLabs licence covers the audio. Their billing docs say "paid plans" get commercial rights; the account is prepaid pay-as-you-go. The app credits ElevenLabs in More either way (the free-plan rule is attribution). If in doubt, ask ElevenLabs support, or top up with one month of Starter ($5) and regenerate with `python3 scripts/el_audio.py build --judge --force` (about 5k characters).
+- [ ] Confirm the bank details in the app (More → Support Urdu Qaida) are right: HBL, MUHAMMAD KAMAL, account and IBAN, NUST Branch Islamabad.
+- [ ] Confirm the licence of the voice provider covers the shipped audio for commercial distribution (check the provider's current terms for your plan; the app discloses the voices are AI-generated).
 - [ ] Optional: apply for Teacher Approved after launch.
 
 ## Known follow-ups (not blockers)
 - Urdu UI localisation (the Urdu listing shows an English UI under Urdu captions).
-- Warmer letter names: record the 39 names in Voice Studio (`scripts/voice_studio.py`), or clone a consenting teacher's voice on ElevenLabs Starter. The old CC-BY-NC machine voice is gone since v0.8.0.
+- Warmer letter names: record the 39 names in Voice Studio (`scripts/voice_studio.py`), or clone a consenting teacher's voice with a licensed provider. The old CC-BY-NC machine voice is gone since v0.8.0.
 - Tablet screenshots and a 30 s promo video.

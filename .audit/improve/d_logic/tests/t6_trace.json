@@ -1,0 +1,156 @@
+{
+ "alif": {
+  "top->bottom right of centre": {
+   "verdict": "Coverage 100% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "top->bottom exactly on the centre line (was falsely rejected)": {
+   "verdict": "Coverage 100% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "top->bottom 3px left of centre (was falsely rejected)": {
+   "verdict": "Coverage 99% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "BOTTOM->top (reversed)": {
+   "verdict": "Coverage 100% — Start at the green dot",
+   "expected": "kind-reject",
+   "as_expected": true
+  },
+  "ten random short dashes": {
+   "verdict": "Coverage 100% — Try one smooth line, from the green dot",
+   "expected": "kind-reject",
+   "as_expected": true
+  },
+  "wide zigzag scribble over the glyph box": {
+   "verdict": "Coverage 100% — stay inside the letter",
+   "expected": "kind-reject",
+   "as_expected": true
+  },
+  "slow shaky top->bottom (4px steps, +-4px jitter)": {
+   "verdict": "Coverage 100% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "very slow smooth top->bottom (200 points)": {
+   "verdict": "Coverage 100% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "shaky BOTTOM->top": {
+   "verdict": "Coverage 100% — Start at the green dot",
+   "expected": "kind-reject",
+   "as_expected": true
+  },
+  "tiny dot in the middle": {
+   "verdict": "Coverage 18% — keep tracing",
+   "expected": "kind-reject",
+   "as_expected": true
+  },
+  "left-handed: starts 5px left, lifts once in the middle (2 strokes)": {
+   "verdict": "Coverage 90% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "two strokes top half then bottom half (a 6-year-old lifting)": {
+   "verdict": "Coverage 100% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "only the bottom half": {
+   "verdict": "Coverage 53% — keep tracing",
+   "expected": "kind-reject",
+   "as_expected": true
+  },
+  "do nothing": {
+   "verdict": "Coverage 0% — keep tracing",
+   "expected": "kind-reject",
+   "as_expected": true
+  }
+ },
+ "د": {
+  "body top->bottom along the glyph (hinted direction)": {
+   "verdict": "Coverage 95% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "body BOTTOM->top (reversed)": {
+   "verdict": "Coverage 95% — Start at the green dot and follow the arrow",
+   "expected": "kind-reject",
+   "as_expected": true
+  },
+  "body top->bottom, shaky": {
+   "verdict": "Coverage 96% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "body top->bottom then marks (if any) last": {
+   "verdict": "Coverage 95% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "ten random dashes": {
+   "verdict": "Coverage 86% — Try one smooth line, from the green dot",
+   "expected": "kind-reject",
+   "as_expected": true
+  }
+ },
+ "ر": {
+  "body top->bottom along the glyph (hinted direction)": {
+   "verdict": "Coverage 100% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "body BOTTOM->top (reversed)": {
+   "verdict": "Coverage 100% — Start at the green dot",
+   "expected": "kind-reject",
+   "as_expected": true
+  },
+  "body top->bottom, shaky": {
+   "verdict": "Coverage 100% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "body top->bottom then marks (if any) last": {
+   "verdict": "Coverage 100% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "ten random dashes": {
+   "verdict": "Coverage 92% — Try one smooth line, from the green dot",
+   "expected": "kind-reject",
+   "as_expected": true
+  }
+ },
+ "be": {
+  "body right->left, then the dot (taught order)": {
+   "verdict": "Coverage 82% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "dot FIRST then body": {
+   "verdict": "Coverage 82% — Body first, then the dots",
+   "expected": "kind-reject",
+   "as_expected": true
+  },
+  "body drawn LEFT->right (reversed)": {
+   "verdict": "Coverage 82% — Start at the green dot",
+   "expected": "kind-reject",
+   "as_expected": true
+  },
+  "shaky body right->left + dot": {
+   "verdict": "Coverage 84% ✓ good",
+   "expected": "pass",
+   "as_expected": true
+  },
+  "scribble over whole glyph box": {
+   "verdict": "Coverage 100% — stay inside the letter",
+   "expected": "kind-reject",
+   "as_expected": true
+  }
+ },
+ "unexpected": []
+}

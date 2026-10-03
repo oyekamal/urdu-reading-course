@@ -1,0 +1,7 @@
+- main:
+  - text: Your first lesson Listen, then tap the letter you hear.
+  - button "Play again"
+  - button "ا"
+  - button "ب"
+- status
+- status

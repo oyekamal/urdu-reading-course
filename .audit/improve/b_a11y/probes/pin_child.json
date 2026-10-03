@@ -1,0 +1,8 @@
+{
+ "pin_value_after_typing_1234": "1234",
+ "pin_value_after_fill": "1234",
+ "book_active_after_tab": "btn stk-tab on",
+ "book_still_open_after_Enter_on_Back": true,
+ "book_open_after_Escape": false,
+ "book_tab2_selected_after_Enter": "true"
+}

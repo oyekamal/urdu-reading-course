@@ -1,0 +1,41 @@
+prog3/0: first burst 0px->33%; before last 67%; after finish burst {'w': '100%', 'cel': 1, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 1 of 2 | Three rules | Learn'}
+    cel-go burst -> {'w': '0px', 'cel': 0, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 2 of 2 | Finish unit | A who'} tab bar active: today errs []
+dbl/0: first burst 0px->33%; before last 67%; after finish burst {'w': '100%', 'cel': 1, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 1 of 2 | Three rules | Learn'}
+    cel-go burst -> {'w': '0px', 'cel': 0, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 2 of 2 | Finish unit | A who'} tab bar active: today errs []
+cc3/0: first burst 0px->33%; before last 67%; after finish burst {'w': '100%', 'cel': 1, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 1 of 2 | Three rules | Learn'}
+    cel-go burst -> {'w': '0px', 'cel': 0, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 2 of 2 | Finish unit | A who'} tab bar active: today errs []
+mouse/0: first burst 0px->33%; before last 67%; after finish burst {'w': '100%', 'cel': 1, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 1 of 2 | Three rules | Learn'}
+    cel-go burst -> {'w': '0px', 'cel': 0, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 2 of 2 | Finish unit | A who'} tab bar active: today errs []
+mouse/100: first burst 0px->33%; before last 67%; after finish burst {'w': '100%', 'cel': 1, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 1 of 2 | Three rules | Learn'}
+    cel-go burst -> {'w': '0px', 'cel': 0, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 2 of 2 | Finish unit | A who'} tab bar active: read errs []
+mouse/200: first burst 0px->67%; before last 67%; after finish burst {'w': '100%', 'cel': 1, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 1 of 2 | Three rules | Learn'}
+    cel-go burst -> {'w': '0px', 'cel': 0, 'lessons': [['rules']], 'att': 0, 'sess': 0, 'text': 'Unit 0 · lesson 2 of 2 | Finish unit | A who'} tab bar active: today errs []
+Traceback (most recent call last):
+  File "/home/oye/Documents/free_work/urdu-reading-course/.audit/improve/a_robust/verifier_r2/d1_taps.py", line 37, in <module>
+    method(pg, '.lesson .btn-primary', how, gap); pg.wait_for_timeout(2500)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oye/Documents/free_work/urdu-reading-course/.audit/improve/a_robust/verifier_r2/d1_taps.py", line 12, in method
+    xy = center(pg, sel); n = 3
+         ^^^^^^^^^^^^^^^
+  File "/home/oye/Documents/free_work/urdu-reading-course/.audit/improve/a_robust/verifier_r2/../verifier_r1/d1_helpers.py", line 2, in center
+    return pg.evaluate("s=>{const e=document.querySelector(s); const r=e.getBoundingClientRect(); return [r.x+r.width/2, r.y+r.height/2]}", sel)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oye/.local/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 9385, in evaluate
+    self._sync(
+  File "/home/oye/.local/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/home/oye/.local/lib/python3.12/site-packages/playwright/_impl/_page.py", line 472, in evaluate
+    return await self._main_frame.evaluate(expression, arg)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oye/.local/lib/python3.12/site-packages/playwright/_impl/_frame.py", line 345, in evaluate
+    await self._channel.send(
+  File "/home/oye/.local/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oye/.local/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.evaluate: TypeError: Cannot read properties of null (reading 'getBoundingClientRect')
+    at eval (eval at evaluate (:311:30), <anonymous>:1:50)
+    at UtilityScript.evaluate (<anonymous>:318:18)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)

@@ -1,0 +1,38 @@
+('got', (0, 0, 0), 'graded cards', [('ا', 1, 2)], 'counter', '2 / 5')
+('miss', (0, 0, 0), 'graded cards', [('ا', 1, 1)], 'counter', '2 / 5')
+('got', (0, 100, 200), 'graded cards', [('ا', 1, 2)], 'counter', '2 / 5')
+('miss', (0, 100, 200), 'graded cards', [('ا', 1, 1)], 'counter', '2 / 5')
+('got', (0, 100, 200, 300), 'graded cards', [('ا', 1, 2)], 'counter', '2 / 5')
+('miss', (0, 100, 200, 300), 'graded cards', [('ا', 1, 1)], 'counter', '2 / 5')
+('got', (0, 60, 150), 'graded cards', [('ا', 1, 2)], 'counter', '2 / 5')
+('miss', (0, 60, 150), 'graded cards', [('ا', 1, 1)], 'counter', '2 / 5')
+['mode picker', (0, 0, 0), 'screen', 'Who is learning? | Tap a name, o', 'mode', 'personal', 'profiles', 1, 'screen', 'Good afternoon, Dup | Unit 0 · B']
+['mode picker', (0, 100, 200), 'screen', 'Who is learning? | Tap a name, o', 'mode', 'personal', 'profiles', 1, 'screen', 'Good afternoon, Dup | Unit 0 · B']
+['mode picker', (0, 100, 200, 300), 'screen', 'Who is learning? | Tap a name, o', 'mode', 'personal', 'profiles', 1, 'screen', 'Good afternoon, Dup | Unit 0 · B']
+['mode picker', (0, 60, 150), 'screen', 'Who is learning? | Tap a name, o', 'mode', 'personal', 'profiles', 1, 'screen', 'Good afternoon, Dup | Unit 0 · B']
+Traceback (most recent call last):
+  File "/home/oye/Documents/free_work/urdu-reading-course/.audit/improve/a_robust/verifier_r2/h2_flows.py", line 46, in <module>
+    for t in TIMES: print(dict_test(b, t, False), flush=True)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oye/Documents/free_work/urdu-reading-course/.audit/improve/a_robust/verifier_r2/h2_flows.py", line 30, in dict_test
+    pg.evaluate("()=>{const h=[...document.querySelectorAll('h3')].find(h=>/Dictation/.test(h.innerText)); h.scrollIntoView()}"); pg.wait_for_timeout(300)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oye/.local/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 9385, in evaluate
+    self._sync(
+  File "/home/oye/.local/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/home/oye/.local/lib/python3.12/site-packages/playwright/_impl/_page.py", line 472, in evaluate
+    return await self._main_frame.evaluate(expression, arg)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oye/.local/lib/python3.12/site-packages/playwright/_impl/_frame.py", line 345, in evaluate
+    await self._channel.send(
+  File "/home/oye/.local/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oye/.local/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.evaluate: TypeError: Cannot read properties of undefined (reading 'scrollIntoView')
+    at eval (eval at evaluate (:311:30), <anonymous>:1:93)
+    at UtilityScript.evaluate (<anonymous>:318:18)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)

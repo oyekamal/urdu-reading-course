@@ -1,0 +1,139 @@
+{
+ "quiz_length_bot(knows zero letters; guess=25%)": {
+  "1": {
+   "pass_rate_pct": 0.15,
+   "mean_score_of_10": 3.5
+  },
+  "2": {
+   "pass_rate_pct": 0.8,
+   "mean_score_of_10": 4.16
+  },
+  "3": {
+   "pass_rate_pct": 0.55,
+   "mean_score_of_10": 3.94
+  },
+  "4": {
+   "pass_rate_pct": 0.4,
+   "mean_score_of_10": 3.81
+  },
+  "5": {
+   "pass_rate_pct": 1.35,
+   "mean_score_of_10": 4.2
+  },
+  "6": {
+   "pass_rate_pct": 0.0,
+   "mean_score_of_10": 3.29
+  },
+  "7": {
+   "pass_rate_pct": 1.18,
+   "mean_score_of_10": 4.35
+  },
+  "8": {
+   "pass_rate_pct": 0.53,
+   "mean_score_of_10": 3.9
+  },
+  "9": {
+   "pass_rate_pct": 1.7,
+   "mean_score_of_10": 4.44
+  },
+  "10": {
+   "pass_rate_pct": 0.95,
+   "mean_score_of_10": 4.26
+  },
+  "11": {
+   "pass_rate_pct": 3.48,
+   "mean_score_of_10": 4.79
+  }
+ },
+ "quiz_random_guess_pass_pct": 0.0416,
+ "placement": {
+  "1": {
+   "letters": 6,
+   "P(some letter never asked)": 0.985,
+   "P(learner who does NOT know one letter still passes)": 0.805
+  },
+  "2": {
+   "letters": 3,
+   "P(some letter never asked)": 0.259,
+   "P(learner who does NOT know one letter still passes)": 0.469
+  },
+  "3": {
+   "letters": 3,
+   "P(some letter never asked)": 0.26,
+   "P(learner who does NOT know one letter still passes)": 0.472
+  },
+  "4": {
+   "letters": 4,
+   "P(some letter never asked)": 0.619,
+   "P(learner who does NOT know one letter still passes)": 0.629
+  },
+  "5": {
+   "letters": 5,
+   "P(some letter never asked)": 0.883,
+   "P(learner who does NOT know one letter still passes)": 0.733
+  },
+  "6": {
+   "letters": 2,
+   "P(some letter never asked)": 0.032,
+   "P(learner who does NOT know one letter still passes)": 0.209
+  },
+  "7": {
+   "letters": 4,
+   "P(some letter never asked)": 0.616,
+   "P(learner who does NOT know one letter still passes)": 0.631
+  },
+  "8": {
+   "letters": 6,
+   "P(some letter never asked)": 0.984,
+   "P(learner who does NOT know one letter still passes)": 0.797
+  },
+  "9": {
+   "letters": 5,
+   "P(some letter never asked)": 0.887,
+   "P(learner who does NOT know one letter still passes)": 0.74
+  },
+  "10": {
+   "letters": 1,
+   "P(some letter never asked)": 0.0,
+   "P(learner who does NOT know one letter still passes)": 0.001
+  }
+ },
+ "placement_guesser_clears_unit1_pct": 0.066,
+ "same_sound_consonants_inside_a_unit_blend_pool": {
+  "9": {
+   "z": [
+    "ض",
+    "ظ",
+    "ذ"
+   ]
+  }
+ },
+ "unit9_blend_round_has_two_identical_sounding_options_pct": 23.5,
+ "leitner": {
+  "box_days": [
+   0,
+   1,
+   2,
+   4,
+   8,
+   16
+  ],
+  "sequence_for_always_correct_from_box1": [
+   2,
+   4,
+   8,
+   16,
+   16
+  ],
+  "wrong_goes_to_box1_due_days": 1
+ },
+ "egra_passage_words": 52,
+ "egra_cases": {
+  "read 12 words in 60s, teacher forgot to mark last word (attempted=N)": 52,
+  "read 12 words in 60s, marked correctly": 12,
+  "child finished all, 36s, 0 err": 87,
+  "finish pressed at 0.2s by accident": 3120,
+  "exactly 60 correct in 60s": 60,
+  "PRP band for 90": "meets"
+ }
+}

@@ -1,0 +1,974 @@
+[
+{
+"ch": "ا",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 99% ✓ good · 3 strokes, aim for 1",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "wobbly6",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "wobbly6",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "alif",
+"nmarks": 0
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "wobbly6",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "wobbly6",
+"ok": false,
+"t": "Coverage 100% — Try one smooth line, from the green dot",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "wobbly6",
+"ok": false,
+"t": "Coverage 100% — Try one smooth line, from the green dot",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 4 strokes, aim for 2",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "wobbly6",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "ب",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 1
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 6 strokes, aim for 4",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "wobbly6",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 6 strokes, aim for 4",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "wobbly6",
+"ok": false,
+"t": "Coverage 100% — Try one smooth line, from the green dot",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "initial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "natural",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 99% ✓ good · 6 strokes, aim for 4",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "wobbly6",
+"ok": false,
+"t": "Coverage 98% — Try one smooth line, from the green dot",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "medial",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 6 strokes, aim for 4",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "shaky3",
+"ok": false,
+"t": "Coverage 100% — Try one smooth line, from the green dot",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "wobbly6",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "پ",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "be",
+"nmarks": 3
+},
+{
+"ch": "د",
+"form": "isolated",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "isolated",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "isolated",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "isolated",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "isolated",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "isolated",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "isolated",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "isolated",
+"var": "wobbly6",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "isolated",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "final",
+"var": "natural",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "final",
+"var": "marks_squiggle",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "final",
+"var": "marks_circles",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "final",
+"var": "marks_tap_off7",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "final",
+"var": "lift2",
+"ok": true,
+"t": "Coverage 100% ✓ good · 3 strokes, aim for 1",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "final",
+"var": "lift1_gap",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "final",
+"var": "shaky3",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "final",
+"var": "wobbly6",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"fam": "dal",
+"nmarks": 0
+},
+{
+"ch": "د",
+"form": "final",
+"var": "offstart_overshoot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"fam": "dal",
+"nmarks": 0
+}
+]

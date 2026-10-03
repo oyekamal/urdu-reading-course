@@ -1,0 +1,18 @@
+errors []
+N 228 rej 16
+ب final center_bodytop Coverage 97% — Start at the green dot
+ب final wob9_bodytop Coverage 92% — Start at the green dot
+ت final center_bodytop Coverage 97% — Start at the green dot
+ت final wob9_bodytop Coverage 94% — Start at the green dot
+ہ medial center_bodytop Coverage 99% — Start at the green dot
+ہ medial off+6 Coverage 78% — keep tracing
+ہ final center_bodytop Coverage 100% — Start at the green dot
+ہ final wob9_bodytop Coverage 99% — Start at the green dot
+ج isolated center_bodytop Coverage 99% — Start at the green dot
+ج isolated wob9_bodytop Coverage 94% — Start at the green dot
+ج medial center_bodytop Coverage 100% — Start at the green dot
+ج medial wob9_bodytop Coverage 97% — Start at the green dot
+ج final center_bodytop Coverage 100% — Start at the green dot
+ج final wob9_bodytop Coverage 98% — Start at the green dot
+ص medial center_bodytop Coverage 100% — Start at the green dot
+ص medial wob9_bodytop Coverage 97% — Start at the green dot

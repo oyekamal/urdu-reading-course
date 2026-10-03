@@ -1,0 +1,48 @@
+{
+ "tabs": [
+  "Class",
+  "Lesson",
+  "Groups",
+  "Assess",
+  "Reports",
+  "Device"
+ ],
+ "class": [
+  "Name | Grade | Band",
+  "NewCompSkipped | 2 | sentences",
+  "NewHigh | 2 | fluent",
+  "NewLowComp | 2 | sentences",
+  "OldBand | 2 | fluent",
+  "OldNoBand | 2 | sentences"
+ ],
+ "groups": [
+  "pre-reader (0) / Letter lessons on the phone, one per turn (hear it, tap it, trace it); no independent reading expected yet. / No children in this band yet.",
+  "letters (0) / Letter lessons plus the Join and Blend lessons of the current unit; tell-apart with look-alikes learned so far. / No children in this band yet.",
+  "words (0) / Vowel marks, Words 1 and Words 2 lessons (build, read, dictation); chorus reading of the unit word list. / No children in this band yet.",
+  "sentences (3) / Read lesson and repeated reading of the unit sentences and passage; the Unit check. / NewCompSkipped, NewLowComp, OldNoBand",
+  "fluent (2) / Passages with comprehension questions; push speed and understanding together; retest every four weeks. / NewHigh, OldBand",
+  "Not yet assessed (0) / Everyone has been assessed."
+ ],
+ "report": [
+  "Name ▲ | Date | Letters | Nonwords | Words | Passage cwpm | Comp | Band",
+  "NewCompSkipped | 10/3/2026 | 30 | 20 | 25 | 70 | 0/5 | sentences",
+  "NewHigh | 10/3/2026 | 30 | 20 | 25 | 95 | 5/5 | fluent",
+  "NewLowComp | 10/3/2026 | 30 | 20 | 25 | 70 | 2/5 | sentences",
+  "OldBand | 10/3/2026 | 30 | 20 | 25 | 65 | 1/5 | fluent",
+  "OldNoBand | 10/3/2026 | 30 | 20 | 25 | 45 | 5/5 | "
+ ],
+ "report_text": "LowComp\t10/3/2026\t30\t20\t25\t70\t2/5\tsentences\nOldBand\t10/3/2026\t30\t20\t25\t65\t1/5\tfluent\nOldNoBand\t10/3/2026\t30\t20\t25\t45\t5/5\t\nBand histogram\npre-reader\n0\nletters\n0\nwords\n0\nsentences\n2\nfluent\n2\nExport / import\nExport CSV\nExport full backup (JSON)\n\nImport backup:\n\nImport a backup (JSON)\nParent slip\nNewCompSkipped\nShare slip\nNewHigh\nShare slip\nNewLowComp\nShare slip\nOldBand\nShare slip\nOldNoBand\nShare slip",
+ "slip_tab": "Reports",
+ "slips": [
+  "NewCompSkipped — 10/3/2026\nPassage fluency: 70 correct words/minute — meets the grade-2 standard\nStage: sentences (pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+)\nComprehension: 0/5\nReading full sentences — practise short passages daily.",
+  "NewHigh — 10/3/2026\nPassage fluency: 95 correct words/minute — exceeds the grade-2 standard\nStage: fluent (pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+)\nComprehension: 5/5\nReading fluently — keep up daily reading at home.",
+  "NewLowComp — 10/3/2026\nPassage fluency: 70 correct words/minute — meets the grade-2 standard\nStage: sentences (pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+)\nComprehension: 2/5\nReading full sentences — practise short passages daily.",
+  "OldBand — 10/3/2026\nPassage fluency: 65 correct words/minute — meets the grade-2 standard\nStage: fluent (pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+)\nComprehension: 1/5\nReading fluently — keep up daily reading at home.",
+  "OldNoBand — 10/3/2026\nPassage fluency: 45 correct words/minute — below the grade-2 standard (60 words/minute)\nStage: undefined (pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+)\nComprehension: 5/5\nStill at pre-reading stage — daily read-aloud time with an adult is the best next step."
+ ],
+ "dash": [
+  "Date | By | Letters | Nonwords | Words | Passage | Comp. | Level",
+  "10/3/2026 | teacher | 30 | 20 | 25 | 65 | 1 | fluent"
+ ],
+ "errors": []
+}

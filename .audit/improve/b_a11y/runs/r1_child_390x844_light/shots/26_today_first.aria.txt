@@ -1,0 +1,43 @@
+- main:
+  - heading "Good morning, Zara" [level=1]
+  - text: Unit 0 · Before the letters
+  - button "Switch learner": Zara
+  - text: 0 pearls
+  - 'img "Daily goal: 0 of 10 minutes"':
+    - img
+    - text: 0 / 10 min
+  - text: 1 day practised
+  - button "Tap Marko to say hi"
+  - text: Hi Zara! Let's earn your first pearl. Unit 0 Lesson 1 of 2 Start here Three rules
+  - 'button "Start: Three rules"'
+  - heading "Your path" [level=3]
+  - text: Unit 0 Before the letters حروف سے پہلے 0 of 2 pearls
+  - button "Three rules, up next": Three rules
+  - button "Finish unit, locked": Finish unit
+  - text: Unit 1 The first six پہلے چھ حرف Finish unit 0 to open this
+  - button "alif, locked": ا alif
+  - button "be, locked": ب be
+  - button "kāf, locked": ک kāf
+  - button "lām, locked": ل lām
+  - button "mīm, locked": م mīm
+  - button "nūn, locked": ن nūn
+  - button "Vowel marks, locked": بَ Vowel marks
+  - button "Join them, locked": Join them
+  - button "Blend, locked": با Blend
+  - button "Words 1, locked": Words 1
+  - button "Words 2, locked": Words 2
+  - button "Read, locked": Read
+  - button "Unit check, locked": Unit check
+  - button "All units See every unit and the letter library"
+  - heading "Already read some Urdu?" [level=2]
+  - paragraph: A 2-minute placement check skips the units you already know.
+  - button "Take the placement check"
+  - button "Parent report for Zara"
+  - group: "For parents: five things before letter one"
+  - navigation "Main":
+    - button "Learn"
+    - button "Review"
+    - button "Read"
+    - button "Me"
+- status
+- status

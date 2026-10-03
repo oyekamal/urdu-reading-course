@@ -1,0 +1,29 @@
+- main:
+  - heading "Read" [level=1]
+  - text: Passages and sentences · read twice, watch your speed
+  - button "Sam"
+  - heading "Sentences · unit 2" [level=3]
+  - heading "Read for speed" [level=2]
+  - text: تین کِتاب بِلّی کالی ہَے نیلا تَکِیا لے 8 words. Tap Start, read aloud, tap Stop. Read it twice. 0.0 s
+  - button "Start"
+  - button "Stop" [disabled]
+  - button "Play"
+  - button "Play"
+  - button "Play"
+  - heading "Sentences · unit 1" [level=3]
+  - heading "Read for speed" [level=2]
+  - text: بابا کا کام کالا بال نَمَک لا 7 words. Tap Start, read aloud, tap Stop. Read it twice. 0.0 s
+  - button "Start"
+  - button "Stop" [disabled]
+  - button "Play"
+  - button "Play"
+  - button "Play"
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status: Not quite. Almost! Tap the green one.
+- status: Unit 1 passed! Unit 2 unlocked

@@ -1,0 +1,364 @@
+{
+ "tile_names_before": [
+  "alif",
+  "be"
+ ],
+ "after_first_tap": [
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.marko-l",
+   "txt": "",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.marko feel-coach",
+   "txt": "",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.marko feel-coach",
+   "txt": "",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.score",
+   "txt": "Round 1/5 · 0 right",
+   "added": "Round 1/5 · 0 right"
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.choices",
+   "txt": "با",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.choices",
+   "txt": "با",
+   "added": "ب"
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.choices",
+   "txt": "با",
+   "added": "ا"
+  },
+  {
+   "live": null,
+   "type": "attributes",
+   "attr": "aria-label",
+   "el": "BUTTON.btn btn-play btn-say",
+   "txt": "Play again",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "BUTTON.tile ur",
+   "txt": "ب",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "BUTTON.tile ur",
+   "txt": "ا",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.marko-l",
+   "txt": "",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.marko feel-coach",
+   "txt": "",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.marko feel-coach",
+   "txt": "",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.marko-l",
+   "txt": "",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.marko feel-coach",
+   "txt": "",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.marko feel-coach",
+   "txt": "",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.marko-l",
+   "txt": "",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.marko feel-coach",
+   "txt": "",
+   "added": ""
+  },
+  {
+   "live": null,
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.marko feel-coach",
+   "txt": "",
+   "added": ""
+  }
+ ],
+ "after_first_tap_class_changes": 0,
+ "tile_state_after": [
+  {
+   "cls": "tile ur",
+   "label": "be",
+   "pressed": null,
+   "dis": false,
+   "ad": null
+  },
+  {
+   "cls": "tile ur",
+   "label": "alif",
+   "pressed": null,
+   "dis": false,
+   "ad": null
+  }
+ ],
+ "live_regions_in_dom": [
+  "DIV.sr-only polite text=",
+  "DIV.toast polite text="
+ ],
+ "announcements_during_round": [
+  {
+   "live": "polite",
+   "type": "attributes",
+   "attr": "aria-live",
+   "el": "DIV.toast show",
+   "txt": "polite",
+   "added": ""
+  },
+  {
+   "live": "polite",
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.toast show",
+   "txt": "Correct: be",
+   "added": "Correct: be"
+  },
+  {
+   "live": "polite",
+   "type": "attributes",
+   "attr": "class",
+   "el": "DIV.toast show",
+   "txt": "toast show",
+   "added": ""
+  },
+  {
+   "live": "polite",
+   "type": "attributes",
+   "attr": "aria-live",
+   "el": "DIV.toast show",
+   "txt": "polite",
+   "added": ""
+  },
+  {
+   "live": "polite",
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.toast show",
+   "txt": "Correct: be",
+   "added": "Correct: be"
+  },
+  {
+   "live": "polite",
+   "type": "attributes",
+   "attr": "class",
+   "el": "DIV.toast show",
+   "txt": "toast show",
+   "added": ""
+  },
+  {
+   "live": "polite",
+   "type": "attributes",
+   "attr": "class",
+   "el": "DIV.toast",
+   "txt": "toast",
+   "added": ""
+  },
+  {
+   "live": "status",
+   "type": "attributes",
+   "attr": "class",
+   "el": "DIV.feel-say under",
+   "txt": "feel-say under",
+   "added": ""
+  },
+  {
+   "live": "polite",
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.sr-only",
+   "txt": "Not quite. be is the one with one dot.",
+   "added": "Not quite. be is the one with one dot."
+  },
+  {
+   "live": "polite",
+   "type": "attributes",
+   "attr": "aria-live",
+   "el": "DIV.toast show",
+   "txt": "polite",
+   "added": ""
+  },
+  {
+   "live": "polite",
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.toast show",
+   "txt": "Correct: be",
+   "added": "Correct: be"
+  },
+  {
+   "live": "polite",
+   "type": "attributes",
+   "attr": "class",
+   "el": "DIV.toast show",
+   "txt": "toast show",
+   "added": ""
+  },
+  {
+   "live": "polite",
+   "type": "attributes",
+   "attr": "aria-live",
+   "el": "DIV.toast show",
+   "txt": "polite",
+   "added": ""
+  },
+  {
+   "live": "polite",
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.toast show",
+   "txt": "Correct: be",
+   "added": "Correct: be"
+  },
+  {
+   "live": "polite",
+   "type": "attributes",
+   "attr": "class",
+   "el": "DIV.toast show",
+   "txt": "toast show",
+   "added": ""
+  },
+  {
+   "live": "polite",
+   "type": "attributes",
+   "attr": "class",
+   "el": "DIV.toast",
+   "txt": "toast",
+   "added": ""
+  },
+  {
+   "live": "status",
+   "type": "attributes",
+   "attr": "class",
+   "el": "DIV.feel-say under",
+   "txt": "feel-say under",
+   "added": ""
+  },
+  {
+   "live": "polite",
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.sr-only",
+   "txt": "",
+   "added": ""
+  },
+  {
+   "live": "polite",
+   "type": "childList",
+   "attr": null,
+   "el": "DIV.sr-only",
+   "txt": "Not quite. be is the one with one dot.",
+   "added": "Not quite. be is the one with one dot."
+  }
+ ],
+ "toast_probe": {
+  "ann": [
+   {
+    "live": "polite",
+    "type": "attributes",
+    "attr": "aria-live",
+    "el": "DIV.toast show",
+    "txt": "polite",
+    "added": ""
+   },
+   {
+    "live": "polite",
+    "type": "childList",
+    "attr": null,
+    "el": "DIV.toast show",
+    "txt": "Saved",
+    "added": "Saved"
+   },
+   {
+    "live": "polite",
+    "type": "attributes",
+    "attr": "class",
+    "el": "DIV.toast show",
+    "txt": "toast show",
+    "added": ""
+   }
+  ],
+  "el": "<div id=\"toast\" class=\"toast show\" role=\"status\" aria-live=\"polite\">Saved</div>"
+ }
+}

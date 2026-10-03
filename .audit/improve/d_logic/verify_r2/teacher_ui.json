@@ -1,0 +1,204 @@
+{
+ "tabs": [
+  "Class",
+  "Lesson",
+  "Groups",
+  "Assess",
+  "Reports",
+  "Device"
+ ],
+ "ui_skip_passage": [
+  "Letter sounds (clpm) | 0",
+  "Nonwords (cnwpm) | 0",
+  "Familiar words (cwpm) | 0",
+  "Passage fluency (cwpm) | not tested",
+  "Passage accuracy | -",
+  "Comprehension | 3/5 (4 of 5 needed)",
+  "Fluency alone vs grade-2 standard | not tested",
+  "Overall (reading + understanding) | passage not tested: no standard result",
+  "Learning band | not tested"
+ ],
+ "ui_comp_skipped": [
+  "Letter sounds (clpm) | 10 (100% of 10 attempted)",
+  "Nonwords (cnwpm) | 10 (100% of 10 attempted)",
+  "Familiar words (cwpm) | 10 (100% of 10 attempted)",
+  "Passage fluency (cwpm) | 130",
+  "Passage accuracy | 100%",
+  "Comprehension | not tested",
+  "Fluency alone vs grade-2 standard | exceeds grade-2 standard",
+  "Overall (reading + understanding) | fluent, comprehension not tested: not yet a standard result",
+  "Learning band | sentences"
+ ],
+ "ui_letter_skipped": [
+  "Letter sounds (clpm) | 0",
+  "Nonwords (cnwpm) | 10 (100% of 10 attempted)",
+  "Familiar words (cwpm) | 10 (100% of 10 attempted)",
+  "Passage fluency (cwpm) | 139",
+  "Passage accuracy | 100%",
+  "Comprehension | 5/5",
+  "Fluency alone vs grade-2 standard | exceeds grade-2 standard",
+  "Overall (reading + understanding) | exceeds grade-2 standard",
+  "Learning band | fluent"
+ ],
+ "dump": {
+  "class": [
+   "Name | Grade | Band",
+   "OldBand | 2 | fluent",
+   "OldNoBand | 2 | sentences",
+   "OldNoBandNoComp | 2 | pre-reader",
+   "UiCompSkipped | 2 | sentences",
+   "UiLetterSkipped | 2 | fluent",
+   "UiSkipPassage | 2 | not tested"
+  ],
+  "groups": [
+   "pre-reader (1) / Letter lessons on the phone, one per turn (hear it, tap it, trace it); no independent reading expected yet. / OldNoBandNoComp",
+   "letters (0) / Letter lessons plus the Join and Blend lessons of the current unit; tell-apart with look-alikes learned so far. / No children in this band yet.",
+   "words (0) / Vowel marks, Words 1 and Words 2 lessons (build, read, dictation); chorus reading of the unit word list. / No children in this band yet.",
+   "sentences (2) / Read lesson and repeated reading of the unit sentences and passage; the Unit check. / OldNoBand, UiCompSkipped",
+   "fluent (2) / Passages with comprehension questions; push speed and understanding together; retest every four weeks. / OldBand, UiLetterSkipped",
+   "Not yet assessed (0) / Everyone has been assessed."
+  ],
+  "reports": [
+   "Name ▲ | Date | Letters | Nonwords | Words | Passage cwpm | Comp | Band",
+   "OldBand | 11/9/55840 | 30 | 20 | 25 | 65 | 1/5 | fluent",
+   "OldNoBand | 11/9/55840 | 30 | 20 | 25 | 45 | 5/5 | sentences",
+   "OldNoBandNoComp | 11/9/55840 | 30 | 20 | 25 | 0 | - | pre-reader",
+   "UiCompSkipped | 11/9/55840 | 10 | 10 | 10 | 130 | not tested | sentences",
+   "UiLetterSkipped | 11/9/55840 | 0 | 10 | 10 | 139 | 5/5 | fluent",
+   "UiSkipPassage | 11/9/55840 | 0 | 0 | 0 | 0 | 3/5 | not tested"
+  ],
+  "hist": "",
+  "slips": [
+   "OldBand — 11/9/55840\nPassage fluency: 65 correct words/minute — meets the grade-2 standard\nStage: fluent (pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+)\nComprehension: 1/5\nReading fluently — keep up daily reading at home.",
+   "OldNoBand — 11/9/55840\nPassage fluency: 45 correct words/minute — below the grade-2 standard (60 words/minute)\nStage: sentences (pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+)\nComprehension: 5/5\nStill at pre-reading stage — daily read-aloud time with an adult is the best next step.",
+   "OldNoBandNoComp — 11/9/55840\nPassage fluency: 0 correct words/minute — not yet reading\nStage: pre-reader (pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+)\nComprehension: -\nStill at pre-reading stage — daily read-aloud time with an adult is the best next step.",
+   "UiCompSkipped — 11/9/55840\nPassage fluency: 130 correct words/minute — fluent, comprehension not tested: not yet a standard result\nStage: sentences (pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+)\nComprehension: not tested\nReading full sentences — practise short passages daily.",
+   "UiLetterSkipped — 11/9/55840\nPassage fluency: 139 correct words/minute — exceeds grade-2 standard\nStage: fluent (pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+)\nComprehension: 5/5\nReading fluently — keep up daily reading at home.",
+   "UiSkipPassage — 11/9/55840\nPassage fluency: 0 correct words/minute — passage not tested: no standard result\nStage: not tested (pre-reader 0 · letters 1–19 · words 20–39 · sentences 40–59 · fluent 60+)\nComprehension: 3/5\nStill at pre-reading stage — daily read-aloud time with an adult is the best next step."
+  ],
+  "slip_tab": "Reports"
+ },
+ "dash": {
+  "OldBand": [
+   "Date | By | Letters | Nonwords | Words | Passage | Comp. | Level",
+   "11/9/55840 | teacher | 30 | 20 | 25 | 65 | 1/5 | fluent"
+  ],
+  "OldNoBand": [
+   "Date | By | Letters | Nonwords | Words | Passage | Comp. | Level",
+   "11/9/55840 | teacher | 30 | 20 | 25 | 45 | 5/5 | undefined"
+  ],
+  "OldNoBandNoComp": [
+   "Date | By | Letters | Nonwords | Words | Passage | Comp. | Level",
+   "11/9/55840 | teacher | 30 | 20 | 25 | 0 | - | undefined"
+  ],
+  "UiCompSkipped": [
+   "Date | By | Letters | Nonwords | Words | Passage | Comp. | Level",
+   "11/9/55840 | teacher | 10 | 10 | 10 | 130 | not tested | sentences"
+  ],
+  "UiLetterSkipped": [
+   "Date | By | Letters | Nonwords | Words | Passage | Comp. | Level",
+   "11/9/55840 | teacher | 0 | 10 | 10 | 139 | 5/5 | fluent"
+  ],
+  "UiSkipPassage": [
+   "Date | By | Letters | Nonwords | Words | Passage | Comp. | Level",
+   "11/9/55840 | teacher | 0 | 0 | 0 | 0 | 3/5 | not tested"
+  ]
+ },
+ "assess_records": [
+  {
+   "id": "a1",
+   "p": "pA",
+   "orf": {
+    "cwpm": 65,
+    "acc": 90
+   },
+   "orfDone": null,
+   "comp": 1,
+   "compDone": null,
+   "band": "fluent",
+   "level": null,
+   "letters": 30
+  },
+  {
+   "id": "a2",
+   "p": "pB",
+   "orf": {
+    "cwpm": 45,
+    "acc": 90
+   },
+   "orfDone": null,
+   "comp": 5,
+   "compDone": null,
+   "band": null,
+   "level": null,
+   "letters": 30
+  },
+  {
+   "id": "a6",
+   "p": "pF",
+   "orf": {
+    "cwpm": 0,
+    "acc": 0
+   },
+   "orfDone": null,
+   "comp": null,
+   "compDone": null,
+   "band": null,
+   "level": null,
+   "letters": 30
+  },
+  {
+   "id": "gqll7vazby70h430",
+   "p": "pC",
+   "orf": {
+    "cwpm": 0,
+    "acc": 0,
+    "seconds": 0,
+    "errors": 0
+   },
+   "orfDone": false,
+   "comp": 3,
+   "compDone": true,
+   "band": "not tested",
+   "level": "passage not tested: no standard result",
+   "letters": 0
+  },
+  {
+   "id": "gqll7vfds58rxe8b",
+   "p": "pD",
+   "orf": {
+    "cwpm": 130,
+    "acc": 100,
+    "seconds": 24,
+    "errors": 0,
+    "attempted": 52,
+    "capped": false
+   },
+   "orfDone": true,
+   "comp": 0,
+   "compDone": false,
+   "band": "sentences",
+   "level": "fluent, comprehension not tested: not yet a standard result",
+   "letters": 10
+  },
+  {
+   "id": "gqll7vih9ezdqvec",
+   "p": "pE",
+   "orf": {
+    "cwpm": 139,
+    "acc": 100,
+    "seconds": 23,
+    "errors": 0,
+    "attempted": 52,
+    "capped": false
+   },
+   "orfDone": true,
+   "comp": 5,
+   "compDone": true,
+   "band": "fluent",
+   "level": "exceeds grade-2 standard",
+   "letters": 0
+  }
+ ],
+ "errors": []
+}

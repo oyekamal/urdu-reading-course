@@ -1,0 +1,17 @@
+- main:
+  - text: Unit 1 · lesson 2 of 13
+  - heading "be" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - heading "Quick check" [level=2]
+  - paragraph: Four questions on be.
+  - text: Question 1/4 Tap be
+  - button "ا"
+  - button "ب"
+  - navigation "Main":
+    - button "Learn"
+    - button "Review"
+    - button "Read"
+    - button "Me"
+- status: "Not quite. Count the dots: be has one"
+- status: "Correct: be"

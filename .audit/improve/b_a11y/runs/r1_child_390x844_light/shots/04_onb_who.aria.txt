@@ -1,0 +1,9 @@
+- main:
+  - button "Back"
+  - text: First things first. Who is learning to read?
+  - button "Me I want to read Urdu myself"
+  - button "My child Ages 5 to 10, I will sit with them"
+  - button "My children Two or three learners on this phone"
+  - 'button "My class Teacher mode: roster, scripts, reading test"'
+- status
+- status

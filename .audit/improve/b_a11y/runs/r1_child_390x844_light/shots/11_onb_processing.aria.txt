@@ -1,0 +1,9 @@
+- main:
+  - heading "Making Zara's path" [level=2]
+  - list:
+    - listitem: Grouping the look-alike letters
+    - listitem: Setting a 10-minute day
+    - listitem: Leaving out English you already know
+    - listitem: Getting Marko's voice ready
+- status
+- status

@@ -1,0 +1,34 @@
+== alif
+  OK  top->bottom right of centre -> Coverage 100% ✓ good
+  OK  top->bottom exactly on the centre line (was falsely rejected) -> Coverage 100% ✓ good
+  OK  top->bottom 3px left of centre (was falsely rejected) -> Coverage 99% ✓ good
+  OK  BOTTOM->top (reversed) -> Coverage 100% — Start at the green dot
+  OK  ten random short dashes -> Coverage 100% — Try one smooth line, from the green dot
+  OK  wide zigzag scribble over the glyph box -> Coverage 100% — stay inside the letter
+  OK  slow shaky top->bottom (4px steps, +-4px jitter) -> Coverage 100% ✓ good
+  OK  very slow smooth top->bottom (200 points) -> Coverage 100% ✓ good
+  OK  shaky BOTTOM->top -> Coverage 100% — Start at the green dot
+  OK  tiny dot in the middle -> Coverage 18% — keep tracing
+  OK  left-handed: starts 5px left, lifts once in the middle (2 strokes) -> Coverage 90% ✓ good
+  OK  two strokes top half then bottom half (a 6-year-old lifting) -> Coverage 100% ✓ good
+  OK  only the bottom half -> Coverage 53% — keep tracing
+  OK  do nothing -> Coverage 0% — keep tracing
+== د
+  OK  body top->bottom along the glyph (hinted direction) -> Coverage 95% ✓ good
+  OK  body BOTTOM->top (reversed) -> Coverage 95% — Start at the green dot and follow the arrow
+  OK  body top->bottom, shaky -> Coverage 96% ✓ good
+  OK  body top->bottom then marks (if any) last -> Coverage 95% ✓ good
+  OK  ten random dashes -> Coverage 86% — Try one smooth line, from the green dot
+== ر
+  OK  body top->bottom along the glyph (hinted direction) -> Coverage 100% ✓ good
+  OK  body BOTTOM->top (reversed) -> Coverage 100% — Start at the green dot
+  OK  body top->bottom, shaky -> Coverage 100% ✓ good
+  OK  body top->bottom then marks (if any) last -> Coverage 100% ✓ good
+  OK  ten random dashes -> Coverage 92% — Try one smooth line, from the green dot
+== be
+  OK  body right->left, then the dot (taught order) -> Coverage 82% ✓ good
+  OK  dot FIRST then body -> Coverage 82% — Body first, then the dots
+  OK  body drawn LEFT->right (reversed) -> Coverage 82% — Start at the green dot
+  OK  shaky body right->left + dot -> Coverage 84% ✓ good
+  OK  scribble over whole glyph box -> Coverage 100% — stay inside the letter
+UNEXPECTED: []

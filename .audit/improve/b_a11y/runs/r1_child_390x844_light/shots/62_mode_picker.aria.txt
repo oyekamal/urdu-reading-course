@@ -1,0 +1,10 @@
+- main:
+  - text: اردو پڑھنا سیکھیں
+  - heading "Urdu Qaida" [level=1]
+  - paragraph: Works fully offline. Who is this device for?
+  - button "Just me One learner, child or adult"
+  - button "My family A parent with one to three children"
+  - button "My class A teacher with a roster, lesson scripts and the reading assessment"
+  - button "Restore from a backup"
+- status
+- status

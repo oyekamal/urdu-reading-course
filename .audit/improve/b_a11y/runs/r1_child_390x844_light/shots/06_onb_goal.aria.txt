@@ -1,0 +1,10 @@
+- main:
+  - button "Back"
+  - text: Why should Zara learn to read Urdu?
+  - button "Keep up in Urdu class Homework, class readers"
+  - button "Read with grandparents Stories and messages at home"
+  - button "A head start before school"
+  - button "Keep our language alive We live outside Pakistan"
+  - button "Enjoy Urdu stories"
+- status
+- status

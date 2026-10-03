@@ -1,0 +1,12 @@
+{
+ "lesson": "Join them",
+ "card": "Build the word",
+ "joinIt": [
+  {
+   "wrong": "ی",
+   "hint": "Almost! Tap the green one.",
+   "green": 0
+  }
+ ],
+ "errors": []
+}

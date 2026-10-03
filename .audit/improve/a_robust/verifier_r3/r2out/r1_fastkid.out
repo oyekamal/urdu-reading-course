@@ -1,0 +1,4 @@
+gap 150 seed 1: celebrate=True steps=24 secs=4 errs=[]
+gap 150 seed 2: celebrate=True steps=23 secs=4 errs=[]
+gap 400 seed 1: celebrate=True steps=28 secs=12 errs=[]
+gap 400 seed 2: celebrate=True steps=10 secs=4 errs=[]

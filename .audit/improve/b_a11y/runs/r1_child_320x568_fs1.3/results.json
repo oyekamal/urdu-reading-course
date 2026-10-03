@@ -1,0 +1,1975 @@
+{
+ "tag": "r1_child_320x568_fs1.3",
+ "args": {
+  "track": "child",
+  "vp": "320x568",
+  "fs": 1.3,
+  "scheme": "light",
+  "axe": 0,
+  "aria": 0,
+  "motion": "reduce",
+  "tag": "r1_child_320x568_fs1.3",
+  "port": "5199",
+  "touch": 1
+ },
+ "notes": [
+  "body.dataset.track after onboarding = child"
+ ],
+ "errors": [],
+ "results": [
+  {
+   "i": 1,
+   "screen": "onb_welcome",
+   "layout": [
+    [
+     "tap44-47",
+     "Restore from a backup",
+     "button.btn.btn-chip 210x44"
+    ]
+   ],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 861,
+    "scrollW": 320,
+    "bottomChrome": 177,
+    "topChrome": 0,
+    "freeH": 391,
+    "inCel": false,
+    "h": "Read Urdu in ten minutes a day",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Let's begin",
+     "top": 436,
+     "bottom": 498,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 2,
+   "screen": "onb_wake",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 671,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "Marko is fast asleep",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 3,
+   "screen": "onb_colour",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 778,
+    "scrollW": 320,
+    "bottomChrome": 88,
+    "topChrome": 0,
+    "freeH": 480,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "This one",
+     "top": 492,
+     "bottom": 554,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 4,
+   "screen": "onb_who",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 1022,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 5,
+   "screen": "onb_name",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 819,
+    "scrollW": 320,
+    "bottomChrome": 88,
+    "topChrome": 0,
+    "freeH": 480,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 492,
+     "bottom": 554,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 6,
+   "screen": "onb_goal",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 1111,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 7,
+   "screen": "onb_speak",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 838,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 8,
+   "screen": "onb_pains",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 1363,
+    "scrollW": 320,
+    "bottomChrome": 88,
+    "topChrome": 0,
+    "freeH": 480,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 492,
+     "bottom": 554,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 9,
+   "screen": "onb_solution",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 1028,
+    "scrollW": 320,
+    "bottomChrome": 88,
+    "topChrome": 0,
+    "freeH": 480,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Show me",
+     "top": 492,
+     "bottom": 554,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 10,
+   "screen": "onb_minutes",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 868,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 11,
+   "screen": "onb_processing",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 763,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "Making Zara's path",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 12,
+   "screen": "onb_demo_alif",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 707,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Next",
+     "top": 498,
+     "bottom": 560,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 13,
+   "screen": "onb_demo_be",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 701,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Next",
+     "top": 498,
+     "bottom": 560,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 14,
+   "screen": "onb_demo_tap",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 666,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 15,
+   "screen": "onb_demo_tap_done",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 666,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Next",
+     "top": 486,
+     "bottom": 548,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 16,
+   "screen": "onb_demo_blend",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 701,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Join them",
+     "top": 498,
+     "bottom": 560,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 17,
+   "screen": "onb_demo_blend_done",
+   "layout": [
+    [
+     "obscured",
+     "Hear baa",
+     "button.btn.btn-play covered by span.ur.ob-joined"
+    ]
+   ],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 701,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Now a whole word",
+     "top": 498,
+     "bottom": 560,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 18,
+   "screen": "onb_demo_word",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 666,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 19,
+   "screen": "onb_demo_word_read",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 701,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Check me",
+     "top": 498,
+     "bottom": 560,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 20,
+   "screen": "onb_demo_check",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 666,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 21,
+   "screen": "onb_demo_check_ok",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 701,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "See what you did",
+     "top": 498,
+     "bottom": 560,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 22,
+   "screen": "onb_value",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 814,
+    "scrollW": 320,
+    "bottomChrome": 192,
+    "topChrome": 0,
+    "freeH": 376,
+    "inCel": false,
+    "h": "Zara just read Urdu",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 492,
+     "bottom": 554,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 23,
+   "screen": "onb_streak",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 864,
+    "scrollW": 320,
+    "bottomChrome": 88,
+    "topChrome": 0,
+    "freeH": 480,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Let's keep it going",
+     "top": 492,
+     "bottom": 554,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 24,
+   "screen": "onb_commit",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 880,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 25,
+   "screen": "onb_plan",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 929,
+    "scrollW": 320,
+    "bottomChrome": 88,
+    "topChrome": 0,
+    "freeH": 480,
+    "inCel": false,
+    "h": "",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start my first lesson",
+     "top": 492,
+     "bottom": 554,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 26,
+   "screen": "today_first",
+   "layout": [
+    [
+     "text-clipped-by-ancestor",
+     "Hi Zara! Let's earn your first pearl.",
+     "span.hh-say in div.hh-world.pm out by 51px"
+    ],
+    [
+     "text-clipped-by-ancestor",
+     "Three rules",
+     "small in div.card.unit out by 8px"
+    ],
+    [
+     "text-clipped-by-ancestor",
+     "Finish unit",
+     "small in div.card.unit out by 7px"
+    ],
+    [
+     "text-clipped-by-ancestor",
+     "Unit check",
+     "small in div.card.unit out by 7px"
+    ],
+    [
+     "tap44-47",
+     "Switch learner",
+     "button.btn.btn-chip 95x44"
+    ],
+    [
+     "controls-overlap",
+     "Tap Marko to say hi | Start: Three rules",
+     "109x44px overlap"
+    ],
+    [
+     "obscured",
+     "Tap Marko to say hi",
+     "button.hh-poke covered by span.tc-count"
+    ]
+   ],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 2595,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Good morning, Zara",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start: Three rules",
+     "top": 407,
+     "bottom": 471,
+     "w": 252,
+     "h": 64
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 27,
+   "screen": "lesson_rules",
+   "layout": [
+    [
+     "controls-overlap",
+     "Lesson content | Continue",
+     "288x51px overlap"
+    ]
+   ],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 627,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Three rules",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 423,
+     "bottom": 485,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 28,
+   "screen": "celebrate_lesson",
+   "layout": [
+    [
+     "tap44-47",
+     "Back to path",
+     "button.btn.cel-back 104x44"
+    ]
+   ],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": true,
+    "h": "Three rules",
+    "overlay": "div.celebrate"
+   },
+   "info": {
+    "primary": {
+     "label": "Next: Finish unit",
+     "top": 492,
+     "bottom": 554,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 29,
+   "screen": "lesson_done_unit",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 621,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Finish unit",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Unlock the next unit",
+     "top": 423,
+     "bottom": 485,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 30,
+   "screen": "celebrate_unit",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": true,
+    "h": "Finish unit",
+    "overlay": "div.celebrate.gold"
+   },
+   "info": {
+    "primary": {
+     "label": "Back to path",
+     "top": 492,
+     "bottom": 554,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 31,
+   "screen": "L_intro",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 627,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "I heard it",
+     "top": 423,
+     "bottom": 485,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 32,
+   "screen": "L_tellapart_start",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 33,
+   "screen": "L_tellapart_round",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 34,
+   "screen": "L_tellapart_done",
+   "layout": [
+    [
+     "tap44-47",
+     "Again",
+     "button.btn.btn-chip 74x44"
+    ]
+   ],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 409,
+     "bottom": 471,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 35,
+   "screen": "L_forms",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "I see it",
+     "top": 409,
+     "bottom": 471,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 36,
+   "screen": "L_trace",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Traced it",
+     "top": 409,
+     "bottom": 471,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div.score.trace-out polite",
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 37,
+   "screen": "L_blend",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 409,
+     "bottom": 471,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 38,
+   "screen": "L_check",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 39,
+   "screen": "L_check_done",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "be",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Finish",
+     "top": 409,
+     "bottom": 471,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 40,
+   "screen": "celebrate_letter",
+   "layout": [
+    [
+     "tap44-47",
+     "Back to path",
+     "button.btn.cel-back 104x44"
+    ]
+   ],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": true,
+    "h": "be",
+    "overlay": "div.celebrate"
+   },
+   "info": {
+    "primary": {
+     "label": "Next: kāf",
+     "top": 492,
+     "bottom": 554,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 41,
+   "screen": "marks_intro",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 585,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Vowel marks",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Got it",
+     "top": 423,
+     "bottom": 485,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 42,
+   "screen": "marks_find",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Vowel marks",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 43,
+   "screen": "join_forms",
+   "layout": [
+    [
+     "controls-overlap",
+     "Lesson content | Continue",
+     "288x51px overlap"
+    ]
+   ],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 627,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Join them",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 423,
+     "bottom": 485,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 44,
+   "screen": "join_build",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Join them",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 45,
+   "screen": "join_build_done",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Join them",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 409,
+     "bottom": 471,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 46,
+   "screen": "blend",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 621,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Blend",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 47,
+   "screen": "blend_done",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Blend",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 409,
+     "bottom": 471,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 48,
+   "screen": "words_read",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 627,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Read them",
+     "top": 423,
+     "bottom": 485,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 49,
+   "screen": "words_build",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 50,
+   "screen": "words_dictation",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Check",
+     "top": 409,
+     "bottom": 471,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 51,
+   "screen": "words_dictation_done",
+   "layout": [
+    [
+     "tap44-47",
+     "Again",
+     "button.btn.btn-chip 74x44"
+    ]
+   ],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Words 1",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Continue",
+     "top": 409,
+     "bottom": 471,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 52,
+   "screen": "quiz",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 627,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Unit check",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Submit",
+     "top": 423,
+     "bottom": 485,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 53,
+   "screen": "quiz_done",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Unit check",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Finish",
+     "top": 409,
+     "bottom": 471,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 54,
+   "screen": "today_unit2",
+   "layout": [
+    [
+     "text-clipped-by-ancestor",
+     "Unit check",
+     "small in div.card.unit out by 7px"
+    ],
+    [
+     "text-clipped-by-ancestor",
+     "Unit check",
+     "small in div.card.unit out by 7px"
+    ],
+    [
+     "tap44-47",
+     "Switch learner",
+     "button.btn.btn-chip 95x44"
+    ],
+    [
+     "tap44-47",
+     "12 to review",
+     "button.btn.btn-chip 144x44"
+    ],
+    [
+     "gap<6",
+     "Tap Marko to say hi | 12 to review",
+     "0px apart"
+    ],
+    [
+     "controls-overlap",
+     "Tap Marko to say hi | Start: te",
+     "109x44px overlap"
+    ],
+    [
+     "obscured",
+     "Tap Marko to say hi",
+     "button.hh-poke covered by svg"
+    ]
+   ],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 2982,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Good morning, Zara",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start: te",
+     "top": 407,
+     "bottom": 471,
+     "w": 252,
+     "h": 64
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 55,
+   "screen": "review_empty",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 982,
+    "scrollW": 320,
+    "bottomChrome": 145,
+    "topChrome": 0,
+    "freeH": 423,
+    "inCel": false,
+    "h": "Review",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Learn: unit 2",
+     "top": 423,
+     "bottom": 485,
+     "w": 288,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 56,
+   "screen": "review_due",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 706,
+    "scrollW": 320,
+    "bottomChrome": 173,
+    "topChrome": 0,
+    "freeH": 395,
+    "inCel": false,
+    "h": "Review",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Got it",
+     "top": 395,
+     "bottom": 485,
+     "w": 171,
+     "h": 90
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 57,
+   "screen": "review_due_reveal",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 788,
+    "scrollW": 320,
+    "bottomChrome": 173,
+    "topChrome": 0,
+    "freeH": 395,
+    "inCel": false,
+    "h": "Review",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Got it",
+     "top": 395,
+     "bottom": 485,
+     "w": 171,
+     "h": 90
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 58,
+   "screen": "read_tab",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 1418,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Read",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 59,
+   "screen": "me_tab",
+   "layout": [
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ],
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ],
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ],
+    [
+     "tap44-47",
+     "on",
+     "input 13x48"
+    ]
+   ],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 5795,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Me",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 60,
+   "screen": "sticker_book",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 5795,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Me",
+    "overlay": "div.stk-ov.stk-book"
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 61,
+   "screen": "units_tab",
+   "layout": [
+    [
+     "tap44-47",
+     "Back to Learn",
+     "button.btn.btn-chip 169x44"
+    ]
+   ],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 3640,
+    "scrollW": 320,
+    "bottomChrome": 75,
+    "topChrome": 0,
+    "freeH": 493,
+    "inCel": false,
+    "h": "Units",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 62,
+   "screen": "mode_picker",
+   "layout": [
+    [
+     "no-primary",
+     "-",
+     "expected a .btn-primary"
+    ]
+   ],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 1219,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "Urdu Qaida",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 63,
+   "screen": "profile_picker",
+   "layout": [],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 568,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "Who is learning?",
+    "overlay": null
+   },
+   "info": {
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  },
+  {
+   "i": 64,
+   "screen": "add_learner_form",
+   "layout": [
+    [
+     "tap44-47",
+     "colour 1",
+     "button.swatch.on 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 2",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 3",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 4",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 5",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 6",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 7",
+     "button.swatch 44x44"
+    ],
+    [
+     "tap44-47",
+     "colour 8",
+     "button.swatch 44x44"
+    ]
+   ],
+   "meta": {
+    "W": 320,
+    "H": 568,
+    "scrollH": 742,
+    "scrollW": 320,
+    "bottomChrome": 0,
+    "topChrome": 0,
+    "freeH": 568,
+    "inCel": false,
+    "h": "New learner",
+    "overlay": null
+   },
+   "info": {
+    "primary": {
+     "label": "Start",
+     "top": 478,
+     "bottom": 540,
+     "w": 254,
+     "h": 62
+    },
+    "live": [
+     "div#a11y-live polite",
+     "div#toast polite"
+    ]
+   }
+  }
+ ]
+}

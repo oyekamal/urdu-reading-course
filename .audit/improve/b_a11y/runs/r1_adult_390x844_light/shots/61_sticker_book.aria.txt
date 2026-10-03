@@ -1,0 +1,84 @@
+- main:
+  - heading "More" [level=1]
+  - button "Sam"
+  - text: "Practice sheets Printable PDFs for each unit: tracing, reading, dictation and answer keys"
+  - button "Open practice sheets"
+  - heading "Settings" [level=2]
+  - text: Track
+  - combobox "Track":
+    - option "Child (5–10)"
+    - option "Adult, new to Urdu" [selected]
+    - option "Speaks Urdu, can't read"
+  - text: Script
+  - combobox "Script":
+    - option "Naskh (learning)" [selected]
+    - option "Nastaliq (print)"
+  - text: Text size
+  - combobox "Text size":
+    - option "Normal text" [selected]
+    - option "Large"
+    - option "Extra large"
+  - text: Letter spacing
+  - combobox "Letter spacing":
+    - option "Normal letter spacing" [selected]
+    - option "Wider"
+    - option "Widest (dyslexia-friendly)"
+  - checkbox "Show vowel marks (until unit 10)" [checked]
+  - text: Show vowel marks (until unit 10)
+  - checkbox "Show romanisation (Latin letters)" [checked]
+  - text: Show romanisation (Latin letters)
+  - checkbox "Audio-first mode (words hidden until tapped)"
+  - text: Audio-first mode (words hidden until tapped)
+  - checkbox "Sounds and vibration" [checked]
+  - text: Sounds and vibration
+  - heading "Data" [level=2]
+  - paragraph: Everything stays on this phone. Export to keep a backup or move to another phone.
+  - button "Export backup (JSON)"
+  - button "Import a backup (JSON)"
+  - button "Reset this profile's progress"
+  - button "Switch profile / mode"
+  - heading "Help make this better" [level=2]
+  - paragraph: Urdu Qaida is free and made by one person in Pakistan. Found a wrong sound, a bug, or a missing word? Want to record a real voice, translate, or teach with it? Write to Kamal.
+  - button "Email Kamal"
+  - button "Copy email address"
+  - button "Support Urdu Qaida"
+  - paragraph: Version app 0.10.0 · pack-6cc38371 · 39 letters · 13 units · 490 clips
+  - paragraph: Voices are AI-generated and play from files stored on your device. No speech is generated online.
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status: Not quite. Almost! Tap the green one.
+- status: Unit 1 passed! Unit 2 unlocked
+- dialog "Sticker book":
+  - button "Back": ←
+  - heading "My stickers" [level=2]
+  - text: 0 of 39 letters Every letter you learn well becomes a sticker.
+  - progressbar "Stickers collected"
+  - tablist "Units":
+    - tab "Unit 1, 0 of 6" [selected]: 1 0/6
+    - tab "Unit 2, 0 of 3": 2 0/3
+    - tab "Unit 3, 0 of 3": 3 0/3
+    - tab "Unit 4, 0 of 4": 4 0/4
+    - tab "Unit 5, 0 of 5": 5 0/5
+    - tab "Unit 6, 0 of 2": 6 0/2
+    - tab "Unit 7, 0 of 4": 7 0/4
+    - tab "Unit 8, 0 of 6": 8 0/6
+    - tab "Unit 9, 0 of 5": 9 0/5
+    - tab "Unit 10, 0 of 1": 10 0/1
+  - text: Unit 1 · The first six 0 of 6
+  - 'img "Locked sticker: alif"': ا
+  - 'img "Locked sticker: be"': ب
+  - 'img "Locked sticker: kāf"': ک
+  - 'img "Locked sticker: lām"': ل
+  - 'img "Locked sticker: mīm"': م
+  - 'img "Locked sticker: nūn"': ن
+  - paragraph: These are waiting for you. Learn them well and they appear here.
+  - button "Open the next page of stickers":
+    - text: Up next · Unit 2 · Dots and the two ye 0 of 3 ›
+    - 'img "Locked sticker: te"': ت
+    - 'img "Locked sticker: choṭī ye"': ی
+    - 'img "Locked sticker: baṛī ye"': ے

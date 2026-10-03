@@ -1,0 +1,10 @@
+o3_csv rc=0
+o2_inputs rc=0
+o1_names rc=0
+n1_roundtrip rc=0
+m1_restorebust rc=0
+k1_finishfail rc=0
+i3_unlocked rc=0
+i2_read rc=0
+i1_gate rc=0
+l1_ids rc=0

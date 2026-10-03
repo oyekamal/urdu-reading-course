@@ -1,0 +1,8 @@
+- main:
+  - text: How many days in a row will you read with me?
+  - button "3 days A good first try"
+  - button "7 days A whole week, the first six letters"
+  - button "14 days Two weeks, unit 1 done"
+  - button "30 days Reading short sentences"
+- status
+- status

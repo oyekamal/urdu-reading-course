@@ -1,0 +1,8 @@
+- main:
+  - button "Back"
+  - text: Sam! What a lovely name. Soon you'll read it in Urdu.
+  - textbox "Your name": Sam
+  - text: S Sam's reading badge
+  - button "Continue"
+- status
+- status

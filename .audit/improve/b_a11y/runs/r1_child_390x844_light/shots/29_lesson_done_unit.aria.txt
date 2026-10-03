@@ -1,0 +1,16 @@
+- main:
+  - text: Unit 0 · lesson 2 of 2
+  - heading "Finish unit" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - text: A whole unit! Ready for more?
+  - heading "Unit 0 done" [level=2]
+  - paragraph: Now the first letter.
+  - button "Unlock the next unit"
+  - navigation "Main":
+    - button "Learn"
+    - button "Review"
+    - button "Read"
+    - button "Me"
+- status
+- status

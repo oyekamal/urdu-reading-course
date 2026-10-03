@@ -1,0 +1,10 @@
+img/child/learner csp [] errs [] sw [390, 390]
+img/adult/learner csp [] errs [] sw [390, 390]
+img/child/teacher csp [] errs [] sw [390, 390]
+attr/child/learner csp [] errs [] sw [390, 390]
+attr/adult/learner csp [] errs [] sw [390, 390]
+attr/child/teacher csp [] errs [] sw [390, 390]
+sq/child/learner csp [] errs [] sw [390, 390]
+sq/adult/learner csp [] errs [] sw [390, 390]
+sq/child/teacher csp [] errs [] sw [390, 390]
+ISSUES

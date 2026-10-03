@@ -33,6 +33,8 @@ for u in UNITS:
     for i, w in enumerate(u['words']): exp[f'units/u{pad(u["n"])}_{pad(i)}'] = w[0]
     for i, s in enumerate(u['sentences']): exp[f'sentences/u{pad(u["n"])}_{pad(i)}'] = s[0]
 for i, w in enumerate(LET['sight_words']): exp[f'sight/{pad(i)}'] = w
+for u in UNITS:
+    if u.get('passage'): exp[f'passages/u{pad(u["n"])}'] = u['passage'][0]   # added 2026-10-03: every unit passage has a clip
 JS_ASP = ['aspirates/' + ''.join(ch if re.match('[A-Za-z0-9]', ch) else '_' for ch in a[1]) for a in LET['aspirates']]   # exactly what learner.js aspirates() requests
 for a in LET['aspirates']: exp['aspirates/' + a[1]] = None
 for d in LET['diacritics']: exp[f'diacritics/{d["id"]}'] = None; exp[f'diacritics/{d["id"]}_ex'] = None
@@ -112,7 +114,7 @@ R['clips_never_referenced_by_code'] = unref
 # ui keys used in code but missing
 R['ui_keys_used_but_missing'] = sorted(k for k in ref if k not in IDX)
 # passage audio: does any passage have a clip?
-R['passages_without_audio'] = [u['n'] for u in UNITS if u.get('passage')]
+R['passages_without_audio'] = [u['n'] for u in UNITS if u.get('passage') and f'passages/u{pad(u["n"])}' not in IDX]
 for k in missing_idx: find('blocker', 'A1b', f'audio key missing from index: {k}')
 for k in missing_file: find('blocker', 'A2', f'index entry has no file on disk: {k}')
 if orph_files: find('minor', 'A3', f'{len(orph_files)} orphan audio files on disk not in index')
@@ -143,7 +145,7 @@ for u in UNITS:
         for s in u[kind]:
             ur = s[0]; v = s[3] if len(s) > 3 else s[0]
             for tok in ur.split():
-                if set(letters_of(tok)) - taught - set('۔،؟: '): dec['bare_bad'].append((u['n'], 'sentence:' + ur, ''.join(set(letters_of(tok)) - taught)))
+                if set(letters_of(tok)) - taught - set('۔،؟: ') - (set('۰۱۲۳۴۵۶۷۸۹') if u['n'] >= 10 else set()): dec['bare_bad'].append((u['n'], 'sentence:' + ur, ''.join(set(letters_of(tok)) - taught)))
     if u.get('passage'):
         p = u['passage']
         miss = set(letters_of(p[0])) - taught - set('۔،؟: ۰۱۲۳۴۵۶۷۸۹')

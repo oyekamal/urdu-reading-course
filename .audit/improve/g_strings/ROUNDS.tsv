@@ -1,0 +1,4 @@
+round	finding	fix	result
+0	builder pass: source clean by grep; gate_test ALL PASS	-	pending verifier
+1	verifier: tracked dev files + phone in .audit/decisions.tsv (public repo); README "Sara"; try-counter reset on reload; window.__gate.words; teacher backup export + both imports ungated	scrubbed phone from decisions.tsv, README reworded, tries persisted in localStorage, words() removed, teacher export + import (learner and teacher) gated; tests added	fixed, round 2 pending
+2	verifier: one answer approves concurrent gated requests; teacher CSV export ungated; teacher Delete uses confirm (PIN-protected, left)	second askGrownup while open now resolves false; CSV export gated	fixed

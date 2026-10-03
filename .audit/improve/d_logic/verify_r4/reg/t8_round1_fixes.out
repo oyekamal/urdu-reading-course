@@ -1,0 +1,37 @@
+{
+ "D3_rows": {
+  "Letter sounds (clpm)": "0",
+  "Nonwords (cnwpm)": "0",
+  "Familiar words (cwpm)": "0",
+  "Passage fluency (cwpm)": "not tested",
+  "Passage accuracy": "-",
+  "Comprehension": "5/5",
+  "Fluency alone vs grade-2 standard": "not tested",
+  "Overall (reading + understanding)": "passage not tested: no standard result",
+  "Learning band": "not tested"
+ },
+ "D3_saved": {
+  "orfDone": false,
+  "band": "not tested",
+  "level": "passage not tested: no standard result"
+ },
+ "D3_no_nonreader_flag": true,
+ "D5_asked": true,
+ "D5_next": "Subtask 2 — Nonword decoding (60s)",
+ "D5_touched_no_prompt": true,
+ "page_errors": [],
+ "D6": [
+  "ok",
+  "ok",
+  "ok",
+  "ok",
+  "ok",
+  "ok",
+  "ok",
+  "not tested",
+  "3/5",
+  "2/5"
+ ],
+ "D7_text": "Not quite. Listen again and try another one.",
+ "D6_page_errors": []
+}

@@ -44,3 +44,5 @@ research/bar_audio/
 .audit/validation/a11y_devices/runs/
 .audit/validation/a11y_devices/sheets/
 .audit/validation/a11y_devices/probes/
+.audit/improve/f_pdf/bar/
+scripts/pdf_templates/.cache/

@@ -1,0 +1,395 @@
+{
+ "res": [
+  {
+   "ch": "ڈ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 69% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    80
+   ]
+  },
+  {
+   "ch": "ڈ",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 69% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    218,
+    80
+   ]
+  },
+  {
+   "ch": "ڈ",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 74% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    80
+   ]
+  },
+  {
+   "ch": "ڈ",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 69% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    80
+   ]
+  },
+  {
+   "ch": "ڈ",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 69% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    80
+   ]
+  },
+  {
+   "ch": "ڈ",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 69% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    80
+   ]
+  },
+  {
+   "ch": "ڑ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 71% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    91
+   ]
+  },
+  {
+   "ch": "ڑ",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 71% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    213,
+    91
+   ]
+  },
+  {
+   "ch": "ڑ",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 78% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    91
+   ]
+  },
+  {
+   "ch": "ڑ",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 71% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    91
+   ]
+  },
+  {
+   "ch": "ڑ",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 71% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    91
+   ]
+  },
+  {
+   "ch": "ڑ",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 71% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    91
+   ]
+  },
+  {
+   "ch": "ز",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 83% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    101
+   ]
+  },
+  {
+   "ch": "ز",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 83% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    213,
+    101
+   ]
+  },
+  {
+   "ch": "ز",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 83% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    101
+   ]
+  },
+  {
+   "ch": "ز",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 83% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    101
+   ]
+  },
+  {
+   "ch": "ز",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 83% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    101
+   ]
+  },
+  {
+   "ch": "ز",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 83% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    101
+   ]
+  },
+  {
+   "ch": "ژ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 70% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    92
+   ]
+  },
+  {
+   "ch": "ژ",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 70% — keep tracing",
+   "nstrokes": 3,
+   "dot": [
+    213,
+    92
+   ]
+  },
+  {
+   "ch": "ژ",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 78% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    92
+   ]
+  },
+  {
+   "ch": "ژ",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": false,
+   "msg": "Coverage 70% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    92
+   ]
+  },
+  {
+   "ch": "ژ",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 70% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    92
+   ]
+  },
+  {
+   "ch": "ژ",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 70% — keep tracing",
+   "nstrokes": 2,
+   "dot": [
+    213,
+    92
+   ]
+  },
+  {
+   "ch": "ذ",
+   "form": "isolated",
+   "variant": "good",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    90
+   ]
+  },
+  {
+   "ch": "ذ",
+   "form": "isolated",
+   "variant": "lift1",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 3,
+   "dot": [
+    218,
+    90
+   ]
+  },
+  {
+   "ch": "ذ",
+   "form": "isolated",
+   "variant": "start_off20",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    90
+   ]
+  },
+  {
+   "ch": "ذ",
+   "form": "isolated",
+   "variant": "overshoot15",
+   "expect_ok": true,
+   "got_ok": true,
+   "msg": "Coverage 82% ✓ good",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    90
+   ]
+  },
+  {
+   "ch": "ذ",
+   "form": "isolated",
+   "variant": "bad_reversed",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 82% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    90
+   ]
+  },
+  {
+   "ch": "ذ",
+   "form": "isolated",
+   "variant": "bad_left_start",
+   "expect_ok": false,
+   "got_ok": false,
+   "msg": "Coverage 82% — Start at the green dot",
+   "nstrokes": 2,
+   "dot": [
+    218,
+    90
+   ]
+  }
+ ],
+ "errors": []
+}

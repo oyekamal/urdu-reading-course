@@ -1,0 +1,548 @@
+{
+ "questions_recorded": 691,
+ "by_audio_kind": {
+  "none": 5,
+  "names": 449,
+  "syllables": 185,
+  "units": 52
+ },
+ "duplicate_look_alike_choices": [
+  [
+   "Unit 1",
+   "Quick check |  | Four questions on alif. |  | Question 1/4 | Which is alif at the isolated",
+   [
+    "ا",
+    "ـا"
+   ]
+  ],
+  [
+   "Unit 1",
+   "Quick check |  | Four questions on alif. |  | Question 3/4 | Which is alif at the final po",
+   [
+    "ا",
+    "ـا"
+   ]
+  ],
+  [
+   "Unit 1",
+   "Quick check |  | Four questions on alif. |  | Question 1/4 | Which is alif at the isolated",
+   [
+    "ـا",
+    "ا"
+   ]
+  ],
+  [
+   "Unit 1",
+   "Quick check |  | Four questions on alif. |  | Question 2/4 | Which is alif at the final po",
+   [
+    "ـا",
+    "ا"
+   ]
+  ],
+  [
+   "Unit 1",
+   "Quick check |  | Four questions on alif. |  | Question 4/4 | Which is alif at the final po",
+   [
+    "ـا",
+    "ا"
+   ]
+  ]
+ ],
+ "n_duplicate_choice_screens": 5,
+ "two_option_questions": [
+  [
+   "Unit 1",
+   "s on alif. |  | Question 1/4 | Which is alif at the isolated position?",
+   [
+    "ا",
+    "ـا"
+   ]
+  ],
+  [
+   "Unit 1",
+   " alif. |  | Question 3/4 | Which is alif at the final position? | ا | ",
+   [
+    "ا",
+    "ـا"
+   ]
+  ],
+  [
+   "Unit 1",
+   "s on alif. |  | Question 1/4 | Which is alif at the isolated position?",
+   [
+    "ـا",
+    "ا"
+   ]
+  ],
+  [
+   "Unit 1",
+   "on alif. |  | Question 2/4 | Which is alif at the final position? | ـا",
+   [
+    "ـا",
+    "ا"
+   ]
+  ],
+  [
+   "Unit 1",
+   "on alif. |  | Question 4/4 | Which is alif at the final position? | ـا",
+   [
+    "ـا",
+    "ا"
+   ]
+  ],
+  [
+   "Unit 1",
+   "Tap what you hear | ب | ا",
+   [
+    "ب",
+    "ا"
+   ]
+  ],
+  [
+   "Unit 1",
+   "Tap what you hear | Round 1/5 · 0 right | ب | ا",
+   [
+    "ب",
+    "ا"
+   ]
+  ],
+  [
+   "Unit 1",
+   "Tap what you hear | Round 2/5 · 1 right | ا | ب",
+   [
+    "ا",
+    "ب"
+   ]
+  ],
+  [
+   "Unit 1",
+   "Tap what you hear | Round 3/5 · 2 right | ا | ب",
+   [
+    "ا",
+    "ب"
+   ]
+  ],
+  [
+   "Unit 1",
+   "Tap what you hear | Round 4/5 · 3 right | ب | ا",
+   [
+    "ب",
+    "ا"
+   ]
+  ]
+ ],
+ "n_two_option_questions": 37,
+ "data_right_vs_played_key_mismatch": [],
+ "target_not_exactly_once_in_choices": [
+  [
+   "Unit 2",
+   " questions on te. |  | Question 1/4 | Tap te | ب | ت | ا | م",
+   "تا",
+   [
+    "ب",
+    "ت",
+    "ا",
+    "م"
+   ],
+   0
+  ],
+  [
+   "Unit 3",
+   " questions on ṭe. |  | Question 1/4 | Tap ṭe | ٹ | ک | م | ن",
+   "ٹی",
+   [
+    "ٹ",
+    "ک",
+    "م",
+    "ن"
+   ],
+   0
+  ],
+  [
+   "Unit 7",
+   "uestions on zhe. |  | Question 1/4 | Tap zhe | ژ | ی | ں | س",
+   "ژا",
+   [
+    "ژ",
+    "ی",
+    "ں",
+    "س"
+   ],
+   0
+  ],
+  [
+   "Unit 8",
+   "uestions on qāf. |  | Question 1/4 | Tap qāf | ق | م | پ | چ",
+   "قا",
+   [
+    "ق",
+    "م",
+    "پ",
+    "چ"
+   ],
+   0
+  ],
+  [
+   "Unit 8",
+   "stions on k͟he. |  | Question 2/4 | Tap k͟he | ھ | ی | ن | خ",
+   "خا",
+   [
+    "ھ",
+    "ی",
+    "ن",
+    "خ"
+   ],
+   0
+  ],
+  [
+   "Unit 8",
+   "stions on k͟he. |  | Question 1/4 | Tap k͟he | خ | ج | ب | ڑ",
+   "خو",
+   [
+    "خ",
+    "ج",
+    "ب",
+    "ڑ"
+   ],
+   0
+  ],
+  [
+   "Unit 8",
+   " on baṛī ḥe. |  | Question 2/4 | Tap baṛī ḥe | و | ح | ں | ے",
+   "حی",
+   [
+    "و",
+    "ح",
+    "ں",
+    "ے"
+   ],
+   0
+  ]
+ ],
+ "n_target_problems": 7,
+ "same_sound_options_in_syllable_rounds": [
+  [
+   "Unit 9",
+   "syllables/zoe_u",
+   [
+    "صی",
+    "ظو",
+    "ضو",
+    "ظی"
+   ],
+   [
+    "ظو",
+    "ضو"
+   ]
+  ]
+ ],
+ "n_same_sound_rounds": 1,
+ "driver_could_not_identify_target": [
+  [
+   "Unit 2",
+   "Tap what you hear | ت | ل | ب | م | ن | ا",
+   "units/u01_10",
+   [
+    "ت",
+    "ل",
+    "ب",
+    "م",
+    "ن",
+    "ا"
+   ]
+  ],
+  [
+   "Unit 2",
+   "Quick check |  | Four questions on te. |  | Question 1/4 | Tap te | ب | ت | ا | م",
+   "syllables/te_a",
+   [
+    "ب",
+    "ت",
+    "ا",
+    "م"
+   ]
+  ],
+  [
+   "Unit 3",
+   "Tap what you hear | ب | پ | ا | ل | ت | ی",
+   "units/u02_18",
+   [
+    "ب",
+    "پ",
+    "ا",
+    "ل",
+    "ت",
+    "ی"
+   ]
+  ],
+  [
+   "Unit 3",
+   "Quick check |  | Four questions on ṭe. |  | Question 1/4 | Tap ṭe | ٹ | ک | م | ن",
+   "syllables/tte_i",
+   [
+    "ٹ",
+    "ک",
+    "م",
+    "ن"
+   ]
+  ],
+  [
+   "Unit 4",
+   "Tap what you hear | م | ن | ٹ | ی | پ | و",
+   "units/u03_11",
+   [
+    "م",
+    "ن",
+    "ٹ",
+    "ی",
+    "پ",
+    "و"
+   ]
+  ],
+  [
+   "Unit 5",
+   "Tap what you hear | و | ے | ن | ت | س | پ",
+   "units/u04_10",
+   [
+    "و",
+    "ے",
+    "ن",
+    "ت",
+    "س",
+    "پ"
+   ]
+  ],
+  [
+   "Unit 6",
+   "Tap what you hear | ا | گ | د | ث | ن | ں",
+   "units/u05_10",
+   [
+    "ا",
+    "گ",
+    "د",
+    "ث",
+    "ن",
+    "ں"
+   ]
+  ],
+  [
+   "Unit 7",
+   "Tap what you hear | ن | ی | ش | د | و | ڈ",
+   "units/u06_14",
+   [
+    "ن",
+    "ی",
+    "ش",
+    "د",
+    "و",
+    "ڈ"
+   ]
+  ],
+  [
+   "Unit 7",
+   "Quick check |  | Four questions on zhe. |  | Question 1/4 | Tap zhe | ژ | ی | ں | س",
+   "syllables/zhe_a",
+   [
+    "ژ",
+    "ی",
+    "ں",
+    "س"
+   ]
+  ],
+  [
+   "Unit 8",
+   "Tap what you hear | ج | و | پ | ف | ن | ش",
+   "units/u07_18",
+   [
+    "ج",
+    "و",
+    "پ",
+    "ف",
+    "ن",
+    "ش"
+   ]
+  ],
+  [
+   "Unit 8",
+   "Quick check |  | Four questions on qāf. |  | Question 1/4 | Tap qāf | ق | م | پ | چ",
+   "syllables/qaf_a",
+   [
+    "ق",
+    "م",
+    "پ",
+    "چ"
+   ]
+  ],
+  [
+   "Unit 8",
+   "Quick check |  | Four questions on k͟he. |  | Question 2/4 | Tap k͟he | ھ | ی | ن | خ",
+   "syllables/khe_a",
+   [
+    "ھ",
+    "ی",
+    "ن",
+    "خ"
+   ]
+  ]
+ ],
+ "n_unidentified": 16,
+ "quiz_questions_recorded": 110,
+ "quiz_problems": [],
+ "wrong_taps_with_hint": 224,
+ "wrong_hint_examples": [
+  [
+   "Unit 2",
+   "Count the dots: ی has two",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 2",
+   "Count the dots: ی has two",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 2",
+   "Count the dots: ی has two",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 2",
+   "Count the dots: ی has two",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 2",
+   "Count the dots: ی has two",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 2",
+   "Count the dots: ی has two",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 3",
+   "Count the dots: ٹ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 3",
+   "Count the dots: ٹ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 3",
+   "Count the dots: ٹ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 3",
+   "Count the dots: ٹ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 3",
+   "Count the dots: ٹ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 3",
+   "Count the dots: ٹ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 3",
+   "Count the dots: ٹ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 3",
+   "Count the dots: ٹ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 3",
+   "Count the dots: ٹ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 3",
+   "Count the dots: ٹ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 7",
+   "Count the dots: ڈ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 7",
+   "Count the dots: ڑ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 7",
+   "Count the dots: ڑ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 7",
+   "Count the dots: ڑ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 7",
+   "Count the dots: ڑ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 7",
+   "Count the dots: ی has two",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 10",
+   "Count the dots: ئ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ],
+  [
+   "Unit 10",
+   "Count the dots: ئ has one",
+   "tile shows the isolated glyph with 0 dots"
+  ]
+ ],
+ "hint_texts": [
+  [
+   "Count the dots: X has X",
+   75
+  ],
+  [
+   "Almost! Tap the green one.",
+   72
+  ],
+  [
+   "NONE",
+   14
+  ],
+  [
+   "This X lām, no dots!",
+   5
+  ],
+  [
+   "This X t̤oʼe, no dots!",
+   4
+  ],
+  [
+   "Listen again: this X lām",
+   3
+  ],
+  [
+   "This X re, no dots!",
+   3
+  ],
+  [
+   "Listen again: this X dāl",
+   3
+  ]
+ ]
+}

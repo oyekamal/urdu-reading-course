@@ -1,0 +1,7 @@
+round	step	result	note
+0	baseline	busy 6x 96pct; LH 0.68 FCP 4.8s LCP 5.25s; sw v0.9.0 stale	harness idle.py busy.py lh.sh
+1	build	Marko one-slot+calm, SW rewrite, fonts subset, CSS inline, lazy lottie	busy calm 0.0, from-load 5.6, awake 29; LH 0.93 FCP 1.25 LCP 3.23 TBT 14
+1	proofs	sw_tests 23/23, marko_test 13/13, fontdiff 0/1199x4 differ, soak2 15min flat, ui_audit(walker) 0 violations	
+1	verifier	running	
+2	verifier	2 MAJOR(toast on 2nd deploy, 2-tab), awake CPU 29pct, syllables audio offline; minors	fixed: swreg newest-waiting+controllerchange reload+retry, syllables eager, unrest ok-guard, list.json excluded; sw_tests 14/14 update x3, offline 23/23
+2	accepted	awake CPU (4s after touch) 29pct@6x; LCP 3.2s vs 3.0 target; drills.js:193 canvas font race not mine	

@@ -1,0 +1,24 @@
+- main:
+  - text: Unit 1 · lesson 2 of 13
+  - heading "be" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - region "Lesson content":
+    - heading "Where it sits in a word" [level=2]
+    - paragraph: It joins the next letter, so it changes shape.
+    - text: isolated ب اب ab · now
+    - button "Play"
+    - text: initial بـ بابا bābā · dad
+    - button "Play"
+    - text: medial ـبـ بابا bābā · dad
+    - button "Play"
+    - text: final ـب اب ab · now
+    - button "Play"
+  - button "I see it"
+  - navigation "Main":
+    - button "Learn"
+    - button "Review"
+    - button "Read"
+    - button "Me"
+- status: "Not quite. Count the dots: be has one"
+- status: "Correct: be"

@@ -1,0 +1,46 @@
+- main:
+  - text: Unit 1 · lesson 10 of 13
+  - heading "Words 1" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - region "Lesson content":
+    - text: Real words! Tap one to hear it.
+    - heading "Read" [level=2]
+    - paragraph: Read aloud, then tap to listen.
+    - text: اَب ab now
+    - button "Play"
+    - text: بابا bābā dad
+    - button "Play"
+    - text: اِمام imām prayer leader
+    - button "Play"
+    - text: نام nām name
+    - button "Play"
+    - text: کام kām work
+    - button "Play"
+    - text: کَل kal tomorrow / yesterday
+    - button "Play"
+    - text: لال lāl red
+    - button "Play"
+    - text: بال bāl hair
+    - button "Play"
+    - text: ناک nāk nose
+    - button "Play"
+    - text: کان kān ear
+    - button "Play"
+    - heading "Sentences" [level=3]
+    - button "Play"
+    - text: بابا کا کام bābā kā kām dad's work
+    - button "Play"
+    - text: کالا بال kālā bāl black hair
+    - button "Play"
+    - text: نَمَک لا namak lā bring salt
+  - button "Read them"
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status: Not quite. Almost! Tap the green one.
+- status: "Correct: nām"

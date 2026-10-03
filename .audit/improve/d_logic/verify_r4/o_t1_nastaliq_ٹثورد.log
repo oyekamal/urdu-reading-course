@@ -1,0 +1,17 @@
+39 letters
+ٹ isolated falseRej 0 falseAcc 0
+ٹ initial falseRej 0 falseAcc 1
+ٹ medial falseRej 1 falseAcc 0
+ٹ final falseRej 0 falseAcc 1
+ث isolated falseRej 0 falseAcc 1
+ث initial falseRej 0 falseAcc 1
+ث medial falseRej 1 falseAcc 0
+ث final falseRej 0 falseAcc 2
+و isolated falseRej 0 falseAcc 1
+و final falseRej 0 falseAcc 1
+ر isolated falseRej 0 falseAcc 0
+ر final falseRej 0 falseAcc 0
+د isolated falseRej 0 falseAcc 0
+د final falseRej 0 falseAcc 0
+errors ['The radius provided (-0.66071) is negative.']
+POS 220 falseRej 2 NEG 98 falseAcc 8

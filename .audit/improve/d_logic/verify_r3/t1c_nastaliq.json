@@ -1,0 +1,482 @@
+[
+{
+"ch": "ا",
+"form": "isolated",
+"var": "from_dot",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"dot": [
+200.99330357142856,
+65.98812553011025
+],
+"start": [
+188,
+49
+]
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "body_start",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"dot": [
+200.99330357142856,
+65.98812553011025
+],
+"start": [
+188,
+49
+]
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "from_dot",
+"ok": false,
+"t": "Coverage 93% — stay inside the letter",
+"dot": [
+227.996643611363,
+72.99406276505513
+],
+"start": [
+191,
+57
+]
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"dot": [
+227.996643611363,
+72.99406276505513
+],
+"start": [
+191,
+57
+]
+},
+{
+"ch": "ر",
+"form": "isolated",
+"var": "from_dot",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"dot": [
+214.98883928571428,
+141.98473282442748
+],
+"start": [
+202,
+125
+]
+},
+{
+"ch": "ر",
+"form": "isolated",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+214.98883928571428,
+141.98473282442748
+],
+"start": [
+202,
+125
+]
+},
+{
+"ch": "ر",
+"form": "final",
+"var": "from_dot",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"dot": [
+242.996643611363,
+161.98473282442748
+],
+"start": [
+223,
+151
+]
+},
+{
+"ch": "ر",
+"form": "final",
+"var": "body_start",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"dot": [
+242.996643611363,
+161.98473282442748
+],
+"start": [
+223,
+151
+]
+},
+{
+"ch": "د",
+"form": "isolated",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"dot": [
+210.98772321428572,
+135.99660729431722
+],
+"start": [
+183,
+131
+]
+},
+{
+"ch": "د",
+"form": "isolated",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 97% ✓ good",
+"dot": [
+210.98772321428572,
+135.99660729431722
+],
+"start": [
+183,
+131
+]
+},
+{
+"ch": "د",
+"form": "final",
+"var": "from_dot",
+"ok": false,
+"t": "Coverage 93% — stay inside the letter",
+"dot": [
+235.9988921029227,
+144.98729391963528
+],
+"start": [
+199,
+127
+]
+},
+{
+"ch": "د",
+"form": "final",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"dot": [
+235.9988921029227,
+144.98729391963528
+],
+"start": [
+199,
+127
+]
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "from_dot",
+"ok": false,
+"t": "Coverage 93% — stay inside the letter",
+"dot": [
+210.98772321428572,
+58.999151823579304
+],
+"start": [
+183,
+131
+]
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "body_start",
+"ok": false,
+"t": "Coverage 92% — Start at the green dot and follow the arrow",
+"dot": [
+210.98772321428572,
+58.999151823579304
+],
+"start": [
+183,
+131
+]
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "from_dot",
+"ok": false,
+"t": "Coverage 90% — stay inside the letter",
+"dot": [
+235.9988921029227,
+55.996607294317215
+],
+"start": [
+199,
+127
+]
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "body_start",
+"ok": false,
+"t": "Coverage 90% — Start at the green dot",
+"dot": [
+235.9988921029227,
+55.996607294317215
+],
+"start": [
+199,
+127
+]
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "from_dot",
+"ok": false,
+"t": "Coverage 93% — stay inside the letter",
+"dot": [
+229.98883928571428,
+62.98558100084817
+],
+"start": [
+202,
+125
+]
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 93% ✓ good",
+"dot": [
+229.98883928571428,
+62.98558100084817
+],
+"start": [
+202,
+125
+]
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "from_dot",
+"ok": false,
+"t": "Coverage 95% — stay inside the letter",
+"dot": [
+242.99665178571428,
+103.98642917726886
+],
+"start": [
+223,
+151
+]
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"dot": [
+242.99665178571428,
+103.98642917726886
+],
+"start": [
+223,
+151
+]
+},
+{
+"ch": "ز",
+"form": "isolated",
+"var": "from_dot",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"dot": [
+222.99107142857142,
+88.99067005937235
+],
+"start": [
+202,
+125
+]
+},
+{
+"ch": "ز",
+"form": "isolated",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+222.99107142857142,
+88.99067005937235
+],
+"start": [
+202,
+125
+]
+},
+{
+"ch": "ز",
+"form": "final",
+"var": "from_dot",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"dot": [
+242.996643611363,
+128.99067005937235
+],
+"start": [
+223,
+151
+]
+},
+{
+"ch": "ز",
+"form": "final",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+242.996643611363,
+128.99067005937235
+],
+"start": [
+223,
+151
+]
+},
+{
+"ch": "ژ",
+"form": "isolated",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"dot": [
+235.99888392857142,
+62.98558100084817
+],
+"start": [
+202,
+125
+]
+},
+{
+"ch": "ژ",
+"form": "isolated",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"dot": [
+235.99888392857142,
+62.98558100084817
+],
+"start": [
+202,
+125
+]
+},
+{
+"ch": "ژ",
+"form": "final",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"dot": [
+242.99665178571428,
+103.98642917726886
+],
+"start": [
+223,
+151
+]
+},
+{
+"ch": "ژ",
+"form": "final",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 96% ✓ good",
+"dot": [
+242.99665178571428,
+103.98642917726886
+],
+"start": [
+223,
+151
+]
+},
+{
+"ch": "ذ",
+"form": "isolated",
+"var": "from_dot",
+"ok": false,
+"t": "Coverage 98% — stay inside the letter",
+"dot": [
+210.98772321428572,
+83.98642917726887
+],
+"start": [
+183,
+131
+]
+},
+{
+"ch": "ذ",
+"form": "isolated",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 98% ✓ good",
+"dot": [
+210.98772321428572,
+83.98642917726887
+],
+"start": [
+183,
+131
+]
+},
+{
+"ch": "ذ",
+"form": "final",
+"var": "from_dot",
+"ok": false,
+"t": "Coverage 95% — stay inside the letter",
+"dot": [
+235.99887575422014,
+80.98388464800678
+],
+"start": [
+199,
+127
+]
+},
+{
+"ch": "ذ",
+"form": "final",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 95% ✓ good",
+"dot": [
+235.99887575422014,
+80.98388464800678
+],
+"start": [
+199,
+127
+]
+}
+]

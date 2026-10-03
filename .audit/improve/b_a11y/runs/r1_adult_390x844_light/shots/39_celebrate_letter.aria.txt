@@ -1,0 +1,20 @@
+- main:
+  - text: Unit 1 · lesson 2 of 13
+  - heading "be" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status: "Not quite. Count the dots: be has one"
+- status: "Correct: be"
+- dialog "be done!":
+  - button "Back to path": Path
+  - heading "be done!" [level=1]
+  - text: +1 pearl
+  - paragraph: 4 pearls on your thread · lesson 2 of 13
+  - 'button "Next: kāf"'

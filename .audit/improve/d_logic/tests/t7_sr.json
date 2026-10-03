@@ -1,0 +1,98 @@
+{
+ "lesson": "be",
+ "wrong_tap_on_be_happened": true,
+ "card_be_after_ui_miss": {
+  "box": 1,
+  "seen": 7,
+  "due_in_days": 1,
+  "lastOk": false
+ },
+ "direct": {
+  "before": {
+   "w": null,
+   "letter": null
+  },
+  "word_quiz_miss": {
+   "kind": "word",
+   "box": 1,
+   "due_days": 1,
+   "seen": 0,
+   "unit": 3,
+   "idx": 2
+  },
+  "blend_miss_sends_letter": {
+   "kind": "letter",
+   "box": 1,
+   "due_days": 1,
+   "seen": 0,
+   "unit": null,
+   "idx": null
+  },
+  "correct_answer_creates_nothing": null,
+  "sight_miss": {
+   "kind": "word",
+   "box": 1,
+   "due_days": 1,
+   "seen": 0,
+   "unit": 11,
+   "idx": 1
+  },
+  "dictation_miss": {
+   "kind": "word",
+   "box": 1,
+   "due_days": 1,
+   "seen": 0,
+   "unit": 3,
+   "idx": 2
+  },
+  "trace_miss_ignored_for_SR": 0,
+  "self_test_not_a_card": null,
+  "overdue_not_postponed": {
+   "kind": "letter",
+   "box": 1,
+   "due_days": -3,
+   "seen": 1,
+   "unit": null,
+   "idx": null
+  },
+  "due_includes_overdue": true,
+  "leitner_sequence": [
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    5,
+    16
+   ],
+   [
+    5,
+    16
+   ],
+   [
+    1,
+    1
+   ]
+  ]
+ },
+ "page_errors": [],
+ "checks": {
+  "ui_wrong_tap_demoted_box4_card": true,
+  "word_quiz_miss_creates_card_box1_due<=1d": true,
+  "blend_miss_sends_the_letter": true,
+  "correct_answer_changes_nothing": true,
+  "sight_miss": true,
+  "overdue_not_postponed": true,
+  "leitner_unchanged_2_4_8_16_16_then_1": true,
+  "self_test_row_is_not_a_card": true
+ },
+ "all_pass": true
+}

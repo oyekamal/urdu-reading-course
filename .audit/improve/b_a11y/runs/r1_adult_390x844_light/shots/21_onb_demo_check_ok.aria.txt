@@ -1,0 +1,8 @@
+- main:
+  - text: Your first lesson You read it. Really read it.
+  - button "Play again"
+  - button "بابا ✓" [disabled]
+  - button "با" [disabled]
+  - button "See what you did"
+- status
+- status

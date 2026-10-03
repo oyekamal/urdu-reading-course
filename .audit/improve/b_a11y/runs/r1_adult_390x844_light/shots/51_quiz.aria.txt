@@ -1,0 +1,80 @@
+- main:
+  - text: Unit 1 · lesson 13 of 13
+  - heading "Unit check" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - region "Lesson content":
+    - text: Show me what you know. You can do it!
+    - heading "Check" [level=2]
+    - paragraph: Score 8 of 10 to pass this unit.
+    - list:
+      - listitem:
+        - text: Which one says lāl (red)?
+        - button "bābā": بابا
+        - button "bāl": بال
+        - button "lāl": لال
+        - button "ab": اَب
+      - listitem:
+        - text: Which one says kān (ear)?
+        - button "kān": کان
+        - button "kal": کَل
+        - button "makān": مَکان
+        - button "imlā": اِملا
+      - listitem:
+        - text: Which one says nānā (maternal grandfather)?
+        - button "kām": کام
+        - button "nānā": نانا
+        - button "mulk": مُلْک
+        - button "kamāl": کَمال
+      - listitem:
+        - text: Which one says namak (salt)?
+        - button "namak": نَمَک
+        - button "bāl": بال
+        - button "kamān": کَمان
+        - button "makān": مَکان
+      - listitem:
+        - text: Which one says kamān (bow)?
+        - button "kamān": کَمان
+        - button "lāl": لال
+        - button "bāl": بال
+        - button "mān": مان
+      - listitem:
+        - text: Which one says bāl (hair)?
+        - button "bāl": بال
+        - button "nāk": ناک
+        - button "kālā": کالا
+        - button "mālā": مالا
+      - listitem:
+        - text: Which one says kamāl (wonder)?
+        - button "kālā": کالا
+        - button "lāl": لال
+        - button "mulk": مُلْک
+        - button "kamāl": کَمال
+      - listitem:
+        - text: Which one says mālā (garland)?
+        - button "mulk": مُلْک
+        - button "kamān": کَمان
+        - button "kal": کَل
+        - button "mālā": مالا
+      - listitem:
+        - text: Which one says imām (prayer leader)?
+        - button "bāl": بال
+        - button "kālā": کالا
+        - button "nām": نام
+        - button "imām": اِمام
+      - listitem:
+        - text: Which one says nāk (nose)?
+        - button "lāl": لال
+        - button "nāk": ناک
+        - button "bābā": بابا
+        - button "imlā": اِملا
+  - button "Submit"
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status: Not quite. Almost! Tap the green one.
+- status: It was بال — bāl

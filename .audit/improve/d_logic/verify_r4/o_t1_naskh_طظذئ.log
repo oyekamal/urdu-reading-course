@@ -1,0 +1,17 @@
+39 letters
+ط isolated falseRej 2 falseAcc 0
+ط initial falseRej 2 falseAcc 0
+ط medial falseRej 6 falseAcc 0
+ط final falseRej 4 falseAcc 0
+ظ isolated falseRej 2 falseAcc 0
+ظ initial falseRej 2 falseAcc 0
+ظ medial falseRej 6 falseAcc 0
+ظ final falseRej 4 falseAcc 0
+ذ isolated falseRej 0 falseAcc 0
+ذ final falseRej 2 falseAcc 0
+ئ isolated falseRej 0 falseAcc 0
+ئ initial falseRej 0 falseAcc 0
+ئ medial falseRej 0 falseAcc 0
+ئ final falseRej 0 falseAcc 0
+errors []
+POS 224 falseRej 30 NEG 98 falseAcc 0

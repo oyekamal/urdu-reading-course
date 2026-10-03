@@ -1,0 +1,59 @@
+- main:
+  - heading "Good morning, Sam" [level=1]
+  - text: Unit 2 · Dots and the two ye
+  - button "Switch learner": Sam
+  - text: 15 pearls
+  - 'img "Daily goal: 1 of 10 minutes"':
+    - img
+    - text: 1 / 10 min
+  - text: 1 day practised
+  - button "Tap Marko to say hi"
+  - text: Unit 2 is open, Sam! Unit 2 Lesson 1 of 9
+  - button "9 to review"
+  - text: ت Start here te
+  - 'button "Start: te"'
+  - heading "Your path" [level=3]
+  - text: Unit 1 The first six پہلے چھ حرف passed
+  - button "alif, done": alif
+  - button "be, done": be
+  - button "kāf, done": kāf
+  - button "lām, done": lām
+  - button "mīm, done": mīm
+  - button "nūn, done": nūn
+  - button "Vowel marks, done": Vowel marks
+  - button "Join them, done": Join them
+  - button "Blend, done": Blend
+  - button "Words 1, done": Words 1
+  - button "Words 2, done": Words 2
+  - button "Read, done": Read
+  - button "Unit check, done": Unit check
+  - text: Unit 2 Dots and the two ye نقطے اور دو یے 0 of 9 pearls
+  - button "te, up next": ت te
+  - button "choṭī ye, locked": ی choṭī ye
+  - button "baṛī ye, locked": ے baṛī ye
+  - button "Join them, locked": Join them
+  - button "Blend, locked": با Blend
+  - button "Words 1, locked": Words 1
+  - button "Words 2, locked": Words 2
+  - button "Read, locked": Read
+  - button "Unit check, locked": Unit check
+  - text: Unit 3 Finishing the be family بے کا خاندان Finish unit 2 to open this
+  - button "pe, locked": پ pe
+  - button "ṭe, locked": ٹ ṭe
+  - button "s̱e, locked": ث s̱e
+  - button "Join them, locked": Join them
+  - button "Blend, locked": با Blend
+  - button "Words 1, locked": Words 1
+  - button "Words 2, locked": Words 2
+  - button "Read, locked": Read
+  - button "Unit check, locked": Unit check
+  - button "Parent report for Sam"
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status: Not quite. Almost! Tap the green one.
+- status: Unit 1 passed! Unit 2 unlocked

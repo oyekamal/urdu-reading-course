@@ -1,0 +1,20 @@
+- main:
+  - text: Unit 1 · lesson 8 of 13
+  - heading "Join them" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - region "Lesson content":
+    - text: Letters hold hands. Watch them change!
+    - heading "Letters join" [level=2]
+    - paragraph: Each letter you learned in this unit, in all its shapes. Joiners change; ا never join forward.
+    - text: alif ا isolated ـا final be ب isolated بـ initial ـبـ medial ـب final kāf ک isolated کـ initial ـکـ medial ـک final lām ل isolated لـ initial ـلـ medial ـل final mīm م isolated مـ initial ـمـ medial ـم final nūn ن isolated نـ initial ـنـ medial ـن final
+  - button "Continue"
+  - navigation "Main":
+    - button "Learn"
+    - button "Units"
+    - button "Review"
+    - button "Read"
+    - button "Progress"
+    - button "More"
+- status: Not quite. Almost! Tap the green one.
+- status: "Correct: be"

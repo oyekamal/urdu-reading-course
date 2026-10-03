@@ -1,0 +1,8 @@
+- main:
+  - button "Back"
+  - text: How much time can you give me a day?
+  - button "5 minutes · gentle One letter a day, unit 1 in about 2 weeks"
+  - button "10 minutes · steady Most learners pick this, unit 1 in about a week"
+  - button "15 minutes · keen Reading short sentences in about a month"
+- status
+- status

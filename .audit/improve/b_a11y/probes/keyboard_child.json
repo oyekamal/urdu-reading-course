@@ -1,0 +1,1104 @@
+{
+ "today": {
+  "tabs": 33,
+  "nulls": 1,
+  "seq": [
+   {
+    "tag": "button.btn.btn-chip",
+    "name": "Switch learner",
+    "role": null,
+    "rect": [
+     292,
+     12,
+     82,
+     44
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.hh-poke",
+    "name": "Tap Marko to say hi",
+    "role": null,
+    "rect": [
+     117,
+     328,
+     157,
+     210
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.btn.btn-primary",
+    "name": "Start: alif",
+    "role": null,
+    "rect": [
+     34,
+     682,
+     322,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgba(255, 255, 255, 0.3) 0px 2px 0px 0px inset, rg",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.done",
+    "name": "Three rules, done",
+    "role": null,
+    "rect": [
+     33,
+     390,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgba(120, 84, 30, 0.25) 0px 4px 8px 0px, rgba(160,",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.done",
+    "name": "Finish unit, done",
+    "role": null,
+    "rect": [
+     120,
+     390,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgba(120, 84, 30, 0.25) 0px 4px 8px 0px, rgba(160,",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.cur",
+    "name": "alif, up next",
+    "role": null,
+    "rect": [
+     33,
+     648,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgba(242, 169, 59, 0.28) 0px 0px 0px 6px, rgba(242",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "be, locked",
+    "role": null,
+    "rect": [
+     120,
+     648,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "kāf, locked",
+    "role": null,
+    "rect": [
+     206,
+     632,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "lām, locked",
+    "role": null,
+    "rect": [
+     293,
+     632,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "mīm, locked",
+    "role": null,
+    "rect": [
+     293,
+     756,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "nūn, locked",
+    "role": null,
+    "rect": [
+     206,
+     756,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "Vowel marks, locked",
+    "role": null,
+    "rect": [
+     120,
+     740,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "Join them, locked",
+    "role": null,
+    "rect": [
+     33,
+     740,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "Blend, locked",
+    "role": null,
+    "rect": [
+     33,
+     390,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "Words 1, locked",
+    "role": null,
+    "rect": [
+     120,
+     390,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "Words 2, locked",
+    "role": null,
+    "rect": [
+     206,
+     374,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "Read, locked",
+    "role": null,
+    "rect": [
+     293,
+     374,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "Unit check, locked",
+    "role": null,
+    "rect": [
+     293,
+     498,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "te, locked",
+    "role": null,
+    "rect": [
+     33,
+     780,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "choṭī ye, locked",
+    "role": null,
+    "rect": [
+     120,
+     780,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "baṛī ye, locked",
+    "role": null,
+    "rect": [
+     206,
+     764,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "Join them, locked",
+    "role": null,
+    "rect": [
+     293,
+     764,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "Blend, locked",
+    "role": null,
+    "rect": [
+     293,
+     390,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "Words 1, locked",
+    "role": null,
+    "rect": [
+     206,
+     390,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "Words 2, locked",
+    "role": null,
+    "rect": [
+     120,
+     374,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "Read, locked",
+    "role": null,
+    "rect": [
+     33,
+     374,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.pearl.locked",
+    "name": "Unit check, locked",
+    "role": null,
+    "rect": [
+     33,
+     498,
+     64,
+     64
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 5px inset, color(sr",
+    "inView": true
+   },
+   {
+    "tag": "button.card.all-units",
+    "name": "All units See every unit and the letter ",
+    "role": null,
+    "rect": [
+     16,
+     587,
+     358,
+     85
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.btn.btn-wide",
+    "name": "Parent report for Zara",
+    "role": null,
+    "rect": [
+     16,
+     694,
+     358,
+     56
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.active",
+    "name": "Learn",
+    "role": null,
+    "rect": [
+     4,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button",
+    "name": "Review",
+    "role": null,
+    "rect": [
+     100,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button",
+    "name": "Read",
+    "role": null,
+    "rect": [
+     195,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button",
+    "name": "Me",
+    "role": null,
+    "rect": [
+     291,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   null
+  ],
+  "nonfocusable_clickables": [
+   "span.hh-badge hh-pearl \"2\npearls\"",
+   "span.ic  \"\"",
+   "svg.[object SVGAnimatedString] \"\"",
+   "path.[object SVGAnimatedString] \"\"",
+   "b.cu \"2\"",
+   "small. \"pearls\"",
+   "span.hh-badge hh-goal \"0\n/ 10 min\"",
+   "span.hh-ring \"\"",
+   "svg.[object SVGAnimatedString] \"\"",
+   "circle.[object SVGAnimatedString] \"\"",
+   "circle.[object SVGAnimatedString] \"\"",
+   "span.ic  \"\""
+  ],
+  "offscreen_focus": [],
+  "no_ring": [],
+  "activeAfter": null
+ },
+ "lesson_intro": {
+  "tabs": 9,
+  "nulls": 1,
+  "seq": [
+   {
+    "tag": "button.btn.btn-play",
+    "name": "Hear the word",
+    "role": null,
+    "rect": [
+     132,
+     512,
+     56,
+     56
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.btn.btn-primary",
+    "name": "I heard it",
+    "role": null,
+    "rect": [
+     16,
+     710,
+     358,
+     56
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 247, 246) 0px -10px 20px 0px",
+    "inView": true
+   },
+   {
+    "tag": "button.active",
+    "name": "Learn",
+    "role": null,
+    "rect": [
+     4,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button",
+    "name": "Review",
+    "role": null,
+    "rect": [
+     100,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button",
+    "name": "Read",
+    "role": null,
+    "rect": [
+     195,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button",
+    "name": "Me",
+    "role": null,
+    "rect": [
+     291,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   null,
+   {
+    "tag": "button.btn.btn-play",
+    "name": "Repeat instruction",
+    "role": null,
+    "rect": [
+     244,
+     16,
+     56,
+     56
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.btn.lesson-x",
+    "name": "Leave lesson",
+    "role": null,
+    "rect": [
+     320,
+     20,
+     54,
+     48
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.btn.btn-play",
+    "name": "Say be again",
+    "role": null,
+    "rect": [
+     157,
+     375,
+     76,
+     76
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   }
+  ],
+  "nonfocusable_clickables": [],
+  "offscreen_focus": [],
+  "no_ring": [],
+  "activeAfter": null
+ },
+ "focus_after_continue": {
+  "tag": "h2",
+  "name": "Tap what you hear",
+  "role": null,
+  "rect": [
+   34,
+   197,
+   322,
+   30
+  ],
+  "outline": "solid 3px rgb(30, 47, 85)",
+  "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+  "inView": true
+ },
+ "tellapart_start": {
+  "tabs": 9,
+  "nulls": 1,
+  "seq": [
+   {
+    "tag": "button.btn.btn-play",
+    "name": "Play sound",
+    "role": null,
+    "rect": [
+     150,
+     235,
+     76,
+     76
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.tile.ur",
+    "name": "alif",
+    "role": null,
+    "rect": [
+     202,
+     325,
+     72,
+     77
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgba(255, 255, 255, 0.7) 0px 1px 0px 0px inset, rg",
+    "inView": true
+   },
+   {
+    "tag": "button.tile.ur",
+    "name": "be",
+    "role": null,
+    "rect": [
+     116,
+     325,
+     72,
+     77
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgba(255, 255, 255, 0.7) 0px 1px 0px 0px inset, rg",
+    "inView": true
+   },
+   {
+    "tag": "button.active",
+    "name": "Learn",
+    "role": null,
+    "rect": [
+     4,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button",
+    "name": "Review",
+    "role": null,
+    "rect": [
+     100,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button",
+    "name": "Read",
+    "role": null,
+    "rect": [
+     195,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button",
+    "name": "Me",
+    "role": null,
+    "rect": [
+     291,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   null,
+   {
+    "tag": "button.btn.btn-play",
+    "name": "Repeat instruction",
+    "role": null,
+    "rect": [
+     244,
+     26,
+     56,
+     56
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.btn.lesson-x",
+    "name": "Leave lesson",
+    "role": null,
+    "rect": [
+     320,
+     30,
+     54,
+     48
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   }
+  ],
+  "nonfocusable_clickables": [],
+  "offscreen_focus": [],
+  "no_ring": [],
+  "activeAfter": null
+ },
+ "tile_enter": {
+  "classes_before": "tile ur,tile ur",
+  "classes_after": "tile ur,tile ur"
+ },
+ "me": {
+  "tabs": 21,
+  "nulls": 1,
+  "seq": [
+   {
+    "tag": "button.btn",
+    "name": "Zara",
+    "role": null,
+    "rect": [
+     279,
+     12,
+     95,
+     48
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.card.stk-entry",
+    "name": "Sticker book Your letter stickers live h",
+    "role": null,
+    "rect": [
+     16,
+     288,
+     358,
+     78
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "select",
+    "name": "Child (5–10) Adult, new to Urdu Speaks U",
+    "role": null,
+    "rect": [
+     33,
+     398,
+     324,
+     48
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "select",
+    "name": "Naskh (learning) Nastaliq (print)",
+    "role": null,
+    "rect": [
+     33,
+     471,
+     324,
+     48
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "select",
+    "name": "Normal text Large Extra large",
+    "role": null,
+    "rect": [
+     33,
+     544,
+     324,
+     48
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "select",
+    "name": "Normal letter spacing Wider Widest (dysl",
+    "role": null,
+    "rect": [
+     33,
+     617,
+     324,
+     48
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "input",
+    "name": "on",
+    "role": null,
+    "rect": [
+     37,
+     668,
+     13,
+     48
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "input",
+    "name": "on",
+    "role": null,
+    "rect": [
+     37,
+     722,
+     13,
+     48
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "input",
+    "name": "on",
+    "role": null,
+    "rect": [
+     37,
+     776,
+     13,
+     48
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "input",
+    "name": "on",
+    "role": null,
+    "rect": [
+     37,
+     796,
+     13,
+     48
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.btn",
+    "name": "Export backup (JSON)",
+    "role": null,
+    "rect": [
+     33,
+     398,
+     199,
+     48
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "input",
+    "name": "",
+    "role": null,
+    "rect": [
+     33,
+     471,
+     324,
+     48
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.btn.btn-danger",
+    "name": "Reset this profile's progress",
+    "role": null,
+    "rect": [
+     33,
+     519,
+     238,
+     48
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.btn.btn-wide",
+    "name": "Switch profile / mode",
+    "role": null,
+    "rect": [
+     16,
+     606,
+     358,
+     56
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.btn.btn-wide",
+    "name": "Email Kamal",
+    "role": null,
+    "rect": [
+     33,
+     788,
+     324,
+     56
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.btn.btn-wide",
+    "name": "Copy email address",
+    "role": null,
+    "rect": [
+     33,
+     455,
+     324,
+     56
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.btn.btn-gold",
+    "name": "Support Urdu Qaida",
+    "role": null,
+    "rect": [
+     33,
+     521,
+     324,
+     56
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button",
+    "name": "Learn",
+    "role": null,
+    "rect": [
+     4,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button",
+    "name": "Review",
+    "role": null,
+    "rect": [
+     100,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button",
+    "name": "Read",
+    "role": null,
+    "rect": [
+     195,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   {
+    "tag": "button.active",
+    "name": "Me",
+    "role": null,
+    "rect": [
+     291,
+     780,
+     96,
+     58
+    ],
+    "outline": "solid 3px rgb(30, 47, 85)",
+    "shadow": "rgb(242, 169, 59) 0px 0px 0px 2px",
+    "inView": true
+   },
+   null
+  ],
+  "nonfocusable_clickables": [],
+  "offscreen_focus": [],
+  "no_ring": [],
+  "activeAfter": null
+ },
+ "sticker_book_overlay": {
+  "tabs": 12,
+  "reaches_nav_behind_overlay": [],
+  "seq_names": [
+   "Back",
+   "Unit 1, 0 of 6",
+   "Unit 2, 0 of 3",
+   "Unit 3, 0 of 3",
+   "Unit 4, 0 of 4",
+   "Unit 5, 0 of 5",
+   "Unit 6, 0 of 2",
+   "Unit 7, 0 of 4",
+   "Unit 8, 0 of 6",
+   "Unit 9, 0 of 5",
+   "Unit 10, 0 of 1",
+   "Open the next page of stickers"
+  ]
+ },
+ "trace_canvas_keyboard": "see L_trace screen in walk results"
+}

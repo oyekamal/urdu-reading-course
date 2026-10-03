@@ -1,0 +1,8 @@
+- main:
+  - heading "Zara just read Urdu" [level=1]
+  - text: بابا baba · dad · a first word
+  - paragraph: Two letters, one word, under two minutes. Send it to the family, they will want to hear about this.
+  - button "Share Zara's first word"
+  - button "Continue"
+- status
+- status

@@ -1,0 +1,6 @@
+cards+attempts store failing -> We could not open your saved progress |  | Nothing has been dele | recovery True
+   salvage export: {'format': 'urdu-qaida-backup', 'version': 1, 'salvaged': True, 'settings': 0, 'profiles': 0, 'attempts': 0, 'cards': 0, 'sessions': 0, 'progress': 0, 'assessments': 0} | toast Backup downloaded
+   after Start fresh: اردو پڑھنا سیکھیں | Urdu Qaida |  | Works fully offline. | profiles 0
+all stores failing -> We could not open your saved progress |  | Nothing has been dele | recovery True
+   salvage export: {'format': 'urdu-qaida-backup', 'version': 1, 'salvaged': True, 'settings': 0, 'profiles': 0, 'attempts': 0, 'cards': 0, 'sessions': 0, 'progress': 0, 'assessments': 0} | toast Backup downloaded
+   after Start fresh: اردو پڑھنا سیکھیں | Urdu Qaida |  | Works fully offline. | profiles 0

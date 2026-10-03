@@ -1,0 +1,21 @@
+- main:
+  - text: Unit 1 · lesson 9 of 13
+  - heading "Blend" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - text: Listen, then tap the sound you hear.
+  - heading "Blend" [level=2]
+  - paragraph: A letter plus a vowel makes a sound you can say. Tap what you hear.
+  - button "Play again"
+  - text: Round 1/6
+  - button "با"
+  - button "ما"
+  - button "نا"
+  - button "لا"
+  - navigation "Main":
+    - button "Learn"
+    - button "Review"
+    - button "Read"
+    - button "Me"
+- status: Not quite. Almost! Tap the green one.
+- status: "Correct: nām"

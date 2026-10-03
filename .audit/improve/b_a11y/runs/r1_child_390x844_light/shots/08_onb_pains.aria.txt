@@ -1,0 +1,13 @@
+- main:
+  - button "Back"
+  - text: What has made reading Urdu hard? Pick all that sound familiar.
+  - button "The letters look alike" [pressed]
+  - button "Letters change shape when they join"
+  - button "Right to left feels backwards"
+  - button "No one to check me" [pressed]
+  - button "Old qaida books are boring"
+  - button "No time for long lessons"
+  - button "Apps full of ads, or they need internet"
+  - button "Continue"
+- status
+- status

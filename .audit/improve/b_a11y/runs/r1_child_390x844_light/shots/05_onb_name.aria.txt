@@ -1,0 +1,8 @@
+- main:
+  - button "Back"
+  - text: Zara! What a lovely name. Soon Zara will read it in Urdu.
+  - textbox "Child's name": Zara
+  - text: Z Zara's reading badge
+  - button "Continue"
+- status
+- status

@@ -1,0 +1,5 @@
+- main:
+  - text: Your first lesson baa twice. Say it out loud, then tap to check.
+  - button "Read the word, then tap to hear it": بابا
+- status
+- status

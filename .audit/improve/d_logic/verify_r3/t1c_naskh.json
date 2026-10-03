@@ -1,0 +1,482 @@
+[
+{
+"ch": "ا",
+"form": "isolated",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+199.98883928571428,
+77.99830364715861
+],
+"start": [
+180,
+68
+]
+},
+{
+"ch": "ا",
+"form": "isolated",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 99% ✓ good",
+"dot": [
+199.98883928571428,
+77.99830364715861
+],
+"start": [
+180,
+68
+]
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "from_dot",
+"ok": false,
+"t": "Coverage 100% — stay inside the letter",
+"dot": [
+225,
+76.9974554707379
+],
+"start": [
+159,
+63
+]
+},
+{
+"ch": "ا",
+"form": "final",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+225,
+76.9974554707379
+],
+"start": [
+159,
+63
+]
+},
+{
+"ch": "ر",
+"form": "isolated",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+212.99665178571428,
+133.9949109414758
+],
+"start": [
+188,
+119
+]
+},
+{
+"ch": "ر",
+"form": "isolated",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+212.99665178571428,
+133.9949109414758
+],
+"start": [
+188,
+119
+]
+},
+{
+"ch": "ر",
+"form": "final",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+237.99107142857142,
+133.9949109414758
+],
+"start": [
+221,
+165
+]
+},
+{
+"ch": "ر",
+"form": "final",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+237.99107142857142,
+133.9949109414758
+],
+"start": [
+221,
+165
+]
+},
+{
+"ch": "د",
+"form": "isolated",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+217.98549107142856,
+123.98642917726886
+],
+"start": [
+190,
+108
+]
+},
+{
+"ch": "د",
+"form": "isolated",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+217.98549107142856,
+123.98642917726886
+],
+"start": [
+190,
+108
+]
+},
+{
+"ch": "د",
+"form": "final",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+243.984375,
+123.98642917726886
+],
+"start": [
+227,
+165
+]
+},
+{
+"ch": "د",
+"form": "final",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+243.984375,
+123.98642917726886
+],
+"start": [
+227,
+165
+]
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+217.98549107142856,
+80
+],
+"start": [
+190,
+108
+]
+},
+{
+"ch": "ڈ",
+"form": "isolated",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+217.98549107142856,
+80
+],
+"start": [
+190,
+108
+]
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+243.98438317435128,
+80
+],
+"start": [
+165,
+110
+]
+},
+{
+"ch": "ڈ",
+"form": "final",
+"var": "body_start",
+"ok": false,
+"t": "Coverage 100% — Start at the green dot",
+"dot": [
+243.98438317435128,
+80
+],
+"start": [
+165,
+110
+]
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+212.99665178571428,
+90.99236641221374
+],
+"start": [
+188,
+119
+]
+},
+{
+"ch": "ڑ",
+"form": "isolated",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+212.99665178571428,
+90.99236641221374
+],
+"start": [
+188,
+119
+]
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+237.99107142857142,
+90.99236641221374
+],
+"start": [
+221,
+165
+]
+},
+{
+"ch": "ڑ",
+"form": "final",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+237.99107142857142,
+90.99236641221374
+],
+"start": [
+221,
+165
+]
+},
+{
+"ch": "ز",
+"form": "isolated",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+212.99665178571428,
+100.98388464800678
+],
+"start": [
+188,
+119
+]
+},
+{
+"ch": "ز",
+"form": "isolated",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+212.99665178571428,
+100.98388464800678
+],
+"start": [
+188,
+119
+]
+},
+{
+"ch": "ز",
+"form": "final",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+237.99107142857142,
+100.98388464800678
+],
+"start": [
+221,
+165
+]
+},
+{
+"ch": "ز",
+"form": "final",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+237.99107142857142,
+100.98388464800678
+],
+"start": [
+221,
+165
+]
+},
+{
+"ch": "ژ",
+"form": "isolated",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+212.99665178571428,
+91.99321458863443
+],
+"start": [
+188,
+119
+]
+},
+{
+"ch": "ژ",
+"form": "isolated",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+212.99665178571428,
+91.99321458863443
+],
+"start": [
+188,
+119
+]
+},
+{
+"ch": "ژ",
+"form": "final",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+237.99107142857142,
+91.99321458863443
+],
+"start": [
+221,
+165
+]
+},
+{
+"ch": "ژ",
+"form": "final",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+237.99107142857142,
+91.99321458863443
+],
+"start": [
+221,
+165
+]
+},
+{
+"ch": "ذ",
+"form": "isolated",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+217.98549107142856,
+89.99151823579304
+],
+"start": [
+190,
+108
+]
+},
+{
+"ch": "ذ",
+"form": "isolated",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+217.98549107142856,
+89.99151823579304
+],
+"start": [
+190,
+108
+]
+},
+{
+"ch": "ذ",
+"form": "final",
+"var": "from_dot",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+243.98438317435128,
+89.99150166984732
+],
+"start": [
+227,
+165
+]
+},
+{
+"ch": "ذ",
+"form": "final",
+"var": "body_start",
+"ok": true,
+"t": "Coverage 100% ✓ good",
+"dot": [
+243.98438317435128,
+89.99150166984732
+],
+"start": [
+227,
+165
+]
+}
+]

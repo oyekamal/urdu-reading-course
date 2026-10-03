@@ -1,0 +1,27 @@
+round	ts	actor	finding	action	evidence
+0	2026-10-03	builder	M4 dots hints false for 24/75	reproduced: dots_truth.py flags ی ٹ ڈ ڑ ئ (+ج font-naming quirk)	bar/dots_truth.py output
+0	2026-10-03	builder	M1 aspirates 3/11 silent	reproduced: ui_checks aspirates_clicks has 3x "No audio for this item", rows ḍh ṛh have 0 buttons	bar/ui_checks.json
+0	2026-10-03	builder	M2 same-sound blend options	reproduced: sim_logic 23.5% rounds; unit 9 old builder 466/1000 rounds with 2+ same-sound options	tests/t3_blend.json (OLD column)
+0	2026-10-03	builder	M5 placement	reproduced: 6 draws with replacement, letters only, pass 5/6	bar/sim_logic.json
+0	2026-10-03	builder	M7 EGRA traps	reproduced: 52 cwpm for 12 words w/o mark; 86 cwpm finish at 36 s; comp 0/5 still 'meets'	bar/logic_browser.json egra
+0	2026-10-03	builder	M3 tracing	reproduced: bottom->top alif and 10 dashes 'good'; centre-line alif rejected	/tmp/claude-1000/d_trace_base.txt
+0	2026-10-03	builder	M12 SR	reproduced by reading code: gradeCard only from Review	grep gradeCard
+1	2026-10-03	builder	all 7 fixes	implemented; tests t1..t7 written under tests/	tests/*.json
+1	2026-10-03	verifier	8 defects D1-D8 (verifier r1, 4834 hint pairs / ~1500 trace drags / 15 EGRA cases: all else held)	-	verify_r1 (report returned as text)
+2	2026-10-03	builder	D1 tapped dots/tah earned no coverage	tap = filled dot r22 on logic canvas; neat allowance +700/mark	tests/t6b_marks.json (ڈژپثذز tapped/squiggled/lifted: 0 bad)
+2	2026-10-03	builder	D2 mark or lifted body stroke mis-classified	body/mark by position (nearest ink component), back tolerance .3	tests/t6b_marks.json, t6_trace.json 0 unexpected
+2	2026-10-03	builder	D3 skipped passage saved as nonreader	orfDone flag, 'not tested' band/level/rows, no non-reader flag	tests/t8.json
+2	2026-10-03	builder	D4 teacher slip/reports/dashboard comp+level	compText helper, slip uses stored level, band fallback	teacher.js dashboard.js content.js
+2	2026-10-03	builder	D5 flash subtasks assume first page	untouched at timeout -> asks how many read	tests/t8.json
+2	2026-10-03	builder	D6 missCard throws on odd items	type guard + try/catch in recordAttempt	tests/t8.json
+2	2026-10-03	builder	D7 false 'tap the green one'	truthful generic hint	tests/t8.json
+2	2026-10-03	builder	D8 learner.js dc TDZ	already fixed by other agent (line replaced); not mine	-
+2	2026-10-03	verifier	r2: 8 defects (D8 already fixed live; backup.js fields fixed live; teacher slip/groups/dashboard fallbacks; mark stroke length clause; Mark button after time-up; Nastaliq thick-glyph false rejections suspected)	-	verify_r2 (text report)
+3	2026-10-03	builder	slip/Groups/dashboard/old-record level	recBand/recLevel (comprehension-aware), 'not tested' group card, slip advice	content.js teacher.js dashboard.js
+3	2026-10-03	builder	mark stroke length clause; Mark button after time-up	position-only body/mark; markMode kept on while awaiting	tests/t6b_marks.json 0 bad, inline egra check
+3	2026-10-03	builder	Nastaliq thick glyph coverage	logic brush 28 for nastaliq (20 naskh)	pending verifier r3
+3	2026-10-03	verifier	r3: 7 defects (Nastaliq neat gate vs 28px brush; ڈ start dot on tah; teacher/learner band+level on legacy records; slip undefined)	-	verify_r3 (text)
+4	2026-10-03	builder	Nastaliq neat gate	allowance x2 for nastaliq (brush 28)	tests/t6c.json isolated ا ر ڈ ڑ ز د both fonts 0 bad
+4	2026-10-03	builder	single-stroke start dot over a tah	start/arrow measured from the body pixel nearest the dot	t6c, t6, t6b 0 unexpected
+4	2026-10-03	builder	legacy records meets/exceeds, undefined band/cwpm, Parent report, histogram	recBand/recLevel always recomputed, orfDone aware; learner parentReport; histogram shows extra bands	eval of 6 record shapes
+4	2026-10-03	ui_audit	5188 and 5391	0 violations both	/tmp/claude-1000/d_audit_*.txt

@@ -1,0 +1,4 @@
+items per learner 1068
+export bytes 12002046 cards 64080
+toast The backup is too large: 64080 cards (the most this app accepts is 50000).
+counts {'assessments': 0, 'attempts': 0, 'cards': 0, 'profiles': 0, 'progress': 0, 'sessions': 0, 'settings': 1}

@@ -1,0 +1,79 @@
+- main:
+  - text: Unit 1 · lesson 13 of 13
+  - heading "Unit check" [level=1]
+  - button "Repeat instruction"
+  - button "Leave lesson"
+  - region "Lesson content":
+    - text: Show me what you know. You can do it!
+    - heading "Check" [level=2]
+    - paragraph: Score 8 of 10 to pass this unit.
+    - list:
+      - listitem:
+        - text: Which one says nām (name)?
+        - button "nām": نام ✓
+        - button "makān": مَکان
+        - button "imlā": اِملا
+        - button "mālā": مالا
+      - listitem:
+        - text: Which one says nāk (nose)?
+        - button "mālā": مالا
+        - button "imlā": اِملا
+        - button "nāk": ناک ✓
+        - button "namak": نَمَک
+      - listitem:
+        - text: Which one says bāl (hair)?
+        - button "bāl": بال ✓
+        - button "kamāl": کَمال
+        - button "nām": نام
+        - button "ab": اَب
+      - listitem:
+        - text: Which one says nānā (maternal grandfather)?
+        - button "nāk": ناک
+        - button "lāl": لال
+        - button "kal": کَل
+        - button "nānā": نانا ✓
+      - listitem:
+        - text: Which one says kamāl (wonder)?
+        - button "mulk": مُلْک
+        - button "mān": مان
+        - button "kamāl": کَمال ✓
+        - button "kām": کام
+      - listitem:
+        - text: Which one says mān (accept)?
+        - button "lāl": لال
+        - button "kal": کَل
+        - button "mān": مان ✓
+        - button "nām": نام
+      - listitem:
+        - text: Which one says kān (ear)?
+        - button "ab": اَب
+        - button "mān": مان
+        - button "namak": نَمَک
+        - button "kān": کان ✓
+      - listitem:
+        - text: Which one says makān (house)?
+        - button "makān": مَکان ✓
+        - button "nānā": نانا
+        - button "kamān": کَمان
+        - button "lāl": لال
+      - listitem:
+        - text: Which one says lāl (red)?
+        - button "nāk": ناک
+        - button "namak": نَمَک
+        - button "nānā": نانا
+        - button "lāl": لال ✓
+      - listitem:
+        - text: Which one says imlā (dictation)?
+        - button "mulk": مُلْک
+        - button "imlā": اِملا ✓
+        - button "kamān": کَمان
+        - button "nām": نام
+    - text: Score 10/10 — passed ✓
+  - button "Finish"
+  - navigation "Main":
+    - button "Learn"
+    - button "Review"
+    - button "Read"
+    - button "Me"
+- status: Not quite. Almost! Tap the green one.
+- status: Unit 1 passed! Unit 2 unlocked
