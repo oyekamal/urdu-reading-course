@@ -201,7 +201,7 @@ cd android && JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64 ./gradlew assembleDeb
 # APK: android/app/build/outputs/apk/debug/app-debug.apk
 ```
 
-Design and evidence: `docs/offline-app-plan.html`. Minimum Android 6 (API 23).
+Design and evidence: `docs/offline-app-plan.html`. Minimum Android 7.0 (API 24, required by Play automatic integrity protection).
 
 ## Credits
 
