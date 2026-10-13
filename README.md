@@ -2,7 +2,7 @@
 
 A research-backed course and app that takes anyone, child or adult, Urdu speaker or not, from zero to reading Urdu script. Everything is generated from two data files, so a fix to a letter or a word flows into the cards, the printable lessons and the app.
 
-**Try it now, no install:** the full learner + teacher app runs in the browser and works offline after the first load: https://oyekamal.github.io/urdu-reading-course/reader/ (add it to your home screen). The original single-page course is at https://oyekamal.github.io/urdu-reading-course/app/. Android APK: see Releases. Current version: **v0.11.0** (adds the interactivity pass on top of the v0.9.0 onboarding, animated Marko and look; see [Onboarding, Marko and the look](#onboarding-marko-and-the-look-v090) and [Interactivity and emotional design](#interactivity-and-emotional-design-v0100)).
+**Try it now, no install:** the full learner + teacher app runs in the browser and works offline after the first load: https://oyekamal.github.io/urdu-reading-course/reader/ (add it to your home screen). The original single-page course is at https://oyekamal.github.io/urdu-reading-course/app/. Android APK: see Releases. Current version: **v0.11.3** (adds the interactivity pass on top of the v0.9.0 onboarding, animated Marko and look; see [Onboarding, Marko and the look](#onboarding-marko-and-the-look-v090) and [Interactivity and emotional design](#interactivity-and-emotional-design-v0100)).
 
 ## What is in the box
 
