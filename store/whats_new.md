@@ -1,11 +1,11 @@
 # What's new (Play Console "Release notes", ≤500 chars per language)
 
 <en-US>
-Fixes from testers: Marko no longer shows twice (the "two Markos, many arms" glitch) when the app rests, nothing floats over his speech bubble, the lucky-colour badge is clean in dark mode, and beginners can now pick "I've never really tried" at the start.
+A warmer look: cream paper, deeper teal buttons and clearer text everywhere, chosen with contrast and colour-blindness checks. Fixes from testers: Marko no longer shows twice (the "two Markos, many arms" glitch) when the app rests, nothing floats over his speech bubble, the lucky-colour badge is clean in dark mode, and beginners can now pick "I've never really tried" at the start.
 </en-US>
 
 <ur>
-ٹیسٹرز کی بتائی ہوئی خرابیاں درست: مارکو اب دو بار نظر نہیں آتا، اس کے جملے پر کچھ نہیں آتا، ڈارک موڈ میں خوش قسمت رنگ کا بیج صاف ہے، اور شروع میں "میں نے کبھی کوشش ہی نہیں کی" چنا جا سکتا ہے۔
+نیا گرم رنگ: کریم کاغذ، گہرے فیروزی بٹن اور ہر جگہ صاف تر لکھائی۔ ٹیسٹرز کی بتائی ہوئی خرابیاں درست: مارکو اب دو بار نظر نہیں آتا، اس کے جملے پر کچھ نہیں آتا، ڈارک موڈ میں خوش قسمت رنگ کا بیج صاف ہے، اور شروع میں "میں نے کبھی کوشش ہی نہیں کی" چنا جا سکتا ہے۔
 </ur>
 
 <!-- previous release notes (0.11.0):
