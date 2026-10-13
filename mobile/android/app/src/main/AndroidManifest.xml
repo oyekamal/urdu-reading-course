@@ -43,6 +43,11 @@
         <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" tools:node="remove" />
     </application>
 
+    <!-- Device reach: nothing here may exclude a device. Touch, camera, mic and vibration are all optional (Chromebooks, TV boxes, tablets without them still install). -->
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.vibrate" android:required="false" />
+    <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
+
     <!-- Permissions -->
 
     <uses-permission android:name="android.permission.INTERNET" />
