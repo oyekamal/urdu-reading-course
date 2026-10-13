@@ -31,7 +31,6 @@ function injectStyle() {
   s.textContent = '.marko{position:relative;display:inline-block;flex:none;line-height:0;pointer-events:none}' +
     '.marko>.marko-l,.marko>img{position:absolute;inset:0;width:100%;height:100%}' +
     '.marko>img{object-fit:contain}.marko svg{display:block}' +
-    '.marko>.marko-rest{opacity:0;transition:opacity .45s ease}.marko>.marko-rest.on{opacity:1}' +
     '@media (prefers-reduced-motion:no-preference){.marko.marko-still>img{transform-origin:50% 100%;animation:markoBreathe 3.6s ease-in-out infinite}}' +
     '@keyframes markoBreathe{50%{transform:scale(1.025,1.04)}}' +
     'html.calm .marko.marko-still>img,html.m-cover .marko.marko-still>img{animation-play-state:paused}';
@@ -81,20 +80,19 @@ function arbitrate() {
   }
   if (slot._marko.phase !== 'calm') slot._marko.player?.resume();
 }
-// calm: crossfade to the still pose and pause the player (no per-frame work while nobody is touching the app); wake: fade back and resume
+// calm: pause the player on the loop's first frame (no per-frame work while nobody is touching the app); wake: resume.
+// round 12: this used to crossfade to the still webp pose instead. The webp poses do not match the rigged poses (sleep sits,
+// the rig stands; think/point arms differ), and the webp's transparent background let the frozen Lottie show through, so
+// testers saw two Markos with "a lot of arms". Freezing the rig itself can never show two characters.
 function rest(el) {
   const m = el._marko; if (!m.anim || m.phase !== 'loop' || NO_CALM.has(m.state)) return;
   m.phase = 'calm';
-  let r = el.querySelector(':scope > .marko-rest');
-  if (!r) { r = document.createElement('img'); r.className = 'marko-rest'; r.alt = ''; r.decoding = 'async'; r.src = `./img/mascot_${POSE[m.state] || 'hello'}.webp`; el.append(r); }
-  requestAnimationFrame(() => r.classList.add('on'));
   const t = m.token; clearTimeout(m.restT);
-  m.restT = setTimeout(() => { if (m.token === t && m.phase === 'calm') m.player?.pause(); }, 520);
+  m.restT = setTimeout(() => { if (m.token !== t || m.phase !== 'calm') return; m.player?.pause(); const lp = m.data && marker(m.data, 'loop'); if (lp) try { m.anim.goToAndStop(lp.tm, true); } catch (e) {} }, 520);
 }
 function unrest(el) {
   const m = el._marko; if (m.phase !== 'calm') return;
   clearTimeout(m.restT); m.phase = 'loop';
-  el.querySelector(':scope > .marko-rest')?.classList.remove('on');
   if (m.ok) m.player?.resume();
 }
 onCalm(c => { if (slot) c ? rest(slot) : unrest(slot); });

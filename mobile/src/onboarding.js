@@ -48,7 +48,11 @@ export async function runOnboarding(root, { finish, teacherSetup, restore }) {
       const b = el('button', 'ob-opt', `<span class="ob-ic">${icon(ic)}</span><span><b>${label}</b>${sub ? `<small>${sub}</small>` : ''}</span>${multi ? `<span class="ob-tick">${icon('check')}</span>` : ''}`);
       b.setAttribute('aria-pressed', multi ? cur().includes(v) : cur() === v);
       b.onclick = () => {
-        if (multi) { const s = new Set(cur()); s.has(v) ? s.delete(v) : s.add(v); a[key] = [...s]; b.setAttribute('aria-pressed', s.has(v)); next.disabled = !s.size; save(); return; }
+        if (multi) {
+          const s = new Set(cur()); s.has(v) ? s.delete(v) : s.add(v);
+          if (key === 'pains') { if (v === 'never' && s.has('never')) s.clear(), s.add('never'); else s.delete('never'); }   // round 12: "never tried" excludes the specific pains, and vice versa
+          a[key] = [...s]; [...box.children].forEach((x, i) => x.setAttribute('aria-pressed', s.has(list[i][0]))); next.disabled = !s.size; save(); return;
+        }
         a[key] = v; [...box.children].forEach(x => { x.setAttribute('aria-pressed', x === b); x.disabled = true; }); save(); const r = reply && reply(v); if (r) { react(scr, r[0], r[1]); play('ui/correct'); } later(() => go(1), r ? 1300 : 260);
       };
       box.append(b);
@@ -198,6 +202,7 @@ export async function runOnboarding(root, { finish, teacherSetup, restore }) {
 }
 
 const PAINS = [
+  ['never', 'sparkle', "I've never really tried", 'Nothing to unlearn. One letter a day, from alif'],   // round 12: a tester had no honest answer here; first, so a beginner sees it without scrolling
   ['dots', 'eye', 'The letters look alike', 'Look-alikes are taught side by side, and you count the dots'],
   ['shapes', 'link', 'Letters change shape when they join', 'Every letter shown in all its shapes, in real words'],
   ['rtl', 'back', 'Right to left feels backwards', 'Rule one, day one, and it sticks'],
