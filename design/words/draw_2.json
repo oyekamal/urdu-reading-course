@@ -1,0 +1,106 @@
+[
+{
+"id": 63,
+"ur": "بے",
+"rom": "be",
+"en": "without, un-",
+"concept": "without: an empty hand",
+"draw": ""
+},
+{
+"id": 68,
+"ur": "اتنی",
+"rom": "itnī",
+"en": "so much (fem)",
+"concept": "so much: a big pile of items",
+"draw": ""
+},
+{
+"id": 69,
+"ur": "اتنا",
+"rom": "itnā",
+"en": "this much",
+"concept": "this much: hands showing a size",
+"draw": ""
+},
+{
+"id": 70,
+"ur": "کتنی",
+"rom": "kitnī",
+"en": "how much (fem)",
+"concept": "how much: a question mark over items",
+"draw": ""
+},
+{
+"id": 72,
+"ur": "نیا",
+"rom": "nayā",
+"en": "new",
+"concept": "NEW label",
+"draw": ""
+},
+{
+"id": 74,
+"ur": "میل",
+"rom": "mīl",
+"en": "mile",
+"concept": "road distance",
+"draw": "A road with a distance milestone beside it."
+},
+{
+"id": 78,
+"ur": "کتنے",
+"rom": "kitne",
+"en": "how many",
+"concept": "how many question",
+"draw": ""
+},
+{
+"id": 79,
+"ur": "کتنا",
+"rom": "kitnā",
+"en": "how much",
+"concept": "how much question",
+"draw": ""
+},
+{
+"id": 89,
+"ur": "کمی",
+"rom": "kamī",
+"en": "shortage",
+"concept": "abstract; diagram fails",
+"draw": ""
+},
+{
+"id": 92,
+"ur": "نیت",
+"rom": "niyyat",
+"en": "intention",
+"concept": "target aim",
+"draw": ""
+},
+{
+"id": 93,
+"ur": "مالی",
+"rom": "mālī",
+"en": "gardener",
+"concept": "a gardener watering plants",
+"draw": "A Pakistani gardener watering flowering plants with a can."
+},
+{
+"id": 96,
+"ur": "بانی",
+"rom": "bānī",
+"en": "founder",
+"concept": "founder: a person laying a foundation brick",
+"draw": "A man placing the first brick of a new school building."
+},
+{
+"id": 98,
+"ur": "تمنا",
+"rom": "tamannā",
+"en": "wish",
+"concept": "shooting star wish",
+"draw": ""
+}
+]

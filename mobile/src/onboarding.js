@@ -2,7 +2,7 @@
 // learner reads a first real word (بابا, from ا + ب alone), gets a shareable card, then lands on the path.
 // Answers are saved after every step (db setting 'onb') so a closed app resumes where it stopped.
 import { db } from './db.js';
-import { C, play, el } from './content.js';
+import { C, play, el, wimg, wimgSrc } from './content.js';
 import { icon, mascot, confetti } from './icons.js';
 import { fx, burst } from './fx.js';
 import { esc, cleanName, tapLock, tapFree } from './safe.js';
@@ -162,11 +162,11 @@ export async function runOnboarding(root, { finish, teacherSetup, restore }) {
       const baba = C.units[1].words.findIndex(w => w[0] === 'بابا'); const key = `units/u01_${String(baba).padStart(2, '0')}`;
       stage.append(say('point', '<b>baa</b> twice. Say it out loud, then tap to check.', 84));
       const w = el('button', 'ob-word ur', 'بابا'); w.setAttribute('aria-label', 'Read the word, then tap to hear it'); stage.append(w);
-      w.onclick = () => { if (w.classList.contains('read')) return play(key); w.classList.add('read'); play(key); stage.append(el('div', 'ob-meaning', '<b>baba</b> · dad'), confettiEl()); later(() => nxt('Check me'), 900); };
+      w.onclick = () => { if (w.classList.contains('read')) return play(key); w.classList.add('read'); play(key); stage.append(el('div', 'ob-meaning', `${wimg('بابا', 'wimg-meaning')}<div><b>baba</b> · dad</div>`), confettiEl()); later(() => nxt('Check me'), 900); };
     }
     function check() {
       const baba = C.units[1].words.findIndex(w => w[0] === 'بابا'); const key = `units/u01_${String(baba).padStart(2, '0')}`;
-      const q = say('listen', '<b>Last one.</b> Which one says <b>baba</b>?', 84); const row = el('div', 'choices ob-choices'); const again = hear(key, 'Play again'); stage.append(q, again, row);
+      const q = say('listen', '<b>Last one.</b> Which one says <b>baba</b>?', 84); const pic = wimg('بابا', 'wimg-meaning'); const row = el('div', 'choices ob-choices'); const again = hear(key, 'Play again'); stage.append(q, ...(pic ? [el('div', 'ob-pic', pic)] : []), again, row);
       ['با', 'بابا'].sort(() => Math.random() - .5).forEach(c => { const b = el('button', 'tile ur', c); b.onclick = () => { if (c !== 'بابا') { b.classList.add('no'); play('syllables/be_a'); react(stage, 'think', 'That one is just <b>baa</b>. Look for <b>baa</b> twice.'); later(() => b.classList.remove('no'), 600); return; } row.querySelectorAll('.tile').forEach(x => x.disabled = true); b.classList.add('ok'); play('ui/correct'); a.firstWord = Date.now(); save(); react(stage, 'cheer', '<b>You read it. Really read it.</b>'); stage.append(fx('success_check', { size: 110 })); burst(); later(() => nxt('See what you did'), 900); }; row.append(b); });
       later(() => play(key), 300);
     }
@@ -176,7 +176,7 @@ export async function runOnboarding(root, { finish, teacherSetup, restore }) {
 
   function value(scr) {
     scr.classList.add('ob-center'); scr.append(fx('hearts_or_balloons', { size: '100%', loop: true, cls: 'fx-bg' }));
-    scr.append(el('div', 'ob-hero', `${mascot('heart', 150)}<h1>${T(a.who, 'You', esc(a.name))} just read Urdu</h1><div class="ob-card-prev"><div class="ur" style="font-size:64px;line-height:1.6">بابا</div><div class="muted">baba · dad · ${T(a.who, 'your', 'a')} first word</div></div><p class="muted">Two letters, one word, under two minutes. ${T(a.who, 'Show someone who will be proud of you.', 'Send it to the family, they will want to hear about this.')}</p>`));
+    scr.append(el('div', 'ob-hero', `${mascot('heart', 150)}<h1>${T(a.who, 'You', esc(a.name))} just read Urdu</h1><div class="ob-card-prev">${wimg('بابا', 'wimg-share')}<div class="ur" style="font-size:64px;line-height:1.6">بابا</div><div class="muted">baba · dad · ${T(a.who, 'your', 'a')} first word</div></div><p class="muted">Two letters, one word, under two minutes. ${T(a.who, 'Show someone who will be proud of you.', 'Send it to the family, they will want to hear about this.')}</p>`));
     const sh = el('button', 'btn btn-gold btn-wide', `${icon('share')} Share ${T(a.who, 'my', esc(a.name) + "'s")} first word`); sh.onclick = () => shareCard(a).catch(() => {});
     foot(scr, sh, cta('Continue', () => go(1)));
   }
@@ -219,14 +219,16 @@ export async function shareCard(a) {
   const W = 1080, H = 1350, cv = Object.assign(document.createElement('canvas'), { width: W, height: H }), g = cv.getContext('2d');
   g.fillStyle = '#F2F7F6'; g.fillRect(0, 0, W, H);
   const stripe = ['#1E9C8F', '#F2A93B', '#C74A3B', '#1E2F55']; for (let x = 0; x < W; x += 56) { g.fillStyle = stripe[(x / 56) % 4]; g.fillRect(x, 0, 56, 18); g.fillRect(x, H - 18, 56, 18); }
-  g.fillStyle = '#fff'; round(g, 90, 300, W - 180, 560, 48); g.fill(); g.strokeStyle = '#D5E3E1'; g.lineWidth = 4; g.stroke();
-  const img = await new Promise(r => { const i = new Image(); i.onload = () => r(i); i.onerror = () => r(null); i.src = './img/mascot_cheer.webp'; }); if (img) g.drawImage(img, W - 330, 150, 250, 250);
-  g.textAlign = 'center'; g.fillStyle = '#1E2F55'; g.font = '700 58px Fredoka, sans-serif'; g.fillText(a.who === 'me' ? 'I read my first Urdu word' : `${a.name} read a first Urdu word`, W / 2, 230);
-  g.direction = 'rtl'; g.fillStyle = '#157A70'; g.font = '700 260px "Noto Naskh Arabic", serif'; g.fillText('بابا', W / 2, 700); g.direction = 'ltr';
-  g.fillStyle = '#5A6B84'; g.font = '600 48px Fredoka, sans-serif'; g.fillText('baba · dad', W / 2, 800);
-  g.fillStyle = '#1E2F55'; g.font = '600 40px Fredoka, sans-serif'; g.fillText(new Date().toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric' }), W / 2, 980);
-  g.fillStyle = '#157A70'; g.font = '44px "Noto Nastaliq Urdu", serif'; g.fillText('اردو پڑھنا سیکھیں', W / 2, 1110);
-  g.fillStyle = '#5A6B84'; g.font = '600 36px Fredoka, sans-serif'; g.fillText('Urdu Qaida · free, offline, 10 minutes a day', W / 2, 1230);
+  g.fillStyle = '#fff'; round(g, 90, 300, W - 180, 640, 48); g.fill(); g.strokeStyle = '#D5E3E1'; g.lineWidth = 4; g.stroke();
+  const img = await new Promise(r => { const i = new Image(); i.onload = () => r(i); i.onerror = () => r(null); i.src = './img/mascot_cheer.webp'; }); if (img) g.drawImage(img, W - 290, 20, 210, 210);
+  g.textAlign = 'center'; g.fillStyle = '#1E2F55'; g.font = '700 58px Fredoka, sans-serif'; g.fillText(a.who === 'me' ? 'I read my first Urdu word' : `${a.name} read a first Urdu word`, W / 2, 262);
+  const pic = wimgSrc('بابا') && await new Promise(r => { const i = new Image(); i.onload = () => r(i); i.onerror = () => r(null); i.src = './' + wimgSrc('بابا'); });
+  if (pic) { const k = Math.min(280 / pic.width, 280 / pic.height); g.drawImage(pic, W / 2 - pic.width * k / 2, 330, pic.width * k, pic.height * k); } // the picture is the context: baba = this
+  g.direction = 'rtl'; g.fillStyle = '#157A70'; g.font = `700 ${pic ? 170 : 260}px "Noto Naskh Arabic", serif`; g.fillText('بابا', W / 2, pic ? 820 : 700); g.direction = 'ltr';
+  g.fillStyle = '#5A6B84'; g.font = '600 48px Fredoka, sans-serif'; g.fillText('baba · dad', W / 2, pic ? 895 : 800);
+  g.fillStyle = '#1E2F55'; g.font = '600 40px Fredoka, sans-serif'; g.fillText(new Date().toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric' }), W / 2, 1020);
+  g.fillStyle = '#157A70'; g.font = '44px "Noto Nastaliq Urdu", serif'; g.fillText('اردو پڑھنا سیکھیں', W / 2, 1140);
+  g.fillStyle = '#5A6B84'; g.font = '600 36px Fredoka, sans-serif'; g.fillText('Urdu Qaida · free, offline, 10 minutes a day', W / 2, 1245);
   const b64 = cv.toDataURL('image/png').split(',')[1]; const name = 'first-urdu-word.png'; const text = a.who === 'me' ? 'I just read my first Urdu word: بابا (baba, dad)' : `${a.name} just read a first Urdu word: بابا (baba, dad)`;
   try { const { Filesystem, Directory } = await import('@capacitor/filesystem'); const { Share } = await import('@capacitor/share'); if (!window.Capacitor?.isNativePlatform?.()) throw 0; const r = await Filesystem.writeFile({ path: name, data: b64, directory: Directory.Cache }); await Share.share({ title: 'First Urdu word', text, url: r.uri }); return; } catch (e) {}
   const bin = atob(b64), bytes = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i); const blob = new Blob([bytes], { type: 'image/png' }); /* no fetch(data:) : the CSP connect-src is 'self' */ const f = new File([blob], name, { type: 'image/png' });

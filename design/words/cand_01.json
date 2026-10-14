@@ -1,0 +1,1333 @@
+[
+ {
+  "id": 1,
+  "ur": "کام",
+  "rom": "kām",
+  "en": "work",
+  "concept": "a man working with a hammer",
+  "fit": "close",
+  "cands": [
+   "mb:work_,_to",
+   "om:1F477",
+   "tw:1f477"
+  ],
+  "draw": "A Pakistani man hammering at a wooden workbench in a small workshop, one subject."
+ },
+ {
+  "id": 2,
+  "ur": "نام",
+  "rom": "nām",
+  "en": "name",
+  "concept": "a name tag with a name on it",
+  "fit": "close",
+  "cands": [
+   "om:1F4DB",
+   "tw:1f4db"
+  ],
+  "draw": "A smiling Pakistani child in school uniform wearing a name badge on the chest."
+ },
+ {
+  "id": 3,
+  "ur": "کم",
+  "rom": "kam",
+  "en": "few, less",
+  "concept": "a small amount: one small item next to many big ones",
+  "fit": "metaphor",
+  "cands": [
+   "mb:little"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 4,
+  "ur": "اب",
+  "rom": "ab",
+  "en": "now",
+  "concept": "a clock with an arrow pointing down to 'right now'",
+  "fit": "metaphor",
+  "cands": [
+   "mb:now"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 5,
+  "ur": "کل",
+  "rom": "kal",
+  "en": "tomorrow, yesterday",
+  "concept": "a calendar page, the day after today (tomorrow)",
+  "fit": "metaphor",
+  "cands": [
+   "mb:tomorrow",
+   "om:1F4C6",
+   "tw:1f4c6"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 6,
+  "ur": "ملک",
+  "rom": "mulk",
+  "en": "country",
+  "concept": "a country: map of Pakistan with its flag",
+  "fit": "close",
+  "cands": [
+   "mb:country_Pakistan",
+   "om:1F5FA",
+   "tw:1f5fa"
+  ],
+  "draw": "A simple map of Pakistan with the green and white flag."
+ },
+ {
+  "id": 7,
+  "ur": "ملا",
+  "rom": "milā",
+  "en": "met, got",
+  "concept": "two people meeting and greeting",
+  "fit": "close",
+  "cands": [
+   "mb:meet_,_to",
+   "om:1F91D",
+   "tw:1f91d"
+  ],
+  "draw": "Two Pakistani children meeting at a gate and waving hello."
+ },
+ {
+  "id": 8,
+  "ur": "کب",
+  "rom": "kab",
+  "en": "when?",
+  "concept": "a question mark with a clock (when?)",
+  "fit": "metaphor",
+  "cands": [
+   "mb:when"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 9,
+  "ur": "بال",
+  "rom": "bāl",
+  "en": "hair",
+  "concept": "a head with hair",
+  "fit": "close",
+  "cands": [
+   "om:1F487",
+   "tw:1f487"
+  ],
+  "draw": "A Pakistani girl with long black hair in a plait, head and shoulders."
+ },
+ {
+  "id": 10,
+  "ur": "بنا",
+  "rom": "binā",
+  "en": "without",
+  "concept": "without: an empty item, nothing inside",
+  "fit": "metaphor",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 11,
+  "ur": "بالکل",
+  "rom": "bilkul",
+  "en": "absolutely",
+  "concept": "absolutely: a big thumbs up for 'yes, exactly'",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F44D",
+   "tw:1f44d",
+   "mb:good"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 12,
+  "ur": "امام",
+  "rom": "imām",
+  "en": "prayer leader",
+  "concept": "a prayer leader (imam) in a mosque with a cap",
+  "fit": "close",
+  "cands": [
+   "om:1F54C",
+   "tw:1f54c"
+  ],
+  "draw": "A Pakistani imam in a white cap and shalwar kameez standing in a mosque, smiling."
+ },
+ {
+  "id": 13,
+  "ur": "مکمل",
+  "rom": "mukammal",
+  "en": "complete",
+  "concept": "complete: a finished task with a tick",
+  "fit": "metaphor",
+  "cands": [
+   "om:2705",
+   "tw:2705",
+   "mb:finish"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 14,
+  "ur": "ممکن",
+  "rom": "mumkin",
+  "en": "possible",
+  "concept": "possible: a thumbs up or a thought bubble 'yes it can be'",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4AD",
+   "tw:1f4ad"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 15,
+  "ur": "مالک",
+  "rom": "mālik",
+  "en": "owner",
+  "concept": "an owner: a person holding the key to their house",
+  "fit": "close",
+  "cands": [
+   "om:1F511",
+   "tw:1f511",
+   "mb:key_1"
+  ],
+  "draw": "A Pakistani shopkeeper holding keys in front of his shop, smiling."
+ },
+ {
+  "id": 16,
+  "ur": "لمبا",
+  "rom": "lambā",
+  "en": "long, tall",
+  "concept": "tall/long: a tall person next to a short one",
+  "fit": "direct",
+  "cands": [
+   "mb:tall",
+   "mb:long"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 17,
+  "ur": "لال",
+  "rom": "lāl",
+  "en": "red",
+  "concept": "the colour red",
+  "fit": "direct",
+  "cands": [
+   "mb:red",
+   "om:1F534",
+   "tw:1f534"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 18,
+  "ur": "نانا",
+  "rom": "nānā",
+  "en": "maternal grandfather",
+  "concept": "grandfather on mother's side, an elderly man",
+  "fit": "close",
+  "cands": [
+   "om:1F474",
+   "tw:1f474",
+   "mb:grandfather"
+  ],
+  "draw": "A kind elderly Pakistani grandfather with white beard and cap, one subject."
+ },
+ {
+  "id": 19,
+  "ur": "امکان",
+  "rom": "imkān",
+  "en": "possibility",
+  "concept": "possibility: a light bulb idea",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4A1",
+   "tw:1f4a1"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 20,
+  "ur": "مال",
+  "rom": "māl",
+  "en": "goods, wealth",
+  "concept": "wealth / goods: a bag of money",
+  "fit": "close",
+  "cands": [
+   "om:1F4B0",
+   "tw:1f4b0",
+   "mb:money"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 21,
+  "ur": "بنانا",
+  "rom": "banānā",
+  "en": "to make",
+  "concept": "to make: a hand building something with a hammer",
+  "fit": "close",
+  "cands": [
+   "mb:make_,_to",
+   "mb:build_,_to",
+   "om:1F528"
+  ],
+  "draw": "Child's hands shaping clay into a pot."
+ },
+ {
+  "id": 22,
+  "ur": "کلام",
+  "rom": "kalām",
+  "en": "speech, words",
+  "concept": "speech, words: a speech bubble",
+  "fit": "close",
+  "cands": [
+   "om:1F4AC",
+   "tw:1f4ac"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 23,
+  "ur": "بابا",
+  "rom": "bābā",
+  "en": "dad",
+  "concept": "dad: a father figure",
+  "fit": "close",
+  "cands": [
+   "mb:dad_parent",
+   "om:1F468-200D-1F466",
+   "tw:1f468-200d-1f466"
+  ],
+  "draw": "A Pakistani father in kurta carrying his small child on his shoulders."
+ },
+ {
+  "id": 24,
+  "ur": "کمال",
+  "rom": "kamāl",
+  "en": "perfection, skill",
+  "concept": "perfection or skill: a gold medal or star award",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F3C5",
+   "tw:1f3c5",
+   "mb:medal"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 25,
+  "ur": "ناک",
+  "rom": "nāk",
+  "en": "nose",
+  "concept": "a nose",
+  "fit": "direct",
+  "cands": [
+   "om:1F443",
+   "tw:1f443"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 26,
+  "ur": "ناکام",
+  "rom": "nākām",
+  "en": "unsuccessful",
+  "concept": "unsuccessful: a sad person who failed, a cross mark",
+  "fit": "metaphor",
+  "cands": [
+   "om:274C",
+   "tw:274c",
+   "mb:sad_man"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 27,
+  "ur": "کالا",
+  "rom": "kālā",
+  "en": "black",
+  "concept": "the colour black",
+  "fit": "direct",
+  "cands": [
+   "mb:black",
+   "om:2B1B",
+   "tw:2b1b"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 28,
+  "ur": "مان",
+  "rom": "mān",
+  "en": "pride, honour",
+  "concept": "pride: a proud child with chest out",
+  "fit": "none",
+  "cands": [],
+  "draw": "A proud Pakistani boy standing tall with a smile and chest out, holding a certificate."
+ },
+ {
+  "id": 29,
+  "ur": "ناممکن",
+  "rom": "nāmumkin",
+  "en": "impossible",
+  "concept": "impossible: a prohibited sign",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F6AB",
+   "tw:1f6ab"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 30,
+  "ur": "کان",
+  "rom": "kān",
+  "en": "ear",
+  "concept": "an ear",
+  "fit": "direct",
+  "cands": [
+   "om:1F442",
+   "tw:1f442",
+   "mb:ear"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 31,
+  "ur": "نمک",
+  "rom": "namak",
+  "en": "salt",
+  "concept": "salt shaker",
+  "fit": "direct",
+  "cands": [
+   "om:1F9C2",
+   "tw:1f9c2",
+   "mb:salt"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 32,
+  "ur": "کامل",
+  "rom": "kāmil",
+  "en": "perfect",
+  "concept": "perfect: a gold medal or star",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F3C6",
+   "tw:1f3c6",
+   "mb:medal"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 33,
+  "ur": "ماننا",
+  "rom": "mānnā",
+  "en": "to accept, obey",
+  "concept": "to accept: a handshake of agreement",
+  "fit": "close",
+  "cands": [
+   "om:1F91D",
+   "tw:1f91d"
+  ],
+  "draw": "A child nodding yes and taking a gift handed by a mother."
+ },
+ {
+  "id": 34,
+  "ur": "لانا",
+  "rom": "lānā",
+  "en": "to bring",
+  "concept": "to bring: hands carrying an item to someone",
+  "fit": "close",
+  "cands": [
+   "mb:bring_,_to"
+  ],
+  "draw": "A Pakistani boy carrying a bag of vegetables into the house."
+ },
+ {
+  "id": 35,
+  "ur": "مکان",
+  "rom": "makān",
+  "en": "house",
+  "concept": "a house",
+  "fit": "direct",
+  "cands": [
+   "om:1F3E0",
+   "tw:1f3e0",
+   "mb:house"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 36,
+  "ur": "نکالنا",
+  "rom": "nikālnā",
+  "en": "to take out",
+  "concept": "to take out: pulling something out of a box",
+  "fit": "close",
+  "cands": [
+   "mb:take_out_,_to"
+  ],
+  "draw": "A girl taking a book out of a school bag."
+ },
+ {
+  "id": 37,
+  "ur": "کمان",
+  "rom": "kamān",
+  "en": "bow",
+  "concept": "a bow (and arrow)",
+  "fit": "direct",
+  "cands": [
+   "om:1F3F9",
+   "tw:1f3f9",
+   "mb:bow_and_arrow"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 38,
+  "ur": "مالا",
+  "rom": "mālā",
+  "en": "garland",
+  "concept": "a garland of flowers worn around the neck",
+  "fit": "none",
+  "cands": [],
+  "draw": "A garland (haar) of marigold and jasmine flowers on a plain background."
+ },
+ {
+  "id": 39,
+  "ur": "نان",
+  "rom": "nān",
+  "en": "naan bread",
+  "concept": "naan, a flatbread",
+  "fit": "direct",
+  "cands": [
+   "om:1FAD3",
+   "tw:1fad3",
+   "mb:bread"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 40,
+  "ur": "بلبل",
+  "rom": "bulbul",
+  "en": "nightingale",
+  "concept": "a nightingale (bulbul) singing",
+  "fit": "close",
+  "cands": [
+   "om:1F426",
+   "tw:1f426",
+   "mb:bird"
+  ],
+  "draw": "A bulbul bird with a black crest and red cheek singing on a branch."
+ },
+ {
+  "id": 41,
+  "ur": "ملنا",
+  "rom": "milnā",
+  "en": "to meet",
+  "concept": "to meet",
+  "fit": "close",
+  "cands": [
+   "mb:meet_,_to",
+   "om:1F91D",
+   "tw:1f91d"
+  ],
+  "draw": "Two Pakistani friends meeting and hugging."
+ },
+ {
+  "id": 42,
+  "ur": "املا",
+  "rom": "imlā",
+  "en": "spelling",
+  "concept": "spelling: writing letters of a word",
+  "fit": "close",
+  "cands": [
+   "om:270D",
+   "tw:270d",
+   "mb:write_,_to"
+  ],
+  "draw": "A child writing letters in a notebook with a pencil."
+ },
+ {
+  "id": 43,
+  "ur": "کباب",
+  "rom": "kabāb",
+  "en": "kebab",
+  "concept": "kebab on a skewer",
+  "fit": "direct",
+  "cands": [
+   "mb:kebab",
+   "om:1F362",
+   "tw:1f362"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 44,
+  "ur": "کمبل",
+  "rom": "kambal",
+  "en": "blanket",
+  "concept": "a blanket",
+  "fit": "direct",
+  "cands": [
+   "mb:blanket"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 45,
+  "ur": "منا",
+  "rom": "munnā",
+  "en": "dear little boy",
+  "concept": "a dear little boy",
+  "fit": "close",
+  "cands": [
+   "om:1F466",
+   "tw:1f466"
+  ],
+  "draw": "A cute smiling little Pakistani boy, one subject."
+ },
+ {
+  "id": 46,
+  "ur": "ملانا",
+  "rom": "milānā",
+  "en": "to mix, join",
+  "concept": "to mix: stirring things together",
+  "fit": "close",
+  "cands": [
+   "mb:stir_mix_,_to"
+  ],
+  "draw": "A hand stirring flour and water in a bowl."
+ },
+ {
+  "id": 47,
+  "ur": "منانا",
+  "rom": "manānā",
+  "en": "to persuade, celebrate",
+  "concept": "to persuade / celebrate: a party popper",
+  "fit": "close",
+  "cands": [
+   "om:1F389",
+   "tw:1f389",
+   "mb:celebrate_1_,_to"
+  ],
+  "draw": "A mother gently coaxing a sulking child with a sweet."
+ },
+ {
+  "id": 48,
+  "ur": "کمانا",
+  "rom": "kamānā",
+  "en": "to earn",
+  "concept": "to earn: money coins and notes",
+  "fit": "close",
+  "cands": [
+   "om:1F4B0",
+   "tw:1f4b0",
+   "mb:money"
+  ],
+  "draw": "A Pakistani father receiving his salary notes at work."
+ },
+ {
+  "id": 49,
+  "ur": "کے",
+  "rom": "ke",
+  "en": "of",
+  "concept": "of (belonging)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 50,
+  "ur": "نے",
+  "rom": "ne",
+  "en": "(agent marker)",
+  "concept": "agent marker 'ne'",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 51,
+  "ur": "ایک",
+  "rom": "ek",
+  "en": "one",
+  "concept": "one",
+  "fit": "direct",
+  "cands": [
+   "mb:one"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 52,
+  "ur": "تم",
+  "rom": "tum",
+  "en": "you",
+  "concept": "you: pointing at the viewer",
+  "fit": "metaphor",
+  "cands": [
+   "om:1FAF5",
+   "tw:1faf5"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 53,
+  "ur": "لیے",
+  "rom": "liye",
+  "en": "for",
+  "concept": "for: a gift for someone",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F381",
+   "tw:1f381"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 54,
+  "ur": "تک",
+  "rom": "tak",
+  "en": "until, up to",
+  "concept": "until: arrow up to an end line",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 55,
+  "ur": "یا",
+  "rom": "yā",
+  "en": "or",
+  "concept": "or",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 56,
+  "ur": "بات",
+  "rom": "bāt",
+  "en": "talk, matter",
+  "concept": "talk: speech bubble or two people talking",
+  "fit": "close",
+  "cands": [
+   "mb:talk_1_,_to",
+   "om:1F4AC",
+   "tw:1f4ac"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 57,
+  "ur": "لیکن",
+  "rom": "lekin",
+  "en": "but",
+  "concept": "but",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 58,
+  "ur": "لیا",
+  "rom": "liyā",
+  "en": "took",
+  "concept": "took: a hand taking",
+  "fit": "close",
+  "cands": [
+   "mb:take_,_to"
+  ],
+  "draw": "A hand picking up a ball from a table."
+ },
+ {
+  "id": 59,
+  "ur": "لے",
+  "rom": "le",
+  "en": "take",
+  "concept": "take: a hand taking",
+  "fit": "close",
+  "cands": [
+   "mb:take_,_to"
+  ],
+  "draw": "A hand picking up a ball from a table."
+ },
+ {
+  "id": 60,
+  "ur": "تین",
+  "rom": "tīn",
+  "en": "three",
+  "concept": "three",
+  "fit": "direct",
+  "cands": [
+   "mb:three"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 61,
+  "ur": "کتاب",
+  "rom": "kitāb",
+  "en": "book",
+  "concept": "a book",
+  "fit": "direct",
+  "cands": [
+   "om:1F4D6",
+   "tw:1f4d6",
+   "om:1F4D8"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 62,
+  "ur": "مت",
+  "rom": "mat",
+  "en": "don't",
+  "concept": "don't: a prohibited sign",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F6AB",
+   "tw:1f6ab"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 63,
+  "ur": "بے",
+  "rom": "be",
+  "en": "without, un-",
+  "concept": "without: an empty hand",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 64,
+  "ur": "اتنے",
+  "rom": "itne",
+  "en": "so many",
+  "concept": "so many: a big pile of items",
+  "fit": "metaphor",
+  "cands": [
+   "mb:how_many"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 65,
+  "ur": "تمام",
+  "rom": "tamām",
+  "en": "all, whole",
+  "concept": "all, whole: a whole circle",
+  "fit": "metaphor",
+  "cands": [
+   "mb:whole"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 66,
+  "ur": "بتایا",
+  "rom": "batāyā",
+  "en": "told",
+  "concept": "to tell: speaking with a speech bubble",
+  "fit": "close",
+  "cands": [
+   "om:1F4AC",
+   "tw:1f4ac",
+   "mb:talk_2_,_to"
+  ],
+  "draw": "A Pakistani teacher telling a story to children sitting on mat."
+ },
+ {
+  "id": 67,
+  "ur": "لی",
+  "rom": "lī",
+  "en": "took (fem)",
+  "concept": "took: a hand taking",
+  "fit": "close",
+  "cands": [
+   "mb:take_,_to"
+  ],
+  "draw": "A girl's hand picking up a pencil."
+ },
+ {
+  "id": 68,
+  "ur": "اتنی",
+  "rom": "itnī",
+  "en": "so much (fem)",
+  "concept": "so much: a big pile of items",
+  "fit": "metaphor",
+  "cands": [
+   "mb:how_many"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 69,
+  "ur": "اتنا",
+  "rom": "itnā",
+  "en": "this much",
+  "concept": "this much: hands showing a size",
+  "fit": "metaphor",
+  "cands": [
+   "mb:how_many"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 70,
+  "ur": "کتنی",
+  "rom": "kitnī",
+  "en": "how much (fem)",
+  "concept": "how much: a question mark over items",
+  "fit": "metaphor",
+  "cands": [
+   "mb:how_many",
+   "mb:how"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 71,
+  "ur": "بلی",
+  "rom": "billī",
+  "en": "cat",
+  "concept": "a cat",
+  "fit": "direct",
+  "cands": [
+   "om:1F408",
+   "tw:1f408",
+   "mb:cat"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 72,
+  "ur": "نیا",
+  "rom": "nayā",
+  "en": "new",
+  "concept": "new: a shiny new item with sparkle",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F195",
+   "tw:1f195",
+   "om:2728"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 73,
+  "ur": "اکیلے",
+  "rom": "akele",
+  "en": "alone (plural)",
+  "concept": "alone: a single person by himself",
+  "fit": "close",
+  "cands": [
+   "om:1F9CD",
+   "tw:1f9cd"
+  ],
+  "draw": "A single Pakistani boy sitting alone on a bench."
+ },
+ {
+  "id": 74,
+  "ur": "میل",
+  "rom": "mīl",
+  "en": "mile",
+  "concept": "a mile: distance marker on a road",
+  "fit": "close",
+  "cands": [
+   "mb:road"
+  ],
+  "draw": "A road with a distance milestone beside it."
+ },
+ {
+  "id": 75,
+  "ur": "لمبی",
+  "rom": "lambī",
+  "en": "long (fem)",
+  "concept": "long: a long object next to a short one",
+  "fit": "direct",
+  "cands": [
+   "mb:long"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 76,
+  "ur": "کامیابی",
+  "rom": "kāmyābī",
+  "en": "success",
+  "concept": "success: a trophy",
+  "fit": "close",
+  "cands": [
+   "om:1F3C6",
+   "tw:1f3c6",
+   "mb:medal"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 77,
+  "ur": "تب",
+  "rom": "tab",
+  "en": "then",
+  "concept": "then: next step (arrow)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 78,
+  "ur": "کتنے",
+  "rom": "kitne",
+  "en": "how many",
+  "concept": "how many: items with a question",
+  "fit": "direct",
+  "cands": [
+   "mb:how_many"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 79,
+  "ur": "کتنا",
+  "rom": "kitnā",
+  "en": "how much",
+  "concept": "how much: items with a question",
+  "fit": "close",
+  "cands": [
+   "mb:how_many",
+   "mb:how"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 80,
+  "ur": "کیک",
+  "rom": "kek",
+  "en": "cake",
+  "concept": "a cake",
+  "fit": "direct",
+  "cands": [
+   "mb:cake",
+   "om:1F382",
+   "tw:1f382"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 81,
+  "ur": "کامیاب",
+  "rom": "kāmyāb",
+  "en": "successful",
+  "concept": "successful: a trophy",
+  "fit": "close",
+  "cands": [
+   "om:1F3C6",
+   "tw:1f3c6",
+   "mb:medal"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 82,
+  "ur": "بینک",
+  "rom": "baink",
+  "en": "bank",
+  "concept": "a bank building",
+  "fit": "direct",
+  "cands": [
+   "om:1F3E6",
+   "tw:1f3e6",
+   "mb:bank"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 83,
+  "ur": "لینا",
+  "rom": "lenā",
+  "en": "to take",
+  "concept": "to take: a hand taking",
+  "fit": "close",
+  "cands": [
+   "mb:take_,_to"
+  ],
+  "draw": "A hand picking up an apple from a basket."
+ },
+ {
+  "id": 84,
+  "ur": "ایمان",
+  "rom": "īmān",
+  "en": "faith",
+  "concept": "faith: folded hands in prayer",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F64F",
+   "tw:1f64f"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 85,
+  "ur": "ملکی",
+  "rom": "mulkī",
+  "en": "of the country",
+  "concept": "of the country: a country flag",
+  "fit": "close",
+  "cands": [
+   "mb:country_Pakistan",
+   "om:1F5FA"
+  ],
+  "draw": "Pakistani flag on a pole."
+ },
+ {
+  "id": 86,
+  "ur": "کتا",
+  "rom": "kuttā",
+  "en": "dog",
+  "concept": "a dog",
+  "fit": "direct",
+  "cands": [
+   "om:1F415",
+   "tw:1f415",
+   "mb:dog"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 87,
+  "ur": "بتانا",
+  "rom": "batānā",
+  "en": "to tell",
+  "concept": "to tell: speaking with a speech bubble",
+  "fit": "close",
+  "cands": [
+   "om:1F4AC",
+   "tw:1f4ac",
+   "mb:talk_2_,_to"
+  ],
+  "draw": "A teacher telling a child something kindly."
+ },
+ {
+  "id": 88,
+  "ur": "بیتاب",
+  "rom": "betāb",
+  "en": "restless",
+  "concept": "restless: a worried person",
+  "fit": "close",
+  "cands": [
+   "om:1F61F",
+   "tw:1f61f",
+   "mb:worried_man"
+  ],
+  "draw": "A boy pacing back and forth worriedly."
+ },
+ {
+  "id": 89,
+  "ur": "کمی",
+  "rom": "kamī",
+  "en": "shortage",
+  "concept": "shortage: an empty container",
+  "fit": "metaphor",
+  "cands": [
+   "mb:little"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 90,
+  "ur": "تیل",
+  "rom": "tel",
+  "en": "oil",
+  "concept": "oil",
+  "fit": "close",
+  "cands": [
+   "mb:cooking_oil",
+   "om:1F6E2",
+   "tw:1f6e2"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 91,
+  "ur": "کتے",
+  "rom": "kutte",
+  "en": "dogs",
+  "concept": "dogs",
+  "fit": "direct",
+  "cands": [
+   "om:1F415",
+   "tw:1f415",
+   "mb:dog"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 92,
+  "ur": "نیت",
+  "rom": "niyyat",
+  "en": "intention",
+  "concept": "intention: a thought bubble with a target",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F3AF",
+   "tw:1f3af",
+   "om:1F4AD"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 93,
+  "ur": "مالی",
+  "rom": "mālī",
+  "en": "gardener",
+  "concept": "a gardener watering plants",
+  "fit": "close",
+  "cands": [
+   "mb:gardener_1a",
+   "om:E340",
+   "om:1F331"
+  ],
+  "draw": "A Pakistani gardener watering flowering plants with a can."
+ },
+ {
+  "id": 94,
+  "ur": "تالا",
+  "rom": "tālā",
+  "en": "lock",
+  "concept": "a lock (padlock)",
+  "fit": "direct",
+  "cands": [
+   "om:1F512",
+   "tw:1f512"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 95,
+  "ur": "تایا",
+  "rom": "tāyā",
+  "en": "father's elder brother",
+  "concept": "father's elder brother, an uncle",
+  "fit": "close",
+  "cands": [
+   "mb:uncle_paternal"
+  ],
+  "draw": "A Pakistani uncle with moustache in waistcoat, smiling."
+ },
+ {
+  "id": 96,
+  "ur": "بانی",
+  "rom": "bānī",
+  "en": "founder",
+  "concept": "founder: a person laying a foundation brick",
+  "fit": "none",
+  "cands": [],
+  "draw": "A man placing the first brick of a new school building."
+ },
+ {
+  "id": 97,
+  "ur": "بیل",
+  "rom": "bail",
+  "en": "ox",
+  "concept": "an ox",
+  "fit": "direct",
+  "cands": [
+   "om:1F402",
+   "tw:1f402"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 98,
+  "ur": "تمنا",
+  "rom": "tamannā",
+  "en": "wish",
+  "concept": "a wish: shooting star",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F320",
+   "tw:1f320",
+   "om:1F4AD"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 99,
+  "ur": "نیکی",
+  "rom": "nekī",
+  "en": "goodness",
+  "concept": "goodness: a kind act, helping hand",
+  "fit": "metaphor",
+  "cands": [
+   "mb:good",
+   "om:1F49B"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 100,
+  "ur": "اکیلا",
+  "rom": "akelā",
+  "en": "alone",
+  "concept": "alone: a single person by himself",
+  "fit": "close",
+  "cands": [
+   "om:1F9CD",
+   "tw:1f9cd"
+  ],
+  "draw": "A single Pakistani boy sitting alone on a bench."
+ },
+ {
+  "id": 101,
+  "ur": "نانی",
+  "rom": "nānī",
+  "en": "maternal grandmother",
+  "concept": "grandmother on mother's side, an elderly woman",
+  "fit": "close",
+  "cands": [
+   "mb:grandmother",
+   "om:1F475",
+   "tw:1f475"
+  ],
+  "draw": "A kind elderly Pakistani grandmother with white dupatta, smiling."
+ },
+ {
+  "id": 102,
+  "ur": "تالی",
+  "rom": "tālī",
+  "en": "clap",
+  "concept": "a clap: clapping hands",
+  "fit": "direct",
+  "cands": [
+   "om:1F44F",
+   "tw:1f44f",
+   "mb:clap_hands_,_to"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 103,
+  "ur": "مکتب",
+  "rom": "maktab",
+  "en": "school",
+  "concept": "school (maktab)",
+  "fit": "direct",
+  "cands": [
+   "om:1F3EB",
+   "tw:1f3eb",
+   "mb:school"
+  ],
+  "draw": ""
+ }
+]

@@ -1,0 +1,345 @@
+{
+ "516": {
+  "cands": [
+   "mb:get_up_,_to",
+   "tw:1f9cd"
+  ],
+  "fit": "close"
+ },
+ "522": {
+  "cands": [
+   "om:1F36C",
+   "tw:1f36c"
+  ],
+  "fit": "close"
+ },
+ "523": {
+  "cands": [
+   "mb:dates"
+  ],
+  "fit": "direct"
+ },
+ "524": {
+  "cands": [],
+  "fit": "none"
+ },
+ "525": {
+  "cands": [
+   "om:1F925",
+   "tw:1f925"
+  ],
+  "fit": "metaphor"
+ },
+ "528": {
+  "cands": [
+   "mb:plate",
+   "om:1F37D"
+  ],
+  "fit": "direct"
+ },
+ "532": {
+  "cands": [
+   "om:1F469",
+   "tw:1f469"
+  ],
+  "fit": "metaphor",
+  "concept": "an aunt (a grown woman)"
+ },
+ "534": {
+  "cands": [
+   "om:1F9F8",
+   "tw:1f9f8"
+  ],
+  "fit": "direct"
+ },
+ "535": {
+  "cands": [
+   "om:1F34B",
+   "tw:1f34b"
+  ],
+  "fit": "close"
+ },
+ "537": {
+  "cands": [
+   "tw:1f90f"
+  ],
+  "fit": "metaphor"
+ },
+ "560": {
+  "cands": [
+   "tw:1f90f"
+  ],
+  "fit": "metaphor"
+ },
+ "597": {
+  "cands": [
+   "tw:1f90f"
+  ],
+  "fit": "metaphor"
+ },
+ "538": {
+  "cands": [
+   "om:23F3",
+   "om:270B"
+  ],
+  "fit": "metaphor"
+ },
+ "540": {
+  "cands": [
+   "om:1FAE3"
+  ],
+  "fit": "metaphor",
+  "concept": "a face hiding behind hands"
+ },
+ "545": {
+  "cands": [
+   "tw:1f9d1-200d-1f3eb",
+   "om:1F9D1-200D-1F3EB",
+   "mb:teacher_1a"
+  ],
+  "fit": "close"
+ },
+ "546": {
+  "cands": [
+   "om:2795",
+   "tw:2795"
+  ],
+  "fit": "metaphor"
+ },
+ "547": {
+  "cands": [
+   "om:1F445",
+   "tw:1f445"
+  ],
+  "fit": "direct"
+ },
+ "548": {
+  "cands": [
+   "om:1F331",
+   "tw:1f331"
+  ],
+  "fit": "metaphor"
+ },
+ "550": {
+  "cands": [
+   "om:1F418",
+   "tw:1f418"
+  ],
+  "fit": "metaphor"
+ },
+ "552": {
+  "cands": [
+   "om:1F418",
+   "tw:1f418"
+  ],
+  "fit": "metaphor"
+ },
+ "554": {
+  "cands": [
+   "om:1F418",
+   "tw:1f418"
+  ],
+  "fit": "metaphor"
+ },
+ "555": {
+  "cands": [
+   "om:2764",
+   "tw:2764"
+  ],
+  "fit": "metaphor"
+ },
+ "559": {
+  "cands": [
+   "om:1F468",
+   "tw:1f468"
+  ],
+  "fit": "close"
+ },
+ "563": {
+  "cands": [
+   "tw:1f467",
+   "om:1F467"
+  ],
+  "fit": "direct"
+ },
+ "565": {
+  "cands": [
+   "om:1F4B0",
+   "tw:1f4b0"
+  ],
+  "fit": "metaphor"
+ },
+ "567": {
+  "cands": [
+   "mb:fast_2",
+   "om:1F3C3"
+  ],
+  "fit": "close"
+ },
+ "601": {
+  "cands": [
+   "mb:fast_2",
+   "om:1F3C3"
+  ],
+  "fit": "close"
+ },
+ "569": {
+  "cands": [
+   "om:1F469",
+   "tw:1f469"
+  ],
+  "fit": "close"
+ },
+ "570": {
+  "cands": [
+   "om:1F501",
+   "tw:1f501"
+  ],
+  "fit": "metaphor"
+ },
+ "575": {
+  "cands": [],
+  "fit": "none"
+ },
+ "579": {
+  "cands": [],
+  "fit": "none"
+ },
+ "581": {
+  "cands": [
+   "om:2600",
+   "tw:2600"
+  ],
+  "fit": "metaphor"
+ },
+ "585": {
+  "cands": [
+   "om:1F4C5",
+   "tw:1f4c5"
+  ],
+  "fit": "metaphor"
+ },
+ "589": {
+  "cands": [
+   "om:1F95A",
+   "mb:egg",
+   "tw:1f95a"
+  ],
+  "fit": "direct"
+ },
+ "591": {
+  "cands": [
+   "tw:1f466",
+   "om:1F466"
+  ],
+  "fit": "direct"
+ },
+ "598": {
+  "cands": [
+   "tw:1f466",
+   "om:1F466"
+  ],
+  "fit": "direct"
+ },
+ "595": {
+  "cands": [
+   "om:1F46A"
+  ],
+  "fit": "close"
+ },
+ "606": {
+  "cands": [
+   "om:1F426",
+   "mb:bird"
+  ],
+  "fit": "direct"
+ },
+ "610": {
+  "cands": [
+   "tw:26f0",
+   "mb:mountains"
+  ],
+  "fit": "direct"
+ },
+ "613": {
+  "cands": [
+   "om:1F455",
+   "mb:clothes_generic",
+   "tw:1f455"
+  ],
+  "fit": "direct"
+ },
+ "616": {
+  "cands": [
+   "tw:1f9e6",
+   "om:1F9E6"
+  ],
+  "fit": "close"
+ },
+ "587": {
+  "cands": [
+   "mb:stand_,_to",
+   "tw:1f9cd"
+  ],
+  "fit": "direct"
+ },
+ "593": {
+  "cands": [
+   "mb:stand_,_to",
+   "tw:1f9cd"
+  ],
+  "fit": "direct"
+ },
+ "604": {
+  "cands": [
+   "mb:stand_,_to",
+   "tw:1f9cd"
+  ],
+  "fit": "direct"
+ },
+ "588": {
+  "cands": [
+   "om:1F628",
+   "tw:1f628"
+  ],
+  "fit": "close"
+ },
+ "603": {
+  "cands": [
+   "om:1F628",
+   "tw:1f628"
+  ],
+  "fit": "close"
+ },
+ "607": {
+  "cands": [
+   "om:1F54C",
+   "mb:pray_2_,_to"
+  ],
+  "fit": "metaphor",
+  "concept": "a mosque, the place of namaz"
+ },
+ "543": {
+  "cands": [
+   "mb:swing_,_to",
+   "mb:swing"
+  ],
+  "fit": "direct"
+ },
+ "551": {
+  "cands": [
+   "mb:flag_England",
+   "mb:english",
+   "mb:english_class"
+  ],
+  "fit": "metaphor"
+ },
+ "578": {
+  "cands": [
+   "mb:aeroplane",
+   "tw:2708",
+   "om:1F6A2"
+  ],
+  "fit": "close"
+ }
+}

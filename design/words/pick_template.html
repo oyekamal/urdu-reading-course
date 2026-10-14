@@ -1,0 +1,132 @@
+<title>Qaida Picture Picker</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Noto+Naskh+Arabic:wght@500;700&display=swap">
+<style>
+/* Layout: sticky progress + filter bar on top; one row per word, the Urdu word on the left, its candidate pictures to pick from on the right.
+   Palette comes from the app itself: Multani teal, saffron, ajrak indigo, on chai-cream paper. */
+:root{--bg:#FBF6EC;--card:#fff;--line:#E6DDCB;--ink:#1E2F55;--muted:#5C6985;--teal:#00756B;--teal-soft:#DDF1EE;--gold:#8F5C14;--gold-soft:#FBEBCB;--berry:#C0426A;--ring:#00756B;--shadow:0 1px 0 rgba(30,47,85,.06)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121C33;--card:#1B2946;--line:#2C3C60;--ink:#EAF0FF;--muted:#9DAACB;--teal:#2FB8A9;--teal-soft:#14383A;--gold:#FFB94E;--gold-soft:#3A3020;--berry:#FF9DB5;--ring:#2FB8A9;--shadow:none;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121C33;--card:#1B2946;--line:#2C3C60;--ink:#EAF0FF;--muted:#9DAACB;--teal:#2FB8A9;--teal-soft:#14383A;--gold:#FFB94E;--gold-soft:#3A3020;--berry:#FF9DB5;--ring:#2FB8A9;--shadow:none;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.45 "Fredoka",system-ui,sans-serif;padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+.wrap{max-width:1100px;margin:0 auto}
+header.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding-block:12px 10px;margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding-inline:max(16px,env(safe-area-inset-left,0px))}
+.top{display:flex;gap:12px 20px;flex-wrap:wrap;align-items:center;max-width:1100px;margin:0 auto}
+h1{font-size:19px;font-weight:600;margin:0;letter-spacing:.01em}
+.count{font-variant-numeric:tabular-nums;color:var(--muted);font-size:14px}.count b{color:var(--ink);font-weight:600}
+.meter{flex:1 1 180px;min-width:120px;height:8px;background:var(--line);border-radius:99px;overflow:hidden}.meter i{display:block;height:100%;background:var(--teal);width:0;transition:width .25s}
+.filters{display:flex;gap:8px;flex-wrap:wrap;max-width:1100px;margin:10px auto 0}
+select,input[type=search],button.btn{font:inherit;font-size:14px;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:7px 10px;min-height:38px}
+input[type=search]{flex:1 1 160px;min-width:0}
+button.btn{cursor:pointer;font-weight:500}button.btn:hover{border-color:var(--teal)}button.btn.go{background:var(--teal);border-color:var(--teal);color:#fff}
+:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
+.note{margin:14px 0 4px;padding:10px 12px;border-radius:10px;background:var(--gold-soft);color:var(--ink);font-size:14px}
+.note[hidden]{display:none}
+.unit{margin:26px 0 8px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.row{display:grid;grid-template-columns:210px 1fr;gap:14px 18px;background:var(--card);border:1.5px solid var(--line);border-radius:16px;padding:12px 14px;margin:0 0 10px;box-shadow:var(--shadow);content-visibility:auto;contain-intrinsic-size:auto 150px}
+.row.done{border-color:var(--teal)}
+.word{min-width:0}
+.ur{font:700 40px/1.5 "Noto Naskh Arabic",serif;direction:rtl;text-align:right}
+.rom{font-weight:500}.en{color:var(--muted);font-size:14px}
+.meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;font-size:12px}
+.chip{border-radius:99px;padding:1px 9px;background:var(--line);color:var(--muted)}
+.chip.direct{background:var(--teal-soft);color:var(--teal)}.chip.none{background:var(--gold-soft);color:var(--gold)}
+.concept{font-size:13px;color:var(--muted);margin-top:4px}
+.picks{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-start;min-width:0}
+.tile{position:relative;width:116px;border:2px solid var(--line);border-radius:14px;background:#fff;padding:8px 6px 6px;cursor:pointer;text-align:center;font:inherit;color:#1E2F55}
+.tile:hover{border-color:var(--teal)}
+.tile img{display:block;width:96px;height:96px;object-fit:contain;margin:0 auto}
+.tile small{display:block;font-size:11px;color:#5C6985;margin-top:2px}
+.tile[aria-pressed=true]{border-color:var(--teal);box-shadow:0 0 0 3px var(--teal-soft)}
+.tile[aria-pressed=true]::after{content:"";position:absolute;top:6px;right:6px;width:22px;height:22px;border-radius:50%;background:var(--teal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+.tile.text{background:var(--card);color:var(--ink);width:116px;min-height:118px;display:flex;flex-direction:column;justify-content:center;gap:2px;font-size:13px}
+.tile.text[aria-pressed=true]{background:var(--teal-soft)}
+.tile.text b{font-weight:600;font-size:14px}
+.empty{padding:40px 0;text-align:center;color:var(--muted)}
+.legend{font-size:13px;color:var(--muted);margin:10px 0 0}
+@media(max-width:640px){.row{grid-template-columns:1fr}.ur{text-align:left;direction:rtl;font-size:36px}.tile,.tile.text{width:calc(50% - 5px)}.tile img{width:min(96px,100%)}}
+@media (prefers-reduced-motion:reduce){.meter i{transition:none}}
+</style>
+<body>
+<header class="bar"><div class="top">
+  <h1>Qaida Picture Picker</h1>
+  <span class="count" id="count"></span>
+  <div class="meter" aria-hidden="true"><i id="meter"></i></div>
+</div>
+<div class="filters">
+  <select id="fUnit" aria-label="Unit"></select>
+  <select id="fState" aria-label="Show"><option value="all">All words</option><option value="todo">Not decided</option><option value="pic">Picture chosen</option><option value="none">No picture</option><option value="draw">Draw it</option></select>
+  <select id="fFit" aria-label="Match quality"><option value="all">Any match</option><option value="direct">Direct</option><option value="close">Close</option><option value="metaphor">Symbol</option><option value="none">No match found</option></select>
+  <input type="search" id="fText" placeholder="Search Urdu, sound or English" aria-label="Search">
+  <button class="btn" id="bulk" type="button"></button>
+</div></header>
+<div class="wrap">
+  <div class="note" id="note" hidden></div>
+  <p class="legend">Tap a picture to choose it, tap again to undo. <b>No picture</b> keeps that word plain. <b>Draw it</b> marks it for a custom drawing in the app's own style. Nothing goes into the app until you say so; every choice saves here as you tap.</p>
+  <main id="list"></main>
+</div>
+<script type="application/json" id="data">__DATA__</script>
+<script type="application/json" id="imgs">__IMGS__</script>
+<script>
+const WORDS=JSON.parse(document.getElementById('data').textContent), IMG=JSON.parse(document.getElementById('imgs').textContent);
+const SET={om:'OpenMoji',tw:'Twemoji',mb:'Mulberry'}, $=id=>document.getElementById(id), picks={};
+let store=null, bulkArmed=false;
+const f={unit:'all',state:'all',fit:'all',text:''};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const stateOf=w=>{const p=picks[w.id];return !p?'todo':p==='none'?'none':p==='draw'?'draw':'pic'};
+const bare=s=>s.replace(/[ً-ٰٟ]/g,'');
+$('fUnit').innerHTML='<option value="all">All units</option>'+[...new Set(WORDS.map(w=>w.unit))].sort((a,b)=>a-b).map(u=>`<option value="${u}">Unit ${u}</option>`).join('');
+function io(){return new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const i=e.target;i.src=IMG[i.dataset.k]||'';io1.unobserve(i)}}),{rootMargin:'600px'})}
+const io1=io();
+function tile(w,k){
+  const [s,n]=[k.slice(0,2),k.slice(3)], on=picks[w.id]===k;
+  return `<button class="tile" type="button" data-w="${w.id}" data-k="${esc(k)}" aria-pressed="${on}" aria-label="${esc(n.replace(/[_-]/g,' '))}, ${SET[s]}"><img data-k="${esc(k)}" alt="" width="96" height="96"><small>${SET[s]}</small></button>`;
+}
+function row(w){
+  const p=picks[w.id], t=(k,l,sub)=>`<button class="tile text" type="button" data-w="${w.id}" data-k="${k}" aria-pressed="${p===k}"><b>${l}</b>${sub?`<span>${sub}</span>`:''}</button>`;
+  return `<section class="row${p?' done':''}" id="w${w.id}"><div class="word"><div class="ur" lang="ur">${esc(w.ur)}</div><div class="rom">${esc(w.rom||'')}</div><div class="en">${esc(w.en||'')}</div><div class="meta"><span class="chip">Unit ${w.unit}</span><span class="chip ${w.fit}">${{direct:'Direct',close:'Close',metaphor:'Symbol',none:'No match'}[w.fit]||w.fit}</span></div><div class="concept">${esc(w.concept||'')}</div></div><div class="picks">${w.cands.map(k=>tile(w,k)).join('')}${t('none','No picture')}${t('draw','Draw it',w.draw?'custom art':'')}</div></section>`;
+}
+function visible(){const q=bare(f.text.trim().toLowerCase());return WORDS.filter(w=>(f.unit==='all'||String(w.unit)===f.unit)&&(f.state==='all'||stateOf(w)===f.state)&&(f.fit==='all'||w.fit===f.fit)&&(!q||bare(w.ur).includes(q)||(w.rom||'').toLowerCase().includes(q)||(w.en||'').toLowerCase().includes(q)||(w.concept||'').toLowerCase().includes(q)))}
+function render(){
+  const vis=visible(); let h='',u=null;
+  for(const w of vis){if(w.unit!==u){u=w.unit;h+=`<div class="unit">Unit ${u}</div>`}h+=row(w)}
+  $('list').innerHTML=h||'<div class="empty">No words match these filters.</div>';
+  $('list').querySelectorAll('img[data-k]').forEach(i=>io1.observe(i));
+  counts(vis);
+}
+function counts(vis=visible()){
+  const n=WORDS.length, d=WORDS.filter(w=>picks[w.id]).length, pic=WORDS.filter(w=>stateOf(w)==='pic').length;
+  $('count').innerHTML=`<b>${d}</b> of ${n} decided · ${pic} with a picture`;$('meter').style.width=(100*d/n)+'%';
+  const open=vis.filter(w=>!picks[w.id]&&w.cands.length);
+  $('bulk').textContent=bulkArmed?`Confirm: use first choice for ${open.length}`:`Use first choice for ${open.length} shown`;
+  $('bulk').classList.toggle('go',bulkArmed);$('bulk').disabled=!open.length;
+}
+async function save(id,val){
+  if(val)picks[id]=val;else delete picks[id];
+  if(!store)return;
+  try{ if(val) await store.doc('picks/'+id).set({pick:val,at:Date.now()}); else await store.doc('picks/'+id).delete(); }
+  catch(e){ note('Could not save that choice ('+(e&&e.code||'error')+'). It is kept on this screen only.') }
+}
+function note(t){const n=$('note');n.hidden=!t;n.textContent=t||''}
+$('list').addEventListener('click',e=>{
+  const b=e.target.closest('.tile');if(!b)return;
+  const id=b.dataset.w, k=b.dataset.k, val=picks[id]===k?null:k, w=WORDS[id-1]||WORDS.find(x=>String(x.id)===id);
+  save(id,val);
+  const r=$('w'+id);
+  if(f.state==='all'&&r){r.outerHTML=row(w);$('w'+id).querySelectorAll('img[data-k]').forEach(i=>io1.observe(i));counts()}else render();
+});
+$('bulk').addEventListener('click',async()=>{
+  const open=visible().filter(w=>!picks[w.id]&&w.cands.length);
+  if(!bulkArmed){bulkArmed=true;counts();setTimeout(()=>{bulkArmed=false;counts()},5000);return}
+  bulkArmed=false;for(const w of open)await save(String(w.id),w.cands[0]);render();
+});
+for(const [id,k] of [['fUnit','unit'],['fState','state'],['fFit','fit']])$(id).addEventListener('change',e=>{f[k]=e.target.value;bulkArmed=false;render()});
+$('fText').addEventListener('input',e=>{f.text=e.target.value;render()});
+render();
+(async()=>{
+  const db=await window.claude?.use?.('db');
+  if(!db){note('Choices are not being saved in this view. Open the page signed in to keep them.');return}
+  store=db;
+  db.collection('picks').onSnapshot(s=>{for(const c of s.docChanges()){const id=c.doc.id;if(c.type==='removed')delete picks[id];else picks[id]=c.doc.data().pick}render()},e=>note('Could not load saved choices ('+(e&&e.code||'error')+').'));
+})();
+</script>

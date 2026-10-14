@@ -1,0 +1,586 @@
+[
+{
+"id": 2,
+"ur": "نام",
+"rom": "nām",
+"en": "name",
+"concept": "name badge emoji reads as a flame; no clear picture",
+"draw": "A smiling Pakistani child in school uniform wearing a name badge on the chest."
+},
+{
+"id": 3,
+"ur": "کم",
+"rom": "kam",
+"en": "few, less",
+"concept": "abstract quantity; diagram fails",
+"draw": ""
+},
+{
+"id": 10,
+"ur": "بنا",
+"rom": "binā",
+"en": "without",
+"concept": "without: an empty item, nothing inside",
+"draw": ""
+},
+{
+"id": 14,
+"ur": "ممکن",
+"rom": "mumkin",
+"en": "possible",
+"concept": "empty thought bubble is meaningless",
+"draw": ""
+},
+{
+"id": 15,
+"ur": "مالک",
+"rom": "mālik",
+"en": "owner",
+"concept": "key does not say owner",
+"draw": "A Pakistani shopkeeper holding keys in front of his shop, smiling."
+},
+{
+"id": 19,
+"ur": "امکان",
+"rom": "imkān",
+"en": "possibility",
+"concept": "bulb means idea, not possibility",
+"draw": ""
+},
+{
+"id": 23,
+"ur": "بابا",
+"rom": "bābā",
+"en": "dad",
+"concept": "father with child",
+"draw": "A Pakistani father in kurta carrying his small child on his shoulders."
+},
+{
+"id": 28,
+"ur": "مان",
+"rom": "mān",
+"en": "pride, honour",
+"concept": "pride: a proud child with chest out",
+"draw": "A proud Pakistani boy standing tall with a smile and chest out, holding a certificate."
+},
+{
+"id": 29,
+"ur": "ناممکن",
+"rom": "nāmumkin",
+"en": "impossible",
+"concept": "prohibited sign is crossed-out symbol",
+"draw": ""
+},
+{
+"id": 38,
+"ur": "مالا",
+"rom": "mālā",
+"en": "garland",
+"concept": "a garland of flowers worn around the neck",
+"draw": "A garland (haar) of marigold and jasmine flowers on a plain background."
+},
+{
+"id": 43,
+"ur": "کباب",
+"rom": "kabāb",
+"en": "kebab",
+"concept": "kebab skewer",
+"draw": ""
+},
+{
+"id": 52,
+"ur": "تم",
+"rom": "tum",
+"en": "you",
+"concept": "fist emoji unclear",
+"draw": ""
+},
+{
+"id": 62,
+"ur": "مت",
+"rom": "mat",
+"en": "don't",
+"concept": "prohibited sign is crossed-out symbol",
+"draw": ""
+},
+{
+"id": 63,
+"ur": "بے",
+"rom": "be",
+"en": "without, un-",
+"concept": "without: an empty hand",
+"draw": ""
+},
+{
+"id": 68,
+"ur": "اتنی",
+"rom": "itnī",
+"en": "so much (fem)",
+"concept": "so much: a big pile of items",
+"draw": ""
+},
+{
+"id": 69,
+"ur": "اتنا",
+"rom": "itnā",
+"en": "this much",
+"concept": "this much: hands showing a size",
+"draw": ""
+},
+{
+"id": 70,
+"ur": "کتنی",
+"rom": "kitnī",
+"en": "how much (fem)",
+"concept": "how much: a question mark over items",
+"draw": ""
+},
+{
+"id": 72,
+"ur": "نیا",
+"rom": "nayā",
+"en": "new",
+"concept": "NEW label",
+"draw": ""
+},
+{
+"id": 74,
+"ur": "میل",
+"rom": "mīl",
+"en": "mile",
+"concept": "road distance",
+"draw": "A road with a distance milestone beside it."
+},
+{
+"id": 78,
+"ur": "کتنے",
+"rom": "kitne",
+"en": "how many",
+"concept": "how many question",
+"draw": ""
+},
+{
+"id": 79,
+"ur": "کتنا",
+"rom": "kitnā",
+"en": "how much",
+"concept": "how much question",
+"draw": ""
+},
+{
+"id": 89,
+"ur": "کمی",
+"rom": "kamī",
+"en": "shortage",
+"concept": "abstract; diagram fails",
+"draw": ""
+},
+{
+"id": 92,
+"ur": "نیت",
+"rom": "niyyat",
+"en": "intention",
+"concept": "target aim",
+"draw": ""
+},
+{
+"id": 93,
+"ur": "مالی",
+"rom": "mālī",
+"en": "gardener",
+"concept": "a gardener watering plants",
+"draw": "A Pakistani gardener watering flowering plants with a can."
+},
+{
+"id": 96,
+"ur": "بانی",
+"rom": "bānī",
+"en": "founder",
+"concept": "founder: a person laying a foundation brick",
+"draw": "A man placing the first brick of a new school building."
+},
+{
+"id": 98,
+"ur": "تمنا",
+"rom": "tamannā",
+"en": "wish",
+"concept": "shooting star wish",
+"draw": ""
+},
+{
+"id": 107,
+"ur": "نابینا",
+"rom": "nābīnā",
+"en": "blind",
+"concept": "a white cane used by a blind person",
+"draw": ""
+},
+{
+"id": 131,
+"ur": "پتلی",
+"rom": "patlī",
+"en": "thin (fem)",
+"concept": "thin",
+"draw": ""
+},
+{
+"id": 133,
+"ur": "کپتان",
+"rom": "kaptān",
+"en": "captain",
+"concept": "captain",
+"draw": "A smiling boy with a captain armband holding a cricket bat on a dusty Pakistani field."
+},
+{
+"id": 142,
+"ur": "پکی",
+"rom": "pakkī",
+"en": "ripe, firm (fem)",
+"concept": "a ripe red apple",
+"draw": "A ripe golden mango hanging on a branch."
+},
+{
+"id": 144,
+"ur": "پیتل",
+"rom": "pītal",
+"en": "brass",
+"concept": "shiny brass pot",
+"draw": "A shiny yellow brass pot (lota) on a wooden table."
+},
+{
+"id": 147,
+"ur": "پانا",
+"rom": "pānā",
+"en": "to get, find",
+"concept": "a hand getting something",
+"draw": "A child happily finding a lost marble on the ground."
+},
+{
+"id": 152,
+"ur": "پتلا",
+"rom": "patlā",
+"en": "thin",
+"concept": "thin",
+"draw": ""
+},
+{
+"id": 214,
+"ur": "کمرے",
+"rom": "kamre",
+"en": "rooms",
+"concept": "a bed in a bedroom",
+"draw": "A cutaway of a simple Pakistani home showing one room with a bed and window."
+},
+{
+"id": 254,
+"ur": "کمرہ",
+"rom": "kamra",
+"en": "room",
+"concept": "a bed in a bedroom",
+"draw": "A cutaway of a simple Pakistani home showing one room with a bed and window."
+},
+{
+"id": 272,
+"ur": "نہر",
+"rom": "nahar",
+"en": "canal",
+"concept": "a water canal",
+"draw": "A long straight water canal running between green fields, Punjab countryside."
+},
+{
+"id": 284,
+"ur": "تکیہ",
+"rom": "takiya",
+"en": "pillow",
+"concept": "a pillow",
+"draw": "A plain white pillow resting on a bed."
+},
+{
+"id": 297,
+"ur": "جو",
+"rom": "jo",
+"en": "who, which",
+"concept": "which/who (abstract relative word)",
+"draw": ""
+},
+{
+"id": 339,
+"ur": "مشہور",
+"rom": "mashhūr",
+"en": "famous",
+"concept": "famous, everybody knows",
+"draw": ""
+},
+{
+"id": 368,
+"ur": "دوپہر",
+"rom": "dopahar",
+"en": "afternoon, noon",
+"concept": "sun high in the sky, noon",
+"draw": "The sun directly overhead in a bright sky above a village."
+},
+{
+"id": 369,
+"ur": "کاش",
+"rom": "kāsh",
+"en": "if only",
+"concept": "shooting star: a wish",
+"draw": ""
+},
+{
+"id": 376,
+"ur": "جانور",
+"rom": "jānwar",
+"en": "animal",
+"concept": "an animal",
+"draw": "A goat, a cow and a hen together in a village yard."
+},
+{
+"id": 393,
+"ur": "شور",
+"rom": "shor",
+"en": "noise",
+"concept": "noise, loud sound",
+"draw": "A child covering ears because of a very loud noise."
+},
+{
+"id": 397,
+"ur": "جنگل",
+"rom": "jangal",
+"en": "forest",
+"concept": "a forest of trees",
+"draw": "A thick green forest with many tall trees."
+},
+{
+"id": 401,
+"ur": "کپاس",
+"rom": "kapās",
+"en": "cotton",
+"concept": "cotton plant with white cotton balls",
+"draw": "A cotton plant with fluffy white cotton bolls in a Pakistani field."
+},
+{
+"id": 402,
+"ur": "منگل",
+"rom": "mangal",
+"en": "Tuesday",
+"concept": "Tuesday",
+"draw": ""
+},
+{
+"id": 492,
+"ur": "پھل",
+"rom": "phal",
+"en": "fruit",
+"concept": "fruit",
+"draw": ""
+},
+{
+"id": 500,
+"ur": "چھت",
+"rom": "chhat",
+"en": "roof",
+"concept": "the roof of a house",
+"draw": "A flat roof of a Pakistani house with a child flying a kite on it"
+},
+{
+"id": 503,
+"ur": "اندھا",
+"rom": "andhā",
+"en": "blind",
+"concept": "a blind person with a white cane",
+"draw": "A blind man with dark glasses walking with a white cane"
+},
+{
+"id": 552,
+"ur": "بڑا",
+"rom": "baṛā",
+"en": "big",
+"concept": "big (a large thing)",
+"draw": ""
+},
+{
+"id": 554,
+"ur": "بڑے",
+"rom": "baṛe",
+"en": "big (plural)",
+"concept": "big (a large thing)",
+"draw": ""
+},
+{
+"id": 558,
+"ur": "چھوڑ",
+"rom": "chhoṛ",
+"en": "leave (stem)",
+"concept": "leave, let go",
+"draw": "A child opening their hand and letting go of a red balloon."
+},
+{
+"id": 582,
+"ur": "چیزیں",
+"rom": "chīzeṉ",
+"en": "things",
+"concept": "a thing, an object",
+"draw": ""
+},
+{
+"id": 602,
+"ur": "دروازے",
+"rom": "darwāze",
+"en": "doors",
+"concept": "a door",
+"draw": ""
+},
+{
+"id": 611,
+"ur": "بازار",
+"rom": "bāzār",
+"en": "market",
+"concept": "a market, shops",
+"draw": "A busy Pakistani bazaar with stalls of fruit and cloth."
+},
+{
+"id": 614,
+"ur": "کمزور",
+"rom": "kamzor",
+"en": "weak",
+"concept": "weak",
+"draw": "A thin tired boy struggling to lift a small bucket of water."
+},
+{
+"id": 629,
+"ur": "ٹیڑھا",
+"rom": "ṭeṛhā",
+"en": "crooked",
+"concept": "crooked (zigzag diagram rejected)",
+"draw": "A crooked bent stick next to a straight stick."
+},
+{
+"id": 631,
+"ur": "لڑکیاں",
+"rom": "laṛkiyāṉ",
+"en": "girls",
+"concept": "girls",
+"draw": "Three Pakistani schoolgirls standing together smiling."
+},
+{
+"id": 638,
+"ur": "چھوڑنا",
+"rom": "chhoṛnā",
+"en": "to leave, let go",
+"concept": "to let go (open palms ambiguous)",
+"draw": "A child opening both hands to let a small bird fly away."
+},
+{
+"id": 640,
+"ur": "کڑوا",
+"rom": "kaṛwā",
+"en": "bitter",
+"concept": "a bitter taste",
+"draw": "A child scrunching face after tasting a green bitter gourd (karela)."
+},
+{
+"id": 646,
+"ur": "ڈیڑھ",
+"rom": "ḍeṛh",
+"en": "one and a half",
+"concept": "one and a half",
+"draw": "One whole roti and half a roti side by side on a plate."
+},
+{
+"id": 652,
+"ur": "ڈھیر",
+"rom": "ḍher",
+"en": "heap",
+"concept": "a big heap, pile",
+"draw": "A big heap of wheat grain in a village courtyard."
+},
+{
+"id": 666,
+"ur": "گڑیا",
+"rom": "guṛiyā",
+"en": "doll",
+"concept": "a doll",
+"draw": ""
+},
+{
+"id": 717,
+"ur": "غریب",
+"rom": "g͟harīb",
+"en": "poor",
+"concept": "poor, needy",
+"draw": "A poor Pakistani family sitting outside a small mud house."
+},
+{
+"id": 727,
+"ur": "سفید",
+"rom": "safīd",
+"en": "white",
+"concept": "colour white; outline-only pictures do not show white",
+"draw": ""
+},
+{
+"id": 817,
+"ur": "مقصد",
+"rom": "maqṣad",
+"en": "aim",
+"concept": "a target",
+"draw": ""
+},
+{
+"id": 821,
+"ur": "طویل",
+"rom": "t̤awīl",
+"en": "long",
+"concept": "something long",
+"draw": ""
+},
+{
+"id": 862,
+"ur": "اذان",
+"rom": "aẕān",
+"en": "call to prayer",
+"concept": "mosque calling azan",
+"draw": "A muezzin calling the azan from a mosque minaret at sunset."
+},
+{
+"id": 866,
+"ur": "صندوق",
+"rom": "ṣandūq",
+"en": "box, chest",
+"concept": "a box or chest",
+"draw": "A big wooden trunk box with a lid in a Pakistani home."
+},
+{
+"id": 942,
+"ur": "اونچائی",
+"rom": "ūṉchāʾī",
+"en": "height",
+"concept": "a tall giraffe",
+"draw": "A tall tree next to a tiny child looking up at it."
+},
+{
+"id": 997,
+"ur": "پارک",
+"rom": "pārk",
+"en": "park",
+"concept": "a park with trees and swings",
+"draw": "Children playing on swings in a green park with trees and benches."
+},
+{
+"id": 1017,
+"ur": "کھیر",
+"rom": "khīr",
+"en": "rice pudding",
+"concept": "kheer: rice pudding",
+"draw": "A bowl of white rice pudding (kheer) topped with pistachios and almonds."
+},
+{
+"id": 1020,
+"ur": "جلیبی",
+"rom": "jalebī",
+"en": "jalebi (a sweet)",
+"concept": "jalebi sweet",
+"draw": "A plate of bright orange crispy spiral jalebis dripping with syrup."
+}
+]

@@ -1,0 +1,466 @@
+{
+ "413": {
+  "cands": [
+   "tw:1f467",
+   "om:1F467"
+  ],
+  "fit": "metaphor",
+  "concept": "a girl (stands for the name Sara)"
+ },
+ "414": {
+  "cands": [
+   "tw:1fab6",
+   "om:1FAB6"
+  ],
+  "fit": "close",
+  "concept": "a feather, light as air"
+ },
+ "415": {
+  "cands": [
+   "tw:1f46d"
+  ],
+  "fit": "close"
+ },
+ "417": {
+  "cands": [
+   "om:1F944",
+   "mb:spoon"
+  ],
+  "fit": "direct"
+ },
+ "418": {
+  "cands": [
+   "mb:thirsty"
+  ],
+  "fit": "close"
+ },
+ "421": {
+  "cands": [],
+  "fit": "none",
+  "concept": "I / in (no clear picture)"
+ },
+ "424": {
+  "cands": [],
+  "fit": "none"
+ },
+ "426": {
+  "cands": [],
+  "fit": "none"
+ },
+ "427": {
+  "cands": [
+   "tw:1f9d1-200d-1f91d-200d-1f9d1",
+   "mb:hold_hands_,_to"
+  ],
+  "fit": "close"
+ },
+ "430": {
+  "cands": [
+   "tw:1f4cd",
+   "om:1F447",
+   "om:1F4CD"
+  ],
+  "fit": "metaphor"
+ },
+ "431": {
+  "cands": [
+   "tw:1f3e0",
+   "om:1F3E0",
+   "mb:house"
+  ],
+  "fit": "direct"
+ },
+ "432": {
+  "cands": [
+   "tw:23f0",
+   "om:23F0",
+   "mb:now"
+  ],
+  "fit": "metaphor"
+ },
+ "433": {
+  "cands": [
+   "tw:2753",
+   "om:2753"
+  ],
+  "fit": "metaphor"
+ },
+ "434": {
+  "cands": [
+   "om:1F501"
+  ],
+  "fit": "metaphor"
+ },
+ "435": {
+  "cands": [],
+  "fit": "none"
+ },
+ "436": {
+  "cands": [
+   "tw:1f9d1-200d-1f91d-200d-1f9d1"
+  ],
+  "fit": "metaphor"
+ },
+ "437": {
+  "cands": [
+   "mb:two"
+  ],
+  "fit": "metaphor"
+ },
+ "439": {
+  "cands": [
+   "om:1F440",
+   "tw:1f440"
+  ],
+  "fit": "close"
+ },
+ "440": {
+  "cands": [
+   "tw:1f465"
+  ],
+  "fit": "metaphor"
+ },
+ "441": {
+  "cands": [
+   "tw:2705",
+   "tw:1f44c"
+  ],
+  "fit": "metaphor"
+ },
+ "443": {
+  "cands": [
+   "tw:1f372",
+   "om:1F372",
+   "mb:food"
+  ],
+  "fit": "direct"
+ },
+ "444": {
+  "cands": [
+   "tw:1f4cd",
+   "om:1F4CD"
+  ],
+  "fit": "metaphor"
+ },
+ "445": {
+  "cands": [
+   "om:2753"
+  ],
+  "fit": "metaphor"
+ },
+ "448": {
+  "cands": [
+   "tw:27a1",
+   "tw:1f449"
+  ],
+  "fit": "metaphor"
+ },
+ "449": {
+  "cands": [
+   "tw:270b",
+   "om:270B"
+  ],
+  "fit": "direct"
+ },
+ "450": {
+  "cands": [
+   "tw:1f4da",
+   "om:1F4DA"
+  ],
+  "fit": "direct"
+ },
+ "451": {
+  "cands": [
+   "om:1F440",
+   "tw:1f440"
+  ],
+  "fit": "close"
+ },
+ "452": {
+  "cands": [
+   "om:2753"
+  ],
+  "fit": "metaphor"
+ },
+ "453": {
+  "cands": [
+   "tw:1f466",
+   "om:1F466"
+  ],
+  "fit": "close"
+ },
+ "456": {
+  "cands": [
+   "tw:1f44d",
+   "om:1F44D"
+  ],
+  "fit": "close"
+ },
+ "457": {
+  "cands": [
+   "tw:1f44d",
+   "om:1F44D"
+  ],
+  "fit": "close"
+ },
+ "438": {
+  "cands": [
+   "tw:1f44d",
+   "om:1F44D"
+  ],
+  "fit": "direct"
+ },
+ "459": {
+  "cands": [
+   "tw:1f469",
+   "om:1F469"
+  ],
+  "fit": "close"
+ },
+ "460": {
+  "cands": [
+   "tw:1f64b"
+  ],
+  "fit": "metaphor"
+ },
+ "461": {
+  "cands": [
+   "om:1F3CF",
+   "tw:1f3cf",
+   "om:26BD"
+  ],
+  "fit": "close"
+ },
+ "464": {
+  "cands": [
+   "tw:1f4cd",
+   "om:1F4CD"
+  ],
+  "fit": "metaphor"
+ },
+ "466": {
+  "cands": [
+   "mb:put_,_to"
+  ],
+  "fit": "metaphor"
+ },
+ "467": {
+  "cands": [
+   "tw:1f622",
+   "om:1F622"
+  ],
+  "fit": "close"
+ },
+ "468": {
+  "cands": [
+   "om:1F440",
+   "tw:1f440"
+  ],
+  "fit": "close"
+ },
+ "470": {
+  "cands": [
+   "om:1F440",
+   "tw:1f440"
+  ],
+  "fit": "close"
+ },
+ "476": {
+  "cands": [
+   "om:1F440",
+   "tw:1f440"
+  ],
+  "fit": "close"
+ },
+ "486": {
+  "cands": [
+   "om:1F440",
+   "tw:1f440"
+  ],
+  "fit": "close"
+ },
+ "494": {
+  "cands": [
+   "om:1F440",
+   "tw:1f440"
+  ],
+  "fit": "close"
+ },
+ "469": {
+  "cands": [
+   "om:270D",
+   "mb:write_,_to",
+   "om:270F"
+  ],
+  "fit": "close"
+ },
+ "512": {
+  "cands": [
+   "om:270D",
+   "mb:write_,_to"
+  ],
+  "fit": "close"
+ },
+ "471": {
+  "cands": [
+   "tw:1f4c5",
+   "mb:day"
+  ],
+  "fit": "close"
+ },
+ "472": {
+  "cands": [
+   "om:1F90F",
+   "tw:1f90f"
+  ],
+  "fit": "metaphor"
+ },
+ "473": {
+  "cands": [
+   "om:1F90F",
+   "tw:1f90f"
+  ],
+  "fit": "metaphor"
+ },
+ "481": {
+  "cands": [
+   "om:1F90F",
+   "tw:1f90f"
+  ],
+  "fit": "metaphor"
+ },
+ "474": {
+  "cands": [
+   "tw:2705"
+  ],
+  "fit": "metaphor"
+ },
+ "475": {
+  "cands": [
+   "tw:1f62b",
+   "om:1F62B"
+  ],
+  "fit": "close"
+ },
+ "477": {
+  "cands": [
+   "om:1F444",
+   "mb:mouth"
+  ],
+  "fit": "direct"
+ },
+ "479": {
+  "cands": [
+   "tw:1f46d"
+  ],
+  "fit": "close"
+ },
+ "480": {
+  "cands": [
+   "tw:1f4ac",
+   "mb:talk_1_,_to"
+  ],
+  "fit": "close"
+ },
+ "488": {
+  "cands": [
+   "tw:1f95b",
+   "mb:milk_bottle"
+  ],
+  "fit": "direct"
+ },
+ "489": {
+  "cands": [
+   "om:1F33C",
+   "mb:flower"
+  ],
+  "fit": "direct"
+ },
+ "490": {
+  "cands": [
+   "tw:1faa8",
+   "om:1FAA8"
+  ],
+  "fit": "direct"
+ },
+ "493": {
+  "cands": [
+   "tw:1faa8"
+  ],
+  "fit": "metaphor",
+  "concept": "a heavy rock"
+ },
+ "501": {
+  "cands": [
+   "om:1F468",
+   "tw:1f468"
+  ],
+  "fit": "metaphor"
+ },
+ "502": {
+  "cands": [
+   "om:1F3CF",
+   "tw:1f3cf",
+   "mb:play_,_to"
+  ],
+  "fit": "close"
+ },
+ "504": {
+  "cands": [
+   "om:1F3CF",
+   "tw:1f3cf",
+   "mb:play_,_to"
+  ],
+  "fit": "close"
+ },
+ "503": {
+  "cands": [
+   "om:1F9AF",
+   "tw:1f9af"
+  ],
+  "fit": "close"
+ },
+ "505": {
+  "cands": [
+   "mb:buffalo",
+   "om:1F403"
+  ],
+  "fit": "direct"
+ },
+ "506": {
+  "cands": [
+   "mb:study_,_to",
+   "om:1F4D6"
+  ],
+  "fit": "close"
+ },
+ "507": {
+  "cands": [
+   "tw:1f99f",
+   "om:1F99F"
+  ],
+  "fit": "direct"
+ },
+ "508": {
+  "cands": [
+   "tw:2602",
+   "om:2602"
+  ],
+  "fit": "direct"
+ },
+ "509": {
+  "cands": [
+   "tw:1f303",
+   "om:1F303"
+  ],
+  "fit": "metaphor",
+  "concept": "night, dark city sky"
+ },
+ "513": {
+  "cands": [
+   "mb:field",
+   "om:1F33E"
+  ],
+  "fit": "direct"
+ }
+}

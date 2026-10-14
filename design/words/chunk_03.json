@@ -1,0 +1,929 @@
+[
+{
+"ur": "دوبارہ",
+"rom": "dobārah",
+"en": "again",
+"unit": 4,
+"i": 52,
+"src": "unit",
+"id": 207
+},
+{
+"ur": "کون",
+"rom": "kaun",
+"en": "who",
+"unit": 4,
+"i": 53,
+"src": "unit",
+"id": 208
+},
+{
+"ur": "پوری",
+"rom": "pūrī",
+"en": "whole (fem)",
+"unit": 4,
+"i": 54,
+"src": "unit",
+"id": 209
+},
+{
+"ur": "دل",
+"rom": "dil",
+"en": "heart",
+"unit": 4,
+"i": 55,
+"src": "unit",
+"id": 210
+},
+{
+"ur": "کہانی",
+"rom": "kahānī",
+"en": "story",
+"unit": 4,
+"i": 56,
+"src": "unit",
+"id": 211
+},
+{
+"ur": "بہن",
+"rom": "bahan",
+"en": "sister",
+"unit": 4,
+"i": 57,
+"src": "unit",
+"id": 212
+},
+{
+"ur": "تیار",
+"rom": "taiyār",
+"en": "ready",
+"unit": 4,
+"i": 58,
+"src": "unit",
+"id": 213
+},
+{
+"ur": "کمرے",
+"rom": "kamre",
+"en": "rooms",
+"unit": 4,
+"i": 59,
+"src": "unit",
+"id": 214
+},
+{
+"ur": "ہونا",
+"rom": "honā",
+"en": "to be, to become",
+"unit": 4,
+"i": 60,
+"src": "unit",
+"id": 215
+},
+{
+"ur": "بیوی",
+"rom": "bīwī",
+"en": "wife",
+"unit": 4,
+"i": 61,
+"src": "unit",
+"id": 216
+},
+{
+"ur": "کہتے",
+"rom": "kahte",
+"en": "say (plural)",
+"unit": 4,
+"i": 62,
+"src": "unit",
+"id": 217
+},
+{
+"ur": "کہنا",
+"rom": "kahnā",
+"en": "to say",
+"unit": 4,
+"i": 63,
+"src": "unit",
+"id": 218
+},
+{
+"ur": "اوپر",
+"rom": "ūpar",
+"en": "above, up",
+"unit": 4,
+"i": 64,
+"src": "unit",
+"id": 219
+},
+{
+"ur": "رہتے",
+"rom": "rahte",
+"en": "live (plural)",
+"unit": 4,
+"i": 65,
+"src": "unit",
+"id": 220
+},
+{
+"ur": "تمہارے",
+"rom": "tumhāre",
+"en": "your (plural)",
+"unit": 4,
+"i": 66,
+"src": "unit",
+"id": 221
+},
+{
+"ur": "یاد",
+"rom": "yād",
+"en": "memory",
+"unit": 4,
+"i": 67,
+"src": "unit",
+"id": 222
+},
+{
+"ur": "ہمارے",
+"rom": "hamāre",
+"en": "our (plural)",
+"unit": 4,
+"i": 68,
+"src": "unit",
+"id": 223
+},
+{
+"ur": "ہماری",
+"rom": "hamārī",
+"en": "our (fem)",
+"unit": 4,
+"i": 69,
+"src": "unit",
+"id": 224
+},
+{
+"ur": "اندر",
+"rom": "andar",
+"en": "inside",
+"unit": 4,
+"i": 70,
+"src": "unit",
+"id": 225
+},
+{
+"ur": "لو",
+"rom": "lo",
+"en": "take!",
+"unit": 4,
+"i": 71,
+"src": "unit",
+"id": 226
+},
+{
+"ur": "پورا",
+"rom": "pūrā",
+"en": "whole, complete",
+"unit": 4,
+"i": 72,
+"src": "unit",
+"id": 227
+},
+{
+"ur": "بول",
+"rom": "bol",
+"en": "speak (stem)",
+"unit": 4,
+"i": 73,
+"src": "unit",
+"id": 228
+},
+{
+"ur": "بیمار",
+"rom": "bīmār",
+"en": "ill, sick",
+"unit": 4,
+"i": 74,
+"src": "unit",
+"id": 229
+},
+{
+"ur": "تمہاری",
+"rom": "tumhārī",
+"en": "your (fem)",
+"unit": 4,
+"i": 75,
+"src": "unit",
+"id": 230
+},
+{
+"ur": "دینا",
+"rom": "denā",
+"en": "to give",
+"unit": 4,
+"i": 76,
+"src": "unit",
+"id": 231
+},
+{
+"ur": "بولتا",
+"rom": "boltā",
+"en": "speaks",
+"unit": 4,
+"i": 77,
+"src": "unit",
+"id": 232
+},
+{
+"ur": "دیتا",
+"rom": "detā",
+"en": "gives",
+"unit": 4,
+"i": 78,
+"src": "unit",
+"id": 233
+},
+{
+"ur": "ریل",
+"rom": "rel",
+"en": "train, rail",
+"unit": 4,
+"i": 79,
+"src": "unit",
+"id": 234
+},
+{
+"ur": "رہتی",
+"rom": "rahtī",
+"en": "lives (fem)",
+"unit": 4,
+"i": 80,
+"src": "unit",
+"id": 235
+},
+{
+"ur": "دیتے",
+"rom": "dete",
+"en": "give (plural)",
+"unit": 4,
+"i": 81,
+"src": "unit",
+"id": 236
+},
+{
+"ur": "بدل",
+"rom": "badal",
+"en": "change (stem)",
+"unit": 4,
+"i": 82,
+"src": "unit",
+"id": 237
+},
+{
+"ur": "ہار",
+"rom": "hār",
+"en": "necklace",
+"unit": 4,
+"i": 83,
+"src": "unit",
+"id": 238
+},
+{
+"ur": "دادا",
+"rom": "dādā",
+"en": "grandfather",
+"unit": 4,
+"i": 84,
+"src": "unit",
+"id": 239
+},
+{
+"ur": "پہلا",
+"rom": "pahlā",
+"en": "first",
+"unit": 4,
+"i": 85,
+"src": "unit",
+"id": 240
+},
+{
+"ur": "رہو",
+"rom": "raho",
+"en": "stay!",
+"unit": 4,
+"i": 86,
+"src": "unit",
+"id": 241
+},
+{
+"ur": "مبارک",
+"rom": "mubārak",
+"en": "blessed, congratulations",
+"unit": 4,
+"i": 87,
+"src": "unit",
+"id": 242
+},
+{
+"ur": "ہمارا",
+"rom": "hamārā",
+"en": "our",
+"unit": 4,
+"i": 88,
+"src": "unit",
+"id": 243
+},
+{
+"ur": "نو",
+"rom": "nau",
+"en": "nine",
+"unit": 4,
+"i": 89,
+"src": "unit",
+"id": 244
+},
+{
+"ur": "درد",
+"rom": "dard",
+"en": "pain",
+"unit": 4,
+"i": 90,
+"src": "unit",
+"id": 245
+},
+{
+"ur": "روٹی",
+"rom": "roṭī",
+"en": "bread",
+"unit": 4,
+"i": 91,
+"src": "unit",
+"id": 246
+},
+{
+"ur": "بادل",
+"rom": "bādal",
+"en": "cloud",
+"unit": 4,
+"i": 92,
+"src": "unit",
+"id": 247
+},
+{
+"ur": "بارہ",
+"rom": "bārah",
+"en": "twelve",
+"unit": 4,
+"i": 93,
+"src": "unit",
+"id": 248
+},
+{
+"ur": "مرد",
+"rom": "mard",
+"en": "man",
+"unit": 4,
+"i": 94,
+"src": "unit",
+"id": 249
+},
+{
+"ur": "دیتی",
+"rom": "detī",
+"en": "gives (fem)",
+"unit": 4,
+"i": 95,
+"src": "unit",
+"id": 250
+},
+{
+"ur": "پرانی",
+"rom": "purānī",
+"en": "old (fem)",
+"unit": 4,
+"i": 96,
+"src": "unit",
+"id": 251
+},
+{
+"ur": "مہینے",
+"rom": "mahīne",
+"en": "months",
+"unit": 4,
+"i": 97,
+"src": "unit",
+"id": 252
+},
+{
+"ur": "ٹوپی",
+"rom": "ṭopī",
+"en": "cap",
+"unit": 4,
+"i": 98,
+"src": "unit",
+"id": 253
+},
+{
+"ur": "کمرہ",
+"rom": "kamra",
+"en": "room",
+"unit": 4,
+"i": 99,
+"src": "unit",
+"id": 254
+},
+{
+"ur": "نیند",
+"rom": "nīnd",
+"en": "sleep",
+"unit": 4,
+"i": 100,
+"src": "unit",
+"id": 255
+},
+{
+"ur": "رہنا",
+"rom": "rahnā",
+"en": "to live, stay",
+"unit": 4,
+"i": 101,
+"src": "unit",
+"id": 256
+},
+{
+"ur": "دکان",
+"rom": "dukān",
+"en": "shop",
+"unit": 4,
+"i": 102,
+"src": "unit",
+"id": 257
+},
+{
+"ur": "کہتا",
+"rom": "kahtā",
+"en": "says",
+"unit": 4,
+"i": 103,
+"src": "unit",
+"id": 258
+},
+{
+"ur": "برا",
+"rom": "burā",
+"en": "bad",
+"unit": 4,
+"i": 104,
+"src": "unit",
+"id": 259
+},
+{
+"ur": "دانت",
+"rom": "dānt",
+"en": "tooth",
+"unit": 4,
+"i": 105,
+"src": "unit",
+"id": 260
+},
+{
+"ur": "دم",
+"rom": "dam",
+"en": "breath",
+"unit": 4,
+"i": 106,
+"src": "unit",
+"id": 261
+},
+{
+"ur": "راہ",
+"rom": "rāh",
+"en": "path",
+"unit": 4,
+"i": 107,
+"src": "unit",
+"id": 262
+},
+{
+"ur": "موٹا",
+"rom": "moṭā",
+"en": "fat, thick",
+"unit": 4,
+"i": 108,
+"src": "unit",
+"id": 263
+},
+{
+"ur": "بدن",
+"rom": "badan",
+"en": "body",
+"unit": 4,
+"i": 109,
+"src": "unit",
+"id": 264
+},
+{
+"ur": "دادی",
+"rom": "dādī",
+"en": "paternal grandmother",
+"unit": 4,
+"i": 110,
+"src": "unit",
+"id": 265
+},
+{
+"ur": "دہی",
+"rom": "dahī",
+"en": "yoghurt",
+"unit": 4,
+"i": 111,
+"src": "unit",
+"id": 266
+},
+{
+"ur": "ہرا",
+"rom": "harā",
+"en": "green",
+"unit": 4,
+"i": 112,
+"src": "unit",
+"id": 267
+},
+{
+"ur": "پنیر",
+"rom": "panīr",
+"en": "cheese",
+"unit": 4,
+"i": 113,
+"src": "unit",
+"id": 268
+},
+{
+"ur": "دال",
+"rom": "dāl",
+"en": "lentils",
+"unit": 4,
+"i": 114,
+"src": "unit",
+"id": 269
+},
+{
+"ur": "پرانا",
+"rom": "purānā",
+"en": "old",
+"unit": 4,
+"i": 115,
+"src": "unit",
+"id": 270
+},
+{
+"ur": "دوا",
+"rom": "dawā",
+"en": "medicine",
+"unit": 4,
+"i": 116,
+"src": "unit",
+"id": 271
+},
+{
+"ur": "نہر",
+"rom": "nahar",
+"en": "canal",
+"unit": 4,
+"i": 117,
+"src": "unit",
+"id": 272
+},
+{
+"ur": "اونٹ",
+"rom": "ūnṭ",
+"en": "camel",
+"unit": 4,
+"i": 118,
+"src": "unit",
+"id": 273
+},
+{
+"ur": "ہادی",
+"rom": "hādī",
+"en": "Hadi (a name)",
+"unit": 4,
+"i": 119,
+"src": "unit",
+"id": 274
+},
+{
+"ur": "مہینہ",
+"rom": "mahīna",
+"en": "month",
+"unit": 4,
+"i": 120,
+"src": "unit",
+"id": 275
+},
+{
+"ur": "کہتی",
+"rom": "kahtī",
+"en": "says (fem)",
+"unit": 4,
+"i": 121,
+"src": "unit",
+"id": 276
+},
+{
+"ur": "بندر",
+"rom": "bandar",
+"en": "monkey",
+"unit": 4,
+"i": 122,
+"src": "unit",
+"id": 277
+},
+{
+"ur": "مور",
+"rom": "mor",
+"en": "peacock",
+"unit": 4,
+"i": 123,
+"src": "unit",
+"id": 278
+},
+{
+"ur": "ہرن",
+"rom": "haran",
+"en": "deer",
+"unit": 4,
+"i": 124,
+"src": "unit",
+"id": 279
+},
+{
+"ur": "انار",
+"rom": "anār",
+"en": "pomegranate",
+"unit": 4,
+"i": 125,
+"src": "unit",
+"id": 280
+},
+{
+"ur": "بکری",
+"rom": "bakrī",
+"en": "goat",
+"unit": 4,
+"i": 126,
+"src": "unit",
+"id": 281
+},
+{
+"ur": "تارا",
+"rom": "tārā",
+"en": "star (tārā)",
+"unit": 4,
+"i": 127,
+"src": "unit",
+"id": 282
+},
+{
+"ur": "پودا",
+"rom": "paudā",
+"en": "plant",
+"unit": 4,
+"i": 128,
+"src": "unit",
+"id": 283
+},
+{
+"ur": "تکیہ",
+"rom": "takiya",
+"en": "pillow",
+"unit": 4,
+"i": 129,
+"src": "unit",
+"id": 284
+},
+{
+"ur": "ٹماٹر",
+"rom": "ṭamāṭar",
+"en": "tomato",
+"unit": 4,
+"i": 130,
+"src": "unit",
+"id": 285
+},
+{
+"ur": "رونا",
+"rom": "ronā",
+"en": "to cry",
+"unit": 4,
+"i": 131,
+"src": "unit",
+"id": 286
+},
+{
+"ur": "نادیہ",
+"rom": "nādiya",
+"en": "Nadia (a name)",
+"unit": 4,
+"i": 132,
+"src": "unit",
+"id": 287
+},
+{
+"ur": "پیالہ",
+"rom": "piyāla",
+"en": "cup, bowl",
+"unit": 4,
+"i": 133,
+"src": "unit",
+"id": 288
+},
+{
+"ur": "دانیال",
+"rom": "dāniyāl",
+"en": "Daniyal (a name)",
+"unit": 4,
+"i": 134,
+"src": "unit",
+"id": 289
+},
+{
+"ur": "بادام",
+"rom": "bādām",
+"en": "almond",
+"unit": 4,
+"i": 135,
+"src": "unit",
+"id": 290
+},
+{
+"ur": "بدلنا",
+"rom": "badalnā",
+"en": "to change",
+"unit": 4,
+"i": 136,
+"src": "unit",
+"id": 291
+},
+{
+"ur": "بولنا",
+"rom": "bolnā",
+"en": "to speak",
+"unit": 4,
+"i": 137,
+"src": "unit",
+"id": 292
+},
+{
+"ur": "کبوتر",
+"rom": "kabūtar",
+"en": "pigeon",
+"unit": 4,
+"i": 138,
+"src": "unit",
+"id": 293
+},
+{
+"ur": "کوا",
+"rom": "kavvā",
+"en": "crow",
+"unit": 4,
+"i": 139,
+"src": "unit",
+"id": 294
+},
+{
+"ur": "ہونٹ",
+"rom": "honṭ",
+"en": "lip",
+"unit": 4,
+"i": 140,
+"src": "unit",
+"id": 295
+},
+{
+"ur": "گیا",
+"rom": "gayā",
+"en": "went",
+"unit": 5,
+"i": 0,
+"src": "unit",
+"id": 296
+},
+{
+"ur": "جو",
+"rom": "jo",
+"en": "who, which",
+"unit": 5,
+"i": 1,
+"src": "unit",
+"id": 297
+},
+{
+"ur": "اسے",
+"rom": "ise",
+"en": "him, her, it",
+"unit": 5,
+"i": 2,
+"src": "unit",
+"id": 298
+},
+{
+"ur": "گا",
+"rom": "gā",
+"en": "will (masculine)",
+"unit": 5,
+"i": 3,
+"src": "unit",
+"id": 299
+},
+{
+"ur": "سب",
+"rom": "sab",
+"en": "all",
+"unit": 5,
+"i": 4,
+"src": "unit",
+"id": 300
+},
+{
+"ur": "کسی",
+"rom": "kisī",
+"en": "some, any",
+"unit": 5,
+"i": 5,
+"src": "unit",
+"id": 301
+},
+{
+"ur": "جاتا",
+"rom": "jātā",
+"en": "goes",
+"unit": 5,
+"i": 6,
+"src": "unit",
+"id": 302
+},
+{
+"ur": "سال",
+"rom": "sāl",
+"en": "year",
+"unit": 5,
+"i": 7,
+"src": "unit",
+"id": 303
+},
+{
+"ur": "سکتا",
+"rom": "saktā",
+"en": "can (masculine)",
+"unit": 5,
+"i": 8,
+"src": "unit",
+"id": 304
+},
+{
+"ur": "سکتے",
+"rom": "sakte",
+"en": "can (plural)",
+"unit": 5,
+"i": 9,
+"src": "unit",
+"id": 305
+},
+{
+"ur": "گے",
+"rom": "ge",
+"en": "will (plural)",
+"unit": 5,
+"i": 10,
+"src": "unit",
+"id": 306
+},
+{
+"ur": "پسند",
+"rom": "pasand",
+"en": "liking",
+"unit": 5,
+"i": 11,
+"src": "unit",
+"id": 307
+},
+{
+"ur": "پاس",
+"rom": "pās",
+"en": "near",
+"unit": 5,
+"i": 12,
+"src": "unit",
+"id": 308
+},
+{
+"ur": "جب",
+"rom": "jab",
+"en": "when (relative)",
+"unit": 5,
+"i": 13,
+"src": "unit",
+"id": 309
+}
+]

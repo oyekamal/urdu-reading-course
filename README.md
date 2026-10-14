@@ -2,7 +2,7 @@
 
 A research-backed course and app that takes anyone, child or adult, Urdu speaker or not, from zero to reading Urdu script. Everything is generated from two data files, so a fix to a letter or a word flows into the cards, the printable lessons and the app.
 
-**Try it now, no install:** the full learner + teacher app runs in the browser and works offline after the first load: https://oyekamal.github.io/urdu-reading-course/reader/ (add it to your home screen). The original single-page course is at https://oyekamal.github.io/urdu-reading-course/app/. Android APK: see Releases. Current version: **v0.11.4** (adds the interactivity pass on top of the v0.9.0 onboarding, animated Marko and look; see [Onboarding, Marko and the look](#onboarding-marko-and-the-look-v090) and [Interactivity and emotional design](#interactivity-and-emotional-design-v0100)).
+**Try it now, no install:** the full learner + teacher app runs in the browser and works offline after the first load: https://oyekamal.github.io/urdu-reading-course/reader/ (add it to your home screen). The original single-page course is at https://oyekamal.github.io/urdu-reading-course/app/. Android APK: see Releases. Current version: **v0.12.0** (word pictures: a picture beside every word that has an honest one, see [Word pictures](#word-pictures-v0120); builds on v0.11.4, the interactivity pass on top of the v0.9.0 onboarding, animated Marko and look; see [Onboarding, Marko and the look](#onboarding-marko-and-the-look-v090) and [Interactivity and emotional design](#interactivity-and-emotional-design-v0100)).
 
 ## What is in the box
 
@@ -206,3 +206,10 @@ Design and evidence: `docs/offline-app-plan.html`. Minimum Android 7.0 (API 24, 
 ## Credits
 
 Built by Kamil (Muhammad Kamal's agent) in September 2026, with three rounds of adversarial review against Georgetown's *Alif Baa*, Delacy's *Beginner's Urdu Script*, Duolingo's Arabic letters course and Rekhta's Aamozish. Evidence sources are listed at the end of each research file.
+
+
+## Word pictures (v0.12.0)
+
+A tester (@MINIMO, AppHive, 2026-10-14) asked for an image with each taught word to give kids context. 1,030 words were logged in `data/word_catalog.json`; candidate pictures came from OpenMoji, Twemoji and Mulberry Symbols (`design/words/find_pic.py`, index of ~7,000), were reviewed by separate critic agents against Duolingo ABC / Lingokids word screens (`design/words/fix_*.json`), and the owner picked one per word in a Picture Picker page (`design/words/pick_page.html`, picks in `design/words/picks_final.json`). Words picked as "draw" got hand-written SVG art in the app's style (`design/words/art/`, critic-gated; rejected ids in `art/rejected.txt`). `python3 scripts/pack_word_pictures.py` turns the picks into `mobile/public/img/words/*.webp` + `mobile/public/data/word_img.json`; `wimg()` in `mobile/src/content.js` returns a picture or nothing. 772 words have a picture; the rest stay plain by design.
+
+Credits (also shown in the app, Me tab): OpenMoji by the OpenMoji contributors, CC BY-SA 4.0 (https://openmoji.org); Twemoji, CC BY 4.0; Mulberry Symbols by Steve Lee, CC BY-SA 2.0 UK (https://mulberrysymbols.org). The hand-drawn art is original to this project.

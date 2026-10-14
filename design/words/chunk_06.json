@@ -1,0 +1,929 @@
+[
+{
+"ur": "اٹھنا",
+"rom": "uṭhnā",
+"en": "to get up",
+"unit": 6,
+"i": 95,
+"src": "unit",
+"id": 516
+},
+{
+"ur": "تھکے",
+"rom": "thake",
+"en": "tired (plural)",
+"unit": 6,
+"i": 96,
+"src": "unit",
+"id": 517
+},
+{
+"ur": "لکھو",
+"rom": "likho",
+"en": "write!",
+"unit": 6,
+"i": 97,
+"src": "unit",
+"id": 518
+},
+{
+"ur": "گھنٹہ",
+"rom": "ghanṭa",
+"en": "hour",
+"unit": 6,
+"i": 98,
+"src": "unit",
+"id": 519
+},
+{
+"ur": "لکھنا",
+"rom": "likhnā",
+"en": "to write",
+"unit": 6,
+"i": 99,
+"src": "unit",
+"id": 520
+},
+{
+"ur": "گھاس",
+"rom": "ghās",
+"en": "grass",
+"unit": 6,
+"i": 100,
+"src": "unit",
+"id": 521
+},
+{
+"ur": "میٹھا",
+"rom": "mīṭhā",
+"en": "sweet",
+"unit": 6,
+"i": 101,
+"src": "unit",
+"id": 522
+},
+{
+"ur": "کھجور",
+"rom": "khajūr",
+"en": "date (fruit)",
+"unit": 6,
+"i": 102,
+"src": "unit",
+"id": 523
+},
+{
+"ur": "دھواں",
+"rom": "dhuāṉ",
+"en": "smoke",
+"unit": 6,
+"i": 103,
+"src": "unit",
+"id": 524
+},
+{
+"ur": "جھوٹا",
+"rom": "jhūṭā",
+"en": "false",
+"unit": 6,
+"i": 104,
+"src": "unit",
+"id": 525
+},
+{
+"ur": "کھاتی",
+"rom": "khātī",
+"en": "eats (fem)",
+"unit": 6,
+"i": 105,
+"src": "unit",
+"id": 526
+},
+{
+"ur": "بھاگنا",
+"rom": "bhāgnā",
+"en": "to run",
+"unit": 6,
+"i": 106,
+"src": "unit",
+"id": 527
+},
+{
+"ur": "تھالی",
+"rom": "thālī",
+"en": "plate",
+"unit": 6,
+"i": 107,
+"src": "unit",
+"id": 528
+},
+{
+"ur": "پوچھنا",
+"rom": "pūchhnā",
+"en": "to ask",
+"unit": 6,
+"i": 108,
+"src": "unit",
+"id": 529
+},
+{
+"ur": "کھولنا",
+"rom": "kholnā",
+"en": "to open",
+"unit": 6,
+"i": 109,
+"src": "unit",
+"id": 530
+},
+{
+"ur": "گھنٹی",
+"rom": "ghanṭī",
+"en": "bell",
+"unit": 6,
+"i": 110,
+"src": "unit",
+"id": 531
+},
+{
+"ur": "پھوپھی",
+"rom": "phūphī",
+"en": "paternal aunt",
+"unit": 6,
+"i": 111,
+"src": "unit",
+"id": 532
+},
+{
+"ur": "چھونا",
+"rom": "chhūnā",
+"en": "to touch",
+"unit": 6,
+"i": 112,
+"src": "unit",
+"id": 533
+},
+{
+"ur": "کھلونا",
+"rom": "khilaunā",
+"en": "toy",
+"unit": 6,
+"i": 113,
+"src": "unit",
+"id": 534
+},
+{
+"ur": "کھٹا",
+"rom": "khaṭṭā",
+"en": "sour",
+"unit": 6,
+"i": 114,
+"src": "unit",
+"id": 535
+},
+{
+"ur": "بھالو",
+"rom": "bhālū",
+"en": "bear",
+"unit": 6,
+"i": 115,
+"src": "unit",
+"id": 536
+},
+{
+"ur": "ننھا",
+"rom": "nanhā",
+"en": "tiny",
+"unit": 6,
+"i": 116,
+"src": "unit",
+"id": 537
+},
+{
+"ur": "ٹھہرنا",
+"rom": "ṭhaharnā",
+"en": "to stay, wait",
+"unit": 6,
+"i": 117,
+"src": "unit",
+"id": 538
+},
+{
+"ur": "پھینکنا",
+"rom": "phaiṉknā",
+"en": "to throw",
+"unit": 6,
+"i": 118,
+"src": "unit",
+"id": 539
+},
+{
+"ur": "چھپنا",
+"rom": "chhupnā",
+"en": "to hide",
+"unit": 6,
+"i": 119,
+"src": "unit",
+"id": 540
+},
+{
+"ur": "گھومنا",
+"rom": "ghūmnā",
+"en": "to turn about, wander",
+"unit": 6,
+"i": 120,
+"src": "unit",
+"id": 541
+},
+{
+"ur": "ہنسنا",
+"rom": "hansnā",
+"en": "to laugh",
+"unit": 6,
+"i": 121,
+"src": "unit",
+"id": 542
+},
+{
+"ur": "جھولا",
+"rom": "jhūlā",
+"en": "swing",
+"unit": 6,
+"i": 122,
+"src": "unit",
+"id": 543
+},
+{
+"ur": "دھاگا",
+"rom": "dhāgā",
+"en": "thread",
+"unit": 6,
+"i": 123,
+"src": "unit",
+"id": 544
+},
+{
+"ur": "سکھانا",
+"rom": "sikhānā",
+"en": "to teach",
+"unit": 6,
+"i": 124,
+"src": "unit",
+"id": 545
+},
+{
+"ur": "زیادہ",
+"rom": "ziyāda",
+"en": "more, too much",
+"unit": 7,
+"i": 0,
+"src": "unit",
+"id": 546
+},
+{
+"ur": "زبان",
+"rom": "zabān",
+"en": "tongue / language",
+"unit": 7,
+"i": 1,
+"src": "unit",
+"id": 547
+},
+{
+"ur": "زندگی",
+"rom": "zindagī",
+"en": "life",
+"unit": 7,
+"i": 2,
+"src": "unit",
+"id": 548
+},
+{
+"ur": "گاڑی",
+"rom": "gāṛī",
+"en": "car, vehicle",
+"unit": 7,
+"i": 3,
+"src": "unit",
+"id": 549
+},
+{
+"ur": "بڑی",
+"rom": "baṛī",
+"en": "big (fem)",
+"unit": 7,
+"i": 4,
+"src": "unit",
+"id": 550
+},
+{
+"ur": "انگریزی",
+"rom": "angrezī",
+"en": "English",
+"unit": 7,
+"i": 5,
+"src": "unit",
+"id": 551
+},
+{
+"ur": "بڑا",
+"rom": "baṛā",
+"en": "big",
+"unit": 7,
+"i": 6,
+"src": "unit",
+"id": 552
+},
+{
+"ur": "ہزار",
+"rom": "hazār",
+"en": "thousand",
+"unit": 7,
+"i": 7,
+"src": "unit",
+"id": 553
+},
+{
+"ur": "بڑے",
+"rom": "baṛe",
+"en": "big (plural)",
+"unit": 7,
+"i": 8,
+"src": "unit",
+"id": 554
+},
+{
+"ur": "پیار",
+"rom": "pyār",
+"en": "love",
+"unit": 7,
+"i": 9,
+"src": "unit",
+"id": 555
+},
+{
+"ur": "مہربانی",
+"rom": "mehrbānī",
+"en": "kindness",
+"unit": 7,
+"i": 10,
+"src": "unit",
+"id": 556
+},
+{
+"ur": "ڈاکٹر",
+"rom": "ḍākṭar",
+"en": "doctor",
+"unit": 7,
+"i": 11,
+"src": "unit",
+"id": 557
+},
+{
+"ur": "چھوڑ",
+"rom": "chhoṛ",
+"en": "leave (stem)",
+"unit": 7,
+"i": 12,
+"src": "unit",
+"id": 558
+},
+{
+"ur": "والد",
+"rom": "wālid",
+"en": "father",
+"unit": 7,
+"i": 13,
+"src": "unit",
+"id": 559
+},
+{
+"ur": "تھوڑا",
+"rom": "thoṛā",
+"en": "a little",
+"unit": 7,
+"i": 14,
+"src": "unit",
+"id": 560
+},
+{
+"ur": "امید",
+"rom": "ummīd",
+"en": "hope",
+"unit": 7,
+"i": 15,
+"src": "unit",
+"id": 561
+},
+{
+"ur": "زمین",
+"rom": "zamīn",
+"en": "earth",
+"unit": 7,
+"i": 16,
+"src": "unit",
+"id": 562
+},
+{
+"ur": "لڑکی",
+"rom": "laṛkī",
+"en": "girl",
+"unit": 7,
+"i": 17,
+"src": "unit",
+"id": 563
+},
+{
+"ur": "گھڑی",
+"rom": "ghaṛī",
+"en": "watch",
+"unit": 7,
+"i": 18,
+"src": "unit",
+"id": 564
+},
+{
+"ur": "امیر",
+"rom": "amīr",
+"en": "rich",
+"unit": 7,
+"i": 19,
+"src": "unit",
+"id": 565
+},
+{
+"ur": "زندہ",
+"rom": "zinda",
+"en": "alive",
+"unit": 7,
+"i": 20,
+"src": "unit",
+"id": 566
+},
+{
+"ur": "تیز",
+"rom": "tez",
+"en": "fast, sharp",
+"unit": 7,
+"i": 21,
+"src": "unit",
+"id": 567
+},
+{
+"ur": "چیز",
+"rom": "chīz",
+"en": "thing",
+"unit": 7,
+"i": 22,
+"src": "unit",
+"id": 568
+},
+{
+"ur": "والدہ",
+"rom": "wālida",
+"en": "mother",
+"unit": 7,
+"i": 23,
+"src": "unit",
+"id": 569
+},
+{
+"ur": "اکثر",
+"rom": "aks̱ar",
+"en": "often",
+"unit": 7,
+"i": 24,
+"src": "unit",
+"id": 570
+},
+{
+"ur": "سڑک",
+"rom": "saṛak",
+"en": "road",
+"unit": 7,
+"i": 25,
+"src": "unit",
+"id": 571
+},
+{
+"ur": "پڑھا",
+"rom": "paṛhā",
+"en": "read (past)",
+"unit": 7,
+"i": 26,
+"src": "unit",
+"id": 572
+},
+{
+"ur": "زور",
+"rom": "zor",
+"en": "strength",
+"unit": 7,
+"i": 27,
+"src": "unit",
+"id": 573
+},
+{
+"ur": "بلکہ",
+"rom": "balki",
+"en": "rather, but also",
+"unit": 7,
+"i": 28,
+"src": "unit",
+"id": 574
+},
+{
+"ur": "اتوار",
+"rom": "itwār",
+"en": "Sunday",
+"unit": 7,
+"i": 29,
+"src": "unit",
+"id": 575
+},
+{
+"ur": "پڑھنے",
+"rom": "paṛhne",
+"en": "to read (oblique)",
+"unit": 7,
+"i": 30,
+"src": "unit",
+"id": 576
+},
+{
+"ur": "دروازہ",
+"rom": "darwāza",
+"en": "door",
+"unit": 7,
+"i": 31,
+"src": "unit",
+"id": 577
+},
+{
+"ur": "جہاز",
+"rom": "jahāz",
+"en": "ship, aeroplane",
+"unit": 7,
+"i": 32,
+"src": "unit",
+"id": 578
+},
+{
+"ur": "پیر",
+"rom": "pīr",
+"en": "Monday",
+"unit": 7,
+"i": 33,
+"src": "unit",
+"id": 579
+},
+{
+"ur": "بندہ",
+"rom": "banda",
+"en": "person",
+"unit": 7,
+"i": 34,
+"src": "unit",
+"id": 580
+},
+{
+"ur": "روز",
+"rom": "roz",
+"en": "day, daily",
+"unit": 7,
+"i": 35,
+"src": "unit",
+"id": 581
+},
+{
+"ur": "چیزیں",
+"rom": "chīzeṉ",
+"en": "things",
+"unit": 7,
+"i": 36,
+"src": "unit",
+"id": 582
+},
+{
+"ur": "میز",
+"rom": "mez",
+"en": "table",
+"unit": 7,
+"i": 37,
+"src": "unit",
+"id": 583
+},
+{
+"ur": "پڑھ",
+"rom": "paṛh",
+"en": "read",
+"unit": 7,
+"i": 38,
+"src": "unit",
+"id": 584
+},
+{
+"ur": "روزانہ",
+"rom": "rozāna",
+"en": "daily",
+"unit": 7,
+"i": 39,
+"src": "unit",
+"id": 585
+},
+{
+"ur": "نوکری",
+"rom": "naukrī",
+"en": "job",
+"unit": 7,
+"i": 40,
+"src": "unit",
+"id": 586
+},
+{
+"ur": "کھڑے",
+"rom": "khaṛe",
+"en": "standing (plural)",
+"unit": 7,
+"i": 41,
+"src": "unit",
+"id": 587
+},
+{
+"ur": "ڈر",
+"rom": "ḍar",
+"en": "fear",
+"unit": 7,
+"i": 42,
+"src": "unit",
+"id": 588
+},
+{
+"ur": "انڈے",
+"rom": "anḍe",
+"en": "eggs",
+"unit": 7,
+"i": 43,
+"src": "unit",
+"id": 589
+},
+{
+"ur": "کھڑکی",
+"rom": "khiṛkī",
+"en": "window",
+"unit": 7,
+"i": 44,
+"src": "unit",
+"id": 590
+},
+{
+"ur": "لڑکے",
+"rom": "laṛke",
+"en": "boys",
+"unit": 7,
+"i": 45,
+"src": "unit",
+"id": 591
+},
+{
+"ur": "پڑھو",
+"rom": "paṛho",
+"en": "read!",
+"unit": 7,
+"i": 46,
+"src": "unit",
+"id": 592
+},
+{
+"ur": "کھڑی",
+"rom": "khaṛī",
+"en": "standing (fem)",
+"unit": 7,
+"i": 47,
+"src": "unit",
+"id": 593
+},
+{
+"ur": "تازہ",
+"rom": "tāza",
+"en": "fresh",
+"unit": 7,
+"i": 48,
+"src": "unit",
+"id": 594
+},
+{
+"ur": "والدین",
+"rom": "wālidain",
+"en": "parents",
+"unit": 7,
+"i": 49,
+"src": "unit",
+"id": 595
+},
+{
+"ur": "بزرگ",
+"rom": "buzurg",
+"en": "elderly person",
+"unit": 7,
+"i": 50,
+"src": "unit",
+"id": 596
+},
+{
+"ur": "تھوڑی",
+"rom": "thoṛī",
+"en": "a little (fem)",
+"unit": 7,
+"i": 51,
+"src": "unit",
+"id": 597
+},
+{
+"ur": "لڑکا",
+"rom": "laṛkā",
+"en": "boy",
+"unit": 7,
+"i": 52,
+"src": "unit",
+"id": 598
+},
+{
+"ur": "راز",
+"rom": "rāz",
+"en": "secret",
+"unit": 7,
+"i": 53,
+"src": "unit",
+"id": 599
+},
+{
+"ur": "پڑھنا",
+"rom": "paṛhnā",
+"en": "to read",
+"unit": 7,
+"i": 54,
+"src": "unit",
+"id": 600
+},
+{
+"ur": "تیزی",
+"rom": "tezī",
+"en": "speed",
+"unit": 7,
+"i": 55,
+"src": "unit",
+"id": 601
+},
+{
+"ur": "دروازے",
+"rom": "darwāze",
+"en": "doors",
+"unit": 7,
+"i": 56,
+"src": "unit",
+"id": 602
+},
+{
+"ur": "ڈرتے",
+"rom": "ḍarte",
+"en": "are afraid (plural)",
+"unit": 7,
+"i": 57,
+"src": "unit",
+"id": 603
+},
+{
+"ur": "کھڑا",
+"rom": "khaṛā",
+"en": "standing",
+"unit": 7,
+"i": 58,
+"src": "unit",
+"id": 604
+},
+{
+"ur": "پڑھتے",
+"rom": "paṛhte",
+"en": "read (plural)",
+"unit": 7,
+"i": 59,
+"src": "unit",
+"id": 605
+},
+{
+"ur": "چڑیا",
+"rom": "chiṛiyā",
+"en": "sparrow, bird",
+"unit": 7,
+"i": 60,
+"src": "unit",
+"id": 606
+},
+{
+"ur": "نماز",
+"rom": "namāz",
+"en": "prayer (namaz)",
+"unit": 7,
+"i": 61,
+"src": "unit",
+"id": 607
+},
+{
+"ur": "زمانہ",
+"rom": "zamāna",
+"en": "time, age",
+"unit": 7,
+"i": 62,
+"src": "unit",
+"id": 608
+},
+{
+"ur": "پڑھتا",
+"rom": "paṛhtā",
+"en": "reads",
+"unit": 7,
+"i": 63,
+"src": "unit",
+"id": 609
+},
+{
+"ur": "پہاڑ",
+"rom": "pahāṛ",
+"en": "mountain",
+"unit": 7,
+"i": 64,
+"src": "unit",
+"id": 610
+},
+{
+"ur": "بازار",
+"rom": "bāzār",
+"en": "market",
+"unit": 7,
+"i": 65,
+"src": "unit",
+"id": 611
+},
+{
+"ur": "بازی",
+"rom": "bāzī",
+"en": "game, bet",
+"unit": 7,
+"i": 66,
+"src": "unit",
+"id": 612
+},
+{
+"ur": "کپڑے",
+"rom": "kapṛe",
+"en": "clothes",
+"unit": 7,
+"i": 67,
+"src": "unit",
+"id": 613
+},
+{
+"ur": "کمزور",
+"rom": "kamzor",
+"en": "weak",
+"unit": 7,
+"i": 68,
+"src": "unit",
+"id": 614
+},
+{
+"ur": "روزہ",
+"rom": "roza",
+"en": "fast",
+"unit": 7,
+"i": 69,
+"src": "unit",
+"id": 615
+},
+{
+"ur": "جوڑا",
+"rom": "joṛā",
+"en": "pair, couple",
+"unit": 7,
+"i": 70,
+"src": "unit",
+"id": 616
+},
+{
+"ur": "بازو",
+"rom": "bāzū",
+"en": "arm",
+"unit": 7,
+"i": 71,
+"src": "unit",
+"id": 617
+},
+{
+"ur": "نازک",
+"rom": "nāzuk",
+"en": "delicate",
+"unit": 7,
+"i": 72,
+"src": "unit",
+"id": 618
+}
+]

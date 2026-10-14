@@ -1,0 +1,86 @@
+{
+ "15": {
+  "verdict": "keep",
+  "note": "key + house reads owner; tidy, in style"
+ },
+ "23": {
+  "verdict": "keep",
+  "note": "father with child on shoulders; readable though arm overlap is busy"
+ },
+ "28": {
+  "verdict": "keep",
+  "note": "medal on chest reads pride/winner; adult not boy but acceptable"
+ },
+ "74": {
+  "verdict": "drop",
+  "note": "milestone clipped at frame edge, hills odd, road reads generic; 'mile' not clear"
+ },
+ "96": {
+  "verdict": "drop",
+  "note": "reads as generic builder, not founder; stray triangle artifact at lower-left hand"
+ },
+ "133": {
+  "verdict": "drop",
+  "note": "cap and salute read as police/pilot; no bat or armband, captain not conveyed"
+ },
+ "142": {
+  "verdict": "keep",
+  "note": "clean ripe apple, instantly clear"
+ },
+ "144": {
+  "verdict": "keep",
+  "note": "clean shiny pot, in style"
+ },
+ "214": {
+  "verdict": "keep",
+  "note": "bed room beside house, clear"
+ },
+ "272": {
+  "verdict": "keep",
+  "note": "water between green fields, reads canal/river well enough"
+ },
+ "284": {
+  "verdict": "drop",
+  "note": "reads as rug/tarp/trampoline with corner knobs, not a pillow"
+ },
+ "376": {
+  "verdict": "keep",
+  "note": "cute cow, clear animal"
+ },
+ "401": {
+  "verdict": "keep",
+  "note": "clear cotton bolls on branch"
+ },
+ "492": {
+  "verdict": "keep",
+  "note": "banana, orange, apple: clear fruit"
+ },
+ "558": {
+  "verdict": "keep",
+  "note": "balloon floating off from child's open hand reads let go; hand slightly odd"
+ },
+ "638": {
+  "verdict": "drop",
+  "note": "bird sits on child's head, odd claw hands, let-go not clear"
+ },
+ "640": {
+  "verdict": "drop",
+  "note": "adult grimace reads angry, gourd bigger than head, bitter not clear"
+ },
+ "666": {
+  "verdict": "drop",
+  "note": "X-cross eyes make the doll look dead/creepy for kids"
+ },
+ "717": {
+  "verdict": "keep",
+  "note": "sad figure, patches, cracked wall, empty bowl read poor"
+ },
+ "997": {
+  "verdict": "keep",
+  "note": "swings, tree, park clear"
+ },
+ "1020": {
+  "verdict": "keep",
+  "note": "clear jalebi spirals on plate"
+ }
+}

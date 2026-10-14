@@ -1,0 +1,929 @@
+[
+{
+"ur": "گفتگو",
+"rom": "guftagū",
+"en": "conversation",
+"unit": 8,
+"i": 53,
+"src": "unit",
+"id": 722
+},
+{
+"ur": "خواب",
+"rom": "k͟hwāb",
+"en": "dream",
+"unit": 8,
+"i": 54,
+"src": "unit",
+"id": 723
+},
+{
+"ur": "موسیقی",
+"rom": "mūsīqī",
+"en": "music",
+"unit": 8,
+"i": 55,
+"src": "unit",
+"id": 724
+},
+{
+"ur": "قلعہ",
+"rom": "qilʻa",
+"en": "fort",
+"unit": 8,
+"i": 56,
+"src": "unit",
+"id": 725
+},
+{
+"ur": "معنی",
+"rom": "maʻnī",
+"en": "meaning",
+"unit": 8,
+"i": 57,
+"src": "unit",
+"id": 726
+},
+{
+"ur": "سفید",
+"rom": "safīd",
+"en": "white",
+"unit": 8,
+"i": 58,
+"src": "unit",
+"id": 727
+},
+{
+"ur": "معاف",
+"rom": "muʻāf",
+"en": "forgiven",
+"unit": 8,
+"i": 59,
+"src": "unit",
+"id": 728
+},
+{
+"ur": "محبت",
+"rom": "muḥabbat",
+"en": "love",
+"unit": 8,
+"i": 60,
+"src": "unit",
+"id": 729
+},
+{
+"ur": "حادثہ",
+"rom": "ḥādis̱a",
+"en": "accident",
+"unit": 8,
+"i": 61,
+"src": "unit",
+"id": 730
+},
+{
+"ur": "عادت",
+"rom": "ʻādat",
+"en": "habit",
+"unit": 8,
+"i": 62,
+"src": "unit",
+"id": 731
+},
+{
+"ur": "عزت",
+"rom": "ʻizzat",
+"en": "honour",
+"unit": 8,
+"i": 63,
+"src": "unit",
+"id": 732
+},
+{
+"ur": "باغ",
+"rom": "bāg͟h",
+"en": "garden",
+"unit": 8,
+"i": 64,
+"src": "unit",
+"id": 733
+},
+{
+"ur": "خبر",
+"rom": "k͟habar",
+"en": "news",
+"unit": 8,
+"i": 65,
+"src": "unit",
+"id": 734
+},
+{
+"ur": "حساب",
+"rom": "ḥisāb",
+"en": "maths",
+"unit": 8,
+"i": 66,
+"src": "unit",
+"id": 735
+},
+{
+"ur": "سخت",
+"rom": "sak͟ht",
+"en": "hard, tough",
+"unit": 8,
+"i": 67,
+"src": "unit",
+"id": 736
+},
+{
+"ur": "خوشی",
+"rom": "k͟hushī",
+"en": "happiness",
+"unit": 8,
+"i": 68,
+"src": "unit",
+"id": 737
+},
+{
+"ur": "خریدنا",
+"rom": "k͟harīdnā",
+"en": "to buy",
+"unit": 8,
+"i": 69,
+"src": "unit",
+"id": 738
+},
+{
+"ur": "فکر",
+"rom": "fikr",
+"en": "worry, thought",
+"unit": 8,
+"i": 70,
+"src": "unit",
+"id": 739
+},
+{
+"ur": "عجیب",
+"rom": "ʻajīb",
+"en": "strange",
+"unit": 8,
+"i": 71,
+"src": "unit",
+"id": 740
+},
+{
+"ur": "عقل",
+"rom": "ʻaql",
+"en": "intelligence",
+"unit": 8,
+"i": 72,
+"src": "unit",
+"id": 741
+},
+{
+"ur": "خون",
+"rom": "k͟hūn",
+"en": "blood",
+"unit": 8,
+"i": 73,
+"src": "unit",
+"id": 742
+},
+{
+"ur": "خالی",
+"rom": "k͟hālī",
+"en": "empty",
+"unit": 8,
+"i": 74,
+"src": "unit",
+"id": 743
+},
+{
+"ur": "عینک",
+"rom": "ʻainak",
+"en": "spectacles",
+"unit": 8,
+"i": 75,
+"src": "unit",
+"id": 744
+},
+{
+"ur": "قیمت",
+"rom": "qīmat",
+"en": "price",
+"unit": 8,
+"i": 76,
+"src": "unit",
+"id": 745
+},
+{
+"ur": "نقشہ",
+"rom": "naqsha",
+"en": "map",
+"unit": 8,
+"i": 77,
+"src": "unit",
+"id": 746
+},
+{
+"ur": "خوشبو",
+"rom": "k͟hushbū",
+"en": "fragrance",
+"unit": 8,
+"i": 78,
+"src": "unit",
+"id": 747
+},
+{
+"ur": "عمدہ",
+"rom": "ʻumda",
+"en": "excellent",
+"unit": 8,
+"i": 79,
+"src": "unit",
+"id": 748
+},
+{
+"ur": "قلم",
+"rom": "qalam",
+"en": "pen",
+"unit": 8,
+"i": 80,
+"src": "unit",
+"id": 749
+},
+{
+"ur": "بخار",
+"rom": "buk͟hār",
+"en": "fever",
+"unit": 8,
+"i": 81,
+"src": "unit",
+"id": 750
+},
+{
+"ur": "سیب",
+"rom": "seb",
+"en": "apple",
+"unit": 8,
+"i": 82,
+"src": "unit",
+"id": 751
+},
+{
+"ur": "خشک",
+"rom": "k͟hushk",
+"en": "dry",
+"unit": 8,
+"i": 83,
+"src": "unit",
+"id": 752
+},
+{
+"ur": "شیشہ",
+"rom": "shīsha",
+"en": "glass, mirror",
+"unit": 8,
+"i": 84,
+"src": "unit",
+"id": 753
+},
+{
+"ur": "فٹبال",
+"rom": "fuṭbāl",
+"en": "football",
+"unit": 8,
+"i": 85,
+"src": "unit",
+"id": 754
+},
+{
+"ur": "قدم",
+"rom": "qadam",
+"en": "step",
+"unit": 8,
+"i": 86,
+"src": "unit",
+"id": 755
+},
+{
+"ur": "تکلیف",
+"rom": "taklīf",
+"en": "trouble",
+"unit": 8,
+"i": 87,
+"src": "unit",
+"id": 756
+},
+{
+"ur": "جمعہ",
+"rom": "jumʻa",
+"en": "Friday",
+"unit": 8,
+"i": 88,
+"src": "unit",
+"id": 757
+},
+{
+"ur": "خاموش",
+"rom": "k͟hāmosh",
+"en": "silent",
+"unit": 8,
+"i": 89,
+"src": "unit",
+"id": 758
+},
+{
+"ur": "غم",
+"rom": "g͟ham",
+"en": "grief",
+"unit": 8,
+"i": 90,
+"src": "unit",
+"id": 759
+},
+{
+"ur": "علاج",
+"rom": "ʻilāj",
+"en": "treatment",
+"unit": 8,
+"i": 91,
+"src": "unit",
+"id": 760
+},
+{
+"ur": "خالد",
+"rom": "k͟hālid",
+"en": "Khalid (a name)",
+"unit": 8,
+"i": 92,
+"src": "unit",
+"id": 761
+},
+{
+"ur": "فرش",
+"rom": "farsh",
+"en": "floor",
+"unit": 8,
+"i": 93,
+"src": "unit",
+"id": 762
+},
+{
+"ur": "فوری",
+"rom": "faurī",
+"en": "immediate",
+"unit": 8,
+"i": 94,
+"src": "unit",
+"id": 763
+},
+{
+"ur": "لباس",
+"rom": "libās",
+"en": "clothes",
+"unit": 8,
+"i": 95,
+"src": "unit",
+"id": 764
+},
+{
+"ur": "خالہ",
+"rom": "k͟hāla",
+"en": "maternal aunt",
+"unit": 8,
+"i": 96,
+"src": "unit",
+"id": 765
+},
+{
+"ur": "جمعرات",
+"rom": "jumʻerāt",
+"en": "Thursday",
+"unit": 8,
+"i": 97,
+"src": "unit",
+"id": 766
+},
+{
+"ur": "خرگوش",
+"rom": "k͟hargosh",
+"en": "rabbit",
+"unit": 8,
+"i": 98,
+"src": "unit",
+"id": 767
+},
+{
+"ur": "چالاک",
+"rom": "chālāk",
+"en": "cunning, sly",
+"unit": 8,
+"i": 99,
+"src": "unit",
+"id": 768
+},
+{
+"ur": "چچا",
+"rom": "chachā",
+"en": "paternal uncle",
+"unit": 8,
+"i": 100,
+"src": "unit",
+"id": 769
+},
+{
+"ur": "حرف",
+"rom": "ḥarf",
+"en": "letter, word",
+"unit": 8,
+"i": 101,
+"src": "unit",
+"id": 770
+},
+{
+"ur": "مسافر",
+"rom": "musāfir",
+"en": "traveller",
+"unit": 8,
+"i": 102,
+"src": "unit",
+"id": 771
+},
+{
+"ur": "عید",
+"rom": "ʻīd",
+"en": "Eid",
+"unit": 8,
+"i": 103,
+"src": "unit",
+"id": 772
+},
+{
+"ur": "خیمہ",
+"rom": "k͟haima",
+"en": "tent",
+"unit": 8,
+"i": 104,
+"src": "unit",
+"id": 773
+},
+{
+"ur": "قاعدہ",
+"rom": "qāʻida",
+"en": "rule, primer",
+"unit": 8,
+"i": 105,
+"src": "unit",
+"id": 774
+},
+{
+"ur": "شرارت",
+"rom": "sharārat",
+"en": "mischief",
+"unit": 8,
+"i": 106,
+"src": "unit",
+"id": 775
+},
+{
+"ur": "حلوہ",
+"rom": "ḥalwa",
+"en": "halwa",
+"unit": 8,
+"i": 107,
+"src": "unit",
+"id": 776
+},
+{
+"ur": "حیوان",
+"rom": "ḥaiwān",
+"en": "animal",
+"unit": 8,
+"i": 108,
+"src": "unit",
+"id": 777
+},
+{
+"ur": "ناخن",
+"rom": "nāk͟hun",
+"en": "nail",
+"unit": 8,
+"i": 109,
+"src": "unit",
+"id": 778
+},
+{
+"ur": "طرح",
+"rom": "t̤araḥ",
+"en": "way, like",
+"unit": 9,
+"i": 0,
+"src": "unit",
+"id": 779
+},
+{
+"ur": "صرف",
+"rom": "ṣirf",
+"en": "only",
+"unit": 9,
+"i": 1,
+"src": "unit",
+"id": 780
+},
+{
+"ur": "طرف",
+"rom": "t̤araf",
+"en": "side, direction",
+"unit": 9,
+"i": 2,
+"src": "unit",
+"id": 781
+},
+{
+"ur": "ضرورت",
+"rom": "ẓarūrat",
+"en": "need",
+"unit": 9,
+"i": 3,
+"src": "unit",
+"id": 782
+},
+{
+"ur": "نظر",
+"rom": "naz̤ar",
+"en": "sight",
+"unit": 9,
+"i": 4,
+"src": "unit",
+"id": 783
+},
+{
+"ur": "صبح",
+"rom": "ṣubḥ",
+"en": "morning",
+"unit": 9,
+"i": 5,
+"src": "unit",
+"id": 784
+},
+{
+"ur": "انتظار",
+"rom": "intiz̤ār",
+"en": "waiting",
+"unit": 9,
+"i": 6,
+"src": "unit",
+"id": 785
+},
+{
+"ur": "غلط",
+"rom": "g͟halat̤",
+"en": "wrong",
+"unit": 9,
+"i": 7,
+"src": "unit",
+"id": 786
+},
+{
+"ur": "حصہ",
+"rom": "ḥiṣṣa",
+"en": "part, share",
+"unit": 9,
+"i": 8,
+"src": "unit",
+"id": 787
+},
+{
+"ur": "مطابق",
+"rom": "mut̤ābiq",
+"en": "according to",
+"unit": 9,
+"i": 9,
+"src": "unit",
+"id": 788
+},
+{
+"ur": "خوبصورت",
+"rom": "k͟hūbṣūrat",
+"en": "beautiful",
+"unit": 9,
+"i": 10,
+"src": "unit",
+"id": 789
+},
+{
+"ur": "صحیح",
+"rom": "ṣaḥīḥ",
+"en": "correct",
+"unit": 9,
+"i": 11,
+"src": "unit",
+"id": 790
+},
+{
+"ur": "صدی",
+"rom": "ṣadī",
+"en": "century",
+"unit": 9,
+"i": 12,
+"src": "unit",
+"id": 791
+},
+{
+"ur": "خط",
+"rom": "k͟hat̤",
+"en": "letter",
+"unit": 9,
+"i": 13,
+"src": "unit",
+"id": 792
+},
+{
+"ur": "صاحب",
+"rom": "ṣāḥib",
+"en": "sir, owner",
+"unit": 9,
+"i": 14,
+"src": "unit",
+"id": 793
+},
+{
+"ur": "شخص",
+"rom": "shak͟hṣ",
+"en": "person",
+"unit": 9,
+"i": 15,
+"src": "unit",
+"id": 794
+},
+{
+"ur": "خاص",
+"rom": "k͟hāṣ",
+"en": "special",
+"unit": 9,
+"i": 16,
+"src": "unit",
+"id": 795
+},
+{
+"ur": "صدر",
+"rom": "ṣadr",
+"en": "president",
+"unit": 9,
+"i": 17,
+"src": "unit",
+"id": 796
+},
+{
+"ur": "ضروری",
+"rom": "ẓarūrī",
+"en": "necessary",
+"unit": 9,
+"i": 18,
+"src": "unit",
+"id": 797
+},
+{
+"ur": "نظام",
+"rom": "niz̤ām",
+"en": "system",
+"unit": 9,
+"i": 19,
+"src": "unit",
+"id": 798
+},
+{
+"ur": "مصروف",
+"rom": "maṣrūf",
+"en": "busy",
+"unit": 9,
+"i": 20,
+"src": "unit",
+"id": 799
+},
+{
+"ur": "اصل",
+"rom": "aṣl",
+"en": "origin, real",
+"unit": 9,
+"i": 21,
+"src": "unit",
+"id": 800
+},
+{
+"ur": "ذریعہ",
+"rom": "ẕarīʻa",
+"en": "means",
+"unit": 9,
+"i": 22,
+"src": "unit",
+"id": 801
+},
+{
+"ur": "صاف",
+"rom": "ṣāf",
+"en": "clean",
+"unit": 9,
+"i": 23,
+"src": "unit",
+"id": 802
+},
+{
+"ur": "عظیم",
+"rom": "ʻaz̤īm",
+"en": "great",
+"unit": 9,
+"i": 24,
+"src": "unit",
+"id": 803
+},
+{
+"ur": "مرضی",
+"rom": "marẓī",
+"en": "will, wish",
+"unit": 9,
+"i": 25,
+"src": "unit",
+"id": 804
+},
+{
+"ur": "الفاظ",
+"rom": "alfāz̤",
+"en": "words",
+"unit": 9,
+"i": 26,
+"src": "unit",
+"id": 805
+},
+{
+"ur": "غلطی",
+"rom": "g͟halat̤ī",
+"en": "mistake",
+"unit": 9,
+"i": 27,
+"src": "unit",
+"id": 806
+},
+{
+"ur": "صورت",
+"rom": "ṣūrat",
+"en": "form, face",
+"unit": 9,
+"i": 28,
+"src": "unit",
+"id": 807
+},
+{
+"ur": "طریقہ",
+"rom": "t̤arīqa",
+"en": "method",
+"unit": 9,
+"i": 29,
+"src": "unit",
+"id": 808
+},
+{
+"ur": "طالب",
+"rom": "t̤ālib",
+"en": "student",
+"unit": 9,
+"i": 30,
+"src": "unit",
+"id": 809
+},
+{
+"ur": "صحت",
+"rom": "ṣiḥḥat",
+"en": "health",
+"unit": 9,
+"i": 31,
+"src": "unit",
+"id": 810
+},
+{
+"ur": "اظہار",
+"rom": "iz̤hār",
+"en": "expression",
+"unit": 9,
+"i": 32,
+"src": "unit",
+"id": 811
+},
+{
+"ur": "لفظ",
+"rom": "lafz̤",
+"en": "word",
+"unit": 9,
+"i": 33,
+"src": "unit",
+"id": 812
+},
+{
+"ur": "مطلب",
+"rom": "mat̤lab",
+"en": "meaning, purpose",
+"unit": 9,
+"i": 34,
+"src": "unit",
+"id": 813
+},
+{
+"ur": "تصویر",
+"rom": "taṣvīr",
+"en": "picture",
+"unit": 9,
+"i": 35,
+"src": "unit",
+"id": 814
+},
+{
+"ur": "خطرہ",
+"rom": "k͟hat̤ra",
+"en": "danger",
+"unit": 9,
+"i": 36,
+"src": "unit",
+"id": 815
+},
+{
+"ur": "اضافہ",
+"rom": "iẓāfa",
+"en": "increase",
+"unit": 9,
+"i": 37,
+"src": "unit",
+"id": 816
+},
+{
+"ur": "مقصد",
+"rom": "maqṣad",
+"en": "aim",
+"unit": 9,
+"i": 38,
+"src": "unit",
+"id": 817
+},
+{
+"ur": "منظر",
+"rom": "manz̤ar",
+"en": "scene, view",
+"unit": 9,
+"i": 39,
+"src": "unit",
+"id": 818
+},
+{
+"ur": "ظاہر",
+"rom": "z̤āhir",
+"en": "apparent",
+"unit": 9,
+"i": 40,
+"src": "unit",
+"id": 819
+},
+{
+"ur": "نظم",
+"rom": "naz̤m",
+"en": "poem",
+"unit": 9,
+"i": 41,
+"src": "unit",
+"id": 820
+},
+{
+"ur": "طویل",
+"rom": "t̤awīl",
+"en": "long",
+"unit": 9,
+"i": 42,
+"src": "unit",
+"id": 821
+},
+{
+"ur": "وطن",
+"rom": "wat̤an",
+"en": "homeland",
+"unit": 9,
+"i": 43,
+"src": "unit",
+"id": 822
+},
+{
+"ur": "ناراض",
+"rom": "nārāẓ",
+"en": "angry",
+"unit": 9,
+"i": 44,
+"src": "unit",
+"id": 823
+},
+{
+"ur": "محفوظ",
+"rom": "maḥfūz̤",
+"en": "safe",
+"unit": 9,
+"i": 45,
+"src": "unit",
+"id": 824
+}
+]

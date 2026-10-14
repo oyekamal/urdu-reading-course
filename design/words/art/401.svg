@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><g stroke="#1E2F55" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+<path d="M20 214 Q100 170 236 70" fill="none" stroke="#B97A4C" stroke-width="10"/>
+<path d="M70 190 Q40 150 58 128 Q90 146 70 190Z" fill="#5FA55A"/>
+<g>
+<path d="M30 120 L40 96 L56 108 L70 90 L80 112 L98 104 L96 132Z" fill="#8B5A2B"/>
+<circle cx="64" cy="94" r="30" fill="#FFFFFF"/><circle cx="40" cy="108" r="22" fill="#FFFFFF"/><circle cx="88" cy="106" r="22" fill="#FFFFFF"/>
+<path d="M36 128 L48 112 L64 126 L80 112 L94 128 Q64 150 36 128Z" fill="#8B5A2B"/>
+</g>
+<g transform="translate(100 -4)">
+<circle cx="64" cy="94" r="30" fill="#FFFFFF"/><circle cx="40" cy="108" r="22" fill="#FFFFFF"/><circle cx="88" cy="106" r="22" fill="#FFFFFF"/>
+<path d="M36 128 L48 112 L64 126 L80 112 L94 128 Q64 150 36 128Z" fill="#8B5A2B"/>
+</g>
+<g transform="translate(60 60)">
+<circle cx="64" cy="94" r="30" fill="#FFFFFF"/><circle cx="40" cy="108" r="22" fill="#FFFFFF"/><circle cx="88" cy="106" r="22" fill="#FFFFFF"/>
+<path d="M36 128 L48 112 L64 126 L80 112 L94 128 Q64 150 36 128Z" fill="#8B5A2B"/>
+</g>
+</g></svg>

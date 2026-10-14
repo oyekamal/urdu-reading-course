@@ -1,0 +1,1362 @@
+[
+ {
+  "id": 310,
+  "ur": "جا",
+  "rom": "jā",
+  "en": "go",
+  "concept": "person walking away, going",
+  "fit": "close",
+  "cands": [
+   "om:1F6B6",
+   "tw:1f6b6",
+   "mb:walk_,_to",
+   "mb:go_,_to"
+  ],
+  "draw": "A boy walking away along a village lane, seen from the side."
+ },
+ {
+  "id": 311,
+  "ur": "چاہتا",
+  "rom": "chāhtā",
+  "en": "wants",
+  "concept": "wanting something, reaching out for it",
+  "fit": "metaphor",
+  "cands": [
+   "mb:want_,_to"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 312,
+  "ur": "سو",
+  "rom": "sau, so",
+  "en": "hundred, to sleep",
+  "concept": "one hundred (100)",
+  "fit": "direct",
+  "cands": [
+   "mb:hundred",
+   "om:1F4AF",
+   "tw:1f4af"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 313,
+  "ur": "گی",
+  "rom": "gī",
+  "en": "will (feminine)",
+  "concept": "will (future), looking ahead to tomorrow",
+  "fit": "none",
+  "cands": [],
+  "draw": "A girl pointing ahead at a rising sun, meaning tomorrow."
+ },
+ {
+  "id": 314,
+  "ur": "لوگ",
+  "rom": "log",
+  "en": "people",
+  "concept": "a group of people",
+  "fit": "close",
+  "cands": [
+   "om:1F465",
+   "tw:1f465",
+   "om:1F46A",
+   "tw:1f46a"
+  ],
+  "draw": "A group of men, women and children standing together in a village square."
+ },
+ {
+  "id": 315,
+  "ur": "لگا",
+  "rom": "lagā",
+  "en": "began, seemed",
+  "concept": "beginning, starting",
+  "fit": "close",
+  "cands": [
+   "mb:begin_start"
+  ],
+  "draw": "A child at the starting line about to begin a race."
+ },
+ {
+  "id": 316,
+  "ur": "اسی",
+  "rom": "usī",
+  "en": "that very",
+  "concept": "this very one, pointing at it",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F449",
+   "tw:1f449"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 317,
+  "ur": "کوشش",
+  "rom": "koshish",
+  "en": "effort",
+  "concept": "effort, trying hard",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4AA",
+   "tw:1f4aa"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 318,
+  "ur": "جاتی",
+  "rom": "jātī",
+  "en": "goes (fem)",
+  "concept": "woman or girl walking",
+  "fit": "close",
+  "cands": [
+   "om:1F6B6-200D-2640-FE0F",
+   "mb:walk_,_to"
+  ],
+  "draw": "A girl in shalwar kameez walking along a lane."
+ },
+ {
+  "id": 319,
+  "ur": "شامل",
+  "rom": "shāmil",
+  "en": "included",
+  "concept": "included, joined in the group",
+  "fit": "none",
+  "cands": [],
+  "draw": "A child hand placing a marble into a box with other marbles."
+ },
+ {
+  "id": 320,
+  "ur": "شہر",
+  "rom": "shahr",
+  "en": "city",
+  "concept": "a city of buildings",
+  "fit": "direct",
+  "cands": [
+   "om:1F3D9",
+   "tw:1f3d9",
+   "om:1F306",
+   "tw:1f306"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 321,
+  "ur": "ہمیشہ",
+  "rom": "hamesha",
+  "en": "always",
+  "concept": "always, forever",
+  "fit": "metaphor",
+  "cands": [
+   "om:267E",
+   "tw:267e"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 322,
+  "ur": "مگر",
+  "rom": "magar",
+  "en": "but",
+  "concept": "but (contrast)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 323,
+  "ur": "کیسے",
+  "rom": "kaise",
+  "en": "how",
+  "concept": "how, a question about the way",
+  "fit": "metaphor",
+  "cands": [
+   "mb:how"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 324,
+  "ur": "بارش",
+  "rom": "bārish",
+  "en": "rain",
+  "concept": "rain",
+  "fit": "direct",
+  "cands": [
+   "om:1F327",
+   "tw:1f327",
+   "mb:rain"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 325,
+  "ur": "جانا",
+  "rom": "jānā",
+  "en": "to go",
+  "concept": "to go, walking away",
+  "fit": "close",
+  "cands": [
+   "om:1F6B6",
+   "tw:1f6b6",
+   "mb:walk_,_to",
+   "mb:go_,_to"
+  ],
+  "draw": "A boy walking away along a village lane, seen from the side."
+ },
+ {
+  "id": 326,
+  "ur": "بس",
+  "rom": "bas",
+  "en": "enough",
+  "concept": "enough, stop, that is enough",
+  "fit": "metaphor",
+  "cands": [
+   "mb:enough",
+   "om:1F6D1",
+   "tw:1f6d1"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 327,
+  "ur": "دوست",
+  "rom": "dost",
+  "en": "friend",
+  "concept": "two friends together",
+  "fit": "close",
+  "cands": [
+   "om:1F46C",
+   "tw:1f46c",
+   "om:1F9D1-200D-1F91D-200D-1F9D1",
+   "tw:1f9d1-200d-1f91d-200d-1f9d1"
+  ],
+  "draw": "Two Pakistani children holding hands and smiling."
+ },
+ {
+  "id": 328,
+  "ur": "واپس",
+  "rom": "wāpas",
+  "en": "back",
+  "concept": "back, return",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F519",
+   "tw:1f519",
+   "mb:return_,_to"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 329,
+  "ur": "اگر",
+  "rom": "agar",
+  "en": "if",
+  "concept": "if (condition)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 330,
+  "ur": "لگتا",
+  "rom": "lagtā",
+  "en": "seems",
+  "concept": "it seems, appears",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 331,
+  "ur": "جلدی",
+  "rom": "jaldī",
+  "en": "quickly",
+  "concept": "quickly, fast",
+  "fit": "close",
+  "cands": [
+   "mb:fast_2",
+   "om:1F3C3",
+   "tw:1f3c3"
+  ],
+  "draw": "A boy running fast along a lane, dust behind him."
+ },
+ {
+  "id": 332,
+  "ur": "سکتی",
+  "rom": "saktī",
+  "en": "can (fem)",
+  "concept": "can, able to",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 333,
+  "ur": "پیسے",
+  "rom": "paise",
+  "en": "money",
+  "concept": "money, notes and coins",
+  "fit": "direct",
+  "cands": [
+   "om:1F4B0",
+   "tw:1f4b0",
+   "mb:money",
+   "om:1FA99"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 334,
+  "ur": "شادی",
+  "rom": "shādī",
+  "en": "wedding",
+  "concept": "a wedding celebration",
+  "fit": "close",
+  "cands": [
+   "om:1F492",
+   "tw:1f492",
+   "om:1F48D",
+   "tw:1f48d"
+  ],
+  "draw": "A Pakistani bride in red dress and groom with garlands at a wedding."
+ },
+ {
+  "id": 335,
+  "ur": "بچے",
+  "rom": "bachche",
+  "en": "children",
+  "concept": "children together",
+  "fit": "close",
+  "cands": [
+   "om:1F6B8",
+   "tw:1f6b8",
+   "om:1F9D2",
+   "tw:1f9d2"
+  ],
+  "draw": "Three Pakistani school children holding hands."
+ },
+ {
+  "id": 336,
+  "ur": "جواب",
+  "rom": "jawāb",
+  "en": "answer",
+  "concept": "an answer to a question",
+  "fit": "metaphor",
+  "cands": [
+   "mb:answer",
+   "om:1F4AC",
+   "tw:1f4ac"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 337,
+  "ur": "سارے",
+  "rom": "sāre",
+  "en": "all (plural)",
+  "concept": "all of them",
+  "fit": "none",
+  "cands": [],
+  "draw": "Many different fruits all gathered together in a basket."
+ },
+ {
+  "id": 338,
+  "ur": "اسکول",
+  "rom": "iskūl",
+  "en": "school",
+  "concept": "school building",
+  "fit": "direct",
+  "cands": [
+   "om:1F3EB",
+   "tw:1f3eb",
+   "mb:school"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 339,
+  "ur": "مشہور",
+  "rom": "mashhūr",
+  "en": "famous",
+  "concept": "famous, everybody knows",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F31F",
+   "tw:1f31f",
+   "om:1F929",
+   "tw:1f929"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 340,
+  "ur": "جاتے",
+  "rom": "jāte",
+  "en": "go (plural)",
+  "concept": "people walking",
+  "fit": "close",
+  "cands": [
+   "om:1F6B6",
+   "tw:1f6b6",
+   "mb:walk_,_to"
+  ],
+  "draw": "Two boys walking along a lane together."
+ },
+ {
+  "id": 341,
+  "ur": "چاہیے",
+  "rom": "chāhiye",
+  "en": "is needed, should",
+  "concept": "needed, should have",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 342,
+  "ur": "چاہتے",
+  "rom": "chāhte",
+  "en": "want (plural)",
+  "concept": "wanting something",
+  "fit": "metaphor",
+  "cands": [
+   "mb:want_,_to"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 343,
+  "ur": "دوسرے",
+  "rom": "dūsre",
+  "en": "other, second (plural)",
+  "concept": "other, second one",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F948",
+   "tw:1f948"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 344,
+  "ur": "چار",
+  "rom": "chār",
+  "en": "four",
+  "concept": "number four",
+  "fit": "direct",
+  "cands": [
+   "mb:four",
+   "om:0034-FE0F-20E3"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 345,
+  "ur": "پانچ",
+  "rom": "pānch",
+  "en": "five",
+  "concept": "number five",
+  "fit": "direct",
+  "cands": [
+   "mb:five",
+   "om:0035-FE0F-20E3"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 346,
+  "ur": "جان",
+  "rom": "jān",
+  "en": "life, dear",
+  "concept": "life, dear one, a heart",
+  "fit": "metaphor",
+  "cands": [
+   "om:2764",
+   "tw:2764",
+   "mb:heart"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 347,
+  "ur": "موسم",
+  "rom": "mausam",
+  "en": "weather, season",
+  "concept": "weather: sun and clouds",
+  "fit": "close",
+  "cands": [
+   "om:26C5",
+   "tw:26c5",
+   "om:1F326",
+   "tw:1f326"
+  ],
+  "draw": "Sky with sun, clouds and a little rain over a village field."
+ },
+ {
+  "id": 348,
+  "ur": "دس",
+  "rom": "das",
+  "en": "ten",
+  "concept": "number ten",
+  "fit": "direct",
+  "cands": [
+   "mb:ten",
+   "om:1F51F",
+   "tw:1f51f"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 349,
+  "ur": "بجے",
+  "rom": "baje",
+  "en": "o'clock",
+  "concept": "clock showing the time (o'clock)",
+  "fit": "close",
+  "cands": [
+   "mb:clock",
+   "om:23F0",
+   "tw:23f0",
+   "om:1F550"
+  ],
+  "draw": "A round wall clock in a classroom showing 3 o'clock."
+ },
+ {
+  "id": 350,
+  "ur": "دوسری",
+  "rom": "dūsrī",
+  "en": "other (fem)",
+  "concept": "other, second one",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F948",
+   "tw:1f948"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 351,
+  "ur": "جیت",
+  "rom": "jīt",
+  "en": "victory",
+  "concept": "victory, winning a prize",
+  "fit": "close",
+  "cands": [
+   "om:1F3C6",
+   "tw:1f3c6",
+   "om:270C",
+   "tw:270c"
+  ],
+  "draw": "A happy girl holding up a golden cup after winning."
+ },
+ {
+  "id": 352,
+  "ur": "چلا",
+  "rom": "chalā",
+  "en": "walked",
+  "concept": "walked, walking",
+  "fit": "close",
+  "cands": [
+   "om:1F6B6",
+   "tw:1f6b6",
+   "mb:walk_,_to"
+  ],
+  "draw": "A boy walking along a lane."
+ },
+ {
+  "id": 353,
+  "ur": "ایسا",
+  "rom": "aisā",
+  "en": "like this",
+  "concept": "like this, in this way",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 354,
+  "ur": "جانتا",
+  "rom": "jāntā",
+  "en": "knows",
+  "concept": "knowing, an idea in the head",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4A1",
+   "tw:1f4a1"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 355,
+  "ur": "مشکل",
+  "rom": "mushkil",
+  "en": "difficult",
+  "concept": "difficult, hard to do",
+  "fit": "none",
+  "cands": [],
+  "draw": "A small child struggling to lift a heavy stone, looking tired."
+ },
+ {
+  "id": 356,
+  "ur": "چینی",
+  "rom": "chīnī",
+  "en": "sugar",
+  "concept": "sugar",
+  "fit": "direct",
+  "cands": [
+   "mb:sugar_white",
+   "mb:sugar_bowl"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 357,
+  "ur": "شکریہ",
+  "rom": "shukriya",
+  "en": "thank you",
+  "concept": "thank you, hands together",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F64F",
+   "tw:1f64f"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 358,
+  "ur": "جلد",
+  "rom": "jald",
+  "en": "soon",
+  "concept": "soon, coming up",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F51C",
+   "tw:1f51c"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 359,
+  "ur": "جگہ",
+  "rom": "jagah",
+  "en": "place",
+  "concept": "a place, a spot on the map",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4CD",
+   "tw:1f4cd"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 360,
+  "ur": "رنگ",
+  "rom": "rang",
+  "en": "colour",
+  "concept": "colours, paint",
+  "fit": "close",
+  "cands": [
+   "om:1F3A8",
+   "tw:1f3a8",
+   "mb:colour",
+   "mb:paint_box"
+  ],
+  "draw": "A paint palette and brush with bright colours."
+ },
+ {
+  "id": 361,
+  "ur": "سوچ",
+  "rom": "soch",
+  "en": "thought",
+  "concept": "a thought in the head",
+  "fit": "close",
+  "cands": [
+   "om:1F4AD",
+   "tw:1f4ad",
+   "om:1F914",
+   "tw:1f914"
+  ],
+  "draw": "A simple picture of a thought in the head."
+ },
+ {
+  "id": 362,
+  "ur": "شاید",
+  "rom": "shāyad",
+  "en": "maybe",
+  "concept": "maybe, not sure",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F937",
+   "tw:1f937"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 363,
+  "ur": "سامنے",
+  "rom": "sāmne",
+  "en": "in front",
+  "concept": "in front of",
+  "fit": "metaphor",
+  "cands": [
+   "mb:in_front"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 364,
+  "ur": "استاد",
+  "rom": "ustād",
+  "en": "teacher",
+  "concept": "teacher",
+  "fit": "direct",
+  "cands": [
+   "om:1F9D1-200D-1F3EB",
+   "tw:1f9d1-200d-1f3eb",
+   "mb:teacher_1a",
+   "om:1F468-200D-1F3EB"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 365,
+  "ur": "شام",
+  "rom": "shām",
+  "en": "evening",
+  "concept": "evening, sunset",
+  "fit": "direct",
+  "cands": [
+   "om:1F307",
+   "tw:1f307",
+   "om:1F306",
+   "tw:1f306"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 366,
+  "ur": "سارا",
+  "rom": "sārā",
+  "en": "whole, all",
+  "concept": "whole, all of it",
+  "fit": "metaphor",
+  "cands": [
+   "mb:whole"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 367,
+  "ur": "شکل",
+  "rom": "shakl",
+  "en": "face, shape",
+  "concept": "a face",
+  "fit": "close",
+  "cands": [
+   "om:1F642",
+   "tw:1f642",
+   "mb:man_-_face"
+  ],
+  "draw": "A smiling child face, front view."
+ },
+ {
+  "id": 368,
+  "ur": "دوپہر",
+  "rom": "dopahar",
+  "en": "afternoon, noon",
+  "concept": "noon, sun high in the sky",
+  "fit": "close",
+  "cands": [
+   "om:2600",
+   "tw:2600",
+   "mb:afternoon"
+  ],
+  "draw": "The sun directly overhead in a bright sky above a village."
+ },
+ {
+  "id": 369,
+  "ur": "کاش",
+  "rom": "kāsh",
+  "en": "if only",
+  "concept": "if only, making a wish",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F320",
+   "tw:1f320",
+   "om:1F9DE",
+   "tw:1f9de"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 370,
+  "ur": "سات",
+  "rom": "sāt",
+  "en": "seven",
+  "concept": "number seven",
+  "fit": "direct",
+  "cands": [
+   "mb:seven",
+   "om:0037-FE0F-20E3"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 371,
+  "ur": "لگی",
+  "rom": "lagī",
+  "en": "seemed (fem)",
+  "concept": "it seemed, appeared",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 372,
+  "ur": "سچ",
+  "rom": "sach",
+  "en": "truth",
+  "concept": "truth, honest speaking",
+  "fit": "none",
+  "cands": [],
+  "draw": "A child looking straight at their mother and speaking honestly."
+ },
+ {
+  "id": 373,
+  "ur": "انسان",
+  "rom": "insān",
+  "en": "human being",
+  "concept": "a human being, person",
+  "fit": "direct",
+  "cands": [
+   "om:1F9D1",
+   "tw:1f9d1",
+   "mb:man_-_face"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 374,
+  "ur": "نیچے",
+  "rom": "nīche",
+  "en": "below",
+  "concept": "below, down under",
+  "fit": "metaphor",
+  "cands": [
+   "mb:below",
+   "om:2B07",
+   "tw:2b07"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 375,
+  "ur": "گرم",
+  "rom": "garm",
+  "en": "hot",
+  "concept": "hot",
+  "fit": "direct",
+  "cands": [
+   "mb:hot",
+   "om:1F975",
+   "tw:1f975",
+   "om:1F525"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 376,
+  "ur": "جانور",
+  "rom": "jānwar",
+  "en": "animal",
+  "concept": "an animal",
+  "fit": "close",
+  "cands": [
+   "om:1F415",
+   "tw:1f415",
+   "om:1F404",
+   "tw:1f404"
+  ],
+  "draw": "A goat, a cow and a hen together in a village yard."
+ },
+ {
+  "id": 377,
+  "ur": "روشنی",
+  "rom": "raushnī",
+  "en": "light, brightness",
+  "concept": "light, brightness",
+  "fit": "direct",
+  "cands": [
+   "om:1F4A1",
+   "tw:1f4a1",
+   "mb:light"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 378,
+  "ur": "دوسرا",
+  "rom": "dūsrā",
+  "en": "other, second",
+  "concept": "other, second one",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F948",
+   "tw:1f948"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 379,
+  "ur": "شوہر",
+  "rom": "shauhar",
+  "en": "husband",
+  "concept": "husband",
+  "fit": "direct",
+  "cands": [
+   "mb:husband",
+   "om:1F468",
+   "tw:1f468"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 380,
+  "ur": "سوال",
+  "rom": "sawāl",
+  "en": "question",
+  "concept": "a question",
+  "fit": "metaphor",
+  "cands": [
+   "om:2753",
+   "tw:2753",
+   "om:2754",
+   "tw:2754"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 381,
+  "ur": "گرمی",
+  "rom": "garmī",
+  "en": "heat, summer",
+  "concept": "heat, hot sun",
+  "fit": "close",
+  "cands": [
+   "mb:hot",
+   "om:1F975",
+   "tw:1f975",
+   "om:1F321"
+  ],
+  "draw": "A child wiping sweat under a hot summer sun."
+ },
+ {
+  "id": 382,
+  "ur": "جتنا",
+  "rom": "jitnā",
+  "en": "as much as",
+  "concept": "as much as",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 383,
+  "ur": "اونچا",
+  "rom": "ūnchā",
+  "en": "tall, high",
+  "concept": "tall, high",
+  "fit": "close",
+  "cands": [
+   "mb:tall"
+  ],
+  "draw": "A very tall tree next to a small child."
+ },
+ {
+  "id": 384,
+  "ur": "گوشت",
+  "rom": "gosht",
+  "en": "meat",
+  "concept": "meat",
+  "fit": "direct",
+  "cands": [
+   "om:1F969",
+   "tw:1f969",
+   "om:1F356",
+   "tw:1f356"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 385,
+  "ur": "کیسی",
+  "rom": "kaisī",
+  "en": "how (fem)",
+  "concept": "how, a question",
+  "fit": "metaphor",
+  "cands": [
+   "mb:how"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 386,
+  "ur": "سورج",
+  "rom": "sūraj",
+  "en": "sun",
+  "concept": "the sun",
+  "fit": "direct",
+  "cands": [
+   "om:2600",
+   "tw:2600",
+   "om:1F31E",
+   "tw:1f31e"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 387,
+  "ur": "ہسپتال",
+  "rom": "haspatāl",
+  "en": "hospital",
+  "concept": "hospital",
+  "fit": "direct",
+  "cands": [
+   "om:1F3E5",
+   "tw:1f3e5",
+   "om:1F691",
+   "tw:1f691"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 388,
+  "ur": "سلام",
+  "rom": "salām",
+  "en": "hello, greeting",
+  "concept": "greeting, salaam",
+  "fit": "close",
+  "cands": [
+   "om:1F44B",
+   "tw:1f44b",
+   "mb:hello"
+  ],
+  "draw": "A boy putting his right hand on his forehead to greet an elder, salaam."
+ },
+ {
+  "id": 389,
+  "ur": "شیر",
+  "rom": "sher",
+  "en": "lion",
+  "concept": "a lion",
+  "fit": "direct",
+  "cands": [
+   "om:1F981",
+   "tw:1f981",
+   "mb:lion"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 390,
+  "ur": "سردی",
+  "rom": "sardī",
+  "en": "cold",
+  "concept": "cold weather",
+  "fit": "close",
+  "cands": [
+   "om:1F976",
+   "tw:1f976",
+   "om:2744",
+   "tw:2744"
+  ],
+  "draw": "A child in a woolen cap and shawl shivering in winter."
+ },
+ {
+  "id": 391,
+  "ur": "چلنا",
+  "rom": "chalnā",
+  "en": "to walk",
+  "concept": "to walk",
+  "fit": "close",
+  "cands": [
+   "om:1F6B6",
+   "tw:1f6b6",
+   "mb:walk_,_to"
+  ],
+  "draw": "A boy walking along a lane."
+ },
+ {
+  "id": 392,
+  "ur": "چاند",
+  "rom": "chānd",
+  "en": "moon",
+  "concept": "the moon",
+  "fit": "direct",
+  "cands": [
+   "om:1F319",
+   "tw:1f319",
+   "mb:Moon",
+   "om:1F311"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 393,
+  "ur": "شور",
+  "rom": "shor",
+  "en": "noise",
+  "concept": "noise, loud sound",
+  "fit": "close",
+  "cands": [
+   "mb:loud",
+   "om:1F4E2",
+   "tw:1f4e2"
+  ],
+  "draw": "A child covering ears because of a very loud noise."
+ },
+ {
+  "id": 394,
+  "ur": "گلاب",
+  "rom": "gulāb",
+  "en": "rose",
+  "concept": "a rose flower",
+  "fit": "direct",
+  "cands": [
+   "om:1F339",
+   "tw:1f339",
+   "mb:rose"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 395,
+  "ur": "گیند",
+  "rom": "gend",
+  "en": "ball",
+  "concept": "a ball",
+  "fit": "direct",
+  "cands": [
+   "mb:ball",
+   "om:26BD",
+   "tw:26bd"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 396,
+  "ur": "جیب",
+  "rom": "jeb",
+  "en": "pocket",
+  "concept": "a pocket on clothes",
+  "fit": "direct",
+  "cands": [
+   "mb:pocket"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 397,
+  "ur": "جنگل",
+  "rom": "jangal",
+  "en": "forest",
+  "concept": "a forest of trees",
+  "fit": "close",
+  "cands": [
+   "om:1F333",
+   "tw:1f333",
+   "om:1F332",
+   "tw:1f332"
+  ],
+  "draw": "A thick green forest with many tall trees."
+ },
+ {
+  "id": 398,
+  "ur": "چابی",
+  "rom": "chābī",
+  "en": "key",
+  "concept": "a key",
+  "fit": "direct",
+  "cands": [
+   "om:1F511",
+   "tw:1f511",
+   "mb:key_1"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 399,
+  "ur": "چلتا",
+  "rom": "chaltā",
+  "en": "walks",
+  "concept": "walks, walking",
+  "fit": "close",
+  "cands": [
+   "om:1F6B6",
+   "tw:1f6b6",
+   "mb:walk_,_to"
+  ],
+  "draw": "A boy walking along a lane."
+ },
+ {
+  "id": 400,
+  "ur": "پیاس",
+  "rom": "pyās",
+  "en": "thirst",
+  "concept": "thirst, wanting water",
+  "fit": "direct",
+  "cands": [
+   "mb:thirsty"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 401,
+  "ur": "کپاس",
+  "rom": "kapās",
+  "en": "cotton",
+  "concept": "cotton plant with white cotton balls",
+  "fit": "none",
+  "cands": [],
+  "draw": "A cotton plant with fluffy white cotton bolls in a Pakistani field."
+ },
+ {
+  "id": 402,
+  "ur": "منگل",
+  "rom": "mangal",
+  "en": "Tuesday",
+  "concept": "Tuesday, a day on a calendar",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4C5",
+   "tw:1f4c5",
+   "mb:calendar"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 403,
+  "ur": "سنو",
+  "rom": "suno",
+  "en": "listen",
+  "concept": "listening",
+  "fit": "close",
+  "cands": [
+   "om:1F442",
+   "tw:1f442",
+   "mb:hear_,_to"
+  ],
+  "draw": "A boy cupping his hand to his ear to listen carefully."
+ },
+ {
+  "id": 404,
+  "ur": "جاوید",
+  "rom": "jāvīd",
+  "en": "Javed (a name)",
+  "concept": "name Javed, a boy",
+  "fit": "none",
+  "cands": [],
+  "draw": "A smiling Pakistani boy in shalwar kameez waving."
+ },
+ {
+  "id": 405,
+  "ur": "شاگرد",
+  "rom": "shāgird",
+  "en": "pupil, student",
+  "concept": "a student with a graduation cap and book",
+  "fit": "direct",
+  "cands": [
+   "om:1F9D1-200D-1F393",
+   "tw:1f9d1-200d-1f393"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 406,
+  "ur": "شاہد",
+  "rom": "shāhid",
+  "en": "Shahid (a name)",
+  "concept": "name Shahid, a boy",
+  "fit": "none",
+  "cands": [],
+  "draw": "A smiling Pakistani boy with school bag waving hello."
+ },
+ {
+  "id": 407,
+  "ur": "گانا",
+  "rom": "gānā",
+  "en": "song",
+  "concept": "a song, singing",
+  "fit": "close",
+  "cands": [
+   "om:1F3A4",
+   "tw:1f3a4",
+   "om:1F3B5",
+   "tw:1f3b5"
+  ],
+  "draw": "A simple picture of a song, singing."
+ },
+ {
+  "id": 408,
+  "ur": "سونا",
+  "rom": "sonā",
+  "en": "gold, to sleep",
+  "concept": "gold",
+  "fit": "direct",
+  "cands": [
+   "mb:gold_bar"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 409,
+  "ur": "ستارہ",
+  "rom": "sitāra",
+  "en": "star (sitāra)",
+  "concept": "a star",
+  "fit": "direct",
+  "cands": [
+   "om:2B50",
+   "tw:2b50",
+   "mb:star"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 410,
+  "ur": "جام",
+  "rom": "jām",
+  "en": "goblet",
+  "concept": "a goblet, a fancy cup",
+  "fit": "none",
+  "cands": [],
+  "draw": "A shiny golden goblet cup standing on a table."
+ },
+ {
+  "id": 411,
+  "ur": "سلمان",
+  "rom": "salmān",
+  "en": "Salman (a name)",
+  "concept": "name Salman, a boy",
+  "fit": "none",
+  "cands": [],
+  "draw": "A smiling Pakistani boy in a kurta waving."
+ },
+ {
+  "id": 412,
+  "ur": "سواری",
+  "rom": "sawārī",
+  "en": "ride, vehicle",
+  "concept": "a vehicle to ride",
+  "fit": "close",
+  "cands": [
+   "om:1F6FA",
+   "tw:1f6fa",
+   "om:1F68C",
+   "tw:1f68c"
+  ],
+  "draw": "A colourful Pakistani auto rickshaw on a street with a child passenger."
+ }
+]

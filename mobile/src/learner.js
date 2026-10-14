@@ -1,6 +1,6 @@
 // Learner mode: Today, Session, Lesson, Review, Read, Test yourself, Progress, Settings.
 import { db, uid } from './db.js';
-import { C, play, W, shuffle, wordKey, sentKey, el, toast, bandFor, recBand } from './content.js';
+import { C, play, W, shuffle, wordKey, sentKey, el, toast, bandFor, recBand, wimg } from './content.js';
 import * as D from './drills.js';
 import * as S from './session.js';
 import { renderDashboard } from './dashboard.js';
@@ -133,7 +133,7 @@ export async function renderLearner(root, ctx) {
     const dk = el('div', 'dock-row'); function show() { dk.innerHTML = ''; if (i >= cards.length) { dk.remove(); toast(`${right}/${cards.length} remembered`); onDone(); return; } const c = cards[i]; ctr.textContent = `${i + 1} / ${cards.length}`; card.innerHTML = `<div class="ur big">${esc(c.v || c.item)}</div>`;
       const sub = el('div', 'muted', c.kind === 'letter' ? 'Say the letter name and sound, then check' : 'Read the word aloud, then check'); const hear = D.sayBtn(() => play(S.audioKeyFor(c)), 'Hear it');
       const reveal = el('div', 'muted', ''); const got = el('button', 'btn btn-primary btn-wide', 'Got it'), miss = el('button', 'btn btn-wide', 'Not yet');
-      let busy = false; /* one grade per card: a burst of taps never grades two cards */ got.onclick = async () => { if (busy || !tapLock()) return; busy = true; try { await S.gradeCard(c, true); } catch (e) { busy = false; return toast('Could not save that answer. Try again.'); } right++; i++; show(); }; miss.onclick = async () => { if (busy || !tapLock()) return; busy = true; try { await S.gradeCard(c, false); } catch (e) { busy = false; return toast('Could not save that answer. Try again.'); } reveal.textContent = c.kind === 'letter' ? `${C.by[c.item].name} — ${C.by[c.item].hint}` : `${c.rom || ''} ${c.en ? '— ' + c.en : ''}`; play(S.audioKeyFor(c)); setTimeout(() => { i++; show(); }, 1400); };
+      let busy = false; /* one grade per card: a burst of taps never grades two cards */ got.onclick = async () => { if (busy || !tapLock()) return; busy = true; try { await S.gradeCard(c, true); } catch (e) { busy = false; return toast('Could not save that answer. Try again.'); } right++; i++; show(); }; miss.onclick = async () => { if (busy || !tapLock()) return; busy = true; try { await S.gradeCard(c, false); } catch (e) { busy = false; return toast('Could not save that answer. Try again.'); } reveal.textContent = c.kind === 'letter' ? `${C.by[c.item].name} — ${C.by[c.item].hint}` : `${c.rom || ''} ${c.en ? '— ' + c.en : ''}`; play(S.audioKeyFor(c)); if (c.kind !== 'letter') reveal.insertAdjacentHTML('afterbegin', wimg(c.item, 'wimg-card')); setTimeout(() => { i++; show(); }, 1400); };
       card.append(D.sayRow(hear), sub, reveal); dk.append(miss, got); box.append(dk); }
     show();
   }
@@ -237,7 +237,8 @@ export async function renderLearner(root, ctx) {
       const all = el('button', 'btn btn-wide', 'Copy all details'); all.onclick = () => copyText(BANK.map(([k, v]) => `${k}: ${v}`).join('\n'), 'Details copied', rows); dcard.append(all);
       dcard.scrollIntoView({ behavior: 'smooth', block: 'center' }); };
     ct.append(em, cpm, addr, dn, dcard, el('p', 'muted', `Version ${C.version || ''}`)); main.append(ct);
-    main.append(el('p', 'muted', 'Voices are AI-generated and play from files stored on your device. No speech is generated online.')); }  const sel = (vals, labels, cur, on) => { const s = el('select'); vals.forEach((v, i) => s.append(new Option(labels[i], v, false, v === cur))); s.onchange = () => on(s.value); return s; };
+    main.append(el('p', 'muted', 'Voices are AI-generated and play from files stored on your device. No speech is generated online.'));
+    main.append(el('p', 'muted', 'Word pictures: OpenMoji by the OpenMoji contributors (CC BY-SA 4.0, openmoji.org), Twemoji (CC BY 4.0), Mulberry Symbols by Steve Lee (CC BY-SA 2.0 UK, mulberrysymbols.org).')); }  const sel = (vals, labels, cur, on) => { const s = el('select'); vals.forEach((v, i) => s.append(new Option(labels[i], v, false, v === cur))); s.onchange = () => on(s.value); return s; };
   const lab = (t, node) => { const l = el('label', '', t); l.append(node); return l; };
   render();
 }

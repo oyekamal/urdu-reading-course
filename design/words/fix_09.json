@@ -1,0 +1,474 @@
+{
+ "825": {
+  "cands": [
+   "tw:1f4c4",
+   "om:1F4C4"
+  ],
+  "fit": "direct"
+ },
+ "828": {
+  "cands": [
+   "tw:1f4d6",
+   "om:1F4D6"
+  ],
+  "fit": "close",
+  "concept": "an open book to read"
+ },
+ "831": {
+  "cands": [
+   "tw:1f4f1",
+   "om:1F4F1"
+  ],
+  "fit": "metaphor",
+  "concept": "a phone, used to get in touch"
+ },
+ "833": {
+  "cands": [
+   "mb:dance_,_to",
+   "tw:1f57a"
+  ],
+  "fit": "direct"
+ },
+ "834": {
+  "cands": [
+   "tw:1f981",
+   "om:1F981"
+  ],
+  "fit": "metaphor"
+ },
+ "836": {
+  "cands": [
+   "tw:23f3",
+   "om:23F3"
+  ],
+  "fit": "metaphor"
+ },
+ "837": {
+  "cands": [
+   "tw:1f9ee",
+   "mb:maths"
+  ],
+  "fit": "close"
+ },
+ "838": {
+  "cands": [],
+  "fit": "none"
+ },
+ "839": {
+  "cands": [
+   "tw:265f",
+   "om:265F"
+  ],
+  "fit": "direct"
+ },
+ "840": {
+  "cands": [
+   "mb:thunder_storm",
+   "tw:1f329",
+   "om:1F329"
+  ],
+  "fit": "direct"
+ },
+ "842": {
+  "cands": [
+   "mb:healthy"
+  ],
+  "fit": "close"
+ },
+ "844": {
+  "cands": [
+   "tw:1f90f"
+  ],
+  "fit": "metaphor",
+  "concept": "a small pinch, a little bit"
+ },
+ "845": {
+  "cands": [
+   "tw:1f91d",
+   "om:1F91D"
+  ],
+  "fit": "metaphor"
+ },
+ "846": {
+  "cands": [
+   "om:1F986",
+   "mb:duck"
+  ],
+  "fit": "direct"
+ },
+ "848": {
+  "cands": [
+   "tw:1f912",
+   "om:1F912"
+  ],
+  "fit": "close"
+ },
+ "849": {
+  "cands": [
+   "tw:1f6e1",
+   "om:1F6E1"
+  ],
+  "fit": "close"
+ },
+ "850": {
+  "cands": [
+   "tw:1f9e0",
+   "om:1F9E0"
+  ],
+  "fit": "close"
+ },
+ "851": {
+  "cands": [
+   "om:1F4DD",
+   "tw:1f4dd"
+  ],
+  "fit": "close"
+ },
+ "855": {
+  "cands": [
+   "tw:1f9fc",
+   "om:1F9FC",
+   "mb:soap"
+  ],
+  "fit": "direct"
+ },
+ "857": {
+  "cands": [
+   "tw:1f4da",
+   "om:1F4DA"
+  ],
+  "fit": "close"
+ },
+ "859": {
+  "cands": [
+   "tw:1f3dc",
+   "om:1F3DC"
+  ],
+  "fit": "direct"
+ },
+ "860": {
+  "cands": [
+   "tw:1f3e1",
+   "om:1F3E1"
+  ],
+  "fit": "metaphor",
+  "concept": "a house with a garden, standing for the courtyard"
+ },
+ "862": {
+  "cands": [
+   "tw:1f54c",
+   "om:1F54C"
+  ],
+  "fit": "close"
+ },
+ "863": {
+  "cands": [
+   "tw:1f381",
+   "mb:medal",
+   "om:1F381"
+  ],
+  "fit": "close"
+ },
+ "865": {
+  "cands": [
+   "om:1F467",
+   "tw:1f467"
+  ],
+  "fit": "close"
+ },
+ "866": {
+  "cands": [
+   "om:1F4E6",
+   "tw:1f4e6"
+  ],
+  "fit": "close"
+ },
+ "867": {
+  "cands": [
+   "tw:1f99c",
+   "om:1F99C",
+   "mb:parrot"
+  ],
+  "fit": "direct"
+ },
+ "853": {
+  "cands": [
+   "tw:1f9e0",
+   "om:1F9E0"
+  ],
+  "fit": "metaphor"
+ },
+ "869": {
+  "cands": [
+   "tw:1f6b6",
+   "mb:go_,_to"
+  ],
+  "fit": "close"
+ },
+ "872": {
+  "cands": [
+   "tw:1f6b6",
+   "mb:go_,_to"
+  ],
+  "fit": "close"
+ },
+ "876": {
+  "cands": [
+   "tw:1f6b6",
+   "mb:go_,_to"
+  ],
+  "fit": "close"
+ },
+ "903": {
+  "cands": [
+   "tw:1f6b6",
+   "mb:go_,_to"
+  ],
+  "fit": "close"
+ },
+ "912": {
+  "cands": [
+   "tw:1f6b6",
+   "mb:go_,_to"
+  ],
+  "fit": "close"
+ },
+ "874": {
+  "cands": [
+   "om:1F4C5",
+   "mb:today"
+  ],
+  "fit": "metaphor",
+  "concept": "a calendar page: today's date"
+ },
+ "875": {
+  "cands": [
+   "tw:262a",
+   "om:262A"
+  ],
+  "fit": "metaphor"
+ },
+ "877": {
+  "cands": [
+   "mb:come_,_to",
+   "tw:1f6b6"
+  ],
+  "fit": "close"
+ },
+ "879": {
+  "cands": [
+   "mb:come_,_to",
+   "tw:1f6b6"
+  ],
+  "fit": "close"
+ },
+ "882": {
+  "cands": [
+   "mb:come_,_to",
+   "tw:1f6b6"
+  ],
+  "fit": "close"
+ },
+ "884": {
+  "cands": [
+   "mb:come_,_to",
+   "tw:1f6b6"
+  ],
+  "fit": "close"
+ },
+ "886": {
+  "cands": [
+   "mb:come_,_to",
+   "tw:1f6b6"
+  ],
+  "fit": "close"
+ },
+ "892": {
+  "cands": [
+   "mb:come_,_to",
+   "tw:1f6b6"
+  ],
+  "fit": "close"
+ },
+ "895": {
+  "cands": [
+   "mb:come_,_to",
+   "tw:1f6b6"
+  ],
+  "fit": "close"
+ },
+ "878": {
+  "cands": [],
+  "fit": "none"
+ },
+ "880": {
+  "cands": [
+   "tw:1f466",
+   "om:1F466"
+  ],
+  "fit": "close",
+  "concept": "a boy, a brother"
+ },
+ "883": {
+  "cands": [
+   "tw:26f3",
+   "om:26F3"
+  ],
+  "fit": "metaphor"
+ },
+ "885": {
+  "cands": [
+   "om:2728"
+  ],
+  "fit": "metaphor",
+  "concept": "something sparkling new"
+ },
+ "897": {
+  "cands": [
+   "om:2728"
+  ],
+  "fit": "metaphor",
+  "concept": "something sparkling new"
+ },
+ "887": {
+  "cands": [
+   "mb:aeroplane",
+   "om:2708"
+  ],
+  "fit": "close"
+ },
+ "888": {
+  "cands": [
+   "om:1F3C1",
+   "tw:1f3c1"
+  ],
+  "fit": "metaphor"
+ },
+ "893": {
+  "cands": [
+   "om:1F3C1",
+   "tw:1f3c1"
+  ],
+  "fit": "metaphor"
+ },
+ "889": {
+  "cands": [
+   "tw:1f468",
+   "om:1F468"
+  ],
+  "fit": "direct"
+ },
+ "894": {
+  "cands": [
+   "tw:27a1",
+   "om:27A1"
+  ],
+  "fit": "metaphor"
+ },
+ "898": {
+  "cands": [
+   "tw:1f476",
+   "mb:baby"
+  ],
+  "fit": "close"
+ },
+ "899": {
+  "cands": [
+   "mb:dove",
+   "om:1F54A"
+  ],
+  "fit": "metaphor"
+ },
+ "904": {
+  "cands": [
+   "tw:1f9d2",
+   "om:1F9D2"
+  ],
+  "fit": "direct"
+ },
+ "905": {
+  "cands": [
+   "tw:1f469",
+   "om:1F469"
+  ],
+  "fit": "close",
+  "concept": "a mother, a woman"
+ },
+ "906": {
+  "cands": [
+   "tw:1f6cc",
+   "om:1F6CC"
+  ],
+  "fit": "close"
+ },
+ "909": {
+  "cands": [
+   "tw:1f9f9",
+   "om:1F9F9"
+  ],
+  "fit": "close"
+ },
+ "911": {
+  "cands": [
+   "mb:half",
+   "tw:1f313"
+  ],
+  "fit": "close"
+ },
+ "913": {
+  "cands": [
+   "tw:1f4c8",
+   "om:1F4C8"
+  ],
+  "fit": "metaphor"
+ },
+ "918": {
+  "cands": [
+   "tw:1f445",
+   "om:1F445"
+  ],
+  "fit": "close"
+ },
+ "920": {
+  "cands": [
+   "tw:1f324",
+   "om:1F324"
+  ],
+  "fit": "close"
+ },
+ "921": {
+  "cands": [
+   "tw:1f4af",
+   "om:1F4AF"
+  ],
+  "fit": "metaphor"
+ },
+ "923": {
+  "cands": [
+   "tw:1f54b",
+   "om:1F54B"
+  ],
+  "fit": "close"
+ },
+ "924": {
+  "cands": [
+   "tw:1f6b2",
+   "mb:bicycle"
+  ],
+  "fit": "direct"
+ },
+ "926": {
+  "cands": [
+   "tw:1f30c",
+   "om:1FA90"
+  ],
+  "fit": "close"
+ },
+ "927": {
+  "cands": [
+   "tw:1f622",
+   "om:1F4A7"
+  ],
+  "fit": "close"
+ }
+}

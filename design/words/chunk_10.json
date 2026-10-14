@@ -1,0 +1,929 @@
+[
+{
+"ur": "برائی",
+"rom": "burāʾī",
+"en": "evil, badness",
+"unit": 10,
+"i": 60,
+"src": "unit",
+"id": 928
+},
+{
+"ur": "آب",
+"rom": "āb",
+"en": "water (poetic)",
+"unit": 10,
+"i": 61,
+"src": "unit",
+"id": 929
+},
+{
+"ur": "رہائش",
+"rom": "rihāʾish",
+"en": "residence",
+"unit": 10,
+"i": 62,
+"src": "unit",
+"id": 930
+},
+{
+"ur": "دوائی",
+"rom": "dawāʾī",
+"en": "medicine",
+"unit": 10,
+"i": 63,
+"src": "unit",
+"id": 931
+},
+{
+"ur": "آنکھ",
+"rom": "āṉkh",
+"en": "eye",
+"unit": 10,
+"i": 64,
+"src": "unit",
+"id": 932
+},
+{
+"ur": "پڑھائی",
+"rom": "paṛhāʾī",
+"en": "studies",
+"unit": 10,
+"i": 65,
+"src": "unit",
+"id": 933
+},
+{
+"ur": "دعا",
+"rom": "duʻā",
+"en": "prayer",
+"unit": 10,
+"i": 66,
+"src": "unit",
+"id": 934
+},
+{
+"ur": "آندھی",
+"rom": "āṉdhī",
+"en": "dust storm",
+"unit": 10,
+"i": 67,
+"src": "unit",
+"id": 935
+},
+{
+"ur": "ابّا",
+"rom": "abbā",
+"en": "dad",
+"unit": 10,
+"i": 68,
+"src": "unit",
+"id": 936
+},
+{
+"ur": "لمبائی",
+"rom": "lambāʾī",
+"en": "length",
+"unit": 10,
+"i": 69,
+"src": "unit",
+"id": 937
+},
+{
+"ur": "موبائل",
+"rom": "mobāʾil",
+"en": "mobile phone",
+"unit": 10,
+"i": 70,
+"src": "unit",
+"id": 938
+},
+{
+"ur": "گائے",
+"rom": "gāʾe",
+"en": "cow",
+"unit": 10,
+"i": 71,
+"src": "unit",
+"id": 939
+},
+{
+"ur": "غائب",
+"rom": "g͟hāʾib",
+"en": "missing, absent",
+"unit": 10,
+"i": 72,
+"src": "unit",
+"id": 940
+},
+{
+"ur": "گہرائی",
+"rom": "gahrāʾī",
+"en": "depth",
+"unit": 10,
+"i": 73,
+"src": "unit",
+"id": 941
+},
+{
+"ur": "اونچائی",
+"rom": "ūṉchāʾī",
+"en": "height",
+"unit": 10,
+"i": 74,
+"src": "unit",
+"id": 942
+},
+{
+"ur": "کمائی",
+"rom": "kamāʾī",
+"en": "earnings",
+"unit": 10,
+"i": 75,
+"src": "unit",
+"id": 943
+},
+{
+"ur": "آئینہ",
+"rom": "āʾīna",
+"en": "mirror",
+"unit": 10,
+"i": 76,
+"src": "unit",
+"id": 944
+},
+{
+"ur": "دعائیں",
+"rom": "duʻāʾeṉ",
+"en": "prayers",
+"unit": 10,
+"i": 77,
+"src": "unit",
+"id": 945
+},
+{
+"ur": "چوڑائی",
+"rom": "chauṛāʾī",
+"en": "width",
+"unit": 10,
+"i": 78,
+"src": "unit",
+"id": 946
+},
+{
+"ur": "آؤ",
+"rom": "āo",
+"en": "come!",
+"unit": 10,
+"i": 79,
+"src": "unit",
+"id": 947
+},
+{
+"ur": "آلو",
+"rom": "ālū",
+"en": "potato",
+"unit": 10,
+"i": 80,
+"src": "unit",
+"id": 948
+},
+{
+"ur": "آٹا",
+"rom": "āṭā",
+"en": "flour",
+"unit": 10,
+"i": 81,
+"src": "unit",
+"id": 949
+},
+{
+"ur": "سوئی",
+"rom": "suʾī",
+"en": "needle",
+"unit": 10,
+"i": 82,
+"src": "unit",
+"id": 950
+},
+{
+"ur": "آم",
+"rom": "ām",
+"en": "mango",
+"unit": 10,
+"i": 83,
+"src": "unit",
+"id": 951
+},
+{
+"ur": "لکھائی",
+"rom": "likhāʾī",
+"en": "handwriting",
+"unit": 10,
+"i": 84,
+"src": "unit",
+"id": 952
+},
+{
+"ur": "صلوٰۃ",
+"rom": "ṣalāt",
+"en": "prayer",
+"unit": 10,
+"i": 85,
+"src": "unit",
+"id": 953
+},
+{
+"ur": "مٹھائی",
+"rom": "miṭhāʾī",
+"en": "sweets",
+"unit": 10,
+"i": 86,
+"src": "unit",
+"id": 954
+},
+{
+"ur": "کوئلہ",
+"rom": "koʾila",
+"en": "coal",
+"unit": 10,
+"i": 87,
+"src": "unit",
+"id": 955
+},
+{
+"ur": "ملائی",
+"rom": "malāʾī",
+"en": "cream",
+"unit": 10,
+"i": 88,
+"src": "unit",
+"id": 956
+},
+{
+"ur": "ہے",
+"rom": "hai",
+"en": "is",
+"unit": 11,
+"i": 0,
+"src": "unit",
+"id": 957
+},
+{
+"ur": "کی",
+"rom": "kī",
+"en": "of (f.)",
+"unit": 11,
+"i": 1,
+"src": "unit",
+"id": 958
+},
+{
+"ur": "سے",
+"rom": "se",
+"en": "from",
+"unit": 11,
+"i": 2,
+"src": "unit",
+"id": 959
+},
+{
+"ur": "اور",
+"rom": "aur",
+"en": "and",
+"unit": 11,
+"i": 3,
+"src": "unit",
+"id": 960
+},
+{
+"ur": "کو",
+"rom": "ko",
+"en": "to",
+"unit": 11,
+"i": 4,
+"src": "unit",
+"id": 961
+},
+{
+"ur": "کا",
+"rom": "kā",
+"en": "of (m.)",
+"unit": 11,
+"i": 5,
+"src": "unit",
+"id": 962
+},
+{
+"ur": "نہیں",
+"rom": "nahīṉ",
+"en": "no / not",
+"unit": 11,
+"i": 6,
+"src": "unit",
+"id": 963
+},
+{
+"ur": "کیا",
+"rom": "kyā",
+"en": "what",
+"unit": 11,
+"i": 7,
+"src": "unit",
+"id": 964
+},
+{
+"ur": "پر",
+"rom": "par",
+"en": "on",
+"unit": 11,
+"i": 8,
+"src": "unit",
+"id": 965
+},
+{
+"ur": "کہ",
+"rom": "keh",
+"en": "that",
+"unit": 11,
+"i": 9,
+"src": "unit",
+"id": 966
+},
+{
+"ur": "تھا",
+"rom": "thā",
+"en": "was",
+"unit": 11,
+"i": 10,
+"src": "unit",
+"id": 967
+},
+{
+"ur": "بھی",
+"rom": "bhī",
+"en": "also",
+"unit": 11,
+"i": 11,
+"src": "unit",
+"id": 968
+},
+{
+"ur": "تھی",
+"rom": "thī",
+"en": "was (f.)",
+"unit": 11,
+"i": 12,
+"src": "unit",
+"id": 969
+},
+{
+"ur": "پاکستان",
+"rom": "pākistān",
+"en": "Pakistan",
+"unit": 11,
+"i": 13,
+"src": "unit",
+"id": 970
+},
+{
+"ur": "اسلام",
+"rom": "islām",
+"en": "Islam",
+"unit": 11,
+"i": 14,
+"src": "unit",
+"id": 971
+},
+{
+"ur": "پارٹی",
+"rom": "pārṭī",
+"en": "party",
+"unit": 11,
+"i": 15,
+"src": "unit",
+"id": 972
+},
+{
+"ur": "نمبر",
+"rom": "nambar",
+"en": "number",
+"unit": 11,
+"i": 16,
+"src": "unit",
+"id": 973
+},
+{
+"ur": "جون",
+"rom": "jūn",
+"en": "June",
+"unit": 11,
+"i": 17,
+"src": "unit",
+"id": 974
+},
+{
+"ur": "ریلوے",
+"rom": "railway",
+"en": "railway line",
+"unit": 11,
+"i": 18,
+"src": "unit",
+"id": 975
+},
+{
+"ur": "اسٹیشن",
+"rom": "isṭeshan",
+"en": "station",
+"unit": 11,
+"i": 19,
+"src": "unit",
+"id": 976
+},
+{
+"ur": "ہوٹل",
+"rom": "hoṭal",
+"en": "hotel",
+"unit": 11,
+"i": 20,
+"src": "unit",
+"id": 977
+},
+{
+"ur": "بہار",
+"rom": "bahār",
+"en": "spring",
+"unit": 11,
+"i": 21,
+"src": "unit",
+"id": 978
+},
+{
+"ur": "مسلمان",
+"rom": "musalmān",
+"en": "Muslim",
+"unit": 11,
+"i": 22,
+"src": "unit",
+"id": 979
+},
+{
+"ur": "قرآن",
+"rom": "qurʾān",
+"en": "the Quran",
+"unit": 11,
+"i": 23,
+"src": "unit",
+"id": 980
+},
+{
+"ur": "لاہور",
+"rom": "lāhaur",
+"en": "Lahore",
+"unit": 11,
+"i": 24,
+"src": "unit",
+"id": 981
+},
+{
+"ur": "پنجاب",
+"rom": "panjāb",
+"en": "Punjab",
+"unit": 11,
+"i": 25,
+"src": "unit",
+"id": 982
+},
+{
+"ur": "مارچ",
+"rom": "mārch",
+"en": "March",
+"unit": 11,
+"i": 26,
+"src": "unit",
+"id": 983
+},
+{
+"ur": "سندھ",
+"rom": "sindh",
+"en": "Sindh (a province)",
+"unit": 11,
+"i": 27,
+"src": "unit",
+"id": 984
+},
+{
+"ur": "اکتوبر",
+"rom": "aktūbar",
+"en": "October",
+"unit": 11,
+"i": 28,
+"src": "unit",
+"id": 985
+},
+{
+"ur": "اگست",
+"rom": "agast",
+"en": "August",
+"unit": 11,
+"i": 29,
+"src": "unit",
+"id": 986
+},
+{
+"ur": "جولائی",
+"rom": "julāʾī",
+"en": "July",
+"unit": 11,
+"i": 30,
+"src": "unit",
+"id": 987
+},
+{
+"ur": "پولیس",
+"rom": "pulīs",
+"en": "police",
+"unit": 11,
+"i": 31,
+"src": "unit",
+"id": 988
+},
+{
+"ur": "دسمبر",
+"rom": "disambar",
+"en": "December",
+"unit": 11,
+"i": 32,
+"src": "unit",
+"id": 989
+},
+{
+"ur": "نومبر",
+"rom": "navambar",
+"en": "November",
+"unit": 11,
+"i": 33,
+"src": "unit",
+"id": 990
+},
+{
+"ur": "مئی",
+"rom": "maʾī",
+"en": "May",
+"unit": 11,
+"i": 34,
+"src": "unit",
+"id": 991
+},
+{
+"ur": "کراچی",
+"rom": "karāchī",
+"en": "Karachi",
+"unit": 11,
+"i": 35,
+"src": "unit",
+"id": 992
+},
+{
+"ur": "اپریل",
+"rom": "aprail",
+"en": "April",
+"unit": 11,
+"i": 36,
+"src": "unit",
+"id": 993
+},
+{
+"ur": "جنوری",
+"rom": "janwarī",
+"en": "January",
+"unit": 11,
+"i": 37,
+"src": "unit",
+"id": 994
+},
+{
+"ur": "ستمبر",
+"rom": "sitambar",
+"en": "September",
+"unit": 11,
+"i": 38,
+"src": "unit",
+"id": 995
+},
+{
+"ur": "فروری",
+"rom": "farwarī",
+"en": "February",
+"unit": 11,
+"i": 39,
+"src": "unit",
+"id": 996
+},
+{
+"ur": "پارک",
+"rom": "pārk",
+"en": "park",
+"unit": 11,
+"i": 40,
+"src": "unit",
+"id": 997
+},
+{
+"ur": "چاکلیٹ",
+"rom": "chākleṭ",
+"en": "chocolate",
+"unit": 11,
+"i": 41,
+"src": "unit",
+"id": 998
+},
+{
+"ur": "انٹرنیٹ",
+"rom": "inṭarnaiṭ",
+"en": "internet",
+"unit": 11,
+"i": 42,
+"src": "unit",
+"id": 999
+},
+{
+"ur": "کمپیوٹر",
+"rom": "kampyūṭar",
+"en": "computer",
+"unit": 11,
+"i": 43,
+"src": "unit",
+"id": 1000
+},
+{
+"ur": "چاول",
+"rom": "chāwal",
+"en": "rice",
+"unit": 11,
+"i": 44,
+"src": "unit",
+"id": 1001
+},
+{
+"ur": "گلاس",
+"rom": "gilās",
+"en": "glass",
+"unit": 11,
+"i": 45,
+"src": "unit",
+"id": 1002
+},
+{
+"ur": "پنسل",
+"rom": "pensil",
+"en": "pencil",
+"unit": 11,
+"i": 46,
+"src": "unit",
+"id": 1003
+},
+{
+"ur": "برتن",
+"rom": "bartan",
+"en": "dish, utensil",
+"unit": 11,
+"i": 47,
+"src": "unit",
+"id": 1004
+},
+{
+"ur": "بہادر",
+"rom": "bahādur",
+"en": "brave",
+"unit": 11,
+"i": 48,
+"src": "unit",
+"id": 1005
+},
+{
+"ur": "پشاور",
+"rom": "peshāwar",
+"en": "Peshawar",
+"unit": 11,
+"i": 49,
+"src": "unit",
+"id": 1006
+},
+{
+"ur": "بلوچستان",
+"rom": "balochistān",
+"en": "Balochistan",
+"unit": 11,
+"i": 50,
+"src": "unit",
+"id": 1007
+},
+{
+"ur": "ٹیچر",
+"rom": "ṭīchar",
+"en": "teacher",
+"unit": 11,
+"i": 51,
+"src": "unit",
+"id": 1008
+},
+{
+"ur": "انگلی",
+"rom": "ungalī",
+"en": "finger",
+"unit": 11,
+"i": 52,
+"src": "unit",
+"id": 1009
+},
+{
+"ur": "مرغی",
+"rom": "murg͟hī",
+"en": "hen, chicken",
+"unit": 11,
+"i": 53,
+"src": "unit",
+"id": 1010
+},
+{
+"ur": "ٹیلیفون",
+"rom": "ṭeliphon",
+"en": "telephone",
+"unit": 11,
+"i": 54,
+"src": "unit",
+"id": 1011
+},
+{
+"ur": "چوہا",
+"rom": "chūhā",
+"en": "mouse",
+"unit": 11,
+"i": 55,
+"src": "unit",
+"id": 1012
+},
+{
+"ur": "ملتان",
+"rom": "multān",
+"en": "Multan",
+"unit": 11,
+"i": 56,
+"src": "unit",
+"id": 1013
+},
+{
+"ur": "مہمان",
+"rom": "mehmān",
+"en": "guest",
+"unit": 11,
+"i": 57,
+"src": "unit",
+"id": 1014
+},
+{
+"ur": "کوئٹہ",
+"rom": "kwaṭṭa",
+"en": "Quetta",
+"unit": 11,
+"i": 58,
+"src": "unit",
+"id": 1015
+},
+{
+"ur": "چادر",
+"rom": "chādar",
+"en": "sheet, shawl",
+"unit": 11,
+"i": 59,
+"src": "unit",
+"id": 1016
+},
+{
+"ur": "کھیر",
+"rom": "khīr",
+"en": "rice pudding",
+"unit": 11,
+"i": 60,
+"src": "unit",
+"id": 1017
+},
+{
+"ur": "بریانی",
+"rom": "biryānī",
+"en": "biryani (a rice dish)",
+"unit": 11,
+"i": 61,
+"src": "unit",
+"id": 1018
+},
+{
+"ur": "انگور",
+"rom": "angūr",
+"en": "grapes",
+"unit": 11,
+"i": 62,
+"src": "unit",
+"id": 1019
+},
+{
+"ur": "جلیبی",
+"rom": "jalebī",
+"en": "jalebi (a sweet)",
+"unit": 11,
+"i": 63,
+"src": "unit",
+"id": 1020
+},
+{
+"ur": "لسی",
+"rom": "lassī",
+"en": "lassi (a yoghurt drink)",
+"unit": 11,
+"i": 64,
+"src": "unit",
+"id": 1021
+},
+{
+"ur": "پلاؤ",
+"rom": "pulāʾo",
+"en": "pulao (a rice dish)",
+"unit": 11,
+"i": 65,
+"src": "unit",
+"id": 1022
+},
+{
+"ur": "چپل",
+"rom": "chappal",
+"en": "sandal",
+"unit": 11,
+"i": 66,
+"src": "unit",
+"id": 1023
+},
+{
+"ur": "بسکٹ",
+"rom": "biskuṭ",
+"en": "biscuit",
+"unit": 11,
+"i": 67,
+"src": "unit",
+"id": 1024
+},
+{
+"ur": "نہاری",
+"rom": "nihārī",
+"en": "nihari (a slow-cooked stew)",
+"unit": 11,
+"i": 68,
+"src": "unit",
+"id": 1025
+},
+{
+"ur": "پراٹھا",
+"rom": "parāṭhā",
+"en": "paratha (a flat bread)",
+"unit": 11,
+"i": 69,
+"src": "unit",
+"id": 1026
+},
+{
+"ur": "یار",
+"rom": "yār",
+"en": "friend",
+"unit": 2,
+"i": null,
+"src": "letter",
+"id": 1027
+},
+{
+"ur": "ثمر",
+"rom": "s̱amar",
+"en": "fruit",
+"unit": 3,
+"i": null,
+"src": "letter",
+"id": 1028
+},
+{
+"ur": "یہ",
+"rom": "",
+"en": "",
+"unit": 11,
+"i": null,
+"src": "sight",
+"id": 1029
+},
+{
+"ur": "اس",
+"rom": "",
+"en": "",
+"unit": 11,
+"i": null,
+"src": "sight",
+"id": 1030
+}
+]

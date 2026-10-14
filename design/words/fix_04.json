@@ -1,0 +1,432 @@
+{
+ "310": {
+  "cands": [
+   "tw:1f6b6",
+   "om:1F6B6",
+   "mb:go_,_to"
+  ],
+  "fit": "close",
+  "concept": "person walking away, going"
+ },
+ "311": {
+  "cands": [],
+  "fit": "none",
+  "concept": "wanting something"
+ },
+ "314": {
+  "cands": [
+   "om:1F465",
+   "tw:1f465"
+  ],
+  "fit": "close",
+  "concept": "a group of people"
+ },
+ "315": {
+  "cands": [],
+  "fit": "none",
+  "concept": "beginning, starting"
+ },
+ "318": {
+  "cands": [
+   "tw:1f6b6",
+   "om:1F6B6-200D-2640-FE0F"
+  ],
+  "fit": "close",
+  "concept": "woman or girl walking"
+ },
+ "320": {
+  "cands": [
+   "tw:1f3d9",
+   "om:1F3D9"
+  ],
+  "fit": "direct",
+  "concept": "a city of buildings"
+ },
+ "324": {
+  "cands": [
+   "tw:1f327",
+   "om:1F327",
+   "mb:rain"
+  ],
+  "fit": "direct",
+  "concept": "rain"
+ },
+ "325": {
+  "cands": [
+   "tw:1f6b6",
+   "om:1F6B6",
+   "mb:go_,_to"
+  ],
+  "fit": "close",
+  "concept": "to go, walking away"
+ },
+ "326": {
+  "cands": [
+   "tw:1f6d1",
+   "om:1F6D1"
+  ],
+  "fit": "metaphor",
+  "concept": "stop sign for enough, bas"
+ },
+ "327": {
+  "cands": [
+   "tw:1f9d1-200d-1f91d-200d-1f9d1",
+   "om:1F9D1-200D-1F91D-200D-1F9D1"
+  ],
+  "fit": "close",
+  "concept": "two friends together"
+ },
+ "328": {
+  "cands": [
+   "mb:return_,_to"
+  ],
+  "fit": "metaphor",
+  "concept": "back, return"
+ },
+ "331": {
+  "cands": [
+   "tw:1f3c3",
+   "mb:fast_2",
+   "om:1F3C3"
+  ],
+  "fit": "close",
+  "concept": "running fast"
+ },
+ "333": {
+  "cands": [
+   "mb:money",
+   "om:1FA99",
+   "tw:1f4b0"
+  ],
+  "fit": "direct",
+  "concept": "money"
+ },
+ "334": {
+  "cands": [
+   "tw:1f48d",
+   "om:1F48D"
+  ],
+  "fit": "metaphor",
+  "concept": "wedding ring"
+ },
+ "335": {
+  "cands": [
+   "tw:1f9d2",
+   "om:1F9D2"
+  ],
+  "fit": "close",
+  "concept": "children"
+ },
+ "336": {
+  "cands": [
+   "tw:1f4ac",
+   "om:1F4AC"
+  ],
+  "fit": "metaphor",
+  "concept": "speech bubble: an answer"
+ },
+ "340": {
+  "cands": [
+   "tw:1f6b6",
+   "om:1F6B6",
+   "mb:walk_,_to"
+  ],
+  "fit": "close",
+  "concept": "people walking"
+ },
+ "342": {
+  "cands": [],
+  "fit": "none",
+  "concept": "wanting something"
+ },
+ "346": {
+  "cands": [
+   "tw:2764",
+   "om:2764"
+  ],
+  "fit": "metaphor",
+  "concept": "heart for life, dear"
+ },
+ "347": {
+  "cands": [
+   "tw:26c5",
+   "om:26C5"
+  ],
+  "fit": "close",
+  "concept": "weather: sun and clouds"
+ },
+ "351": {
+  "cands": [
+   "tw:1f3c6",
+   "om:1F3C6"
+  ],
+  "fit": "close",
+  "concept": "trophy, victory"
+ },
+ "352": {
+  "cands": [
+   "tw:1f6b6",
+   "om:1F6B6",
+   "mb:walk_,_to"
+  ],
+  "fit": "close",
+  "concept": "walked"
+ },
+ "357": {
+  "cands": [],
+  "fit": "none",
+  "concept": "thank you"
+ },
+ "358": {
+  "cands": [],
+  "fit": "none",
+  "concept": "soon"
+ },
+ "360": {
+  "cands": [
+   "tw:1f3a8",
+   "mb:colour",
+   "om:1F3A8"
+  ],
+  "fit": "close",
+  "concept": "colours, paint"
+ },
+ "361": {
+  "cands": [
+   "tw:1f914",
+   "om:1F914",
+   "om:1F4AD"
+  ],
+  "fit": "close",
+  "concept": "thinking"
+ },
+ "363": {
+  "cands": [],
+  "fit": "none",
+  "concept": "in front of"
+ },
+ "365": {
+  "cands": [
+   "tw:1f307",
+   "om:1F307",
+   "om:1F306"
+  ],
+  "fit": "close",
+  "concept": "evening, sunset over the city"
+ },
+ "366": {
+  "cands": [],
+  "fit": "none",
+  "concept": "whole"
+ },
+ "367": {
+  "cands": [
+   "om:1F642",
+   "tw:1f642",
+   "mb:man_-_face"
+  ],
+  "fit": "close",
+  "concept": "a face"
+ },
+ "368": {
+  "cands": [
+   "om:2600",
+   "tw:2600"
+  ],
+  "fit": "close",
+  "concept": "sun high in the sky, noon"
+ },
+ "369": {
+  "cands": [
+   "om:1F320",
+   "tw:1f320"
+  ],
+  "fit": "metaphor",
+  "concept": "shooting star: a wish"
+ },
+ "374": {
+  "cands": [
+   "tw:2b07",
+   "om:2B07"
+  ],
+  "fit": "metaphor",
+  "concept": "down arrow for below"
+ },
+ "375": {
+  "cands": [
+   "tw:1f975",
+   "om:1F975",
+   "mb:hot"
+  ],
+  "fit": "close",
+  "concept": "hot, sweating face"
+ },
+ "377": {
+  "cands": [
+   "om:1F4A1",
+   "tw:1f4a1"
+  ],
+  "fit": "direct",
+  "concept": "a light bulb"
+ },
+ "379": {
+  "cands": [
+   "mb:husband",
+   "om:1F468"
+  ],
+  "fit": "metaphor",
+  "concept": "a man, husband"
+ },
+ "380": {
+  "cands": [
+   "tw:2753",
+   "om:2753"
+  ],
+  "fit": "close",
+  "concept": "a question mark"
+ },
+ "381": {
+  "cands": [
+   "tw:1f975",
+   "om:1F321"
+  ],
+  "fit": "metaphor",
+  "concept": "heat"
+ },
+ "384": {
+  "cands": [
+   "tw:1f356",
+   "om:1F356",
+   "om:1F969"
+  ],
+  "fit": "direct",
+  "concept": "meat"
+ },
+ "386": {
+  "cands": [
+   "tw:2600",
+   "om:2600",
+   "tw:1f31e"
+  ],
+  "fit": "direct",
+  "concept": "the sun"
+ },
+ "387": {
+  "cands": [
+   "om:1F3E5",
+   "tw:1f3e5"
+  ],
+  "fit": "direct",
+  "concept": "hospital"
+ },
+ "389": {
+  "cands": [
+   "tw:1f981",
+   "om:1F981",
+   "mb:lion"
+  ],
+  "fit": "direct",
+  "concept": "a lion"
+ },
+ "390": {
+  "cands": [
+   "tw:1f976",
+   "tw:2744",
+   "om:1F976"
+  ],
+  "fit": "close",
+  "concept": "cold, freezing"
+ },
+ "391": {
+  "cands": [
+   "tw:1f6b6",
+   "om:1F6B6",
+   "mb:walk_,_to"
+  ],
+  "fit": "close",
+  "concept": "to walk"
+ },
+ "392": {
+  "cands": [
+   "om:1F319",
+   "tw:1f319",
+   "mb:Moon"
+  ],
+  "fit": "direct",
+  "concept": "the moon"
+ },
+ "395": {
+  "cands": [
+   "tw:26bd",
+   "om:26BD",
+   "mb:ball"
+  ],
+  "fit": "direct",
+  "concept": "a ball"
+ },
+ "398": {
+  "cands": [
+   "om:1F511",
+   "tw:1f511",
+   "mb:key_1"
+  ],
+  "fit": "direct",
+  "concept": "a key"
+ },
+ "399": {
+  "cands": [
+   "tw:1f6b6",
+   "om:1F6B6",
+   "mb:walk_,_to"
+  ],
+  "fit": "close",
+  "concept": "walks"
+ },
+ "400": {
+  "cands": [
+   "mb:thirsty"
+  ],
+  "fit": "close",
+  "concept": "thirsty person wanting a drink"
+ },
+ "402": {
+  "cands": [],
+  "fit": "none",
+  "concept": "Tuesday"
+ },
+ "403": {
+  "cands": [
+   "mb:hear_,_to",
+   "tw:1f442",
+   "om:1F442"
+  ],
+  "fit": "close",
+  "concept": "listening"
+ },
+ "405": {
+  "cands": [
+   "om:1F9D1-200D-1F393",
+   "tw:1f9d1-200d-1f393"
+  ],
+  "fit": "close",
+  "concept": "a student"
+ },
+ "407": {
+  "cands": [
+   "tw:1f3a4",
+   "om:1F3B5",
+   "tw:1f3b5"
+  ],
+  "fit": "close",
+  "concept": "a song"
+ },
+ "412": {
+  "cands": [
+   "tw:1f6fa",
+   "om:1F6FA",
+   "tw:1f68c"
+  ],
+  "fit": "close",
+  "concept": "a vehicle to ride"
+ }
+}

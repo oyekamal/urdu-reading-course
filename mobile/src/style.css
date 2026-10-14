@@ -913,3 +913,16 @@ html.m-cover #app .pm-layer *,html.m-cover #app .pearl.cur,html.m-cover #app .pe
 .sw-toast button:focus-visible{outline:3px solid #fff;outline-offset:-4px;border-radius:999px}
 /* the "Loading…" placeholder in index.html (no mascot yet) is shown in the system serif, so neither Urdu webfont is fetched before the first screen; real Nastaliq headings still use it */
 #app>.hero:first-child:not(:has(img))>.ur{font-family:serif;line-height:1.9}
+/* word pictures: flat-vector, transparent, sit on the card like the unit art */
+.wimg{display:block;object-fit:contain;pointer-events:none;-webkit-user-drag:none}
+.wimg-ex{width:132px;height:132px;margin:2px auto 6px;animation:obPop .45s both}.ex-pic{display:flex;justify-content:center}
+.word.has-pic{padding:10px 10px 12px;text-align:center;justify-items:center}.word.has-pic .btn-play{top:auto;bottom:8px;left:auto;right:8px;width:40px;height:40px;min-width:40px}.word.has-pic .rom,.word.has-pic .en{padding-inline:30px}.wimg-card{width:112px;height:112px;margin:0 auto 2px}
+.wimg-q{display:inline-block;width:44px;height:44px;vertical-align:middle;margin-inline-end:8px}
+.wimg-share{width:128px;height:128px;margin:6px auto 0}
+@media (prefers-reduced-motion:reduce){.wimg-ex{animation:none}}
+.wimg-meaning{width:132px;height:132px;margin:0 auto 6px;animation:obPop .45s both}.ob-meaning{text-align:center}.ob-pic{display:flex;justify-content:center}
+/* one soft tile behind every word picture so thick-outline pictograms, soft emoji and hand-drawn art sit together as one set */
+.wimg-card,.wimg-ex,.wimg-meaning,.wimg-build,.wimg-share{background:var(--soft);border-radius:24px;padding:10px;box-sizing:border-box}
+.wimg-ex{width:124px;height:124px;margin:2px auto 8px}.wimg-meaning{width:140px;height:140px}.wimg-share{width:120px;height:120px}
+.wimg-build{display:block;width:140px;height:140px;margin:0 auto 8px}
+.wimg-q{background:var(--soft);border-radius:12px;padding:4px;box-sizing:border-box;width:52px;height:52px}

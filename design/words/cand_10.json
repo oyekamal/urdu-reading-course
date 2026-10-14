@@ -1,0 +1,1345 @@
+[
+ {
+  "id": 928,
+  "ur": "برائی",
+  "rom": "burāʾī",
+  "en": "evil, badness",
+  "concept": "a bad deed: a boy snatching a toy from a crying child",
+  "fit": "none",
+  "cands": [],
+  "draw": "A boy snatching a toy from a smaller crying child in a Pakistani courtyard, one clear scene, no text."
+ },
+ {
+  "id": 929,
+  "ur": "آب",
+  "rom": "āb",
+  "en": "water (poetic)",
+  "concept": "a drop of water",
+  "fit": "direct",
+  "cands": [
+   "om:1F4A7",
+   "tw:1f4a7",
+   "mb:water_bowl"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 930,
+  "ur": "رہائش",
+  "rom": "rihāʾish",
+  "en": "residence",
+  "concept": "a house to live in",
+  "fit": "close",
+  "cands": [
+   "om:1F3E0",
+   "mb:house",
+   "tw:1f3e0"
+  ],
+  "draw": "A small family house with a door and windows, a family waving from the doorway."
+ },
+ {
+  "id": 931,
+  "ur": "دوائی",
+  "rom": "dawāʾī",
+  "en": "medicine",
+  "concept": "medicine: pill and bottle",
+  "fit": "direct",
+  "cands": [
+   "om:1F48A",
+   "mb:medicine",
+   "tw:1f48a",
+   "mb:tablets"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 932,
+  "ur": "آنکھ",
+  "rom": "āṉkh",
+  "en": "eye",
+  "concept": "an eye",
+  "fit": "direct",
+  "cands": [
+   "om:1F441",
+   "mb:eye",
+   "tw:1f441"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 933,
+  "ur": "پڑھائی",
+  "rom": "paṛhāʾī",
+  "en": "studies",
+  "concept": "a child studying with a book",
+  "fit": "close",
+  "cands": [
+   "mb:study_,_to",
+   "mb:read_book_,_to",
+   "om:1F4D6"
+  ],
+  "draw": "A schoolchild in uniform sitting at a desk reading an open book, Pakistani home setting."
+ },
+ {
+  "id": 934,
+  "ur": "دعا",
+  "rom": "duʻā",
+  "en": "prayer",
+  "concept": "folded hands making a prayer",
+  "fit": "close",
+  "cands": [
+   "om:1F64F",
+   "mb:pray_2_,_to",
+   "tw:1f64f"
+  ],
+  "draw": "A child sitting with both palms raised in dua, eyes closed, soft light."
+ },
+ {
+  "id": 935,
+  "ur": "آندھی",
+  "rom": "āṉdhī",
+  "en": "dust storm",
+  "concept": "a dust storm / strong wind",
+  "fit": "close",
+  "cands": [
+   "om:1F32A",
+   "tw:1f32a",
+   "mb:thunder_storm"
+  ],
+  "draw": "A village road in a dust storm, trees bending, a boy covering his face with a scarf."
+ },
+ {
+  "id": 936,
+  "ur": "ابّا",
+  "rom": "abbā",
+  "en": "dad",
+  "concept": "a dad (father)",
+  "fit": "close",
+  "cands": [
+   "mb:dad_parent",
+   "om:1F468",
+   "tw:1f468"
+  ],
+  "draw": "A smiling Pakistani father in shalwar kameez holding his young child"
+ },
+ {
+  "id": 937,
+  "ur": "لمبائی",
+  "rom": "lambāʾī",
+  "en": "length",
+  "concept": "something long, with a ruler",
+  "fit": "close",
+  "cands": [
+   "mb:long",
+   "om:1F4CF",
+   "tw:1f4cf"
+  ],
+  "draw": "A very long rope laid out on the ground next to a short rope, side by side."
+ },
+ {
+  "id": 938,
+  "ur": "موبائل",
+  "rom": "mobāʾil",
+  "en": "mobile phone",
+  "concept": "a mobile phone",
+  "fit": "direct",
+  "cands": [
+   "om:1F4F1",
+   "mb:mobile_phone",
+   "tw:1f4f1"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 939,
+  "ur": "گائے",
+  "rom": "gāʾe",
+  "en": "cow",
+  "concept": "a cow",
+  "fit": "direct",
+  "cands": [
+   "om:1F404",
+   "mb:cow",
+   "tw:1f404",
+   "om:1F42E"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 940,
+  "ur": "غائب",
+  "rom": "g͟hāʾib",
+  "en": "missing, absent",
+  "concept": "missing: a person who is not there",
+  "fit": "close",
+  "cands": [
+   "mb:lost"
+  ],
+  "draw": "An empty school desk and chair with a bag left on it and a teacher looking around, no text."
+ },
+ {
+  "id": 941,
+  "ur": "گہرائی",
+  "rom": "gahrāʾī",
+  "en": "depth",
+  "concept": "deep water",
+  "fit": "close",
+  "cands": [
+   "mb:deep"
+  ],
+  "draw": "A well with a rope and bucket, looking straight down into a very deep dark well."
+ },
+ {
+  "id": 942,
+  "ur": "اونچائی",
+  "rom": "ūṉchāʾī",
+  "en": "height",
+  "concept": "something tall / high",
+  "fit": "close",
+  "cands": [
+   "mb:tall",
+   "mb:high"
+  ],
+  "draw": "A tall tree next to a tiny child looking up at it."
+ },
+ {
+  "id": 943,
+  "ur": "کمائی",
+  "rom": "kamāʾī",
+  "en": "earnings",
+  "concept": "earning money from work",
+  "fit": "close",
+  "cands": [
+   "mb:money",
+   "om:1F4B0",
+   "tw:1f4b0",
+   "mb:work_,_to"
+  ],
+  "draw": "A shopkeeper counting rupee notes after a day of work."
+ },
+ {
+  "id": 944,
+  "ur": "آئینہ",
+  "rom": "āʾīna",
+  "en": "mirror",
+  "concept": "a mirror",
+  "fit": "direct",
+  "cands": [
+   "om:1FA9E",
+   "mb:mirror",
+   "tw:1fa9e"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 945,
+  "ur": "دعائیں",
+  "rom": "duʻāʾeṉ",
+  "en": "prayers",
+  "concept": "folded hands making prayers",
+  "fit": "close",
+  "cands": [
+   "om:1F64F",
+   "mb:pray_2_,_to",
+   "tw:1f64f"
+  ],
+  "draw": "Several family members sitting together with palms raised in dua."
+ },
+ {
+  "id": 946,
+  "ur": "چوڑائی",
+  "rom": "chauṛāʾī",
+  "en": "width",
+  "concept": "width: a wide thing shown with a left-right arrow",
+  "fit": "metaphor",
+  "cands": [
+   "om:2194",
+   "om:1F4CF",
+   "tw:2194"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 947,
+  "ur": "آؤ",
+  "rom": "āo",
+  "en": "come!",
+  "concept": "a hand waving \"come here\"",
+  "fit": "close",
+  "cands": [
+   "mb:come_,_to"
+  ],
+  "draw": "A mother beckoning with her hand for her child to come to her."
+ },
+ {
+  "id": 948,
+  "ur": "آلو",
+  "rom": "ālū",
+  "en": "potato",
+  "concept": "a potato",
+  "fit": "direct",
+  "cands": [
+   "om:1F954",
+   "mb:potato",
+   "tw:1f954"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 949,
+  "ur": "آٹا",
+  "rom": "āṭā",
+  "en": "flour",
+  "concept": "wheat flour (atta)",
+  "fit": "close",
+  "cands": [
+   "mb:flour_plain",
+   "om:1F33E",
+   "tw:1f33e"
+  ],
+  "draw": "A cloth sack of wheat flour with a steel bowl of flour and a heap of dough beside it."
+ },
+ {
+  "id": 950,
+  "ur": "سوئی",
+  "rom": "suʾī",
+  "en": "needle",
+  "concept": "a sewing needle",
+  "fit": "direct",
+  "cands": [
+   "om:1FAA1",
+   "tw:1faa1"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 951,
+  "ur": "آم",
+  "rom": "ām",
+  "en": "mango",
+  "concept": "a mango",
+  "fit": "direct",
+  "cands": [
+   "om:1F96D",
+   "mb:mango",
+   "tw:1f96d"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 952,
+  "ur": "لکھائی",
+  "rom": "likhāʾī",
+  "en": "handwriting",
+  "concept": "handwriting: a hand writing with a pen",
+  "fit": "close",
+  "cands": [
+   "mb:write_,_to",
+   "om:270D",
+   "tw:270d"
+  ],
+  "draw": "A child hand writing neat letters in a notebook with a pencil."
+ },
+ {
+  "id": 953,
+  "ur": "صلوٰۃ",
+  "rom": "ṣalāt",
+  "en": "prayer",
+  "concept": "praying (salat)",
+  "fit": "close",
+  "cands": [
+   "om:1F54C",
+   "mb:prayer",
+   "tw:1f54c"
+  ],
+  "draw": "A man praying on a prayer mat in the sujood position, side view."
+ },
+ {
+  "id": 954,
+  "ur": "مٹھائی",
+  "rom": "miṭhāʾī",
+  "en": "sweets",
+  "concept": "Pakistani sweets (mithai)",
+  "fit": "close",
+  "cands": [
+   "mb:sweet",
+   "om:1F36C",
+   "tw:1f36c"
+  ],
+  "draw": "An open box of colourful Pakistani mithai: barfi, ladoo and gulab jamun."
+ },
+ {
+  "id": 955,
+  "ur": "کوئلہ",
+  "rom": "koʾila",
+  "en": "coal",
+  "concept": "lumps of black coal",
+  "fit": "none",
+  "cands": [],
+  "draw": "A small pile of black coal lumps on the ground, one clear subject."
+ },
+ {
+  "id": 956,
+  "ur": "ملائی",
+  "rom": "malāʾī",
+  "en": "cream",
+  "concept": "cream (malai)",
+  "fit": "none",
+  "cands": [],
+  "draw": "A steel bowl of thick white cream (malai) with a spoon."
+ },
+ {
+  "id": 957,
+  "ur": "ہے",
+  "rom": "hai",
+  "en": "is",
+  "concept": "the word is (grammar)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 958,
+  "ur": "کی",
+  "rom": "kī",
+  "en": "of (f.)",
+  "concept": "of (grammar word)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 959,
+  "ur": "سے",
+  "rom": "se",
+  "en": "from",
+  "concept": "from (grammar word)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 960,
+  "ur": "اور",
+  "rom": "aur",
+  "en": "and",
+  "concept": "and / plus",
+  "fit": "metaphor",
+  "cands": [
+   "om:2795",
+   "tw:2795"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 961,
+  "ur": "کو",
+  "rom": "ko",
+  "en": "to",
+  "concept": "to (grammar word)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 962,
+  "ur": "کا",
+  "rom": "kā",
+  "en": "of (m.)",
+  "concept": "of (grammar word)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 963,
+  "ur": "نہیں",
+  "rom": "nahīṉ",
+  "en": "no / not",
+  "concept": "no / not: a cross",
+  "fit": "metaphor",
+  "cands": [
+   "mb:mistake_no_wrong",
+   "om:274C",
+   "tw:274c"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 964,
+  "ur": "کیا",
+  "rom": "kyā",
+  "en": "what",
+  "concept": "what: a question mark",
+  "fit": "metaphor",
+  "cands": [
+   "mb:what",
+   "om:2753",
+   "tw:2753"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 965,
+  "ur": "پر",
+  "rom": "par",
+  "en": "on",
+  "concept": "on: something on top",
+  "fit": "metaphor",
+  "cands": [
+   "mb:on"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 966,
+  "ur": "کہ",
+  "rom": "keh",
+  "en": "that",
+  "concept": "that (grammar word)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 967,
+  "ur": "تھا",
+  "rom": "thā",
+  "en": "was",
+  "concept": "was (grammar word)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 968,
+  "ur": "بھی",
+  "rom": "bhī",
+  "en": "also",
+  "concept": "also (grammar word)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 969,
+  "ur": "تھی",
+  "rom": "thī",
+  "en": "was (f.)",
+  "concept": "was, feminine (grammar word)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 970,
+  "ur": "پاکستان",
+  "rom": "pākistān",
+  "en": "Pakistan",
+  "concept": "the flag of Pakistan",
+  "fit": "metaphor",
+  "cands": [
+   "mb:flag_Pakistan",
+   "om:1F1F5-1F1F0",
+   "tw:1f1f5-1f1f0",
+   "mb:country_Pakistan"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 971,
+  "ur": "اسلام",
+  "rom": "islām",
+  "en": "Islam",
+  "concept": "a crescent and star symbol",
+  "fit": "metaphor",
+  "cands": [
+   "om:262A",
+   "tw:262a",
+   "om:1F54C"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 972,
+  "ur": "پارٹی",
+  "rom": "pārṭī",
+  "en": "party",
+  "concept": "a party with a party popper",
+  "fit": "direct",
+  "cands": [
+   "om:1F389",
+   "mb:party_celebration",
+   "tw:1f389"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 973,
+  "ur": "نمبر",
+  "rom": "nambar",
+  "en": "number",
+  "concept": "numbers",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F522",
+   "mb:one",
+   "tw:1f522"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 974,
+  "ur": "جون",
+  "rom": "jūn",
+  "en": "June",
+  "concept": "a calendar page for June",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4C5",
+   "mb:calendar",
+   "tw:1f4c5"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 975,
+  "ur": "ریلوے",
+  "rom": "railway",
+  "en": "railway line",
+  "concept": "railway line and train",
+  "fit": "direct",
+  "cands": [
+   "om:1F6E4",
+   "mb:train",
+   "om:1F683",
+   "tw:1f6e4"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 976,
+  "ur": "اسٹیشن",
+  "rom": "isṭeshan",
+  "en": "station",
+  "concept": "a railway station",
+  "fit": "close",
+  "cands": [
+   "om:1F689",
+   "tw:1f689"
+  ],
+  "draw": "A Pakistani railway station platform with a train arriving and people waiting."
+ },
+ {
+  "id": 977,
+  "ur": "ہوٹل",
+  "rom": "hoṭal",
+  "en": "hotel",
+  "concept": "a hotel building",
+  "fit": "direct",
+  "cands": [
+   "om:1F3E8",
+   "tw:1f3e8"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 978,
+  "ur": "بہار",
+  "rom": "bahār",
+  "en": "spring",
+  "concept": "spring: flowers in bloom",
+  "fit": "close",
+  "cands": [
+   "om:1F337",
+   "om:1F338",
+   "tw:1f337",
+   "mb:spring"
+  ],
+  "draw": "A green field of yellow mustard flowers in spring with a few kites in the sky."
+ },
+ {
+  "id": 979,
+  "ur": "مسلمان",
+  "rom": "musalmān",
+  "en": "Muslim",
+  "concept": "a mosque, symbol of Islam",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F54C",
+   "tw:1f54c",
+   "om:262A"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 980,
+  "ur": "قرآن",
+  "rom": "qurʾān",
+  "en": "the Quran",
+  "concept": "a holy book (the Quran)",
+  "fit": "close",
+  "cands": [
+   "om:1F4D7",
+   "om:1F4D6",
+   "tw:1f4d7"
+  ],
+  "draw": "A green Quran closed on a wooden folding stand (rehal), no text."
+ },
+ {
+  "id": 981,
+  "ur": "لاہور",
+  "rom": "lāhaur",
+  "en": "Lahore",
+  "concept": "the city of Lahore (Badshahi Mosque)",
+  "fit": "none",
+  "cands": [],
+  "draw": "The Badshahi Mosque in Lahore with its red sandstone domes, simple flat illustration."
+ },
+ {
+  "id": 982,
+  "ur": "پنجاب",
+  "rom": "panjāb",
+  "en": "Punjab",
+  "concept": "the province of Punjab (green wheat fields)",
+  "fit": "none",
+  "cands": [],
+  "draw": "Green wheat fields in Punjab with a farmer and a tractor."
+ },
+ {
+  "id": 983,
+  "ur": "مارچ",
+  "rom": "mārch",
+  "en": "March",
+  "concept": "a calendar page for March",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4C5",
+   "mb:calendar",
+   "tw:1f4c5"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 984,
+  "ur": "سندھ",
+  "rom": "sindh",
+  "en": "Sindh (a province)",
+  "concept": "the province of Sindh (Sindhi cap and ajrak)",
+  "fit": "none",
+  "cands": [],
+  "draw": "A man wearing a Sindhi topi and ajrak shawl, standing by the Indus river."
+ },
+ {
+  "id": 985,
+  "ur": "اکتوبر",
+  "rom": "aktūbar",
+  "en": "October",
+  "concept": "a calendar page for October",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4C5",
+   "mb:calendar",
+   "tw:1f4c5"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 986,
+  "ur": "اگست",
+  "rom": "agast",
+  "en": "August",
+  "concept": "a calendar page for August",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4C5",
+   "mb:calendar",
+   "tw:1f4c5"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 987,
+  "ur": "جولائی",
+  "rom": "julāʾī",
+  "en": "July",
+  "concept": "a calendar page for July",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4C5",
+   "mb:calendar",
+   "tw:1f4c5"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 988,
+  "ur": "پولیس",
+  "rom": "pulīs",
+  "en": "police",
+  "concept": "a police officer",
+  "fit": "direct",
+  "cands": [
+   "om:1F46E",
+   "mb:police_1a",
+   "tw:1f46e",
+   "om:1F693"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 989,
+  "ur": "دسمبر",
+  "rom": "disambar",
+  "en": "December",
+  "concept": "a calendar page for December",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4C5",
+   "mb:calendar",
+   "tw:1f4c5"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 990,
+  "ur": "نومبر",
+  "rom": "navambar",
+  "en": "November",
+  "concept": "a calendar page for November",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4C5",
+   "mb:calendar",
+   "tw:1f4c5"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 991,
+  "ur": "مئی",
+  "rom": "maʾī",
+  "en": "May",
+  "concept": "a calendar page for May",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4C5",
+   "mb:calendar",
+   "tw:1f4c5"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 992,
+  "ur": "کراچی",
+  "rom": "karāchī",
+  "en": "Karachi",
+  "concept": "the city of Karachi (sea and city)",
+  "fit": "none",
+  "cands": [],
+  "draw": "Karachi seaside with the sea, palm trees and a camel on the beach, flat illustration."
+ },
+ {
+  "id": 993,
+  "ur": "اپریل",
+  "rom": "aprail",
+  "en": "April",
+  "concept": "a calendar page for April",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4C5",
+   "mb:calendar",
+   "tw:1f4c5"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 994,
+  "ur": "جنوری",
+  "rom": "janwarī",
+  "en": "January",
+  "concept": "a calendar page for January",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4C5",
+   "mb:calendar",
+   "tw:1f4c5"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 995,
+  "ur": "ستمبر",
+  "rom": "sitambar",
+  "en": "September",
+  "concept": "a calendar page for September",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4C5",
+   "mb:calendar",
+   "tw:1f4c5"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 996,
+  "ur": "فروری",
+  "rom": "farwarī",
+  "en": "February",
+  "concept": "a calendar page for February",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4C5",
+   "mb:calendar",
+   "tw:1f4c5"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 997,
+  "ur": "پارک",
+  "rom": "pārk",
+  "en": "park",
+  "concept": "a park with trees and swings",
+  "fit": "close",
+  "cands": [
+   "om:1F3DE",
+   "tw:1f3de",
+   "mb:tree"
+  ],
+  "draw": "Children playing on swings in a green park with trees and benches."
+ },
+ {
+  "id": 998,
+  "ur": "چاکلیٹ",
+  "rom": "chākleṭ",
+  "en": "chocolate",
+  "concept": "a chocolate bar",
+  "fit": "direct",
+  "cands": [
+   "om:1F36B",
+   "mb:chocolate",
+   "tw:1f36b"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 999,
+  "ur": "انٹرنیٹ",
+  "rom": "inṭarnaiṭ",
+  "en": "internet",
+  "concept": "the internet: globe and computer",
+  "fit": "metaphor",
+  "cands": [
+   "mb:internet",
+   "om:1F310",
+   "tw:1f310"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1000,
+  "ur": "کمپیوٹر",
+  "rom": "kampyūṭar",
+  "en": "computer",
+  "concept": "a computer",
+  "fit": "direct",
+  "cands": [
+   "om:1F5A5",
+   "mb:computer_1",
+   "tw:1f5a5",
+   "om:1F4BB"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1001,
+  "ur": "چاول",
+  "rom": "chāwal",
+  "en": "rice",
+  "concept": "a bowl of rice",
+  "fit": "direct",
+  "cands": [
+   "om:1F35A",
+   "mb:rice",
+   "tw:1f35a"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1002,
+  "ur": "گلاس",
+  "rom": "gilās",
+  "en": "glass",
+  "concept": "a drinking glass",
+  "fit": "close",
+  "cands": [
+   "om:1F943",
+   "om:1F95B",
+   "tw:1f95b"
+  ],
+  "draw": "A plain clear drinking glass of water on a table."
+ },
+ {
+  "id": 1003,
+  "ur": "پنسل",
+  "rom": "pensil",
+  "en": "pencil",
+  "concept": "a pencil",
+  "fit": "direct",
+  "cands": [
+   "om:270F",
+   "mb:pencil",
+   "tw:270f"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1004,
+  "ur": "برتن",
+  "rom": "bartan",
+  "en": "dish, utensil",
+  "concept": "kitchen dishes and pots",
+  "fit": "close",
+  "cands": [
+   "mb:pot",
+   "om:1F372",
+   "mb:bowl",
+   "tw:1f372"
+  ],
+  "draw": "A stack of steel plates, bowls and a cooking pot on a kitchen shelf."
+ },
+ {
+  "id": 1005,
+  "ur": "بہادر",
+  "rom": "bahādur",
+  "en": "brave",
+  "concept": "brave: strong lion / strong arm",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F981",
+   "om:1F4AA",
+   "mb:strong",
+   "tw:1f981"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1006,
+  "ur": "پشاور",
+  "rom": "peshāwar",
+  "en": "Peshawar",
+  "concept": "the city of Peshawar (Qissa Khwani / Khyber)",
+  "fit": "none",
+  "cands": [],
+  "draw": "A bustling old Peshawar street with a Pashtun man in a pakol hat and a bazaar, flat illustration."
+ },
+ {
+  "id": 1007,
+  "ur": "بلوچستان",
+  "rom": "balochistān",
+  "en": "Balochistan",
+  "concept": "Balochistan: mountains and a Baloch man",
+  "fit": "none",
+  "cands": [],
+  "draw": "Rocky brown mountains of Balochistan with a man in a Baloch turban and shalwar, flat illustration."
+ },
+ {
+  "id": 1008,
+  "ur": "ٹیچر",
+  "rom": "ṭīchar",
+  "en": "teacher",
+  "concept": "a teacher",
+  "fit": "direct",
+  "cands": [
+   "om:1F9D1-200D-1F3EB",
+   "mb:teacher_1a",
+   "tw:1f9d1-200d-1f3eb"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1009,
+  "ur": "انگلی",
+  "rom": "ungalī",
+  "en": "finger",
+  "concept": "a finger",
+  "fit": "direct",
+  "cands": [
+   "mb:finger",
+   "om:261D",
+   "tw:261d"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1010,
+  "ur": "مرغی",
+  "rom": "murg͟hī",
+  "en": "hen, chicken",
+  "concept": "a hen",
+  "fit": "direct",
+  "cands": [
+   "om:1F414",
+   "tw:1f414"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1011,
+  "ur": "ٹیلیفون",
+  "rom": "ṭeliphon",
+  "en": "telephone",
+  "concept": "a telephone",
+  "fit": "direct",
+  "cands": [
+   "om:260E",
+   "mb:telephone_handset",
+   "tw:260e"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1012,
+  "ur": "چوہا",
+  "rom": "chūhā",
+  "en": "mouse",
+  "concept": "a mouse",
+  "fit": "direct",
+  "cands": [
+   "om:1F401",
+   "mb:mouse",
+   "tw:1f401"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1013,
+  "ur": "ملتان",
+  "rom": "multān",
+  "en": "Multan",
+  "concept": "the city of Multan (blue-tiled shrine)",
+  "fit": "none",
+  "cands": [],
+  "draw": "The blue-tiled domed shrine of Multan under blue sky, flat illustration."
+ },
+ {
+  "id": 1014,
+  "ur": "مہمان",
+  "rom": "mehmān",
+  "en": "guest",
+  "concept": "a guest at the door",
+  "fit": "close",
+  "cands": [
+   "mb:visitor_1a",
+   "om:1F91D",
+   "tw:1f91d"
+  ],
+  "draw": "A family welcoming a guest at their front door with tea and snacks on a tray."
+ },
+ {
+  "id": 1015,
+  "ur": "کوئٹہ",
+  "rom": "kwaṭṭa",
+  "en": "Quetta",
+  "concept": "the city of Quetta (mountains and apples)",
+  "fit": "none",
+  "cands": [],
+  "draw": "Quetta city with high mountains behind and a fruit seller with apples, flat illustration."
+ },
+ {
+  "id": 1016,
+  "ur": "چادر",
+  "rom": "chādar",
+  "en": "sheet, shawl",
+  "concept": "a bed sheet / shawl",
+  "fit": "close",
+  "cands": [
+   "mb:blanket",
+   "om:1F9E3"
+  ],
+  "draw": "A folded cotton bed sheet (chadar) with a simple border on a charpai."
+ },
+ {
+  "id": 1017,
+  "ur": "کھیر",
+  "rom": "khīr",
+  "en": "rice pudding",
+  "concept": "kheer: rice pudding",
+  "fit": "none",
+  "cands": [],
+  "draw": "A bowl of white rice pudding (kheer) topped with pistachios and almonds."
+ },
+ {
+  "id": 1018,
+  "ur": "بریانی",
+  "rom": "biryānī",
+  "en": "biryani (a rice dish)",
+  "concept": "biryani rice with chicken",
+  "fit": "close",
+  "cands": [
+   "om:1F35B",
+   "mb:curry",
+   "tw:1f35b"
+  ],
+  "draw": "A plate of Pakistani biryani with a chicken piece, boiled egg and raita."
+ },
+ {
+  "id": 1019,
+  "ur": "انگور",
+  "rom": "angūr",
+  "en": "grapes",
+  "concept": "grapes",
+  "fit": "direct",
+  "cands": [
+   "om:1F347",
+   "mb:grapes",
+   "tw:1f347"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1020,
+  "ur": "جلیبی",
+  "rom": "jalebī",
+  "en": "jalebi (a sweet)",
+  "concept": "jalebi sweet",
+  "fit": "none",
+  "cands": [],
+  "draw": "A plate of bright orange crispy spiral jalebis dripping with syrup."
+ },
+ {
+  "id": 1021,
+  "ur": "لسی",
+  "rom": "lassī",
+  "en": "lassi (a yoghurt drink)",
+  "concept": "lassi in a glass",
+  "fit": "close",
+  "cands": [
+   "om:1F95B",
+   "tw:1f95b"
+  ],
+  "draw": "A tall steel glass of frothy white lassi with a spoon of malai on top."
+ },
+ {
+  "id": 1022,
+  "ur": "پلاؤ",
+  "rom": "pulāʾo",
+  "en": "pulao (a rice dish)",
+  "concept": "pulao rice dish",
+  "fit": "close",
+  "cands": [
+   "om:1F35B",
+   "mb:curry",
+   "tw:1f35b"
+  ],
+  "draw": "A plate of golden pulao with whole spices and meat pieces."
+ },
+ {
+  "id": 1023,
+  "ur": "چپل",
+  "rom": "chappal",
+  "en": "sandal",
+  "concept": "sandals (chappal)",
+  "fit": "direct",
+  "cands": [
+   "mb:sandals",
+   "om:1FA74",
+   "tw:1fa74"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1024,
+  "ur": "بسکٹ",
+  "rom": "biskuṭ",
+  "en": "biscuit",
+  "concept": "biscuits",
+  "fit": "direct",
+  "cands": [
+   "mb:biscuits",
+   "om:1F36A",
+   "tw:1f36a"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1025,
+  "ur": "نہاری",
+  "rom": "nihārī",
+  "en": "nihari (a slow-cooked stew)",
+  "concept": "nihari: a bowl of brown stew",
+  "fit": "close",
+  "cands": [
+   "om:1F372",
+   "tw:1f372"
+  ],
+  "draw": "A bowl of rich brown nihari with ginger slices, green chilli and a naan."
+ },
+ {
+  "id": 1026,
+  "ur": "پراٹھا",
+  "rom": "parāṭhā",
+  "en": "paratha (a flat bread)",
+  "concept": "paratha flatbread",
+  "fit": "close",
+  "cands": [
+   "om:1FAD3",
+   "tw:1fad3"
+  ],
+  "draw": "A golden flaky paratha on a plate with a fried egg and a cup of tea."
+ },
+ {
+  "id": 1027,
+  "ur": "یار",
+  "rom": "yār",
+  "en": "friend",
+  "concept": "a close friend",
+  "fit": "close",
+  "cands": [
+   "om:1F91D",
+   "tw:1f91d"
+  ],
+  "draw": "Two boys hugging each other by the shoulders and laughing."
+ },
+ {
+  "id": 1028,
+  "ur": "ثمر",
+  "rom": "s̱amar",
+  "en": "fruit",
+  "concept": "fruit",
+  "fit": "direct",
+  "cands": [
+   "mb:fruit",
+   "om:1F34E",
+   "tw:1f34e"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1029,
+  "ur": "یہ",
+  "rom": "yih",
+  "en": "this",
+  "concept": "this: pointing at something near",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F449",
+   "tw:1f449"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 1030,
+  "ur": "اس",
+  "rom": "us",
+  "en": "that / him / her",
+  "concept": "that: pointing at something",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F449",
+   "tw:1f449"
+  ],
+  "draw": ""
+ }
+]

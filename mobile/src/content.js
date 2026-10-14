@@ -1,6 +1,6 @@
 import { setMarko } from './marko.js';
 // Content pack: letters, units, audio index, lesson scripts. Loaded once, offline from the bundle.
-export const C = { letters: null, units: null, audio: null, by: {}, ready: null };
+export const C = { letters: null, units: null, audio: null, by: {}, wimg: {}, ready: null };
 let player = new Audio(); let queue = []; let watchdog = null;
 function attach(p) { p.addEventListener('ended', drain); p.addEventListener('error', drain); return p; }
 function drain() { const n = queue.shift(); if (n) { player.src = n; player.play().catch(() => {}); } }
@@ -23,6 +23,9 @@ document.addEventListener('visibilitychange', () => { if (document.visibilitySta
 export const TATWEEL = 'ـ';
 export const forms = l => [['isolated', l.ch], ['initial', l.joiner ? l.ch + TATWEEL : null], ['medial', l.joiner ? TATWEEL + l.ch + TATWEEL : null], ['final', TATWEEL + l.ch]];
 export const W = w => ({ ur: w[0], rom: w[1], en: w[2], v: w[3] || w[0] });
+// Picture for a word (flat-vector, same hand as Marko). '' when the word has none, so callers can always interpolate it.
+export const wimgSrc = ur => C.wimg[ur] ? `img/words/${C.wimg[ur]}.webp` : '';
+export const wimg = (ur, cls = '') => C.wimg[ur] ? `<img class="wimg ${cls}" src="${wimgSrc(ur)}" alt="" draggable="false">` : '';
 export const shuffle = a => a.map(x => [Math.random(), x]).sort((p, q) => p[0] - q[0]).map(x => x[1]);
 export const pad2 = n => String(n).padStart(2, '0');
 export const wordKey = (unit, i) => `units/u${pad2(unit)}_${pad2(i)}`;
@@ -30,8 +33,8 @@ export const sentKey = (unit, i) => `sentences/u${pad2(unit)}_${pad2(i)}`;
 export function taughtBefore(n) { return new Set(C.units.filter(u => u.n < n).flatMap(u => u.letters)); }
 export function loadContent() {
   if (C.ready) return C.ready;
-  C.ready = Promise.all([fetch('data/letters.json').then(r => r.json()), fetch('data/units.json').then(r => r.json()), fetch('data/audio_index.json').then(r => r.json())])
-    .then(([L, U, A]) => { C.letters = L; C.units = U.units; C.audio = A; L.letters.forEach(l => C.by[l.ch] = l); const str = JSON.stringify(L) + JSON.stringify(U) + Object.keys(A).length; let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0; C.version = 'app ' + (typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : 'dev') + ' · pack-' + h.toString(16) + ' · ' + L.letters.length + ' letters · ' + U.units.length + ' units · ' + Object.keys(A).length + ' clips'; return C; });
+  C.ready = Promise.all([fetch('data/letters.json').then(r => r.json()), fetch('data/units.json').then(r => r.json()), fetch('data/audio_index.json').then(r => r.json()), fetch('data/word_img.json').then(r => r.json()).catch(() => ({}))])
+    .then(([L, U, A, WI]) => { C.wimg = WI; C.letters = L; C.units = U.units; C.audio = A; L.letters.forEach(l => C.by[l.ch] = l); const str = JSON.stringify(L) + JSON.stringify(U) + Object.keys(A).length; let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0; C.version = 'app ' + (typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : 'dev') + ' · pack-' + h.toString(16) + ' · ' + L.letters.length + ' letters · ' + U.units.length + ' units · ' + Object.keys(A).length + ' clips'; return C; });
   return C.ready;
 }
 export const STROKE = { alif: 'one stroke, top to bottom', be: 'start top-right, shallow bowl leftwards, hook up; dots last', jim: 'small head stroke leftwards, then the round bowl below; dot last', dal: 'top down and out to the left in one angled stroke', re: 'top down and sweep left below the line', sin: 'three teeth right to left, then the bowl', toe: 'loop first, then the tall stroke on its right', ain: 'small c at the top, then the bowl', fe: 'small loop, then the bowl leftwards', kaf: 'base stroke first, right to left, then the sloping cap on top', lam: 'tall stroke down, curve into the bowl', mim: 'small loop, tail down-left', nun: 'deep round bowl; dot last', wao: 'small loop, short tail', he: 'small loop with a short tail (ھ: two bowls open at top)', ye: 'bowl that swings back under itself (ے: long flat sweep)', hamza: 'small hook, written last' };

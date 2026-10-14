@@ -1,0 +1,929 @@
+[
+{
+"ur": "صفحہ",
+"rom": "ṣafḥa",
+"en": "page",
+"unit": 9,
+"i": 46,
+"src": "unit",
+"id": 825
+},
+{
+"ur": "طاقت",
+"rom": "t̤āqat",
+"en": "strength",
+"unit": 9,
+"i": 47,
+"src": "unit",
+"id": 826
+},
+{
+"ur": "ضرور",
+"rom": "ẓarūr",
+"en": "certainly",
+"unit": 9,
+"i": 48,
+"src": "unit",
+"id": 827
+},
+{
+"ur": "مطالعہ",
+"rom": "mut̤ālaʻa",
+"en": "study, reading",
+"unit": 9,
+"i": 49,
+"src": "unit",
+"id": 828
+},
+{
+"ur": "ثبوت",
+"rom": "s̱ubūt",
+"en": "proof",
+"unit": 9,
+"i": 50,
+"src": "unit",
+"id": 829
+},
+{
+"ur": "قرض",
+"rom": "qarẓ",
+"en": "loan, debt",
+"unit": 9,
+"i": 51,
+"src": "unit",
+"id": 830
+},
+{
+"ur": "رابطہ",
+"rom": "rābit̤a",
+"en": "contact",
+"unit": 9,
+"i": 52,
+"src": "unit",
+"id": 831
+},
+{
+"ur": "حاضر",
+"rom": "ḥāẓir",
+"en": "present",
+"unit": 9,
+"i": 53,
+"src": "unit",
+"id": 832
+},
+{
+"ur": "رقص",
+"rom": "raqṣ",
+"en": "dance",
+"unit": 9,
+"i": 54,
+"src": "unit",
+"id": 833
+},
+{
+"ur": "حوصلہ",
+"rom": "ḥauṣla",
+"en": "courage",
+"unit": 9,
+"i": 55,
+"src": "unit",
+"id": 834
+},
+{
+"ur": "ذمہ",
+"rom": "ẕimma",
+"en": "responsibility",
+"unit": 9,
+"i": 56,
+"src": "unit",
+"id": 835
+},
+{
+"ur": "صبر",
+"rom": "ṣabr",
+"en": "patience",
+"unit": 9,
+"i": 57,
+"src": "unit",
+"id": 836
+},
+{
+"ur": "ریاضی",
+"rom": "riyāẓī",
+"en": "mathematics",
+"unit": 9,
+"i": 58,
+"src": "unit",
+"id": 837
+},
+{
+"ur": "معذرت",
+"rom": "maʻẕirat",
+"en": "apology",
+"unit": 9,
+"i": 59,
+"src": "unit",
+"id": 838
+},
+{
+"ur": "شطرنج",
+"rom": "shat̤ranj",
+"en": "chess",
+"unit": 9,
+"i": 60,
+"src": "unit",
+"id": 839
+},
+{
+"ur": "طوفان",
+"rom": "t̤ūfān",
+"en": "storm",
+"unit": 9,
+"i": 61,
+"src": "unit",
+"id": 840
+},
+{
+"ur": "مضبوط",
+"rom": "maẓbūt̤",
+"en": "strong, firm",
+"unit": 9,
+"i": 62,
+"src": "unit",
+"id": 841
+},
+{
+"ur": "طبیعت",
+"rom": "t̤abīʻat",
+"en": "health, nature",
+"unit": 9,
+"i": 63,
+"src": "unit",
+"id": 842
+},
+{
+"ur": "مذاق",
+"rom": "maẕāq",
+"en": "joke",
+"unit": 9,
+"i": 64,
+"src": "unit",
+"id": 843
+},
+{
+"ur": "ذرا",
+"rom": "ẕarā",
+"en": "a little",
+"unit": 9,
+"i": 65,
+"src": "unit",
+"id": 844
+},
+{
+"ur": "طے",
+"rom": "t̤ai",
+"en": "settled",
+"unit": 9,
+"i": 66,
+"src": "unit",
+"id": 845
+},
+{
+"ur": "بطخ",
+"rom": "bat̤ak͟h",
+"en": "duck",
+"unit": 9,
+"i": 67,
+"src": "unit",
+"id": 846
+},
+{
+"ur": "قمیض",
+"rom": "qamīẓ",
+"en": "shirt",
+"unit": 9,
+"i": 68,
+"src": "unit",
+"id": 847
+},
+{
+"ur": "مریض",
+"rom": "marīẓ",
+"en": "patient",
+"unit": 9,
+"i": 69,
+"src": "unit",
+"id": 848
+},
+{
+"ur": "حفاظت",
+"rom": "ḥifāz̤at",
+"en": "protection",
+"unit": 9,
+"i": 70,
+"src": "unit",
+"id": 849
+},
+{
+"ur": "ذہن",
+"rom": "ẕihn",
+"en": "mind",
+"unit": 9,
+"i": 71,
+"src": "unit",
+"id": 850
+},
+{
+"ur": "مضمون",
+"rom": "maẓmūn",
+"en": "essay",
+"unit": 9,
+"i": 72,
+"src": "unit",
+"id": 851
+},
+{
+"ur": "فرض",
+"rom": "farẓ",
+"en": "duty",
+"unit": 9,
+"i": 73,
+"src": "unit",
+"id": 852
+},
+{
+"ur": "ذہین",
+"rom": "ẕahīn",
+"en": "intelligent",
+"unit": 9,
+"i": 74,
+"src": "unit",
+"id": 853
+},
+{
+"ur": "ظلم",
+"rom": "z̤ulm",
+"en": "cruelty",
+"unit": 9,
+"i": 75,
+"src": "unit",
+"id": 854
+},
+{
+"ur": "صابن",
+"rom": "ṣābun",
+"en": "soap",
+"unit": 9,
+"i": 76,
+"src": "unit",
+"id": 855
+},
+{
+"ur": "طارق",
+"rom": "t̤āriq",
+"en": "Tariq (a name)",
+"unit": 9,
+"i": 77,
+"src": "unit",
+"id": 856
+},
+{
+"ur": "نصاب",
+"rom": "niṣāb",
+"en": "syllabus",
+"unit": 9,
+"i": 78,
+"src": "unit",
+"id": 857
+},
+{
+"ur": "غذا",
+"rom": "g͟hiẕā",
+"en": "food, diet",
+"unit": 9,
+"i": 79,
+"src": "unit",
+"id": 858
+},
+{
+"ur": "صحرا",
+"rom": "ṣaḥrā",
+"en": "desert",
+"unit": 9,
+"i": 80,
+"src": "unit",
+"id": 859
+},
+{
+"ur": "صحن",
+"rom": "ṣaḥn",
+"en": "courtyard",
+"unit": 9,
+"i": 81,
+"src": "unit",
+"id": 860
+},
+{
+"ur": "ضد",
+"rom": "ẓid",
+"en": "stubbornness",
+"unit": 9,
+"i": 82,
+"src": "unit",
+"id": 861
+},
+{
+"ur": "اذان",
+"rom": "aẕān",
+"en": "call to prayer",
+"unit": 9,
+"i": 83,
+"src": "unit",
+"id": 862
+},
+{
+"ur": "ثواب",
+"rom": "s̱awāb",
+"en": "reward",
+"unit": 9,
+"i": 84,
+"src": "unit",
+"id": 863
+},
+{
+"ur": "صابر",
+"rom": "ṣābir",
+"en": "Sabir (a name)",
+"unit": 9,
+"i": 85,
+"src": "unit",
+"id": 864
+},
+{
+"ur": "طالبہ",
+"rom": "t̤āliba",
+"en": "girl student",
+"unit": 9,
+"i": 86,
+"src": "unit",
+"id": 865
+},
+{
+"ur": "صندوق",
+"rom": "ṣandūq",
+"en": "box, chest",
+"unit": 9,
+"i": 87,
+"src": "unit",
+"id": 866
+},
+{
+"ur": "طوطا",
+"rom": "t̤ot̤ā",
+"en": "parrot",
+"unit": 9,
+"i": 88,
+"src": "unit",
+"id": 867
+},
+{
+"ur": "آپ",
+"rom": "āp",
+"en": "you (polite)",
+"unit": 10,
+"i": 0,
+"src": "unit",
+"id": 868
+},
+{
+"ur": "گئی",
+"rom": "gaʾī",
+"en": "went (fem)",
+"unit": 10,
+"i": 1,
+"src": "unit",
+"id": 869
+},
+{
+"ur": "ہوئے",
+"rom": "huʾe",
+"en": "were, happened (plural)",
+"unit": 10,
+"i": 2,
+"src": "unit",
+"id": 870
+},
+{
+"ur": "کوئی",
+"rom": "koʾī",
+"en": "someone",
+"unit": 10,
+"i": 3,
+"src": "unit",
+"id": 871
+},
+{
+"ur": "گئے",
+"rom": "gaʾe",
+"en": "went (plural)",
+"unit": 10,
+"i": 4,
+"src": "unit",
+"id": 872
+},
+{
+"ur": "ہوئی",
+"rom": "huʾī",
+"en": "was, happened (fem)",
+"unit": 10,
+"i": 5,
+"src": "unit",
+"id": 873
+},
+{
+"ur": "آج",
+"rom": "āj",
+"en": "today",
+"unit": 10,
+"i": 6,
+"src": "unit",
+"id": 874
+},
+{
+"ur": "اللّٰہ",
+"rom": "allāh",
+"en": "God",
+"unit": 10,
+"i": 7,
+"src": "unit",
+"id": 875
+},
+{
+"ur": "جائے",
+"rom": "jāʾe",
+"en": "may go",
+"unit": 10,
+"i": 8,
+"src": "unit",
+"id": 876
+},
+{
+"ur": "آیا",
+"rom": "āyā",
+"en": "came",
+"unit": 10,
+"i": 9,
+"src": "unit",
+"id": 877
+},
+{
+"ur": "کئی",
+"rom": "kaʾī",
+"en": "several",
+"unit": 10,
+"i": 10,
+"src": "unit",
+"id": 878
+},
+{
+"ur": "آئے",
+"rom": "āʾe",
+"en": "came (plural)",
+"unit": 10,
+"i": 11,
+"src": "unit",
+"id": 879
+},
+{
+"ur": "بھائی",
+"rom": "bhāʾī",
+"en": "brother",
+"unit": 10,
+"i": 12,
+"src": "unit",
+"id": 880
+},
+{
+"ur": "برائے",
+"rom": "barāʾe",
+"en": "for",
+"unit": 10,
+"i": 13,
+"src": "unit",
+"id": 881
+},
+{
+"ur": "آئی",
+"rom": "āʾī",
+"en": "came (fem)",
+"unit": 10,
+"i": 14,
+"src": "unit",
+"id": 882
+},
+{
+"ur": "قائم",
+"rom": "qāʾim",
+"en": "established",
+"unit": 10,
+"i": 15,
+"src": "unit",
+"id": 883
+},
+{
+"ur": "آتا",
+"rom": "ātā",
+"en": "comes",
+"unit": 10,
+"i": 16,
+"src": "unit",
+"id": 884
+},
+{
+"ur": "نئی",
+"rom": "naʾī",
+"en": "new (f.)",
+"unit": 10,
+"i": 17,
+"src": "unit",
+"id": 885
+},
+{
+"ur": "آتی",
+"rom": "ātī",
+"en": "comes (fem)",
+"unit": 10,
+"i": 18,
+"src": "unit",
+"id": 886
+},
+{
+"ur": "ہوائی",
+"rom": "hawāʾī",
+"en": "of the air",
+"unit": 10,
+"i": 19,
+"src": "unit",
+"id": 887
+},
+{
+"ur": "آخر",
+"rom": "āk͟hir",
+"en": "at last",
+"unit": 10,
+"i": 20,
+"src": "unit",
+"id": 888
+},
+{
+"ur": "آدمی",
+"rom": "ādmī",
+"en": "man, person",
+"unit": 10,
+"i": 21,
+"src": "unit",
+"id": 889
+},
+{
+"ur": "آسان",
+"rom": "āsān",
+"en": "easy",
+"unit": 10,
+"i": 22,
+"src": "unit",
+"id": 890
+},
+{
+"ur": "چائے",
+"rom": "chāʾe",
+"en": "tea",
+"unit": 10,
+"i": 23,
+"src": "unit",
+"id": 891
+},
+{
+"ur": "آنا",
+"rom": "ānā",
+"en": "to come",
+"unit": 10,
+"i": 24,
+"src": "unit",
+"id": 892
+},
+{
+"ur": "آخری",
+"rom": "āk͟hirī",
+"en": "last",
+"unit": 10,
+"i": 25,
+"src": "unit",
+"id": 893
+},
+{
+"ur": "آگے",
+"rom": "āge",
+"en": "ahead",
+"unit": 10,
+"i": 26,
+"src": "unit",
+"id": 894
+},
+{
+"ur": "آتے",
+"rom": "āte",
+"en": "come (plural)",
+"unit": 10,
+"i": 27,
+"src": "unit",
+"id": 895
+},
+{
+"ur": "اعلیٰ",
+"rom": "aʻlā",
+"en": "high",
+"unit": 10,
+"i": 28,
+"src": "unit",
+"id": 896
+},
+{
+"ur": "نئے",
+"rom": "naʾe",
+"en": "new (plural)",
+"unit": 10,
+"i": 29,
+"src": "unit",
+"id": 897
+},
+{
+"ur": "پیدائش",
+"rom": "paidāʾish",
+"en": "birth",
+"unit": 10,
+"i": 30,
+"src": "unit",
+"id": 898
+},
+{
+"ur": "آزاد",
+"rom": "āzād",
+"en": "free",
+"unit": 10,
+"i": 31,
+"src": "unit",
+"id": 899
+},
+{
+"ur": "رائے",
+"rom": "rāʾe",
+"en": "opinion",
+"unit": 10,
+"i": 32,
+"src": "unit",
+"id": 900
+},
+{
+"ur": "آٹھ",
+"rom": "āṭh",
+"en": "eight",
+"unit": 10,
+"i": 33,
+"src": "unit",
+"id": 901
+},
+{
+"ur": "آنکھیں",
+"rom": "āṉkheṉ",
+"en": "eyes",
+"unit": 10,
+"i": 34,
+"src": "unit",
+"id": 902
+},
+{
+"ur": "گئیں",
+"rom": "gaʾīṉ",
+"en": "went (plural fem)",
+"unit": 10,
+"i": 35,
+"src": "unit",
+"id": 903
+},
+{
+"ur": "بچّہ",
+"rom": "bachcha",
+"en": "child",
+"unit": 10,
+"i": 36,
+"src": "unit",
+"id": 904
+},
+{
+"ur": "امّی",
+"rom": "ammī",
+"en": "mum",
+"unit": 10,
+"i": 37,
+"src": "unit",
+"id": 905
+},
+{
+"ur": "آرام",
+"rom": "ārām",
+"en": "rest, comfort",
+"unit": 10,
+"i": 38,
+"src": "unit",
+"id": 906
+},
+{
+"ur": "آواز",
+"rom": "āwāz",
+"en": "voice, sound",
+"unit": 10,
+"i": 39,
+"src": "unit",
+"id": 907
+},
+{
+"ur": "سائنس",
+"rom": "sāʾins",
+"en": "science",
+"unit": 10,
+"i": 40,
+"src": "unit",
+"id": 908
+},
+{
+"ur": "صفائی",
+"rom": "ṣafāʾī",
+"en": "cleanliness",
+"unit": 10,
+"i": 41,
+"src": "unit",
+"id": 909
+},
+{
+"ur": "لڑائی",
+"rom": "laṛāʾī",
+"en": "fight",
+"unit": 10,
+"i": 42,
+"src": "unit",
+"id": 910
+},
+{
+"ur": "آدھا",
+"rom": "ādhā",
+"en": "half",
+"unit": 10,
+"i": 43,
+"src": "unit",
+"id": 911
+},
+{
+"ur": "جائیں",
+"rom": "jāʾeṉ",
+"en": "may go (plural)",
+"unit": 10,
+"i": 44,
+"src": "unit",
+"id": 912
+},
+{
+"ur": "فائدہ",
+"rom": "fāʾida",
+"en": "benefit",
+"unit": 10,
+"i": 45,
+"src": "unit",
+"id": 913
+},
+{
+"ur": "مسائل",
+"rom": "masāʾil",
+"en": "problems",
+"unit": 10,
+"i": 46,
+"src": "unit",
+"id": 914
+},
+{
+"ur": "دہائی",
+"rom": "dahāʾī",
+"en": "decade",
+"unit": 10,
+"i": 47,
+"src": "unit",
+"id": 915
+},
+{
+"ur": "مسئلہ",
+"rom": "masʾala",
+"en": "problem",
+"unit": 10,
+"i": 48,
+"src": "unit",
+"id": 916
+},
+{
+"ur": "بجائے",
+"rom": "bajāʾe",
+"en": "instead of",
+"unit": 10,
+"i": 49,
+"src": "unit",
+"id": 917
+},
+{
+"ur": "ذائقہ",
+"rom": "ẕāʾiqa",
+"en": "taste",
+"unit": 10,
+"i": 50,
+"src": "unit",
+"id": 918
+},
+{
+"ur": "سچائی",
+"rom": "sachchāʾī",
+"en": "truth",
+"unit": 10,
+"i": 51,
+"src": "unit",
+"id": 919
+},
+{
+"ur": "آسمان",
+"rom": "āsmān",
+"en": "sky",
+"unit": 10,
+"i": 52,
+"src": "unit",
+"id": 920
+},
+{
+"ur": "نتائج",
+"rom": "natāʾij",
+"en": "results",
+"unit": 10,
+"i": 53,
+"src": "unit",
+"id": 921
+},
+{
+"ur": "کھائیں",
+"rom": "khāʾeṉ",
+"en": "may eat",
+"unit": 10,
+"i": 54,
+"src": "unit",
+"id": 922
+},
+{
+"ur": "مکّہ",
+"rom": "makka",
+"en": "Makkah",
+"unit": 10,
+"i": 55,
+"src": "unit",
+"id": 923
+},
+{
+"ur": "سائیکل",
+"rom": "sāʾīkal",
+"en": "bicycle",
+"unit": 10,
+"i": 56,
+"src": "unit",
+"id": 924
+},
+{
+"ur": "ڈھائی",
+"rom": "ḍhāʾī",
+"en": "two and a half",
+"unit": 10,
+"i": 57,
+"src": "unit",
+"id": 925
+},
+{
+"ur": "کائنات",
+"rom": "kāʾināt",
+"en": "universe",
+"unit": 10,
+"i": 58,
+"src": "unit",
+"id": 926
+},
+{
+"ur": "آنسو",
+"rom": "āṉsū",
+"en": "tear",
+"unit": 10,
+"i": 59,
+"src": "unit",
+"id": 927
+}
+]

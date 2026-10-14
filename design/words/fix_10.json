@@ -1,0 +1,352 @@
+{
+ "930": {
+  "cands": [
+   "tw:1f3e0",
+   "om:1F3E0",
+   "mb:house"
+  ],
+  "fit": "close"
+ },
+ "934": {
+  "cands": [
+   "om:1F64F",
+   "tw:1f64f"
+  ],
+  "fit": "metaphor"
+ },
+ "935": {
+  "cands": [
+   "tw:1f32a",
+   "om:1F32A",
+   "mb:thunder_storm"
+  ],
+  "fit": "metaphor"
+ },
+ "936": {
+  "cands": [
+   "om:1F468",
+   "tw:1f468"
+  ],
+  "fit": "close"
+ },
+ "937": {
+  "cands": [
+   "tw:1f4cf",
+   "om:1F4CF"
+  ],
+  "fit": "close"
+ },
+ "938": {
+  "cands": [
+   "tw:1f4f1",
+   "om:1F4F1",
+   "mb:mobile_phone"
+  ],
+  "fit": "direct"
+ },
+ "940": {
+  "cands": [
+   "mb:lost"
+  ],
+  "fit": "metaphor"
+ },
+ "941": {
+  "cands": [
+   "mb:deep"
+  ],
+  "fit": "metaphor"
+ },
+ "942": {
+  "cands": [
+   "om:1F992",
+   "tw:1f992",
+   "mb:tall"
+  ],
+  "fit": "metaphor",
+  "concept": "a tall giraffe"
+ },
+ "943": {
+  "cands": [
+   "mb:money",
+   "om:1F4B0"
+  ],
+  "fit": "close"
+ },
+ "945": {
+  "cands": [
+   "om:1F64F",
+   "tw:1f64f"
+  ],
+  "fit": "metaphor"
+ },
+ "946": {
+  "cands": [
+   "om:2194",
+   "tw:2194"
+  ],
+  "fit": "metaphor"
+ },
+ "947": {
+  "cands": [
+   "om:1FAF4",
+   "mb:come_,_to"
+  ],
+  "fit": "metaphor",
+  "concept": "an open palm held out, come here"
+ },
+ "953": {
+  "cands": [
+   "om:1F54C",
+   "tw:1f54c",
+   "mb:prayer"
+  ],
+  "fit": "metaphor"
+ },
+ "954": {
+  "cands": [
+   "mb:sweet",
+   "om:1F36C",
+   "tw:1f36c"
+  ],
+  "fit": "close"
+ },
+ "956": {
+  "cands": [],
+  "fit": "none"
+ },
+ "970": {
+  "cands": [
+   "om:1F1F5-1F1F0",
+   "tw:1f1f5-1f1f0",
+   "mb:flag_Pakistan"
+  ],
+  "fit": "close"
+ },
+ "972": {
+  "cands": [
+   "om:1F389",
+   "tw:1f389",
+   "mb:party_celebrate"
+  ],
+  "fit": "close"
+ },
+ "974": {
+  "cands": [
+   "om:1F4C5"
+  ],
+  "fit": "metaphor"
+ },
+ "979": {
+  "cands": [
+   "om:1F54C",
+   "tw:1f54c"
+  ],
+  "fit": "metaphor"
+ },
+ "980": {
+  "cands": [
+   "tw:1f4d7",
+   "om:1F4D6"
+  ],
+  "fit": "metaphor"
+ },
+ "983": {
+  "cands": [
+   "om:1F4C5"
+  ],
+  "fit": "metaphor"
+ },
+ "985": {
+  "cands": [
+   "om:1F4C5"
+  ],
+  "fit": "metaphor"
+ },
+ "986": {
+  "cands": [
+   "om:1F4C5"
+  ],
+  "fit": "metaphor"
+ },
+ "987": {
+  "cands": [
+   "tw:1f4c5",
+   "om:1F4C5"
+  ],
+  "fit": "metaphor"
+ },
+ "988": {
+  "cands": [
+   "om:1F46E",
+   "mb:police_1a"
+  ],
+  "fit": "direct"
+ },
+ "989": {
+  "cands": [
+   "om:1F4C5"
+  ],
+  "fit": "metaphor"
+ },
+ "990": {
+  "cands": [
+   "om:1F4C5"
+  ],
+  "fit": "metaphor"
+ },
+ "991": {
+  "cands": [
+   "om:1F4C5"
+  ],
+  "fit": "metaphor"
+ },
+ "993": {
+  "cands": [
+   "om:1F4C5"
+  ],
+  "fit": "metaphor"
+ },
+ "994": {
+  "cands": [
+   "om:1F4C5"
+  ],
+  "fit": "metaphor"
+ },
+ "995": {
+  "cands": [
+   "om:1F4C5"
+  ],
+  "fit": "metaphor"
+ },
+ "996": {
+  "cands": [
+   "om:1F4C5"
+  ],
+  "fit": "metaphor"
+ },
+ "997": {
+  "cands": [
+   "mb:back_garden",
+   "mb:swing",
+   "om:1F6DD",
+   "mb:tree"
+  ],
+  "fit": "close"
+ },
+ "998": {
+  "cands": [
+   "om:1F36B",
+   "mb:chocolate",
+   "tw:1f36b"
+  ],
+  "fit": "direct"
+ },
+ "1002": {
+  "cands": [
+   "tw:1f95b",
+   "om:1F95B"
+  ],
+  "fit": "close"
+ },
+ "1003": {
+  "cands": [
+   "tw:270f",
+   "om:270F"
+  ],
+  "fit": "direct"
+ },
+ "1004": {
+  "cands": [
+   "om:1F372",
+   "tw:1f372",
+   "mb:saucepan"
+  ],
+  "fit": "close"
+ },
+ "1008": {
+  "cands": [
+   "tw:1f9d1-200d-1f3eb",
+   "mb:teacher_1a"
+  ],
+  "fit": "direct"
+ },
+ "1009": {
+  "cands": [
+   "om:261D",
+   "tw:261d"
+  ],
+  "fit": "direct"
+ },
+ "1017": {
+  "cands": [],
+  "fit": "none"
+ },
+ "1018": {
+  "cands": [
+   "mb:curry",
+   "tw:1f35b"
+  ],
+  "fit": "close"
+ },
+ "1019": {
+  "cands": [
+   "tw:1f347",
+   "om:1F347",
+   "mb:grapes"
+  ],
+  "fit": "direct"
+ },
+ "1021": {
+  "cands": [
+   "mb:yogurt",
+   "tw:1f95b"
+  ],
+  "fit": "close"
+ },
+ "1022": {
+  "cands": [
+   "mb:curry",
+   "tw:1f35b"
+  ],
+  "fit": "close"
+ },
+ "1026": {
+  "cands": [
+   "tw:1fad3"
+  ],
+  "fit": "close"
+ },
+ "1027": {
+  "cands": [
+   "om:1F91D",
+   "tw:1f91d"
+  ],
+  "fit": "metaphor"
+ },
+ "1028": {
+  "cands": [
+   "mb:fruit",
+   "om:1F34E",
+   "tw:1f34e"
+  ],
+  "fit": "close"
+ },
+ "965": {
+  "cands": [],
+  "fit": "none"
+ },
+ "964": {
+  "cands": [
+   "tw:2753",
+   "om:2753"
+  ],
+  "fit": "metaphor"
+ },
+ "963": {
+  "cands": [
+   "tw:274c",
+   "om:274C"
+  ],
+  "fit": "metaphor"
+ }
+}

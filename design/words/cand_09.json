@@ -1,0 +1,1374 @@
+[
+ {
+  "id": 825,
+  "ur": "صفحہ",
+  "rom": "ṣafḥa",
+  "en": "page",
+  "concept": "a single sheet of paper (a page)",
+  "fit": "direct",
+  "cands": [
+   "om:1F4C4",
+   "tw:1f4c4",
+   "om:1F4C3"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 826,
+  "ur": "طاقت",
+  "rom": "t̤āqat",
+  "en": "strength",
+  "concept": "a strong arm with a big muscle",
+  "fit": "close",
+  "cands": [
+   "om:1F4AA",
+   "tw:1f4aa",
+   "mb:strong"
+  ],
+  "draw": "A Pakistani boy proudly showing the muscle of his arm."
+ },
+ {
+  "id": 827,
+  "ur": "ضرور",
+  "rom": "ẓarūr",
+  "en": "certainly",
+  "concept": "a tick mark meaning yes, of course",
+  "fit": "metaphor",
+  "cands": [
+   "om:2705",
+   "tw:2705",
+   "mb:correct"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 828,
+  "ur": "مطالعہ",
+  "rom": "mut̤ālaʻa",
+  "en": "study, reading",
+  "concept": "a child reading a book to learn",
+  "fit": "close",
+  "cands": [
+   "mb:study_,_to",
+   "om:1F4D6",
+   "tw:1f4d6"
+  ],
+  "draw": "A schoolchild sitting on a charpai reading an open book."
+ },
+ {
+  "id": 829,
+  "ur": "ثبوت",
+  "rom": "s̱ubūt",
+  "en": "proof",
+  "concept": "a magnifying glass looking for proof",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F50D",
+   "tw:1f50d"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 830,
+  "ur": "قرض",
+  "rom": "qarẓ",
+  "en": "loan, debt",
+  "concept": "money owed: a bag of money",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4B0",
+   "mb:money",
+   "tw:1f4b0"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 831,
+  "ur": "رابطہ",
+  "rom": "rābit̤a",
+  "en": "contact",
+  "concept": "talking on a phone to get in touch",
+  "fit": "close",
+  "cands": [
+   "om:1F4F1",
+   "tw:1f4f1",
+   "mb:telephone_handset"
+  ],
+  "draw": "Two people far apart each holding a phone to their ear, smiling."
+ },
+ {
+  "id": 832,
+  "ur": "حاضر",
+  "rom": "ḥāẓir",
+  "en": "present",
+  "concept": "a pupil raising a hand to say present",
+  "fit": "close",
+  "cands": [
+   "om:1F64B",
+   "tw:1f64b"
+  ],
+  "draw": "A schoolgirl in a classroom raising her hand to answer attendance."
+ },
+ {
+  "id": 833,
+  "ur": "رقص",
+  "rom": "raqṣ",
+  "en": "dance",
+  "concept": "a person dancing",
+  "fit": "direct",
+  "cands": [
+   "om:1F57A",
+   "mb:dance_,_to",
+   "tw:1f57a"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 834,
+  "ur": "حوصلہ",
+  "rom": "ḥauṣla",
+  "en": "courage",
+  "concept": "a lion, symbol of courage",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F981",
+   "mb:lion",
+   "tw:1f981"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 835,
+  "ur": "ذمہ",
+  "rom": "ẕimma",
+  "en": "responsibility",
+  "concept": "being responsible for a task",
+  "fit": "none",
+  "cands": [],
+  "draw": "A boy carefully carrying a baby sister on his hip while his mother cooks, a Pakistani home."
+ },
+ {
+  "id": 836,
+  "ur": "صبر",
+  "rom": "ṣabr",
+  "en": "patience",
+  "concept": "an hourglass: waiting patiently",
+  "fit": "metaphor",
+  "cands": [
+   "om:23F3",
+   "mb:wait_,_to",
+   "tw:23f3"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 837,
+  "ur": "ریاضی",
+  "rom": "riyāẓī",
+  "en": "mathematics",
+  "concept": "maths: abacus or calculator",
+  "fit": "close",
+  "cands": [
+   "om:1F9EE",
+   "mb:maths",
+   "tw:1f9ee"
+  ],
+  "draw": "A child counting with an abacus and a blackboard with simple sums."
+ },
+ {
+  "id": 838,
+  "ur": "معذرت",
+  "rom": "maʻẕirat",
+  "en": "apology",
+  "concept": "a person bowing to say sorry",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F647",
+   "tw:1f647"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 839,
+  "ur": "شطرنج",
+  "rom": "shat̤ranj",
+  "en": "chess",
+  "concept": "a chess pawn",
+  "fit": "direct",
+  "cands": [
+   "om:265F",
+   "tw:265f"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 840,
+  "ur": "طوفان",
+  "rom": "t̤ūfān",
+  "en": "storm",
+  "concept": "a storm cloud with lightning",
+  "fit": "direct",
+  "cands": [
+   "om:1F329",
+   "mb:thunder_storm",
+   "tw:1f329"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 841,
+  "ur": "مضبوط",
+  "rom": "maẓbūt̤",
+  "en": "strong, firm",
+  "concept": "something strong: a muscle arm",
+  "fit": "direct",
+  "cands": [
+   "mb:strong",
+   "om:1F4AA",
+   "tw:1f4aa"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 842,
+  "ur": "طبیعت",
+  "rom": "t̤abīʻat",
+  "en": "health, nature",
+  "concept": "being healthy and well",
+  "fit": "close",
+  "cands": [
+   "mb:healthy",
+   "om:1F321",
+   "tw:1f321"
+  ],
+  "draw": "A smiling healthy child running in a field."
+ },
+ {
+  "id": 843,
+  "ur": "مذاق",
+  "rom": "maẕāq",
+  "en": "joke",
+  "concept": "people laughing at a joke",
+  "fit": "close",
+  "cands": [
+   "om:1F923",
+   "tw:1f923"
+  ],
+  "draw": "Two friends sitting together laughing at a joke."
+ },
+ {
+  "id": 844,
+  "ur": "ذرا",
+  "rom": "ẕarā",
+  "en": "a little",
+  "concept": "a little bit: tiny pinch",
+  "fit": "close",
+  "cands": [
+   "mb:little",
+   "om:1F90F",
+   "tw:1f90f"
+  ],
+  "draw": "A hand pinching a tiny amount of salt."
+ },
+ {
+  "id": 845,
+  "ur": "طے",
+  "rom": "t̤ai",
+  "en": "settled",
+  "concept": "a handshake: it is settled",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F91D",
+   "tw:1f91d",
+   "om:2705"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 846,
+  "ur": "بطخ",
+  "rom": "bat̤ak͟h",
+  "en": "duck",
+  "concept": "a duck",
+  "fit": "direct",
+  "cands": [
+   "om:1F986",
+   "mb:duck",
+   "tw:1f986"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 847,
+  "ur": "قمیض",
+  "rom": "qamīẓ",
+  "en": "shirt",
+  "concept": "a shirt",
+  "fit": "direct",
+  "cands": [
+   "mb:shirt",
+   "om:1F455",
+   "tw:1f455"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 848,
+  "ur": "مریض",
+  "rom": "marīẓ",
+  "en": "patient",
+  "concept": "a sick person who needs a doctor",
+  "fit": "close",
+  "cands": [
+   "om:1F912",
+   "tw:1f912",
+   "om:E30B"
+  ],
+  "draw": "A sick man lying in bed while a doctor with a stethoscope checks him."
+ },
+ {
+  "id": 849,
+  "ur": "حفاظت",
+  "rom": "ḥifāz̤at",
+  "en": "protection",
+  "concept": "a shield for protection",
+  "fit": "close",
+  "cands": [
+   "om:1F6E1",
+   "tw:1f6e1",
+   "mb:protect_,_to"
+  ],
+  "draw": "A mother shielding her child from rain with her dupatta."
+ },
+ {
+  "id": 850,
+  "ur": "ذہن",
+  "rom": "ẕihn",
+  "en": "mind",
+  "concept": "the brain: the mind",
+  "fit": "close",
+  "cands": [
+   "om:1F9E0",
+   "mb:brain",
+   "tw:1f9e0"
+  ],
+  "draw": "A child thinking with a bright light bulb above the head."
+ },
+ {
+  "id": 851,
+  "ur": "مضمون",
+  "rom": "maẓmūn",
+  "en": "essay",
+  "concept": "writing an essay on paper",
+  "fit": "close",
+  "cands": [
+   "om:1F4DD",
+   "tw:1f4dd",
+   "mb:write_,_to"
+  ],
+  "draw": "A student writing an essay in a notebook at a desk."
+ },
+ {
+  "id": 852,
+  "ur": "فرض",
+  "rom": "farẓ",
+  "en": "duty",
+  "concept": "doing ones duty",
+  "fit": "none",
+  "cands": [],
+  "draw": "A girl putting her school books in her bag and a boy watering a plant, both doing their jobs."
+ },
+ {
+  "id": 853,
+  "ur": "ذہین",
+  "rom": "ẕahīn",
+  "en": "intelligent",
+  "concept": "a clever mind: the brain",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F9E0",
+   "mb:brain",
+   "tw:1f9e0"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 854,
+  "ur": "ظلم",
+  "rom": "z̤ulm",
+  "en": "cruelty",
+  "concept": "being cruel to someone weaker",
+  "fit": "none",
+  "cands": [],
+  "draw": "A bigger boy pushing and shouting at a small crying child, village street."
+ },
+ {
+  "id": 855,
+  "ur": "صابن",
+  "rom": "ṣābun",
+  "en": "soap",
+  "concept": "a bar of soap",
+  "fit": "direct",
+  "cands": [
+   "om:1F9FC",
+   "mb:soap",
+   "tw:1f9fc"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 856,
+  "ur": "طارق",
+  "rom": "t̤āriq",
+  "en": "Tariq (a name)",
+  "concept": "the name Tariq, a boy",
+  "fit": "none",
+  "cands": [],
+  "draw": "A smiling Pakistani boy in school uniform, portrait, no text."
+ },
+ {
+  "id": 857,
+  "ur": "نصاب",
+  "rom": "niṣāb",
+  "en": "syllabus",
+  "concept": "a stack of school books",
+  "fit": "close",
+  "cands": [
+   "om:1F4DA",
+   "tw:1f4da"
+  ],
+  "draw": "A teacher pointing at a list of subjects next to a pile of textbooks."
+ },
+ {
+  "id": 858,
+  "ur": "غذا",
+  "rom": "g͟hiẕā",
+  "en": "food, diet",
+  "concept": "food: a pot of food",
+  "fit": "direct",
+  "cands": [
+   "mb:food",
+   "om:1F372",
+   "tw:1f372"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 859,
+  "ur": "صحرا",
+  "rom": "ṣaḥrā",
+  "en": "desert",
+  "concept": "desert with a camel",
+  "fit": "direct",
+  "cands": [
+   "om:1F3DC",
+   "tw:1f3dc",
+   "om:1F42A"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 860,
+  "ur": "صحن",
+  "rom": "ṣaḥn",
+  "en": "courtyard",
+  "concept": "courtyard of a house with garden",
+  "fit": "close",
+  "cands": [
+   "om:1F3E1",
+   "tw:1f3e1"
+  ],
+  "draw": "The open courtyard of a Pakistani village house with a charpai and a tree."
+ },
+ {
+  "id": 861,
+  "ur": "ضد",
+  "rom": "ẓid",
+  "en": "stubbornness",
+  "concept": "a donkey, symbol of stubbornness",
+  "fit": "metaphor",
+  "cands": [
+   "om:1FACF",
+   "tw:1facf"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 862,
+  "ur": "اذان",
+  "rom": "aẕān",
+  "en": "call to prayer",
+  "concept": "mosque calling azan",
+  "fit": "close",
+  "cands": [
+   "om:1F54C",
+   "tw:1f54c",
+   "om:1F4E3"
+  ],
+  "draw": "A muezzin calling the azan from a mosque minaret at sunset."
+ },
+ {
+  "id": 863,
+  "ur": "ثواب",
+  "rom": "s̱awāb",
+  "en": "reward",
+  "concept": "a gift or medal as reward",
+  "fit": "close",
+  "cands": [
+   "om:1F381",
+   "mb:medal",
+   "om:1F3C5",
+   "tw:1f381"
+  ],
+  "draw": "A teacher giving a child a gold star prize at school."
+ },
+ {
+  "id": 864,
+  "ur": "صابر",
+  "rom": "ṣābir",
+  "en": "Sabir (a name)",
+  "concept": "the name Sabir, a boy",
+  "fit": "none",
+  "cands": [],
+  "draw": "A smiling Pakistani boy in a shalwar kameez, portrait, no text."
+ },
+ {
+  "id": 865,
+  "ur": "طالبہ",
+  "rom": "t̤āliba",
+  "en": "girl student",
+  "concept": "a girl student",
+  "fit": "close",
+  "cands": [
+   "om:1F467",
+   "tw:1f467",
+   "om:1F469-200D-1F393"
+  ],
+  "draw": "A Pakistani schoolgirl with a school bag walking to school."
+ },
+ {
+  "id": 866,
+  "ur": "صندوق",
+  "rom": "ṣandūq",
+  "en": "box, chest",
+  "concept": "a box or chest",
+  "fit": "close",
+  "cands": [
+   "om:1F4E6",
+   "om:1FA8E",
+   "tw:1f4e6"
+  ],
+  "draw": "A big wooden trunk box with a lid in a Pakistani home."
+ },
+ {
+  "id": 867,
+  "ur": "طوطا",
+  "rom": "t̤ot̤ā",
+  "en": "parrot",
+  "concept": "a parrot",
+  "fit": "direct",
+  "cands": [
+   "om:1F99C",
+   "mb:parrot",
+   "tw:1f99c"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 868,
+  "ur": "آپ",
+  "rom": "āp",
+  "en": "you (polite)",
+  "concept": "you (polite), pointing at the person",
+  "fit": "none",
+  "cands": [],
+  "draw": "A child politely holding out a hand toward the viewer."
+ },
+ {
+  "id": 869,
+  "ur": "گئی",
+  "rom": "gaʾī",
+  "en": "went (fem)",
+  "concept": "a girl who went away (walking)",
+  "fit": "close",
+  "cands": [
+   "om:1F6B6-200D-2640-FE0F",
+   "tw:1f6b6",
+   "mb:go_,_to"
+  ],
+  "draw": "A girl in a shalwar kameez walking away down a lane."
+ },
+ {
+  "id": 870,
+  "ur": "ہوئے",
+  "rom": "huʾe",
+  "en": "were, happened (plural)",
+  "concept": "something that already happened (past plural)",
+  "fit": "none",
+  "cands": [],
+  "draw": "Two glasses of milk spilled on a table after a cat jumped."
+ },
+ {
+  "id": 871,
+  "ur": "کوئی",
+  "rom": "koʾī",
+  "en": "someone",
+  "concept": "someone: a person silhouette",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F464",
+   "tw:1f464"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 872,
+  "ur": "گئے",
+  "rom": "gaʾe",
+  "en": "went (plural)",
+  "concept": "people who went away (walking)",
+  "fit": "close",
+  "cands": [
+   "om:1F6B6",
+   "tw:1f6b6",
+   "mb:go_,_to"
+  ],
+  "draw": "Two boys walking away down a village road."
+ },
+ {
+  "id": 873,
+  "ur": "ہوئی",
+  "rom": "huʾī",
+  "en": "was, happened (fem)",
+  "concept": "something that happened (past, fem)",
+  "fit": "none",
+  "cands": [],
+  "draw": "A girl surprised by a rainbow that has just appeared."
+ },
+ {
+  "id": 874,
+  "ur": "آج",
+  "rom": "āj",
+  "en": "today",
+  "concept": "today: a calendar day",
+  "fit": "close",
+  "cands": [
+   "mb:today",
+   "om:1F4C5",
+   "tw:1f4c5"
+  ],
+  "draw": "A calendar page with one day circled and a sunny morning."
+ },
+ {
+  "id": 875,
+  "ur": "اللّٰہ",
+  "rom": "allāh",
+  "en": "God",
+  "concept": "Allah: a crescent and star symbol",
+  "fit": "metaphor",
+  "cands": [
+   "om:262A",
+   "tw:262a"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 876,
+  "ur": "جائے",
+  "rom": "jāʾe",
+  "en": "may go",
+  "concept": "to go: moving off",
+  "fit": "close",
+  "cands": [
+   "mb:go_,_to",
+   "om:1F6B6",
+   "tw:1f6b6"
+  ],
+  "draw": "A boy leaving through a door and going to school."
+ },
+ {
+  "id": 877,
+  "ur": "آیا",
+  "rom": "āyā",
+  "en": "came",
+  "concept": "someone who came",
+  "fit": "close",
+  "cands": [
+   "mb:come_,_to",
+   "om:1F6B6",
+   "tw:1f6b6"
+  ],
+  "draw": "A boy arriving at the door and waving hello."
+ },
+ {
+  "id": 878,
+  "ur": "کئی",
+  "rom": "kaʾī",
+  "en": "several",
+  "concept": "several: some things",
+  "fit": "metaphor",
+  "cands": [
+   "mb:some"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 879,
+  "ur": "آئے",
+  "rom": "āʾe",
+  "en": "came (plural)",
+  "concept": "people who came",
+  "fit": "close",
+  "cands": [
+   "mb:come_,_to",
+   "om:1F6B6",
+   "tw:1f6b6"
+  ],
+  "draw": "Several children arriving at a school gate."
+ },
+ {
+  "id": 880,
+  "ur": "بھائی",
+  "rom": "bhāʾī",
+  "en": "brother",
+  "concept": "brother",
+  "fit": "direct",
+  "cands": [
+   "mb:brother",
+   "om:1F466",
+   "tw:1f466"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 881,
+  "ur": "برائے",
+  "rom": "barāʾe",
+  "en": "for",
+  "concept": "for: a gift given for someone",
+  "fit": "none",
+  "cands": [],
+  "draw": "A boy holding out a wrapped gift to his mother, saying it is for her."
+ },
+ {
+  "id": 882,
+  "ur": "آئی",
+  "rom": "āʾī",
+  "en": "came (fem)",
+  "concept": "a girl who came",
+  "fit": "close",
+  "cands": [
+   "mb:come_,_to",
+   "om:1F6B6-200D-2640-FE0F",
+   "tw:1f6b6"
+  ],
+  "draw": "A girl arriving at the door with a smile."
+ },
+ {
+  "id": 883,
+  "ur": "قائم",
+  "rom": "qāʾim",
+  "en": "established",
+  "concept": "established: a flag planted firmly",
+  "fit": "metaphor",
+  "cands": [
+   "om:26F3",
+   "tw:26f3"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 884,
+  "ur": "آتا",
+  "rom": "ātā",
+  "en": "comes",
+  "concept": "comes: moving toward you",
+  "fit": "close",
+  "cands": [
+   "mb:come_,_to",
+   "om:1F6B6",
+   "tw:1f6b6"
+  ],
+  "draw": "A bus coming along the road toward a bus stop."
+ },
+ {
+  "id": 885,
+  "ur": "نئی",
+  "rom": "naʾī",
+  "en": "new (f.)",
+  "concept": "something new: sparkling",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F195",
+   "tw:1f195",
+   "om:2728"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 886,
+  "ur": "آتی",
+  "rom": "ātī",
+  "en": "comes (fem)",
+  "concept": "she comes: moving toward you",
+  "fit": "close",
+  "cands": [
+   "mb:come_,_to",
+   "om:1F6B6-200D-2640-FE0F",
+   "tw:1f6b6"
+  ],
+  "draw": "A girl coming along a path toward the viewer."
+ },
+ {
+  "id": 887,
+  "ur": "ہوائی",
+  "rom": "hawāʾī",
+  "en": "of the air",
+  "concept": "an aeroplane (of the air)",
+  "fit": "close",
+  "cands": [
+   "om:2708",
+   "mb:aeroplane",
+   "tw:2708"
+  ],
+  "draw": "A passenger aeroplane flying in a blue sky."
+ },
+ {
+  "id": 888,
+  "ur": "آخر",
+  "rom": "āk͟hir",
+  "en": "at last",
+  "concept": "finally: reaching the end",
+  "fit": "metaphor",
+  "cands": [
+   "mb:last",
+   "om:1F3C1",
+   "tw:1f3c1"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 889,
+  "ur": "آدمی",
+  "rom": "ādmī",
+  "en": "man, person",
+  "concept": "a man",
+  "fit": "direct",
+  "cands": [
+   "om:1F468",
+   "tw:1f468",
+   "om:1F9D1"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 890,
+  "ur": "آسان",
+  "rom": "āsān",
+  "en": "easy",
+  "concept": "easy: a relaxed OK sign",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F44C",
+   "tw:1f44c"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 891,
+  "ur": "چائے",
+  "rom": "chāʾe",
+  "en": "tea",
+  "concept": "a cup of tea",
+  "fit": "direct",
+  "cands": [
+   "mb:tea",
+   "om:2615",
+   "tw:2615"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 892,
+  "ur": "آنا",
+  "rom": "ānā",
+  "en": "to come",
+  "concept": "to come: moving toward you",
+  "fit": "close",
+  "cands": [
+   "mb:come_,_to",
+   "om:1F6B6",
+   "tw:1f6b6"
+  ],
+  "draw": "A boy walking toward the viewer with open arms."
+ },
+ {
+  "id": 893,
+  "ur": "آخری",
+  "rom": "āk͟hirī",
+  "en": "last",
+  "concept": "the last one at the end",
+  "fit": "metaphor",
+  "cands": [
+   "mb:last",
+   "om:1F3C1"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 894,
+  "ur": "آگے",
+  "rom": "āge",
+  "en": "ahead",
+  "concept": "ahead: in front, going forward",
+  "fit": "close",
+  "cands": [
+   "mb:ahead",
+   "om:27A1",
+   "tw:27a1"
+  ],
+  "draw": "A boy running ahead of his friends on the road."
+ },
+ {
+  "id": 895,
+  "ur": "آتے",
+  "rom": "āte",
+  "en": "come (plural)",
+  "concept": "people who come",
+  "fit": "close",
+  "cands": [
+   "mb:come_,_to",
+   "om:1F6B6",
+   "tw:1f6b6"
+  ],
+  "draw": "A group of children coming along the path."
+ },
+ {
+  "id": 896,
+  "ur": "اعلیٰ",
+  "rom": "aʻlā",
+  "en": "high",
+  "concept": "high: up above",
+  "fit": "metaphor",
+  "cands": [
+   "om:2B06",
+   "tw:2b06"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 897,
+  "ur": "نئے",
+  "rom": "naʾe",
+  "en": "new (plural)",
+  "concept": "new things, plural: sparkling",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F195",
+   "tw:1f195",
+   "om:2728"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 898,
+  "ur": "پیدائش",
+  "rom": "paidāʾish",
+  "en": "birth",
+  "concept": "a newborn baby (birth)",
+  "fit": "close",
+  "cands": [
+   "om:1F476",
+   "mb:baby",
+   "tw:1f476"
+  ],
+  "draw": "A mother holding her newborn baby wrapped in a blanket."
+ },
+ {
+  "id": 899,
+  "ur": "آزاد",
+  "rom": "āzād",
+  "en": "free",
+  "concept": "a free dove flying",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F54A",
+   "mb:dove",
+   "tw:1f54a"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 900,
+  "ur": "رائے",
+  "rom": "rāʾe",
+  "en": "opinion",
+  "concept": "an opinion: a thought bubble",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4AD",
+   "tw:1f4ad"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 901,
+  "ur": "آٹھ",
+  "rom": "āṭh",
+  "en": "eight",
+  "concept": "the number eight",
+  "fit": "direct",
+  "cands": [
+   "mb:eight",
+   "om:0038-FE0F-20E3"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 902,
+  "ur": "آنکھیں",
+  "rom": "āṉkheṉ",
+  "en": "eyes",
+  "concept": "a pair of eyes",
+  "fit": "direct",
+  "cands": [
+   "om:1F440",
+   "mb:eyes",
+   "tw:1f440"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 903,
+  "ur": "گئیں",
+  "rom": "gaʾīṉ",
+  "en": "went (plural fem)",
+  "concept": "girls who went away (walking)",
+  "fit": "close",
+  "cands": [
+   "om:1F6B6-200D-2640-FE0F",
+   "tw:1f6b6",
+   "mb:go_,_to"
+  ],
+  "draw": "Two girls walking away together down a lane."
+ },
+ {
+  "id": 904,
+  "ur": "بچّہ",
+  "rom": "bachcha",
+  "en": "child",
+  "concept": "a child",
+  "fit": "direct",
+  "cands": [
+   "om:1F9D2",
+   "tw:1f9d2",
+   "om:1F466"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 905,
+  "ur": "امّی",
+  "rom": "ammī",
+  "en": "mum",
+  "concept": "mum",
+  "fit": "direct",
+  "cands": [
+   "mb:mum_parent",
+   "om:1F469",
+   "tw:1f469"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 906,
+  "ur": "آرام",
+  "rom": "ārām",
+  "en": "rest, comfort",
+  "concept": "resting comfortably in bed",
+  "fit": "close",
+  "cands": [
+   "mb:rest_,_to",
+   "om:1F6CC",
+   "tw:1f6cc"
+  ],
+  "draw": "A man resting on a charpai under a tree on a hot day."
+ },
+ {
+  "id": 907,
+  "ur": "آواز",
+  "rom": "āwāz",
+  "en": "voice, sound",
+  "concept": "a voice: a person speaking",
+  "fit": "close",
+  "cands": [
+   "om:1F5E3",
+   "tw:1f5e3",
+   "om:1F50A"
+  ],
+  "draw": "A girl calling out loudly with sound waves from her mouth."
+ },
+ {
+  "id": 908,
+  "ur": "سائنس",
+  "rom": "sāʾins",
+  "en": "science",
+  "concept": "science: a microscope",
+  "fit": "direct",
+  "cands": [
+   "mb:science",
+   "om:1F52C",
+   "tw:1f52c"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 909,
+  "ur": "صفائی",
+  "rom": "ṣafāʾī",
+  "en": "cleanliness",
+  "concept": "cleanliness: sweeping with a broom",
+  "fit": "close",
+  "cands": [
+   "om:1F9F9",
+   "mb:broom",
+   "tw:1f9f9"
+  ],
+  "draw": "A girl sweeping a clean courtyard with a broom."
+ },
+ {
+  "id": 910,
+  "ur": "لڑائی",
+  "rom": "laṛāʾī",
+  "en": "fight",
+  "concept": "a fight between two children",
+  "fit": "close",
+  "cands": [
+   "mb:fight_,_to",
+   "om:1F4A2",
+   "tw:1f4a2"
+  ],
+  "draw": "Two boys arguing angrily and pushing each other, with a teacher approaching."
+ },
+ {
+  "id": 911,
+  "ur": "آدھا",
+  "rom": "ādhā",
+  "en": "half",
+  "concept": "half of something",
+  "fit": "close",
+  "cands": [
+   "mb:half",
+   "om:1F313",
+   "tw:1f313"
+  ],
+  "draw": "A roti cut in half, shown as two equal halves."
+ },
+ {
+  "id": 912,
+  "ur": "جائیں",
+  "rom": "jāʾeṉ",
+  "en": "may go (plural)",
+  "concept": "to go: moving off",
+  "fit": "close",
+  "cands": [
+   "mb:go_,_to",
+   "om:1F6B6",
+   "tw:1f6b6"
+  ],
+  "draw": "Children leaving together to go to school."
+ },
+ {
+  "id": 913,
+  "ur": "فائدہ",
+  "rom": "fāʾida",
+  "en": "benefit",
+  "concept": "benefit: a chart going up",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4C8",
+   "tw:1f4c8",
+   "om:1F4B0"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 914,
+  "ur": "مسائل",
+  "rom": "masāʾil",
+  "en": "problems",
+  "concept": "a problem: a question mark",
+  "fit": "metaphor",
+  "cands": [
+   "om:2753",
+   "tw:2753",
+   "om:1F9E9"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 915,
+  "ur": "دہائی",
+  "rom": "dahāʾī",
+  "en": "decade",
+  "concept": "a decade: ten years",
+  "fit": "none",
+  "cands": [],
+  "draw": "Ten calendar pages in a row, each marked with a different year, no text."
+ },
+ {
+  "id": 916,
+  "ur": "مسئلہ",
+  "rom": "masʾala",
+  "en": "problem",
+  "concept": "a problem: a question mark",
+  "fit": "metaphor",
+  "cands": [
+   "om:2753",
+   "tw:2753",
+   "om:1F9E9"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 917,
+  "ur": "بجائے",
+  "rom": "bajāʾe",
+  "en": "instead of",
+  "concept": "instead of: swapping one thing for another",
+  "fit": "none",
+  "cands": [],
+  "draw": "A boy puts down an apple and picks up a banana instead."
+ },
+ {
+  "id": 918,
+  "ur": "ذائقہ",
+  "rom": "ẕāʾiqa",
+  "en": "taste",
+  "concept": "taste: the tongue",
+  "fit": "close",
+  "cands": [
+   "om:1F445",
+   "mb:tongue",
+   "tw:1f445"
+  ],
+  "draw": "A child tasting a spoonful of food, tongue showing, pleased face."
+ },
+ {
+  "id": 919,
+  "ur": "سچائی",
+  "rom": "sachchāʾī",
+  "en": "truth",
+  "concept": "truth: telling the truth",
+  "fit": "none",
+  "cands": [],
+  "draw": "A boy honestly telling his mother he broke the cup, holding the pieces."
+ },
+ {
+  "id": 920,
+  "ur": "آسمان",
+  "rom": "āsmān",
+  "en": "sky",
+  "concept": "the sky with sun and cloud",
+  "fit": "close",
+  "cands": [
+   "om:1F324",
+   "tw:1f324",
+   "mb:cloudy"
+  ],
+  "draw": "A wide blue sky with white clouds over a village field."
+ },
+ {
+  "id": 921,
+  "ur": "نتائج",
+  "rom": "natāʾij",
+  "en": "results",
+  "concept": "results: exam score",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4AF",
+   "tw:1f4af",
+   "om:1F4CA"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 922,
+  "ur": "کھائیں",
+  "rom": "khāʾeṉ",
+  "en": "may eat",
+  "concept": "to eat: fork and knife",
+  "fit": "close",
+  "cands": [
+   "mb:eat_,_to",
+   "om:1F37D",
+   "tw:1f374"
+  ],
+  "draw": "Children sitting on the floor eating roti and curry from plates."
+ },
+ {
+  "id": 923,
+  "ur": "مکّہ",
+  "rom": "makka",
+  "en": "Makkah",
+  "concept": "Makkah: the Kaaba",
+  "fit": "close",
+  "cands": [
+   "om:1F54B",
+   "tw:1f54b"
+  ],
+  "draw": "The Kaaba in Makkah with pilgrims in white around it, no text."
+ },
+ {
+  "id": 924,
+  "ur": "سائیکل",
+  "rom": "sāʾīkal",
+  "en": "bicycle",
+  "concept": "a bicycle",
+  "fit": "direct",
+  "cands": [
+   "om:1F6B2",
+   "mb:bicycle",
+   "tw:1f6b2"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 925,
+  "ur": "ڈھائی",
+  "rom": "ḍhāʾī",
+  "en": "two and a half",
+  "concept": "two and a half: two whole and one half",
+  "fit": "none",
+  "cands": [],
+  "draw": "Two whole oranges and one half orange in a row."
+ },
+ {
+  "id": 926,
+  "ur": "کائنات",
+  "rom": "kāʾināt",
+  "en": "universe",
+  "concept": "the universe: galaxy",
+  "fit": "close",
+  "cands": [
+   "om:1F30C",
+   "tw:1f30c",
+   "om:1FA90"
+  ],
+  "draw": "The night sky with the moon, stars and planets seen from a village roof."
+ },
+ {
+  "id": 927,
+  "ur": "آنسو",
+  "rom": "āṉsū",
+  "en": "tear",
+  "concept": "a tear on a crying face",
+  "fit": "close",
+  "cands": [
+   "om:1F622",
+   "tw:1f622",
+   "om:1F4A7"
+  ],
+  "draw": "A close-up of one tear rolling down a child cheek."
+ }
+]

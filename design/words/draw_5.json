@@ -1,0 +1,106 @@
+[
+{
+"id": 582,
+"ur": "چیزیں",
+"rom": "chīzeṉ",
+"en": "things",
+"concept": "a thing, an object",
+"draw": ""
+},
+{
+"id": 602,
+"ur": "دروازے",
+"rom": "darwāze",
+"en": "doors",
+"concept": "a door",
+"draw": ""
+},
+{
+"id": 611,
+"ur": "بازار",
+"rom": "bāzār",
+"en": "market",
+"concept": "a market, shops",
+"draw": "A busy Pakistani bazaar with stalls of fruit and cloth."
+},
+{
+"id": 614,
+"ur": "کمزور",
+"rom": "kamzor",
+"en": "weak",
+"concept": "weak",
+"draw": "A thin tired boy struggling to lift a small bucket of water."
+},
+{
+"id": 629,
+"ur": "ٹیڑھا",
+"rom": "ṭeṛhā",
+"en": "crooked",
+"concept": "crooked (zigzag diagram rejected)",
+"draw": "A crooked bent stick next to a straight stick."
+},
+{
+"id": 631,
+"ur": "لڑکیاں",
+"rom": "laṛkiyāṉ",
+"en": "girls",
+"concept": "girls",
+"draw": "Three Pakistani schoolgirls standing together smiling."
+},
+{
+"id": 638,
+"ur": "چھوڑنا",
+"rom": "chhoṛnā",
+"en": "to leave, let go",
+"concept": "to let go (open palms ambiguous)",
+"draw": "A child opening both hands to let a small bird fly away."
+},
+{
+"id": 640,
+"ur": "کڑوا",
+"rom": "kaṛwā",
+"en": "bitter",
+"concept": "a bitter taste",
+"draw": "A child scrunching face after tasting a green bitter gourd (karela)."
+},
+{
+"id": 646,
+"ur": "ڈیڑھ",
+"rom": "ḍeṛh",
+"en": "one and a half",
+"concept": "one and a half",
+"draw": "One whole roti and half a roti side by side on a plate."
+},
+{
+"id": 652,
+"ur": "ڈھیر",
+"rom": "ḍher",
+"en": "heap",
+"concept": "a big heap, pile",
+"draw": "A big heap of wheat grain in a village courtyard."
+},
+{
+"id": 666,
+"ur": "گڑیا",
+"rom": "guṛiyā",
+"en": "doll",
+"concept": "a doll",
+"draw": ""
+},
+{
+"id": 717,
+"ur": "غریب",
+"rom": "g͟harīb",
+"en": "poor",
+"concept": "poor, needy",
+"draw": "A poor Pakistani family sitting outside a small mud house."
+},
+{
+"id": 727,
+"ur": "سفید",
+"rom": "safīd",
+"en": "white",
+"concept": "colour white; outline-only pictures do not show white",
+"draw": ""
+}
+]

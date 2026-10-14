@@ -1,0 +1,493 @@
+{
+ "722": {
+  "cands": [
+   "tw:1f4ac",
+   "mb:talk_2_,_to"
+  ],
+  "fit": "close"
+ },
+ "723": {
+  "cands": [
+   "mb:dream_,_to",
+   "om:1F4AD",
+   "om:1F634"
+  ],
+  "fit": "close"
+ },
+ "725": {
+  "cands": [
+   "mb:castle",
+   "om:1F3F0"
+  ],
+  "fit": "close"
+ },
+ "726": {
+  "cands": [],
+  "fit": "none",
+  "concept": "abstract; book/magnifier does not show 'meaning'"
+ },
+ "727": {
+  "cands": [],
+  "fit": "none",
+  "concept": "colour white; outline-only pictures do not show white"
+ },
+ "729": {
+  "cands": [
+   "tw:2764",
+   "om:2764"
+  ],
+  "fit": "close"
+ },
+ "730": {
+  "cands": [
+   "mb:ambulance",
+   "om:1F691"
+  ],
+  "fit": "metaphor",
+  "concept": "ambulance rushing to an accident"
+ },
+ "732": {
+  "cands": [
+   "om:1F3C5",
+   "tw:1f3c5",
+   "om:1F451"
+  ],
+  "fit": "metaphor"
+ },
+ "733": {
+  "cands": [
+   "mb:back_garden",
+   "om:1F3E1",
+   "om:1F338"
+  ],
+  "fit": "close"
+ },
+ "734": {
+  "cands": [
+   "tw:1f4f0",
+   "mb:newspaper"
+  ],
+  "fit": "direct"
+ },
+ "736": {
+  "cands": [
+   "om:1FAA8",
+   "mb:hard"
+  ],
+  "fit": "close"
+ },
+ "737": {
+  "cands": [
+   "om:1F604",
+   "tw:1f604",
+   "om:1F60A"
+  ],
+  "fit": "direct"
+ },
+ "739": {
+  "cands": [
+   "om:1F61F",
+   "tw:1f61f",
+   "mb:worried_man"
+  ],
+  "fit": "close"
+ },
+ "741": {
+  "cands": [
+   "tw:1f9e0",
+   "om:1F9E0",
+   "mb:brain"
+  ],
+  "fit": "close"
+ },
+ "742": {
+  "cands": [
+   "tw:1fa78",
+   "om:1FA78"
+  ],
+  "fit": "direct"
+ },
+ "743": {
+  "cands": [
+   "om:1FAD9",
+   "mb:empty"
+  ],
+  "fit": "close"
+ },
+ "744": {
+  "cands": [
+   "mb:glasses",
+   "om:1F453",
+   "tw:1f453"
+  ],
+  "fit": "direct"
+ },
+ "746": {
+  "cands": [
+   "tw:1f5fa",
+   "om:1F5FA"
+  ],
+  "fit": "direct"
+ },
+ "747": {
+  "cands": [
+   "mb:flower",
+   "om:1F338",
+   "om:1F443"
+  ],
+  "fit": "close"
+ },
+ "748": {
+  "cands": [
+   "om:1F44D",
+   "om:1F4AF"
+  ],
+  "fit": "metaphor"
+ },
+ "749": {
+  "cands": [
+   "mb:pen",
+   "tw:1f58a"
+  ],
+  "fit": "direct"
+ },
+ "750": {
+  "cands": [
+   "om:1F912",
+   "om:1F321",
+   "tw:1f321"
+  ],
+  "fit": "close"
+ },
+ "751": {
+  "cands": [
+   "tw:1f34e",
+   "om:1F34E"
+  ],
+  "fit": "direct"
+ },
+ "753": {
+  "cands": [
+   "om:1FA9E",
+   "om:1FA9F"
+  ],
+  "fit": "close"
+ },
+ "756": {
+  "cands": [
+   "om:1F623",
+   "tw:1f623"
+  ],
+  "fit": "metaphor"
+ },
+ "757": {
+  "cands": [
+   "om:1F54C",
+   "tw:1f54c"
+  ],
+  "fit": "metaphor"
+ },
+ "759": {
+  "cands": [
+   "om:1F622",
+   "tw:1f622",
+   "om:1F62D"
+  ],
+  "fit": "close"
+ },
+ "762": {
+  "cands": [
+   "mb:sit_on_floor_,_to",
+   "mb:floor"
+  ],
+  "fit": "close"
+ },
+ "763": {
+  "cands": [
+   "om:26A1",
+   "tw:26a1"
+  ],
+  "fit": "metaphor"
+ },
+ "764": {
+  "cands": [
+   "mb:clothes_male",
+   "om:1F455",
+   "tw:1f455"
+  ],
+  "fit": "direct"
+ },
+ "765": {
+  "cands": [
+   "om:1F469"
+  ],
+  "fit": "metaphor",
+  "concept": "a woman (aunt)"
+ },
+ "766": {
+  "cands": [
+   "om:1F4C5"
+  ],
+  "fit": "metaphor"
+ },
+ "767": {
+  "cands": [
+   "tw:1f407",
+   "mb:rabbit",
+   "om:1F430"
+  ],
+  "fit": "direct"
+ },
+ "768": {
+  "cands": [
+   "tw:1f98a",
+   "om:1F98A",
+   "mb:fox"
+  ],
+  "fit": "metaphor"
+ },
+ "769": {
+  "cands": [
+   "om:1F468"
+  ],
+  "fit": "metaphor",
+  "concept": "a man (uncle)"
+ },
+ "770": {
+  "cands": [],
+  "fit": "none",
+  "concept": "only Latin ABC pictures available; would misread for Urdu"
+ },
+ "773": {
+  "cands": [
+   "tw:26fa",
+   "om:26FA"
+  ],
+  "fit": "direct"
+ },
+ "775": {
+  "cands": [
+   "om:1F61C",
+   "tw:1f61c"
+  ],
+  "fit": "close"
+ },
+ "776": {
+  "cands": [
+   "om:1F36E",
+   "mb:dessert"
+  ],
+  "fit": "metaphor"
+ },
+ "781": {
+  "cands": [
+   "om:27A1",
+   "mb:side"
+  ],
+  "fit": "metaphor"
+ },
+ "783": {
+  "cands": [
+   "tw:1f441",
+   "om:1F441",
+   "om:1F440"
+  ],
+  "fit": "close"
+ },
+ "784": {
+  "cands": [
+   "om:1F305",
+   "mb:morning"
+  ],
+  "fit": "direct"
+ },
+ "786": {
+  "cands": [
+   "tw:274c",
+   "om:274C"
+  ],
+  "fit": "metaphor"
+ },
+ "787": {
+  "cands": [
+   "mb:cake_slice",
+   "mb:part"
+  ],
+  "fit": "close"
+ },
+ "789": {
+  "cands": [
+   "om:1F98B",
+   "om:2728"
+  ],
+  "fit": "metaphor"
+ },
+ "790": {
+  "cands": [
+   "om:2705",
+   "om:2714"
+  ],
+  "fit": "close"
+ },
+ "791": {
+  "cands": [
+   "mb:hundred"
+  ],
+  "fit": "metaphor"
+ },
+ "792": {
+  "cands": [
+   "om:2709",
+   "om:1F48C"
+  ],
+  "fit": "direct"
+ },
+ "793": {
+  "cands": [],
+  "fit": "none",
+  "concept": "tuxedo man reads as groom/waiter, not sir"
+ },
+ "795": {
+  "cands": [
+   "om:2B50",
+   "om:1F31F"
+  ],
+  "fit": "metaphor"
+ },
+ "796": {
+  "cands": [],
+  "fit": "none",
+  "concept": "tuxedo/building do not show president"
+ },
+ "799": {
+  "cands": [
+   "mb:busy",
+   "om:1F4BC"
+  ],
+  "fit": "close"
+ },
+ "800": {
+  "cands": [
+   "om:1F331",
+   "tw:1f331"
+  ],
+  "fit": "metaphor"
+ },
+ "801": {
+  "cands": [
+   "om:1F309",
+   "tw:1f309"
+  ],
+  "fit": "metaphor"
+ },
+ "802": {
+  "cands": [
+   "mb:clean_hands",
+   "om:1F9FC"
+  ],
+  "fit": "close"
+ },
+ "803": {
+  "cands": [
+   "mb:great",
+   "om:1F451",
+   "om:1F3D4"
+  ],
+  "fit": "metaphor"
+ },
+ "804": {
+  "cands": [],
+  "fit": "none",
+  "concept": "abstract wish; pictures confusing"
+ },
+ "806": {
+  "cands": [
+   "om:274C",
+   "mb:mistake_no_wrong",
+   "om:1F926"
+  ],
+  "fit": "metaphor"
+ },
+ "808": {
+  "cands": [],
+  "fit": "none",
+  "concept": "abstract; step_by_step picture is confusing"
+ },
+ "811": {
+  "cands": [],
+  "fit": "none",
+  "concept": "speaking head does not show expression"
+ },
+ "813": {
+  "cands": [],
+  "fit": "none",
+  "concept": "abstract; book/magnifier does not show meaning/purpose"
+ },
+ "815": {
+  "cands": [
+   "om:26A0",
+   "tw:26a0"
+  ],
+  "fit": "close"
+ },
+ "817": {
+  "cands": [
+   "om:1F3AF",
+   "tw:1f3af"
+  ],
+  "fit": "close"
+ },
+ "818": {
+  "cands": [
+   "tw:1f3de",
+   "om:1F305"
+  ],
+  "fit": "close"
+ },
+ "819": {
+  "cands": [],
+  "fit": "none",
+  "concept": "eye does not convey 'apparent'"
+ },
+ "821": {
+  "cands": [
+   "om:1F4CF",
+   "mb:long"
+  ],
+  "fit": "close"
+ },
+ "823": {
+  "cands": [
+   "tw:1f620",
+   "om:1F621"
+  ],
+  "fit": "direct"
+ },
+ "824": {
+  "cands": [
+   "om:1F512",
+   "tw:1f512",
+   "om:1F6E1"
+  ],
+  "fit": "metaphor"
+ },
+ "805": {
+  "cands": [
+   "tw:1f4ac"
+  ],
+  "fit": "metaphor"
+ },
+ "812": {
+  "cands": [
+   "tw:1f4ac"
+  ],
+  "fit": "metaphor"
+ },
+ "728": {
+  "cands": [
+   "om:1F647",
+   "tw:1f647"
+  ],
+  "fit": "metaphor"
+ }
+}

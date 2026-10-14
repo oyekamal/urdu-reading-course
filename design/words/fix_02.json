@@ -1,0 +1,300 @@
+{
+ "105": {
+  "cands": [
+   "tw:1f9ea",
+   "om:1F9EA",
+   "mb:science"
+  ],
+  "fit": "close",
+  "concept": "a test tube with bubbling liquid (chemistry)"
+ },
+ "107": {
+  "cands": [
+   "om:1F9AF",
+   "tw:1f9af"
+  ],
+  "fit": "close",
+  "concept": "a white cane used by a blind person"
+ },
+ "108": {
+  "cands": [
+   "tw:1f535",
+   "om:1F535"
+  ],
+  "fit": "direct",
+  "concept": "the colour blue"
+ },
+ "109": {
+  "cands": [
+   "tw:1f9c2",
+   "mb:salty"
+  ],
+  "fit": "direct",
+  "concept": "salt shaker (salty taste)"
+ },
+ "110": {
+  "cands": [
+   "tw:1f48e",
+   "om:1F48E"
+  ],
+  "fit": "close",
+  "concept": "a blue sapphire gem"
+ },
+ "112": {
+  "cands": [
+   "mb:family",
+   "om:1F46A"
+  ],
+  "fit": "metaphor",
+  "concept": "a family of relatives together"
+ },
+ "116": {
+  "cands": [
+   "tw:1f4a7",
+   "om:1F4A7"
+  ],
+  "fit": "close",
+  "concept": "a drop of water"
+ },
+ "117": {
+  "cands": [
+   "mb:minute",
+   "tw:23f1"
+  ],
+  "fit": "close",
+  "concept": "a clock/stopwatch (a minute)"
+ },
+ "118": {
+  "cands": [
+   "om:1F467",
+   "tw:1f467"
+  ],
+  "fit": "close",
+  "concept": "a girl (daughter)"
+ },
+ "120": {
+  "cands": [
+   "om:1F466",
+   "tw:1f466"
+  ],
+  "fit": "close",
+  "concept": "a boy (son)"
+ },
+ "125": {
+  "cands": [
+   "om:1F466",
+   "tw:1f466"
+  ],
+  "fit": "close",
+  "concept": "a boy (son)"
+ },
+ "122": {
+  "cands": [
+   "tw:1f468",
+   "om:1F468"
+  ],
+  "fit": "close",
+  "concept": "a man with a beard (father)"
+ },
+ "195": {
+  "cands": [
+   "tw:1f468",
+   "om:1F468"
+  ],
+  "fit": "close",
+  "concept": "a man with a beard (dad)"
+ },
+ "123": {
+  "cands": [
+   "mb:notebook",
+   "om:1F4D3"
+  ],
+  "fit": "direct",
+  "concept": "a school notebook"
+ },
+ "127": {
+  "cands": [
+   "tw:1f309"
+  ],
+  "fit": "close",
+  "concept": "a bridge"
+ },
+ "128": {
+  "cands": [
+   "tw:1f34e",
+   "om:1F34E"
+  ],
+  "fit": "metaphor",
+  "concept": "a ripe red apple"
+ },
+ "142": {
+  "cands": [
+   "tw:1f34e",
+   "om:1F34E"
+  ],
+  "fit": "metaphor",
+  "concept": "a ripe red apple"
+ },
+ "130": {
+  "cands": [
+   "om:E313"
+  ],
+  "fit": "close",
+  "concept": "a stomach"
+ },
+ "131": {
+  "cands": [],
+  "fit": "none",
+  "concept": "thin"
+ },
+ "152": {
+  "cands": [],
+  "fit": "none",
+  "concept": "thin"
+ },
+ "132": {
+  "cands": [
+   "om:1F7E1",
+   "tw:1f7e1"
+  ],
+  "fit": "direct",
+  "concept": "the colour yellow"
+ },
+ "133": {
+  "cands": [],
+  "fit": "none",
+  "concept": "captain"
+ },
+ "134": {
+  "cands": [
+   "mb:topsoil",
+   "mb:clay"
+  ],
+  "fit": "close",
+  "concept": "soil"
+ },
+ "137": {
+  "cands": [
+   "om:1F37D",
+   "tw:1f37d",
+   "mb:plate"
+  ],
+  "fit": "direct",
+  "concept": "a plate"
+ },
+ "141": {
+  "cands": [
+   "tw:1f9f1",
+   "om:1F9F1"
+  ],
+  "fit": "direct",
+  "concept": "a brick"
+ },
+ "145": {
+  "cands": [
+   "tw:1f34a",
+   "om:1F34A",
+   "mb:orange"
+  ],
+  "fit": "direct",
+  "concept": "an orange fruit"
+ },
+ "147": {
+  "cands": [
+   "mb:get_,_to"
+  ],
+  "fit": "metaphor",
+  "concept": "a hand getting something"
+ },
+ "150": {
+  "cands": [
+   "mb:lantern_2"
+  ],
+  "fit": "direct",
+  "concept": "a lantern"
+ },
+ "169": {
+  "cands": [
+   "tw:1f32c",
+   "om:1F32C"
+  ],
+  "fit": "direct",
+  "concept": "wind blowing"
+ },
+ "174": {
+  "cands": [
+   "mb:first_2"
+  ],
+  "fit": "metaphor",
+  "concept": "runners, one first"
+ },
+ "178": {
+  "cands": [
+   "tw:1f4ac",
+   "mb:talk_1_,_to"
+  ],
+  "fit": "close",
+  "concept": "a speech bubble"
+ },
+ "182": {
+  "cands": [],
+  "fit": "none",
+  "concept": "every"
+ },
+ "185": {
+  "cands": [
+   "om:2600",
+   "tw:2600"
+  ],
+  "fit": "close",
+  "concept": "the sun (day)"
+ },
+ "189": {
+  "cands": [],
+  "fit": "none",
+  "concept": "a name"
+ },
+ "191": {
+  "cands": [
+   "om:1F6E3",
+   "tw:1f6e3"
+  ],
+  "fit": "metaphor",
+  "concept": "a long road going far"
+ },
+ "192": {
+  "cands": [
+   "mb:first_2"
+  ],
+  "fit": "metaphor",
+  "concept": "runners, one first"
+ },
+ "194": {
+  "cands": [
+   "om:1F6A3"
+  ],
+  "fit": "close",
+  "concept": "a boat on a river"
+ },
+ "201": {
+  "cands": [
+   "om:1F3E0",
+   "tw:1f3e0"
+  ],
+  "fit": "close",
+  "concept": "a house (lives)"
+ },
+ "202": {
+  "cands": [],
+  "fit": "none",
+  "concept": "Urdu language"
+ },
+ "203": {
+  "cands": [
+   "mb:closed_shop",
+   "om:1F512"
+  ],
+  "fit": "close",
+  "concept": "a closed shop"
+ }
+}

@@ -1,0 +1,345 @@
+{
+ "1": {
+  "cands": [
+   "om:1F477",
+   "mb:work_,_to",
+   "tw:1f477"
+  ],
+  "fit": "close",
+  "concept": "a worker in a helmet"
+ },
+ "2": {
+  "cands": [],
+  "fit": "none",
+  "concept": "name badge emoji reads as a flame; no clear picture"
+ },
+ "3": {
+  "cands": [],
+  "fit": "none",
+  "concept": "abstract quantity; diagram fails"
+ },
+ "5": {
+  "cands": [
+   "mb:tomorrow"
+  ],
+  "fit": "metaphor",
+  "concept": "sun now, sun next"
+ },
+ "7": {
+  "cands": [
+   "om:1F91D",
+   "mb:meet_,_to",
+   "tw:1f91d"
+  ],
+  "fit": "close",
+  "concept": "handshake meeting"
+ },
+ "9": {
+  "cands": [
+   "mb:long_hair",
+   "om:1F487"
+  ],
+  "fit": "close",
+  "concept": "hair"
+ },
+ "12": {
+  "cands": [
+   "om:1F54C",
+   "tw:1f54c"
+  ],
+  "fit": "metaphor",
+  "concept": "mosque where the imam leads prayer"
+ },
+ "13": {
+  "cands": [
+   "tw:2705",
+   "om:2705"
+  ],
+  "fit": "metaphor",
+  "concept": "done tick"
+ },
+ "14": {
+  "cands": [],
+  "fit": "none",
+  "concept": "empty thought bubble is meaningless"
+ },
+ "15": {
+  "cands": [],
+  "fit": "none",
+  "concept": "key does not say owner"
+ },
+ "17": {
+  "cands": [
+   "tw:1f534",
+   "om:1F534"
+  ],
+  "fit": "direct",
+  "concept": "red circle"
+ },
+ "18": {
+  "cands": [
+   "om:1F474",
+   "tw:1f474"
+  ],
+  "fit": "close",
+  "concept": "old man"
+ },
+ "19": {
+  "cands": [],
+  "fit": "none",
+  "concept": "bulb means idea, not possibility"
+ },
+ "23": {
+  "cands": [
+   "om:1F468-200D-1F466",
+   "mb:dad_parent"
+  ],
+  "fit": "close",
+  "concept": "father with child"
+ },
+ "26": {
+  "cands": [
+   "mb:sad_man",
+   "om:274C"
+  ],
+  "fit": "metaphor",
+  "concept": "sad failed"
+ },
+ "27": {
+  "cands": [
+   "tw:2b1b",
+   "om:2B1B"
+  ],
+  "fit": "direct",
+  "concept": "black square"
+ },
+ "29": {
+  "cands": [],
+  "fit": "none",
+  "concept": "prohibited sign is crossed-out symbol"
+ },
+ "31": {
+  "cands": [
+   "tw:1f9c2",
+   "mb:salt"
+  ],
+  "fit": "direct",
+  "concept": "salt shaker"
+ },
+ "39": {
+  "cands": [
+   "tw:1fad3",
+   "mb:bread"
+  ],
+  "fit": "close",
+  "concept": "flatbread"
+ },
+ "40": {
+  "cands": [
+   "mb:bird",
+   "om:1F426"
+  ],
+  "fit": "close",
+  "concept": "small bird"
+ },
+ "41": {
+  "cands": [
+   "om:1F91D",
+   "mb:meet_,_to",
+   "tw:1f91d"
+  ],
+  "fit": "close",
+  "concept": "handshake meeting"
+ },
+ "43": {
+  "cands": [
+   "mb:kebab"
+  ],
+  "fit": "direct",
+  "concept": "kebab skewer"
+ },
+ "52": {
+  "cands": [],
+  "fit": "none",
+  "concept": "fist emoji unclear"
+ },
+ "56": {
+  "cands": [
+   "mb:talk_1_,_to",
+   "tw:1f4ac"
+  ],
+  "fit": "close",
+  "concept": "person talking"
+ },
+ "62": {
+  "cands": [],
+  "fit": "none",
+  "concept": "prohibited sign is crossed-out symbol"
+ },
+ "66": {
+  "cands": [
+   "mb:talk_2_,_to",
+   "tw:1f4ac"
+  ],
+  "fit": "close",
+  "concept": "person telling"
+ },
+ "71": {
+  "cands": [
+   "tw:1f408",
+   "mb:cat",
+   "om:1F408"
+  ],
+  "fit": "direct",
+  "concept": "cat"
+ },
+ "72": {
+  "cands": [
+   "tw:1f195",
+   "om:2728"
+  ],
+  "fit": "metaphor",
+  "concept": "NEW label"
+ },
+ "73": {
+  "cands": [
+   "tw:1f9cd"
+  ],
+  "fit": "metaphor",
+  "concept": "one person standing"
+ },
+ "74": {
+  "cands": [
+   "mb:road"
+  ],
+  "fit": "metaphor",
+  "concept": "road distance"
+ },
+ "75": {
+  "cands": [
+   "mb:long"
+  ],
+  "fit": "close",
+  "concept": "long object"
+ },
+ "78": {
+  "cands": [
+   "mb:how_many"
+  ],
+  "fit": "metaphor",
+  "concept": "how many question"
+ },
+ "79": {
+  "cands": [
+   "mb:how_many",
+   "mb:how"
+  ],
+  "fit": "metaphor",
+  "concept": "how much question"
+ },
+ "80": {
+  "cands": [
+   "tw:1f382",
+   "om:1F382"
+  ],
+  "fit": "direct",
+  "concept": "cake"
+ },
+ "82": {
+  "cands": [
+   "tw:1f3e6",
+   "om:1F3E6",
+   "mb:bank"
+  ],
+  "fit": "close",
+  "concept": "bank building"
+ },
+ "85": {
+  "cands": [
+   "mb:country_Pakistan"
+  ],
+  "fit": "close",
+  "concept": "Pakistan map and flag"
+ },
+ "87": {
+  "cands": [
+   "mb:talk_2_,_to",
+   "tw:1f4ac"
+  ],
+  "fit": "close",
+  "concept": "person telling"
+ },
+ "88": {
+  "cands": [
+   "tw:1f61f",
+   "mb:worried_man"
+  ],
+  "fit": "close",
+  "concept": "worried face"
+ },
+ "92": {
+  "cands": [
+   "om:1F3AF",
+   "tw:1f3af"
+  ],
+  "fit": "metaphor",
+  "concept": "target aim"
+ },
+ "98": {
+  "cands": [
+   "om:1F320",
+   "tw:1f320"
+  ],
+  "fit": "metaphor",
+  "concept": "shooting star wish"
+ },
+ "97": {
+  "cands": [
+   "om:1F402"
+  ],
+  "fit": "direct",
+  "concept": "ox"
+ },
+ "100": {
+  "cands": [
+   "tw:1f9cd"
+  ],
+  "fit": "metaphor",
+  "concept": "one person standing"
+ },
+ "101": {
+  "cands": [
+   "om:1F475",
+   "mb:grandmother"
+  ],
+  "fit": "close",
+  "concept": "old woman"
+ },
+ "102": {
+  "cands": [
+   "om:1F44F",
+   "tw:1f44f",
+   "mb:clap_hands_,_to"
+  ],
+  "fit": "direct",
+  "concept": "clapping hands"
+ },
+ "103": {
+  "cands": [
+   "om:1F3EB",
+   "mb:school"
+  ],
+  "fit": "direct",
+  "concept": "school"
+ },
+ "95": {
+  "cands": [],
+  "fit": "none",
+  "concept": "family diagram, not a clear picture"
+ },
+ "89": {
+  "cands": [],
+  "fit": "none",
+  "concept": "abstract; diagram fails"
+ }
+}

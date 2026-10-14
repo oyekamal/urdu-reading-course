@@ -6,7 +6,7 @@ mkdir -p mobile/public/{audio,fonts,data/lessons}
 for k in names words syllables aspirates diacritics units sentences passages sight numerals ui; do mkdir -p mobile/public/audio/$k; rm -f mobile/public/audio/$k/*.mp3; cp assets/audio/$k/*.mp3 mobile/public/audio/$k/; done  # rm first: positions move when word lists change, stale clips would be orphans
 cp assets/fonts/NotoNaskhArabic.ttf assets/fonts/NotoNastaliqUrdu-Regular.ttf assets/fonts/Fredoka.woff2 mobile/public/fonts/
 python3 scripts/subset_fonts.py  # round 11p: the app loads the Urdu-only WOFF2 subsets (the full TTFs above stay for old tools)
-cp data/letters.json data/units.json mobile/public/data/
+cp data/letters.json data/units.json data/word_img.json mobile/public/data/
 cp course/unit_*.md mobile/public/data/lessons/
 python3 - <<'PY'
 import json; M=json.load(open('assets/audio/manifest.json',encoding='utf8'))

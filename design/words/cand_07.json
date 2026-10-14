@@ -1,0 +1,1327 @@
+[
+ {
+  "id": 619,
+  "ur": "ہرگز",
+  "rom": "hargiz",
+  "en": "never",
+  "concept": "a prohibited / no sign (never)",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F6AB",
+   "tw:1f6ab"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 620,
+  "ur": "تمیز",
+  "rom": "tamīz",
+  "en": "manners",
+  "concept": "a neat clean polite child with clean hands",
+  "fit": "close",
+  "cands": [
+   "mb:clean_hands",
+   "mb:tidy_up_,_to"
+  ],
+  "draw": "A neat, polite Pakistani schoolchild in a tidy uniform with clean hands, smiling."
+ },
+ {
+  "id": 621,
+  "ur": "ٹکڑا",
+  "rom": "ṭukṛā",
+  "en": "piece",
+  "concept": "a broken-off piece of something",
+  "fit": "close",
+  "cands": [
+   "om:1F9E9",
+   "tw:1f9e9",
+   "mb:jigsaw_puzzle_piece"
+  ],
+  "draw": "A single torn-off piece of roti held in a child's hand."
+ },
+ {
+  "id": 622,
+  "ur": "داڑھی",
+  "rom": "dāṛhī",
+  "en": "beard",
+  "concept": "a man with a beard",
+  "fit": "direct",
+  "cands": [
+   "om:1F9D4",
+   "tw:1f9d4"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 623,
+  "ur": "مزے",
+  "rom": "maze",
+  "en": "fun (plural)",
+  "concept": "fun, party celebration",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F389",
+   "mb:party_popper",
+   "tw:1f389"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 624,
+  "ur": "پڑھتی",
+  "rom": "paṛhtī",
+  "en": "reads (fem)",
+  "concept": "a girl reading a book",
+  "fit": "close",
+  "cands": [
+   "mb:read_book_,_to",
+   "om:1F4D6",
+   "tw:1f4d6"
+  ],
+  "draw": "A Pakistani girl in a dupatta sitting and reading a book."
+ },
+ {
+  "id": 625,
+  "ur": "ڈبے",
+  "rom": "ḍibbe",
+  "en": "boxes",
+  "concept": "several boxes",
+  "fit": "close",
+  "cands": [
+   "om:1F4E6",
+   "mb:toy_box",
+   "tw:1f4e6"
+  ],
+  "draw": "Three cardboard boxes stacked together."
+ },
+ {
+  "id": 626,
+  "ur": "کیڑا",
+  "rom": "kīṛā",
+  "en": "insect, worm",
+  "concept": "an insect",
+  "fit": "direct",
+  "cands": [
+   "om:1F41B",
+   "tw:1f41b",
+   "om:1FAB1"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 627,
+  "ur": "ڈبہ",
+  "rom": "ḍabba",
+  "en": "box",
+  "concept": "a box",
+  "fit": "close",
+  "cands": [
+   "om:1F4E6",
+   "mb:toy_box",
+   "tw:1f4e6"
+  ],
+  "draw": "One closed cardboard box on a table."
+ },
+ {
+  "id": 628,
+  "ur": "بوڑھی",
+  "rom": "būṛhī",
+  "en": "old woman",
+  "concept": "an old woman",
+  "fit": "direct",
+  "cands": [
+   "om:1F475",
+   "mb:old_person_1",
+   "tw:1f475"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 629,
+  "ur": "ٹیڑھا",
+  "rom": "ṭeṛhā",
+  "en": "crooked",
+  "concept": "something crooked, bent",
+  "fit": "close",
+  "cands": [
+   "mb:crooked"
+  ],
+  "draw": "A crooked bent stick next to a straight stick."
+ },
+ {
+  "id": 630,
+  "ur": "مزیدار",
+  "rom": "mazedār",
+  "en": "tasty",
+  "concept": "tasty delicious food",
+  "fit": "close",
+  "cands": [
+   "mb:delicious_food",
+   "om:1F60B",
+   "tw:1f60b"
+  ],
+  "draw": "A child happily licking lips in front of a plate of hot samosas."
+ },
+ {
+  "id": 631,
+  "ur": "لڑکیاں",
+  "rom": "laṛkiyāṉ",
+  "en": "girls",
+  "concept": "girls",
+  "fit": "close",
+  "cands": [
+   "om:1F467",
+   "tw:1f467"
+  ],
+  "draw": "Three Pakistani schoolgirls standing together smiling."
+ },
+ {
+  "id": 632,
+  "ur": "سیکنڈ",
+  "rom": "sekanḍ",
+  "en": "second (time)",
+  "concept": "a stopwatch showing seconds",
+  "fit": "close",
+  "cands": [
+   "om:23F1",
+   "tw:23f1"
+  ],
+  "draw": "A stopwatch with a thin second hand ticking."
+ },
+ {
+  "id": 633,
+  "ur": "زبردست",
+  "rom": "zabardast",
+  "en": "excellent",
+  "concept": "excellent, great",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4AF",
+   "mb:great",
+   "tw:1f4af"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 634,
+  "ur": "ٹھنڈا",
+  "rom": "ṭhanḍā",
+  "en": "cold",
+  "concept": "feeling cold, freezing",
+  "fit": "direct",
+  "cands": [
+   "om:1F976",
+   "mb:drink_cold",
+   "tw:1f976"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 635,
+  "ur": "پڑوسی",
+  "rom": "paṛosī",
+  "en": "neighbour",
+  "concept": "a neighbour living next house",
+  "fit": "close",
+  "cands": [
+   "om:1F3D8",
+   "tw:1f3d8"
+  ],
+  "draw": "Two neighbours chatting over a low wall between their houses in a Pakistani lane."
+ },
+ {
+  "id": 636,
+  "ur": "ٹرک",
+  "rom": "ṭrak",
+  "en": "truck",
+  "concept": "a truck",
+  "fit": "direct",
+  "cands": [
+   "om:1F69A",
+   "mb:dumper_truck",
+   "tw:1f69a"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 637,
+  "ur": "ڈھول",
+  "rom": "ḍhol",
+  "en": "drum",
+  "concept": "a dhol drum",
+  "fit": "direct",
+  "cands": [
+   "om:1FA98",
+   "mb:drum",
+   "tw:1fa98"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 638,
+  "ur": "چھوڑنا",
+  "rom": "chhoṛnā",
+  "en": "to leave, let go",
+  "concept": "to let go, release",
+  "fit": "close",
+  "cands": [
+   "om:1F450",
+   "tw:1f450"
+  ],
+  "draw": "A child opening both hands to let a small bird fly away."
+ },
+ {
+  "id": 639,
+  "ur": "لڑنا",
+  "rom": "laṛnā",
+  "en": "to fight",
+  "concept": "to fight",
+  "fit": "close",
+  "cands": [
+   "mb:fight_,_to",
+   "om:1F93C",
+   "tw:1f93c"
+  ],
+  "draw": "Two boys quarreling and pushing each other in a playground."
+ },
+ {
+  "id": 640,
+  "ur": "کڑوا",
+  "rom": "kaṛwā",
+  "en": "bitter",
+  "concept": "a bitter taste",
+  "fit": "none",
+  "cands": [],
+  "draw": "A child scrunching face after tasting a green bitter gourd (karela)."
+ },
+ {
+  "id": 641,
+  "ur": "زینب",
+  "rom": "zainab",
+  "en": "Zainab (a name)",
+  "concept": "Zainab (girl's name)",
+  "fit": "none",
+  "cands": [],
+  "draw": "A smiling Pakistani girl with a plait and a dupatta, friendly portrait."
+ },
+ {
+  "id": 642,
+  "ur": "مزدور",
+  "rom": "mazdūr",
+  "en": "labourer",
+  "concept": "a labourer at work",
+  "fit": "direct",
+  "cands": [
+   "om:1F477",
+   "tw:1f477"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 643,
+  "ur": "دوڑ",
+  "rom": "dauṛ",
+  "en": "race, run",
+  "concept": "a race, running",
+  "fit": "direct",
+  "cands": [
+   "om:1F3C3",
+   "mb:run_,_to",
+   "mb:race_athletics",
+   "tw:1f3c3"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 644,
+  "ur": "ڈاک",
+  "rom": "ḍāk",
+  "en": "mail",
+  "concept": "mail, a postbox / letters",
+  "fit": "close",
+  "cands": [
+   "om:1F4EE",
+   "om:2709",
+   "tw:1f4ee"
+  ],
+  "draw": "A Pakistani postman handing a letter to a child at a door."
+ },
+ {
+  "id": 645,
+  "ur": "ہڈی",
+  "rom": "haḍḍī",
+  "en": "bone",
+  "concept": "a bone",
+  "fit": "direct",
+  "cands": [
+   "om:1F9B4",
+   "mb:bone",
+   "tw:1f9b4"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 646,
+  "ur": "ڈیڑھ",
+  "rom": "ḍeṛh",
+  "en": "one and a half",
+  "concept": "one and a half",
+  "fit": "none",
+  "cands": [],
+  "draw": "One whole roti and half a roti side by side on a plate."
+ },
+ {
+  "id": 647,
+  "ur": "ورنہ",
+  "rom": "warna",
+  "en": "otherwise",
+  "concept": "otherwise (conjunction)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 648,
+  "ur": "کپڑا",
+  "rom": "kapṛā",
+  "en": "cloth",
+  "concept": "a piece of cloth, fabric",
+  "fit": "close",
+  "cands": [
+   "mb:fabric",
+   "om:1F45A",
+   "tw:1f45a"
+  ],
+  "draw": "A folded piece of colourful cotton cloth on a shelf."
+ },
+ {
+  "id": 649,
+  "ur": "زنجیر",
+  "rom": "zanjīr",
+  "en": "chain",
+  "concept": "a chain",
+  "fit": "direct",
+  "cands": [
+   "om:26D3",
+   "tw:26d3"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 650,
+  "ur": "زیور",
+  "rom": "zewar",
+  "en": "jewellery",
+  "concept": "jewellery, ring and necklace",
+  "fit": "close",
+  "cands": [
+   "om:1F48D",
+   "mb:necklace",
+   "tw:1f48d"
+  ],
+  "draw": "A gold necklace and bangles laid on a cloth."
+ },
+ {
+  "id": 651,
+  "ur": "زرد",
+  "rom": "zard",
+  "en": "yellow",
+  "concept": "yellow colour",
+  "fit": "direct",
+  "cands": [
+   "mb:yellow",
+   "om:1F7E1",
+   "tw:1f7e1"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 652,
+  "ur": "ڈھیر",
+  "rom": "ḍher",
+  "en": "heap",
+  "concept": "a big heap, pile",
+  "fit": "none",
+  "cands": [],
+  "draw": "A big heap of wheat grain in a village courtyard."
+ },
+ {
+  "id": 653,
+  "ur": "سیڑھی",
+  "rom": "sīṛhī",
+  "en": "stairs, ladder",
+  "concept": "stairs or ladder",
+  "fit": "direct",
+  "cands": [
+   "om:1FA9C",
+   "mb:stairs",
+   "tw:1fa9c"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 654,
+  "ur": "زیتون",
+  "rom": "zaitūn",
+  "en": "olive",
+  "concept": "olives",
+  "fit": "direct",
+  "cands": [
+   "om:1FAD2",
+   "mb:olives",
+   "tw:1fad2"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 655,
+  "ur": "بوڑھا",
+  "rom": "būṛhā",
+  "en": "old man",
+  "concept": "an old man",
+  "fit": "direct",
+  "cands": [
+   "om:1F474",
+   "tw:1f474"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 656,
+  "ur": "درزی",
+  "rom": "darzī",
+  "en": "tailor",
+  "concept": "a tailor sewing",
+  "fit": "close",
+  "cands": [
+   "om:1FAA1",
+   "mb:scissors",
+   "tw:1faa1"
+  ],
+  "draw": "A Pakistani tailor sitting at a sewing machine stitching a shalwar kameez."
+ },
+ {
+  "id": 657,
+  "ur": "ڈالنا",
+  "rom": "ḍālnā",
+  "en": "to put, pour",
+  "concept": "to pour or put into",
+  "fit": "close",
+  "cands": [
+   "mb:pour_,_to",
+   "om:1FAD7",
+   "tw:1fad7"
+  ],
+  "draw": "A child pouring water from a jug into a glass."
+ },
+ {
+  "id": 658,
+  "ur": "ہوشیار",
+  "rom": "hoshyār",
+  "en": "clever, alert",
+  "concept": "clever, smart",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F9E0",
+   "om:1F913",
+   "tw:1f9e0"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 659,
+  "ur": "بڑھنا",
+  "rom": "baṛhnā",
+  "en": "to grow, advance",
+  "concept": "to grow bigger",
+  "fit": "close",
+  "cands": [
+   "mb:grow_,_to",
+   "om:1FAB4",
+   "tw:1fab4"
+  ],
+  "draw": "A small plant shown growing taller in three stages."
+ },
+ {
+  "id": 660,
+  "ur": "گڑ",
+  "rom": "guṛ",
+  "en": "jaggery",
+  "concept": "jaggery (gur), brown sugar block",
+  "fit": "close",
+  "cands": [
+   "mb:sugar_brown"
+  ],
+  "draw": "A lump of brown jaggery (gur) on a small plate."
+ },
+ {
+  "id": 661,
+  "ur": "انڈا",
+  "rom": "anḍā",
+  "en": "egg",
+  "concept": "an egg",
+  "fit": "direct",
+  "cands": [
+   "om:1F95A",
+   "mb:egg",
+   "tw:1f95a"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 662,
+  "ur": "بڑھیا",
+  "rom": "baṛhiyā",
+  "en": "great, first-rate",
+  "concept": "great, first-rate",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F44D",
+   "mb:great",
+   "tw:1f44d"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 663,
+  "ur": "مزا",
+  "rom": "mazā",
+  "en": "fun",
+  "concept": "fun, enjoyment",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F973",
+   "mb:party_popper",
+   "tw:1f973"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 664,
+  "ur": "ڈرنا",
+  "rom": "ḍarnā",
+  "en": "to be afraid",
+  "concept": "to be afraid",
+  "fit": "direct",
+  "cands": [
+   "om:1F628",
+   "mb:afraid_man",
+   "tw:1f628"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 665,
+  "ur": "ڈھونڈنا",
+  "rom": "ḍhūnḍnā",
+  "en": "to look for",
+  "concept": "to look for, search",
+  "fit": "close",
+  "cands": [
+   "om:1F50D",
+   "mb:look_,_to",
+   "tw:1f50d"
+  ],
+  "draw": "A child searching under a bed with a torch for a lost toy."
+ },
+ {
+  "id": 666,
+  "ur": "گڑیا",
+  "rom": "guṛiyā",
+  "en": "doll",
+  "concept": "a doll",
+  "fit": "direct",
+  "cands": [
+   "mb:doll"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 667,
+  "ur": "مڑنا",
+  "rom": "muṛnā",
+  "en": "to turn",
+  "concept": "to turn",
+  "fit": "close",
+  "cands": [
+   "mb:turn_,_to",
+   "om:E0A7",
+   "tw:21a9"
+  ],
+  "draw": "A child on a bicycle turning a corner in a lane."
+ },
+ {
+  "id": 668,
+  "ur": "ژالہ",
+  "rom": "zhāla",
+  "en": "hailstone",
+  "concept": "hailstones",
+  "fit": "none",
+  "cands": [],
+  "draw": "White hailstones falling on a Pakistani courtyard while a child watches from a doorway."
+ },
+ {
+  "id": 669,
+  "ur": "بعد",
+  "rom": "baʻd",
+  "en": "after",
+  "concept": "after (later)",
+  "fit": "metaphor",
+  "cands": [
+   "mb:after"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 670,
+  "ur": "وقت",
+  "rom": "waqt",
+  "en": "time",
+  "concept": "time, a clock",
+  "fit": "close",
+  "cands": [
+   "mb:clock",
+   "om:1F550",
+   "tw:1f550"
+  ],
+  "draw": "A wall clock in a classroom."
+ },
+ {
+  "id": 671,
+  "ur": "سمندر",
+  "rom": "samundar",
+  "en": "sea, ocean",
+  "concept": "the sea",
+  "fit": "close",
+  "cands": [
+   "om:1F30A",
+   "tw:1f30a"
+  ],
+  "draw": "A wide blue sea with waves and a small boat at Karachi beach."
+ },
+ {
+  "id": 672,
+  "ur": "کافی",
+  "rom": "kāfī",
+  "en": "quite, enough",
+  "concept": "enough",
+  "fit": "metaphor",
+  "cands": [
+   "mb:enough"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 673,
+  "ur": "خیال",
+  "rom": "k͟hayāl",
+  "en": "thought, idea",
+  "concept": "a thought, an idea",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4A1",
+   "om:1F4AD",
+   "tw:1f4a1"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 674,
+  "ur": "شروع",
+  "rom": "shurūʻ",
+  "en": "beginning",
+  "concept": "to begin, start",
+  "fit": "metaphor",
+  "cands": [
+   "mb:begin_start"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 675,
+  "ur": "خود",
+  "rom": "k͟hud",
+  "en": "self",
+  "concept": "oneself (reflexive)",
+  "fit": "none",
+  "cands": [],
+  "draw": "A child pointing proudly to himself saying he did it on his own."
+ },
+ {
+  "id": 676,
+  "ur": "فلم",
+  "rom": "film",
+  "en": "movie, film",
+  "concept": "a film, movie",
+  "fit": "close",
+  "cands": [
+   "om:1F3AC",
+   "om:1F3A5",
+   "tw:1f3ac"
+  ],
+  "draw": "A family watching a movie on a TV screen at home."
+ },
+ {
+  "id": 677,
+  "ur": "علی",
+  "rom": "ʻalī",
+  "en": "Ali (a name)",
+  "concept": "Ali (boy's name)",
+  "fit": "none",
+  "cands": [],
+  "draw": "A smiling Pakistani boy in a school uniform, friendly portrait."
+ },
+ {
+  "id": 678,
+  "ur": "ختم",
+  "rom": "k͟hatm",
+  "en": "end",
+  "concept": "the end, finished",
+  "fit": "metaphor",
+  "cands": [
+   "mb:finish"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 679,
+  "ur": "خوش",
+  "rom": "k͟hush",
+  "en": "happy",
+  "concept": "happy",
+  "fit": "close",
+  "cands": [
+   "mb:happy_lady",
+   "om:1F600",
+   "tw:1f600"
+  ],
+  "draw": "A child laughing with joy."
+ },
+ {
+  "id": 680,
+  "ur": "عمر",
+  "rom": "ʻumr",
+  "en": "age",
+  "concept": "age, a birthday",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F382",
+   "mb:birthday_cake",
+   "tw:1f382"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 681,
+  "ur": "عام",
+  "rom": "ʻām",
+  "en": "common",
+  "concept": "common, ordinary",
+  "fit": "none",
+  "cands": [],
+  "draw": "A group of ordinary everyday people walking in a market."
+ },
+ {
+  "id": 682,
+  "ur": "تعلیم",
+  "rom": "taʻlīm",
+  "en": "education",
+  "concept": "education, school and books",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4DA",
+   "om:1F3EB",
+   "tw:1f3eb"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 683,
+  "ur": "خاندان",
+  "rom": "k͟hāndān",
+  "en": "family, clan",
+  "concept": "a family",
+  "fit": "direct",
+  "cands": [
+   "om:1F46A",
+   "mb:family",
+   "tw:1f46a"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 684,
+  "ur": "بغیر",
+  "rom": "bag͟hair",
+  "en": "without",
+  "concept": "without (preposition)",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 685,
+  "ur": "تاریخ",
+  "rom": "tārīk͟h",
+  "en": "history, date",
+  "concept": "a date on a calendar",
+  "fit": "close",
+  "cands": [
+   "om:1F4C5",
+   "mb:calendar",
+   "tw:1f4c5"
+  ],
+  "draw": "A hand circling a date on a wall calendar."
+ },
+ {
+  "id": 686,
+  "ur": "قریب",
+  "rom": "qarīb",
+  "en": "near",
+  "concept": "near, close by",
+  "fit": "metaphor",
+  "cands": [
+   "mb:near"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 687,
+  "ur": "فوج",
+  "rom": "fauj",
+  "en": "army",
+  "concept": "the army, soldiers",
+  "fit": "close",
+  "cands": [
+   "om:1FA96",
+   "mb:soldier_1a",
+   "tw:1fa96"
+  ],
+  "draw": "A line of Pakistani soldiers marching in uniform."
+ },
+ {
+  "id": 688,
+  "ur": "یقین",
+  "rom": "yaqīn",
+  "en": "belief, certainty",
+  "concept": "certainty, being sure",
+  "fit": "none",
+  "cands": [],
+  "draw": "A child nodding firmly with a confident smile."
+ },
+ {
+  "id": 689,
+  "ur": "احمد",
+  "rom": "aḥmad",
+  "en": "Ahmad (a name)",
+  "concept": "Ahmad (boy's name)",
+  "fit": "none",
+  "cands": [],
+  "draw": "A smiling Pakistani boy in a kurta and cap, friendly portrait."
+ },
+ {
+  "id": 690,
+  "ur": "ہفتے",
+  "rom": "hafte",
+  "en": "weeks, on Saturday",
+  "concept": "weeks",
+  "fit": "close",
+  "cands": [
+   "mb:week",
+   "om:1F4C5",
+   "tw:1f4c5"
+  ],
+  "draw": "A calendar showing seven days in a row, several weeks."
+ },
+ {
+  "id": 691,
+  "ur": "علم",
+  "rom": "ʻilm",
+  "en": "knowledge",
+  "concept": "knowledge, books",
+  "fit": "metaphor",
+  "cands": [
+   "om:1F4DA",
+   "om:1F4D6",
+   "tw:1f4da"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 692,
+  "ur": "معلوم",
+  "rom": "maʻlūm",
+  "en": "known",
+  "concept": "known, understood",
+  "fit": "none",
+  "cands": [],
+  "draw": "A child raising a hand saying he knows the answer."
+ },
+ {
+  "id": 693,
+  "ur": "سفر",
+  "rom": "safar",
+  "en": "journey",
+  "concept": "a journey, travel",
+  "fit": "close",
+  "cands": [
+   "mb:travel",
+   "om:1F68C",
+   "tw:1f68c"
+  ],
+  "draw": "A family with bags boarding a colourful bus for a trip."
+ },
+ {
+  "id": 694,
+  "ur": "فون",
+  "rom": "fon",
+  "en": "phone",
+  "concept": "a phone",
+  "fit": "direct",
+  "cands": [
+   "om:1F4F1",
+   "mb:mobile_phone",
+   "tw:1f4f1"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 695,
+  "ur": "علاقہ",
+  "rom": "ʻilāqa",
+  "en": "area, region",
+  "concept": "an area, region on a map",
+  "fit": "close",
+  "cands": [
+   "om:1F5FA",
+   "tw:1f5fa"
+  ],
+  "draw": "A hand-drawn map of a neighbourhood area with houses and a road."
+ },
+ {
+  "id": 696,
+  "ur": "حال",
+  "rom": "ḥāl",
+  "en": "condition",
+  "concept": "condition, state of things",
+  "fit": "none",
+  "cands": [],
+  "draw": "A doctor asking a child how he is, the child with a thumb-up."
+ },
+ {
+  "id": 697,
+  "ur": "قسم",
+  "rom": "qasam",
+  "en": "oath, kind",
+  "concept": "an oath; a kind or type",
+  "fit": "none",
+  "cands": [],
+  "draw": ""
+ },
+ {
+  "id": 698,
+  "ur": "محنت",
+  "rom": "miḥnat",
+  "en": "hard work",
+  "concept": "hard work, effort",
+  "fit": "close",
+  "cands": [
+   "om:1F4AA",
+   "mb:work_,_to",
+   "tw:1f4aa"
+  ],
+  "draw": "A sweaty farmer working hard in the field."
+ },
+ {
+  "id": 699,
+  "ur": "ہفتہ",
+  "rom": "hafta",
+  "en": "week, Saturday",
+  "concept": "a week",
+  "fit": "close",
+  "cands": [
+   "mb:week",
+   "om:1F4C5",
+   "tw:1f4c5"
+  ],
+  "draw": "A calendar page showing seven days of one week."
+ },
+ {
+  "id": 700,
+  "ur": "عورت",
+  "rom": "ʻaurat",
+  "en": "woman",
+  "concept": "a woman",
+  "fit": "direct",
+  "cands": [
+   "om:1F469",
+   "tw:1f469"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 701,
+  "ur": "قابل",
+  "rom": "qābil",
+  "en": "capable",
+  "concept": "capable, able",
+  "fit": "none",
+  "cands": [],
+  "draw": "A child proudly lifting a heavy bag of books."
+ },
+ {
+  "id": 702,
+  "ur": "عمارت",
+  "rom": "ʻimārat",
+  "en": "building",
+  "concept": "a building",
+  "fit": "direct",
+  "cands": [
+   "om:1F3E2",
+   "om:1F3DB",
+   "tw:1f3e2"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 703,
+  "ur": "خرید",
+  "rom": "k͟harīd",
+  "en": "buy (stem)",
+  "concept": "to buy, shopping",
+  "fit": "close",
+  "cands": [
+   "om:1F6CD",
+   "om:1F6D2",
+   "tw:1f6cd"
+  ],
+  "draw": "A child buying fruit from a vendor's cart, handing over money."
+ },
+ {
+  "id": 704,
+  "ur": "مسجد",
+  "rom": "masjid",
+  "en": "mosque",
+  "concept": "a mosque",
+  "fit": "direct",
+  "cands": [
+   "om:1F54C",
+   "tw:1f54c"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 705,
+  "ur": "عربی",
+  "rom": "ʻarabī",
+  "en": "Arabic",
+  "concept": "Arabic (language)",
+  "fit": "none",
+  "cands": [],
+  "draw": "A Pakistani child reciting from a Quran on a wooden stand."
+ },
+ {
+  "id": 706,
+  "ur": "وعدہ",
+  "rom": "waʻda",
+  "en": "promise",
+  "concept": "a promise",
+  "fit": "close",
+  "cands": [
+   "om:1F91D",
+   "tw:1f91d"
+  ],
+  "draw": "Two children linking little fingers to make a promise."
+ },
+ {
+  "id": 707,
+  "ur": "دعوت",
+  "rom": "daʻwat",
+  "en": "invitation",
+  "concept": "an invitation",
+  "fit": "close",
+  "cands": [
+   "om:1F4E8",
+   "tw:1f4e8"
+  ],
+  "draw": "A child handing a card to a friend to invite him to a party."
+ },
+ {
+  "id": 708,
+  "ur": "ملاقات",
+  "rom": "mulāqāt",
+  "en": "meeting",
+  "concept": "a meeting",
+  "fit": "close",
+  "cands": [
+   "om:1F91D",
+   "tw:1f91d"
+  ],
+  "draw": "Two friends meeting and shaking hands in a street."
+ },
+ {
+  "id": 709,
+  "ur": "اخبار",
+  "rom": "ak͟hbār",
+  "en": "newspaper",
+  "concept": "a newspaper",
+  "fit": "direct",
+  "cands": [
+   "om:1F4F0",
+   "mb:newspaper",
+   "tw:1f4f0"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 710,
+  "ur": "امتحان",
+  "rom": "imtiḥān",
+  "en": "exam",
+  "concept": "an exam",
+  "fit": "close",
+  "cands": [
+   "om:1F4DD",
+   "mb:test",
+   "tw:1f4dd"
+  ],
+  "draw": "Children sitting at desks writing an exam in a classroom."
+ },
+ {
+  "id": 711,
+  "ur": "برف",
+  "rom": "barf",
+  "en": "snow, ice",
+  "concept": "snow, ice",
+  "fit": "direct",
+  "cands": [
+   "mb:snow",
+   "om:2744",
+   "tw:2744"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 712,
+  "ur": "فہرست",
+  "rom": "fihrist",
+  "en": "list",
+  "concept": "a list",
+  "fit": "close",
+  "cands": [
+   "tw:1f4cb",
+   "om:1F4DD"
+  ],
+  "draw": "A hand-written shopping list on paper with ticks."
+ },
+ {
+  "id": 713,
+  "ur": "فرق",
+  "rom": "farq",
+  "en": "difference",
+  "concept": "difference",
+  "fit": "none",
+  "cands": [],
+  "draw": "Two cups side by side, one tall and one short, a child pointing out the difference."
+ },
+ {
+  "id": 714,
+  "ur": "خراب",
+  "rom": "k͟harāb",
+  "en": "bad, spoiled",
+  "concept": "bad, spoiled",
+  "fit": "metaphor",
+  "cands": [
+   "mb:bad",
+   "om:1F44E",
+   "tw:1f44e"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 715,
+  "ur": "خوب",
+  "rom": "k͟hūb",
+  "en": "good, fine",
+  "concept": "good, fine",
+  "fit": "metaphor",
+  "cands": [
+   "mb:good",
+   "om:1F44D",
+   "tw:1f44d"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 716,
+  "ur": "شوق",
+  "rom": "shauq",
+  "en": "liking, hobby",
+  "concept": "a hobby, liking",
+  "fit": "none",
+  "cands": [],
+  "draw": "A child happily painting a picture, hobby time."
+ },
+ {
+  "id": 717,
+  "ur": "غریب",
+  "rom": "g͟harīb",
+  "en": "poor",
+  "concept": "poor, needy",
+  "fit": "none",
+  "cands": [],
+  "draw": "A poor Pakistani family sitting outside a small mud house."
+ },
+ {
+  "id": 718,
+  "ur": "سیاہ",
+  "rom": "siyāh",
+  "en": "black, dark",
+  "concept": "black colour",
+  "fit": "direct",
+  "cands": [
+   "mb:black",
+   "om:2B1B",
+   "tw:2b1b"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 719,
+  "ur": "بستر",
+  "rom": "bistar",
+  "en": "bed",
+  "concept": "a bed",
+  "fit": "direct",
+  "cands": [
+   "om:1F6CF",
+   "mb:single_bed",
+   "tw:1f6cf"
+  ],
+  "draw": ""
+ },
+ {
+  "id": 720,
+  "ur": "دفتر",
+  "rom": "daftar",
+  "en": "office",
+  "concept": "an office",
+  "fit": "close",
+  "cands": [
+   "om:1F3E2",
+   "mb:office_block",
+   "tw:1f3e2"
+  ],
+  "draw": "A man working at a desk with papers in an office."
+ },
+ {
+  "id": 721,
+  "ur": "خدا",
+  "rom": "k͟hudā",
+  "en": "God (Khuda)",
+  "concept": "God (Khuda)",
+  "fit": "none",
+  "cands": [],
+  "draw": "A calm night sky with a crescent moon and stars over a village."
+ }
+]

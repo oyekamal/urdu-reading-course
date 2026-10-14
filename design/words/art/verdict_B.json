@@ -1,0 +1,94 @@
+{
+ "401": {
+  "verdict": "redraw",
+  "note": "Reads as a flower/cloud: boll circles overlap with outline clutter at top and leaves look like a sprig. Draw 3 open green bolls (brown star-shaped husk) each bursting a fluffy white puff, on a branch."
+ },
+ "492": {
+  "verdict": "redraw",
+  "note": "Banana is a detached orange crescent that reads as peel. Make it yellow, curved, with a brown tip and stem; fix apple/orange overlap and add a third fruit so 'fruit' (plural idea) is clear."
+ },
+ "500": {
+  "verdict": "keep",
+  "note": "Kid + kite on a parapet reads as roof. Minor: kid has no legs and arm does not meet the kite string."
+ },
+ "503": {
+  "verdict": "keep",
+  "note": "Dark glasses + white cane clear. Minor: arm is a floating pill, torso has no sleeve."
+ },
+ "558": {
+  "verdict": "redraw",
+  "note": "Dashed string runs hand-to-balloon so he is still holding it. Open palm, string trailing free, balloon drifting up and away with a gap."
+ },
+ "602": {
+  "verdict": "keep",
+  "note": "Two doors, clear, matches mascot palette. Plural ok."
+ },
+ "611": {
+  "verdict": "keep",
+  "note": "Striped awning stall with fruit, clear and tidy."
+ },
+ "614": {
+  "verdict": "keep",
+  "note": "Tired boy, bucket, sweat drop reads weak. Minor: stick legs and bent arm are thinner than mascot proportions."
+ },
+ "629": {
+  "verdict": "keep",
+  "note": "Straight vs zigzag stick reads. Minor: tick marks on straight stick are noise."
+ },
+ "631": {
+  "verdict": "keep",
+  "note": "Three girls, clear. Faces small inside hoods; overlaps acceptable."
+ },
+ "638": {
+  "verdict": "redraw",
+  "note": "Arms-up looks like cheering; bird is tiny and oddly shaped. Show hands open palms-up with a clear round bird just lifting off between/above them, with motion lines."
+ },
+ "640": {
+  "verdict": "redraw",
+  "note": "Karela looks like a pale-spotted pickle and overlaps his shirt. Make it dark green, long, tapered, with bumpy ridges (dark dashes not light dots), held beside him; keep the scrunched face."
+ },
+ "646": {
+  "verdict": "keep",
+  "note": "Whole roti and half roti on plate reads as 1.5. Minor: both look like cookies; add a faint roti edge."
+ },
+ "652": {
+  "verdict": "keep",
+  "note": "Golden grain pile with wheat ear, clear."
+ },
+ "666": {
+  "verdict": "redraw",
+  "note": "Reads as a little girl, not a doll; wobbly arms. Make a small rag doll: button eyes, yarn hair, stitched seams, floppy limbs, held by a hand or sitting."
+ },
+ "717": {
+  "verdict": "redraw",
+  "note": "Cozy house with smiling family says home, not poor. Show patched clothes, cracked mud wall, empty bowl, sad faces; no cheerful smiles."
+ },
+ "817": {
+  "verdict": "keep",
+  "note": "Target with arrow in bullseye, clear."
+ },
+ "862": {
+  "verdict": "keep",
+  "note": "Mosque with minaret and crescent reads. Minor: sun and crescent together confuse; remove sun, add a small person at the minaret."
+ },
+ "866": {
+  "verdict": "keep",
+  "note": "Chest with lock clear and tidy."
+ },
+ "942": {
+  "verdict": "keep",
+  "note": "Tall tree vs tiny child conveys height. Minor: child has no mouth, trunk is short; make tree taller."
+ },
+ "997": {
+  "verdict": "redraw",
+  "note": "Swing kids are tiny, seats look like hats, tree is cropped by the grass block and the grass is a hard-edged rectangle. Bigger kids sitting properly on swing seats, full tree, rounded grass hill."
+ },
+ "1017": {
+  "verdict": "keep",
+  "note": "Bowl with white pudding and nuts reads kheer. Minor: stray white dot on bowl."
+ },
+ "1020": {
+  "verdict": "redraw",
+  "note": "One big orange disc looks like an orange/snail. Draw 3-4 small golden-orange crisscross-spiral jalebis stacked on a plate with syrup shine."
+ }
+}

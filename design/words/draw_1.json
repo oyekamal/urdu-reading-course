@@ -1,0 +1,106 @@
+[
+{
+"id": 2,
+"ur": "نام",
+"rom": "nām",
+"en": "name",
+"concept": "name badge emoji reads as a flame; no clear picture",
+"draw": "A smiling Pakistani child in school uniform wearing a name badge on the chest."
+},
+{
+"id": 3,
+"ur": "کم",
+"rom": "kam",
+"en": "few, less",
+"concept": "abstract quantity; diagram fails",
+"draw": ""
+},
+{
+"id": 10,
+"ur": "بنا",
+"rom": "binā",
+"en": "without",
+"concept": "without: an empty item, nothing inside",
+"draw": ""
+},
+{
+"id": 14,
+"ur": "ممکن",
+"rom": "mumkin",
+"en": "possible",
+"concept": "empty thought bubble is meaningless",
+"draw": ""
+},
+{
+"id": 15,
+"ur": "مالک",
+"rom": "mālik",
+"en": "owner",
+"concept": "key does not say owner",
+"draw": "A Pakistani shopkeeper holding keys in front of his shop, smiling."
+},
+{
+"id": 19,
+"ur": "امکان",
+"rom": "imkān",
+"en": "possibility",
+"concept": "bulb means idea, not possibility",
+"draw": ""
+},
+{
+"id": 23,
+"ur": "بابا",
+"rom": "bābā",
+"en": "dad",
+"concept": "father with child",
+"draw": "A Pakistani father in kurta carrying his small child on his shoulders."
+},
+{
+"id": 28,
+"ur": "مان",
+"rom": "mān",
+"en": "pride, honour",
+"concept": "pride: a proud child with chest out",
+"draw": "A proud Pakistani boy standing tall with a smile and chest out, holding a certificate."
+},
+{
+"id": 29,
+"ur": "ناممکن",
+"rom": "nāmumkin",
+"en": "impossible",
+"concept": "prohibited sign is crossed-out symbol",
+"draw": ""
+},
+{
+"id": 38,
+"ur": "مالا",
+"rom": "mālā",
+"en": "garland",
+"concept": "a garland of flowers worn around the neck",
+"draw": "A garland (haar) of marigold and jasmine flowers on a plain background."
+},
+{
+"id": 43,
+"ur": "کباب",
+"rom": "kabāb",
+"en": "kebab",
+"concept": "kebab skewer",
+"draw": ""
+},
+{
+"id": 52,
+"ur": "تم",
+"rom": "tum",
+"en": "you",
+"concept": "fist emoji unclear",
+"draw": ""
+},
+{
+"id": 62,
+"ur": "مت",
+"rom": "mat",
+"en": "don't",
+"concept": "prohibited sign is crossed-out symbol",
+"draw": ""
+}
+]

@@ -1,0 +1,929 @@
+[
+{
+"ur": "کام",
+"rom": "kām",
+"en": "work",
+"unit": 1,
+"i": 0,
+"src": "unit",
+"id": 1
+},
+{
+"ur": "نام",
+"rom": "nām",
+"en": "name",
+"unit": 1,
+"i": 1,
+"src": "unit",
+"id": 2
+},
+{
+"ur": "کم",
+"rom": "kam",
+"en": "few, less",
+"unit": 1,
+"i": 2,
+"src": "unit",
+"id": 3
+},
+{
+"ur": "اب",
+"rom": "ab",
+"en": "now",
+"unit": 1,
+"i": 3,
+"src": "unit",
+"id": 4
+},
+{
+"ur": "کل",
+"rom": "kal",
+"en": "tomorrow, yesterday",
+"unit": 1,
+"i": 4,
+"src": "unit",
+"id": 5
+},
+{
+"ur": "ملک",
+"rom": "mulk",
+"en": "country",
+"unit": 1,
+"i": 5,
+"src": "unit",
+"id": 6
+},
+{
+"ur": "ملا",
+"rom": "milā",
+"en": "met, got",
+"unit": 1,
+"i": 6,
+"src": "unit",
+"id": 7
+},
+{
+"ur": "کب",
+"rom": "kab",
+"en": "when?",
+"unit": 1,
+"i": 7,
+"src": "unit",
+"id": 8
+},
+{
+"ur": "بال",
+"rom": "bāl",
+"en": "hair",
+"unit": 1,
+"i": 8,
+"src": "unit",
+"id": 9
+},
+{
+"ur": "بنا",
+"rom": "binā",
+"en": "without",
+"unit": 1,
+"i": 9,
+"src": "unit",
+"id": 10
+},
+{
+"ur": "بالکل",
+"rom": "bilkul",
+"en": "absolutely",
+"unit": 1,
+"i": 10,
+"src": "unit",
+"id": 11
+},
+{
+"ur": "امام",
+"rom": "imām",
+"en": "prayer leader",
+"unit": 1,
+"i": 11,
+"src": "unit",
+"id": 12
+},
+{
+"ur": "مکمل",
+"rom": "mukammal",
+"en": "complete",
+"unit": 1,
+"i": 12,
+"src": "unit",
+"id": 13
+},
+{
+"ur": "ممکن",
+"rom": "mumkin",
+"en": "possible",
+"unit": 1,
+"i": 13,
+"src": "unit",
+"id": 14
+},
+{
+"ur": "مالک",
+"rom": "mālik",
+"en": "owner",
+"unit": 1,
+"i": 14,
+"src": "unit",
+"id": 15
+},
+{
+"ur": "لمبا",
+"rom": "lambā",
+"en": "long, tall",
+"unit": 1,
+"i": 15,
+"src": "unit",
+"id": 16
+},
+{
+"ur": "لال",
+"rom": "lāl",
+"en": "red",
+"unit": 1,
+"i": 16,
+"src": "unit",
+"id": 17
+},
+{
+"ur": "نانا",
+"rom": "nānā",
+"en": "maternal grandfather",
+"unit": 1,
+"i": 17,
+"src": "unit",
+"id": 18
+},
+{
+"ur": "امکان",
+"rom": "imkān",
+"en": "possibility",
+"unit": 1,
+"i": 18,
+"src": "unit",
+"id": 19
+},
+{
+"ur": "مال",
+"rom": "māl",
+"en": "goods, wealth",
+"unit": 1,
+"i": 19,
+"src": "unit",
+"id": 20
+},
+{
+"ur": "بنانا",
+"rom": "banānā",
+"en": "to make",
+"unit": 1,
+"i": 20,
+"src": "unit",
+"id": 21
+},
+{
+"ur": "کلام",
+"rom": "kalām",
+"en": "speech, words",
+"unit": 1,
+"i": 21,
+"src": "unit",
+"id": 22
+},
+{
+"ur": "بابا",
+"rom": "bābā",
+"en": "dad",
+"unit": 1,
+"i": 22,
+"src": "unit",
+"id": 23
+},
+{
+"ur": "کمال",
+"rom": "kamāl",
+"en": "perfection, skill",
+"unit": 1,
+"i": 23,
+"src": "unit",
+"id": 24
+},
+{
+"ur": "ناک",
+"rom": "nāk",
+"en": "nose",
+"unit": 1,
+"i": 24,
+"src": "unit",
+"id": 25
+},
+{
+"ur": "ناکام",
+"rom": "nākām",
+"en": "unsuccessful",
+"unit": 1,
+"i": 25,
+"src": "unit",
+"id": 26
+},
+{
+"ur": "کالا",
+"rom": "kālā",
+"en": "black",
+"unit": 1,
+"i": 26,
+"src": "unit",
+"id": 27
+},
+{
+"ur": "مان",
+"rom": "mān",
+"en": "pride, honour",
+"unit": 1,
+"i": 27,
+"src": "unit",
+"id": 28
+},
+{
+"ur": "ناممکن",
+"rom": "nāmumkin",
+"en": "impossible",
+"unit": 1,
+"i": 28,
+"src": "unit",
+"id": 29
+},
+{
+"ur": "کان",
+"rom": "kān",
+"en": "ear",
+"unit": 1,
+"i": 29,
+"src": "unit",
+"id": 30
+},
+{
+"ur": "نمک",
+"rom": "namak",
+"en": "salt",
+"unit": 1,
+"i": 30,
+"src": "unit",
+"id": 31
+},
+{
+"ur": "کامل",
+"rom": "kāmil",
+"en": "perfect",
+"unit": 1,
+"i": 31,
+"src": "unit",
+"id": 32
+},
+{
+"ur": "ماننا",
+"rom": "mānnā",
+"en": "to accept, obey",
+"unit": 1,
+"i": 32,
+"src": "unit",
+"id": 33
+},
+{
+"ur": "لانا",
+"rom": "lānā",
+"en": "to bring",
+"unit": 1,
+"i": 33,
+"src": "unit",
+"id": 34
+},
+{
+"ur": "مکان",
+"rom": "makān",
+"en": "house",
+"unit": 1,
+"i": 34,
+"src": "unit",
+"id": 35
+},
+{
+"ur": "نکالنا",
+"rom": "nikālnā",
+"en": "to take out",
+"unit": 1,
+"i": 35,
+"src": "unit",
+"id": 36
+},
+{
+"ur": "کمان",
+"rom": "kamān",
+"en": "bow",
+"unit": 1,
+"i": 36,
+"src": "unit",
+"id": 37
+},
+{
+"ur": "مالا",
+"rom": "mālā",
+"en": "garland",
+"unit": 1,
+"i": 37,
+"src": "unit",
+"id": 38
+},
+{
+"ur": "نان",
+"rom": "nān",
+"en": "naan bread",
+"unit": 1,
+"i": 38,
+"src": "unit",
+"id": 39
+},
+{
+"ur": "بلبل",
+"rom": "bulbul",
+"en": "nightingale",
+"unit": 1,
+"i": 39,
+"src": "unit",
+"id": 40
+},
+{
+"ur": "ملنا",
+"rom": "milnā",
+"en": "to meet",
+"unit": 1,
+"i": 40,
+"src": "unit",
+"id": 41
+},
+{
+"ur": "املا",
+"rom": "imlā",
+"en": "spelling",
+"unit": 1,
+"i": 41,
+"src": "unit",
+"id": 42
+},
+{
+"ur": "کباب",
+"rom": "kabāb",
+"en": "kebab",
+"unit": 1,
+"i": 42,
+"src": "unit",
+"id": 43
+},
+{
+"ur": "کمبل",
+"rom": "kambal",
+"en": "blanket",
+"unit": 1,
+"i": 43,
+"src": "unit",
+"id": 44
+},
+{
+"ur": "منا",
+"rom": "munnā",
+"en": "dear little boy",
+"unit": 1,
+"i": 44,
+"src": "unit",
+"id": 45
+},
+{
+"ur": "ملانا",
+"rom": "milānā",
+"en": "to mix, join",
+"unit": 1,
+"i": 45,
+"src": "unit",
+"id": 46
+},
+{
+"ur": "منانا",
+"rom": "manānā",
+"en": "to persuade, celebrate",
+"unit": 1,
+"i": 46,
+"src": "unit",
+"id": 47
+},
+{
+"ur": "کمانا",
+"rom": "kamānā",
+"en": "to earn",
+"unit": 1,
+"i": 47,
+"src": "unit",
+"id": 48
+},
+{
+"ur": "کے",
+"rom": "ke",
+"en": "of",
+"unit": 2,
+"i": 0,
+"src": "unit",
+"id": 49
+},
+{
+"ur": "نے",
+"rom": "ne",
+"en": "(agent marker)",
+"unit": 2,
+"i": 1,
+"src": "unit",
+"id": 50
+},
+{
+"ur": "ایک",
+"rom": "ek",
+"en": "one",
+"unit": 2,
+"i": 2,
+"src": "unit",
+"id": 51
+},
+{
+"ur": "تم",
+"rom": "tum",
+"en": "you",
+"unit": 2,
+"i": 3,
+"src": "unit",
+"id": 52
+},
+{
+"ur": "لیے",
+"rom": "liye",
+"en": "for",
+"unit": 2,
+"i": 4,
+"src": "unit",
+"id": 53
+},
+{
+"ur": "تک",
+"rom": "tak",
+"en": "until, up to",
+"unit": 2,
+"i": 5,
+"src": "unit",
+"id": 54
+},
+{
+"ur": "یا",
+"rom": "yā",
+"en": "or",
+"unit": 2,
+"i": 6,
+"src": "unit",
+"id": 55
+},
+{
+"ur": "بات",
+"rom": "bāt",
+"en": "talk, matter",
+"unit": 2,
+"i": 7,
+"src": "unit",
+"id": 56
+},
+{
+"ur": "لیکن",
+"rom": "lekin",
+"en": "but",
+"unit": 2,
+"i": 8,
+"src": "unit",
+"id": 57
+},
+{
+"ur": "لیا",
+"rom": "liyā",
+"en": "took",
+"unit": 2,
+"i": 9,
+"src": "unit",
+"id": 58
+},
+{
+"ur": "لے",
+"rom": "le",
+"en": "take",
+"unit": 2,
+"i": 10,
+"src": "unit",
+"id": 59
+},
+{
+"ur": "تین",
+"rom": "tīn",
+"en": "three",
+"unit": 2,
+"i": 11,
+"src": "unit",
+"id": 60
+},
+{
+"ur": "کتاب",
+"rom": "kitāb",
+"en": "book",
+"unit": 2,
+"i": 12,
+"src": "unit",
+"id": 61
+},
+{
+"ur": "مت",
+"rom": "mat",
+"en": "don't",
+"unit": 2,
+"i": 13,
+"src": "unit",
+"id": 62
+},
+{
+"ur": "بے",
+"rom": "be",
+"en": "without, un-",
+"unit": 2,
+"i": 14,
+"src": "unit",
+"id": 63
+},
+{
+"ur": "اتنے",
+"rom": "itne",
+"en": "so many",
+"unit": 2,
+"i": 15,
+"src": "unit",
+"id": 64
+},
+{
+"ur": "تمام",
+"rom": "tamām",
+"en": "all, whole",
+"unit": 2,
+"i": 16,
+"src": "unit",
+"id": 65
+},
+{
+"ur": "بتایا",
+"rom": "batāyā",
+"en": "told",
+"unit": 2,
+"i": 17,
+"src": "unit",
+"id": 66
+},
+{
+"ur": "لی",
+"rom": "lī",
+"en": "took (fem)",
+"unit": 2,
+"i": 18,
+"src": "unit",
+"id": 67
+},
+{
+"ur": "اتنی",
+"rom": "itnī",
+"en": "so much (fem)",
+"unit": 2,
+"i": 19,
+"src": "unit",
+"id": 68
+},
+{
+"ur": "اتنا",
+"rom": "itnā",
+"en": "this much",
+"unit": 2,
+"i": 20,
+"src": "unit",
+"id": 69
+},
+{
+"ur": "کتنی",
+"rom": "kitnī",
+"en": "how much (fem)",
+"unit": 2,
+"i": 21,
+"src": "unit",
+"id": 70
+},
+{
+"ur": "بلی",
+"rom": "billī",
+"en": "cat",
+"unit": 2,
+"i": 22,
+"src": "unit",
+"id": 71
+},
+{
+"ur": "نیا",
+"rom": "nayā",
+"en": "new",
+"unit": 2,
+"i": 23,
+"src": "unit",
+"id": 72
+},
+{
+"ur": "اکیلے",
+"rom": "akele",
+"en": "alone (plural)",
+"unit": 2,
+"i": 24,
+"src": "unit",
+"id": 73
+},
+{
+"ur": "میل",
+"rom": "mīl",
+"en": "mile",
+"unit": 2,
+"i": 25,
+"src": "unit",
+"id": 74
+},
+{
+"ur": "لمبی",
+"rom": "lambī",
+"en": "long (fem)",
+"unit": 2,
+"i": 26,
+"src": "unit",
+"id": 75
+},
+{
+"ur": "کامیابی",
+"rom": "kāmyābī",
+"en": "success",
+"unit": 2,
+"i": 27,
+"src": "unit",
+"id": 76
+},
+{
+"ur": "تب",
+"rom": "tab",
+"en": "then",
+"unit": 2,
+"i": 28,
+"src": "unit",
+"id": 77
+},
+{
+"ur": "کتنے",
+"rom": "kitne",
+"en": "how many",
+"unit": 2,
+"i": 29,
+"src": "unit",
+"id": 78
+},
+{
+"ur": "کتنا",
+"rom": "kitnā",
+"en": "how much",
+"unit": 2,
+"i": 30,
+"src": "unit",
+"id": 79
+},
+{
+"ur": "کیک",
+"rom": "kek",
+"en": "cake",
+"unit": 2,
+"i": 31,
+"src": "unit",
+"id": 80
+},
+{
+"ur": "کامیاب",
+"rom": "kāmyāb",
+"en": "successful",
+"unit": 2,
+"i": 32,
+"src": "unit",
+"id": 81
+},
+{
+"ur": "بینک",
+"rom": "baink",
+"en": "bank",
+"unit": 2,
+"i": 33,
+"src": "unit",
+"id": 82
+},
+{
+"ur": "لینا",
+"rom": "lenā",
+"en": "to take",
+"unit": 2,
+"i": 34,
+"src": "unit",
+"id": 83
+},
+{
+"ur": "ایمان",
+"rom": "īmān",
+"en": "faith",
+"unit": 2,
+"i": 35,
+"src": "unit",
+"id": 84
+},
+{
+"ur": "ملکی",
+"rom": "mulkī",
+"en": "of the country",
+"unit": 2,
+"i": 36,
+"src": "unit",
+"id": 85
+},
+{
+"ur": "کتا",
+"rom": "kuttā",
+"en": "dog",
+"unit": 2,
+"i": 37,
+"src": "unit",
+"id": 86
+},
+{
+"ur": "بتانا",
+"rom": "batānā",
+"en": "to tell",
+"unit": 2,
+"i": 38,
+"src": "unit",
+"id": 87
+},
+{
+"ur": "بیتاب",
+"rom": "betāb",
+"en": "restless",
+"unit": 2,
+"i": 39,
+"src": "unit",
+"id": 88
+},
+{
+"ur": "کمی",
+"rom": "kamī",
+"en": "shortage",
+"unit": 2,
+"i": 40,
+"src": "unit",
+"id": 89
+},
+{
+"ur": "تیل",
+"rom": "tel",
+"en": "oil",
+"unit": 2,
+"i": 41,
+"src": "unit",
+"id": 90
+},
+{
+"ur": "کتے",
+"rom": "kutte",
+"en": "dogs",
+"unit": 2,
+"i": 42,
+"src": "unit",
+"id": 91
+},
+{
+"ur": "نیت",
+"rom": "niyyat",
+"en": "intention",
+"unit": 2,
+"i": 43,
+"src": "unit",
+"id": 92
+},
+{
+"ur": "مالی",
+"rom": "mālī",
+"en": "gardener",
+"unit": 2,
+"i": 44,
+"src": "unit",
+"id": 93
+},
+{
+"ur": "تالا",
+"rom": "tālā",
+"en": "lock",
+"unit": 2,
+"i": 45,
+"src": "unit",
+"id": 94
+},
+{
+"ur": "تایا",
+"rom": "tāyā",
+"en": "father's elder brother",
+"unit": 2,
+"i": 46,
+"src": "unit",
+"id": 95
+},
+{
+"ur": "بانی",
+"rom": "bānī",
+"en": "founder",
+"unit": 2,
+"i": 47,
+"src": "unit",
+"id": 96
+},
+{
+"ur": "بیل",
+"rom": "bail",
+"en": "ox",
+"unit": 2,
+"i": 48,
+"src": "unit",
+"id": 97
+},
+{
+"ur": "تمنا",
+"rom": "tamannā",
+"en": "wish",
+"unit": 2,
+"i": 49,
+"src": "unit",
+"id": 98
+},
+{
+"ur": "نیکی",
+"rom": "nekī",
+"en": "goodness",
+"unit": 2,
+"i": 50,
+"src": "unit",
+"id": 99
+},
+{
+"ur": "اکیلا",
+"rom": "akelā",
+"en": "alone",
+"unit": 2,
+"i": 51,
+"src": "unit",
+"id": 100
+},
+{
+"ur": "نانی",
+"rom": "nānī",
+"en": "maternal grandmother",
+"unit": 2,
+"i": 52,
+"src": "unit",
+"id": 101
+},
+{
+"ur": "تالی",
+"rom": "tālī",
+"en": "clap",
+"unit": 2,
+"i": 53,
+"src": "unit",
+"id": 102
+},
+{
+"ur": "مکتب",
+"rom": "maktab",
+"en": "school",
+"unit": 2,
+"i": 54,
+"src": "unit",
+"id": 103
+}
+]
