@@ -1,11 +1,11 @@
 # What's new (Play Console "Release notes", ≤500 chars per language)
 
 <en-US>
-Words now come with pictures. Over 770 words show a friendly picture next to the Urdu, so a child sees what "baba" or "kitab" means as they read it. Pictures appear in lessons, word cards, quizzes, the Build-the-word game and the first-word share card. Where no honest picture exists, the word stays plain.
+Words now come with pictures. Over 770 words show a friendly picture next to the Urdu, so a child sees what "baba" or "kitab" means as they read it. Pictures appear in lessons, word cards, quizzes, the Build-the-word game and the first-word share card. Where no honest picture exists, the word stays plain. The app now also tells a grown-up when a new version is ready.
 </en-US>
 
 <ur>
-اب الفاظ کے ساتھ تصویریں بھی ہیں۔ 770 سے زیادہ الفاظ کے ساتھ ایک دوستانہ تصویر دکھائی دیتی ہے، تاکہ بچہ پڑھتے ہوئے دیکھ لے کہ "بابا" یا "کتاب" کا مطلب کیا ہے۔ تصویریں سبق، لفظوں کے کارڈ، کوئز، لفظ بنانے کے کھیل اور پہلے لفظ کے شیئر کارڈ میں ہیں۔ جہاں درست تصویر نہیں ملی، وہاں لفظ سادہ ہی رہتا ہے۔
+اب الفاظ کے ساتھ تصویریں بھی ہیں۔ 770 سے زیادہ الفاظ کے ساتھ ایک دوستانہ تصویر دکھائی دیتی ہے، تاکہ بچہ پڑھتے ہوئے دیکھ لے کہ "بابا" یا "کتاب" کا مطلب کیا ہے۔ تصویریں سبق، لفظوں کے کارڈ، کوئز، لفظ بنانے کے کھیل اور پہلے لفظ کے شیئر کارڈ میں ہیں۔ جہاں درست تصویر نہیں ملی، وہاں لفظ سادہ ہی رہتا ہے۔ نیا ورژن آنے پر اب ایپ کسی بڑے کو بتا بھی دیتی ہے۔
 </ur>
 
 <!-- previous release notes (0.11.4):

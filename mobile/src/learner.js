@@ -1,6 +1,7 @@
 // Learner mode: Today, Session, Lesson, Review, Read, Test yourself, Progress, Settings.
 import { db, uid } from './db.js';
 import { C, play, W, shuffle, wordKey, sentKey, el, toast, bandFor, recBand, wimg } from './content.js';
+import { canCheckForUpdate, checkForUpdate } from './appupdate.js';
 import * as D from './drills.js';
 import * as S from './session.js';
 import { renderDashboard } from './dashboard.js';
@@ -236,7 +237,8 @@ export async function renderLearner(root, ctx) {
       dcard.append(rows);
       const all = el('button', 'btn btn-wide', 'Copy all details'); all.onclick = () => copyText(BANK.map(([k, v]) => `${k}: ${v}`).join('\n'), 'Details copied', rows); dcard.append(all);
       dcard.scrollIntoView({ behavior: 'smooth', block: 'center' }); };
-    ct.append(em, cpm, addr, dn, dcard, el('p', 'muted', `Version ${C.version || ''}`)); main.append(ct);
+    const upd = canCheckForUpdate ? el('button', 'btn btn-wide', 'Check for updates') : null; if (upd) upd.onclick = () => checkForUpdate(true);
+    ct.append(em, cpm, addr, dn, dcard, ...(upd ? [upd] : []), el('p', 'muted', `Version ${C.version || ''}`)); main.append(ct);
     main.append(el('p', 'muted', 'Voices are AI-generated and play from files stored on your device. No speech is generated online.'));
     main.append(el('p', 'muted', 'Word pictures: OpenMoji by the OpenMoji contributors (CC BY-SA 4.0, openmoji.org), Twemoji (CC BY 4.0), Mulberry Symbols by Steve Lee (CC BY-SA 2.0 UK, mulberrysymbols.org).')); }  const sel = (vals, labels, cur, on) => { const s = el('select'); vals.forEach((v, i) => s.append(new Option(labels[i], v, false, v === cur))); s.onchange = () => on(s.value); return s; };
   const lab = (t, node) => { const l = el('label', '', t); l.append(node); return l; };

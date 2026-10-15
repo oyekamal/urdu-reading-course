@@ -9,6 +9,7 @@ import { initFeel } from './feel.js';
 import { askGrownup } from './gate.js';
 import { esc, cleanName, NAME_MAX, once } from './safe.js';
 import { pickAndRestore } from './restore.js';
+import './appupdate.js'; // Android: banner when a newer version is on Google Play
 import './swreg.js'; // round 11a: service worker registration as a module (no inline script, so the CSP can say script-src 'self')
 import './a11y.js'; // round 11b: live region, lang=ur, modal dialogs + focus, tab-bar semantics (observer-based)
 import './premium.js'; // round 9c: stickers, light-catching, scene depth, memory (observer-based, no screen edits)
