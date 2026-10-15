@@ -1,6 +1,15 @@
 # What's new (Play Console "Release notes", ≤500 chars per language)
 
 <en-US>
+The Back button now works the way you expect: it closes a pop-up, goes back one screen, leaves a lesson (after asking), and only closes the app if you press it twice on the home screen. Sub-screens have a back arrow. Typing a name or the grown-up number is no longer hidden by the keyboard. In sentence practice, each sentence has its own speaker button and lights up while it is read aloud. Marko is no longer squashed on the sticker screen.
+</en-US>
+
+<ur>
+بیک بٹن اب ویسے ہی کام کرتا ہے جیسا آپ توقع کرتے ہیں: پاپ اپ بند کرتا ہے، ایک اسکرین پیچھے جاتا ہے، سبق چھوڑنے سے پہلے پوچھتا ہے، اور ہوم اسکرین پر دو بار دبانے پر ہی ایپ بند ہوتی ہے۔ نام یا بڑوں کا نمبر لکھتے وقت کی بورڈ اب فیلڈ کو نہیں چھپاتا۔ جملوں کی مشق میں ہر جملے کا اپنا اسپیکر بٹن ہے اور پڑھتے وقت وہ جملہ روشن ہو جاتا ہے۔ اسٹیکر اسکرین پر مارکو اب پچکا ہوا نہیں لگتا۔
+</ur>
+
+<!-- previous release notes (0.12.1):
+<en-US>
 Words now come with pictures. Over 750 words show a friendly picture next to the Urdu, so a child sees what "baba" or "kitab" means as they read it. Pictures appear in lessons, word cards, quizzes, the Build-the-word game and the first-word share card. Where no honest picture exists, the word stays plain. The app now also tells a grown-up when a new version is ready.
 </en-US>
 
@@ -8,7 +17,9 @@ Words now come with pictures. Over 750 words show a friendly picture next to the
 اب الفاظ کے ساتھ تصویریں بھی ہیں۔ 750 سے زیادہ الفاظ کے ساتھ ایک دوستانہ تصویر دکھائی دیتی ہے، تاکہ بچہ پڑھتے ہوئے دیکھ لے کہ "بابا" یا "کتاب" کا مطلب کیا ہے۔ تصویریں سبق، لفظوں کے کارڈ، کوئز، لفظ بنانے کے کھیل اور پہلے لفظ کے شیئر کارڈ میں ہیں۔ جہاں درست تصویر نہیں ملی، وہاں لفظ سادہ ہی رہتا ہے۔ نیا ورژن آنے پر اب ایپ کسی بڑے کو بتا بھی دیتی ہے۔
 </ur>
 
-<!-- previous release notes (0.11.4):
+-->
+
+(0.11.4):
 <en-US>
 A warmer look: cream paper, deeper teal buttons and clearer text everywhere, chosen with contrast and colour-blindness checks. Fixes from testers: Marko no longer shows twice (the "two Markos, many arms" glitch) when the app rests, nothing floats over his speech bubble, the lucky-colour badge is clean in dark mode, and beginners can now pick "I've never really tried" at the start.
 </en-US>

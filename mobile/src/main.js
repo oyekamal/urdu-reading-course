@@ -9,6 +9,7 @@ import { initFeel } from './feel.js';
 import { askGrownup } from './gate.js';
 import { esc, cleanName, NAME_MAX, once } from './safe.js';
 import { pickAndRestore } from './restore.js';
+import { setBack } from './back.js'; // Android Back button: dialogs, screens, double-press to exit
 import './appupdate.js'; // Android: banner when a newer version is on Google Play
 import './swreg.js'; // round 11a: service worker registration as a module (no inline script, so the CSP can say script-src 'self')
 import './a11y.js'; // round 11b: live region, lang=ur, modal dialogs + focus, tab-bar semantics (observer-based)
@@ -107,6 +108,7 @@ async function setupTeacher() {
 }
 
 async function home() {
+  setBack(null);
   const mode = await db.setting('mode'); const profiles = (await db.all('profiles')).filter(p => p.kind !== 'teacher');
   root.innerHTML = ''; const h = el('div', 'row'); h.style.justifyContent = 'space-between'; h.innerHTML = `<div><h1>${mode === 'school' ? 'Class' : 'Who is learning?'}</h1><div class="muted">${mode === 'school' ? 'Tap your name to start' : 'Tap a name, or add one'}</div></div>`; root.append(h);
   const list = el('div', 'list'); profiles.sort((a, b) => a.name.localeCompare(b.name)).forEach(p => { const c = el('button', 'card btn', `${avatar(p)}<div style="flex:1;text-align:left"><b style="font-size:18px;overflow-wrap:anywhere">${esc(p.name)}</b><div class="muted">${esc(p.track)}${p.grade ? ' · grade ' + esc(p.grade) : ''}</div></div>`); c.style.width = '100%'; c.onclick = () => learner(p); list.append(c); });

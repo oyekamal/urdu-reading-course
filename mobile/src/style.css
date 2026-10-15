@@ -936,3 +936,20 @@ html.m-cover #app .pm-layer *,html.m-cover #app .pearl.cur,html.m-cover #app .pe
 .words .word{display:flex;flex-direction:column;align-items:center;gap:4px}
 .words .word .ur{order:0}.words .word .wimg-card{order:1;margin:4px 0 2px}.words .word .rom{order:2}.words .word .en{order:3}.words .word .btn-play{order:4;margin-top:8px}
 @media (prefers-color-scheme:dark){:root{--wtile:#DDD7C8}}
+
+/* QA round: back arrow on sub-screens, keyboard lift, speaking highlight, Marko never squashed */
+.page-back{width:46px;min-width:46px;height:46px;padding:0;margin-inline-end:6px;display:inline-flex;align-items:center;justify-content:center;flex:none}.page-head{align-items:center}
+body.kb-open #app{padding-bottom:calc(var(--kb,0px) + 12px)}
+.gate-back{padding-bottom:var(--kb,0px)}
+img[src*="/mascot_"]{object-fit:contain}
+.sent-list{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+.sent-row{display:flex;align-items:center;gap:10px;padding:6px 8px;border-radius:14px;border:2px solid transparent;transition:background .15s,border-color .15s}
+.sent-row .sent-text{flex:1;text-align:right;font-size:28px;line-height:1.7;min-width:0}
+.sent-row.is-playing,.word.is-playing{background:var(--soft);border-color:var(--accent)}
+.btn-play.is-playing{background:var(--accent);color:#fff;box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 28%,transparent)}.btn-play.is-playing svg{color:#fff;fill:currentColor}
+@media (prefers-reduced-motion:reduce){.sent-row{transition:none}}
+/* keyboard open: the tab bar steps aside, and the bottom-fixed buttons ride on top of the keyboard instead of hiding behind it */
+body.kb-open .bottom{display:none}
+body.kb-open .ob-foot{bottom:var(--kb,0px)}
+body.kb-open .dock-row{bottom:calc(var(--kb,0px) + var(--dock-gap,8px))!important}
+body.kb-open .toast,body.kb-open .sw-toast{bottom:calc(var(--kb,0px) + 20px)}

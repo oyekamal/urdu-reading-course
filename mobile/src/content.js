@@ -3,7 +3,9 @@ import { setMarko } from './marko.js';
 export const C = { letters: null, units: null, audio: null, by: {}, wimg: {}, ready: null };
 let player = new Audio(); let queue = []; let watchdog = null;
 function attach(p) { p.addEventListener('ended', drain); p.addEventListener('error', drain); return p; }
-function drain() { const n = queue.shift(); if (n) { player.src = n; player.play().catch(() => {}); } }
+// what is speaking right now: other modules highlight the matching card / sentence (event 'audio-playing', detail = key or null)
+export const nowPlaying = { key: null }; const emit = k => { nowPlaying.key = k; document.dispatchEvent(new CustomEvent('audio-playing', { detail: k })); };
+function drain() { const n = queue.shift(); if (n) { player.src = n; player.play().catch(() => {}); } else emit(null); }
 attach(player);
 function rebuild() { try { player.pause(); player.removeAttribute('src'); player.load(); } catch (e) {} player = attach(new Audio()); queue = []; }
 // One shared player. Instruction clips (ui/*) wait behind whatever is playing (at most one queued); content clips
@@ -16,6 +18,7 @@ export function play(key, _retry) {
   if (!key.startsWith('ui/')) queue = [];
   document.querySelectorAll('.mascot.peek, .ob-m .mascot, .fx-stage .mascot').forEach(m => { if (m._marko) { setMarko(m, 'talk'); clearTimeout(m._talk); m._talk = setTimeout(() => setMarko(m, m.dataset.base || 'idle'), 1800); } else { m.classList.remove('talk'); void m.offsetWidth; m.classList.add('talk'); } }); // Marko talks whenever something is said
   player.src = src; const p = player.play(); if (p && p.catch) p.catch(() => {});
+  if (!key.startsWith('ui/')) emit(key);
   clearTimeout(watchdog); watchdog = setTimeout(() => { if (player.src === src && (player.paused || player.currentTime === 0) && !player.ended) { if (!_retry) { rebuild(); play(key, true); } } }, 1500);
   return true;
 }

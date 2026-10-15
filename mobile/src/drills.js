@@ -9,7 +9,7 @@ export const known = unit => new Set([...[...taughtBefore(unit.n), ...unit.lette
 export const spellable = (unit, ur) => { const k = known(unit); return [...ur].every(c => k.has(c) || /[\u064B-\u0652\u0670]/.test(c)); };
 export const cue = ok => { if (document.body.dataset.track === 'child') setTimeout(() => play(ok ? 'ui/correct' : 'ui/wrong'), ok ? 250 : 900); };
 export const strokeHint = l => STROKE[l.family] || 'body first in one stroke, right to left; dots last';
-export function playBtn(key, small) { const b = el('button', 'btn btn-play' + (small ? ' small' : ''), icon('speaker')); b.setAttribute('aria-label', 'Play'); b.onclick = e => { e.stopPropagation(); if (!play(key)) toast('No audio for this item'); }; return b; }
+export function playBtn(key, small) { const b = el('button', 'btn btn-play' + (small ? ' small' : ''), icon('speaker')); b.setAttribute('aria-label', 'Play'); b.dataset.audio = key; b.onclick = e => { e.stopPropagation(); if (!play(key)) toast('No audio for this item'); }; return b; }
 // THE audio control: one big round speaker button, placed directly above the tiles it asks about (or next to the item it says).
 export function sayBtn(fn, label = 'Play again') { const b = el('button', 'btn btn-play btn-say', icon('speaker')); b.setAttribute('aria-label', label); b.onclick = e => { e.stopPropagation(); fn(); }; return b; }
 export const sayRow = (...kids) => { const r = el('div', 'say-row'); r.append(...kids.filter(Boolean)); return r; };
@@ -83,7 +83,7 @@ export function readIt(unit, ctx, marks, range) {
   const g = el('div', 'words');
   unit.words.map(W).forEach((w, i) => { if (i < lo || i >= hi) return; const d = el('div', 'word' + (C.wimg[w.ur] ? ' has-pic' : '')); const prev = !spellable(unit, w.ur); d.innerHTML = `${wimg(w.ur, 'wimg-card')}<div class="ur">${disp(w, marks())}</div><div class="rom">${w.rom}</div><div class="en">${w.en.replace(/\s*\([^)]*preview[^)]*\)/, '')}${prev ? ' <span class="pill">peek ahead</span>' : ''}</div>`; d.append(playBtn(wordKey(unit.n, i + (unit.wordOffset || 0)), true)); d.onclick = () => { play(wordKey(unit.n, i + (unit.wordOffset || 0))); d.classList.add('reveal'); ctx.record('read', w.ur, true, 0); }; g.append(d); });
   box.append(g);
-  if (unit.sentences.length && !range) { box.append(el('h3', '', 'Sentences')); unit.sentences.map(W).forEach((w, i) => { const d = el('div', 'row', ''); d.style.cssText = 'padding:8px 0;border-top:1px solid var(--line)'; d.append(playBtn(`sentences/u${String(unit.n).padStart(2, '0')}_${String(i).padStart(2, '0')}`)); d.insertAdjacentHTML('beforeend', `<span class="ur" style="font-size:28px;flex:1;min-width:180px;text-align:right">${disp(w, marks())}</span><span class="rom muted">${w.rom}</span><span class="muted">${w.en}</span>`); box.append(d); }); }
+  if (unit.sentences.length && !range) { box.append(el('h3', '', 'Sentences')); unit.sentences.map(W).forEach((w, i) => { const d = el('div', 'row sent-row', ''); d.style.cssText = 'padding:8px 0;border-top:1px solid var(--line)'; d.append(playBtn(`sentences/u${String(unit.n).padStart(2, '0')}_${String(i).padStart(2, '0')}`)); d.insertAdjacentHTML('beforeend', `<span class="ur" style="font-size:28px;flex:1;min-width:180px;text-align:right">${disp(w, marks())}</span><span class="rom muted">${w.rom}</span><span class="muted">${w.en}</span>`); box.append(d); }); }
   return box;
 }
 
@@ -244,3 +244,10 @@ export function quiz(unit, ctx, marks, onDone) {
     const missed = qs.filter((w, qi) => picks[qi] !== w.ur).map(w => w.rom).slice(0, 4).join(', '); res.textContent = `Score ${sc}/10 ${sc >= 8 ? '— passed ✓' : '— re-read ' + missed + ', then try again'}`; submit.remove(); res.scrollIntoView({ block: 'center' }); const done = () => Promise.resolve(onDone && onDone(sc, 10)).catch(() => { const r = el('button', 'btn btn-primary btn-wide', 'Try saving again'); r.onclick = () => { r.remove(); done(); }; box.append(el('p', 'muted', 'Your score did not save yet. Nothing is lost.'), r); }); done(); };
   box.append(ol, res, submit); return box;
 }
+
+// highlight whatever is speaking: the play button, and the word card or sentence row it belongs to
+document.addEventListener('audio-playing', e => {
+  document.querySelectorAll('.is-playing').forEach(x => x.classList.remove('is-playing'));
+  if (!e.detail) return;
+  document.querySelectorAll('[data-audio]').forEach(b => { if (b.dataset.audio !== e.detail) return; b.classList.add('is-playing'); b.closest('.sent-row, .word')?.classList.add('is-playing'); });
+});

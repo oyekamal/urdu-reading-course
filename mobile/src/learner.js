@@ -2,6 +2,7 @@
 import { db, uid } from './db.js';
 import { C, play, W, shuffle, wordKey, sentKey, el, toast, bandFor, recBand, wimg } from './content.js';
 import { canCheckForUpdate, checkForUpdate } from './appupdate.js';
+import { setBack } from './back.js';
 import * as D from './drills.js';
 import * as S from './session.js';
 import { renderDashboard } from './dashboard.js';
@@ -29,14 +30,19 @@ export async function renderLearner(root, ctx) {
   const tabKeys = () => kid() ? ['today', 'review', 'read', 'me'] : ['today', 'units', 'review', 'read', 'progress', 'more'];
   const navOf = t => kid() ? ({ units: 'today', lesson: 'today', progress: 'me', more: 'me', test: 'me' }[t] || t) : ({ me: 'progress', lesson: 'units', test: 'more' }[t] || t);
   function buildNav() { nav.innerHTML = ''; nav.dataset.n = tabKeys().length; tabKeys().forEach(k => { const [ic, lab, c, d] = TAB[k]; const b = el('button', '', `${icon(ic + '_f')}<span class="lb">${lab}</span>`); b.style.setProperty('--tc', c); b.style.setProperty('--td', d); b.onclick = () => { st.tab = k; render(); }; b.dataset.k = k; nav.append(b); }); }
+  // Back: sub-screens go up one level, root tabs go to Learn, Learn itself returns false (back.js then handles leave-lesson / exit)
+  const UP = () => kid() ? { units: 'today', lesson: 'today', progress: 'me', more: 'me', test: 'me', review: 'today', read: 'today', me: 'today' } : { units: 'today', lesson: 'units', test: 'more', review: 'today', read: 'today', progress: 'today', more: 'today' };
+  const SUB = () => kid() ? ['progress', 'more', 'test'] : ['test'];  // units already has its own Back to Learn button
+  function goUp() { if (st.tab === 'today') return false; st.tab = UP()[st.tab] || 'today'; render(); return true; }
   let navKid = kid(); buildNav();
   // renders never interleave: a double tap on a tab queues a second render after the first, instead of both appending to the same screen
   let chain = Promise.resolve(); const render = () => (chain = chain.then(doRender, doRender));
   async function doRender() { st.preview = false; if (navKid !== kid()) { navKid = kid(); buildNav(); } if (st.tab === 'me' && !kid()) st.tab = 'progress'; const on = navOf(st.tab); [...nav.children].forEach(b => b.classList.toggle('active', b.dataset.k === on)); main.innerHTML = ''; main.className = 't-kids'; window.scrollTo(0, 0); try { await ({ today, units, review, read, progress, more, me, lesson, session, test, path }[st.tab])(); } catch (e) { if (ctx.recover) ctx.recover(e); else toast('This screen could not load. Please try again.'); } }
   const pctx = () => ({ profile, marks, styleName, dctx, unit0, aspirates, izafat, punctuation, unit11, sightDrill, go: t => { st.tab = t === 'path' ? 'today' : t; render(); }, openLesson: (u, i) => { st.unitN = u.n; st.tab = 'today'; main.innerHTML = ''; window.scrollTo(0, 0); runLesson(main, pctx(), u, i); } });
   async function path() { st.tab = 'today'; render(); }
+  setBack(goUp);
 
-  async function header(title, sub) { const h = el('div', 'row page-head', ''); h.style.justifyContent = 'space-between'; h.innerHTML = `<div><h1>${/^Good (morning|afternoon)/.test(title) ? '<span class="fx-sun"></span>' : ''}${title}</h1>${sub ? `<div class="muted">${sub}</div>` : ''}</div>`; const sun = h.querySelector('.fx-sun'); if (sun) sun.append(fx('sun_rays', { size: 34, loop: true })); const who = el('button', 'btn', `${icon('user')} ${esc(profile.name)}`); who.onclick = ctx.switchProfile; h.append(who); main.append(h); }
+  async function header(title, sub) { const h = el('div', 'row page-head', ''); h.style.justifyContent = 'space-between'; h.innerHTML = `<div><h1>${/^Good (morning|afternoon)/.test(title) ? '<span class="fx-sun"></span>' : ''}${title}</h1>${sub ? `<div class="muted">${sub}</div>` : ''}</div>`; const sun = h.querySelector('.fx-sun'); if (sun) sun.append(fx('sun_rays', { size: 34, loop: true })); const who = el('button', 'btn', `${icon('user')} ${esc(profile.name)}`); who.onclick = ctx.switchProfile; h.append(who); if (SUB().includes(st.tab)) { const bk = el('button', 'btn page-back', icon('back')); bk.setAttribute('aria-label', 'Back'); bk.onclick = goUp; h.prepend(bk); } main.append(h); }
 
   async function today() {
     const cur = await S.currentUnit(profile.id); const s = await S.stats(profile.id);
@@ -141,11 +147,12 @@ export async function renderLearner(root, ctx) {
 
   function fluency(u, box, onDone, usePassage) {
     box.innerHTML = ''; const sents = usePassage ? [W(u.passage)] : u.sentences.map(W); const text = sents.map(s => marks() ? s.v : s.ur).join(' '); const words = text.split(' ').length;
-    box.append(el('h2', '', 'Read for speed')); const p = el('div', 'card'); p.innerHTML = `<div class="ur" style="font-size:${usePassage ? 26 : 30}px;text-align:right">${text}</div>${usePassage ? `<div class="muted">${sents[0].en}</div>` : ''}<div class="muted">${words} words. Tap Start, read aloud, tap Stop. Read it twice.</div>`;
+    box.append(el('h2', '', 'Read for speed')); const p = el('div', 'card'); p.innerHTML = `${usePassage ? `<div class="ur" style="font-size:26px;text-align:right">${text}</div>` : '<div class="sent-list"></div>'}${usePassage ? `<div class="muted">${sents[0].en}</div>` : ''}<div class="muted">${words} words. Tap Start, read aloud, tap Stop. Read it twice.</div>`;
     const t = el('div', 'timer', '0.0 s'), start = el('button', 'btn btn-gold', `${icon('timer')} Start`), stop = el('button', 'btn', 'Stop'), res = el('div', 'score'); let t0, h; stop.disabled = true;
     start.onclick = () => { t0 = Date.now(); start.disabled = true; stop.disabled = false; h = setInterval(() => t.textContent = ((Date.now() - t0) / 1000).toFixed(1) + ' s', 100); };
     stop.onclick = async () => { clearInterval(h); const sec = (Date.now() - t0) / 1000; const wpm = Math.round(words * 60 / sec); const prev = (await S.stats(profile.id)).wpm; const best = Math.max(0, ...prev.map(x => x.wpm)); res.textContent = `${wpm} words per minute${wpm > best ? ' · new personal best!' : best ? ` · best ${best}` : ''}`; try { await S.addWpm(profile.id, wpm, u.n); } catch (e) { toast('Your speed did not save. You can try again.'); } start.disabled = false; stop.disabled = true; start.innerHTML = `${icon('timer')} Again`; };
-    const row = el('div', 'row'); row.append(start, stop); if (!usePassage) sents.forEach((s, i) => row.append(D.playBtn(sentKey(u.n, i), true))); p.append(t, row, res); box.append(p, nextBtn(onDone));
+    if (!usePassage) { const list = p.querySelector('.sent-list'); sents.forEach((s, i) => { const r = el('div', 'sent-row'); r.append(D.playBtn(sentKey(u.n, i), true)); const tx = el('span', 'ur sent-text'); tx.textContent = marks() ? s.v : s.ur; r.append(tx); list.append(r); }); }
+    const row = el('div', 'row'); row.append(start, stop); p.append(t, row, res); box.append(p, nextBtn(onDone));
   }
 
   async function units() { await header('Units', 'Tap a unit to open its lesson'); if (kid()) { const bk = el('button', 'btn btn-chip', `${icon('back')} Back to Learn`); bk.onclick = () => { st.tab = 'today'; render(); }; main.insertBefore(bk, main.firstChild); } const p = await S.getProgress(profile.id); const cur = await S.currentUnit(profile.id);

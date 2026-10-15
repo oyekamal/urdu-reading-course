@@ -5,6 +5,7 @@ import { db } from './db.js';
 import { C, play, el, wimg, wimgSrc } from './content.js';
 import { icon, mascot, confetti } from './icons.js';
 import { fx, burst } from './fx.js';
+import { setBack } from './back.js';
 import { esc, cleanName, tapLock, tapFree } from './safe.js';
 
 const T = (who, me, child) => who === 'me' ? me : child;
@@ -26,9 +27,10 @@ export async function runOnboarding(root, { finish, teacherSetup, restore }) {
   function show() {
     timers.forEach(clearTimeout); timers = []; root.innerHTML = ''; window.scrollTo(0, 0);
     const scr = el('div', 'ob'); root.append(scr);
-    if (st.i >= Q0 && st.i <= Q1) {
+    setBack(() => { if (st.i <= 0) return false; go(-1); return true; });   // Android Back = previous question, from the second screen on
+    if (st.i >= 1 && st.i <= Q1) {
       const top = el('div', 'ob-top'); const back = el('button', 'ob-back', icon('back')); back.setAttribute('aria-label', 'Back'); back.onclick = () => go(-1);
-      top.append(back, el('div', 'ob-bar', `<i style="width:${Math.round((st.i - Q0 + 1) / (Q1 - Q0 + 1) * 100)}%"></i>`)); scr.append(top);
+      top.append(back); if (st.i >= Q0) top.append(el('div', 'ob-bar', `<i style="width:${Math.round((st.i - Q0 + 1) / (Q1 - Q0 + 1) * 100)}%"></i>`)); scr.append(top);
     }
     st.i = Math.min(st.i, flow.length - 1); flow[st.i](scr);
   }

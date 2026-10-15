@@ -11,6 +11,9 @@
     "adjustMarginsForEdgeToEdge": "force"
   },
   "plugins": {
+    "Keyboard": {
+      "resize": "none"
+    },
     "SplashScreen": {
       "launchShowDuration": 0
     }
