@@ -38,7 +38,7 @@ body[data-style="nastaliq"] .ur,.ur.nastaliq{font-family:var(--nastaliq);line-he
 .word{border:2px solid var(--line);border-radius:16px;padding:10px;display:grid;gap:2px;position:relative;cursor:pointer;background:var(--card)}.word .ur{font-size:30px}.word .rom{font-size:13px;color:var(--muted)}.word .en{font-size:13px}.word .btn-play{position:absolute;top:6px;left:6px;width:40px;height:40px;min-width:40px}
 body[data-track="heritage"] .rom,body[data-rom="off"] .rom{display:none}
 .tile.ok::after{content:' ✓';font-size:.5em;color:var(--good)}.tile.no::after{content:' ✗';font-size:.5em;color:var(--bad)}
-.words{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.words{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
 .forms{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;direction:rtl}.forms div{text-align:center;border-top:1px solid var(--line);padding-top:6px}.forms .g{font-size:40px;line-height:1.3}.forms small{display:block;color:var(--muted);font-size:11px;direction:ltr}
 canvas.trace{border:2px solid var(--line);border-radius:16px;background:var(--card);touch-action:none;width:100%;max-width:360px;display:block}
 .keys{display:flex;flex-wrap:wrap;gap:6px;direction:rtl}.keys .tile{font-size:26px;min-width:46px;padding:4px 8px;min-height:46px}
@@ -916,13 +916,23 @@ html.m-cover #app .pm-layer *,html.m-cover #app .pearl.cur,html.m-cover #app .pe
 /* word pictures: flat-vector, transparent, sit on the card like the unit art */
 .wimg{display:block;object-fit:contain;pointer-events:none;-webkit-user-drag:none}
 .wimg-ex{width:132px;height:132px;margin:2px auto 6px;animation:obPop .45s both}.ex-pic{display:flex;justify-content:center}
-.word.has-pic{padding:10px 10px 12px;text-align:center;justify-items:center}.word.has-pic .btn-play{top:auto;bottom:8px;left:auto;right:8px;width:40px;height:40px;min-width:40px}.word.has-pic .rom,.word.has-pic .en{padding-inline:30px}.wimg-card{width:112px;height:112px;margin:0 auto 2px}
+.word.has-pic{padding:10px 10px 12px;text-align:center;justify-items:center}.word.has-pic .btn-play{position:static;width:44px;height:44px;min-width:44px;margin-top:6px}.wimg-card{width:112px;height:112px;margin:0 auto 2px}
 .wimg-q{display:inline-block;width:44px;height:44px;vertical-align:middle;margin-inline-end:8px}
 .wimg-share{width:128px;height:128px;margin:6px auto 0}
 @media (prefers-reduced-motion:reduce){.wimg-ex{animation:none}}
 .wimg-meaning{width:132px;height:132px;margin:0 auto 6px;animation:obPop .45s both}.ob-meaning{text-align:center}.ob-pic{display:flex;justify-content:center}
 /* one soft tile behind every word picture so thick-outline pictograms, soft emoji and hand-drawn art sit together as one set */
-.wimg-card,.wimg-ex,.wimg-meaning,.wimg-build,.wimg-share{background:var(--soft);border-radius:24px;padding:10px;box-sizing:border-box}
+.wimg-card,.wimg-ex,.wimg-meaning,.wimg-build,.wimg-share{background:var(--wtile,#EEF6F4);border-radius:24px;padding:10px;box-sizing:border-box}
 .wimg-ex{width:124px;height:124px;margin:2px auto 8px}.wimg-meaning{width:140px;height:140px}.wimg-share{width:120px;height:120px}
 .wimg-build{display:block;width:140px;height:140px;margin:0 auto 8px}
-.wimg-q{background:var(--soft);border-radius:12px;padding:4px;box-sizing:border-box;width:52px;height:52px}
+.wimg-q{background:var(--wtile,#EEF6F4);border-radius:12px;padding:4px;box-sizing:border-box;width:52px;height:52px}
+/* pictures are drawn for light paper: keep their tile light in dark mode so outlines stay readable */
+@media (prefers-color-scheme:dark){:root{--wtile:#EFE9DC}}
+/* QA round: every word card has one layout, centred, with the play button under the text (never over it) */
+.word{text-align:center;justify-items:center;padding:12px 10px}.word .btn-play,.word.has-pic .btn-play{position:static;margin-top:6px}.word .ur{line-height:1.5}
+.build-info{flex-direction:column;justify-content:center;text-align:center;gap:6px}
+.wimg-ex{width:104px;height:104px}
+/* QA round 2: the Urdu word leads every card (read first, then see the picture), so words line up across a row whether or not they have a picture; play sits at the bottom */
+.words .word{display:flex;flex-direction:column;align-items:center;gap:4px}
+.words .word .ur{order:0}.words .word .wimg-card{order:1;margin:4px 0 2px}.words .word .rom{order:2}.words .word .en{order:3}.words .word .btn-play{order:4;margin-top:8px}
+@media (prefers-color-scheme:dark){:root{--wtile:#DDD7C8}}

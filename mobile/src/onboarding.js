@@ -220,12 +220,12 @@ export async function shareCard(a) {
   g.fillStyle = '#F2F7F6'; g.fillRect(0, 0, W, H);
   const stripe = ['#1E9C8F', '#F2A93B', '#C74A3B', '#1E2F55']; for (let x = 0; x < W; x += 56) { g.fillStyle = stripe[(x / 56) % 4]; g.fillRect(x, 0, 56, 18); g.fillRect(x, H - 18, 56, 18); }
   g.fillStyle = '#fff'; round(g, 90, 300, W - 180, 640, 48); g.fill(); g.strokeStyle = '#D5E3E1'; g.lineWidth = 4; g.stroke();
-  const img = await new Promise(r => { const i = new Image(); i.onload = () => r(i); i.onerror = () => r(null); i.src = './img/mascot_cheer.webp'; }); if (img) g.drawImage(img, W - 290, 20, 210, 210);
+  const img = await new Promise(r => { const i = new Image(); i.onload = () => r(i); i.onerror = () => r(null); i.src = './img/mascot_cheer.webp'; }); if (img) g.drawImage(img, W - 260, 16, 180, 180);
   g.textAlign = 'center'; g.fillStyle = '#1E2F55'; g.font = '700 58px Fredoka, sans-serif'; g.fillText(a.who === 'me' ? 'I read my first Urdu word' : `${a.name} read a first Urdu word`, W / 2, 262);
   const pic = wimgSrc('بابا') && await new Promise(r => { const i = new Image(); i.onload = () => r(i); i.onerror = () => r(null); i.src = './' + wimgSrc('بابا'); });
-  if (pic) { const k = Math.min(280 / pic.width, 280 / pic.height); g.drawImage(pic, W / 2 - pic.width * k / 2, 330, pic.width * k, pic.height * k); } // the picture is the context: baba = this
-  g.direction = 'rtl'; g.fillStyle = '#157A70'; g.font = `700 ${pic ? 170 : 260}px "Noto Naskh Arabic", serif`; g.fillText('بابا', W / 2, pic ? 820 : 700); g.direction = 'ltr';
-  g.fillStyle = '#5A6B84'; g.font = '600 48px Fredoka, sans-serif'; g.fillText('baba · dad', W / 2, pic ? 895 : 800);
+  if (pic) { g.fillStyle = '#EEF6F4'; round(g, W / 2 - 150, 325, 300, 300, 44); g.fill(); const k = Math.min(240 / pic.width, 240 / pic.height); g.drawImage(pic, W / 2 - pic.width * k / 2, 325 + (300 - pic.height * k) / 2, pic.width * k, pic.height * k); } // the picture is the context: baba = this
+  g.direction = 'rtl'; g.fillStyle = '#157A70'; g.font = `700 ${pic ? 170 : 260}px "Noto Naskh Arabic", serif`; g.fillText('بابا', W / 2, pic ? 815 : 700); g.direction = 'ltr';
+  g.fillStyle = '#5A6B84'; g.font = '600 48px Fredoka, sans-serif'; g.fillText('baba · dad', W / 2, pic ? 910 : 800);
   g.fillStyle = '#1E2F55'; g.font = '600 40px Fredoka, sans-serif'; g.fillText(new Date().toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric' }), W / 2, 1020);
   g.fillStyle = '#157A70'; g.font = '44px "Noto Nastaliq Urdu", serif'; g.fillText('اردو پڑھنا سیکھیں', W / 2, 1140);
   g.fillStyle = '#5A6B84'; g.font = '600 36px Fredoka, sans-serif'; g.fillText('Urdu Qaida · free, offline, 10 minutes a day', W / 2, 1245);

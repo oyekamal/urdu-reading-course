@@ -11,9 +11,11 @@ DST = 'mobile/public/img/words'; os.makedirs(DST, exist_ok=True)
 picks = json.load(open('design/words/picks_final.json')); cat = {c['id']: c for c in json.load(open('data/word_catalog.json'))}
 # 'draw' picks use the hand-drawn SVG design/words/art/<id>.svg when it exists and was not dropped (art/rejected.txt, one id per line)
 rej = set(open('design/words/art/rejected.txt').read().split()) if os.path.exists('design/words/art/rejected.txt') else set()
+# design/words/dropped.txt: ids whose picked picture was pulled after in-app QA (abstract diagrams a child cannot decode)
+drop = set(open('design/words/dropped.txt').read().split()) if os.path.exists('design/words/dropped.txt') else set()
 m, stems = {}, set()
 for i, k in picks.items():
-    if int(i) not in cat or k == 'none': continue
+    if int(i) not in cat or k == 'none' or i in drop: continue
     if k == 'draw':
         if i in rej or not os.path.exists(f'design/words/art/{i}.svg'): continue
         k = f'art:{i}'
