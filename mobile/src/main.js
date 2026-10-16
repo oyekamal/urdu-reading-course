@@ -9,7 +9,8 @@ import { initFeel } from './feel.js';
 import { askGrownup } from './gate.js';
 import { esc, cleanName, NAME_MAX, once } from './safe.js';
 import { pickAndRestore } from './restore.js';
-import { setBack } from './back.js'; // Android Back button: dialogs, screens, double-press to exit
+import { setBack } from './back.js';
+import { themeChip } from './theme.js'; // Android Back button: dialogs, screens, double-press to exit
 import './appupdate.js'; // Android: banner when a newer version is on Google Play
 import './swreg.js'; // round 11a: service worker registration as a module (no inline script, so the CSP can say script-src 'self')
 import './spring.js'; // Cookling-style spring motion: entrances, pops, soft shake (observer-based)
@@ -47,7 +48,7 @@ const ctxBase = {
   recover: e => showRecovery(e),
 };
 initFeel(ctxBase); // tap/answer feel layer (sound, haptics, Marko coach, combo chip): delegated, no per-screen hooks
-function apply() { if (settings.theme === 'light' || settings.theme === 'dark') document.documentElement.dataset.theme = settings.theme; else delete document.documentElement.dataset.theme; try { if (settings.theme === 'light' || settings.theme === 'dark') localStorage.setItem('urdu-theme', settings.theme); else localStorage.removeItem('urdu-theme'); } catch (e) { /* private mode */ } /* Appearance: light, dark, or follow the phone */ document.body.dataset.style = settings.style || 'naskh'; document.documentElement.style.setProperty('--ur-scale', [1, 1.25, 1.5].includes(Number(settings.scale)) ? String(Number(settings.scale)) : '1'); document.documentElement.style.setProperty('--ur-spacing', (settings.spacing || '0') + 'em'); document.body.dataset.rom = settings.rom === false ? 'off' : 'on'; document.body.dataset.audioonly = settings.audioOnly ? 'on' : 'off'; }
+function apply() { try { const dark = settings.theme === 'dark' || (settings.theme !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches); document.querySelector('meta[name=theme-color]')?.setAttribute('content', dark ? '#121C33' : '#1E9C8F'); } catch (e) { /* no meta */ } if (settings.theme === 'light' || settings.theme === 'dark') document.documentElement.dataset.theme = settings.theme; else delete document.documentElement.dataset.theme; try { if (settings.theme === 'light' || settings.theme === 'dark') localStorage.setItem('urdu-theme', settings.theme); else localStorage.removeItem('urdu-theme'); } catch (e) { /* private mode */ } /* Appearance: light, dark, or follow the phone */ document.body.dataset.style = settings.style || 'naskh'; document.documentElement.style.setProperty('--ur-scale', [1, 1.25, 1.5].includes(Number(settings.scale)) ? String(Number(settings.scale)) : '1'); document.documentElement.style.setProperty('--ur-spacing', (settings.spacing || '0') + 'em'); document.body.dataset.rom = settings.rom === false ? 'off' : 'on'; document.body.dataset.audioonly = settings.audioOnly ? 'on' : 'off'; }
 
 let booted = false, finishing = false;
 async function boot() {
@@ -120,7 +121,7 @@ async function setupTeacher() {
 async function home() {
   setBack(null);
   const mode = await db.setting('mode'); const profiles = (await db.all('profiles')).filter(p => p.kind !== 'teacher');
-  root.innerHTML = ''; const h = el('div', 'row'); h.style.justifyContent = 'space-between'; h.innerHTML = `<div><h1>${mode === 'school' ? 'Class' : 'Who is learning?'}</h1><div class="muted">${mode === 'school' ? 'Tap your name to start' : 'Tap a name, or add one'}</div></div>`; root.append(h);
+  root.innerHTML = ''; const h = el('div', 'row'); h.style.justifyContent = 'space-between'; h.innerHTML = `<div><h1>${mode === 'school' ? 'Class' : 'Who is learning?'}</h1><div class="muted">${mode === 'school' ? 'Tap your name to start' : 'Tap a name, or add one'}</div></div>`; h.append(themeChip(ctxBase)); root.append(h);
   const TRACK = { child: 'Child', adult: 'Adult', heritage: 'Speaks Urdu' };
   const sorted = profiles.sort((a, b) => a.name.localeCompare(b.name) || (a.createdAt || 0) - (b.createdAt || 0)); const same = n => sorted.filter(q => q.name.trim().toLowerCase() === n.trim().toLowerCase());
   const list = el('div', 'list'); sorted.forEach(p => {
@@ -148,14 +149,14 @@ async function learner(p, backTo, autoPlacement) { await db.setting('activeProfi
 
 async function teacherGate() {
   const pin = await db.setting('teacherPin'); if (!pin) return setupTeacher();
-  root.innerHTML = ''; const c = el('div', 'card center'); c.innerHTML = '<h2>Teacher PIN</h2>'; const inp = el('input'); inp.type = 'password'; inp.inputMode = 'numeric'; inp.style.fontSize = '24px'; inp.style.textAlign = 'center';
+  root.innerHTML = ''; const c = el('div', 'card center'); c.innerHTML = '<h1>Teacher PIN</h1>'; const inp = el('input'); inp.type = 'password'; inp.inputMode = 'numeric'; inp.setAttribute('aria-label', 'Teacher PIN'); inp.style.fontSize = '24px'; inp.style.textAlign = 'center';
   const ok = el('button', 'btn btn-primary btn-wide', 'Unlock'); ok.onclick = async () => { if (pinLocked()) return toast('Too many tries. Wait a little, then try again.'); if (await pinOk(pin, inp.value)) { pinTries = 0; if (!pin.startsWith('h1:')) await db.setting('teacherPin', await pinHash(inp.value, uid().slice(0, 12))); return teacher(); } if (++pinTries >= 3) { pinTries = 0; try { localStorage.setItem(PIN_LOCK, String(Date.now() + 30000)); } catch (e) { /* private mode */ } toast('Too many tries. Wait 30 seconds.'); } else toast('Wrong PIN'); }; inp.onkeydown = e => { if (e.key === 'Enter') ok.click(); }; const back = el('button', 'btn', 'Back'); back.onclick = home; c.append(inp, ok, back); root.append(c); inp.focus();
 }
 async function teacher() {
   const { renderTeacher } = await import('./teacher.js');
   await db.setting('activeProfile', null);
   const { C, play } = await import('./content.js');
-  renderTeacher(root, { db, C, play, settings, recover: e => showRecovery(e), openLearner: async id => learner(await db.get('profiles', id), teacher), lock: home, exportBackup, addProfile: () => addProfile(() => teacher()) });
+  renderTeacher(root, { db, C, play, settings, recover: e => showRecovery(e), openLearner: async id => learner(await db.get('profiles', id), teacher), lock: home, setPin: async v => db.setting('teacherPin', await pinHash(v, uid().slice(0, 12))), exportBackup, addProfile: () => addProfile(() => teacher()) });
 }
 
 async function exportBackup() {

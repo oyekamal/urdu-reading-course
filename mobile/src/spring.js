@@ -67,6 +67,30 @@ function track(e) {
 }
 const slideDir = () => (performance.now() - dirT < 2500 ? dir : 1);
 
+// exitScreen: the screen being replaced stays on screen, as the SAME node (no clone, no snapshot), until the new one has its first child, so there is never
+// an empty frame; then it pushes out (spring k140 d14.5, 24 px the opposite way the new screen comes from, fading to 0) and is removed after 260 ms.
+// The caller inserts `next` (with data-screen) beside `old` first. Returns false (caller just removes `old`) for reduced motion, an empty/tiny/canvas screen
+// or a page scrolled far down. The old node is inert + aria-hidden + pointer-events none, has no ids (no duplicates), and its Lotties / docks are hidden by CSS.
+export function exitScreen(old, next) {
+  if (calm() || !old?.isConnected || !old.firstElementChild || old.querySelector('canvas') || scrollY > innerHeight * 2) return false;
+  const r = old.getBoundingClientRect(); if (r.width < 40 || r.height < 40) return false;
+  const c0 = old.firstElementChild.getBoundingClientRect().top;
+  old.querySelectorAll('[id]').forEach(n => n.removeAttribute('id')); old.removeAttribute('id');
+  old.setAttribute('data-exit', ''); old.setAttribute('aria-hidden', 'true'); old.inert = true;
+  old.style.cssText += `;position:fixed;z-index:-1;margin:0;left:${r.left}px;top:${r.top}px;width:${r.width}px;pointer-events:none`;
+  const dy = c0 - old.firstElementChild.getBoundingClientRect().top; if (dy) old.style.top = `${r.top + dy}px`;   // out of flow the first child's margin no longer collapses through the parent: put it back exactly where it was
+  let go = false, stop = null, t1 = 0, t2 = 0; const mo = new MutationObserver(() => { if (next.firstChild) start(); });
+  const kill = () => { stop?.(); clearTimeout(t1); clearTimeout(t2); mo.disconnect(); old.remove(); };
+  function start() {
+    if (go) return; go = true; mo.disconnect(); clearTimeout(t1); const d = slideDir();
+    stop = spring(0, 1, { k: 140, d: 14.5 }, p => { old.style.opacity = String(Math.max(0, 1 - 1.3 * p)); old.style.translate = `${-24 * d * p}px 0`; });
+    t2 = setTimeout(kill, 260);
+  }
+  mo.observe(next, { childList: true }); if (next.firstChild) start(); else t1 = setTimeout(() => { start(); }, 450);   // slow build: do not hold the old screen forever
+  setTimeout(kill, 1500);   // failsafe
+  return true;
+}
+
 function flush() {
   pending = false; const batch = queue; queue = []; let i = 0, t = 0, c = 0, sl = 0;
   for (const n of batch) {
@@ -84,8 +108,9 @@ function flush() {
 function note(n) {
   if (n.nodeType !== 1) return;
   // a whole screen arrived (a direct child of #app other than the tab bar): its blocks rise from the side the user came from, its other pieces slide in
-  if (n.parentElement === appRoot && !n.matches('.bottom, .hh-stage, .celebrate, [data-nospring]')) { const d = slideDir(); for (const k of n.children) { k.__side = d; queue.push(k); } }
-  for (const e of [n, ...n.querySelectorAll(ALL)]) if (e.matches(ALL)) { if (!e.__side && n.parentElement === appRoot) e.__side = slideDir(); queue.push(e); }
+  const top = n.parentElement === appRoot || n.parentElement?.hasAttribute('data-screen');   // a direct child of #app, or of a screen container made by exitScreen's callers
+  if (top && !n.matches('.bottom, .hh-stage, .celebrate, [data-nospring], [data-exit]')) { const d = slideDir(); for (const k of n.children) { k.__side = d; queue.push(k); } }
+  for (const e of [n, ...n.querySelectorAll(ALL)]) if (e.matches(ALL)) { if (!e.__side && top) e.__side = slideDir(); queue.push(e); }
   if (queue.length && !pending) { pending = true; queueMicrotask(flush); }
 }
 const appRoot = document.getElementById('app') || document.body;
@@ -160,8 +185,9 @@ function glance(n) {
 let lastHop = 0;
 function life() {
   setTimeout(life, 2200 + Math.random() * 2400);
+  if (document.documentElement.classList.contains('m-q3')) return;   // quality governor level 3 (motion.js): slow phone, no hop/blink/glance
   if (document.hidden || document.querySelector('.celebrate, .gate-back, .a11y-sheet, .stk-ov')) return;
-  const m = [...document.querySelectorAll('#app .marko, #app img.mascot')].find(e => { const r = e.getBoundingClientRect(); return r.width > 60 && r.top > 0 && r.bottom < innerHeight; });
+  const m = [...document.querySelectorAll('#app .marko, #app img.mascot')].find(e => { if (e.closest('[data-exit]')) return false; const r = e.getBoundingClientRect(); return r.width > 60 && r.top > 0 && r.bottom < innerHeight; });
   if (!m) return; const now = performance.now();
   if (now - lastHop > 7500 && !m.closest('.hh-stage') && Math.random() < 0.7) { lastHop = now; hop(m); return; }   // Today's hero Marko has its own poke squash: it only blinks and glances
   Math.random() < 0.55 ? blink(m) : glance(m);

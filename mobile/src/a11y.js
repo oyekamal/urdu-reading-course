@@ -216,7 +216,7 @@ export function confirmSheet({ title = 'Leave this lesson?', body = 'Your progre
 let wrapQ = 0;
 function wrapLessons() {
   wrapQ = 0;
-  document.querySelectorAll('.lesson > .t-kids, .ob > .ob-demo').forEach(box => {
+  document.querySelectorAll('.lesson:not([data-exit]) > .t-kids:not([data-exit]), .ob > .ob-demo').forEach(box => {
     const kids = [...box.children]; let sc = kids.find(k => k.classList.contains('les-scroll'));
     const last = kids[kids.length - 1];
     const prim = last && !last.classList.contains('les-scroll') && last.matches('.btn-primary, .dock') ? last : null;
@@ -231,13 +231,13 @@ function wrapLessons() {
 }
 let fitRO = null, fitT = 0;
 function fitLesson(lesson) {   // publish how tall everything except the scroll area is, so the scroll area gets exactly the room that is left
-  const box = lesson.querySelector(':scope > .t-kids, :scope > .ob-demo'); if (!box) return;
+  const box = lesson.querySelector(':scope > .t-kids:not([data-exit]), :scope > .ob-demo'); if (!box) return;
   let fixed = 0;
-  for (const c of lesson.children) if (c !== box) { const cs = getComputedStyle(c); fixed += c.getBoundingClientRect().height + (parseFloat(cs.marginTop) || 0) + (parseFloat(cs.marginBottom) || 0); }
+  for (const c of lesson.children) if (c !== box && !c.hasAttribute('data-exit')) { const cs = getComputedStyle(c); fixed += c.getBoundingClientRect().height + (parseFloat(cs.marginTop) || 0) + (parseFloat(cs.marginBottom) || 0); }
   const prim = box.lastElementChild;
   if (prim && !prim.classList.contains('les-scroll')) { const cs = getComputedStyle(prim); fixed += prim.getBoundingClientRect().height + (parseFloat(cs.marginTop) || 0) + (parseFloat(cs.marginBottom) || 0); }
   lesson.style.setProperty('--les-fixed', Math.ceil(fixed + 20) + 'px');
-  if (window.ResizeObserver) { fitRO = fitRO || new ResizeObserver(() => { clearTimeout(fitT); fitT = setTimeout(fitAll, 60); }); for (const c of lesson.children) if (c !== box && !c._ro) { c._ro = 1; fitRO.observe(c); } if (prim && !prim._ro) { prim._ro = 1; fitRO.observe(prim); } }
+  if (window.ResizeObserver) { fitRO = fitRO || new ResizeObserver(() => { clearTimeout(fitT); fitT = setTimeout(fitAll, 60); }); for (const c of lesson.children) if (c !== box && !c._ro && !c.hasAttribute('data-exit')) { c._ro = 1; fitRO.observe(c); } if (prim && !prim._ro) { prim._ro = 1; fitRO.observe(prim); } }
 }
 // a scroll area that really overflows must be reachable and scrollable from the keyboard
 function syncScrollable() {
@@ -246,7 +246,7 @@ function syncScrollable() {
     else if (e.getAttribute('tabindex') === '0') { e.removeAttribute('tabindex'); e.removeAttribute('role'); e.removeAttribute('aria-label'); }
   });
 }
-const fitAll = () => { document.querySelectorAll('.lesson, .ob:has(> .ob-demo)').forEach(fitLesson); syncScrollable(); };
+const fitAll = () => { document.querySelectorAll('.lesson:not([data-exit]), .ob:has(> .ob-demo)').forEach(fitLesson); syncScrollable(); };
 const queueWrap = () => { if (!wrapQ) { wrapQ = 1; queueMicrotask(wrapLessons); } };
 
 /* ---------------------------------------------------------------------- init ---- */

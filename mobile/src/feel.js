@@ -112,7 +112,7 @@ function wobble(el) {   // non-tile wrong answers only (the dictation box); wron
 
 /* ------------------------------------------------------------- Marko coach ---- */
 let coach = null, lock = 0, talking = false, idleT = 0, lessonHead = null, combo = 0;
-const markos = () => [...document.querySelectorAll('.lesson .marko')].filter(m => m._marko && m.isConnected);
+const markos = () => [...document.querySelectorAll('.lesson .marko')].filter(m => m._marko && m.isConnected && !m.closest('[data-exit]'));
 function mood(state, ms) {
   clearTimeout(idleT); lock = performance.now() + ms; markos().forEach(m => setMarko(m, state));
   idleT = setTimeout(() => { lock = 0; markos().forEach(m => setMarko(m, talking && coach && m === coach ? 'talk' : (m.dataset.base || 'idle'))); }, ms);

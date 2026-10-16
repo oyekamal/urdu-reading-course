@@ -36,7 +36,8 @@ function injectStyle() {
     // the live rig breathes on the independent `scale` property (compositor-only, so it costs no main-thread time and never fights hop/blink/glance on .marko)
     '@media (prefers-reduced-motion:no-preference){.marko:not(.marko-still)>.marko-l{transform-origin:50% 100%;animation:markoLife 4.2s ease-in-out infinite}}' +
     '@keyframes markoLife{50%{scale:1.02}}html.m-cover .marko>.marko-l{animation-play-state:paused}' +
-    'html.calm .marko.marko-still>img,html.m-cover .marko.marko-still>img{animation-play-state:paused}';
+    'html.calm .marko.marko-still>img,html.m-cover .marko.marko-still>img{animation-play-state:paused}' +
+    'html.m-q3 .marko>.marko-l,html.m-q3 .marko.marko-still>img{animation:none}';   // quality governor level 3 (motion.js): no breathing either
   document.head.append(s);
 }
 

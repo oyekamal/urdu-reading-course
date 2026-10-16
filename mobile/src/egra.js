@@ -13,13 +13,14 @@ const MIN_PASSAGE_S = 15; // a passage read in less than this is an accidental t
 const MAX_CWPM = 200;       // no child reads faster than this; anything above is a timing slip and is capped
 
 // ---- honest timer: Date.now-based countdown, immune to setInterval drift ----
-function startTimer(seconds, onTick, onDone) {
+function startTimer(seconds, onTick, onDone, alive) {
   const start = Date.now();
   const durMs = seconds * 1000;
   let stopped = false;
   let h;
   function tick() {
     if (stopped) return;
+    if (alive && !alive()) { stopped = true; return; }   // the teacher left the screen: no stray beep or score from a dead timer
     const elapsedMs = Date.now() - start;
     const remainingMs = Math.max(0, durMs - elapsedMs);
     onTick(Math.ceil(remainingMs / 1000), elapsedMs / 1000);
@@ -56,6 +57,7 @@ function fillTo(arr, n) {
   return out.slice(0, n);
 }
 
+const srH1 = () => el('h1', 'sr-only', 'Reading assessment');   // every screen needs a level-one heading (a11y); visible titles stay h2
 function scriptClass(nastaliq) { return nastaliq ? 'ur nastaliq' : 'ur'; }
 
 function renderGrid(items, cls, perRow) {
@@ -76,7 +78,7 @@ function runFlashSubtask(root, opts) {
   const wrong = new Set();
   let finished = false, touched = false;
   const wrap = el('div', 'card');
-  wrap.appendChild(el('h2', '', title));
+  wrap.appendChild(srH1()); wrap.appendChild(el('h2', '', title));
   const timerEl = el('div', 'timer big', String(PER_MIN)); timerEl.style.cssText = 'position:sticky;top:0;background:var(--card);z-index:2;padding:4px 0';
   wrap.appendChild(timerEl);
   const gridBox = renderGrid(items, cls, 10); const grid = gridBox.grid; grid._wrong = wrong;
@@ -116,7 +118,7 @@ function runFlashSubtask(root, opts) {
     finished = false; const ask = el('div', 'row'); const num = el('input'); num.type = 'number'; num.min = 0; num.max = items.length; num.value = ''; num.setAttribute('aria-label', 'How many items did the child read?'); num.style.width = '90px';
     const go = el('button', 'btn btn-primary', 'Score it'); go.onclick = () => { const n = Math.max(0, Math.min(items.length, parseInt(num.value, 10))); if (Number.isNaN(n)) { toast('Type how many the child read'); return; } ask.remove(); finishAt(n); };
     ask.append(el('span', '', 'Time is up. How many did the child read?'), num, go); wrap.appendChild(ask);
-  });
+  }, () => wrap.isConnected);
 }
 
 // ---- passage subtask: tappable words, error marking, "last word reached", "child finished" ----
@@ -133,7 +135,7 @@ function runPassageSubtask(root, opts) {
   const start = Date.now();
 
   const wrap = el('div', 'card');
-  wrap.appendChild(el('h2', '', 'Passage — oral reading fluency (60s)'));
+  wrap.appendChild(srH1()); wrap.appendChild(el('h2', '', 'Passage — oral reading fluency (60s)'));
   const timerEl = el('div', 'timer big', String(PER_MIN)); timerEl.style.cssText = 'position:sticky;top:0;background:var(--card);z-index:2;padding:4px 0';
   wrap.appendChild(timerEl);
   const note = el('p', 'muted', 'Tap words the child gets wrong. Tap "Mark last word reached", then the word, if the child stops before the end.'); note.setAttribute('role', 'status');
@@ -196,7 +198,7 @@ function runPassageSubtask(root, opts) {
     // time is up and nobody said how far the child got: do not guess, ask
     awaiting = true; markMode = true; markBtn.classList.add('btn-primary'); ask.style.display = 'none'; finBtn.disabled = true; finBtn.textContent = 'Score it'; noneBtn.style.display = '';
     note.textContent = 'Time is up. Tap the last word the child reached (or "Read no words"), then tap Score it.';
-  });
+  }, () => wrap.isConnected);
 
   function finish(timedOut) {
     if (finished) return;
@@ -221,7 +223,7 @@ function runComprehensionSubtask(root, opts) {
   function renderQ() {
     if (i >= questions.length) { onScore(correct); return; }
     wrap.innerHTML = '';
-    wrap.appendChild(el('h2', '', `Comprehension — question ${i + 1} of ${questions.length}`));
+    wrap.appendChild(srH1()); wrap.appendChild(el('h2', '', `Comprehension — question ${i + 1} of ${questions.length}`));
     wrap.appendChild(el('p', `${cls} big`, questions[i]));
     wrap.appendChild(el('p', `muted ${cls}`, answers[i] || ''));
     const row = el('div', 'row');
@@ -241,6 +243,7 @@ function renderResult(root, db, profile, state, onDone) {
   const band = state.orfDone ? overallBand(state.orf.cwpm, state.comp, state.compDone) : 'not tested'; const level = state.orfDone ? overallLevel(state.orf.cwpm, state.comp, state.compDone) : 'passage not tested: no standard result';
   const acc = (s, a) => a ? ` (${Math.round(100 * s / a)}% of ${a} attempted)` : '';
   const wrap = el('div', 'card');
+  wrap.appendChild(srH1());
   { const h2 = el('h2', ''); h2.textContent = `Result — ${profile.name}`; wrap.appendChild(h2); }
   const rows = [
     ['Letter sounds (clpm)', `${state.letters}${acc(state.letters, state.lettersAttempted)}`],
@@ -253,7 +256,7 @@ function renderResult(root, db, profile, state, onDone) {
     ['Overall (reading + understanding)', level],
     ['Learning band', band],
   ];
-  const tableWrap = el('div', 'table');
+  const tableWrap = el('div', 'table'); tableWrap.tabIndex = 0; tableWrap.setAttribute('role', 'region'); tableWrap.setAttribute('aria-label', 'Assessment result');
   const table = el('table');
   rows.forEach(([k, v]) => table.appendChild(el('tr', '', `<td>${k}</td><td>${v}</td>`)));
   tableWrap.appendChild(table);

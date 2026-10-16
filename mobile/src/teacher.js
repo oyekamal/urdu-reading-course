@@ -11,6 +11,9 @@ import { askGrownup } from './gate.js';
 import { runEgra } from './egra.js';
 
 // user-typed text (names, grades) is always set as text, never parsed as HTML
+// a horizontally scrollable table must be reachable by keyboard / screen reader
+let tblN = 0;
+const tblWrap = label => { const w = el('div', 'table'); if (label.endsWith('script table')) label += ' ' + (++tblN); w.tabIndex = 0; w.setAttribute('role', 'region'); w.setAttribute('aria-label', label); return w; };
 const txt = (tag, cls, t) => { const e = el(tag, cls); e.textContent = String(t ?? ''); return e; };
 const TABS = ['Class', 'Lesson', 'Groups', 'Assess', 'Reports', 'Device'];
 
@@ -60,7 +63,7 @@ function renderMarkdown(md) {
     if (/^\|.*\|$/.test(t)) {
       if (/^\|\s*-{2,}/.test(t)) continue; // separator row
       const cells = t.slice(1, -1).split('|').map(c => c.trim());
-      if (!table) { ul = ol = null; const tw = el('div', 'table'); table = document.createElement('table'); tw.appendChild(table); wrap.appendChild(tw); table._head = true; }
+      if (!table) { ul = ol = null; const tw = tblWrap('Lesson script table'); table = document.createElement('table'); tw.appendChild(table); wrap.appendChild(tw); table._head = true; }
       const tr = document.createElement('tr'); cells.forEach(c => { const cell = el(table._head ? 'th' : 'td', '', inline(c)); if (/[\u0600-\u06FF]/.test(c) && !table._head) cell.classList.add('ur'); tr.appendChild(cell); }); table.appendChild(tr); table._head = false; continue;
     }
     table = null;
@@ -103,22 +106,16 @@ async function renderClass(body, ctx, state, goto) {
   body.innerHTML = '';
   const card = el('div', 'card');
   card.appendChild(el('h2', '', 'Class roster'));
-  const tableWrap = el('div', 'table');
-  const table = document.createElement('table');
-  table.appendChild(el('tr', '', '<th>Name</th><th>Grade</th><th>Band</th><th>Units passed</th><th></th>'));
+  const list = el('div', 'list t-roster'); list.setAttribute('role', 'list');   // one card per child (a 5-button table row pushed the actions off a phone screen)
   roster.forEach(r => {
     const band = r.latest ? recBand(r.latest) : null;
     const passed = r.progress ? Object.values(r.progress.units || {}).filter(u => u && u.passed).length : 0;
-    const tr = document.createElement('tr');
-    tr.appendChild(txt('td', '', r.profile.name));
-    tr.appendChild(txt('td', '', r.profile.grade || ''));
-    const bandTd = el('td', '');
-    bandTd.appendChild(txt('span', `pill${band ? '' : ' muted'}`, band || 'not assessed'));
-    tr.appendChild(bandTd);
-    tr.appendChild(el('td', '', String(passed)));
-    const actTd = el('td', 'row');
+    const tr = el('div', 'card t-child'); tr.setAttribute('role', 'listitem');
+    const nm = txt('b', 't-name', r.profile.name); nm.dir = 'auto'; tr.appendChild(nm);
+    const meta = el('div', 'muted t-meta'); meta.append(txt('span', '', r.profile.grade ? `Grade ${r.profile.grade}` : 'No grade'), txt('span', `pill${band ? '' : ' muted'}`, band || 'not assessed'), txt('span', '', `${passed} unit${passed === 1 ? '' : 's'} passed`)); tr.appendChild(meta);
+    const actTd = el('div', 'row t-acts');
     const openBtn = el('button', 'btn', 'Open'); openBtn.onclick = () => ctx.openLearner(r.profile.id);
-    const detailBtn = el('button', 'btn', 'Detail'); detailBtn.onclick = once(async () => { const { renderDashboard } = await import('./dashboard.js'); const d = document.getElementById('child-detail') || Object.assign(el('div'), { id: 'child-detail' }); d.innerHTML = ''; d.append(txt('h2', '', `${r.profile.name} — detail`)); d.append(await renderDashboard(r.profile.id)); body.append(d); d.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+    const detailBtn = el('button', 'btn', 'Detail'); detailBtn.onclick = once(async () => { const { renderDashboard } = await import('./dashboard.js'); const d = document.getElementById('child-detail') || Object.assign(el('div'), { id: 'child-detail' }); d.innerHTML = ''; d.append(txt('h2', '', `${r.profile.name} — detail`)); d.append(await renderDashboard(r.profile.id)); d.querySelectorAll('.table').forEach(w => { w.tabIndex = 0; w.setAttribute('role', 'region'); w.setAttribute('aria-label', 'Learner detail table'); }); body.append(d); d.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     const assessBtn = el('button', 'btn btn-primary', 'Assess'); assessBtn.onclick = () => goto('Assess', r.profile.id);
     const editBtn = el('button', 'btn', 'Edit');
     editBtn.onclick = () => {
@@ -137,19 +134,18 @@ async function renderClass(body, ctx, state, goto) {
     };
     actTd.appendChild(openBtn); actTd.appendChild(detailBtn); actTd.appendChild(assessBtn); actTd.appendChild(editBtn); actTd.appendChild(delBtn);
     tr.appendChild(actTd);
-    table.appendChild(tr);
+    list.appendChild(tr);
   });
-  tableWrap.appendChild(table);
-  card.appendChild(tableWrap);
+  card.appendChild(list);
   if (!roster.length) card.appendChild(el('p', 'muted', 'No children added yet.'));
   body.appendChild(card);
   const addCard = el('div', 'card');
   addCard.appendChild(el('h2', '', 'Add child'));
   const row = el('div', 'row');
-  const nameInp = document.createElement('input'); nameInp.placeholder = 'Name'; nameInp.maxLength = NAME_MAX;
-  const gradeSel = document.createElement('select');
+  const nameInp = document.createElement('input'); nameInp.placeholder = 'Name'; nameInp.maxLength = NAME_MAX; nameInp.setAttribute('aria-label', 'Child name');
+  const gradeSel = document.createElement('select'); gradeSel.setAttribute('aria-label', 'Grade');
   [1, 2, 3, 4, 5].forEach(g => { const o = document.createElement('option'); o.value = String(g); o.textContent = `Grade ${g}`; gradeSel.appendChild(o); });
-  const trackSel = document.createElement('select');
+  const trackSel = document.createElement('select'); trackSel.setAttribute('aria-label', 'Track');
   [['child', 'Child'], ['adult', 'Adult'], ['heritage', 'Speaks Urdu']].forEach(([v, t]) => { const o = document.createElement('option'); o.value = v; o.textContent = t; trackSel.appendChild(o); });
   row.appendChild(nameInp); row.appendChild(gradeSel); row.appendChild(trackSel);
   addCard.appendChild(row);
@@ -176,7 +172,7 @@ async function renderLesson(body, ctx, state, goto) {
   body.innerHTML = '';
   const head = el('div', 'card');
   head.appendChild(el('h2', '', `Today's lesson — Unit ${unit.n}: ${unit.title}`));
-  const sel = document.createElement('select');
+  const sel = document.createElement('select'); sel.setAttribute('aria-label', 'Choose a unit');
   C.units.forEach(u => {
     const o = document.createElement('option'); o.value = String(u.n); o.textContent = `Unit ${u.n} — ${u.title}`;
     if (u.n === n) o.selected = true;
@@ -297,9 +293,9 @@ async function renderAssess(body, ctx, state, goto) {
   body.innerHTML = '';
   const card = el('div', 'card');
   card.appendChild(el('h2', '', 'Assess a child'));
-  const tableWrap = el('div', 'table');
+  const tableWrap = tblWrap('Children to assess');
   const table = document.createElement('table');
-  table.appendChild(el('tr', '', '<th>Name</th><th>Last assessed</th><th></th>'));
+  table.appendChild(el('tr', '', '<th>Name</th><th>Last assessed</th><th><span class="sr-only">Action</span></th>'));
   roster.forEach(r => {
     const tr = document.createElement('tr');
     tr.appendChild(txt('td', '', r.profile.name));
@@ -330,7 +326,7 @@ async function renderReports(body, ctx, state) {
   body.innerHTML = '';
   const card = el('div', 'card');
   card.appendChild(el('h2', '', 'Class report — latest assessment per child'));
-  const tableWrap = el('div', 'table');
+  const tableWrap = tblWrap('Class report');
   const table = document.createElement('table');
   const headers = [['name', 'Name'], ['ts', 'Date'], ['letters', 'Letters'], ['nonwords', 'Nonwords'], ['words', 'Words'], ['cwpm', 'Passage cwpm'], ['comp', 'Comp'], ['band', 'Band']];
   const trh = document.createElement('tr');
@@ -359,7 +355,7 @@ async function renderReports(body, ctx, state) {
     const barRow = el('div', 'row');
     barRow.appendChild(el('div', 'muted', n));
     const bar = document.createElement('div');
-    bar.style.background = '#4a7'; bar.style.height = '16px';
+    bar.style.background = 'var(--accent)'; bar.style.height = '16px';
     bar.style.width = `${Math.round((counts[n] / max) * 200)}px`;
     barRow.appendChild(bar);
     barRow.appendChild(el('span', 'muted', ` ${counts[n]}`));
@@ -428,12 +424,12 @@ async function renderDevice(body, ctx) {
   body.innerHTML = '';
   const pinCard = el('div', 'card');
   pinCard.appendChild(el('h2', '', 'Teacher PIN'));
-  const pinInp = document.createElement('input'); pinInp.type = 'tel'; pinInp.maxLength = 6; pinInp.placeholder = 'New PIN (4-6 digits)';
+  const pinInp = document.createElement('input'); pinInp.type = 'password'; pinInp.inputMode = 'numeric'; pinInp.maxLength = 6; pinInp.setAttribute('aria-label', 'New teacher PIN'); pinInp.placeholder = 'New PIN (4-6 digits)';
   const saveBtn = el('button', 'btn btn-primary', 'Save PIN');
   saveBtn.onclick = async () => {
     const v = pinInp.value.trim();
     if (!/^\d{4,6}$/.test(v)) { toast('PIN must be 4-6 digits'); return; }
-    await db.setting('teacherPin', v);
+    if (ctx.setPin) await ctx.setPin(v); else await db.setting('teacherPin', v);   // the shell hashes it (salted SHA-256), same as first setup
     toast('PIN updated'); pinInp.value = '';
   };
   pinCard.appendChild(pinInp); pinCard.appendChild(saveBtn);
@@ -468,8 +464,9 @@ export async function renderTeacher(root, ctx) {
   const state = { lessonUnit: null, assessProfileId: null, reportSort: null };
   let active = 'Class';
   const shell = el('div', '');
-  const tabBar = el('div', 'tabs');
+  const tabBar = el('div', 'tabs'); tabBar.setAttribute('role', 'tablist'); tabBar.setAttribute('aria-label', 'Teacher sections');
   const body = el('div', '');
+  const h1 = el('h1', 'sr-only', 'Teacher'); shell.appendChild(h1);
   shell.appendChild(tabBar); shell.appendChild(body);
   root.innerHTML = ''; root.appendChild(shell);
   function goto(tab, profileId) {
@@ -481,8 +478,8 @@ export async function renderTeacher(root, ctx) {
   function renderTabs() {
     tabBar.innerHTML = '';
     TABS.forEach(t => {
-      const b = el('div', `tab${t === active ? ' active' : ''}`, t);
-      b.onclick = () => goto(t);
+      const b = el('div', `tab${t === active ? ' active' : ''}`, t); b.setAttribute('role', 'tab'); b.tabIndex = 0; b.setAttribute('aria-selected', String(t === active));
+      b.onclick = () => goto(t); b.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goto(t); } };
       tabBar.appendChild(b);
     });
   }

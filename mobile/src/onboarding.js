@@ -32,7 +32,7 @@ export async function runOnboarding(root, { finish, teacherSetup, restore }) {
 
   function show() {
     refresh(); timers.forEach(clearTimeout); timers = []; root.innerHTML = ''; window.scrollTo(0, 0);
-    const scr = el('div', 'ob'); root.append(scr);
+    const scr = el('div', 'ob'); root.append(scr); scr.append(el('h1', 'sr-only', 'Getting started with Urdu Qaida'));
     setBack(() => { if (st.i <= 0) return false; go(-1); return true; });   // Android Back = previous question, from the second screen on
     if (st.i >= 1 && st.i <= Q1) {
       const top = el('div', 'ob-top'); const back = el('button', 'ob-back', icon('back')); back.setAttribute('aria-label', 'Back'); back.onclick = () => go(-1);

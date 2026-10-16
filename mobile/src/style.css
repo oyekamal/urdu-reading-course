@@ -995,3 +995,32 @@ body.kb-open .toast,body.kb-open .sw-toast{bottom:calc(var(--kb,0px) + 20px)}
   .celebrate.cel-spring .cel-rays{will-change:transform,opacity}
   .tile.ok,.tile.no,body[data-track="child"] .tile.no{animation:none}
 }
+.ex-pos{display:block;margin-top:2px;font-size:13px;color:var(--muted,#667)}
+.ex-pos b{color:var(--accent);font-size:16px}
+
+/* vowel-mark fade: the "Show marks" peek chip and a word whose marks are showing for 3 s */
+.peek-btn { float: inline-end; margin: 0 0 6px 8px; min-height: 44px; }
+.peeking { outline: 2px dashed var(--gold, #F2A93B); outline-offset: 3px; border-radius: 6px; }
+
+/* screen swap (spring.js exitScreen): the replaced screen is the same node kept as an inert overlay for ~260 ms; its Lotties and docked buttons are hidden */
+[data-exit] .marko,[data-exit] .fx,[data-exit] canvas,[data-exit] .dock,[data-exit] .dock-row{visibility:hidden}
+@media (prefers-reduced-motion:reduce){[data-exit]{display:none!important}}
+
+/* teacher roster: one card per child, actions wrap under the name */
+.t-roster{display:flex;flex-direction:column;gap:10px}
+.t-child{margin:0;padding:12px}
+.t-name{display:block;font-size:17px;overflow-wrap:anywhere}
+.t-meta{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin:4px 0 8px}
+.t-acts{display:flex;flex-wrap:wrap;gap:6px}
+.t-acts .btn{min-height:44px;padding:8px 12px}
+.theme-chip{width:44px;min-width:44px;height:44px;padding:0;display:inline-flex;align-items:center;justify-content:center;font-size:22px;flex:none}.hh-top .theme-chip{margin-inline-end:6px}
+.hh-tools{display:flex;align-items:center;gap:8px;flex:none;margin-inline-start:auto}.hh-tools .theme-chip{margin:0}
+
+/* a11y audit: chip text on the dark teal soft background was 4.27:1 */
+@media (prefers-color-scheme:dark){.pick-chip{color:#8fe6db}}
+.tab:focus-visible,.table:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+/* teacher roster: one card per child */
+.t-roster{display:grid;gap:10px}.t-roster>.t-child{display:flex;flex-direction:column;align-items:stretch;gap:8px;margin:0;padding:12px}
+.t-child .t-name{font-size:17px;overflow-wrap:anywhere;min-width:0}.t-child .t-meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.t-child .t-acts{display:flex;flex-wrap:wrap;gap:8px}.t-child .t-acts .btn{min-height:44px;flex:1 1 auto}
+@media (prefers-color-scheme:dark){.btn-play .spk-lab{color:#8fe8dc}}   /* axe: #2fb8a9 on the dark play tile was 4.27:1 */

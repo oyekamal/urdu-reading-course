@@ -4,6 +4,8 @@ Five critics ran once (sonnet, parallel). Full reports sit beside this file. Res
 
 Reports: `pedagogy_reading.md`, `pedagogy_child_ux.md`, `qa_functional.md`, `qa_a11y_edge.md`, `motion.md` (+ `motion/strips`, `motion/vid`).
 
+## STATUS 2026-10-16 (night, 0.13.1 vc 24): also done and shipped: vowel-mark fade (marks.js), ranked letter example words, atomic screen swap + exit overlay, Marko adaptive quality governor, teacher mode QA + roster CSS, axe fixes, theme chip. Final independent QA verdict: ship (.audit/gauntlet/qa_final.md). Open minors: EGRA 60 s timer starts with no Start gate, Learn card says Start after a mid-lesson reload, dark Learn hero grey glow, theme-color on real phone, TalkBack + real-device CPU untested.
+
 ## STATUS 2026-10-16 (late): P0 bugs, most P1 pedagogy and P1 motion DONE and shipped as 0.13.0 (vc 23). Still open: vowel-mark fade (units 8-10), letter example word position (needs new audio), screen-exit snapshot (60-120 ms blank between screens), comprehension for non-Read screens, teacher-mode re-test, TalkBack test on a real phone, real-device Marko CPU check (FPS constants in marko.js).
 
 ## State of the code before 0.13.0 (kept for history; v0.12.2 c5dbf9a was the previous build)

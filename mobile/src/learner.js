@@ -3,11 +3,14 @@ import { db, uid } from './db.js';
 import { C, play, W, shuffle, wordKey, sentKey, el, toast, bandFor, recBand, wimg } from './content.js';
 import { canCheckForUpdate, checkForUpdate } from './appupdate.js';
 import { setBack } from './back.js';
+import { themeChip } from './theme.js';
 import * as D from './drills.js';
 import * as S from './session.js';
+import * as M from './marks.js';
 import { renderDashboard } from './dashboard.js';
 import { renderPath, runLesson, lessonState, countUp, dailyGoal, goalFlag, unlockInfo, retrigger, sGet, sSet } from './path.js';
 import { setMarko } from './marko.js';
+import { exitScreen } from './spring.js';
 import { icon, mascot, confetti, unitArt, LESSON_ICON, avatar } from './icons.js';
 import { fx, burst } from './fx.js';
 import { askGrownup } from './gate.js';
@@ -17,11 +20,16 @@ import { restoreFromFile } from './restore.js';
 
 export async function renderLearner(root, ctx) {
   const { profile } = ctx; const st = { tab: 'today' };
-  const marks = () => ctx.settings.marks !== false && (st.unitN ?? 0) <= 10;
+  const marks = () => M.marksOn(ctx, st.unitN ?? 0);   // boolean: Words lesson, letters. Faded drills call marks.text(w) / marks.hidden(w) instead.
+  marks.text = (w, un) => M.textFor(ctx, un ?? (st.unitN ?? 0), w); marks.hidden = (w, un) => M.hiddenItems(ctx, un ?? (st.unitN ?? 0), w);
+  marks.fade = (un) => M.fading(ctx, un ?? (st.unitN ?? 0)); marks.tag = (n, w, un) => M.tag(n, w, marks.hidden(w, un));
+  marks.peeked = item => { M.note('peek', item, false); if (!st.preview) S.recordAttempt(profile.id, st.unitN ?? 0, 'peek', item, false, 0).catch(() => {}); };
   const styleName = () => ctx.settings.style || 'naskh';
-  const dctx = { record: (drill, item, ok, ms) => st.preview ? undefined : S.recordAttempt(profile.id, st.unitN ?? 0, drill, item, ok, ms) };
+  const dctx = { record: (drill, item, ok, ms) => { if (st.preview) return; M.note(drill, item, ok); return S.recordAttempt(profile.id, st.unitN ?? 0, drill, item, ok, ms); } };
+  let curU = 0;
+  try { await M.loadFluency(profile.id); curU = await S.currentUnit(profile.id); } catch (e) { /* no fade data: marks simply stay on */ }
   try { await S.ensureCards(profile.id, await S.currentUnit(profile.id)); } catch (e) { if (ctx.recover) return ctx.recover(e); throw e; }
-  root.innerHTML = ''; const main = el('div'); root.append(main);
+  root.innerHTML = ''; let main = el('div'); main.dataset.screen = ''; root.append(main);
   const nav = el('div', 'bottom'); root.append(nav);
   // Tabs: children get 4 (Learn, Review, Read, Me; Units sits behind "All units" on Learn), everyone else keeps 6.
   // Each tab has its own palette colour (--tc icon/pill, --td label on the light pill); the filled icon pops once when picked.
@@ -37,12 +45,14 @@ export async function renderLearner(root, ctx) {
   let navKid = kid(); buildNav();
   // renders never interleave: a double tap on a tab queues a second render after the first, instead of both appending to the same screen
   let chain = Promise.resolve(); const render = () => (chain = chain.then(doRender, doRender));
-  async function doRender() { st.preview = false; if (navKid !== kid()) { navKid = kid(); buildNav(); } if (st.tab === 'me' && !kid()) st.tab = 'progress'; const on = navOf(st.tab); [...nav.children].forEach(b => b.classList.toggle('active', b.dataset.k === on)); main.innerHTML = ''; main.className = 't-kids'; window.scrollTo(0, 0); try { await ({ today, units, review, read, progress, more, me, lesson, session, test, path }[st.tab])(); } catch (e) { if (ctx.recover) ctx.recover(e); else toast('This screen could not load. Please try again.'); } }
-  const pctx = () => ({ profile, marks, styleName, dctx, unit0, aspirates, izafat, punctuation, unit11, sightDrill, go: t => { st.tab = t === 'path' ? 'today' : t; render(); }, openLesson: (u, i) => { st.unitN = u.n; st.tab = 'today'; main.innerHTML = ''; window.scrollTo(0, 0); runLesson(main, pctx(), u, i); } });
+  // a screen change: the old screen stays visible as an exit overlay until the new one has content (spring.js exitScreen), then the new one takes over; no blank frame in between
+  function swapMain() { const old = main; main = el('div', 't-kids'); main.dataset.screen = ''; old.before(main); if (!exitScreen(old, main)) old.remove(); return main; }
+  async function doRender() { st.preview = false; if (navKid !== kid()) { navKid = kid(); buildNav(); } if (st.tab === 'me' && !kid()) st.tab = 'progress'; const on = navOf(st.tab); [...nav.children].forEach(b => b.classList.toggle('active', b.dataset.k === on)); swapMain(); window.scrollTo(0, 0); try { await ({ today, units, review, read, progress, more, me, lesson, session, test, path }[st.tab])(); } catch (e) { if (ctx.recover) ctx.recover(e); else toast('This screen could not load. Please try again.'); } }
+  const pctx = () => ({ swap: swapMain, profile, marks, styleName, dctx, unit0, aspirates, izafat, punctuation, unit11, sightDrill, go: t => { st.tab = t === 'path' ? 'today' : t; render(); }, openLesson: (u, i) => { st.unitN = u.n; st.tab = 'today'; swapMain(); window.scrollTo(0, 0); runLesson(main, pctx(), u, i); } });
   async function path() { st.tab = 'today'; render(); }
   setBack(goUp);
 
-  async function header(title, sub) { const h = el('div', 'row page-head', ''); h.style.justifyContent = 'space-between'; h.innerHTML = `<div><h1>${/^Good (morning|afternoon)/.test(title) ? '<span class="fx-sun"></span>' : ''}${title}</h1>${sub ? `<div class="muted">${sub}</div>` : ''}</div>`; const sun = h.querySelector('.fx-sun'); if (sun) sun.append(fx('sun_rays', { size: 34, loop: true })); const who = el('button', 'btn', `${icon('user')} ${esc(profile.name)}`); who.onclick = ctx.switchProfile; h.append(who); if (SUB().includes(st.tab)) { const bk = el('button', 'btn page-back', icon('back')); bk.setAttribute('aria-label', 'Back'); bk.onclick = goUp; h.prepend(bk); } main.append(h); }
+  async function header(title, sub) { try { curU = await S.currentUnit(profile.id); } catch (e) { /* keep the last known unit */ } const h = el('div', 'row page-head', ''); h.style.justifyContent = 'space-between'; h.innerHTML = `<div><h1>${/^Good (morning|afternoon)/.test(title) ? '<span class="fx-sun"></span>' : ''}${title}</h1>${sub ? `<div class="muted">${sub}</div>` : ''}</div>`; const sun = h.querySelector('.fx-sun'); if (sun) sun.append(fx('sun_rays', { size: 34, loop: true })); const who = el('button', 'btn', `${icon('user')} ${esc(profile.name)}`); who.onclick = ctx.switchProfile; const tools = el('div', 'row'); tools.style.cssText = 'flex-wrap:nowrap;gap:8px'; tools.append(themeChip(ctx), who); h.append(tools); if (SUB().includes(st.tab)) { const bk = el('button', 'btn page-back', icon('back')); bk.setAttribute('aria-label', 'Back'); bk.onclick = goUp; h.prepend(bk); } main.append(h); }
 
   async function today() {
     const cur = await S.currentUnit(profile.id); const s = await S.stats(profile.id);
@@ -56,7 +66,7 @@ export async function renderLearner(root, ctx) {
     hero.innerHTML = `<div class="hh-top"><div><h1>${greeting(profile)}</h1>${u ? `<div class="muted">Unit ${cur} · ${u.title}</div>` : ''}</div></div>
       <div class="hh-world" style="background-image:url(./img/scene_home_${night ? 'evening' : 'morning'}.webp)"><div class="hh-badges"><span class="hh-badge hh-pearl">${icon('star')} <b class="cu">${pl}</b><small>${pl === 1 ? 'pearl' : 'pearls'}</small></span><span class="hh-badge hh-goal" role="img" aria-label="Daily goal: ${Math.floor(goal.minutes)} of ${goal.goal} minutes"><span class="hh-ring"><svg viewBox="0 0 30 30" width="30" height="30"><circle class="rg-bg" cx="15" cy="15" r="12"/><circle class="rg-fg" cx="15" cy="15" r="12" pathLength="100"/></svg>${icon(goal.done ? 'check' : 'timer')}</span><b class="cu">${Math.floor(goal.minutes)}</b><small>/ ${goal.goal} min</small></span><span class="hh-badge hh-flame">${icon('flame')} ${sk ? `<b class="cu">${sk}</b><small>${sk === 1 ? 'day practised' : 'days practised'}</small>` : '<small>First day today</small>'}</span></div>
       <div class="hh-stage"><span class="hh-shadow"></span>${mascot(sk > 1 ? 'proud' : 'hello', 240, 'hh-marko')}<button class="hh-poke" aria-label="Tap Marko to say hi"></button><span class="hh-say">${open && ls.current > 0 ? `Ready for <b>${ls.ls[ls.current].title}</b>, ${esc(profile.name)}?` : pl ? `<span class="mem-line">Hi ${esc(profile.name)}! One lesson today?</span>` : `Hi ${esc(profile.name)}! Let's earn your first pearl.`}</span></div></div>`;
-    const who = el('button', 'btn btn-chip hh-who', `${icon('user')} ${esc(profile.name)}`); who.setAttribute('aria-label', 'Switch learner'); who.onclick = ctx.switchProfile; hero.querySelector('.hh-top').append(who);
+    const who = el('button', 'btn btn-chip hh-who', `${icon('user')} ${esc(profile.name)}`); who.setAttribute('aria-label', 'Switch learner'); who.onclick = ctx.switchProfile; const tools = el('div', 'hh-tools'); tools.append(themeChip(ctx), who); hero.querySelector('.hh-top').append(tools);
     if (open) {
       const n = Object.keys(ls.done).filter(id => ls.ls.some(l => l.id === id)).length, tot = ls.ls.length, l = ls.ls[ls.current];
       const card = el('div', 'card today-card', `<div class="tc-head"><span class="pill">Unit ${cur}</span><span class="tc-count">Lesson ${ls.current + 1} of ${tot}</span></div><div class="tc-main"><span class="tc-face">${l.icon && /[؀-ۿ]/.test(l.icon) ? `<span class="ur">${l.icon}</span>` : icon(LESSON_ICON[l.kind] || 'star')}</span><div><small class="muted">${n ? 'Up next' : 'Start here'}</small><b>${l.title}</b></div></div><div class="progress tc-bar"><i style="width:${Math.round(n / tot * 100)}%"></i></div>`);
@@ -67,7 +77,7 @@ export async function renderLearner(root, ctx) {
     // below the fold: the unit path (its own review card and docked button are dropped: the today card owns both)
     const pw = el('div', 'home-path'); await renderPath(pw, pctx()); pw.querySelectorAll(':scope > .card.row:not(.unit)').forEach(c => c.remove()); pw.querySelectorAll('.btn-primary').forEach(b => b.remove());
     if (unlockInfo.n != null && u) { const say = hero.querySelector('.hh-say'), mk = hero.querySelector('.hh-marko'); if (say) { say.dataset.keep = '1'; say.innerHTML = `Unit ${unlockInfo.n} is open, ${esc(profile.name)}!`; retrigger(say, 'say-pop', 0); } if (mk && mk._marko) setTimeout(() => setMarko(mk, 'cheer'), 500); }
-    main.append(el('h3', 'hh-h3', 'Your path'), pw);
+    const hp = el('h3', 'hh-h3', 'Your path'); hp.setAttribute('aria-level', '2'); main.append(hp, pw);
     if (kid()) { const all = el('button', 'card all-units', `<span class="au-ic">${icon('units_f')}</span><span><b>All units</b><small class="muted">See every unit and the letter library</small></span>${icon('next')}`); all.onclick = () => { st.tab = 'units'; render(); }; main.append(all); }
     if (s.wpm.length) { const last = s.wpm[s.wpm.length - 1]; main.append(el('div', 'card', `<b>Last reading speed:</b> ${last.wpm} words per minute <span class="pill ${bandFor(last.wpm)}">${bandFor(last.wpm)}</span>`)); }
     if (cur === 0 && !s.sessions) { const pl = el('div', 'card'); pl.innerHTML = '<h2>Already read some Urdu?</h2><p class="muted">A 2-minute placement check skips the units you already know.</p>'; const b = el('button', 'btn', 'Take the placement check'); b.onclick = () => placement(); pl.append(b); main.append(pl); }
@@ -137,25 +147,26 @@ export async function renderLearner(root, ctx) {
 
   function reviewCards(cards, box, onDone) {
     let i = 0, right = 0; box.innerHTML = ''; const head = el('h2', '', `${cards.length} ${cards.length === 1 ? 'card' : 'cards'} to review`), card = el('div', 'card center'), ctr = el('div', 'muted'); box.append(head, ctr, card);
-    const dk = el('div', 'dock-row'); function show() { dk.innerHTML = ''; if (i >= cards.length) { dk.remove(); toast(`${right}/${cards.length} remembered`); onDone(); return; } const c = cards[i]; ctr.textContent = `${i + 1} / ${cards.length}`; card.innerHTML = `<div class="ur big">${esc(c.v || c.item)}</div>`;
+    const dk = el('div', 'dock-row'); function show() { dk.innerHTML = ''; if (i >= cards.length) { dk.remove(); toast(`${right}/${cards.length} remembered`); onDone(); return; } const c = cards[i]; ctr.textContent = `${i + 1} / ${cards.length}`; card.innerHTML = `<div class="ur big">${esc(c.v || c.item)}</div>`; if (c.kind === 'word' && c.v && c.v !== c.item) { const bw = { ur: c.item, v: c.v }, big = card.firstChild; big.textContent = marks.text(bw, curU); marks.tag(big, bw, curU); }
       const sub = el('div', 'muted', c.kind === 'letter' ? 'Say the letter name and sound, then check' : 'Read the word aloud, then tap Check'); const hear = D.sayBtn(() => play(S.audioKeyFor(c)), 'Hear it');
       const reveal = el('div', 'muted', ''); const got = el('button', 'btn btn-primary btn-wide', 'I was right'), miss = el('button', 'btn btn-wide', 'I was wrong'), check = el('button', 'btn btn-primary btn-wide', 'Check');
       let busy = false;  /* one grade per card: a burst of taps never grades two cards */
       // reveal first, then the learner says honestly whether they had it: a self-grade without seeing the answer fills the boxes with false successes
       check.onclick = () => { if (!tapLock()) return; reveal.textContent = c.kind === 'letter' ? `${C.by[c.item].name} — ${C.by[c.item].hint}` : `${c.rom || ''} ${c.en ? '— ' + c.en : ''}`; if (c.kind !== 'letter') reveal.insertAdjacentHTML('afterbegin', wimg(c.item, 'wimg-card')); play(S.audioKeyFor(c)); dk.innerHTML = ''; dk.append(miss, got); };
-      const grade = ok => async () => { if (busy || !tapLock()) return; busy = true; try { await S.gradeCard(c, ok); } catch (e) { busy = false; return toast('Could not save that answer. Try again.'); } if (ok) right++; i++; show(); };
+      const grade = ok => async () => { if (busy || !tapLock()) return; busy = true; try { await S.gradeCard(c, ok); M.noteCard(c.item, ok); } catch (e) { busy = false; return toast('Could not save that answer. Try again.'); } if (ok) right++; i++; show(); };
       got.onclick = grade(true); miss.onclick = grade(false);
       card.append(D.sayRow(hear), sub, reveal); dk.append(check); box.append(dk); }
-    show();
+    show(); M.peekWrap(box, { fade: () => marks.fade(curU), peeked: marks.peeked });
   }
 
   function fluency(u, box, onDone, usePassage) {
-    box.innerHTML = ''; const sents = usePassage ? [W(u.passage)] : u.sentences.map(W); const text = sents.map(s => marks() ? s.v : s.ur).join(' '); const words = text.split(' ').length;
+    box.innerHTML = ''; const sents = usePassage ? [W(u.passage)] : u.sentences.map(W); const text = sents.map(s => marks.text(s, u.n)).join(' '); const words = text.split(' ').length;
     box.append(el('h2', '', 'Read for speed')); const p = el('div', 'card'); p.innerHTML = `${usePassage ? `<div class="ur" style="font-size:26px;text-align:right">${text}</div>` : '<div class="sent-list"></div>'}<div class="muted">${words} words. Tap Start, read aloud, tap Stop. Read it twice.</div>`;
     const t = el('div', 'timer', '0.0 s'), start = el('button', 'btn btn-gold', `${icon('timer')} Start`), stop = el('button', 'btn', 'Stop'), res = el('div', 'score'); let t0, h; stop.disabled = true;
     start.onclick = () => { t0 = Date.now(); start.disabled = true; stop.disabled = false; h = setInterval(() => t.textContent = ((Date.now() - t0) / 1000).toFixed(1) + ' s', 100); };
     stop.onclick = async () => { clearInterval(h); const sec = (Date.now() - t0) / 1000; const wpm = Math.round(words * 60 / sec); if (sec < 3 || wpm > 400) { start.disabled = false; stop.disabled = true; t.textContent = '0.0 s'; return toast('Read it all the way through, then tap Stop.'); }  /* an instant Stop is not a reading */ const prev = (await S.stats(profile.id)).wpm; const best = Math.max(0, ...prev.map(x => x.wpm)); res.textContent = `${wpm} words per minute${wpm > best ? ' · new personal best!' : best ? ` · best ${best}` : ''}`; try { await S.addWpm(profile.id, wpm, u.n); } catch (e) { toast('Your speed did not save. You can try again.'); } start.disabled = false; stop.disabled = true; start.innerHTML = `${icon('timer')} Again`; };
-    if (!usePassage) { const list = p.querySelector('.sent-list'); sents.forEach((s, i) => { const r = el('div', 'sent-row'); r.append(D.playBtn(sentKey(u.n, i), true)); const tx = el('span', 'ur sent-text'); tx.textContent = marks() ? s.v : s.ur; r.append(tx); list.append(r); }); }
+    if (!usePassage) { const list = p.querySelector('.sent-list'); sents.forEach((s, i) => { const r = el('div', 'sent-row'); r.append(D.playBtn(sentKey(u.n, i), true)); const tx = el('span', 'ur sent-text'); tx.textContent = marks.text(s, u.n); marks.tag(tx, s, u.n); r.append(tx); list.append(r); }); }
+    { const pd = usePassage && p.firstElementChild; if (pd) { pd.textContent = text; marks.tag(pd, sents[0], u.n); } M.peekWrap(p, { fade: () => marks.fade(u.n), peeked: marks.peeked }); }
     const meaning = el('div', 'muted fl-meaning'); meaning.style.display = 'none'; const showB = el('button', 'btn btn-chip', 'Show meaning'); const realEn = usePassage ? sents[0].en : sents[Math.floor(Math.random() * sents.length)].en;
     let comp; const reveal = () => { if (!usePassage) return; meaning.textContent = realEn; meaning.style.display = ''; showB.remove(); };
     showB.onclick = reveal; if (!usePassage) { showB.remove(); }
@@ -195,8 +206,8 @@ export async function renderLearner(root, ctx) {
       const nx = el('div', 'card row next-up', `${unitArt(cur)}<div style="flex:1"><small class="muted">Next up</small><b>Unit ${cur}: ${C.units[cur].title}</b></div>`); const go = el('button', 'btn btn-primary btn-wide dock', `Learn: unit ${cur}`); go.onclick = () => { st.tab = 'today'; render(); }; main.append(go); main.insertBefore(nx, go); return; } const box = el('div'); main.append(box); reviewCards(due, box, () => { st.tab = 'today'; render(); }); }
 
   async function read() { await header('Read', 'Passages and sentences · read twice, watch your speed'); const cur = await S.currentUnit(profile.id);
-    C.units.filter(u => u.passage && u.n <= Math.max(cur, 1)).reverse().forEach(u => { const box = el('div'); main.append(el('h3', '', `Passage · unit ${u.n}`)); main.append(box); fluency(u, box, () => {}, true); box.lastChild.remove(); });
-    C.units.filter(u => u.sentences.length && u.n <= Math.max(cur, 1)).reverse().forEach(u => { const box = el('div'); main.append(el('h3', '', `Sentences · unit ${u.n}`)); main.append(box); fluency(u, box, () => {}); box.lastChild.remove(); }); }
+    C.units.filter(u => u.passage && u.n <= Math.max(cur, 1)).reverse().forEach(u => { const box = el('div'); { const hh = el('h3', '', `Passage · unit ${u.n}`); hh.setAttribute('aria-level', '2'); main.append(hh); } main.append(box); fluency(u, box, () => {}, true); box.lastChild.remove(); });
+    C.units.filter(u => u.sentences.length && u.n <= Math.max(cur, 1)).reverse().forEach(u => { const box = el('div'); { const hh = el('h3', '', `Sentences · unit ${u.n}`); hh.setAttribute('aria-level', '2'); main.append(hh); } main.append(box); fluency(u, box, () => {}); box.lastChild.remove(); }); }
 
   async function progress(noHead) { if (!noHead) await header('Progress'); main.append(await renderDashboard(profile.id, { child: profile.track === 'child' })); }
   // Me (child track): progress first, then everything that lives in More for the other tracks.
@@ -228,7 +239,7 @@ export async function renderLearner(root, ctx) {
   async function more(noHead) { if (!noHead) { await header('More'); main.append(practiceEntry()); } const c = el('div', 'card'); c.innerHTML = '<h2>Settings</h2>';
     const track = sel(['child', 'adult', 'heritage'], ['Child (5–10)', 'Adult, new to Urdu', 'Speaks Urdu, can\'t read'], profile.track, async v => { profile.track = v; await db.put('profiles', profile); ctx.apply(); });
     const style = sel(['naskh', 'nastaliq'], ['Naskh (learning)', 'Nastaliq (print)'], ctx.settings.style || 'naskh', v => ctx.set('style', v));
-    const marksCb = el('label', 'row', `<input type="checkbox" ${ctx.settings.marks !== false ? 'checked' : ''}> Show vowel marks (until unit 10)`); marksCb.querySelector('input').onchange = e => ctx.set('marks', e.target.checked);
+    const marksCb = el('label', 'row', `<input type="checkbox" ${ctx.settings.marks === true || (ctx.settings.marks !== false && curU <= 10) ? 'checked' : ''}> Show vowel marks (they fade out in units 8 to 10; tick to keep them everywhere)`); marksCb.querySelector('input').onchange = e => ctx.set('marks', e.target.checked);
     const size = sel(['1', '1.25', '1.5'], ['Normal text', 'Large', 'Extra large'], String(ctx.settings.scale || '1'), v => ctx.set('scale', v));
     const romCb = el('label', 'row', `<input type="checkbox" ${ctx.settings.rom === false ? '' : 'checked'}> Show romanisation (Latin letters)`); romCb.querySelector('input').onchange = e => ctx.set('rom', e.target.checked);
     const aoCb = el('label', 'row', `<input type="checkbox" ${ctx.settings.audioOnly ? 'checked' : ''}> Audio-first mode (words hidden until tapped)`); aoCb.querySelector('input').onchange = e => ctx.set('audioOnly', e.target.checked);

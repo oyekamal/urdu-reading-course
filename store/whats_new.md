@@ -1,6 +1,15 @@
 # What's new (Play Console "Release notes", ≤500 chars per language)
 
 <en-US>
+New one-tap Light/Dark button at the top of each screen. Better learning: word cards show only the Urdu until you tap, the unit check asks which word you heard, wrong answers stay marked with a glowing hint after two misses, and a made-up-word practice. Review shows the answer first. Smoother screen changes, letters now use a word that starts with them, vowel marks fade in units 8 to 10, and a calmer first run for children. Teacher mode and accessibility fixes.
+</en-US>
+
+<ur>
+ہر اسکرین کے اوپر نیا ایک ٹیپ والا لائٹ/ڈارک بٹن۔ سیکھنا بہتر: لفظ کے کارڈ پر پہلے صرف اردو، یونٹ کی جانچ میں پوچھا جاتا ہے کون سا لفظ سنا، غلط جواب نشان زد رہتا ہے اور دو غلطیوں کے بعد صحیح جواب چمکتا ہے، اور بے معنی الفاظ کی مشق۔ ریویو میں پہلے جواب دکھایا جاتا ہے۔ اسکرینوں کی تبدیلی زیادہ ہموار، حرف کے لیے اسی سے شروع ہونے والا لفظ، یونٹ 8 سے 10 میں اعراب بتدریج غائب، اور بچوں کے لیے پرسکون آغاز۔ ٹیچر موڈ اور رسائی کی درستیاں۔
+</ur>
+
+<!-- previous release notes (0.13.0):
+<en-US>
 Learning is better: word cards now show only the Urdu until you tap, then the picture and meaning. A wrong answer stays marked and you try again, with a glowing hint after two misses. The unit check plays the word and asks which one you heard. New made-up-word practice, a short check after reading, and review that shows the answer first. New Light/Dark switch, springier animations, shorter first-run for children, and Back and keyboard fixes.
 </en-US>
 
@@ -8,7 +17,9 @@ Learning is better: word cards now show only the Urdu until you tap, then the pi
 سیکھنا بہتر ہوا: لفظوں کے کارڈ پر پہلے صرف اردو نظر آتی ہے، ٹیپ کرنے پر تصویر اور مطلب۔ غلط جواب نشان زد رہتا ہے اور دوبارہ کوشش کا موقع ملتا ہے، دو غلطیوں کے بعد صحیح جواب چمکتا ہے۔ یونٹ کی جانچ میں لفظ سنائی دیتا ہے اور پوچھا جاتا ہے کون سا سنا۔ بے معنی الفاظ کی مشق، پڑھنے کے بعد مختصر سوال، اور ریویو میں پہلے جواب دکھایا جاتا ہے۔ نیا لائٹ/ڈارک سوئچ، زیادہ زندہ اینیمیشن، بچوں کے لیے مختصر آغاز، اور بیک اور کی بورڈ کی درستیاں۔
 </ur>
 
-<!-- previous release notes (0.12.2):
+-->
+
+(0.12.2):
 <en-US>
 The Back button now works the way you expect: it closes a pop-up, goes back one screen, leaves a lesson (after asking), and only closes the app if you press it twice on the home screen. Sub-screens have a back arrow. Typing a name or the grown-up number is no longer hidden by the keyboard. In sentence practice, each sentence has its own speaker button and lights up while it is read aloud. Marko is no longer squashed on the sticker screen.
 </en-US>
