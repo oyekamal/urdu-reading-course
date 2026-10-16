@@ -11,12 +11,15 @@ export async function ensureCards(profileId, unitN) {
   const items = [];
   C.units.filter(u => u.n < unitN).forEach(u => { u.letters.forEach(c => C.by[c] && items.push({ item: c, kind: 'letter' })); u.words.forEach(w => items.push({ item: w[0], kind: 'word', v: w[3] || w[0], rom: w[1], en: w[2], unit: u.n, idx: u.words.indexOf(w) })); });
   if (unitN >= 6) C.letters.sight_words.forEach((w, i) => items.push({ item: w, kind: 'sight', idx: i }));
-  for (const it of items) if (!have.has(it.item)) await db.put('cards', { id: profileId + ':' + it.item, profileId, ...it, box: 1, due: Date.now(), seen: 0 });
+  let nw = 0;  // letters and sight words are due now; new WORD cards drip in 12 a day, so a learner who just passed a unit is not buried under hundreds of reviews
+  for (const it of items) if (!have.has(it.item)) await db.put('cards', { id: profileId + ':' + it.item, profileId, ...it, box: 1, due: Date.now() + (it.kind === 'word' ? Math.floor(nw++ / 12) * DAY : 0), seen: 0 });
 }
 export async function ensureCardsFor(profileId, letters) { const have = new Set((await db.by('cards', 'profileId', profileId)).map(c => c.item)); for (const c of letters) if (C.by[c] && !have.has(c)) await db.put('cards', { id: profileId + ':' + c, profileId, item: c, kind: 'letter', box: 1, due: Date.now() + DAY, seen: 0 }); }
 export async function dueCards(profileId, limit = 12) {
   const now = Date.now(); const all = await db.by('cards', 'profileId', profileId);
-  return all.filter(c => c.due <= now && (c.kind !== 'letter' || C.by[c.item])).sort((a, b) => a.box - b.box || a.due - b.due).slice(0, limit);
+  // letters (and sight words) first, then at most 8 word cards per session; within each group the Leitner order (lowest box, oldest due) holds
+  const due = all.filter(c => c.due <= now && (c.kind !== 'letter' || C.by[c.item])).sort((a, b) => a.box - b.box || a.due - b.due);
+  return [...due.filter(c => c.kind !== 'word'), ...due.filter(c => c.kind === 'word').slice(0, 8)].slice(0, limit);
 }
 export async function gradeCard(card, correct) {
   const box = correct ? Math.min(card.box + 1, BOXES.length - 1) : 1;

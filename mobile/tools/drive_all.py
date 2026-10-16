@@ -50,15 +50,9 @@ with sync_playwright() as p:
             if tx==target: js(t); return True
         js(tiles[0]); return True
     def answer_quiz():
-        for li in pg.query_selector_all("ol li"):
-            m=re.search(r"Which one says (\S+)", li.inner_text())
-            if not m: continue
-            rom=m.group(1)
-            for u in U:
-                for w in u['words']:
-                    if w[1]==rom:
-                        for t in li.query_selector_all(".tile"):
-                            if t.inner_text().strip() in (w[0], w[3] if len(w)>3 else w[0]): js(t); break
+        for li in pg.query_selector_all("ol li"):           # the unit check is audio-first now: tap the tile marked data-answer
+            t=li.query_selector(".tile[data-answer]")
+            if t: js(t)
         sub=pg.query_selector("button:has-text('Submit')")
         if sub: js(sub); pg.wait_for_timeout(800)
     def run_lesson(maxsteps=14):
@@ -68,6 +62,11 @@ with sync_playwright() as p:
             for r in range(40):
                 if pg.query_selector(".btn-primary.btn-wide:not(.act)"): break
                 if pg.query_selector("ol li .tile"): answer_quiz(); continue
+                if pg.query_selector("h2:has-text('Made-up words')"):
+                    cb=pg.query_selector("button:has-text('Check'):visible"); ob=pg.query_selector("button:has-text('I read it'):visible")
+                    if cb: js(cb)
+                    elif ob: js(ob)
+                    pg.wait_for_timeout(450); continue
                 if pg.query_selector("h2:has-text('Dictation')") and pg.query_selector("button:has-text('Skip')"):
                     # dictation: type the word using keys
                     key=last(); un,_,wi=key.split('/')[-1].partition('_'); w=re.sub(r'[\u064B-\u0652\u0670\u0640]','',U[int(un[1:])]['words'][int(wi)][0])

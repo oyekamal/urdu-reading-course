@@ -7,6 +7,7 @@ import { icon, mascot, confetti } from './icons.js';
 import { fx, burst } from './fx.js';
 import { setBack } from './back.js';
 import { esc, cleanName, tapLock, tapFree } from './safe.js';
+import { pop, shake, spring } from './spring.js';
 
 const T = (who, me, child) => who === 'me' ? me : child;
 
@@ -19,13 +20,18 @@ export async function runOnboarding(root, { finish, teacherSetup, restore }) {
   a.pains = Array.isArray(a.pains) ? a.pains.filter(v => /^[a-z0-9_-]{1,24}$/i.test(String(v))).slice(0, 8) : [];
   const save = () => db.setting('onb', { i: st.i, a });
   const nm = () => a.name || (a.who === 'me' ? 'you' : 'your child');
-  const flow = [welcome, wake, colour, who, name, goal, speak, reads, pains, solution, minutes, processing, demo, value, streak, commit, plan];
-  const Q0 = 3, Q1 = 10; // screens that show the progress bar (who … minutes)
+  // A parent answering for a 5-10 year old skips the adult-only questions (speak, reads, pains, solution) and gets a "hand over the phone" screen;
+  // the flow is rebuilt from a.who, which is chosen (index 3) before the two flows differ, so a saved st.i still points at the same screen on resume.
+  const kid = () => a.who === 'child' || a.who === 'children';
+  const flowFor = () => kid() ? [welcome, wake, colour, who, name, goal, minutes, processing, handoff, demo, value, streak, commit, plan] : [welcome, wake, colour, who, name, goal, speak, reads, pains, solution, minutes, processing, demo, value, streak, commit, plan];
+  let flow = flowFor(), Q0 = 3, Q1 = 10; // screens that show the progress bar (who … minutes)
+  const refresh = () => { flow = flowFor(); Q0 = flow.indexOf(who); Q1 = flow.indexOf(minutes); if (kid()) { a.speak = 'some'; a.reads = 'none'; a.pains = []; } /* sensible defaults for the questions a child's path never asks (main.js, the plan screen and the processing list read them) */ };
+  refresh();
   let timers = [];
   const later = (fn, ms) => timers.push(setTimeout(fn, ms));
 
   function show() {
-    timers.forEach(clearTimeout); timers = []; root.innerHTML = ''; window.scrollTo(0, 0);
+    refresh(); timers.forEach(clearTimeout); timers = []; root.innerHTML = ''; window.scrollTo(0, 0);
     const scr = el('div', 'ob'); root.append(scr);
     setBack(() => { if (st.i <= 0) return false; go(-1); return true; });   // Android Back = previous question, from the second screen on
     if (st.i >= 1 && st.i <= Q1) {
@@ -34,7 +40,7 @@ export async function runOnboarding(root, { finish, teacherSetup, restore }) {
     }
     st.i = Math.min(st.i, flow.length - 1); flow[st.i](scr);
   }
-  function go(d = 1) { if (!tapLock()) return; /* a double tap must move exactly one step */ st.i = Math.max(0, Math.min(flow.length - 1, st.i + d)); if (flow[st.i] === name && a.who === 'class' && d > 0) return teacherSetup(); save(); show(); }
+  function go(d = 1) { if (!tapLock()) return; /* a double tap must move exactly one step */ refresh(); st.i = Math.max(0, Math.min(flow.length - 1, st.i + d)); if (flow[st.i] === name && a.who === 'class' && d > 0) return teacherSetup(); refresh(); save(); show(); }
   // Marko says a line, speech-bubble style, first person (Finch's pet talks to you; ours is your teacher)
   const say = (pose, html, size = 120) => el('div', 'ob-say', `<span class="ob-m" style="--c:${a.colour || 'var(--gold)'}">${mascot(pose, size)}</span><div class="ob-bubble">${html}</div>`);
   // Marko answers every choice: swap pose + bubble line, then move on (Finch's pet talks back; a silent form does not)
@@ -74,8 +80,21 @@ export async function runOnboarding(root, { finish, teacherSetup, restore }) {
     scr.classList.add('ob-center');
     const m = el('button', 'ob-sleeper', mascot('sleep', 210)); m.prepend(fx('sleeping_zzz', { size: 90, loop: true, cls: 'fx-zz' })); m.setAttribute('aria-label', 'Wake Marko up');
     const cap = el('h2', 'center', 'Marko is fast asleep'); const sub = el('p', 'muted center', 'Tap him to wake him up.');
-    m.onclick = () => { m.disabled = true; m.innerHTML = mascot('hello', 210); m.prepend(fx('sparkles_loop', { size: 240, cls: 'fx-over' })); m.classList.add('awake'); play('ui/welcome'); cap.textContent = 'Assalam-o-alaikum!'; sub.innerHTML = "Thanks for waking me. I'm <b>Marko</b>, and I teach reading."; later(() => go(1), 2200); };
+    const calm = matchMedia('(prefers-reduced-motion: reduce)').matches; let taps = 0, waking = false;
+    const wakeUp = () => { m.disabled = true; m.innerHTML = mascot('hello', 210); m.prepend(fx('sparkles_loop', { size: 240, cls: 'fx-over' })); m.classList.add('awake'); play('ui/welcome'); cap.textContent = 'Assalam-o-alaikum!'; sub.innerHTML = "Thanks for waking me. I'm <b>Marko</b>, and I teach reading."; later(() => go(1), 2200); };
+    // anticipation, not an instant cut: a small shake and squash, a bigger wobble, then a stretch pop and he is up (reduced motion: wakes on the first tap)
+    m.onclick = () => {
+      if (waking) return; taps++;
+      if (calm || taps >= 3) { waking = true; if (calm) return wakeUp(); m.disabled = true; sub.textContent = 'Here I come...'; pop(m, 1.3, { k: 200, d: 9 }); later(wakeUp, 420); return; }
+      if (taps === 1) { shake(m, 8); pop(m, .88, { k: 340, d: 10 }); cap.textContent = 'Mmm... five more minutes'; sub.textContent = 'Tap him again.'; }
+      else { shake(m, 16); pop(m, .8, { k: 300, d: 8 }); cap.textContent = 'Nearly awake...'; sub.textContent = 'One more tap!'; }
+    };
     scr.append(m, cap, sub);
+  }
+  function handoff(scr) {
+    scr.classList.add('ob-center');
+    scr.append(el('div', 'ob-hero', `${mascot('hello', 170)}<h1>Hand the phone to ${a.name ? esc(a.name) : 'your child'}</h1><p class="muted">Marko will teach the first two letters, then a real word. It takes about two minutes. Sit beside ${a.name ? esc(a.name) : 'them'} and let them do the tapping.</p>`));
+    foot(scr, cta('Ready', () => go(1)));
   }
   function colour(scr) {
     scr.classList.add('ob-center');
@@ -151,7 +170,7 @@ export async function runOnboarding(root, { finish, teacherSetup, restore }) {
     function tap() {
       const order = ['ب', 'ا', 'ب']; let r = 0; const q = say('listen', '<b>Listen, then tap the letter you hear.</b>', 84); const row = el('div', 'choices ob-choices'); const again = hear('', 'Play again'); stage.append(q, again, row);
       const round = () => { const t = order[r]; const key = t === 'ا' ? 'names/alif' : 'names/be'; again.onclick = () => play(key); row.innerHTML = '';
-        ['ا', 'ب'].forEach(c => { const b = el('button', 'tile ur', c); b.onclick = () => { if (c !== t) { b.classList.add('no'); play('ui/wrong'); later(() => b.classList.remove('no'), 500); return; } b.classList.add('ok'); play('ui/correct'); r++; later(() => r < order.length ? round() : (row.innerHTML = '', q.querySelector('.ob-bubble').innerHTML = '<b>Three out of three.</b> Your ears already know them.', nxt()), 650); }; row.append(b); }); later(() => play(key), 300); };
+        ['ا', 'ب'].forEach(c => { const b = el('button', 'tile ur', c); b.onclick = () => { if (b.dataset.stay) return; if (c !== t) { b.classList.add('no'); b.dataset.stay = '1'; b.setAttribute('aria-disabled', 'true'); play('ui/wrong'); return; } b.classList.add('ok'); play('ui/correct'); r++; later(() => r < order.length ? round() : (row.innerHTML = '', q.querySelector('.ob-bubble').innerHTML = '<b>Three out of three.</b> Your ears already know them.', nxt()), 650); }; row.append(b); }); later(() => play(key), 300); };
       round();
     }
     function blend() {
@@ -169,7 +188,7 @@ export async function runOnboarding(root, { finish, teacherSetup, restore }) {
     function check() {
       const baba = C.units[1].words.findIndex(w => w[0] === 'بابا'); const key = `units/u01_${String(baba).padStart(2, '0')}`;
       const q = say('listen', '<b>Last one.</b> Which one says <b>baba</b>?', 84); const pic = wimg('بابا', 'wimg-meaning'); const row = el('div', 'choices ob-choices'); const again = hear(key, 'Play again'); stage.append(q, ...(pic ? [el('div', 'ob-pic', pic)] : []), again, row);
-      ['با', 'بابا'].sort(() => Math.random() - .5).forEach(c => { const b = el('button', 'tile ur', c); b.onclick = () => { if (c !== 'بابا') { b.classList.add('no'); play('syllables/be_a'); react(stage, 'think', 'That one is just <b>baa</b>. Look for <b>baa</b> twice.'); later(() => b.classList.remove('no'), 600); return; } row.querySelectorAll('.tile').forEach(x => x.disabled = true); b.classList.add('ok'); play('ui/correct'); a.firstWord = Date.now(); save(); react(stage, 'cheer', '<b>You read it. Really read it.</b>'); stage.append(fx('success_check', { size: 110 })); burst(); later(() => nxt('See what you did'), 900); }; row.append(b); });
+      ['با', 'بابا'].sort(() => Math.random() - .5).forEach(c => { const b = el('button', 'tile ur', c); b.onclick = () => { if (b.dataset.stay) return; if (c !== 'بابا') { b.classList.add('no'); b.dataset.stay = '1'; b.setAttribute('aria-disabled', 'true'); play('syllables/be_a'); react(stage, 'think', 'That one is just <b>baa</b>. Look for <b>baa</b> twice.'); return; } row.querySelectorAll('.tile').forEach(x => x.disabled = true); b.classList.add('ok'); play('ui/correct'); a.firstWord = Date.now(); save(); react(stage, 'cheer', '<b>You read it. Really read it.</b>'); stage.append(fx('success_check', { size: 110 })); burst(); later(() => nxt('See what you did'), 900); }; row.append(b); });
       later(() => play(key), 300);
     }
     step();

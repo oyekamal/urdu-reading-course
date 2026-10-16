@@ -8,6 +8,7 @@
 import { Capacitor } from '@capacitor/core';
 import { marko, setMarko } from './marko.js';
 import { C, play, dotInfo, glyphForm } from './content.js';
+import { pop } from './spring.js';
 
 let app = null;                                           // ctxBase from main.js: { settings, set }
 const on = () => app?.settings?.feel !== false;
@@ -74,13 +75,13 @@ function down(e) {
   const el = e.target.closest?.(TAP); if (!el || el.disabled || el.getAttribute('aria-disabled') === 'true') return;
   hear('tick'); buzz('tick');
   if (calm()) { el.classList.add('feel-hot'); pressed = { el, anim: null }; return; }
-  const anim = el.animate([{ scale: '1' }, { scale: '.94' }], { duration: 90, easing: 'ease-out', fill: 'forwards' });
+  const anim = el.animate([{ scale: '1' }, { scale: '.9' }], { duration: 80, easing: 'ease-out', fill: 'forwards' });
   pressed = { el, anim }; ripple(el, e.clientX, e.clientY);
 }
 function up() {
   if (!pressed) return; const { el, anim } = pressed; pressed = null;
   el.classList.remove('feel-hot');
-  if (anim) { anim.cancel(); if (el.isConnected) el.animate(SPRING, { duration: 340, easing: 'ease-out' }); }
+  if (anim) { anim.cancel(); if (el.isConnected) pop(el, 0.9, { k: 380, d: 13 }); }   // release: a real spring, overshoots and settles
 }
 
 /* ------------------------------------------------------------ answer effects ---- */
@@ -98,13 +99,14 @@ function sparkle(el, n = 10) {
   }
   document.body.append(box); setTimeout(() => box.remove(), 1000);
 }
+// spring.js owns the tile motion (one pop on a correct tile, one shake on a wrong one). Here only the glow ring for tiles; non-tile answers (dictation box, toast) get the same spring pop.
 function bounce(el) {
   if (calm() || !el?.isConnected) return;
-  el.animate([{ scale: '1', translate: '0 0' }, { scale: '1.2', translate: '0 -9px', offset: .26 }, { scale: '.95', translate: '0 1px', offset: .52 }, { scale: '1.05', translate: '0 -2px', offset: .74 }, { scale: '1', translate: '0 0' }], { duration: 520, easing: 'ease-out' });
+  if (!el.matches('.tile')) pop(el, 1.16, { k: 260, d: 10 });
   el.animate([{ boxShadow: '0 0 0 0 color-mix(in srgb,var(--good) 55%,transparent)' }, { boxShadow: '0 0 0 16px color-mix(in srgb,var(--good) 0%,transparent)' }], { duration: 620, easing: 'ease-out' });
 }
-function wobble(el) {   // +-4 px, 2 cycles, 250 ms
-  if (calm() || !el?.isConnected) return;
+function wobble(el) {   // non-tile wrong answers only (the dictation box); wrong tiles are shaken by spring.js
+  if (calm() || !el?.isConnected || el.matches('.tile')) return;
   el.animate([{ translate: '0 0' }, { translate: '-4px 0', offset: .2 }, { translate: '4px 0', offset: .45 }, { translate: '-4px 0', offset: .7 }, { translate: '3px 0', offset: .88 }, { translate: '0 0' }], { duration: 250, easing: 'ease-in-out' });
 }
 
@@ -174,16 +176,18 @@ function right(els, solo) {
     if (solo && combo >= 2) setTimeout(() => combo % 5 === 0 ? highFive() : chip(combo), 100);   // label lands ~100 ms after the answer (Duolingo rule 4)
   }
 }
-let misses = 0, say = null, sayT = 0;
+let misses = 0, say = null, sayT = 0, hinted = null;
+const missBy = new WeakMap();   // row -> { key, n }: wrong taps on the current question
 const NUM = ['no', 'one', 'two', 'three', 'four'];
-function clearSay(toast = true) { clearTimeout(sayT); say?.remove(); say = null; if (toast) document.getElementById('toast')?.classList.remove('show'); document.querySelectorAll('.tile.feel-answer').forEach(t => t.classList.remove('feel-answer')); }
+function clearSay(toast = true) { clearTimeout(sayT); say?.remove(); say = null; if (toast) document.getElementById('toast')?.classList.remove('show'); document.querySelectorAll('.tile.feel-answer').forEach(t => t.classList.remove('feel-answer')); hinted?.classList.remove('hint'); hinted = null; }
 // which tile was the answer? explicit data-right (an audio key) first, else the last speech clip that is not the tapped letter's own
 const letterOf = txt => { const g = glyphForm(txt); return g && C.by?.[g.ch]; };   // 'ـبـ' and 'ب' are both the letter be
 function answerOf(tile) {
   const row = [...tile.parentElement?.querySelectorAll('.tile') || []];
   const flagged = row.find(x => x.dataset.right && x !== tile); if (flagged) return { good: flagged, key: flagged.dataset.right };
-  const tapped = letterOf(tile.textContent)?.id;
-  const want = [...plays].reverse().find(k => k.startsWith('names/') && k.slice(6) !== tapped)?.slice(6); if (!want) return { good: null, key: null };
+  // the clips of every tile already tapped wrong on this question are not the target (tapping a tile plays its own name)
+  const tried = new Set([tile, ...row.filter(x => x.classList.contains('no'))].map(x => letterOf(x.textContent)?.id).filter(Boolean));
+  const want = [...plays].reverse().find(k => k.startsWith('names/') && !tried.has(k.slice(6)))?.slice(6); if (!want) return { good: null, key: null };
   return { good: row.find(x => letterOf(x.textContent)?.id === want && x !== tile && !x.classList.contains('no')) || null, key: 'names/' + want };
 }
 // kind, specific line for tap-the-letter drills (dots first: that is what tells most letters apart), short generic line otherwise.
@@ -220,6 +224,8 @@ function lean(toward) {
     m.animate([{ translate: '0 0', rotate: '0deg' }, { translate: d * 11 + 'px 3px', rotate: d * 13 + 'deg', offset: .16 }, { translate: d * 11 + 'px 3px', rotate: d * 13 + 'deg', offset: .84 }, { translate: '0 0', rotate: '0deg' }], { duration: 640, easing: 'ease-in-out' });
   });
 }
+// Graded help (a child who cannot read must never get a sentence): wrong tap 1 = soft shake (spring.js) + the target sound again, nothing else;
+// wrong tap 2 on the same question = the right tile glows (class hint) and its audio plays. The English line is adult-track only, and only from tap 2.
 function wrong(els) {
   const tile = els[0], inLesson = !!document.querySelector('.lesson');
   if (inLesson) { combo = 0; delete document.querySelector('.lesson').dataset.combo; }   // quiet reset: no message on a miss
@@ -227,16 +233,17 @@ function wrong(els) {
   if (!tile.matches?.('.tile')) { if (inLesson) mood(++misses % 2 ? 'listen' : 'think', 600); return; }
   clearSay();
   const { good, key } = answerOf(tile), row = tile.parentElement;
-  if (inLesson) { mood(++misses % 2 ? 'listen' : 'think', 600); lean(good || tile); }   // Marko answers within a frame or two, back to idle after ~600 ms
+  let st = missBy.get(row); if (!st || st.key !== (key || '')) { st = { key: key || '', n: 0 }; missBy.set(row, st); }
+  const n = ++st.n;
+  if (inLesson) mood(++misses % 2 ? 'listen' : 'think', 600);   // Marko answers within a frame or two, back to idle after ~600 ms
+  if (n === 1) { if (key) setTimeout(() => { if (tile.isConnected) play(key); }, 420); return; }   // after the boop: the sound to listen for, again
+  if (inLesson) lean(good || tile);
   if (good) {
-    good.classList.add('feel-answer');
-    setTimeout(() => { if (!good.isConnected) return; if (!calm()) good.animate([{ scale: '1' }, { scale: '1.08', offset: .45 }, { scale: '1' }], { duration: 360, easing: 'cubic-bezier(.3,1.6,.5,1)' }); if (key) play(key); }, 90);
+    good.classList.add('hint'); hinted = good;
+    setTimeout(() => { if (!good.isConnected) return; pop(good, 0.92, { k: 300, d: 11 }); if (key) play(key); }, 90);
   }
-  say = bubble(row, good, lineFor(good, tile)); sayT = setTimeout(clearSay, 4200);
+  if (document.body.dataset.track !== 'child') { say = bubble(row, good, lineFor(good, tile)); sayT = setTimeout(clearSay, 4200); }
 }
-
-// next question: the new tiles pop in from large (Duolingo rule 7, ~300 ms)
-function popIn(tiles) { if (calm()) return; tiles.forEach((t, i) => t.animate([{ scale: '1.28', opacity: .2 }, { scale: '.97', opacity: 1, offset: .65 }, { scale: '1', opacity: 1 }], { duration: 300, delay: i * 35, easing: 'ease-out', fill: 'backwards' })); }
 
 let lastOk = 0;
 function scan(ms) {
@@ -251,7 +258,7 @@ function scan(ms) {
     } else if (m.type === 'childList') {
       if (t.id === 'toast' && /^Correct/.test(t.textContent) && performance.now() - lastOk > 250) soft.push(document.querySelector('.answer') || t);
       if (t.matches?.('.score') && t.textContent.includes('✓ good')) soft.push(t);
-      if (t.matches?.('.choices') && t.closest('.lesson')) { const ts = [...m.addedNodes].filter(n => n.matches?.('.tile')); if (ts.length > 1) { clearSay(); popIn(ts); } }
+      if (t.matches?.('.choices')) { const ts = [...m.addedNodes].filter(n => n.matches?.('.tile')); if (ts.length > 1) { clearSay(); missBy.delete(m.target); } }
     }
   }
   if (!oks.length && soft.length) oks.push(soft[0]);                                   // toast / trace verdicts only when no tile already said it

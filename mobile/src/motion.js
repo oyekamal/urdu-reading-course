@@ -71,9 +71,9 @@ const kick = () => { if (!timer && players.size) timer = setTimeout(frame, 0); }
 
 export function createPlayer(anim, fr, { fps = 24 } = {}) {
   try { anim.setSubframe(false); } catch (e) {}
-  const interval = 1000 / fps, gap = interval * 0.8;   // timer jitter tolerance
+  const interval = 1000 / fps;
   const P = {
-    anim, interval, seg: null, loop: false, t0: 0, last: -1e9, lastF: -1, cycle: 0, onDone: null, stopWhen: null,
+    anim, interval, gap: interval * 0.8 /* timer jitter tolerance */, seg: null, loop: false, t0: 0, last: -1e9, lastF: -1, cycle: 0, onDone: null, stopWhen: null,
     paused: false, pausedAt: 0, running: false, dead: false, fr: fr || 60,
     play(seg, { loop = false, onDone = null, stopWhen = null } = {}) {
       if (P.dead) return;
@@ -82,6 +82,7 @@ export function createPlayer(anim, fr, { fps = 24 } = {}) {
     },
     pause() { if (!P.paused) { P.paused = true; P.pausedAt = performance.now(); } },
     resume() { if (P.paused) { P.paused = false; P.t0 += performance.now() - P.pausedAt; kick(); } },
+    setFps(f) { P.interval = 1000 / f; P.gap = P.interval * 0.8; },   // calm: the hero Marko drops to a low rate instead of freezing
     stop() { P.running = false; players.delete(P); },
     kill() { P.dead = true; P.stop(); },
     render(f) { try { anim.goToAndStop(f, true); } catch (e) { P.kill(); } },
@@ -98,7 +99,7 @@ export function createPlayer(anim, fr, { fps = 24 } = {}) {
         if (c > P.cycle) { P.cycle = c; if (P.stopWhen && P.stopWhen()) { P.running = false; players.delete(P); P.render(P.seg[0]); return; } }
         f = P.seg[0] + (el % len);
       } else f = P.seg[0] + el;
-      if (now - P.last < gap) return;
+      if (now - P.last < P.gap) return;
       P.last = now; f = Math.floor(f); if (f !== P.lastF) { P.lastF = f; P.render(f); }
     },
   };

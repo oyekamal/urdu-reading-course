@@ -35,7 +35,7 @@ const SCHEMA = {
   progress: { key: 'id', req: ['id'], f: { id, units: dict(unitRec, 40, /^\d{1,2}$/), wpm: v => Array.isArray(v) ? v.slice(-50).map(wpmRec).filter(Boolean) : undefined, sessions: int(0, 1e6), lastSession: ts, updatedAt: ts } },
   assessments: { key: 'id', req: ['id', 'profileId', 'ts'], f: { id, profileId: id, ts, letters: num(0, 1000), nonwords: num(0, 1000), words: num(0, 1000), orf, orfDone: bool, comp: num(0, 10), compDone: bool, band: str(60), level: str(120), by: name, updatedAt: ts } },
 };
-const UI_KEYS = { style: oneOf('naskh', 'nastaliq'), marks: bool, scale: oneOf('1', '1.25', '1.5', 1, 1.25, 1.5), rom: bool, audioOnly: bool, spacing: oneOf('0', '0.05', '0.12', 0, 0.05, 0.12), sounds: bool, haptics: bool };
+const UI_KEYS = { theme: oneOf('', 'light', 'dark'), style: oneOf('naskh', 'nastaliq'), marks: bool, scale: oneOf('1', '1.25', '1.5', 1, 1.25, 1.5), rom: bool, audioOnly: bool, spacing: oneOf('0', '0.05', '0.12', 0, 0.05, 0.12), sounds: bool, haptics: bool };
 // settings: only display preferences and the sticker-seen lists are importable. Everything else (mode, teacherPin, activeProfile, deviceId, onb, teacherName) is device security state.
 function cleanSetting(rec) {
   if (!isObj(rec) || typeof rec.key !== 'string') return null;

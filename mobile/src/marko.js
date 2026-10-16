@@ -20,7 +20,7 @@ const cache = {};
 let lottieP = null;
 const getLottie = () => (lottieP ||= settled.then(() => import('lottie-web/build/player/lottie_light')).then(m => m.default || m));
 const still = reduceMotion;
-const FPS = 24, FPS_AMBIENT = 15;   // reactions (talk, cheer, wave) 24; slow ambient loops 15: they are subtle, and each SVG frame is the expensive part
+const FPS = 20, FPS_AMBIENT = 18, FPS_CALM = 10, DEEP_MS = 20000;   // the one animated Marko runs at 24 (reactions and ambient loops); when the app is calm he drops to 12 instead of freezing
 const AMBIENT = new Set(['idle', 'think', 'listen', 'sleep', 'point']);
 const NO_CALM = new Set(['talk']);   // a talking Marko keeps moving while the clip plays, whatever the idle clock says
 
@@ -33,6 +33,9 @@ function injectStyle() {
     '.marko>img{object-fit:contain}.marko svg{display:block}' +
     '@media (prefers-reduced-motion:no-preference){.marko.marko-still>img{transform-origin:50% 100%;animation:markoBreathe 3.6s ease-in-out infinite}}' +
     '@keyframes markoBreathe{50%{transform:scale(1.025,1.04)}}' +
+    // the live rig breathes on the independent `scale` property (compositor-only, so it costs no main-thread time and never fights hop/blink/glance on .marko)
+    '@media (prefers-reduced-motion:no-preference){.marko:not(.marko-still)>.marko-l{transform-origin:50% 100%;animation:markoLife 4.2s ease-in-out infinite}}' +
+    '@keyframes markoLife{50%{scale:1.02}}html.m-cover .marko>.marko-l{animation-play-state:paused}' +
     'html.calm .marko.marko-still>img,html.m-cover .marko.marko-still>img{animation-play-state:paused}';
   document.head.append(s);
 }
@@ -60,7 +63,7 @@ function release(el) {      // gone from the page: free the player, the observer
 }
 function demote(el) {
   const m = el._marko; if (!m) return;
-  m.token++; clearTimeout(m.restT); m.player?.kill(); m.player = null; try { m.anim?.destroy(); } catch (e) {} m.anim = null; m.data = null; m.phase = null;
+  m.token++; clearTimeout(m.restT); clearTimeout(m.deepT); m.low = false; m.player?.kill(); m.player = null; try { m.anim?.destroy(); } catch (e) {} m.anim = null; m.data = null; m.phase = null;
   poster(el, m.state || 'idle');
 }
 function arbitrate() {
@@ -86,12 +89,21 @@ function arbitrate() {
 // testers saw two Markos with "a lot of arms". Freezing the rig itself can never show two characters.
 function rest(el) {
   const m = el._marko; if (!m.anim || m.phase !== 'loop' || NO_CALM.has(m.state)) return;
-  m.phase = 'calm';
+  if (el === slot && m.ok && m.player) {   // the on-screen Marko is not frozen the moment the app goes calm: he keeps moving at 12 fps (plus the CSS breath, blink, glance and hop from spring.js);
+    m.low = true; m.player.setFps(FPS_CALM);   // only after DEEP_MS of real idleness does the rig itself freeze (battery on old phones), and the compositor-only life continues
+    clearTimeout(m.deepT); m.deepT = setTimeout(() => { if (m.low) { m.low = false; freeze(el); } }, DEEP_MS); return;
+  }
+  freeze(el);
+}
+function freeze(el) {
+  const m = el._marko; m.phase = 'calm';
   const t = m.token; clearTimeout(m.restT);
   m.restT = setTimeout(() => { if (m.token !== t || m.phase !== 'calm') return; m.player?.pause(); const lp = m.data && marker(m.data, 'loop'); if (lp) try { m.anim.goToAndStop(lp.tm, true); } catch (e) {} }, 520);
 }
 function unrest(el) {
-  const m = el._marko; if (m.phase !== 'calm') return;
+  const m = el._marko; clearTimeout(m.deepT); const was = m.low; m.low = false;
+  m.player?.setFps(AMBIENT.has(m.state) ? FPS_AMBIENT : FPS); if (was) return;
+  if (m.phase !== 'calm') return;
   clearTimeout(m.restT); m.phase = 'loop';
   if (m.ok) m.player?.resume();
 }
@@ -154,6 +166,7 @@ function swap(el, state, token) {
       el.querySelectorAll(':scope > .marko-l, :scope > img').forEach(n => n.remove());
       el.classList.remove('marko-still'); el.append(box); m.anim = a; m.data = data;
       if (reduce) { a.goToAndStop(stillM ? stillM.tm : 0, true); m.phase = 'still'; return; }
+      m.low = false; clearTimeout(m.deepT);
       const P = m.player = createPlayer(a, data.fr || 60, { fps: AMBIENT.has(state) ? FPS_AMBIENT : FPS });
       if (!m.ok) P.pause();               // hidden / offscreen / covered right now: build it frozen
       if (!loopM) {                       // one-shot: play once, then idle

@@ -8,4 +8,13 @@ const csp = () => ({
   apply: 'build',
   transformIndexHtml: { order: 'post', handler: html => html.replace(/<meta charset="utf-8">/i, m => `${m}\n<meta http-equiv="Content-Security-Policy" content="${CSP}">`) },
 });
-export default { base: './', plugins: [csp(), inlineCss(), swPlugin(pkg.version)], define: { __APP_VERSION__: JSON.stringify(pkg.version) }, build: { target: 'es2019', assetsInlineLimit: 0 } };
+// Appearance setting: every `@media (prefers-color-scheme:dark)` block also gets a manual twin keyed on <html data-theme="dark">, and the media
+// version steps aside when data-theme="light". :where() keeps the dark rules at their original specificity, so cascade order is unchanged.
+const themeable = () => ({ postcssPlugin: 'urdu-theme', AtRule: { media(at) {
+  if (at.__themed || !/\(prefers-color-scheme:\s*dark\)/.test(at.params)) return; at.__themed = true;
+  const MEDIA = ':root:not([data-theme="light"])', MANUAL = ':root[data-theme="dark"]', copies = [];
+  const lift = (s, pre) => s.startsWith(':root') ? s.replace(':root', pre) : `:where(${pre}) ${s}`;
+  at.each(n => { if (n.type !== 'rule') return; const c = n.clone(); c.selectors = n.selectors.map(s => lift(s, MANUAL)); copies.push(c); n.selectors = n.selectors.map(s => lift(s, MEDIA)); });
+  if (copies.length) at.before(copies);
+} } }); themeable.postcss = true;
+export default { css: { postcss: { plugins: [themeable()] } }, base: './', plugins: [csp(), inlineCss(), swPlugin(pkg.version)], define: { __APP_VERSION__: JSON.stringify(pkg.version) }, build: { target: 'es2019', assetsInlineLimit: 0 } };

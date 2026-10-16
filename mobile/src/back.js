@@ -8,6 +8,7 @@ const SCREEN_BACK = '#app button[aria-label="Leave lesson"], #app button[aria-la
 let handler = null, lastBack = 0;
 export const setBack = fn => { handler = fn; };            // the current screen's "go up one level": returns true when it handled it
 export function handleBack() {
+  if (document.querySelector('body > .celebrate, #app .celebrate')) return true;   // a finished-lesson celebration: Back does nothing, the child taps Next
   const ov = [...document.querySelectorAll(OVERLAYS)].pop();
   if (ov) { if (ov._cancel) ov._cancel(); else ov.querySelector(CLOSERS)?.click(); return true; }
   if (handler && handler()) return true;

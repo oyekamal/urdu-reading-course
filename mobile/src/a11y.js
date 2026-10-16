@@ -250,8 +250,18 @@ const fitAll = () => { document.querySelectorAll('.lesson, .ob:has(> .ob-demo)')
 const queueWrap = () => { if (!wrapQ) { wrapQ = 1; queueMicrotask(wrapLessons); } };
 
 /* ---------------------------------------------------------------------- init ---- */
+// icon-only speaker buttons built elsewhere are often named just "Play" / "Play again": say what they play, from the nearest Urdu text or a calm default
+const GENERIC_PLAY = /^\s*(play|play again|play sound|speaker)\s*$/i;
+function nameSpeakers(n) {
+  (n.matches('.btn-play, .btn-say') ? [n] : [...(n.querySelectorAll?.('.btn-play, .btn-say') || [])]).forEach(b => {
+    const cur = b.getAttribute('aria-label'); if (cur && !GENERIC_PLAY.test(cur)) return; if (!cur && b.textContent.trim()) return;
+    const scope = b.closest('.lesson, .card, .ob-demo, .ob, .t-kids') || b.parentElement; const u = scope && [...scope.querySelectorAll('.ur, .ob-glyph, .ob-word')].map(x => x.textContent.trim()).find(t => t && t.length <= 12);
+    const nm = u && (C.by?.[u]?.name || C.by?.[[...u][0]]?.name); b.setAttribute('aria-label', nm ? `Hear ${nm} again` : 'Hear it again');
+  });
+}
 function scanNode(n) {
   if (n.nodeType !== 1) return;
+  nameSpeakers(n);
   if (n.matches(DIALOGS)) openDialog(n);
   else n.querySelectorAll?.(DIALOGS).forEach(openDialog);
   markUrdu(n); decorate(n);

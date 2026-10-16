@@ -12,6 +12,7 @@ import { pickAndRestore } from './restore.js';
 import { setBack } from './back.js'; // Android Back button: dialogs, screens, double-press to exit
 import './appupdate.js'; // Android: banner when a newer version is on Google Play
 import './swreg.js'; // round 11a: service worker registration as a module (no inline script, so the CSP can say script-src 'self')
+import './spring.js'; // Cookling-style spring motion: entrances, pops, soft shake (observer-based)
 import './a11y.js'; // round 11b: live region, lang=ur, modal dialogs + focus, tab-bar semantics (observer-based)
 import './premium.js'; // round 9c: stickers, light-catching, scene depth, memory (observer-based, no screen edits)
 
@@ -32,6 +33,9 @@ function reap(n) {
 }
 new MutationObserver(ms => ms.forEach(m => { m.addedNodes.forEach(n => n.nodeType === 1 && upgradeMarko(n)); m.removedNodes.forEach(reap); })).observe(document.body, { childList: true, subtree: true });
 
+// Appearance: paint the remembered theme synchronously, before any await, so the first frame is not the wrong theme (apply() keeps the cache in step)
+try { const t = localStorage.getItem('urdu-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) { /* private mode: boot() applies it a moment later */ }
+
 const root = document.getElementById('app');
 let settings = {};
 const ctxBase = {
@@ -43,7 +47,7 @@ const ctxBase = {
   recover: e => showRecovery(e),
 };
 initFeel(ctxBase); // tap/answer feel layer (sound, haptics, Marko coach, combo chip): delegated, no per-screen hooks
-function apply() { document.body.dataset.style = settings.style || 'naskh'; document.documentElement.style.setProperty('--ur-scale', settings.scale || '1'); document.documentElement.style.setProperty('--ur-spacing', (settings.spacing || '0') + 'em'); document.body.dataset.rom = settings.rom === false ? 'off' : 'on'; document.body.dataset.audioonly = settings.audioOnly ? 'on' : 'off'; }
+function apply() { if (settings.theme === 'light' || settings.theme === 'dark') document.documentElement.dataset.theme = settings.theme; else delete document.documentElement.dataset.theme; try { if (settings.theme === 'light' || settings.theme === 'dark') localStorage.setItem('urdu-theme', settings.theme); else localStorage.removeItem('urdu-theme'); } catch (e) { /* private mode */ } /* Appearance: light, dark, or follow the phone */ document.body.dataset.style = settings.style || 'naskh'; document.documentElement.style.setProperty('--ur-scale', [1, 1.25, 1.5].includes(Number(settings.scale)) ? String(Number(settings.scale)) : '1'); document.documentElement.style.setProperty('--ur-spacing', (settings.spacing || '0') + 'em'); document.body.dataset.rom = settings.rom === false ? 'off' : 'on'; document.body.dataset.audioonly = settings.audioOnly ? 'on' : 'off'; }
 
 let booted = false, finishing = false;
 async function boot() {
@@ -100,10 +104,16 @@ async function chooseMode() {
 // after a restore on a device with no mode yet: pick a sensible mode and open the learners (mode, PIN and other security settings never come from a file)
 async function afterRestore() { const ps = (await db.all('profiles')).filter(p => p.kind !== 'teacher'); if (!(await db.setting('mode')) && ps.length) { await db.setting('onb', null); await db.setting('mode', ps.length > 1 ? 'family' : 'personal'); } if (ps.length === 1 && (await db.setting('mode')) === 'personal') return learner(ps[0]); return (await db.setting('mode')) ? home() : chooseMode(); }
 
+// Teacher PIN: stored as a salted SHA-256 (old plain PINs still unlock once, then are upgraded), 3 wrong tries = 30 s calm lockout
+const toHex = buf => [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
+async function pinHash(pin, salt) { try { return 'h1:' + salt + ':' + toHex(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(salt + ':' + pin))); } catch (e) { return pin; } }
+async function pinOk(stored, pin) { if (typeof stored !== 'string') return false; if (stored.startsWith('h1:')) return stored === await pinHash(pin, stored.split(':')[1]); return stored === pin; }
+const PIN_LOCK = 'urdu-pin-lock'; let pinTries = 0;
+const pinLocked = () => { try { return Number(localStorage.getItem(PIN_LOCK)) > Date.now(); } catch (e) { return false; } };
 async function setupTeacher() {
   root.innerHTML = ''; root.append(el('h1', '', 'Teacher setup')); const c = el('div', 'card'); c.innerHTML = '<p class="muted">Set a PIN. Children tap their name; the PIN protects the roster, assessments and reports.</p>';
   const name = el('input'); name.placeholder = 'Your name'; name.maxLength = NAME_MAX; const pin = el('input'); pin.type = 'password'; pin.inputMode = 'numeric'; pin.placeholder = '4-digit PIN'; pin.maxLength = 6;
-  const ok = el('button', 'btn btn-primary btn-wide', 'Save'); ok.onclick = async () => { if (!/^\d{4,6}$/.test(pin.value)) return toast('PIN must be 4 to 6 digits'); await db.setting('teacherPin', pin.value); await db.setting('teacherName', cleanName(name.value) || 'Teacher'); home(); };
+  const ok = el('button', 'btn btn-primary btn-wide', 'Save'); ok.onclick = async () => { if (!/^\d{4,6}$/.test(pin.value)) return toast('PIN must be 4 to 6 digits'); await db.setting('teacherPin', await pinHash(pin.value, uid().slice(0, 12))); await db.setting('teacherName', cleanName(name.value) || 'Teacher'); home(); };
   c.append(lab('Name', name), lab('PIN', pin), ok); root.append(c);
 }
 
@@ -111,7 +121,14 @@ async function home() {
   setBack(null);
   const mode = await db.setting('mode'); const profiles = (await db.all('profiles')).filter(p => p.kind !== 'teacher');
   root.innerHTML = ''; const h = el('div', 'row'); h.style.justifyContent = 'space-between'; h.innerHTML = `<div><h1>${mode === 'school' ? 'Class' : 'Who is learning?'}</h1><div class="muted">${mode === 'school' ? 'Tap your name to start' : 'Tap a name, or add one'}</div></div>`; root.append(h);
-  const list = el('div', 'list'); profiles.sort((a, b) => a.name.localeCompare(b.name)).forEach(p => { const c = el('button', 'card btn', `${avatar(p)}<div style="flex:1;text-align:left"><b style="font-size:18px;overflow-wrap:anywhere">${esc(p.name)}</b><div class="muted">${esc(p.track)}${p.grade ? ' · grade ' + esc(p.grade) : ''}</div></div>`); c.style.width = '100%'; c.onclick = () => learner(p); list.append(c); });
+  const TRACK = { child: 'Child', adult: 'Adult', heritage: 'Speaks Urdu' };
+  const sorted = profiles.sort((a, b) => a.name.localeCompare(b.name) || (a.createdAt || 0) - (b.createdAt || 0)); const same = n => sorted.filter(q => q.name.trim().toLowerCase() === n.trim().toLowerCase());
+  const list = el('div', 'list'); sorted.forEach(p => {
+    const twins = same(p.name); const dup = twins.length > 1; const started = p.createdAt ? new Date(p.createdAt).toLocaleDateString(undefined, { month: 'short', year: 'numeric' }) : '';   // identical names: add "(2)" and the month started
+    const nm = dup ? `${p.name} (${twins.indexOf(p) + 1})` : p.name;
+    const c = el('button', 'card btn pick', `${avatar(p)}<div class="pick-txt"><b>${esc(nm)}</b><div class="pick-meta"><span class="pick-chip">${esc(TRACK[p.track] || p.track)}</span>${p.grade ? `<span class="pick-chip">Grade ${esc(p.grade)}</span>` : ''}${dup && started ? `<span class="pick-chip">Started ${esc(started)}</span>` : ''}</div></div>`);
+    c.setAttribute('aria-label', `${nm}, ${TRACK[p.track] || p.track}${p.grade ? ', grade ' + p.grade : ''}${dup && started ? ', started ' + started : ''}`); c.onclick = () => learner(p); list.append(c);
+  });
   root.append(list);
   if (mode !== 'school' || !profiles.length) { const add = el('button', 'btn btn-wide', '+ Add a learner'); add.onclick = () => addProfile(); root.append(add); }
   if (mode === 'school') { const t = el('button', 'btn btn-primary btn-wide', `${icon('lock')} Teacher`); t.onclick = () => teacherGate(); root.append(t); }
@@ -132,7 +149,7 @@ async function learner(p, backTo, autoPlacement) { await db.setting('activeProfi
 async function teacherGate() {
   const pin = await db.setting('teacherPin'); if (!pin) return setupTeacher();
   root.innerHTML = ''; const c = el('div', 'card center'); c.innerHTML = '<h2>Teacher PIN</h2>'; const inp = el('input'); inp.type = 'password'; inp.inputMode = 'numeric'; inp.style.fontSize = '24px'; inp.style.textAlign = 'center';
-  const ok = el('button', 'btn btn-primary btn-wide', 'Unlock'); ok.onclick = () => inp.value === pin ? teacher() : toast('Wrong PIN'); inp.onkeydown = e => { if (e.key === 'Enter') ok.click(); }; const back = el('button', 'btn', 'Back'); back.onclick = home; c.append(inp, ok, back); root.append(c); inp.focus();
+  const ok = el('button', 'btn btn-primary btn-wide', 'Unlock'); ok.onclick = async () => { if (pinLocked()) return toast('Too many tries. Wait a little, then try again.'); if (await pinOk(pin, inp.value)) { pinTries = 0; if (!pin.startsWith('h1:')) await db.setting('teacherPin', await pinHash(inp.value, uid().slice(0, 12))); return teacher(); } if (++pinTries >= 3) { pinTries = 0; try { localStorage.setItem(PIN_LOCK, String(Date.now() + 30000)); } catch (e) { /* private mode */ } toast('Too many tries. Wait 30 seconds.'); } else toast('Wrong PIN'); }; inp.onkeydown = e => { if (e.key === 'Enter') ok.click(); }; const back = el('button', 'btn', 'Back'); back.onclick = home; c.append(inp, ok, back); root.append(c); inp.focus();
 }
 async function teacher() {
   const { renderTeacher } = await import('./teacher.js');

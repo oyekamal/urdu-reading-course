@@ -1,12 +1,23 @@
 # What's new (Play Console "Release notes", ≤500 chars per language)
 
 <en-US>
+Learning is better: word cards now show only the Urdu until you tap, then the picture and meaning. A wrong answer stays marked and you try again, with a glowing hint after two misses. The unit check plays the word and asks which one you heard. New made-up-word practice, a short check after reading, and review that shows the answer first. New Light/Dark switch, springier animations, shorter first-run for children, and Back and keyboard fixes.
+</en-US>
+
+<ur>
+سیکھنا بہتر ہوا: لفظوں کے کارڈ پر پہلے صرف اردو نظر آتی ہے، ٹیپ کرنے پر تصویر اور مطلب۔ غلط جواب نشان زد رہتا ہے اور دوبارہ کوشش کا موقع ملتا ہے، دو غلطیوں کے بعد صحیح جواب چمکتا ہے۔ یونٹ کی جانچ میں لفظ سنائی دیتا ہے اور پوچھا جاتا ہے کون سا سنا۔ بے معنی الفاظ کی مشق، پڑھنے کے بعد مختصر سوال، اور ریویو میں پہلے جواب دکھایا جاتا ہے۔ نیا لائٹ/ڈارک سوئچ، زیادہ زندہ اینیمیشن، بچوں کے لیے مختصر آغاز، اور بیک اور کی بورڈ کی درستیاں۔
+</ur>
+
+<!-- previous release notes (0.12.2):
+<en-US>
 The Back button now works the way you expect: it closes a pop-up, goes back one screen, leaves a lesson (after asking), and only closes the app if you press it twice on the home screen. Sub-screens have a back arrow. Typing a name or the grown-up number is no longer hidden by the keyboard. In sentence practice, each sentence has its own speaker button and lights up while it is read aloud. Marko is no longer squashed on the sticker screen.
 </en-US>
 
 <ur>
 بیک بٹن اب ویسے ہی کام کرتا ہے جیسا آپ توقع کرتے ہیں: پاپ اپ بند کرتا ہے، ایک اسکرین پیچھے جاتا ہے، سبق چھوڑنے سے پہلے پوچھتا ہے، اور ہوم اسکرین پر دو بار دبانے پر ہی ایپ بند ہوتی ہے۔ نام یا بڑوں کا نمبر لکھتے وقت کی بورڈ اب فیلڈ کو نہیں چھپاتا۔ جملوں کی مشق میں ہر جملے کا اپنا اسپیکر بٹن ہے اور پڑھتے وقت وہ جملہ روشن ہو جاتا ہے۔ اسٹیکر اسکرین پر مارکو اب پچکا ہوا نہیں لگتا۔
 </ur>
+
+-->
 
 <!-- previous release notes (0.12.1):
 <en-US>

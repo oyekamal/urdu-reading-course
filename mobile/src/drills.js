@@ -9,7 +9,17 @@ export const known = unit => new Set([...[...taughtBefore(unit.n), ...unit.lette
 export const spellable = (unit, ur) => { const k = known(unit); return [...ur].every(c => k.has(c) || /[\u064B-\u0652\u0670]/.test(c)); };
 export const cue = ok => { if (document.body.dataset.track === 'child') setTimeout(() => play(ok ? 'ui/correct' : 'ui/wrong'), ok ? 250 : 900); };
 export const strokeHint = l => STROKE[l.family] || 'body first in one stroke, right to left; dots last';
-export function playBtn(key, small) { const b = el('button', 'btn btn-play' + (small ? ' small' : ''), icon('speaker')); b.setAttribute('aria-label', 'Play'); b.dataset.audio = key; b.onclick = e => { e.stopPropagation(); if (!play(key)) toast('No audio for this item'); }; return b; }
+export function playBtn(key, small, label) { const b = el('button', 'btn btn-play' + (small ? ' small' : ''), icon('speaker')); b.setAttribute('aria-label', label || audioLabel(key)); b.dataset.audio = key; b.onclick = e => { e.stopPropagation(); if (!play(key)) toast('No audio for this item'); }; return b; }
+// a useful accessible name from the audio key: units/u04_17 -> "Play <romanisation>", names/alif -> "Play letter name alif", sentences/u04_02 -> "Play sentence 3"
+export function audioLabel(key) {
+  const m = /^(\w+)\/(.+)$/.exec(key || ''); if (!m) return 'Play';
+  if (m[1] === 'units') { const [, u, i] = /^u(\d+)_(\d+)$/.exec(m[2]) || []; const w = u != null && C.units?.find(x => x.n === +u)?.words[+i - (C.units.find(x => x.n === +u).wordOffset || 0)]; return w ? 'Play ' + w[1] : 'Play word'; }
+  if (m[1] === 'names') return 'Play letter name ' + m[2].replace(/_/g, ' ');
+  if (m[1] === 'words') return 'Play example word for ' + m[2].replace(/_/g, ' ');
+  if (m[1] === 'sentences') { const [, , i] = /^u(\d+)_(\d+)$/.exec(m[2]) || []; return i != null ? 'Play sentence ' + (+i + 1) : 'Play sentence'; }
+  if (m[1] === 'syllables') return 'Play sound ' + m[2].replace(/_/g, ' ');
+  return 'Play';
+}
 // THE audio control: one big round speaker button, placed directly above the tiles it asks about (or next to the item it says).
 export function sayBtn(fn, label = 'Play again') { const b = el('button', 'btn btn-play btn-say', icon('speaker')); b.setAttribute('aria-label', label); b.onclick = e => { e.stopPropagation(); fn(); }; return b; }
 export const sayRow = (...kids) => { const r = el('div', 'say-row'); r.append(...kids.filter(Boolean)); return r; };
@@ -42,7 +52,7 @@ export function tellApart(unit, ctx, onDone, opts = {}) {
   function next() {
     if (round >= rounds) { status.textContent = `Done: ${score}/${rounds}`; choices.innerHTML = ''; btn.style.display = 'none'; again.style.display = ''; onDone && onDone(score, rounds); return; }
     round++; target = opts.letters && Math.random() < 0.6 ? focus[Math.floor(Math.random() * focus.length)] : pool[Math.floor(Math.random() * pool.length)]; status.textContent = `Round ${round}/${rounds} · ${score} right`;
-    choices.innerHTML = ''; shuffle([target, ...shuffle(pool.filter(c => c !== target)).slice(0, 5)]).forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c].name); if (c === target) t.dataset.right = 'names/' + C.by[c].id; t.onclick = () => { const ok = c === target; ctx.record('tell', target, ok, Date.now() - t0); if (ok) { t.classList.add('ok'); t.setAttribute('aria-label', C.by[c].name + ', correct'); score++; toast('Correct: ' + C.by[c].name); cue(true); setTimeout(next, 450); } else { t.classList.add('no'); t.setAttribute('aria-label', C.by[c].name + ', wrong'); cue(false); }   /* the kind hint + replaying the right sound live in feel.js (answer help) */ }; choices.append(t); });
+    choices.innerHTML = ''; shuffle([target, ...shuffle(pool.filter(c => c !== target)).slice(0, 5)]).forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c].name); if (c === target) t.dataset.right = 'names/' + C.by[c].id; t.onclick = () => { if (t.dataset.stay) return; const ok = c === target; ctx.record('tell', target, ok, Date.now() - t0); if (ok) { t.classList.add('ok'); lockTiles(choices); t.setAttribute('aria-label', C.by[c].name + ', correct'); score++; toast('Correct: ' + C.by[c].name); cue(true); setTimeout(next, 450); } else { stayWrong(t); cue(false); }   /* the kind hint + replaying the right sound live in feel.js (answer help) */ }; choices.append(t); });
     t0 = Date.now(); play('names/' + C.by[target].id); btn.setAttribute('aria-label', 'Play again'); btn.onclick = e => { e.stopPropagation(); play('names/' + C.by[target].id); };
   }
   box.append(sayRow(btn, status, again), choices); shuffle(pool).slice(0, 6).forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c].name); t.onclick = next; choices.append(t); }); return box;
@@ -71,9 +81,9 @@ export function placementItems(unit, pool, marks = () => false) {
 export function joinIt(unit, ctx, marks, onDone) {
   const words = unit.words.map(W).filter(w => bare(w.ur).length >= 3 && spellable(unit, w.ur)).slice(0, 6); if (!words.length) return null;
   const box = el('div', 'card'); box.innerHTML = '<h2>Build the word</h2><p class="muted">Tap the letters in reading order, right to left.</p>';
-  const target = el('div', 'answer ur'), tiles = el('div', 'choices'), info = el('div', 'row build-info'), nextB = el('button', 'btn', 'Next word'); let i = 0, cur = '', done = 0, t0;
-  function load() { const w = words[i % words.length]; cur = ''; target.textContent = ''; t0 = Date.now(); info.innerHTML = `${wimg(w.ur, 'wimg-build')}<div>Make: <b>${w.rom}</b> — ${w.en} </div>`; info.append(playBtn(wordKey(unit.n, unit.words.findIndex(x => x[0] === w.ur) + (unit.wordOffset || 0)), true));
-    tiles.innerHTML = ''; const letters = bare(w.ur); shuffle([...letters]).forEach(c => { const t = el('button', 'tile small ur', c); t.setAttribute('aria-label', C.by[c]?.name || c); t.onclick = () => { if (letters[cur.length] === c) { cur += c; target.textContent = cur; t.disabled = true; t.classList.add('ok'); if (cur === letters) { toast('Correct: ' + w.rom); target.textContent = disp(w, marks()); ctx.record('join', w.ur, true, Date.now() - t0); if (++done >= 3 && onDone) onDone(done, 3); } } else { t.classList.add('no'); setTimeout(() => t.classList.remove('no'), 400); ctx.record('join', w.ur, false, Date.now() - t0); } }; tiles.append(t); }); }
+  const target = el('div', 'answer ur'), tiles = el('div', 'choices'), info = el('div', 'row build-info'), nextB = el('button', 'btn', 'Next word'); let i = 0, cur = '', done = 0, t0, miss = 0;
+  function load() { const w = words[i % words.length]; cur = ''; miss = 0; target.textContent = ''; t0 = Date.now(); info.innerHTML = `${wimg(w.ur, 'wimg-build')}<div>Make: <b>${w.rom}</b> — ${w.en} </div>`; info.append(playBtn(wordKey(unit.n, unit.words.findIndex(x => x[0] === w.ur) + (unit.wordOffset || 0)), true));
+    tiles.innerHTML = ''; const letters = bare(w.ur); shuffle([...letters]).forEach(c => { const t = el('button', 'tile small ur', c); t.setAttribute('aria-label', C.by[c]?.name || c); t.onclick = () => { if (t.dataset.stay) return; if (letters[cur.length] === c) { cur += c; target.textContent = cur; t.disabled = true; t.classList.add('ok'); miss = 0; [...tiles.children].forEach(x => { if (!x.disabled) { x.classList.remove('no', 'hint'); delete x.dataset.stay; x.removeAttribute('aria-disabled'); } }); if (cur === letters) { toast('Correct: ' + w.rom); target.textContent = disp(w, marks()); ctx.record('join', w.ur, true, Date.now() - t0); if (++done >= 3 && onDone) onDone(done, 3); } } else { stayWrong(t); ctx.record('join', w.ur, false, Date.now() - t0); if (++miss >= 2) { const right = [...tiles.children].find(x => !x.disabled && x.textContent === letters[cur.length]); if (right) right.classList.add('hint'); play(wordKey(unit.n, unit.words.findIndex(x => x[0] === w.ur) + (unit.wordOffset || 0))); } } }; tiles.append(t); }); }
   nextB.onclick = () => { i++; load(); }; load(); box.append(info, target, tiles, nextB); return box;
 }
 
@@ -224,25 +234,55 @@ export function dictation(unit, ctx, marks, onDone) {
   const ans = el('div', 'answer ur'), keys = el('div', 'keys'), status = el('div', 'score'), playB = sayBtn(() => {}, 'Play word'), checkB = el('button', 'btn btn-primary btn-wide act', 'Check'), back = el('button', 'btn', '⌫'), skipB = el('button', 'btn', 'Skip'), againB = el('button', 'btn btn-chip', 'Again'); back.setAttribute('aria-label', 'Erase'); againB.style.display = 'none';
   const pickable = unit.words.map((w, i) => ({ w: W(w), i })).filter(x => spellable(unit, x.w.ur)); if (pickable.length < 3) return null;
   let items = shuffle(pickable).slice(0, 5), k = 0, typed = '', score = 0, t0;
-  [...keysAll, ...(unit.n >= 10 ? EXTRA10 : [])].forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c]?.name || c); t.onclick = () => { typed += c; ans.textContent = typed; }; keys.append(t); });
-  back.onclick = () => { typed = [...typed].slice(0, -1).join(''); ans.textContent = typed; };
+  [...keysAll, ...(unit.n >= 10 ? EXTRA10 : [])].forEach(c => { const t = el('button', 'tile ur', c); t.setAttribute('aria-label', C.by[c]?.name || c); t.onclick = () => { typed += c; ans.textContent = typed; ans.classList.remove('no'); }; keys.append(t); });
+  back.onclick = () => { typed = [...typed].slice(0, -1).join(''); ans.textContent = typed; ans.classList.remove('no'); };
   const key = () => wordKey(unit.n, items[k].i + (unit.wordOffset || 0));
   function show() { if (k >= items.length) { checkB.disabled = true; skipB.disabled = true; back.disabled = true; status.textContent = `Done: ${score}/5`; playB.style.display = 'none'; againB.style.display = ''; checkB.style.display = 'none'; againB.onclick = () => { items = shuffle(pickable).slice(0, 5); k = 0; score = 0; checkB.disabled = false; skipB.disabled = false; back.disabled = false; playB.style.display = ''; againB.style.display = 'none'; checkB.style.display = ''; show(); }; onDone && onDone(score, 5); return; } typed = ''; ans.textContent = ''; t0 = Date.now(); status.textContent = `Word ${k + 1}/5 · ${score} right`; playB.onclick = e => { e.stopPropagation(); play(key()); }; play(key()); }
-  checkB.onclick = () => { if (k >= items.length || checkB.dataset.wait) return; const w = items[k].w; const ok = typed === bare(w.ur); ctx.record('dictation', w.ur, ok, Date.now() - t0); if (ok) { score++; ans.textContent = disp(w, marks()); toast('Correct — ' + w.rom + ' (' + w.en + ')'); k++; checkB.dataset.wait = '1'; skipB.dataset.wait = '1'; setTimeout(() => { delete checkB.dataset.wait; delete skipB.dataset.wait; show(); }, 900); } else { ans.classList.add('no'); checkB.dataset.wait = '1'; setTimeout(() => { ans.classList.remove('no'); delete checkB.dataset.wait; }, 500); toast(typed.length !== bare(w.ur).length ? `${bare(w.ur).length} letters in this word` : 'Not yet. Listen again.'); } };
+  checkB.onclick = () => { if (k >= items.length || checkB.dataset.wait) return; const w = items[k].w; const ok = typed === bare(w.ur); ctx.record('dictation', w.ur, ok, Date.now() - t0); if (ok) { score++; ans.textContent = disp(w, marks()); toast('Correct — ' + w.rom + ' (' + w.en + ')'); k++; checkB.dataset.wait = '1'; skipB.dataset.wait = '1'; setTimeout(() => { delete checkB.dataset.wait; delete skipB.dataset.wait; show(); }, 900); } else { ans.classList.add('no'); checkB.dataset.wait = '1'; setTimeout(() => { delete checkB.dataset.wait; }, 500); toast(typed.length !== bare(w.ur).length ? `${bare(w.ur).length} letters in this word` : 'Not yet. Listen again.'); } };
   skipB.onclick = () => { if (k >= items.length || skipB.dataset.wait) return; toast('It was ' + items[k].w.v + ' — ' + items[k].w.rom); ctx.record('dictation', items[k].w.ur, false, 0); k++; checkB.dataset.wait = '1'; skipB.dataset.wait = '1'; setTimeout(() => { delete checkB.dataset.wait; delete skipB.dataset.wait; show(); }, 900); };
   const bar = el('div', 'row'); bar.append(back, skipB); box.append(sayRow(playB, status, againB), ans, keys, bar, checkB); show(); return box;
 }
 
-// 10-item check; 8 to pass.
+// 10-item check; 8 to pass. Decoding, not matching: the child HEARS a word and taps the printed word (no romanisation, English or picture in the question).
+// Distractors are minimal pairs from the same unit (same length / shared letters / one letter apart), so a guess from the first letter alone fails.
+const editDist = (a, b) => { const m = [...a], n = [...b]; let prev = n.map((_, j) => j + 1); prev.unshift(0); m.forEach((x, i) => { const cur = [i + 1]; n.forEach((y, j) => cur.push(Math.min(prev[j + 1] + 1, cur[j] + 1, prev[j] + (x === y ? 0 : 1)))); prev = cur; }); return prev[n.length]; };
+export function lookAlikes(w, pool, n = 3) {
+  const a = bare(w.ur), sc = x => { const b = bare(x.ur), d = editDist(a, b), sh = [...new Set(a)].filter(c => b.includes(c)).length; return (d === 1 ? 6 : 0) + (a.length === b.length ? 2 : 0) + sh - Math.abs(a.length - b.length) + Math.random() * 0.9; };
+  return pool.filter(x => bare(x.ur) !== a).map(x => [sc(x), x]).sort((p, q) => q[0] - p[0]).slice(0, n).map(x => x[1]);
+}
 export function quiz(unit, ctx, marks, onDone) {
-  const qwords = unit.words.map(W).filter(w => spellable(unit, w.ur)); if (qwords.length < 4) return null;
-  const box = el('div', 'card'); box.innerHTML = '<h2>Check</h2><p class="muted">Score 8 of 10 to pass this unit.</p>';
-  const ol = el('ol'); ol.style.cssText = 'padding-left:18px;display:grid;gap:12px;margin:0'; const qs = shuffle(qwords).slice(0, 10); const picks = {};
-  qs.forEach((w, qi) => { const li = el('li', '', `${wimg(w.ur, 'wimg-q')}Which one says <b>${w.rom}</b> (${w.en})?`); const ch = el('div', 'choices'); ch.style.justifyContent = 'flex-start'; shuffle([w, ...shuffle(qwords.filter(x => x.ur !== w.ur)).slice(0, 3)]).forEach(o => { const t = el('button', 'tile small ur', disp(o, marks())); t.setAttribute('aria-label', o.rom); t.onclick = () => { [...ch.children].forEach(c => c.classList.remove('ok')); t.classList.add('ok'); picks[qi] = o.ur; }; ch.append(t); }); li.append(ch); ol.append(li); });
+  const qwords = unit.words.map((w, i) => ({ ...W(w), i })).filter(w => spellable(unit, w.ur) && C.audio[wordKey(unit.n, w.i + (unit.wordOffset || 0))]); if (qwords.length < 4) return null;
+  const box = el('div', 'card'); box.innerHTML = '<h2>Check</h2><p class="muted">Listen, then tap the word you hear. Score 8 of 10 to pass this unit.</p>';
+  const ol = el('ol'); ol.style.cssText = 'padding-left:18px;display:grid;gap:12px;margin:0'; const qs = shuffle(qwords).slice(0, 10); const picks = {}; const wkey = w => wordKey(unit.n, w.i + (unit.wordOffset || 0));
+  qs.forEach((w, qi) => { const li = el('li', ''); li.append(sayRow(playBtn(wkey(w), false, 'Play word ' + (qi + 1)), el('span', 'muted', 'Which word did you hear?'))); const ch = el('div', 'choices'); ch.style.justifyContent = 'flex-start'; shuffle([w, ...lookAlikes(w, qwords)]).forEach(o => { const t = el('button', 'tile small ur', disp(o, marks())); t.dataset.ur = o.ur; if (o === w) t.dataset.answer = '1' /* test hook: the driver taps the right tile */; t.onclick = () => { [...ch.children].forEach(c => c.classList.remove('ok')); t.classList.add('ok'); picks[qi] = o.ur; }; ch.append(t); }); li.append(ch); ol.append(li); });
   const submit = el('button', 'btn btn-primary btn-wide act', 'Submit'), res = el('div', 'score');
-  submit.onclick = () => { if (submit.dataset.used) return; submit.dataset.used = '1'; let sc = 0; qs.forEach((w, qi) => { const ok = picks[qi] === w.ur; if (ok) sc++; ctx.record('quiz', w.ur, ok, 0); [...ol.children[qi].querySelectorAll('.tile')].forEach(t => { const right = t.textContent === disp(w, marks()); t.classList.toggle('ok', right); if (!right && t.classList.contains('ok') === false && picks[qi] && t.textContent === disp(qwords.find(x => x.ur === picks[qi]) || {}, marks())) t.classList.add('no'); }); });
-    const missed = qs.filter((w, qi) => picks[qi] !== w.ur).map(w => w.rom).slice(0, 4).join(', '); res.textContent = `Score ${sc}/10 ${sc >= 8 ? '— passed ✓' : '— re-read ' + missed + ', then try again'}`; submit.remove(); res.scrollIntoView({ block: 'center' }); const done = () => Promise.resolve(onDone && onDone(sc, 10)).catch(() => { const r = el('button', 'btn btn-primary btn-wide', 'Try saving again'); r.onclick = () => { r.remove(); done(); }; box.append(el('p', 'muted', 'Your score did not save yet. Nothing is lost.'), r); }); done(); };
+  submit.onclick = () => { if (submit.dataset.used) return; if (!Object.keys(picks).length) return toast('Choose an answer first'); submit.dataset.used = '1'; ol.style.pointerEvents = 'none'; let sc = 0; const wrong = [];
+    qs.forEach((w, qi) => { const ok = picks[qi] === w.ur; if (ok) sc++; else wrong.push(w); ctx.record('quiz', w.ur, ok, 0); [...ol.children[qi].querySelectorAll('.tile')].forEach(t => { t.dataset.stay = '1'; const right = t.dataset.ur === w.ur; t.classList.toggle('ok', right); t.classList.toggle('no', !right && t.dataset.ur === picks[qi]); });
+      if (!ok) { const fb = el('div', 'quiz-fix'); fb.style.cssText = 'display:flex;align-items:center;gap:10px;margin-top:6px;flex-wrap:wrap'; const pw = qwords.find(x => x.ur === picks[qi]); fb.append(el('span', 'muted', picks[qi] ? 'You tapped' : 'No answer'), ...(pw ? [el('span', 'ur', disp(pw, marks()))] : []), el('span', 'muted', '· it was'), el('b', 'ur', disp(w, marks())), playBtn(wkey(w), true, 'Play correct word ' + (qi + 1))); ol.children[qi].append(fb); } });
+    const missed = wrong.map(w => w.rom).slice(0, 4).join(', '); res.textContent = `Score ${sc}/10 ${sc >= 8 ? '— passed ✓' : '— re-read ' + missed + ', then try again'}`; submit.remove(); ol.style.pointerEvents = ''; res.scrollIntoView({ block: 'center' }); const done = () => Promise.resolve(onDone && onDone(sc, 10)).catch(() => { const r = el('button', 'btn btn-primary btn-wide', 'Try saving again'); r.onclick = () => { r.remove(); done(); }; box.append(el('p', 'muted', 'Your score did not save yet. Nothing is lost.'), r); }); done(); };
   box.append(ol, res, submit); return box;
+}
+
+// Nonword reading: five made-up but decodable words from consonant+vowel syllables taught so far (only ones with recorded audio). Read aloud, Check plays it, self-grade.
+// Returns null when fewer than 4 usable syllables exist. onDone(score, 5).
+export function nonwordDrill(unit, ctx, marks, onDone) {
+  const kn = known(unit), VOW = [['a', 'ا'], ['i', 'ی'], ['u', 'و']].filter(v => kn.has(v[1]));
+  const syl = [...kn].map(c => C.by[c]).filter(L => L && L.role === 'consonant' && !L.never_initial).flatMap(L => VOW.map(([k, v]) => ({ key: `syllables/${L.id}_${k}`, ur: L.ch + v, c: L.ch }))).filter(x => C.audio[x.key]);
+  if (syl.length < 4) return null;
+  const real = new Set(C.units.flatMap(u => u.words.map(w => bare(w[0]))));
+  const make = () => { const items = [], seen = new Set(); for (let t = 0; t < 200 && items.length < 5; t++) { const parts = shuffle(syl).slice(0, unit.n >= 5 && Math.random() < 0.4 ? 3 : 2); if (new Set(parts.map(x => x.c)).size < parts.length) continue; const ur = parts.map(x => x.ur).join(''); if (real.has(ur) || seen.has(ur)) continue; seen.add(ur); items.push({ ur, keys: parts.map(x => x.key) }); } return items; };
+  let items = make(); if (items.length < 3) return null; const n = items.length;
+  const box = el('div', 'card'); box.innerHTML = '<h2>Made-up words</h2><p class="muted">These are not real words. Read each one out loud, sound by sound. Then tap Check.</p>';
+  const word = el('div', 'answer ur'), status = el('div', 'score'), checkB = el('button', 'btn btn-primary btn-wide act', 'Check'), row = el('div', 'row'), okB = el('button', 'btn btn-primary', 'I read it'), closeB = el('button', 'btn', 'I was close'), playB = sayBtn(() => {}, 'Play it');
+  word.style.cssText = 'font-size:56px;text-align:center;margin:14px 0'; row.style.cssText = 'display:none;gap:10px;justify-content:center;flex-wrap:wrap'; row.append(okB, closeB);
+  let k = 0, score = 0, checked = false, t0 = 0, seq = 0;
+  const say = keys => { const id = ++seq; let i = 0; const step = () => { if (id !== seq || i >= keys.length) return; play(keys[i++]); if (i >= keys.length) return; let fired = false; const nxt = () => { if (fired) return; fired = true; document.removeEventListener('audio-playing', h); setTimeout(step, 120); }; const h = e => { if (e.detail === null) nxt(); }; document.addEventListener('audio-playing', h); setTimeout(nxt, 2000); }; step(); };
+  function show() { if (k >= n) { word.textContent = ''; checkB.style.display = 'none'; row.style.display = 'none'; playB.style.display = 'none'; status.textContent = `Done: ${score}/${n}`; onDone && onDone(score, n); return; } checked = false; word.textContent = items[k].ur; checkB.style.display = ''; row.style.display = 'none'; playB.style.display = 'none'; status.textContent = `Word ${k + 1}/${n} · ${score} read`; t0 = Date.now(); }
+  const plays = () => say(items[k].keys); playB.onclick = e => { e.stopPropagation(); plays(); };
+  checkB.onclick = () => { if (k >= n || checked) return; checked = true; checkB.style.display = 'none'; row.style.display = 'flex'; playB.style.display = ''; plays(); };
+  const grade = ok => { if (k >= n || !checked || row.dataset.wait) return; row.dataset.wait = '1'; ctx.record('nonword', items[k].ur, ok, Date.now() - t0); if (ok) score++; k++; setTimeout(() => { delete row.dataset.wait; show(); }, 350); };
+  okB.onclick = () => grade(true); closeB.onclick = () => grade(false);
+  box.append(status, word, sayRow(playB), checkB, row); show(); return box;
 }
 
 // highlight whatever is speaking: the play button, and the word card or sentence row it belongs to
@@ -251,3 +291,9 @@ document.addEventListener('audio-playing', e => {
   if (!e.detail) return;
   document.querySelectorAll('[data-audio]').forEach(b => { if (b.dataset.audio !== e.detail) return; b.classList.add('is-playing'); b.closest('.sent-row, .word')?.classList.add('is-playing'); });
 });
+
+// A wrong choice stays on screen, marked and no longer tappable, so the child sees what they tried and can try another (no answer is ever wiped).
+export function stayWrong(tile) { tile.classList.add('no'); tile.dataset.stay = '1'; tile.setAttribute('aria-disabled', 'true'); tile.setAttribute('aria-label', (tile.getAttribute('aria-label') || tile.textContent) + ', not this one'); }
+
+// the first correct tap locks every tile of the question: a double tap can never skip a round or score twice
+export function lockTiles(box) { [...(box?.children || [])].forEach(x => { x.dataset.stay = '1'; x.setAttribute('aria-disabled', 'true'); }); }
