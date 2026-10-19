@@ -94,6 +94,7 @@ function onboard() {
 }
 
 async function chooseMode() {
+  setBack(null);
   const has = (await db.all('profiles')).length; root.innerHTML = ''; const h = el('div', 'hero'); h.innerHTML = `${mascot('hello', 150)}<div class="ur">اردو پڑھنا سیکھیں</div><h1>Urdu Qaida</h1><p class="muted">Works fully offline. Who is this device for?</p>`; root.append(h);
   [['personal', 'user', 'Just me', 'One learner, child or adult', 'var(--accent)'], ['family', 'family', 'My family', 'A parent with one to three children', 'var(--gold-deep)'], ['school', 'school', 'My class', 'A teacher with a roster, lesson scripts and the reading assessment', 'var(--ink)']].forEach(([m, ic, t, d, col]) => {
     const c = el('button', 'card btn', `<div class="row" style="flex-wrap:nowrap"><span class="mode-ic" style="color:${col};background:color-mix(in srgb,${col} 14%,var(--card))">${icon(ic)}</span><div style="text-align:left"><b style="font-size:18px">${t}</b><div class="muted">${d}</div></div></div>`); c.style.width = '100%'; c.style.textAlign = 'left';
@@ -112,6 +113,7 @@ async function pinOk(stored, pin) { if (typeof stored !== 'string') return false
 const PIN_LOCK = 'urdu-pin-lock'; let pinTries = 0;
 const pinLocked = () => { try { return Number(localStorage.getItem(PIN_LOCK)) > Date.now(); } catch (e) { return false; } };
 async function setupTeacher() {
+  setBack(null);
   root.innerHTML = ''; root.append(el('h1', '', 'Teacher setup')); const c = el('div', 'card'); c.innerHTML = '<p class="muted">Set a PIN. Children tap their name; the PIN protects the roster, assessments and reports.</p>';
   const name = el('input'); name.placeholder = 'Your name'; name.maxLength = NAME_MAX; const pin = el('input'); pin.type = 'password'; pin.inputMode = 'numeric'; pin.placeholder = '4-digit PIN'; pin.maxLength = 6;
   const ok = el('button', 'btn btn-primary btn-wide', 'Save'); ok.onclick = async () => { if (!/^\d{4,6}$/.test(pin.value)) return toast('PIN must be 4 to 6 digits'); await db.setting('teacherPin', await pinHash(pin.value, uid().slice(0, 12))); await db.setting('teacherName', cleanName(name.value) || 'Teacher'); home(); };
@@ -121,6 +123,8 @@ async function setupTeacher() {
 async function home() {
   setBack(null);
   const mode = await db.setting('mode'); const profiles = (await db.all('profiles')).filter(p => p.kind !== 'teacher');
+  // Back on the picker returns to the learner you came from (tester report: no way out of this screen except picking someone or closing the app)
+  const prevId = await db.setting('activeProfile'), prev = mode !== 'school' ? profiles.find(p => p.id === prevId) : null; if (prev) setBack(() => { learner(prev); return true; });
   root.innerHTML = ''; const h = el('div', 'row'); h.style.justifyContent = 'space-between'; h.innerHTML = `<div><h1>${mode === 'school' ? 'Class' : 'Who is learning?'}</h1><div class="muted">${mode === 'school' ? 'Tap your name to start' : 'Tap a name, or add one'}</div></div>`; h.append(themeChip(ctxBase)); root.append(h);
   const TRACK = { child: 'Child', adult: 'Adult', heritage: 'Speaks Urdu' };
   const sorted = profiles.sort((a, b) => a.name.localeCompare(b.name) || (a.createdAt || 0) - (b.createdAt || 0)); const same = n => sorted.filter(q => q.name.trim().toLowerCase() === n.trim().toLowerCase());
@@ -137,6 +141,7 @@ async function home() {
 }
 
 async function addProfile(onDone) {
+  setBack(() => { (onDone ? onDone : home)(); return true; });   // Back from the form: the picker (or the teacher roster), never a stale learner target
   root.innerHTML = ''; root.append(el('h1', '', 'New learner')); const c = el('div', 'card'); const name = el('input'); name.placeholder = 'Name'; name.maxLength = NAME_MAX; name.autocomplete = 'off';
   const track = el('select'); [['child', 'Child (5–10)'], ['adult', 'Adult, new to Urdu'], ['heritage', 'Speaks Urdu, can\'t read']].forEach(([v, t]) => track.append(new Option(t, v)));
   const grade = el('select'); ['', '1', '2', '3', '4', '5'].forEach(g => grade.append(new Option(g ? 'Grade ' + g : 'No grade', g)));
@@ -148,11 +153,13 @@ async function addProfile(onDone) {
 async function learner(p, backTo, autoPlacement) { await db.setting('activeProfile', p.id); document.body.dataset.track = p.track; return renderLearner(root, { ...ctxBase, profile: p, mode: await db.setting('mode'), switchProfile: backTo || home, autoPlacement }); }
 
 async function teacherGate() {
+  setBack(() => { home(); return true; });
   const pin = await db.setting('teacherPin'); if (!pin) return setupTeacher();
   root.innerHTML = ''; const c = el('div', 'card center'); c.innerHTML = '<h1>Teacher PIN</h1>'; const inp = el('input'); inp.type = 'password'; inp.inputMode = 'numeric'; inp.setAttribute('aria-label', 'Teacher PIN'); inp.style.fontSize = '24px'; inp.style.textAlign = 'center';
   const ok = el('button', 'btn btn-primary btn-wide', 'Unlock'); ok.onclick = async () => { if (pinLocked()) return toast('Too many tries. Wait a little, then try again.'); if (await pinOk(pin, inp.value)) { pinTries = 0; if (!pin.startsWith('h1:')) await db.setting('teacherPin', await pinHash(inp.value, uid().slice(0, 12))); return teacher(); } if (++pinTries >= 3) { pinTries = 0; try { localStorage.setItem(PIN_LOCK, String(Date.now() + 30000)); } catch (e) { /* private mode */ } toast('Too many tries. Wait 30 seconds.'); } else toast('Wrong PIN'); }; inp.onkeydown = e => { if (e.key === 'Enter') ok.click(); }; const back = el('button', 'btn', 'Back'); back.onclick = home; c.append(inp, ok, back); root.append(c); inp.focus();
 }
 async function teacher() {
+  setBack(null);
   const { renderTeacher } = await import('./teacher.js');
   await db.setting('activeProfile', null);
   const { C, play } = await import('./content.js');

@@ -206,8 +206,12 @@ export async function renderLearner(root, ctx) {
       const nx = el('div', 'card row next-up', `${unitArt(cur)}<div style="flex:1"><small class="muted">Next up</small><b>Unit ${cur}: ${C.units[cur].title}</b></div>`); const go = el('button', 'btn btn-primary btn-wide dock', `Learn: unit ${cur}`); go.onclick = () => { st.tab = 'today'; render(); }; main.append(go); main.insertBefore(nx, go); return; } const box = el('div'); main.append(box); reviewCards(due, box, () => { st.tab = 'today'; render(); }); }
 
   async function read() { await header('Read', 'Passages and sentences · read twice, watch your speed'); const cur = await S.currentUnit(profile.id);
-    C.units.filter(u => u.passage && u.n <= Math.max(cur, 1)).reverse().forEach(u => { const box = el('div'); { const hh = el('h3', '', `Passage · unit ${u.n}`); hh.setAttribute('aria-level', '2'); main.append(hh); } main.append(box); fluency(u, box, () => {}, true); box.lastChild.remove(); });
-    C.units.filter(u => u.sentences.length && u.n <= Math.max(cur, 1)).reverse().forEach(u => { const box = el('div'); { const hh = el('h3', '', `Sentences · unit ${u.n}`); hh.setAttribute('aria-level', '2'); main.append(hh); } main.append(box); fluency(u, box, () => {}); box.lastChild.remove(); }); }
+    // only the current unit renders at first: building every earlier unit's passage and sentences (2,000+ elements by unit 9) made this tab slow on weaker phones
+    const ps = C.units.filter(u => u.passage && u.n <= Math.max(cur, 1)).reverse(), ss = C.units.filter(u => u.sentences.length && u.n <= Math.max(cur, 1)).reverse();
+    const add = (u, passage) => { const box = el('div'); const hh = el('h3', '', `${passage ? 'Passage' : 'Sentences'} · unit ${u.n}`); hh.setAttribute('aria-level', '2'); main.append(hh, box); fluency(u, box, () => {}, passage); box.lastChild.remove(); };
+    ps.slice(0, 1).forEach(u => add(u, true)); ss.slice(0, 1).forEach(u => add(u, false));
+    const rest = [...ps.slice(1).map(u => [u, true]), ...ss.slice(1).map(u => [u, false])];
+    if (rest.length) { const more = el('button', 'btn btn-wide', `Show earlier units (${rest.length})`); more.onclick = () => { more.remove(); rest.forEach(([u, p]) => add(u, p)); }; main.append(more); } }
 
   async function progress(noHead) { if (!noHead) await header('Progress'); main.append(await renderDashboard(profile.id, { child: profile.track === 'child' })); }
   // Me (child track): progress first, then everything that lives in More for the other tracks.

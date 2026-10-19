@@ -72,7 +72,7 @@ const slideDir = () => (performance.now() - dirT < 2500 ? dir : 1);
 // The caller inserts `next` (with data-screen) beside `old` first. Returns false (caller just removes `old`) for reduced motion, an empty/tiny/canvas screen
 // or a page scrolled far down. The old node is inert + aria-hidden + pointer-events none, has no ids (no duplicates), and its Lotties / docks are hidden by CSS.
 export function exitScreen(old, next) {
-  if (calm() || !old?.isConnected || !old.firstElementChild || old.querySelector('canvas') || scrollY > innerHeight * 2) return false;
+  if (calm() || !old?.isConnected || !old.firstElementChild || old.querySelector('canvas') || scrollY > innerHeight * 2 || old.querySelectorAll('*').length > 600) return false;   // a heavy old screen is not worth animating out on a weak phone
   const r = old.getBoundingClientRect(); if (r.width < 40 || r.height < 40) return false;
   const c0 = old.firstElementChild.getBoundingClientRect().top;
   old.querySelectorAll('[id]').forEach(n => n.removeAttribute('id')); old.removeAttribute('id');

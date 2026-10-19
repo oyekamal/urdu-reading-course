@@ -1,6 +1,15 @@
 # What's new (Play Console "Release notes", ≤500 chars per language)
 
 <en-US>
+Fixes from tester reports. The Back button on the "Who is learning?" screen now takes you back to the learner you came from instead of trapping you there. The Read tab opens much faster: it shows the current unit first, with "Show earlier units" for the rest. Screen changes skip the slide animation on heavy screens, so switching pages feels smoother on slower phones.
+</en-US>
+
+<ur>
+ٹیسٹرز کی رپورٹس پر درستیاں۔ "کون سیکھ رہا ہے؟" اسکرین پر بیک بٹن اب آپ کو پچھلے سیکھنے والے پر واپس لے جاتا ہے، وہاں پھنسانے کے بجائے۔ "پڑھیں" ٹیب اب بہت تیزی سے کھلتا ہے: پہلے موجودہ یونٹ، باقی کے لیے "پچھلے یونٹ دکھائیں"۔ بھاری اسکرینوں پر سلائیڈ اینیمیشن چھوڑ دی جاتی ہے تاکہ سست فونز پر صفحات بدلنا ہموار رہے۔
+</ur>
+
+<!-- previous release notes (0.13.1):
+<en-US>
 New one-tap Light/Dark button at the top of each screen. Better learning: word cards show only the Urdu until you tap, the unit check asks which word you heard, wrong answers stay marked with a glowing hint after two misses, and a made-up-word practice. Review shows the answer first. Smoother screen changes, letters now use a word that starts with them, vowel marks fade in units 8 to 10, and a calmer first run for children. Teacher mode and accessibility fixes.
 </en-US>
 
@@ -8,7 +17,9 @@ New one-tap Light/Dark button at the top of each screen. Better learning: word c
 ہر اسکرین کے اوپر نیا ایک ٹیپ والا لائٹ/ڈارک بٹن۔ سیکھنا بہتر: لفظ کے کارڈ پر پہلے صرف اردو، یونٹ کی جانچ میں پوچھا جاتا ہے کون سا لفظ سنا، غلط جواب نشان زد رہتا ہے اور دو غلطیوں کے بعد صحیح جواب چمکتا ہے، اور بے معنی الفاظ کی مشق۔ ریویو میں پہلے جواب دکھایا جاتا ہے۔ اسکرینوں کی تبدیلی زیادہ ہموار، حرف کے لیے اسی سے شروع ہونے والا لفظ، یونٹ 8 سے 10 میں اعراب بتدریج غائب، اور بچوں کے لیے پرسکون آغاز۔ ٹیچر موڈ اور رسائی کی درستیاں۔
 </ur>
 
-<!-- previous release notes (0.13.0):
+-->
+
+(0.13.0):
 <en-US>
 Learning is better: word cards now show only the Urdu until you tap, then the picture and meaning. A wrong answer stays marked and you try again, with a glowing hint after two misses. The unit check plays the word and asks which one you heard. New made-up-word practice, a short check after reading, and review that shows the answer first. New Light/Dark switch, springier animations, shorter first-run for children, and Back and keyboard fixes.
 </en-US>
