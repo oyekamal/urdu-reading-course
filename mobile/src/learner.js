@@ -211,7 +211,7 @@ export async function renderLearner(root, ctx) {
     const seen = new Set(), list = all.filter(w => !seen.has(w.ur) && seen.add(w.ur)); if (!list.length) return;
     const h = el('h3', '', 'Picture words'); h.setAttribute('aria-level', '2'); const grid = el('div', 'pw-grid'); let shown = 0;
     const more = el('button', 'btn btn-wide', 'Show more pictures');
-    const next = () => { list.slice(shown, shown + 6).forEach((w, i) => { const t = el('button', 'pw-tile', `${wimg(w.ur, 'wimg-card')}<span class="ur">${w.ur}</span><small>${w.rom}</small>`); t.setAttribute('aria-label', `${w.rom}: ${w.en}. Tap to hear`); t.style.setProperty('--i', i); t.onclick = () => { play(w.key); pop(t, 0.88); t.classList.remove('wig'); void t.offsetWidth; t.classList.add('wig'); }; grid.append(t); }); shown += 6; if (shown >= list.length) more.remove(); };
+    const next = () => { list.slice(shown, shown + 6).forEach((w, i) => { const t = el('button', 'pw-tile', `${wimg(w.ur, 'wimg-card')}<span class="ur">${w.ur}</span><small>${w.rom}</small><i class="pw-spk" aria-hidden="true">${icon('speaker')}</i>`); t.setAttribute('aria-label', `${w.rom}: ${w.en}. Tap to hear`); t.style.setProperty('--i', i); t.dataset.c = i % 4; t.onclick = () => { play(w.key); pop(t, 0.86); t.classList.remove('wig', 'say'); void t.offsetWidth; t.classList.add('wig', 'say'); clearTimeout(t.__say); t.__say = setTimeout(() => t.classList.remove('say'), 1300); }; grid.append(t); }); shown += 6; if (shown >= list.length) more.remove(); };
     more.onclick = next; next(); main.append(h, grid); if (list.length > 6) main.append(more);
   }
 

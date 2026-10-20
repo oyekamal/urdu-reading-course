@@ -1047,3 +1047,21 @@ body.kb-open .toast,body.kb-open .sw-toast{bottom:calc(var(--kb,0px) + 20px)}
   @keyframes cardIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
   .btn:active,.tile:active{transform:translateY(2px) scale(.97)}
 }
+/* round 13b: picture is the hero, visible tap cue, sustained playing state */
+.pw-grid{gap:12px}
+.pw-tile{position:relative;padding:10px 6px 12px;--tint:#DDF1EC;background:color-mix(in srgb,var(--tint) 45%,var(--card))}
+.pw-tile[data-c="1"]{--tint:#FFE7BC}.pw-tile[data-c="2"]{--tint:#DADFFB}.pw-tile[data-c="3"]{--tint:#FFD9D0}
+.pw-tile .wimg-card{width:100%;max-width:104px;height:auto;aspect-ratio:1;background:var(--tint);border-radius:26px;padding:8px}
+.pw-tile .ur{font-size:26px;font-weight:600}
+.pw-spk{position:absolute;top:8px;right:8px;width:28px;height:28px;border-radius:50%;background:var(--card);display:grid;place-items:center;color:var(--primary,#00756B);box-shadow:0 2px 0 var(--line)}
+.pw-spk svg{width:16px;height:16px}
+.pw-tile.say{border-color:var(--gold);box-shadow:0 0 0 5px color-mix(in srgb,var(--gold) 32%,transparent),0 3px 0 var(--line)}
+.pw-tile.say .pw-spk{background:var(--gold);color:#fff}
+@media (prefers-reduced-motion:no-preference){
+  .pw-tile.say .wimg{animation:wig .7s ease-in-out,say 1.2s ease-in-out}
+  @keyframes say{50%{transform:scale(1.14) translateY(-4px)}}
+  .pw-tile.say .pw-spk{animation:spkPulse .5s ease-in-out 2}
+  @keyframes spkPulse{50%{transform:scale(1.25)}}
+  .home-path .unit .pearl:not(.cur):not(.pop){animation-delay:calc(.25s + var(--n,0)*70ms)}
+  main > .card,main > h3,main > .pw-grid{animation-duration:.55s}
+}
