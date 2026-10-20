@@ -1076,3 +1076,9 @@ body.kb-open .toast,body.kb-open .sw-toast{bottom:calc(var(--kb,0px) + 20px)}
   .pw-tile.say .wimg{animation:wig .7s ease-in-out,say 1.2s ease-in-out}
   @keyframes say{40%{transform:scale(1.22) translateY(-6px)}}
 }
+/* round 13d: tab switches must feel instant — short entrance, no head-start delay */
+@media (prefers-reduced-motion:no-preference){
+  main > .card,main > h3,main > .pw-grid{animation-duration:.2s}
+  .home-path .unit .pearl:not(.cur):not(.pop){animation-duration:.25s;animation-delay:calc(var(--n,0)*25ms)}
+  .pw-tile{animation-duration:.25s;animation-delay:calc(var(--i,0)*25ms)}
+}

@@ -3664,7 +3664,7 @@
   "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
   "frame": "carrier",
   "text": "ما",
-  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr"
+  "via": "9cI5mhBtM4WtQ9Fo6jWQ"
  },
  "syllables/mim_i": {
   "method": "elevenlabs",
