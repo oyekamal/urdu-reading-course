@@ -10,7 +10,7 @@ import * as M from './marks.js';
 import { renderDashboard } from './dashboard.js';
 import { renderPath, runLesson, lessonState, countUp, dailyGoal, goalFlag, unlockInfo, retrigger, sGet, sSet } from './path.js';
 import { setMarko } from './marko.js';
-import { exitScreen } from './spring.js';
+import { exitScreen, pop } from './spring.js';
 import { icon, mascot, confetti, unitArt, LESSON_ICON, avatar } from './icons.js';
 import { fx, burst } from './fx.js';
 import { askGrownup } from './gate.js';
@@ -205,11 +205,22 @@ export async function renderLearner(root, ctx) {
   async function review() { await header('Review', 'Letters and words that are about to slip'); const due = await S.dueCards(profile.id, 30); if (!due.length) { const [pl, sk, cur] = await Promise.all([S.pearls(profile.id), S.streak(profile.id), S.currentUnit(profile.id)]); const c = el('div', 'night', `<div class="night-moon"></div><div class="fx-stage">${mascot('sleep', 170)}</div><h2>All caught up</h2><p>Marko is resting. Your letters come back for review when they are about to slip, so there's nothing to do here today.</p><div class="night-stats"><div><b>${pl}</b><small>pearls</small></div><div><b>${sk}</b><small>days practised</small></div></div>`); c.querySelector('.fx-stage').prepend(fx('sleeping_zzz', { size: 80, loop: true, cls: 'fx-zz' })); main.append(c);
       const nx = el('div', 'card row next-up', `${unitArt(cur)}<div style="flex:1"><small class="muted">Next up</small><b>Unit ${cur}: ${C.units[cur].title}</b></div>`); const go = el('button', 'btn btn-primary btn-wide dock', `Learn: unit ${cur}`); go.onclick = () => { st.tab = 'today'; render(); }; main.append(go); main.insertBefore(nx, go); return; } const box = el('div'); main.append(box); reviewCards(due, box, () => { st.tab = 'today'; render(); }); }
 
+  // Picture words: every word taught so far that has a picture, as a tap-to-hear grid (shown 12 at a time).
+  function pictureWords(cur) {
+    const all = C.units.filter(u => u.n <= cur).flatMap(u => u.words.map((w, i) => ({ ...W(w), key: wordKey(u.n, i + (u.wordOffset || 0)) }))).filter(w => C.wimg[w.ur] && C.audio[w.key]);
+    const seen = new Set(), list = all.filter(w => !seen.has(w.ur) && seen.add(w.ur)); if (!list.length) return;
+    const h = el('h3', '', 'Picture words'); h.setAttribute('aria-level', '2'); const grid = el('div', 'pw-grid'); let shown = 0;
+    const more = el('button', 'btn btn-wide', 'Show more pictures');
+    const next = () => { list.slice(shown, shown + 6).forEach((w, i) => { const t = el('button', 'pw-tile', `${wimg(w.ur, 'wimg-card')}<span class="ur">${w.ur}</span><small>${w.rom}</small>`); t.setAttribute('aria-label', `${w.rom}: ${w.en}. Tap to hear`); t.style.setProperty('--i', i); t.onclick = () => { play(w.key); pop(t, 0.88); t.classList.remove('wig'); void t.offsetWidth; t.classList.add('wig'); }; grid.append(t); }); shown += 6; if (shown >= list.length) more.remove(); };
+    more.onclick = next; next(); main.append(h, grid); if (list.length > 6) main.append(more);
+  }
+
   async function read() { await header('Read', 'Passages and sentences · read twice, watch your speed'); const cur = await S.currentUnit(profile.id);
     // only the current unit renders at first: building every earlier unit's passage and sentences (2,000+ elements by unit 9) made this tab slow on weaker phones
     const ps = C.units.filter(u => u.passage && u.n <= Math.max(cur, 1)).reverse(), ss = C.units.filter(u => u.sentences.length && u.n <= Math.max(cur, 1)).reverse();
     const add = (u, passage) => { const box = el('div'); const hh = el('h3', '', `${passage ? 'Passage' : 'Sentences'} · unit ${u.n}`); hh.setAttribute('aria-level', '2'); main.append(hh, box); fluency(u, box, () => {}, passage); box.lastChild.remove(); };
     ps.slice(0, 1).forEach(u => add(u, true)); ss.slice(0, 1).forEach(u => add(u, false));
+    pictureWords(cur);
     const rest = [...ps.slice(1).map(u => [u, true]), ...ss.slice(1).map(u => [u, false])];
     if (rest.length) { const more = el('button', 'btn btn-wide', `Show earlier units (${rest.length})`); more.onclick = () => { more.remove(); rest.forEach(([u, p]) => add(u, p)); }; main.append(more); } }
 
