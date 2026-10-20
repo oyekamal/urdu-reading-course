@@ -1065,3 +1065,14 @@ body.kb-open .toast,body.kb-open .sw-toast{bottom:calc(var(--kb,0px) + 20px)}
   .home-path .unit .pearl:not(.cur):not(.pop){animation-delay:calc(.25s + var(--n,0)*70ms)}
   main > .card,main > h3,main > .pw-grid{animation-duration:.55s}
 }
+/* round 13c: two columns, hero pictures, spotlight on tap */
+.pw-grid{grid-template-columns:repeat(2,1fr);gap:14px}
+.pw-tile{padding:14px 8px 14px;border-radius:26px}
+.pw-tile .wimg-card{max-width:150px;border-radius:30px;padding:10px}
+.pw-tile .ur{font-size:30px}.pw-tile small{font-size:12px}
+.pw-spk{width:34px;height:34px;top:10px;right:10px}.pw-spk svg{width:18px;height:18px}
+.pw-tile.say{z-index:2;transform:scale(1.04)}
+@media (prefers-reduced-motion:no-preference){
+  .pw-tile.say .wimg{animation:wig .7s ease-in-out,say 1.2s ease-in-out}
+  @keyframes say{40%{transform:scale(1.22) translateY(-6px)}}
+}
