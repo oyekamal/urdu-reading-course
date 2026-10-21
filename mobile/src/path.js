@@ -215,6 +215,7 @@ function screensFor(l, u, ctx) {
       ...(typeof D.nonwordDrill === 'function' ? [(box, cont) => { box.innerHTML = ''; ctx.say('read'); const x = D.nonwordDrill(u, dctx, marks, () => { if (!box.querySelector('.nw-cont')) { const cb = cont(); cb.classList.add('nw-cont'); box.append(cb); } }); if (!x) { cont().click(); return; } box.append(x); }] : [])];
     case 'words': { const range = l.range; return [
       (box, cont) => { box.innerHTML = ''; ctx.say('read'); const sub = { ...u, words: wordsOf(range), wordOffset: range[0] }; box.append(D.readIt(sub, dctx, marks), cont('Read them')); },
+      (box, cont) => { box.innerHTML = ''; ctx.say('tap_word'); const sub = { ...u, words: wordsOf(range), wordOffset: range[0] }; const g = D.pictureMatch(sub, dctx, marks, () => { if (!box.querySelector('.pm-cont')) { const cb = cont(); cb.classList.add('pm-cont'); box.append(cb); } }); if (!g) { cont().click(); return; } box.append(g); },
       (box, cont) => { box.innerHTML = ''; ctx.say('build'); const sub = { ...u, words: wordsOf(range), wordOffset: range[0] }; box.append(D.joinIt(sub, dctx, marks, () => box.append(cont())) || cont()); },
       (box, cont) => { box.innerHTML = ''; ctx.say('write'); const sub = { ...u, words: wordsOf(range), wordOffset: range[0] }; const d = D.dictation(sub, dctx, marks, () => box.append(cont())); if (d) { box.append(d); dock(box); } else box.append(cont()); },
     ]; }

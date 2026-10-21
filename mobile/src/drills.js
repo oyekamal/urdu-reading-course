@@ -247,6 +247,26 @@ export function dictation(unit, ctx, marks, onDone) {
   const bar = el('div', 'row'); bar.append(back, skipB); box.append(sayRow(playB, status, againB), ans, keys, bar, checkB); show(); return box;
 }
 
+// Match the picture: a picture of a word taught in this lesson, tap the printed word that goes with it (reading -> meaning, the reverse of the unit check).
+// null when fewer than 3 words of the lesson have a picture and audio. onDone(score, rounds).
+export function pictureMatch(unit, ctx, marks, onDone) {
+  const pool = unit.words.map((w, i) => ({ ...W(w), i })).filter(w => C.wimg[w.ur] && C.audio[wordKey(unit.n, w.i + (unit.wordOffset || 0))]); if (pool.length < 3) return null;
+  const rounds = Math.min(5, pool.length), qs = shuffle(pool).slice(0, rounds), key = w => wordKey(unit.n, w.i + (unit.wordOffset || 0));
+  const box = el('div', 'card'); box.innerHTML = '<h2>Which word is it?</h2><p class="muted">Look at the picture. Tap the word that goes with it.</p>';
+  const pic = el('div', 'pm-pic'), choices = el('div', 'choices'), status = el('div', 'score'); let round = 0, score = 0, target, t0;
+  function next() {
+    if (round >= rounds) { pic.innerHTML = ''; choices.innerHTML = ''; status.textContent = `Done: ${score}/${rounds}`; onDone && onDone(score, rounds); return; }
+    target = qs[round++]; status.textContent = `Picture ${round}/${rounds}`; pic.innerHTML = wimg(target.ur, 'wimg-build'); choices.innerHTML = '';
+    const others = lookAlikes(target, pool, 2); shuffle([target, ...others]).forEach(o => {
+      const t = el('button', 'tile ur', disp(o, marks, unit.n)); dispTag(t, o, marks, unit.n); t.onclick = () => {
+        if (t.dataset.stay) return; const ok = o === target; ctx.record('picture', target.ur, ok, Date.now() - t0);
+        if (ok) { t.classList.add('ok'); lockTiles(choices); score++; play(key(target)); toast(`${target.rom} · ${target.en.replace(/\s*\([^)]*\)/, '')}`); setTimeout(next, 1100); } else stayWrong(t);
+      }; choices.append(t);
+    }); t0 = Date.now();
+  }
+  box.append(pic, choices, status); next(); return wrapPeek(box, marks, unit.n);
+}
+
 // 10-item check; 8 to pass. Decoding, not matching: the child HEARS a word and taps the printed word (no romanisation, English or picture in the question).
 // Distractors are minimal pairs from the same unit (same length / shared letters / one letter apart), so a guess from the first letter alone fails.
 const editDist = (a, b) => { const m = [...a], n = [...b]; let prev = n.map((_, j) => j + 1); prev.unshift(0); m.forEach((x, i) => { const cur = [i + 1]; n.forEach((y, j) => cur.push(Math.min(prev[j + 1] + 1, cur[j] + 1, prev[j] + (x === y ? 0 : 1)))); prev = cur; }); return prev[n.length]; };

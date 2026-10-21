@@ -28,9 +28,9 @@ export const forms = l => [['isolated', l.ch], ['initial', l.joiner ? l.ch + TAT
 export const W = w => ({ ur: w[0], rom: w[1], en: w[2], v: w[3] || w[0] });
 // Picture for a word (flat-vector, same hand as Marko). '' when the word has none, so callers can always interpolate it.
 export const wimgSrc = ur => C.wimg[ur] ? `img/words/${C.wimg[ur]}.webp` : '';
-export const wimg = (ur, cls = '') => C.wimg[ur] ? `<img class="wimg ${cls}" src="${wimgSrc(ur)}" alt="" draggable="false">` : '';
+export const wimg = (ur, cls = '') => C.wimg[ur] ? `<img class="wimg ${cls}" src="${wimgSrc(ur)}" alt="" draggable="false" decoding="async" loading="lazy">` : '';
 // Story/sentence scene picture (id p<unit> for a passage, s<unit>_<i> for a sentence). '' when none, so callers can always interpolate it.
-export const story = (id, cls = '') => C.story && C.story.has(id) ? `<img class="story-img ${cls}" src="img/story/${id}.webp" alt="" draggable="false">` : '';
+export const story = (id, cls = '') => C.story && C.story.has(id) ? `<img class="story-img ${cls}" src="img/story/${id}.webp" alt="" draggable="false" decoding="async" loading="lazy">` : '';
 export const shuffle = a => a.map(x => [Math.random(), x]).sort((p, q) => p[0] - q[0]).map(x => x[1]);
 export const pad2 = n => String(n).padStart(2, '0');
 export const wordKey = (unit, i) => `units/u${pad2(unit)}_${pad2(i)}`;

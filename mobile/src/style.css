@@ -1034,17 +1034,11 @@ body.kb-open .toast,body.kb-open .sw-toast{bottom:calc(var(--kb,0px) + 20px)}
 .dict-pic{display:flex;justify-content:center;margin:8px 0;animation:picIn .5s cubic-bezier(.25,1.5,.45,1) both}
 @keyframes picIn{from{opacity:0;transform:scale(.5) rotate(-8deg)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:no-preference){
-  .pw-tile{animation:tileIn .5s cubic-bezier(.25,1.4,.45,1) calc(var(--i,0)*45ms) both}
-  @keyframes tileIn{from{opacity:0;transform:translateY(18px) scale(.88)}to{opacity:1;transform:none}}
   .pw-tile.wig .wimg{animation:wig .6s ease-in-out}
   @keyframes wig{20%{transform:rotate(-9deg) scale(1.12)}45%{transform:rotate(7deg) scale(1.08)}70%{transform:rotate(-3deg)}}
   .words .word.reveal .wimg-card{animation:picIn .55s cubic-bezier(.25,1.5,.45,1) both}
   html:not(.calm) .words .word.reveal .wimg-card{animation:picIn .55s cubic-bezier(.25,1.5,.45,1) both,bobPic 3s ease-in-out .6s infinite}
   @keyframes bobPic{50%{transform:translateY(-4px) rotate(1.5deg)}}
-  .home-path .unit .pearl:not(.cur):not(.pop){animation:pearlIn .5s cubic-bezier(.25,1.4,.45,1) calc(var(--n,0)*50ms) both}
-  @keyframes pearlIn{from{opacity:0;transform:translateY(14px) scale(.7)}to{opacity:1;transform:none}}
-  main > .card,main > h3,main > .pw-grid{animation:cardIn .45s ease-out both}
-  @keyframes cardIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
   .btn:active,.tile:active{transform:translateY(2px) scale(.97)}
 }
 /* round 13b: picture is the hero, visible tap cue, sustained playing state */
@@ -1062,8 +1056,6 @@ body.kb-open .toast,body.kb-open .sw-toast{bottom:calc(var(--kb,0px) + 20px)}
   @keyframes say{50%{transform:scale(1.14) translateY(-4px)}}
   .pw-tile.say .pw-spk{animation:spkPulse .5s ease-in-out 2}
   @keyframes spkPulse{50%{transform:scale(1.25)}}
-  .home-path .unit .pearl:not(.cur):not(.pop){animation-delay:calc(.25s + var(--n,0)*70ms)}
-  main > .card,main > h3,main > .pw-grid{animation-duration:.55s}
 }
 /* round 13c: two columns, hero pictures, spotlight on tap */
 .pw-grid{grid-template-columns:repeat(2,1fr);gap:14px}
@@ -1078,12 +1070,13 @@ body.kb-open .toast,body.kb-open .sw-toast{bottom:calc(var(--kb,0px) + 20px)}
 }
 /* round 13d: tab switches must feel instant — short entrance, no head-start delay */
 @media (prefers-reduced-motion:no-preference){
-  main > .card,main > h3,main > .pw-grid{animation-duration:.2s}
-  .home-path .unit .pearl:not(.cur):not(.pop){animation-duration:.25s;animation-delay:calc(var(--n,0)*25ms)}
-  .pw-tile{animation-duration:.25s;animation-delay:calc(var(--i,0)*25ms)}
 }
 /* round 13e: story + sentence pictures (shown with the meaning, never above the Urdu) */
 .story-img{display:block;object-fit:cover;border-radius:20px;background:var(--card)}
 .story-hero{width:min(100%,300px);aspect-ratio:1;margin:8px auto 10px;box-shadow:0 3px 0 var(--line);border:2px solid var(--line)}
 .story-th{width:64px;height:64px;border-radius:14px;flex:none;border:2px solid var(--line)}
 @media (prefers-reduced-motion:no-preference){.story-hero,.sent-row .story-th{animation:picIn .5s cubic-bezier(.25,1.5,.45,1) both}}
+/* round 13f: match-the-picture game */
+.pm-pic{display:flex;justify-content:center;margin:6px 0 10px;min-height:140px}
+.pm-pic .wimg-build{margin:0}
+@media (prefers-reduced-motion:no-preference){.pm-pic .wimg{animation:picIn .45s cubic-bezier(.25,1.5,.45,1) both}}
