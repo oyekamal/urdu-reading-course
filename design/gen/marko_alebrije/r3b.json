@@ -1,0 +1,22 @@
+{
+ "tag": "r3b",
+ "styles": [
+  "Markhor horns",
+  "Cute Flat Illustration",
+  "Flat icon emoji"
+ ],
+ "prompt": "Marko, a cute baby markhor goat mascot, standing upright, one hand waving, full body front view, large round head on a small body, smooth flat cream face with a tiny triangular nose and a small smile, two big round dark navy eyes with a white dot highlight, big cream inner ears sticking out sideways, two tall thin horns shaped like twisted spiral candy canes pointing up, tiny beard, flat teal fur with a scalloped outline, cream tummy patch, small orange hooves, bold thick navy outline of equal width, completely flat colours with no shading or highlights, vector sticker, centered, isolated on pure white background",
+ "negative": "cow, bull, yak, snout, tail, ram horns, curled horns, thick ridged horns, shadow, ground shadow, floor, reflection, realistic, photo, 3d, shading, highlights, gradient, fur strands, text, letters, watermark",
+ "count": 4,
+ "styles_applied": [
+  "Markhor horns",
+  "Cute Flat Illustration",
+  "Flat icon emoji"
+ ],
+ "seeds": [
+  "(1/4) seed 664002727 · 768x768 · Markhor horns(2) · Cute Flat Illustration(2) · Flat icon emoji(2)",
+  "(2/4) seed 664002728 · 768x768 · Markhor horns(2) · Cute Flat Illustration(2) · Flat icon emoji(2)",
+  "(3/4) seed 664002729 · 768x768 · no response — use 🎯",
+  "(4/4) seed 664002730 · 768x768 · no response — use 🎯"
+ ]
+}

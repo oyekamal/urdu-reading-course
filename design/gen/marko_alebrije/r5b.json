@@ -1,0 +1,22 @@
+{
+ "tag": "r5b",
+ "styles": [
+  "Addax horns",
+  "Flaticon Freepik Sticker",
+  "Flat Vector Illustration 2"
+ ],
+ "prompt": "Marko, a cute baby markhor goat mascot, standing upright, one hand waving, full body front view, large round head on a small body, head covered in flat teal fur with a smooth flat cream face mask in the middle, tiny triangular nose and a small smile, two medium round dark navy eyes each with one small white dot highlight, big cream inner ears sticking out sideways, two tall solid saffron-orange horns with a tight spiral twist like corkscrews pointing up, tiny beard tuft, flat teal body with a scalloped fur outline, cream tummy patch, small saffron hooves, bold thick navy outline of equal width, completely flat solid colours, no stripes, no blush, no shading, vector sticker, centered, isolated on pure white background",
+ "negative": "cow, bull, yak, snout, tail, ram horns, curled horns, thick ridged horns, striped horns, white stripes, blush, pink cheeks, huge eyes, glossy eyes, shadow, ground shadow, floor, reflection, realistic, photo, 3d, shading, highlights, gradient, fur strands, text, letters, watermark",
+ "count": 4,
+ "styles_applied": [
+  "Addax horns",
+  "Flaticon Freepik Sticker",
+  "Flat Vector Illustration 2"
+ ],
+ "seeds": [
+  "(1/4) seed 672784891 · 768x768 · Addax horns(2) · Flaticon Freepik Sticker(2) · Flat Vector Illustration 2(2)",
+  "(2/4) seed 672784892 · 768x768 · Addax horns(2) · Flaticon Freepik Sticker(2) · Flat Vector Illustration 2(2)",
+  "(3/4) seed 672784893 · 768x768 · no response — use 🎯",
+  "(4/4) seed 672784894 · 768x768 · no response — use 🎯"
+ ]
+}

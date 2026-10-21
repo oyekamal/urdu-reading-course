@@ -1,0 +1,20 @@
+{
+ "tag": "r2",
+ "styles": [
+  "Markhor horns",
+  "Flat Vector Illustration 2"
+ ],
+ "prompt": "Marko, a baby markhor mountain goat mascot standing upright, waving one hand, full body, front view, big head and small slim body, flat cream face mask with a tiny nose and a small cat-like smile, big round dark navy eyes with white highlights, large cream inner ears pointing sideways, two tall slender twisted corkscrew spiral saffron-orange horns rising upward, small beard tuft, teal turquoise fur with scalloped tuft edges, cream belly patch, little saffron hooves, thick uniform dark navy outline, solid flat colours, sticker style, plain white background, no ground",
+ "negative": "cow, bull, ox, yak, calf, snout, tail, ram horns, big curled horns, shadow, ground shadow, floor, realistic, photo, 3d, shading, gradient, fur texture, text, letters, watermark, extra limbs",
+ "count": 4,
+ "styles_applied": [
+  "Markhor horns",
+  "Flat Vector Illustration 2"
+ ],
+ "seeds": [
+  "(1/4) seed 6175140 · 768x768 · Markhor horns(2) · Flat Vector Illustration 2(2)",
+  "(2/4) seed 664002727 · 768x768 · Markhor horns(2) · Flat Vector Illustration 2(2)",
+  "(3/4) seed 776929257 · 768x768 · no response — use 🎯",
+  "(4/4) seed 54986176 · 768x768 · no response — use 🎯"
+ ]
+}

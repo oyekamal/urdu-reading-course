@@ -1,0 +1,24 @@
+{
+ "tag": "r6",
+ "styles": [
+  "Markhor horns",
+  "Unicorn Horn",
+  "Flat Vector Illustration 2",
+  "Cartoon Flat icon"
+ ],
+ "prompt": "Marko, a cute baby markhor goat mascot, standing upright, one hand waving, full body front view, large round head on a small body, head covered in flat teal fur with a smooth flat cream face mask in the middle, tiny triangular nose and a small smile, two small round dark navy eyes each with one tiny white dot, big cream inner ears sticking out sideways, two tall thin solid saffron-orange spiral twisted horns pointing up, tiny beard tuft, flat teal body with a scalloped fur outline, cream tummy patch, small saffron hooves, bold thick navy outline of equal width, completely flat solid colours, no stripes, no blush, no cheeks, no shading, vector sticker, centered, isolated on pure white background, small plain eyes, smooth tightly twisted spiral horns, a small fluffy tuft between the horns, one slim arm raised with an open paw",
+ "negative": "cow, bull, yak, snout, tail, ram horns, curled horns, striped horns, white stripes, blush, pink cheeks, shadow, ground shadow, floor, reflection, realistic, photo, 3d, shading, highlights, gradient, fur strands, text, letters, watermark, ringed horns, grooved horns, sideways horns, fist, huge eyes, cheeks, blush",
+ "count": 4,
+ "styles_applied": [
+  "Markhor horns",
+  "Unicorn Horn",
+  "Flat Vector Illustration 2",
+  "Cartoon Flat icon"
+ ],
+ "seeds": [
+  "(1/4) seed 524926999 · 768x768 · Markhor horns(2) · Unicorn Horn(2) · Flat Vector Illustration 2(2) · Cartoon Flat icon(2)",
+  "(2/4) seed 524927000 · 768x768 · Markhor horns(2) · Unicorn Horn(2) · Flat Vector Illustration 2(2) · Cartoon Flat icon(2)",
+  "(3/4) seed 524927001 · 768x768 · no response — use 🎯",
+  "(4/4) seed 524927002 · 768x768 · no response — use 🎯"
+ ]
+}

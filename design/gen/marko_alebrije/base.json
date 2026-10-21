@@ -1,0 +1,16 @@
+{
+ "styles": [
+  "Markhor horns",
+  "Flat Vector Illustration 2",
+  "Kawaii Flat icon",
+  "Children's book illustration"
+ ],
+ "prompt": "Marko, a baby markhor mountain goat mascot standing upright on two legs and waving one hand, full body, front view, round fluffy turquoise-teal fur, flat cream face mask with a tiny nose and a small cat-like smile, big round dark navy eyes with white highlights, cream inner ears pointing sideways, two tall twisted corkscrew spiral saffron-orange horns, small beard tuft, cream round belly, little saffron hooves, thick dark navy outline, solid flat colours, plain white background",
+ "negative": "cow, bull, ox, yak, calf, snout, muzzle nostrils, tail, plain curved horns, realistic, photo, 3d, shading, gradient, text, letters, watermark, extra limbs",
+ "seeds": [
+  "(1/4) seed 363984673 \u00b7 768x768 \u00b7 No style",
+  "(2/4) seed 207919687 \u00b7 768x768 \u00b7 No style",
+  "(3/4) seed 867652254 \u00b7 768x768 \u00b7 no response \u2014 use \ud83c\udfaf",
+  "(4/4) seed 847238495 \u00b7 768x768 \u00b7 No style"
+ ]
+}
