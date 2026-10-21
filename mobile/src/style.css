@@ -1082,3 +1082,8 @@ body.kb-open .toast,body.kb-open .sw-toast{bottom:calc(var(--kb,0px) + 20px)}
   .home-path .unit .pearl:not(.cur):not(.pop){animation-duration:.25s;animation-delay:calc(var(--n,0)*25ms)}
   .pw-tile{animation-duration:.25s;animation-delay:calc(var(--i,0)*25ms)}
 }
+/* round 13e: story + sentence pictures (shown with the meaning, never above the Urdu) */
+.story-img{display:block;object-fit:cover;border-radius:20px;background:var(--card)}
+.story-hero{width:min(100%,300px);aspect-ratio:1;margin:8px auto 10px;box-shadow:0 3px 0 var(--line);border:2px solid var(--line)}
+.story-th{width:64px;height:64px;border-radius:14px;flex:none;border:2px solid var(--line)}
+@media (prefers-reduced-motion:no-preference){.story-hero,.sent-row .story-th{animation:picIn .5s cubic-bezier(.25,1.5,.45,1) both}}

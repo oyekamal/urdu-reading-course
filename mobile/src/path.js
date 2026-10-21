@@ -1,7 +1,7 @@
 // Duolingo-style path: each unit is a row of short lessons. One letter per lesson, then word lessons, then the unit quiz
 // that unlocks the next unit. One task per screen, a big Continue button, a visible path of done / current / locked bubbles.
 import { db } from './db.js';
-import { C, play, W, shuffle, el, toast, wimg } from './content.js';
+import { C, play, W, shuffle, el, toast, wimg, story } from './content.js';
 import * as D from './drills.js';
 import * as S from './session.js';
 import * as M from './marks.js';
@@ -218,7 +218,7 @@ function screensFor(l, u, ctx) {
       (box, cont) => { box.innerHTML = ''; ctx.say('build'); const sub = { ...u, words: wordsOf(range), wordOffset: range[0] }; box.append(D.joinIt(sub, dctx, marks, () => box.append(cont())) || cont()); },
       (box, cont) => { box.innerHTML = ''; ctx.say('write'); const sub = { ...u, words: wordsOf(range), wordOffset: range[0] }; const d = D.dictation(sub, dctx, marks, () => box.append(cont())); if (d) { box.append(d); dock(box); } else box.append(cont()); },
     ]; }
-    case 'read': return [(box, cont) => { box.innerHTML = ''; const sents = D.readIt({ ...u, words: [u.words[0]] }, dctx, marks); if (sents) box.append(sents); if (u.passage) { const pc = card(`<h2>Passage</h2><div class="ur" style="font-size:26px;text-align:right">${marks.text ? marks.text(W(u.passage), u.n) : (marks() ? W(u.passage).v : u.passage[0])}</div><p class="muted">${u.passage[2]}</p>`); if (marks.tag) marks.tag(pc.querySelector('.ur'), W(u.passage), u.n); box.append(marks.fade ? M.peekWrap(pc, { fade: () => marks.fade(u.n), peeked: marks.peeked }) : pc); } box.append(cont('Read it twice')); }];
+    case 'read': return [(box, cont) => { box.innerHTML = ''; const sents = D.readIt({ ...u, words: [u.words[0]] }, dctx, marks); if (sents) box.append(sents); if (u.passage) { const pc = card(`<h2>Passage</h2><div class="ur" style="font-size:26px;text-align:right">${marks.text ? marks.text(W(u.passage), u.n) : (marks() ? W(u.passage).v : u.passage[0])}</div><p class="muted">${u.passage[2]}</p>${story('p' + String(u.n).padStart(2, '0'), 'story-hero')}`); if (marks.tag) marks.tag(pc.querySelector('.ur'), W(u.passage), u.n); box.append(marks.fade ? M.peekWrap(pc, { fade: () => marks.fade(u.n), peeked: marks.peeked }) : pc); } box.append(cont('Read it twice')); }];
     case 'quiz': return [(box, cont) => { box.innerHTML = ''; ctx.say('check'); box.append(D.quiz(u, dctx, marks, async (sc, t) => { const passed = await S.markUnit(profile.id, u.n, sc, t); if (passed) { toast(`Unit ${u.n} passed! Unit ${u.n + 1} unlocked`); await S.ensureCards(profile.id, u.n + 1); box.append(cont('Finish')); } else { const again = el('button', 'btn btn-primary btn-wide', 'Try the questions again'); again.onclick = () => runLesson(box.closest('#app') ? box.parentElement : box, ctx, u, lessonsFor(u).length - 1, true); box.append(el('p', 'muted', 'You need 8 of 10. Go back to Words 1 and 2, then try again.'), again); } })); dock(box); }];
     case 'rules': return [
       (box, cont) => { box.innerHTML = ''; box.append(card(mascot('point', 150, 'peek rules-m') + '<h2 class="center">Urdu is read right to left</h2><p class="center">The first letter of a word is on the right. Your finger moves this way:</p><div class="center" style="font-size:44px">⟵</div>'), cont()); },

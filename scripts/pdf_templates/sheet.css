@@ -196,3 +196,6 @@ table .nq{line-height:1.6}
 .ck .q .opts .o.ok{border-width:.5mm}
 .hd{padding-top:1.6mm}
 .wg .c.nqc{height:37.5mm}
+
+.mt .g .mp{height:15mm;width:auto;margin-left:auto;margin-right:1mm}
+.spw{text-align:center;margin-top:3mm}.spw .sp{height:58mm;width:auto;border:.4mm solid var(--rule);border-radius:3mm}

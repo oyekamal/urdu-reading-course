@@ -29,6 +29,8 @@ export const W = w => ({ ur: w[0], rom: w[1], en: w[2], v: w[3] || w[0] });
 // Picture for a word (flat-vector, same hand as Marko). '' when the word has none, so callers can always interpolate it.
 export const wimgSrc = ur => C.wimg[ur] ? `img/words/${C.wimg[ur]}.webp` : '';
 export const wimg = (ur, cls = '') => C.wimg[ur] ? `<img class="wimg ${cls}" src="${wimgSrc(ur)}" alt="" draggable="false">` : '';
+// Story/sentence scene picture (id p<unit> for a passage, s<unit>_<i> for a sentence). '' when none, so callers can always interpolate it.
+export const story = (id, cls = '') => C.story && C.story.has(id) ? `<img class="story-img ${cls}" src="img/story/${id}.webp" alt="" draggable="false">` : '';
 export const shuffle = a => a.map(x => [Math.random(), x]).sort((p, q) => p[0] - q[0]).map(x => x[1]);
 export const pad2 = n => String(n).padStart(2, '0');
 export const wordKey = (unit, i) => `units/u${pad2(unit)}_${pad2(i)}`;
@@ -36,8 +38,8 @@ export const sentKey = (unit, i) => `sentences/u${pad2(unit)}_${pad2(i)}`;
 export function taughtBefore(n) { return new Set(C.units.filter(u => u.n < n).flatMap(u => u.letters)); }
 export function loadContent() {
   if (C.ready) return C.ready;
-  C.ready = Promise.all([fetch('data/letters.json').then(r => r.json()), fetch('data/units.json').then(r => r.json()), fetch('data/audio_index.json').then(r => r.json()), fetch('data/word_img.json').then(r => r.json()).catch(() => ({}))])
-    .then(([L, U, A, WI]) => { C.wimg = WI; C.letters = L; C.units = U.units; C.audio = A; L.letters.forEach(l => C.by[l.ch] = l); const str = JSON.stringify(L) + JSON.stringify(U) + Object.keys(A).length; let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0; C.version = 'app ' + (typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : 'dev') + ' · pack-' + h.toString(16) + ' · ' + L.letters.length + ' letters · ' + U.units.length + ' units · ' + Object.keys(A).length + ' clips'; return C; });
+  C.ready = Promise.all([fetch('data/letters.json').then(r => r.json()), fetch('data/units.json').then(r => r.json()), fetch('data/audio_index.json').then(r => r.json()), fetch('data/word_img.json').then(r => r.json()).catch(() => ({})), fetch('img/story/list.json').then(r => r.json()).catch(() => [])])
+    .then(([L, U, A, WI, ST]) => { C.wimg = WI; C.story = new Set(ST); C.letters = L; C.units = U.units; C.audio = A; L.letters.forEach(l => C.by[l.ch] = l); const str = JSON.stringify(L) + JSON.stringify(U) + Object.keys(A).length; let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0; C.version = 'app ' + (typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : 'dev') + ' · pack-' + h.toString(16) + ' · ' + L.letters.length + ' letters · ' + U.units.length + ' units · ' + Object.keys(A).length + ' clips'; return C; });
   return C.ready;
 }
 export const STROKE = { alif: 'one stroke, top to bottom', be: 'start top-right, shallow bowl leftwards, hook up; dots last', jim: 'small head stroke leftwards, then the round bowl below; dot last', dal: 'top down and out to the left in one angled stroke', re: 'top down and sweep left below the line', sin: 'three teeth right to left, then the bowl', toe: 'loop first, then the tall stroke on its right', ain: 'small c at the top, then the bowl', fe: 'small loop, then the bowl leftwards', kaf: 'base stroke first, right to left, then the sloping cap on top', lam: 'tall stroke down, curve into the bowl', mim: 'small loop, tail down-left', nun: 'deep round bowl; dot last', wao: 'small loop, short tail', he: 'small loop with a short tail (ھ: two bowls open at top)', ye: 'bowl that swings back under itself (ے: long flat sweep)', hamza: 'small hook, written last' };

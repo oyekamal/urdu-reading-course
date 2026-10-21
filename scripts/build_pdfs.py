@@ -25,6 +25,12 @@ IMG = ROOT / 'mobile' / 'public' / 'img'
 L = json.load(open(ROOT / 'data/letters.json'))
 U = json.load(open(ROOT / 'data/units.json'))['units']
 LET = L['letters']
+WIMG = json.load(open(ROOT / 'data/word_img.json'))  # urdu word -> picture stem in mobile/public/img/words
+def wpic(w, h=15, cls='mp'):
+    st = WIMG.get(w[0]) if w else None
+    return f'<img class="{cls}" src="{img("words/" + st, int(h * 8))}" alt="">' if st and (IMG / 'words' / f'{st}.webp').exists() else ''
+def spic(n, h=60):
+    return f'<div class="spw"><img class="sp" src="{img("story/p%02d" % n, int(h * 8))}" alt=""></div>' if (IMG / 'story' / f'p{n:02d}.webp').exists() else ''
 BY = {x['ch']: x for x in LET}
 TAT = 'ـ'
 
@@ -228,7 +234,7 @@ def img(name, h_px):
     key = (name, h_px)
     if key in _images: return _images[key]
     CACHE.mkdir(parents=True, exist_ok=True)
-    dst = CACHE / f'{name}_{h_px}.png'
+    dst = CACHE / f"{name.replace('/', '_')}_{h_px}.png"
     if not dst.exists():
         im = Image.open(IMG / f'{name}.webp').convert('RGBA')
         w = round(im.width * h_px / im.height)
@@ -448,7 +454,7 @@ def pages_match(u):
             if gl.count(g0) > 1: gl[i0] = f'{g0} ({chunk[i0][1]})'
         # right column: Urdu, left column: English (shuffled)
         # grid: pair row k: left gloss k, right word k -> build as interleaved cells (left first in LTR grid)
-        cells = ''.join(f'<div class="g"><b>{"abcdefghij"[k]}</b><span>{esc(gl[order[k]])}</span><i class="cn"></i></div><div class="w{" nqw" if nq else ""}"><span class="no">{p + k + 1}</span>{ur(vword(u, chunk[k]), nq)}<i class="cn"></i></div>' for k in range(len(chunk)))
+        cells = ''.join(f'<div class="g"><b>{"abcdefghij"[k]}</b><span>{esc(gl[order[k]])}</span>{wpic(chunk[order[k]])}<i class="cn"></i></div><div class="w{" nqw" if nq else ""}"><span class="no">{p + k + 1}</span>{ur(vword(u, chunk[k]), nq)}<i class="cn"></i></div>' for k in range(len(chunk)))
         keyt = ', '.join(f'{p + k + 1}-{"abcdefghij"[order.index(k)]}' for k in range(len(chunk)))
         art = f'<img class="art" src="{img("unit_%02d" % u["n"], 220)}" alt="">' if (IMG / ("unit_%02d.webp" % u["n"])).exists() else ''
         top = hd(f'Unit {u["n"]} · read and match', 'Read and match', 'لفظ ملائیں', nq=False)
@@ -493,6 +499,7 @@ def pages_reading(u):
             story = (hd(f'Unit {u["n"]} · reading practice', 'Read the story', 'کہانی پڑھیں', nq=False)
                      + '<div class="task"><b>3</b>Read the story. Then ask: who? where? what happened?</div>'
                      + f'<div class="pass {"nq" if nq else "ur"}" style="font-size:{20 if nwords <= 110 else 18}pt;line-height:{2.35 if nq else 2.1}">{esc(ptxt)}</div>'
+                     + spic(u['n'], 58 if nwords <= 60 else 42)
                      + f'<div class="note" style="margin-top:2mm">Time it: ____ seconds. Words in the story: {nwords}. Words per minute = {nwords} × 60 ÷ seconds.</div>')
             gu += f'<p><b>Story.</b> {esc(ps[1])}</p><p><b>Meaning.</b> {esc(ps[2])}</p>'
         if ps:

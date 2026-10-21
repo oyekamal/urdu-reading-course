@@ -1,5 +1,5 @@
 // Drill engines, ported from the course app. Each returns a DOM node and reports results via ctx.record(drill, item, correct, ms).
-import { C, play, forms, W, shuffle, wordKey, taughtBefore, STROKE, dotInfo, soundOf, el, toast, wimg } from './content.js';
+import { C, play, forms, W, shuffle, wordKey, taughtBefore, STROKE, dotInfo, soundOf, el, toast, wimg, story } from './content.js';
 import { icon } from './icons.js';
 
 export const formsOf = l => forms(l);
@@ -97,7 +97,7 @@ export function readIt(unit, ctx, marks, range) {
   const g = el('div', 'words');
   unit.words.map(W).forEach((w, i) => { if (i < lo || i >= hi) return; const d = el('div', 'word' + (C.wimg[w.ur] ? ' has-pic' : '')); const prev = !spellable(unit, w.ur); d.innerHTML = `${wimg(w.ur, 'wimg-card')}<div class="ur">${disp(w, newWords ? marks() : marks, unit.n)}</div><div class="rom">${w.rom}</div><div class="en">${w.en.replace(/\s*\([^)]*preview[^)]*\)/, '')}${prev ? ' <span class="pill">peek ahead</span>' : ''}</div>`; if (!newWords) dispTag(d.querySelector('.ur'), w, marks, unit.n); d.append(playBtn(wordKey(unit.n, i + (unit.wordOffset || 0)), true)); d.onclick = () => { play(wordKey(unit.n, i + (unit.wordOffset || 0))); d.classList.add('reveal'); ctx.record('read', w.ur, true, 0); }; d.tabIndex = 0; d.setAttribute('role', 'button'); d.setAttribute('aria-label', 'Word ' + w.rom + ': tap to hear and see the meaning'); d.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); d.click(); } }; g.append(d); });
   box.append(g);
-  if (unit.sentences.length && !range) { box.append(el('h3', '', 'Sentences')); unit.sentences.map(W).forEach((w, i) => { const d = el('div', 'row sent-row', ''); d.style.cssText = 'padding:8px 0;border-top:1px solid var(--line)'; d.append(playBtn(`sentences/u${String(unit.n).padStart(2, '0')}_${String(i).padStart(2, '0')}`)); d.insertAdjacentHTML('beforeend', `<span class="ur" style="font-size:28px;flex:1;min-width:180px;text-align:right">${disp(w, marks, unit.n)}</span><span class="rom muted">${w.rom}</span><span class="muted">${w.en}</span>`); dispTag(d.querySelector('.ur'), w, marks, unit.n); box.append(d); }); }
+  if (unit.sentences.length && !range) { box.append(el('h3', '', 'Sentences')); unit.sentences.map(W).forEach((w, i) => { const d = el('div', 'row sent-row', ''); d.style.cssText = 'padding:8px 0;border-top:1px solid var(--line)'; d.append(playBtn(`sentences/u${String(unit.n).padStart(2, '0')}_${String(i).padStart(2, '0')}`)); d.insertAdjacentHTML('beforeend', `<span class="ur" style="font-size:28px;flex:1;min-width:180px;text-align:right">${disp(w, marks, unit.n)}</span><span class="rom muted">${w.rom}</span><span class="muted">${w.en}</span>${story('s' + pad2(unit.n) + '_' + pad2(i), 'story-th')}`); dispTag(d.querySelector('.ur'), w, marks, unit.n); box.append(d); }); }
   return wrapPeek(box, marks, unit.n);
 }
 
