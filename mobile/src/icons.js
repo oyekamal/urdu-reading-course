@@ -56,7 +56,7 @@ Object.assign(I, {
   more_f: F(`<circle cx="12" cy="12" r="10"/><circle cx="7.5" cy="12" r="1.6" fill="#fff"/><circle cx="12" cy="12" r="1.6" fill="#fff"/><circle cx="16.5" cy="12" r="1.6" fill="#fff"/>`),
 });
 export const icon = (name, cls = '') => `<span class="ic ${cls}">${I[name] || I.star}</span>`;
-export const LESSON_ICON = { rules: 'door', marks: 'marks', done: 'flag', letter: null, aspirates: 'ear', join: 'link', blend: 'blend', words: 'puzzle', nonjoin: 'link', read: 'book', marks2: 'numbers', sight: 'sight', nastaliq: 'script', test: 'timer', quiz: 'flag' };
+export const LESSON_ICON = { rules: 'door', marks: 'marks', done: 'flag', letter: null, aspirates: 'ear', join: 'link', blend: 'blend', words: 'pen', nonjoin: 'link', read: 'book', marks2: 'numbers', sight: 'sight', nastaliq: 'script', test: 'timer', quiz: 'flag' };
 // Toto the parrot. poses: hello listen think cheer oops sleep read point
 export const mascot = (pose, size = 120, cls = '') => `<img class="mascot ${cls}" src="./img/mascot_${pose}.webp" width="${size}" height="${size}" alt="" style="width:${size}px;height:${size}px">`;
 export const unitArt = (n) => `<img class="unit-art" src="./img/unit_${String(n).padStart(2, '0')}.webp" alt="" loading="lazy">`;
