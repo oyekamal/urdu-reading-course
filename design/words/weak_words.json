@@ -1,0 +1,3992 @@
+[
+ {
+  "n": 2,
+  "rom": "bilkul",
+  "why": "thumbs-up means approval or OK, not 'absolutely'; loosely related",
+  "prompt": "A smiling girl in a yellow dress firmly nods with both fists clenched at her chest and a bold check mark glowing beside her head, a small burst of sparkles around her, confident and emphatic, flat vector children's illustration, plain pastel background",
+  "ur": "بالکل",
+  "en": "absolutely",
+  "unit": 1,
+  "old": "tw-1f44d"
+ },
+ {
+  "n": 3,
+  "rom": "bulbul",
+  "why": "generic brown songbird, could be any bird; nightingale not distinctive",
+  "prompt": "A small plump brown bulbul bird perched on a branch of a blooming red rose bush, beak open mid-song, a few musical notes floating above it, a garden with a green lawn behind, flat vector children's illustration",
+  "ur": "بلبل",
+  "en": "nightingale",
+  "unit": 1,
+  "old": "mb-bird"
+ },
+ {
+  "n": 4,
+  "rom": "bābā",
+  "why": "plain man with cap; generic person, not clearly a dad",
+  "prompt": "A cheerful father in a light blue shalwar kameez and a waistcoat holding the hand of a small boy, the boy carrying a toy kite, a home doorway with a potted plant behind them, flat vector children's illustration",
+  "ur": "بابا",
+  "en": "dad",
+  "unit": 1,
+  "old": "art-23"
+ },
+ {
+  "n": 5,
+  "rom": "imlā",
+  "why": "hand with pen is generic writing, spelling not shown",
+  "prompt": "A young girl at a small wooden desk carefully writing letters on a slate with chalk, a teacher's red tick mark and star on a paper beside her, a row of alphabet cards on the wall, flat vector children's illustration",
+  "ur": "املا",
+  "en": "spelling",
+  "unit": 1,
+  "old": "tw-270d"
+ },
+ {
+  "n": 6,
+  "rom": "imām",
+  "why": "shows a mosque building, not the person who leads prayer",
+  "prompt": "A bearded man in a white robe and white cap standing at the front of a row of worshippers on prayer mats, facing a mihrab niche in a mosque, leading the prayer, flat vector children's illustration",
+  "ur": "امام",
+  "en": "prayer leader",
+  "unit": 1,
+  "old": "tw-1f54c"
+ },
+ {
+  "n": 8,
+  "rom": "kalām",
+  "why": "empty speech bubble is abstract; 'speech/words' not shown",
+  "prompt": "A young woman in a teal dress speaking at a wooden podium with an open mouth, small sound-wave lines coming from her mouth, a few seated listeners in front of her, flat vector children's illustration",
+  "ur": "کلام",
+  "en": "speech, words",
+  "unit": 1,
+  "old": "tw-1f4ac"
+ },
+ {
+  "n": 9,
+  "rom": "kambal",
+  "why": "folded cloth looks like a towel or shawl; blanket not clear",
+  "prompt": "A sleepy child tucked into a bed up to the chin under a thick, soft striped blanket, a teddy bear beside the pillow, a small lamp glowing on a nightstand, flat vector children's illustration",
+  "ur": "کمبل",
+  "en": "blanket",
+  "unit": 1,
+  "old": "mb-blanket"
+ },
+ {
+  "n": 10,
+  "rom": "kamāl",
+  "why": "medal means achievement, not perfection or skill",
+  "prompt": "A young painter standing proudly beside an easel holding up a flawless painting of a sunflower, a gold star sticker on the corner, paintbrushes in a jar, flat vector children's illustration",
+  "ur": "کمال",
+  "en": "perfection, skill",
+  "unit": 1,
+  "old": "tw-1f3c5"
+ },
+ {
+  "n": 12,
+  "rom": "kamānā",
+  "why": "money alone shows wealth, not the act of earning from work",
+  "prompt": "A smiling shopkeeper in a green apron handing a handful of coins to a young worker in overalls who is wiping his hands after work at a workbench, a paycheck envelope in his other hand, flat vector children's illustration",
+  "ur": "کمانا",
+  "en": "to earn",
+  "unit": 1,
+  "old": "mb-money"
+ },
+ {
+  "n": 13,
+  "rom": "kālā",
+  "why": "dark grey square is abstract; black not clearly shown",
+  "prompt": "A glossy black cat sitting on a plain white pillow, its eyes bright yellow, a white ball of wool beside it, flat vector children's illustration, clear black fur against white",
+  "ur": "کالا",
+  "en": "black",
+  "unit": 1,
+  "old": "tw-2b1b"
+ },
+ {
+  "n": 15,
+  "rom": "kāmil",
+  "why": "trophy means winning, not perfect",
+  "prompt": "A child holding up a test paper with a perfect 10 out of 10 score, every answer ticked and a row of gold stars across the top, a happy smile, flat vector children's illustration",
+  "ur": "کامل",
+  "en": "perfect",
+  "unit": 1,
+  "old": "tw-1f3c6"
+ },
+ {
+  "n": 17,
+  "rom": "lambā",
+  "why": "height chart with two people; 'long' not shown, reads as height comparison",
+  "prompt": "A very tall giraffe with an extremely long neck reaching up to the top leaves of a tree, a short child standing at its feet looking up, flat vector children's illustration",
+  "ur": "لمبا",
+  "en": "long, tall",
+  "unit": 1,
+  "old": "mb-tall"
+ },
+ {
+  "n": 18,
+  "rom": "lāl",
+  "why": "plain red disc is abstract; could be a ball or sun",
+  "prompt": "A row of bright red objects on a wooden table: a red apple, a red tomato, a red toy car and a red ball, all in the same red, flat vector children's illustration",
+  "ur": "لال",
+  "en": "red",
+  "unit": 1,
+  "old": "tw-1f534"
+ },
+ {
+  "n": 19,
+  "rom": "lānā",
+  "why": "hands holding a box could mean give, hold or carry",
+  "prompt": "A boy walking into a kitchen carrying a basket full of red apples in both arms toward his mother who is waiting at the table with open arms, flat vector children's illustration",
+  "ur": "لانا",
+  "en": "to bring",
+  "unit": 1,
+  "old": "mb-bring--to"
+ },
+ {
+  "n": 21,
+  "rom": "manānā",
+  "why": "confetti shows celebrating only; 'persuade' missing",
+  "prompt": "A girl with folded hands and a pleading smile coaxing her father, who is smiling and nodding in agreement, a small birthday cake with candles on the table between them, flat vector children's illustration",
+  "ur": "منانا",
+  "en": "to persuade, celebrate",
+  "unit": 1,
+  "old": "tw-1f389"
+ },
+ {
+  "n": 23,
+  "rom": "mukammal",
+  "why": "check mark means correct or yes, not finished",
+  "prompt": "A child carefully placing the last piece of a colourful jigsaw puzzle onto a finished picture of a house, the puzzle now complete with no gaps, flat vector children's illustration",
+  "ur": "مکمل",
+  "en": "complete",
+  "unit": 1,
+  "old": "om-2705"
+ },
+ {
+  "n": 25,
+  "rom": "māl",
+  "why": "dollar money bag is generic wealth; 'goods' not shown",
+  "prompt": "A market merchant standing behind a stall stacked with sacks of rice, bolts of cloth and baskets of fruit, a cash box full of coins beside him, flat vector children's illustration",
+  "ur": "مال",
+  "en": "goods, wealth",
+  "unit": 1,
+  "old": "tw-1f4b0"
+ },
+ {
+  "n": 32,
+  "rom": "nākām",
+  "why": "red X is an abstract symbol, not a failed attempt",
+  "prompt": "A boy kicking a football that has missed the goal, the empty net behind it, his head down and a sad face, a small puddle of frown lines, flat vector children's illustration",
+  "ur": "ناکام",
+  "en": "unsuccessful",
+  "unit": 1,
+  "old": "om-274C"
+ },
+ {
+  "n": 34,
+  "rom": "nān",
+  "why": "round flat pastry, could be a pie, cookie or pizza",
+  "prompt": "A golden oval naan bread with blistered, charred spots, on a plate next to a clay tandoor oven, a bowl of curry beside it, flat vector children's illustration",
+  "ur": "نان",
+  "en": "naan bread",
+  "unit": 1,
+  "old": "tw-1fad3"
+ },
+ {
+  "n": 35,
+  "rom": "nānā",
+  "why": "generic bald old man; no grandfather cue",
+  "prompt": "A smiling white-haired grandfather in a cream waistcoat and white cap holding the hand of a young grandchild, a daughter nearby with a basket, a porch with a wooden chair, flat vector children's illustration",
+  "ur": "نانا",
+  "en": "maternal grandfather",
+  "unit": 1,
+  "old": "tw-1f474"
+ },
+ {
+  "n": 36,
+  "rom": "akele",
+  "why": "single man standing; plural 'alone people' not shown",
+  "prompt": "Three children each sitting by themselves at three separate small tables in an empty schoolyard, each with a gap of empty space between them, flat vector children's illustration",
+  "ur": "اکیلے",
+  "en": "alone (plural)",
+  "unit": 2,
+  "old": "tw-1f9cd"
+ },
+ {
+  "n": 37,
+  "rom": "akelā",
+  "why": "plain standing man is generic; no sign of being alone",
+  "prompt": "A small boy sitting by himself on a big empty park bench, wide empty grass all around him, no one else in the scene, looking down sadly, flat vector children's illustration",
+  "ur": "اکیلا",
+  "en": "alone",
+  "unit": 2,
+  "old": "tw-1f9cd"
+ },
+ {
+  "n": 38,
+  "rom": "bail",
+  "why": "brown bull or cow; ox with yoke and plough not clear",
+  "prompt": "A brown ox with a wooden yoke across its shoulders pulling a wooden plough through a dry farm field, a farmer walking behind holding the reins, flat vector children's illustration",
+  "ur": "بیل",
+  "en": "ox",
+  "unit": 2,
+  "old": "om-1F402"
+ },
+ {
+  "n": 39,
+  "rom": "baink",
+  "why": "classical building could be a court, museum or government office",
+  "prompt": "A cashier behind a bank counter handing a stack of banknotes through a window to a customer, a row of coin piles on the counter, a teller sign-free counter, flat vector children's illustration",
+  "ur": "بینک",
+  "en": "bank",
+  "unit": 2,
+  "old": "tw-1f3e6"
+ },
+ {
+  "n": 40,
+  "rom": "batānā",
+  "why": "generic speech bubble; 'tell' not shown",
+  "prompt": "A girl leaning in to whisper a secret into her friend's ear, the friend listening with wide eyes and a surprised smile, flat vector children's illustration",
+  "ur": "بتانا",
+  "en": "to tell",
+  "unit": 2,
+  "old": "mb-talk-2--to"
+ },
+ {
+  "n": 41,
+  "rom": "batāyā",
+  "why": "same generic speaking picture as batānā; past tense not shown",
+  "prompt": "A boy who has just finished telling a story to his grandmother, grandmother nodding with understanding and a warm smile, the boy's hand raised as if he just finished speaking, flat vector children's illustration",
+  "ur": "بتایا",
+  "en": "told",
+  "unit": 2,
+  "old": "mb-talk-2--to"
+ },
+ {
+  "n": 42,
+  "rom": "betāb",
+  "why": "worried face; 'restless' not shown",
+  "prompt": "A child lying in bed tossing and turning, blanket twisted around the legs, eyes wide open, a clock on the wall showing midnight, flat vector children's illustration",
+  "ur": "بیتاب",
+  "en": "restless",
+  "unit": 2,
+  "old": "tw-1f61f"
+ },
+ {
+  "n": 44,
+  "rom": "bāt",
+  "why": "empty speech bubble is abstract; talking not shown",
+  "prompt": "Two friends sitting on a bench face to face, chatting animatedly and leaning toward each other, a school bag beside them, flat vector children's illustration",
+  "ur": "بات",
+  "en": "talk, matter",
+  "unit": 2,
+  "old": "tw-1f4ac"
+ },
+ {
+  "n": 48,
+  "rom": "kutte",
+  "why": "single dog; plural 'dogs' not shown",
+  "prompt": "Three different dogs playing together in a green park, one chasing a ball, one wagging its tail, one lying in the grass, flat vector children's illustration",
+  "ur": "کتے",
+  "en": "dogs",
+  "unit": 2,
+  "old": "tw-1f415"
+ },
+ {
+  "n": 53,
+  "rom": "lambī",
+  "why": "abstract ruler line; feminine 'long' not shown",
+  "prompt": "A long straight road stretching to the horizon with a girl walking along it, tall trees lining both sides, flat vector children's illustration",
+  "ur": "لمبی",
+  "en": "long (fem)",
+  "unit": 2,
+  "old": "mb-long"
+ },
+ {
+  "n": 54,
+  "rom": "lī",
+  "why": "hand picking an apple is close to 'take out'; 'took' not distinct",
+  "prompt": "A girl happily reaching up and taking a book from a shelf, holding it in both hands, a smile on her face, flat vector children's illustration",
+  "ur": "لی",
+  "en": "took (fem)",
+  "unit": 2,
+  "old": "mb-take--to"
+ },
+ {
+  "n": 57,
+  "rom": "nekī",
+  "why": "yellow heart is love, goodness not shown",
+  "prompt": "A girl sharing her lunch box with a hungry classmate who smiles, the girl offering half a sandwich, flat vector children's illustration",
+  "ur": "نیکی",
+  "en": "goodness",
+  "unit": 2,
+  "old": "om-1F49B"
+ },
+ {
+  "n": 58,
+  "rom": "niyyat",
+  "why": "archery target is a metaphor, intention is abstract",
+  "prompt": "A child with a determined face carefully aiming a paper plane toward a basket across the room, eyes locked on the target, flat vector children's illustration",
+  "ur": "نیت",
+  "en": "intention",
+  "unit": 2,
+  "old": "art-92"
+ },
+ {
+  "n": 59,
+  "rom": "nānī",
+  "why": "generic old woman; no grandmother cue",
+  "prompt": "A smiling white-haired grandmother in a shawl and glasses sitting with a small granddaughter on her lap, a plate of sweets on a small table, flat vector children's illustration",
+  "ur": "نانی",
+  "en": "maternal grandmother",
+  "unit": 2,
+  "old": "om-1F475"
+ },
+ {
+  "n": 60,
+  "rom": "nīlam",
+  "why": "light blue diamond, not a sapphire",
+  "prompt": "A deep blue sapphire gemstone set in a gold ring on a velvet cloth, bright facets catching the light, flat vector children's illustration",
+  "ur": "نیلم",
+  "en": "sapphire, a girl's name",
+  "unit": 2,
+  "old": "tw-1f48e"
+ },
+ {
+  "n": 61,
+  "rom": "nīlā",
+  "why": "plain blue disc is abstract",
+  "prompt": "A blue bucket, a blue ball and a blue balloon floating above a blue sea, all in the same blue, flat vector children's illustration",
+  "ur": "نیلا",
+  "en": "blue",
+  "unit": 2,
+  "old": "tw-1f535"
+ },
+ {
+  "n": 63,
+  "rom": "tel",
+  "why": "cluttered bottle with a figure, oil not clear",
+  "prompt": "A glass bottle of golden cooking oil with a pouring spout, tipping oil into a frying pan on a stove, a few drops falling, flat vector children's illustration",
+  "ur": "تیل",
+  "en": "oil",
+  "unit": 2,
+  "old": "mb-cooking-oil"
+ },
+ {
+  "n": 70,
+  "rom": "beṭe",
+  "why": "one boy shown; plural 'sons' not shown",
+  "prompt": "A father standing with two young sons side by side, the father's hands resting on their shoulders, flat vector children's illustration",
+  "ur": "بیٹے",
+  "en": "sons",
+  "unit": 3,
+  "old": "tw-1f466"
+ },
+ {
+  "n": 71,
+  "rom": "beṭā",
+  "why": "generic child face; 'son' needs a parent",
+  "prompt": "A father holding the hand of his young son, the two walking together on a park path, flat vector children's illustration",
+  "ur": "بیٹا",
+  "en": "son",
+  "unit": 3,
+  "old": "tw-1f466"
+ },
+ {
+  "n": 72,
+  "rom": "beṭī",
+  "why": "generic child face; 'daughter' needs a parent",
+  "prompt": "A mother holding the hand of her young daughter, the two walking together on a park path, the girl with pigtails and a red ribbon, flat vector children's illustration",
+  "ur": "بیٹی",
+  "en": "daughter",
+  "unit": 3,
+  "old": "tw-1f467"
+ },
+ {
+  "n": 73,
+  "rom": "bāp",
+  "why": "generic bearded face; no father cue",
+  "prompt": "A father in a shalwar kameez sitting on a sofa with his arm around a child, reading a newspaper, a family breakfast tray nearby, flat vector children's illustration",
+  "ur": "باپ",
+  "en": "father",
+  "unit": 3,
+  "old": "tw-1f468"
+ },
+ {
+  "n": 75,
+  "rom": "kānṭe",
+  "why": "cactus is spiny, but 'thorns' on a plant stem not shown",
+  "prompt": "A red rose on a green stem, the stem covered in sharp thorns, a bee near the bloom, flat vector children's illustration",
+  "ur": "کانٹے",
+  "en": "thorns",
+  "unit": 3,
+  "old": "tw-1f335"
+ },
+ {
+  "n": 77,
+  "rom": "kāṭnā",
+  "why": "knife in hand with no object cut",
+  "prompt": "A girl cutting a red apple in half with a kitchen knife on a wooden cutting board, two apple halves visible, flat vector children's illustration",
+  "ur": "کاٹنا",
+  "en": "to cut",
+  "unit": 3,
+  "old": "mb-cut--to"
+ },
+ {
+  "n": 79,
+  "rom": "minaṭ",
+  "why": "clock is generic; 'minute' not distinct from hour",
+  "prompt": "A child watching a wall clock with the long minute hand sweeping around, a kitchen timer beside it, the child counting seconds with one finger, flat vector children's illustration",
+  "ur": "منٹ",
+  "en": "minute",
+  "unit": 3,
+  "old": "mb-minute"
+ },
+ {
+  "n": 80,
+  "rom": "mis̱āl",
+  "why": "pencil on paper is generic writing; 'example' not shown",
+  "prompt": "A teacher drawing a sample apple on a classroom board as a model, students watching and copying it on their notebooks, flat vector children's illustration",
+  "ur": "مثال",
+  "en": "example",
+  "unit": 3,
+  "old": "tw-1f4dd"
+ },
+ {
+  "n": 85,
+  "rom": "pakkā",
+  "why": "apple shows fruit, not ripe; no ripeness contrast",
+  "prompt": "A fully ripe golden mango, soft and bright yellow, placed beside a hard green unripe mango, flat vector children's illustration",
+  "ur": "پکا",
+  "en": "ripe, firm",
+  "unit": 3,
+  "old": "tw-1f34e"
+ },
+ {
+  "n": 86,
+  "rom": "pakkī",
+  "why": "same apple picture; ripe not shown",
+  "prompt": "A fully ripe golden mango, soft and bright yellow, placed beside a hard green unripe mango, flat vector children's illustration",
+  "ur": "پکی",
+  "en": "ripe, firm (fem)",
+  "unit": 3,
+  "old": "art-142"
+ },
+ {
+  "n": 90,
+  "rom": "peṭ",
+  "why": "organ diagram is abstract; belly not shown",
+  "prompt": "A child sitting at a dinner table rubbing a full, round tummy after eating, an empty plate in front of them, a happy content smile, flat vector children's illustration",
+  "ur": "پیٹ",
+  "en": "stomach",
+  "unit": 3,
+  "old": "om-E313"
+ },
+ {
+  "n": 93,
+  "rom": "pāk",
+  "why": "sparkling clean hands; 'pure' not distinct from clean",
+  "prompt": "A glass of clear spring water on a wooden table, a sparkling white cloth beside it, a small white flower floating in the glass, flat vector children's illustration",
+  "ur": "پاک",
+  "en": "pure",
+  "unit": 3,
+  "old": "mb-clean-hands"
+ },
+ {
+  "n": 95,
+  "rom": "pālnā",
+  "why": "feeding a cat is close but 'raising/rearing' not shown",
+  "prompt": "A farmer in a green turban bottle-feeding a baby goat in a wooden pen, a few small goats nearby, a bale of hay, flat vector children's illustration",
+  "ur": "پالنا",
+  "en": "to raise (animals)",
+  "unit": 3,
+  "old": "mb-feed-cat--to"
+ },
+ {
+  "n": 96,
+  "rom": "pīlā",
+  "why": "plain yellow disc is abstract",
+  "prompt": "A row of bright yellow objects on a table: a banana, a yellow rubber duck, a yellow lemon and a yellow sunflower, all in the same yellow, flat vector children's illustration",
+  "ur": "پیلا",
+  "en": "yellow",
+  "unit": 3,
+  "old": "tw-1f7e1"
+ },
+ {
+  "n": 98,
+  "rom": "pīpal",
+  "why": "generic green tree; no peepal/fig cue",
+  "prompt": "A large peepal tree with broad heart-shaped green leaves and small round figs hanging from its branches, a child sitting in its shade on a grassy patch.",
+  "ur": "پیپل",
+  "en": "fig tree",
+  "unit": 3,
+  "old": "mb-tree"
+ },
+ {
+  "n": 99,
+  "rom": "pītal",
+  "why": "looks like a clay urn; brass is a material, not a vessel",
+  "prompt": "A gleaming brass water pot (lota) and a brass tray with bright metallic yellow shine and light glints, on a wooden table, a child's hand polishing it with a cloth.",
+  "ur": "پیتل",
+  "en": "brass",
+  "unit": 3,
+  "old": "art-144"
+ },
+ {
+  "n": 100,
+  "rom": "s̱ābit",
+  "why": "abstract checkmark symbol",
+  "prompt": "A child scientist holding a bean sprout growing from a cup, a second identical sprout beside it, a magnifying glass over the result and a proud nod; the experiment clearly worked.",
+  "ur": "ثابت",
+  "en": "proven",
+  "unit": 3,
+  "old": "om-2714"
+ },
+ {
+  "n": 102,
+  "rom": "ṭikaṭ",
+  "why": "reads as a pill blister pack",
+  "prompt": "A child at a bus stop holding a paper bus ticket with a punched hole, a bus with its door open waiting behind him.",
+  "ur": "ٹکٹ",
+  "en": "ticket",
+  "unit": 3,
+  "old": "tw-1f3ab"
+ },
+ {
+  "n": 103,
+  "rom": "abbū",
+  "why": "generic man with moustache, no father cue",
+  "prompt": "A father in a shalwar kameez lifting his small son onto his shoulders in a park, the child laughing, a kite in the sky.",
+  "ur": "ابو",
+  "en": "dad (abbu)",
+  "unit": 4,
+  "old": "tw-1f468"
+ },
+ {
+  "n": 106,
+  "rom": "badal",
+  "why": "abstract arrows symbol, no action",
+  "prompt": "A child's two hands swapping toys: a red ball is handed over and a green ball is taken, with small motion lines between the hands.",
+  "ur": "بدل",
+  "en": "change (stem)",
+  "unit": 4,
+  "old": "mb-change--to"
+ },
+ {
+  "n": 107,
+  "rom": "badalnā",
+  "why": "same picture as #106; no verb action",
+  "prompt": "A child pulling off a yellow t-shirt and reaching for a blue one hanging nearby, mid-change, arms half in the sleeves, a folded blue shirt on the bed.",
+  "ur": "بدلنا",
+  "en": "to change",
+  "unit": 4,
+  "old": "mb-change--to"
+ },
+ {
+  "n": 108,
+  "rom": "badan",
+  "why": "torso outline with no head; looks like a shirt",
+  "prompt": "A full-body friendly child standing, head to toes, with small colourful dots marking the head, arms, chest and legs, simple body-diagram style.",
+  "ur": "بدن",
+  "en": "body",
+  "unit": 4,
+  "old": "mb-body-outline"
+ },
+ {
+  "n": 109,
+  "rom": "bahan",
+  "why": "generic girl, no sibling cue",
+  "prompt": "Two girls sitting side by side, an older sister in a pink dress hugging a younger sister in a yellow dress, sharing a storybook.",
+  "ur": "بہن",
+  "en": "sister",
+  "unit": 4,
+  "old": "tw-1f467"
+ },
+ {
+  "n": 111,
+  "rom": "band",
+  "why": "reads as a handbag, not closed",
+  "prompt": "A shop front with a metal roll-down shutter pulled all the way down and a padlock on the latch, a cat sleeping in front, no sign board.",
+  "ur": "بند",
+  "en": "closed",
+  "unit": 4,
+  "old": "om-1F512"
+ },
+ {
+  "n": 113,
+  "rom": "behtar",
+  "why": "thumbs-up means good, not better",
+  "prompt": "Two potted plants side by side: a small wilted plant with drooping yellow leaves on the left, a tall bright green plant with flowers on the right, a child pointing to the healthier one.",
+  "ur": "بہتر",
+  "en": "better",
+  "unit": 4,
+  "old": "tw-1f44d"
+ },
+ {
+  "n": 116,
+  "rom": "boltā",
+  "why": "grey profile with dashes looks like sneezing or coughing",
+  "prompt": "A teacher at the front of a classroom with mouth open, one hand raised, a speech bubble with drawn sound waves, children listening.",
+  "ur": "بولتا",
+  "en": "speaks",
+  "unit": 4,
+  "old": "om-1F5E3"
+ },
+ {
+  "n": 117,
+  "rom": "burā",
+  "why": "thumbs-down abstract gesture",
+  "prompt": "A broken toy car on the ground beside a wilted dead flower in a cracked pot, a child with a frown and a tear, a grey cloudy sky.",
+  "ur": "برا",
+  "en": "bad",
+  "unit": 4,
+  "old": "tw-1f44e"
+ },
+ {
+  "n": 121,
+  "rom": "bār",
+  "why": "digit 2 in a box; time-occurrence not shown",
+  "prompt": "A child knocks twice on a wooden door, two knock lines drawn beside the fist, the second knock just after the first.",
+  "ur": "بار",
+  "en": "time (once, twice)",
+  "unit": 4,
+  "old": "om-0032-FE0F-20E3"
+ },
+ {
+  "n": 122,
+  "rom": "bārah",
+  "why": "digit 12, not counted objects",
+  "prompt": "Twelve red apples arranged in neat rows in a basket, a child counting them with one finger.",
+  "ur": "بارہ",
+  "en": "twelve",
+  "unit": 4,
+  "old": "mb-twelve"
+ },
+ {
+  "n": 124,
+  "rom": "bīwī",
+  "why": "generic woman, no marriage cue",
+  "prompt": "A smiling woman in a dupatta with bangles and henna on her hand, standing beside her husband in front of their home, the two sharing a cup of tea.",
+  "ur": "بیوی",
+  "en": "wife",
+  "unit": 4,
+  "old": "tw-1f469"
+ },
+ {
+  "n": 125,
+  "rom": "dahī",
+  "why": "blue cup with cow icon, not yoghurt",
+  "prompt": "A white clay bowl full of creamy yoghurt with a wooden spoon, a glass of milk and a small cow nearby.",
+  "ur": "دہی",
+  "en": "yoghurt",
+  "unit": 4,
+  "old": "mb-yogurt"
+ },
+ {
+  "n": 126,
+  "rom": "dam",
+  "why": "reads as smoke or wind puff",
+  "prompt": "A child blowing a visible warm breath cloud on a cold morning, cheeks puffed, a small vapour cloud floating in front of the mouth.",
+  "ur": "دم",
+  "en": "breath",
+  "unit": 4,
+  "old": "tw-1f32c"
+ },
+ {
+  "n": 127,
+  "rom": "dard",
+  "why": "figure holding belly, pain not clear",
+  "prompt": "A child sitting on the pavement holding a scraped knee, face scrunched in a grimace, a small tear drop, a band-aid nearby.",
+  "ur": "درد",
+  "en": "pain",
+  "unit": 4,
+  "old": "mb-stomach-ache"
+ },
+ {
+  "n": 128,
+  "rom": "daryā",
+  "why": "boat on open water; no river banks",
+  "prompt": "A wide winding river between green grassy banks, a small wooden boat with a child rowing, trees along the banks.",
+  "ur": "دریا",
+  "en": "river",
+  "unit": 4,
+  "old": "om-1F6A3"
+ },
+ {
+  "n": 132,
+  "rom": "dete",
+  "why": "same picture as #130; no plural cue",
+  "prompt": "Three adults standing together, each handing a gift to a line of children, several hands passing items, a plural crowd of giving.",
+  "ur": "دیتے",
+  "en": "give (plural)",
+  "unit": 4,
+  "old": "mb-give--to"
+ },
+ {
+  "n": 133,
+  "rom": "detā",
+  "why": "same picture as #130; no subject shown",
+  "prompt": "A grandfather handing a book to a child, the child's hands reaching for it, one adult giving to one child.",
+  "ur": "دیتا",
+  "en": "gives",
+  "unit": 4,
+  "old": "mb-give--to"
+ },
+ {
+  "n": 134,
+  "rom": "detī",
+  "why": "same picture as #130; no feminine cue",
+  "prompt": "A mother in a green shalwar kameez handing a red bowl of food to a child, the act of giving clear.",
+  "ur": "دیتی",
+  "en": "gives (fem)",
+  "unit": 4,
+  "old": "mb-give--to"
+ },
+ {
+  "n": 136,
+  "rom": "din",
+  "why": "sun alone reads as sun, not day",
+  "prompt": "A child playing outside in a sunny park under a bright blue daytime sky, the sun high, trees full of light, a bench in the shade.",
+  "ur": "دن",
+  "en": "day",
+  "unit": 4,
+  "old": "tw-2600"
+ },
+ {
+  "n": 137,
+  "rom": "diyā",
+  "why": "same picture as #130; no past-tense cue",
+  "prompt": "A girl handing a red apple to her brother, a small motion trail behind her hand, her hand left open afterward.",
+  "ur": "دیا",
+  "en": "gave",
+  "unit": 4,
+  "old": "mb-give--to"
+ },
+ {
+  "n": 138,
+  "rom": "do",
+  "why": "digit 2",
+  "prompt": "Two red balls side by side on a green rug, a child pointing to each one.",
+  "ur": "دو",
+  "en": "two",
+  "unit": 4,
+  "old": "mb-two"
+ },
+ {
+  "n": 139,
+  "rom": "dobārah",
+  "why": "repeat-arrows symbol",
+  "prompt": "A child builds a tower of blocks that falls over, then rebuilds it, a second tower being built after the first.",
+  "ur": "دوبارہ",
+  "en": "again",
+  "unit": 4,
+  "old": "om-1F501"
+ },
+ {
+  "n": 140,
+  "rom": "dukān",
+  "why": "building with a 24 sign reads as hotel or calendar",
+  "prompt": "A small corner shop with a striped awning, shelves of bottles and packets, a shopkeeper behind a counter, a child holding coins.",
+  "ur": "دکان",
+  "en": "shop",
+  "unit": 4,
+  "old": "tw-1f3ea"
+ },
+ {
+  "n": 142,
+  "rom": "dādā",
+  "why": "generic old man, no paternal grandfather cue",
+  "prompt": "An elderly grandfather with white hair and a white beard, in a waistcoat and cap, sitting on a charpai with a grandson on his lap, holding a walking stick.",
+  "ur": "دادا",
+  "en": "grandfather",
+  "unit": 4,
+  "old": "tw-1f474"
+ },
+ {
+  "n": 143,
+  "rom": "dādī",
+  "why": "generic old woman",
+  "prompt": "An elderly grandmother with a grey bun and a dupatta, sitting with a grandchild, rolling dough for chapatis together.",
+  "ur": "دادی",
+  "en": "paternal grandmother",
+  "unit": 4,
+  "old": "tw-1f475"
+ },
+ {
+  "n": 144,
+  "rom": "dāl",
+  "why": "looks like a seed packet, not lentils",
+  "prompt": "A steel bowl full of yellow split lentils with a wooden spoon, a small cloth bag of lentils beside it.",
+  "ur": "دال",
+  "en": "lentils",
+  "unit": 4,
+  "old": "mb-lentils"
+ },
+ {
+  "n": 146,
+  "rom": "dī",
+  "why": "same picture as #130; no feminine or past cue",
+  "prompt": "A girl in a pink dress handing a book to her friend, the book in mid-air between their hands.",
+  "ur": "دی",
+  "en": "gave (fem)",
+  "unit": 4,
+  "old": "mb-give--to"
+ },
+ {
+  "n": 147,
+  "rom": "dūr",
+  "why": "road sign, not distance",
+  "prompt": "A child on a hilltop pointing at a tiny village far away on the horizon, a long dirt road leading into the distance, a big sun.",
+  "ur": "دور",
+  "en": "far",
+  "unit": 4,
+  "old": "tw-1f6e3"
+ },
+ {
+  "n": 148,
+  "rom": "ham",
+  "why": "two silhouettes read as two people",
+  "prompt": "A child with arms around two friends, all three facing the viewer, pointing to themselves together and smiling.",
+  "ur": "ہم",
+  "en": "we",
+  "unit": 4,
+  "old": "tw-1f465"
+ },
+ {
+  "n": 149,
+  "rom": "hamāre",
+  "why": "group photo icon, no possession shown",
+  "prompt": "A family of four standing together in front of their house with a shared garden, a shared bicycle and a shared football nearby.",
+  "ur": "ہمارے",
+  "en": "our (plural)",
+  "unit": 4,
+  "old": "mb-family"
+ },
+ {
+  "n": 150,
+  "rom": "hamārā",
+  "why": "same family picture; possession not clear",
+  "prompt": "Two brothers standing beside one red bicycle, both hands on the handlebar, a house behind them.",
+  "ur": "ہمارا",
+  "en": "our",
+  "unit": 4,
+  "old": "mb-family"
+ },
+ {
+  "n": 151,
+  "rom": "hamārī",
+  "why": "same family picture; no feminine possession",
+  "prompt": "Two sisters sharing one skipping rope in a yard, both holding the same rope handle, a house behind them.",
+  "ur": "ہماری",
+  "en": "our (fem)",
+  "unit": 4,
+  "old": "mb-family"
+ },
+ {
+  "n": 153,
+  "rom": "harā",
+  "why": "green apple reads as apple, not colour",
+  "prompt": "A bright green frog sitting on a big green leaf in a green grassy field, all greens saturated, no fruit.",
+  "ur": "ہرا",
+  "en": "green",
+  "unit": 4,
+  "old": "tw-1f34f"
+ },
+ {
+  "n": 154,
+  "rom": "hawā",
+  "why": "smoke or breath look, not wind",
+  "prompt": "A kite flying high in a strong breeze, tree leaves and a child's scarf blowing sideways, curved wind lines.",
+  "ur": "ہوا",
+  "en": "wind",
+  "unit": 4,
+  "old": "tw-1f32c"
+ },
+ {
+  "n": 156,
+  "rom": "hādī",
+  "why": "a name; generic boy",
+  "prompt": "A friendly boy character with a cricket bat and a red cap, waving, school bag on his back, drawn as a recurring character with these signature props.",
+  "ur": "ہادی",
+  "en": "Hadi (a name)",
+  "unit": 4,
+  "old": "tw-1f466"
+ },
+ {
+  "n": 158,
+  "rom": "kabūtar",
+  "why": "dove with olive branch reads as peace",
+  "prompt": "A grey pigeon standing on a rooftop ledge pecking crumbs, a city balcony and water tank behind, no olive branch.",
+  "ur": "کبوتر",
+  "en": "pigeon",
+  "unit": 4,
+  "old": "tw-1f54a"
+ },
+ {
+  "n": 159,
+  "rom": "kahnā",
+  "why": "grey profile with dashes looks like sneezing",
+  "prompt": "A child standing at the front of class calling out, mouth open, one hand raised, a small speech bubble with a drawn smiley face.",
+  "ur": "کہنا",
+  "en": "to say",
+  "unit": 4,
+  "old": "om-1F5E3"
+ },
+ {
+  "n": 160,
+  "rom": "kahte",
+  "why": "same as #159; no plural cue",
+  "prompt": "Three children standing in a row, mouths open, all speaking together, each with a small speech bubble containing a smiley.",
+  "ur": "کہتے",
+  "en": "say (plural)",
+  "unit": 4,
+  "old": "om-1F5E3"
+ },
+ {
+  "n": 161,
+  "rom": "kahtā",
+  "why": "sneeze look; no subject",
+  "prompt": "A grandfather at the front of a room, mouth open, one hand gesturing, a speech bubble with a smiley, telling a story.",
+  "ur": "کہتا",
+  "en": "says",
+  "unit": 4,
+  "old": "om-1F5E3"
+ },
+ {
+  "n": 162,
+  "rom": "kahtī",
+  "why": "speech bubble reads as chat or typing",
+  "prompt": "A girl with her hand near her mouth speaking to a friend, a speech bubble with a smiley beside her, a mother listening nearby.",
+  "ur": "کہتی",
+  "en": "says (fem)",
+  "unit": 4,
+  "old": "tw-1f4ac"
+ },
+ {
+  "n": 163,
+  "rom": "kahā",
+  "why": "speech bubble; no past-tense cue",
+  "prompt": "A child who has just finished speaking, mouth closed, pointing at a friend, a speech bubble with a smiley floating above their head.",
+  "ur": "کہا",
+  "en": "said",
+  "unit": 4,
+  "old": "tw-1f4ac"
+ },
+ {
+  "n": 164,
+  "rom": "kahānī",
+  "why": "reads as a book, not a story",
+  "prompt": "A grandmother telling a story to two children at bedtime, a glowing fairy castle and a forest drawn in the air above her hands.",
+  "ur": "کہانی",
+  "en": "story",
+  "unit": 4,
+  "old": "tw-1f4d6"
+ },
+ {
+  "n": 166,
+  "rom": "kamre",
+  "why": "two small houses, not rooms",
+  "prompt": "A cutaway house showing three rooms side by side: a bedroom with a bed, a kitchen with a pot, and a living room with a sofa.",
+  "ur": "کمرے",
+  "en": "rooms",
+  "unit": 4,
+  "old": "art-214"
+ },
+ {
+  "n": 167,
+  "rom": "kar",
+  "why": "hammering reads as repair or build, not do",
+  "prompt": "A child tidying a playroom, putting blocks into a box, a bed made, a rug swept, hands in motion showing a chore being done.",
+  "ur": "کر",
+  "en": "do; having done",
+  "unit": 4,
+  "old": "mb-work--to"
+ },
+ {
+  "n": 168,
+  "rom": "kaun",
+  "why": "red question mark is abstract",
+  "prompt": "A curious child peeking out from behind a door at a line of three people, pointing at one of them, a puzzled face.",
+  "ur": "کون",
+  "en": "who",
+  "unit": 4,
+  "old": "tw-2753"
+ },
+ {
+  "n": 171,
+  "rom": "madad",
+  "why": "wheelchair links help to disability",
+  "prompt": "One child struggling to lift a heavy box, a friend stepping in to share the load, both smiling, a helping hand extended.",
+  "ur": "مدد",
+  "en": "help",
+  "unit": 4,
+  "old": "om-E083"
+ },
+ {
+  "n": 172,
+  "rom": "mahīna",
+  "why": "calendar reads as a date or day",
+  "prompt": "A wall calendar showing a full month grid of thirty squares, a child circling the whole grid with a crayon.",
+  "ur": "مہینہ",
+  "en": "month",
+  "unit": 4,
+  "old": "om-1F4C5"
+ },
+ {
+  "n": 173,
+  "rom": "mahīne",
+  "why": "shows one specific date; hard to read",
+  "prompt": "Four calendar pages shown in a row, flipping one after another, a child counting them off on her fingers.",
+  "ur": "مہینے",
+  "en": "months",
+  "unit": 4,
+  "old": "tw-1f4c5"
+ },
+ {
+  "n": 174,
+  "rom": "mard",
+  "why": "generic face, no adult male cue",
+  "prompt": "A grown man in shalwar kameez and a waistcoat working at a workbench with tools, a strong adult stance.",
+  "ur": "مرد",
+  "en": "man",
+  "unit": 4,
+  "old": "tw-1f468"
+ },
+ {
+  "n": 176,
+  "rom": "moṭā",
+  "why": "body-size picture; ruler suggests height",
+  "prompt": "A thick picture book stacked beside a thin notebook on a table, the thick book clearly wider.",
+  "ur": "موٹا",
+  "en": "fat, thick",
+  "unit": 4,
+  "old": "mb-fat"
+ },
+ {
+  "n": 180,
+  "rom": "nau",
+  "why": "digit 9",
+  "prompt": "Nine blue balls in three rows of three, a child pointing to each one.",
+  "ur": "نو",
+  "en": "nine",
+  "unit": 4,
+  "old": "mb-nine"
+ },
+ {
+  "n": 182,
+  "rom": "pahle",
+  "why": "running race, not before",
+  "prompt": "Two panels side by side: a child brushing teeth on the left, then a child eating breakfast on the right, a small clock showing morning.",
+  "ur": "پہلے",
+  "en": "before, first",
+  "unit": 4,
+  "old": "mb-first-2"
+ },
+ {
+  "n": 184,
+  "rom": "pahlī",
+  "why": "same runners picture as #182; no feminine first",
+  "prompt": "A girl on the top step of a podium, gold medal around her neck, waving, two runners below her.",
+  "ur": "پہلی",
+  "en": "first (fem)",
+  "unit": 4,
+  "old": "mb-first-2"
+ },
+ {
+  "n": 186,
+  "rom": "pata",
+  "why": "envelope reads as letter, not address or clue",
+  "prompt": "A child holding a folded paper map with a house drawn on it and a small flag pinned to the house, standing on a street of house doors.",
+  "ur": "پتہ",
+  "en": "address, clue",
+  "unit": 4,
+  "old": "om-2709"
+ },
+ {
+  "n": 188,
+  "rom": "piyāla",
+  "why": "wide bowl; piyala is a small cup",
+  "prompt": "A small white handleless tea cup on a saucer with steam rising, a teapot beside it.",
+  "ur": "پیالہ",
+  "en": "cup, bowl",
+  "unit": 4,
+  "old": "mb-bowl"
+ },
+ {
+  "n": 189,
+  "rom": "purānā",
+  "why": "cracked red vase reads as broken",
+  "prompt": "An old worn wooden chair with faded paint and scratched legs placed beside a new shiny chair.",
+  "ur": "پرانا",
+  "en": "old",
+  "unit": 4,
+  "old": "mb-old-object"
+ },
+ {
+  "n": 190,
+  "rom": "purānī",
+  "why": "same picture as #189; no feminine cue",
+  "prompt": "An old worn cloth doll with a faded dress and patched arms beside a new shiny doll.",
+  "ur": "پرانی",
+  "en": "old (fem)",
+  "unit": 4,
+  "old": "mb-old-object"
+ },
+ {
+  "n": 191,
+  "rom": "pūrā",
+  "why": "abstract loop symbol",
+  "prompt": "A complete round pizza with every slice still in place, a child smiling at it.",
+  "ur": "پورا",
+  "en": "whole, complete",
+  "unit": 4,
+  "old": "mb-whole"
+ },
+ {
+  "n": 192,
+  "rom": "pūrī",
+  "why": "same loop symbol as #191",
+  "prompt": "A whole round puri bread puffed up and unbroken on a plate, a child's hand about to pick it up.",
+  "ur": "پوری",
+  "en": "whole (fem)",
+  "unit": 4,
+  "old": "mb-whole"
+ },
+ {
+  "n": 193,
+  "rom": "rahnā",
+  "why": "house means home, not 'to live'",
+  "prompt": "A family of four sitting together on a cozy sofa in their home living room: a mother reading to a small boy, a girl beside them, a grandfather in a chair, a cat asleep on the rug, warm lamp light, a window with a tree outside.",
+  "ur": "رہنا",
+  "en": "to live, stay",
+  "unit": 4,
+  "old": "tw-1f3e0"
+ },
+ {
+  "n": 194,
+  "rom": "raho",
+  "why": "raised palm reads as stop or high-five, not stay",
+  "prompt": "A small boy in a yellow t-shirt holds his palm up toward a puppy that is about to run off; the puppy sits down and wags its tail; a red leash lies on the green grass; a park bench behind them.",
+  "ur": "رہو",
+  "en": "stay!",
+  "unit": 4,
+  "old": "tw-270b"
+ },
+ {
+  "n": 195,
+  "rom": "rahte",
+  "why": "house only; no plural 'they live' cue",
+  "prompt": "A mother, father and daughter standing together in front of the door of their small flat-vector home, arms around each other, a flower pot by the step, a small garden with red flowers.",
+  "ur": "رہتے",
+  "en": "live (plural)",
+  "unit": 4,
+  "old": "tw-1f3e0"
+ },
+ {
+  "n": 196,
+  "rom": "rahtā",
+  "why": "house only; no 'he lives' cue",
+  "prompt": "A boy in a blue shirt standing proudly at the door of his own small house with a red roof, a key in his hand, his bicycle parked outside, a tree beside the house.",
+  "ur": "رہتا",
+  "en": "lives",
+  "unit": 4,
+  "old": "tw-1f3e0"
+ },
+ {
+  "n": 197,
+  "rom": "rahtī",
+  "why": "house only; no 'she lives' cue",
+  "prompt": "A girl in a pink dress standing at the door of her own small house with a red roof, a key in her hand, a cat sitting on the front step, flowers in a pot.",
+  "ur": "رہتی",
+  "en": "lives (fem)",
+  "unit": 4,
+  "old": "tw-1f3e0"
+ },
+ {
+  "n": 200,
+  "rom": "roṭī",
+  "why": "flat unclear shape that could be a cookie, pizza or bread slice",
+  "prompt": "A round, puffed-up golden chapati on a white plate, two more chapatis folded in a cloth beside it, a small bowl of dal, and a child's hand reaching for one.",
+  "ur": "روٹی",
+  "en": "bread",
+  "unit": 4,
+  "old": "tw-1fad3"
+ },
+ {
+  "n": 201,
+  "rom": "rāh",
+  "why": "road with a barrier reads as a railway crossing or gate",
+  "prompt": "A winding dirt footpath through green grass with wooden fences on both sides, leading toward a village of small houses on the horizon, a boy with a backpack walking along it.",
+  "ur": "راہ",
+  "en": "path",
+  "unit": 4,
+  "old": "om-1F6E3"
+ },
+ {
+  "n": 203,
+  "rom": "tumhāre",
+  "why": "fist emoji does not show a possessive 'your'",
+  "prompt": "A teacher in a green dupatta points with an open palm at a group of three children, then toward three backpacks lined up on a bench, each bag a different colour, each child standing by their own bag.",
+  "ur": "تمہارے",
+  "en": "your (plural)",
+  "unit": 4,
+  "old": "tw-1faf5"
+ },
+ {
+  "n": 204,
+  "rom": "tumhārī",
+  "why": "fist emoji does not show a feminine possessive 'your'",
+  "prompt": "A mother points with an open palm at her daughter's pink backpack; the daughter hugs it proudly; a boy beside her holds his own green backpack.",
+  "ur": "تمہاری",
+  "en": "your (fem)",
+  "unit": 4,
+  "old": "tw-1faf5"
+ },
+ {
+  "n": 206,
+  "rom": "woh",
+  "why": "pointing hand is abstract and points at nobody specific",
+  "prompt": "A girl on a playground stands with her straight arm pointing across the field at a boy in a red cap far away; a second girl looks in that same direction; a tree stands between them to show distance.",
+  "ur": "وہ",
+  "en": "he / she / that",
+  "unit": 4,
+  "old": "tw-1f449"
+ },
+ {
+  "n": 207,
+  "rom": "yād",
+  "why": "empty thought cloud has no memory content",
+  "prompt": "A grandmother sits on a porch looking off into the distance, a thought bubble above her head showing a pink birthday cake with three lit candles and a balloon.",
+  "ur": "یاد",
+  "en": "memory",
+  "unit": 4,
+  "old": "tw-1f4ad"
+ },
+ {
+  "n": 209,
+  "rom": "ūpar",
+  "why": "upward arrow is an abstract symbol, not 'above'",
+  "prompt": "A child on a small step ladder reaching up toward a colourful kite flying high above a tall green tree, a bird flying just above the kite.",
+  "ur": "اوپر",
+  "en": "above, up",
+  "unit": 4,
+  "old": "om-2B06"
+ },
+ {
+  "n": 211,
+  "rom": "ṭopī",
+  "why": "baseball cap, not the rounded Pakistani topi",
+  "prompt": "A grandfather wearing a white rounded embroidered topi with a gold border, smiling, sitting on a wooden charpai bed in a courtyard.",
+  "ur": "ٹوپی",
+  "en": "cap",
+  "unit": 4,
+  "old": "tw-1f9e2"
+ },
+ {
+  "n": 212,
+  "rom": "bachche",
+  "why": "single child face, not plural 'children'",
+  "prompt": "Three children of different heights playing together in a park: one swinging on a swing, one holding a red ball, one running with arms out, all in bright clothes.",
+  "ur": "بچے",
+  "en": "children",
+  "unit": 5,
+  "old": "tw-1f9d2"
+ },
+ {
+  "n": 214,
+  "rom": "bas",
+  "why": "stop sign with letters means traffic stop, not 'enough'",
+  "prompt": "A mother holds her palm up in front of a child who is reaching for a plate of sweets; the child pulls back with a sad face; a plate of round laddoo sweets on a table.",
+  "ur": "بس",
+  "en": "enough",
+  "unit": 5,
+  "old": "om-1F6D1"
+ },
+ {
+  "n": 217,
+  "rom": "chalā",
+  "why": "walking pose looks like present tense; no past-tense cue",
+  "prompt": "A boy walking along a dirt path; behind him a line of small footprints in the dust leads back to his house, showing he already walked this way.",
+  "ur": "چلا",
+  "en": "walked",
+  "unit": 5,
+  "old": "tw-1f6b6"
+ },
+ {
+  "n": 221,
+  "rom": "chār",
+  "why": "numeral 4 is an abstract symbol, not four objects",
+  "prompt": "Four red apples arranged in a row on a wooden table, a child's finger pointing at each one.",
+  "ur": "چار",
+  "en": "four",
+  "unit": 5,
+  "old": "mb-four"
+ },
+ {
+  "n": 222,
+  "rom": "chīnī",
+  "why": "blue bowl with white granules can read as cereal or salt",
+  "prompt": "A clear glass jar full of white sugar cubes on a kitchen counter, a small silver spoon resting beside it, sugar cubes spilled on the counter.",
+  "ur": "چینی",
+  "en": "sugar",
+  "unit": 5,
+  "old": "mb-sugar-white"
+ },
+ {
+  "n": 223,
+  "rom": "das",
+  "why": "numeral 10 is an abstract symbol, not ten objects",
+  "prompt": "Ten yellow balls arranged in two neat rows of five on a green rug, a child touching each one while counting.",
+  "ur": "دس",
+  "en": "ten",
+  "unit": 5,
+  "old": "mb-ten"
+ },
+ {
+  "n": 224,
+  "rom": "dopahar",
+  "why": "sunny houses scene does not show midday or afternoon",
+  "prompt": "A family eating lunch under a shady tree at high midday sun, a cloth on the ground with plates of rice and chicken, the sun directly overhead, short shadows under the table.",
+  "ur": "دوپہر",
+  "en": "afternoon, noon",
+  "unit": 5,
+  "old": "art-368"
+ },
+ {
+  "n": 226,
+  "rom": "dūsre",
+  "why": "medal 2 means second place, not 'other'",
+  "prompt": "Three children standing on a grass field; one child points across a path at a second group of two children; the first group looks at them, showing the other children.",
+  "ur": "دوسرے",
+  "en": "other, second (plural)",
+  "unit": 5,
+  "old": "tw-1f948"
+ },
+ {
+  "n": 227,
+  "rom": "dūsrā",
+  "why": "medal shows second place, not 'the other one'",
+  "prompt": "A boy holding one red ball in his hand while an identical red ball sits on the grass beside him; he looks at the second ball, showing the other one.",
+  "ur": "دوسرا",
+  "en": "other, second",
+  "unit": 5,
+  "old": "tw-1f948"
+ },
+ {
+  "n": 228,
+  "rom": "dūsrī",
+  "why": "medal shows second place, not feminine 'the other one'",
+  "prompt": "A girl in a green dress holding one yellow balloon while a second yellow balloon floats next to her; she points at the second balloon, the other one.",
+  "ur": "دوسری",
+  "en": "other (fem)",
+  "unit": 5,
+  "old": "tw-1f948"
+ },
+ {
+  "n": 229,
+  "rom": "garm",
+  "why": "steam wisps are ambiguous with smoke or cooking",
+  "prompt": "A child pulling her hand back from a steaming hot cooking pot on a stove with a bright flame underneath, sweat on her forehead, a summer sun in the window.",
+  "ur": "گرم",
+  "en": "hot",
+  "unit": 5,
+  "old": "mb-hot"
+ },
+ {
+  "n": 231,
+  "rom": "gayā",
+  "why": "arrow symbol; past tense 'went' not shown",
+  "prompt": "A boy waving goodbye as he walks out through an open school gate; behind him an empty chair and a half-closed notebook on the desk show he has already left.",
+  "ur": "گیا",
+  "en": "went",
+  "unit": 5,
+  "old": "mb-go--to"
+ },
+ {
+  "n": 238,
+  "rom": "hamesha",
+  "why": "infinity symbol is abstract",
+  "prompt": "Seven small squares in a row, each showing the same girl brushing her teeth at the sink on a different morning, a sun in each square, showing every day.",
+  "ur": "ہمیشہ",
+  "en": "always",
+  "unit": 5,
+  "old": "om-267E"
+ },
+ {
+  "n": 240,
+  "rom": "insān",
+  "why": "single generic head; does not show 'human being' versus animals",
+  "prompt": "A boy and a girl standing side by side with full bodies, arms and legs, next to a cat and a dog sitting on the floor, clearly showing people versus animals.",
+  "ur": "انسان",
+  "en": "human being",
+  "unit": 5,
+  "old": "tw-1f9d1"
+ },
+ {
+  "n": 244,
+  "rom": "jawāb",
+  "why": "speech bubble with dots is abstract, no answer cue",
+  "prompt": "A teacher at a blackboard asks a question with a big question mark above, a girl raises her hand and says the answer in a speech bubble with a big green tick mark.",
+  "ur": "جواب",
+  "en": "answer",
+  "unit": 5,
+  "old": "tw-1f4ac"
+ },
+ {
+  "n": 246,
+  "rom": "jā",
+  "why": "arrow symbol; no 'go' action cue",
+  "prompt": "A mother points at an open front door and a child with a school backpack walks out through it, waving goodbye, a sunny street outside.",
+  "ur": "جا",
+  "en": "go",
+  "unit": 5,
+  "old": "mb-go--to"
+ },
+ {
+  "n": 247,
+  "rom": "jān",
+  "why": "red heart means love, not 'life' or dear one",
+  "prompt": "A mother kissing her small child on the forehead, the child's arms around her neck, both smiling, in a warm home with a lamp.",
+  "ur": "جان",
+  "en": "life, dear",
+  "unit": 5,
+  "old": "tw-2764"
+ },
+ {
+  "n": 248,
+  "rom": "jāntā",
+  "why": "lightbulb means idea, not 'knows'",
+  "prompt": "A girl raises her hand in class and confidently answers; the teacher nods with a smile; her worksheet on the desk has a big green tick mark.",
+  "ur": "جانتا",
+  "en": "knows",
+  "unit": 5,
+  "old": "tw-1f4a1"
+ },
+ {
+  "n": 249,
+  "rom": "jānwar",
+  "why": "one cow is one specific animal, not 'animal' in general",
+  "prompt": "A group of animals standing together on green grass: a cat, a dog, a cow, a rabbit and a bird.",
+  "ur": "جانور",
+  "en": "animal",
+  "unit": 5,
+  "old": "art-376"
+ },
+ {
+  "n": 250,
+  "rom": "jānā",
+  "why": "walking stick figure does not show going away",
+  "prompt": "A child waves goodbye while walking away down a dirt path toward a yellow school bus waiting at a stop.",
+  "ur": "جانا",
+  "en": "to go",
+  "unit": 5,
+  "old": "om-1F6B6"
+ },
+ {
+  "n": 251,
+  "rom": "jāte",
+  "why": "walking pose only; no plural 'they go' cue",
+  "prompt": "Two friends with school backpacks walking side by side away from the viewer down a road toward the school gate, waving back over their shoulders.",
+  "ur": "جاتے",
+  "en": "go (plural)",
+  "unit": 5,
+  "old": "mb-walk--to"
+ },
+ {
+  "n": 252,
+  "rom": "jātā",
+  "why": "arrow symbol; singular 'goes' not shown",
+  "prompt": "A boy walking alone down a dirt road toward a distant school building, leaving his house behind him, backpack on his back.",
+  "ur": "جاتا",
+  "en": "goes",
+  "unit": 5,
+  "old": "mb-go--to"
+ },
+ {
+  "n": 253,
+  "rom": "jātī",
+  "why": "walking figure with no feminine or going cue",
+  "prompt": "A girl with braids walking alone along a path toward a bus stop, a school bag on her back, looking ahead.",
+  "ur": "جاتی",
+  "en": "goes (fem)",
+  "unit": 5,
+  "old": "om-1F6B6-200D-2640-FE0F"
+ },
+ {
+  "n": 256,
+  "rom": "kaise",
+  "why": "question mark is a symbol, not a 'how' scene",
+  "prompt": "A father showing his daughter how to fold a paper boat; his hands are folding the paper, a finished paper boat on the table, small motion curves around the paper.",
+  "ur": "کیسے",
+  "en": "how",
+  "unit": 5,
+  "old": "mb-how"
+ },
+ {
+  "n": 257,
+  "rom": "kaisī",
+  "why": "question mark is a symbol, not a 'how' scene",
+  "prompt": "A girl showing a younger friend how to tie a shoelace; a pair of shoes on the floor, the friend watching closely, the girl's fingers making the loop.",
+  "ur": "کیسی",
+  "en": "how (fem)",
+  "unit": 5,
+  "old": "mb-how"
+ },
+ {
+  "n": 259,
+  "rom": "koshish",
+  "why": "flexed bicep shows strength, not trying hard",
+  "prompt": "A boy pushing hard against a heavy wooden box on a ramp, face scrunched with effort, sweat drops flying, the box half-moved up the ramp.",
+  "ur": "کوشش",
+  "en": "effort",
+  "unit": 5,
+  "old": "tw-1f4aa"
+ },
+ {
+  "n": 262,
+  "rom": "nīche",
+  "why": "down arrow is abstract, not 'under'",
+  "prompt": "A cat hiding beneath a wooden table, with a child peeking down at it from above the tabletop; the cat is clearly under the table.",
+  "ur": "نیچے",
+  "en": "below",
+  "unit": 5,
+  "old": "om-2B07"
+ },
+ {
+  "n": 264,
+  "rom": "pasand",
+  "why": "red heart means love, not 'I like it'",
+  "prompt": "A child holding up a favourite ice cream cone, smiling and giving a thumbs-up, with a happy face showing liking.",
+  "ur": "پسند",
+  "en": "liking",
+  "unit": 5,
+  "old": "om-2764"
+ },
+ {
+  "n": 265,
+  "rom": "pyās",
+  "why": "thought bubble with a drink is abstract",
+  "prompt": "A boy on a hot sunny day with sweat on his forehead and cracked dry lips, holding an empty cup upside down, a water bottle on a table nearby.",
+  "ur": "پیاس",
+  "en": "thirst",
+  "unit": 5,
+  "old": "mb-thirsty"
+ },
+ {
+  "n": 266,
+  "rom": "pyāsā",
+  "why": "same bubble image; thirsty pose not clear",
+  "prompt": "A boy holding an empty glass upside down over his open mouth, tongue out, sun blazing overhead, a jug of water on a table beside him.",
+  "ur": "پیاسا",
+  "en": "thirsty",
+  "unit": 5,
+  "old": "mb-thirsty"
+ },
+ {
+  "n": 267,
+  "rom": "pānch",
+  "why": "numeral 5 is an abstract symbol",
+  "prompt": "Five red balls in a row on a rug, a child's finger touching each one while counting.",
+  "ur": "پانچ",
+  "en": "five",
+  "unit": 5,
+  "old": "mb-five"
+ },
+ {
+  "n": 270,
+  "rom": "sabuk",
+  "why": "feather with a strike line reads as crossed out or no",
+  "prompt": "A small boy lifting a large light cardboard box easily with one hand, next to a heavy iron weight on the floor that he is not lifting.",
+  "ur": "سبک",
+  "en": "light (not heavy)",
+  "unit": 5,
+  "old": "om-1FAB6"
+ },
+ {
+  "n": 274,
+  "rom": "sau, so",
+  "why": "numeral 100 is abstract; 'so' (sleep) is a second meaning on the same tile",
+  "prompt": "Ten neat stacks of ten gold coins arranged in a grid on a table, each stack the same height, showing one hundred coins.",
+  "ur": "سو",
+  "en": "hundred, to sleep",
+  "unit": 5,
+  "old": "mb-hundred"
+ },
+ {
+  "n": 277,
+  "rom": "shakl",
+  "why": "plain generic face; 'shape' meaning not shown",
+  "prompt": "A girl looking into a hand mirror, touching her cheek, her round face clearly showing a happy expression, a comb on the table beside her.",
+  "ur": "شکل",
+  "en": "face, shape",
+  "unit": 5,
+  "old": "mb-man---face"
+ },
+ {
+  "n": 278,
+  "rom": "shauhar",
+  "why": "man with raised hand reads as greeting, not husband",
+  "prompt": "An adult man and woman standing side by side in wedding clothes, he wears a gold ring and holds her hand, a marigold garland around their necks.",
+  "ur": "شوہر",
+  "en": "husband",
+  "unit": 5,
+  "old": "mb-husband"
+ },
+ {
+  "n": 281,
+  "rom": "shādī",
+  "why": "single diamond ring reads as jewellery or engagement",
+  "prompt": "A bride in a red dress and a groom in a cream sherwani holding hands on a decorated wedding stage with flowers and lights, family clapping around them.",
+  "ur": "شادی",
+  "en": "wedding",
+  "unit": 5,
+  "old": "tw-1f48d"
+ },
+ {
+  "n": 282,
+  "rom": "shāgird",
+  "why": "graduate in cap and gown is an adult, not a pupil",
+  "prompt": "A schoolchild with a backpack sitting at a wooden desk in a classroom, listening while a teacher points at a blackboard with chalk.",
+  "ur": "شاگرد",
+  "en": "pupil, student",
+  "unit": 5,
+  "old": "tw-1f9d1-200d-1f393"
+ },
+ {
+  "n": 283,
+  "rom": "shām",
+  "why": "sun behind buildings looks like sunrise",
+  "prompt": "A village street at sunset, sky orange and pink with the sun sinking behind trees, a family walking home, a lamp post just switched on.",
+  "ur": "شام",
+  "en": "evening",
+  "unit": 5,
+  "old": "tw-1f307"
+ },
+ {
+  "n": 284,
+  "rom": "shāyad",
+  "why": "shrug reads as 'I don't know', not 'maybe'",
+  "prompt": "A girl looks up at the sky with one hand holding an umbrella and the other holding a sun hat, undecided; grey clouds on one side and a little sun on the other.",
+  "ur": "شاید",
+  "en": "maybe",
+  "unit": 5,
+  "old": "tw-1f937"
+ },
+ {
+  "n": 289,
+  "rom": "sāl",
+  "why": "A calendar page shows one date or day, not a year.",
+  "prompt": "Flat-vector scene: a child with a backpack points at a large wall calendar drawn as four panels in a row, showing spring blossoms, summer sun, autumn falling leaves and winter snowflakes, with a small tally of twelve months along the bottom; no text, no letters.",
+  "ur": "سال",
+  "en": "year",
+  "unit": 5,
+  "old": "om-1F4C5"
+ },
+ {
+  "n": 292,
+  "rom": "wāpas",
+  "why": "The curved arrow looks like a keyboard return key, not a return trip.",
+  "prompt": "Flat-vector scene: a young girl with a school backpack has turned around on a dirt path and is walking back toward her house with a yellow front door, dotted footprints trail behind her, a small brown dog runs to greet her at the doorstep.",
+  "ur": "واپس",
+  "en": "back",
+  "unit": 5,
+  "old": "mb-return--to"
+ },
+ {
+  "n": 294,
+  "rom": "abhī",
+  "why": "A clock with a down arrow shows time, not immediacy.",
+  "prompt": "Flat-vector scene: a small boy in mid-jump snatches a red ball off a table the instant it lands, motion lines and a small burst star around his hand, a wall clock above showing a precise hour, bright flat colours.",
+  "ur": "ابھی",
+  "en": "right now",
+  "unit": 6,
+  "old": "mb-now"
+ },
+ {
+  "n": 296,
+  "rom": "andherā",
+  "why": "A lit night city shows night, not darkness.",
+  "prompt": "Flat-vector scene: a small child stands in a dark room with all lights off, only a thin moonbeam through the window, furniture faintly silhouetted in deep navy and black, child holding an unlit torch with wide eyes; the whole frame is dark navy.",
+  "ur": "اندھیرا",
+  "en": "darkness",
+  "unit": 6,
+  "old": "tw-1f303"
+ },
+ {
+  "n": 298,
+  "rom": "bachchoṉ",
+  "why": "A single child face does not show the plural children.",
+  "prompt": "Flat-vector scene: three children of different heights, a toddler, a girl of seven and a boy of nine, holding hands in a circle on a courtyard lawn with a small ball beside them.",
+  "ur": "بچوں",
+  "en": "children (oblique)",
+  "unit": 6,
+  "old": "tw-1f466"
+ },
+ {
+  "n": 299,
+  "rom": "bahneṉ",
+  "why": "Two girls holding hands could just be friends.",
+  "prompt": "Flat-vector scene: two girls who look alike with matching ribbons in their braids, the older one (about ten) with an arm around the younger one (about six), both in matching yellow frocks, standing together at the doorway of a family home.",
+  "ur": "بہنیں",
+  "en": "sisters",
+  "unit": 6,
+  "old": "tw-1f46d"
+ },
+ {
+  "n": 304,
+  "rom": "bhārī",
+  "why": "A grey rock is stone; it does not show weight.",
+  "prompt": "Flat-vector scene: a grown man with bent knees and gritted teeth straining to lift a huge iron box that sags on the floor, sweat drops flying; beside him a little girl lifts a light paper bag with one hand, relaxed and smiling.",
+  "ur": "بھاری",
+  "en": "heavy",
+  "unit": 6,
+  "old": "tw-1faa8"
+ },
+ {
+  "n": 305,
+  "rom": "bhūk",
+  "why": "A thought bubble of food with a neutral face reads as thinking about food, and the picture is identical to #306.",
+  "prompt": "Flat-vector scene: a child sits at an empty table with an empty plate and empty bowl in front, one hand pressed on a rumbling tummy shown by curly motion lines, a small grumbling face.",
+  "ur": "بھوک",
+  "en": "hunger",
+  "unit": 6,
+  "old": "mb-hungry"
+ },
+ {
+  "n": 306,
+  "rom": "bhūkā",
+  "why": "Same picture as #305 with no hungry body cue; the adjective needs a clear hungry state.",
+  "prompt": "Flat-vector scene: a small boy licks his lips while staring at a plate of bread and an apple on a table across the room, hands on his belly, tummy-growl lines near him.",
+  "ur": "بھوکا",
+  "en": "hungry",
+  "unit": 6,
+  "old": "mb-hungry"
+ },
+ {
+  "n": 307,
+  "rom": "bāteṉ",
+  "why": "A single profile face with an open mouth does not show a conversation.",
+  "prompt": "Flat-vector scene: two friends sit on a bench facing each other, one gesturing with an open hand mid-sentence, both mouths open, two blank speech bubbles with simple dots and lines between them.",
+  "ur": "باتیں",
+  "en": "talks, things said",
+  "unit": 6,
+  "old": "mb-talk-1--to"
+ },
+ {
+  "n": 308,
+  "rom": "chhat",
+  "why": "The window or balcony with a kite is not a roof.",
+  "prompt": "Flat-vector scene: a small one-storey house seen from the street with a clearly visible sloped roof of red tiles, a worker on a ladder fixing the tiles, and a child pointing up at the roof.",
+  "ur": "چھت",
+  "en": "roof",
+  "unit": 6,
+  "old": "art-500"
+ },
+ {
+  "n": 311,
+  "rom": "chhoṭā",
+  "why": "The hand gesture is unclear and does not show smallness.",
+  "prompt": "Flat-vector scene: a little boy holds a tiny pebble between thumb and finger, beside a giant boulder and a tall grown-up man in the background for contrast.",
+  "ur": "چھوٹا",
+  "en": "small",
+  "unit": 6,
+  "old": "tw-1f90f"
+ },
+ {
+  "n": 312,
+  "rom": "chhoṭī",
+  "why": "Same unclear hand gesture as #311; the feminine small needs a clear size contrast.",
+  "prompt": "Flat-vector scene: a little girl holds a tiny kitten on her palm, standing beside a big shaggy dog much taller than her.",
+  "ur": "چھوٹی",
+  "en": "small (fem)",
+  "unit": 6,
+  "old": "tw-1f90f"
+ },
+ {
+  "n": 313,
+  "rom": "chhupnā",
+  "why": "Hands over the face reads as covering eyes or a facepalm, not hiding.",
+  "prompt": "Flat-vector scene: a child crouches behind a large curtain, only one eye and one finger peeking out, while a seeker stands nearby with a hand on a tree trunk counting.",
+  "ur": "چھپنا",
+  "en": "to hide",
+  "unit": 6,
+  "old": "om-1FAE3"
+ },
+ {
+  "n": 314,
+  "rom": "chhūnā",
+  "why": "A hand pressing a square reads as tapping a screen.",
+  "prompt": "Flat-vector scene: a child's fingertip gently touches the soft fur of a fluffy puppy, the puppy's ears ruffled, the child's other hand resting on the puppy's back.",
+  "ur": "چھونا",
+  "en": "to touch",
+  "unit": 6,
+  "old": "mb-touch--to"
+ },
+ {
+  "n": 315,
+  "rom": "dekh",
+  "why": "Plain eyes staring at the viewer show seeing in general, not looking at something; the same picture is used for five verb forms.",
+  "prompt": "Flat-vector scene: a girl stands on tiptoe at a window, pointing with one finger at a rainbow in the sky, eyes wide and looking up, a small cat beside her also looking up.",
+  "ur": "دیکھ",
+  "en": "look (stem)",
+  "unit": 6,
+  "old": "om-1F440"
+ },
+ {
+  "n": 316,
+  "rom": "dekho",
+  "why": "Same plain eyes as #315; the imperative needs someone directing attention at something.",
+  "prompt": "Flat-vector scene: a mother kneels beside her child and points at a butterfly on a yellow flower, the child's head and eyes turned toward the butterfly.",
+  "ur": "دیکھو",
+  "en": "look!",
+  "unit": 6,
+  "old": "om-1F440"
+ },
+ {
+  "n": 317,
+  "rom": "dekhte",
+  "why": "Same plain eyes as #315; the plural needs several people watching the same thing.",
+  "prompt": "Flat-vector scene: three children at a fence look up together at a flock of birds crossing the sky, all with wide eyes and pointing fingers.",
+  "ur": "دیکھتے",
+  "en": "see (plural)",
+  "unit": 6,
+  "old": "om-1F440"
+ },
+ {
+  "n": 318,
+  "rom": "dekhā",
+  "why": "Same plain eyes as #315; past tense needs an event that has already been seen.",
+  "prompt": "Flat-vector scene: a boy points at a bird on a branch that is now flying away, his eyes following it, motion lines behind the bird, his arm still raised.",
+  "ur": "دیکھا",
+  "en": "saw",
+  "unit": 6,
+  "old": "om-1F440"
+ },
+ {
+  "n": 319,
+  "rom": "dekhī",
+  "why": "Same plain eyes as #315; feminine past tense needs a clear seen event with a female subject.",
+  "prompt": "Flat-vector scene: a young woman points up at a hot-air balloon drifting across the sky, her eyes following it, small motion lines trailing the balloon.",
+  "ur": "دیکھی",
+  "en": "saw (fem)",
+  "unit": 6,
+  "old": "om-1F440"
+ },
+ {
+  "n": 322,
+  "rom": "dinoṉ",
+  "why": "A single calendar date shows one day, not several days.",
+  "prompt": "Flat-vector scene: a row of seven small square panels, each showing a sun over a little house, with a child placing a star sticker on each panel one after another.",
+  "ur": "دنوں",
+  "en": "days",
+  "unit": 6,
+  "old": "tw-1f4c5"
+ },
+ {
+  "n": 323,
+  "rom": "donoṉ",
+  "why": "The numeral 2 means two, not both.",
+  "prompt": "Flat-vector scene: a child holds one red apple in each hand with arms spread wide, smiling and looking at both apples equally.",
+  "ur": "دونوں",
+  "en": "both",
+  "unit": 6,
+  "old": "mb-two"
+ },
+ {
+  "n": 331,
+  "rom": "ghūmnā",
+  "why": "A man walking straight does not show wandering or turning about.",
+  "prompt": "Flat-vector scene: a boy strolls through a park along a looping dotted path that curves back on itself, looking at butterflies and trees, hands in his pockets.",
+  "ur": "گھومنا",
+  "en": "to turn about, wander",
+  "unit": 6,
+  "old": "mb-walk--to"
+ },
+ {
+  "n": 335,
+  "rom": "hāṉ",
+  "why": "A green check mark means correct or done, not spoken yes.",
+  "prompt": "Flat-vector scene: a child nods head up and down with a big smile while a grown-up holds out a biscuit tin and asks a question, the child's hands raised in agreement.",
+  "ur": "ہاں",
+  "en": "yes",
+  "unit": 6,
+  "old": "tw-2705"
+ },
+ {
+  "n": 336,
+  "rom": "idhar",
+  "why": "A pointing hand shows a direction but not here.",
+  "prompt": "Flat-vector scene: a child stands on a spot on the ground marked with a small X and points down at their own feet, a friend walking toward them from across the grass.",
+  "ur": "ادھر",
+  "en": "here, this way",
+  "unit": 6,
+  "old": "tw-1f449"
+ },
+ {
+  "n": 337,
+  "rom": "jhīl",
+  "why": "A small pond with reeds reads as a pond or puddle.",
+  "prompt": "Flat-vector scene: a wide calm lake with a rowing boat, blue water, distant green hills and trees along the far shore, two ducks swimming.",
+  "ur": "جھیل",
+  "en": "lake",
+  "unit": 6,
+  "old": "mb-pond"
+ },
+ {
+  "n": 340,
+  "rom": "jhūṭā",
+  "why": "Same picture as the noun lie (#339); the adjective false needs a fake versus real contrast.",
+  "prompt": "Flat-vector scene: a child holds a shiny plastic apple in one hand and a real red apple in the other, comparing them with a puzzled look and a small red cross symbol beside the fake one.",
+  "ur": "جھوٹا",
+  "en": "false",
+  "unit": 6,
+  "old": "om-1F925"
+ },
+ {
+  "n": 341,
+  "rom": "kahāṉ",
+  "why": "A question mark only signals a question, not where.",
+  "prompt": "Flat-vector scene: a child looks under a sofa and behind a curtain while searching for a missing teddy bear, puzzled face, hands on hips.",
+  "ur": "کہاں",
+  "en": "where?",
+  "unit": 6,
+  "old": "om-2753"
+ },
+ {
+  "n": 342,
+  "rom": "karūṉ",
+  "why": "A raised hand looks like a wave or salute; permission is not shown.",
+  "prompt": "Flat-vector scene: a child sitting in a classroom raises one hand politely, while the teacher smiles and nods yes, the child looking hopeful.",
+  "ur": "کروں",
+  "en": "I may do",
+  "unit": 6,
+  "old": "tw-1f64b"
+ },
+ {
+  "n": 344,
+  "rom": "khaṭṭā",
+  "why": "A lemon shows a fruit, not sourness.",
+  "prompt": "Flat-vector scene: a child bites a lemon slice with squeezed-shut eyes and a puckered mouth, a halved lemon on a plate beside them.",
+  "ur": "کھٹا",
+  "en": "sour",
+  "unit": 6,
+  "old": "tw-1f34b"
+ },
+ {
+  "n": 345,
+  "rom": "khel",
+  "why": "The hand and red dot image is unclear and does not show a game.",
+  "prompt": "Flat-vector scene: three children sit on a rug playing a board game with coloured tokens and a rolling dice, cheerful faces around the board.",
+  "ur": "کھیل",
+  "en": "game",
+  "unit": 6,
+  "old": "tw-1f3cf"
+ },
+ {
+  "n": 346,
+  "rom": "khelnā",
+  "why": "A house with a seated adult and a toy looks like a home scene, not play.",
+  "prompt": "Flat-vector scene: a child kicks a red football on a green park lawn with a friend, the ball in mid-air with motion lines.",
+  "ur": "کھیلنا",
+  "en": "to play",
+  "unit": 6,
+  "old": "mb-play--to"
+ },
+ {
+  "n": 347,
+  "rom": "khelte",
+  "why": "Same home-scene picture as #346; the plural needs several children playing.",
+  "prompt": "Flat-vector scene: three children in a park play tag, arms out, running in different directions, a ball lying on the grass.",
+  "ur": "کھیلتے",
+  "en": "play (plural)",
+  "unit": 6,
+  "old": "mb-play--to"
+ },
+ {
+  "n": 357,
+  "rom": "kidhar",
+  "why": "A question mark does not show which way.",
+  "prompt": "Flat-vector scene: a child stands at a fork in a dirt path with one arrow sign pointing left and another pointing right, head turned looking both ways, backpack on.",
+  "ur": "کدھر",
+  "en": "where, which way",
+  "unit": 6,
+  "old": "om-2753"
+ },
+ {
+  "n": 360,
+  "rom": "kyoṉ",
+  "why": "A question mark does not show why.",
+  "prompt": "Flat-vector scene: a child holds a wilted flower under a grey rain cloud, looking up with a puzzled face, a small arrow from the cloud to the flower showing cause and effect.",
+  "ur": "کیوں",
+  "en": "why",
+  "unit": 6,
+  "old": "tw-2753"
+ },
+ {
+  "n": 368,
+  "rom": "māmūṉ",
+  "why": "A generic moustached man does not show a mother's brother.",
+  "prompt": "Flat-vector scene: a smiling man with a moustache holds a gift box with a toy car, standing beside a mother who is hugging her son, the man and the mother sharing similar features, the boy running to the man with arms out.",
+  "ur": "ماموں",
+  "en": "maternal uncle",
+  "unit": 6,
+  "old": "tw-1f468"
+ },
+ {
+  "n": 370,
+  "rom": "nanhā",
+  "why": "The hand gesture is unclear and does not show tiny.",
+  "prompt": "Flat-vector scene: a child holds a tiny ladybird on one fingertip beside a huge watermelon, a clear size contrast.",
+  "ur": "ننھا",
+  "en": "tiny",
+  "unit": 6,
+  "old": "tw-1f90f"
+ },
+ {
+  "n": 372,
+  "rom": "phaiṉknā",
+  "why": "The hand dropping crumpled paper reads as littering, not throwing.",
+  "prompt": "Flat-vector scene: a boy winds up his arm to throw a red ball forward, motion arc lines behind the ball, a friend ready to catch in front.",
+  "ur": "پھینکنا",
+  "en": "to throw",
+  "unit": 6,
+  "old": "mb-throw-away--to"
+ },
+ {
+  "n": 374,
+  "rom": "phir",
+  "why": "An abstract loop arrow does not show again.",
+  "prompt": "Flat-vector scene: a girl slides down a playground slide, climbs back up the ladder and slides down again, a dotted circular loop arrow drawn above the slide.",
+  "ur": "پھر",
+  "en": "then, again",
+  "unit": 6,
+  "old": "om-1F501"
+ },
+ {
+  "n": 376,
+  "rom": "phūphī",
+  "why": "A generic woman does not show a father's sister.",
+  "prompt": "Flat-vector scene: a woman in a shalwar kameez holds a gift for a child, standing beside the child's father who shares her features, the child between them holding both their hands.",
+  "ur": "پھوپھی",
+  "en": "paternal aunt",
+  "unit": 6,
+  "old": "tw-1f469"
+ },
+ {
+  "n": 378,
+  "rom": "samajhnā",
+  "why": "An empty thought bubble reads as thinking or daydreaming, not understanding.",
+  "prompt": "Flat-vector scene: a child has a glowing lightbulb above their head as a puzzle piece clicks into place, big smile, a friend nodding beside them.",
+  "ur": "سمجھنا",
+  "en": "to understand",
+  "unit": 6,
+  "old": "mb-think--to"
+ },
+ {
+  "n": 379,
+  "rom": "sikhānā",
+  "why": "Same teacher picture as ustād (#291); the verb to teach needs active teaching shown.",
+  "prompt": "Flat-vector scene: a teacher points with a stick at a blackboard showing simple shapes while a row of children raise their hands to answer.",
+  "ur": "سکھانا",
+  "en": "to teach",
+  "unit": 6,
+  "old": "tw-1f9d1-200d-1f3eb"
+ },
+ {
+  "n": 382,
+  "rom": "thake",
+  "why": "The open-mouth grimace reads as pain or frustration, not tiredness.",
+  "prompt": "Flat-vector scene: three children slump on a bench after running, heads drooping, eyes half closed, a yawn, sweat drops on their faces.",
+  "ur": "تھکے",
+  "en": "tired (plural)",
+  "unit": 6,
+  "old": "tw-1f62b"
+ },
+ {
+  "n": 385,
+  "rom": "uṭhnā",
+  "why": "Shows a person sitting up from the floor, not standing up.",
+  "prompt": "A small boy sitting on a floor mat pushes up with both hands and is now standing straight on his feet, a curved up-arrow above his head, a pillow and a toy car on the floor, bright room with a window.",
+  "ur": "اٹھنا",
+  "en": "to get up",
+  "unit": 6,
+  "old": "mb-get-up--to"
+ },
+ {
+  "n": 386,
+  "rom": "uṭhā",
+  "why": "Identical to #385; the figure is still sitting, so the 'got up' result is not shown.",
+  "prompt": "A girl who is already standing tall beside a rumpled bed, having just got out of bed, a folded blanket on the bed behind her, sunshine through the window, a wall clock showing morning.",
+  "ur": "اٹھا",
+  "en": "got up",
+  "unit": 6,
+  "old": "mb-get-up--to"
+ },
+ {
+  "n": 387,
+  "rom": "wahāṉ",
+  "why": "A pointing finger is generic; 'there' needs a distant place to point at.",
+  "prompt": "A child points with an extended arm across a park at a far-away red slide and a big tree, with a small dog sitting beside the slide, so the target is clearly over there, far from the child.",
+  "ur": "وہاں",
+  "en": "there",
+  "unit": 6,
+  "old": "tw-1f449"
+ },
+ {
+  "n": 388,
+  "rom": "ṭhaharnā",
+  "why": "Raised open palm reads as 'stop', not 'wait/stay'.",
+  "prompt": "A girl stands still at a bus stop beside a bench, holding a small bag, patiently waiting with hands folded, a bus approaching in the distance and a wall clock nearby.",
+  "ur": "ٹھہرنا",
+  "en": "to stay, wait",
+  "unit": 6,
+  "old": "om-270B"
+ },
+ {
+  "n": 390,
+  "rom": "aks̱ar",
+  "why": "Abstract repeat-arrows symbol; 'often' is not shown.",
+  "prompt": "A cat jumps onto the same windowsill again and again, four small repeated frames of the cat climbing onto the window ledge in sequence, a bright sun outside.",
+  "ur": "اکثر",
+  "en": "often",
+  "unit": 7,
+  "old": "om-1F501"
+ },
+ {
+  "n": 391,
+  "rom": "amīr",
+  "why": "A money bag reads as 'money', not 'rich'.",
+  "prompt": "A well-dressed plump man in a suit stands proudly in front of a large house and a shiny car, with a big sack of gold coins beside his polished shoes.",
+  "ur": "امیر",
+  "en": "rich",
+  "unit": 7,
+  "old": "tw-1f4b0"
+ },
+ {
+  "n": 392,
+  "rom": "angrezī",
+  "why": "Open book and pencil reads as 'study', not 'English'.",
+  "prompt": "A girl in a school uniform holds an open book whose cover shows the British Union Jack flag, a red double-decker bus behind her and a globe on a desk.",
+  "ur": "انگریزی",
+  "en": "English",
+  "unit": 7,
+  "old": "mb-english"
+ },
+ {
+  "n": 393,
+  "rom": "anḍe",
+  "why": "Single egg; the plural (many eggs) is not shown.",
+  "prompt": "A wicker basket full of six or more white eggs in a straw nest, a hen sitting at the side, morning light.",
+  "ur": "انڈے",
+  "en": "eggs",
+  "unit": 7,
+  "old": "om-1F95A"
+ },
+ {
+  "n": 395,
+  "rom": "banda",
+  "why": "Plain generic adult face; no clear person cue.",
+  "prompt": "A man in a shalwar kameez and a small topi carries a shopping bag and walks down a street beside a friendly dog, smiling.",
+  "ur": "بندہ",
+  "en": "person",
+  "unit": 7,
+  "old": "tw-1f9d1"
+ },
+ {
+  "n": 397,
+  "rom": "baṛhnā",
+  "why": "Shows a family of three, not growth or progress.",
+  "prompt": "A young boy stands beside a sunflower sprout in a pot; a second frame shows the same sunflower much taller, the boy's height marked on a wall ruler, green arrows pointing up.",
+  "ur": "بڑھنا",
+  "en": "to grow, advance",
+  "unit": 7,
+  "old": "mb-grow--to"
+ },
+ {
+  "n": 398,
+  "rom": "baṛī",
+  "why": "An elephant is an animal; the picture does not show 'big' as a size.",
+  "prompt": "A tall grown-up girl stands next to a small toddler, and beside them a huge red balloon floats next to a tiny one, showing the difference in size.",
+  "ur": "بڑی",
+  "en": "big (fem)",
+  "unit": 7,
+  "old": "tw-1f418"
+ },
+ {
+  "n": 399,
+  "rom": "buzurg",
+  "why": "Head only; no age or respect cues.",
+  "prompt": "An old grandfather with a white beard and a walking stick sits in a chair, smiling while a young boy listens to him, holding a cup of tea.",
+  "ur": "بزرگ",
+  "en": "elderly person",
+  "unit": 7,
+  "old": "tw-1f474"
+ },
+ {
+  "n": 402,
+  "rom": "bāzū",
+  "why": "Partial, faint arm cut off at the top; hard to read.",
+  "prompt": "A boy flexes his upper arm, sleeve pushed up, showing his bicep, the full arm from shoulder to hand, against a plain background.",
+  "ur": "بازو",
+  "en": "arm",
+  "unit": 7,
+  "old": "mb-arm"
+ },
+ {
+  "n": 403,
+  "rom": "būṛhā",
+  "why": "Generic old face, same idea as #399.",
+  "prompt": "A full-body old man with white hair and a grey beard, slightly bent, leaning on a wooden cane, wearing a waistcoat and cap.",
+  "ur": "بوڑھا",
+  "en": "old man",
+  "unit": 7,
+  "old": "tw-1f474"
+ },
+ {
+  "n": 405,
+  "rom": "chhoṛ",
+  "why": "Holding a balloon means keeping it, not leaving; no departure shown.",
+  "prompt": "A boy waves goodbye from a train window as the train pulls out of a station, his friend staying behind on the platform, a suitcase at the boy's side.",
+  "ur": "چھوڑ",
+  "en": "leave (stem)",
+  "unit": 7,
+  "old": "art-558"
+ },
+ {
+  "n": 406,
+  "rom": "chiṛiyā",
+  "why": "Bird shape is unclear and not recognisably a sparrow.",
+  "prompt": "A small brown sparrow with a short beak perched on a branch, a few seeds on the ground below, bright blue sky.",
+  "ur": "چڑیا",
+  "en": "sparrow, bird",
+  "unit": 7,
+  "old": "mb-bird"
+ },
+ {
+  "n": 407,
+  "rom": "chīz",
+  "why": "A box is not 'thing'; 'thing' is generic and cannot be drawn.",
+  "prompt": "A child points at a pile of mixed everyday objects on the floor: a ball, a spoon, a shoe and a small toy car.",
+  "ur": "چیز",
+  "en": "thing",
+  "unit": 7,
+  "old": "tw-1f4e6"
+ },
+ {
+  "n": 408,
+  "rom": "darwāza",
+  "why": "Looks like a wall panel or cabinet, not a door.",
+  "prompt": "A wooden front door of a house, opened a little, with a metal handle and a welcome mat, a child peeking through.",
+  "ur": "دروازہ",
+  "en": "door",
+  "unit": 7,
+  "old": "tw-1f6aa"
+ },
+ {
+  "n": 410,
+  "rom": "darzī",
+  "why": "A needle alone is a tool; the tailor (a person) is not shown.",
+  "prompt": "A tailor man sits at an old sewing machine, a measuring tape around his neck, pieces of fabric and scissors on the table, a finished shirt hanging behind him.",
+  "ur": "درزی",
+  "en": "tailor",
+  "unit": 7,
+  "old": "om-1FAA1"
+ },
+ {
+  "n": 415,
+  "rom": "hazār",
+  "why": "A numeral is a symbol a 5-year-old cannot read as a word.",
+  "prompt": "Ten neat stacks of rupee banknotes on a table, each stack made of ten notes, clearly a very large amount of money.",
+  "ur": "ہزار",
+  "en": "thousand",
+  "unit": 7,
+  "old": "mb-thousand"
+ },
+ {
+  "n": 419,
+  "rom": "kamzor",
+  "why": "A man with a bucket looks like a worker, not someone weak.",
+  "prompt": "A skinny little boy strains to lift a heavy box, arms shaking, sweat drops on his face, while a strong adult lifts a similar box effortlessly with one hand nearby.",
+  "ur": "کمزور",
+  "en": "weak",
+  "unit": 7,
+  "old": "art-614"
+ },
+ {
+  "n": 421,
+  "rom": "kapṛā",
+  "why": "Rolled object looks like a mat or rug.",
+  "prompt": "A tailor's bolt of colourful printed cloth unrolled across a table, with scissors and a measuring tape lying on it.",
+  "ur": "کپڑا",
+  "en": "cloth",
+  "unit": 7,
+  "old": "mb-fabric"
+ },
+ {
+  "n": 422,
+  "rom": "khaṛe",
+  "why": "One person; the plural 'standing' is not shown and the figure is just a plain standing figure.",
+  "prompt": "Three children stand upright in a straight line at a school assembly, arms at their sides, all facing forward, a flag behind them.",
+  "ur": "کھڑے",
+  "en": "standing (plural)",
+  "unit": 7,
+  "old": "mb-stand--to"
+ },
+ {
+  "n": 423,
+  "rom": "khaṛī",
+  "why": "Single still figure with no contrast; the feminine form is not clear.",
+  "prompt": "A girl in a dress stands upright with her hands at her sides, while another girl sits on a bench beside her, so the standing one is clear.",
+  "ur": "کھڑی",
+  "en": "standing (fem)",
+  "unit": 7,
+  "old": "mb-stand--to"
+ },
+ {
+  "n": 426,
+  "rom": "laṛke",
+  "why": "Single generic child; the plural (boys) is not shown.",
+  "prompt": "Three boys in school uniform stand together side by side, arms over each other's shoulders, laughing.",
+  "ur": "لڑکے",
+  "en": "boys",
+  "unit": 7,
+  "old": "tw-1f466"
+ },
+ {
+  "n": 427,
+  "rom": "laṛkiyāṉ",
+  "why": "Headscarved figures read as adult women, not girls.",
+  "prompt": "Three young girls in school uniform with hair bows and school bags stand together, smiling, all child-sized.",
+  "ur": "لڑکیاں",
+  "en": "girls",
+  "unit": 7,
+  "old": "art-631"
+ },
+ {
+  "n": 428,
+  "rom": "laṛkā",
+  "why": "Generic child face; no boy cues like shorts or a school bag.",
+  "prompt": "A young boy in shorts and a school shirt with a red school bag on his back runs to catch a ball.",
+  "ur": "لڑکا",
+  "en": "boy",
+  "unit": 7,
+  "old": "tw-1f466"
+ },
+ {
+  "n": 430,
+  "rom": "laṛnā",
+  "why": "Reads as wrestling or a handshake, not a fight.",
+  "prompt": "Two boys face each other with fists raised and angry frowns, a toy ball on the floor between them, a few friends watching from behind.",
+  "ur": "لڑنا",
+  "en": "to fight",
+  "unit": 7,
+  "old": "tw-1f93c"
+ },
+ {
+  "n": 433,
+  "rom": "mazedār",
+  "why": "Silly face with tongue out and no food; reads as playful, not tasty.",
+  "prompt": "A child licks her lips with a big smile, holding a bowl of mango ice cream and a spoon, a yummy expression.",
+  "ur": "مزیدار",
+  "en": "tasty",
+  "unit": 7,
+  "old": "tw-1f60b"
+ },
+ {
+  "n": 435,
+  "rom": "mehrbānī",
+  "why": "Heart-shaped hands read as love, not kindness in action.",
+  "prompt": "An older girl kneels and holds out a hand to help a younger child who has fallen, both smiling, a shared toy beside them.",
+  "ur": "مہربانی",
+  "en": "kindness",
+  "unit": 7,
+  "old": "tw-1faf6"
+ },
+ {
+  "n": 438,
+  "rom": "namāz",
+  "why": "A mosque is a place, not the act of prayer.",
+  "prompt": "A man kneels on a prayer mat with hands raised in prayer, a mosque dome and minaret in the background at sunrise.",
+  "ur": "نماز",
+  "en": "prayer (namaz)",
+  "unit": 7,
+  "old": "om-1F54C"
+ },
+ {
+  "n": 445,
+  "rom": "paṛho",
+  "why": "Imperative (command 'read!') is not shown; looks like the plain verb.",
+  "prompt": "A mother points at an open book on a child's desk, the child sits upright looking at the page with a pencil, the mother's finger guiding the line.",
+  "ur": "پڑھو",
+  "en": "read!",
+  "unit": 7,
+  "old": "mb-read--to"
+ },
+ {
+  "n": 446,
+  "rom": "paṛhte",
+  "why": "Only one reader; the plural (several readers) is not shown.",
+  "prompt": "Three children sit together on a rug, each reading an open book.",
+  "ur": "پڑھتے",
+  "en": "read (plural)",
+  "unit": 7,
+  "old": "mb-read--to"
+ },
+ {
+  "n": 448,
+  "rom": "paṛhtī",
+  "why": "Shows an open book with no reader; the action is missing.",
+  "prompt": "A girl sits on a chair holding an open book on her lap, one finger on the line, her eyes following the words.",
+  "ur": "پڑھتی",
+  "en": "reads (fem)",
+  "unit": 7,
+  "old": "tw-1f4d6"
+ },
+ {
+  "n": 449,
+  "rom": "paṛhā",
+  "why": "Past tense (finished reading) is not shown.",
+  "prompt": "A boy closes a book and sets it on the table with a bookmark sticking out, a satisfied smile, a small stack of finished books beside him.",
+  "ur": "پڑھا",
+  "en": "read (past)",
+  "unit": 7,
+  "old": "mb-read--to"
+ },
+ {
+  "n": 450,
+  "rom": "paṛosī",
+  "why": "Houses show a place, not a neighbour person.",
+  "prompt": "Two women chat over a low wall between two neighbouring houses, one holding a plate, a child waving from a doorway.",
+  "ur": "پڑوسی",
+  "en": "neighbour",
+  "unit": 7,
+  "old": "tw-1f3d8"
+ },
+ {
+  "n": 453,
+  "rom": "roza",
+  "why": "Crescent moon suggests Eid or Ramadan, not the act of fasting.",
+  "prompt": "A child sits at a table with an empty plate and a glass of water, a plate of dates waiting, a sunset sky with a crescent moon above.",
+  "ur": "روزہ",
+  "en": "fast",
+  "unit": 7,
+  "old": "om-1F319"
+ },
+ {
+  "n": 454,
+  "rom": "rozāna",
+  "why": "Shows a calendar date, not something done every day.",
+  "prompt": "A girl drinks a glass of milk at breakfast, with a row of seven small sun icons across the table to show every day.",
+  "ur": "روزانہ",
+  "en": "daily",
+  "unit": 7,
+  "old": "tw-1f4c5"
+ },
+ {
+  "n": 455,
+  "rom": "rāz",
+  "why": "Shushing gesture reads as 'be quiet', not 'secret'.",
+  "prompt": "Two children whisper behind cupped hands, a small treasure chest hidden under a blanket beside them.",
+  "ur": "راز",
+  "en": "secret",
+  "unit": 7,
+  "old": "tw-1f92b"
+ },
+ {
+  "n": 458,
+  "rom": "sīṛhī",
+  "why": "A leaning ladder is not stairs.",
+  "prompt": "A child walks up a staircase of several steps inside a house, one hand on the railing.",
+  "ur": "سیڑھی",
+  "en": "stairs, ladder",
+  "unit": 7,
+  "old": "om-1FA9C"
+ },
+ {
+  "n": 460,
+  "rom": "tezī",
+  "why": "Identical to #459; the noun 'speed' is not shown distinctly.",
+  "prompt": "A bicycle racing down a road with speed lines behind it, a speedometer needle pointing high, wind lifting the rider's hair.",
+  "ur": "تیزی",
+  "en": "speed",
+  "unit": 7,
+  "old": "mb-fast-2"
+ },
+ {
+  "n": 462,
+  "rom": "thoṛī",
+  "why": "Identical to #461; nothing distinguishes it.",
+  "prompt": "A girl pinches a tiny crumb of cake between thumb and finger, a small plate with a sliver of cake, smiling.",
+  "ur": "تھوڑی",
+  "en": "a little (fem)",
+  "unit": 7,
+  "old": "tw-1f90f"
+ },
+ {
+  "n": 463,
+  "rom": "ummīd",
+  "why": "Sunrise over water reads as 'morning', not hope.",
+  "prompt": "A small girl stands on a hill with clasped hands, looking up at a bright star above her and a rising sun in the distance.",
+  "ur": "امید",
+  "en": "hope",
+  "unit": 7,
+  "old": "tw-1f305"
+ },
+ {
+  "n": 464,
+  "rom": "wālid",
+  "why": "Generic man with a beard; no father-child cue.",
+  "prompt": "A dad carries his young child on his shoulders in a park, both smiling, a kite flying above.",
+  "ur": "والد",
+  "en": "father",
+  "unit": 7,
+  "old": "tw-1f468"
+ },
+ {
+  "n": 466,
+  "rom": "zabardast",
+  "why": "Same thumbs-up as #396; 'excellent' needs a stronger cue.",
+  "prompt": "A girl holds a gold trophy and cheers with a big smile, a medal on a ribbon around her neck, confetti falling.",
+  "ur": "زبردست",
+  "en": "excellent",
+  "unit": 7,
+  "old": "tw-1f44d"
+ },
+ {
+  "n": 467,
+  "rom": "zabān",
+  "why": "Tongue reads as a body part; 'language' is not shown.",
+  "prompt": "Two children talk face to face with colourful speech bubbles above them, a small world map on the wall behind them.",
+  "ur": "زبان",
+  "en": "tongue / language",
+  "unit": 7,
+  "old": "tw-1f445"
+ },
+ {
+  "n": 472,
+  "rom": "zard",
+  "why": "A plain disc is an abstract symbol, not an object.",
+  "prompt": "A yellow banana and a yellow rubber duck sit side by side on a table.",
+  "ur": "زرد",
+  "en": "yellow",
+  "unit": 7,
+  "old": "tw-1f7e1"
+ },
+ {
+  "n": 475,
+  "rom": "ziyāda",
+  "why": "A plus sign is abstract; 'more' is not shown.",
+  "prompt": "A boy holds a plate piled high with cookies, overflowing, next to a friend who has only two cookies.",
+  "ur": "زیادہ",
+  "en": "more, too much",
+  "unit": 7,
+  "old": "tw-2795"
+ },
+ {
+  "n": 478,
+  "rom": "ḍar",
+  "why": "Reads as worried or sad, not frightened.",
+  "prompt": "A child peeks out from behind a sofa with wide eyes and hands on cheeks, a big dog's shadow on the wall.",
+  "ur": "ڈر",
+  "en": "fear",
+  "unit": 7,
+  "old": "tw-1f628"
+ },
+ {
+  "n": 479,
+  "rom": "ḍarte",
+  "why": "Identical to #478; the plural (several scared people) is not shown.",
+  "prompt": "Three children crowd together behind a table, all with wide frightened eyes and hands over their mouths, while a shadow looms on the wall.",
+  "ur": "ڈرتے",
+  "en": "are afraid (plural)",
+  "unit": 7,
+  "old": "tw-1f628"
+ },
+ {
+  "n": 480,
+  "rom": "ḍeṛh",
+  "why": "Two round pieces are unclear as 'one and a half'.",
+  "prompt": "A table with one whole round roti and half of another roti, a child holding the half piece.",
+  "ur": "ڈیڑھ",
+  "en": "one and a half",
+  "unit": 7,
+  "old": "art-646"
+ },
+ {
+  "n": 481,
+  "rom": "ḍher",
+  "why": "Sand mound with a wheat stalk reads as a hill or farm, not a heap",
+  "prompt": "A large untidy heap of grey stones and brown sand piled high on the ground, with a small child's red shovel stuck in the top; flat vector, clean outlines, plain background",
+  "ur": "ڈھیر",
+  "en": "heap",
+  "unit": 7,
+  "old": "art-652"
+ },
+ {
+  "n": 483,
+  "rom": "ḍhūnḍnā",
+  "why": "Magnifying glass alone shows an object, not the act of searching",
+  "prompt": "A child on hands and knees peering under a sofa with a magnifying glass, looking for a lost yellow ball; flat vector, sofa and ball clearly visible, plain background",
+  "ur": "ڈھونڈنا",
+  "en": "to look for",
+  "unit": 7,
+  "old": "tw-1f50d"
+ },
+ {
+  "n": 484,
+  "rom": "ḍibbe",
+  "why": "A single box; plural boxes not shown",
+  "prompt": "Three cardboard boxes stacked in a neat pile, one with its lid open and a toy car inside; flat vector, plain background",
+  "ur": "ڈبے",
+  "en": "boxes",
+  "unit": 7,
+  "old": "tw-1f4e6"
+ },
+ {
+  "n": 487,
+  "rom": "ṭeṛhā",
+  "why": "Zigzag bar reads as broken or zigzag, not crooked",
+  "prompt": "A wooden fence post leaning sideways at a crooked angle beside a bent tree trunk; flat vector, plain background",
+  "ur": "ٹیڑھا",
+  "en": "crooked",
+  "unit": 7,
+  "old": "art-629"
+ },
+ {
+  "n": 490,
+  "rom": "ṭukṛā",
+  "why": "Puzzle piece reads as puzzle",
+  "prompt": "A round birthday cake with one slice cut out and pulled a little away from the rest, the single cut piece clearly separate; flat vector, plain background",
+  "ur": "ٹکڑا",
+  "en": "piece",
+  "unit": 7,
+  "old": "tw-1f9e9"
+ },
+ {
+  "n": 497,
+  "rom": "daftar",
+  "why": "Generic civic building; reads as school, hospital or government",
+  "prompt": "A small office room with a wooden desk, a desktop computer, a stack of paper folders and a swivel chair, a man in a shirt and tie sitting at the desk; flat vector",
+  "ur": "دفتر",
+  "en": "office",
+  "unit": 8,
+  "old": "tw-1f3e2"
+ },
+ {
+  "n": 498,
+  "rom": "daʻwat",
+  "why": "Duplicates the mail envelope; no invitation shown",
+  "prompt": "A cream invitation card with a colourful border, a balloon and a cake drawn on it, being handed from one child to another; flat vector",
+  "ur": "دعوت",
+  "en": "invitation",
+  "unit": 8,
+  "old": "tw-1f4e8"
+ },
+ {
+  "n": 499,
+  "rom": "farsh",
+  "why": "Arrow-in-room diagram is abstract; floor not clearly shown",
+  "prompt": "A cosy room with a bright colourful woven carpet covering the wooden floor, a toy car and a pair of slippers lying on the carpet; flat vector",
+  "ur": "فرش",
+  "en": "floor",
+  "unit": 8,
+  "old": "mb-floor"
+ },
+ {
+  "n": 500,
+  "rom": "fauj",
+  "why": "A single helmet suggests one soldier, not an army",
+  "prompt": "A row of five soldiers in green camouflage uniforms and helmets marching in a line, one carrying a flag; flat vector",
+  "ur": "فوج",
+  "en": "army",
+  "unit": 8,
+  "old": "om-1FA96"
+ },
+ {
+  "n": 501,
+  "rom": "faurī",
+  "why": "Lightning bolt is abstract; immediacy not shown",
+  "prompt": "A hand pressing a light switch in a dark room and the lamp turning on at the same instant, a child cheering; flat vector",
+  "ur": "فوری",
+  "en": "immediate",
+  "unit": 8,
+  "old": "tw-26a1"
+ },
+ {
+  "n": 502,
+  "rom": "fihrist",
+  "why": "Lined paper with a pencil reads as writing, not a list",
+  "prompt": "A clipboard with a checklist of three rows, two boxes ticked with green checks and a pencil resting on it; flat vector",
+  "ur": "فہرست",
+  "en": "list",
+  "unit": 8,
+  "old": "om-1F4DD"
+ },
+ {
+  "n": 503,
+  "rom": "fikr",
+  "why": "Sad face is generic sadness, not worry or thought",
+  "prompt": "A child sitting on the edge of a bed, chin in hands, with a thought bubble above showing a small worried face and a question mark; flat vector",
+  "ur": "فکر",
+  "en": "worry, thought",
+  "unit": 8,
+  "old": "tw-1f61f"
+ },
+ {
+  "n": 507,
+  "rom": "guftagū",
+  "why": "One person speaking with a bubble; conversation needs two people",
+  "prompt": "Two people facing each other at a table, one speaking with a speech bubble, the other listening with a small smile; flat vector",
+  "ur": "گفتگو",
+  "en": "conversation",
+  "unit": 8,
+  "old": "mb-talk-2--to"
+ },
+ {
+  "n": 508,
+  "rom": "g͟ham",
+  "why": "Crying face is generic sadness, not grief",
+  "prompt": "A woman in a dark shawl holding a framed photo of an elderly man, sitting alone by a window and wiping tears; flat vector",
+  "ur": "غم",
+  "en": "grief",
+  "unit": 8,
+  "old": "tw-1f622"
+ },
+ {
+  "n": 509,
+  "rom": "g͟harīb",
+  "why": "Man with a bowl by a broken wall is hard to read and ambiguous",
+  "prompt": "A small boy in patched clothes and bare feet holding an empty cup, standing beside a simple small mud house with a patched roof; flat vector, warm colours",
+  "ur": "غریب",
+  "en": "poor",
+  "unit": 8,
+  "old": "art-717"
+ },
+ {
+  "n": 510,
+  "rom": "hafta",
+  "why": "Calendar with a single date, not a week",
+  "prompt": "A wall calendar page with a bracket around one full row of seven days, a sun icon on the first day and a moon icon on the last; flat vector",
+  "ur": "ہفتہ",
+  "en": "week, Saturday",
+  "unit": 8,
+  "old": "om-1F4C5"
+ },
+ {
+  "n": 511,
+  "rom": "hafte",
+  "why": "Calendar with one date; plural weeks and Saturday not shown",
+  "prompt": "Four calendar pages stacked side by side, each with a full row of seven days, one Saturday circled in red; flat vector",
+  "ur": "ہفتے",
+  "en": "weeks, on Saturday",
+  "unit": 8,
+  "old": "tw-1f4c5"
+ },
+ {
+  "n": 512,
+  "rom": "imtiḥān",
+  "why": "Paper and pencil is generic writing, same as list",
+  "prompt": "A school desk with a student writing answers on a test paper, a pencil in hand, a clock on the desk; flat vector",
+  "ur": "امتحان",
+  "en": "exam",
+  "unit": 8,
+  "old": "om-1F4DD"
+ },
+ {
+  "n": 513,
+  "rom": "jumʻa",
+  "why": "Mosque shows a place, not the day Friday",
+  "prompt": "A calendar with Friday circled in green, and beside it a family walking toward a mosque with a dome and minaret in morning sun; flat vector",
+  "ur": "جمعہ",
+  "en": "Friday",
+  "unit": 8,
+  "old": "tw-1f54c"
+ },
+ {
+  "n": 518,
+  "rom": "k͟harīd",
+  "why": "Empty shopping cart; the act of buying is not shown",
+  "prompt": "A shopper pushing a cart full of groceries (bread, bottles, fruit) down a shop aisle; flat vector",
+  "ur": "خرید",
+  "en": "buy (stem)",
+  "unit": 8,
+  "old": "om-1F6D2"
+ },
+ {
+  "n": 519,
+  "rom": "k͟harīdnā",
+  "why": "Empty cart; the verb to buy is not shown",
+  "prompt": "A child handing coins to a shopkeeper at a counter, a paper bag with an apple and bread on the counter; flat vector",
+  "ur": "خریدنا",
+  "en": "to buy",
+  "unit": 8,
+  "old": "om-1F6D2"
+ },
+ {
+  "n": 520,
+  "rom": "k͟hayāl",
+  "why": "Empty thought bubble is abstract",
+  "prompt": "A child sitting with chin on hand, a glowing lightbulb floating above the head and a small rocket sketched beside; flat vector",
+  "ur": "خیال",
+  "en": "thought, idea",
+  "unit": 8,
+  "old": "om-1F4AD"
+ },
+ {
+  "n": 521,
+  "rom": "k͟hushbū",
+  "why": "Sunflower gives no smell cue",
+  "prompt": "A child smelling a bunch of pink roses held to her nose, with small curly scent lines drifting up from the flowers; flat vector",
+  "ur": "خوشبو",
+  "en": "fragrance",
+  "unit": 8,
+  "old": "mb-flower"
+ },
+ {
+  "n": 522,
+  "rom": "k͟hushk",
+  "why": "Desert cactus shows a place, not dryness",
+  "prompt": "A bone-dry towel hanging stiff on a line in hot sun, beside cracked dry mud ground with no puddle; flat vector",
+  "ur": "خشک",
+  "en": "dry",
+  "unit": 8,
+  "old": "om-1F3DC"
+ },
+ {
+  "n": 524,
+  "rom": "k͟hwāb",
+  "why": "Empty bubble; dream content not shown",
+  "prompt": "A child asleep in bed with a dreamy bubble above showing a kite and a rainbow over a green hill; flat vector",
+  "ur": "خواب",
+  "en": "dream",
+  "unit": 8,
+  "old": "mb-dream--to"
+ },
+ {
+  "n": 525,
+  "rom": "k͟hālid",
+  "why": "Generic boy face; a name cannot be drawn directly",
+  "prompt": "A smiling boy holding up a blank white name tag card hanging on a lanyard around his neck; flat vector",
+  "ur": "خالد",
+  "en": "Khalid (a name)",
+  "unit": 8,
+  "old": "tw-1f466"
+ },
+ {
+  "n": 526,
+  "rom": "k͟hālī",
+  "why": "Measuring glass with marks, not clearly empty",
+  "prompt": "An empty drinking glass tilted upside down on a table with nothing inside, an empty plate beside it; flat vector",
+  "ur": "خالی",
+  "en": "empty",
+  "unit": 8,
+  "old": "mb-empty"
+ },
+ {
+  "n": 533,
+  "rom": "mulāqāt",
+  "why": "Handshake reads as a deal or agreement",
+  "prompt": "Two friends running toward each other on a park path with arms open to meet, a tree and a bench in the background; flat vector",
+  "ur": "ملاقات",
+  "en": "meeting",
+  "unit": 8,
+  "old": "tw-1f91d"
+ },
+ {
+  "n": 534,
+  "rom": "musāfir",
+  "why": "Suitcase alone is luggage, not a person travelling",
+  "prompt": "A traveller with a backpack, a hat and a suitcase walking along a road, holding a map; flat vector",
+  "ur": "مسافر",
+  "en": "traveller",
+  "unit": 8,
+  "old": "om-1F9F3"
+ },
+ {
+  "n": 535,
+  "rom": "muʻāf",
+  "why": "Pose unclear; forgiveness not shown",
+  "prompt": "A child saying sorry with hands clasped, a second child smiling and hugging back, a small heart between them; flat vector",
+  "ur": "معاف",
+  "en": "forgiven",
+  "unit": 8,
+  "old": "tw-1f647"
+ },
+ {
+  "n": 539,
+  "rom": "nāk͟hun",
+  "why": "Finger shown without a nail",
+  "prompt": "A close-up of a child's hand with a visible fingernail, a pair of small nail clippers beside it; flat vector",
+  "ur": "ناخن",
+  "en": "nail",
+  "unit": 8,
+  "old": "mb-fingernail"
+ },
+ {
+  "n": 543,
+  "rom": "qāʻida",
+  "why": "Open book is generic; primer not clear",
+  "prompt": "A child sitting at a small table with a thin picture book of animals open, a ruler and a pencil beside it; flat vector",
+  "ur": "قاعدہ",
+  "en": "rule, primer",
+  "unit": 8,
+  "old": "tw-1f4d6"
+ },
+ {
+  "n": 547,
+  "rom": "samundar",
+  "why": "Single wave is abstract; sea not clear",
+  "prompt": "A wide blue ocean with rolling waves under a sunny sky, a small sailboat and a sandy beach in the foreground; flat vector",
+  "ur": "سمندر",
+  "en": "sea, ocean",
+  "unit": 8,
+  "old": "tw-1f30a"
+ },
+ {
+  "n": 551,
+  "rom": "siyāh",
+  "why": "Plain black square with no object",
+  "prompt": "A black crow sitting on a bare branch against a dark night sky with a small crescent moon; flat vector",
+  "ur": "سیاہ",
+  "en": "black, dark",
+  "unit": 8,
+  "old": "tw-2b1b"
+ },
+ {
+  "n": 552,
+  "rom": "taklīf",
+  "why": "Scrunched face reads as pain or annoyance, not trouble",
+  "prompt": "A boy with a tangled kite stuck high in a tree, his shoulders sagging and frowning, a broken kite string dangling; flat vector",
+  "ur": "تکلیف",
+  "en": "trouble",
+  "unit": 8,
+  "old": "tw-1f623"
+ },
+ {
+  "n": 553,
+  "rom": "taʻlīm",
+  "why": "Building with a clock; school and learning not clear",
+  "prompt": "A classroom with children at wooden desks, one raising a hand, a teacher pointing at a blackboard with a globe and books on the desk; flat vector",
+  "ur": "تعلیم",
+  "en": "education",
+  "unit": 8,
+  "old": "tw-1f3eb"
+ },
+ {
+  "n": 554,
+  "rom": "tārīk͟h",
+  "why": "Calendar date shows date, not history",
+  "prompt": "An old clay pot and an antique brass pocket watch beside an old open book with a sketch of a stone monument; flat vector",
+  "ur": "تاریخ",
+  "en": "history, date",
+  "unit": 8,
+  "old": "tw-1f4c5"
+ },
+ {
+  "n": 556,
+  "rom": "waʻda",
+  "why": "Handshake; promise not shown",
+  "prompt": "Two children linking little fingers in a pinky promise, one with a crossed heart drawn on her shirt; flat vector",
+  "ur": "وعدہ",
+  "en": "promise",
+  "unit": 8,
+  "old": "tw-1f91d"
+ },
+ {
+  "n": 558,
+  "rom": "ʻajīb",
+  "why": "Raised brow reads as confusion; strangeness not shown",
+  "prompt": "A child staring at an odd creature with three eyes and a long curled tail, eyes wide and mouth open; flat vector",
+  "ur": "عجیب",
+  "en": "strange",
+  "unit": 8,
+  "old": "tw-1f928"
+ },
+ {
+  "n": 560,
+  "rom": "ʻaurat",
+  "why": "Child-like face; adult woman not clear",
+  "prompt": "An adult woman in a long shalwar kameez and dupatta, standing with a shopping bag on her arm, smiling; flat vector",
+  "ur": "عورت",
+  "en": "woman",
+  "unit": 8,
+  "old": "tw-1f469"
+ },
+ {
+  "n": 563,
+  "rom": "ʻilāqa",
+  "why": "World map; a region is not shown",
+  "prompt": "A map of a country with one region highlighted in green and a small pin marking a town in that region; flat vector",
+  "ur": "علاقہ",
+  "en": "area, region",
+  "unit": 8,
+  "old": "tw-1f5fa"
+ },
+ {
+  "n": 567,
+  "rom": "ʻīd",
+  "why": "Crescent moon alone; Eid celebration not shown",
+  "prompt": "A family in new bright clothes with gift boxes and sweets on a plate, a crescent moon and a lantern in the night sky above; flat vector",
+  "ur": "عید",
+  "en": "Eid",
+  "unit": 8,
+  "old": "om-1F319"
+ },
+ {
+  "n": 568,
+  "rom": "ḥaiwān",
+  "why": "Paw prints suggest one pet, not animals in general",
+  "prompt": "A lion, an elephant, a giraffe and a zebra standing together on the grass; flat vector",
+  "ur": "حیوان",
+  "en": "animal",
+  "unit": 8,
+  "old": "om-1F43E"
+ },
+ {
+  "n": 570,
+  "rom": "ḥādis̱a",
+  "why": "Ambulance shows an emergency, not the crash",
+  "prompt": "Two toy cars crashed front to front with dented bumpers, a small child looking worried at the scene; flat vector",
+  "ur": "حادثہ",
+  "en": "accident",
+  "unit": 8,
+  "old": "om-1F691"
+ },
+ {
+  "n": 571,
+  "rom": "aẕān",
+  "why": "Same mosque as masjid; call to prayer not shown",
+  "prompt": "A man in traditional clothing on a minaret balcony, hands cupped by his mouth as he calls out, sunrise sky; flat vector",
+  "ur": "اذان",
+  "en": "call to prayer",
+  "unit": 9,
+  "old": "art-862"
+ },
+ {
+  "n": 574,
+  "rom": "g͟halat̤ī",
+  "why": "Same red X as wrong; mistake not shown",
+  "prompt": "A child rubbing out a wrong answer in a notebook with a pink eraser, rubber crumbs on the page; flat vector",
+  "ur": "غلطی",
+  "en": "mistake",
+  "unit": 9,
+  "old": "om-274C"
+ },
+ {
+  "n": 576,
+  "rom": "intiz̤ār",
+  "why": "Hourglass reads as time passing, not waiting",
+  "prompt": "A child sitting on a bench with arms crossed, glancing at a wristwatch while a bus stop sign stands beside her; flat vector",
+  "ur": "انتظار",
+  "en": "waiting",
+  "unit": 9,
+  "old": "tw-23f3"
+ },
+ {
+  "n": 577,
+  "rom": "iẓāfa",
+  "why": "abstract arrow diagram of dots and squares, not an obvious increase",
+  "prompt": "A small green seedling in a pot next to a taller, leafy plant that has just grown; a little girl with a watering can smiles at it, a tape-measure with rising height marks beside them, bright sunny background, flat vector.",
+  "ur": "اضافہ",
+  "en": "increase",
+  "unit": 9,
+  "old": "mb-more"
+ },
+ {
+  "n": 578,
+  "rom": "k͟hat̤",
+  "why": "envelope reads as postal mail, not a written letter",
+  "prompt": "A child at a wooden desk writing with a pencil on a notebook page filled with wobbly handwritten lines, a small stack of books and a pencil case beside, flat vector, warm colors.",
+  "ur": "خط",
+  "en": "letter",
+  "unit": 9,
+  "old": "om-2709"
+ },
+ {
+  "n": 580,
+  "rom": "k͟hāṣ",
+  "why": "plain star is generic and means many things",
+  "prompt": "A happy child wearing a sparkly paper crown and a red sash, receiving one large wrapped gift box with a glowing gold ribbon while a row of plain small gift boxes sits aside in the background, confetti falling, flat vector.",
+  "ur": "خاص",
+  "en": "special",
+  "unit": 9,
+  "old": "om-2B50"
+ },
+ {
+  "n": 581,
+  "rom": "k͟hūbṣūrat",
+  "why": "sparkles are abstract and do not show beauty",
+  "prompt": "A smiling girl in a flower-print dress holding a big bouquet of pink and yellow roses, a rainbow butterfly on her shoulder, sunny garden background, flat vector.",
+  "ur": "خوبصورت",
+  "en": "beautiful",
+  "unit": 9,
+  "old": "om-2728"
+ },
+ {
+  "n": 582,
+  "rom": "lafz̤",
+  "why": "speech bubble means talk or chat, not a word",
+  "prompt": "A child pointing at one single wide word-shaped label in an open picture book, with a magnifying glass held over the page; the label is a blank rounded tag with no letters, flat vector.",
+  "ur": "لفظ",
+  "en": "word",
+  "unit": 9,
+  "old": "tw-1f4ac"
+ },
+ {
+  "n": 585,
+  "rom": "marīẓ",
+  "why": "sick face reads as a sad or ill emotion, not a patient",
+  "prompt": "A child lying in a hospital bed under a blue blanket holding a teddy bear, a kind doctor in a white coat sitting beside with a stethoscope, an IV drip stand next to the bed, flat vector.",
+  "ur": "مریض",
+  "en": "patient",
+  "unit": 9,
+  "old": "tw-1f912"
+ },
+ {
+  "n": 586,
+  "rom": "maḥfūz̤",
+  "why": "cracked red shield looks broken, not safe",
+  "prompt": "A little child sleeping peacefully inside a cozy house with a strong locked door, a big friendly dog lying at the doorstep and a parent tucking in the blanket, calm secure mood, flat vector.",
+  "ur": "محفوظ",
+  "en": "safe",
+  "unit": 9,
+  "old": "om-1F6E1"
+ },
+ {
+  "n": 587,
+  "rom": "maṣrūf",
+  "why": "man at a desk with a phone reads as working or studying, not busy",
+  "prompt": "A woman juggling many tasks: one hand holding a ringing phone, one arm carrying a tall stack of papers, a clock on the wall showing a rush, boxes piled up and a pot boiling over, flat vector hectic scene.",
+  "ur": "مصروف",
+  "en": "busy",
+  "unit": 9,
+  "old": "mb-busy"
+ },
+ {
+  "n": 589,
+  "rom": "maẓmūn",
+  "why": "notepad with pencil is generic writing, same as poem",
+  "prompt": "A student sitting at a desk writing a long composition in a thick notebook, several finished pages stacked beside, a pencil in hand, a wall clock and a cup of tea, flat vector.",
+  "ur": "مضمون",
+  "en": "essay",
+  "unit": 9,
+  "old": "tw-1f4dd"
+ },
+ {
+  "n": 590,
+  "rom": "maẕāq",
+  "why": "grinning face with a tear does not show a joke",
+  "prompt": "Two friends laughing hard while a clown in a striped hat tells a funny story, a bouncing balloon and small laughter stars around them, bright playful colors, flat vector.",
+  "ur": "مذاق",
+  "en": "joke",
+  "unit": 9,
+  "old": "tw-1f923"
+ },
+ {
+  "n": 591,
+  "rom": "mut̤ālaʻa",
+  "why": "open book alone only means book, not studying",
+  "prompt": "A child sitting cross-legged on a cushion reading an open picture book intently, a pencil and notebook beside, a desk lamp glowing, calm study scene, flat vector.",
+  "ur": "مطالعہ",
+  "en": "study, reading",
+  "unit": 9,
+  "old": "tw-1f4d6"
+ },
+ {
+  "n": 593,
+  "rom": "naz̤m",
+  "why": "notepad icon is generic writing; a poem is not shown",
+  "prompt": "A child reciting a rhyming poem on a small stage, music notes floating in the air, holding a short scroll with flower and star doodles, a small audience of kids clapping, flat vector.",
+  "ur": "نظم",
+  "en": "poem",
+  "unit": 9,
+  "old": "tw-1f4dd"
+ },
+ {
+  "n": 594,
+  "rom": "niz̤ām",
+  "why": "plain gear is mechanical, not an organised system",
+  "prompt": "A neat school assembly: children standing in perfectly straight rows, a bell on the wall, a clock and a timetable chart with pictures, a teacher with a whistle keeping order, flat vector.",
+  "ur": "نظام",
+  "en": "system",
+  "unit": 9,
+  "old": "tw-2699"
+ },
+ {
+  "n": 595,
+  "rom": "niṣāb",
+  "why": "generic stack of books; the syllabus idea is not clear",
+  "prompt": "An open school bag beside a neat row of textbooks each marked with a picture icon (ruler for maths, globe, flower, paintbrush), and a printed checklist of lessons on the table, flat vector.",
+  "ur": "نصاب",
+  "en": "syllabus",
+  "unit": 9,
+  "old": "tw-1f4da"
+ },
+ {
+  "n": 598,
+  "rom": "qarẓ",
+  "why": "money bag shows money, not a loan or debt",
+  "prompt": "A friend handing a pile of coins to another friend, a small note with a signature line on the table, a handshake between them, one person looking worried about paying back, flat vector.",
+  "ur": "قرض",
+  "en": "loan, debt",
+  "unit": 9,
+  "old": "tw-1f4b0"
+ },
+ {
+  "n": 601,
+  "rom": "rābit̤a",
+  "why": "plain phone does not show contacting someone",
+  "prompt": "A child holding a phone to her ear, a smiling grandmother on the phone screen waving, a small heart floating between them and a short wavy connection line, flat vector.",
+  "ur": "رابطہ",
+  "en": "contact",
+  "unit": 9,
+  "old": "tw-1f4f1"
+ },
+ {
+  "n": 603,
+  "rom": "shat̤ranj",
+  "why": "a single dark pawn is not clearly a chess game",
+  "prompt": "Two kids playing chess at a table: a checkered chessboard with a king, queen and knights, one child moving a piece while the other thinks with hand on chin, flat vector.",
+  "ur": "شطرنج",
+  "en": "chess",
+  "unit": 9,
+  "old": "tw-265f"
+ },
+ {
+  "n": 604,
+  "rom": "s̱ubūt",
+  "why": "magnifying glass means search or investigate, not proof",
+  "prompt": "A detective-style child holding a magnifying glass over a muddy footprint and a bitten apple with a clear tooth mark, a check-mark stamp of approval nearby, flat vector.",
+  "ur": "ثبوت",
+  "en": "proof",
+  "unit": 9,
+  "old": "tw-1f50d"
+ },
+ {
+  "n": 606,
+  "rom": "t̤abīʻat",
+  "why": "runner with fruit shows health or food, not nature",
+  "prompt": "A green forest landscape with tall trees, a flowing river, a deer drinking, colorful flowers, butterflies and a bright sun, flat vector nature scene.",
+  "ur": "طبیعت",
+  "en": "health, nature",
+  "unit": 9,
+  "old": "mb-healthy"
+ },
+ {
+  "n": 607,
+  "rom": "t̤ai",
+  "why": "handshake shows agreement, not settled or calm",
+  "prompt": "A calm lake with still water reflecting a small boat resting at the dock, a cat curled up settled on a cushion in the foreground, peaceful and still, flat vector.",
+  "ur": "طے",
+  "en": "settled",
+  "unit": 9,
+  "old": "tw-1f91d"
+ },
+ {
+  "n": 610,
+  "rom": "t̤ālib",
+  "why": "graduation cap suggests a graduate, not a school student",
+  "prompt": "A school-age child in a uniform with a backpack and a stack of books walking into a classroom, pencil case in hand, flat vector.",
+  "ur": "طالب",
+  "en": "student",
+  "unit": 9,
+  "old": "tw-1f9d1-200d-1f393"
+ },
+ {
+  "n": 611,
+  "rom": "t̤āliba",
+  "why": "plain girl face has no school context",
+  "prompt": "A girl in a school uniform with a backpack and an open exercise book, standing next to a classroom blackboard with a chalk in hand, flat vector.",
+  "ur": "طالبہ",
+  "en": "girl student",
+  "unit": 9,
+  "old": "tw-1f467"
+ },
+ {
+  "n": 615,
+  "rom": "ʻaz̤īm",
+  "why": "crown means king or royal, not great",
+  "prompt": "A child standing at the foot of a huge snow-capped mountain, looking up in awe, the towering grand scale shown next to the small figure, flat vector.",
+  "ur": "عظیم",
+  "en": "great",
+  "unit": 9,
+  "old": "om-1F451"
+ },
+ {
+  "n": 617,
+  "rom": "ḥāẓir",
+  "why": "raised hand reads as hello or a question",
+  "prompt": "A child in a classroom raising a hand to answer here at roll call, the teacher holding an attendance register and smiling at the class, flat vector.",
+  "ur": "حاضر",
+  "en": "present",
+  "unit": 9,
+  "old": "tw-1f64b"
+ },
+ {
+  "n": 618,
+  "rom": "ṣadī",
+  "why": "numeral 100 is a number, not a century",
+  "prompt": "A grandfather with a white beard sitting beside a tall antique grandfather clock and a wall calendar showing many years, old photographs on the wall, a child listening, flat vector.",
+  "ur": "صدی",
+  "en": "century",
+  "unit": 9,
+  "old": "mb-hundred"
+ },
+ {
+  "n": 619,
+  "rom": "ṣafḥa",
+  "why": "blank sheet looks like a document, not a book page",
+  "prompt": "A child turning a page of a big picture book, the page mid-flip, with colorful illustrations of a tree and a sun on it, flat vector.",
+  "ur": "صفحہ",
+  "en": "page",
+  "unit": 9,
+  "old": "tw-1f4c4"
+ },
+ {
+  "n": 621,
+  "rom": "ṣaḥn",
+  "why": "house exterior, not an open courtyard",
+  "prompt": "An open-air courtyard inside a house: a square with walls on four sides, the open sky above, a tree in the middle, children playing and a cot in the corner, flat vector.",
+  "ur": "صحن",
+  "en": "courtyard",
+  "unit": 9,
+  "old": "tw-1f3e1"
+ },
+ {
+  "n": 624,
+  "rom": "ṣirf",
+  "why": "raised finger reads as one or pointing, not only",
+  "prompt": "A single red apple on an empty plate in the middle of a table, a child pointing at it, no other food on the table, flat vector.",
+  "ur": "صرف",
+  "en": "only",
+  "unit": 9,
+  "old": "tw-261d"
+ },
+ {
+  "n": 628,
+  "rom": "ṣāf",
+  "why": "clapping hands with sparkles reads as applause",
+  "prompt": "A child at a sink washing hands with soap, bubbles and sparkles around the clean hands, a clean towel hanging beside, spotless clean feel, flat vector.",
+  "ur": "صاف",
+  "en": "clean",
+  "unit": 9,
+  "old": "mb-clean-hands"
+ },
+ {
+  "n": 629,
+  "rom": "ṣūrat",
+  "why": "smiley reads as happy, not face or form",
+  "prompt": "A child looking into a round hand mirror and seeing their own face clearly, a small picture frame on the wall behind, face in close-up, flat vector.",
+  "ur": "صورت",
+  "en": "form, face",
+  "unit": 9,
+  "old": "tw-1f642"
+ },
+ {
+  "n": 630,
+  "rom": "ẓarūr",
+  "why": "checkmark duplicates correct, not certainly",
+  "prompt": "A child nodding firmly with a hand on heart and a confident smile, promising a friend, sun shining, serious sure mood, flat vector.",
+  "ur": "ضرور",
+  "en": "certainly",
+  "unit": 9,
+  "old": "om-2705"
+ },
+ {
+  "n": 631,
+  "rom": "ẓarūrī",
+  "why": "red exclamation mark reads as warning, not necessary",
+  "prompt": "A school bag packed with the essentials laid out on a table: a water bottle, a lunchbox, a notebook and a folded raincoat, flat vector.",
+  "ur": "ضروری",
+  "en": "necessary",
+  "unit": 9,
+  "old": "tw-2757"
+ },
+ {
+  "n": 634,
+  "rom": "ẕihn",
+  "why": "brain duplicates intelligent (632)",
+  "prompt": "Side profile of a child's head with a thought bubble containing a lightbulb and a puzzle piece, the child with a hand on chin thinking hard, flat vector.",
+  "ur": "ذہن",
+  "en": "mind",
+  "unit": 9,
+  "old": "tw-1f9e0"
+ },
+ {
+  "n": 635,
+  "rom": "abbā",
+  "why": "plain man is generic, no father-child relation shown",
+  "prompt": "A father carrying a small child on his shoulders in a park, the child holding a kite, both smiling, flat vector family scene.",
+  "ur": "ابّا",
+  "en": "dad",
+  "unit": 10,
+  "old": "tw-1f468"
+ },
+ {
+  "n": 636,
+  "rom": "ammī",
+  "why": "plain woman is generic, no mother-child relation shown",
+  "prompt": "A mother hugging her small child in a kitchen, a pot cooking on the stove and a rolling pin on the counter, warm family scene, flat vector.",
+  "ur": "امّی",
+  "en": "mum",
+  "unit": 10,
+  "old": "tw-1f469"
+ },
+ {
+  "n": 637,
+  "rom": "aʻlā",
+  "why": "up arrow means up or increase, not high",
+  "prompt": "A tall giraffe with its head reaching high above the trees, a small child below looking up, a bird flying high in the sky, flat vector.",
+  "ur": "اعلیٰ",
+  "en": "high",
+  "unit": 10,
+  "old": "om-2B06"
+ },
+ {
+  "n": 639,
+  "rom": "bhāʾī",
+  "why": "plain boy face duplicates child",
+  "prompt": "An older boy holding the hand of his little brother, both wearing matching shirts and walking to school together with backpacks, flat vector.",
+  "ur": "بھائی",
+  "en": "brother",
+  "unit": 10,
+  "old": "tw-1f466"
+ },
+ {
+  "n": 640,
+  "rom": "chauṛāʾī",
+  "why": "double arrow reads as a diagram, not width",
+  "prompt": "A child holding a tape measure across the wide width of a large table, showing its side-to-side measurement, flat vector.",
+  "ur": "چوڑائی",
+  "en": "width",
+  "unit": 10,
+  "old": "om-2194"
+ },
+ {
+  "n": 644,
+  "rom": "duʻāʾeṉ",
+  "why": "same icon as dua (643); plural not shown",
+  "prompt": "Four children sitting in a row on prayer mats with hands folded in prayer, a mosque arch behind them, several people praying together, flat vector.",
+  "ur": "دعائیں",
+  "en": "prayers",
+  "unit": 10,
+  "old": "tw-1f64f"
+ },
+ {
+  "n": 645,
+  "rom": "gahrāʾī",
+  "why": "tipped bowl with arrow is abstract, not depth",
+  "prompt": "A child leaning over the edge of a deep well looking down at dark water, a rope and bucket going far down, depth shown by the long rope, flat vector.",
+  "ur": "گہرائی",
+  "en": "depth",
+  "unit": 10,
+  "old": "mb-deep"
+ },
+ {
+  "n": 646,
+  "rom": "gaʾī",
+  "why": "standing man with arrow shows no action",
+  "prompt": "A girl walking away from her house along a path with a schoolbag on her back, waving back at mom standing in the open doorway, footsteps trailing behind, flat vector.",
+  "ur": "گئی",
+  "en": "went (fem)",
+  "unit": 10,
+  "old": "mb-go--to"
+ },
+ {
+  "n": 647,
+  "rom": "gaʾīṉ",
+  "why": "same generic figure with arrow",
+  "prompt": "Two girls walking away from their house together along a path toward the park, schoolbags on, the front door open behind them and their mom waving, flat vector.",
+  "ur": "گئیں",
+  "en": "went (plural fem)",
+  "unit": 10,
+  "old": "mb-go--to"
+ },
+ {
+  "n": 649,
+  "rom": "hawāʾī",
+  "why": "airplane is a vehicle, not air",
+  "prompt": "A child holding a kite string with the kite flying high, wind blowing leaves and clouds across a blue sky, the moving air visible, flat vector.",
+  "ur": "ہوائی",
+  "en": "of the air",
+  "unit": 10,
+  "old": "mb-aeroplane"
+ },
+ {
+  "n": 650,
+  "rom": "jāʾe",
+  "why": "plain man with arrow shows no permission or going out",
+  "prompt": "A mother smiling and opening the front gate for her child to step out to the playground, the child happily heading out with a ball, flat vector.",
+  "ur": "جائے",
+  "en": "may go",
+  "unit": 10,
+  "old": "mb-go--to"
+ },
+ {
+  "n": 651,
+  "rom": "jāʾeṉ",
+  "why": "same generic figure with arrow",
+  "prompt": "A mother smiling and holding the gate open while two children happily run out together toward the playground with a ball, flat vector.",
+  "ur": "جائیں",
+  "en": "may go (plural)",
+  "unit": 10,
+  "old": "mb-go--to"
+ },
+ {
+  "n": 653,
+  "rom": "khāʾeṉ",
+  "why": "fork and knife show objects, not the act of eating",
+  "prompt": "A child happily eating a sandwich at a dining table with a plate and a glass of milk, mother nodding yes beside, flat vector.",
+  "ur": "کھائیں",
+  "en": "may eat",
+  "unit": 10,
+  "old": "tw-1f374"
+ },
+ {
+  "n": 656,
+  "rom": "laṛāʾī",
+  "why": "red squiggles are abstract, not a fight",
+  "prompt": "Two little boys wrestling and pushing each other on a playground, fists raised and angry faces, a teacher hurrying toward them, flat vector.",
+  "ur": "لڑائی",
+  "en": "fight",
+  "unit": 10,
+  "old": "tw-1f4a2"
+ },
+ {
+  "n": 659,
+  "rom": "masāʾil",
+  "why": "question mark reads as question, not problems",
+  "prompt": "A child looking at several problems: a broken toy kite stuck in a tree, a tangled ball of string, and a cracked cup spilled on the floor, flat vector.",
+  "ur": "مسائل",
+  "en": "problems",
+  "unit": 10,
+  "old": "tw-2753"
+ },
+ {
+  "n": 660,
+  "rom": "masʾala",
+  "why": "question mark again; one problem not shown",
+  "prompt": "A child kneeling next to a small toy car with one wheel broken off, pointing at the missing wheel with a worried face, flat vector.",
+  "ur": "مسئلہ",
+  "en": "problem",
+  "unit": 10,
+  "old": "tw-2753"
+ },
+ {
+  "n": 663,
+  "rom": "natāʾij",
+  "why": "red handwritten 100 reads as a number, not results",
+  "prompt": "A teacher handing a child a report card with a big smiley star on it, the child showing a happy face to their parents, flat vector.",
+  "ur": "نتائج",
+  "en": "results",
+  "unit": 10,
+  "old": "tw-1f4af"
+ },
+ {
+  "n": 664,
+  "rom": "naʾe",
+  "why": "sparkles are abstract, not new",
+  "prompt": "A child unwrapping a brand-new red bicycle still with shiny plastic wrap and a bow, a new school bag beside it, flat vector.",
+  "ur": "نئے",
+  "en": "new (plural)",
+  "unit": 10,
+  "old": "om-2728"
+ },
+ {
+  "n": 667,
+  "rom": "qāʾim",
+  "why": "golf flag is unrelated to established",
+  "prompt": "A ribbon-cutting ceremony at a newly finished building, a foundation stone plaque at the entrance and a flag on the roof, a teacher and children smiling, flat vector.",
+  "ur": "قائم",
+  "en": "established",
+  "unit": 10,
+  "old": "tw-26f3"
+ },
+ {
+  "n": 669,
+  "rom": "rāʾe",
+  "why": "thought cloud is abstract",
+  "prompt": "Two children standing side by side: one giving a thumbs-up, the other shaking head with thumbs-down, each with their own speech bubble showing different ideas, flat vector.",
+  "ur": "رائے",
+  "en": "opinion",
+  "unit": 10,
+  "old": "om-1F4AD"
+ },
+ {
+  "n": 674,
+  "rom": "ādmī",
+  "why": "Head-only face with mustache; reads as a face, not a man",
+  "prompt": "A full-body adult man in a button shirt and trousers, carrying a briefcase, walking toward a bus stop, one hand raised in greeting, plain background, single figure, flat vector children's illustration",
+  "ur": "آدمی",
+  "en": "man, person",
+  "unit": 10,
+  "old": "tw-1f468"
+ },
+ {
+  "n": 675,
+  "rom": "āge",
+  "why": "Abstract arrow symbol with no subject",
+  "prompt": "A boy in a red shirt running forward down a dirt road, leaning ahead, a small dog running beside him, sunny horizon in front, flat vector children's illustration",
+  "ur": "آگے",
+  "en": "ahead",
+  "unit": 10,
+  "old": "om-27A1"
+ },
+ {
+  "n": 676,
+  "rom": "āj",
+  "why": "Sunrise reads as morning, not today",
+  "prompt": "A child at a kitchen table pointing at a wall calendar with one square circled in red, sunshine coming through the window, flat vector children's illustration",
+  "ur": "آج",
+  "en": "today",
+  "unit": 10,
+  "old": "mb-today"
+ },
+ {
+  "n": 677,
+  "rom": "āk͟hir",
+  "why": "Checkered finish flag means finish, not at last",
+  "prompt": "A child breaking a finish ribbon at the end of a race, arms raised and smiling, a few runners far behind, cheering crowd in background, flat vector children's illustration",
+  "ur": "آخر",
+  "en": "at last",
+  "unit": 10,
+  "old": "om-1F3C1"
+ },
+ {
+  "n": 678,
+  "rom": "āk͟hirī",
+  "why": "Same flag as #677; reads as finish line, not last",
+  "prompt": "Five children standing in a line, the child at the very back of the line waving, the other four ahead, a finish line tape in front of the leader, flat vector children's illustration",
+  "ur": "آخری",
+  "en": "last",
+  "unit": 10,
+  "old": "om-1F3C1"
+ },
+ {
+  "n": 681,
+  "rom": "ānā",
+  "why": "Open hand gesture; the verb to come is not shown",
+  "prompt": "A mother in a doorway beckoning a child toward her with a waving hand, the child walking across a green yard holding a ball, flat vector children's illustration",
+  "ur": "آنا",
+  "en": "to come",
+  "unit": 10,
+  "old": "mb-come--to"
+ },
+ {
+  "n": 682,
+  "rom": "āo",
+  "why": "Same hand gesture; no clear come-here action",
+  "prompt": "A friendly teacher beckoning a child with a crooked index finger and a smile, the child running toward her, school door behind, flat vector children's illustration",
+  "ur": "آؤ",
+  "en": "come!",
+  "unit": 10,
+  "old": "mb-come--to"
+ },
+ {
+  "n": 684,
+  "rom": "āsmān",
+  "why": "Sun and cloud read as weather, not sky",
+  "prompt": "A wide bright blue sky filling the frame with a few soft white clouds and a flock of birds flying, no sun, a village rooftop at the bottom edge, flat vector children's illustration",
+  "ur": "آسمان",
+  "en": "sky",
+  "unit": 10,
+  "old": "tw-1f324"
+ },
+ {
+  "n": 685,
+  "rom": "āsān",
+  "why": "OK hand means okay or fine, not easy",
+  "prompt": "A child easily tying shoelaces with a big smile, a simple puzzle piece slotting into place beside them, flat vector children's illustration",
+  "ur": "آسان",
+  "en": "easy",
+  "unit": 10,
+  "old": "tw-1f44c"
+ },
+ {
+  "n": 686,
+  "rom": "āte",
+  "why": "Hand gesture; plural come not shown",
+  "prompt": "Three children waving their arms together at a group, all walking toward a house gate with a path leading to it, flat vector children's illustration",
+  "ur": "آتے",
+  "en": "come (plural)",
+  "unit": 10,
+  "old": "mb-come--to"
+ },
+ {
+  "n": 687,
+  "rom": "ātā",
+  "why": "Hand gesture; comes (masc.) not shown as motion",
+  "prompt": "A father walking up a village path toward a house with a bag on his shoulder, a dog running out to meet him, flat vector children's illustration",
+  "ur": "آتا",
+  "en": "comes",
+  "unit": 10,
+  "old": "mb-come--to"
+ },
+ {
+  "n": 688,
+  "rom": "ātī",
+  "why": "Hand gesture; comes (fem.) not shown as motion",
+  "prompt": "A mother in a shalwar kameez walking up a path carrying a shopping bag, a child running out of the house to meet her, flat vector children's illustration",
+  "ur": "آتی",
+  "en": "comes (fem)",
+  "unit": 10,
+  "old": "mb-come--to"
+ },
+ {
+  "n": 690,
+  "rom": "āyā",
+  "why": "Hand gesture; past tense came not shown",
+  "prompt": "A father arriving at the front gate of a house with a bag of mangoes, the front door open, a child running out with arms open, flat vector children's illustration",
+  "ur": "آیا",
+  "en": "came",
+  "unit": 10,
+  "old": "mb-come--to"
+ },
+ {
+  "n": 691,
+  "rom": "āzād",
+  "why": "Generic dove; freedom not clearly shown",
+  "prompt": "A small bird flying out of an open birdcage whose door is swung wide, a child's hand on the cage door, blue sky above, flat vector children's illustration",
+  "ur": "آزاد",
+  "en": "free",
+  "unit": 10,
+  "old": "mb-dove"
+ },
+ {
+  "n": 692,
+  "rom": "āʾī",
+  "why": "Hand gesture; came (fem.) not shown",
+  "prompt": "A mother arriving at the front gate of a house carrying a shopping bag, the front door open, a child running out to hug her, flat vector children's illustration",
+  "ur": "آئی",
+  "en": "came (fem)",
+  "unit": 10,
+  "old": "mb-come--to"
+ },
+ {
+  "n": 693,
+  "rom": "āṉdhī",
+  "why": "Tornado funnel is not a dust storm",
+  "prompt": "A brown dust storm rolling over a village road, clouds of dust sweeping across the street, trees bending, a child holding a scarf over the face, a cart of sacks covered in dust, flat vector children's illustration",
+  "ur": "آندھی",
+  "en": "dust storm",
+  "unit": 10,
+  "old": "tw-1f32a"
+ },
+ {
+  "n": 696,
+  "rom": "āṉsū",
+  "why": "Crying face emoji; the tear itself is not isolated",
+  "prompt": "Close-up of a child's eye with a single large clear tear rolling down the cheek, the rest of the face calm, flat vector children's illustration",
+  "ur": "آنسو",
+  "en": "tear",
+  "unit": 10,
+  "old": "tw-1f622"
+ },
+ {
+  "n": 699,
+  "rom": "ūṉchāʾī",
+  "why": "Tree beside a person does not show height",
+  "prompt": "A tall adult man standing beside a small child against a wall with pencil height marks, the child's head reaching only to the man's waist, flat vector children's illustration",
+  "ur": "اونچائی",
+  "en": "height",
+  "unit": 10,
+  "old": "art-942"
+ },
+ {
+  "n": 700,
+  "rom": "ṣafāʾī",
+  "why": "Broom shows cleaning action, not the clean state",
+  "prompt": "A sparkling clean kitchen with a shiny white sink, a child wiping a bright counter with a cloth, a bucket and a bar of soap beside, shine sparkles on the surfaces, flat vector children's illustration",
+  "ur": "صفائی",
+  "en": "cleanliness",
+  "unit": 10,
+  "old": "tw-1f9f9"
+ },
+ {
+  "n": 701,
+  "rom": "ṣalāt",
+  "why": "Mosque building shows a place, not the act of prayer",
+  "prompt": "A man in white shalwar kameez and a white prayer cap kneeling on a prayer mat with hands raised near his ears, a small mosque minaret in the window behind, flat vector children's illustration",
+  "ur": "صلوٰۃ",
+  "en": "prayer",
+  "unit": 10,
+  "old": "tw-1f54c"
+ },
+ {
+  "n": 704,
+  "rom": "aur",
+  "why": "Plus sign is an abstract symbol",
+  "prompt": "A child holding a red apple in one hand and a yellow banana in the other, both arms raised, smiling, two items side by side, flat vector children's illustration",
+  "ur": "اور",
+  "en": "and",
+  "unit": 11,
+  "old": "om-2795"
+ },
+ {
+  "n": 705,
+  "rom": "bahādur",
+  "why": "Flexing muscles shows strong, not brave; no face or danger",
+  "prompt": "A small boy standing tall with chest out and fists on hips, facing a big growling dog in front of him without fear, flat vector children's illustration",
+  "ur": "بہادر",
+  "en": "brave",
+  "unit": 11,
+  "old": "mb-strong"
+ },
+ {
+  "n": 706,
+  "rom": "bahār",
+  "why": "Bare-ish tree reads as just a tree or autumn",
+  "prompt": "A blossoming tree with pink flowers and petals falling, green grass with tulips, butterflies in the air, a child smelling a flower, bright sun, flat vector children's illustration",
+  "ur": "بہار",
+  "en": "spring",
+  "unit": 11,
+  "old": "mb-spring"
+ },
+ {
+  "n": 708,
+  "rom": "biryānī",
+  "why": "Plate of rice with orange curry is generic and identical to #731",
+  "prompt": "A large steaming clay handi pot with layered rice and chicken pieces, a ladle resting on the side, fried onion rings and a lemon wedge on top, flat vector children's illustration",
+  "ur": "بریانی",
+  "en": "biryani (a rice dish)",
+  "unit": 11,
+  "old": "tw-1f35b"
+ },
+ {
+  "n": 711,
+  "rom": "chādar",
+  "why": "Folded cloth looks like a towel or napkin",
+  "prompt": "A bed made up with a flowered cotton sheet pulled neatly over it, a child tucking the sheet in at the corner, flat vector children's illustration",
+  "ur": "چادر",
+  "en": "sheet, shawl",
+  "unit": 11,
+  "old": "mb-blanket"
+ },
+ {
+  "n": 716,
+  "rom": "inṭarnaiṭ",
+  "why": "Globe means world or earth; no device or connection shown",
+  "prompt": "A child sitting on the floor with a tablet, wifi waves rising from the screen, a small globe on the floor beside them, flat vector children's illustration",
+  "ur": "انٹرنیٹ",
+  "en": "internet",
+  "unit": 11,
+  "old": "om-1F310"
+ },
+ {
+  "n": 717,
+  "rom": "islām",
+  "why": "Crescent and star symbol reads as a flag, not a faith",
+  "prompt": "The Kaaba, a black cube building in a white courtyard, pilgrims in white cloth walking around it in a circle, a crescent moon in the sky above, flat vector children's illustration",
+  "ur": "اسلام",
+  "en": "Islam",
+  "unit": 11,
+  "old": "tw-262a"
+ },
+ {
+  "n": 718,
+  "rom": "isṭeshan",
+  "why": "Train alone, no station building or platform",
+  "prompt": "A train arriving at a station platform under a roof canopy, a clock on a pole, a passenger with a suitcase waiting on a bench, flat vector children's illustration",
+  "ur": "اسٹیشن",
+  "en": "station",
+  "unit": 11,
+  "old": "om-1F689"
+ },
+ {
+  "n": 721,
+  "rom": "khīr",
+  "why": "Looks like plain rice; no milk pudding cues",
+  "prompt": "A bowl of creamy white pudding with slivered almonds and pistachios on top, a spoon in the bowl, cardamom pods beside it, flat vector children's illustration",
+  "ur": "کھیر",
+  "en": "rice pudding",
+  "unit": 11,
+  "old": "art-1017"
+ },
+ {
+  "n": 722,
+  "rom": "kyā",
+  "why": "Question mark is an abstract symbol",
+  "prompt": "A child with raised eyebrows and an open palm, pointing at a toy car and looking puzzled, asking a question, flat vector children's illustration",
+  "ur": "کیا",
+  "en": "what",
+  "unit": 11,
+  "old": "tw-2753"
+ },
+ {
+  "n": 723,
+  "rom": "lassī",
+  "why": "Blue cup with pink top and a stray bird; not a lassi",
+  "prompt": "A tall clear glass of pale creamy yoghurt drink with a frothy top, a dusting of green cardamom, a striped straw, beside a copper jug, flat vector children's illustration",
+  "ur": "لسی",
+  "en": "lassi (a yoghurt drink)",
+  "unit": 11,
+  "old": "mb-yogurt"
+ },
+ {
+  "n": 725,
+  "rom": "musalmān",
+  "why": "Mosque building shows a place, not a Muslim person",
+  "prompt": "A man in white shalwar kameez and a white prayer cap standing outside a mosque with a rolled prayer mat under his arm, a child in matching outfit beside him, flat vector children's illustration",
+  "ur": "مسلمان",
+  "en": "Muslim",
+  "unit": 11,
+  "old": "tw-1f54c"
+ },
+ {
+  "n": 726,
+  "rom": "nahīṉ",
+  "why": "Red X is an abstract symbol",
+  "prompt": "A child with palm facing out pushing away a plate of food, shaking head, frowning, flat vector children's illustration",
+  "ur": "نہیں",
+  "en": "no / not",
+  "unit": 11,
+  "old": "om-274C"
+ },
+ {
+  "n": 729,
+  "rom": "parāṭhā",
+  "why": "Round flat bread with stripes looks like a cookie or grilled meat",
+  "prompt": "A stack of golden flaky layered paratha on a plate, a pat of butter melting on top, a small bowl of yoghurt and a glass of tea beside, flat vector children's illustration",
+  "ur": "پراٹھا",
+  "en": "paratha (a flat bread)",
+  "unit": 11,
+  "old": "tw-1fad3"
+ },
+ {
+  "n": 731,
+  "rom": "pulāʾo",
+  "why": "Plain rice plate, same as #708; no peas or carrots shown",
+  "prompt": "A plate of pale yellow rice mixed with green peas and orange carrot pieces, a fork and spoon resting beside it, flat vector children's illustration",
+  "ur": "پلاؤ",
+  "en": "pulao (a rice dish)",
+  "unit": 11,
+  "old": "tw-1f35b"
+ },
+ {
+  "n": 736,
+  "rom": "qurʾān",
+  "why": "Generic green book; not identifiable as the Quran",
+  "prompt": "A Quran on a wooden rehal book stand, open pages shown as plain lines, a green cloth cover, a white prayer cap beside it, flat vector children's illustration",
+  "ur": "قرآن",
+  "en": "the Quran",
+  "unit": 11,
+  "old": "tw-1f4d7"
+ },
+ {
+  "n": 737,
+  "rom": "railway",
+  "why": "Shows a train, not the railway track",
+  "prompt": "Two long steel railway rails on wooden sleepers running into the distance across gravel, a small signal post beside the tracks, flat vector children's illustration",
+  "ur": "ریلوے",
+  "en": "railway line",
+  "unit": 11,
+  "old": "mb-train"
+ },
+ {
+  "n": 738,
+  "rom": "ungalī",
+  "why": "Single raised index finger reads as one or pointing",
+  "prompt": "A child's hand spread open with all five fingers visible, one fingertip touching a ladybug on a leaf, flat vector children's illustration",
+  "ur": "انگلی",
+  "en": "finger",
+  "unit": 11,
+  "old": "tw-261d"
+ }
+]
