@@ -22,4 +22,4 @@ P = {
 "mashhūr":"a famous singer on stage in a spotlight","qābil":"a clever child with a graduation cap","kam":"two apples on a plate","ʻarabī":"a mosque dome with a crescent moon",
 }
 # already generated in the perchance test: word gloss start -> jpg in design/words/perchance_test
-TEST = {"mirror":"mirror","chocolate":"chocolate","halwa":"halwa","guest":"guest","doctor":"doctor","water":"water","school":"school","mother":"mother","rain":"rain","book":"book","sun":"sun","ask":"ask question"}
+TEST = {"mirror":"mirror","chocolate":"chocolate","halwa":"halwa","guest":"guest","doctor":"doctor","water":"water","school":"school","mother":"mother","rain":"rain","book":"book","sun":"sun","question":"ask question","to ask":"ask question"}

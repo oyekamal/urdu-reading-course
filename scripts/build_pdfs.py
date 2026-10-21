@@ -754,7 +754,7 @@ def pages_flash_letters():
         for l in teach[p:p + 12]:
             f = dict(forms(l))
             fm = ''.join(f'<span class="ur">{esc(f[k])}</span>' for k in ('final', 'medial', 'initial') if f[k])
-            cells += (f'<div class="k"><span class="tag">unit {l["unit"]}</span><div class="ur" style="font-size:30mm">{esc(l["ch"])}</div><div class="nmn">{esc(l["name"])}</div><div class="fm">{fm}</div><div class="sm">{esc(first_clause(l["hint"]))}</div></div>')
+            cells += (f'<div class="k"><span class="tag">unit {l["unit"]}</span><div class="ur" style="font-size:30mm">{esc(l["ch"])}</div><div class="nmn">{esc(l["name"])}</div><div class="fm">{fm}</div><div class="sm">{esc(first_clause(l["hint"]))}</div>{wpic(l.get("example"), 14, "fp")}</div>')
         out.append(f'<div class="d" style="font:600 8.5pt \'URC Fredoka\';color:var(--soft)">Letter flashcards · cut along the dashed lines · say the name, then the sound</div><div class="fc" style="grid-template-rows:repeat(4,1fr)">{cells}</div>')
     return out
 

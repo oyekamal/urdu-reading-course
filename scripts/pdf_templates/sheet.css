@@ -199,3 +199,5 @@ table .nq{line-height:1.6}
 
 .mt .g .mp{height:15mm;width:auto;margin-left:auto;margin-right:1mm}
 .spw{text-align:center;margin-top:3mm}.spw .sp{height:58mm;width:auto;border:.4mm solid var(--rule);border-radius:3mm}
+
+.fc .k{position:relative}.fc .k .fp{position:absolute;right:3mm;top:3mm;height:14mm;width:auto}.fc .k .fp2{display:block;height:11mm;width:auto;margin:1mm auto 0}
