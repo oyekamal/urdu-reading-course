@@ -412,9 +412,9 @@
   "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
   "frame": "carrier",
   "text": "کم",
-  "judge": "ok",
+  "seed": 22,
   "takes": 1,
-  "via_rekey": "units/u01_02"
+  "judge": "unlistened"
  },
  "units/u01_03": {
   "method": "elevenlabs",
@@ -522,11 +522,11 @@
  "units/u01_15": {
   "method": "elevenlabs",
   "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
-  "frame": "plain",
+  "frame": "carrier",
   "text": "لمبا",
-  "judge": "unverified: The vowels are wrong, and the 'b' is pronounced as 'p' followed by an 'r'.",
-  "takes": 4,
-  "via_rekey": "units/u01_15"
+  "seed": 22,
+  "takes": 1,
+  "judge": "unlistened"
  },
  "units/u01_16": {
   "method": "elevenlabs",
@@ -3919,10 +3919,11 @@
  "units/u01_37": {
   "method": "elevenlabs",
   "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
-  "frame": "plain",
-  "text": "مالا",
-  "via": "9cI5mhBtM4WtQ9Fo6jWQ_rr",
-  "via_rekey": "units/u01_37"
+  "frame": "carrier",
+  "text": "مَالا",
+  "seed": 11,
+  "takes": 1,
+  "judge": "unlistened"
  },
  "units/u01_41": {
   "method": "elevenlabs",
@@ -5043,9 +5044,9 @@
   "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
   "frame": "carrier",
   "text": "منا",
-  "judge": "ok",
+  "seed": 22,
   "takes": 1,
-  "via_rekey": "units/u01_44"
+  "judge": "unlistened"
  },
  "units/u01_45": {
   "method": "elevenlabs",
@@ -5070,9 +5071,9 @@
   "voice": "9cI5mhBtM4WtQ9Fo6jWQ",
   "frame": "plain",
   "text": "کمبل",
-  "judge": "ok",
-  "takes": 2,
-  "via_rekey": "units/u01_43"
+  "seed": 22,
+  "takes": 1,
+  "judge": "unlistened"
  },
  "units/u01_46": {
   "method": "elevenlabs",

@@ -1194,3 +1194,16 @@ main.lesson{margin:-12px -12px 0;padding:16px 16px 0}
 .pr-head h1,.pr-head h2,.pr-head .muted,.pr-head p{color:#fff}
 .pr-head .btn,.pr-head button{background:#fff;color:var(--td,#126B62)}
 /* ===== end round 14 layout fixes ===== */
+/* round 15: Marko stories */
+.mst-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mst-card{display:grid;gap:4px;text-align:center;padding:8px 8px 12px;background:var(--card);border:2px solid var(--line);border-radius:20px;font:inherit;color:var(--ink);cursor:pointer;justify-items:center}
+.mst-cover{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px}
+.mst-t{font-size:20px;line-height:1.5}.mst-e{font:600 13px var(--display);color:var(--muted)}
+.mst-card.later .mst-cover{filter:saturate(.7)}
+.mst-page{display:grid;gap:12px;justify-items:center;text-align:center}
+.mst-pic{width:100%;max-width:440px;aspect-ratio:1;object-fit:cover;border-radius:18px}
+.mst-ur{font-size:34px;line-height:1.9}
+.mst-say{width:100%;max-width:320px}.mst-mean{display:grid;gap:4px}
+.mst-talk{text-align:start;margin:0;padding-inline-start:20px}
+.mst-nav{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.mst-say{width:100%;max-width:320px}.mst-entry{margin-bottom:12px}

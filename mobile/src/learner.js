@@ -15,6 +15,7 @@ import { icon, mascot, confetti, unitArt, LESSON_ICON, avatar } from './icons.js
 import { fx, burst } from './fx.js';
 import { askGrownup } from './gate.js';
 import { openPractice } from './practice.js';
+import { renderStories } from './stories.js';
 import { esc, tapLock } from './safe.js';
 import { restoreFromFile } from './restore.js';
 
@@ -36,18 +37,18 @@ export async function renderLearner(root, ctx) {
   const kid = () => profile.track === 'child';
   const TAB = { today: ['home', 'Learn', '#1E9C8F', '#126B62'], units: ['units', 'Units', '#F2A93B', '#94590C'], review: ['review', 'Review', 'var(--coral)', '#B03F22'], read: ['read', 'Read', '#4F5FD0', '#2E3A8C'], me: ['me', 'Me', '#5FA55A', '#2F6A2C'], progress: ['progress', 'Progress', '#5FA55A', '#2F6A2C'], more: ['more', 'More', '#D97AA6', '#9C3A6A'] };
   const tabKeys = () => kid() ? ['today', 'review', 'read', 'me'] : ['today', 'units', 'review', 'read', 'progress', 'more'];
-  const navOf = t => kid() ? ({ units: 'today', lesson: 'today', progress: 'me', more: 'me', test: 'me' }[t] || t) : ({ me: 'progress', lesson: 'units', test: 'more' }[t] || t);
+  const navOf = t => kid() ? ({ units: 'today', lesson: 'today', progress: 'me', more: 'me', test: 'me', stories: 'read' }[t] || t) : ({ me: 'progress', lesson: 'units', test: 'more', stories: 'read' }[t] || t);
   function buildNav() { nav.innerHTML = ''; nav.dataset.n = tabKeys().length; tabKeys().forEach(k => { const [ic, lab, c, d] = TAB[k]; const b = el('button', '', `${icon(ic + '_f')}<span class="lb">${lab}</span>`); b.style.setProperty('--tc', c); b.style.setProperty('--td', d); b.onclick = () => { st.tab = k; render(); }; b.dataset.k = k; nav.append(b); }); }
   // Back: sub-screens go up one level, root tabs go to Learn, Learn itself returns false (back.js then handles leave-lesson / exit)
-  const UP = () => kid() ? { units: 'today', lesson: 'today', progress: 'me', more: 'me', test: 'me', review: 'today', read: 'today', me: 'today' } : { units: 'today', lesson: 'units', test: 'more', review: 'today', read: 'today', progress: 'today', more: 'today' };
+  const UP = () => kid() ? { units: 'today', lesson: 'today', progress: 'me', more: 'me', test: 'me', review: 'today', read: 'today', me: 'today', stories: 'read' } : { units: 'today', lesson: 'units', test: 'more', review: 'today', read: 'today', progress: 'today', more: 'today', stories: 'read' };
   const SUB = () => kid() ? ['progress', 'more', 'test'] : ['test'];  // units already has its own Back to Learn button
-  function goUp() { if (st.tab === 'today') return false; st.tab = (st.tab === 'lesson' && st.from) || UP()[st.tab] || 'today'; st.from = null; render(); return true; }
+  function goUp() { if (st.tab === 'today') return false; if (st.tab === 'stories' && st.storyN != null) { st.storyN = null; render(); return true; } st.tab = (st.tab === 'lesson' && st.from) || UP()[st.tab] || 'today'; st.from = null; render(); return true; }
   let navKid = kid(); buildNav();
   // renders never interleave: a double tap on a tab queues a second render after the first, instead of both appending to the same screen
   let chain = Promise.resolve(); const render = () => (chain = chain.then(doRender, doRender));
   // a screen change: the old screen stays visible as an exit overlay until the new one has content (spring.js exitScreen), then the new one takes over; no blank frame in between
   function swapMain() { const old = main; main = el('div', 't-kids'); main.dataset.screen = ''; old.before(main); if (!exitScreen(old, main)) old.remove(); return main; }
-  async function doRender() { st.preview = false; document.body.dataset.tab = st.tab; if (navKid !== kid()) { navKid = kid(); buildNav(); } if (st.tab === 'me' && !kid()) st.tab = 'progress'; const on = navOf(st.tab); [...nav.children].forEach(b => b.classList.toggle('active', b.dataset.k === on)); swapMain(); window.scrollTo(0, 0); try { await ({ today, units, review, read, progress, more, me, lesson, session, test, path }[st.tab])(); } catch (e) { if (ctx.recover) ctx.recover(e); else toast('This screen could not load. Please try again.'); } }
+  async function doRender() { st.preview = false; document.body.dataset.tab = st.tab === 'stories' ? 'read' : st.tab; if (navKid !== kid()) { navKid = kid(); buildNav(); } if (st.tab === 'me' && !kid()) st.tab = 'progress'; const on = navOf(st.tab); [...nav.children].forEach(b => b.classList.toggle('active', b.dataset.k === on)); swapMain(); window.scrollTo(0, 0); try { await ({ today, units, review, read, progress, more, me, lesson, session, test, path, stories }[st.tab])(); } catch (e) { if (ctx.recover) ctx.recover(e); else toast('This screen could not load. Please try again.'); } }
   const pctx = () => ({ swap: swapMain, profile, marks, styleName, dctx, unit0, aspirates, izafat, punctuation, unit11, sightDrill, go: t => { st.tab = t === 'path' ? 'today' : t; render(); }, openLesson: (u, i) => { st.unitN = u.n; st.tab = 'today'; swapMain(); window.scrollTo(0, 0); runLesson(main, pctx(), u, i); } });
   async function path() { st.tab = 'today'; render(); }
   setBack(goUp);
@@ -215,7 +216,9 @@ export async function renderLearner(root, ctx) {
     more.onclick = next; next(); main.append(h, grid); if (list.length > 6) main.append(more);
   }
 
+  async function stories() { await renderStories(main, { st, render, header, cur: await S.currentUnit(profile.id) }); }
   async function read() { await header('Read', 'Passages and sentences · read twice, watch your speed'); const cur = await S.currentUnit(profile.id);
+    const sb = el('button', 'card all-units mst-entry', `<span class="au-ic">${icon('book')}</span><span><b>Marko stories</b><small class="muted">15 picture stories to read, hear and download</small></span>`); sb.onclick = () => { st.storyN = null; st.tab = 'stories'; render(); }; main.append(sb);
     // only the current unit renders at first: building every earlier unit's passage and sentences (2,000+ elements by unit 9) made this tab slow on weaker phones
     const ps = C.units.filter(u => u.passage && u.n <= Math.max(cur, 1)).reverse(), ss = C.units.filter(u => u.sentences.length && u.n <= Math.max(cur, 1)).reverse();
     const add = (u, passage) => { const box = el('div'); const hh = el('h3', '', `${passage ? 'Passage' : 'Sentences'} · unit ${u.n}`); hh.setAttribute('aria-level', '2'); main.append(hh, box); fluency(u, box, () => {}, passage); box.lastChild.remove(); };

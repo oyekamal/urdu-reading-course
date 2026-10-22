@@ -87,6 +87,12 @@ function card(item, primary, root) {
   return c;
 }
 
+// one "download / share" for a PDF item from the index (used by the Marko stories reader): the phone's share sheet on Android, share or a new tab on the web
+export async function savePdf(item) {
+  try { if (window.Capacitor?.isNativePlatform?.()) await shareNative(item, 'Save or share'); else await shareWeb(item); }
+  catch (e) { if (e && e.name !== 'AbortError') toast('Could not open the PDF right now.'); }
+}
+
 export async function openPractice(ctx = {}) {
   if (document.querySelector('.pr-ov')) return;
   const back = document.activeElement;
