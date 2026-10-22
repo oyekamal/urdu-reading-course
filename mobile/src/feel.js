@@ -19,26 +19,36 @@ const root = () => document.getElementById('app');
 let ac = null, master = null;
 function unlock() {
   try {
-    if (!ac) { const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return; ac = new AC(); master = ac.createGain(); master.gain.value = 0.32; master.connect(ac.destination); }
+    if (!ac) {
+      const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return; ac = new AC();
+      master = ac.createGain(); master.gain.value = 0.9;
+      const comp = ac.createDynamicsCompressor(); comp.threshold.value = -16; comp.ratio.value = 3; master.connect(comp); comp.connect(ac.destination);
+      // a small warm echo (two taps, low-passed) gives every note a little room: the "premium" feel
+      const d = ac.createDelay(0.5); d.delayTime.value = 0.13; const fb = ac.createGain(); fb.gain.value = 0.28; const lp = ac.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 2800;
+      const wet = ac.createGain(); wet.gain.value = 0.32; master.connect(d); d.connect(lp); lp.connect(fb); fb.connect(d); lp.connect(wet); wet.connect(comp);
+    }
     if (ac.state === 'suspended') ac.resume();
   } catch (e) {}
 }
-// one soft voice: sine (+ a quiet octave for sparkle), fast attack, exponential decay
-function tone(freq, t0, dur, vol, { glide = 0, over = 0 } = {}) {
+// one soft marimba/bell voice: sine body + a bright partial (x4 for wood, x2.76 for glass) that dies fast, quick attack, exponential decay
+function tone(freq, t0, dur, vol, { glide = 0, over = 0, bell = 0 } = {}) {
   const o = ac.createOscillator(), g = ac.createGain(); o.type = 'sine'; o.frequency.setValueAtTime(freq, t0);
   if (glide) o.frequency.exponentialRampToValueAtTime(freq * glide, t0 + dur);
-  g.gain.setValueAtTime(0.0001, t0); g.gain.exponentialRampToValueAtTime(vol, t0 + 0.012); g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+  g.gain.setValueAtTime(0.0001, t0); g.gain.exponentialRampToValueAtTime(vol, t0 + 0.008); g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
   o.connect(g); g.connect(master); o.start(t0); o.stop(t0 + dur + 0.03);
-  if (over) { const o2 = ac.createOscillator(), g2 = ac.createGain(); o2.type = 'triangle'; o2.frequency.setValueAtTime(freq * 2, t0); g2.gain.setValueAtTime(0.0001, t0); g2.gain.exponentialRampToValueAtTime(vol * over, t0 + 0.01); g2.gain.exponentialRampToValueAtTime(0.0001, t0 + dur * 0.7); o2.connect(g2); g2.connect(master); o2.start(t0); o2.stop(t0 + dur); }
+  const part = over || bell; if (part) { const o2 = ac.createOscillator(), g2 = ac.createGain(); o2.type = 'sine'; o2.frequency.setValueAtTime(freq * (bell ? 2.76 : 4), t0); g2.gain.setValueAtTime(0.0001, t0); g2.gain.exponentialRampToValueAtTime(vol * part, t0 + 0.006); g2.gain.exponentialRampToValueAtTime(0.0001, t0 + dur * 0.35); o2.connect(g2); g2.connect(master); o2.start(t0); o2.stop(t0 + dur * 0.4); }
 }
 const PENT = [1046.5, 1174.7, 1318.5, 1568, 1760, 2093];   // C-major pentatonic from C6: bright (Duolingo's chime measures 1.5-2 kHz) and every pair sounds happy
 let lastTick = 0;
 const sfx = {
-  tick() { const n = performance.now(); if (n - lastTick < 45) return; lastTick = n; tone(1250, ac.currentTime, 0.05, 0.05); },
-  chime(level = 0) { const t = ac.currentTime, i = Math.min(level, 3); tone(PENT[i], t, 0.16, 0.13, { over: 0.3 }); tone(PENT[i + 2], t + 0.085, 0.26, 0.13, { over: 0.3 }); },   // rising pair, 345 ms, steps up with the combo
-  flourish() { const t = ac.currentTime; [0, 2, 4, 5].forEach((k, j) => tone(PENT[k], t + j * 0.075, 0.22, 0.11, { over: 0.3 })); },   // 'high five' arpeggio
-  boop() { const t = ac.currentTime; tone(620, t, 0.34, 0.1, { glide: 0.68 }); },   // soft, round, falling 620 -> 420 Hz: 'hmm, listen again', never a buzzer
-  pop() { const t = ac.currentTime; tone(880, t, 0.09, 0.07, { glide: 1.5 }); },
+  tick() { const n = performance.now(); if (n - lastTick < 45) return; lastTick = n; const t = ac.currentTime; tone(760, t, 0.08, 0.26, { glide: 1.5 }); },   // a soft "bubble pop" under the finger
+  chime(level = 0) { const t = ac.currentTime, i = Math.min(level, 3); tone(PENT[i], t, 0.2, 0.28, { over: 0.35 }); tone(PENT[i + 2], t + 0.09, 0.42, 0.28, { over: 0.35, bell: 0.15 }); },   // rising pair, steps up with the combo
+  flourish() { const t = ac.currentTime; [0, 2, 3, 4, 5].forEach((k, j) => tone(PENT[k], t + j * 0.075, 0.34, 0.24, { over: 0.35, bell: 0.15 })); },   // 'high five' arpeggio
+  boop() { const t = ac.currentTime; tone(520, t, 0.36, 0.22, { glide: 0.72 }); },   // soft, round, falling: 'hmm, listen again', never a buzzer
+  pop() { const t = ac.currentTime; tone(880, t, 0.1, 0.14, { glide: 1.5 }); },
+  unlock() { const t = ac.currentTime; [0, 1, 3, 5].forEach((k, j) => tone(PENT[k] / 2, t + j * 0.11, 0.55, 0.26, { bell: 0.3 })); tone(PENT[5], t + 0.5, 0.9, 0.18, { bell: 0.4 }); },   // door opening: a warm climbing glass run
+  cheer() { const t = ac.currentTime; [[0, 0], [2, .1], [3, .2], [5, .3]].forEach(([k, d]) => tone(PENT[k] / 2, t + d, 0.5, 0.26, { over: 0.35, bell: 0.2 })); [3, 5].forEach((k, j) => tone(PENT[k], t + 0.45 + j * 0.12, 0.8, 0.22, { bell: 0.35 })); },   // lesson done: a small fanfare
+  notify() { const t = ac.currentTime; tone(PENT[2], t, 0.3, 0.22, { bell: 0.3 }); tone(PENT[4], t + 0.12, 0.6, 0.22, { bell: 0.3 }); },   // update ready / something new
 };
 const hear = (name, a) => { if (!on()) return; try { unlock(); if (ac && ac.state === 'running') sfx[name](a); } catch (e) {} };
 
@@ -281,7 +291,7 @@ function injectSwitch() {
 
 export function initFeel(ctx) {
   app = ctx;
-  window.__feel = { chime: lvl => hear('chime', lvl), boop: () => hear('boop') }; // for stickers.js / learner.js (silent when the Sounds switch is off)
+  window.__feel = { chime: lvl => hear('chime', lvl), boop: () => hear('boop'), unlock: () => hear('unlock'), cheer: () => hear('cheer'), notify: () => hear('notify') }; // for stickers.js / learner.js (silent when the Sounds switch is off)
   document.addEventListener('pointerdown', down, { passive: true, capture: true });
   ['pointerup', 'pointercancel', 'dragstart'].forEach(ev => document.addEventListener(ev, up, { passive: true, capture: true }));
   document.addEventListener('touchend', unlock, { passive: true }); document.addEventListener('keydown', unlock, { passive: true });

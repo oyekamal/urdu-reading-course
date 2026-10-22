@@ -10,6 +10,7 @@ export function updateDialog({ note, action, onLater }) {
   const close = () => back.remove();
   later.onclick = () => { close(); onLater && onLater(); };
   go.onclick = () => { go.disabled = true; go.textContent = 'Updating…'; Promise.resolve(action()).catch(() => {}).finally(() => { go.disabled = false; go.textContent = 'Update now'; }); };
+  try { window.__feel?.notify?.(); } catch (e) { /* sound is optional */ }
   go.focus();
   return { close };
 }

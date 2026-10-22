@@ -86,7 +86,7 @@ function stringThread(path) {
 function unlockMoment(card, u) {
   card.classList.add('unlocking'); const disc = card.querySelector('.art-disc');
   const lock = el('span', 'unlock-lock', icon('lock')); disc?.append(lock); card.append(fx('confetti_burst', { size: 240, cls: 'unlock-fx' }));
-  const go = () => { if (!card.isConnected) return; card.classList.add('unlock-go'); setTimeout(() => card.classList.remove('unlocking', 'unlock-go'), 2400); setTimeout(() => card.querySelector('.unlock-fx')?.remove(), 2600); };
+  const go = () => { if (!card.isConnected) return; try { window.__feel?.unlock?.(); } catch (e) {} card.classList.add('unlock-go'); setTimeout(() => card.classList.remove('unlocking', 'unlock-go'), 2400); setTimeout(() => card.querySelector('.unlock-fx')?.remove(), 2600); };
   if (reduceMo()) return go();
   setTimeout(() => { if (!card.isConnected) return; const b = card.getBoundingClientRect(); if (b.top > innerHeight - 220 || b.bottom < 100) card.scrollIntoView({ block: 'center', behavior: 'smooth' }); setTimeout(go, b.top > innerHeight - 220 ? 550 : 120); }, 450);
 }
@@ -146,6 +146,7 @@ export async function runLesson(main, ctx, u, idx, fresh) {
     const close = () => cel.remove();
     const b = el('button', 'btn btn-primary btn-wide cel-go', nxt ? `Next: ${nxt.title}` : 'Back to path'); b.onclick = () => { if (cel.dataset.used || !tapLock()) return; cel.dataset.used = '1'; close(); nxt ? runLesson(main, ctx, u, idx + 1) : ctx.go('path'); };
     const back = el('button', 'btn cel-back', `${icon('cross')} Path`); back.setAttribute('aria-label', 'Back to path'); back.onclick = () => { if (cel.dataset.used || !tapLock()) return; cel.dataset.used = '1'; close(); ctx.go('path'); };
+    try { window.__feel?.cheer?.(); } catch (e) {}
     SESS.done++; if (!SESS.cued && (SESS.done >= 3 || Date.now() - SESS.t0 >= 600000)) { SESS.cued = true; cel.querySelector('.cel-body').append(el('p', 'cel-cue', 'Great work today. Come back tomorrow, or keep going.')); if (nxt) b.textContent = 'Keep going'; const stopB = el('button', 'btn cel-stop', 'Stop for today'); stopB.onclick = () => { if (cel.dataset.used || !tapLock()) return; cel.dataset.used = '1'; close(); ctx.go('path'); }; cel.querySelector('.cel-foot').append(b, stopB); } else cel.querySelector('.cel-foot').append(b);
     if (nxt) cel.querySelector('.cel-top').append(back); document.body.append(cel); burst();
     countUp(cel.querySelector('.cel-total'), total, { from: prevTotal, delay: 950, dur: 500 }); if (goalHit) cel.querySelector('.cel-goal').append(fx('sparkles_loop', { size: 56, loop: true, cls: 'cel-goal-fx' }));
