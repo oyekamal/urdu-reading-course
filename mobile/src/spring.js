@@ -72,7 +72,8 @@ const slideDir = () => (performance.now() - dirT < 2500 ? dir : 1);
 // The caller inserts `next` (with data-screen) beside `old` first. Returns false (caller just removes `old`) for reduced motion, an empty/tiny/canvas screen
 // or a page scrolled far down. The old node is inert + aria-hidden + pointer-events none, has no ids (no duplicates), and its Lotties / docks are hidden by CSS.
 export function exitScreen(old, next) {
-  if (calm() || !old?.isConnected || !old.firstElementChild || old.querySelector('canvas') || scrollY > innerHeight * 2 || old.querySelectorAll('*').length > 600) return false;   // a heavy old screen is not worth animating out on a weak phone
+  if (!old?.isConnected || !old.firstElementChild || old.querySelector('canvas')) return false;
+  const still = true;   // the old screen is HELD until the new one has content and then cut (no cross-fade: two translucent screens on top of each other read as flicker); removing it at once showed a blank page between screensone
   const r = old.getBoundingClientRect(); if (r.width < 40 || r.height < 40) return false;
   const c0 = old.firstElementChild.getBoundingClientRect().top;
   old.querySelectorAll('[id]').forEach(n => n.removeAttribute('id')); old.removeAttribute('id');
@@ -83,8 +84,9 @@ export function exitScreen(old, next) {
   const kill = () => { stop?.(); clearTimeout(t1); clearTimeout(t2); mo.disconnect(); old.remove(); };
   function start() {
     if (go) return; go = true; mo.disconnect(); clearTimeout(t1); const d = slideDir();
-    stop = spring(0, 1, { k: 140, d: 14.5 }, p => { old.style.opacity = String(Math.max(0, 1 - 1.3 * p)); old.style.translate = `${-24 * d * p}px 0`; });
-    t2 = setTimeout(kill, 260);
+    if (still) { t2 = setTimeout(kill, 280); return; }
+    stop = spring(0, 1, { k: 140, d: 14.5 }, p => { old.style.opacity = String(p < .75 ? 1 : Math.max(0, (1 - p) / .25)); old.style.translate = `${-24 * d * p}px 0`; });
+    t2 = setTimeout(kill, 420);
   }
   mo.observe(next, { childList: true }); if (next.firstChild) start(); else t1 = setTimeout(() => { start(); }, 450);   // slow build: do not hold the old screen forever
   setTimeout(kill, 1500);   // failsafe

@@ -1207,3 +1207,4 @@ main.lesson{margin:-12px -12px 0;padding:16px 16px 0}
 .mst-talk{text-align:start;margin:0;padding-inline-start:20px}
 .mst-nav{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
 .mst-say{width:100%;max-width:320px}.mst-entry{margin-bottom:12px}
+#app{isolation:isolate}   /* round 15: the leaving screen (z-index:-1) must stay above #app's own gradient, else it vanished and the page flashed blank between screens */
