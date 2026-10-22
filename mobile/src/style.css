@@ -1179,4 +1179,18 @@ main.lesson{margin:-12px -12px 0;padding:16px 16px 0}
 .card .muted{font-size:15px}
 .me-id small{display:block;white-space:normal;font-size:13px}
 .pearl small{text-shadow:0 0 3px var(--card),0 0 6px var(--card),0 0 2px var(--card)}
+/* round 15: header flush to the top, centred lone chips, update popup */
+.page-head{margin:-12px -16px 12px;padding-top:calc(18px + 12px)}
+.btn-center{display:flex;margin:12px auto 0;width:max-content;max-width:100%}
+.upd-sheet{text-align:center;display:grid;gap:10px;justify-items:center}
+.upd-sheet h2{margin:0;font:700 22px var(--display)}.upd-sheet p{margin:0}
+.upd-ic{width:56px;height:56px;border-radius:50%;background:var(--soft);color:var(--accent-deep);display:grid;place-items:center;font-size:28px;font-weight:800}
+.upd-go{margin-top:6px}
+/* round 15: the screens outside the tabs (picker, new learner, teacher, practice packs) get the same coloured band */
+#app>h1:first-child,#app>.row:first-child:has(>div>h1){background:var(--tband,linear-gradient(135deg,#126B62,#1E9C8F));color:#fff;margin:-12px -16px 14px;padding:30px 16px 16px;border-radius:0 0 26px 26px;box-shadow:0 6px 16px color-mix(in srgb,var(--td,#126B62) 30%,transparent)}
+#app>.row:first-child:has(>div>h1) h1,#app>.row:first-child:has(>div>h1) .muted{color:#fff}
+#app>.row:first-child:has(>div>h1) .btn{background:#fff;color:var(--td,#126B62);border-color:rgba(255,255,255,.7)}
+.pr-head{background:var(--tband,linear-gradient(135deg,#126B62,#1E9C8F));color:#fff;border-radius:0 0 26px 26px;padding-bottom:16px}
+.pr-head h1,.pr-head h2,.pr-head .muted,.pr-head p{color:#fff}
+.pr-head .btn,.pr-head button{background:#fff;color:var(--td,#126B62)}
 /* ===== end round 14 layout fixes ===== */

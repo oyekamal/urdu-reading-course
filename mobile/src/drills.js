@@ -1,5 +1,5 @@
 // Drill engines, ported from the course app. Each returns a DOM node and reports results via ctx.record(drill, item, correct, ms).
-import { C, play, forms, W, shuffle, wordKey, taughtBefore, STROKE, dotInfo, soundOf, el, toast, wimg, story } from './content.js';
+import { C, play, forms, W, shuffle, wordKey, taughtBefore, STROKE, dotInfo, soundOf, el, toast, wimg, story, pad2 } from './content.js';
 import { icon } from './icons.js';
 
 export const formsOf = l => forms(l);

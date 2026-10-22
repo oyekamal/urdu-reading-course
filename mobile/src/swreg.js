@@ -6,6 +6,7 @@
 //   - checks for a newer build whenever the app comes back to the foreground (at most every 20 minutes)
 // NOT `!window.Capacitor`: @capacitor/core defines that global on the plain web too once the bundle has run (the old inline script ran before it)
 const native = (() => { try { return !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform()); } catch (e) { return false; } })();
+import { updateDialog } from './updatedialog.js';
 const sw = navigator.serviceWorker;
 if (sw && !native) {
   if (import.meta.env?.DEV) sw.getRegistrations().then(rs => rs.forEach(r => r.unregister())).catch(() => {});
@@ -21,20 +22,15 @@ function start() {
 
   function toast(worker) {
     if (shown) return; shown = true;
-    const t = document.createElement('div'); t.className = 'sw-toast'; t.setAttribute('role', 'status');
-    const go = document.createElement('button'); go.type = 'button'; go.className = 'sw-go'; go.textContent = 'Update ready, tap to refresh';
-    const x = document.createElement('button'); x.type = 'button'; x.className = 'sw-x'; x.setAttribute('aria-label', 'Not now'); x.textContent = '×';
-    go.onclick = () => {
-      wantReload = true; go.disabled = true; go.textContent = 'Updating…';
-      const w = (regRef && regRef.waiting) || worker;   // the NEWEST waiting worker (a later deploy replaces the one the toast was made for)
+    updateDialog({ note: 'Tap Update now to load the latest lessons.', onLater: () => { shown = false; }, action: () => {
+      wantReload = true;
+      const w = (regRef && regRef.waiting) || worker;   // the NEWEST waiting worker (a later deploy replaces the one the popup was made for)
       if (w && w.state !== 'redundant' && w.state !== 'activated') w.postMessage({ type: 'SKIP_WAITING' });
       else location.reload();                           // already active: just load it
       // belt and braces: if the page is still here after a moment (message lost, worker replaced), ask again, then load whatever is current
       setTimeout(() => { const n = regRef && regRef.waiting; if (n) n.postMessage({ type: 'SKIP_WAITING' }); }, 2500);
       setTimeout(() => { if (!reloaded) { reloaded = true; location.reload(); } }, 6000);
-    };
-    x.onclick = () => { t.remove(); shown = false; };
-    t.append(go, x); document.body.append(t);
+    } });
   }
 
   function watch(reg) {
