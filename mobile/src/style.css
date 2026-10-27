@@ -1191,7 +1191,7 @@ main.lesson{margin:-12px -12px 0;padding:16px 16px 0}
 #app>.row:first-child:has(>div>h1) h1,#app>.row:first-child:has(>div>h1) .muted{color:#fff}
 #app>.row:first-child:has(>div>h1) .btn{background:#fff;color:var(--td,#126B62);border-color:rgba(255,255,255,.7)}
 .pr-head{background:var(--tband,linear-gradient(135deg,#126B62,#1E9C8F));color:#fff;border-radius:0 0 26px 26px;padding-bottom:16px}
-.pr-head h1,.pr-head h2,.pr-head .muted,.pr-head p{color:#fff}
+.pr-head h1,.pr-head h2,.pr-head small,.pr-head .muted,.pr-head p{color:#fff}
 .pr-head .btn,.pr-head button{background:#fff;color:var(--td,#126B62)}
 /* ===== end round 14 layout fixes ===== */
 /* round 15: Marko stories */

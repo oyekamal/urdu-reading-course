@@ -1,11 +1,11 @@
 // Marko stories: 15 picture stories for beginners (img/mstory/stories.json, pictures img/mstory/, narration audio/mstory/, PDF per story in pdf/).
 // A grid of covers; tap one to read it page by page (picture, vowelled Urdu, tap to hear, meaning on request); the last page offers the PDF to save or print.
-import { el, play, toast } from './content.js';
+import { C, el, play, toast } from './content.js';
 import { icon } from './icons.js';
 import { savePdf } from './practice.js';
 
 let data = null, pdfs = null;
-const load = async () => { if (!data) data = await fetch('img/mstory/stories.json').then(r => r.json()); return data; };
+const load = async () => { if (!data) { data = await fetch('img/mstory/stories.json').then(r => r.json()); data.forEach(s => s.pages.forEach((_, i) => { const k = aud(s.n, i); C.audio[k] = `audio/${k}.mp3`; })); } return data; };   // narration clips are not in the course audio index, so register them for play()
 const pdfFor = async n => { try { if (!pdfs) pdfs = (await fetch('pdf/index.json').then(r => r.json())).items; } catch (e) { return null; } return pdfs.find(x => x.id === 'story_' + String(n).padStart(2, '0')); };
 const img = (f, cls) => `<img class="${cls}" src="./img/mstory/${f}" alt="" decoding="async" loading="lazy">`;
 const aud = (n, i) => `mstory/s${String(n).padStart(2, '0')}_p${i + 1}`;

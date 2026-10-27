@@ -1,6 +1,15 @@
 # What's new (Play Console "Release notes", ≤500 chars per language)
 
 <en-US>
+Marko's picture stories now read aloud: tap "Hear it" on any page and the narration plays. Small colour fix on the practice header. Plus the earlier fixes: smoother screen changes, a faster Read tab, and a Back button that no longer traps you on the "Who is learning?" screen.
+</en-US>
+
+<ur>
+مارکو کی تصویری کہانیاں اب آواز کے ساتھ سنائی جاتی ہیں: کسی بھی صفحے پر "سنیں" دبائیں تو بیان چلتا ہے۔ مشق کے ہیڈر کا رنگ درست کیا گیا۔ پچھلی درستیاں بھی شامل: صفحات کی ہموار تبدیلی، تیز "پڑھیں" ٹیب، اور "کون سیکھ رہا ہے؟" اسکرین پر بیک بٹن کا مسئلہ ختم۔
+</ur>
+
+<!-- previous release notes (0.13.2+):
+<en-US>
 Fixes from tester reports. The Back button on the "Who is learning?" screen now takes you back to the learner you came from instead of trapping you there. The Read tab opens much faster: it shows the current unit first, with "Show earlier units" for the rest. Screen changes skip the slide animation on heavy screens, so switching pages feels smoother on slower phones.
 </en-US>
 
@@ -78,4 +87,6 @@ Email, Support, backup and reset now ask a grown-up first with a spelled-out num
 ہر حرف، لفظ اور جملے کے لیے نئی، صاف اردو آواز۔ بچے ہر حرف کا نام ویسے ہی سنتے ہیں جیسے استاد بولتے ہیں۔
 مدد اور عطیہ کے بٹن اب پہلے کسی بڑے سے پوچھتے ہیں۔
 </ur>
+-->
+
 -->
